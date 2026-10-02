@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),{spawn}=require('node:child_process'),{pathToFileURL}=require('node:url'),assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'..'),out=path.join(root,'output','playwright');fs.mkdirSync(out,{recursive:true});
 const chrome=process.env.CHROME_PATH||'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-gpu','--disable-extensions','--no-first-run','--remote-debugging-address=127.0.0.1','--remote-debugging-port=9227',`--user-data-dir=${path.join(out,'cdp-profile')}`,'about:blank'],{windowsHide:true,stdio:'ignore'});
+const child=spawn(chrome,['--headless=new','--no-sandbox','--disable-gpu','--disable-extensions','--no-first-run','--remote-debugging-address=127.0.0.1','--remote-debugging-port=9227',`--user-data-dir=${path.join(out,'cdp-profile-'+Date.now())}`,'about:blank'],{windowsHide:true,stdio:'ignore'});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 let ws,seq=0;const pending=new Map();
 const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
@@ -13,7 +13,7 @@ const smoke=async()=>{
  const checks=[],check=(name,ok)=>{if(!ok)throw Error(name);checks.push(name);},$=id=>document.getElementById(id),wait=()=>new Promise(r=>setTimeout(r,30));
  check('initial metrics',document.querySelectorAll('.metric').length===4&&document.querySelector('.metric b').textContent==='45');
  check('viewport overflow',document.documentElement.scrollWidth<=innerWidth);
- check('four exact amounts',document.querySelectorAll('.evidence-row').length===4 && document.querySelectorAll('.evidence-row .prohibited').length===1);
+ check('four exact amounts',document.querySelectorAll('.evidence-row').length===4 && document.querySelectorAll('.evidence-ledger .prohibited').length===1);
  const row=document.querySelector('[data-merchant="WStorm AI"]');row.focus();row.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowDown',bubbles:true}));check('keyboard selects next supplier',document.querySelector('[data-merchant="gongsi.one"]').getAttribute('aria-pressed')==='true');
  if(innerWidth>1050){document.querySelector('[data-merchant="WStorm AI"]').click();check('selection updates inspector',document.getElementById('sku-inspector').textContent.includes('WStorm AI'));}
  else{document.querySelector('[data-merchant="WStorm AI"]').click();check('selection opens responsive sheet',document.getElementById('detail').open);document.getElementById('close-detail').click();await wait();check('focus restored to selected row',document.activeElement.dataset.merchant==='WStorm AI');}
@@ -39,22 +39,68 @@ const smoke=async()=>{
  return {status:'PASS',width:innerWidth,checks};
 };
 (async()=>{try{
- await connect();await send('Page.enable');const results=[];
+ await connect();await send('Page.enable');const results=[];await navigate('overview');assert.equal(await evaluate('document.body.dataset.layout'), 'B');assert.equal(await evaluate('document.body.dataset.color'),'dark');assert(await evaluate("!document.querySelector('.sidebar').classList.contains('open')"),'Fresh profile default menu closed');
  for(const width of [1440,1280,390,768]){await send('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:width<700});await navigate('overview');const result=await evaluate(`(${smoke.toString()})()`);assert(result&&result.status==='PASS','Browser smoke failed');assert.equal(result.width,width);results.push(result);console.log(JSON.stringify(result));}
+
+ // Layout and palette are independent and never rebuild the research state.
+ await send('Emulation.setDeviceMetricsOverride',{width:1280,height:1100,deviceScaleFactor:1,mobile:false});await navigate('quotes');
+ const appearanceState=await evaluate(`(() => {const q=document.getElementById('q');q.value='ProPlus';q.dispatchEvent(new Event('input',{bubbles:true}));const before=document.getElementById('result-count').textContent;document.getElementById('color-choice').click();if(document.body.dataset.layout!=='B'||document.body.dataset.color!=='light')throw Error('B light must retain B layout');document.getElementById('layout-choice').value='A';document.getElementById('layout-choice').dispatchEvent(new Event('change'));if(document.body.dataset.color!=='light'||!document.getElementById('color-choice').hidden)throw Error('A is explicit light layout');document.getElementById('layout-choice').value='B';document.getElementById('layout-choice').dispatchEvent(new Event('change'));if(document.body.dataset.color!=='light'||document.getElementById('result-count').textContent!==before||q.value!=='ProPlus')throw Error('Appearance lost filters');return true;})()`);assert(appearanceState);
+ await navigate('overview');assert.equal(await evaluate('document.body.dataset.color'),'light','Saved B light survives reload');
+ for(const width of [1280,390])for(const [layout,color] of [['B','dark'],['B','light'],['A','light']]){
+   await send('Emulation.setDeviceMetricsOverride',{width,height:1100,deviceScaleFactor:1,mobile:width<700});await navigate('overview');
+   await evaluate(`(() => {const select=document.getElementById('layout-choice');select.value='${layout}';select.dispatchEvent(new Event('change'));if('${layout}'==='B'&&document.body.dataset.color!=='${color}')document.getElementById('color-choice').click();})()`);await evaluate('window.scrollTo(0,0)');await sleep(80);
+   assert(await evaluate('document.documentElement.scrollWidth<=innerWidth'),'Appearance overflow');
+   const shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});fs.writeFileSync(path.join(out,`v15-${layout}-${color}-${width}.png`),Buffer.from(shot.data,'base64'));
+ }
+ await evaluate(`document.getElementById('layout-choice').value='B';document.getElementById('layout-choice').dispatchEvent(new Event('change'));if(document.body.dataset.color!=='dark')document.getElementById('color-choice').click()`);
+ results.push({status:'PASS',checks:['B dark / B light / A light','filter preserved across appearance','local appearance persists reload','six real appearance screenshots','appearance overflow']});
  const key=async(k,code=k,modifiers=0)=>{await send('Input.dispatchKeyEvent',{type:'keyDown',key:k,code,modifiers,text:k==='Enter'?'\r':undefined,windowsVirtualKeyCode:k==='Tab'?9:k==='Escape'?27:k==='Enter'?13:0});await send('Input.dispatchKeyEvent',{type:'keyUp',key:k,code,modifiers});await sleep(40);};
  await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await navigate('overview');
- await send('Page.bringToFront');await evaluate("document.querySelector('[data-merchant=\"WStorm AI\"]').focus()");await key('Enter');assert(await evaluate("document.getElementById('detail').open"),'Native keyboard Enter opens candidate');await key('Escape');assert(await evaluate("!document.getElementById('detail').open && document.activeElement.dataset.merchant==='WStorm AI'"),'Native ESC returns candidate focus');
+ await send('Page.bringToFront');
+ await evaluate(`document.getElementById('color-choice').focus()`);const beforeColor=await evaluate('document.body.dataset.color');await key('Enter');assert.notEqual(await evaluate('document.body.dataset.color'),beforeColor,'Native keyboard theme toggle');await key('Enter');
+ await evaluate(`document.querySelector('[data-merchant="WStorm AI"]').click();document.getElementById('close-detail').click();const select=document.getElementById('layout-choice');select.value='A';select.dispatchEvent(new Event('change'));select.value='B';select.dispatchEvent(new Event('change'))`);assert(await evaluate(`document.querySelector('[data-merchant="WStorm AI"]').getAttribute('aria-pressed')==='true'`),'Selected supplier retained across layouts');
+ await evaluate("document.querySelector('[data-merchant=\"WStorm AI\"]').focus()");await key('Enter');assert(await evaluate("document.getElementById('detail').open"),'Native keyboard Enter opens candidate');await key('Escape');assert(await evaluate("!document.getElementById('detail').open && document.activeElement.dataset.merchant==='WStorm AI'"),'Native ESC returns candidate focus');
  await evaluate("location.hash='quotes'");await sleep(100);await evaluate("document.getElementById('open-filters').click()");
  for(let n=0;n<14;n++){await key('Tab');assert(await evaluate("document.getElementById('filters').contains(document.activeElement)"),'Filter focus remains inside sheet');}
  await key('Tab','Tab',8);assert(await evaluate("document.getElementById('filters').contains(document.activeElement)"),'Reverse Tab remains in sheet');await key('Escape');assert(await evaluate("!document.getElementById('filters').classList.contains('open') && document.activeElement.id==='open-filters'"),'ESC filter focus');
  await evaluate("document.querySelector('.nav-toggle').click()");for(let n=0;n<12;n++){await key('Tab');assert(await evaluate("document.querySelector('.sidebar').contains(document.activeElement)"),'Navigation focus contained');}await key('Escape');assert(await evaluate("!document.querySelector('.sidebar').classList.contains('open') && document.activeElement.classList.contains('nav-toggle')"),'Native nav ESC restores focus');
  await evaluate("location.hash='overview'");await sleep(60);await evaluate("location.hash='quotes'");await sleep(60);await evaluate("document.querySelector('.detail-button').focus()");await key('Enter');assert(await evaluate("document.getElementById('detail').open"),'SKU keyboard Enter');await evaluate('history.back()');await sleep(150);assert(await evaluate("!document.getElementById('detail').open && !document.getElementById('overview').hidden"),'Browser back closes sheet and returns overview');
- results.push({status:'PASS',width:390,checks:['native keyboard Enter','native ESC candidate focus','14 Tab steps confined','reverse Tab confined','filter ESC restores focus','navigation Tab confined','navigation ESC focus','browser back closes SKU sheet']});
+ results.push({status:'PASS',width:390,checks:['fresh profile default B dark / menu closed','native theme toggle Enter','selected supplier survives layout','native keyboard Enter','native ESC candidate focus','14 Tab steps confined','reverse Tab confined','filter ESC restores focus','navigation Tab confined','navigation ESC focus','browser back closes SKU sheet']});
  for(const [name,width,height,hash] of [['desktop-routes',1280,1100,'routes'],['mobile-routes',390,1000,'routes'],['desktop-phone',1280,1000,'phone'],['mobile-phone',390,1000,'phone'],['desktop-claude',1280,1100,'claude'],['mobile-claude',390,1000,'claude'],['desktop-timeline',1280,1100,'timeline'],['mobile-timeline',390,1000,'timeline'],['desktop-sources',1280,1000,'sources'],['mobile-sources',390,1000,'sources'],['desktop-1440',1440,1000,'overview'],['tablet-overview',768,1000,'overview'],['desktop-overview',1280,1100,'overview'],['desktop-quotes',1280,1200,'quotes'],['mobile-overview',390,1000,'overview'],['mobile-quotes',390,1100,'quotes']]){
    await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:width<700});await navigate(hash);await evaluate('window.scrollTo(0,0)');await sleep(100);const shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});fs.writeFileSync(path.join(out,name+'.png'),Buffer.from(shot.data,'base64'));
  }
  for(const [name,expression] of [['mobile-navigation',"document.querySelector('.nav-toggle').click()"],['mobile-filter-sheet',"document.getElementById('open-filters').click()"],['mobile-detail-drawer',"document.querySelector('.detail-button').click()"],['mobile-quote-cards',"document.getElementById('result-count').scrollIntoView({behavior:'instant'})"],['mobile-empty-results',"document.getElementById('q').value='no-match-987654';document.getElementById('q').dispatchEvent(new Event('input'));document.getElementById('result-count').scrollIntoView({behavior:'instant'})"]]){
    await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await navigate('quotes');await evaluate('window.scrollTo(0,0)');await evaluate(expression);await sleep(100);const shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});fs.writeFileSync(path.join(out,name+'.png'),Buffer.from(shot.data,'base64'));
  }
- fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify(results,null,2));console.log('PASS: actual 1440/1280/390/768px Chrome viewports, all modules and 21 screenshots');
+
+ // Three appearances, all seven modules, fresh navigations and real screenshots.
+ const appearanceResults=[];
+ for(const width of [1280,390])for(const [layout,color] of [['B','dark'],['B','light'],['A','light']])for(const hash of ['overview','quotes','routes','phone','claude','timeline','sources']){
+   await send('Emulation.setDeviceMetricsOverride',{width,height:1100,deviceScaleFactor:1,mobile:width<700});await evaluate(`localStorage.clear()`);await navigate(hash);
+   await evaluate(`(() => {const select=document.getElementById('layout-choice');select.value='${layout}';select.dispatchEvent(new Event('change'));if('${layout}'==='B'&&document.body.dataset.color!=='${color}')document.getElementById('color-choice').click();window.scrollTo(0,0);})()`);await sleep(60);
+   const observations=await evaluate(`(() => {
+     if(document.documentElement.scrollWidth>innerWidth)throw Error('Appearance module overflow');
+     if(innerWidth<700&&(document.querySelector('.sidebar').classList.contains('open')||getComputedStyle(document.querySelector('.sidebar')).visibility!=='hidden'))throw Error('Mobile nav obscures initial page');
+     if(innerWidth>1050&&document.body.dataset.layout==='A'&&document.querySelectorAll('.evidence-row')[3].getBoundingClientRect().bottom>innerHeight)throw Error('A four compact rows must fit first viewport');
+     const rgb=s=>(s.match(/[0-9.]+/g)||[]).map(Number),l=c=>c.slice(0,3).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4}).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
+     const samples=[];for(const n of [...document.querySelectorAll('a,button,label,input,select,.unknown,.prohibited,.prose,.small-note')].filter(n=>n.getClientRects().length&&n.textContent.trim()).slice(0,180)){
+       const style=getComputedStyle(n);let p=n,bg;while(p){bg=rgb(getComputedStyle(p).backgroundColor);if(bg.length<4||bg[3]>.99)break;p=p.parentElement;}
+       if(!p)continue;const a=l(rgb(style.color)),b=l(bg),ratio=(Math.max(a,b)+.05)/(Math.min(a,b)+.05),large=parseFloat(style.fontSize)>=24||(parseFloat(style.fontSize)>=18.66&&parseInt(style.fontWeight)>=700);if(ratio<(large?3:4.5)-.01)throw Error('Contrast '+ratio.toFixed(2)+' '+n.className+' '+n.textContent.slice(0,35));samples.push(ratio);
+     }
+     return {layout:document.body.dataset.layout,color:document.body.dataset.color,width:innerWidth,contrastSamples:samples.length,minContrast:Math.min(...samples)};
+   })()`);appearanceResults.push({...observations,module:hash});
+   const shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});fs.writeFileSync(path.join(out,`v15-${layout}-${color}-${width}-${hash}.png`),Buffer.from(shot.data,'base64'));
+ }
+ results.push({status:'PASS',checks:['42 actual module / appearance screenshots','mobile default nav hidden in all appearances','A four compact rows visible','actual computed text contrast WCAG AA'],appearances:appearanceResults});
+ // Outside click and appearance changes close navigation; selection remains intact.
+ await navigate('overview');await evaluate(`document.querySelector('.nav-toggle').click();document.querySelector('.nav-backdrop').click()`);assert(await evaluate("!document.querySelector('.sidebar').classList.contains('open')"),'Outside click closes nav');
+ await evaluate(`document.querySelector('.nav-toggle').click();document.getElementById('layout-choice').value='B';document.getElementById('layout-choice').dispatchEvent(new Event('change'));`);assert(await evaluate("!document.querySelector('.sidebar').classList.contains('open')"),'Appearance closes responsive nav');
+
+ for(const [layout,color] of [['B','dark'],['B','light'],['A','light']]){
+   await evaluate(`localStorage.setItem('mydotwork-appearance',JSON.stringify({layout:'${layout}',color:'${color}'}))`);await navigate('quotes');await send('Page.bringToFront');
+   await evaluate(`document.querySelector('.nav-toggle').focus()`);await key('Enter');assert(await evaluate(`document.querySelector('.sidebar').classList.contains('open')`),'Appearance native nav Enter');await key('Tab');assert(await evaluate(`document.querySelector('.sidebar').contains(document.activeElement)`),'Appearance native nav Tab '+await evaluate('document.activeElement.outerHTML')); await key('Escape');assert(await evaluate(`document.activeElement.classList.contains('nav-toggle')`),'Appearance native nav Escape focus');
+   await evaluate(`document.getElementById('open-filters').focus()`);await key('Enter');assert(await evaluate(`document.getElementById('filters').classList.contains('open')`),'Appearance native filter Enter');await key('Tab');assert(await evaluate(`document.getElementById('filters').contains(document.activeElement)`),'Appearance native filter Tab');await key('Escape');assert(await evaluate(`document.activeElement.id==='open-filters'`),'Appearance filter Escape focus');
+ }
+ results.push({status:'PASS',checks:['B dark / B light / A light native Enter, Tab and Escape for navigation and filters']});
+ fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify(results,null,2));console.log('PASS: actual 1440/1280/390/768px Chrome viewports, all modules in three appearances, computed contrast, and actual screenshots');
  }finally{if(ws){try{await send('Browser.close');}catch(err){}ws.close();}child.kill();}})().catch(err=>{console.error(err);process.exitCode=1;});
