@@ -11,7 +11,7 @@ def json_text(value):
     return json.dumps(value, ensure_ascii=False, indent=2) + '\n'
 
 def page(title, subtitle, body, version, script=''):
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>{escape(title)} · MyDotWork v{escape(version)}</title><style>{CSS}</style></head><body><header><small>MYDOTWORK / PUBLIC RECORDS · v{escape(version)}</small><h1>{escape(title)}</h1><p>{escape(subtitle)}</p></header><nav aria-label="栏目"><a href="../research/2026-10-02-round2.html">AI上游调研</a><a href="https://1337816143.github.io/MyDotWork/">供货与源头研究</a><a href="../chat/index.html">聊天原文</a><a href="../projects/index.html">项目进度</a><a href="https://1337816143.github.io/Evolution/">个人进化网站</a></nav><main>{body}</main><footer>公开归档 · 按真实记录保留来源时间与范围 · v{escape(version)}</footer>{script}</body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>{escape(title)} · MyDotWork v{escape(version)}</title><style>{CSS}</style></head><body><header><small>MYDOTWORK / PUBLIC RECORDS · v{escape(version)}</small><h1>{escape(title)}</h1><p>{escape(subtitle)}</p></header><nav aria-label="栏目"><a href="../dashboard/index.html">AI研究工作台</a><a href="../research/2026-10-02-round2.html">AI上游调研</a><a href="https://1337816143.github.io/MyDotWork/">供货与源头研究</a><a href="../chat/index.html">聊天原文</a><a href="../projects/index.html">项目进度</a><a href="https://1337816143.github.io/Evolution/">个人进化网站</a></nav><main>{body}</main><footer>公开归档 · 按真实记录保留来源时间与范围 · v{escape(version)}</footer>{script}</body></html>'''
 
 def build_archive(out, version):
     chat = json.loads((ROOT / 'data/dot-chat.json').read_text())
@@ -26,9 +26,9 @@ def build_archive(out, version):
     coverage = {**coverage, 'messageCount': len(messages), 'userCount': sum(m['role'] == 'user' for m in messages), 'assistantCount': sum(m['role'] == 'assistant' for m in messages), 'textCharacters': sum(len(m['text']) for m in messages), 'contentVersion': version}
     chat = {**chat, 'coverage': coverage}
     for directory in ['chat','projects']: (out / directory).mkdir(parents=True, exist_ok=True)
-    (out / 'chat/messages.json').write_text(json_text(chat))
-    (out / 'chat/coverage.json').write_text(json_text(coverage))
-    (out / 'projects/status.json').write_text(json_text(projects))
+    (out / 'chat/messages.json').write_text(json_text(chat), encoding='utf-8', newline='\n')
+    (out / 'chat/coverage.json').write_text(json_text(coverage), encoding='utf-8', newline='\n')
+    (out / 'projects/status.json').write_text(json_text(projects), encoding='utf-8', newline='\n')
     limits = ''.join(f'<li>{escape(s)}</li>' for s in coverage['limitations'])
     body = f'''<section class="panel"><div class="stats"><div class="stat"><b>{len(messages)}</b><small>可见消息</small></div><div class="stat"><b>{coverage['userCount']}</b><small>用户消息</small></div><div class="stat"><b>{coverage['assistantCount']}</b><small>dot消息</small></div></div><p class="meta">覆盖起点：{escape(coverage['start'])}<br>覆盖终点：{escape(coverage['end'])} · 时间保留原始UTC偏移</p><a href="messages.json" download>下载脱敏原文 JSON</a> · <a href="coverage.json">覆盖说明 JSON</a></section><section class="panel notice"><h2>公开范围与完整性</h2><p>用户明确同意公开当前对话原文及项目进度，包括私人关系、未公开项目与Git历史。密码、Token、身份证号、银行卡号、签名链接等秘密移除并保留标记，其余可见文字不改写。下方是历史原话，后续修正以时间更晚的消息为准。</p><p>本次已分页读取到工具可见历史末尾；这不等于服务端所有历史、已删除消息或附件全部齐全。</p><ul>{limits}</ul><p>本页只归档用户与dot可见对话文字，不含内部提示、工具报告、内部记忆原件或其他Codex/GPT会话全文。空文字消息保留真实ID和时间；附件本体未收录。</p></section><section class="controls" aria-label="筛选聊天"><label for="query">搜索原文</label><input type="search" id="query" placeholder="关键词、项目或消息ID"><label for="role">角色</label><select id="role"><option value="">全部</option><option value="user">用户</option><option value="assistant">dot</option></select><button id="reset" type="button">重置</button><span id="count" role="status">{len(messages)} 条</span></section>'''
     for m in messages:
@@ -36,7 +36,7 @@ def build_archive(out, version):
         empty = '<p class="meta">此消息没有可见文字，附件本体未纳入。</p>' if not m['text'] else ''
         body += f'''<article class="record {m['role']}" id="{escape(m['id'], quote=True)}" data-role="{m['role']}"><header><b>{role}</b><time class="meta">{escape(m['time'])}</time></header><a class="meta" href="#{escape(m['id'], quote=True)}">{escape(m['id'])}</a><div class="text">{escape(m['text'])}</div>{empty}</article>'''
     script = '''<script>(()=>{const q=document.getElementById('query'),role=document.getElementById('role'),items=[...document.querySelectorAll('article.record')],count=document.getElementById('count');function filter(){const value=q.value.trim().toLocaleLowerCase();let n=0;items.forEach(item=>{item.hidden=!!((role.value&&item.dataset.role!==role.value)||(value&&!item.textContent.toLocaleLowerCase().includes(value)));if(!item.hidden)n++});count.textContent=n+' / '+items.length+' 条'}q.addEventListener('input',filter);role.addEventListener('change',filter);document.getElementById('reset').addEventListener('click',()=>{q.value='';role.value='';filter();q.focus()})})();</script>'''
-    (out / 'chat/index.html').write_text(page('与 dot 的聊天原文','按时间顺序保留已取得的可见原话；秘密已移除，覆盖缺口明确记录',body,version,script))
+    (out / 'chat/index.html').write_text(page('与 dot 的聊天原文','按时间顺序保留已取得的可见原话；秘密已移除，覆盖缺口明确记录',body,version,script), encoding='utf-8', newline='\n')
     body = f'''<section class="panel notice"><p>{escape(projects['notice'])}</p><p class="meta">整理时间：{escape(projects['updatedAt'])} · {len(projects['projects'])} 个项目</p><a href="status.json" download>下载项目进度 JSON</a></section><div class="grid">'''
     for i,p in enumerate(projects['projects']):
         body += f'''<article class="record" id="project-{i+1}"><span class="badge">{escape(p['status'])}</span><h2>{escape(p['name'])}</h2><p>{escape(p['progress'])}</p><h3>未完成与边界</h3><p>{escape(p['gaps'])}</p><p class="meta">截至 {escape(p['asOf'])}<br>{escape(p['evidenceLevel'])}</p>'''
@@ -44,5 +44,5 @@ def build_archive(out, version):
             body += f'''<section class="panel"><span class="badge">{escape(child['status'])}</span><h3>{escape(child['name'])}</h3><p>{escape(child['progress'])}</p><p class="meta">未完成：{escape(child['gaps'])}</p></section>'''
         body += '</article>'
     body += '</div>'
-    (out / 'projects/index.html').write_text(page('项目进度总览','把当前状态、已有结果、未完成事项与验收范围分开记录',body,version))
+    (out / 'projects/index.html').write_text(page('项目进度总览','把当前状态、已有结果、未完成事项与验收范围分开记录',body,version), encoding='utf-8', newline='\n')
     return coverage

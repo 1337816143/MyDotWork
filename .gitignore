@@ -4,3 +4,5 @@ __pycache__/
 .env
 inputs/
 node_modules/
+output/
+src/index.html

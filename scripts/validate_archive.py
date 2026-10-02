@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, parse_qs, unquote
 from build_archive import ARTIFACTS
 from build_research import RESEARCH_ARTIFACTS
+from build_dashboard import DASHBOARD_ARTIFACTS
 
 ROOT = Path(__file__).resolve().parents[1]
 PATTERNS = [
@@ -71,7 +72,7 @@ def validate():
     assert html2.count('data-eligibility=')==10 and '标准条款禁止转售' in html2 and '同SKU' in html2
     manifest=json.loads((ROOT/'dist/release-manifest.json').read_text())
     entries={x['path']:x for x in manifest['artifacts']}
-    assert set(entries)=={'index.html',*ARTIFACTS,*RESEARCH_ARTIFACTS}, 'Unexpected publication file'
+    assert set(entries)=={'index.html',*ARTIFACTS,*RESEARCH_ARTIFACTS,*DASHBOARD_ARTIFACTS}, 'Unexpected publication file'
     for name,entry in entries.items():
         content=(ROOT/'dist'/name).read_bytes()
         assert hashlib.sha256(content).hexdigest()==entry['sha256'] and len(content)==entry['bytes']

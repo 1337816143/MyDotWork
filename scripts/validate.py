@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 html = (ROOT / 'dist/index.html').read_text()
 manifest = json.loads((ROOT / 'dist/release-manifest.json').read_text())
-assert manifest['reportSha256'] == hashlib.sha256(html.encode()).hexdigest()
+assert manifest['reportSha256'] == hashlib.sha256((ROOT / 'dist/index.html').read_bytes()).hexdigest()
 assert 'v' + manifest['contentVersion'] in html
 assert '__OFFERS__' not in html
 for pattern in [r'libfile_[A-Za-z0-9]+', r'/workspace/', r'(?i)https?://[^\s<>\"]*[?&](?:token|sig|X-Amz-Signature)=', r'gh[pousr]_[A-Za-z0-9]{20,}', r'github_pat_[A-Za-z0-9_]{20,}', r'-----BEGIN [A-Z ]*PRIVATE KEY-----']:
@@ -32,3 +32,6 @@ print(f'PASS: standalone HTML, {len(data)} records, anchors, version, hash, and 
 
 from validate_archive import validate
 validate()
+
+from validate_dashboard import validate_dashboard
+validate_dashboard()
