@@ -29,3 +29,6 @@ data = json.loads((ROOT / 'src/data.json').read_text())
 assert len(data) >= 100
 assert len({x['id'] for x in data}) == len(data)
 print(f'PASS: standalone HTML, {len(data)} records, anchors, version, hash, and credential-pattern scan')
+
+from validate_archive import validate
+validate()

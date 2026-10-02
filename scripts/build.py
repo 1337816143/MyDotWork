@@ -3,6 +3,8 @@ import hashlib
 import json
 import os
 import runpy
+from build_archive import build_archive, ARTIFACTS
+from build_research import build_research, RESEARCH_ARTIFACTS
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,6 +23,11 @@ manifest = {
     'reportSha256': hashlib.sha256(payload).hexdigest(),
     'reportPath': 'index.html',
     'researchDate': '2026-10-01',
+    'supplementResearchDate': '2026-10-02',
 }
+coverage = build_archive(OUT, version)
+build_research(OUT, version)
+manifest['archive'] = {'source': 'current-dot-visible-chat', 'messageCount': coverage['messageCount'], 'start': coverage['start'], 'end': coverage['end']}
+manifest['artifacts'] = [{'path': name, 'sha256': hashlib.sha256((OUT/name).read_bytes()).hexdigest(), 'bytes': (OUT/name).stat().st_size} for name in ['index.html', *ARTIFACTS, *RESEARCH_ARTIFACTS]]
 (OUT / 'release-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps(manifest, ensure_ascii=False))
