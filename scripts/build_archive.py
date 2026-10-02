@@ -11,7 +11,7 @@ def json_text(value):
     return json.dumps(value, ensure_ascii=False, indent=2) + '\n'
 
 def page(title, subtitle, body, version, script=''):
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>{escape(title)} · MyDotWork v{escape(version)}</title><style>{CSS}</style></head><body><header><small>MYDOTWORK / PUBLIC RECORDS · v{escape(version)}</small><h1>{escape(title)}</h1><p>{escape(subtitle)}</p></header><nav aria-label="栏目"><a href="https://1337816143.github.io/MyDotWork/">供货与源头研究</a><a href="../chat/index.html">聊天原文</a><a href="../projects/index.html">项目进度</a><a href="https://1337816143.github.io/Evolution/">个人进化网站</a></nav><main>{body}</main><footer>公开归档 · 按真实记录保留来源时间与范围 · v{escape(version)}</footer>{script}</body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>{escape(title)} · MyDotWork v{escape(version)}</title><style>{CSS}</style></head><body><header><small>MYDOTWORK / PUBLIC RECORDS · v{escape(version)}</small><h1>{escape(title)}</h1><p>{escape(subtitle)}</p></header><nav aria-label="栏目"><a href="../research/2026-10-02-round2.html">AI上游调研</a><a href="https://1337816143.github.io/MyDotWork/">供货与源头研究</a><a href="../chat/index.html">聊天原文</a><a href="../projects/index.html">项目进度</a><a href="https://1337816143.github.io/Evolution/">个人进化网站</a></nav><main>{body}</main><footer>公开归档 · 按真实记录保留来源时间与范围 · v{escape(version)}</footer>{script}</body></html>'''
 
 def build_archive(out, version):
     chat = json.loads((ROOT / 'data/dot-chat.json').read_text())
@@ -39,7 +39,10 @@ def build_archive(out, version):
     (out / 'chat/index.html').write_text(page('与 dot 的聊天原文','按时间顺序保留已取得的可见原话；秘密已移除，覆盖缺口明确记录',body,version,script))
     body = f'''<section class="panel notice"><p>{escape(projects['notice'])}</p><p class="meta">整理时间：{escape(projects['updatedAt'])} · {len(projects['projects'])} 个项目</p><a href="status.json" download>下载项目进度 JSON</a></section><div class="grid">'''
     for i,p in enumerate(projects['projects']):
-        body += f'''<article class="record" id="project-{i+1}"><span class="badge">{escape(p['status'])}</span><h2>{escape(p['name'])}</h2><p>{escape(p['progress'])}</p><h3>未完成与边界</h3><p>{escape(p['gaps'])}</p><p class="meta">截至 {escape(p['asOf'])}<br>{escape(p['evidenceLevel'])}</p></article>'''
+        body += f'''<article class="record" id="project-{i+1}"><span class="badge">{escape(p['status'])}</span><h2>{escape(p['name'])}</h2><p>{escape(p['progress'])}</p><h3>未完成与边界</h3><p>{escape(p['gaps'])}</p><p class="meta">截至 {escape(p['asOf'])}<br>{escape(p['evidenceLevel'])}</p>'''
+        for child in p.get('children', []):
+            body += f'''<section class="panel"><span class="badge">{escape(child['status'])}</span><h3>{escape(child['name'])}</h3><p>{escape(child['progress'])}</p><p class="meta">未完成：{escape(child['gaps'])}</p></section>'''
+        body += '</article>'
     body += '</div>'
     (out / 'projects/index.html').write_text(page('项目进度总览','把当前状态、已有结果、未完成事项与验收范围分开记录',body,version))
     return coverage

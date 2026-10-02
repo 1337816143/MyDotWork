@@ -1,0 +1,609 @@
+{
+  "title": "AI上游调研 · 第二轮核查",
+  "researchDate": "2026-10-02",
+  "observedWindowUTC": "2026-10-02T06:26:19Z/2026-10-02T06:37:59Z",
+  "status": "进行中",
+  "invoice": {
+    "title": "大陆发票候选：第二轮主体、条款与交易证据",
+    "observed_window_utc": "2026-10-02T06:26:19Z/2026-10-02T06:37:59Z",
+    "scope": "公开只读。未注册、登录、提交订单、付款、填写任何身份/账号资料、联系商家或验真发票。未修改当前网站。",
+    "conclusion": "没有候选达到“已验证中国大陆正规发票最低”标准。贝果143.10仍是可计算零售商称含票价，但现行标准条款禁止转售倒卖，不能直接作可分销上游。新低价HuiAI133的发票费用未公开，不能填0。",
+    "official_registry_check": {
+      "gsxt": "https://www.gsxt.gov.cn/：浏览器ERR_BLOCKED_BY_CLIENT；web工具403，未取得登记详情",
+      "miit": "https://beian.miit.gov.cn/：web工具521，未取得备案结果",
+      "exact_name_search": "益阳市赫山区必高科技有限公司、成都游手科技有限公司精确官方域名搜索未取得相符可读登记记录；未命中不等于主体不存在",
+      "payment_invoice_match": "未取得任何候选的实际收款主体与开票主体相符证明",
+      "invoice_validation": "无实际订单、可验真完整票证，不作验真结论"
+    },
+    "prior_candidates": [
+      {
+        "merchant": "贝果科技",
+        "tier": "Plus信用卡月卡",
+        "display_price_cny": 135,
+        "invoice_rate_merchant_claim": 0.06,
+        "invoice_total_calculated_cny": 143.1,
+        "invoice_payable_preview": null,
+        "stock_live": "有货",
+        "invoice_type": "增值税发票，普/专未明",
+        "legal_entity_merchant_claim": "益阳市赫山区必高科技有限公司",
+        "uscc": null,
+        "official_registry_verified": false,
+        "invoice_issuer_independently_verified": false,
+        "payment_legal_entity": null,
+        "min_qty": 1,
+        "login_required": true,
+        "invoice_process": "结算可勾选同时开票，或付款后我的订单另付6%申请；发票抬头自填。未见只许企业批量的门槛。",
+        "new_material_evidence": [
+          "2026-10-01版服务条款列明该合同主体，与价格页自称主体一致，只构成一方公开承诺",
+          "第五节明确不得用于转售倒卖。用于转售需另行授权/合同",
+          "商品页允许选择票面是否出现ChatGPT字样；不能据此认可可随意改不实品目",
+          "一处账户前提不满足称核销不退，错误表又称不消耗；是否核销必须书面明确",
+          "卡密交付即主要履约；已核销不支持退款，未到账向上游追查。不能只摘用未使用可退"
+        ],
+        "urls": [
+          "https://bigolab.com/terms",
+          "https://bigolab.com/chongzhi/chatgpt-plus",
+          "https://bigolab.com/privacy"
+        ],
+        "decision": "个人自用含票询证优先；标准条款下排出可转售上游名单。未经书面授权不得视作可分销。"
+      },
+      {
+        "merchant": "麦门商店",
+        "tier": "Pro100 / Pro200",
+        "invoice_total_merchant_claim_cny": {
+          "pro100": 750,
+          "pro200": 1250
+        },
+        "invoice_type": "SKU称含普票相关费用",
+        "legal_entity_merchant_claim": null,
+        "uscc": null,
+        "payment_legal_entity": null,
+        "invoice_issuer_independently_verified": false,
+        "invoice_process": "公开SKU可单件选择，未读到开票主体、具体品目、出票时效、个人抬头条件",
+        "new_material_evidence": [
+          "06:32:48实时Pro200卡充含普票SKU1250，库存49；卡充无票1200库存65",
+          "Pro200当前正文称2026-09-30新号/老号恢复20x订阅；同页又写200美元是10x",
+          "当前页未再出现先前记录的过去30天20x资格限制，不能把旧限制当当前确认事实；也不能把新号可充/20x商家说法当官方保证",
+          "卡充仍要求当前无Plus/Go/Pro，不建议微软邮箱/零元购等历史账号",
+          "iOS 200美元含普票SKU1550，不能与卡充1250混合",
+          "非商店问题退款收0.6%，封号与特定掉订阅情形不保"
+        ],
+        "urls": [
+          "https://ouvg.top/buy/273",
+          "https://ouvg.top/buy/276"
+        ],
+        "decision": "Pro单件含票报价可继续书面询证；官方权益、商家主体、票据链未闭合。"
+      },
+      {
+        "merchant": "ProPlus.CV",
+        "tier": "Plus",
+        "display_price_cny": 178,
+        "invoice_total_prior_ui_cny": 192,
+        "invoice_rate_label": "8%但界面取整结果未解释；不是192.24",
+        "invoice_type": "默认增值税普通发票，专票需客服",
+        "legal_entity_merchant_claim": null,
+        "uscc": null,
+        "payment_legal_entity": null,
+        "invoice_process": "普通票下单勾选，付款后会员中心填单位名称和税号；未勾选可提示补差价。专票、对公、多账号才联系客服",
+        "new_material_evidence": [
+          "企业页确实提供自助普票流程，不需把所有单件开票都说成必须企业定制",
+          "关于/条款/企业页未披露法定公司全称、完整税号、样票或收款主体",
+          "站方称按周期质保、失败100%退；条款又称具体以购买页和客服说明为准",
+          "明确自称无OpenAI等授权"
+        ],
+        "urls": [
+          "https://proplus.cv/enterprise/",
+          "https://proplus.cv/about/",
+          "https://proplus.cv/terms/"
+        ],
+        "decision": "可书面询证备选，成本高于贝果，不能用企业页宣传替代主体核验。"
+      },
+      {
+        "merchant": "gongsi.one",
+        "tier": "Plus月付1-4账号",
+        "invoice_total_merchant_claim_cny": 165,
+        "invoice_type": "商称6%数电专票/普票",
+        "legal_entity_merchant_claim": "成都游手科技有限公司（报价章与示例销售方）",
+        "uscc": null,
+        "displayed_placeholder_uscc": "91110105MA88XXXXXX",
+        "new_material_evidence": [
+          "官网示例销售方和报价章出现完整公司名",
+          "样张同时含贵司企业法定名称、X占位税号和遮挡账户；无法验真",
+          "示例按钮旁的实证已验真是商家文案，不能作研究验证结果",
+          "官方登记精确搜索未获相符结果，不等于主体不存在"
+        ],
+        "urls": [
+          "https://gongsi.one/",
+          "https://gongsi.one/docs/pricing/"
+        ],
+        "decision": "可要求实际资质与合同，但在取得真实材料前降低样张证据权重。"
+      }
+    ],
+    "new_candidates": [
+      {
+        "merchant": "HuiAI",
+        "tier": "Plus卡充单月",
+        "price_live_cny": 138,
+        "coupon": "HUIAI@5（官网国庆公告）",
+        "discount_live_cny": 5,
+        "discounted_live_cny": 133,
+        "invoice_total_cny": null,
+        "invoice_type": null,
+        "invoice_cost": null,
+        "invoice_issuer": null,
+        "claim_source": "卖家V2EX推广称可开票，仅为发现线索；本轮官网没有读取到可计算票费或发票类型",
+        "qualifications": "无登录即可选方案/输入公开优惠码查看价格；下一步要求完整Session JSON、ChatGPT邮箱与用户ID，未填写，未继续支付",
+        "new_material_evidence": [
+          "实时表单验证优惠后133，不采用论坛128旧宣传",
+          "完整Session属于高敏凭据，不能让助手传递",
+          "条款把经营主体指向页底，但本轮已读公开正文未找到可核公司名/税号；抓取版本包含未完成服务承诺字段，不能作完整资质"
+        ],
+        "urls": [
+          "https://www.huiai.me/",
+          "https://www.huiai.me/subscribe?new=1",
+          "https://www.huiai.me/terms",
+          "https://www.huiai.me/help"
+        ],
+        "decision": "潜在更低含票询证优先，但133不是含票价，凭据风险高。"
+      },
+      {
+        "merchant": "WStorm AI",
+        "tier": "Plus单月",
+        "price_live_cny": 140,
+        "invoice_surcharge_merchant_claim": 0.03,
+        "invoice_total_calculated_cny": 144.2,
+        "invoice_total_live_preview_cny": null,
+        "invoice_type": null,
+        "invoice_issuer": null,
+        "invoice_process": "需要发票+3%；仅付款后30天内申请，未勾选订单不支持开票。点击选项仅查看开票须知，未点击确认并开票、未订单/付款",
+        "qualifications": "1件起，支付宝按钮显示140；自助充值要求token，未提交",
+        "new_material_evidence": [
+          "仅比贝果计算含票价高1.10",
+          "实时商品说明为无质保售后、掉订阅按天退、封号只退利润，不应泛称全额质保",
+          "无公开公司全称/税号/实际样票"
+        ],
+        "urls": [
+          "https://wstormai.store/store/chatgpt",
+          "https://wstormai.store/"
+        ],
+        "decision": "价格接近，可询证票种、主体、含全部费用报价和封号退款算法。"
+      },
+      {
+        "merchant": "PAYPRM / 莱特智能",
+        "tier": "Plus单月",
+        "price_live_cny": 155,
+        "invoice_total_cny": null,
+        "invoice_cost": null,
+        "invoice_type": null,
+        "invoice_issuer": null,
+        "legal_entity_merchant_claim": "仅PAYPRM莱特智能运营团队，不是法定公司名",
+        "invoice_process": "下单前或完成后联系客服，税点/条件/金额由客服结合订单核验；网站价不含税",
+        "new_material_evidence": [
+          "FAQ明确普通收据不等同大陆税务发票",
+          "实时Plus155，Pro5x830、页面Pro20x1460，不是本轮更低价",
+          "企业/个人用户均覆盖，但单件开票总成本无公开闭合"
+        ],
+        "urls": [
+          "https://www.payprm.com/shop?category=chatgpt",
+          "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+          "https://www.payprm.com/about"
+        ],
+        "decision": "保留询证备选，价格无优势，不列含票最低。"
+      },
+      {
+        "merchant": "token5555",
+        "tier": "Plus单月",
+        "price_live_cny": 158,
+        "payment_fee_rate": 0.012,
+        "payment_fee_preview_cny": 1.9,
+        "payable_preview_cny": 159.9,
+        "invoice_total_cny": null,
+        "invoice_cost": null,
+        "invoice_type": null,
+        "invoice_issuer": null,
+        "invoice_process": "商称按实际金额开票、联系客服；对公限金额1万元以上",
+        "new_material_evidence": [
+          "首屏加载中的148是占位/旧数据；加载后现价158，打开单件确认弹窗含支付费159.90",
+          "无任何手机号/验证码提交，未点击确认并选择支付方式",
+          "关于/条款未见法定主体税号；仅品牌和联系邮箱",
+          "发票支持不等于159.90含票"
+        ],
+        "urls": [
+          "https://token5555.com/",
+          "https://token5555.com/about.html",
+          "https://token5555.com/terms.html"
+        ],
+        "decision": "费用结构可读但不更便宜，发票总价未知。"
+      },
+      {
+        "merchant": "PlusGO",
+        "tier": "Plus单月个人下单",
+        "price_live_cny": 169,
+        "invoice_total_cny": null,
+        "invoice_supported_same_sku": false,
+        "invoice_process": "普通购买页明确本次服务不提供发票；企业采购要付款前另谈主体、票种、报价",
+        "new_material_evidence": [
+          "实时个人Plus169；不能把企业页支持发票拼到169单件商品",
+          "企业页明言合同与发票主体在采购对接时确认，没有公开实体验证",
+          "个人页面预勾选免责声明为页面初始状态；本轮未勾选/接受/下单"
+        ],
+        "urls": [
+          "https://plusgo.pro/plans",
+          "https://plusgo.pro/purchase?sku=plus",
+          "https://plusgo.pro/enterprise",
+          "https://plusgo.pro/terms"
+        ],
+        "decision": "排出169单件含票榜；企业报价另行询证，不视为普通Plus同价可开票。"
+      }
+    ],
+    "tax_scope": [
+      {
+        "url": "https://jiangsu.chinatax.gov.cn/art/2025/4/15/art_7656_498963.html",
+        "source": "国家税务总局2025-04-15图解，江苏税务转载；本轮云端浏览器看图",
+        "finding": "图解用消费者买沙发后被另索5个税点为例，说明经营者应依法如实开票，不能要求消费者额外支付税点。该材料不能替商家的开票服务费/税费背书，也不应被扩展为对所有事先议定B2B未税报价的概括判决。"
+      },
+      {
+        "url": "https://jiangsu.chinatax.gov.cn/art/2024/1/30/art_8349_449297.html",
+        "source": "国家税务总局令第56号，页面标注全文有效",
+        "finding": "实施细则第28、29条要求内容真实，购买方、销售方、商品或经营项目、金额与实际经营相符。开票品目要根据真实服务，不能按报销偏好任意替换。"
+      }
+    ],
+    "written_inquiry_pack": [
+      "开票主体完整法定名称、统一社会信用代码、营业执照或官方登记可核链接",
+      "一件一月、个人付款/企业抬头是否可开；是否另需企业协议或最低采购量",
+      "全部费用总额与票种（数电普票/专票）、税率/征收率、价税合计、真实服务品目、出票时间",
+      "合同卖方、支付账单商户、发票销售方是否一致；若不同，请解释委托收款/真实交易关系",
+      "允许购买用于转售/批量分销吗；需要哪些授权/独立合同，哪些商品可用",
+      "账号资格、实际套餐、因上游退款/争议/封号导致失败时的退赔和红票规则",
+      "可提供去除客户个人信息但保留公司主体与品目的样例供财务预审；真实成交后再核对本人订单完整票证，不把样张当验真"
+    ]
+  },
+  "invoiceText": "大陆发票候选第二轮证据核查\n时间：2026-10-02T06:26:19Z/2026-10-02T06:37:59Z\n范围：公开只读。未注册、登录、提交订单、付款、填写任何身份/账号资料、联系商家或验真发票。未修改当前网站。\n\n核心结论\n没有候选达到“已验证中国大陆正规发票最低”标准。贝果143.10仍是可计算零售商称含票价，但现行标准条款禁止转售倒卖，不能直接作可分销上游。新低价HuiAI133的发票费用未公开，不能填0。\n\n1. 贝果“最低可计算含票”需要改变使用场景标签\n贝果Plus135元+商称6%费用=143.10元。本轮确认2026-10-01版服务条款将“益阳市赫山区必高科技有限公司”写为合同主体，并允许结算勾选开票或付款后另付6%。仍未披露普票/专票、完整税号和实际支付商户。\n最重要的是第5节短引：“不得用于批量爬取、自动化脚本滥用、转售倒卖”。若用户寻找可分销的上游，此零售SKU不能直接纳入；需要独立书面分销授权或合同。条款称卡密发出即主要履约、核销不退，前置条件和失败处理也须问清。\nhttps://bigolab.com/terms\nhttps://bigolab.com/chongzhi/chatgpt-plus\n\n2. 麦门Pro含普票仍有价格线索，但资格描述更新且矛盾\nPro100含普票750沿用第一轮已选SKU证据；本轮06:32:48实时Pro200卡充1250含普票相关费用、库存49，iOS含票档另为1550。当前页面已改为“2026/09/30新号/老号恢复20x订阅”，同时又说200美元是10x；前轮过去30天20x资格文字不在当前正文，不能继续当现行确定限制。卡充仍要求当前无Plus/Go/Pro。不能用商家20x文案保证官方额度。\n票种只到“普票”层级，主体、税号、品目、出票期限仍全未核。\nhttps://ouvg.top/buy/273\nhttps://ouvg.top/buy/276\n\n3. ProPlus.CV流程更清楚，主体证据仍空缺\n192是第一轮勾选开票后的实际界面数值，不能改写成178×1.08=192.24。本轮企业页确认默认增值税普票可自助：下单勾选，付后会员中心填单位名称和税号；专票、对公、批量才需客服。企业/关于/条款页未取得法定公司名、税号、收款方和真实样票。\nhttps://proplus.cv/enterprise/\nhttps://proplus.cv/terms/\n\n4. gongsi.one新增主体只是商家模板中的名称\n官网报价章与示例销售方写“成都游手科技有限公司”，但样票客户仍是“贵司企业法定名称”，税号含X占位，账户遮挡。商家写的“实证已验真”不能视为本研究结论。仍需营业执照、完整企业税号、真实合同和实际订单票证；不能将占位样张直接称真实已验证发票。\nhttps://gongsi.one/\n\n新扩围5家\n\nHuiAI\n基础价格：138元；官网公开码HUIAI@5（官网国庆公告）已验证折后133元；\n开票流程：卖家V2EX推广称可开票，仅为发现线索；本轮官网没有读取到可计算票费或发票类型\n- 实时表单验证优惠后133，不采用论坛128旧宣传\n- 完整Session属于高敏凭据，不能让助手传递\n- 条款把经营主体指向页底，但本轮已读公开正文未找到可核公司名/税号；抓取版本包含未完成服务承诺字段，不能作完整资质\n判断：潜在更低含票询证优先，但133不是含票价，凭据风险高。\nhttps://www.huiai.me/\nhttps://www.huiai.me/subscribe?new=1\nhttps://www.huiai.me/terms\nhttps://www.huiai.me/help\n\nWStorm AI\n基础价格：140元；按商称规则计算含票144.2元，未完成含票结算预览；\n开票流程：需要发票+3%；仅付款后30天内申请，未勾选订单不支持开票。点击选项仅查看开票须知，未点击确认并开票、未订单/付款\n- 仅比贝果计算含票价高1.10\n- 实时商品说明为无质保售后、掉订阅按天退、封号只退利润，不应泛称全额质保\n- 无公开公司全称/税号/实际样票\n判断：价格接近，可询证票种、主体、含全部费用报价和封号退款算法。\nhttps://wstormai.store/store/chatgpt\nhttps://wstormai.store/\n\nPAYPRM / 莱特智能\n基础价格：155元；\n开票流程：下单前或完成后联系客服，税点/条件/金额由客服结合订单核验；网站价不含税\n- FAQ明确普通收据不等同大陆税务发票\n- 实时Plus155，Pro5x830、页面Pro20x1460，不是本轮更低价\n- 企业/个人用户均覆盖，但单件开票总成本无公开闭合\n判断：保留询证备选，价格无优势，不列含票最低。\nhttps://www.payprm.com/shop?category=chatgpt\nhttps://www.payprm.com/faq/receipt/invoice-or-receipt\nhttps://www.payprm.com/about\n\ntoken5555\n基础价格：158元；支付费预览1.9元，应付159.9元，发票费未知；\n开票流程：商称按实际金额开票、联系客服；对公限金额1万元以上\n- 首屏加载中的148是占位/旧数据；加载后现价158，打开单件确认弹窗含支付费159.90\n- 无任何手机号/验证码提交，未点击确认并选择支付方式\n- 关于/条款未见法定主体税号；仅品牌和联系邮箱\n- 发票支持不等于159.90含票\n判断：费用结构可读但不更便宜，发票总价未知。\nhttps://token5555.com/\nhttps://token5555.com/about.html\nhttps://token5555.com/terms.html\n\nPlusGO\n基础价格：169元；\n开票流程：普通购买页明确本次服务不提供发票；企业采购要付款前另谈主体、票种、报价\n- 实时个人Plus169；不能把企业页支持发票拼到169单件商品\n- 企业页明言合同与发票主体在采购对接时确认，没有公开实体验证\n- 个人页面预勾选免责声明为页面初始状态；本轮未勾选/接受/下单\n判断：排出169单件含票榜；企业报价另行询证，不视为普通Plus同价可开票。\nhttps://plusgo.pro/plans\nhttps://plusgo.pro/purchase?sku=plus\nhttps://plusgo.pro/enterprise\nhttps://plusgo.pro/terms\n\n官方核验进度与不能越过的边界\n- 国家企业信用公示系统在本浏览器报ERR_BLOCKED_BY_CLIENT，web读取403；未取得官方登记结果\n- 工信部备案入口web读取521；未核得备案，不得写成“未备案”\n- 对两个公司全称的官方域名搜索未获得相符可读记录，不等于公司不存在\n- 无候选取得实际收款方与发票方对应证明、真实出票或税局查验结果\n- 全部未知费用均保留未知，不填0；未做任何购买/外联/凭据提交\n\n税务材料的准确使用\n图解用消费者买沙发后被另索5个税点为例，说明经营者应依法如实开票，不能要求消费者额外支付税点。该材料不能替商家的开票服务费/税费背书，也不应被扩展为对所有事先议定B2B未税报价的概括判决。\nhttps://jiangsu.chinatax.gov.cn/art/2025/4/15/art_7656_498963.html\n实施细则第28、29条要求内容真实，购买方、销售方、商品或经营项目、金额与实际经营相符。开票品目要根据真实服务，不能按报销偏好任意替换。\nhttps://jiangsu.chinatax.gov.cn/art/2024/1/30/art_8349_449297.html\n\n建议询证顺序\n- 若用于转售：先问贝果标准条款禁止转售能否通过独立合同合法获得授权；在此以前移出可转售上游候选\n- 潜在更低含票：HuiAI先问133折后是否可开票、全部票费与主体；无法公开验证即不参与含票排名\n- 价格接近：WStorm计算144.20，与贝果差1.10，但票种/主体未知、封号仅退利润\n- Pro方案：麦门750/1250先锁定具体SKU、真实套餐、完整普票与收款主体\n- ProPlus、gongsi.one作为价较高备选，先取得完整资质与合同，不因页面“合规/验真”字样加分\n\n书面询证应一次问齐\n1. 开票主体完整法定名称、统一社会信用代码、营业执照或官方登记可核链接\n2. 一件一月、个人付款/企业抬头是否可开；是否另需企业协议或最低采购量\n3. 全部费用总额与票种（数电普票/专票）、税率/征收率、价税合计、真实服务品目、出票时间\n4. 合同卖方、支付账单商户、发票销售方是否一致；若不同，请解释委托收款/真实交易关系\n5. 允许购买用于转售/批量分销吗；需要哪些授权/独立合同，哪些商品可用\n6. 账号资格、实际套餐、因上游退款/争议/封号导致失败时的退赔和红票规则\n7. 可提供去除客户个人信息但保留公司主体与品目的样例供财务预审；真实成交后再核对本人订单完整票证，不把样张当验真\n\n审计材料\n说明：原始抓取可能来自索引/缓存，动态价格使用本轮云端浏览器已加载的公开UI。不得用页面加载前占位价或搜索旧价覆盖实时价格。\n\n",
+  "bigolabTermsText": "贝果科技转售限制核查\n核查时点：2026-10-02 06:35:46 UTC\n读取方式：dot云端浏览器公开页面，未登录、未下单、未接受条款\n精确URL：https://bigolab.com/terms\n页面标题：服务条款 - 贝果科技\n页面最后更新：2026-10-01\n\n合同主体（商家自行声明，未工商验真）：益阳市赫山区必高科技有限公司，经营bigolab.com「贝果科技」\n第五节「你的义务与禁止行为」必要短引：不得用于批量爬取、自动化脚本滥用、转售倒卖\n浏览器同时读到该项后续涉及账号被风控的行为；违反约定可被中止服务、不予退款，商家保留追责权利。\n\n判断：这是当前标准服务条款对用途的明示限制，不能把该站零售报价直接描述成可转售的上游报价。若用户购买目的为个人自用，135元Plus与另加6%开票费的商业报价仍可记录；若用于分销/转售，须先获得独立书面授权或适用的分销合同，并核对具体允许的商品、账号归属、退订/开票处理。\n\n相关价格页：https://bigolab.com/chongzhi/chatgpt-plus\n同轮浏览器公开页显示信用卡Plus单月135、有货；iOS140补货中。商家开票规则按售价乘1.06，故143.10只是商称收费规则的计算值，尚非已验证合规发票交易。\n工商、实际收款方、税号和发票查验结果仍未取得；不能据搜索未命中认定公司不存在。\n",
+  "routes": {
+    "title": "AI上游路线核查第二轮",
+    "as_of_utc": "2026-10-02",
+    "scope": "Read-only public first-party research. No registration, contact, payment or website changes.",
+    "routes": [
+      {
+        "id": "R1",
+        "route": "OpenAI 直接买个人会员",
+        "detail": "权利/产品：OpenAI 向合格本人提供个人订阅；购买不附转售账号、共享凭据或分发服务的许可。\n主体/客户地区：本人实际所在地、账号使用地以及支付卡发卡地区须合格；ChatGPT 支持名单未列中国大陆、香港、澳门。\n身份/卡/手机号：须真实账号及账单资料；普通 ChatGPT 注册和使用通常无手机验证，API 首个 key 是另一套要求，个别 Codex/安全验证流程不能据此省略。不能把“不要求每人上传身份证”理解为允许假身份。\n最低投入/折扣：Plus Web 为 $20/月（税及实际币种另计），无通常年付或一次预付多月路线；本轮没有常规个人批发折扣证据。\n个人会员交付：本人直接获得；经营者的批量代付或收集客户会话凭证，不在这些公开材料授予的商业权限内。\n自主度：低。可以自主付款、自助管理自己的订阅，不能由此成为个人许可发行人。\n可行条件：真实合格用户本人开通。若经营会员分销，缺的是权利人明确的 SKU、区域、客户和再销售授权，不是再找一张卡。\n来源：[S01–S04]"
+      },
+      {
+        "id": "R1b",
+        "route": "Anthropic 直接买 Claude Pro/Max",
+        "detail": "权利/产品：合格本人直接订阅Pro/Max，包含相应Claude Code用量；API另计。消费者条款禁止共享账号及转售原服务。\n主体/客户地区：本人须实际在支持地区并使用真实账号；大陆、香港、澳门不在当前名单。境外卡或赠礼不替代服务资格。\n身份/卡/手机号：Web只接受信用卡/借记卡；账单地址来自付款方式，并应真实反映收货/业务地点。Claude新账号需受支持地区能接收短信的号码；遇本人/企业验证应提交真实证件及必要自拍，不是向商家购买别人完成的身份。\n最低投入/折扣：Pro $20/月或$200/年；Max 5x $100/月、20x $200/月。税/币种依实际合格结账；Pro年付公开可省约16.7%，Max未在已读普通价格表提供年付。年费可用时不能拆成12份任意账号会员转售。\n个人会员交付：本人直接开通，可持续自行续费；批量开账号转售、借他人身份、把Team席位冒充个人Max不由这些条款授权。\n自主度：自用高、商业分销低。做源头供货仍需另行授权合同；官方付款只是采购来源证据。\n来源：[S11、S14–S15、S39–S40、S43–S44]"
+      },
+      {
+        "id": "R2",
+        "route": "OpenAI 官方 API → 自有商业应用",
+        "detail": "权利/产品：Services Agreement 第2.2节明确允许把 API 集成进经营者自己的应用，供其终端用户使用；第3节禁止倒卖账户访问及买卖/转让 API key。\n主体/客户地区：API 有独立支持地区名单，不能拿 ChatGPT 名单或海外服务器代替核查；提供访问给未支持地区也可能暂停。大陆、香港、澳门未列入当前 API 名单。\n身份/卡/手机号：首个 API key 需手机号验证；可能按功能触发企业或本人验证，需真实登记资料、授权代表资料、合格证件/自拍。API credits 不支持预付卡，须支持地区发行的常规信用卡/借记卡。\n最低投入/折扣：新预付账户公开最低充值 $5，默认建议 $10；这是试用资金，不是可无限交付的容量或生产最低预算。公开 Batch 可降50%，但适用于异步任务，不等于交互会员五折。\n个人会员交付：不能。可交付自己品牌的应用、处理任务、集成与服务；不附 ChatGPT Plus/Pro。\n自主度：较高。控制前端、业务逻辑、定价、客户管理和成本治理；模型、政策、服务可用性、限额仍受 OpenAI 控制。\n可行条件：主体/客户均合格；自有产品用途、隐私/数据处理、用量计费与售后清楚。若只是把上游 key 原样转卖，则不是本文已确认的路线。\n来源：[S05–S09]"
+      },
+      {
+        "id": "R3",
+        "route": "Anthropic 官方 API → 自有商业应用",
+        "detail": "权利/产品：Commercial Terms A.1 允许以服务支撑自己的客户产品；D.4 又明确限制未经许可转售原服务。应做有明确交付的自有应用，而不是把会员、账号或裸服务转包装成“官方授权”。\n主体/客户地区：遵守 Supported Regions Policy；当前 API/Claude.ai 均未列大陆、香港、澳门。官方另把不支持地区的控制权因素纳入审查，2025公告包括由总部在不支持地区企业直接/间接持股超过50%的实体；海外注册并不自动合格。用户个人国籍与该企业控制规则不能混为一谈。\n身份/卡/手机号：自助 API 账单依付款资料；可能要求企业资料、本人实体政府证件及现场自拍。Claude 账号帮助页要求受支持地区的可收短信号码，不接受 VoIP/应用号码；组织SSO等具体企业开通不能一概外推。\n最低投入/折扣：已证实 API 通常预付，销售协商客户可月结；本轮打开的当前账单文档没有确认统一最低充值金额，所以不沿用旧“$5即Tier1”说法。当前限额页已用 Evaluation/Start/Build/Scale 等结构，额度与历史、账户状态相关，不能承诺充值立刻升档。\n个人会员交付：不能。API不附 claude.ai Pro/Max，也不能据此售卖包含个人会员用量的所谓 Claude Code 月卡。\n自主度：较高，自主应用/客户/交付；资格、模型容量及政策仍依赖 Anthropic。\n可行条件：符合主体与终端用户地区规则；自己承担应用服务；批处理/缓存的成本收益按实际工作负载测算。\n来源：[S10–S16]"
+      },
+      {
+        "id": "R4",
+        "route": "OpenAI Partner Network → 咨询、实施、联合销售",
+        "detail": "已证权利：2026-06-14官方发布的新伙伴网络，官网支持申请、培训、联合销售、构建和部署。等级为 Select/Advanced/Elite，考察销售、技术、联合销售和部署经验。\n具体入口：https://openai.com/business/partners/ → https://partners.openai.com/\n前置条件：公开官网要求介绍公司能力、技术专长和客户经验；本轮公开读取未取得完整报名表字段、最低员工数、审批SLA、加盟费/承诺金额或个人会员SKU清单。不能擅填“0门槛”“交钱即授权”。\n主体/客户地区：官方称全球项目，不代表全球任何使用地都开放产品。公司、客户及服务地区仍应满足对应产品和合同。\n资金/折扣：未公开普遍可执行的采购净价、返佣比例或最低销售承诺；其生态投资金额是厂商投入，不是申请人入门费或人人可领补贴。\n个人会员交付：没有证据。伙伴徽章不是 Plus/Pro 券码销售权。\n自主度：中。可经营交付与服务；能否代售原厂许可、如何报价、是否有二级分销须看签署文件。\n可行条件：已有企业交付能力和客户项目；要追原厂直签路线可从此申请，但获准之前不能标“OpenAI官方个人会员代理”。\n来源：[S17–S18]"
+      },
+      {
+        "id": "R5",
+        "route": "Claude Partner Network → 服务伙伴",
+        "detail": "当前申请入口：https://claude.com/form/cpn-partner-application\n真实门槛：该官方页明确要求已注册企业、至少10名员工、在支持地区经营、向客户提供咨询/实施/托管服务；做自有产品的企业被引导到 Claude API。\n等级门槛：2026-06-03说明新申请从 Registered 开始，承诺至少10名认证从业者；Select 才是伙伴起点，要求10名活跃认证人员、近12月2个联合投产客户、1个公开客户案例。活跃人员需持当前认证且近90天用过Claude。较高层还有更高人员/案例门槛。\n资金/折扣：加入免费，但培训、考试、员工、项目能力有实际成本；部分等级首考有折扣，不能等同于会员采购折扣。转介积分和项目保护是另一个轨道，公开页无统一返佣数字。\n主体/客户地区：支持地区且符合所有权审查；“10人团队”不能由借名/拼认证替代实际条件。\n个人会员交付：未授予。此处卖的是服务能力、实施和项目；普通商用转售仍需明确许可。\n自主度：中。小团队可先做合格API产品/真实实施案例；达不到10员工时，当前申请页本身不支持把一人公司当现成合格服务伙伴。\n来源：[S19–S21]"
+      },
+      {
+        "id": "R6",
+        "route": "Carahsoft → 原厂企业/政府采购渠道",
+        "detail": "已证授权：OpenAI 官方政府页及 FedRAMP 公告均明确称 Carahsoft 是授权公共部门经销商；不是仅有渠道商自称。\n具体入口：https://www.carahsoft.com/partners/resellers-service-providers\n产品联系：OpenAI@carahsoft.com；(571) 590-6020。页面产品与采购主要针对企业/公共部门，不是个人Plus。\n前置条件：申请表必填姓名、职务、公司、电话、邮箱、网站、企业类别、获知渠道，并询问想合作的原厂和已获哪些原厂授权；SAM Unique Entity ID在表内但未标必填，不能说所有申请人都必须先有SAM。提交一般伙伴表不等于具体厂商批准。\n主体/客户地区：Carahsoft Technology Corp. 美国Virginia地址；通用网络服务美国/加拿大市场。具体 OpenAI SKU 的适用公共部门及采购合同范围须单独获准，通用加拿大市场描述不能外推每个OpenAI SKU在加拿大都可售。\n最低投入/折扣：入门费、账期/担保、MOQ、保证金、OpenAI二级经销净价未公开。政府优惠只给合格机构，不能当个人会员的上游成本；旧2025–2026推广PDF已过期，不作现价。\n个人会员交付：本轮无证据。\n自主度：中。若获批可经营合约覆盖的企业客户及实施，仍依赖渠道合同、原厂订单及终端用户资格。\n可行条件：实际服务对应美国/加拿大企业或公共部门市场，并获得具体原厂SKU/地区审批；针对大陆个人会员的目标不匹配。\n来源：[S22–S25]"
+      },
+      {
+        "id": "R7",
+        "route": "PwC → ChatGPT Enterprise 采购/实施",
+        "detail": "已证授权：PwC 2024-05-29声明其美英实体签约成为 ChatGPT Enterprise reseller；OpenAI 当前伙伴目录亦列 PwC。此为已有授权者，不是所有PwC成员法人自动获同范围授权。\n具体入口：https://www.pwc.com/us/en/technology/alliances/openai.html（企业方案及联系）；官网描述 starter pack 可含许可、治理评估、工作坊和导入。\n主体/客户地区：公布签约的是美英实体；当前“全球服务”目录不披露许可最终可售地区。实际合同卖方、终端客户地区和数据方案须问清。\n前置/最低投入/折扣：面向企业项目询价；未见公开二级经销招商、个人会员批发、统一最低席位或入门费。\n个人会员交付：没有证据。可向其采购Enterprise项目，不意味着经营者可再转售。\n自主度：低至中。可合作项目/采购服务，但不是已公开可复制的个人会员上游加盟路线。\n来源：[S26–S28]"
+      },
+      {
+        "id": "R8",
+        "route": "Rewarble → Relograde → 自营券码店/API分发",
+        "detail": "权利链：Rewarble 官方 distributors 页底部“Become a Distributor”直接链接 Relograde；Relograde 自己明确提供 Rewarble 券码分销与API。这补上品牌方反向链接，超过单方自称证据。\n经营主体：Rewarble由荷兰 Centiward B.V.（KvK 96903163）运营；Relograde B.V.（CRN 96916613）为荷兰企业。\n具体入口：https://relograde.com/contact-sales；https://relograde.com/brands/rewarble-chatgpt\n真实商品：经营者销售 Rewarble voucher；客户自行在Rewarble兑换，选卡后用卡支付ChatGPT。该卡不是OpenAI发行的会员码，Rewarble明确不代表OpenAI背书/关联。\nKYB/KYC：Relograde要求企业登记、UBO/代表身份证明、EU公司VAT及可能的补件；条款称通常5个工作日审查。其“无需品牌审批”营销语不免除KYB。客户交易超EUR150或法定阈值需KYC；这只是平台合同要求，不是在说世界各地法律统一为150欧元。\n主体/客户地区：不同券、卡、币种按目录及发卡规则分别限定；没有公开全地区一口价或“中国主体一定能过”证据。Rewarble可随时要求身份、地址及资金来源核查。\n最低投入/折扣：品牌页说无最低订单，账户可免费创建；充值方式仍可有最低额和手续费，报价动态且仅订单创建后锁30分钟。声称量大优惠但公开页没有可用净价。不能把5000欧sandbox测试余额当真实资金。\n个人会员交付：可以销售其支付券，不能承诺券本身=一月会员；客户须独立符合ChatGPT资格和付款规则。OpenAI API不接受预付卡，因此不能将这条卡路线平移成官方API充值渠道。\n自主度：券分发中等、会员结果低。可控制店铺、客户交付及API订单；不能控制发卡、商户接受、续费、KYC或OpenAI权益。\n可行条件：平台书面接受经营主体、客户地区及具体券SKU；客户本人兑卡并完成必要认证，不汇集/转发他人卡凭据。条款禁止分享卡资料，与营销页“分享卡资料赠送”有冲突，应以书面澄清为准；券码交付与已发卡资料转交不能混用。\n来源：[S29–S35]"
+      },
+      {
+        "id": "R9",
+        "route": "OpenAI 官方品牌礼卡 → 授权商业分销",
+        "detail": "真实产品：发行人为CIMI2604, Inc.，与OpenAI不是关联公司；OpenAI官方帮助页直接链接其条款。美元封闭式礼卡，通常$15–$250，普通个人每日购买上限$2000。\n客户地区：购买和兑换仅美国；兑换时人在美国，使用美国账号和美元计费。充值到ChatGPT Web钱包后可买合格订阅/续费/credits，不能付Apple/Google IAP，不能提现/拆到多个账号。\n转售边界：发行人普通持卡条款明确禁止出售/价值交换，未经授权卖家来源的卡无效。零售买卡、买到折扣卡、开Corporate/API账户都不能自动绕过此限制。\n新源头线索：InComm InCentives 自有奖励目录出现OpenAI ChatGPT，且其官方API业务面向礼卡转售商；这是本轮应优先深入的品牌目录+分销能力组合。它仍不能证明具体OpenAI SKU对新下游开放，也不能证明美国外客户资格或低价。\n最低投入/折扣：面值下限不是商业分销MOQ；商业保证金、MOQ、净折扣、结算/退款未公开。不能以零售$2000日限推导获批分销账户限额。\n个人会员交付：可作为合格用户的支付资金；并非精确“一个月Plus”的许可，税、档位状态及钱包使用规则仍影响足额开通。\n自主度：获专项授权后可控制分销交付，发行/兑付/地区仍受权利人控制。尚不能当作已获准经营的货源。\n可行条件：拿到允许经营者商业分销的书面协议、OpenAI SKU清单、美国目标客户/交付限制和净成本；普通零售囤卡路线不可据公开条款成立。\n来源：[S36–S37]；InComm/PerfectGift/BHN详情见同轮补充研究。\n\nR9补充｜品牌礼卡上游入口，按证据强弱排序\n1. InComm InCentives：自有Engage商户目录确列OpenAI ChatGPT；官方API页面明确服务gift card resellers。联系：https://www.incomm.com/incentives/gift-card-api-integrations/ 或 https://www.incomm.com/contact/business-inquiries/。意向表要求姓名、邮箱、电话、地区、公司和说明；正式KYB、可接受主体国家、OpenAI SKU下游开放范围、MOQ和净价均待合同。可优先问“是否对我方开放原生OpenAI礼卡有偿转售”，不要只问“能否批量买卡”。[S45–S47]\n2. PerfectGift：有OpenAI品牌页，也有战略转售伙伴API线索；但当前公开Corporate/API条款（页面标2022-10）明确禁转售，要求美国/DC主体、有效美国税号、可核验美国实体地址。普通企业采购零起订不是转售零门槛；条款可个案要求保证/结算余额。入口：https://www.perfectgift.com/corporate/api；corp@perfectgift.com，+1 (800) 543-7927。必须书面确认另行协议覆盖禁转售限制、OpenAI SKU及交付是否原生PIN；品牌营销页还可能是可换卡/支付奖励产品。[S48–S52]\n3. BHN：确有Sell Gift Cards和Distribution Partner开户流程。入口：https://blackhawknetwork.com/sell-gift-cards；https://blackhawknetwork.com/merchant-onboarding。公开申请往往要求从所属批发商专属链接进入，不应随意选别人的批发商；无匹配者从销售询问说明实际业务。本轮未证实BHN持有OpenAI品牌SKU，所以只列泛礼卡渠道备选。[S53–S54]\n4. CIMI2604/发行人联系链：发行人页给出Card Compliant联系地址info@cardcompliant.com、+1 (855) 971-7430，可核实谁有OpenAI礼卡分销签约权。没有公开直接批发开户，不能把客服/公司联系方式直接标成已批准源头招商。[S55]"
+      },
+      {
+        "id": "R10",
+        "route": "Claude 官方赠礼",
+        "detail": "真实产品：官方帮助页说明大部分Pro/Max付费用户可购买Pro/Max礼物，时长1/3/6/12个月；Free及Team/Enterprise成员目前不能购买。接收方可用官方兑换链接、通常无须支付卡，礼物365天内兑换且不可叠加多个。\n资格边界：页面所说全球赠礼不覆盖不支持地区，仍受Claude服务资格约束；接收方已有移动订阅的，需等该订阅结束后兑。\n授权/最低投入：这是本人赠送朋友、家人/同事的消费者功能。公开资料没提供商业批发折扣或转售授权；消费者条款的转售限制仍在。购买方要先有合格Pro/Max，实际礼物价格须到本人结账确认。\n个人会员交付：真正能赠个人计划，但“允许赠”不等于“允许售”；不得据此承诺可以合法开批发站。\n自主度：赠礼操作中等，商业供货资格未闭合。\n来源：[S38–S39]"
+      }
+    ],
+    "sources": [
+      {
+        "id": "S01",
+        "name": "OpenAI Plus",
+        "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+      },
+      {
+        "id": "S02",
+        "name": "OpenAI个人条款",
+        "url": "https://openai.com/policies/terms-of-use/"
+      },
+      {
+        "id": "S03",
+        "name": "ChatGPT支持地区",
+        "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries"
+      },
+      {
+        "id": "S04",
+        "name": "OpenAI银行卡及发卡地",
+        "url": "https://help.openai.com/en/articles/7232916-why-was-my-credit-card-declined"
+      },
+      {
+        "id": "S05",
+        "name": "OpenAI商业条款",
+        "url": "https://openai.com/policies/services-agreement/"
+      },
+      {
+        "id": "S06",
+        "name": "API支持地区",
+        "url": "https://help.openai.com/en/articles/5347006-openai-api-supported-countries-and-territories"
+      },
+      {
+        "id": "S07",
+        "name": "API预付与最低充值",
+        "url": "https://help.openai.com/en/articles/8264644-setting-up-and-managing-prepaid-api-billing"
+      },
+      {
+        "id": "S08",
+        "name": "手机验证",
+        "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like"
+      },
+      {
+        "id": "S09",
+        "name": "企业/本人验证",
+        "url": "https://help.openai.com/en/articles/10910291-api-organization-verification"
+      },
+      {
+        "id": "S10",
+        "name": "Anthropic商业条款",
+        "url": "https://www.anthropic.com/legal/commercial-terms"
+      },
+      {
+        "id": "S11",
+        "name": "Anthropic支持地区",
+        "url": "https://www.anthropic.com/supported-countries"
+      },
+      {
+        "id": "S12",
+        "name": "Anthropic企业控制权",
+        "url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions"
+      },
+      {
+        "id": "S13",
+        "name": "Claude API计费",
+        "url": "https://support.claude.com/en/articles/8977456-how-do-i-pay-for-my-claude-api-usage"
+      },
+      {
+        "id": "S14",
+        "name": "Claude手机验证",
+        "url": "https://support.claude.com/en/articles/8287232-verify-your-phone-number"
+      },
+      {
+        "id": "S15",
+        "name": "Claude身份/企业验证",
+        "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude"
+      },
+      {
+        "id": "S16",
+        "name": "Claude当前限额",
+        "url": "https://platform.claude.com/docs/en/api/rate-limits"
+      },
+      {
+        "id": "S17",
+        "name": "OpenAI伙伴入口",
+        "url": "https://openai.com/business/partners/"
+      },
+      {
+        "id": "S18",
+        "name": "OpenAI伙伴发布",
+        "url": "https://openai.com/index/introducing-openai-partner-network/"
+      },
+      {
+        "id": "S19",
+        "name": "Claude伙伴申请",
+        "url": "https://claude.com/form/cpn-partner-application"
+      },
+      {
+        "id": "S20",
+        "name": "Claude服务伙伴等级",
+        "url": "https://www.anthropic.com/news/services-track-partner-hub"
+      },
+      {
+        "id": "S21",
+        "name": "Claude伙伴项目发布",
+        "url": "https://www.anthropic.com/news/claude-partner-network"
+      },
+      {
+        "id": "S22",
+        "name": "OpenAI政府渠道",
+        "url": "https://openai.com/solutions/industries/government/"
+      },
+      {
+        "id": "S23",
+        "name": "OpenAI FedRAMP渠道",
+        "url": "https://openai.com/index/openai-available-at-fedramp-moderate/"
+      },
+      {
+        "id": "S24",
+        "name": "Carahsoft伙伴申请",
+        "url": "https://www.carahsoft.com/partners/resellers-service-providers"
+      },
+      {
+        "id": "S25",
+        "name": "Carahsoft OpenAI业务",
+        "url": "https://www.carahsoft.com/openai"
+      },
+      {
+        "id": "S26",
+        "name": "PwC转售协议公告",
+        "url": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-us-uk-accelerating-ai-chatgpt-enterprise-adoption.html"
+      },
+      {
+        "id": "S27",
+        "name": "PwC当前业务",
+        "url": "https://www.pwc.com/us/en/technology/alliances/openai.html"
+      },
+      {
+        "id": "S28",
+        "name": "OpenAI所列PwC",
+        "url": "https://openai.com/business/partners/pwc/"
+      },
+      {
+        "id": "S29",
+        "name": "Rewarble分销入口",
+        "url": "https://rewarble.com/distributors"
+      },
+      {
+        "id": "S30",
+        "name": "Relograde Rewarble经销",
+        "url": "https://relograde.com/payouts"
+      },
+      {
+        "id": "S31",
+        "name": "Relograde商品",
+        "url": "https://relograde.com/brands/rewarble-chatgpt"
+      },
+      {
+        "id": "S32",
+        "name": "Relograde条款",
+        "url": "https://relograde.com/terms-and-conditions"
+      },
+      {
+        "id": "S33",
+        "name": "Rewarble条款",
+        "url": "https://rewarble.com/policies/terms-and-conditions"
+      },
+      {
+        "id": "S34",
+        "name": "Rewarble ChatGPT商品说明",
+        "url": "https://rewarble.com/brands/chatgpt"
+      },
+      {
+        "id": "S35",
+        "name": "Rewarble费用",
+        "url": "https://rewarble.com/fees"
+      },
+      {
+        "id": "S36",
+        "name": "OpenAI礼卡说明",
+        "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards"
+      },
+      {
+        "id": "S37",
+        "name": "OpenAI礼卡发行人条款",
+        "url": "https://mycardterms.com/openai/home/terms/"
+      },
+      {
+        "id": "S38",
+        "name": "Claude赠礼",
+        "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription"
+      },
+      {
+        "id": "S39",
+        "name": "Claude消费者条款",
+        "url": "https://www.anthropic.com/legal/consumer-terms"
+      },
+      {
+        "id": "S40",
+        "name": "Claude个人定价",
+        "url": "https://support.claude.com/en/articles/11049762-choose-a-claude-plan"
+      },
+      {
+        "id": "S41",
+        "name": "OpenAI Batch折扣",
+        "url": "https://developers.openai.com/api/docs/guides/batch"
+      },
+      {
+        "id": "S42",
+        "name": "Claude API定价/Batch",
+        "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+      },
+      {
+        "id": "S43",
+        "name": "Claude Web付款方式",
+        "url": "https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs"
+      },
+      {
+        "id": "S44",
+        "name": "Claude真实账单地址",
+        "url": "https://support.claude.com/en/articles/12997130-understanding-your-billing-address-and-tax-calculation"
+      },
+      {
+        "id": "S45",
+        "name": "InComm OpenAI商户目录",
+        "url": "https://www.engage.incommincentives.com/PORT/Inc/EMP/Redemption/Pages/PrinterFriendlyMerchantList.aspx"
+      },
+      {
+        "id": "S46",
+        "name": "InComm礼卡转售API",
+        "url": "https://www.incomm.com/incentives/gift-card-api-integrations/"
+      },
+      {
+        "id": "S47",
+        "name": "InComm业务询问",
+        "url": "https://www.incomm.com/contact/business-inquiries/"
+      },
+      {
+        "id": "S48",
+        "name": "PerfectGift OpenAI品牌",
+        "url": "https://www.perfectgift.com/brands/openai"
+      },
+      {
+        "id": "S49",
+        "name": "PerfectGift API",
+        "url": "https://www.perfectgift.com/corporate/api"
+      },
+      {
+        "id": "S50",
+        "name": "PerfectGift战略转售线索",
+        "url": "https://www.perfectgift.com/corporate/api/thank-you"
+      },
+      {
+        "id": "S51",
+        "name": "PerfectGift普通商业/API条款",
+        "url": "https://www.perfectgift.com/corporate/terms-of-service"
+      },
+      {
+        "id": "S52",
+        "name": "PerfectGift联系",
+        "url": "https://www.perfectgift.com/faq"
+      },
+      {
+        "id": "S53",
+        "name": "BHN卖卡项目",
+        "url": "https://blackhawknetwork.com/sell-gift-cards"
+      },
+      {
+        "id": "S54",
+        "name": "BHN分销开户",
+        "url": "https://blackhawknetwork.com/merchant-onboarding"
+      },
+      {
+        "id": "S55",
+        "name": "CIMI2604发行人",
+        "url": "https://mycardterms.com/openai/card-issuer/"
+      }
+    ],
+    "important_limits": [
+      "A partner application or directory listing is not a reseller authorization.",
+      "No executed authorization, account-specific net quote or operator eligibility approval was inspected.",
+      "Mainland China/Hong Kong/Macau eligibility remains unclosed under current direct-service policies."
+    ]
+  },
+  "routesText": "AI 上游第二轮：从“拿货网页”追到供货权、接入门槛与自主经营边界\n核查日期：2026-10-02 UTC\n范围：公开官方/第一方网页，只读；未注册、登录、联系、询价、付款或提交资料。未修改现有网站或 v1.2.0。本文讨论平台合同与采购可行性，不替代经营地、税务及支付业务的法律意见。\n\n一、结论先行\n\n“自己成为上游”有三种不同生意，不能共用一套授权：\n1. 卖自己的 AI 应用、行业工具、自动化交付或实施服务：在主体和终端客户均合格的前提下，可以直接采购官方 API，自主控制应用、计费、客户关系和交付。这是公开条款中最明确、最接近自助经营的路线；卖的是自己的产品，不是个人 ChatGPT/Claude 会员或原厂账号。\n2. 卖原厂企业许可：有真实授权渠道，例如 OpenAI 官方点名 Carahsoft 为公共部门经销商、PwC 美英实体明确签有 ChatGPT Enterprise 转售协议。但新的经营者还必须获批具体产品与区域的分销合同；伙伴申请表、认证证书、企业席位都不自动变成个人会员批发权。\n3. 卖充值/支付商品：Rewarble→Relograde 的券分销链已经能从品牌方反向验证，可申请经营其券码；客户最终拿到的是支付工具。真正 OpenAI 品牌礼卡也有源头线索，InComm 自有目录出现该品牌；但普通持卡人条款禁止转售，须另签具体 SKU 的商业分销合同。\n\n如果目标严格限定为“自己制造并持续批发个人 Plus/Pro/Max 月会员 CDK，任意用户原号可兑，且稳定低于官网”，本轮仍未找到公开自助取得该权利的入口。不是技术不能做，而是公开授予的产品权利缺失。经营者能控制的是自有产品或经批准的分销操作，无法自行创造原厂会员许可。\n\n二、路线矩阵：具体条件与自主程度\n\nR1｜OpenAI 直接买个人会员\n权利/产品：OpenAI 向合格本人提供个人订阅；购买不附转售账号、共享凭据或分发服务的许可。\n主体/客户地区：本人实际所在地、账号使用地以及支付卡发卡地区须合格；ChatGPT 支持名单未列中国大陆、香港、澳门。\n身份/卡/手机号：须真实账号及账单资料；普通 ChatGPT 注册和使用通常无手机验证，API 首个 key 是另一套要求，个别 Codex/安全验证流程不能据此省略。不能把“不要求每人上传身份证”理解为允许假身份。\n最低投入/折扣：Plus Web 为 $20/月（税及实际币种另计），无通常年付或一次预付多月路线；本轮没有常规个人批发折扣证据。\n个人会员交付：本人直接获得；经营者的批量代付或收集客户会话凭证，不在这些公开材料授予的商业权限内。\n自主度：低。可以自主付款、自助管理自己的订阅，不能由此成为个人许可发行人。\n可行条件：真实合格用户本人开通。若经营会员分销，缺的是权利人明确的 SKU、区域、客户和再销售授权，不是再找一张卡。\n来源：[S01–S04]\n\nR1b｜Anthropic 直接买 Claude Pro/Max\n权利/产品：合格本人直接订阅Pro/Max，包含相应Claude Code用量；API另计。消费者条款禁止共享账号及转售原服务。\n主体/客户地区：本人须实际在支持地区并使用真实账号；大陆、香港、澳门不在当前名单。境外卡或赠礼不替代服务资格。\n身份/卡/手机号：Web只接受信用卡/借记卡；账单地址来自付款方式，并应真实反映收货/业务地点。Claude新账号需受支持地区能接收短信的号码；遇本人/企业验证应提交真实证件及必要自拍，不是向商家购买别人完成的身份。\n最低投入/折扣：Pro $20/月或$200/年；Max 5x $100/月、20x $200/月。税/币种依实际合格结账；Pro年付公开可省约16.7%，Max未在已读普通价格表提供年付。年费可用时不能拆成12份任意账号会员转售。\n个人会员交付：本人直接开通，可持续自行续费；批量开账号转售、借他人身份、把Team席位冒充个人Max不由这些条款授权。\n自主度：自用高、商业分销低。做源头供货仍需另行授权合同；官方付款只是采购来源证据。\n来源：[S11、S14–S15、S39–S40、S43–S44]\n\nR2｜OpenAI 官方 API → 自有商业应用\n权利/产品：Services Agreement 第2.2节明确允许把 API 集成进经营者自己的应用，供其终端用户使用；第3节禁止倒卖账户访问及买卖/转让 API key。\n主体/客户地区：API 有独立支持地区名单，不能拿 ChatGPT 名单或海外服务器代替核查；提供访问给未支持地区也可能暂停。大陆、香港、澳门未列入当前 API 名单。\n身份/卡/手机号：首个 API key 需手机号验证；可能按功能触发企业或本人验证，需真实登记资料、授权代表资料、合格证件/自拍。API credits 不支持预付卡，须支持地区发行的常规信用卡/借记卡。\n最低投入/折扣：新预付账户公开最低充值 $5，默认建议 $10；这是试用资金，不是可无限交付的容量或生产最低预算。公开 Batch 可降50%，但适用于异步任务，不等于交互会员五折。\n个人会员交付：不能。可交付自己品牌的应用、处理任务、集成与服务；不附 ChatGPT Plus/Pro。\n自主度：较高。控制前端、业务逻辑、定价、客户管理和成本治理；模型、政策、服务可用性、限额仍受 OpenAI 控制。\n可行条件：主体/客户均合格；自有产品用途、隐私/数据处理、用量计费与售后清楚。若只是把上游 key 原样转卖，则不是本文已确认的路线。\n来源：[S05–S09]\n\nR3｜Anthropic 官方 API → 自有商业应用\n权利/产品：Commercial Terms A.1 允许以服务支撑自己的客户产品；D.4 又明确限制未经许可转售原服务。应做有明确交付的自有应用，而不是把会员、账号或裸服务转包装成“官方授权”。\n主体/客户地区：遵守 Supported Regions Policy；当前 API/Claude.ai 均未列大陆、香港、澳门。官方另把不支持地区的控制权因素纳入审查，2025公告包括由总部在不支持地区企业直接/间接持股超过50%的实体；海外注册并不自动合格。用户个人国籍与该企业控制规则不能混为一谈。\n身份/卡/手机号：自助 API 账单依付款资料；可能要求企业资料、本人实体政府证件及现场自拍。Claude 账号帮助页要求受支持地区的可收短信号码，不接受 VoIP/应用号码；组织SSO等具体企业开通不能一概外推。\n最低投入/折扣：已证实 API 通常预付，销售协商客户可月结；本轮打开的当前账单文档没有确认统一最低充值金额，所以不沿用旧“$5即Tier1”说法。当前限额页已用 Evaluation/Start/Build/Scale 等结构，额度与历史、账户状态相关，不能承诺充值立刻升档。\n个人会员交付：不能。API不附 claude.ai Pro/Max，也不能据此售卖包含个人会员用量的所谓 Claude Code 月卡。\n自主度：较高，自主应用/客户/交付；资格、模型容量及政策仍依赖 Anthropic。\n可行条件：符合主体与终端用户地区规则；自己承担应用服务；批处理/缓存的成本收益按实际工作负载测算。\n来源：[S10–S16]\n\nR4｜OpenAI Partner Network → 咨询、实施、联合销售\n已证权利：2026-06-14官方发布的新伙伴网络，官网支持申请、培训、联合销售、构建和部署。等级为 Select/Advanced/Elite，考察销售、技术、联合销售和部署经验。\n具体入口：https://openai.com/business/partners/ → https://partners.openai.com/\n前置条件：公开官网要求介绍公司能力、技术专长和客户经验；本轮公开读取未取得完整报名表字段、最低员工数、审批SLA、加盟费/承诺金额或个人会员SKU清单。不能擅填“0门槛”“交钱即授权”。\n主体/客户地区：官方称全球项目，不代表全球任何使用地都开放产品。公司、客户及服务地区仍应满足对应产品和合同。\n资金/折扣：未公开普遍可执行的采购净价、返佣比例或最低销售承诺；其生态投资金额是厂商投入，不是申请人入门费或人人可领补贴。\n个人会员交付：没有证据。伙伴徽章不是 Plus/Pro 券码销售权。\n自主度：中。可经营交付与服务；能否代售原厂许可、如何报价、是否有二级分销须看签署文件。\n可行条件：已有企业交付能力和客户项目；要追原厂直签路线可从此申请，但获准之前不能标“OpenAI官方个人会员代理”。\n来源：[S17–S18]\n\nR5｜Claude Partner Network → 服务伙伴\n当前申请入口：https://claude.com/form/cpn-partner-application\n真实门槛：该官方页明确要求已注册企业、至少10名员工、在支持地区经营、向客户提供咨询/实施/托管服务；做自有产品的企业被引导到 Claude API。\n等级门槛：2026-06-03说明新申请从 Registered 开始，承诺至少10名认证从业者；Select 才是伙伴起点，要求10名活跃认证人员、近12月2个联合投产客户、1个公开客户案例。活跃人员需持当前认证且近90天用过Claude。较高层还有更高人员/案例门槛。\n资金/折扣：加入免费，但培训、考试、员工、项目能力有实际成本；部分等级首考有折扣，不能等同于会员采购折扣。转介积分和项目保护是另一个轨道，公开页无统一返佣数字。\n主体/客户地区：支持地区且符合所有权审查；“10人团队”不能由借名/拼认证替代实际条件。\n个人会员交付：未授予。此处卖的是服务能力、实施和项目；普通商用转售仍需明确许可。\n自主度：中。小团队可先做合格API产品/真实实施案例；达不到10员工时，当前申请页本身不支持把一人公司当现成合格服务伙伴。\n来源：[S19–S21]\n\nR6｜Carahsoft → 原厂企业/政府采购渠道\n已证授权：OpenAI 官方政府页及 FedRAMP 公告均明确称 Carahsoft 是授权公共部门经销商；不是仅有渠道商自称。\n具体入口：https://www.carahsoft.com/partners/resellers-service-providers\n产品联系：OpenAI@carahsoft.com；(571) 590-6020。页面产品与采购主要针对企业/公共部门，不是个人Plus。\n前置条件：申请表必填姓名、职务、公司、电话、邮箱、网站、企业类别、获知渠道，并询问想合作的原厂和已获哪些原厂授权；SAM Unique Entity ID在表内但未标必填，不能说所有申请人都必须先有SAM。提交一般伙伴表不等于具体厂商批准。\n主体/客户地区：Carahsoft Technology Corp. 美国Virginia地址；通用网络服务美国/加拿大市场。具体 OpenAI SKU 的适用公共部门及采购合同范围须单独获准，通用加拿大市场描述不能外推每个OpenAI SKU在加拿大都可售。\n最低投入/折扣：入门费、账期/担保、MOQ、保证金、OpenAI二级经销净价未公开。政府优惠只给合格机构，不能当个人会员的上游成本；旧2025–2026推广PDF已过期，不作现价。\n个人会员交付：本轮无证据。\n自主度：中。若获批可经营合约覆盖的企业客户及实施，仍依赖渠道合同、原厂订单及终端用户资格。\n可行条件：实际服务对应美国/加拿大企业或公共部门市场，并获得具体原厂SKU/地区审批；针对大陆个人会员的目标不匹配。\n来源：[S22–S25]\n\nR7｜PwC → ChatGPT Enterprise 采购/实施\n已证授权：PwC 2024-05-29声明其美英实体签约成为 ChatGPT Enterprise reseller；OpenAI 当前伙伴目录亦列 PwC。此为已有授权者，不是所有PwC成员法人自动获同范围授权。\n具体入口：https://www.pwc.com/us/en/technology/alliances/openai.html（企业方案及联系）；官网描述 starter pack 可含许可、治理评估、工作坊和导入。\n主体/客户地区：公布签约的是美英实体；当前“全球服务”目录不披露许可最终可售地区。实际合同卖方、终端客户地区和数据方案须问清。\n前置/最低投入/折扣：面向企业项目询价；未见公开二级经销招商、个人会员批发、统一最低席位或入门费。\n个人会员交付：没有证据。可向其采购Enterprise项目，不意味着经营者可再转售。\n自主度：低至中。可合作项目/采购服务，但不是已公开可复制的个人会员上游加盟路线。\n来源：[S26–S28]\n\nR8｜Rewarble → Relograde → 自营券码店/API分发\n权利链：Rewarble 官方 distributors 页底部“Become a Distributor”直接链接 Relograde；Relograde 自己明确提供 Rewarble 券码分销与API。这补上品牌方反向链接，超过单方自称证据。\n经营主体：Rewarble由荷兰 Centiward B.V.（KvK 96903163）运营；Relograde B.V.（CRN 96916613）为荷兰企业。\n具体入口：https://relograde.com/contact-sales；https://relograde.com/brands/rewarble-chatgpt\n真实商品：经营者销售 Rewarble voucher；客户自行在Rewarble兑换，选卡后用卡支付ChatGPT。该卡不是OpenAI发行的会员码，Rewarble明确不代表OpenAI背书/关联。\nKYB/KYC：Relograde要求企业登记、UBO/代表身份证明、EU公司VAT及可能的补件；条款称通常5个工作日审查。其“无需品牌审批”营销语不免除KYB。客户交易超EUR150或法定阈值需KYC；这只是平台合同要求，不是在说世界各地法律统一为150欧元。\n主体/客户地区：不同券、卡、币种按目录及发卡规则分别限定；没有公开全地区一口价或“中国主体一定能过”证据。Rewarble可随时要求身份、地址及资金来源核查。\n最低投入/折扣：品牌页说无最低订单，账户可免费创建；充值方式仍可有最低额和手续费，报价动态且仅订单创建后锁30分钟。声称量大优惠但公开页没有可用净价。不能把5000欧sandbox测试余额当真实资金。\n个人会员交付：可以销售其支付券，不能承诺券本身=一月会员；客户须独立符合ChatGPT资格和付款规则。OpenAI API不接受预付卡，因此不能将这条卡路线平移成官方API充值渠道。\n自主度：券分发中等、会员结果低。可控制店铺、客户交付及API订单；不能控制发卡、商户接受、续费、KYC或OpenAI权益。\n可行条件：平台书面接受经营主体、客户地区及具体券SKU；客户本人兑卡并完成必要认证，不汇集/转发他人卡凭据。条款禁止分享卡资料，与营销页“分享卡资料赠送”有冲突，应以书面澄清为准；券码交付与已发卡资料转交不能混用。\n来源：[S29–S35]\n\nR9｜OpenAI 官方品牌礼卡 → 授权商业分销\n真实产品：发行人为CIMI2604, Inc.，与OpenAI不是关联公司；OpenAI官方帮助页直接链接其条款。美元封闭式礼卡，通常$15–$250，普通个人每日购买上限$2000。\n客户地区：购买和兑换仅美国；兑换时人在美国，使用美国账号和美元计费。充值到ChatGPT Web钱包后可买合格订阅/续费/credits，不能付Apple/Google IAP，不能提现/拆到多个账号。\n转售边界：发行人普通持卡条款明确禁止出售/价值交换，未经授权卖家来源的卡无效。零售买卡、买到折扣卡、开Corporate/API账户都不能自动绕过此限制。\n新源头线索：InComm InCentives 自有奖励目录出现OpenAI ChatGPT，且其官方API业务面向礼卡转售商；这是本轮应优先深入的品牌目录+分销能力组合。它仍不能证明具体OpenAI SKU对新下游开放，也不能证明美国外客户资格或低价。\n最低投入/折扣：面值下限不是商业分销MOQ；商业保证金、MOQ、净折扣、结算/退款未公开。不能以零售$2000日限推导获批分销账户限额。\n个人会员交付：可作为合格用户的支付资金；并非精确“一个月Plus”的许可，税、档位状态及钱包使用规则仍影响足额开通。\n自主度：获专项授权后可控制分销交付，发行/兑付/地区仍受权利人控制。尚不能当作已获准经营的货源。\n可行条件：拿到允许经营者商业分销的书面协议、OpenAI SKU清单、美国目标客户/交付限制和净成本；普通零售囤卡路线不可据公开条款成立。\n来源：[S36–S37]；InComm/PerfectGift/BHN详情见同轮补充研究。\n\nR9补充｜品牌礼卡上游入口，按证据强弱排序\n1. InComm InCentives：自有Engage商户目录确列OpenAI ChatGPT；官方API页面明确服务gift card resellers。联系：https://www.incomm.com/incentives/gift-card-api-integrations/ 或 https://www.incomm.com/contact/business-inquiries/。意向表要求姓名、邮箱、电话、地区、公司和说明；正式KYB、可接受主体国家、OpenAI SKU下游开放范围、MOQ和净价均待合同。可优先问“是否对我方开放原生OpenAI礼卡有偿转售”，不要只问“能否批量买卡”。[S45–S47]\n2. PerfectGift：有OpenAI品牌页，也有战略转售伙伴API线索；但当前公开Corporate/API条款（页面标2022-10）明确禁转售，要求美国/DC主体、有效美国税号、可核验美国实体地址。普通企业采购零起订不是转售零门槛；条款可个案要求保证/结算余额。入口：https://www.perfectgift.com/corporate/api；corp@perfectgift.com，+1 (800) 543-7927。必须书面确认另行协议覆盖禁转售限制、OpenAI SKU及交付是否原生PIN；品牌营销页还可能是可换卡/支付奖励产品。[S48–S52]\n3. BHN：确有Sell Gift Cards和Distribution Partner开户流程。入口：https://blackhawknetwork.com/sell-gift-cards；https://blackhawknetwork.com/merchant-onboarding。公开申请往往要求从所属批发商专属链接进入，不应随意选别人的批发商；无匹配者从销售询问说明实际业务。本轮未证实BHN持有OpenAI品牌SKU，所以只列泛礼卡渠道备选。[S53–S54]\n4. CIMI2604/发行人联系链：发行人页给出Card Compliant联系地址info@cardcompliant.com、+1 (855) 971-7430，可核实谁有OpenAI礼卡分销签约权。没有公开直接批发开户，不能把客服/公司联系方式直接标成已批准源头招商。[S55]\n\nR10｜Claude 官方赠礼\n真实产品：官方帮助页说明大部分Pro/Max付费用户可购买Pro/Max礼物，时长1/3/6/12个月；Free及Team/Enterprise成员目前不能购买。接收方可用官方兑换链接、通常无须支付卡，礼物365天内兑换且不可叠加多个。\n资格边界：页面所说全球赠礼不覆盖不支持地区，仍受Claude服务资格约束；接收方已有移动订阅的，需等该订阅结束后兑。\n授权/最低投入：这是本人赠送朋友、家人/同事的消费者功能。公开资料没提供商业批发折扣或转售授权；消费者条款的转售限制仍在。购买方要先有合格Pro/Max，实际礼物价格须到本人结账确认。\n个人会员交付：真正能赠个人计划，但“允许赠”不等于“允许售”；不得据此承诺可以合法开批发站。\n自主度：赠礼操作中等，商业供货资格未闭合。\n来源：[S38–S39]\n\n三、低于官网价：哪些有证据，哪些只是可能\n\n已证实但不能错套的机制：\n- Claude Pro年付$200，对比连续12个月月付$240可少$40，约16.7%；这是同一合格订户全年承诺，不是拆成12个任意原号月码。\n- API Batch公开约50%折扣，只适用于适配的异步请求。缓存也按命中和模型规则节省token费用；这些是应用成本优化，不会自动生成低价个人订阅。\n- Rewarble/Relograde公开声称分销折扣，但没有本目标SKU可执行净价，所以只能记录“存在议价机制”，不能写成“八折供货已证实”。\n- 企业/政府特殊合同与官方定向促销确可低于公开个人价，但受客群、期限、产品和不得转售等条件约束。已到期优惠不能作今天成本。\n\n尚未证实的解释：\n卖家自补贴、银行卡/支付渠道返利、合法区域本地价、薄利拉新、错误标价、不同套餐/共享席位/较短时长都可能形成表面低价；来路异常资金、拒付或资格滥用也可能，但不能因低价直接指控某商家。必须用采购合同、正式账单、促销条件和可追溯扣款解释该SKU。\n\n明确不能用来反推成本：\n- App Store某地区的IAP目录价，不证明Web同价，也不证明经营者/接收人有资格跨区买；还需同一SKU、购买地、付款地、税、商店条款、客户地区、实际结账证据。\n- Team/Business席位成本，不等于个人Max/Pro成本；API token批发不等于包月无限个人使用。\n- “品牌伙伴”“能开票”“发卡成功”“付款成功”，分别只证明某一环节，不是最终转售权与持续履约证据。\n\n四、真正算净成本需要哪些数\n\n先用一个SKU闭环，不先囤货：\n最终交付成本＝上游采购净价＋充值/发卡/支付费用＋必要外汇成本＋法定税费＋收款通道成本＋失败/退款损耗＋客服与履约成本。\n支付券尤其要分“买券面值”与“卡上可消费净额”。例如仅作数学示例：$20券若在兑换时扣$1费用，只剩$19，不能据其面值宣称覆盖$20加税订阅。实际费率尚未获报价。\n折扣只对面值还是对总费用、退款退现金还是钱包、卡余额到期、限额、3DS/商户拒付、原厂封禁是否可退款，都须在同一个书面报价中回答。\n\n五、经营者自主路线的实际选择\n\n如果具备真实合格主体和目标地区客户：\nA. 希望最少中间商、能自主经营：优先官方API+自有产品/实施交付。可自行定价和扩展渠道，但必须明示产品并非个人ChatGPT/Claude会员。\n   Anthropic还有限制竞争产品/未经许可转售原服务的条款；拟做通用镜像聊天站、裸API转发或白标模型访问时，应先让其书面界定，而不能仅因加了一层前端就自动归入已获许可的自有应用。\nB. 希望卖原厂企业许可：OpenAI伙伴直申或Carahsoft具体原厂审批。Claude服务伙伴当前10员工门槛已公开；先评估人员及项目案例是否真的够。\nC. 希望经营券码：Rewarble/Relograde是已验证存在的申请链；卖券的权利与AI账号使用资格分开。在OpenAI品牌卡方向，InComm比单纯零售商更值得优先商谈，但要拿专项合同。\nD. 只想卖大陆个人会员：以上公开路线均未闭合客户资格+个人转售权。海外公司、外国卡和代付成功不能补齐这两项；现阶段不宜先付加盟费或购买大量库存。\n\n如果经营者主体/主要实际客户在不支持地区：\n不应把境外空壳、第三方身份、异地付款当作可复制合规方案。可改做有权服务该地区的模型/产品，或向权利人核实特定真实主体与客户场景能否获书面例外；在确认前不把这些国际渠道写成已可供货。\n\n六、向任何源头发起尽调时，必须拿回的材料（本轮未发送）\n\n1. 我方完整法人、注册地、真实经营地、最终控制人、预计客户所在地是否合格；审核要求与拒绝后退款如何处理\n2. 授权链由谁签：原厂/发行人→分销商→我方；允许售卖的精确SKU、个人/企业客群、区域、期限、渠道和是否准二级转售\n3. 是否允许自营网站公开销售及使用商标；是否允许原号交付；客户是否自己注册、自己验身份并掌控邮箱/手机号\n4. 单件/阶梯净价、MOQ、充值下限、保证金、账期、汇率加点、API费、开卡费、付款手续费、税费、发票主体\n5. 库存/限额/价格锁定多久，售前授权与售后激活分别由谁负责；停供、未交付、拒付、冻结、退款/余额到期如何处理\n6. 券码是否可以商业转售、奖励赠送或仅自用；现成普通用户条款如禁止转售，哪份专项合同明确覆盖/替代该限制\n\n只有上述答案形成一致的合同、SKU目录和报价，才能从“有联系入口”升级为“本经营者可合法自主供货”。\n\n七、来源目录（均于2026-10-02读取或核查；网页可能更新）\n\nS01 OpenAI Plus：https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus\nS02 OpenAI个人条款：https://openai.com/policies/terms-of-use/\nS03 ChatGPT支持地区：https://help.openai.com/en/articles/7947663-chatgpt-supported-countries\nS04 OpenAI银行卡及发卡地：https://help.openai.com/en/articles/7232916-why-was-my-credit-card-declined\nS05 OpenAI商业条款：https://openai.com/policies/services-agreement/\nS06 API支持地区：https://help.openai.com/en/articles/5347006-openai-api-supported-countries-and-territories\nS07 API预付与最低充值：https://help.openai.com/en/articles/8264644-setting-up-and-managing-prepaid-api-billing\nS08 手机验证：https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like\nS09 企业/本人验证：https://help.openai.com/en/articles/10910291-api-organization-verification\nS10 Anthropic商业条款：https://www.anthropic.com/legal/commercial-terms\nS11 Anthropic支持地区：https://www.anthropic.com/supported-countries\nS12 Anthropic企业控制权：https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions\nS13 Claude API计费：https://support.claude.com/en/articles/8977456-how-do-i-pay-for-my-claude-api-usage\nS14 Claude手机验证：https://support.claude.com/en/articles/8287232-verify-your-phone-number\nS15 Claude身份/企业验证：https://support.claude.com/en/articles/14328960-identity-verification-on-claude\nS16 Claude当前限额：https://platform.claude.com/docs/en/api/rate-limits\nS17 OpenAI伙伴入口：https://openai.com/business/partners/\nS18 OpenAI伙伴发布：https://openai.com/index/introducing-openai-partner-network/\nS19 Claude伙伴申请：https://claude.com/form/cpn-partner-application\nS20 Claude服务伙伴等级：https://www.anthropic.com/news/services-track-partner-hub\nS21 Claude伙伴项目发布：https://www.anthropic.com/news/claude-partner-network\nS22 OpenAI政府渠道：https://openai.com/solutions/industries/government/\nS23 OpenAI FedRAMP渠道：https://openai.com/index/openai-available-at-fedramp-moderate/\nS24 Carahsoft伙伴申请：https://www.carahsoft.com/partners/resellers-service-providers\nS25 Carahsoft OpenAI业务：https://www.carahsoft.com/openai\nS26 PwC转售协议公告：https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-us-uk-accelerating-ai-chatgpt-enterprise-adoption.html\nS27 PwC当前业务：https://www.pwc.com/us/en/technology/alliances/openai.html\nS28 OpenAI所列PwC：https://openai.com/business/partners/pwc/\nS29 Rewarble分销入口：https://rewarble.com/distributors\nS30 Relograde Rewarble经销：https://relograde.com/payouts\nS31 Relograde商品：https://relograde.com/brands/rewarble-chatgpt\nS32 Relograde条款：https://relograde.com/terms-and-conditions\nS33 Rewarble条款：https://rewarble.com/policies/terms-and-conditions\nS34 Rewarble ChatGPT商品说明：https://rewarble.com/brands/chatgpt\nS35 Rewarble费用：https://rewarble.com/fees\nS36 OpenAI礼卡说明：https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards\nS37 OpenAI礼卡发行人条款：https://mycardterms.com/openai/home/terms/\nS38 Claude赠礼：https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription\nS39 Claude消费者条款：https://www.anthropic.com/legal/consumer-terms\nS40 Claude个人定价：https://support.claude.com/en/articles/11049762-choose-a-claude-plan\nS41 OpenAI Batch折扣：https://developers.openai.com/api/docs/guides/batch\nS42 Claude API定价/Batch：https://platform.claude.com/docs/en/about-claude/pricing\nS43 Claude Web付款方式：https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs\nS44 Claude真实账单地址：https://support.claude.com/en/articles/12997130-understanding-your-billing-address-and-tax-calculation\nS45 InComm OpenAI商户目录：https://www.engage.incommincentives.com/PORT/Inc/EMP/Redemption/Pages/PrinterFriendlyMerchantList.aspx\nS46 InComm礼卡转售API：https://www.incomm.com/incentives/gift-card-api-integrations/\nS47 InComm业务询问：https://www.incomm.com/contact/business-inquiries/\nS48 PerfectGift OpenAI品牌：https://www.perfectgift.com/brands/openai\nS49 PerfectGift API：https://www.perfectgift.com/corporate/api\nS50 PerfectGift战略转售线索：https://www.perfectgift.com/corporate/api/thank-you\nS51 PerfectGift普通商业/API条款：https://www.perfectgift.com/corporate/terms-of-service\nS52 PerfectGift联系：https://www.perfectgift.com/faq\nS53 BHN卖卡项目：https://blackhawknetwork.com/sell-gift-cards\nS54 BHN分销开户：https://blackhawknetwork.com/merchant-onboarding\nS55 CIMI2604发行人：https://mycardterms.com/openai/card-issuer/\n\n证据限制：没有看到任何渠道后台净价、对本经营者签署的授权合同或实际资格审核结果。读取工具之间有缓存差异；涉及当前交易应以本人合法账户的结账及签署合同再核，不以搜索摘要定价。所有经营自主度评价均为基于上述权利与流程的分析，不是供货承诺。\n",
+  "giftcardText": "OpenAI 礼卡商业分销上游核查（二轮）\n核查日期：2026-10-02（UTC）\n范围：只读公开一方页面；未注册、联系销售、签约或付款。以下“可申请”不等于已经获得授权。\n\n结论\n1. 当前最值得优先商谈的是 InComm InCentives：其自有 Engage 公开商户目录明确出现 OpenAI ChatGPT，同时官方提供面向礼卡转售商的 API 合作入口。这是“品牌已入其奖励目录 + 平台做转售业务”的两项一方证据；仍不能证明 OpenAI 这个 SKU 对任何新下游开放，也不能证明它允许向中国客户销售。\n2. PerfectGift 有 OpenAI 品牌页面和战略转售伙伴 API 线索，但公开 Corporate/API 条款明令不得转售。普通企业礼赠账户或 API 账户不能作为转售依据，必须另取得覆盖 OpenAI SKU 的书面分销协议。\n3. BHN 有真正的分销伙伴申请入口，但本轮没有核实其 OpenAI 品牌供货关系；仅列为泛礼卡分销洽谈备选。\n4. CIMI2604 是已确认的发行人，公开页面给出 Card Compliant 联系方式，可用于核实授权链/索取正确业务转接；未找到其公开招募 OpenAI 经销商或可直接批发的申请页面。\n5. 没有找到四家任一家公开的 OpenAI 批发折扣表、保证金、最低月采购额、最低首单额或针对中国主体的准入承诺。不能把普通企业赠礼“无最低订单”推广为转售合同零门槛。\n\n一、终端产品与区域边界（适用于任何上游）\nOpenAI 官方帮助页确认：美元计价；仅美国购买及兑换；兑换人须在美国且账户以美元计费。可充值 Free/Go/Plus/Pro，也支持特定 Business 账户情形；余额可在 ChatGPT 网页用于订阅、升级/续费、credits。不能用于 Apple/Google 应用商店交易；跨境发送卡片不会解除美国限制。这意味着可给合格个人客户交付礼卡，让其自行兑换并支付会员，但它不是任意国家可用的固定“Plus 月卡”，也不是成品账户/API 余额。\n来源：https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards\n\n发行人条款为 2026-09-01 版本：CIMI2604, Inc. 为发行人；普通持卡人不得有偿转售/交换；未经授权卖家或转售商取得的卡无效。通常面额 $15–$250，个人每天购买总值上限 $2,000。商业下游必须有另行授权，不能靠零售采购堆量取得转售资格。\n来源：https://mycardterms.com/openai/home/terms/\n\n二、InComm InCentives（最强的上游洽谈线索，未确认专项下游授权）\n已验证的品牌关系：其 Engage 自有网站“List Of Available Merchants”公开列出 OpenAI ChatGPT（原文第190行）。这是奖励/兑换目录关系，不是面向所有分销商的可售 SKU 清单，也未展示价格。\n来源：https://www.engage.incommincentives.com/PORT/Inc/EMP/Redemption/Pages/PrinterFriendlyMerchantList.aspx\n\n已验证的商业模式：官方 API 页面明确覆盖 gift card resellers、电商平台和自有前端目录；由 InComm 负责后台处理、履约与实体/数字卡交付。入口可用于询问 OpenAI 特定产品的正式转售合同。\n申请/洽谈入口：https://www.incomm.com/incentives/gift-card-api-integrations/\n该页面官方嵌入的询问表单：https://go.pardot.com/l/1119873/2026-01-21/9r7mg5\n通用业务入口：https://www.incomm.com/contact/business-inquiries/\n另有零售/电商卖卡项目：https://www.incomm.com/gift-cards/sell/\n\n主体地区：公开 API 页没有列出准入国家/可接受中国或香港公司的清单。全球交付/多语言描述不能替代主体准入与 OpenAI 美国区域条件。\nKYB：公开线索表单要求姓名、邮箱、电话、Location、Company、Message；这是意向表单，未展示正式尽调文件清单、实益所有人或税务资料要求。最终 KYB 未知。\n最低投入/折扣：普通 InCentives Shop 表示接受任意大小订单、存在批量优惠，但未公布 OpenAI 折扣百分比，亦未公布转售 API 的最低投入/最低采购承诺。\n普通赠礼最低订单来源：https://www.incomm.com/insights/bulk-gift-cards-bring-extra-large-enjoyment/\n个人会员交付：品牌在其目录中，技术上有数字履约能力；是否可经 API 直接交付 OpenAI 兑换 PIN、是否可有偿转售给个人、允许哪些客户地区，均须由销售书面确认。\n\n三、PerfectGift（品牌线索较明确，但公开通用条款禁止转售）\n品牌页确实写有 OpenAI ChatGPT、企业大额采购链接。注意当前页面主标题为“Personalize the PerfectGift for OpenAI ChatGPT”，同时提供 eGift、Activate、Swap、Visa、Zelle 等功能；不宜仅凭此页声称购买后直接收到 CIMI2604 原生 OpenAI PIN。需确认最终产品/兑换路径。\n品牌来源：https://www.perfectgift.com/brands/openai\n\n官方 API 感谢页描述服务于大型激励项目和战略转售伙伴，且所有新 API 申请须审核业务及用途。现行主 API 页面可预约业务/API 团队。\n申请/洽谈入口：https://www.perfectgift.com/corporate/api\n官网链接的预约页：https://meetings.hubspot.com/maher-zaidi/perfecttgift-business-dev-and-api-lead-routing-\n战略转售/审核线索：https://www.perfectgift.com/corporate/api/thank-you\n销售邮箱：corp@perfectgift.com\n销售电话：+1 (800) 543-7927\n邮箱、电话来源：https://www.perfectgift.com/faq\n\n关键冲突：仍在线的 Business and API Terms（页面标注 Updated October 2022）禁止任何卡片转售，并要求美国或华盛顿特区主体、有效美国税号及可核实的美国非邮政信箱地址。通用 API 软件许可不构成卡片转售许可。页面也允许其个案要求结算/保证账户及由其决定的最低余额；没有公开数额。\n来源：https://www.perfectgift.com/corporate/terms-of-service\n\nKYB：公开 FAQ 要公司名称、地址、电话、网站、EIN 和用卡目的。公开普通企业采购无最低/最高订单限制；该说明不等于特别分销协议没有门槛。\n来源：https://www.perfectgift.com/corporate/bulk\n资金/费用：企业公开价页写免费开通、可预存或按单支付，信用卡支付附加3%；没有 OpenAI 批发折扣。这些也不是已确认的分销商报价。\n来源：https://www.perfectgift.com/corporate/pricing\n客户地区/会员：OpenAI 仍仅限美国合格终端账户。需书面确认专门转售合同、OpenAI SKU、能否直接发原生 PIN、品牌展示权和美国客户条件。不要通过普通 Corporate 注册后直接卖。\n\n四、Blackhawk Network / BHN（真实分销计划，但 OpenAI SKU 未核实）\n官方 Sell Gift Cards 页面明确支持在线/线下销售他牌礼卡及获得收入，电话为 +1 866-829-0707。\n项目入口：https://blackhawknetwork.com/sell-gift-cards\n分销/销售询问入口：https://blackhawknetwork.com/lets-talk/contact-sales?sell_distribute_v1=\n\n真正的 Distribution Partner merchant onboarding：需要业务信息并审核；新用户从自己所属批发商专属链接进入（例如 Associated Wholesale Grocers、C&S、McKesson、SuperValu 等）。没有所属批发商的线上业务，不应任意选择别人的入口，宜从销售表单说明商业模式。\n申请入口：https://blackhawknetwork.com/merchant-onboarding\n限制：公开页有“完整所需信息”的链接，本轮该文件抓取失败；因此未用第三方镜像资料充当当前 KYB。主体地区、完整 KYB、预存/保证金、最低量和佣金均未从已打开的一方原文核实。\nOpenAI 关系：本轮搜索 BHN、Tango 和 Giftcards.com 的 OpenAI/ChatGPT 相关公开资料，未找到可核实的一方品牌/SKU证据；不能写成 OpenAI 官方分销商，更不能承诺个人会员交付。\n\n五、CIMI2604 / Card Compliant（发行人身份已确认，批发招募未找到）\nOpenAI 发行人页面明确：CIMI2604 与 OpenAI 存在礼卡合同关系；CIMI2604 是卡值唯一义务方，OpenAI 是相关商品/服务的兑换方。页面公开：info@cardcompliant.com；+1 (855) 971-7430；11610 Ash Street, Suite 200, Leawood, KS 66211 USA。\n来源及可核实联系入口：https://mycardterms.com/openai/card-issuer/\n可问：谁拥有当前 OpenAI Gift Card 分销签约权限、哪些分销商被授权，以及目标下游销售渠道/地区能否获批。\n不能声称：该邮箱就是批发销售部门，CIMI2604 一定直接开户供货，或发行人身份自动赋予其品牌所有销售权。本轮未找到公开 OpenAI 经销商申请/最低投入/报价/KYB页面。\n\n六、需要得到书面答复的最小商业核实清单（未发送）\n1. 是否可签 OpenAI ChatGPT Gift Card 的有偿转售/下游分销协议，授权链能否追溯 OpenAI/CIMI2604？\n2. 合同签约主体允许美国、中国内地、香港或其他哪里？终端只在美国且 USD 账户，是否还有国籍/地址条件？\n3. 交付的是 CIMI2604 OpenAI 原生可兑换 PIN、可换礼卡的奖励链接，还是支付卡返现产品？\n4. API/catalog 是否明确给出 OpenAI SKU；是否允许独立站/平台销售、向个人卖卡、发展二级经销商，以及使用 OpenAI 商标？\n5. KYB/实益所有人/税务/银行结算要求，首单与月度最低额、保证金、预存额度、实际折扣、收费与结算币种？\n6. 卡被冻结、盗刷、拒付、已激活不可售/无效码的赔付责任和退款规则？\n\n判断原则：公开商谈入口 ≠ 已授权；目录有品牌 ≠ 向新下游开放；企业批量礼赠 ≠ 商业转售；发行人 ≠ 已确认的直接批发商。\n"
+}

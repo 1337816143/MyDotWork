@@ -59,6 +59,16 @@ def validate():
     for message in chat['messages']:scan(message['text'])
     scan(json.dumps(projects,ensure_ascii=False))
     scan((ROOT/'data/research-2026-10-02.json').read_text())
+    newer=(ROOT/'data/research-2026-10-02-round2.json').read_text()
+    scan(newer)
+    assert '/workspace/' not in newer and 'libfile_' not in newer
+    group=projects['projects'][0]
+    assert group['name']=='AI上游调研' and group['status']=='进行中'
+    assert len(group['children'])==4 and all(c['status']=='进行中' for c in group['children'])
+    round2=json.loads(newer)
+    assert len(round2['routes']['routes'])==11 and len(round2['routes']['sources'])==55
+    html2=(ROOT/'dist/research/2026-10-02-round2.html').read_text()
+    assert html2.count('data-eligibility=')==10 and '标准条款禁止转售' in html2 and '同SKU' in html2
     manifest=json.loads((ROOT/'dist/release-manifest.json').read_text())
     entries={x['path']:x for x in manifest['artifacts']}
     assert set(entries)=={'index.html',*ARTIFACTS,*RESEARCH_ARTIFACTS}, 'Unexpected publication file'
