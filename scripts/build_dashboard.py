@@ -1,11 +1,12 @@
-"""Build an offline, public-only research workbench from the two reviewed snapshots."""
+"""Build an offline workbench from reviewed research snapshots and an explicit public catalogue."""
 import copy
 import json
 import re
 from pathlib import Path
+from build_catalog import load_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
-DASHBOARD_ARTIFACTS = ['dashboard/index.html', 'dashboard/data.json']
+DASHBOARD_ARTIFACTS = ['dashboard/index.html', 'dashboard/data.json', 'dashboard/catalog.json']
 
 
 def dataset():
@@ -70,10 +71,12 @@ def build_dashboard(out, version):
     target.mkdir(exist_ok=True)
     raw = json.dumps(d, ensure_ascii=False, indent=2)
     (target / 'data.json').write_text(raw + '\n', encoding='utf-8')
+    catalog = json.dumps(load_catalog(), ensure_ascii=False, indent=2)
+    (target / 'catalog.json').write_text(catalog + '\n', encoding='utf-8')
     template = (ROOT / 'src/dashboard.html').read_text(encoding='utf-8')
-    css = (ROOT / 'src/dashboard.css').read_text(encoding='utf-8')
+    css = (ROOT / 'src/dashboard.css').read_text(encoding='utf-8') + '\n' + (ROOT/'src/glass.css').read_text(encoding='utf-8') + '\n' + (ROOT/'src/compact.css').read_text(encoding='utf-8')
     js = (ROOT / 'src/dashboard.js').read_text(encoding='utf-8')
-    html = template.replace('__CSS__', css).replace('__SCRIPT__', js).replace('__DATA__', raw.replace('<', '\\u003c')).replace('__VERSION__', version)
+    html = template.replace('__CSS__', css).replace('__SCRIPT__', js).replace('__DATA__', raw.replace('<', '\\u003c')).replace('__VERSION__', version).replace('__BOOT_SCRIPT__', (ROOT/'src/appearance-boot.js').read_text(encoding='utf-8')).replace('__CATALOG_DATA__', catalog.replace('<', '\\u003c')).replace('__CATALOG_SCRIPT__', (ROOT/'src/catalog.js').read_text(encoding='utf-8'))
     (target / 'index.html').write_text(html, encoding='utf-8')
     return d
 

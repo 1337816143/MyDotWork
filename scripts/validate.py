@@ -35,3 +35,9 @@ validate()
 
 from validate_dashboard import validate_dashboard
 validate_dashboard()
+
+# Reviewed workbench catalogue is part of every public release validation.
+import validate_catalog
+
+from validate_publications import validate_publications
+validate_publications()

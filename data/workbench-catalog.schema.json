@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed public AI workbench catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "scope",
+    "artifacts",
+    "websites",
+    "tasks"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "websites": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/record"
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "website"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/task"
+      }
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "type",
+        "task",
+        "url",
+        "updatedAt",
+        "summary",
+        "access",
+        "metadataApproved"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "report",
+            "dataset",
+            "tutorial",
+            "guide",
+            "archive",
+            "website",
+            "progress"
+          ]
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(https://|\\.\\./|#)"
+        },
+        "updatedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "access": {
+          "enum": [
+            "public",
+            "login"
+          ]
+        },
+        "metadataApproved": {
+          "const": true
+        }
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "projectIndex",
+        "expectedTitle",
+        "metadataApproved",
+        "access"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "projectIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "expectedTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metadataApproved": {
+          "const": true
+        },
+        "access": {
+          "enum": [
+            "public",
+            "login"
+          ]
+        }
+      }
+    }
+  }
+}

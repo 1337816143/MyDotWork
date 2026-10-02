@@ -46,22 +46,39 @@ if (typeof document !== 'undefined') (() => {
   'use strict';
   const M = ResearchModel, e = M.esc, $ = id => document.getElementById(id);
   const d = JSON.parse($('research-data').textContent);
-  let appearance={layout:'B',color:'dark'};
-  try { const saved=JSON.parse(localStorage.getItem('mydotwork-appearance')||'null');if(saved && ['A','B'].includes(saved.layout) && ['light','dark'].includes(saved.color))appearance=saved; } catch {}
+  let appearance=window.WorkbenchAppearance || {layout:'B',color:'dark',effects:'auto'};
   function applyAppearance(){
+    document.documentElement.dataset.layout=appearance.layout;
+    document.documentElement.dataset.color=appearance.layout==='A'?'light':appearance.color;
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.documentElement.dataset.glass=reduce||appearance.effects==='solid'||(appearance.effects==='auto'&&window.WorkbenchBoot?.constrained)?'solid':'full';
     document.body.dataset.layout=appearance.layout;
     document.body.dataset.color=appearance.layout==='A'?'light':appearance.color;
     $('layout-choice').value=appearance.layout;
     $('color-choice').hidden=appearance.layout==='A';
     $('color-choice').textContent=appearance.color==='dark'?'切换为浅色':'切换为深色';
     $('color-choice').setAttribute('aria-pressed',String(appearance.color==='light'));
+    const light=appearance.layout==='A'||appearance.color==='light',solid=document.documentElement.dataset.glass==='solid';
+    $('appearance-state').textContent=(appearance.layout==='A'?'A · 明亮布局':'B · '+(light?'浅色':'深色'))+' · '+(solid?'轻量效果':'液态玻璃');
+    $('effects-choice').textContent='轻量效果';
+    $('effects-choice').setAttribute('aria-label','轻量效果：关闭背景模糊和折射装饰');
+    $('effects-choice').disabled=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    $('effects-choice').setAttribute('aria-pressed',String(solid));
     try {localStorage.setItem('mydotwork-appearance',JSON.stringify(appearance));}catch {}
   }
   $('layout-choice').addEventListener('change',()=>{appearance.layout=$('layout-choice').value;applyAppearance();closeNav();closeFilters();});
   $('color-choice').addEventListener('click',()=>{appearance.color=appearance.color==='dark'?'light':'dark';applyAppearance();closeNav();});
+  matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',()=>applyAppearance());
+  $('effects-choice').addEventListener('click',()=>{appearance.effects=document.documentElement.dataset.glass==='solid'?'full':'solid';applyAppearance();});
+  $('context-location').textContent=location.protocol==='file:'?'本地预览':location.pathname.includes('/Evolution/')?'个人进化镜像':location.pathname.includes('/MyDotWork/')?'MyDotWork主站':'工作台副本';
   applyAppearance();
 
-  const labels = {overview:'研究总览',quotes:'低价供货与发票',routes:'源头与自主供货',phone:'成品号与手机验证',claude:'Claude Code',timeline:'任务与历史修正',sources:'来源索引'};
+  const settings=$('appearance-settings'),settingsBody=$('appearance-settings-body'),appearanceControls=document.querySelector('.appearance'),context=document.querySelector('.context-bar'),version=context.querySelector('.ui-version');
+  const compactSettings=()=>{const compact=matchMedia('(max-width:700px)').matches;if(compact){document.querySelector('.header-brand').append(version);settingsBody.append(appearanceControls,context);}else{document.querySelector('.topbar').insertBefore(appearanceControls,$('header-download'));document.querySelector('.topbar').after(context);context.prepend(version);if(settings.open)settings.close();}};
+  $('appearance-open').addEventListener('click',()=>{settings.showModal();$('layout-choice').focus();});
+  $('appearance-close').addEventListener('click',()=>settings.close());settings.addEventListener('close',()=>$('appearance-open').focus());settings.addEventListener('click',event=>{if(event.target===settings){const r=settings.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)settings.close();}});addEventListener('resize',compactSettings);compactSettings();
+
+  const labels = {workbench:'工作台首页',library:'成果资料目录',websites:'项目网站',tasks:'任务进度',overview:'研究总览',quotes:'低价供货与发票',routes:'源头与自主供货',phone:'成品号与手机验证',claude:'Claude Code',timeline:'任务与历史修正',sources:'来源索引'};
   const fields = ['q','tier','basis','invoice','risk','resale','agency','sort'];
   let mode = matchMedia('(max-width:700px)').matches ? 'cards' : 'table';
   const urlLink = (url, title) => {
@@ -81,10 +98,11 @@ if (typeof document !== 'undefined') (() => {
   mobileNav.addEventListener('click',()=>{sidebar.classList.add('open');mobileNav.setAttribute('aria-expanded','true');sidebar.setAttribute('role','dialog');sidebar.setAttribute('aria-modal','true');navClose.focus();});
   navClose.addEventListener('click',()=>{closeNav();mobileNav.focus();});
   const navBackdrop=document.createElement('button');navBackdrop.className='nav-backdrop';navBackdrop.tabIndex=-1;navBackdrop.setAttribute('aria-label','关闭模块导航');sidebar.after(navBackdrop);navBackdrop.addEventListener('click',()=>{closeNav();mobileNav.focus();});
-  const icons=['M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z','M4 5h16v14H4z M4 10h16 M9 5v14','M5 5h5v5H5z M14 14h5v5h-5z M10 7h7v7','M8 3h8v18H8z M11 17h2','M4 6l5 6-5 6 M12 18h8','M12 3a9 9 0 1 1-8 5 M3 3v5h5 M12 7v5l3 2','M8 3h8l4 4v14H4V3z M8 11h8 M8 15h8'];
+  const icons=['M3 4h18v16H3z M3 9h18 M8 9v11','M4 3h6v18H4z M14 3h6v18h-6z','M3 5h18v14H3z M3 9h18 M7 7h1 M11 7h1','M4 5h3v3H4z M11 6h9 M4 11h3v3H4z M11 12h9 M4 17h3v3H4z M11 18h9','M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z','M4 5h16v14H4z M4 10h16 M9 5v14','M5 5h5v5H5z M14 14h5v5h-5z M10 7h7v7','M8 3h8v18H8z M11 17h2','M4 6l5 6-5 6 M12 18h8','M12 3a9 9 0 1 1-8 5 M3 3v5h5 M12 7v5l3 2','M8 3h8l4 4v14H4V3z M8 11h8 M8 15h8'];
   [...sidebar.querySelectorAll('nav a')].forEach((a,i)=>{const text=a.textContent;a.setAttribute('aria-label',text);a.title=text;a.innerHTML=`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${icons[i]}"/></svg><span>${e(text)}</span>`;});
   [...sidebar.querySelectorAll('.sidebar-bottom>a')].forEach((a,i)=>{const text=a.textContent;a.setAttribute('aria-label',text);a.title=text;a.innerHTML=`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${['M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h5','M4 4h16v12H9l-5 4z','M3 6h7l2 3h9v11H3z','M8 3h8l4 4v14H4V3z M8 11h8 M8 15h8'][i]}"/></svg><span>${e(text)}</span>`;});
-  const moduleNav=document.createElement('nav');moduleNav.className='module-nav';moduleNav.setAttribute('aria-label','四个研究模块');moduleNav.innerHTML=['quotes','routes','phone','claude'].map(id=>`<a href="#${id}" data-module="${id}">${e(labels[id])}</a>`).join('');document.querySelector('.topbar').after(moduleNav);
+  const workspaceNav=document.createElement('nav');workspaceNav.className='workspace-nav';workspaceNav.setAttribute('aria-label','AI工作台区域');workspaceNav.innerHTML=[['workbench','工作台'],['library','成果目录'],['websites','项目网站'],['tasks','任务进度'],['overview','AI研究']].map(([id,title])=>`<a href="#${id}" data-workspace="${id}">${title}</a>`).join('');document.querySelector('.topbar').after(workspaceNav);
+  const moduleNav=document.createElement('nav');moduleNav.className='module-nav';moduleNav.setAttribute('aria-label','四个研究模块');moduleNav.innerHTML=['overview','quotes','routes','phone','claude'].map(id=>`<a href="#${id}" data-module="${id}" aria-label="${e(labels[id])}"><span class="tab-long">${e(labels[id])}</span><span class="tab-short">${e({overview:"总览",quotes:"ChatGPT报价",routes:"自主供货",phone:"账号验证",claude:"Claude Code"}[id])}</span></a>`).join('');workspaceNav.after(moduleNav);
   addEventListener('resize',()=>{if(!matchMedia('(max-width:700px)').matches){closeNav();closeFilters();}});
 
   const filterOpen = document.createElement('button'); filterOpen.type='button';filterOpen.className='button mobile-only';filterOpen.id='open-filters';filterOpen.textContent='筛选与排序';filterOpen.setAttribute('aria-expanded','false');filterOpen.setAttribute('aria-controls','filters');
@@ -119,6 +137,7 @@ if (typeof document !== 'undefined') (() => {
     [d.routes.routes.length,'采购 / 经营路线','个人会员与API商业应用分开']
   ];
   $('metrics').innerHTML=stats.map(([n,label,note])=>`<div class="metric"><span>${e(label)}</span><b>${n}</b><small>${e(note)}</small></div>`).join('');
+  const metricScope=document.createElement('details');metricScope.className='metric-scope mobile-only';metricScope.innerHTML='<summary>统计口径与证据边界</summary><div class="disclosure-body">'+stats.map(([n,label,note])=>'<p><b>'+e(label)+' '+n+'</b> · '+e(note)+'</p>').join('')+'</div>';$('metrics').after(metricScope);
   const skuCount=new Set(d.records.map(r=>r.id)).size;
   document.querySelector('#overview .footnote').prepend(`当前供货SKU ${skuCount} 个；研究来源URL ${d.sources.length} 个（去重、仅研究文件）。`);
   function state(){return Object.fromEntries(fields.map(id=>[id,$(id).value]));}
@@ -195,7 +214,7 @@ if (typeof document !== 'undefined') (() => {
   $('timeline-content').innerHTML=`<section class="panel"><h2>实际证据时间线</h2><div class="timeline">${d.timeline.map(t=>`<article><time>${e(t.time)}</time><h3>${e(t.title)}</h3><p>${e(t.text)}</p><a href="${e(t.url)}">完整记录 →</a></article>`).join('')}</div></section><section class="panel"><h2>待办：一次问齐的书面询证</h2><p class="small-note">研究建议，尚未联系商家。没有自动发出询证或收集资料。</p><ol class="inquiry-list">${d.invoice.written_inquiry_pack.map(t=>`<li>${e(t)}</li>`).join('')}</ol></section>${candidates.filter(c=>c.new_material_evidence?.length).map(c=>disclosure(`${c.merchant} · 第二轮修正`,c.new_material_evidence.map(t=>`<p class="prose">${e(t)}</p>`).join('')+c.urls.map(u=>`<p>${urlLink(u)}</p>`).join(''))).join('')}`;
   function renderSources(){const q=$('source-search').value.trim().toLowerCase(),sources=d.sources.filter(s=>s.toLowerCase().includes(q));$('source-count').textContent=`${sources.length} / ${d.sources.length} 个去重来源URL`;$('source-content').innerHTML=sources.length?sources.map(s=>`<div class="source-row"><span>${String(d.sources.indexOf(s)+1).padStart(3,'0')}</span>${urlLink(s)}</div>`).join(''):'<div class="empty"><h3>没有匹配来源</h3><p>减少域名或关键词，再试一次。</p><button type="button" class="button" id="reset-sources">清空搜索</button></div>';}
   $('source-search').addEventListener('input',renderSources);$('source-content').addEventListener('click',event=>{if(event.target.id==='reset-sources'){$('source-search').value='';renderSources();}});
-  function navigate(){if($('detail').open)$('detail').close();const hash=decodeURIComponent(location.hash.slice(1)),page=labels[hash]?hash:hash.startsWith('route-')?'routes':hash==='tutorial'?'claude':hash==='troubleshooting'?'phone':hash==='invoice-matrix'||hash==='invoice-evidence'?'quotes':'overview';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==page);document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.querySelectorAll('[data-module]').forEach(a=>{if(a.dataset.module===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});$('breadcrumb').textContent=labels[page];closeNav();closeFilters();if(hash!==page&&$(hash)){if($(hash).tagName==='DETAILS')$(hash).open=true;let ancestor=$(hash).parentElement;while(ancestor){if(ancestor.tagName==='DETAILS')ancestor.open=true;ancestor=ancestor.parentElement;}if(hash==='invoice-evidence')$(hash).querySelector('details').open=true;if(hash==='tutorial'){let n=$(hash).nextElementSibling;for(let i=0;i<2&&n;i++,n=n.nextElementSibling)if(n.tagName==='DETAILS')n.open=true;}requestAnimationFrame(()=>$(hash).scrollIntoView());}else window.scrollTo(0,0);}
+  function navigate(){if($('detail').open)$('detail').close();const hash=decodeURIComponent(location.hash.slice(1)),page=labels[hash]?hash:hash.startsWith('route-')?'routes':hash==='tutorial'?'claude':hash==='troubleshooting'?'phone':hash==='invoice-matrix'||hash==='invoice-evidence'?'quotes':'workbench';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==page);document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.querySelectorAll('[data-module]').forEach(a=>{if(a.dataset.module===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.querySelectorAll('[data-workspace]').forEach(a=>{if(a.dataset.workspace===page||(a.dataset.workspace==='overview'&&!['workbench','library','websites','tasks'].includes(page)))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});moduleNav.hidden=['workbench','library','websites','tasks'].includes(page);document.body.dataset.area=moduleNav.hidden?'workspace':'research';if(settings.open)settings.close();$('breadcrumb').textContent=labels[page];const catalogPage=['workbench','library','websites','tasks'].includes(page);$('header-download').href=catalogPage?'catalog.json':'data.json';$('header-download').textContent=catalogPage?'下载公开目录':'下载研究数据';closeNav();closeFilters();if(hash!==page&&$(hash)){if($(hash).tagName==='DETAILS')$(hash).open=true;let ancestor=$(hash).parentElement;while(ancestor){if(ancestor.tagName==='DETAILS')ancestor.open=true;ancestor=ancestor.parentElement;}if(hash==='invoice-evidence')$(hash).querySelector('details').open=true;if(hash==='tutorial'){let n=$(hash).nextElementSibling;for(let i=0;i<2&&n;i++,n=n.nextElementSibling)if(n.tagName==='DETAILS')n.open=true;}requestAnimationFrame(()=>$(hash).scrollIntoView());}else{window.scrollTo(0,0);if(document.readyState==='loading')addEventListener('load',()=>window.scrollTo(0,0),{once:true});}}
   window.addEventListener('hashchange',navigate);
   renderQuotes();renderSources();navigate();
 })();

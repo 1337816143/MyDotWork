@@ -35,3 +35,10 @@ assert(d.records.every(r=>r.source_urls.length && r.source_urls.every(s=>/^https
 assert(d.sources.every(s=>/^https?:\/\//.test(s)));
 assert(!JSON.stringify(d).includes('messages'));
 console.log('PASS: counts, combination filters, empty/reset model, SKU/renewal/currency groups, null sorting, USDT exclusion, corrections, public sources, escaping');
+
+// Keep the public catalogue model in the existing CI test entrypoint.
+require('./test_catalog.cjs');
+require('./test_appearance_boot.cjs');
+const legacyTemplate=require('fs').readFileSync(require('path').join(__dirname,'../src/template.html'),'utf8');
+assert(legacyTemplate.includes('data-canonical-workbench="true"'));
+assert(legacyTemplate.includes('https://1337816143.github.io/MyDotWork/dashboard/index.html#workbench'));

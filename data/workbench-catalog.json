@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "scope": "仅明确公开或明确授权公开元数据的成果；不自动扫描对话、Library或本机目录。",
+  "artifacts": [
+    {
+      "id": "upstream-round1",
+      "title": "AI上游调研 · 第一轮完整报告",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-10-02.html",
+      "updatedAt": "2026-10-02T06:18:00Z",
+      "summary": "ChatGPT Go/Plus/Pro等45条供货SKU、成品号核查与Claude Code资料，保留原始证据。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "upstream-round2",
+      "title": "经营资格与发票 · 第二轮专项核查",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-10-02-round2.html",
+      "updatedAt": "2026-10-02T06:38:00Z",
+      "summary": "9家票据候选、11条采购经营路线；商家声明、实际收款与验真分开。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "round1-data",
+      "title": "第一轮研究数据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-10-02.json",
+      "updatedAt": "2026-10-02T06:18:00Z",
+      "summary": "结构化原始研究快照，不把商称报价视为成交。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "round2-data",
+      "title": "第二轮研究数据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-10-02-round2.json",
+      "updatedAt": "2026-10-02T06:38:00Z",
+      "summary": "票据候选、采购路线与修正证据的结构化快照。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "historical-supply",
+      "title": "ChatGPT供货库 · 历史126条基线",
+      "type": "report",
+      "task": "project-1",
+      "url": "https://1337816143.github.io/MyDotWork/",
+      "updatedAt": "2026-10-01",
+      "summary": "独立历史基线，不覆盖当前新证据。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "claude-tutorial",
+      "title": "Claude Code · 新手使用教程",
+      "type": "tutorial",
+      "task": "project-1",
+      "url": "#tutorial",
+      "updatedAt": "2026-10-02T06:18:00Z",
+      "summary": "官方文档步骤与Windows入门，区别会员额度、API和云渠道。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "account-troubleshooting",
+      "title": "账号与手机验证 · 排障入口",
+      "type": "guide",
+      "task": "project-1",
+      "url": "#troubleshooting",
+      "updatedAt": "2026-10-02T06:18:00Z",
+      "summary": "普通登录、MFA、Codex/API和手机注册分别排查。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "public-chat-archive",
+      "title": "已公开聊天归档 · 覆盖说明与原文",
+      "type": "archive",
+      "task": "project-4",
+      "url": "../chat/index.html",
+      "updatedAt": "2026-10-02T05:58:03.520076Z",
+      "summary": "既有229条已授权公开消息；目录不读取其他会话或附件。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "public-project-data",
+      "title": "已公开项目进度 JSON",
+      "type": "dataset",
+      "task": "project-4",
+      "url": "../projects/status.json",
+      "updatedAt": "2026-10-02T14:20:00Z",
+      "summary": "17项公开项目进度快照，记录已有研究、方案、缺口与验收范围。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "upstream-round3-7",
+      "title": "AI上游研究 · 第3—7轮公开补充",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/round3-7/report.html",
+      "updatedAt": "2026-10-02T12:29:05Z",
+      "summary": "7个证据章节、220个公开来源和30条价格历史；8条为待核线索，新增合格候选仍为空。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "upstream-round3-7-data",
+      "title": "第3—7轮上游研究数据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/round3-7/ai-upstream-public.json",
+      "updatedAt": "2026-10-02T12:29:05Z",
+      "summary": "保留来源引用、历史修正、币种与费用未知项；历史报价不改成当前成交价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "side-income-report",
+      "title": "AI副业调研 · 低维护产品与自由接单 v1.2",
+      "type": "report",
+      "task": "project-17",
+      "url": "../research/ai-side-income/report.html",
+      "updatedAt": "2026-10-02",
+      "summary": "32类方向、150个公开来源和3个低维护产品实验；区分产品方案与服务验证，尚未制作样品或验证销售。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "side-income-data",
+      "title": "AI副业调研 · 结构化资料 JSON v1.2",
+      "type": "dataset",
+      "task": "project-17",
+      "url": "../research/ai-side-income/data.json",
+      "updatedAt": "2026-10-02",
+      "summary": "与完整报告一致的方案、成本情景、平台条件和证据；不把公开市场信号当作本人收益。",
+      "access": "public",
+      "metadataApproved": true
+    }
+  ],
+  "websites": [
+    {
+      "id": "mydotwork-workbench",
+      "title": "MyDotWork · AI工作台",
+      "type": "website",
+      "task": "project-4",
+      "url": "https://1337816143.github.io/MyDotWork/dashboard/",
+      "updatedAt": null,
+      "summary": "统一公开资料入口；保留AI研究、历史供货库、聊天与项目归档。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "evolution-mirror",
+      "title": "个人进化网站 · MyDotWork镜像",
+      "type": "website",
+      "task": "project-4",
+      "url": "https://1337816143.github.io/Evolution/mydotwork/dashboard/index.html",
+      "updatedAt": null,
+      "summary": "既有发布镜像。更新日期未单独记录，以镜像发布清单为准。",
+      "access": "public",
+      "metadataApproved": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "project-1",
+      "projectIndex": 1,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "AI上游调研"
+    },
+    {
+      "id": "project-2",
+      "projectIndex": 2,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "Codex会话与本地记忆接管"
+    },
+    {
+      "id": "project-3",
+      "projectIndex": 3,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "ChatGPT历史接管"
+    },
+    {
+      "id": "project-4",
+      "projectIndex": 4,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "聊天归档与项目进度网站"
+    },
+    {
+      "id": "project-5",
+      "projectIndex": 5,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "FarmSystemDesign农业系统平台"
+    },
+    {
+      "id": "project-6",
+      "projectIndex": 6,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "Paper论文学习平台"
+    },
+    {
+      "id": "project-7",
+      "projectIndex": 7,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "ISWCR论文改投"
+    },
+    {
+      "id": "project-8",
+      "projectIndex": 8,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "三普报告与数据质控"
+    },
+    {
+      "id": "project-9",
+      "projectIndex": 9,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "顺平JCP论文"
+    },
+    {
+      "id": "project-10",
+      "projectIndex": 10,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "硕士论文与相关论文审阅"
+    },
+    {
+      "id": "project-11",
+      "projectIndex": 11,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "夸克网盘整理"
+    },
+    {
+      "id": "project-12",
+      "projectIndex": 12,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "浏览器收藏夹"
+    },
+    {
+      "id": "project-13",
+      "projectIndex": 13,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "桌面宠物与应用原型"
+    },
+    {
+      "id": "project-14",
+      "projectIndex": 14,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "Smartdrop拼豆设备"
+    },
+    {
+      "id": "project-15",
+      "projectIndex": 15,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "实时手势VFX"
+    },
+    {
+      "id": "project-16",
+      "projectIndex": 16,
+      "metadataApproved": true,
+      "access": "public",
+      "expectedTitle": "雅思与AGD研究准备"
+    },
+    {
+      "id": "project-17",
+      "projectIndex": 17,
+      "expectedTitle": "AI副业调研",
+      "metadataApproved": true,
+      "access": "public"
+    }
+  ]
+}
