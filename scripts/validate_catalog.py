@@ -44,6 +44,22 @@ def validate_archive_catalog(catalog, public_archive, public_coverage, public_pr
     assert catalog['counts']['tasks']==len(public_projects['projects'])
 
 validate_archive_catalog(actual,archive,coverage,project_output)
+snapshot=actual['statusSnapshot']
+assert snapshot['coverage']['messageCount']==len(archive['messages'])
+assert snapshot['coverage']['nonemptyCount']==sum(bool(m['text']) for m in archive['messages'])
+assert snapshot['coverage']['end']==coverage['end']
+assert snapshot['coverage']['partial']==(not coverage['readApiHistoryExhausted'])
+message_ids={m['id'] for m in archive['messages']}
+for item in snapshot['items']:
+    assert set(item['evidenceMessageIds'])<=message_ids, 'Task has no public original evidence'
+    assert '完成' not in item['state']  # State values are the four reviewed enum keys.
+for note in snapshot['decisions']:
+    assert note['messageId'] in message_ids and set(note['supersedes'])<=message_ids
+for mutate in [lambda m:m['statusSnapshot'].update(mode='realtime'),lambda m:m['statusSnapshot']['items'][0].update(state='complete'),lambda m:m['statusSnapshot']['items'][0].update(waitingFor=''),lambda m:m['statusSnapshot']['items'][0].update(metadataApproved=False),lambda m:m['statusSnapshot']['items'][0]['links'][0].update(url='https://chatgpt.com/private'),lambda m:m['statusSnapshot']['items'][0].update(verifiedAt='2099-01-01T00:00:00Z')]:
+    bad=copy.deepcopy(manifest);mutate(bad)
+    try:load_catalog(bad,projects)
+    except AssertionError:pass
+    else:raise AssertionError('Unverified state metadata accepted')
 for record_id, field, stale in [('public-chat-archive','summary','229条已授权公开记录，其中224条有文字；'),('public-chat-archive','updatedAt','2026-10-02T05:58:03.520076Z'),('public-chat-archive','url','../projects/index.html'),('public-project-data','updatedAt','2026-10-02T14:20:00Z')]:
     bad=copy.deepcopy(actual)
     next(record for record in bad['records'] if record['id']==record_id)[field]=stale
@@ -69,6 +85,16 @@ for r in actual['records']:
     assert target.is_relative_to((ROOT/'dist').resolve()) and target.is_file(),r['url']
     if url.fragment:
         parser=IDs();parser.feed(target.read_text(encoding='utf-8'));assert url.fragment in parser.ids or (url.fragment=='tutorial' and 'id="tutorial"' in target.read_text(encoding='utf-8')),r['url']
+
+for item in snapshot['items']:
+    for link in item['links']:
+        url=urlsplit(link['url'])
+        if url.scheme:continue
+        target=((ROOT/'dist/dashboard')/url.path).resolve() if url.path else (ROOT/'dist/dashboard/index.html').resolve()
+        assert target.is_relative_to((ROOT/'dist').resolve()) and target.is_file(),link['url']
+        if url.fragment:
+            parser=IDs();parser.feed(target.read_text(encoding='utf-8'));assert url.fragment in parser.ids,link['url']
+print('PASS: seven dated task states, current actions, waiting objects, completion boundaries and direct outcome/evidence links')
 
 for mutate in [lambda m:m['artifacts'][0].update(metadataApproved=False),lambda m:m['artifacts'][0].update(access='private'),lambda m:m['artifacts'][0].update(url='https://chatgpt.com/library/private-test'),lambda m:m['artifacts'][0].update(url='https://example.org/?token=test'),lambda m:m['tasks'][0].update(metadataApproved=False),lambda m:m['tasks'][0].update(expectedTitle='Unreviewed task mapping'),lambda m:m['artifacts'][0].update(internalNotes='Not a public field'),lambda m:m['artifacts'][0].update(updatedAt='2026-10-02T06:18:00')]:
     bad=copy.deepcopy(manifest);mutate(bad)

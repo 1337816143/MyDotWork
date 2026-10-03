@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "scope": "仅明确公开或明确授权公开元数据的成果；不自动扫描对话、Library或本机目录。",
   "artifacts": [
     {
@@ -85,8 +85,8 @@
       "type": "archive",
       "task": "project-4",
       "url": "../chat/index.html",
-      "updatedAt": "2026-10-02T22:00:20.523564+00:00",
-      "summary": "355条已授权公开记录，其中346条有文字；附件本体未纳入，目录不读取其他会话。",
+      "updatedAt": "2026-10-03T10:00:30.694564+00:00",
+      "summary": "434条已授权公开记录，其中424条有文字；部分分页无法证明连续完整，附件与其他会话原文未纳入。",
       "access": "public",
       "metadataApproved": true
     },
@@ -96,8 +96,8 @@
       "type": "dataset",
       "task": "project-4",
       "url": "../projects/status.json",
-      "updatedAt": "2026-10-03T06:14:00Z",
-      "summary": "17项公开项目进度快照，记录已有研究、方案、缺口与验收范围。",
+      "updatedAt": "2026-10-03T10:43:00Z",
+      "summary": "17项历史项目与七项当前任务对应的进度快照；区分本轮发布、运行状态和未解决需求。",
       "access": "public",
       "metadataApproved": true
     },
@@ -198,7 +198,7 @@
       "task": "project-6",
       "url": "https://1337816143.github.io/Paper/",
       "updatedAt": "2026-10-03",
-      "summary": "三课深化与原创教学脚本已在独立站和个人进化镜像发布；内容版本5a6f6cb7e798。云端手机、离线与合成笔记检查通过，真实登录和双设备恢复仍未验。",
+      "summary": "现有论文站和镜像已发布；新一轮首页、导航与论文/方法知识库实现已启动，改为研究证据、开放示例与研究备忘，原笔记存储保留。",
       "access": "public",
       "metadataApproved": true
     },
@@ -209,7 +209,7 @@
       "task": "project-5",
       "url": "https://1337816143.github.io/FarmSystemDesign/#research",
       "updatedAt": "2026-10-03",
-      "summary": "v0.3.9已上线，主岛/海口/岛屿/农场RGB及动态COG可用；99.122%仅为近似显示掩膜比例，社区18面非官方，三沙完整边界及权威县界仍有缺口。",
+      "summary": "v0.3.10已发布；地图可用性与博士三模型整体设计继续推进，海南地图尚未完整进入农场模型，全域数据和功能覆盖仍有缺口。",
       "access": "public",
       "metadataApproved": true
     }
@@ -334,5 +334,253 @@
       "metadataApproved": true,
       "access": "public"
     }
-  ]
+  ],
+  "statusSnapshot": {
+    "mode": "snapshot",
+    "asOf": "2026-10-03T10:43:00Z",
+    "notice": "这是有时间标记的状态快照，不是实时后台监控。运行、等待、受阻和本轮完成分别记录；网页已发布不代表全部研究目标已达成。",
+    "items": [
+      {
+        "id": "task-1",
+        "number": 1,
+        "title": "聊天与项目归档",
+        "state": "running",
+        "currentAction": "核对本轮79条增量的原文、覆盖边界和发布结果；本页保留旧355条。",
+        "waitingFor": "本轮两站发布与浏览器核验结果，随后等待新的可见原文",
+        "verifiedAt": "2026-10-03T10:22:00Z",
+        "publication": "本页收录434条记录，其中424条有文字。",
+        "completion": "本轮候选已整理；部分分页、附件和不可见记录仍不代表完整取得。",
+        "links": [
+          {
+            "label": "读聊天原文",
+            "url": "../chat/index.html"
+          },
+          {
+            "label": "看覆盖说明",
+            "url": "../chat/coverage.json"
+          }
+        ],
+        "projectIds": [
+          "project-4"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      },
+      {
+        "id": "task-2",
+        "number": 2,
+        "title": "AI工作台与个人进化网站",
+        "state": "running",
+        "currentAction": "实施任务状态快照、成果直达和覆盖提示，进行发布前及两站测试。",
+        "waitingFor": "云端视口检查与正式部署/镜像校验结果",
+        "verifiedAt": "2026-10-03T10:22:00Z",
+        "publication": "当前页面版本见页首；两站分别保留同批内容和发布清单。",
+        "completion": "状态面板本轮正在验收；七项研究需求并未因此全部完成，状态不会实时刷新。",
+        "links": [
+          {
+            "label": "看全部成果",
+            "url": "#library"
+          },
+          {
+            "label": "打开个人进化镜像",
+            "url": "https://1337816143.github.io/Evolution/mydotwork/dashboard/index.html#workbench"
+          }
+        ],
+        "projectIds": [
+          "project-4"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      },
+      {
+        "id": "task-3",
+        "number": 3,
+        "title": "AI上游调研",
+        "state": "waiting",
+        "currentAction": "本轮报价、发票与转售权矩阵已发布，等待下一次证据复查。",
+        "waitingFor": "真实开票主体、最终费用、准确SKU转售权及新的核验材料",
+        "verifiedAt": "2026-10-03T10:22:00Z",
+        "publication": "第3—8轮与7家票据/授权矩阵、询证清单已上线。",
+        "completion": "尚无同时满足低价、正规发票与稳定授权供货的完整候选。",
+        "links": [
+          {
+            "label": "看上游报告",
+            "url": "../research/round3-7/report.html"
+          },
+          {
+            "label": "看询证清单",
+            "url": "../research/round3-7/report.html#inquiry-checklist"
+          }
+        ],
+        "projectIds": [
+          "project-1"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_cb8e4c24d624819194109212e6d68409",
+          "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      },
+      {
+        "id": "task-4",
+        "number": 4,
+        "title": "Codex／GPT资料接管",
+        "state": "waiting",
+        "currentAction": "本轮私有快照与指定工具的定向只读核验已完成，等待后续增量。",
+        "waitingFor": "下一批明确提供的导出或定时检查返回的新材料",
+        "verifiedAt": "2026-10-03T10:22:00Z",
+        "publication": "私有234对话、4012条记录、3860个唯一ID保持；本轮导出另补13条Codex可见消息，不公开全文。",
+        "completion": "仍有206处正文/媒体缺口、未知分支和2条会话级缺口；本轮核验完成不等于全量接管。",
+        "links": [
+          {
+            "label": "看公开进度",
+            "url": "../projects/index.html#project-3"
+          },
+          {
+            "label": "看本轮说明",
+            "url": "../chat/index.html#Sentinel_41779a8d34cc8191b163e6128ea80fbd"
+          }
+        ],
+        "projectIds": [
+          "project-2",
+          "project-3"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_41779a8d34cc8191b163e6128ea80fbd",
+          "Sentinel_3ee1c49f20dc8191ade208c5fd74df53"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      },
+      {
+        "id": "task-5",
+        "number": 5,
+        "title": "AI副业与真实收益验证",
+        "state": "waiting",
+        "currentAction": "原创4镜头分镜、提示词及计时质量准备包已完成；S01实际生成尚未启动。",
+        "waitingFor": "既有GPU空闲；当前不抢占正在使用的算力，没有新生成视频",
+        "verifiedAt": "2026-10-03T10:43:00Z",
+        "publication": "已有研究报告和评估包可访问；本轮另交付32项证据的实证方案，公开入口仍保留已上线版本。",
+        "completion": "新样片和交易验证尚未完成；已有短片与准备包不等于真实盈利，尚无本人订单或收入证据。",
+        "links": [
+          {
+            "label": "看现有报告",
+            "url": "../research/ai-side-income/report.html"
+          },
+          {
+            "label": "下载评估候选",
+            "url": "../research/ai-side-income/sample-v0.2-candidate.zip"
+          }
+        ],
+        "projectIds": [
+          "project-17"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
+          "Sentinel_5ca085ee1be08191a2a93a26a52cf70a"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      },
+      {
+        "id": "task-6",
+        "number": 6,
+        "title": "Paper论文与方法知识库",
+        "state": "running",
+        "currentAction": "博士研究设计方案已交付；云端正重组Paper首页、导航和内容覆盖，转向研究证据、开放示例与研究备忘。",
+        "waitingFor": "新首页与知识库实现、原笔记保留检查和发布前验收",
+        "verifiedAt": "2026-10-03T10:25:35Z",
+        "publication": "现有Paper站和镜像已发布；本轮研究导向改版正在实现，尚未上线。",
+        "completion": "用户已取消练习题、错题和知识自测方向；真实登录与双设备恢复仍待验证。",
+        "links": [
+          {
+            "label": "打开论文网站",
+            "url": "https://1337816143.github.io/Paper/"
+          },
+          {
+            "label": "打开论文镜像",
+            "url": "https://1337816143.github.io/Evolution/paper/index.html"
+          }
+        ],
+        "projectIds": [
+          "project-6"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
+          "Sentinel_9358551240b88191ac0cadd343b9a958"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      },
+      {
+        "id": "task-7",
+        "number": 7,
+        "title": "Farm多尺度设计与优化",
+        "state": "running",
+        "currentAction": "地图修复和数据生成持续运行；博士三模型整体重构设计已完成，等待分阶段实施。",
+        "waitingFor": "地图与数据接入测试；FarmDesign/FarmSTEPS/Landscape IMAGES功能实现与验证",
+        "verifiedAt": "2026-10-03T10:22:00Z",
+        "publication": "v0.3.10已发布；本轮地图修复与模型整体设计尚未交付。",
+        "completion": "现有计算仍以崖州简化季度筛选为主；三模型完整功能、博士三个目标及全域覆盖均未完成。",
+        "links": [
+          {
+            "label": "打开海南数据入口",
+            "url": "https://1337816143.github.io/FarmSystemDesign/#research"
+          },
+          {
+            "label": "看数据资源",
+            "url": "https://1337816143.github.io/FarmSystemDesign/#resources"
+          }
+        ],
+        "projectIds": [
+          "project-5"
+        ],
+        "evidenceMessageIds": [
+          "Sentinel_f94aa57a1e8c81918d67abfff839eb23",
+          "Sentinel_9358551240b88191ac0cadd343b9a958"
+        ],
+        "access": "public",
+        "metadataApproved": true
+      }
+    ],
+    "coverage": {
+      "messageCount": 434,
+      "nonemptyCount": 424,
+      "end": "2026-10-03T10:00:30.694564+00:00",
+      "partial": true,
+      "summary": "已取得消息截至2026-10-03 18:00北京时间；三页均为部分返回，无法证明区间内无缺页。附件及其他GPT原文不公开。"
+    },
+    "decisions": [
+      {
+        "title": "网页与接管的环境范围",
+        "summary": "网页修改、测试和推送使用云端；明确要求接管电脑上的Codex成果时，可按该次要求读取。早先“一切都不用电脑”的解释已被用户澄清。",
+        "messageId": "Sentinel_495dc1cb98908191909f7e3b5046c910",
+        "supersedes": [
+          "Sentinel_bc9dc9938c488191a7ad461216328622"
+        ]
+      },
+      {
+        "title": "Paper以理解研究为目标",
+        "summary": "当前目标是完整理解论文思路、方法、工具与知识，不再沿用练习题、错题和知识自测建议。",
+        "messageId": "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
+        "supersedes": [
+          "Sentinel_d44857a2c85081918014d5d4e717bb50",
+          "Sentinel_f08a03b7dc8081918c5276284c1ab4db"
+        ]
+      },
+      {
+        "title": "副业先验证真实生意",
+        "summary": "AI漫剧与会员业务要有真实案例、成本、获客和回款证据；现有科研样品只是评估候选，不能当作已验证收入项目。",
+        "messageId": "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
+        "supersedes": []
+      }
+    ]
+  }
 }

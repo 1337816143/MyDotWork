@@ -74,9 +74,9 @@ def build_dashboard(out, version):
     catalog = json.dumps(load_catalog(), ensure_ascii=False, indent=2)
     (target / 'catalog.json').write_text(catalog + '\n', encoding='utf-8')
     template = (ROOT / 'src/dashboard.html').read_text(encoding='utf-8')
-    css = '\n'.join((ROOT / 'src' / name).read_text(encoding='utf-8') for name in ('dashboard.css', 'glass.css', 'compact.css', 'navigation.css'))
+    css = '\n'.join((ROOT / 'src' / name).read_text(encoding='utf-8') for name in ('dashboard.css', 'glass.css', 'compact.css', 'navigation.css', 'status.css'))
     js = (ROOT / 'src/dashboard.js').read_text(encoding='utf-8')
-    html = template.replace('__CSS__', css).replace('__SCRIPT__', js).replace('__DATA__', raw.replace('<', '\\u003c')).replace('__VERSION__', version).replace('__BOOT_SCRIPT__', (ROOT/'src/appearance-boot.js').read_text(encoding='utf-8')).replace('__CATALOG_DATA__', catalog.replace('<', '\\u003c')).replace('__CATALOG_SCRIPT__', (ROOT/'src/catalog.js').read_text(encoding='utf-8'))
+    html = template.replace('__CSS__', css).replace('__SCRIPT__', js).replace('__DATA__', raw.replace('<', '\\u003c')).replace('__VERSION__', version).replace('__BOOT_SCRIPT__', (ROOT/'src/appearance-boot.js').read_text(encoding='utf-8')).replace('__CATALOG_DATA__', catalog.replace('<', '\\u003c')).replace('__CATALOG_SCRIPT__', (ROOT/'src/catalog.js').read_text(encoding='utf-8')).replace('__STATUS_SCRIPT__', (ROOT/'src/status.js').read_text(encoding='utf-8'))
     (target / 'index.html').write_text(html, encoding='utf-8')
     return d
 

@@ -60,7 +60,16 @@ def validate():
     assert source['coverage']['start']==chat['coverage']['start']
     assert source['coverage']['end']==chat['coverage']['end']
     assert chat['coverage']['messageCount']==len(chat['messages'])
-    assert chat['coverage']['readApiHistoryExhausted'] is True
+    assert type(chat['coverage']['readApiHistoryExhausted']) is bool
+    increment = chat['coverage']['latestIncrement']
+    assert increment['allPagesPartial'] is True and increment['partialPageCount'] == 3
+    assert chat['coverage']['readApiHistoryExhausted'] is False, 'Partial pages cannot prove exhaustive coverage'
+    integrity = json.loads((ROOT/'data/chat-integrity.json').read_bytes())
+    canonical = lambda value: json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
+    assert hashlib.sha256(canonical(chat['messages'][:integrity['baselineMessageCount']])).hexdigest() == integrity['baselineMessagesSha256'], 'Previously published original messages changed'
+    assert len(chat['messages']) == integrity['approvedMessageCount']
+    assert hashlib.sha256(canonical(chat['messages'])).hexdigest() == integrity['approvedMessagesSha256'], 'Reviewed messages changed'
+    assert not any(message['role']=='assistant' and (re.fullmatch(r'Allow GitHub to create a Git blob\?\s*', message['text']) or message['text'].startswith('Update custom rule?\n')) for message in chat['messages']), 'Platform control card is not chat original text'
     assert min(m['time'] for m in chat['messages'])==chat['coverage']['start']
     assert max(m['time'] for m in chat['messages'])==chat['coverage']['end']
     projects=json.loads((ROOT/'dist/projects/status.json').read_text())
@@ -72,7 +81,7 @@ def validate():
     scan(newer)
     assert '/workspace/' not in newer and 'libfile_' not in newer
     group=projects['projects'][0]
-    assert group['name']=='AI上游调研' and group['status']=='进行中'
+    assert group['name']=='AI上游调研' and group['status']=='本轮已发布，等待下一次核验'
     assert len(group['children'])==4 and all(c['status']=='进行中' for c in group['children'])
     round2=json.loads(newer)
     assert len(round2['routes']['routes'])==11 and len(round2['routes']['sources'])==55
@@ -90,6 +99,8 @@ def validate():
             assert len(audit.ids)==len(set(audit.ids))
             if name=='chat/index.html':
                 assert audit.messages==[m['text'] for m in chat['messages']], 'Escaped HTML differs from original text'
+                header = content.decode().split('<article', 1)[0]
+                assert '本次为部分分页返回' in header and '已分页读取到工具可见历史末尾' not in header
             for href in audit.hrefs:
                 if href.startswith(('#','http:','https:','mailto:')):continue
                 dest=(ROOT/'dist'/name).parent/href.split('#')[0].split('?')[0]

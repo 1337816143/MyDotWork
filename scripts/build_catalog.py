@@ -7,6 +7,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 TYPES = {'report', 'dataset', 'tutorial', 'guide', 'archive', 'website', 'progress'}
+STATES = {'running', 'waiting', 'blocked', 'round_complete'}
 
 
 def approved_url(value):
@@ -32,8 +33,8 @@ def timestamp(value):
 def load_catalog(manifest=None, projects=None):
     m = manifest if manifest is not None else json.loads((ROOT/'data/workbench-catalog.json').read_text(encoding='utf-8'))
     p = projects if projects is not None else json.loads((ROOT/'data/projects.json').read_text(encoding='utf-8'))
-    assert m['schemaVersion'] == 1
-    assert set(m) == {'schemaVersion', 'scope', 'artifacts', 'websites', 'tasks'}
+    assert m['schemaVersion'] == 2
+    assert set(m) == {'schemaVersion', 'scope', 'artifacts', 'websites', 'tasks', 'statusSnapshot'}
     tasks = []
     for ref in m['tasks']:
         assert set(ref) == {'id', 'projectIndex', 'expectedTitle', 'metadataApproved', 'access'}
@@ -69,6 +70,38 @@ def load_catalog(manifest=None, projects=None):
                             task=t['id'], url=t['url'], source=t['source'], updatedAt=t['updatedAt'],
                             summary=t['progress'], access=t['access'], metadataApproved=True, category='tasks'))
     assert len({r['id'] for r in records}) == len(records)
-    return dict(schemaVersion=1, scope=m['scope'], records=records, tasks=tasks,
+    snapshot = m['statusSnapshot']
+    validate_status_snapshot(snapshot, set(ids))
+    return dict(schemaVersion=2, scope=m['scope'], records=records, tasks=tasks,
                 counts=dict(artifacts=len(m['artifacts']), websites=len(m['websites']), tasks=len(tasks)),
-                projectSnapshotUpdatedAt=p['updatedAt'])
+                projectSnapshotUpdatedAt=p['updatedAt'], statusSnapshot=snapshot)
+
+
+def validate_status_snapshot(snapshot, project_ids):
+    assert set(snapshot) == {'mode', 'asOf', 'notice', 'items', 'coverage', 'decisions'}
+    assert snapshot['mode'] == 'snapshot', 'Static data cannot claim real-time monitoring'
+    timestamp(snapshot['asOf'])
+    assert 'T' in snapshot['asOf'] and '不是实时' in snapshot['notice']
+    assert len(snapshot['items']) == 7
+    assert [item['number'] for item in snapshot['items']] == list(range(1, 8))
+    for item in snapshot['items']:
+        assert set(item) == {'id', 'number', 'title', 'state', 'currentAction', 'waitingFor', 'verifiedAt', 'publication', 'completion', 'links', 'projectIds', 'evidenceMessageIds', 'access', 'metadataApproved'}
+        assert item['id'] == 'task-' + str(item['number']) and item['state'] in STATES
+        assert item['access'] == 'public' and item['metadataApproved'] is True
+        assert all(isinstance(item[key], str) and item[key].strip() for key in ['title', 'currentAction', 'waitingFor', 'publication', 'completion'])
+        timestamp(item['verifiedAt'])
+        assert 'T' in item['verifiedAt'] and datetime.fromisoformat(item['verifiedAt'].replace('Z', '+00:00')) <= datetime.fromisoformat(snapshot['asOf'].replace('Z', '+00:00'))
+        assert 1 <= len(item['links']) <= 3
+        for link in item['links']:
+            assert set(link) == {'label', 'url'} and isinstance(link['label'], str) and link['label'].strip()
+            approved_url(link['url'])
+        assert item['projectIds'] and set(item['projectIds']) <= project_ids
+        assert item['evidenceMessageIds'] and all(re.fullmatch(r'Sentinel_[a-z0-9]+', value) for value in item['evidenceMessageIds'])
+    coverage = snapshot['coverage']
+    assert set(coverage) == {'messageCount', 'nonemptyCount', 'end', 'partial', 'summary'}
+    assert type(coverage['partial']) is bool and 0 <= coverage['nonemptyCount'] <= coverage['messageCount']
+    timestamp(coverage['end'])
+    for note in snapshot['decisions']:
+        assert set(note) == {'title', 'summary', 'messageId', 'supersedes'}
+        assert all(isinstance(note[key], str) and note[key] for key in ['title', 'summary', 'messageId'])
+        assert note['messageId'] not in note['supersedes']

@@ -123,8 +123,8 @@ def validate_publications():
     assert by_id['paper-learning-site']['task'] == 'project-6' and by_id['paper-learning-site']['url'] == 'https://1337816143.github.io/Paper/'
     assert by_id['farm-system-site']['task'] == 'project-5' and by_id['farm-system-site']['url'] == 'https://1337816143.github.io/FarmSystemDesign/#research'
     projects = {p['name']: p for p in json.loads((ROOT / 'data/projects.json').read_bytes())['projects']}
-    assert 'e9d380262f02c4444acfecc658ef3f28448b00e8' in projects['FarmSystemDesign农业系统平台']['evidenceLevel']
-    assert '8691cd548c234bc4db6e7394933716c24a639576' in projects['Paper论文学习平台']['evidenceLevel']
+    assert 'v0.3.10' in projects['FarmSystemDesign农业系统平台']['progress'] and '未完成' in projects['FarmSystemDesign农业系统平台']['gaps']
+    assert '练习题、错题和知识自测' in projects['Paper论文学习平台']['gaps']
     print('PASS: six exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

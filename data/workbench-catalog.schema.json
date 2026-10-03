@@ -8,11 +8,12 @@
     "scope",
     "artifacts",
     "websites",
-    "tasks"
+    "tasks",
+    "statusSnapshot"
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
+      "const": 2
     },
     "scope": {
       "type": "string",
@@ -45,6 +46,210 @@
       "type": "array",
       "items": {
         "$ref": "#/$defs/task"
+      }
+    },
+    "statusSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "asOf",
+        "notice",
+        "items",
+        "coverage",
+        "decisions"
+      ],
+      "properties": {
+        "mode": {
+          "const": "snapshot"
+        },
+        "asOf": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "items": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "number",
+              "title",
+              "state",
+              "currentAction",
+              "waitingFor",
+              "verifiedAt",
+              "publication",
+              "completion",
+              "links",
+              "projectIds",
+              "evidenceMessageIds",
+              "access",
+              "metadataApproved"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^task-[1-7]$"
+              },
+              "number": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "state": {
+                "enum": [
+                  "running",
+                  "waiting",
+                  "blocked",
+                  "round_complete"
+                ]
+              },
+              "currentAction": {
+                "type": "string",
+                "minLength": 1
+              },
+              "waitingFor": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verifiedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "publication": {
+                "type": "string",
+                "minLength": 1
+              },
+              "completion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "links": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "label",
+                    "url"
+                  ],
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "url": {
+                      "type": "string",
+                      "pattern": "^(https://|\\.\\./|#)"
+                    }
+                  }
+                }
+              },
+              "projectIds": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "evidenceMessageIds": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^Sentinel_[a-z0-9]+$"
+                }
+              },
+              "access": {
+                "const": "public"
+              },
+              "metadataApproved": {
+                "const": true
+              }
+            }
+          }
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "messageCount",
+            "nonemptyCount",
+            "end",
+            "partial",
+            "summary"
+          ],
+          "properties": {
+            "messageCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "nonemptyCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "end": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "partial": {
+              "type": "boolean"
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "title",
+              "summary",
+              "messageId",
+              "supersedes"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "summary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "messageId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "supersedes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
