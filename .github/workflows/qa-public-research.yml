@@ -1,0 +1,41 @@
+name: Cloud public research UI QA
+on:
+  push:
+    branches: [qa/v172-cloud-public-ui-20261003]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install official CJK fonts for readable snapshots
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          font_family="$(fc-match -f '%{family}' 'Noto Sans CJK SC')"
+          test -n "$font_family"
+          echo "QA_CJK_FONT=$font_family" >> "$GITHUB_ENV"
+      - name: Select the hosted runner browser
+        run: |
+          chrome_path="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          test -n "$chrome_path"
+          echo "CHROME_PATH=$chrome_path" >> "$GITHUB_ENV"
+          "$chrome_path" --version
+      - name: Verify published desktop and fixed-width mobile pages
+        run: node scripts/qa-public-research.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mydotwork-v172-cloud-ui-evidence
+          path: |
+            output/public-ui-qa/results.json
+            output/public-ui-qa/*.png
+          retention-days: 14
