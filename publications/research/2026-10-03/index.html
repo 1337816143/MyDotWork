@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="任务3与5公开研究附录：五家会员供货候选的完整证据、H3单镜待验证方案与证据门槛。采购全费与实际净利润未知，历史观察日期保持原样。">
+<meta name="theme-color" content="#142e40">
+<title>任务3／5研究附录 · 当前证据门槛与完整历史材料 · MyDotWork 1.8.2</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:auto;scroll-padding-top:20px}
+body{margin:0;background:#f3f6f8;color:#173042;font:16px/1.8 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;overflow-wrap:anywhere}
+a{color:#066a79;overflow-wrap:anywhere;text-underline-offset:3px}
+a:hover{color:#03404b}
+a:focus-visible{outline:3px solid #c18522;outline-offset:4px}
+.skip-link{position:absolute;left:12px;top:-100px;padding:10px 14px;background:white;color:#173042;z-index:10}
+.skip-link:focus{top:12px}
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:24px}
+.masthead{background:#142e40;color:#fff;padding-block:26px 32px;border-bottom:5px solid #177586}
+.masthead a{color:#cfedf1}
+.eyebrow{margin:18px 0 8px;color:#c7e0e7;font-size:.875rem;letter-spacing:.04em}
+h1,h2,h3{line-height:1.4;overflow-wrap:anywhere}
+h1{font-size:clamp(1.65rem,4.2vw,2.4rem);margin:8px 0 12px}
+h2{font-size:1.4rem;margin:0 0 16px}
+h3{font-size:1.1rem;margin:22px 0 8px}
+p{margin:12px 0}
+.lead{max-width:880px;color:#d7e7ec;margin-bottom:0}
+.nav{display:flex;flex-wrap:wrap;gap:8px 22px;padding-block:14px;border-bottom:1px solid #d5e2e8;background:#fff}
+.nav a{min-height:36px;display:inline-flex;align-items:center;text-decoration:none}
+main.wrap{padding-top:24px;padding-bottom:12px;min-width:0}
+.panel{min-width:0;background:#fff;border:1px solid #d5e2e8;border-radius:12px;padding:26px;margin:0 0 22px}
+.section-label{display:block;color:#547080;font-size:.875rem;font-weight:650;margin-bottom:8px}
+.review-note,.history-note,.warn{background:#fff9e9;border-left:4px solid #bb8126;padding:13px 16px;margin:16px 0}
+.review-note p:first-child,.history-note p:first-child{margin-top:0}
+.review-note p:last-child,.history-note p:last-child{margin-bottom:0}
+.date-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0 4px}
+.date-grid div{padding:14px;border:1px solid #d5e2e8;border-radius:8px;background:#f7fafb;min-width:0}
+.date-grid dt{font-size:.875rem;color:#536e7d}
+.date-grid dd{margin:6px 0 0;font-weight:600;line-height:1.5}
+.date-grid small{display:block;font-size:.875rem;font-weight:400;color:#536e7d;margin-top:6px}
+.muted,.caption{color:#536d7d;font-size:.875rem}
+.scroll{width:100%;max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;margin:12px 0;border:1px solid #d4e2e8;border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:.875rem;line-height:1.65}
+caption{text-align:left;padding:12px 14px;font-weight:650;background:#eef5f7}
+th,td{padding:12px 14px;text-align:left;vertical-align:top;border-right:1px solid #dbe5e9;border-bottom:1px solid #dbe5e9;overflow-wrap:anywhere}
+th{background:#edf4f7;font-weight:650}
+th:last-child,td:last-child{border-right:0}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+.cost-table{min-width:820px}
+.cost-table th:first-child{width:23%}
+.cost-table td:nth-child(4),.cost-table td:nth-child(5){font-weight:700;color:#795514}
+.cost-table td:last-child{width:22%}
+li{margin:8px 0}
+ul,ol{padding-left:1.45em}
+.historical-report{min-width:0}
+.historical-report>h1{font-size:1.65rem}
+.historical-report>section{border-top:1px solid #d7e3e9;padding-top:22px;margin-top:26px;min-width:0}
+.historical-report table{min-width:1000px}
+.historical-report [id^="S"]{padding:13px 15px;background:#f5f8fa;border:1px solid #dde7ec;border-radius:8px;font-size:.9375rem}
+:target{scroll-margin-top:20px}
+.historical-report p:target{outline:3px solid #167888;outline-offset:2px;background:#ecf8fa}
+.plan-text{font:inherit;line-height:1.85;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;min-width:0;max-width:100%}
+.downloads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.downloads li{min-width:0;margin:0;border:1px solid #d4e2e8;border-radius:8px;padding:16px;background:#f7fafb}
+.downloads a{display:block;font-weight:650;min-height:32px}
+.downloads span{display:block;color:#536d7d;font-size:.875rem;margin-top:5px}
+footer{padding:12px 0 32px;color:#536d7d;font-size:.875rem}
+footer a{margin-right:16px}
+@media(max-width:720px){.date-grid{grid-template-columns:1fr}.downloads{grid-template-columns:1fr}.wrap{padding-inline:18px}.panel{padding:20px}.masthead{padding-block:22px 25px}}
+@media(max-width:420px){.wrap{padding-inline:12px}.panel{padding:16px;border-radius:10px;margin-bottom:16px}.nav{gap:4px 16px;padding-block:10px}h2{font-size:1.28rem}.historical-report>h1{font-size:1.45rem}.review-note,.history-note,.warn{padding:12px}.historical-report [id^="S"]{padding:12px}.date-grid div{padding:12px}.downloads li{padding:13px}}
+@media print{body{background:white;color:#111}.masthead{background:white;color:#111;border-color:#333}.masthead a,.lead,.eyebrow{color:#222}.nav,.skip-link{display:none}.wrap{max-width:none;padding-inline:0}.panel{border:0;border-bottom:1px solid #aaa;padding:12px 0;border-radius:0}.scroll{overflow:visible;border:0}table,.cost-table,.historical-report table{min-width:0;font-size:10px}th,td{padding:6px}.downloads{display:block}.downloads li{break-inside:avoid;margin-bottom:8px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#current-gates">跳到当前证据门槛</a>
+<header class="masthead"><div class="wrap">
+<a href="../../dashboard/index.html">返回 AI 研究工作台</a>
+<p class="eyebrow">MYDOTWORK · 公开研究附录 · 资料范围 1.8.2</p>
+<h1>任务3／5：当前证据与完整研究材料</h1>
+<p class="lead">五家会员供货候选继续补证；H3只保留一个“5秒原创漫画镜头预演”待验证假设。当前尚无合格供货闭环，也没有已验证订单或收入。</p>
+</div></header>
+<nav class="nav" aria-label="本页章节"><div class="wrap nav" style="border:0;padding-block:0">
+<a href="#current-gates">当前证据门槛</a><a href="#supplier-original">供货完整历史报告</a><a href="#h3-plan">现行方案原文</a><a href="#downloads">原版下载</a>
+</div></nav>
+<main class="wrap">
+<section class="panel" id="current-gates" aria-labelledby="current-heading">
+<span class="section-label">01 · 最新审校口径</span>
+<h2 id="current-heading">先区分资料审校与事实观察</h2>
+<div class="review-note"><p><strong>≤170元是采购总支出上限，不是利润。</strong>五家票费和含票全费均未知。需求访谈、真实订单、结算及净利润证据均为0；实际净利润未知，不能把证据0条解释为净利润0元。</p></div>
+<dl class="date-grid">
+<div><dt>资料审校</dt><dd><time datetime="2026-10-03T19:14:00Z">2026-10-03 19:14 UTC</time><small>北京时间10月4日03:14</small></dd></div>
+<div><dt>供货观察截至</dt><dd><time datetime="2026-10-03T13:20:00Z">2026-10-03 13:20 UTC</time><small>北京时间10月3日21:20</small></dd></div>
+<div><dt>官方许可复读</dt><dd><time datetime="2026-10-03T19:12:30Z">2026-10-03 19:12:30 UTC</time><small>未证明实际量化版本与许可已对应</small></dd></div>
+</dl>
+<p class="caption">下列审校片段保持原文。审校时间不刷新报价、来源或样片观察；ChatShare支付预览保留10月2日历史日期。</p>
+<section id="task35-evidence-gates-20261003-r6" aria-labelledby="task35-evidence-gates-heading">
+<h2 id="task35-evidence-gates-heading">任务3／5：当前验证范围与证据门槛</h2>
+<p>本次是资料审校，不刷新报价或样片观察日期，也没有新增生成、外联、登录或交易。</p>
+<h3>会员供货候选</h3>
+<p>五家既有候选共19条来源／访问记录、18个去重URL；其中18条成功观察对应17个URL，另1条准确SKU访问未成功。这不是19个新来源。供货观察截至2026年10月3日13:20 UTC（北京时间21:20）。ChatShare 166.40元仍是10月2日历史支付预览。</p>
+<p>≤170元是含全部必需费用及合格大陆票据的采购总支出上限，不是利润。五家票费和含票全费仍未知；未知不能填0。合格候选、真实大陆票据验真及完整授权供货路径均为0，尚不能据挂牌价、宣传或支付预览认定可经营。</p>
+<h3>H3单镜假设</h3>
+<p>当前只保留“5秒原创漫画镜头预演”这一待验证服务假设，拟为4至6秒、832×480、24 fps、固定机位静音单镜。旧30秒六镜及双角色四镜方案暂停；本轮仅整理证据。S01生成1次、5.167秒、进程墙钟13分42.375秒，抬眼未完整实现，发夹方位与音轨仍待核；一次样片不证明需求、可重复交付或盈利。</p>
+<p>需求访谈、真实订单、结算及净利润证据均未取得；人工、能耗及全成本仍未知。须依次核真实需求、授权素材与地域、原规格验收、真实首单和低维护复现。建议的3笔结算单／2名独立客户／30天记录只是观察门槛。</p>
+<p>H3官方许可排除欧盟、英国、韩国、美国，地域条款也覆盖输出展示。国内客户不自动解决全球公开展示的许可问题。本机量化许可链、素材权利及实际使用／展示地域仍需分别核验，当前不发布样片、音轨、抽帧、接触表或缩略图。<a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE">官方许可（I.5、V.4及附录A.1；2026年10月3日19:12 UTC复读）</a></p>
+<p>公开增量仅含脱敏研究文字、结构化进度与公开来源链接，不包含私聊及其派生摘要、私有媒体或私人文件地址。</p>
+</section>
+
+<h3>五家候选的费用状态</h3>
+<p>挂牌、支付预览与含票全费分别列示。预览不是实际成交；任一必需费用未知，含票全费仍未知。</p>
+<div class="scroll" role="region" aria-label="五家候选费用表，可横向滚动" tabindex="0">
+<table class="cost-table"><caption>金额单位：人民币元 · ChatShare保留历史日期</caption>
+<thead><tr><th scope="col">候选</th><th scope="col">挂牌价</th><th scope="col">支付预览</th><th scope="col">票费</th><th scope="col">含票全费</th><th scope="col">价格证据日期</th></tr></thead>
+<tbody><tr><th scope="row">AI源头 / CatFK云猫</th><td>108.99元</td><td>110.95元</td><td>未知</td><td>未知</td><td>2026-10-03</td></tr>
+<tr><th scope="row">小久</th><td>113.00元</td><td>115.03元</td><td>未知</td><td>未知</td><td>2026-10-03</td></tr>
+<tr><th scope="row">Morimm</th><td>115.00元</td><td>未知</td><td>未知</td><td>未知</td><td>2026-10-03</td></tr>
+<tr><th scope="row">引路鲸 / ChatGPT直充站</th><td>135.00元</td><td>135.00元</td><td>未知</td><td>未知</td><td>2026-10-03</td></tr>
+<tr><th scope="row">ChatShare</th><td>160.00元</td><td>166.40元</td><td>未知</td><td>未知</td><td>2026-10-02（历史，未刷新）</td></tr></tbody></table></div>
+<p class="caption">完整退款、凭据与授权限制见下一节原报告；19条来源／访问记录和S01–S19锚点全部保留。样片编号S01与供货来源编号S01属于两套记录。</p>
+</section>
+<section class="panel" id="supplier-original" aria-labelledby="supplier-heading">
+<span class="section-label">02 · 完整历史快照</span>
+<h2 id="supplier-heading">五家供货候选：原报告全文</h2>
+<div class="history-note"><p>以下完整保留2026年10月3日13:20 UTC截至的原报告正文，包括退款条款、主体与授权缺口、19条来源记录。原文中的“本轮”“未修改或发布网站”等措辞均指当时复核，不代表本附录的发布状态；最新证据口径见<a href="#current-gates">第一节</a>。</p><p><a href="supplier-review-original.html" download>下载原版HTML（保持原字节）</a> · <a href="supplier-review.json" download>下载配套JSON（保持原字节）</a></p></div>
+<div class="historical-report"><h1>五家原号Plus候选：2026-10-03定点复核</h1><p class="muted">观察截至2026-10-03 13:20 UTC / 北京时间21:20。价格观察日期逐行标明；不是实际成交或发票验真。</p><section><div class="warn">只读公开商品、条款及官方材料。未登录、注册、联系第三方、建单、付款、试购、取得真实发票或提交账号凭据。未修改或发布网站。</div><h2>结论</h2><ul><li>本轮新增合格含票≤170元候选0家，真实大陆发票验真0笔，完整自主合法/下级分销路径0条。</li><li>CatFK支付宝110.95元、小久支付宝115.03元已定点重读；它们仍不是含票成交价。</li><li>Morimm退款条款已成功实时读到，修正此前No Content的访问状态。退款仅u链接/币安ID，当前最终费用和周期仍不明。</li><li>ChatShare166.40元保留10月2日历史日期；本轮准确SKU没有成功重核。</li><li>所有五家含全部必需费用的大陆含票总额仍为未知。公开正规资金、官方渠道或平台资质均不足以完成上游合法来源验证。</li></ul><h2>真正增量</h2><ul><li>Morimm现行条款不为空：实时读取恢复；加密渠道退款限制得到当前页面证据。</li><li>CatFK微信选中后UI仍显示110.95/费1.96，与旧112.04不同；未建单，不判定实际费率变化。</li><li>重新把Morimm周期标为本轮未明确，而不从历史月卡或30天售后自动推出当前订阅期。</li></ul></section><section><h2>价格证据表</h2><div class="scroll"><table><tr><th>候选 / SKU</th><th>挂牌 / 页面预览</th><th>日期</th><th>全部必要费用含票总额</th><th>凭据和授权</th></tr><tr><td>AI源头 / CatFK云猫 / g8ptrd</td><td>挂牌108.99元；预览110.95元；支付费1.96元</td><td>2026-10-03</td><td>未知；无法确认满足≤170元全费门槛</td><td>交付CDK；本轮公开准确SKU没有完整兑换凭据流程，不能假定免凭据。未取得准确SKU原厂或有效下级分销授权</td></tr><tr><td>小久 / j0eswz / gpt plus</td><td>挂牌113.00元；预览115.03元；支付费2.03元</td><td>2026-10-03</td><td>未知；无法确认满足≤170元全费门槛</td><td>云猫页明确需Cookie/Session；可能涉及账号和聊天资料访问。同商互链和一卡一付声明不证明实际支付人、持卡授权或下级分销权</td></tr><tr><td>Morimm / gptplus</td><td>挂牌115.00元；预览未知；支付费未知</td><td>2026-10-03</td><td>未知；无法确认满足≤170元全费门槛</td><td>明确Token；隐私页没有处理方、留存、删除说明。未取得原厂或准确SKU下级授权</td></tr><tr><td>引路鲸 / ChatGPT直充站 / LIST-000001</td><td>挂牌135.00元；预览135.00元；支付费未知</td><td>2026-10-03</td><td>未知；无法确认满足≤170元全费门槛</td><td>FAQ称不收任何会话凭据/验证码/远程控制；未演示，不认定已验证免凭据。母品牌明确未获厂商官方授权；商家代理计划本身不能证明OpenAI分销权</td></tr><tr><td>ChatShare / yrjao6</td><td>挂牌160.00元；预览166.40元；支付费6.40元</td><td>2026-10-02（历史，未刷新）</td><td>未知；无法确认满足≤170元全费门槛</td><td>既有充值入口需Session，未重新提交或操作。官方渠道为卖方宣传；未取得Plus原厂或下级授权文件</td></tr></table></div><p class="muted">实际含票总支出 = SKU价 + 必需支付费 + 已确认开票附费 + 其他必需费用。任一必需费用未知则总额未知。可选加急不强行计入基础价，未满足条件的优惠不抵扣。</p></section><section><h2>AI源头 / CatFK云猫</h2><ul><li><b>周期：</b>1个月（本轮商品声明）</li><li><b>单买：</b>公开页面1件起购；未成交</li><li><b>代理费：</b>零售页面未显示必需代理费；批量代理条件未公开</li><li><b>大陆票据：</b>商称可开；大陆票种、开票方全称/税号、票项、金额、附费均未知</li><li><b>售后：</b>商称30天；平台正常售后为下单起24小时，超过后按卖家质保和平台规则处理</li><li><b>本轮增量：</b>支付宝旧价本次重新观察一致；微信选中后金额仍110.95，与旧112.04不同，暂记预览差异</li></ul><p class="muted">来源：<a href="#S01">S01</a>, <a href="#S02">S02</a>, <a href="#S14">S14</a></p></section><section><h2>小久</h2><ul><li><b>周期：</b>1个月（云猫本轮商品声明）</li><li><b>单买：</b>云猫1件起购；原站游客可购，未成交</li><li><b>代理费：</b>单件零售未显示代理费；低费代理卡网具体条件未核</li><li><b>大陆票据：</b>大陆票支持、主体、票项、费用未知；发票/订阅查询链接不构成大陆票证据</li><li><b>售后：</b>原站称掉订按天退，封号不保；云猫页成功后不退换及多项排除，须同单统一条款</li><li><b>本轮增量：</b>115.03元本次重新观察一致；112元是标CNY但要求USDT的另一入口，不能当全费人民币价；手机号核验成本未知</li></ul><p class="muted">来源：<a href="#S03">S03</a>, <a href="#S04">S04</a>, <a href="#S14">S14</a></p></section><section><h2>Morimm</h2><ul><li><b>周期：</b>历史为月卡；本轮准确商品可见正文未明确周期</li><li><b>单买：</b>数量1可选，但须登录后购买；本轮未登录</li><li><b>代理费：</b>115元单件/5件113元为公开阶梯；后续费用未知，未核必需代理费</li><li><b>大陆票据：</b>大陆票支持、开票主体、票项、费用均未知</li><li><b>售后：</b>用过卡密不退换；实时服务条款仅支持u链接/币安ID退款，非已证原路人民币退款</li><li><b>本轮增量：</b>纠正空条款读取状态：实时正文已读出加密渠道退款限制；商品阶梯价格一致，但当前周期和最终费用未闭合</li></ul><p class="muted">来源：<a href="#S05">S05</a>, <a href="#S06">S06</a>, <a href="#S07">S07</a></p></section><section><h2>引路鲸 / ChatGPT直充站</h2><ul><li><b>周期：</b>1个月（本轮月付商品声明）</li><li><b>单买：</b>公开单件订单摘要；未建单</li><li><b>代理费：</b>零售无需显示代理费；进货代理需3000元，且不抵货款；返佣推广是另一模式</li><li><b>大陆票据：</b>商称增值税普通发票；FAQ说默认价格不含企业发票，开票方/税号/附费未知</li><li><b>售后：</b>有质保SKU掉订扣20%服务费再按天折算；封号排除；可选30元加急未计必需价</li><li><b>本轮增量：</b>135元和3000元资格费本次复核一致；无新增含票总价或授权证据</li></ul><p class="muted">来源：<a href="#S08">S08</a>, <a href="#S09">S09</a>, <a href="#S10">S10</a>, <a href="#S11">S11</a></p></section><section><h2>ChatShare</h2><ul><li><b>周期：</b>1个月（聚合页及历史准确SKU声明）</li><li><b>单买：</b>历史单件路径；本轮准确SKU未重读成功</li><li><b>代理费：</b>历史零售未显示代理费；当前交易条件未核</li><li><b>大陆票据：</b>商称正规发票；具体票种、Plus开票方/税号、票项及票费未知；API对公不能推到Plus</li><li><b>售后：</b>聚合页称充值问题30天处理、若充值原因封号按剩余天数退；准确SKU现行细则未重读</li><li><b>本轮增量：</b>只能重读聚合页；166.40保持历史值，距170元仅3.60元，未知附费可能越限</li></ul><p class="muted">来源：<a href="#S12">S12</a>, <a href="#S13">S13</a></p></section><section><h2>官方源头与分销权边界</h2><ul><li>官方礼卡零售存在，限定US/USD及实际美国兑换，不能直接适配中国大陆终端；发行人普通持卡条款禁止转售。</li><li>PerfectGift普通企业/API合同禁止转售；API功能本身不授予OpenAI SKU的商业下级分销权。旧战略转售招揽文案本轮未读到，不能当有效专项合同。</li><li>本轮未找到能同时覆盖授权双方、准确个人Plus SKU、地域/终端资格、转售/转批/下级范围及有效期的完整官方材料；不等于证明专门合同绝不存在。</li><li>不研究或采用盗刷、虚假身份/账单地址、优惠资格滥用；不因低价对商家反向定罪。合法资金与用途许可须另外有证。</li></ul><p>公开页能把价格和限制缩小，但不能无中生有地补全真实票据、收款主体和授权合同。进入合格名单前必须取得对应证据；本轮不为此联系、建单或付款。</p></section><section><h2>来源与观察时间</h2><p class="muted">“证实”仅指页面观察；商家陈述没有自动升级为独立证明。未读到内容不代表商家停业、没有条款或拒绝开票。</p><p id="S01"><b>S01</b> · 2026-10-03T13:15:00Z · 云端浏览器实时商品与支付预览<br><a href="https://catfk.com/item/g8ptrd">https://catfk.com/item/g8ptrd</a><br>108.99元、一件起购、支付宝预览110.95元，手续费1.96元；发票仍要求下单后联系，未列票种、开票方和费用。</p><p id="S02"><b>S02</b> · 2026-10-03T13:16:08Z · 云端浏览器选项与截图<br><a href="https://catfk.com/item/g8ptrd">https://catfk.com/item/g8ptrd</a><br>切选微信后，选中状态及截图仍显示110.95元/手续费1.96元；与10月1日微信112.04元历史预览不同。未建单，不能判定实际通道收费已改变。</p><p id="S03"><b>S03</b> · 2026-10-03T13:15:51Z · 云端浏览器实时商品与支付预览<br><a href="https://catfk.com/item/j0eswz">https://catfk.com/item/j0eswz</a><br>113元、一件起购、支付宝预览115.03元含费2.03元；明确Plus一个月。商品要求会话凭据、Free状态，成功后不退换，质保排除多种账号情形。</p><p id="S04"><b>S04</b> · 2026-10-03T13:18:40Z · 云端浏览器实时商品<br><a href="https://98-xj.com/products/gpt%20plus">https://98-xj.com/products/gpt%20plus</a><br>标价112.00 CNY、游客可购；正文指定USDT付款，未到支付，汇率与链费未知。互链云猫同商家；掉订按天退、封号不保，并把手机号验证交给用户。</p><p id="S05"><b>S05</b> · 2026-10-03T13:16:08Z · 云端浏览器实时商品<br><a href="https://morimm.com/products/gptplus">https://morimm.com/products/gptplus</a><br>115.00 CNY，五件起113元；数量框为一件，但须登录后购买。要求Token、Free及个人工作区；用过的卡密不退换。当前可见正文未明确订阅月数，历史月卡记录不等于本次周期重核。</p><p id="S06"><b>S06</b> · 2026-10-03T13:16:54Z · 云端浏览器实时条款<br><a href="https://morimm.com/terms">https://morimm.com/terms</a><br>正文规定退款仅支持u链接或币安ID。相同时点网页文本提取返回No Content，因此以前的空正文结论应保留为访问限制，不能代表现行条款为空。</p><p id="S07"><b>S07</b> · 2026-10-03T13:17:56Z · 云端浏览器实时隐私页<br><a href="https://morimm.com/privacy">https://morimm.com/privacy</a><br>只有娱乐测试、不得违法的免责声明；所阅正文没有交代Token处理方、留存期限或删除流程。</p><p id="S08"><b>S08</b> · 2026-10-03T13:16:08Z · 云端浏览器实时商品与订单摘要<br><a href="https://www.chatgqt.plus/buy?sku=LIST-000001">https://www.chatgqt.plus/buy?sku=LIST-000001</a><br>本人号Plus有质保月付135元，摘要应付135元；可选加急30元未选。尚未填邮箱或建单。称可开增值税普票；掉订先扣20%服务费后按天退，封号不保。</p><p id="S09"><b>S09</b> · 2026-10-03T13:14:55Z · 第一方正文提取<br><a href="https://www.chatgqt.plus/faq">https://www.chatgqt.plus/faq</a><br>称不收密码、验证码、Session、Token、Cookie或远程控制；默认价格不含企业发票，报销流程需先确认。流程没有实际演示。</p><p id="S10"><b>S10</b> · 2026-10-03T13:16:54Z · 云端浏览器实时合作页<br><a href="https://www.chatgqt.plus/cooperation">https://www.chatgqt.plus/cooperation</a><br>进货代理3000元一次性资格费，与拿货款独立；独立站另2000元、次年999元。可逐单付，但具体代理价登录后才见；零费用的是返佣推广。</p><p id="S11"><b>S11</b> · 2026-10-03T13:14:55Z · 第一方正文提取<br><a href="https://yinlujing.com/about/">https://yinlujing.com/about/</a><br>品牌明确声明未获OpenAI等厂商官方授权。商品页正式授权字样不能升格为原厂授权。</p><p id="S12"><b>S12</b> · 2026-10-03T13:14:55Z · 第一方正文提取<br><a href="https://chatshare.info/">https://chatshare.info/</a><br>公开聚合页仍列本人号Plus160元/月，所有业务开正规发票的声明；对公转账只明确API。页面自标最后更新2025-10-30，因此不算当前结算价。</p><p id="S13"><b>S13</b> · 2026-10-03T13:15:17Z · 本轮未取得实时可读准确SKU<br><a href="https://qfcc99.com/item/yrjao6">https://qfcc99.com/item/yrjao6</a><br>公开提取为空，本轮浏览器未完成访问；不得刷新其历史166.40元支付预览日期，亦不能推定停业或库存状态。</p><p id="S14"><b>S14</b> · 2026-10-03T13:16:54Z · 云端浏览器实时平台规则<br><a href="https://catfk.com/article/33">https://catfk.com/article/33</a><br>规则日期2026-05-30。下单起24小时平台售后；N天质保是卖家承诺，不延迟放款，平台不承担连带责任。过24小时在质保内先协商，平台有权扣卖家资金处理；私下交易不覆盖。</p><p id="S15"><b>S15</b> · 2026-10-03T13:16:45Z · 原厂帮助中心正文<br><a href="https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards">https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards</a><br>确认授权零售商存在，但目前美国购买/兑换、需实际在美国及USD计价账号；礼卡不是个人Plus经销合同。</p><p id="S16"><b>S16</b> · 2026-10-03T13:17:25Z · OpenAI所链接发行人条款<br><a href="https://mycardterms.com/openai/home/terms/">https://mycardterms.com/openai/home/terms/</a><br>2026-09-01版，发行人CIMI2604, Inc.；持卡人不可有偿转售，未授权卖家/转卖方来源卡可无效。</p><p id="S17"><b>S17</b> · 2026-10-03T13:18:20Z · 第一方企业/API条款<br><a href="https://www.perfectgift.com/corporate/terms-of-service">https://www.perfectgift.com/corporate/terms-of-service</a><br>页面版本2022-10，普通企业通道禁止转售，要求美国/DC实体、美国税号、可核实美国街址。</p><p id="S18"><b>S18</b> · 2026-10-03T13:17:25Z · 第一方API正文提取<br><a href="https://www.perfectgift.com/corporate/api">https://www.perfectgift.com/corporate/api</a><br>现可读正文只描述奖励/激励API与批量订单功能，没有读到旧资料所说战略转售招揽；不能据缺文断言专门分销计划不存在，也不能据API能力认定授权。</p><p id="S19"><b>S19</b> · 2026-10-03T13:18:20Z · 原厂地区政策<br><a href="https://help.openai.com/en/articles/7947663-chatgpt-supported-countries">https://help.openai.com/en/articles/7947663-chatgpt-supported-countries</a><br>官方列表未列中国大陆，并警示在列表外访问或提供访问可能导致封禁或暂停；境外卡或大陆票据不会改变地区条件。</p></section></div>
+</section>
+<section class="panel" id="h3-plan" aria-labelledby="plan-heading">
+<span class="section-label">03 · 完整原文快照</span>
+<h2 id="plan-heading">现行方案与证据缺口：TXT全文</h2>
+<div class="history-note"><p>以下逐字保留10月3日方案原文。文内供货“13:20”的时区为UTC；它不是19:14审校时的新报价。旧六镜、四镜及90分钟／12次预算仍为暂停历史，未来45分钟／3次只适用于另获运行授权后的内部探索。</p><p><a href="task35-current-plan.txt" download>下载原版TXT（保持原字节）</a></p></div>
+<pre class="plan-text" id="plan-original-text">任务3／5审计修订：现行方案与证据缺口
+2026年10月3日
+
+现行方案与验证门槛
+
+2026年10月3日审计修订 · 主报告与准备包共用执行口径
+
+本次H3实验只推进一个待验证服务假设：5秒原创漫画镜头预演。拟交付4至6秒、832×480、24 fps、一个场景、固定机位、1至2位原创成年角色的静音预演，以及3张验收图和规格说明。目标是确认风格、构图与宽泛情绪；是否有人愿付费仍未知。其他副业研究继续保留作比较。
+
+已有证据：S01仅生成1次，5.167秒，进程墙钟13分42.375秒。抽帧显示双角色场景稳定，但未完整实现抬眼；发夹方位待核，音轨仍未试听。安装成功或输出文件不证明最适合接单、商业合格或已挣钱。
+
+真实需求 → 授权许可 → 样品验收 → 首单 → 可重复／低维护
+
+1 真实需求｜须有具体项目、480P预演用途、预算决定人、时间和验收要求。本项目暂无已记录的需求访谈；公开AI视频订单评价仅证明较宽品类有交易。后续获准联系时最多先核10位匹配对象，夸赞不算付费需求。
+
+2 授权许可｜把实际量化版本、来源与许可对应，核客户素材、客户使用地区及展示范围。商业交付和公开样例各自过关。当前许可链仍有缺口；国内客户不自动解决全球可访问网站的展示限制。
+
+3 样品验收｜按事先确定的规格完整播放，核角色、构图、实际动作和文件；有声则试听，静音版须另行制作并确认无声轨。当前S01为私有技术样本，不能靠事后放宽动作标准改记合格。
+
+4 首单｜须能对应约定范围、原始订单、交付验收、退款情况和最终到账。样片与报价都不算首单。当前订单、结算和净利润证据均为0；收费前还须确认本人平台及收款资格。
+
+5 可重复／低维护｜建议先观察至少3笔同规格结算单、至少2名独立客户及连续30天完整记录；排除自购和关联拆单，熟人集中单不当独立复现。评估获客、沟通、返工、维护、净额及总工时；数字是观察门槛，不是稳定盈利证明。先定每周时间上限和最低有效时薪，未满足则调整。
+
+现阶段执行边界
+
+只整理现有证据、许可缺口与验收表。旧30秒六镜与《等灵感》双角色四镜方案保留为历史，均已暂停，不自动补镜或重做。未来单镜试验建议主动≤45分钟、生成≤3次，限承诺订单前的内部探索且须有运行授权；原90分钟／12次预算不再适用。已收款订单不得按此自动放弃，须按约定返工或退款。
+
+先检验固定范围的小单，再积累自己有权复用的角色、参数、验收表和工程。是否省时、可复利以及全成本，必须由实际交付记录回答。
+
+会员供货：先补证据，再决定是否保留候选
+
+截至2026年10月3日13:20的五家定点复核资料；本次只重排证据缺口，未刷新报价或增加供应商。
+
+五家均未达到“含全部必需费用及合格大陆票据≤170元、授权和履约闭环”的准入标准。完整自主供货路径0条，真实票据验真0笔。低价预览、单件零售、官方渠道宣传与实际下级供货资格分别判断。
+
+先分清自用与业务供货
+
+自用：核本人账号及服务地区资格、准确Plus周期、真实支付授权、全费、数据交付方式和退订退款。低价或境外卡不改变地区条件；本人控制账号也不证明代充链条已获授权。
+
+业务供货：除自用所需证据，还须取得能对应供货方、准确SKU、地域、终端客户资格、转售或下级分销范围及有效期的授权；留有上游采购凭据、付款人及资金授权、对账和售后责任。普通零售下单、返佣推广、API功能或商家代理合同本身不能填平此缺口。
+
+所有候选共用的优先顺序
+
+P0 授权与资格：先判断实际用户地区、账号条件和拟开展的业务是否在适用范围内。业务授权不明时不交代理费、不收下游款、不囤货；本轮仅保留公开证据。
+
+P1 主体与商品：把品牌、网站经营者、市场平台、实际商品卖家、收款方、实际付款人、上游供货方、开票方逐个对应。互链只能证明关联线索；不同主体须有可核的委托、代理或结算关系，不能靠同名或页面声明补齐。
+
+P2 全费与合同：准确SKU价＋必需支付／汇兑费＋已确认票费＋其他必需费用。任一必需项未知，总价就未知；库存、周期、交付时限、凭据访问、封号／掉订责任、退款币种及路径逐项写明。可选加急不强行算必需费。
+
+P3 履约与真实票据：仅在前项通过且另获交易授权后，才谈单笔验证。订单、支付、到账权益、供货记录及票据要互相对应；大陆票据须核票种、开票方、税号、金额及真实性。收据或商家“可开票”不算验真，单笔成功也不证明稳定供货。
+
+当前动作：把下页缺口填进同一证据表，缺什么就查什么。公开材料到不了的合同、真实票据与履约证据保持未知，不用扩名单代替补证。
+
+CatFK云猫／AI源头｜先核卖家和票据，再评业务
+10月3日支付宝预览110.95元，含已见支付费1.96元；不是含票成交价。需区分云猫平台、店铺卖家、收款与开票方，并补票种／税号／票费和CDK兑换权限。单件零售入口不证明批量授权；商称30天质保不等于平台全期兜底，平台24小时售后与卖家责任需对应。[供1、供6]
+
+小久｜先查凭据流程与同单售后冲突
+10月3日云猫预览115.03元；112元另一入口指定USDT，不能当全费人民币价。公开页面要求Cookie／Session，不能用“本人账号”消除此访问风险；本轮不提交。原站按天退、封号不保与云猫成功后不退等限制须统一到准确订单。互链只作同商线索，票据与合法付款／转售授权仍缺。[供2、供6]
+
+Morimm｜先补当前周期、退款和处理方
+10月3日标115元、5件起113元，最终支付费与本轮周期未闭合。公开要求Token；已读隐私页没有处理方、留存与删除说明。条款仅支持u链接／币安ID退款，未证明人民币原路退。阶梯价不构成下级许可；主体、票据及供货授权均未补齐。[供3]
+
+引路鲸／ChatGPT直充站｜先拆零售、返佣与进货代理
+10月3日单件摘要135元；默认企业票不含、票费未知。进货代理3000元与货款分开，零费用返佣是另一模式。母品牌公开声明未获厂商官方授权，不能把商家自身代理计划当原厂许可。“不收会话凭据”是声明，尚无流程履约验证。暂停资格费与进货判断。[供4]
+
+ChatShare｜先重核准确SKU，旧价不能刷新日期
+166.40元为10月2日历史支付预览；10月3日只读到聚合页，准确SKU未成功重核。距170元仅3.60元但票费等未知，不能列合格。API对公和“所有业务可开票”不能证明Plus开票／供货主体及授权；先补当前SKU、全费、主体和条款，再评其他缺口。[供5]
+
+供1 https://catfk.com/item/g8ptrd
+供2 https://catfk.com/item/j0eswz ; https://98-xj.com/products/gpt%20plus
+供3 https://morimm.com/products/gptplus ; https://morimm.com/terms ; https://morimm.com/privacy
+供4 https://www.chatgqt.plus/buy?sku=LIST-000001 ; https://www.chatgqt.plus/faq ; https://www.chatgqt.plus/cooperation ; https://yinlujing.com/about/
+供5 https://chatshare.info/ ; https://qfcc99.com/item/yrjao6
+供6 https://catfk.com/article/33
+发行人条款 https://mycardterms.com/openai/home/terms/ ; 普通企业/API条款 https://www.perfectgift.com/corporate/terms-of-service
+
+本次仅修订资料口径，没有新增生成、外联、登录、付款或公开样片。原音视频与帧图保持私有；公开增量不包含私人文件标识、电脑路径或联系方式。
+
+原厂服务地区：https://help.openai.com/en/articles/7947663-chatgpt-supported-countries
+官方礼卡边界：https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards
+H3官方许可：https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+广泛AI视频交易评价：https://www.fiverr.com/drislio/create-stunning-ai-videos-from-your-text-or-images-in-minutes
+以上链接来自既有核验，具体观察日期与边界沿用报告记录，本次没有刷新成新的事实观察。
+</pre>
+</section>
+<section class="panel" id="downloads" aria-labelledby="downloads-heading">
+<span class="section-label">04 · 完整文件与历史入口</span>
+<h2 id="downloads-heading">下载本次材料</h2>
+<ul class="downloads">
+<li><a href="supplier-review-original.html" download>供货原报告 · HTML</a><span>完整原字节 · 含退款、费用、授权与来源明细；主阅读入口为本页</span></li>
+<li><a href="supplier-review.json" download>供货结构化记录 · JSON</a><span>完整原字节 · 五家候选及19条来源／访问记录</span></li>
+<li><a href="task35-current-plan.txt" download>现行方案与证据缺口 · TXT</a><span>完整原字节 · 单镜假设、执行边界与供货补证顺序</span></li>
+<li><a href="evidence-gates.json" download>第六轮证据门槛 · JSON</a><span>完整原字节 · 审校时间、观察日期、未知费用与验证边界</span></li>
+</ul>
+<p class="caption">本附录只含脱敏研究文字、结构化进度和公开来源链接；私有样片、音轨、抽帧、缩略图与私聊不包含在公开材料中。商业交付与公开展示许可仍需分别完成核验。</p>
+<p><a href="../round3-7/report.html">阅读旧上游研究</a> · <a href="../ai-side-income/report.html">阅读旧副业研究</a> · <a href="../../dashboard/index.html">返回 AI 研究工作台</a></p>
+</section>
+</main>
+<footer class="wrap">MyDotWork · 资料范围1.8.2 · 研究附录日期2026-10-03 · 公开文字进度不代表样片已获准公开</footer>
+</body>
+</html>

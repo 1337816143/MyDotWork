@@ -22,6 +22,6 @@ assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
 assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
-assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['side-income-report'],'Side-income report has its own project, not the agricultural project');
+assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

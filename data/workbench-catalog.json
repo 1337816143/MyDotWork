@@ -96,7 +96,7 @@
       "type": "dataset",
       "task": "project-4",
       "url": "../projects/status.json",
-      "updatedAt": "2026-10-03T17:12:00Z",
+      "updatedAt": "2026-10-03T19:35:00Z",
       "summary": "17项历史项目与七项当前任务对应的进度快照；区分本轮发布、运行状态和未解决需求。",
       "access": "public",
       "metadataApproved": true
@@ -166,6 +166,61 @@
       "summary": "60,354字节候选包，修正空白、缺失与重复ID提示，关联范围扩至200行；21项程序检查及Writer原生编辑保存通过，Excel/Calc原生重算未验，无真实客户或收入证据。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "supplier-review-20261003",
+      "title": "五家供货候选 · 完整复核与证据缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-10-03/index.html#supplier-original",
+      "updatedAt": "2026-10-03T13:20:00Z",
+      "summary": "五家既有候选19条访问记录、18个URL；含1次读取失败，合格含票授权闭环仍为0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "supplier-review-data-20261003",
+      "title": "五家供货复核 · 原结构化数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-10-03/supplier-review.json",
+      "updatedAt": "2026-10-03T13:20:00Z",
+      "summary": "保留原价格日期、退款条款与S01–S19来源；观察数量不等于新增供应商。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "task35-current-plan-20261003",
+      "title": "任务3／5 · 现行方案完整原文",
+      "type": "guide",
+      "task": "project-17",
+      "url": "../research/2026-10-03/task35-current-plan.txt",
+      "updatedAt": "2026-10-03T19:14:00Z",
+      "summary": "5秒预演仅待验证假设；旧方案保留历史，未试听、许可与需求待证，私人媒体不公开。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "task35-evidence-gates-20261003",
+      "title": "任务3／5 · 当前证据门槛与完整材料",
+      "type": "report",
+      "task": "project-17",
+      "url": "../research/2026-10-03/index.html",
+      "updatedAt": "2026-10-03T19:14:00Z",
+      "summary": "区分采购全费上限、未知利润和真实订单；完整保留供货原报告与现行方案，审校不刷新观察日期。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "task35-evidence-data-20261003",
+      "title": "任务3／5 · 证据门槛结构化记录",
+      "type": "dataset",
+      "task": "project-17",
+      "url": "../research/2026-10-03/evidence-gates.json",
+      "updatedAt": "2026-10-03T19:14:00Z",
+      "summary": "五家票费与全费保持null；S01仅单次样本，无需求、客户、收入或低维护盈利的验证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
@@ -197,8 +252,8 @@
       "type": "website",
       "task": "project-6",
       "url": "https://1337816143.github.io/Paper/",
-      "updatedAt": "2026-10-03T16:41:42Z",
-      "summary": "Paper主站5.5.2独立证据指南已上线；22主条目、研究账本与旧笔记接口保留。博士全文仍禁运。",
+      "updatedAt": "2026-10-03T19:24:00Z",
+      "summary": "两站5.5.2会议证据指南已验收；22主条目、研究账本与旧笔记保留。博士全文禁运，模型复现与真实双设备尚未验证。",
       "access": "public",
       "metadataApproved": true
     },
@@ -208,8 +263,8 @@
       "type": "website",
       "task": "project-5",
       "url": "https://1337816143.github.io/FarmSystemDesign/#research",
-      "updatedAt": "2026-10-03T17:09:00Z",
-      "summary": "v0.3.13完整前沿缺陷已修复并上线；地图与现有内容保留，科学模型缺口另列。",
+      "updatedAt": "2026-10-03T18:25:00Z",
+      "summary": "v0.3.14证据背景、FrozenRun身份摘要和版本加载已上线；1414项数值未变，科学模型与资源联合优化待实现。",
       "access": "public",
       "metadataApproved": true
     }
@@ -337,7 +392,7 @@
   ],
   "statusSnapshot": {
     "mode": "snapshot",
-    "asOf": "2026-10-03T17:12:00Z",
+    "asOf": "2026-10-03T19:35:00Z",
     "notice": "这是有时间标记的状态快照，不是实时后台监控。超过30分钟的任务记录标为待重新核验；需求背景、状态依据和发布结果分别展示。发布页面不会刷新研究观察时间。",
     "items": [
       {
@@ -347,8 +402,8 @@
         "state": "waiting",
         "currentAction": "434条脱敏记录、424条有文字已在两站一致发布；本轮没有继续采集原文。",
         "waitingFor": "新的本dot可见原文；现有部分分页缺口仍待核对",
-        "verifiedAt": "2026-10-03T16:34:37Z",
-        "publication": "v1.8两站归档与检索已验收，原355条原文完整保留。",
+        "verifiedAt": "2026-10-03T19:35:00Z",
+        "publication": "v1.8.1两站归档、筛选与澄清跳转已验收；434条记录和424条文字不变。",
         "completion": "本轮公开归档完成不等于完整历史已取得；附件及其他GPT全文不在公开范围。",
         "links": [
           {
@@ -370,7 +425,7 @@
         ],
         "verification": {
           "kind": "public_release",
-          "summary": "两站19项产物、原文数量与覆盖提示已逐项核验。",
+          "summary": "19:35 UTC复查已完成的两站19项产物和原文覆盖核验；观察截止仍为10:00:30 UTC，未新增采集。",
           "observedAt": "2026-10-03T10:00:30.694564+00:00",
           "links": [
             {
@@ -379,7 +434,7 @@
             },
             {
               "label": "镜像部署记录",
-              "url": "https://github.com/1337816143/Evolution/actions/runs/37136819207"
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37147096707"
             }
           ]
         }
@@ -389,11 +444,11 @@
         "number": 2,
         "title": "AI工作台与个人进化网站",
         "state": "running",
-        "currentAction": "v1.8两站同步已完成；正在修复筛选后原文跳转、过期状态及发布核验展示。",
-        "waitingFor": "本轮功能的对抗审查、云端浏览器测试和下一版正式发布",
-        "verifiedAt": "2026-10-03T17:12:00Z",
-        "publication": "主站与个人进化镜像均已发布v1.8；本轮修复在验收前不视为已上线。",
-        "completion": "发布成功与全部需求完成分开；旧状态快照和筛选跳转缺陷正在本批处理。",
+        "currentAction": "正在整合任务3／5完整研究增量与证据门槛；v1.8.1归档跳转及状态功能已完成双站验收。",
+        "waitingFor": "当前资料批的安全审查、云端浏览器验收和双站发布",
+        "verifiedAt": "2026-10-03T19:35:00Z",
+        "publication": "v1.8.1两站19项产物已逐字节核验；当前v1.8.2资料批在本次快照时仍在整合。",
+        "completion": "归档筛选后定位、高亮和返回本轮已修复；当前资料发布及未来新增证据仍分别跟踪。",
         "links": [
           {
             "label": "看全部成果",
@@ -414,16 +469,16 @@
         ],
         "verification": {
           "kind": "project_check",
-          "summary": "本轮实现已在云端开始；对等发布结论来自已完成的v1.8验收。",
-          "observedAt": "2026-10-03T16:34:37Z",
+          "summary": "19:35 UTC复查v1.8.1已完成结果，当前仅研究资料批运行；没有把新整合状态当作已发布。",
+          "observedAt": "2026-10-03T18:47:19Z",
           "links": [
             {
-              "label": "主站部署记录",
-              "url": "https://github.com/1337816143/MyDotWork/actions/runs/37131755410"
+              "label": "主站1.8.1部署",
+              "url": "https://github.com/1337816143/MyDotWork/actions/runs/37144169697"
             },
             {
-              "label": "镜像部署记录",
-              "url": "https://github.com/1337816143/Evolution/actions/runs/37136819207"
+              "label": "镜像部署",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37147096707"
             }
           ]
         }
@@ -432,20 +487,20 @@
         "id": "task-3",
         "number": 3,
         "title": "AI上游调研",
-        "state": "waiting",
-        "currentAction": "统一报告与证据缺口清单已整理并复审，待独立资料版本整合；没有新一轮搜价在运行。",
+        "state": "round_complete",
+        "currentAction": "五家复核与证据缺口结构本轮完成，随当前资料批整合；没有新一轮搜价在运行。",
         "waitingFor": "开票主体、含票全部费用、准确SKU转售授权及真实履约证据",
-        "verifiedAt": "2026-10-03T17:10:00Z",
-        "publication": "已上线历史研究和票据授权矩阵；本轮增量尚未加入现有报告。",
+        "verifiedAt": "2026-10-03T19:35:00Z",
+        "publication": "历史研究保持原版；本次新增完整复核、原数据与当前证据门槛入口。",
         "completion": "目前含票全费与授权闭环仍未成立；不能把候选观察数当作合格上游数。",
         "links": [
           {
-            "label": "看上游报告",
-            "url": "../research/round3-7/report.html"
+            "label": "读本轮完整复核",
+            "url": "../research/2026-10-03/index.html#supplier-original"
           },
           {
-            "label": "看询证清单",
-            "url": "../research/round3-7/report.html#inquiry-checklist"
+            "label": "看当前证据门槛",
+            "url": "../research/2026-10-03/index.html#current-gates"
           }
         ],
         "projectIds": [
@@ -459,9 +514,18 @@
         ],
         "verification": {
           "kind": "project_check",
-          "summary": "17:10 UTC核验本轮统一报告已完成、等待入库；原五家观察日期仍为13:20 UTC。",
+          "summary": "19:35 UTC复查已完成资料；五家19条访问记录含18个URL和1次失败，报价观察仍为13:20 UTC。",
           "observedAt": "2026-10-03T13:20:00Z",
-          "links": []
+          "links": [
+            {
+              "label": "日期与原始观察",
+              "url": "../research/2026-10-03/supplier-review.json"
+            },
+            {
+              "label": "计数与未知费用",
+              "url": "../research/2026-10-03/evidence-gates.json"
+            }
+          ]
         }
       },
       {
@@ -470,8 +534,8 @@
         "title": "Codex／GPT资料接管",
         "state": "round_complete",
         "currentAction": "本轮只读资料质量分类已完成，没有新增正文或对话；等待后续材料。",
-        "waitingFor": "新的明确提供的导出、原文或附件，以及下一轮只读检查",
-        "verifiedAt": "2026-10-03T17:10:00Z",
+        "waitingFor": "真实新增导出、原文或附件，以补齐现有缺口",
+        "verifiedAt": "2026-10-03T19:35:00Z",
         "publication": "公开页面仅保留汇总进度；234对话、4012条记录、3860个唯一ID仍属于09:08 UTC旧导出统计。",
         "completion": "质量分类完成不等于缺失正文已补齐；旧导出统计保持原日期，私有全文和媒体不公开。",
         "links": [
@@ -496,7 +560,7 @@
         ],
         "verification": {
           "kind": "project_check",
-          "summary": "17:10 UTC确认本轮质量整理完成，未增加原始正文；15:58 UTC检查也没有新导出。",
+          "summary": "19:35 UTC复查已完成的私有质量核验；18:54 UTC查询无新增导出。234对话、4012记录、3860唯一ID仍为09:08 UTC旧导出，不代表在线完整历史。",
           "observedAt": "2026-10-03T09:08:00Z",
           "links": []
         }
@@ -505,20 +569,20 @@
         "id": "task-5",
         "number": 5,
         "title": "AI副业与真实收益验证",
-        "state": "waiting",
-        "currentAction": "本轮统一试单方案已完成复审；5秒预演仍是待验证假设，没有新生成或订单验证。",
+        "state": "round_complete",
+        "currentAction": "主报告v5与准备包v4本轮完成并独立审查；当前仅整合公开文字，没有新增生成、客户或收入。",
         "waitingFor": "声音试听、完整许可链、真实需求和最小付费试单验证",
-        "verifiedAt": "2026-10-03T17:10:00Z",
-        "publication": "现有公开报告与科研评估候选保留；本轮统一方案待独立整合，视频和音轨继续私有。",
+        "verifiedAt": "2026-10-03T19:35:00Z",
+        "publication": "科研样品与历史报告保留；现行5秒假设、单样本限制和许可缺口随本批公开，视频音轨与帧图仍私有。",
         "completion": "未试听声音、没有已验证客户或收入；≥3笔且≥2个独立客户仅是观察门槛，不是已完成结果。",
         "links": [
           {
-            "label": "看现有报告",
-            "url": "../research/ai-side-income/report.html"
+            "label": "读现行方案与门槛",
+            "url": "../research/2026-10-03/index.html#h3-plan"
           },
           {
-            "label": "下载评估候选",
-            "url": "../research/ai-side-income/sample-v0.2-candidate.zip"
+            "label": "读历史方向与样品",
+            "url": "../research/ai-side-income/report.html"
           }
         ],
         "projectIds": [
@@ -532,20 +596,25 @@
         ],
         "verification": {
           "kind": "project_check",
-          "summary": "本轮主报告与准备包已统一并复审，等待公开安全增量整合；声音未试听、许可链和真实需求仍待核。",
-          "observedAt": null,
-          "links": []
+          "summary": "19:35 UTC复查已交付报告与19:14 UTC审校记录；单样本未通过完整验收，声音未试听，实际净利润仍未知。",
+          "observedAt": "2026-10-03T19:14:00Z",
+          "links": [
+            {
+              "label": "当前证据和许可边界",
+              "url": "../research/2026-10-03/evidence-gates.json"
+            }
+          ]
         }
       },
       {
         "id": "task-6",
         "number": 6,
         "title": "Paper论文与方法知识库",
-        "state": "waiting",
-        "currentAction": "Paper主站5.5.2的独立会议短文证据指南已上线；个人进化镜像待串行同步。",
-        "waitingFor": "5.5.2镜像验收；博士全文仍禁运，等待合法开放材料",
-        "verifiedAt": "2026-10-03T17:10:00Z",
-        "publication": "Paper主站已发布5.5.2；当前镜像为已验收的5.5.1，22主条目和原笔记接口保留。",
+        "state": "round_complete",
+        "currentAction": "Paper主站与个人进化镜像5.5.2均已验收，9节会议证据指南可用；自然定时同步首次新运行仍待观察。",
+        "waitingFor": "自然同步流程新运行；博士全文合法开放、模型复现与真实双设备恢复验证",
+        "verifiedAt": "2026-10-03T19:35:00Z",
+        "publication": "两站5.5.2、内容f01f033da857一致；22主条目、原笔记接口和既有内容保留。",
         "completion": "目标是理解论文方法、工具与研究体系，不设置练习题、错题和知识自测。会议材料与学位全文分开；内容覆盖不等于全文取得、原模型复现或真实跨设备恢复已验证。",
         "links": [
           {
@@ -568,16 +637,16 @@
         ],
         "verification": {
           "kind": "public_release",
-          "summary": "精确主站d949f4dc的完整CI及部署成功；镜像5.5.1仍可用。",
-          "observedAt": "2026-10-03T16:41:42Z",
+          "summary": "19:35 UTC复查19:24 UTC完成的双站验收；17项变更产物一致、六入口与9节指南云端可用。自然同步尚无新运行，不能以旧失败算本版失败。",
+          "observedAt": "2026-10-03T19:24:00Z",
           "links": [
             {
-              "label": "Paper 5.5.2部署记录",
+              "label": "主站部署",
               "url": "https://github.com/1337816143/Paper/actions/runs/37137496555"
             },
             {
-              "label": "独立证据指南",
-              "url": "https://1337816143.github.io/Paper/#/cheng-landscape-evidence-2025"
+              "label": "镜像部署",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37147096707"
             }
           ]
         }
@@ -587,11 +656,11 @@
         "number": 7,
         "title": "Farm多尺度设计与优化",
         "state": "round_complete",
-        "currentAction": "完整前沿缺陷本轮修复并验收，v0.3.13已上线；正在等待下一轮检查。",
+        "currentAction": "v0.3.14本轮线上与备份验收完成；当前没有新代码任务运行，等待下一轮检查。",
         "waitingFor": "下一轮检查，以及三个模型仍需补齐的科学实现、校准和验证",
-        "verifiedAt": "2026-10-03T17:09:00Z",
-        "publication": "v0.3.13已发布；1414个全量方案、40项分页、跨偏好保存与完整导出已核验。",
-        "completion": "本轮前沿网页缺陷修复完成；全部博士模型实现与科学验证仍未完成，不以UI测试替代模型校准。",
+        "verifiedAt": "2026-10-03T19:35:00Z",
+        "publication": "5指标Paper证据背景、FrozenRun参数身份摘要与版本加载修复已上线；1414项数值与0.3.13完全相同。",
+        "completion": "这是页面、证据背景与可追溯性的增量；三个科学模型及资源联合优化仍未实现和校准，不能以网页测试代替。",
         "links": [
           {
             "label": "看完整前沿",
@@ -613,12 +682,12 @@
         ],
         "verification": {
           "kind": "public_release",
-          "summary": "独立云测试、部署与线上验收完成；此前0.3.12保持的地图和模型功能未被替换。",
-          "observedAt": "2026-10-03T17:09:00Z",
+          "summary": "19:35 UTC复查18:25 UTC已完成的线上与备份验收；新增证据背景未替换原1414项计算结果。",
+          "observedAt": "2026-10-03T18:25:00Z",
           "links": [
             {
               "label": "Farm线上验收",
-              "url": "https://github.com/1337816143/FarmSystemDesign/actions/runs/37139112291"
+              "url": "https://github.com/1337816143/FarmSystemDesign/actions/runs/37143839698"
             }
           ]
         }
@@ -658,23 +727,23 @@
     ],
     "staleAfterMinutes": 30,
     "publicationChecks": {
-      "checkedAt": "2026-10-03T16:33:20Z",
+      "checkedAt": "2026-10-03T19:21:36Z",
       "source": {
-        "version": "1.8.0",
-        "commit": "820260fe1eab13726df6aa574bb036b524024ca6",
-        "deployedAt": "2026-10-03T15:02:13Z",
-        "runId": 37131755410,
-        "runUrl": "https://github.com/1337816143/MyDotWork/actions/runs/37131755410"
+        "version": "1.8.1",
+        "commit": "db2e7cd42af8898afa679829c7f8e0b0652e32c9",
+        "deployedAt": "2026-10-03T18:26:30Z",
+        "runId": 37144169697,
+        "runUrl": "https://github.com/1337816143/MyDotWork/actions/runs/37144169697"
       },
       "mirror": {
-        "version": "1.8.0",
-        "upstreamCommit": "820260fe1eab13726df6aa574bb036b524024ca6",
-        "sourceCommit": "a920bb1b52a280fa698304b763f017ff33aedef1",
-        "commit": "2add58d84bec3447bca9389cbb3ee2084931448a",
-        "syncedAt": "2026-10-03T16:25:48Z",
-        "deployedAt": "2026-10-03T16:27:06Z",
-        "runId": 37136819207,
-        "runUrl": "https://github.com/1337816143/Evolution/actions/runs/37136819207"
+        "version": "1.8.1",
+        "upstreamCommit": "db2e7cd42af8898afa679829c7f8e0b0652e32c9",
+        "sourceCommit": "4a9160e60c68566cf8d7a41912e55f641d1a636a",
+        "commit": "fcbea398937b2c50fccbc368999a1d811c4c098e",
+        "syncedAt": "2026-10-03T19:13:05Z",
+        "deployedAt": "2026-10-03T19:14:31Z",
+        "runId": 37147096707,
+        "runUrl": "https://github.com/1337816143/Evolution/actions/runs/37147096707"
       },
       "status": "consistent"
     }

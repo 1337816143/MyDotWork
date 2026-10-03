@@ -15,14 +15,16 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class Document(HTMLParser):
     def __init__(self):
-        super().__init__(); self.ids = set(); self.links = []; self.images = []
+        super().__init__(); self.ids = set(); self.links = []; self.images = []; self.downloads = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if 'id' in attrs:
             assert attrs['id'] not in self.ids, 'Duplicate publication anchor'
             self.ids.add(attrs['id'])
-        if tag == 'a': self.links.append(attrs.get('href', ''))
+        if tag == 'a':
+            self.links.append(attrs.get('href', ''))
+            if 'download' in attrs: self.downloads.append(attrs.get('href', ''))
         if tag == 'img' and attrs.get('src'):
             src = attrs['src']
             assert src.startswith('data:image/png;base64,'), 'Only reviewed embedded PNG previews'
@@ -46,7 +48,17 @@ def validate_publications():
         assert all(term not in text for term in ('libfile_', '/workspace/', 'file_000000'))
         if name.endswith('.html'):
             doc = Document(); doc.feed(text)
-            assert '../../dashboard/index.html' in doc.links, 'Publication has no workbench return'
+            if name == 'research/2026-10-03/supplier-review-original.html':
+                # Byte-preserved historical download, not the catalogue reading entry.
+                assert digest == 'cf41c5bbeae9987c7c73d50c874aa29847d1ac0252e18a15ce3d375181554054'
+                reader = Document(); reader.feed((ROOT / 'dist/research/2026-10-03/index.html').read_text(encoding='utf-8'))
+                raw_links = [link for link in reader.links if link == 'supplier-review-original.html']
+                assert raw_links and len(raw_links) == reader.downloads.count('supplier-review-original.html')
+                assert '../../dashboard/index.html' in reader.links
+                catalog = json.loads((ROOT / 'dist/dashboard/catalog.json').read_bytes())
+                assert not any('supplier-review-original.html' in record['url'] for record in catalog['records'])
+            else:
+                assert '../../dashboard/index.html' in doc.links, 'Publication has no workbench return'
             assert len(doc.images) == (3 if name == 'research/ai-side-income/report.html' else 0)
             for href in doc.links:
                 url = urlsplit(href)
@@ -119,13 +131,15 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 15, 'websites': 4, 'tasks': 17}
+    assert catalog['counts'] == {'artifacts': 20, 'websites': 4, 'tasks': 17}
     assert by_id['paper-learning-site']['task'] == 'project-6' and by_id['paper-learning-site']['url'] == 'https://1337816143.github.io/Paper/'
     assert by_id['farm-system-site']['task'] == 'project-5' and by_id['farm-system-site']['url'] == 'https://1337816143.github.io/FarmSystemDesign/#research'
     projects = {p['name']: p for p in json.loads((ROOT / 'data/projects.json').read_bytes())['projects']}
-    assert re.search(r'v\d+\.\d+\.\d+', projects['FarmSystemDesign农业系统平台']['progress']) and '未完成' in projects['FarmSystemDesign农业系统平台']['gaps']
+    assert re.search(r'v\d+\.\d+\.\d+', projects['FarmSystemDesign农业系统平台']['progress']) and '未实现' in projects['FarmSystemDesign农业系统平台']['gaps']
     assert '练习题、错题和知识自测' in projects['Paper论文学习平台']['gaps']
-    print('PASS: six exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
+    from validate_task35 import validate_task35, negative_tests
+    validate_task35(); negative_tests()
+    print('PASS: eleven exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
 if __name__ == '__main__': validate_publications()
