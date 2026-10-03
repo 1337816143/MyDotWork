@@ -1,5 +1,6 @@
 """Validate exact text rendering, provenance coverage, explicit files and secrets."""
 import hashlib
+import base64
 import json
 import re
 from html.parser import HTMLParser
@@ -30,8 +31,9 @@ def scan(text):
         assert not url.username and not url.password, 'URL credentials (value suppressed)'
 
 class TextAudit(HTMLParser):
-    def __init__(self):
+    def __init__(self, allow_png_previews=False):
         super().__init__(convert_charrefs=True); self.ids=[]; self.messages=[]; self.current=None; self.hrefs=[]
+        self.allow_png_previews=allow_png_previews; self.png_previews=0
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if 'id' in a:self.ids.append(a['id'])
@@ -40,7 +42,12 @@ class TextAudit(HTMLParser):
             self.hrefs.append(a.get('href',''))
             assert not a.get('href','').lower().startswith(('javascript:','data:')), 'Unsafe URL'
         assert not any(k.lower().startswith('on') for k in a), 'Inline event handler'
-        if tag in ['script','iframe','img','audio','video','source']:assert not a.get('src'), 'Unexpected resource'
+        if tag=='img' and a.get('src') and self.allow_png_previews:
+            assert a['src'].startswith('data:image/png;base64,'), 'Unexpected preview resource'
+            image=base64.b64decode(a['src'].split(',',1)[1],validate=True)
+            assert image.startswith(b'\x89PNG\r\n\x1a\n') and len(image)<1500000
+            self.png_previews+=1
+        elif tag in ['script','iframe','img','audio','video','source']:assert not a.get('src'), 'Unexpected resource'
     def handle_data(self,text):
         if self.current is not None:self.current+=text
     def handle_endtag(self,tag):
@@ -78,7 +85,8 @@ def validate():
         content=(ROOT/'dist'/name).read_bytes()
         assert hashlib.sha256(content).hexdigest()==entry['sha256'] and len(content)==entry['bytes']
         if name.endswith('.html'):
-            audit=TextAudit();audit.feed(content.decode())
+            audit=TextAudit(allow_png_previews=name=='research/ai-side-income/report.html');audit.feed(content.decode())
+            assert audit.png_previews==(3 if name=='research/ai-side-income/report.html' else 0)
             assert len(audit.ids)==len(set(audit.ids))
             if name=='chat/index.html':
                 assert audit.messages==[m['text'] for m in chat['messages']], 'Escaped HTML differs from original text'

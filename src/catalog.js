@@ -59,7 +59,7 @@ if(typeof document!=='undefined')(()=>{
     for(const k of controls){const n=$(page+'-'+k);n.name=k;n.addEventListener(k==='q'?'input':'change',()=>render(page));}
     $(page+'-form').addEventListener('submit',ev=>ev.preventDefault());$(page+'-form').addEventListener('reset',()=>setTimeout(()=>render(page),0));render(page);
   }
-  $('hub-summary').innerHTML=[['library',data.counts.artifacts,'已收录成果资料','报告、数据、教程与公开归档'],['websites',data.counts.websites,'明确网站入口','主站与既有个人进化镜像'],['tasks',data.counts.tasks,'公开任务快照','状态与待办分别保留']].map(([id,n,title,note])=>`<a class="hub-stat" href="#${id}"><b>${n}</b><span>${title}</span><small>${note}</small></a>`).join('');
+  $('hub-summary').innerHTML=[['library',data.counts.artifacts,'已收录成果资料','报告、数据、教程与公开归档'],['websites',data.counts.websites,'明确网站入口','工作台、镜像、Paper与Farm'],['tasks',data.counts.tasks,'公开任务快照','状态与待办分别保留']].map(([id,n,title,note])=>`<a class="hub-stat" href="#${id}"><b>${n}</b><span>${title}</span><small>${note}</small></a>`).join('');
   const featured=['upstream-round3-7','side-income-report'];
   const reportPool=CatalogModel.filter(data.records.filter(r=>r.category==='artifacts'&&r.type==='report'),{},data.tasks);
   const recent=[...featured.map(id=>reportPool.find(r=>r.id===id)).filter(Boolean),...reportPool.filter(r=>!featured.includes(r.id))].slice(0,4);

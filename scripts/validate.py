@@ -41,3 +41,6 @@ import validate_catalog
 
 from validate_publications import validate_publications
 validate_publications()
+
+from test_publication_archive import run_tests
+run_tests()

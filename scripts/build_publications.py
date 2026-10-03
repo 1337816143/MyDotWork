@@ -1,13 +1,14 @@
-"""Copy four explicitly approved standalone research artifacts without rewriting bytes."""
+"""Copy explicitly approved research and sample artifacts without rewriting bytes."""
 import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLICATIONS = (
-    ('research/round3-7/report.html', '0a9d47f80295bf5dad7c9d01896c7c5848a0917f8b7c2b7cee0a4bb55e7efd18'),
-    ('research/round3-7/ai-upstream-public.json', '3756213461b52e42e5ffde0df67e53093f9ff4d530a41efcb7a6e68dc95024e4'),
-    ('research/ai-side-income/report.html', '8424d2180ba2e6fd4a2da158690959d73c0ec2b39191cbd0d91014522d8617d0'),
-    ('research/ai-side-income/data.json', 'b1d21cdc9afb54c470ababaeedb3bffa25d556300e98745a028bec9eea0c1170'),
+    ('research/round3-7/report.html', '946bb08b6a5641a04f9b3711e75d47e3c1af2c86a4fdbcca0cc5eb0a14901d78'),
+    ('research/round3-7/ai-upstream-public.json', '4988275387722e3ba94f0b5c2e64d87b0164cba6eaa730e027a4d7fb421a3442'),
+    ('research/ai-side-income/report.html', '95dbdd4535bc3d82c5188c55914fd0f27a2e2cd55ddbf2bb7f2244aa24e13052'),
+    ('research/ai-side-income/data.json', 'c66b165efe957227cf3773e652e0d695dc90447ece19a47f3213320a8c519253'),
+    ('research/ai-side-income/sample-v0.1.zip', 'e2f225782e4413a8f55624346f63f1ffd17a9208469ea7d1a82f79701299facc'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 

@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "report_version": "1.2",
+  "report_version": "1.3",
   "title": "AI副业调研：低维护产品与自由接单",
   "date": "2026-10-02",
   "methodology": {
     "counting": "15项数字产品＋14项自动化＋14项接单，共43条研究输入；按同一买家问题与可交付结果合并成32类方向。每条输入恰好映射一次。多种交付形态保留，但不宣称43个独立生意，也不把相关收入相加。",
-    "ranking": "v1.2按目标分路线：最少后续维护优先自助可编辑科研流程包/海报素材，CSV工具条件第三；较快验证付款意愿保留v1.1限定服务路线。两者不矛盾，不保证订单、收入或自动获客。",
-    "scope": "本版本记录公开研究、方案规格和文件更新；没有实际制作产品样品、开户、实名操作、联系客户、报价、投标或收费。报告展示/网页更新不等同商业开店或产品上线。",
+    "ranking": "v1.3按目标分路线：最少后续维护优先自助可编辑科研流程包/海报素材，CSV工具条件第三；较快验证付款意愿保留v1.1限定服务路线。两者不矛盾，不保证订单、收入或自动获客。 C10的窄范围原创样品已完成，下一步先检验独立使用能力。",
+    "scope": "本版本整合C10下一个原创评估样品、公开来源及交付边界；未把样品当成正式售卖产品。其余产品/服务样品仍为规格；没有独立试用、报价投标、订单、付款或回款验证。报告和公开演示下载不等同开店或付费自动交付。",
     "evidence": "官方规则证明公开政策；在售商品证明供给/标价；商业生态证明邻近机制；官方功能证明技术可行。均不能证明本人能获客、成交、盈利或提到国内银行卡。",
-    "timing": "所有制作、支持、获客、试报价和销量都是情景估算；访谈与订单计时尚未发生。未测量AI自动化百分比，结构化值保留null。",
+    "timing": "所有制作、支持、获客、试报价和销量都是情景估算；访谈与订单计时尚未发生。未测量AI自动化百分比，结构化值保留null。 本次有样品制作结果，但没有可靠实际制作计时；4小时上限与10小时完整制作仍是计划/情景，不改写成实测工时。",
     "cost_units": "数字资产：制作工时与每月支持按0–10名新买家估算；自动化：初建与每周交付/支持按最多5名标准化客户估算、不含新客户定制；接单：每单主动工时不等于日历交期。不能把不同分母直接排序。",
-    "sources": "保留原来源ID与历史。v1.2另加入36条来源输入，并将同一页面的%3D/等号编码视为同一URL；追加观察、局限与日期。评论/平台累计计数/公开购用自述分别标级，不当作作者净到账。"
+    "sources": "保留原来源ID、日期与历史；v1.3并入12条来源观察，其中3个新网址。爱发电条款补结算/冻结/退款；同日竞品价格快照并列，未重新取得销量正文时明确保留旧时点。"
   },
   "top_five_delivery_choices": [
     {
@@ -18,7 +18,7 @@
       "option_id": "product-research_workflow_pack",
       "label": "低维护优先：可编辑科研流程与证据记录包",
       "reason": "同类模板有商品评价/平台sales信号；可编辑性正是买家痛点。自己的中文细分版本未验证",
-      "first_step": "4小时样品上限，先做证据矩阵与虚构示例"
+      "first_step": "已完成C10下证据矩阵到提纲v0.1窄范围样品；先自行用合法资料填一条，再经授权开展独立试用。"
     },
     {
       "rank": 2,
@@ -1268,7 +1268,11 @@
         "R122",
         "R123"
       ],
-      "low_touch_scope_note": "v1.2增加相关产品实验。关联只用于导航，不把科研海报销量当作GIS图标销量，不把通用CSV插件销量当作科研质检器销量。"
+      "low_touch_scope_note": "v1.2增加相关产品实验。关联只用于导航，不把科研海报销量当作GIS图标销量，不把通用CSV插件销量当作科研质检器销量。",
+      "implemented_sample_ids": [
+        "evidence_to_outline_v01"
+      ],
+      "implementation_status": "仅“科研证据矩阵到提纲”窄分支原创评估样品已完成；原完整资产/实验日志/交付套装未完成。无独立试用或订单。"
     },
     {
       "id": "C11",
@@ -3123,19 +3127,21 @@
       "name": "爱发电",
       "category": "数字商品/交付",
       "verdict": "中国个人数字商品候选；先核实际后台条件，不保证获客或获批",
-      "eligibility": "官方有个人结算与本人支付宝路径；提现需实名资料。创作者认证与提现实名分开，站内被搜索另需认证。",
-      "fees": "公开FAQ合计6%=平台5%+支付1%；页面更新时间不明，单次商品后台最终费率仍需复核。",
+      "eligibility": "官方有个人结算与本人支付宝路径；提现需实名资料。创作者认证与提现实名分开，站内被搜索另需认证。 条款3.1.4列个人/企业结算资料；未满18岁需按7.1取得监护人同意/指导，不能由学生身份推定资格。",
+      "fees": "官方FAQ对赞助金额写合计6%=平台5%+支付1%，作公开参考费率；具体数字商品及额外提现/税务以本人后台最新明示为准。",
       "fee_status": "公开第一方规则，单品后台和本人账户未实测",
-      "settlement": "官方支持数字商品；自动私信可发下载链接、随机发码。赞助当月款次月1日入余额；不能默认单次商品完全相同。链接托管/失效/库存与售后仍需处理。",
+      "settlement": "正式条款3.1.3规定当月全部收益在次月1日后结算；这是结算安排，不是支付宝或银行卡实际到账保证。3.2.3规定协商未果时平台可冻结对应订单，并决定原路全额/部分退款或结算，不是自动退款。数字商品可自动私信发下载链接/随机码，外链与售后仍需维护。",
       "source_ids": [
         "R042",
         "R131",
         "R132",
         "R133",
         "R134",
-        "R135"
+        "R135",
+        "R151",
+        "R152"
       ],
-      "unverified": "本人开户/KYC、单次商品结算周期、最低提现额、实际支付宝入账/税务扣缴和费率",
+      "unverified": "本人账号/KYC批准、最终数字商品费率、最低提现额、具体可提现状态、到账延迟/税务及后台功能；未登录/绑定收款/接受新协议。",
       "history_v1_1": {
         "id": "platform-D3",
         "name": "爱发电",
@@ -3149,6 +3155,39 @@
           "R042"
         ],
         "unverified": "本人审核、账户可用费表、最终提现/银行到账、税务与退款条件未实测"
+      },
+      "history_v1_2": {
+        "id": "platform-D3",
+        "name": "爱发电",
+        "category": "数字商品/交付",
+        "verdict": "中国个人数字商品候选；先核实际后台条件，不保证获客或获批",
+        "eligibility": "官方有个人结算与本人支付宝路径；提现需实名资料。创作者认证与提现实名分开，站内被搜索另需认证。",
+        "fees": "公开FAQ合计6%=平台5%+支付1%；页面更新时间不明，单次商品后台最终费率仍需复核。",
+        "fee_status": "公开第一方规则，单品后台和本人账户未实测",
+        "settlement": "官方支持数字商品；自动私信可发下载链接、随机发码。赞助当月款次月1日入余额；不能默认单次商品完全相同。链接托管/失效/库存与售后仍需处理。",
+        "source_ids": [
+          "R042",
+          "R131",
+          "R132",
+          "R133",
+          "R134",
+          "R135"
+        ],
+        "unverified": "本人开户/KYC、单次商品结算周期、最低提现额、实际支付宝入账/税务扣缴和费率",
+        "history_v1_1": {
+          "id": "platform-D3",
+          "name": "爱发电",
+          "category": "数字下载/支付",
+          "verdict": "无现成粉丝时不当主方案；不把赞助收入叫稳定被动收入",
+          "eligibility": "国内支持渠道方向明确，但本次未验证新户实名认证及实际可用功能",
+          "fees": "旧官方FAQ：赞助6%，当月款次月进入余额",
+          "fee_status": "官方旧FAQ可查，使用前复核",
+          "settlement": "会员期内访问不同于一次购买永久下载；持续会员往往意味着持续内容或互动承诺",
+          "source_ids": [
+            "R042"
+          ],
+          "unverified": "本人审核、账户可用费表、最终提现/银行到账、税务与退款条件未实测"
+        }
       }
     },
     {
@@ -3558,22 +3597,46 @@
       "finding": "4/6/8小时是样品时限；完整制作估算10/12/20小时。原材料未明确样品是否额外。",
       "action": "本报告基准约定可复用样品包含在完整制作；额外试错则另加，回本门槛升至38/29/28单。仍是条件情景。",
       "source_ids": []
+    },
+    {
+      "item": "样品完成与商业验证分开",
+      "finding": "C10下一个窄范围原创样品已完成；3表/2页及功能结构检查通过，但原生Excel/Calc重算、独立试用、订单与到账都未验证。",
+      "action": "保留原32类和其他未制作规格；39元与31单仍为假设。",
+      "source_ids": []
+    },
+    {
+      "item": "爱发电结算范围补全",
+      "finding": "v1.2只依据赞助FAQ保留单品周期未知；v1.3条款3.1.3覆盖当月全部收益，规定次月1日后结算。3.2允许争议款冻结及退款。",
+      "action": "更新公开结算安排，仍不承诺具体账户实际到账日；6%按FAQ赞助费用作参考，商品最终费率后台待核。",
+      "source_ids": [
+        "R134",
+        "R042"
+      ]
+    },
+    {
+      "item": "竞品同日价与销量复核边界",
+      "finding": "文献流程PDF早先13.24美元，本轮13.21美元，26条评分/4.5分；原因未明。Notion模板本轮只取得标题，无法重新确认销量。",
+      "action": "保留53 sales/9美元为同日较早快照，不能当最新销量或收入；贴近本样品的可编辑证据矩阵付款证据仍不足。",
+      "source_ids": [
+        "R122",
+        "R123"
+      ]
     }
   ],
   "zero_cash_execution_route": [
     {
       "step": 1,
-      "title": "按目标只做一个零元样品",
-      "action": "低维护产品路线：从科研流程包、海报素材、固定CSV工具选一项，样品时限分别4/6/8小时；服务验证路线：可用三图或有限GIS/CSV规格。只用原创合成数据和现有合法工具，新增现金预算0元。没有样品已制作或试用。",
-      "evidence": "输入、输出、验收和未覆盖范围各写一句；记录制作工时。",
-      "stop": "发现需要新付费资源、学校/客户IP不清或可能影响学业，就先停，不拿假设收入当预算。"
+      "title": "先使用已完成的C10窄范围样品",
+      "action": "科研证据矩阵到提纲v0.1已完成。先用已有软件另存一份，填入一条自己有权使用的真实资料，完成论点卡；无需新订阅或付费素材。若不兼容，可用CSV与DOCX人工记录。其他产品/服务样品仍未制作。",
+      "evidence": "记录是否能打开、缺项提醒是否变化、是否能在10分钟内定位证据并写出待核实项。样品检查不等于市场验证。",
+      "stop": "若现成免费表格已足够、权利不明或需要新付费资源，先停；不依据假设销量追加支出。"
     },
     {
       "step": 2,
-      "title": "验证真实需求",
-      "action": "用户决定是否向3–5名合适使用者展示。先问上次如何解决、耗时、预算审批和数据限制；让对方自己换合成数据。此报告没有发送消息或联系客户。",
-      "evidence": "能指出具体用途、独立使用、接受明确范围和测试价；点赞/收藏/说不错不足以证明需求。",
-      "stop": "约两周仍无人愿按清楚范围试用/考虑付费，或全都需要新定制，就不再扩建；可保留为学习作品。"
+      "title": "经授权后做小规模独立试用",
+      "action": "可由3名目标使用者按说明各自填一条记录与一张论点卡；材料没有反对项就写未找到，不能造例。此轮没有邀请/联系他人或开展独立试用。",
+      "evidence": "建议至少2人不用作者代填且10分钟内完成；记录卡点与支持分钟。这个小样门槛不证明可售，也不要求先接定制单。",
+      "stop": "2人以上无法完成则修说明或缩范围；若必须作者持续读论文代填，不再称低维护产品。"
     },
     {
       "step": 3,
@@ -4245,21 +4308,25 @@
       "source_kind": "平台官方政策",
       "observations": [
         "中国目前不能开新店，已有店铺可用Etsy Payments",
-        "官方明确中国暂不可新开店；已有店可用Etsy Payments。"
+        "官方明确中国暂不可新开店；已有店可用Etsy Payments。",
+        "v1.3样品补证：中国大陆不能新开Etsy店铺，已有店支付资格和新店准入不同。"
       ],
       "upstream_ids": [
         "asset:S08",
-        "low_touch:L28"
+        "low_touch:L28",
+        "sample:F11"
       ],
       "url_variants": [
         "https://help.etsy.com/hc/en-us/articles/115015710408-Countries-Eligible-for-Etsy-Payments"
       ],
       "verification_notes": [
         "官方搜索结果全文",
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "China列在支付支持清单不等于开放新卖家；不建议购买/租用他人店铺。"
+        "China列在支付支持清单不等于开放新卖家；不建议购买/租用他人店铺。",
+        "本轮不把Etsy案例作为可马上入驻的路线。"
       ],
       "dated_observations": [
         {
@@ -4267,6 +4334,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "China列在支付支持清单不等于开放新卖家；不建议购买/租用他人店铺。"
+        },
+        {
+          "origin_id": "sample:F11",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "本轮不把Etsy案例作为可马上入驻的路线。"
         }
       ]
     },
@@ -5033,21 +5106,25 @@
       "source_kind": "平台官方旧FAQ",
       "observations": [
         "赞助费6%，按月结算；会员内容有期限，适合粉丝支持不天然等于永久买断附件商店",
-        "公开说明总抽成6%=平台5%+支付1%；赞助当月部分次月1日进入余额；被站内搜索还需创作者认证。"
+        "公开说明总抽成6%=平台5%+支付1%；赞助当月部分次月1日进入余额；被站内搜索还需创作者认证。",
+        "v1.3样品补证：官方FAQ针对赞助金额公开合计6%=平台5%+支付1%；创作者被搜索需认证。作为单品测算的参考条件，不取代数字商品后台费率核验。"
       ],
       "upstream_ids": [
         "asset:S42",
-        "low_touch:L10"
+        "low_touch:L10",
+        "sample:F05"
       ],
       "url_variants": [
         "https://guide.afdian.com/faq/faq-for-creators"
       ],
       "verification_notes": [
         "官方页仍可查但最后更新数年前，实际使用前复核",
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "FAQ无明确更新时间；单次数字商品是否同一结算周期、最低提现额及实际税务扣缴需发布前在后台复核；认证不等于自动获客。"
+        "FAQ无明确更新时间；单次数字商品是否同一结算周期、最低提现额及实际税务扣缴需发布前在后台复核；认证不等于自动获客。",
+        "以实际商品/提现页面最终明示费率为准；无流量保证，不把开店等同获客。"
       ],
       "dated_observations": [
         {
@@ -5055,6 +5132,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "FAQ无明确更新时间；单次数字商品是否同一结算周期、最低提现额及实际税务扣缴需发布前在后台复核；认证不等于自动获客。"
+        },
+        {
+          "origin_id": "sample:F05",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "以实际商品/提现页面最终明示费率为准；无流量保证，不把开店等同获客。"
         }
       ]
     },
@@ -6869,19 +6952,23 @@
       "checked_on": "2026-10-02",
       "source_kind": "paid_review_signal",
       "observations": [
-        "现价13.24美元，16页PDF，4.5分、26条商品评价；有买家明确反馈付款及无法直接编辑的问题。"
+        "现价13.24美元，16页PDF，4.5分、26条商品评价；有买家明确反馈付款及无法直接编辑的问题。",
+        "v1.3样品补证：本轮现价显示13.21美元，26条评分、4.5分；上午档案价13.24美元且出现买家对不可直接编辑PDF的抱怨。"
       ],
       "upstream_ids": [
-        "low_touch:L01"
+        "low_touch:L01",
+        "sample:F01"
       ],
       "url_variants": [
         "https://thepagedoctor.gumroad.com/l/literaturereviewtemplate"
       ],
       "verification_notes": [
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "评价日期和历史成交价不完整；评论提到的45澳元不可当现价或该商品固定价格；不能推算收入。"
+        "评价日期和历史成交价不完整；评论提到的45澳元不可当现价或该商品固定价格；不能推算收入。",
+        "不确定显示价格变化原因；不能把旧价或评论金额当所有订单实付价；既有产品评价不能证明本样品有人买。"
       ],
       "dated_observations": [
         {
@@ -6889,6 +6976,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "评价日期和历史成交价不完整；评论提到的45澳元不可当现价或该商品固定价格；不能推算收入。"
+        },
+        {
+          "origin_id": "sample:F01",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "不确定显示价格变化原因；不能把旧价或评论金额当所有订单实付价；既有产品评价不能证明本样品有人买。"
         }
       ]
     },
@@ -6899,19 +6992,23 @@
       "checked_on": "2026-10-02",
       "source_kind": "platform_sales_signal",
       "observations": [
-        "现价9美元，平台显示53 sales；购买后PDF提供复制模板链接。"
+        "现价9美元，平台显示53 sales；购买后PDF提供复制模板链接。",
+        "v1.3样品补证：2026-10-02早先正文有9美元、53 sales、PDF指引复制Notion模板。"
       ],
       "upstream_ids": [
-        "low_touch:L02"
+        "low_touch:L02",
+        "sample:F02"
       ],
       "url_variants": [
         "https://shesciencesblog.gumroad.com/l/PhDstudentnotiontemplate"
       ],
       "verification_notes": [
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "累计记录，不知道历史折扣/免费发放、退款、获取流量成本或近期销售速度；53×9不是已证实收入。"
+        "累计记录，不知道历史折扣/免费发放、退款、获取流量成本或近期销售速度；53×9不是已证实收入。",
+        "本轮重读仅返回标题，无法再次确认最新销量；保留早先观察为带时点证据，不声称现在仍有53单，更不把53×9当收入。"
       ],
       "dated_observations": [
         {
@@ -6919,6 +7016,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "累计记录，不知道历史折扣/免费发放、退款、获取流量成本或近期销售速度；53×9不是已证实收入。"
+        },
+        {
+          "origin_id": "sample:F02",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "本轮重读仅返回标题，无法再次确认最新销量；保留早先观察为带时点证据，不声称现在仍有53单，更不把53×9当收入。"
         }
       ]
     },
@@ -7139,19 +7242,23 @@
       "checked_on": "2026-10-02",
       "source_kind": "official_policy",
       "observations": [
-        "官方支持售卖数字商品；自动私信可发送下载链接，随机回复可逐条发放激活码。"
+        "官方支持售卖数字商品；自动私信可发送下载链接，随机回复可逐条发放激活码。",
+        "v1.3样品补证：数字商品支持自动私信发下载链接、随机回复发码。"
       ],
       "upstream_ids": [
-        "low_touch:L11"
+        "low_touch:L11",
+        "sample:F06"
       ],
       "url_variants": [
         "https://guide.afdian.com/creator/creator-level-up"
       ],
       "verification_notes": [
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "链接托管、失效、泄漏、码库存与售后仍由作者处理；不是无人维护的订单业务。"
+        "链接托管、失效、泄漏、码库存与售后仍由作者处理；不是无人维护的订单业务。",
+        "外链权限、版本与失效需要维护；不是托管许可服务器或自动客服。"
       ],
       "dated_observations": [
         {
@@ -7159,6 +7266,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "链接托管、失效、泄漏、码库存与售后仍由作者处理；不是无人维护的订单业务。"
+        },
+        {
+          "origin_id": "sample:F06",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "外链权限、版本与失效需要维护；不是托管许可服务器或自动客服。"
         }
       ]
     },
@@ -7169,19 +7282,23 @@
       "checked_on": "2026-10-02",
       "source_kind": "official_policy",
       "observations": [
-        "官方创作者指南写明可填自己的支付宝账号提现。"
+        "官方创作者指南写明可填自己的支付宝账号提现。",
+        "v1.3样品补证：创作者指南写本人支付宝账号提现。"
       ],
       "upstream_ids": [
-        "low_touch:L12"
+        "low_touch:L12",
+        "sample:F09"
       ],
       "url_variants": [
         "https://guide.afdian.com/creator/game"
       ],
       "verification_notes": [
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "页面含旧App描述，单独不足以判断当前完整结算UI；与当前服务条款、隐私政策共同确认路径，不承诺个体账户一定获批。"
+        "页面含旧App描述，单独不足以判断当前完整结算UI；与当前服务条款、隐私政策共同确认路径，不承诺个体账户一定获批。",
+        "页面有旧App描述，与当前正式条款一起判断；实际可选路径及资格仍需本人后台核验。"
       ],
       "dated_observations": [
         {
@@ -7189,6 +7306,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "页面含旧App描述，单独不足以判断当前完整结算UI；与当前服务条款、隐私政策共同确认路径，不承诺个体账户一定获批。"
+        },
+        {
+          "origin_id": "sample:F09",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "页面有旧App描述，与当前正式条款一起判断；实际可选路径及资格仍需本人后台核验。"
         }
       ]
     },
@@ -7199,19 +7322,23 @@
       "checked_on": "2026-10-02",
       "source_kind": "official_policy",
       "observations": [
-        "网络提现会收集姓名、证件类别/号码/有效期及相关银行卡资料，用于实名和绑定。"
+        "网络提现会收集姓名、证件类别/号码/有效期及相关银行卡资料，用于实名和绑定。",
+        "v1.3样品补证：提现涉及姓名、证件类型/号码/有效期及银行卡资料。"
       ],
       "upstream_ids": [
-        "low_touch:L13"
+        "low_touch:L13",
+        "sample:F04"
       ],
       "url_variants": [
         "https://www.afdian.com/privacy"
       ],
       "verification_notes": [
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "不能把公开可用理解为匿名收款；证件/账户信息须用户本人在官方安全页面办理。"
+        "不能把公开可用理解为匿名收款；证件/账户信息须用户本人在官方安全页面办理。",
+        "本人需在官方安全界面处理；本轮没有上传证件、绑定收款或接受协议。"
       ],
       "dated_observations": [
         {
@@ -7219,6 +7346,12 @@
           "published_at": "2023-10-23（更新）；2018-04-10（首次生效）",
           "checked_on": "2026-10-02",
           "limitation": "不能把公开可用理解为匿名收款；证件/账户信息须用户本人在官方安全页面办理。"
+        },
+        {
+          "origin_id": "sample:F04",
+          "published_at": "2023-10-23（最近更新）；页面另列2020-06-03与2018-04-10生效信息",
+          "checked_on": "2026-10-02",
+          "limitation": "本人需在官方安全界面处理；本轮没有上传证件、绑定收款或接受协议。"
         }
       ]
     },
@@ -7229,19 +7362,23 @@
       "checked_on": "2026-10-02",
       "source_kind": "official_policy",
       "observations": [
-        "条款允许个人或企业结算资料，规定原创/知识产权及禁止虚假流量等边界。"
+        "条款允许个人或企业结算资料，规定原创/知识产权及禁止虚假流量等边界。",
+        "v1.3样品补证：3.1.3规定自然月全部收益在下一自然月1日后结算；3.1.4列个人/企业结算资料；3.2.3为协商未果时平台可冻结对应订单，并决定原路全额/部分退款或结算；7.1有未满18岁监护要求。"
       ],
       "upstream_ids": [
-        "low_touch:L14"
+        "low_touch:L14",
+        "sample:F03"
       ],
       "url_variants": [
         "https://www.afdian.com/term"
       ],
       "verification_notes": [
-        "公开检索及正文读取；未登录、购买或验证作者净到账"
+        "公开检索及正文读取；未登录、购买或验证作者净到账",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
       ],
       "limitations": [
-        "具体账户审批、税务分类、平台未来政策均不由本报告保证。"
+        "具体账户审批、税务分类、平台未来政策均不由本报告保证。",
+        "公开条款不保证个体审核通过、可提现金额或实际到账时间；页面未明确最近更新日。"
       ],
       "dated_observations": [
         {
@@ -7249,6 +7386,12 @@
           "published_at": null,
           "checked_on": "2026-10-02",
           "limitation": "具体账户审批、税务分类、平台未来政策均不由本报告保证。"
+        },
+        {
+          "origin_id": "sample:F03",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "公开条款不保证个体审核通过、可提现金额或实际到账时间；页面未明确最近更新日。"
         }
       ]
     },
@@ -7529,19 +7672,25 @@
       "checked_on": "2026-10-02",
       "source_kind": "official_policy",
       "observations": [
-        "当前官方页：公开新作者申请暂停，只有Envato主动直接邀请例外；无申请表、候补或索邀流程，无确定重开日。一般Theme、Code、Photo、Audio、Graphics目前不邀请，不能把普通代码/科研海报当可自行入驻路线。"
+        "当前官方页：公开新作者申请暂停，只有Envato主动直接邀请例外；无申请表、候补或索邀流程，无确定重开日。一般Theme、Code、Photo、Audio、Graphics目前不邀请，不能把普通代码/科研海报当可自行入驻路线。",
+        "v1.3样品补证：Envato公开新作者申请暂停；不能假设可立即进CodeCanyon/GraphicRiver。"
       ],
       "upstream_ids": [
-        "low_touch:L29"
+        "low_touch:L29",
+        "sample:F12"
       ],
       "url_variants": [
-        "https://help.author.envato.com/hc/en-us/articles/53981083605913-Author-applications-are-paused-new-authors-join-by-invitation-only"
+        "https://help.author.envato.com/hc/en-us/articles/53981083605913-Author-applications-are-paused-new-authors-join-by-invitation-only",
+        "https://help.author.envato.com/hc/en-us/articles/53981083605913-Author-applications-are-temporarily-closed"
       ],
       "verification_notes": [
-        "二次审计web.open核验旧链接重定向与当前官方正文；未申请入驻"
+        "二次审计web.open核验旧链接重定向与当前官方正文；未申请入驻",
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。",
+        "输入旧URL按同一官方文章ID归入R144；沿用v1.2已核的现行URL及邀请例外，不把旧标题当现行全部规则。"
       ],
       "limitations": [
-        "邀请例外不是自行申请通道；Animated Graphics/Fonts的计划例外须按具体类别核实，不能由计划推断本人可入驻。"
+        "邀请例外不是自行申请通道；Animated Graphics/Fonts的计划例外须按具体类别核实，不能由计划推断本人可入驻。",
+        "保留邀请例外与类别差异，不写永久封闭。"
       ],
       "dated_observations": [
         {
@@ -7549,6 +7698,12 @@
           "published_at": "2026-09-25 09:37（页面Updated）",
           "checked_on": "2026-10-02",
           "limitation": "邀请例外不是自行申请通道；Animated Graphics/Fonts的计划例外须按具体类别核实，不能由计划推断本人可入驻。"
+        },
+        {
+          "origin_id": "sample:F12",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "保留邀请例外与类别差异，不写永久封闭。"
         }
       ]
     },
@@ -7731,6 +7886,96 @@
           "limitation": "供应商功能自述，本轮未测试；说明通用去重很难仅凭自动化形成独特卖点。"
         }
       ]
+    },
+    {
+      "id": "R151",
+      "title": "爱发电商品关联作品集说明",
+      "url": "https://guide.afdian.com/creator/sell-album",
+      "checked_on": "2026-10-02",
+      "source_kind": "official_policy",
+      "observations": [
+        "v1.3样品补证：新建商品/型号关联作品集后，用户付款可以查看相关内容；指南定位为永久售卖内容。"
+      ],
+      "upstream_ids": [
+        "sample:F07"
+      ],
+      "url_variants": [
+        "https://guide.afdian.com/creator/sell-album"
+      ],
+      "verification_notes": [
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
+      ],
+      "limitations": [
+        "后台实际是否可用未登录核对；永久访问的履约承诺仍需作者谨慎决定，不能依赖未核验功能。"
+      ],
+      "dated_observations": [
+        {
+          "origin_id": "sample:F07",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "后台实际是否可用未登录核对；永久访问的履约承诺仍需作者谨慎决定，不能依赖未核验功能。"
+        }
+      ]
+    },
+    {
+      "id": "R152",
+      "title": "爱发电关联单条付费动态与内测提示",
+      "url": "https://guide.afdian.com/creator/sell-post",
+      "checked_on": "2026-10-02",
+      "source_kind": "official_policy",
+      "observations": [
+        "v1.3样品补证：单条付费动态可永久观看；页面仍提示内测，需要管理员申请。"
+      ],
+      "upstream_ids": [
+        "sample:F08"
+      ],
+      "url_variants": [
+        "https://guide.afdian.com/creator/sell-post"
+      ],
+      "verification_notes": [
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
+      ],
+      "limitations": [
+        "不把该功能当所有新账号现成可用；本轮未联系管理员。"
+      ],
+      "dated_observations": [
+        {
+          "origin_id": "sample:F08",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "不把该功能当所有新账号现成可用；本轮未联系管理员。"
+        }
+      ]
+    },
+    {
+      "id": "R153",
+      "title": "LibreOffice官方办公套件介绍",
+      "url": "https://www.libreoffice.org/discover/libreoffice/",
+      "checked_on": "2026-10-02",
+      "source_kind": "official_policy",
+      "observations": [
+        "v1.3样品补证：LibreOffice公开提供免费办公套件，包含Calc与Writer。"
+      ],
+      "upstream_ids": [
+        "sample:F10"
+      ],
+      "url_variants": [
+        "https://www.libreoffice.org/discover/libreoffice/"
+      ],
+      "verification_notes": [
+        "v1.3：来自样品制作阶段的公开核验记录；本人账号、交易、收款与独立试用均未核验。"
+      ],
+      "limitations": [
+        "本轮不在用户设备安装软件；演示包跨软件兼容性仅以验证记录为准。"
+      ],
+      "dated_observations": [
+        {
+          "origin_id": "sample:F10",
+          "published_at": null,
+          "checked_on": "2026-10-02",
+          "limitation": "本轮不在用户设备安装软件；演示包跨软件兼容性仅以验证记录为准。"
+        }
+      ]
     }
   ],
   "validation": {
@@ -7744,24 +7989,41 @@
     "structure_and_embedded_json": "passed",
     "interaction_unit_checks": 31,
     "numeric_scenarios_audited": 70,
-    "report_version": "1.2",
+    "report_version": "1.3",
     "demand_records": 15,
     "demand_sources_input": 35,
     "demand_samples_created": false,
     "new_economics_arithmetic": "passed",
-    "source_urls": 150,
+    "source_urls": 153,
     "browser_visual_status": "not_verified_prior_ERR_BLOCKED_BY_CLIENT_no_bypass",
     "low_touch_sources_input": 36,
     "product_experiments": 3,
     "low_touch_arithmetic": "passed",
-    "samples_created": false
+    "samples_created": true,
+    "sample_source_inputs": 12,
+    "sample_new_source_urls": 3,
+    "created_sample_count": 1,
+    "created_sample_family_ids": [
+      "C10"
+    ],
+    "other_product_samples_created": false,
+    "sample_structure_and_existing_previews": "passed_as_recorded_and_package_rechecked",
+    "sample_native_excel_tested": false,
+    "sample_native_calc_xlsx_recalculation": false,
+    "sample_independent_user_tested": false,
+    "sample_paid_orders_observed": 0,
+    "report_visual_render_status": "not_verified_prior_cloud_browser_ERR_BLOCKED_BY_CLIENT_no_bypass",
+    "relative_link_resolution": "passed_against_requested_deployment_paths",
+    "sample_package_sha256_verified": true
   },
   "upstream_sha256": {
     "asset": "898555f84d57bec6c105781c70f59ea18139f090ac8cbda9ef0dfc506d8be437",
     "automation": "257347e7b26f3e0106c8ea4db2a26cf7c87f0f107803d736e5f32243ac33c38b",
     "service": "7c853969558cfa15fea751e134db6d3009b45ffdca3269f2c67d49541688159e",
     "demand": "68f8fe891edd71825aa17b97c08ce10845f14c03827e8f5bd4b7d886c33ee372",
-    "low_touch": "ba564f07c8ca350add1a319fbba812fe4389fb65a1c95abe17697076420d1012"
+    "low_touch": "ba564f07c8ca350add1a319fbba812fe4389fb65a1c95abe17697076420d1012",
+    "workflow_sample_spec": "2053cce2883a80017b5ba340cb32ee0dd418eea14a2ca923dbc04ef2940550b4",
+    "workflow_sample_execution": "ca40c3ad40aa0637e2934fedb8c2fe3ed986fa43bf82294d21734bc0bfca63bf"
   },
   "version_history": [
     {
@@ -7966,6 +8228,27 @@
         "最少后续维护：可编辑科研流程包与海报素材优先，CSV工具条件第三",
         "较快验证付费意愿：保留v1.1服务路线，不强制所有产品先接定制",
         "补爱发电数字商品及实名支付宝条件；Envato公开新作者限制与2026-07分成"
+      ]
+    },
+    {
+      "version": "1.3",
+      "date": "2026-10-02",
+      "focus": "整合C10首个原创评估样品及真实交付边界；补爱发电正式条款和明确工作台/下载入口",
+      "implemented_sample_count": 1,
+      "implemented_family_ids": [
+        "C10"
+      ],
+      "full_C10_suite_completed": false,
+      "independent_user_tested": false,
+      "formal_product_launched": false,
+      "own_paid_orders_observed": 0,
+      "source_inputs_added": 12,
+      "unique_urls_added": 3,
+      "changes": [
+        "保留32类、3个产品实验和3套服务规格；仅C10窄分支样品完成",
+        "HTML内嵌3张原样预览、完整使用范围及执行清单；下载指向外层成果包原字节",
+        "返回工作台使用../../dashboard/index.html；样品相对入口sample-v0.1.zip，单文件离线限制明示",
+        "爱发电条款补全次月1日后结算及冻结/退款；同日价格快照与未能复核销量保留"
       ]
     }
   ],
@@ -9094,7 +9377,7 @@
     "title": "低维护数字产品收入：交易证据、可交付样品与中国个人收款",
     "checked_on": "2026-10-02",
     "public_safe": true,
-    "scope": "只读公开研究与本地报告。未开户、上传产品、收款、投标、付款、联系他人或修改网站。所有样品均为规格，未声称已实现或测试。",
+    "scope": "保留v1.2的3个低维护产品实验；v1.3仅C10窄范围科研证据矩阵样品完成。原始input_validation记录v1.2当时状态，当前状态见current_validation与workflow_sample。无独立试用/交易/到账验证。",
     "executive_summary": [
       "优先试可编辑科研流程包或科研海报素材；固定CSV质检器次之，技术更强但售后和验证成本更高。无需把“先接定制单”当唯一入口。",
       "配置后可以自动收款和交付；获客、质量责任、权限/提现复核和维护不能自动消失，不承诺被动收入。",
@@ -9134,20 +9417,20 @@
         "demand": "已有同类模板付费/交易信号；自己的细分主题、中文版本及价格仍未验证。",
         "concept": "做一套从文献信息到证据矩阵再到写作提纲的原创空白流程，出售文件和使用许可；不代写论文，不生成或销售伪造研究。",
         "minimum_sample": [
-          "1份可编辑XLSX/CSV证据矩阵：来源链接、研究问题、样本/方法、关键发现、限制、支持哪个论点、页码",
-          "1份DOCX大纲、1页PDF快速入门，5条明确标为虚构的演示条目；用户自己的引用和判断由用户填写",
-          "无宏、无在线账号依赖；只承诺一个已验证Excel/LibreOffice版本与DOCX阅读环境；预览明确可编辑范围"
+          "已交付3页签XLSX：开始、20行空白证据表、3条合成演示；并非原规格5条示例",
+          "已交付2页DOCX提纲卡、空白/合成CSV、上手/使用范围/验证记录/文件校验；没有独立PDF快速入门文件",
+          "无宏和外部数据连接；结构及静态预览已审，原生Excel与Calc/XLSX重算未验"
         ],
         "reproducible_workflow": [
-          "先冻结字段和适用学科范围，用完全原创文字制作空模板与合成例子",
-          "从空模板填写一条到导出PDF完整走通；删除演示后不残留任何假引用",
-          "请试用者按说明独立完成首次记录，记录用时/卡点；本轮仅制定规格，未开展外部试用",
-          "固定版本ZIP，含README、许可、变更记录、文件哈希；平台付款后自动发包/链接"
+          "本地原创结构与合成DEMO已制作；核心样品ZIP与外层成果包已冻结并核SHA",
+          "字段缺失/编辑/导出重开8项和结构24项检查通过；XLSX三表及DOCX两页目视记录通过",
+          "下一步在已有办公软件中填一条合法真实资料；独立使用者10分钟测试未发生",
+          "未来正式售卖需核账号、费率、结算、许可及支持能力；自动私信发包/链接只是候选方案，尚未开通"
         ],
         "acceptance": [
-          "未读作者解释的试用者10分钟内新建记录并定位证据来源",
-          "不引用无法核实的真实DOI；示例必须能和真实科研条目区分",
-          "字段/公式错误、乱码、分页、空白初始化、可编辑性均有测试记录"
+          "本地结构与现有预览检查已通过；不将此等同全部办公软件兼容",
+          "3名目标使用者至少2名不靠作者代填，在10分钟内完成一条记录与一张论点卡：尚未测试",
+          "真实非亲友付款、每单支持时间与实际到账仍未验证"
         ],
         "channel": "国内优先评估爱发电一次性数字商品；若选择海外，再评估Gumroad/PayPal而非先开跨境账户。",
         "acquisition": "难度中高。需要一张可编辑前后对比或短演示，触达恰好在做同类任务的人；泛“万能科研模板”免费替代多，不能以搜索曝光当买家。无需先做定制接单，但仍要验证购买意愿。",
@@ -9172,7 +9455,7 @@
         "maintenance_hours_90d": 2,
         "support_hours_per_sale": 0.1,
         "stop_rules": [
-          "首个4小时样品后若核心价值只是现有免费表格换颜色，停止扩充",
+          "已有窄范围样品。若免费表格已足够、只得到外观好看的反馈，就停止扩充；4小时是原计划上限，并非本次已测制作时间。",
           "在合规发布后30天且已有100次合格产品页访问时仍0个真实非亲友付费订单，停止加功能；若未达到访问数，仅说明渠道未验证",
           "10次独立自助尝试中3次以上必须作者代填，先修流程；仍如此则不再把它定位低维护产品"
         ],
@@ -9193,13 +9476,35 @@
           "exclusions": "未计所得税/登记开票成本、外币提现换汇、额外付费软件；若发生必须加回公式。销量和合格访问达成率未知。",
           "sample_counting_assumption": "核算约定：完整制作工时包含可复用的样品制作，不能把4/6/8小时样品误当完整产品总工时。若样品为额外试错而未包含，则另加一次。90天维护是产品级检查修正，逐单支持另计，不重复。",
           "break_even_if_sample_is_additional": 38,
-          "fee_13pct_status": "纯压力情景，不代表任何平台现行报价；尤其不把旧面包多13%公告当当前费用"
+          "fee_13pct_status": "纯压力情景，不代表任何平台现行报价；尤其不把旧面包多13%公告当当前费用",
+          "actual_build_hours": null
         },
-        "sample_status": "仅规格，尚未制作、运行、测试或向他人试用",
+        "sample_status": "C10下“科研证据矩阵到提纲”v0.1已制作并检查；完整科研流程套装未完成，独立试用、原生重算与付费需求未验证",
         "source_ids": [
           "R122",
           "R123"
-        ]
+        ],
+        "history_v1_2_sample": {
+          "sample_status": "仅规格，尚未制作、运行、测试或向他人试用",
+          "minimum_sample": [
+            "1份可编辑XLSX/CSV证据矩阵：来源链接、研究问题、样本/方法、关键发现、限制、支持哪个论点、页码",
+            "1份DOCX大纲、1页PDF快速入门，5条明确标为虚构的演示条目；用户自己的引用和判断由用户填写",
+            "无宏、无在线账号依赖；只承诺一个已验证Excel/LibreOffice版本与DOCX阅读环境；预览明确可编辑范围"
+          ],
+          "reproducible_workflow": [
+            "先冻结字段和适用学科范围，用完全原创文字制作空模板与合成例子",
+            "从空模板填写一条到导出PDF完整走通；删除演示后不残留任何假引用",
+            "请试用者按说明独立完成首次记录，记录用时/卡点；本轮仅制定规格，未开展外部试用",
+            "固定版本ZIP，含README、许可、变更记录、文件哈希；平台付款后自动发包/链接"
+          ],
+          "acceptance": [
+            "未读作者解释的试用者10分钟内新建记录并定位证据来源",
+            "不引用无法核实的真实DOI；示例必须能和真实科研条目区分",
+            "字段/公式错误、乱码、分页、空白初始化、可编辑性均有测试记录"
+          ]
+        },
+        "actual_sample_id": "evidence_to_outline_v01",
+        "actual_build_hours": null
       },
       {
         "id": "research_visual_assets",
@@ -9384,11 +9689,16 @@
           "L14",
           "L15"
         ],
-        "fee": "公开平台+支付合计6%；单品后台最终费率需复核",
+        "fee": "官方FAQ对赞助金额写合计6%=平台5%+支付1%，作公开参考费率；具体数字商品及额外提现/税务以本人后台最新明示为准。",
         "kyc": "真实注册信息；提现实名及账户资料，创作者认证另有流程",
-        "payout": "支付宝为官方记录路径；赞助次月1日入余额，单次商品结算周期/最低额待后台确认",
-        "delivery": "自动私信下载链接或随机发码；用一次性数字商品而非虚构长期订阅",
-        "acquisition": "粉丝/外部流量导入仍重要；站内可搜需认证，不保证推荐"
+        "payout": "正式条款3.1.3：当月全部收益次月1日后结算；结算与实际到账不同。争议款可冻结/退款；最低额、审核及实际支付宝到账待本人后台核验。",
+        "delivery": "一次性数字商品自动私信发链接/码仅方案未上线；关联作品集后台可用性待核，单条关联动态仍有内测申请提示。",
+        "acquisition": "粉丝/外部流量导入仍重要；站内可搜需认证，不保证推荐",
+        "additional_source_ids": [
+          "R134",
+          "R151",
+          "R152"
+        ]
       },
       {
         "id": "gumroad",
@@ -9963,7 +10273,7 @@
       "L35": "R149",
       "L36": "R150"
     },
-    "economics_counting_note": "6%采用爱发电公开平台+支付合计费率的条件情景，单品后台尚待确认；5%准备金、50元/小时和销量均为假设。实绩退款不能再与准备金全额重复扣除。",
+    "economics_counting_note": "6%采用爱发电公开平台+支付合计费率的条件情景，单品后台尚待确认；5%准备金、50元/小时和销量均为假设。实绩退款不能再与准备金全额重复扣除。 6%仅以官方赞助FAQ作参考测算，数字商品最终费率未后台核验；样品完成没有把制作/获客/支持工时变成实测。",
     "input_validation": {
       "valid": true,
       "source_count": 36,
@@ -9972,12 +10282,25 @@
       "implemented_samples": false,
       "website_changed": false,
       "economics_checked": true
+    },
+    "integration_version": "1.3",
+    "current_validation": {
+      "implemented_sample_count": 1,
+      "implemented_sample_ids": [
+        "evidence_to_outline_v01"
+      ],
+      "only_family": "C10",
+      "other_product_samples_created": false,
+      "service_samples_created": false,
+      "formal_product_launched": false,
+      "paid_orders_observed": 0,
+      "scope": "仅本任务新增样品；不是对用户全部历史业务的调查"
     }
   },
   "goal_based_recommendations": [
     {
       "goal": "最少后续维护",
-      "route": "先做可编辑科研流程包或科研海报/原创图示素材的一份自助样品，再验证购买与支持负担；不要求必须先接定制单。",
+      "route": "C10科研证据矩阵到提纲v0.1原创样品已完成，先做真实资料自用与独立可用性验证；海报素材仍是备选规格。无需先接定制单。",
       "priorities": [
         "research_workflow_pack",
         "research_visual_assets",
@@ -9995,5 +10318,677 @@
       ],
       "conditions": "服务每单人工仍在，不能把更容易发现明确需求称为保证更快收入。"
     }
-  ]
+  ],
+  "workflow_sample": {
+    "schema_version": "1.0",
+    "version": "0.1-evaluation",
+    "title": "科研证据矩阵到提纲：第一个低维护产品样品",
+    "date": "2026-10-02",
+    "status": "C10下窄范围原创评估样品已完成；尚未商用，未上架售卖、未设置销售价格、未接受付款；付费需求未验证",
+    "relationship": {
+      "catalog_version": "1.2",
+      "catalog_count": 32,
+      "catalog_family_id": "C10",
+      "catalog_family_name": "研究记录与交付清单模板",
+      "experiment_id": "research_workflow_pack",
+      "sample_id": "evidence_to_outline_v01",
+      "navigation": "32类目录 → C10 → 低维护产品实验 → 本次原创样品",
+      "not_new_family": true,
+      "not_implemented": [
+        "C10原完整数据资产目录/实验日志/图表清单/交付清单套装",
+        "C07正文引文自动交叉检查",
+        "C19参考文献元数据联网核验",
+        "海报素材及CSV质检器样品"
+      ]
+    },
+    "why_this_first": [
+      "对应现有科研能力，文件比在线服务更少持续依赖",
+      "同类付费模板有证据，可直接做自助样品，不要求先做接单",
+      "明确解决“这句话有哪条证据、还有哪条没核实”这一窄问题",
+      "针对竞品不可编辑的售后痛点，样品提供真正可编辑表格和提纲卡；不能把此改进视作已验证需求"
+    ],
+    "customer_hypothesis": "已有合法原文、需要整理5–20条资料以准备组会/文献小结的人；不是让没有阅读资料的人自动生成论文。",
+    "job_to_be_done": "把一个论点与支持、反对、信息不足的证据逐一挂接，并保留待核实事项，供本人写作前复核。",
+    "excluded": [
+      "论文全文或学校内部资料",
+      "真实DOI/作者/虚构引用伪装真文献",
+      "AI代写结论/保证学术评分",
+      "系统综述质量评估、统计效应量或PRISMA合规保证",
+      "云同步、API、爬虫、账号、宏和在线激活",
+      "客服代填用户科研内容"
+    ],
+    "files_expected": [
+      "00_先读我.txt",
+      "01_科研证据矩阵.xlsx",
+      "02_论点提纲卡.docx",
+      "03_空白证据表.csv",
+      "04_合成演示.csv",
+      "05_使用范围与正式版许可草案.txt",
+      "06_验证记录.txt",
+      "07_文件校验.json"
+    ],
+    "scope": {
+      "workbook_tabs": [
+        "开始",
+        "空白证据表",
+        "合成演示"
+      ],
+      "blank_rows": 20,
+      "demo_rows": 3,
+      "claim_cards": 2,
+      "macro_free": true,
+      "automatic_source_validation": false,
+      "automatic_quality_scoring": false,
+      "requires_payment_or_new_account": false,
+      "demo_data": "所有DEMO条目只用于演示支持/反对/信息不足的结构，绝非真实科研发现。"
+    },
+    "evidence_status": {
+      "technical_artifact": "样品已制作；8项功能、24项结构检查通过；XLSX三表和DOCX两页目视通过。原生Excel及Calc/XLSX重算未验证。",
+      "usability": "尚无独立目标用户完成测试",
+      "own_paid_demand": "没有询价、订单、付款或回款证据",
+      "competitor_paid_signal": "存在；F01与F02的时点/限制保留",
+      "actual_build_hours": null,
+      "actual_build_hours_note": "未提供可靠实际计时；计划上限与经济模型工时不是制作实测。"
+    },
+    "zero_additional_cash_route": {
+      "inputs": "已有电脑、能打开XLSX/DOCX的现成软件；如有LibreOffice可直接使用",
+      "avoid": [
+        "新AI套餐",
+        "付费模板/字体/图标",
+        "买流量",
+        "服务器/数据库",
+        "跨境公司/收款账号费用"
+      ],
+      "cash_assumption_cny": 0,
+      "cost_warning": "不包含本人时间、电网费及已有设备；实际正式开店费用、税务和提现资格未测。"
+    },
+    "formal_product_proposal": {
+      "price_hypothesis_cny": 39,
+      "price_status": "保留上一轮試价假设；本样品免费评估，未设置任何商品价格",
+      "first_sku": "个人版单次购买，不开订阅、不承诺持续资料更新",
+      "license": "1名用户可改模板并把自己的研究结果写入报告；不得转售/公开分发空白源模板。团队共享另议5人档；必须先确认所有素材授权，此处不是已签署合同。",
+      "support": "建议只承诺下载/打开/空白初始化/功能缺陷支持，不代填、不评判论文。首次设置问题可定7天窗口，但不得用此免除描述不符、固有缺陷或法定权利。实际回复时段由创作者确认后再写入正式商品。",
+      "updates": "卖当前清楚编号的版本；已承诺环境下缺陷修复，跨软件大版本适配另说明；不写终身更新或售出概不退款。"
+    },
+    "delivery_plan": [
+      {
+        "step": 1,
+        "action": "冻结版本ZIP，生成SHA256、预览和完整文件清单",
+        "status": "已完成本地冻结：核心样品8文件与外层成果包5项；实际ZIP、预览及SHA已核对。"
+      },
+      {
+        "step": 2,
+        "action": "本人核对官方账号、年龄资格、创作者身份认证、收款实名与当前最终费率",
+        "status": "未做，需要本人安全办理，不收集证件"
+      },
+      {
+        "step": 3,
+        "action": "在获准的文件托管/平台保存完整ZIP，核对下载权限、链接期限及是否会泄露个人资料",
+        "status": "已形成报告相对下载入口及原字节部署清单；本轮未发布网站。公开评估样品下载不提供付费访问控制。"
+      },
+      {
+        "step": 4,
+        "action": "商品使用一次性数字商品，说明文件、版本、软件、支持边界、许可与退款处理",
+        "status": "仅草案；当前未上传或发布"
+      },
+      {
+        "step": 5,
+        "action": "配置商品自动私信发完整ZIP下载链接和版本号；也可在已获准后台使用关联作品集",
+        "status": "文档支持；未实测。关联动态仍有内测申请提示，不依赖它"
+      },
+      {
+        "step": 6,
+        "action": "核对正常下载、错链、权限不足、移动端解压和第二次下载；若平台无官方测试模式，不虚构已完成端到端交易测试",
+        "status": "未做实际付款测试；不刷单、不自买制造销量"
+      },
+      {
+        "step": 7,
+        "action": "若之后由用户授权正式试售，观察第一笔真实外部订单的自动交付、支持时间与次月结算，再判断可扩张性",
+        "status": "需未来明确授权，当前不执行"
+      }
+    ],
+    "launch_gates": [
+      {
+        "id": "G01",
+        "gate": "本地文件安全/可编辑/格式与示例一致",
+        "required_evidence": "本次验证记录",
+        "state": "本地结构/编辑/渲染检查通过；原生Excel及Calc/XLSX重算未验证"
+      },
+      {
+        "id": "G02",
+        "gate": "独立使用者10分钟完成首条真实记录和一张提纲卡",
+        "required_evidence": "至少3名目标使用者中2名独立完成；不用作者代填",
+        "state": "未测试"
+      },
+      {
+        "id": "G03",
+        "gate": "明确许可、售后及数据隐私边界",
+        "required_evidence": "创作者确认商品文案与责任范围",
+        "state": "草案"
+      },
+      {
+        "id": "G04",
+        "gate": "中国个人渠道与收款可用",
+        "required_evidence": "本人账户批准，真实费率/结算页及下载权限核对",
+        "state": "未开通"
+      },
+      {
+        "id": "G05",
+        "gate": "真实付费需求",
+        "required_evidence": "至少1笔非亲友、非自购真实订单；0单不能宣称验证",
+        "state": "未测试"
+      }
+    ],
+    "economics": {
+      "formula": "M = P×(1-f-r)-w×s；回本订单 = 向上取整[w×(制作+获客+维护)/M]",
+      "P_cny": 39,
+      "f": 0.06,
+      "r": 0.05,
+      "w_cny_per_hour": 50,
+      "s_hours_per_order": 0.1,
+      "build_hours": 10,
+      "acquisition_hours_90d": 6,
+      "maintenance_hours_90d": 2,
+      "M_cny": 29.71,
+      "economic_break_even_sales": 31,
+      "assumptions": "6%来自官方FAQ对赞助金额的公开费用说明，作为商品的参考费率情景，最终单品后台待核；5%风险准备与50元时间单价为假设；税、额外提现费用等未计。31单只是门槛，非预测；样品制作不证明可以卖31单。"
+    },
+    "stop_conditions": [
+      "免费现成表格已完全解决目标问题，试用者只能说外观好看：停止扩功能",
+      "3名目标用户中2名不能按说明独立完成：先修说明/缩范围，不加AI功能",
+      "需要经常替用户读论文或代填才能有价值：不再称低维护产品",
+      "正式试售后30天且100次合格访问仍0真实订单：停新增制作；若访问不足，只说明渠道未验证",
+      "如发现错引、假引用混入、私密数据泄漏或误导结论，立即暂停分发并修复；已售责任不随停卖消失"
+    ],
+    "sources": [
+      {
+        "id": "F01",
+        "url": "https://thepagedoctor.gumroad.com/l/literaturereviewtemplate",
+        "type": "商品评价信号",
+        "observed": "本轮现价显示13.21美元，26条评分、4.5分；上午档案价13.24美元且出现买家对不可直接编辑PDF的抱怨。",
+        "limitation": "不确定显示价格变化原因；不能把旧价或评论金额当所有订单实付价；既有产品评价不能证明本样品有人买。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F02",
+        "url": "https://shesciencesblog.gumroad.com/l/PhDstudentnotiontemplate",
+        "type": "同日早先销售快照",
+        "observed": "2026-10-02早先正文有9美元、53 sales、PDF指引复制Notion模板。",
+        "limitation": "本轮重读仅返回标题，无法再次确认最新销量；保留早先观察为带时点证据，不声称现在仍有53单，更不把53×9当收入。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F03",
+        "url": "https://www.afdian.com/term",
+        "type": "官方条款",
+        "observed": "3.1.3规定自然月全部收益在下一自然月1日后结算；3.1.4列个人/企业结算资料；3.2.3为协商未果时平台可冻结对应订单，并决定原路全额/部分退款或结算；7.1有未满18岁监护要求。",
+        "limitation": "公开条款不保证个体审核通过、可提现金额或实际到账时间；页面未明确最近更新日。",
+        "checked_on": "2026-10-02",
+        "published_at": null,
+        "input_observed": "3.1.3规定当月全部收益次月1日后结算；3.1.4列个人/企业结算资料；3.2规定描述不符、争议冻结及退款处理；7.1规定未满18岁需监护人同意/指导。"
+      },
+      {
+        "id": "F04",
+        "url": "https://www.afdian.com/privacy",
+        "type": "官方实名说明",
+        "observed": "提现涉及姓名、证件类型/号码/有效期及银行卡资料。",
+        "limitation": "本人需在官方安全界面处理；本轮没有上传证件、绑定收款或接受协议。",
+        "checked_on": "2026-10-02",
+        "published_at": "2023-10-23（最近更新）；页面另列2020-06-03与2018-04-10生效信息"
+      },
+      {
+        "id": "F05",
+        "url": "https://guide.afdian.com/faq/faq-for-creators",
+        "type": "官方费用与认证",
+        "observed": "官方FAQ针对赞助金额公开合计6%=平台5%+支付1%；创作者被搜索需认证。作为单品测算的参考条件，不取代数字商品后台费率核验。",
+        "limitation": "以实际商品/提现页面最终明示费率为准；无流量保证，不把开店等同获客。",
+        "checked_on": "2026-10-02",
+        "published_at": null,
+        "input_observed": "公开总费用6%，其中平台5%及支付1%；创作者被搜索需认证。"
+      },
+      {
+        "id": "F06",
+        "url": "https://guide.afdian.com/creator/creator-level-up",
+        "type": "官方自动交付",
+        "observed": "数字商品支持自动私信发下载链接、随机回复发码。",
+        "limitation": "外链权限、版本与失效需要维护；不是托管许可服务器或自动客服。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F07",
+        "url": "https://guide.afdian.com/creator/sell-album",
+        "type": "官方永久内容关联",
+        "observed": "新建商品/型号关联作品集后，用户付款可以查看相关内容；指南定位为永久售卖内容。",
+        "limitation": "后台实际是否可用未登录核对；永久访问的履约承诺仍需作者谨慎决定，不能依赖未核验功能。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F08",
+        "url": "https://guide.afdian.com/creator/sell-post",
+        "type": "官方功能准入限制",
+        "observed": "单条付费动态可永久观看；页面仍提示内测，需要管理员申请。",
+        "limitation": "不把该功能当所有新账号现成可用；本轮未联系管理员。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F09",
+        "url": "https://guide.afdian.com/creator/game",
+        "type": "官方个人收款路线",
+        "observed": "创作者指南写本人支付宝账号提现。",
+        "limitation": "页面有旧App描述，与当前正式条款一起判断；实际可选路径及资格仍需本人后台核验。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F10",
+        "url": "https://www.libreoffice.org/discover/libreoffice/",
+        "type": "官方免费工具",
+        "observed": "LibreOffice公开提供免费办公套件，包含Calc与Writer。",
+        "limitation": "本轮不在用户设备安装软件；演示包跨软件兼容性仅以验证记录为准。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F11",
+        "url": "https://help.etsy.com/hc/en-us/articles/115015710408-Countries-Eligible-for-Etsy-Payments",
+        "type": "上一轮官方入驻证据",
+        "observed": "中国大陆不能新开Etsy店铺，已有店支付资格和新店准入不同。",
+        "limitation": "本轮不把Etsy案例作为可马上入驻的路线。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      },
+      {
+        "id": "F12",
+        "url": "https://help.author.envato.com/hc/en-us/articles/53981083605913-Author-applications-are-temporarily-closed",
+        "type": "上一轮官方入驻证据",
+        "observed": "Envato公开新作者申请暂停；不能假设可立即进CodeCanyon/GraphicRiver。",
+        "limitation": "保留邀请例外与类别差异，不写永久封闭。",
+        "checked_on": "2026-10-02",
+        "published_at": null
+      }
+    ],
+    "validation_summary": {
+      "xlsx_cached_checks": {
+        "L2": "缺9项，待补录",
+        "L11": "缺9项，待补录",
+        "L21": "缺9项，待补录"
+      },
+      "xlsx_macro_or_external_link_parts": false,
+      "docx": {
+        "zip_valid": true,
+        "editable_text": true,
+        "demo_ids_match": true,
+        "external_links": 0,
+        "rendered_pages": 2,
+        "visual_reviewed_pages": 2,
+        "render_engine": "LibreOffice"
+      },
+      "csv_rows_and_columns": {
+        "blank": [
+          20,
+          11
+        ],
+        "fictional": [
+          3,
+          11
+        ]
+      },
+      "native_microsoft_excel_tested": false,
+      "native_calc_xlsx_recalculation": {
+        "completed": false,
+        "reason": "转换验证没有成功产出文件；不作Calc/XLSX原生兼容性声明。"
+      },
+      "all_three_workbook_previews_reviewed": true,
+      "scientific_or_market_validation": false
+    },
+    "sample_created": true,
+    "sample_is_formal_product": false,
+    "source_id_map": {
+      "F01": "R122",
+      "F02": "R123",
+      "F03": "R134",
+      "F04": "R133",
+      "F05": "R042",
+      "F06": "R131",
+      "F07": "R151",
+      "F08": "R152",
+      "F09": "R132",
+      "F10": "R153",
+      "F11": "R008",
+      "F12": "R144"
+    },
+    "website_integration": {
+      "report_relative_path": "research/ai-side-income/report.html",
+      "workbench_href": "../../dashboard/index.html",
+      "sample_href": "sample-v0.1.zip",
+      "download_bytes_are_outer_package": true,
+      "offline_note": "正文、预览和数据已内嵌；单独HTML不含ZIP/工作台。完整网站目录才可返回工作台，样品ZIP需与报告同目录。",
+      "deployment_verified": false,
+      "download_target": {
+        "filename": "科研证据矩阵到提纲_原创样品与执行清单_v0.1.zip",
+        "bytes": 66163,
+        "sha256": "e2f225782e4413a8f55624346f63f1ffd17a9208469ea7d1a82f79701299facc",
+        "entries": [
+          "00_成果说明.txt",
+          "01_原创样品_v0.1.zip",
+          "02_执行清单.txt",
+          "03_产品规格与来源.json",
+          "04_成果目录.json"
+        ]
+      },
+      "inner_sample": {
+        "filename": "research_workflow_sample_v0.1.zip",
+        "bytes": 53012,
+        "sha256": "a309716cad104eda88b62e10ae69a1afd61808667e1377e02f79d7bfdfad5301",
+        "entries": [
+          "00_先读我.txt",
+          "01_科研证据矩阵.xlsx",
+          "02_论点提纲卡.docx",
+          "03_空白证据表.csv",
+          "04_合成演示.csv",
+          "05_使用范围与正式版许可草案.txt",
+          "06_验证记录.txt",
+          "07_文件校验.json"
+        ]
+      }
+    },
+    "license_text": "使用范围与正式版许可草案\nv0.1｜2026-10-02\n\n本次样品\n本包是为本次研究制作的原创演示，供用户评估、复制、修改和内部试用，不是一份已售商品，也不形成任何商业售后或收益承诺。\n表格结构、说明与DEMO内容在本次任务中原创生成；不含第三方付费模板、论文全文、学校/客户标志或实际研究数据。现有软件及其字体仍遵守各自许可，本包不分发软件或字体。\n需要后续公开或出售时，先重新核对其中所有新增素材、品牌、文献及软件资源的权利；不能因“网上可看”就认为可再分发。\n\n正式产品许可建议，尚待创作者确认\n个人版：1名使用者可复制到自有设备、修改并用于自己的科研/工作。用自己内容形成的论文、报告、图表可按其原有权利发布。不得把空白源模板或改名后的模板再打包出售、公开分发或供未获许可者共享。\n团队版：可另设指定团队最多5名用户共享源文件；人数、转移方式与项目用途需明确。暂不定价、不宣称已有人购买。\n用户始终保有其输入资料和研究成果原本享有的权利；模板使用不要求转让成果给创作者。\n如引入GPL等开源代码，其许可义务独立适用，不能用上述模板条款覆盖。\n\n售后建议，尚不是已对外承诺\n支持：下载/解压、在列明环境打开、空白初始化和可复现的文件功能缺陷。\n不包含：读论文、代填资料、评判结论、代写作业/论文、无限软件转换及长期陪跑。\n可为首次设置问题明确7天反馈窗口，但描述不符、缺陷或消费者依法享有的权利，不能被“过期不管”或“售出不退”排除。\n版本：仅承诺已说明的当前版本与环境；不写终身更新、永久在线、发表保证或收益保证。实际回复时间由创作者确认再发布。\n\n平台边界\n爱发电正式条款允许对争议订单冻结、协调及退款；需遵守当前平台规则。任何身份证件、收款开户或金融协议均由用户本人在官方安全页面操作，不在聊天或样品中收集。\n此处是产品设计与使用范围说明，不是针对个人情况的法律意见，也未替任何人签署协议。\n",
+    "execution_report_zh": "第一个低维护产品：科研证据矩阵到提纲\n核验与制作日期：2026-10-02\n\n结论\n把方向收窄到一个本地、可编辑的研究辅助包。它帮助已有原文的人把一个论点与支持/反对/信息不足的资料对应起来。无需先承接定制服务，也无需开服务器、订阅AI或购买字体。\n这一次做的是可用性样品，不是开店，不是付款测试，也不是市场验证。\n\n与32类目录v1.2的关系\n原目录的32类保留。本样品是C10“研究记录与交付清单模板”下 research_workflow_pack 实验的细分分支。它不代表原C10完整项目日志/资产目录套装已完成，不代替C07自动引文检查或C19联网元数据核验，也不新增“第33类”。后续工作台可以将它显示为“已有原创样品，等待独立试用”，仍保留“付费需求未验证”。\n\n为什么选它\n同类科研流程产品存在付费记录，比继续扩大泛方向清单更值得做一个小样。但证据并不直接支持我们的中文证据矩阵能卖：The Page Doctor本轮显示13.21美元、26条评分；早先快照13.24美元及不可直接编辑PDF的买家反馈，用来识别交付问题，不作售价锚。PhD Notion模板同日早先有9美元和53 sales，本轮只抽取到标题，故不声称最新销量仍可确认。[F01 F02]\n更贴近本样品的“可编辑证据矩阵”新增检索没有找到足够清晰的独立付款记录。这个缺口保留，不能用大范围Notion销量填补。\n\n最小产品包\n一个3页签XLSX：开始、20行空白证据表、3条完全合成的例子。\n一个2页可编辑DOCX：空白论点卡+对应演示练习。\n两份CSV作为不依赖公式的导入/录入备份。\n简短上手、使用范围、实际验证记录及文件校验。\n功能只到字段完整性和人工状态；不自动鉴定文献、研究质量或结论正确性。\n\n首轮试用执行清单\n1. 先看样品，决定这个具体问题是不是自己或目标用户真的遇到的问题。\n2. 用一条自己有权阅读的真实资料填空白表，不上传真实原文给任何外部服务。\n3. 在10分钟内做出一张论点卡：至少包含支持项、反对或信息不足项，以及下一步检查。若材料本身没有反对项，可标“未找到”，不能编造。\n4. 后续若用户授权邀请试用，再让3名目标使用者自己完成，记录具体卡点；本轮没有联系任何人。\n5. 至少2人不需作者代填才进入正式商品准备。只夸好看、只收藏、免费领取都不能证明付费需求。\n6. 若免费工具已足够、需要作者经常读论文代填、或2人以上不能独立完成，缩范围或停止。\n\n中国个人渠道：爱发电作为首个候选\n条款3.1.4允许个人/企业结算资料；隐私政策写明提现实名信息；旧创作者指南有本人支付宝提现路径。资格、最终费用、收款账号与年龄/监护要求仍须本人安全核验，不能因“学生”便假设满足。[F03 F04 F09]\n本轮新读正式条款3.1.3：当月全部收益在次月1日后结算，补全上一轮只根据赞助FAQ无法确认单品周期的缺口。结算日仍不同于银行卡实际到账日。公开总抽成6%，具体商品及额外提现/税务事项以后台最新明示为准。[F03 F05]\n条款3.2明确商品描述不符、纠纷协调、冻结争议款和退款。数字商品不该写“售出概不退款”。[F03]\n\n自动交付的实际步骤，仅方案未执行\n1. 冻结ZIP、完整预览、文件清单、版本和校验值。\n2. 本人完成官方创作者及收款审核；证件、银行资料和新协议不由助手代交。\n3. 在用户批准的存储/平台保存ZIP，确认能下载、不会暴露个人资料、链接有效期和分享权限合适。公共演示网站不能充当付费访问控制。\n4. 选择一次性数字商品，商品介绍写清文件、兼容环境、修改权限、支持及退款处理。\n5. 优先使用商品自动私信发完整包链接与版本号。官方支持此路线。[F06]\n6. 若账号中可用，可将商品型号关联作品集，用付款解锁内容；单条关联动态页面仍有内测申请提示，不能当所有账号默认功能，更不能未经授权联系管理员。[F07 F08]\n7. 核对普通下载、错链、权限不足、移动端解压、再次下载和更新版本；如果平台没有官方测试模式，不能声称已通过端到端付款测试，也不能自买刷出销量。\n8. 只有未来用户决定并授权试售后，才核验第一笔真实非亲友订单、支持分钟和次月结算；此时才谈可扩张性。\n\n版权与售后边界\n只用本次原创结构与合成例子；不附论文全文、学校模板、客户材料、logo或付费素材。新增引用只存必要书目信息和定位，不默认拥有全文再分发权。\n未来个人版可允许一人编辑并产出自己的报告；团队共享另设许可。禁止转卖源包的条款只能用于有权如此授权的内容，不能覆盖开源资源已有权利。\n把下载/打开/初始化和功能缺陷与科研内容辅导分开。7天初次设置窗口只是建议，不能免除描述不符或缺陷责任。实际回复时间需创作者能做到才发布。\n\n现金与盈亏\n本地样品采用已有工具，无新增付费账号/API/服务器，额外现金预算0元，时间与电网成本不为0。免费LibreOffice有Calc/Writer可作备选，但本包兼容性只按验证记录陈述。[F10]\n正式版39元仍只是上一轮试价假设。若平台6%、风险准备5%、每单支持0.1小时、时间50元/小时，则单次经济贡献29.71元。制作10小时+90天获客6小时+维护2小时合计900元时间成本，回本需约31单。未计个人税、额外提现、软件或开票成本；31单是门槛，不是预测，更不是已成交。\n本次只检验是否值得做下一步，尚无任何订单或回款。\n\n停止标准\n首轮独立试用不成立，停止扩表格和加AI；免费表格足够则停止收费产品假设。\n未来正式试售后30天、100次合格访问仍零真实付款，停止追加功能；访问不足只说明渠道未验证。\n任何假引用混入、隐私外泄或误导性结论风险，立即暂停分发整改。\n停卖也不能取消对既有买家的合理修复/退款责任。\n\n发布准入状态\n本地样品：制作与检查结果见验证文件。\n独立可用性：未测。\n渠道账号：未注册/实名/绑定。\n商品发布：未执行。\n真实付款：未测试。\n可以公开介绍研究和原创演示；不要把演示下载改写成付费交付已经上线。\n\n来源（核验日均为2026-10-02）\n\nF01 https://thepagedoctor.gumroad.com/l/literaturereviewtemplate\n观察：本轮现价显示13.21美元，26条评分、4.5分；上午档案价13.24美元且出现买家对不可直接编辑PDF的抱怨。\n边界：不确定显示价格变化原因；不能把旧价或评论金额当所有订单实付价；既有产品评价不能证明本样品有人买。\n\nF02 https://shesciencesblog.gumroad.com/l/PhDstudentnotiontemplate\n观察：2026-10-02早先正文有9美元、53 sales、PDF指引复制Notion模板。\n边界：本轮重读仅返回标题，无法再次确认最新销量；保留早先观察为带时点证据，不声称现在仍有53单，更不把53×9当收入。\n\nF03 https://www.afdian.com/term\n观察：3.1.3规定当月全部收益次月1日后结算；3.1.4列个人/企业结算资料；3.2规定描述不符、争议冻结及退款处理；7.1规定未满18岁需监护人同意/指导。\n边界：公开条款不保证个体审核通过、可提现金额或实际到账时间；页面未明确最近更新日。\n\nF04 https://www.afdian.com/privacy\n观察：提现涉及姓名、证件类型/号码/有效期及银行卡资料。\n边界：本人需在官方安全界面处理；本轮没有上传证件、绑定收款或接受协议。\n\nF05 https://guide.afdian.com/faq/faq-for-creators\n观察：公开总费用6%，其中平台5%及支付1%；创作者被搜索需认证。\n边界：以实际商品/提现页面最终明示费率为准；无流量保证，不把开店等同获客。\n\nF06 https://guide.afdian.com/creator/creator-level-up\n观察：数字商品支持自动私信发下载链接、随机回复发码。\n边界：外链权限、版本与失效需要维护；不是托管许可服务器或自动客服。\n\nF07 https://guide.afdian.com/creator/sell-album\n观察：新建商品/型号关联作品集后，用户付款可以查看相关内容；指南定位为永久售卖内容。\n边界：后台实际是否可用未登录核对；永久访问的履约承诺仍需作者谨慎决定，不能依赖未核验功能。\n\nF08 https://guide.afdian.com/creator/sell-post\n观察：单条付费动态可永久观看；页面仍提示内测，需要管理员申请。\n边界：不把该功能当所有新账号现成可用；本轮未联系管理员。\n\nF09 https://guide.afdian.com/creator/game\n观察：创作者指南写本人支付宝账号提现。\n边界：页面有旧App描述，与当前正式条款一起判断；实际可选路径及资格仍需本人后台核验。\n\nF10 https://www.libreoffice.org/discover/libreoffice/\n观察：LibreOffice公开提供免费办公套件，包含Calc与Writer。\n边界：本轮不在用户设备安装软件；演示包跨软件兼容性仅以验证记录为准。\n\nF11 https://help.etsy.com/hc/en-us/articles/115015710408-Countries-Eligible-for-Etsy-Payments\n观察：中国大陆不能新开Etsy店铺，已有店支付资格和新店准入不同。\n边界：本轮不把Etsy案例作为可马上入驻的路线。\n\nF12 https://help.author.envato.com/hc/en-us/articles/53981083605913-Author-applications-are-temporarily-closed\n观察：Envato公开新作者申请暂停；不能假设可立即进CodeCanyon/GraphicRiver。\n边界：保留邀请例外与类别差异，不写永久封闭。\n",
+    "execution_report_status": "保存样品制作阶段原文；其中6%费用表述已在v1.3正文细化为官方赞助FAQ参考费率，具体数字商品最终费用待后台核验。原文记录不代表已试用、开店或收款。",
+    "validation_record_zh": "实际验证记录｜2026-10-02\n\n已完成\n- XLSX已制作；3个工作表、20条空白记录、3条完全虚构记录。\n- 8项编辑/缺失提示/导出重开检查通过：部分字段已填仍显示剩余缺失；字段齐全但人工未核对仍提醒；核对原文也不等于论点成立。\n- 24项ZIP/XML/CSV结构检查通过；公式错误扫描0项；空白记录的首/中/末行缓存均显示缺9项。\n- 3张工作表均已渲染并目视检查。表格较宽，正常填写时使用横向滚动，首列与表头冻结。\n- DOCX包含2页可编辑正文；用本机LibreOffice渲染成2页并逐页检查，无内容裁切。DEMO-C01和3个证据ID与工作簿一致。\n- 两份CSV分别为20/3条数据行，各11个输入字段，UTF-8 BOM；不含公式或下拉框。\n- 包内未发现宏、外部数据连接、远程引用或自动上传代码；DOCX无外部链接。\n\n没有完成\n- 未在原生Microsoft Excel中打开。补充的原生Calc重算转换没有成功产出文件，因此不声称已完成Calc/XLSX原生兼容验证。\n- 未做独立用户10分钟上手测试、真实科研内容核验、付费交易或平台自动交付测试。\n- 字段检查把空格或任意文字也视为填写，不能代替人工阅读；CSV不保留字段检查能力。\n\n实际使用前\n用你已有软件打开，另存一份，填一条你自己的合法资料，看缺项提醒是否正确变化。若不兼容，可用CSV和DOCX做人工记录，勿把程序检查结果当研究质量保证。\n没有把任何真实论文、未发表成果、身份或支付信息装入样品。\n",
+    "input_package_validation": {
+      "schema_version": 1,
+      "created_on": "2026-10-02",
+      "authoring_engine": "@oai/artifact-tool",
+      "artifact_kind": "free_workflow_evaluation_sample",
+      "scientific_validation": false,
+      "market_validation": false,
+      "sheet_names": [
+        "开始",
+        "空白证据表",
+        "合成演示"
+      ],
+      "blank_record_count": 20,
+      "fictional_record_count": 3,
+      "stable_id_policy": "Static IDs EV-001..EV-020. Do not renumber when sorting or reuse for a different source.",
+      "required_input_fields": "B–K",
+      "formula_scope": "Nonblank field count and manual verification reminder only. Does not assess source authenticity, methodology, quality, or claim validity.",
+      "native_excel_tested": false,
+      "native_excel_limitation": "Not opened in native Microsoft Excel. Artifact Tool formula tests, XLSX reopen and ZIP/XML structure checks are separate checks.",
+      "tests": [
+        {
+          "name": "untouched_blank_row",
+          "expected": "缺9项，待补录",
+          "actual": "缺9项，待补录",
+          "passed": true
+        },
+        {
+          "name": "edit_one_empty_field_remaining_missing_visible",
+          "expected": "缺8项，待补录",
+          "actual": "缺8项，待补录",
+          "passed": true
+        },
+        {
+          "name": "all_fields_filled_but_manual_verification_open",
+          "expected": "字段齐全；仍待核验",
+          "actual": "字段齐全；仍待核验",
+          "passed": true
+        },
+        {
+          "name": "manual_verification_is_not_scientific_validation",
+          "expected": "字段齐全；需判断适用性",
+          "actual": "字段齐全；需判断适用性",
+          "passed": true
+        },
+        {
+          "name": "limitation_missing_despite_verified_status",
+          "expected": "缺1项，待补录",
+          "actual": "缺1项，待补录",
+          "passed": true
+        },
+        {
+          "name": "temporary_edits_restored",
+          "expected": "缺9项，待补录",
+          "actual": "缺9项，待补录",
+          "passed": true
+        },
+        {
+          "name": "formula_copy_first_middle_last",
+          "passed": true,
+          "addresses": [
+            "L2",
+            "L11",
+            "L21"
+          ]
+        },
+        {
+          "name": "artifact_tool_xlsx_reopen_ids_and_formula",
+          "passed": true
+        }
+      ],
+      "formula_error_scan": {
+        "ndjson": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+        "recordCount": 1,
+        "truncated": false,
+        "matched_entries": 0
+      },
+      "visual_review": {
+        "passed": true,
+        "reviewed_sheets": [
+          "开始",
+          "空白证据表",
+          "合成演示"
+        ],
+        "method": "All three Artifact Tool PNG renders inspected. Revised guide wrapping and reduced demonstration row height. Headers, warnings and content are visible and legible. Blank preview unchanged after text-only edits to other sheets."
+      },
+      "zip_structure_validation": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "zip_crc_integrity",
+            "passed": true
+          },
+          {
+            "name": "required_ooxml_parts",
+            "passed": true
+          },
+          {
+            "name": "all_xml_parts_parse",
+            "passed": true
+          },
+          {
+            "name": "exact_three_requested_tabs",
+            "passed": true,
+            "sheets": [
+              "开始",
+              "空白证据表",
+              "合成演示"
+            ]
+          },
+          {
+            "name": "twenty_unique_stable_ids",
+            "passed": true
+          },
+          {
+            "name": "no_fabricated_source_inputs_in_blank_rows",
+            "passed": true
+          },
+          {
+            "name": "manual_initial_status_unverified",
+            "passed": true
+          },
+          {
+            "name": "temporary_test_values_absent",
+            "passed": true
+          },
+          {
+            "name": "twenty_simple_formula_checks_only",
+            "passed": true
+          },
+          {
+            "name": "all_initial_cached_checks_show_missing",
+            "passed": true
+          },
+          {
+            "name": "no_saved_formula_errors",
+            "passed": true
+          },
+          {
+            "name": "header_and_id_frozen",
+            "passed": true
+          },
+          {
+            "name": "source_and_status_dropdowns_exported",
+            "passed": true
+          },
+          {
+            "name": "worksheets_editable_no_protection",
+            "passed": true
+          },
+          {
+            "name": "blank_table_unmerged",
+            "passed": true
+          },
+          {
+            "name": "filterable_flat_table",
+            "passed": true
+          },
+          {
+            "name": "exactly_three_fictional_examples",
+            "passed": true
+          },
+          {
+            "name": "one_fictional_claim_mapping",
+            "passed": true
+          },
+          {
+            "name": "support_contradiction_and_insufficiency_present",
+            "passed": true
+          },
+          {
+            "name": "no_real_or_invented_doi_or_url_in_cell_values",
+            "passed": true
+          },
+          {
+            "name": "no_macros_external_links_or_remote_connections",
+            "passed": true
+          },
+          {
+            "name": "no_external_relationships",
+            "passed": true
+          },
+          {
+            "name": "blank_evidence.csv_rows_and_columns",
+            "passed": true
+          },
+          {
+            "name": "fictional_examples.csv_rows_and_columns",
+            "passed": true
+          }
+        ]
+      },
+      "caveats": [
+        "Whitespace or arbitrary text counts as filled. Human checking is required.",
+        "CSV exports exclude formulas, validation, freeze panes and formatting.",
+        "Synthetic examples have no real publications, DOI, URL, study participants or measured outcomes."
+      ],
+      "files": [
+        "research_evidence_sample.xlsx",
+        "blank_evidence.csv",
+        "fictional_examples.csv",
+        "preview_start.png",
+        "preview_blank.png",
+        "preview_demo.png",
+        "validation.json"
+      ],
+      "file_manifest": {
+        "research_evidence_sample.xlsx": {
+          "bytes": 11501,
+          "sha256": "1b77633d13341fab7f8f236ba05aa32e71ce913abb954b63adc88d9d691bf9c7"
+        },
+        "blank_evidence.csv": {
+          "bytes": 1203,
+          "sha256": "fbea47a619c76b272b7480f8454dda7c48d0a4ef95d140a315fa0ef0e9dcaef5"
+        },
+        "fictional_examples.csv": {
+          "bytes": 1609,
+          "sha256": "b89348f2c9a5def6d1a813a408280abf15899e716844370b894a1d1969573db0"
+        },
+        "preview_start.png": {
+          "bytes": 432751,
+          "sha256": "cb5e9b9eb1e9db1047606734451ba5f47f7efcb4f3b7447d74a7097339b08554"
+        },
+        "preview_blank.png": {
+          "bytes": 278163,
+          "sha256": "3f016e605ea623e1365dccc680d4c1fd7a31d01d008311f8900e0395f5c9f8db"
+        },
+        "preview_demo.png": {
+          "bytes": 378499,
+          "sha256": "cea78945cc6033669c23b9ce26d50eb00afa267c41e368852926772867335115"
+        }
+      },
+      "package_checks": {
+        "xlsx_cached_checks": {
+          "L2": "缺9项，待补录",
+          "L11": "缺9项，待补录",
+          "L21": "缺9项，待补录"
+        },
+        "xlsx_macro_or_external_link_parts": false,
+        "docx": {
+          "zip_valid": true,
+          "editable_text": true,
+          "demo_ids_match": true,
+          "external_links": 0,
+          "rendered_pages": 2,
+          "visual_reviewed_pages": 2,
+          "render_engine": "LibreOffice"
+        },
+        "csv_rows_and_columns": {
+          "blank": [
+            20,
+            11
+          ],
+          "fictional": [
+            3,
+            11
+          ]
+        },
+        "native_microsoft_excel_tested": false,
+        "native_calc_xlsx_recalculation": {
+          "completed": false,
+          "reason": "转换验证没有成功产出文件；不作Calc/XLSX原生兼容性声明。"
+        },
+        "all_three_workbook_previews_reviewed": true,
+        "scientific_or_market_validation": false
+      },
+      "renamed_in_package": {
+        "research_evidence_sample.xlsx": "01_科研证据矩阵.xlsx",
+        "blank_evidence.csv": "03_空白证据表.csv",
+        "fictional_examples.csv": "04_合成演示.csv"
+      }
+    },
+    "created_sample_count": 1,
+    "created_family_ids": [
+      "C10"
+    ],
+    "preview_files": [
+      {
+        "filename": "preview_start.png",
+        "sha256": "cb5e9b9eb1e9db1047606734451ba5f47f7efcb4f3b7447d74a7097339b08554"
+      },
+      {
+        "filename": "preview_demo.png",
+        "sha256": "cea78945cc6033669c23b9ce26d50eb00afa267c41e368852926772867335115"
+      },
+      {
+        "filename": "page-1.png",
+        "sha256": "3df3052dffd4f0e468a5f626329b4f0512734d796e6a07ed5af2e88f02ef0591"
+      }
+    ]
+  }
 }

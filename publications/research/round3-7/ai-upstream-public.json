@@ -1,8 +1,80 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
+  "covered_rounds": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "change_log": [
+    {
+      "version": "1.0.0",
+      "evidence_as_of_utc": "2026-10-02T12:29:05Z",
+      "covered_rounds": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "summary": "首次整合7个证据章节、30条价格历史及220个公开URL；保留价格、SKU、货权和票据未核边界。"
+    },
+    {
+      "version": "1.1.0",
+      "evidence_as_of_utc": "2026-10-02T15:34:27Z",
+      "covered_rounds": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "summary": "追加移动订阅绑定、支付资格、BHN合同、Claude用量包和正式受限经销、缓存/Batch条件；修复长来源URL在手机上的换行，保留宽表独立滚动并加入返回工作台入口。",
+      "content_source_delta": {
+        "round8_official_source_records": 32,
+        "new_content_source_urls_relative_to_round3_7": 30,
+        "existing_content_source_urls_reobserved": [
+          {
+            "id": "CB8-02",
+            "title": "How to gift a Claude subscription",
+            "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription"
+          },
+          {
+            "id": "CB8-03",
+            "title": "How to redeem a Claude gift subscription",
+            "url": "https://support.claude.com/en/articles/12938695-how-to-redeem-a-claude-gift-subscription"
+          }
+        ],
+        "declared_source_count_scope": "32项相对第7轮研究的新官方来源记录；其中两篇Claude礼赠页面已在第3–4轮出现，不能再计为相对完整3–7轮包的净新增。",
+        "reference_url_count_note": "source_catalog还保留复查、无法取得正文的手册/登录页及排除来源，URL总数不能当可读有效内容来源数。"
+      },
+      "retained": "既有价格历史、source ID、包身份与文件路径保留；本轮没有新零售店或新价格资格认定。"
+    }
+  ],
+  "latest_round_delta": {
+    "round8_official_source_records": 32,
+    "new_content_source_urls_relative_to_round3_7": 30,
+    "existing_content_source_urls_reobserved": [
+      {
+        "id": "CB8-02",
+        "title": "How to gift a Claude subscription",
+        "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription"
+      },
+      {
+        "id": "CB8-03",
+        "title": "How to redeem a Claude gift subscription",
+        "url": "https://support.claude.com/en/articles/12938695-how-to-redeem-a-claude-gift-subscription"
+      }
+    ],
+    "declared_source_count_scope": "32项相对第7轮研究的新官方来源记录；其中两篇Claude礼赠页面已在第3–4轮出现，不能再计为相对完整3–7轮包的净新增。",
+    "reference_url_count_note": "source_catalog还保留复查、无法取得正文的手册/登录页及排除来源，URL总数不能当可读有效内容来源数。"
+  },
   "package_id": "ai_upstream_public_round3_7_20261002",
-  "title": "AI上游研究：第3—7轮公开证据补充包",
-  "as_of_utc": "2026-10-02T12:29:05Z",
+  "title": "AI上游研究：第3—8轮公开证据补充包",
+  "as_of_utc": "2026-10-02T15:34:27Z",
   "language": "zh-CN",
   "scope": "公开页面、SKU价格、票据声明、账号控制、供应链准入、原厂条款和成本分析。仅为已记录观察的整合，不含私人对话、私人账号或凭据。",
   "research_limits": {
@@ -668,6 +740,116 @@
         "update": "当前FAQ使用“可能覆盖剩余时长”，应保留该不确定语气。"
       },
       "effective_chapter": "r6"
+    },
+    {
+      "id": "r8_mobile_dual_account_binding",
+      "subject": "Apple/Google移动订阅双账号绑定",
+      "previous": "本地化IAP价存在，但通用代充模型未核",
+      "current": "移动订阅绑定商店账号及购买时ChatGPT账号；同一商店账号轮流为不同ChatGPT客户购买不是官方支持模式",
+      "impact": "不能把PHP999目录价扩张成单一Apple账户轮充库存；也不据此推定某商家采用该模式",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_8095162cb3b9"
+      ]
+    },
+    {
+      "id": "r8_php_period_still_unknown",
+      "subject": "PHP999周期复核",
+      "previous": "官方IAP清单未给该项周期",
+      "current": "实时展开清单仍未显示唯一SKU周期；9990也仍无周期证明",
+      "impact": "106.66元只沿用第7轮2026-10-01 ECB参考換算，未更新汇率，不认定月度进货成本",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_98658006c27f",
+        "src_aa29c504e2de"
+      ]
+    },
+    {
+      "id": "r8_payment_qualification",
+      "subject": "Apple菲律宾支付与GCash账户资格",
+      "previous": "确认PHP及本地支付机制存在",
+      "current": "菲律宾Apple列GCash/Smart/卡/ShopeePay；他区礼卡不能跨购买地区兑换；GCash网上付款需完整验证，GTourist需到菲激活且30天停用",
+      "impact": "游客钱包长期循环付Apple/ChatGPT的适用证据不足，并非仅因功能清单未提就认定明确禁止；China游客来源名单不授予OpenAI大陆终端资格",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_e68190fe9934",
+        "src_380ef15e4d2d",
+        "src_628e92f33706",
+        "src_e5fb22d13cfa"
+      ]
+    },
+    {
+      "id": "r8_bhn_contract",
+      "subject": "BHN准入与10000美元阈值",
+      "previous": "通用获批目录及生产认证已知，业务合同细节待核",
+      "current": "2026-03-25合同补出明确批准、下游书面合同、预付、三方直接付款协议及Direct Payment Fee；税与换汇费不能默认含入",
+      "impact": "10000美元是自然人单日销售风控阈值，不是MOQ；单商户卡条件性转售不能覆盖普通奖励项目限制，OpenAI专项及大陆资格仍未核",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_09fce245d799"
+      ]
+    },
+    {
+      "id": "r8_claude_usage_bundles",
+      "subject": "Claude额外用量的现金成本",
+      "previous": "第7轮说明超额usage credits按标准API计量价",
+      "current": "额外用量可以通过合资格官方预购包获10%/20%/30%折扣；标准计量价与折扣余额并存",
+      "impact": "不能将所有额外用量都写成最终现金支付标准价；也不能当作Console API七折可转售余额",
+      "effective_chapter": "r8",
+      "supersedes": [
+        "r7/claude_analysis/observations/extra_credits_cash_cost_generalization"
+      ],
+      "source_refs": [
+        "src_54ca5c074d31"
+      ]
+    },
+    {
+      "id": "r8_authorized_reselling_exists",
+      "subject": "正式经销存在性与适用产品",
+      "previous": "具体原号会员与下级授权没有闭环",
+      "current": "PwC有ChatGPT Enterprise签约个案，AWS Bedrock有正式渠道转售且Anthropic另有限制",
+      "impact": "不应泛称完全没有正规经销；企业/API路径不授予小店个人Plus/Pro/Max或大陆终端销售权",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_bc2f1aeaa023",
+        "src_79707af806ac"
+      ]
+    },
+    {
+      "id": "r8_service_partners",
+      "subject": "Claude服务伙伴门槛",
+      "previous": "伙伴申请与一般企业实施能力线索",
+      "current": "Registered可免费开始但需承诺10名认证人员；Select需10名活跃认证人员、近12月2个生产客户及1个公开案例",
+      "impact": "实施能力/转介奖励分轨；证书、目录或Registered身份不能替代消费订阅/API经销权",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_c265f4d09da6"
+      ]
+    },
+    {
+      "id": "r8_aws_product_and_data",
+      "subject": "AWS账单背后的产品与数据边界",
+      "previous": "已有Claude Platform on AWS与云API路径观察",
+      "current": "Claude Platform on AWS和AWS运营的Bedrock不同；前者独立组织且由Anthropic在AWS外处理内容",
+      "impact": "旧key/工作区/私有优惠不能自动迁移或追溯；AWS账单不保证统一数据位置/认证",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_35f71fa3bd1b",
+        "src_f7eadee5e650"
+      ]
+    },
+    {
+      "id": "r8_cache_batch_limits",
+      "subject": "缓存与Batch降本的真实条件",
+      "previous": "第7轮列条件性模型费样例",
+      "current": "缓存有隔离域、完全一致前缀、最小长度及并发首写限制；Batch异步无流式，24小时内未完成的请求会过期，结果留29天且不适用ZDR",
+      "impact": "不能当实时Code保底成本、跨客户共享缓存库存或零留存方案；理论节省不是实测总利润",
+      "effective_chapter": "r8",
+      "source_refs": [
+        "src_9a3bbc4f637b",
+        "src_dbcb362197db",
+        "src_6bc4022c8696"
+      ]
     }
   ],
   "verified_arithmetic": [
@@ -747,6 +929,41 @@
       "result": 2.587,
       "currency": "USD",
       "basis": "Sonnet5.5直连标准global，5分钟TTL命中假设；仅模型费"
+    },
+    {
+      "id": "r8_usage_bundle_50",
+      "formula": "50 * (1 - 0.1)",
+      "result": 45,
+      "currency": "USD",
+      "basis": "官方额外usage bundle标价；非Console API余额；税费未知，未实购"
+    },
+    {
+      "id": "r8_usage_bundle_250",
+      "formula": "250 * (1 - 0.2)",
+      "result": 200,
+      "currency": "USD",
+      "basis": "官方额外usage bundle标价；非Console API余额；税费未知，未实购"
+    },
+    {
+      "id": "r8_usage_bundle_1000",
+      "formula": "1000 * (1 - 0.3)",
+      "result": 700,
+      "currency": "USD",
+      "basis": "官方额外usage bundle标价；非Console API余额；税费未知，未实购"
+    },
+    {
+      "id": "r8_cache_5m_breakeven",
+      "formula": "(1.25 - 1) / (1.25 - 0.1) * 100",
+      "result": 21.7391,
+      "unit": "percent",
+      "basis": "Sonnet5.5候选前缀命中率阈值；需严格大于此比例才降低此局部成本，不是全账单节省率"
+    },
+    {
+      "id": "r8_cache_1h_breakeven",
+      "formula": "(2 - 1) / (2 - 0.1) * 100",
+      "result": 52.6316,
+      "unit": "percent",
+      "basis": "未命中均写入的假设；不含输出、新输入、工具、税及运营成本"
     }
   ],
   "price_history": [
@@ -3103,13 +3320,16 @@
         },
         {
           "id": "extra_credits",
-          "claim": "Pro/Max可启用额外usage credits并设月支出上限，超出订阅额度部分按标准API率单独计费；这不等于订阅附送Console API额度。",
+          "claim": "Pro/Max额外usage credits以标准API率计量；第8轮补充合资格官方预购usage bundles有10%/20%/30%折扣，因此计量价不等于所有实际现金支出。该余额不是订阅附送的Console API额度，也未核可转售权；用量包、API Batch与缓存优惠不能默认跨余额类型叠加。",
           "source_ids": [
             "plan_extra",
             "api_separate"
           ],
           "type": "official_document_observation",
-          "uncertainty": null
+          "uncertainty": null,
+          "increment_source_refs": [
+            "src_54ca5c074d31"
+          ]
         },
         {
           "id": "key_billing_risk",
@@ -3332,7 +3552,740 @@
           "all_in_total_usd": null,
           "note": "若TTL过期、前缀改变、路由/实现不能复用或工具带来新token，须用实际分类重算；不假定某代理可获得此命中率。"
         }
+      ],
+      "usage_bundles": {
+        "currency": "USD",
+        "rows": [
+          {
+            "face_value": 50,
+            "pay": 45,
+            "discount": 0.1
+          },
+          {
+            "face_value": 250,
+            "pay": 200,
+            "discount": 0.2
+          },
+          {
+            "face_value": 1000,
+            "pay": 700,
+            "discount": 0.3
+          }
+        ],
+        "monthly_face_value_cap": {
+          "Pro": 2000,
+          "Max": 2000,
+          "Team": 3000
+        },
+        "tax": null,
+        "expiry": null,
+        "refund": null,
+        "transferability": null,
+        "api_console_credits_conversion": null,
+        "observed_user_checkout": false,
+        "sources": [
+          "CB8-04"
+        ]
+      },
+      "latest_public_limits": [
+        "具体交易主体、实际使用地点、最终用户及所有权是否合资格；本轮没有任何特批或豁免。",
+        "经销授权必须匹配公司法人、产品(SaaS订阅/API/Bedrock)、地区、最终客户范围及有效期；AWS渠道或Claude认证不能替代。",
+        "礼赠是否允许商业再售、批量采购、折扣及退款/撤销规则未从公开新源建立；不得把“globally”当全球主体无条件资格。",
+        "usage bundle的实际账户可买资格、账单币种/税费、余额到期/退款/转移细则和第三方产品认证权限未全部核清。",
+        "private offer具体门槛、承诺期、最低消费、折扣、返利、开票主体与大陆发票均未知。",
+        "真实任务的缓存写/读/未缓存输入/输出token、并发、模型版本、TTL和缓存域尚无实测；不得用理论最高折扣承诺利润。",
+        "离线任务实际Batch完成率、失败/取消/过期与重跑成本、工具额外费用和数据留存合同需要逐项核。",
+        "代理的隐私协议、日志留存/再利用/分包方以及终端访问权未核；官方案例不能证明任何尚未调查的特定代理违规。"
       ]
+    }
+  },
+  "round8_analysis": {
+    "php999_cycle_investigation": {
+      "observed_price_php": 999,
+      "exact_in_app_label": "ChatGPT Plus",
+      "billing_period": null,
+      "period_same_sku_verified": false,
+      "standard_plus_plan_period": "monthly",
+      "standard_period_evidence": "官方公开pricing FAQ；不等于菲律宾特定IAP唯一SKU的周期证明",
+      "other_same_label_price_php": 9990,
+      "other_same_label_period": null,
+      "confirmed": "官方Plus本地SKU标价存在，且标准Plus公开制度是月度",
+      "not_confirmed": "该PHP999条目的唯一产品ID、周期、某真实合资格账号结账总价、续费价格及资金链",
+      "cannot_claim": "PHP999=已核每月进货价；PHP9990=年费；用价格比值推断周期",
+      "close_with": [
+        "真实合资格本人账号的Apple订阅确认页/订阅管理页，显示准确计划、PHP999、计费周期/下一续费日",
+        "对应Apple收据及ChatGPT订阅关联证明；遮去个人标识/卡号/交易秘密",
+        "不需要创建新账户或传递Apple/ChatGPT密码与session；公开资料不足时保留未知"
+      ],
+      "prior_106_66_cny_status": "只沿用第7轮10月1日ECB参考换算，不作为本轮现汇或实付价"
+    },
+    "claims": [
+      {
+        "id": "R8C01",
+        "verdict": "EXCLUDES_GENERIC_PLAN",
+        "claim": "同一Apple/Google商店账户循环给不同ChatGPT客户原号充值不是官方支持的模式",
+        "sources": [
+          "R8S01"
+        ],
+        "important_scope": "不证明某卖家采用此模式；合法付款人和个人账户等其他条件仍需核"
+      },
+      {
+        "id": "R8C02",
+        "verdict": "SUPPORTS_PAYMENT_EXISTENCE_ONLY",
+        "claim": "菲律宾Apple可使用GCash/Smart/卡/ShopeePay，但不能由此推断游客钱包、他区礼卡或无限批量代充可行",
+        "sources": [
+          "R8S03",
+          "R8S04",
+          "R8S05",
+          "R8S06",
+          "R8S07",
+          "R8S08"
+        ]
+      },
+      {
+        "id": "R8C03",
+        "verdict": "CONDITIONAL_B2B_PATH",
+        "claim": "BHN公开现行Order Agreement给出伙伴申请/明确批准/下游合同/尽调与付款条件，不能当OpenAI专项授权",
+        "sources": [
+          "R8S10"
+        ]
+      },
+      {
+        "id": "R8C04",
+        "verdict": "AUTHORIZED_RESELLING_EXISTS_BUT_PRODUCT_SPECIFIC",
+        "claim": "PwC Enterprise个案证实正式ChatGPT经销存在；不能泛化为Plus批发或大陆可用",
+        "sources": [
+          "R8S12"
+        ]
+      },
+      {
+        "id": "R8C05",
+        "verdict": "PROCUREMENT_NOT_RESELLER_THRESHOLD",
+        "claim": "OpenAI API约10000美元月支出是销售团队联系参考，不是经销保证金或最低拿货量",
+        "sources": [
+          "R8S13"
+        ]
+      },
+      {
+        "id": "R8C06",
+        "verdict": "CYCLE_REMAINS_UNRESOLVED",
+        "claim": "实时展开官方菲律宾IAP清单后仍未显示PHP999唯一SKU的周期；不能由一般Plus月付制度或价格比值推断该项周期。",
+        "sources": [
+          "R8R01",
+          "R8R02",
+          "R8S02"
+        ]
+      }
+    ],
+    "bhn_program_analysis": {
+      "agreement_date": "2026-03-25",
+      "contract_parties": "Blackhawk Network, Inc.或Blackhawk Network (Canada) Ltd与获批组织客户；不据此推定接受任何注册地",
+      "partner_application_required": true,
+      "express_approval_required": true,
+      "purchaser_information_required": true,
+      "downstream_written_agreement_required": true,
+      "card_inventory_redistribution_under_third_party_program": false,
+      "direct_purchaser_payment": {
+        "tripartite_written_agreement_required": true,
+        "direct_payment_fee_required": true,
+        "fee_amount": null
+      },
+      "procurement_terms": {
+        "funds_prepaid": true,
+        "order_price_and_fees": "以实际被接受订单为准",
+        "prefund_amount": null,
+        "fx_convenience_fee_possible": true,
+        "taxes_included": false,
+        "default_order_funds_refundable": false,
+        "exception": "双方另有约定"
+      },
+      "ordinary_reward_program_consumer_resale": false,
+      "single_merchant_card_conditional_resale_clause": true,
+      "contract_scope_conflict": "6.1奖励用途禁消费者转售，与7.8条件性单商户卡转售并列；不能只截7.8主张无限消费零售，应取得具体业务/SKU/渠道对应书面批准及手册",
+      "resale_clause_risk_controls": {
+        "no_cash": true,
+        "prevent_natural_person_daily_sales_over_usd": 10000,
+        "threshold_is_moq": false,
+        "large_business_buyer_due_diligence": true,
+        "record_periods": "大额企业卡交易留存取7年或项目到期后5年的较长者；其他客户付款/尽调有5年记录要求"
+      },
+      "openai_sku_verified": false,
+      "openai_discount": null,
+      "mainland_end_user_permission": null,
+      "subdistributor_right": null,
+      "sources": [
+        "R8S10"
+      ],
+      "manual_fetch_result": {
+        "urls": [
+          "https://connect.blackhawknetwork.com/publically-accessible-reference-documents/bhn-ecommerce-distribution-partner-operations-manual",
+          "https://connect.blackhawknetwork.com/publically-accessible-reference-documents/hawk-incentives-partner-operations-manual-us-products/"
+        ],
+        "status": "合同引用的两份运营手册未能获取公开正文；原因未确认，不视为已经审阅。"
+      }
+    },
+    "claude": {
+      "schema_version": 1,
+      "title": "Claude合法使用和成本边界第8轮增量研究",
+      "as_of": "2026-10-02",
+      "research_window_utc": {
+        "start": "2026-10-02T15:23:32Z",
+        "end": "2026-10-02T15:33:28.051492+00:00"
+      },
+      "sources": [
+        {
+          "id": "CB8-01",
+          "title": "Usage Policy",
+          "url": "https://www.anthropic.com/legal/aup",
+          "published_or_effective": "2025-09-15",
+          "observed_at_utc": "2026-10-02T15:24:22Z",
+          "relevance": "适用于授权经销和转接终端；禁止违反支持地区政策的账户/API访问",
+          "source_type": "official_policy"
+        },
+        {
+          "id": "CB8-02",
+          "title": "How to gift a Claude subscription",
+          "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription",
+          "published_or_effective": "2026-04-29",
+          "observed_at_utc": "2026-10-02T15:24:22Z",
+          "relevance": "Pro/Max礼赠资格、产品期限、无需收礼者信用卡",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-03",
+          "title": "How to redeem a Claude gift subscription",
+          "url": "https://support.claude.com/en/articles/12938695-how-to-redeem-a-claude-gift-subscription",
+          "published_or_effective": "2026-03-16",
+          "observed_at_utc": "2026-10-02T15:24:22Z",
+          "relevance": "兑换、不可叠加及移动端订阅限制",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-04",
+          "title": "Buy usage bundles",
+          "url": "https://support.claude.com/en/articles/14246112-buy-usage-bundles",
+          "published_or_effective": "2026-05-18",
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "relevance": "真实10%/20%/30%用量包优惠及每月面值购买上限",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-05",
+          "title": "Paid plan billing FAQs",
+          "url": "https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs",
+          "published_or_effective": "2026-07-13",
+          "observed_at_utc": "2026-10-02T15:26:25Z",
+          "relevance": "网页仅信用/借记卡；应用商店独立支付渠道；已付发票不可改",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-06",
+          "title": "Why is a coupon or promotion not available for my account?",
+          "url": "https://support.claude.com/en/articles/11107691-why-is-a-coupon-or-promotion-not-available-for-my-account",
+          "published_or_effective": "2026-03-16",
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "relevance": "通常仅首次付费用户优惠，现有/曾付费及商店订阅者资格限制",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-07",
+          "title": "What is a limit reset?",
+          "url": "https://support.claude.com/en/articles/17007452-what-is-a-limit-reset",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "relevance": "偶发限量重置不是固定供给；不退款已发生超额费",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-08",
+          "title": "Usage limit best practices",
+          "url": "https://support.claude.com/en/articles/9797557-usage-limit-best-practices",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "relevance": "订阅Projects缓存减少额度消耗，但不提供固定月token保证",
+          "source_type": "official_help"
+        },
+        {
+          "id": "CB8-09",
+          "title": "Services Track and Partner Hub",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "published_or_effective": "2026-06-03",
+          "observed_at_utc": "2026-10-02T15:26:48Z",
+          "relevance": "实施能力分层、个人认证与转介奖励分轨",
+          "source_type": "official_announcement"
+        },
+        {
+          "id": "CB8-10",
+          "title": "Claude Partner Network",
+          "url": "https://claude.com/partners",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:24:38Z",
+          "relevance": "服务伙伴与Powered by Claude目录入口，并非消费订阅批发合同",
+          "source_type": "official_program_page"
+        },
+        {
+          "id": "CB8-11",
+          "title": "Amazon Bedrock Now Available for Partner Resale",
+          "url": "https://aws.amazon.com/blogs/apn/amazon-bedrock-now-available-for-partner-resale/",
+          "published_or_effective": "2025-10-14",
+          "observed_at_utc": "2026-10-02T15:26:25Z",
+          "relevance": "Bedrock加入渠道可转售服务，但Anthropic模型附加限制",
+          "source_type": "official_announcement"
+        },
+        {
+          "id": "CB8-12",
+          "title": "Prompt caching",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:24:57Z",
+          "relevance": "最小长度、隔离边界、完全相同前缀、TTL、并发首写限制",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "id": "CB8-13",
+          "title": "Batch processing",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:24:57Z",
+          "relevance": "异步50%优惠、24小时内未完成的请求会过期、缓存尽力命中、无流式",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "id": "CB8-14",
+          "title": "Set up your account for Claude Platform on AWS",
+          "url": "https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:26:48Z",
+          "relevance": "新独立组织、私有报价不追溯、仍适用Anthropic条款",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "id": "CB8-15",
+          "title": "Claude Platform on AWS vs Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/claude-platform/latest/userguide/cpa-vs-bedrock.html",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:26:48Z",
+          "relevance": "AWS账单路径中运营方、数据边界和认证覆盖不同",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "id": "CB8-16",
+          "title": "API and data retention",
+          "url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:27:09Z",
+          "relevance": "Batch不适用ZDR；缓存特性可适用但须合同/模型资格及例外",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "id": "CB8-17",
+          "title": "Detecting and countering misuse of AI September 2026",
+          "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+          "published_or_effective": "2026-09",
+          "observed_at_utc": "2026-10-02T15:26:25Z",
+          "relevance": "供应商报告中转记录转卖、未授权转售/地区信号触发身份验证",
+          "source_type": "official_vendor_investigation"
+        },
+        {
+          "id": "CB8-18",
+          "title": "AWS Solution Provider Program",
+          "url": "https://aws.amazon.com/partners/programs/solution-provider/",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:32:32Z",
+          "relevance": "SPP可直接管理客户账单、官方Solution Provider标识和Partner Solution Finder目录；公开页未列最低级别",
+          "source_type": "official_program_requirements"
+        },
+        {
+          "id": "CB8-19",
+          "title": "AWS Distribution Program",
+          "url": "https://aws.amazon.com/partners/programs/distribution-resellers/",
+          "published_or_effective": null,
+          "observed_at_utc": "2026-10-02T15:32:32Z",
+          "relevance": "要求Services Path及Distribution Seller Agreement，需通过当地AWS Distributor入驻；不是Anthropic专项授权",
+          "source_type": "official_program_requirements"
+        }
+      ],
+      "findings": [
+        {
+          "id": "F01",
+          "title": "真实优惠新增但需分开余额",
+          "finding": "Pro、Max、Team公开提供预购usage bundles；面值$50/$250/$1000分别付$45/$200/$700。Pro/Max每月最多买$2000面值，Team由Owner/Primary Owner买、上限$3000面值。只在套餐内额度用完后扣用量包；余额可用于同一Claude账户相关产品。",
+          "assessment": "支持合资格账户自用降本；未提供转移、提现、批发转售或Console API余额兑换授权。页面提及第三方产品是用量覆盖描述，不能代替认证/托管法律许可。",
+          "source_ids": [
+            "CB8-04"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F01"
+        },
+        {
+          "id": "F02",
+          "title": "礼赠是官方交付形式",
+          "finding": "多数Pro/Max订户可购礼赠；Free和Team/Enterprise成员不在购买资格内。礼物可选Pro、Max 5x/20x，1/3/6/12个月，邮件或链接交付，收礼人无需信用卡；一般365天到期且不可同时多份兑换或叠加。",
+          "assessment": "支持合资格人与合资格收礼者之间不交账号密码的官方赠送；未查到礼物批发价、商业再售授权、无限库存承诺。",
+          "source_ids": [
+            "CB8-02",
+            "CB8-03"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F02"
+        },
+        {
+          "id": "F03",
+          "title": "全球礼赠文案不能解除地域政策",
+          "finding": "礼赠帮助页使用globally措辞；Usage Policy明确适用于授权经销或转接终端，并禁止向违反Supported Regions Policy的人或实体提供Claude账户/API访问。",
+          "assessment": "不能单凭礼物全球文案判断大陆终端合资格；第7轮地区/所有权判断仍需单独成立。",
+          "source_ids": [
+            "CB8-01",
+            "CB8-02"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F03"
+        },
+        {
+          "id": "F04",
+          "title": "礼赠期限与移动订阅需按账户核验",
+          "finding": "礼物仅网页兑换；现有App Store/Google Play订阅需先到期。兑换页既列365天一般期限，又说等待移动订阅结束期间礼物不会到期。",
+          "assessment": "这项等待例外的具体期限没有公开细化，不能作为批量囤码永不过期保证；礼物可由不同于收件邮箱的Claude账户兑换，也不构成转售许可。",
+          "source_ids": [
+            "CB8-03"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F04"
+        },
+        {
+          "id": "F05",
+          "title": "官方服务伙伴不等于订阅分销商",
+          "finding": "Services Track新申请从Registered入门，开始免费，但需承诺至少10名认证从业者。Select至少10名活跃认证人员、近12月2个生产客户及1个公开案例；活跃定义为持有效认证且过去90天使用过Claude。认证归个人，转介奖励与实施能力评级分开。",
+          "assessment": "支持咨询、实施和转介商业模式；免费开始不等于零人员承诺，也不授予个人代理权限。目录、证书或Registered身份不能单独证明消费订阅或API原样转售权。",
+          "source_ids": [
+            "CB8-09",
+            "CB8-10"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F05"
+        },
+        {
+          "id": "F06",
+          "title": "正式受限经销路径确实存在",
+          "finding": "AWS官方宣布Bedrock可由Solution Provider及Distribution渠道伙伴转售，同时特别注明Anthropic模型转售受额外限制。",
+          "assessment": "应修正任何一概否认正规经销的说法；这并不证明任一代理拥有Anthropic专项许可、可向大陆终端销售、可转售Pro/Max或可拿到某折扣。",
+          "source_ids": [
+            "CB8-11"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F06"
+        },
+        {
+          "id": "F07",
+          "title": "缓存须按实际命中成立",
+          "finding": "Claude API、Claude Platform on AWS、Foundry按workspace隔离，Bedrock/Google Cloud按organization隔离；跨组织不共享。需完整相同前缀及满足模型最小长度：Sonnet5.5/Opus5.5为512、Haiku4.5为4096 token。首响应开始后缓存才可供并发复用；输出不降价。",
+          "assessment": "支持同一合法隔离域内重复稳定内容的降本；排除把不同客户独立账户缓存视为全局可拼库存，或把所有输入/输出一律按缓存价计成本。",
+          "source_ids": [
+            "CB8-12"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F07"
+        },
+        {
+          "id": "F08",
+          "title": "Batch不能保证实时服务价差",
+          "finding": "Batch请求异步独立处理，50%标准价，最多100000条或256MB，24小时内未完成会过期；结果保存29天。不能用stream、speed或max_tokens=0。缓存与Batch可叠加，但异步并发下命中尽力而为。",
+          "assessment": "支持可等待且允许数据留存的离线工作；不支持以Batch价承诺同步聊天/实时Code响应，也不能假设100%缓存命中或24小时必定交付。",
+          "source_ids": [
+            "CB8-13"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F08"
+        },
+        {
+          "id": "F09",
+          "title": "隐私要求可否决便宜Batch方案",
+          "finding": "官方特性矩阵将Batch列为不符合ZDR和HIPAA-ready；调用不会因组织有ZDR便自动阻断，而是该数据按Batch留存规则处理。Prompt caching可符合ZDR，缓存表示及哈希保留到TTL。",
+          "assessment": "已承诺零数据留存的产品不能直接改成Batch；须核实际组织合同、模型及其他特性资格，且安全/法律保留例外仍存在。Bedrock/Google控制另查各平台。",
+          "source_ids": [
+            "CB8-16"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F09"
+        },
+        {
+          "id": "F10",
+          "title": "AWS采购路径也要细分",
+          "finding": "Claude Platform on AWS创建单独Anthropic组织；旧组织key/workspace不迁入，既有Bedrock私有优惠也不能未经安排自动套用或追溯。平台仍受Anthropic商业条款及Usage Policy约束。它由Anthropic运营并在AWS外处理内容，与AWS运营的Bedrock不同。",
+          "assessment": "有正式AWS统一采购路径，但不能从AWS账单推导主体地域例外、原价折扣自动沿用，或统一宣称数据留在AWS/适用AWS认证。",
+          "source_ids": [
+            "CB8-14",
+            "CB8-15"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F10"
+        },
+        {
+          "id": "F11",
+          "title": "官方优惠不是无限复购供给",
+          "finding": "优惠券通常面向首次付费用户，现有/曾付费订户可能不合资格；商店订阅者暂不能享用。Limit reset只偶尔发给合资格套餐，使用后不可撤销，不退款已扣超额费，也不改变usage credit余额。",
+          "assessment": "不能把新客券或偶发重置写入持续经营的稳定进货成本。",
+          "source_ids": [
+            "CB8-06",
+            "CB8-07"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F11"
+        },
+        {
+          "id": "F12",
+          "title": "消费支付和发票适配仍有限",
+          "finding": "网页Pro/Max付款只接受信用/借记卡；移动端付款方式由各应用商店决定。已付发票无法修改或由支持团队重开。",
+          "assessment": "国内发票、人民币结算、第三方代付或支付渠道可用性仍未核；价格之外还要核实名主体、税务资料与准确发票抬头。",
+          "source_ids": [
+            "CB8-05"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F12"
+        },
+        {
+          "id": "F13",
+          "title": "订阅内部缓存可节省额度",
+          "finding": "官方帮助确认Projects内容在缓存有效期内复用会少占额度，闲置过期后重新按完整内容计入；实际额度受模型、effort、工具和多步任务影响。",
+          "assessment": "支持先优化本人工作流；无法用网页额度直接反推API批发token量。",
+          "source_ids": [
+            "CB8-08"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F13"
+        },
+        {
+          "id": "F14",
+          "title": "中转保密与连续供货风险有官方案例",
+          "finding": "Anthropic2026年9月调查称部分中转将用户对话留存后出售给其他机构；其系统会对未授权转售或非支持地区活动等信号要求身份验证，未通过则封禁。",
+          "assessment": "这是供应商调查及执法描述，并非对每家代理的已证实指控。采购应验证日志保留/再利用、处理方和账户持续可用性；不应把低价默认为纯正常折扣。",
+          "source_ids": [
+            "CB8-17"
+          ],
+          "confidence": "high_as_vendor_statement",
+          "qualified_id": "r8:claude:F14"
+        },
+        {
+          "id": "F15",
+          "title": "AWS入驻与Anthropic专项限制的公开证据边界",
+          "finding": "SPP公开页说明可管理客户账单，获得Solution Provider标识及Partner Solution Finder目录展示；伙伴级别要求链接指向登录。Distribution路径公开要求先加入APN Services Path，再经当地AWS Distributor完成Distribution Seller Agreement及入驻。",
+          "assessment": "未公开核出Anthropic要求的最低Partner级别、专项审核细则或全量授权目录。Bedrock公告所链接两份SPP/Distributor FAQ均实际跳转Partner Central登录页；专项FAQ正文尚未核验。AWS一般资质和目录只能验证一般身份，不能单独证明Claude再售资格。",
+          "source_ids": [
+            "CB8-11",
+            "CB8-18",
+            "CB8-19"
+          ],
+          "confidence": "high",
+          "qualified_id": "r8:claude:F15"
+        }
+      ],
+      "scenario_assessments": [
+        {
+          "proposal": "合资格本人或团队购买官方折扣用量包",
+          "verdict": "supported_conditionally",
+          "reason": "有明确公开价及购买上限，仍需账户/地区资格；只节省对应额外用量",
+          "sources": [
+            "CB8-04",
+            "CB8-01"
+          ]
+        },
+        {
+          "proposal": "买礼赠订阅向公众持续低价批发",
+          "verdict": "not_established",
+          "reason": "已证实礼赠交付，未证实批发价和商业再售授权；无需收礼者卡不等于无需地区资格",
+          "sources": [
+            "CB8-02",
+            "CB8-03",
+            "CB8-01"
+          ]
+        },
+        {
+          "proposal": "取得AWS渠道身份即任意转卖Claude",
+          "verdict": "excluded_as_stated",
+          "reason": "Anthropic另有限制，需对应许可、合同、终端范围",
+          "sources": [
+            "CB8-11",
+            "CB8-01"
+          ]
+        },
+        {
+          "proposal": "通过合资格正式经销或私有报价做企业项目",
+          "verdict": "plausible_route_not_approved_supplier",
+          "reason": "存在正式路径；尚无任何具体报价、经销授权和终端资格证明",
+          "sources": [
+            "CB8-11",
+            "CB8-14"
+          ]
+        },
+        {
+          "proposal": "API离线工作流用Batch加缓存提高毛利",
+          "verdict": "supported_conditionally",
+          "reason": "需等待容忍、实际命中和数据留存许可；输出、工具、重试、人工等仍要计费",
+          "sources": [
+            "CB8-12",
+            "CB8-13",
+            "CB8-16"
+          ]
+        },
+        {
+          "proposal": "把Batch成本当实时流式Claude Code保底成本",
+          "verdict": "excluded_as_stated",
+          "reason": "接口不支持流式，任务有延迟和24小时过期风险",
+          "sources": [
+            "CB8-13"
+          ]
+        },
+        {
+          "proposal": "凭地区外账户或礼物替大陆终端中转即合规",
+          "verdict": "excluded_without_explicit_exception",
+          "reason": "Usage Policy直接覆盖转接访问，并承接地区政策；本轮没有特批证明",
+          "sources": [
+            "CB8-01"
+          ]
+        }
+      ],
+      "usage_bundles": {
+        "currency": "USD",
+        "rows": [
+          {
+            "face_value": 50,
+            "pay": 45,
+            "discount": 0.1
+          },
+          {
+            "face_value": 250,
+            "pay": 200,
+            "discount": 0.2
+          },
+          {
+            "face_value": 1000,
+            "pay": 700,
+            "discount": 0.3
+          }
+        ],
+        "monthly_face_value_cap": {
+          "Pro": 2000,
+          "Max": 2000,
+          "Team": 3000
+        },
+        "tax": null,
+        "expiry": null,
+        "refund": null,
+        "transferability": null,
+        "api_console_credits_conversion": null,
+        "observed_user_checkout": false,
+        "sources": [
+          "CB8-04"
+        ]
+      },
+      "cache_sensitivity": {
+        "classification": "数学敏感性分析，非实测、非报价、非API总账单",
+        "scope": "Sonnet 5.5缓存候选前缀；每次未命中都按写入计费；h为候选前缀token命中比例；未计新增输入、输出、工具、税与运营",
+        "formula_5m": "relative_cost = 1.25*(1-h) + 0.1*h",
+        "formula_1h": "relative_cost = 2*(1-h) + 0.1*h",
+        "breakeven_hit_ratio_5m": 0.2173913043478261,
+        "breakeven_hit_ratio_1h": 0.5263157894736842,
+        "read_price_fraction": 0.1,
+        "examples_5m": [
+          {
+            "h": 0,
+            "relative_cost": 1.25
+          },
+          {
+            "h": 0.2,
+            "relative_cost": 1.02
+          },
+          {
+            "h": 0.5,
+            "relative_cost": 0.675
+          },
+          {
+            "h": 0.9,
+            "relative_cost": 0.215
+          }
+        ],
+        "interpretation": "5分钟约21.74%命中、1小时约52.63%命中才令该前缀写读综合成本低于不缓存。选择更长TTL应看其带来的实际命中提升。整个账单节省率会更小或不同；其他模型read倍率不同，须另算。",
+        "sources": [
+          "CB8-12"
+        ]
+      },
+      "corrections_to_round7": [
+        {
+          "topic": "额外usage credits",
+          "change": "补充公开预购用量包最高30%折扣；不要把所有额外用量都说成最终现金支付标准价。原标准计量价与折扣余额并存。",
+          "sources": [
+            "CB8-04"
+          ]
+        },
+        {
+          "topic": "官方经销存在性",
+          "change": "若曾概括为没有正规转售，则应更正为有受限官方渠道，但具体商家/交易资格尚未证实。",
+          "sources": [
+            "CB8-11"
+          ]
+        },
+        {
+          "topic": "AWS供货路径",
+          "change": "新增区分Claude Platform on AWS与AWS运营Bedrock；账单平台相同不代表数据处理或优惠自动相同。",
+          "sources": [
+            "CB8-14",
+            "CB8-15"
+          ]
+        }
+      ],
+      "remaining_evidence_gaps": [
+        "具体交易主体、实际使用地点、最终用户及所有权是否合资格；本轮没有任何特批或豁免。",
+        "经销授权必须匹配公司法人、产品(SaaS订阅/API/Bedrock)、地区、最终客户范围及有效期；AWS渠道或Claude认证不能替代。",
+        "礼赠是否允许商业再售、批量采购、折扣及退款/撤销规则未从公开新源建立；不得把“globally”当全球主体无条件资格。",
+        "usage bundle的实际账户可买资格、账单币种/税费、余额到期/退款/转移细则和第三方产品认证权限未全部核清。",
+        "private offer具体门槛、承诺期、最低消费、折扣、返利、开票主体与大陆发票均未知。",
+        "真实任务的缓存写/读/未缓存输入/输出token、并发、模型版本、TTL和缓存域尚无实测；不得用理论最高折扣承诺利润。",
+        "离线任务实际Batch完成率、失败/取消/过期与重跑成本、工具额外费用和数据留存合同需要逐项核。",
+        "代理的隐私协议、日志留存/再利用/分包方以及终端访问权未核；官方案例不能证明任何尚未调查的特定代理违规。"
+      ],
+      "new_verified_authorized_wholesale_supplier_count": 0,
+      "new_verified_mainland_invoice_supplier_count": 0,
+      "source_audit": {
+        "round7_unique_sources": 57,
+        "new_unique_sources": 19,
+        "duplicate_source_count": 0,
+        "duplicate_encountered_excluded": [
+          "AWS Private offers链接重定向至第7轮已有Claude API pricing，未计新源或以此扩充来源数"
+        ],
+        "third_party_news_or_forum_not_used": true,
+        "source_date_precision": "未知精确发布时间标null；threat report只标2026-09，帮助页相对更新时间不换算为精确日期",
+        "auth_gated_pages_not_counted_as_content_sources": 2,
+        "scope": "原记录仅与第7轮57项来源比较；完整第3—7轮包另有两篇Claude赠礼页重复，累计来源以公共包URL去重为准。"
+      },
+      "aws_program_verification": {
+        "general_programs": [
+          "AWS Solution Provider Program",
+          "AWS Distribution Program"
+        ],
+        "public_general_requirement": "Distribution requires Services Path and an AWS Distribution Seller Agreement through an AWS Distributor. SPP page offers Solution Provider designation and Partner Solution Finder listing.",
+        "anthropic_specific_minimum_tier": null,
+        "anthropic_specific_authorization_directory_verified": false,
+        "anthropic_detailed_rules_publicly_retrieved": false,
+        "gated_faq_observations": [
+          {
+            "url": "https://partnercentral.awspartner.com/partnercentral2/s/article?article=Amazon-Bedrock-Available-for-Resale-SPP-SPP&category=AWS_Solution_Provider_Program",
+            "observed_at_utc": "2026-10-02T15:32:32Z",
+            "result": "Redirected to Partner Central login; no article text returned"
+          },
+          {
+            "url": "https://partnercentral.awspartner.com/partnercentral2/s/article?article=Amazon-Bedrock-Available-for-Resale-DP&category=AWS_Distribution_Program",
+            "observed_at_utc": "2026-10-02T15:32:32Z",
+            "result": "Redirected to Partner Central login; no article text returned"
+          }
+        ]
+      }
+    },
+    "qualification_counts": {
+      "new_retail_merchants": 0,
+      "new_plus_above170_candidates": 0,
+      "new_verified_monthly_php999_procurement": 0,
+      "new_verified_authorized_mainland_original_account_upstream": 0,
+      "new_mainland_invoice_verified": 0
     }
   },
   "evidence_chapters": {
@@ -10611,6 +11564,923 @@
         "end": "2026-10-02T12:29:05Z"
       },
       "archive_context": "历史观察档案：保留当时内容；当前解释以current_view与correction_log为准，不可逐轮累加独立供应商。"
+    },
+    "r8": {
+      "schema_version": "1.0",
+      "title": "AI源头第八轮：订阅绑定、支付资格与明确经销准入",
+      "research_date_utc": "2026-10-02",
+      "observed_window_utc": {
+        "start": "2026-10-02T15:23:00Z",
+        "end": "2026-10-02T15:34:27Z"
+      },
+      "new_sources": [
+        {
+          "id": "R8S01",
+          "title": "移动订阅关联另一账户",
+          "url": "https://help.openai.com/en/articles/20001056-why-am-i-seeing-a-message-that-my-subscription-is-associated-with-another-account",
+          "page_date": "显示Updated 10 days ago，不推定绝对生效日",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "移动订阅同时绑定Apple/Google商店账户与购买时ChatGPT账号；绑定后同商店账号不能为另一个ChatGPT账号购买；不可跨账号转移或共享",
+          "scope": "直接排除单商店账号循环给不同客户原号充值是官方支持模式",
+          "gaps": [
+            "不证明具体卖家实际走移动内购；不把此限制扩大成所有合法礼赠支付均禁止"
+          ]
+        },
+        {
+          "id": "R8S02",
+          "title": "Apple订阅账单凭证",
+          "url": "https://help.openai.com/en/articles/9030143-how-do-i-obtain-my-chatgpt-subscription-invoice-if-i-subscribed-from-the-apple-app-store",
+          "page_date": "显示Updated last month",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "Apple购买历史可查ChatGPT收据；每次续费发Apple账户邮箱收据",
+          "scope": "给出补证所需的原始记录来源",
+          "gaps": [
+            "公开页无法展示某用户的SKU周期；收据邮箱与实际ChatGPT账号可能不同，须关联证明"
+          ]
+        },
+        {
+          "id": "R8S03",
+          "title": "Apple各国支付方式",
+          "url": "https://support.apple.com/en-ph/111741",
+          "page_date": "Published 2026-08-07",
+          "observed_at_utc": "2026-10-02T15:30:36Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "菲律宾列GCash、Smart手机账单、多数信用/借记卡、ShopeePay；该节未列Apple Account balance/礼卡",
+          "scope": "支持本地正规支付存在，不支持任意境外礼卡可付菲区",
+          "gaps": [
+            "没有证明每张卡/账号通过；没有ChatGPT专属折扣或转售许可"
+          ]
+        },
+        {
+          "id": "R8S04",
+          "title": "Apple礼卡购买地区限制",
+          "url": "https://support.apple.com/en-my/108285",
+          "page_date": "Published 2025-05-14",
+          "observed_at_utc": "2026-10-02T15:30:36Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "Apple/App Store/iTunes礼卡不能在购买国家或地区之外兑换",
+          "scope": "排除把他区折扣Apple礼卡直接视作菲区通用本金",
+          "gaps": [
+            "不等于所有菲律宾支付方式受同样规则；需具体卡产品资格"
+          ]
+        },
+        {
+          "id": "R8S05",
+          "title": "GCash网上付款资格",
+          "url": "https://help.gcash.com/hc/en-us/articles/900006144666-How-to-pay-online-with-GCash",
+          "page_date": "未标绝对日期",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "网上支付要求Fully Verified账户",
+          "scope": "排除仅有GCash登录/未验证账户就等于可付网上订阅",
+          "gaps": [
+            "个体支付资格与OpenAI服务地区资格仍需分别核实。"
+          ]
+        },
+        {
+          "id": "R8S06",
+          "title": "GCash账户类型",
+          "url": "https://help.gcash.com/hc/en-us/articles/900005866623-How-to-create-a-new-GCash-account",
+          "page_date": "未标绝对日期",
+          "observed_at_utc": "2026-10-02T15:26:57Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "常规成人GCash、海外菲律宾公民GCash Overseas及外国游客GTourist分开",
+          "scope": "排除把GCash Overseas误认为所有外国人的全球账户",
+          "gaps": [
+            "三类账户资格不能相互套用。"
+          ]
+        },
+        {
+          "id": "R8S07",
+          "title": "GTourist准入",
+          "url": "https://help.gcash.com/hc/en-us/articles/53417886058521-How-to-create-a-GTourist-account-on-GCash",
+          "page_date": "未标绝对日期",
+          "observed_at_utc": "2026-10-02T15:26:57Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "非菲律宾SIM；可先注册但仅到菲律宾后激活；账户30天；基础档使用本人卡，完整验证需外国护照",
+          "scope": "真实游客有独立通道，但不等于境外常驻用户长期网上订阅入口",
+          "gaps": [
+            "列出China是游客来源支持，不是OpenAI大陆服务许可"
+          ]
+        },
+        {
+          "id": "R8S08",
+          "title": "GTourist功能与期限",
+          "url": "https://help.gcash.com/hc/en-us/articles/53418023303193-How-to-use-my-GTourist-account-on-GCash",
+          "page_date": "未标绝对日期",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "公开功能为菲律宾商户QR付款与经验证后转账，30天自动停用；部分资金通道有费",
+          "scope": "未取得GTourist支持Apple/ChatGPT循环扣款的公开证明",
+          "gaps": [
+            "功能列表未提某功能不是绝对禁止证明；保留适用性未知"
+          ]
+        },
+        {
+          "id": "R8S09",
+          "title": "GCash退款职责",
+          "url": "https://help.gcash.com/hc/en-us/articles/45496741233817-Online-orders-or-auto-debit-payment-refund-or-issues",
+          "page_date": "未标绝对日期",
+          "observed_at_utc": "2026-10-02T15:26:57Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "GCash只是支付方式，不管理订单或决定退款；Apple订阅由Apple退款流程处理",
+          "scope": "排除正规钱包付款即可保证订阅退款或售后",
+          "gaps": [
+            "具体商品退款和商家补偿承诺仍需单独核实"
+          ]
+        },
+        {
+          "id": "R8S10",
+          "title": "BHN Card Order Agreement",
+          "url": "https://legal.blackhawknetwork.com/disclosures/card-order-agreement-97b44e70",
+          "page_date": "2026-03-25",
+          "observed_at_utc": "2026-10-02T15:28:59Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "第三方项目需伙伴申请并明确获批；须下游书面合同，直接向BHN付款另需三方协议及Direct Payment Fee；普通奖励用途禁消费者转售，另有条件性单商户卡转售条款",
+          "scope": "BHN有实质合同准入，不能以API接通当获批；按实际合同解释不同项目",
+          "gaps": [
+            "无OpenAI SKU/净价/最低量/地区专项权限；$10000风控阈值不是起订量；不能孤立用7.8覆盖6.1普通限制"
+          ]
+        },
+        {
+          "id": "R8S11",
+          "title": "InComm第三方分销正式协议",
+          "url": "https://www.incomm.com/insights/third-party-gift-card-distribution-unlocking-new-revenue-streams/",
+          "page_date": "2025-03-28",
+          "observed_at_utc": "2026-10-02T15:27:14Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "正式分销需与供应商订立写明条款、佣金和营销策略的协议",
+          "scope": "支持合同化分销而非零售转卖推定",
+          "gaps": [
+            "通用官方指导，不是OpenAI专项已签合同或净价"
+          ]
+        },
+        {
+          "id": "R8S12",
+          "title": "PwC官方Enterprise经销公告",
+          "url": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-us-uk-accelerating-ai-chatgpt-enterprise-adoption.html",
+          "page_date": "2024-05-29",
+          "observed_at_utc": "2026-10-02T15:27:14Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "PwC美国和英国机构宣布与OpenAI签约成为ChatGPT Enterprise经销商",
+          "scope": "反驳OpenAI完全没有正式经销；证明产品/实体级签约存在",
+          "gaps": [
+            "不是Plus月卡、小店普遍准入或中国终端服务权；公告未披露转批/价格/门槛"
+          ]
+        },
+        {
+          "id": "R8S13",
+          "title": "OpenAI销售联络与API合同参考",
+          "url": "https://help.openai.com/en/articles/9047878-how-can-i-contact-sales",
+          "page_date": "显示Updated 30 days ago",
+          "observed_at_utc": "2026-10-02T15:30:36Z",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "finding": "API月支出约10000美元或以上可联系Sales讨论企业合同；低用量仍可自助按量；需公司/地区/席位/用途等资料",
+          "scope": "区分企业采购洽谈和经销授权",
+          "gaps": [
+            "10000美元是联系Sales参考，不是成为代理的押金、MOQ或保证折扣。"
+          ]
+        }
+      ],
+      "rechecked_sources": [
+        {
+          "id": "R8R01",
+          "url": "https://apps.apple.com/ph/app/chatgpt/id6448311069",
+          "observed_at_utc": "2026-10-02T15:29:46Z",
+          "method": "直接展开官方Information / In-App Purchases公开清单",
+          "prior_source": "SE01",
+          "finding": "仍列Plus PHP999及同名PHP9990；没有SKU周期/独立详情链接；不算新增来源",
+          "prior_source_pointer": "/evidence_chapters/r7/sources/0",
+          "prior_source_catalog_id": "src_98658006c27f"
+        },
+        {
+          "id": "R8R02",
+          "url": "https://chatgpt.com/zh-Hans-CN/pricing/",
+          "observed_at_utc": "2026-10-02T15:24:50Z",
+          "method": "直接查看官方公开价格页与FAQ",
+          "finding": "本网页显示USD20/月；FAQ说明Plus月度。未出现可核的PHP999+周期同一报价。",
+          "new_source_counted": false,
+          "prior_related_url": "https://chatgpt.com/pricing/",
+          "prior_relation": "既有官方价格页的语言路径复核；语言路径不同，保留独立URL，不计本轮新内容来源。",
+          "prior_related_source_catalog_id": "src_b954960ad3a2"
+        }
+      ],
+      "php999_cycle_investigation": {
+        "observed_price_php": 999,
+        "exact_in_app_label": "ChatGPT Plus",
+        "billing_period": null,
+        "period_same_sku_verified": false,
+        "standard_plus_plan_period": "monthly",
+        "standard_period_evidence": "官方公开pricing FAQ；不等于菲律宾特定IAP唯一SKU的周期证明",
+        "other_same_label_price_php": 9990,
+        "other_same_label_period": null,
+        "confirmed": "官方Plus本地SKU标价存在，且标准Plus公开制度是月度",
+        "not_confirmed": "该PHP999条目的唯一产品ID、周期、某真实合资格账号结账总价、续费价格及资金链",
+        "cannot_claim": "PHP999=已核每月进货价；PHP9990=年费；用价格比值推断周期",
+        "close_with": [
+          "真实合资格本人账号的Apple订阅确认页/订阅管理页，显示准确计划、PHP999、计费周期/下一续费日",
+          "对应Apple收据及ChatGPT订阅关联证明；遮去个人标识/卡号/交易秘密",
+          "不需要创建新账户或传递Apple/ChatGPT密码与session；公开资料不足时保留未知"
+        ],
+        "prior_106_66_cny_status": "只沿用第7轮10月1日ECB参考换算，不作为本轮现汇或实付价"
+      },
+      "claims": [
+        {
+          "id": "R8C01",
+          "verdict": "EXCLUDES_GENERIC_PLAN",
+          "claim": "同一Apple/Google商店账户循环给不同ChatGPT客户原号充值不是官方支持的模式",
+          "sources": [
+            "R8S01"
+          ],
+          "important_scope": "不证明某卖家采用此模式；合法付款人和个人账户等其他条件仍需核"
+        },
+        {
+          "id": "R8C02",
+          "verdict": "SUPPORTS_PAYMENT_EXISTENCE_ONLY",
+          "claim": "菲律宾Apple可使用GCash/Smart/卡/ShopeePay，但不能由此推断游客钱包、他区礼卡或无限批量代充可行",
+          "sources": [
+            "R8S03",
+            "R8S04",
+            "R8S05",
+            "R8S06",
+            "R8S07",
+            "R8S08"
+          ]
+        },
+        {
+          "id": "R8C03",
+          "verdict": "CONDITIONAL_B2B_PATH",
+          "claim": "BHN公开现行Order Agreement给出伙伴申请/明确批准/下游合同/尽调与付款条件，不能当OpenAI专项授权",
+          "sources": [
+            "R8S10"
+          ]
+        },
+        {
+          "id": "R8C04",
+          "verdict": "AUTHORIZED_RESELLING_EXISTS_BUT_PRODUCT_SPECIFIC",
+          "claim": "PwC Enterprise个案证实正式ChatGPT经销存在；不能泛化为Plus批发或大陆可用",
+          "sources": [
+            "R8S12"
+          ]
+        },
+        {
+          "id": "R8C05",
+          "verdict": "PROCUREMENT_NOT_RESELLER_THRESHOLD",
+          "claim": "OpenAI API约10000美元月支出是销售团队联系参考，不是经销保证金或最低拿货量",
+          "sources": [
+            "R8S13"
+          ]
+        },
+        {
+          "id": "R8C06",
+          "verdict": "CYCLE_REMAINS_UNRESOLVED",
+          "claim": "实时展开官方菲律宾IAP清单后仍未显示PHP999唯一SKU的周期；不能由一般Plus月付制度或价格比值推断该项周期。",
+          "sources": [
+            "R8R01",
+            "R8R02",
+            "R8S02"
+          ]
+        }
+      ],
+      "bhn_program_analysis": {
+        "agreement_date": "2026-03-25",
+        "contract_parties": "Blackhawk Network, Inc.或Blackhawk Network (Canada) Ltd与获批组织客户；不据此推定接受任何注册地",
+        "partner_application_required": true,
+        "express_approval_required": true,
+        "purchaser_information_required": true,
+        "downstream_written_agreement_required": true,
+        "card_inventory_redistribution_under_third_party_program": false,
+        "direct_purchaser_payment": {
+          "tripartite_written_agreement_required": true,
+          "direct_payment_fee_required": true,
+          "fee_amount": null
+        },
+        "procurement_terms": {
+          "funds_prepaid": true,
+          "order_price_and_fees": "以实际被接受订单为准",
+          "prefund_amount": null,
+          "fx_convenience_fee_possible": true,
+          "taxes_included": false,
+          "default_order_funds_refundable": false,
+          "exception": "双方另有约定"
+        },
+        "ordinary_reward_program_consumer_resale": false,
+        "single_merchant_card_conditional_resale_clause": true,
+        "contract_scope_conflict": "6.1奖励用途禁消费者转售，与7.8条件性单商户卡转售并列；不能只截7.8主张无限消费零售，应取得具体业务/SKU/渠道对应书面批准及手册",
+        "resale_clause_risk_controls": {
+          "no_cash": true,
+          "prevent_natural_person_daily_sales_over_usd": 10000,
+          "threshold_is_moq": false,
+          "large_business_buyer_due_diligence": true,
+          "record_periods": "大额企业卡交易留存取7年或项目到期后5年的较长者；其他客户付款/尽调有5年记录要求"
+        },
+        "openai_sku_verified": false,
+        "openai_discount": null,
+        "mainland_end_user_permission": null,
+        "subdistributor_right": null,
+        "sources": [
+          "R8S10"
+        ],
+        "manual_fetch_result": {
+          "urls": [
+            "https://connect.blackhawknetwork.com/publically-accessible-reference-documents/bhn-ecommerce-distribution-partner-operations-manual",
+            "https://connect.blackhawknetwork.com/publically-accessible-reference-documents/hawk-incentives-partner-operations-manual-us-products/"
+          ],
+          "status": "合同引用的两份运营手册未能获取公开正文；原因未确认，不视为已经审阅。"
+        }
+      },
+      "qualification_counts": {
+        "new_retail_merchants": 0,
+        "new_plus_above170_candidates": 0,
+        "new_verified_monthly_php999_procurement": 0,
+        "new_verified_authorized_mainland_original_account_upstream": 0,
+        "new_mainland_invoice_verified": 0
+      },
+      "fee_policy": {
+        "unverified_values": null,
+        "unknown_treated_as_zero": false,
+        "actual_purchase": false
+      },
+      "excluded_search_hits": [
+        {
+          "url": "https://openai.com/policies/advertising-terms/",
+          "reason": "广告投放经销规则，不是ChatGPT Plus/Enterprise或API批发授权，不交叉套用"
+        },
+        {
+          "reason": "InComm的Microsoft/Apple特定经销协议不能当OpenAI专项合同；没有引入其折扣或准入数字"
+        },
+        {
+          "url": "https://dev.integrations.incomm.com/docs/",
+          "reason": "公开支付/安全集成文档；能证明有技术接口，不能证明品牌SKU或分销权限，不计关键新增来源"
+        }
+      ],
+      "claude_increment": {
+        "schema_version": 1,
+        "title": "Claude合法使用和成本边界第8轮增量研究",
+        "as_of": "2026-10-02",
+        "research_window_utc": {
+          "start": "2026-10-02T15:23:32Z",
+          "end": "2026-10-02T15:33:28.051492+00:00"
+        },
+        "sources": [
+          {
+            "id": "CB8-01",
+            "title": "Usage Policy",
+            "url": "https://www.anthropic.com/legal/aup",
+            "published_or_effective": "2025-09-15",
+            "observed_at_utc": "2026-10-02T15:24:22Z",
+            "relevance": "适用于授权经销和转接终端；禁止违反支持地区政策的账户/API访问",
+            "source_type": "official_policy"
+          },
+          {
+            "id": "CB8-02",
+            "title": "How to gift a Claude subscription",
+            "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription",
+            "published_or_effective": "2026-04-29",
+            "observed_at_utc": "2026-10-02T15:24:22Z",
+            "relevance": "Pro/Max礼赠资格、产品期限、无需收礼者信用卡",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-03",
+            "title": "How to redeem a Claude gift subscription",
+            "url": "https://support.claude.com/en/articles/12938695-how-to-redeem-a-claude-gift-subscription",
+            "published_or_effective": "2026-03-16",
+            "observed_at_utc": "2026-10-02T15:24:22Z",
+            "relevance": "兑换、不可叠加及移动端订阅限制",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-04",
+            "title": "Buy usage bundles",
+            "url": "https://support.claude.com/en/articles/14246112-buy-usage-bundles",
+            "published_or_effective": "2026-05-18",
+            "observed_at_utc": "2026-10-02T15:25:15Z",
+            "relevance": "真实10%/20%/30%用量包优惠及每月面值购买上限",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-05",
+            "title": "Paid plan billing FAQs",
+            "url": "https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs",
+            "published_or_effective": "2026-07-13",
+            "observed_at_utc": "2026-10-02T15:26:25Z",
+            "relevance": "网页仅信用/借记卡；应用商店独立支付渠道；已付发票不可改",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-06",
+            "title": "Why is a coupon or promotion not available for my account?",
+            "url": "https://support.claude.com/en/articles/11107691-why-is-a-coupon-or-promotion-not-available-for-my-account",
+            "published_or_effective": "2026-03-16",
+            "observed_at_utc": "2026-10-02T15:25:15Z",
+            "relevance": "通常仅首次付费用户优惠，现有/曾付费及商店订阅者资格限制",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-07",
+            "title": "What is a limit reset?",
+            "url": "https://support.claude.com/en/articles/17007452-what-is-a-limit-reset",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:25:15Z",
+            "relevance": "偶发限量重置不是固定供给；不退款已发生超额费",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-08",
+            "title": "Usage limit best practices",
+            "url": "https://support.claude.com/en/articles/9797557-usage-limit-best-practices",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:25:15Z",
+            "relevance": "订阅Projects缓存减少额度消耗，但不提供固定月token保证",
+            "source_type": "official_help"
+          },
+          {
+            "id": "CB8-09",
+            "title": "Services Track and Partner Hub",
+            "url": "https://www.anthropic.com/news/services-track-partner-hub",
+            "published_or_effective": "2026-06-03",
+            "observed_at_utc": "2026-10-02T15:26:48Z",
+            "relevance": "实施能力分层、个人认证与转介奖励分轨",
+            "source_type": "official_announcement"
+          },
+          {
+            "id": "CB8-10",
+            "title": "Claude Partner Network",
+            "url": "https://claude.com/partners",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:24:38Z",
+            "relevance": "服务伙伴与Powered by Claude目录入口，并非消费订阅批发合同",
+            "source_type": "official_program_page"
+          },
+          {
+            "id": "CB8-11",
+            "title": "Amazon Bedrock Now Available for Partner Resale",
+            "url": "https://aws.amazon.com/blogs/apn/amazon-bedrock-now-available-for-partner-resale/",
+            "published_or_effective": "2025-10-14",
+            "observed_at_utc": "2026-10-02T15:26:25Z",
+            "relevance": "Bedrock加入渠道可转售服务，但Anthropic模型附加限制",
+            "source_type": "official_announcement"
+          },
+          {
+            "id": "CB8-12",
+            "title": "Prompt caching",
+            "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:24:57Z",
+            "relevance": "最小长度、隔离边界、完全相同前缀、TTL、并发首写限制",
+            "source_type": "official_technical_docs"
+          },
+          {
+            "id": "CB8-13",
+            "title": "Batch processing",
+            "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:24:57Z",
+            "relevance": "异步50%优惠、24小时内未完成的请求会过期、缓存尽力命中、无流式",
+            "source_type": "official_technical_docs"
+          },
+          {
+            "id": "CB8-14",
+            "title": "Set up your account for Claude Platform on AWS",
+            "url": "https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:26:48Z",
+            "relevance": "新独立组织、私有报价不追溯、仍适用Anthropic条款",
+            "source_type": "official_technical_docs"
+          },
+          {
+            "id": "CB8-15",
+            "title": "Claude Platform on AWS vs Amazon Bedrock",
+            "url": "https://docs.aws.amazon.com/claude-platform/latest/userguide/cpa-vs-bedrock.html",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:26:48Z",
+            "relevance": "AWS账单路径中运营方、数据边界和认证覆盖不同",
+            "source_type": "official_technical_docs"
+          },
+          {
+            "id": "CB8-16",
+            "title": "API and data retention",
+            "url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:27:09Z",
+            "relevance": "Batch不适用ZDR；缓存特性可适用但须合同/模型资格及例外",
+            "source_type": "official_technical_docs"
+          },
+          {
+            "id": "CB8-17",
+            "title": "Detecting and countering misuse of AI September 2026",
+            "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+            "published_or_effective": "2026-09",
+            "observed_at_utc": "2026-10-02T15:26:25Z",
+            "relevance": "供应商报告中转记录转卖、未授权转售/地区信号触发身份验证",
+            "source_type": "official_vendor_investigation"
+          },
+          {
+            "id": "CB8-18",
+            "title": "AWS Solution Provider Program",
+            "url": "https://aws.amazon.com/partners/programs/solution-provider/",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:32:32Z",
+            "relevance": "SPP可直接管理客户账单、官方Solution Provider标识和Partner Solution Finder目录；公开页未列最低级别",
+            "source_type": "official_program_requirements"
+          },
+          {
+            "id": "CB8-19",
+            "title": "AWS Distribution Program",
+            "url": "https://aws.amazon.com/partners/programs/distribution-resellers/",
+            "published_or_effective": null,
+            "observed_at_utc": "2026-10-02T15:32:32Z",
+            "relevance": "要求Services Path及Distribution Seller Agreement，需通过当地AWS Distributor入驻；不是Anthropic专项授权",
+            "source_type": "official_program_requirements"
+          }
+        ],
+        "findings": [
+          {
+            "id": "F01",
+            "title": "真实优惠新增但需分开余额",
+            "finding": "Pro、Max、Team公开提供预购usage bundles；面值$50/$250/$1000分别付$45/$200/$700。Pro/Max每月最多买$2000面值，Team由Owner/Primary Owner买、上限$3000面值。只在套餐内额度用完后扣用量包；余额可用于同一Claude账户相关产品。",
+            "assessment": "支持合资格账户自用降本；未提供转移、提现、批发转售或Console API余额兑换授权。页面提及第三方产品是用量覆盖描述，不能代替认证/托管法律许可。",
+            "source_ids": [
+              "CB8-04"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F01"
+          },
+          {
+            "id": "F02",
+            "title": "礼赠是官方交付形式",
+            "finding": "多数Pro/Max订户可购礼赠；Free和Team/Enterprise成员不在购买资格内。礼物可选Pro、Max 5x/20x，1/3/6/12个月，邮件或链接交付，收礼人无需信用卡；一般365天到期且不可同时多份兑换或叠加。",
+            "assessment": "支持合资格人与合资格收礼者之间不交账号密码的官方赠送；未查到礼物批发价、商业再售授权、无限库存承诺。",
+            "source_ids": [
+              "CB8-02",
+              "CB8-03"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F02"
+          },
+          {
+            "id": "F03",
+            "title": "全球礼赠文案不能解除地域政策",
+            "finding": "礼赠帮助页使用globally措辞；Usage Policy明确适用于授权经销或转接终端，并禁止向违反Supported Regions Policy的人或实体提供Claude账户/API访问。",
+            "assessment": "不能单凭礼物全球文案判断大陆终端合资格；第7轮地区/所有权判断仍需单独成立。",
+            "source_ids": [
+              "CB8-01",
+              "CB8-02"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F03"
+          },
+          {
+            "id": "F04",
+            "title": "礼赠期限与移动订阅需按账户核验",
+            "finding": "礼物仅网页兑换；现有App Store/Google Play订阅需先到期。兑换页既列365天一般期限，又说等待移动订阅结束期间礼物不会到期。",
+            "assessment": "这项等待例外的具体期限没有公开细化，不能作为批量囤码永不过期保证；礼物可由不同于收件邮箱的Claude账户兑换，也不构成转售许可。",
+            "source_ids": [
+              "CB8-03"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F04"
+          },
+          {
+            "id": "F05",
+            "title": "官方服务伙伴不等于订阅分销商",
+            "finding": "Services Track新申请从Registered入门，开始免费，但需承诺至少10名认证从业者。Select至少10名活跃认证人员、近12月2个生产客户及1个公开案例；活跃定义为持有效认证且过去90天使用过Claude。认证归个人，转介奖励与实施能力评级分开。",
+            "assessment": "支持咨询、实施和转介商业模式；免费开始不等于零人员承诺，也不授予个人代理权限。目录、证书或Registered身份不能单独证明消费订阅或API原样转售权。",
+            "source_ids": [
+              "CB8-09",
+              "CB8-10"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F05"
+          },
+          {
+            "id": "F06",
+            "title": "正式受限经销路径确实存在",
+            "finding": "AWS官方宣布Bedrock可由Solution Provider及Distribution渠道伙伴转售，同时特别注明Anthropic模型转售受额外限制。",
+            "assessment": "应修正任何一概否认正规经销的说法；这并不证明任一代理拥有Anthropic专项许可、可向大陆终端销售、可转售Pro/Max或可拿到某折扣。",
+            "source_ids": [
+              "CB8-11"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F06"
+          },
+          {
+            "id": "F07",
+            "title": "缓存须按实际命中成立",
+            "finding": "Claude API、Claude Platform on AWS、Foundry按workspace隔离，Bedrock/Google Cloud按organization隔离；跨组织不共享。需完整相同前缀及满足模型最小长度：Sonnet5.5/Opus5.5为512、Haiku4.5为4096 token。首响应开始后缓存才可供并发复用；输出不降价。",
+            "assessment": "支持同一合法隔离域内重复稳定内容的降本；排除把不同客户独立账户缓存视为全局可拼库存，或把所有输入/输出一律按缓存价计成本。",
+            "source_ids": [
+              "CB8-12"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F07"
+          },
+          {
+            "id": "F08",
+            "title": "Batch不能保证实时服务价差",
+            "finding": "Batch请求异步独立处理，50%标准价，最多100000条或256MB，24小时内未完成会过期；结果保存29天。不能用stream、speed或max_tokens=0。缓存与Batch可叠加，但异步并发下命中尽力而为。",
+            "assessment": "支持可等待且允许数据留存的离线工作；不支持以Batch价承诺同步聊天/实时Code响应，也不能假设100%缓存命中或24小时必定交付。",
+            "source_ids": [
+              "CB8-13"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F08"
+          },
+          {
+            "id": "F09",
+            "title": "隐私要求可否决便宜Batch方案",
+            "finding": "官方特性矩阵将Batch列为不符合ZDR和HIPAA-ready；调用不会因组织有ZDR便自动阻断，而是该数据按Batch留存规则处理。Prompt caching可符合ZDR，缓存表示及哈希保留到TTL。",
+            "assessment": "已承诺零数据留存的产品不能直接改成Batch；须核实际组织合同、模型及其他特性资格，且安全/法律保留例外仍存在。Bedrock/Google控制另查各平台。",
+            "source_ids": [
+              "CB8-16"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F09"
+          },
+          {
+            "id": "F10",
+            "title": "AWS采购路径也要细分",
+            "finding": "Claude Platform on AWS创建单独Anthropic组织；旧组织key/workspace不迁入，既有Bedrock私有优惠也不能未经安排自动套用或追溯。平台仍受Anthropic商业条款及Usage Policy约束。它由Anthropic运营并在AWS外处理内容，与AWS运营的Bedrock不同。",
+            "assessment": "有正式AWS统一采购路径，但不能从AWS账单推导主体地域例外、原价折扣自动沿用，或统一宣称数据留在AWS/适用AWS认证。",
+            "source_ids": [
+              "CB8-14",
+              "CB8-15"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F10"
+          },
+          {
+            "id": "F11",
+            "title": "官方优惠不是无限复购供给",
+            "finding": "优惠券通常面向首次付费用户，现有/曾付费订户可能不合资格；商店订阅者暂不能享用。Limit reset只偶尔发给合资格套餐，使用后不可撤销，不退款已扣超额费，也不改变usage credit余额。",
+            "assessment": "不能把新客券或偶发重置写入持续经营的稳定进货成本。",
+            "source_ids": [
+              "CB8-06",
+              "CB8-07"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F11"
+          },
+          {
+            "id": "F12",
+            "title": "消费支付和发票适配仍有限",
+            "finding": "网页Pro/Max付款只接受信用/借记卡；移动端付款方式由各应用商店决定。已付发票无法修改或由支持团队重开。",
+            "assessment": "国内发票、人民币结算、第三方代付或支付渠道可用性仍未核；价格之外还要核实名主体、税务资料与准确发票抬头。",
+            "source_ids": [
+              "CB8-05"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F12"
+          },
+          {
+            "id": "F13",
+            "title": "订阅内部缓存可节省额度",
+            "finding": "官方帮助确认Projects内容在缓存有效期内复用会少占额度，闲置过期后重新按完整内容计入；实际额度受模型、effort、工具和多步任务影响。",
+            "assessment": "支持先优化本人工作流；无法用网页额度直接反推API批发token量。",
+            "source_ids": [
+              "CB8-08"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F13"
+          },
+          {
+            "id": "F14",
+            "title": "中转保密与连续供货风险有官方案例",
+            "finding": "Anthropic2026年9月调查称部分中转将用户对话留存后出售给其他机构；其系统会对未授权转售或非支持地区活动等信号要求身份验证，未通过则封禁。",
+            "assessment": "这是供应商调查及执法描述，并非对每家代理的已证实指控。采购应验证日志保留/再利用、处理方和账户持续可用性；不应把低价默认为纯正常折扣。",
+            "source_ids": [
+              "CB8-17"
+            ],
+            "confidence": "high_as_vendor_statement",
+            "qualified_id": "r8:claude:F14"
+          },
+          {
+            "id": "F15",
+            "title": "AWS入驻与Anthropic专项限制的公开证据边界",
+            "finding": "SPP公开页说明可管理客户账单，获得Solution Provider标识及Partner Solution Finder目录展示；伙伴级别要求链接指向登录。Distribution路径公开要求先加入APN Services Path，再经当地AWS Distributor完成Distribution Seller Agreement及入驻。",
+            "assessment": "未公开核出Anthropic要求的最低Partner级别、专项审核细则或全量授权目录。Bedrock公告所链接两份SPP/Distributor FAQ均实际跳转Partner Central登录页；专项FAQ正文尚未核验。AWS一般资质和目录只能验证一般身份，不能单独证明Claude再售资格。",
+            "source_ids": [
+              "CB8-11",
+              "CB8-18",
+              "CB8-19"
+            ],
+            "confidence": "high",
+            "qualified_id": "r8:claude:F15"
+          }
+        ],
+        "scenario_assessments": [
+          {
+            "proposal": "合资格本人或团队购买官方折扣用量包",
+            "verdict": "supported_conditionally",
+            "reason": "有明确公开价及购买上限，仍需账户/地区资格；只节省对应额外用量",
+            "sources": [
+              "CB8-04",
+              "CB8-01"
+            ]
+          },
+          {
+            "proposal": "买礼赠订阅向公众持续低价批发",
+            "verdict": "not_established",
+            "reason": "已证实礼赠交付，未证实批发价和商业再售授权；无需收礼者卡不等于无需地区资格",
+            "sources": [
+              "CB8-02",
+              "CB8-03",
+              "CB8-01"
+            ]
+          },
+          {
+            "proposal": "取得AWS渠道身份即任意转卖Claude",
+            "verdict": "excluded_as_stated",
+            "reason": "Anthropic另有限制，需对应许可、合同、终端范围",
+            "sources": [
+              "CB8-11",
+              "CB8-01"
+            ]
+          },
+          {
+            "proposal": "通过合资格正式经销或私有报价做企业项目",
+            "verdict": "plausible_route_not_approved_supplier",
+            "reason": "存在正式路径；尚无任何具体报价、经销授权和终端资格证明",
+            "sources": [
+              "CB8-11",
+              "CB8-14"
+            ]
+          },
+          {
+            "proposal": "API离线工作流用Batch加缓存提高毛利",
+            "verdict": "supported_conditionally",
+            "reason": "需等待容忍、实际命中和数据留存许可；输出、工具、重试、人工等仍要计费",
+            "sources": [
+              "CB8-12",
+              "CB8-13",
+              "CB8-16"
+            ]
+          },
+          {
+            "proposal": "把Batch成本当实时流式Claude Code保底成本",
+            "verdict": "excluded_as_stated",
+            "reason": "接口不支持流式，任务有延迟和24小时过期风险",
+            "sources": [
+              "CB8-13"
+            ]
+          },
+          {
+            "proposal": "凭地区外账户或礼物替大陆终端中转即合规",
+            "verdict": "excluded_without_explicit_exception",
+            "reason": "Usage Policy直接覆盖转接访问，并承接地区政策；本轮没有特批证明",
+            "sources": [
+              "CB8-01"
+            ]
+          }
+        ],
+        "usage_bundles": {
+          "currency": "USD",
+          "rows": [
+            {
+              "face_value": 50,
+              "pay": 45,
+              "discount": 0.1
+            },
+            {
+              "face_value": 250,
+              "pay": 200,
+              "discount": 0.2
+            },
+            {
+              "face_value": 1000,
+              "pay": 700,
+              "discount": 0.3
+            }
+          ],
+          "monthly_face_value_cap": {
+            "Pro": 2000,
+            "Max": 2000,
+            "Team": 3000
+          },
+          "tax": null,
+          "expiry": null,
+          "refund": null,
+          "transferability": null,
+          "api_console_credits_conversion": null,
+          "observed_user_checkout": false,
+          "sources": [
+            "CB8-04"
+          ]
+        },
+        "cache_sensitivity": {
+          "classification": "数学敏感性分析，非实测、非报价、非API总账单",
+          "scope": "Sonnet 5.5缓存候选前缀；每次未命中都按写入计费；h为候选前缀token命中比例；未计新增输入、输出、工具、税与运营",
+          "formula_5m": "relative_cost = 1.25*(1-h) + 0.1*h",
+          "formula_1h": "relative_cost = 2*(1-h) + 0.1*h",
+          "breakeven_hit_ratio_5m": 0.2173913043478261,
+          "breakeven_hit_ratio_1h": 0.5263157894736842,
+          "read_price_fraction": 0.1,
+          "examples_5m": [
+            {
+              "h": 0,
+              "relative_cost": 1.25
+            },
+            {
+              "h": 0.2,
+              "relative_cost": 1.02
+            },
+            {
+              "h": 0.5,
+              "relative_cost": 0.675
+            },
+            {
+              "h": 0.9,
+              "relative_cost": 0.215
+            }
+          ],
+          "interpretation": "5分钟约21.74%命中、1小时约52.63%命中才令该前缀写读综合成本低于不缓存。选择更长TTL应看其带来的实际命中提升。整个账单节省率会更小或不同；其他模型read倍率不同，须另算。",
+          "sources": [
+            "CB8-12"
+          ]
+        },
+        "corrections_to_round7": [
+          {
+            "topic": "额外usage credits",
+            "change": "补充公开预购用量包最高30%折扣；不要把所有额外用量都说成最终现金支付标准价。原标准计量价与折扣余额并存。",
+            "sources": [
+              "CB8-04"
+            ]
+          },
+          {
+            "topic": "官方经销存在性",
+            "change": "若曾概括为没有正规转售，则应更正为有受限官方渠道，但具体商家/交易资格尚未证实。",
+            "sources": [
+              "CB8-11"
+            ]
+          },
+          {
+            "topic": "AWS供货路径",
+            "change": "新增区分Claude Platform on AWS与AWS运营Bedrock；账单平台相同不代表数据处理或优惠自动相同。",
+            "sources": [
+              "CB8-14",
+              "CB8-15"
+            ]
+          }
+        ],
+        "remaining_evidence_gaps": [
+          "具体交易主体、实际使用地点、最终用户及所有权是否合资格；本轮没有任何特批或豁免。",
+          "经销授权必须匹配公司法人、产品(SaaS订阅/API/Bedrock)、地区、最终客户范围及有效期；AWS渠道或Claude认证不能替代。",
+          "礼赠是否允许商业再售、批量采购、折扣及退款/撤销规则未从公开新源建立；不得把“globally”当全球主体无条件资格。",
+          "usage bundle的实际账户可买资格、账单币种/税费、余额到期/退款/转移细则和第三方产品认证权限未全部核清。",
+          "private offer具体门槛、承诺期、最低消费、折扣、返利、开票主体与大陆发票均未知。",
+          "真实任务的缓存写/读/未缓存输入/输出token、并发、模型版本、TTL和缓存域尚无实测；不得用理论最高折扣承诺利润。",
+          "离线任务实际Batch完成率、失败/取消/过期与重跑成本、工具额外费用和数据留存合同需要逐项核。",
+          "代理的隐私协议、日志留存/再利用/分包方以及终端访问权未核；官方案例不能证明任何尚未调查的特定代理违规。"
+        ],
+        "new_verified_authorized_wholesale_supplier_count": 0,
+        "new_verified_mainland_invoice_supplier_count": 0,
+        "source_audit": {
+          "round7_unique_sources": 57,
+          "new_unique_sources": 19,
+          "duplicate_source_count": 0,
+          "duplicate_encountered_excluded": [
+            "AWS Private offers链接重定向至第7轮已有Claude API pricing，未计新源或以此扩充来源数"
+          ],
+          "third_party_news_or_forum_not_used": true,
+          "source_date_precision": "未知精确发布时间标null；threat report只标2026-09，帮助页相对更新时间不换算为精确日期",
+          "auth_gated_pages_not_counted_as_content_sources": 2,
+          "scope": "原记录仅与第7轮57项来源比较；完整第3—7轮包另有两篇Claude赠礼页重复，累计来源以公共包URL去重为准。"
+        },
+        "aws_program_verification": {
+          "general_programs": [
+            "AWS Solution Provider Program",
+            "AWS Distribution Program"
+          ],
+          "public_general_requirement": "Distribution requires Services Path and an AWS Distribution Seller Agreement through an AWS Distributor. SPP page offers Solution Provider designation and Partner Solution Finder listing.",
+          "anthropic_specific_minimum_tier": null,
+          "anthropic_specific_authorization_directory_verified": false,
+          "anthropic_detailed_rules_publicly_retrieved": false,
+          "gated_faq_observations": [
+            {
+              "url": "https://partnercentral.awspartner.com/partnercentral2/s/article?article=Amazon-Bedrock-Available-for-Resale-SPP-SPP&category=AWS_Solution_Provider_Program",
+              "observed_at_utc": "2026-10-02T15:32:32Z",
+              "result": "Redirected to Partner Central login; no article text returned"
+            },
+            {
+              "url": "https://partnercentral.awspartner.com/partnercentral2/s/article?article=Amazon-Bedrock-Available-for-Resale-DP&category=AWS_Distribution_Program",
+              "observed_at_utc": "2026-10-02T15:32:32Z",
+              "result": "Redirected to Partner Central login; no article text returned"
+            }
+          ]
+        }
+      },
+      "summary": [
+        "PHP999官方清单已实时展开，周期仍未核；不能用标准月付制度替代唯一SKU凭证。",
+        "新增手机订阅双账户绑定规则，排除单一商店账号对不同客户循环原号充值的官方可行性。",
+        "新增Apple菲律宾支付及GCash实名/游客资格，排除他区礼卡和游客钱包自动适用的推定。",
+        "BHN新合同补出伙伴批准、下游合同、三方付款协议及额外费用结构；OpenAI专项仍未知。",
+        "Claude用量包确有最高30%折扣，但不能当Console API七折转售库存。",
+        "AWS正式受限经销和Claude服务伙伴门槛有公开证据；大陆终端/个体准入未证。"
+      ],
+      "archive_context": "历史观察档案：保留当时内容；当前解释以current_view与correction_log为准，不可逐轮累加独立供应商。"
     }
   },
   "source_catalog": [
@@ -11370,6 +13240,20 @@
         {
           "chapter": "r4",
           "json_pointer": "/sources/25/url"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/1",
+          "original_source_id": "CB8-02",
+          "title": "How to gift a Claude subscription",
+          "observed_at_utc": "2026-10-02T15:24:22Z",
+          "published_or_effective": "2026-04-29",
+          "relevance": "Pro/Max礼赠资格、产品期限、无需收礼者信用卡",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/1/url"
         }
       ]
     },
@@ -11399,6 +13283,20 @@
         {
           "chapter": "r4",
           "json_pointer": "/sources/26/url"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/2",
+          "original_source_id": "CB8-03",
+          "title": "How to redeem a Claude gift subscription",
+          "observed_at_utc": "2026-10-02T15:24:22Z",
+          "published_or_effective": "2026-03-16",
+          "relevance": "兑换、不可叠加及移动端订阅限制",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/2/url"
         }
       ]
     },
@@ -12627,6 +14525,10 @@
         {
           "chapter": "r3_entry",
           "json_pointer": "/sources/28/url"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/rechecked_sources/1/prior_related_url"
         }
       ]
     },
@@ -14742,6 +16644,17 @@
         {
           "chapter": "r7",
           "json_pointer": "/sources/0/url"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/rechecked_sources/0",
+          "original_source_id": "R8R01",
+          "finding": "仍列Plus PHP999及同名PHP9990；没有SKU周期/独立详情链接；不算新增来源",
+          "observed_at_utc": "2026-10-02T15:29:46Z"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/rechecked_sources/0/url"
         }
       ]
     },
@@ -15327,6 +17240,753 @@
       ]
     },
     {
+      "id": "src_8095162cb3b9",
+      "url": "https://help.openai.com/en/articles/20001056-why-am-i-seeing-a-message-that-my-subscription-is-associated-with-another-account",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/0",
+          "original_source_id": "R8S01",
+          "title": "移动订阅关联另一账户",
+          "finding": "移动订阅同时绑定Apple/Google商店账户与购买时ChatGPT账号；绑定后同商店账号不能为另一个ChatGPT账号购买；不可跨账号转移或共享",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "page_date": "显示Updated 10 days ago，不推定绝对生效日",
+          "gaps": [
+            "不证明具体卖家实际走移动内购；不把此限制扩大成所有合法礼赠支付均禁止"
+          ],
+          "scope": "直接排除单商店账号循环给不同客户原号充值是官方支持模式"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/0/url"
+        }
+      ]
+    },
+    {
+      "id": "src_9401673a65f6",
+      "url": "https://help.openai.com/en/articles/9030143-how-do-i-obtain-my-chatgpt-subscription-invoice-if-i-subscribed-from-the-apple-app-store",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/1",
+          "original_source_id": "R8S02",
+          "title": "Apple订阅账单凭证",
+          "finding": "Apple购买历史可查ChatGPT收据；每次续费发Apple账户邮箱收据",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "page_date": "显示Updated last month",
+          "gaps": [
+            "公开页无法展示某用户的SKU周期；收据邮箱与实际ChatGPT账号可能不同，须关联证明"
+          ],
+          "scope": "给出补证所需的原始记录来源"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/1/url"
+        }
+      ]
+    },
+    {
+      "id": "src_e68190fe9934",
+      "url": "https://support.apple.com/en-ph/111741",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/2",
+          "original_source_id": "R8S03",
+          "title": "Apple各国支付方式",
+          "finding": "菲律宾列GCash、Smart手机账单、多数信用/借记卡、ShopeePay；该节未列Apple Account balance/礼卡",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:30:36Z",
+          "page_date": "Published 2026-08-07",
+          "gaps": [
+            "没有证明每张卡/账号通过；没有ChatGPT专属折扣或转售许可"
+          ],
+          "scope": "支持本地正规支付存在，不支持任意境外礼卡可付菲区"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/2/url"
+        }
+      ]
+    },
+    {
+      "id": "src_380ef15e4d2d",
+      "url": "https://support.apple.com/en-my/108285",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/3",
+          "original_source_id": "R8S04",
+          "title": "Apple礼卡购买地区限制",
+          "finding": "Apple/App Store/iTunes礼卡不能在购买国家或地区之外兑换",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:30:36Z",
+          "page_date": "Published 2025-05-14",
+          "gaps": [
+            "不等于所有菲律宾支付方式受同样规则；需具体卡产品资格"
+          ],
+          "scope": "排除把他区折扣Apple礼卡直接视作菲区通用本金"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/3/url"
+        }
+      ]
+    },
+    {
+      "id": "src_628e92f33706",
+      "url": "https://help.gcash.com/hc/en-us/articles/900006144666-How-to-pay-online-with-GCash",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/4",
+          "original_source_id": "R8S05",
+          "title": "GCash网上付款资格",
+          "finding": "网上支付要求Fully Verified账户",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "page_date": "未标绝对日期",
+          "gaps": [
+            "个体支付资格与OpenAI服务地区资格仍需分别核实。"
+          ],
+          "scope": "排除仅有GCash登录/未验证账户就等于可付网上订阅"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/4/url"
+        }
+      ]
+    },
+    {
+      "id": "src_d1990507e0e4",
+      "url": "https://help.gcash.com/hc/en-us/articles/900005866623-How-to-create-a-new-GCash-account",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/5",
+          "original_source_id": "R8S06",
+          "title": "GCash账户类型",
+          "finding": "常规成人GCash、海外菲律宾公民GCash Overseas及外国游客GTourist分开",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:26:57Z",
+          "page_date": "未标绝对日期",
+          "gaps": [
+            "三类账户资格不能相互套用。"
+          ],
+          "scope": "排除把GCash Overseas误认为所有外国人的全球账户"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/5/url"
+        }
+      ]
+    },
+    {
+      "id": "src_14bff8288f94",
+      "url": "https://help.gcash.com/hc/en-us/articles/53417886058521-How-to-create-a-GTourist-account-on-GCash",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/6",
+          "original_source_id": "R8S07",
+          "title": "GTourist准入",
+          "finding": "非菲律宾SIM；可先注册但仅到菲律宾后激活；账户30天；基础档使用本人卡，完整验证需外国护照",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:26:57Z",
+          "page_date": "未标绝对日期",
+          "gaps": [
+            "列出China是游客来源支持，不是OpenAI大陆服务许可"
+          ],
+          "scope": "真实游客有独立通道，但不等于境外常驻用户长期网上订阅入口"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/6/url"
+        }
+      ]
+    },
+    {
+      "id": "src_e5fb22d13cfa",
+      "url": "https://help.gcash.com/hc/en-us/articles/53418023303193-How-to-use-my-GTourist-account-on-GCash",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/7",
+          "original_source_id": "R8S08",
+          "title": "GTourist功能与期限",
+          "finding": "公开功能为菲律宾商户QR付款与经验证后转账，30天自动停用；部分资金通道有费",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:28:07Z",
+          "page_date": "未标绝对日期",
+          "gaps": [
+            "功能列表未提某功能不是绝对禁止证明；保留适用性未知"
+          ],
+          "scope": "未取得GTourist支持Apple/ChatGPT循环扣款的公开证明"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/7/url"
+        }
+      ]
+    },
+    {
+      "id": "src_71844ae09023",
+      "url": "https://help.gcash.com/hc/en-us/articles/45496741233817-Online-orders-or-auto-debit-payment-refund-or-issues",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/8",
+          "original_source_id": "R8S09",
+          "title": "GCash退款职责",
+          "finding": "GCash只是支付方式，不管理订单或决定退款；Apple订阅由Apple退款流程处理",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:26:57Z",
+          "page_date": "未标绝对日期",
+          "gaps": [
+            "具体商品退款和商家补偿承诺仍需单独核实"
+          ],
+          "scope": "排除正规钱包付款即可保证订阅退款或售后"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/8/url"
+        }
+      ]
+    },
+    {
+      "id": "src_09fce245d799",
+      "url": "https://legal.blackhawknetwork.com/disclosures/card-order-agreement-97b44e70",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/9",
+          "original_source_id": "R8S10",
+          "title": "BHN Card Order Agreement",
+          "finding": "第三方项目需伙伴申请并明确获批；须下游书面合同，直接向BHN付款另需三方协议及Direct Payment Fee；普通奖励用途禁消费者转售，另有条件性单商户卡转售条款",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:28:59Z",
+          "page_date": "2026-03-25",
+          "gaps": [
+            "无OpenAI SKU/净价/最低量/地区专项权限；$10000风控阈值不是起订量；不能孤立用7.8覆盖6.1普通限制"
+          ],
+          "scope": "BHN有实质合同准入，不能以API接通当获批；按实际合同解释不同项目"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/9/url"
+        }
+      ]
+    },
+    {
+      "id": "src_111d6f518b01",
+      "url": "https://www.incomm.com/insights/third-party-gift-card-distribution-unlocking-new-revenue-streams/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/10",
+          "original_source_id": "R8S11",
+          "title": "InComm第三方分销正式协议",
+          "finding": "正式分销需与供应商订立写明条款、佣金和营销策略的协议",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:27:14Z",
+          "page_date": "2025-03-28",
+          "gaps": [
+            "通用官方指导，不是OpenAI专项已签合同或净价"
+          ],
+          "scope": "支持合同化分销而非零售转卖推定"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/10/url"
+        }
+      ]
+    },
+    {
+      "id": "src_bc2f1aeaa023",
+      "url": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-us-uk-accelerating-ai-chatgpt-enterprise-adoption.html",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/11",
+          "original_source_id": "R8S12",
+          "title": "PwC官方Enterprise经销公告",
+          "finding": "PwC美国和英国机构宣布与OpenAI签约成为ChatGPT Enterprise经销商",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:27:14Z",
+          "page_date": "2024-05-29",
+          "gaps": [
+            "不是Plus月卡、小店普遍准入或中国终端服务权；公告未披露转批/价格/门槛"
+          ],
+          "scope": "反驳OpenAI完全没有正式经销；证明产品/实体级签约存在"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/11/url"
+        }
+      ]
+    },
+    {
+      "id": "src_fb24526dae24",
+      "url": "https://help.openai.com/en/articles/9047878-how-can-i-contact-sales",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/12",
+          "original_source_id": "R8S13",
+          "title": "OpenAI销售联络与API合同参考",
+          "finding": "API月支出约10000美元或以上可联系Sales讨论企业合同；低用量仍可自助按量；需公司/地区/席位/用途等资料",
+          "verification": "官方公开正文观察；未在个人账户内验证",
+          "observed_at_utc": "2026-10-02T15:30:36Z",
+          "page_date": "显示Updated 30 days ago",
+          "gaps": [
+            "10000美元是联系Sales参考，不是成为代理的押金、MOQ或保证折扣。"
+          ],
+          "scope": "区分企业采购洽谈和经销授权"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/new_sources/12/url"
+        }
+      ]
+    },
+    {
+      "id": "src_aa29c504e2de",
+      "url": "https://chatgpt.com/zh-Hans-CN/pricing/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/rechecked_sources/1",
+          "original_source_id": "R8R02",
+          "finding": "本网页显示USD20/月；FAQ说明Plus月度。未出现可核的PHP999+周期同一报价。",
+          "observed_at_utc": "2026-10-02T15:24:50Z"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/rechecked_sources/1/url"
+        }
+      ]
+    },
+    {
+      "id": "src_f931a8b469ae",
+      "url": "https://connect.blackhawknetwork.com/publically-accessible-reference-documents/bhn-ecommerce-distribution-partner-operations-manual",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/bhn_program_analysis/manual_fetch_result/urls/0"
+        }
+      ]
+    },
+    {
+      "id": "src_3f1b7fe7a9f7",
+      "url": "https://connect.blackhawknetwork.com/publically-accessible-reference-documents/hawk-incentives-partner-operations-manual-us-products/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/bhn_program_analysis/manual_fetch_result/urls/1"
+        }
+      ]
+    },
+    {
+      "id": "src_96b733f1447a",
+      "url": "https://openai.com/policies/advertising-terms/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/excluded_search_hits/0"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/excluded_search_hits/0/url"
+        }
+      ]
+    },
+    {
+      "id": "src_871eb12d8f6a",
+      "url": "https://dev.integrations.incomm.com/docs/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/excluded_search_hits/2"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/excluded_search_hits/2/url"
+        }
+      ]
+    },
+    {
+      "id": "src_34cfa2c0e79e",
+      "url": "https://www.anthropic.com/legal/aup",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/0",
+          "original_source_id": "CB8-01",
+          "title": "Usage Policy",
+          "observed_at_utc": "2026-10-02T15:24:22Z",
+          "published_or_effective": "2025-09-15",
+          "relevance": "适用于授权经销和转接终端；禁止违反支持地区政策的账户/API访问",
+          "source_type": "official_policy"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/0/url"
+        }
+      ]
+    },
+    {
+      "id": "src_54ca5c074d31",
+      "url": "https://support.claude.com/en/articles/14246112-buy-usage-bundles",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/3",
+          "original_source_id": "CB8-04",
+          "title": "Buy usage bundles",
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "published_or_effective": "2026-05-18",
+          "relevance": "真实10%/20%/30%用量包优惠及每月面值购买上限",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/3/url"
+        }
+      ]
+    },
+    {
+      "id": "src_0d4b98bda9d3",
+      "url": "https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/4",
+          "original_source_id": "CB8-05",
+          "title": "Paid plan billing FAQs",
+          "observed_at_utc": "2026-10-02T15:26:25Z",
+          "published_or_effective": "2026-07-13",
+          "relevance": "网页仅信用/借记卡；应用商店独立支付渠道；已付发票不可改",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/4/url"
+        }
+      ]
+    },
+    {
+      "id": "src_7b91fff5cbed",
+      "url": "https://support.claude.com/en/articles/11107691-why-is-a-coupon-or-promotion-not-available-for-my-account",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/5",
+          "original_source_id": "CB8-06",
+          "title": "Why is a coupon or promotion not available for my account?",
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "published_or_effective": "2026-03-16",
+          "relevance": "通常仅首次付费用户优惠，现有/曾付费及商店订阅者资格限制",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/5/url"
+        }
+      ]
+    },
+    {
+      "id": "src_58fa5a4bc4fc",
+      "url": "https://support.claude.com/en/articles/17007452-what-is-a-limit-reset",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/6",
+          "original_source_id": "CB8-07",
+          "title": "What is a limit reset?",
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "published_or_effective": null,
+          "relevance": "偶发限量重置不是固定供给；不退款已发生超额费",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/6/url"
+        }
+      ]
+    },
+    {
+      "id": "src_3cb755ffeca3",
+      "url": "https://support.claude.com/en/articles/9797557-usage-limit-best-practices",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/7",
+          "original_source_id": "CB8-08",
+          "title": "Usage limit best practices",
+          "observed_at_utc": "2026-10-02T15:25:15Z",
+          "published_or_effective": null,
+          "relevance": "订阅Projects缓存减少额度消耗，但不提供固定月token保证",
+          "source_type": "official_help"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/7/url"
+        }
+      ]
+    },
+    {
+      "id": "src_c265f4d09da6",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/8",
+          "original_source_id": "CB8-09",
+          "title": "Services Track and Partner Hub",
+          "observed_at_utc": "2026-10-02T15:26:48Z",
+          "published_or_effective": "2026-06-03",
+          "relevance": "实施能力分层、个人认证与转介奖励分轨",
+          "source_type": "official_announcement"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/8/url"
+        }
+      ]
+    },
+    {
+      "id": "src_d13b44ca6ca8",
+      "url": "https://claude.com/partners",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/9",
+          "original_source_id": "CB8-10",
+          "title": "Claude Partner Network",
+          "observed_at_utc": "2026-10-02T15:24:38Z",
+          "published_or_effective": null,
+          "relevance": "服务伙伴与Powered by Claude目录入口，并非消费订阅批发合同",
+          "source_type": "official_program_page"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/9/url"
+        }
+      ]
+    },
+    {
+      "id": "src_79707af806ac",
+      "url": "https://aws.amazon.com/blogs/apn/amazon-bedrock-now-available-for-partner-resale/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/10",
+          "original_source_id": "CB8-11",
+          "title": "Amazon Bedrock Now Available for Partner Resale",
+          "observed_at_utc": "2026-10-02T15:26:25Z",
+          "published_or_effective": "2025-10-14",
+          "relevance": "Bedrock加入渠道可转售服务，但Anthropic模型附加限制",
+          "source_type": "official_announcement"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/10/url"
+        }
+      ]
+    },
+    {
+      "id": "src_9a3bbc4f637b",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/11",
+          "original_source_id": "CB8-12",
+          "title": "Prompt caching",
+          "observed_at_utc": "2026-10-02T15:24:57Z",
+          "published_or_effective": null,
+          "relevance": "最小长度、隔离边界、完全相同前缀、TTL、并发首写限制",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/11/url"
+        }
+      ]
+    },
+    {
+      "id": "src_dbcb362197db",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/12",
+          "original_source_id": "CB8-13",
+          "title": "Batch processing",
+          "observed_at_utc": "2026-10-02T15:24:57Z",
+          "published_or_effective": null,
+          "relevance": "异步50%优惠、24小时内未完成的请求会过期、缓存尽力命中、无流式",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/12/url"
+        }
+      ]
+    },
+    {
+      "id": "src_35f71fa3bd1b",
+      "url": "https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/13",
+          "original_source_id": "CB8-14",
+          "title": "Set up your account for Claude Platform on AWS",
+          "observed_at_utc": "2026-10-02T15:26:48Z",
+          "published_or_effective": null,
+          "relevance": "新独立组织、私有报价不追溯、仍适用Anthropic条款",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/13/url"
+        }
+      ]
+    },
+    {
+      "id": "src_f7eadee5e650",
+      "url": "https://docs.aws.amazon.com/claude-platform/latest/userguide/cpa-vs-bedrock.html",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/14",
+          "original_source_id": "CB8-15",
+          "title": "Claude Platform on AWS vs Amazon Bedrock",
+          "observed_at_utc": "2026-10-02T15:26:48Z",
+          "published_or_effective": null,
+          "relevance": "AWS账单路径中运营方、数据边界和认证覆盖不同",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/14/url"
+        }
+      ]
+    },
+    {
+      "id": "src_6bc4022c8696",
+      "url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/15",
+          "original_source_id": "CB8-16",
+          "title": "API and data retention",
+          "observed_at_utc": "2026-10-02T15:27:09Z",
+          "published_or_effective": null,
+          "relevance": "Batch不适用ZDR；缓存特性可适用但须合同/模型资格及例外",
+          "source_type": "official_technical_docs"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/15/url"
+        }
+      ]
+    },
+    {
+      "id": "src_d957d6c99957",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/16",
+          "original_source_id": "CB8-17",
+          "title": "Detecting and countering misuse of AI September 2026",
+          "observed_at_utc": "2026-10-02T15:26:25Z",
+          "published_or_effective": "2026-09",
+          "relevance": "供应商报告中转记录转卖、未授权转售/地区信号触发身份验证",
+          "source_type": "official_vendor_investigation"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/16/url"
+        }
+      ]
+    },
+    {
+      "id": "src_18e86b891ff0",
+      "url": "https://aws.amazon.com/partners/programs/solution-provider/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/17",
+          "original_source_id": "CB8-18",
+          "title": "AWS Solution Provider Program",
+          "observed_at_utc": "2026-10-02T15:32:32Z",
+          "published_or_effective": null,
+          "relevance": "SPP可直接管理客户账单、官方Solution Provider标识和Partner Solution Finder目录；公开页未列最低级别",
+          "source_type": "official_program_requirements"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/17/url"
+        }
+      ]
+    },
+    {
+      "id": "src_78f2848b955e",
+      "url": "https://aws.amazon.com/partners/programs/distribution-resellers/",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/18",
+          "original_source_id": "CB8-19",
+          "title": "AWS Distribution Program",
+          "observed_at_utc": "2026-10-02T15:32:32Z",
+          "published_or_effective": null,
+          "relevance": "要求Services Path及Distribution Seller Agreement，需通过当地AWS Distributor入驻；不是Anthropic专项授权",
+          "source_type": "official_program_requirements"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/sources/18/url"
+        }
+      ]
+    },
+    {
+      "id": "src_67b418f26042",
+      "url": "https://partnercentral.awspartner.com/partnercentral2/s/article?article=Amazon-Bedrock-Available-for-Resale-SPP-SPP&category=AWS_Solution_Provider_Program",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/aws_program_verification/gated_faq_observations/0",
+          "observed_at_utc": "2026-10-02T15:32:32Z"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/aws_program_verification/gated_faq_observations/0/url"
+        }
+      ]
+    },
+    {
+      "id": "src_8d12288e5f2f",
+      "url": "https://partnercentral.awspartner.com/partnercentral2/s/article?article=Amazon-Bedrock-Available-for-Resale-DP&category=AWS_Distribution_Program",
+      "references": [
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/aws_program_verification/gated_faq_observations/1",
+          "observed_at_utc": "2026-10-02T15:32:32Z"
+        },
+        {
+          "chapter": "r8",
+          "json_pointer": "/claude_increment/aws_program_verification/gated_faq_observations/1/url"
+        }
+      ]
+    },
+    {
       "id": "src_d0ba2dd89fb6",
       "url": "https://catfk.com/item/g8ptrd",
       "references": [
@@ -15345,7 +18005,8 @@
     "r5": "/evidence_chapters/r5",
     "r6": "/evidence_chapters/r6",
     "r7": "/evidence_chapters/r7",
+    "r8": "/evidence_chapters/r8",
     "baseline": "/current_view/historical_baseline"
   },
-  "source_reference_rules": "chapter内source_ids按本章sources解析；Claude第7轮子章节按该子章节sources解析。source_catalog按规范化公开URL去重，保留各轮观察和引用位置。references中的chapter先由source_reference_roots定位根，json_pointer相对该根解析（baseline映射current_view.historical_baseline）。相同URL不等于相同SKU/商家；同平台更不等于同法人。"
+  "source_reference_rules": "第3—7轮章内source_ids按本章sources解析；r8的R8S/R8R分别按new_sources/rechecked_sources解析；CB8编号按r8.claude_increment.sources解析；Claude第7轮子章节按该子章节sources解析。source_catalog按规范化公开URL去重，保留各轮观察和引用位置。references中的chapter先由source_reference_roots定位根，json_pointer相对该根解析（baseline映射current_view.historical_baseline）。相同URL不等于相同SKU/商家；同平台更不等于同法人。"
 }

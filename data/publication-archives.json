@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "archives": {
+    "research/ai-side-income/sample-v0.1.zip": {
+      "bytes": 66163,
+      "sha256": "e2f225782e4413a8f55624346f63f1ffd17a9208469ea7d1a82f79701299facc",
+      "members": [
+        {
+          "path": "00_成果说明.txt",
+          "bytes": 445,
+          "sha256": "727adfa3d4a7b95555f435cf4bca2d8500e4b3dc778483f61bc2e292f7d26915"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip",
+          "bytes": 53012,
+          "sha256": "a309716cad104eda88b62e10ae69a1afd61808667e1377e02f79d7bfdfad5301"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/00_先读我.txt",
+          "bytes": 2215,
+          "sha256": "646c73985e9b7bcd2ff3e79199a6aa1c1d652462fcbac23a8ae74cb98390d9bc"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx",
+          "bytes": 11501,
+          "sha256": "1b77633d13341fab7f8f236ba05aa32e71ce913abb954b63adc88d9d691bf9c7"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/workbook.xml",
+          "bytes": 587,
+          "sha256": "58118c0880de83b68949a280f17b849520c8a08eda95229a7b821634519fd973"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/styles.xml",
+          "bytes": 7537,
+          "sha256": "fa0130dc940397bd3b1a443708d768072ccf1ebcd63b4fbb19957612d1c1ab1f"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/theme/theme1.xml",
+          "bytes": 3546,
+          "sha256": "9e968b92413c2476890e4b0bd8d26b65f2062b211bde8ebb628ffdaafc6607b9"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/sharedStrings.xml",
+          "bytes": 115,
+          "sha256": "188ef751ff00440752511a2b19781b8f4c4f53a52560765fc3c0cbef1fb25e4f"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/worksheets/sheet1.xml",
+          "bytes": 5407,
+          "sha256": "281f263293c530f888f99b64de286c12d9b5d110c053a062d885c3369055a5c2"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/worksheets/sheet2.xml",
+          "bytes": 16327,
+          "sha256": "160ef1a7fa7283b5550092fb4e064d0ed25da6a8979424359acd18565e12e0be"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/tables/table1.xml",
+          "bytes": 1042,
+          "sha256": "2adad64cd4df86b6c3ebbfc5f690e746873c79de1c4c37b7fca9f9307f521565"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/worksheets/sheet3.xml",
+          "bytes": 6912,
+          "sha256": "81bbfb6ffa6d0560164c516be9c8e16af954725f541b423118a4499856f6587a"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/_rels/.rels",
+          "bytes": 296,
+          "sha256": "8bcfa765268836fca1a63689f2cf7407b9b30d4691c0ec11c9be91395b65fc87"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/_rels/workbook.xml.rels",
+          "bytes": 1072,
+          "sha256": "eec85bb2696914ff6defe37195df1530957cc96e6feb3c06ec975ab40e20b6c5"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/xl/worksheets/_rels/sheet2.xml.rels",
+          "bytes": 292,
+          "sha256": "749b46a7ae263d8520d773344a7186b4746f714aecb14e7135e668f357e74f20"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/01_科研证据矩阵.xlsx!/[Content_Types].xml",
+          "bytes": 1254,
+          "sha256": "3ef8a930ab5729d282b50d3321096af21b7146fda5841e711f1a08e3c447f881"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx",
+          "bytes": 38530,
+          "sha256": "cedeacdca33a37d9267ccf17a475e6345cf703143ef9cc5da7ffdb11a3e8a646"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/[Content_Types].xml",
+          "bytes": 1738,
+          "sha256": "66c84fb7a6aa3c4ead49f895e4a7044df1fb57de1ed76d09b2686e91f5bed5b4"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/_rels/.rels",
+          "bytes": 734,
+          "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/docProps/core.xml",
+          "bytes": 832,
+          "sha256": "b9d104442082795d07da5e033c241ec7c07736c080a8c1df4be036aee3d9958a"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/docProps/app.xml",
+          "bytes": 1132,
+          "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/document.xml",
+          "bytes": 8074,
+          "sha256": "cd67199c7c2cf029876f50e5e28c7956d2b10e24d809de0bdff8a86a3fa73267"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/_rels/document.xml.rels",
+          "bytes": 1227,
+          "sha256": "1e7f0eb144a98e199249314f61ff32a8de2a27e56d8e9ee6b524e1c6b235d377"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/styles.xml",
+          "bytes": 349623,
+          "sha256": "4dfe341a54d30d105d82dfb2359acb001ef10634ba39cd6bed81d989746d83be"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/stylesWithEffects.xml",
+          "bytes": 438131,
+          "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/settings.xml",
+          "bytes": 2535,
+          "sha256": "51a0d348fe85965c66e4748a03c3c0d055d78455514f03cb121c334af7d73689"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/webSettings.xml",
+          "bytes": 438,
+          "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/fontTable.xml",
+          "bytes": 2811,
+          "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/theme/theme1.xml",
+          "bytes": 10939,
+          "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/customXml/item1.xml",
+          "bytes": 262,
+          "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/customXml/_rels/item1.xml.rels",
+          "bytes": 295,
+          "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/customXml/itemProps1.xml",
+          "bytes": 354,
+          "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/word/numbering.xml",
+          "bytes": 5513,
+          "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/02_论点提纲卡.docx!/docProps/thumbnail.jpeg",
+          "bytes": 8324,
+          "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/03_空白证据表.csv",
+          "bytes": 1203,
+          "sha256": "fbea47a619c76b272b7480f8454dda7c48d0a4ef95d140a315fa0ef0e9dcaef5"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/04_合成演示.csv",
+          "bytes": 1609,
+          "sha256": "b89348f2c9a5def6d1a813a408280abf15899e716844370b894a1d1969573db0"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/05_使用范围与正式版许可草案.txt",
+          "bytes": 2307,
+          "sha256": "cdcab97c4e63f281dc5d51ced7a9d56521806f45118b5d2ff6ff8ad24dd4f7cf"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/06_验证记录.txt",
+          "bytes": 1605,
+          "sha256": "e48ce3f435cf62e52e78763a4a9392c6b355d567aa3ea574bfc37a1b8b76c131"
+        },
+        {
+          "path": "01_原创样品_v0.1.zip!/07_文件校验.json",
+          "bytes": 1289,
+          "sha256": "19b21021bb3a5ffc23945fd4f6cbf7812b5dc91be2c08386859d85ead8487843"
+        },
+        {
+          "path": "02_执行清单.txt",
+          "bytes": 9960,
+          "sha256": "ca40c3ad40aa0637e2934fedb8c2fe3ed986fa43bf82294d21734bc0bfca63bf"
+        },
+        {
+          "path": "03_产品规格与来源.json",
+          "bytes": 14609,
+          "sha256": "2053cce2883a80017b5ba340cb32ee0dd418eea14a2ca923dbc04ef2940550b4"
+        },
+        {
+          "path": "04_成果目录.json",
+          "bytes": 1066,
+          "sha256": "a7728910c70a31f5faf254c02eab68d0a9ce4e6ae03bf2a332f9c89bc17f95e2"
+        }
+      ]
+    }
+  }
+}
