@@ -12,6 +12,9 @@ const ArchiveModel=(()=>{
 })();
 if(typeof module!=='undefined'&&module.exports)module.exports=ArchiveModel;
 if(typeof document!=='undefined')(()=>{
+  // This page stores each entry's filter and scroll together; native restoration
+  // must not overwrite that position after popstate has restored the target.
+  if('scrollRestoration' in history)history.scrollRestoration='manual';
   const $=id=>document.getElementById(id),fields=['query','role','from','to','project'],items=[...document.querySelectorAll('article.record')],count=$('count'),records=new Map(items.map(item=>[item.id,item]));
   let previousFilter=null,highlighted=null,selectedId=null,lastLocation=location.href,lastHandled='',serial=0;
   const data=item=>({id:item.id,role:item.dataset.role,time:item.dataset.time,text:item.querySelector('.text').textContent});
