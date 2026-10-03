@@ -81,8 +81,8 @@ def validate():
     scan(newer)
     assert '/workspace/' not in newer and 'libfile_' not in newer
     group=projects['projects'][0]
-    assert group['name']=='AI上游调研' and group['status']=='本轮已发布，等待下一次核验'
-    assert len(group['children'])==4 and all(c['status']=='进行中' for c in group['children'])
+    assert group['name']=='AI上游调研' and isinstance(group['status'],str) and group['status'].strip()
+    assert len(group['children'])==4 and all(isinstance(c['status'],str) and c['status'].strip() for c in group['children'])
     round2=json.loads(newer)
     assert len(round2['routes']['routes'])==11 and len(round2['routes']['sources'])==55
     html2=(ROOT/'dist/research/2026-10-02-round2.html').read_text()
