@@ -167,7 +167,11 @@ async function startChrome() {
   eventHandlers.add(message => {
     const p = message.params || {};
     if (['Page.frameNavigated', 'Page.navigatedWithinDocument'].includes(message.method)) {
-      eventLog.push({ method: message.method, url: p.frame?.url || p.url, at: Date.now() });
+      // CDP Page.Frame.url excludes the fragment; urlFragment includes its leading '#'.
+      const rawUrl = p.frame?.url || p.url;
+      const urlFragment = p.frame?.urlFragment || '';
+      eventLog.push({ method: message.method, url: rawUrl + urlFragment, rawUrl, urlFragment,
+        frameId: p.frame?.id || p.frameId, sessionId: message.sessionId, stage: currentStage, at: Date.now() });
     }
     if (message.method === 'Browser.downloadWillBegin') downloads.set(p.guid, { ...p, state: 'inProgress' });
     if (message.method === 'Browser.downloadProgress') downloads.set(p.guid, { ...downloads.get(p.guid), ...p });
@@ -462,7 +466,8 @@ async function checkDownloads() {
     assert.deepEqual(result.consoleErrors, [], 'No browser console errors');
     result.status = 'passed';
   } catch (error) {
-    result.status = 'failed'; result.failure = { stage: currentStage, message: error.message, stack: error.stack };
+    result.status = 'failed'; result.failure = { stage: currentStage, message: error.message, stack: error.stack,
+      navigationEvents: eventLog.filter(event => event.stage === currentStage) };
     process.exitCode = 1;
     // Preserve the first failing viewport without changing widths, CSS, or assertions.
     // Every run has a separate archive, so a later run cannot erase its first pixels.
@@ -471,9 +476,10 @@ async function checkDownloads() {
         const stability = await stableGeometry();
         const capture = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false, fromSurface: true });
         const bytes = Buffer.from(capture.data, 'base64');
-        const filename = 'first-failure-' + currentStage.replace(/[^a-zA-Z0-9_-]/g, '-') + '.png';
-        fs.writeFileSync(path.join(runDir, filename), bytes);
-        result.failure.screenshot = { file: path.relative(out, path.join(runDir, filename)),
+        const filename = path.basename(runDir) + '-first-failure-' + currentStage.replace(/[^a-zA-Z0-9_-]/g, '-') + '.png';
+        fs.writeFileSync(path.join(runDir, filename), bytes, { flag: 'wx' });
+        fs.writeFileSync(path.join(out, filename), bytes, { flag: 'wx' });
+        result.failure.screenshot = { file: filename, preservedFile: path.relative(out, path.join(runDir, filename)),
           width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20), sha256: sha(bytes), stability,
           location: await evaluate('({url:location.href,scrollY,innerWidth,clientWidth:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth})') };
       } catch (captureError) { result.failure.screenshotError = captureError.message; }
