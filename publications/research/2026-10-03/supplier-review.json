@@ -1,0 +1,289 @@
+{
+  "schema_version": "1.0",
+  "title": "五家原号Plus候选：2026-10-03定点复核",
+  "as_of_utc": "2026-10-03T13:20:00Z",
+  "scope": "只读公开商品、条款及官方材料。未登录、注册、联系第三方、建单、付款、试购、取得真实发票或提交账号凭据。未修改或发布网站。",
+  "baseline": "先读研究总库v10及第3—8轮/票据增补包v4，并核对线上report.html；本轮重复项只刷新明确成功观察的日期，不计新供应商。",
+  "evidence_legend": {
+    "observed": "证实页面在观察时显示该内容；不等于证实卖家履约、资金或授权",
+    "merchant_claim": "正规卡、质保、发票、库存、免凭据等仍是商家声称",
+    "unknown": "没有取得相应证据；费用为null，不能填0"
+  },
+  "summary": [
+    "本轮新增合格含票≤170元候选0家，真实大陆发票验真0笔，完整自主合法/下级分销路径0条。",
+    "CatFK支付宝110.95元、小久支付宝115.03元已定点重读；它们仍不是含票成交价。",
+    "Morimm退款条款已成功实时读到，修正此前No Content的访问状态。退款仅u链接/币安ID，当前最终费用和周期仍不明。",
+    "ChatShare166.40元保留10月2日历史日期；本轮准确SKU没有成功重核。",
+    "所有五家含全部必需费用的大陆含票总额仍为未知。公开正规资金、官方渠道或平台资质均不足以完成上游合法来源验证。"
+  ],
+  "net_deltas": [
+    "Morimm现行条款不为空：实时读取恢复；加密渠道退款限制得到当前页面证据。",
+    "CatFK微信选中后UI仍显示110.95/费1.96，与旧112.04不同；未建单，不判定实际费率变化。",
+    "重新把Morimm周期标为本轮未明确，而不从历史月卡或30天售后自动推出当前订阅期。"
+  ],
+  "suppliers": [
+    {
+      "id": "catfk_ai_source",
+      "merchant": "AI源头 / CatFK云猫",
+      "sku": "g8ptrd",
+      "period": "1个月（本轮商品声明）",
+      "single_purchase": "公开页面1件起购；未成交",
+      "display_cny": 108.99,
+      "known_payment_fee_cny": 1.96,
+      "payment_preview_cny": 110.95,
+      "price_evidence_date": "2026-10-03",
+      "agency_requirement": "零售页面未显示必需代理费；批量代理条件未公开",
+      "invoice": "商称可开；大陆票种、开票方全称/税号、票项、金额、附费均未知",
+      "invoice_extra_cny": null,
+      "all_in_cny": null,
+      "credentials": "交付CDK；本轮公开准确SKU没有完整兑换凭据流程，不能假定免凭据",
+      "after_sales": "商称30天；平台正常售后为下单起24小时，超过后按卖家质保和平台规则处理",
+      "resale_authorization": "未取得准确SKU原厂或有效下级分销授权",
+      "delta": "支付宝旧价本次重新观察一致；微信选中后金额仍110.95，与旧112.04不同，暂记预览差异",
+      "sources": [
+        "S01",
+        "S02",
+        "S14"
+      ]
+    },
+    {
+      "id": "xiaojiu",
+      "merchant": "小久",
+      "sku": "j0eswz / gpt plus",
+      "period": "1个月（云猫本轮商品声明）",
+      "single_purchase": "云猫1件起购；原站游客可购，未成交",
+      "display_cny": 113.0,
+      "known_payment_fee_cny": 2.03,
+      "payment_preview_cny": 115.03,
+      "price_evidence_date": "2026-10-03",
+      "agency_requirement": "单件零售未显示代理费；低费代理卡网具体条件未核",
+      "invoice": "大陆票支持、主体、票项、费用未知；发票/订阅查询链接不构成大陆票证据",
+      "invoice_extra_cny": null,
+      "all_in_cny": null,
+      "credentials": "云猫页明确需Cookie/Session；可能涉及账号和聊天资料访问",
+      "after_sales": "原站称掉订按天退，封号不保；云猫页成功后不退换及多项排除，须同单统一条款",
+      "resale_authorization": "同商互链和一卡一付声明不证明实际支付人、持卡授权或下级分销权",
+      "delta": "115.03元本次重新观察一致；112元是标CNY但要求USDT的另一入口，不能当全费人民币价；手机号核验成本未知",
+      "sources": [
+        "S03",
+        "S04",
+        "S14"
+      ]
+    },
+    {
+      "id": "morimm",
+      "merchant": "Morimm",
+      "sku": "gptplus",
+      "period": "历史为月卡；本轮准确商品可见正文未明确周期",
+      "single_purchase": "数量1可选，但须登录后购买；本轮未登录",
+      "display_cny": 115.0,
+      "known_payment_fee_cny": null,
+      "payment_preview_cny": null,
+      "price_evidence_date": "2026-10-03",
+      "agency_requirement": "115元单件/5件113元为公开阶梯；后续费用未知，未核必需代理费",
+      "invoice": "大陆票支持、开票主体、票项、费用均未知",
+      "invoice_extra_cny": null,
+      "all_in_cny": null,
+      "credentials": "明确Token；隐私页没有处理方、留存、删除说明",
+      "after_sales": "用过卡密不退换；实时服务条款仅支持u链接/币安ID退款，非已证原路人民币退款",
+      "resale_authorization": "未取得原厂或准确SKU下级授权",
+      "delta": "纠正空条款读取状态：实时正文已读出加密渠道退款限制；商品阶梯价格一致，但当前周期和最终费用未闭合",
+      "sources": [
+        "S05",
+        "S06",
+        "S07"
+      ]
+    },
+    {
+      "id": "yinlujing",
+      "merchant": "引路鲸 / ChatGPT直充站",
+      "sku": "LIST-000001",
+      "period": "1个月（本轮月付商品声明）",
+      "single_purchase": "公开单件订单摘要；未建单",
+      "display_cny": 135.0,
+      "known_payment_fee_cny": null,
+      "payment_preview_cny": 135.0,
+      "price_evidence_date": "2026-10-03",
+      "agency_requirement": "零售无需显示代理费；进货代理需3000元，且不抵货款；返佣推广是另一模式",
+      "invoice": "商称增值税普通发票；FAQ说默认价格不含企业发票，开票方/税号/附费未知",
+      "invoice_extra_cny": null,
+      "all_in_cny": null,
+      "credentials": "FAQ称不收任何会话凭据/验证码/远程控制；未演示，不认定已验证免凭据",
+      "after_sales": "有质保SKU掉订扣20%服务费再按天折算；封号排除；可选30元加急未计必需价",
+      "resale_authorization": "母品牌明确未获厂商官方授权；商家代理计划本身不能证明OpenAI分销权",
+      "delta": "135元和3000元资格费本次复核一致；无新增含票总价或授权证据",
+      "sources": [
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "chatshare",
+      "merchant": "ChatShare",
+      "sku": "yrjao6",
+      "period": "1个月（聚合页及历史准确SKU声明）",
+      "single_purchase": "历史单件路径；本轮准确SKU未重读成功",
+      "display_cny": 160.0,
+      "known_payment_fee_cny": 6.4,
+      "payment_preview_cny": 166.4,
+      "price_evidence_date": "2026-10-02（历史，未刷新）",
+      "agency_requirement": "历史零售未显示代理费；当前交易条件未核",
+      "invoice": "商称正规发票；具体票种、Plus开票方/税号、票项及票费未知；API对公不能推到Plus",
+      "invoice_extra_cny": null,
+      "all_in_cny": null,
+      "credentials": "既有充值入口需Session，未重新提交或操作",
+      "after_sales": "聚合页称充值问题30天处理、若充值原因封号按剩余天数退；准确SKU现行细则未重读",
+      "resale_authorization": "官方渠道为卖方宣传；未取得Plus原厂或下级授权文件",
+      "delta": "只能重读聚合页；166.40保持历史值，距170元仅3.60元，未知附费可能越限",
+      "sources": [
+        "S12",
+        "S13"
+      ]
+    }
+  ],
+  "authorization_boundary": [
+    "官方礼卡零售存在，限定US/USD及实际美国兑换，不能直接适配中国大陆终端；发行人普通持卡条款禁止转售。",
+    "PerfectGift普通企业/API合同禁止转售；API功能本身不授予OpenAI SKU的商业下级分销权。旧战略转售招揽文案本轮未读到，不能当有效专项合同。",
+    "本轮未找到能同时覆盖授权双方、准确个人Plus SKU、地域/终端资格、转售/转批/下级范围及有效期的完整官方材料；不等于证明专门合同绝不存在。",
+    "不研究或采用盗刷、虚假身份/账单地址、优惠资格滥用；不因低价对商家反向定罪。合法资金与用途许可须另外有证。"
+  ],
+  "cost_rule": "实际含票总支出 = SKU价 + 必需支付费 + 已确认开票附费 + 其他必需费用。任一必需费用未知则总额未知。可选加急不强行计入基础价，未满足条件的优惠不抵扣。",
+  "stopping_boundary": "公开页能把价格和限制缩小，但不能无中生有地补全真实票据、收款主体和授权合同。进入合格名单前必须取得对应证据；本轮不为此联系、建单或付款。",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_at_utc": "2026-10-03T13:15:00Z",
+      "access": "云端浏览器实时商品与支付预览",
+      "finding": "108.99元、一件起购、支付宝预览110.95元，手续费1.96元；发票仍要求下单后联系，未列票种、开票方和费用。"
+    },
+    {
+      "id": "S02",
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_at_utc": "2026-10-03T13:16:08Z",
+      "access": "云端浏览器选项与截图",
+      "finding": "切选微信后，选中状态及截图仍显示110.95元/手续费1.96元；与10月1日微信112.04元历史预览不同。未建单，不能判定实际通道收费已改变。"
+    },
+    {
+      "id": "S03",
+      "url": "https://catfk.com/item/j0eswz",
+      "observed_at_utc": "2026-10-03T13:15:51Z",
+      "access": "云端浏览器实时商品与支付预览",
+      "finding": "113元、一件起购、支付宝预览115.03元含费2.03元；明确Plus一个月。商品要求会话凭据、Free状态，成功后不退换，质保排除多种账号情形。"
+    },
+    {
+      "id": "S04",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_at_utc": "2026-10-03T13:18:40Z",
+      "access": "云端浏览器实时商品",
+      "finding": "标价112.00 CNY、游客可购；正文指定USDT付款，未到支付，汇率与链费未知。互链云猫同商家；掉订按天退、封号不保，并把手机号验证交给用户。"
+    },
+    {
+      "id": "S05",
+      "url": "https://morimm.com/products/gptplus",
+      "observed_at_utc": "2026-10-03T13:16:08Z",
+      "access": "云端浏览器实时商品",
+      "finding": "115.00 CNY，五件起113元；数量框为一件，但须登录后购买。要求Token、Free及个人工作区；用过的卡密不退换。当前可见正文未明确订阅月数，历史月卡记录不等于本次周期重核。"
+    },
+    {
+      "id": "S06",
+      "url": "https://morimm.com/terms",
+      "observed_at_utc": "2026-10-03T13:16:54Z",
+      "access": "云端浏览器实时条款",
+      "finding": "正文规定退款仅支持u链接或币安ID。相同时点网页文本提取返回No Content，因此以前的空正文结论应保留为访问限制，不能代表现行条款为空。"
+    },
+    {
+      "id": "S07",
+      "url": "https://morimm.com/privacy",
+      "observed_at_utc": "2026-10-03T13:17:56Z",
+      "access": "云端浏览器实时隐私页",
+      "finding": "只有娱乐测试、不得违法的免责声明；所阅正文没有交代Token处理方、留存期限或删除流程。"
+    },
+    {
+      "id": "S08",
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_at_utc": "2026-10-03T13:16:08Z",
+      "access": "云端浏览器实时商品与订单摘要",
+      "finding": "本人号Plus有质保月付135元，摘要应付135元；可选加急30元未选。尚未填邮箱或建单。称可开增值税普票；掉订先扣20%服务费后按天退，封号不保。"
+    },
+    {
+      "id": "S09",
+      "url": "https://www.chatgqt.plus/faq",
+      "observed_at_utc": "2026-10-03T13:14:55Z",
+      "access": "第一方正文提取",
+      "finding": "称不收密码、验证码、Session、Token、Cookie或远程控制；默认价格不含企业发票，报销流程需先确认。流程没有实际演示。"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_at_utc": "2026-10-03T13:16:54Z",
+      "access": "云端浏览器实时合作页",
+      "finding": "进货代理3000元一次性资格费，与拿货款独立；独立站另2000元、次年999元。可逐单付，但具体代理价登录后才见；零费用的是返佣推广。"
+    },
+    {
+      "id": "S11",
+      "url": "https://yinlujing.com/about/",
+      "observed_at_utc": "2026-10-03T13:14:55Z",
+      "access": "第一方正文提取",
+      "finding": "品牌明确声明未获OpenAI等厂商官方授权。商品页正式授权字样不能升格为原厂授权。"
+    },
+    {
+      "id": "S12",
+      "url": "https://chatshare.info/",
+      "observed_at_utc": "2026-10-03T13:14:55Z",
+      "access": "第一方正文提取",
+      "finding": "公开聚合页仍列本人号Plus160元/月，所有业务开正规发票的声明；对公转账只明确API。页面自标最后更新2025-10-30，因此不算当前结算价。"
+    },
+    {
+      "id": "S13",
+      "url": "https://qfcc99.com/item/yrjao6",
+      "observed_at_utc": "2026-10-03T13:15:17Z",
+      "access": "本轮未取得实时可读准确SKU",
+      "finding": "公开提取为空，本轮浏览器未完成访问；不得刷新其历史166.40元支付预览日期，亦不能推定停业或库存状态。"
+    },
+    {
+      "id": "S14",
+      "url": "https://catfk.com/article/33",
+      "observed_at_utc": "2026-10-03T13:16:54Z",
+      "access": "云端浏览器实时平台规则",
+      "finding": "规则日期2026-05-30。下单起24小时平台售后；N天质保是卖家承诺，不延迟放款，平台不承担连带责任。过24小时在质保内先协商，平台有权扣卖家资金处理；私下交易不覆盖。"
+    },
+    {
+      "id": "S15",
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observed_at_utc": "2026-10-03T13:16:45Z",
+      "access": "原厂帮助中心正文",
+      "finding": "确认授权零售商存在，但目前美国购买/兑换、需实际在美国及USD计价账号；礼卡不是个人Plus经销合同。"
+    },
+    {
+      "id": "S16",
+      "url": "https://mycardterms.com/openai/home/terms/",
+      "observed_at_utc": "2026-10-03T13:17:25Z",
+      "access": "OpenAI所链接发行人条款",
+      "finding": "2026-09-01版，发行人CIMI2604, Inc.；持卡人不可有偿转售，未授权卖家/转卖方来源卡可无效。"
+    },
+    {
+      "id": "S17",
+      "url": "https://www.perfectgift.com/corporate/terms-of-service",
+      "observed_at_utc": "2026-10-03T13:18:20Z",
+      "access": "第一方企业/API条款",
+      "finding": "页面版本2022-10，普通企业通道禁止转售，要求美国/DC实体、美国税号、可核实美国街址。"
+    },
+    {
+      "id": "S18",
+      "url": "https://www.perfectgift.com/corporate/api",
+      "observed_at_utc": "2026-10-03T13:17:25Z",
+      "access": "第一方API正文提取",
+      "finding": "现可读正文只描述奖励/激励API与批量订单功能，没有读到旧资料所说战略转售招揽；不能据缺文断言专门分销计划不存在，也不能据API能力认定授权。"
+    },
+    {
+      "id": "S19",
+      "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries",
+      "observed_at_utc": "2026-10-03T13:18:20Z",
+      "access": "原厂地区政策",
+      "finding": "官方列表未列中国大陆，并警示在列表外访问或提供访问可能导致封禁或暂停；境外卡或大陆票据不会改变地区条件。"
+    }
+  ]
+}

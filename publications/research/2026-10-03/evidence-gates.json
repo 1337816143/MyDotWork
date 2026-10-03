@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "record_id": "research-evidence-gates-20261003-r6",
+  "title": "任务3／5：当前验证范围与证据门槛",
+  "editorial_review_at_utc": "2026-10-03T19:14:00Z",
+  "editorial_review_at_beijing": "2026-10-04T03:14:00+08:00",
+  "date_rule": "审校日期不刷新报价、样片或来源观察日期；下列供货材料沿用2026-10-03 13:20 UTC（北京时间10月3日21:20）截至口径。",
+  "publication_scope": "仅脱敏研究文字、结构化进度和公开来源链接；不含私有媒体、媒体派生帧图/接触表/缩略图、私人聊天或其派生摘要，也不含私有文件地址、个人联系方式或凭据。",
+  "status": "研究与验证准备；尚未验证商业成功或低维护收入",
+  "records": [
+    {
+      "id": "supplier-procurement-evidence",
+      "title": "会员供货候选：采购上限与证据缺口",
+      "source_observations_as_of_utc": "2026-10-03T13:20:00Z",
+      "counts": {
+        "suppliers": 5,
+        "source_access_records": 19,
+        "unique_source_urls": 18,
+        "successful_observation_records": 18,
+        "successful_unique_urls": 17,
+        "failed_exact_sku_access_records": 1,
+        "new_suppliers": 0,
+        "new_qualified_suppliers": 0,
+        "verified_mainland_invoices": 0,
+        "complete_authorized_resale_paths": 0
+      },
+      "count_rule": "这是五家既有候选的19条来源/访问记录，含重复URL和1条未成功读取记录；不是19家、19个新来源或19条独立成功证据。",
+      "purchase_cost_cap_cny": 170,
+      "cost_cap_meaning": "含全部必需费用及合格大陆票据的采购总支出上限；不是售价、利润、收入或保本证明。",
+      "unknown_cost_rule": "必需支付费、汇兑费、票费或其他必需费用任一未知，全费总额保持null/未知，不能当0；可选加急不自动计作必需费用。",
+      "suppliers": [
+        {
+          "name": "AI源头 / CatFK云猫",
+          "display_cny": 108.99,
+          "payment_preview_cny": 110.95,
+          "price_evidence_date": "2026-10-03",
+          "invoice_extra_cny": null,
+          "all_in_cny": null
+        },
+        {
+          "name": "小久",
+          "display_cny": 113.0,
+          "payment_preview_cny": 115.03,
+          "price_evidence_date": "2026-10-03",
+          "invoice_extra_cny": null,
+          "all_in_cny": null
+        },
+        {
+          "name": "Morimm",
+          "display_cny": 115.0,
+          "payment_preview_cny": null,
+          "price_evidence_date": "2026-10-03",
+          "invoice_extra_cny": null,
+          "all_in_cny": null
+        },
+        {
+          "name": "引路鲸 / ChatGPT直充站",
+          "display_cny": 135.0,
+          "payment_preview_cny": 135.0,
+          "price_evidence_date": "2026-10-03",
+          "invoice_extra_cny": null,
+          "all_in_cny": null
+        },
+        {
+          "name": "ChatShare",
+          "display_cny": 160.0,
+          "payment_preview_cny": 166.4,
+          "price_evidence_date": "2026-10-02（历史，未刷新）",
+          "invoice_extra_cny": null,
+          "all_in_cny": null
+        }
+      ],
+      "decision": "五家均未通过全费含票≤170元、授权、主体与履约闭环准入；报价预览和商家声明不等于成交、原厂授权或真实发票。保持定点补证，不以扩名单代替缺口。",
+      "profitability": "收入与净利润尚无可核记录；采购低于170元也不能证明有利润，仍须核实际售价、退款、税费、获客、售后和总工时。",
+      "next_evidence": [
+        "准确SKU及周期、实际用户地区与账号资格",
+        "平台/卖家/收款/上游/开票主体的对应关系",
+        "有效转售或下级分销范围及地域、期限",
+        "所有必需费用、同单售后与真实票据、履约对应证据"
+      ],
+      "action_boundary": "本轮仅整理；未新增外联、登录、建单、付款或凭据提交。"
+    },
+    {
+      "id": "h3-single-shot-hypothesis",
+      "title": "H3：只保留一个待验证服务假设",
+      "current_hypothesis": "5秒原创漫画镜头预演：4至6秒、832×480、24 fps、单场景、固定机位、1至2位原创成年角色；拟交付静音预演、3张验收图和规格说明。",
+      "current_scope": "只整理既有证据、许可缺口与验收表；其他副业资料留作比较。",
+      "paused_history": [
+        "30秒六镜方案",
+        "《等灵感》双角色四镜方案及其90分钟/12次预算"
+      ],
+      "existing_sample": {
+        "sample": "S01",
+        "generation_attempts_for_this_sample": 1,
+        "duration_seconds": 5.167,
+        "process_wall_time": "13分42.375秒",
+        "acceptance": "未按原完整标准通过：抬眼动作未完整实现，发夹方位待核，音轨未试听；抽帧所见不能替代完整播放验收。",
+        "scope_note": "一次生成只属于S01记录；不是项目全部历史生成次数，也不证明重复稳定、需求或盈利。"
+      },
+      "business_evidence": {
+        "recorded_specific_demand_interviews": 0,
+        "verified_customer_orders": 0,
+        "verified_settlements": 0,
+        "net_profit_evidence_records": 0,
+        "actual_net_profit_cny": null,
+        "human_time_and_full_cost": "未知",
+        "low_maintenance_income_validated": false
+      },
+      "validation_order": [
+        "真实需求",
+        "授权与素材许可",
+        "按预定规格样品验收",
+        "首笔真实结算订单",
+        "可重复且低维护的交付记录"
+      ],
+      "license": {
+        "official_url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE",
+        "official_page_checked_at_utc": "2026-10-03T19:12:30Z",
+        "license_date": "2026-08-02",
+        "excluded_territories": [
+          "欧盟",
+          "英国",
+          "韩国",
+          "美国"
+        ],
+        "relevant_sections": [
+          "I.5",
+          "V.4",
+          "Exhibit A.1"
+        ],
+        "summary": "许可地域限制明确涵盖输出的使用、分发与展示。国内客户不自动使全球可访问的样片页合规；公开文字进度不代表样片已经获准公开。",
+        "remaining_gaps": [
+          "本机实际量化版本与固定revision、哈希及随附许可对应",
+          "素材、人物及其他依赖的权利来源",
+          "客户使用地区、投放地区、公开展示范围和适用义务"
+        ],
+        "clearance": "商业交付与公开展示分别核验，当前均未完成；这是证据缺口，不是认定所有商用均被禁止。"
+      },
+      "media_publication": "原视频、音轨、抽帧、接触表和缩略图继续私有；不得通过公开源文件、下载链接、缓存或社交分享预览间接发布。",
+      "future_test_limit": "若后续另获运行授权，单镜内部探索建议主动操作≤45分钟、生成≤3次；不构成本轮运行安排，也不豁免已承诺订单的返工或退款义务。",
+      "repeatability_observation": "至少3笔同规格结算单、2名独立客户及连续30天完整记录仅是建议观察门槛；排除自购及关联拆单，不据此直接宣称稳定盈利。"
+    }
+  ]
+}

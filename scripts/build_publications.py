@@ -10,6 +10,11 @@ PUBLICATIONS = (
     ('research/ai-side-income/data.json', 'dab93d2587a26acc8e1899b2b784c65ec993f0a8aa21e752c64d728a9d9fd9d5'),
     ('research/ai-side-income/sample-v0.1.zip', 'e2f225782e4413a8f55624346f63f1ffd17a9208469ea7d1a82f79701299facc'),
     ('research/ai-side-income/sample-v0.2-candidate.zip', 'a0516f0cb3b6674451464651aef46769906788a56ebe382b1dc388b51eaa688b'),
+    ('research/2026-10-03/index.html', '46ff24ec67200a9723885b945135e666d2f60bfd90bafa76b2b8661e70739aac'),
+    ('research/2026-10-03/supplier-review-original.html', 'cf41c5bbeae9987c7c73d50c874aa29847d1ac0252e18a15ce3d375181554054'),
+    ('research/2026-10-03/supplier-review.json', '7dfa19cfb02a407f2acba4856c9356269f487fc3ace26d9e8b5c25b8fb061ec3'),
+    ('research/2026-10-03/task35-current-plan.txt', 'cf378ea4231a53b329e616da956eef7e4c9fda53e16869cfea0bc6887ca7b241'),
+    ('research/2026-10-03/evidence-gates.json', 'e826cbbc16f861a6ff9a4810943c89955ec7bab49652daa46412a0b3e9cc490c'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 
