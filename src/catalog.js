@@ -60,9 +60,11 @@ if(typeof document!=='undefined')(()=>{
     $(page+'-form').addEventListener('submit',ev=>ev.preventDefault());$(page+'-form').addEventListener('reset',()=>setTimeout(()=>render(page),0));render(page);
   }
   $('hub-summary').innerHTML=[['library',data.counts.artifacts,'已收录成果资料','报告、数据、教程与公开归档'],['websites',data.counts.websites,'明确网站入口','主站与既有个人进化镜像'],['tasks',data.counts.tasks,'公开任务快照','状态与待办分别保留']].map(([id,n,title,note])=>`<a class="hub-stat" href="#${id}"><b>${n}</b><span>${title}</span><small>${note}</small></a>`).join('');
-  const recent=CatalogModel.filter(data.records.filter(r=>r.category==='artifacts'),{},data.tasks).slice(0,4);
+  const featured=['upstream-round3-7','side-income-report'];
+  const reportPool=CatalogModel.filter(data.records.filter(r=>r.category==='artifacts'&&r.type==='report'),{},data.tasks);
+  const recent=[...featured.map(id=>reportPool.find(r=>r.id===id)).filter(Boolean),...reportPool.filter(r=>!featured.includes(r.id))].slice(0,4);
   $('hub-recent').innerHTML=recent.map(r=>`<a class="hub-item" href="${e(r.url)}"><span class="tag">${e(CatalogModel.types[r.type])}</span><div><b>${e(r.title)}</b><small>${date(r.updatedAt)}</small></div><span aria-hidden="true">↗</span></a>`).join('');
-  $('hub-tasks').innerHTML=['project-1','project-5','project-6','project-8'].map(id=>data.tasks.find(t=>t.id===id)).filter(Boolean).map(t=>`<a class="hub-item" href="#tasks" data-task-id="${e(t.id)}"><div><b>${e(t.title)}</b><small>${e(t.status)} · ${date(t.updatedAt)}</small></div><span aria-hidden="true">→</span></a>`).join('');
+  $('hub-tasks').innerHTML=['project-1','project-17','project-5','project-6'].map(id=>data.tasks.find(t=>t.id===id)).filter(Boolean).map(t=>`<a class="hub-item" href="#tasks" data-task-id="${e(t.id)}"><div><b>${e(t.title)}</b><small>${e(t.status)} · ${date(t.updatedAt)}</small></div><span aria-hidden="true">→</span></a>`).join('');
   document.querySelectorAll('[data-task-id]').forEach(a=>a.addEventListener('click',()=>{$('tasks-task').value=a.dataset.taskId;render('tasks');}));
   $('catalog-scope').textContent=data.scope+' 当前任务整理快照：'+date(data.projectSnapshotUpdatedAt)+'。';
   $('hub-search').addEventListener('submit',ev=>{ev.preventDefault();$('library-q').value=$('hub-query').value;render('library');location.hash='library';});
