@@ -2,7 +2,7 @@
 // Runs only in the GitHub-hosted QA job; no user-computer or authenticated-site access.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto'),{spawn}=require('node:child_process');
 const expected='84273aea95537ac7bbcad339ded1696d8736f8a9',out=path.resolve('output/public-ui-qa');fs.mkdirSync(out,{recursive:true});
-const results={expectedSource:expected,version:'1.7.1',environment:'GitHub-hosted Linux Chromium',cases:[],errors:[],status:'running'};
+const results={expectedSource:expected,version:'1.7.1',environment:'GitHub-hosted Linux Chromium',cjkFont:process.env.QA_CJK_FONT,cases:[],errors:[],status:'running'};
 const persist=()=>fs.writeFileSync(path.join(out,'results.json'),JSON.stringify(results,null,2));
 const pause=ms=>new Promise(r=>setTimeout(r,ms));let ws,sequence=0;const pending=new Map(),downloads=[];
 const browser=spawn(process.env.CHROME_PATH,['--headless=new','--no-sandbox','--disable-gpu','--disable-extensions','--no-first-run','--remote-debugging-address=127.0.0.1','--remote-debugging-port=9246','--user-data-dir='+path.join(out,'profile'),'about:blank'],{stdio:['ignore','ignore','pipe']});
@@ -20,6 +20,7 @@ async function record(row){results.cases.push(row);persist();console.log(JSON.st
 (async()=>{try{
  await until(async()=>{try{const targets=await(await fetch('http://127.0.0.1:9246/json/list')).json();const target=targets.find(x=>x.type==='page');if(!target)return false;ws=new WebSocket(target.webSocketDebuggerUrl);await new Promise((res,rej)=>{ws.onopen=res;ws.onerror=rej;});return true;}catch{return false;}},'browser startup');
  ws.onmessage=event=>{const m=JSON.parse(event.data);if(m.id&&pending.has(m.id)){const p=pending.get(m.id);pending.delete(m.id);clearTimeout(p.timer);m.error?p.reject(Error(m.error.message)):p.resolve(m.result);}if(m.method==='Browser.downloadProgress')downloads.push(m.params);if(m.method==='Runtime.exceptionThrown')results.errors.push(m.params.exceptionDetails?.text||'Page exception');};
+ assert(/Noto/i.test(process.env.QA_CJK_FONT||''),'CJK test font is installed');
  await send('Page.enable');await send('Runtime.enable');
  const sourceManifest=await(await fetch('https://1337816143.github.io/MyDotWork/release-manifest.json')).json();assert.equal(sourceManifest.sourceCommit,expected);assert.equal(sourceManifest.contentVersion,'1.7.1');assert.equal(sourceManifest.artifacts.length,18);
  const mirrorManifest=await(await fetch('https://1337816143.github.io/Evolution/data/release-manifest.json')).json();assert.equal(mirrorManifest.dotArchive.sourceCommit,expected);
