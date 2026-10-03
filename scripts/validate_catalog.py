@@ -60,7 +60,7 @@ for mutate in [lambda m:m['statusSnapshot'].update(mode='realtime'),lambda m:m['
     try:load_catalog(bad,projects)
     except AssertionError:pass
     else:raise AssertionError('Unverified state metadata accepted')
-for mutate in [lambda m:m['statusSnapshot'].update(staleAfterMinutes=0),lambda m:m['statusSnapshot']['items'][0]['verification'].update(kind='message'),lambda m:m['statusSnapshot']['items'][0]['verification'].update(observedAt='2099-01-01T00:00:00Z'),lambda m:m['statusSnapshot']['items'][0]['verification'].update(links=[]),lambda m:m['statusSnapshot']['publicationChecks']['source'].update(runUrl='https://example.org/run'),lambda m:m['statusSnapshot']['publicationChecks']['mirror'].update(upstreamCommit='0'*40),lambda m:m['statusSnapshot']['publicationChecks'].update(checkedAt='2099-01-01T00:00:00Z')]:
+for mutate in [lambda m:m['statusSnapshot'].update(staleAfterMinutes=0),lambda m:m['statusSnapshot']['items'][0]['verification'].update(kind='message'),lambda m:m['statusSnapshot']['items'][0]['verification'].update(observedAt='2099-01-01T00:00:00Z'),lambda m:m['statusSnapshot']['items'][0]['verification'].update(kind='public_release',links=[]),lambda m:m['statusSnapshot']['publicationChecks']['source'].update(runUrl='https://example.org/run'),lambda m:m['statusSnapshot']['publicationChecks']['mirror'].update(upstreamCommit='0'*40),lambda m:m['statusSnapshot']['publicationChecks'].update(checkedAt='2099-01-01T00:00:00Z')]:
     bad=copy.deepcopy(manifest);mutate(bad)
     try:load_catalog(bad,projects)
     except AssertionError:pass

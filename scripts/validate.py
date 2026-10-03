@@ -32,6 +32,8 @@ print(f'PASS: standalone HTML, {len(data)} records, anchors, version, hash, and 
 
 from validate_archive import validate
 validate()
+from test_archive_integrity import run_tests as run_archive_integrity_tests
+run_archive_integrity_tests()
 
 from validate_dashboard import validate_dashboard
 validate_dashboard()
