@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "covered_rounds": [
     3,
     4,
@@ -52,6 +52,24 @@
         "reference_url_count_note": "source_catalog还保留复查、无法取得正文的手册/登录页及排除来源，URL总数不能当可读有效内容来源数。"
       },
       "retained": "既有价格历史、source ID、包身份与文件路径保留；本轮没有新零售店或新价格资格认定。"
+    },
+    {
+      "version": "1.2.0",
+      "evidence_as_of_utc": "2026-10-03T04:50:44.207781+00:00",
+      "summary": "增补七家收款/开票/同SKU票项/转售权矩阵、税务官方查验边界、企业经销例子和可复制询证清单；原有价格、公式、排名及第3—8轮内容保留。",
+      "invoice_evidence_delta": {
+        "date": "2026-10-03",
+        "chapter": "invoice_authority_20261003",
+        "merchant_rows": 7,
+        "source_records": 32,
+        "url_index_additions": 16,
+        "url_index_reobserved": 16,
+        "record_count_note": "共32条索引记录，包含既有来源复读、历史沿用及失败/摘录记录；不是32条新有效证据。Morimm等来源也已在既有总库出现，不以第3—8轮包中缺URL而计为净新增。",
+        "index_scope_note": "新增URL只表示此前补充包目录未收录，不等于首次发现、可读全文或净新有效证据。",
+        "no_price_reranking": true,
+        "actual_invoices_verified": 0,
+        "new_qualified_upstreams": 0
+      }
     }
   ],
   "latest_round_delta": {
@@ -73,8 +91,8 @@
     "reference_url_count_note": "source_catalog还保留复查、无法取得正文的手册/登录页及排除来源，URL总数不能当可读有效内容来源数。"
   },
   "package_id": "ai_upstream_public_round3_7_20261002",
-  "title": "AI上游研究：第3—8轮公开证据补充包",
-  "as_of_utc": "2026-10-02T15:34:27Z",
+  "title": "AI上游研究：第3—8轮与票据授权核验增补",
+  "as_of_utc": "2026-10-03T04:50:44.207781+00:00",
   "language": "zh-CN",
   "scope": "公开页面、SKU价格、票据声明、账号控制、供应链准入、原厂条款和成本分析。仅为已记录观察的整合，不含私人对话、私人账号或凭据。",
   "research_limits": {
@@ -12481,6 +12499,676 @@
         "AWS正式受限经销和Claude服务伙伴门槛有公开证据；大陆终端/个体准入未证。"
       ],
       "archive_context": "历史观察档案：保留当时内容；当前解释以current_view与correction_log为准，不可逐轮累加独立供应商。"
+    },
+    "invoice_authority_20261003": {
+      "schema_version": "1.0",
+      "title": "供应商发票与供货权证据矩阵：细化核验增补",
+      "research_date_utc": "2026-10-03",
+      "completed_at_utc": "2026-10-03T04:50:44.207781+00:00",
+      "scope": "公开页面、票据与授权取证标准；未联系商家、建单、购买或取得真实票据。不含私人对话、个人账号或凭据。",
+      "baseline": "沿用第3—8轮历史观察；本增补不更新价格、不重排候选。",
+      "summary": [
+        "五家主候选及两家既有对照，均没有闭合准确开票方、实际收款方、同单票项和可下级转售权限。",
+        "没有收到可查验真实票据；验真数仍为0。未知项不填0，不把商家声明升格为监管或原厂证明。",
+        "本轮主要增量是统一取证方法、票据类别/查验边界、B2B原证完整性分级及可复制询证清单；现有价格和商家身份结论没有实质上调。",
+        "新增官方企业经销落地/日本限定企业合作例子，不构成个人Plus新供货候选；没有新增超过170元的Plus渠道。"
+      ],
+      "supplier_matrix": [
+        {
+          "id": "catfk",
+          "merchant": "AI源头 / CatFK云猫",
+          "group": "五家主候选",
+          "operator_name_claim": null,
+          "invoice_type_claim": "商称可开票，票种未闭合",
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "CatFK是寄售平台入口；页面支付方式、平台备案线索均不能代替该卖家、本单收款或开票名称。",
+          "resale_terms": "未取得准确卖家对该SKU的转售许可，更未取得原厂授权链。",
+          "sku_to_invoice_item": "g8ptrd为本人号Plus代充/CDK；将开服务费、软件服务还是订阅全额票，未知。",
+          "gaps": [
+            "卖方法定名称与追索地址",
+            "本单收款方及代收关系",
+            "大陆普/专票、税号、全额/服务费票、全部费用",
+            "允许对外转售该准确SKU的合同"
+          ],
+          "source_ids": [
+            "M01",
+            "M02"
+          ],
+          "evidence_status": "沿用第6轮主体结论；本轮页面正文未成功复核",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        },
+        {
+          "id": "xiaojiu",
+          "merchant": "小久",
+          "group": "五家主候选",
+          "operator_name_claim": null,
+          "invoice_type_claim": null,
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "官网USDT与云猫人民币入口相互关联，只能建立销售入口关系；不是同一收款法人的证明。",
+          "resale_terms": "商品里的代理卡网、自助兑换和卡付说明不足以证明转售许可；第6轮terms无正文。",
+          "sku_to_invoice_item": "本人号Plus与发票/订阅查询入口有关联；该入口未展示大陆税务票据，且研究不传Session。",
+          "gaps": [
+            "国内票是否支持、票种与开票方",
+            "人民币/USDT各通道实际收款主体",
+            "票项与Plus订阅/代充服务的对应关系",
+            "商家与真实执行上游之间的权限"
+          ],
+          "source_ids": [
+            "M03",
+            "M04"
+          ],
+          "evidence_status": "商品正文本轮重读；条款沿用第6轮",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        },
+        {
+          "id": "chatshare",
+          "merchant": "ChatShare",
+          "group": "五家主候选",
+          "operator_name_claim": null,
+          "invoice_type_claim": "商称正规发票，具体普/专/数电未明",
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "公告仅说API服务支持对公转账，不能扩展到Plus代充；发卡平台或客服名称不是收款法人。",
+          "resale_terms": "未取得Plus代充可转售、可发展下级代理的具体条款；官方渠道文案没有厂商许可文件。",
+          "sku_to_invoice_item": "Plus代充、API、镜像分别是不同服务；任何样票须明确对应Plus代充，不能拿API票样替代。",
+          "gaps": [
+            "Plus而非API的收款与票据条款",
+            "开票方全称税号、票费及金额",
+            "Plus准确SKU对应的样票/订单",
+            "允许转售与下级范围"
+          ],
+          "source_ids": [
+            "M05",
+            "M06"
+          ],
+          "evidence_status": "聚合页本轮重读；准确SKU沿用第6轮",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        },
+        {
+          "id": "yinlujing",
+          "merchant": "引路鲸 / ChatGPT直充站",
+          "group": "五家主候选",
+          "operator_name_claim": null,
+          "invoice_type_claim": "增值税普通发票（商称）",
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "人民币扫码只说明付款方式；隐私及关于页没有补全本单收款企业名称。",
+          "resale_terms": "母站明确没有厂商官方授权；既有3000元入驻费是商家代理条件，不能购买或证明OpenAI货权。",
+          "sku_to_invoice_item": "LIST-000001：Plus代充月付有质保；票面项目名称未公开。FAQ说明价格非默认含企业票。",
+          "gaps": [
+            "同单销售/收款/开票主体及一致性",
+            "发票加价是否有、最终全额与票项",
+            "转售权限与“正式授权”准确授权人",
+            "商品说明和代理合同中的退款、区域及终端限制"
+          ],
+          "source_ids": [
+            "M07",
+            "M08",
+            "M09",
+            "M10"
+          ],
+          "evidence_status": "第一方公开文本本轮重读；未实际建单",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        },
+        {
+          "id": "morimm",
+          "merchant": "Morimm",
+          "group": "五家主候选",
+          "operator_name_claim": null,
+          "invoice_type_claim": null,
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "未取得本单最终收款主体；客服名、店名和结算渠道不能替代法人。",
+          "resale_terms": "未取得转售授权；本轮可提取terms显示No Content，不覆盖历史条款或证明允许一切用途。",
+          "sku_to_invoice_item": "gptplus为既有Plus代充SKU；大陆票支持、对应服务名称和金额均未知。",
+          "gaps": [
+            "大陆票是否能开及是谁开",
+            "当前生效条款版本、退款币种与原路退款",
+            "真实销售主体与收款关系",
+            "单件/批量同SKU转售许可"
+          ],
+          "source_ids": [
+            "M11",
+            "M12",
+            "M13"
+          ],
+          "evidence_status": "部分网页文本可取，实时完整条款未确认；不重做价格判断",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        },
+        {
+          "id": "getaiai",
+          "merchant": "GETAIAI",
+          "group": "已有补充对照",
+          "operator_name_claim": "ClyGen Inc.（网站自称运营者，未登记核验）",
+          "invoice_type_claim": "电子发票；大陆票种未闭合",
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "运营者ClyGen Inc.不自动等于大陆开票方或实际收款方；支付提供方类别不是本单商户身份。",
+          "resale_terms": "有条件reseller申请，须审核与双方确认；原厂授权明确否认，零售条款排除未授权转售售后。",
+          "sku_to_invoice_item": "原号Plus充值；此前未闭合实际订阅周期，不能由30天质保推定服务月。票项仍未知。",
+          "gaps": [
+            "大陆开票实体及其与运营者关系",
+            "实际收款方、代收/委托开票依据",
+            "明确订阅期、票种与发票金额",
+            "适用SKU/地区/下级范围的合作合同"
+          ],
+          "source_ids": [
+            "M14",
+            "M15",
+            "M16",
+            "M17"
+          ],
+          "evidence_status": "与第3轮已知结论一致，不计新候选",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        },
+        {
+          "id": "uppluspro",
+          "merchant": "UpPlusPro",
+          "group": "已有补充对照",
+          "operator_name_claim": null,
+          "invoice_type_claim": "国内公司抬头电子普通发票（商称）",
+          "invoice_issuer_legal_name_claim": null,
+          "invoice_issuer_tax_id_claim": null,
+          "payment_recipient_legal_name_claim": null,
+          "payment_chain_note": "KyrenPay是托管支付名称，尚未取得支付凭证中的收款商户法定名称。",
+          "resale_terms": "条款要求本人账号，首页不适合转售账号；无厂商代理或授权关系。不由此断言不存在另行合作方案。",
+          "sku_to_invoice_item": "本人号Plus代充；商称按实付额开票、核对后7自然日内发，票项和发行人未公开。",
+          "gaps": [
+            "开票企业全称税号及支付方一致性",
+            "未明票费、支付费和最终金额",
+            "合同是否允许为客户代采/转售",
+            "票项与实际代订阅业务关系"
+          ],
+          "source_ids": [
+            "M18",
+            "M19",
+            "M20"
+          ],
+          "evidence_status": "已有零售自用开票线索；本轮重读未提升为上游",
+          "actual_invoice_verified": false,
+          "invoice_transaction_match_verified": false,
+          "upstream_qualified": false
+        }
+      ],
+      "invoice_validation": {
+        "purpose": "这是采购取证标准，不是税务机关的真伪或抵扣结论；无票样即无验真。",
+        "taxonomy": [
+          "票种和介质分开记录：普通/专用是票种；纸质、电子、数电是不同形态或体系。只说“数电票”没有回答普票还是专票。",
+          "商家收据、订单账单、OpenAI/Apple境外invoice、国内增值税发票分别归类。境外票据有条件下可用于企业所得税税前扣除，不能泛称一律不可报销；也不能把它标成大陆增值税专票或自动抵扣凭证。",
+          "数电票没有旧版收款人/复核人/发票代码等字段并不当然是假票；先识别票种和版式再校验。"
+        ],
+        "minimum_evidence": [
+          "销售/合同主体全称；实际收款商户全称；开票销售方全称与纳税人识别号。若不一致，取得代收、代理或委托关系解释和有效依据，不能仅凭差异直接判假。",
+          "准确SKU、本人号还是成品/席位/API、服务起止、数量；发票项目名称、规格、税率/征收率、税額、不含税金额及价税合计。确认全额开票还是仅服务费开票。",
+          "用同一笔已完成交易关联订单、交付记录、脱敏支付记录及票据。商家通用样票只证明票样声明，不能证明未来本单已开或资金来源合法。",
+          "数电票通常需20位发票号码、开票日期、价税合计及官方表单验证码；传统票据按当时官方表单另备代码、金额或校验码。仅留脱敏票样无法完成必要字段查验时，状态应保留“未查验”。",
+          "取得官方查验结果后仍分别检查票面信息、订单/服务相符、红冲状态及收款关系；查验信息一致不证明上游支付卡授权、可转售、最终抵扣资格或整个交易合规。"
+        ],
+        "all_in_cost_rule": "含票现金总支出＝准确SKU价＋必需支付费＋确认的开票服务附费＋其他必须费用，减去确定可用折扣。未知保持null；商家所称税点单列为商家加价，不擅自当法定税率，也不与票面税额重复相加。",
+        "states": [
+          "仅商称可开",
+          "票种/主体/费用书面明确",
+          "收到可关联的真实交易票据",
+          "官方查验信息一致",
+          "订单/服务/资金关系检查完成"
+        ],
+        "current_state": "所有候选都未到收到并查验真实票据阶段；可读页不能把后续状态提前填真。",
+        "source_ids": [
+          "T01",
+          "T02",
+          "T03",
+          "T04",
+          "T05",
+          "T06"
+        ]
+      },
+      "b2b_examples": [
+        {
+          "example": "OpenAI公开商业服务协议",
+          "product": "API、ChatGPT Enterprise/Business等商业服务；个人Plus不在该一般范围内",
+          "named_supplier": "OpenAI；具体经销商需另外确定",
+          "territory": "第16.12条要求客户及终端在受支持地区",
+          "resale_scope": "第6节与Order Form定义承认通过经销商采购；第3.1及3.3同时限制普通客户转卖账号/API key",
+          "evidence_complete": false,
+          "missing": [
+            "哪个主体获授什么SKU的经销权",
+            "实际专项经销合同、授权期限及地区",
+            "允许本用户及其下级分销的条款"
+          ],
+          "source_ids": [
+            "B01"
+          ],
+          "use": "证明官方存在经销结构；不能由公开客户协议自行取得经销权"
+        },
+        {
+          "example": "PwC美国/英国ChatGPT Enterprise",
+          "product": "ChatGPT Enterprise许可证及企业落地服务",
+          "named_supplier": "PwC美国和英国机构，公告未列本用户将签约的精确合同实体",
+          "territory": "公告说明美国/英国机构；不能把机构所在地自动推成全部授权地域条款",
+          "resale_scope": "正式公告明说reseller，2025英国年报有实际客户案例",
+          "evidence_complete": false,
+          "missing": [
+            "签署的专项经销合同原文和准确实体",
+            "SKU/席位/周期/授权区域附件",
+            "向其他经销商转批、自由定价、下级授权范围",
+            "本用户准入及价格/税费/库存承诺"
+          ],
+          "source_ids": [
+            "B02",
+            "B03"
+          ],
+          "use": "可证实正式企业经销与落地业务；不是Plus批发样板"
+        },
+        {
+          "example": "SB OAI Japan GK / Crystal intelligence",
+          "product": "Crystal intelligence企业AI整合方案；并非个人Plus月卡",
+          "named_supplier": "SB OAI Japan GK；OpenAI伙伴目录可对应",
+          "territory": "原厂目录为Japan；联合公告描述日本独家企业方案",
+          "resale_scope": "有特定方案的销售/部署范围说明，无本用户可使用的下级授权文本",
+          "evidence_complete": false,
+          "missing": [
+            "准确产品商业SKU与订单附件",
+            "公开专项分销合同及下级转售条款",
+            "个人Plus权限、跨区终端权限、批发价及准入条件"
+          ],
+          "source_ids": [
+            "B04",
+            "B05",
+            "B06"
+          ],
+          "use": "主体和地域比匿名商家清楚；不能迁移为大陆个人Plus上游"
+        }
+      ],
+      "full_public_plus_b2b_authorization_found": false,
+      "b2b_conclusion": "未取得同时覆盖明确授权双方、准确个人Plus SKU、授权地域、终端资格、转售/转批/下级范围与有效期的完整公开合同。找不到公开合同不证明不存在；也不能因此假定用户已获授权。",
+      "inquiry_draft": {
+        "destination": "尚未指定的候选供应商；仅复制备用，未发送",
+        "text": "你好，我想先核实你们这款 ChatGPT Plus 本人账号充值服务的采购条件，请按下面逐项书面回复，暂不下单：\n1. SKU与交付：请给准确商品链接/编号、官方套餐名、服务周期和起算方式，说明是本人号订阅、成品号、团队席位、礼卡还是API。有哪些旧订阅、地区、账号状态限制？\n2. 单件总价：一件以人民币支付的最终金额是多少？请分别列商品价、支付手续费、开票附费和其他必付费用，并说明报价有效期。不充值预存、不交代理费时能否单件购买？\n3. 发票：能否就这一SKU开中国大陆普通/专用发票，是否为数电票？开票销售方全称、纳税人识别号、票面项目、票面税率/征收率、价税合计分别是什么？开全额还是只开服务费？多久交付？\n4. 主体：销售合同方、实际收款商户、开票方分别是谁？如有平台代收或其他主体开票，请说明关系并提供相应依据。请先提供不含其他客户隐私的票样，后续实际订单再以本单原始凭证查验。\n5. 供货：单件与5/10/50件各自的供价、最低量、库存更新时间、每日可履约量、交付时效和补货条件是什么？是否有押金、预存、年费、提现门槛或不可退费用？\n6. 售后：未充值、充值失败、掉订阅、封号、重复充值、账号验证和供货中断分别怎么处理？请给退款公式、最低/最高退款、币种、原路或转账方式、到账时限，以及开票后退货红冲如何处理。\n7. 转售权：如果允许我转售这款服务、自由定价或发展下级代理，请给适用这一SKU的书面合同，列明授权方、被授权方、期限、允许地域/终端用户、渠道和下级范围。若只有你们店铺许可而没有厂商授权，请分别说明，不要用API文档或伙伴徽标替代。\n8. 上游：请说明实际执行与采购路径，并提供同笔已完成且可合法披露的脱敏采购/官方订阅凭证及资金结算对应记录。请遮去银行卡全号、安全码、账号密码、Session、Token及其他客户资料；不需要发送任何登录凭据。",
+        "merchant_specific": [
+          {
+            "merchant": "AI源头 / CatFK",
+            "ask": "请明确是店铺卖家还是云猫平台开票；平台1.8%服务费票与订阅/代充商品票分别开多少。不要拿平台营业资质当卖家授权。"
+          },
+          {
+            "merchant": "小久",
+            "ask": "982xj的“发票查询”返回的是OpenAI/支付方账单，还是中国大陆税务发票？两类票分开回答；不要要求先交Session才能回答票种和主体。"
+          },
+          {
+            "merchant": "ChatShare",
+            "ask": "“API支持对公”是否也适用Plus代充？请给Plus准确SKU的票样和收款/开票方，不能用镜像或API的票据替代。"
+          },
+          {
+            "merchant": "引路鲸",
+            "ask": "确认LIST-000001单件的含票总价，以及“正式授权交付”的授权人和权限。母站已声明未获厂商授权，应分别写店铺合作许可与厂商权利。"
+          },
+          {
+            "merchant": "Morimm",
+            "ask": "请给现行完整服务/隐私条款及生效日，并明确退款是原路人民币还是USDT。大陆票支持与否须直接回答，不能仅给查询入口。"
+          },
+          {
+            "merchant": "GETAIAI",
+            "ask": "ClyGen Inc.是否是合同、收款及开票方？若中国大陆票由其他公司开，说明真实交易及双方关系；另给Plus实际服务周期和已批准的reseller方案。"
+          },
+          {
+            "merchant": "UpPlusPro",
+            "ask": "本人账号限制下是否另有代客采购/转售合同？请给KyrenPay结算中实际商户名称、国内开票公司和票费，不把支付服务商品牌当收款主体。"
+          }
+        ]
+      },
+      "self_supply_routes": [
+        {
+          "route": "零售对比/采购助理",
+          "now": "可整理公开SKU、条款、费用表和采购检查清单；用户自己完成符合其资格的官方采购可作为交付设计。",
+          "missing": "实际客户、合同及当地经营/税务安排；涉及代采和账号资料仍需具体许可。",
+          "cannot_claim": "这不等于已经掌握Plus供货源头或可批量转售。"
+        },
+        {
+          "route": "自有API应用/实施服务",
+          "now": "可先设计计费、成本模型、账号隔离、使用条款及客户端不暴露密钥的架构。",
+          "missing": "经营与终端地区资格、可用付款/账户、原厂或平台适用合同、应用部署和稳定性验证。",
+          "cannot_claim": "API预算不能当个人Plus库存；开发许可不能当账号/API key转售许可。"
+        },
+        {
+          "route": "正式B2B经销",
+          "now": "可准备企业材料、SKU/地域/下级范围问卷，比较原厂目录和官方合作项目。",
+          "missing": "被授权实体、专项合同/订单、准确产品及地域、下级权利、价格/账期/库存/退出条款。",
+          "cannot_claim": "没有公开完整Plus专项授权样本，不能承诺注册合作计划即通过。"
+        },
+        {
+          "route": "第三方CDK/充值上游",
+          "now": "可制作本地空白订单台账、凭证关联字段和退款压力测试，不接真实客户凭据。",
+          "missing": "卖家与开票/收款关系、真实支付权、准确SKU的再销售合同、完整含费价、至少完整续费/退款验证。",
+          "cannot_claim": "买一个会员只能有限观察一单交付，不能替代授权、地区资格、真实持卡授权或稳定供给验证。"
+        }
+      ],
+      "priority_gates": [
+        "先书面确认票种、三方主体、准确SKU及全费价；不需要先购买会员才能回答。",
+        "再取得真实有效的具体转售合同和上游支付/采购证据，按商品、地域、终端及下级分别核对。",
+        "如以后用户批准交易，再做有上限的准确SKU试单，保存本单交易票据并在官方平台查验；试单通过只证该单，不自动证明长期库存。",
+        "以完整续费与售后观察补稳定性证据；关键权限、地区、主体或票据缺失时停止升级资格，不用增加营销来源凑数。"
+      ],
+      "access_limits": [
+        "部分来源本轮未取得完整可读正文；未登录网页及未取得的真实交易材料均不能据公开页面补全。",
+        "网页读取失败或只能取得摘要时，逐条保留访问状态，不据此判断商家停业、拒绝开票或改变主体。",
+        "CatFK/qfcc部分SPA仅返回壳，小久terms本轮未读到正文，沿用已标日期历史观察。",
+        "Morimm仅取得部分网页文本，不能把抓取失败、空内容或搜索缓存解释为没有经营、拒绝开票或已经换主体。"
+      ],
+      "sources": [
+        {
+          "id": "M01",
+          "title": "CatFK云猫平台服务协议",
+          "url": "https://catfk.com/article/alias/server-agreement",
+          "source_type": "平台条款/历史证据",
+          "finding": "第6轮正文泛称平台及关联公司，没有准确本单开票方；平台身份不得替代入驻卖家身份。",
+          "access": "本轮只返回网页壳且浏览器读取超时；正文结论沿用2026-10-02第6轮，不标成本轮新发现",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M02",
+          "title": "AI源头准确Plus SKU",
+          "url": "https://catfk.com/item/g8ptrd",
+          "source_type": "商家商品/历史证据",
+          "finding": "商称可开票，实际出票主体、票种、票项、费用和授权链仍未核。",
+          "access": "本轮无可读正文；使用既有SKU证据，不更新价格",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M03",
+          "title": "小久Plus商品",
+          "url": "https://98-xj.com/products/gpt%20plus",
+          "source_type": "商家商品",
+          "finding": "公开商品指向catfk.com/item/j0eswz及982xj.xyz/subscription；把后者称发票/订阅查询，但未展示大陆票样、开票方或税号。",
+          "access": "第一方网页文本提取；未保证实时库存/费用",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M04",
+          "title": "小久服务条款",
+          "url": "https://98-xj.com/terms",
+          "source_type": "商家条款/历史证据",
+          "finding": "第6轮正文暂无内容；不能构成已授予转售权的证据。",
+          "access": "本轮加载壳/读取失败；沿用2026-10-02正文观察",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M05",
+          "title": "ChatShare服务聚合页",
+          "url": "https://chatshare.info/",
+          "source_type": "商家公告",
+          "finding": "商称所有业务支持正规发票；对公转账声明明确修饰API服务。Plus代充票种、开票方及收款方均未披露在所阅内容中。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M06",
+          "title": "ChatShare准确Plus商品",
+          "url": "https://qfcc99.com/item/yrjao6",
+          "source_type": "商家商品/历史证据",
+          "finding": "原号Plus商品与镜像服务分开；既有支付预览不含已知的发票费用。",
+          "access": "本轮无可读正文；沿用第6轮，不更新价格",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M07",
+          "title": "引路鲸关于页",
+          "url": "https://yinlujing.com/about/",
+          "source_type": "商家身份声明",
+          "finding": "母品牌明确没有OpenAI等厂商官方授权；署名引路鲸没有补全法定开票主体。",
+          "access": "本轮直接HTTP及网页文本均读到正文",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M08",
+          "title": "引路鲸Plus准确SKU",
+          "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+          "source_type": "商家商品",
+          "finding": "商品声明可向客服申请增值税普通发票；属于订阅协助服务，未列本单开票法人/税号/票项。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M09",
+          "title": "引路鲸FAQ",
+          "url": "https://www.chatgqt.plus/faq",
+          "source_type": "商家FAQ",
+          "finding": "价格不默认包含企业发票；采购报销需事先协商。正式授权交付文案未说明授权人及范围。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M10",
+          "title": "引路鲸隐私页",
+          "url": "https://www.chatgqt.plus/privacy",
+          "source_type": "商家隐私条款",
+          "finding": "说明订单、付款核验和交付资料处理，但没有给出对应的法定运营者、开票或收款企业全称。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M11",
+          "title": "Morimm服务条款",
+          "url": "https://morimm.com/terms",
+          "source_type": "商家条款提取",
+          "finding": "此次可取得的网页文本标题为小恐龙发卡网，条款部分为No Content；无法补全经营、开票和转售条款。",
+          "access": "网页正文提取；直接请求403且实时浏览器基础读取超时，不能确认完整实时条款",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M12",
+          "title": "Morimm关于页",
+          "url": "https://morimm.com/about",
+          "source_type": "商家关于页提取",
+          "finding": "可取得内容仅为店铺说明和通用发货/付款/退款FAQ，没有公司注册、票据或授权信息。",
+          "access": "网页正文提取；不作为已验证法定主体",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M13",
+          "title": "Morimm隐私页",
+          "url": "https://morimm.com/privacy",
+          "source_type": "商家隐私页",
+          "finding": "本轮未取得可靠可读正文；不推定支持或拒绝大陆开票。",
+          "access": "本轮读取失败；没有从失败推断停业或风控",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M14",
+          "title": "GETAIAI服务协议",
+          "url": "https://getaiai.com/terms",
+          "source_type": "商家条款",
+          "finding": "公开运营名称ClyGen Inc.；明确不获OpenAI授权；票种、内容、金额、时间及对公合同以企业采购另行确认为准。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M15",
+          "title": "GETAIAI关于页",
+          "url": "https://getaiai.com/about",
+          "source_type": "商家身份声明",
+          "finding": "页脚再现ClyGen Inc.；并未声明它就是大陆开票方。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M16",
+          "title": "GETAIAI隐私政策",
+          "url": "https://getaiai.com/privacy",
+          "source_type": "商家隐私条款",
+          "finding": "披露充值提供方、支付通道及Stripe/加密货币结算等类别，未给出本单最终收款商户或开票主体。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M17",
+          "title": "GETAIAI代理合作页",
+          "url": "https://www.getaiai.com/partners",
+          "source_type": "商家合作计划",
+          "finding": "转售申请需双方确认方案；推荐佣金独立，申请不保证获批。没有公开OpenAI专项授权。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M18",
+          "title": "UpPlusPro首页发票FAQ",
+          "url": "https://uppluspro.com/",
+          "source_type": "商家FAQ",
+          "finding": "商称国内公司抬头电子普通发票，按实付额，交付后提交信息并核对后7个自然日内发出；专票/对公/合同需先确认。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M19",
+          "title": "UpPlusPro服务条款",
+          "url": "https://uppluspro.com/legal/terms",
+          "source_type": "商家条款",
+          "finding": "KyrenPay是托管支付服务名称，不是所见本单收款法人；条款要求本人账号，明确无厂商官方合作、代理或授权关系。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "M20",
+          "title": "UpPlusPro隐私政策",
+          "url": "https://uppluspro.com/legal/privacy",
+          "source_type": "商家隐私条款",
+          "finding": "披露把账号资料传给充值服务，未披露精确开票方或本单收款商户名称。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "T01",
+          "title": "国家税务总局：数电发票全国推广公告",
+          "url": "https://shanxi.chinatax.gov.cn/zdgk/detail/sx-11400-545-1801545",
+          "source_type": "税务机关原文",
+          "finding": "2024年第11号：数电发票有普票、专票等类别，20位号码，列明票面内容及免费查验渠道。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "T02",
+          "title": "国家税务总局：合规开票即问即答",
+          "url": "https://www.chinatax.gov.cn/chinatax/c102414/c5249173/content.html",
+          "source_type": "税务机关原文",
+          "finding": "2026-04-24答疑要求主体、业务、票面和开具时限相符，强调合同、服务、资金、票据对应关系。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "T03",
+          "title": "国家税务总局：境外购进与收款凭证",
+          "url": "https://www.chinatax.gov.cn/chinatax/c102449/c5222168/content.html",
+          "source_type": "税务机关原文",
+          "finding": "境外发票/具有发票性质的收款凭证及相关税费缴纳凭证存在特定税前扣除规则；不等同于大陆增值税发票。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "T04",
+          "title": "国家税务总局全国增值税发票查验平台",
+          "url": "https://inv-veri.chinatax.gov.cn/fpcygzfw/",
+          "source_type": "税务机关查验入口",
+          "finding": "官方公开查验入口；本研究没有输入任何票据字段，也没有实际查验结果。",
+          "access": "原入口重定向至该地址；静态文本显示需JavaScript，未操作",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "T05",
+          "title": "山西税务数电票查验图示",
+          "url": "https://shanxi.chinatax.gov.cn/upload/file/20241028/1730084103740098054.pdf",
+          "source_type": "税务机关操作资料摘录",
+          "finding": "数电票查询使用发票号码、日期、价税合计及验证码；具体字段以当前官方表单为准。",
+          "access": "仅搜索返回的官方PDF相关页摘录，全文15.8MB超过网页工具读取上限；不称已阅读全文",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "T06",
+          "title": "辽宁税务数电票可视答疑",
+          "url": "https://liaoning.chinatax.gov.cn/art/2025/5/7/art_782_146440.html",
+          "source_type": "税务机关FAQ",
+          "finding": "数电票的购买方和销售方信息体现名称及识别号；取消收款人、复核人等旧版式项目，不可据此一项判假。",
+          "access": "本轮搜索返回官方答疑相关段落；直接打开返回412，不能称阅读全文",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "B01",
+          "title": "OpenAI Services Agreement",
+          "url": "https://openai.com/policies/services-agreement/",
+          "source_type": "原厂商业条款",
+          "finding": "商业服务协议承认经销商订单/收费；同时普通客户不得转卖账号/API key。适用API和企业产品，不能直接套到个人Plus。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "B02",
+          "title": "PwC美国与英国经销公告",
+          "url": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-us-uk-accelerating-ai-chatgpt-enterprise-adoption.html",
+          "source_type": "签约方正式公告",
+          "finding": "明确美国及英国机构签约经销ChatGPT Enterprise；不公开专项经销合同、下级转批权或个人Plus SKU。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "B03",
+          "title": "PwC英国2025年度客户案例",
+          "url": "https://www.pwc.co.uk/who-we-are/annual-report/stories/2025/driving-workforce-transformation-with-ai.html",
+          "source_type": "经销商官方案例",
+          "finding": "公司年报页面说明向Hugh James和Jupiter Asset Management提供/落地ChatGPT Enterprise，补强已开展业务；不补全分销合同。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "B04",
+          "title": "OpenAI伙伴目录：SB OAI Japan GK",
+          "url": "https://openai.com/business/partners/sb-oai-japan-gk/",
+          "source_type": "原厂伙伴目录",
+          "finding": "原厂列出明确伙伴实体，服务国家Japan；描述企业实施能力，目录身份不等于Plus转售权。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "B05",
+          "title": "SoftBank/OpenAI合资成立正式公告",
+          "url": "https://group.softbank/en/news/press/20251105",
+          "source_type": "合作方联合公告",
+          "finding": "指名SB OAI Japan GK，拟在日本独家销售Crystal intelligence企业方案；没有个人Plus批发SKU和下级授权条款。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        },
+        {
+          "id": "B06",
+          "title": "SB OAI Japan当前官网",
+          "url": "https://www.sb-oai.co.jp/",
+          "source_type": "合作方官网",
+          "finding": "当前业务页以企业安全方案为主；没有发现可公开自助购买的Plus批发计划或完整专项经销合同。",
+          "access": "公开正文提取；未登录、未提交表单",
+          "retrieved_date_utc": "2026-10-03"
+        }
+      ],
+      "source_record_count_note": "共32条索引记录，包含既有来源复读、历史沿用及失败/摘录记录；不是32条新有效证据。Morimm等来源也已在既有总库出现，不以第3—8轮包中缺URL而计为净新增。",
+      "new_research_value": [
+        "新增国家税务机关原文支持的票据分类、最小查验字段、境外收据边界及同单对应标准。",
+        "补充PwC英国实际客户案例和SB OAI Japan原厂目录/日本企业方案地域证据；均未补齐个人Plus专项分销合同。",
+        "把七家既有候选的运营者、收款者、开票者、SKU票项与转售权分栏，形成八项通用问卷和七项逐商家追问。"
+      ]
     }
   },
   "source_catalog": [
@@ -12500,6 +13188,11 @@
         {
           "chapter": "r3_invoice",
           "json_pointer": "/price_records/0/source_urls/0"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/17",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -12519,6 +13212,11 @@
         {
           "chapter": "r3_invoice",
           "json_pointer": "/price_records/0/source_urls/1"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/18",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -12557,6 +13255,11 @@
         {
           "chapter": "r3_invoice",
           "json_pointer": "/price_records/1/source_urls/1"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/16",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -12576,6 +13279,11 @@
         {
           "chapter": "r3_invoice",
           "json_pointer": "/price_records/1/source_urls/2"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/13",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -14232,6 +14940,11 @@
         {
           "chapter": "r7",
           "json_pointer": "/sources/24/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/26",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -15289,6 +16002,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/2/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/2",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -15381,6 +16099,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/22/final_url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/7",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16001,6 +16724,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/17/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/5",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16064,6 +16792,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/4/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/3",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16118,6 +16851,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/7/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/0",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16244,6 +16982,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/18/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/4",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16302,6 +17045,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/23/final_url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/8",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16368,6 +17116,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/26/final_url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/6",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -16482,6 +17235,11 @@
         {
           "chapter": "r6",
           "json_pointer": "/sources/33/final_url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/9",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -17524,6 +18282,11 @@
         {
           "chapter": "r8",
           "json_pointer": "/new_sources/11/url"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/27",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     },
@@ -17993,6 +18756,187 @@
         {
           "chapter": "baseline",
           "json_pointer": "/source_urls/0"
+        },
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/1",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_e4207b7fa97f",
+      "url": "https://morimm.com/terms",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/10",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_d2d7b9dc1395",
+      "url": "https://morimm.com/about",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/11",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_465ce094f7dc",
+      "url": "https://morimm.com/privacy",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/12",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_e17b085660e1",
+      "url": "https://getaiai.com/about",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/14",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_c276903c8e1e",
+      "url": "https://getaiai.com/privacy",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/15",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_9f31242da033",
+      "url": "https://uppluspro.com/legal/privacy",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/19",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_7ee4bde05ab3",
+      "url": "https://shanxi.chinatax.gov.cn/zdgk/detail/sx-11400-545-1801545",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/20",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_19b8b2782eed",
+      "url": "https://www.chinatax.gov.cn/chinatax/c102414/c5249173/content.html",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/21",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_1f2c037471f9",
+      "url": "https://www.chinatax.gov.cn/chinatax/c102449/c5222168/content.html",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/22",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_4018a1c7fbb6",
+      "url": "https://inv-veri.chinatax.gov.cn/fpcygzfw/",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/23",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_6bc1fd2c570d",
+      "url": "https://shanxi.chinatax.gov.cn/upload/file/20241028/1730084103740098054.pdf",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/24",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_a1ddeb1520d9",
+      "url": "https://liaoning.chinatax.gov.cn/art/2025/5/7/art_782_146440.html",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/25",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_6968c3e66108",
+      "url": "https://www.pwc.co.uk/who-we-are/annual-report/stories/2025/driving-workforce-transformation-with-ai.html",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/28",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_0d0ee350695a",
+      "url": "https://openai.com/business/partners/sb-oai-japan-gk/",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/29",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_41f926f247e2",
+      "url": "https://group.softbank/en/news/press/20251105",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/30",
+          "observed_at_utc": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "id": "src_invoice_7bbf7448ffa2",
+      "url": "https://www.sb-oai.co.jp/",
+      "references": [
+        {
+          "chapter": "invoice_authority_20261003",
+          "json_pointer": "/sources/31",
+          "observed_at_utc": "2026-10-03"
         }
       ]
     }
@@ -18006,7 +18950,21 @@
     "r6": "/evidence_chapters/r6",
     "r7": "/evidence_chapters/r7",
     "r8": "/evidence_chapters/r8",
-    "baseline": "/current_view/historical_baseline"
+    "baseline": "/current_view/historical_baseline",
+    "invoice_authority_20261003": "/evidence_chapters/invoice_authority_20261003"
   },
-  "source_reference_rules": "第3—7轮章内source_ids按本章sources解析；r8的R8S/R8R分别按new_sources/rechecked_sources解析；CB8编号按r8.claude_increment.sources解析；Claude第7轮子章节按该子章节sources解析。source_catalog按规范化公开URL去重，保留各轮观察和引用位置。references中的chapter先由source_reference_roots定位根，json_pointer相对该根解析（baseline映射current_view.historical_baseline）。相同URL不等于相同SKU/商家；同平台更不等于同法人。"
+  "source_reference_rules": "第3—7轮章内source_ids按本章sources解析；r8的R8S/R8R分别按new_sources/rechecked_sources解析；CB8编号按r8.claude_increment.sources解析；Claude第7轮子章节按该子章节sources解析。source_catalog按规范化公开URL去重，保留各轮观察和引用位置。references中的chapter先由source_reference_roots定位根，json_pointer相对该根解析（baseline映射current_view.historical_baseline）。相同URL不等于相同SKU/商家；同平台更不等于同法人。 票据授权增补章内M/T/B来源编号按该章sources解析；仅URL索引净增加不等于净新证据，失败与摘录保留访问边界。",
+  "invoice_evidence_delta": {
+    "date": "2026-10-03",
+    "chapter": "invoice_authority_20261003",
+    "merchant_rows": 7,
+    "source_records": 32,
+    "url_index_additions": 16,
+    "url_index_reobserved": 16,
+    "record_count_note": "共32条索引记录，包含既有来源复读、历史沿用及失败/摘录记录；不是32条新有效证据。Morimm等来源也已在既有总库出现，不以第3—8轮包中缺URL而计为净新增。",
+    "index_scope_note": "新增URL只表示此前补充包目录未收录，不等于首次发现、可读全文或净新有效证据。",
+    "no_price_reranking": true,
+    "actual_invoices_verified": 0,
+    "new_qualified_upstreams": 0
+  }
 }

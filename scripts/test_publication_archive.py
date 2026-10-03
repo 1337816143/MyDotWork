@@ -23,6 +23,17 @@ class PublicArchiveTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             validate_publication_archive(content + b'x', name)
 
+    def test_candidate_keeps_separate_identity(self):
+        root = Path(__file__).resolve().parents[1]
+        name = 'research/ai-side-income/sample-v0.2-candidate.zip'
+        content = (root / 'publications' / name).read_bytes()
+        self.assertEqual(len(validate_publication_archive(content, name)), 40)
+        for target in ('research/ai-side-income/sample-v0.1.zip', 'research/ai-side-income/unreviewed.zip'):
+            with self.assertRaises(AssertionError):
+                validate_publication_archive(content, target)
+        with self.assertRaises(AssertionError):
+            validate_publication_archive(content + b'x', name)
+
     def test_nested_path_rejected(self):
         content = package([('sample.zip', package([('../private.txt', 'unexpected')]))])
         with self.assertRaises(AssertionError): inspect_archive(content)

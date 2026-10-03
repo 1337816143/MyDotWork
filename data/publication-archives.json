@@ -216,6 +216,212 @@
           "sha256": "a7728910c70a31f5faf254c02eab68d0a9ce4e6ae03bf2a332f9c89bc17f95e2"
         }
       ]
+    },
+    "research/ai-side-income/sample-v0.2-candidate.zip": {
+      "bytes": 60354,
+      "sha256": "a0516f0cb3b6674451464651aef46769906788a56ebe382b1dc388b51eaa688b",
+      "members": [
+        {
+          "path": "00_先读我.txt",
+          "bytes": 2351,
+          "sha256": "4b713e1f45c4cbb135cfac33f5a86a3012cde3c0091eb1bda5b501aa66665083"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx",
+          "bytes": 12976,
+          "sha256": "d8a23953e5968daae27fe81683b7e899202a0b2c805250091093a7e687f13c18"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/workbook.xml",
+          "bytes": 587,
+          "sha256": "5efd770be5b90350af91fa9e7731aaa50c982e1f6abb6391ea0766e2bb438c2d"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/styles.xml",
+          "bytes": 9992,
+          "sha256": "5bf1628c47602b9b8203e1057027775a9c5e59979a61c6ecc682bf4f82c2fef2"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/theme/theme1.xml",
+          "bytes": 3546,
+          "sha256": "9e968b92413c2476890e4b0bd8d26b65f2062b211bde8ebb628ffdaafc6607b9"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/sharedStrings.xml",
+          "bytes": 115,
+          "sha256": "188ef751ff00440752511a2b19781b8f4c4f53a52560765fc3c0cbef1fb25e4f"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/worksheets/sheet1.xml",
+          "bytes": 5429,
+          "sha256": "fcc6aa947787946cba4799eb0e63d89c89e54b127f9612206201995d999e60b9"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/worksheets/sheet2.xml",
+          "bytes": 41007,
+          "sha256": "6fc5588fe6279499a6660c04524daee112c332cf03f537d96fbb1d8f847ecd51"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/tables/table1.xml",
+          "bytes": 1078,
+          "sha256": "0c5a23af95fad18384eed49f70fed791c0e2c56659b7d76849f97878c446a532"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/worksheets/sheet3.xml",
+          "bytes": 6912,
+          "sha256": "81bbfb6ffa6d0560164c516be9c8e16af954725f541b423118a4499856f6587a"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/_rels/.rels",
+          "bytes": 296,
+          "sha256": "45ed972ec6003a3550f0ebcc9aeba0bdd773adafe018316418be3719eb3d2f05"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/_rels/workbook.xml.rels",
+          "bytes": 1072,
+          "sha256": "4a7ce580469598b53c5f66bbfd086393a3c2231eb47e183aa8af5f8a7b3030a2"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/xl/worksheets/_rels/sheet2.xml.rels",
+          "bytes": 292,
+          "sha256": "0985e04f6b52ba724fbdc333d1abd5484e61a17a64205f62aa3d3f8f448acef4"
+        },
+        {
+          "path": "01_科研证据矩阵.xlsx!/[Content_Types].xml",
+          "bytes": 1254,
+          "sha256": "3ef8a930ab5729d282b50d3321096af21b7146fda5841e711f1a08e3c447f881"
+        },
+        {
+          "path": "02_论点提纲卡.docx",
+          "bytes": 38579,
+          "sha256": "9c93091da6564f8f2c0d85259068232916598f4a60261a83e50ad4e61d2adb15"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/[Content_Types].xml",
+          "bytes": 1738,
+          "sha256": "66c84fb7a6aa3c4ead49f895e4a7044df1fb57de1ed76d09b2686e91f5bed5b4"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/_rels/.rels",
+          "bytes": 734,
+          "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/docProps/core.xml",
+          "bytes": 801,
+          "sha256": "c6692407274aa01758acb185da2b8da4fd49a839f9226e818be07cc7d5e439b4"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/docProps/app.xml",
+          "bytes": 1132,
+          "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/document.xml",
+          "bytes": 8164,
+          "sha256": "525859a378275748425c97904d20f4578279ba90bad5ab6845170b911ed55e3f"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/_rels/document.xml.rels",
+          "bytes": 1227,
+          "sha256": "1e7f0eb144a98e199249314f61ff32a8de2a27e56d8e9ee6b524e1c6b235d377"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/styles.xml",
+          "bytes": 349623,
+          "sha256": "4dfe341a54d30d105d82dfb2359acb001ef10634ba39cd6bed81d989746d83be"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/stylesWithEffects.xml",
+          "bytes": 438131,
+          "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/settings.xml",
+          "bytes": 2535,
+          "sha256": "51a0d348fe85965c66e4748a03c3c0d055d78455514f03cb121c334af7d73689"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/webSettings.xml",
+          "bytes": 438,
+          "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/fontTable.xml",
+          "bytes": 2811,
+          "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/theme/theme1.xml",
+          "bytes": 10939,
+          "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/customXml/item1.xml",
+          "bytes": 262,
+          "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/customXml/_rels/item1.xml.rels",
+          "bytes": 295,
+          "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/customXml/itemProps1.xml",
+          "bytes": 354,
+          "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/word/numbering.xml",
+          "bytes": 5513,
+          "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce"
+        },
+        {
+          "path": "02_论点提纲卡.docx!/docProps/thumbnail.jpeg",
+          "bytes": 8324,
+          "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead"
+        },
+        {
+          "path": "03_空白证据表.csv",
+          "bytes": 1203,
+          "sha256": "fbea47a619c76b272b7480f8454dda7c48d0a4ef95d140a315fa0ef0e9dcaef5"
+        },
+        {
+          "path": "04_合成演示.csv",
+          "bytes": 1609,
+          "sha256": "b89348f2c9a5def6d1a813a408280abf15899e716844370b894a1d1969573db0"
+        },
+        {
+          "path": "05_使用范围与正式版许可草案.txt",
+          "bytes": 2516,
+          "sha256": "63b4887ee63d7fa52dd4104798a319f027b1b308c88a81b77de7c4eb6fdfd82b"
+        },
+        {
+          "path": "06_验证记录.txt",
+          "bytes": 2477,
+          "sha256": "d91773491ecadb5502714146da88c587f183f71fe8fe6e45a622e0b76ed3207c"
+        },
+        {
+          "path": "07_文件校验.json",
+          "bytes": 1895,
+          "sha256": "bd26ae8c855b8e99b3e877e0ff13c3cdd5dc1c16c97100b3d51b39ac465a931c"
+        },
+        {
+          "path": "08_扩行与关联说明.txt",
+          "bytes": 3629,
+          "sha256": "95c19499cc08982f01dba001c843ddd54efe2d01201b3b8afd42d79f3b63133c"
+        },
+        {
+          "path": "09_独立试用任务.txt",
+          "bytes": 2792,
+          "sha256": "10a484a28599ce74f7dbfeb61954985f6dd17f9929848f4b2835d5ce92b41267"
+        },
+        {
+          "path": "10_变更与验收.json",
+          "bytes": 2782,
+          "sha256": "69ed2334450ac7c0c2aad801de46c2bf4bfcd645396f1fa8a7630a28abfd3bd9"
+        }
+      ]
     }
   }
 }

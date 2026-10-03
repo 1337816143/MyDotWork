@@ -1,4 +1,4 @@
-"""Audit one explicitly reviewed ZIP, including nested ZIP and OOXML members."""
+"""Audit two explicitly reviewed ZIPs, including nested ZIP and OOXML members."""
 import hashlib
 import io
 import json
@@ -11,6 +11,10 @@ from validate_archive import scan
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {'.txt', '.json', '.csv', '.xml', '.rels'}
 ARCHIVE_SUFFIXES = {'.zip', '.xlsx', '.docx'}
+REVIEWED_ARCHIVES = {
+    'research/ai-side-income/sample-v0.1.zip',
+    'research/ai-side-income/sample-v0.2-candidate.zip',
+}
 
 
 def inspect_archive(content, prefix='', depth=0, budget=None):
@@ -60,7 +64,8 @@ def inspect_archive(content, prefix='', depth=0, budget=None):
 
 def validate_publication_archive(content, name):
     manifest = json.loads((ROOT / 'data/publication-archives.json').read_bytes())
-    assert manifest['schemaVersion'] == 1 and set(manifest['archives']) == {'research/ai-side-income/sample-v0.1.zip'}
+    assert manifest['schemaVersion'] == 1 and set(manifest['archives']) == REVIEWED_ARCHIVES
+    assert name in REVIEWED_ARCHIVES, 'Archive path has not been explicitly reviewed'
     expected = manifest['archives'][name]
     assert len(content) == expected['bytes'] and hashlib.sha256(content).hexdigest() == expected['sha256'], 'Reviewed archive bytes changed'
     actual = inspect_archive(content)

@@ -96,47 +96,47 @@
       "type": "dataset",
       "task": "project-4",
       "url": "../projects/status.json",
-      "updatedAt": "2026-10-03T03:49:00Z",
+      "updatedAt": "2026-10-03T06:14:00Z",
       "summary": "17项公开项目进度快照，记录已有研究、方案、缺口与验收范围。",
       "access": "public",
       "metadataApproved": true
     },
     {
       "id": "upstream-round3-7",
-      "title": "AI上游研究 · 第3—8轮公开补充",
+      "title": "AI上游研究 · 第3—8轮与票据授权核验",
       "type": "report",
       "task": "project-1",
       "url": "../research/round3-7/report.html",
       "updatedAt": "2026-10-03",
-      "summary": "8个证据章节、257个去重来源URL（含复查及未取得正文项）和30条历史报价；8条仍是待核线索，新增合格候选榜为空。",
+      "summary": "9个证据章节、273个去重来源URL和30条历史报价；追加7家主体/票项/转售权矩阵，32条本轮来源含复读与未取得正文项，合格候选仍为空。",
       "access": "public",
       "metadataApproved": true
     },
     {
       "id": "upstream-round3-7-data",
-      "title": "第3—8轮上游研究数据 JSON",
+      "title": "第3—8轮与票据授权核验 · 数据 JSON",
       "type": "dataset",
       "task": "project-1",
       "url": "../research/round3-7/ai-upstream-public.json",
       "updatedAt": "2026-10-03",
-      "summary": "保留旧7章、30条历史报价、未知费用与全部修正，追加第8轮官方条款和经济分析；观察时间不改为当前成交时间。",
+      "summary": "旧8章与30条历史报价完整保留，追加7家询证清单与税务查验边界；273个URL仅为目录总数，不等于净新有效证据或已验真发票。",
       "access": "public",
       "metadataApproved": true
     },
     {
       "id": "side-income-report",
-      "title": "AI副业调研 · 低维护产品与自由接单 v1.3",
+      "title": "AI副业调研 · 低维护产品与自由接单 v1.4",
       "type": "report",
       "task": "project-17",
       "url": "../research/ai-side-income/report.html",
       "updatedAt": "2026-10-03",
-      "summary": "32类方向、153个公开来源；仅C10窄范围原创评估样品已制作，保留产品实验、服务验证与真实销售未验证的区分。",
+      "summary": "32类方向、153个公开来源；保留v0.1，新增同一C10样品v0.2候选及兼容验收表。程序与Writer检查通过，Excel/Calc及商业验证仍未完成。",
       "access": "public",
       "metadataApproved": true
     },
     {
       "id": "side-income-data",
-      "title": "AI副业调研 · 结构化资料 JSON v1.3",
+      "title": "AI副业调研 · 结构化资料 JSON v1.4",
       "type": "dataset",
       "task": "project-17",
       "url": "../research/ai-side-income/data.json",
@@ -153,6 +153,17 @@
       "url": "../research/ai-side-income/sample-v0.1.zip",
       "updatedAt": "2026-10-03",
       "summary": "66,163字节完整成果包，含53,012字节核心样品、执行清单和产品规格；仅供原创评估及内部试用，正式许可与售后仍为草案，未验证付费需求。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "side-income-sample-v02-candidate",
+      "title": "科研证据矩阵 · 原创评估样品 v0.2候选",
+      "type": "archive",
+      "task": "project-17",
+      "url": "../research/ai-side-income/sample-v0.2-candidate.zip",
+      "updatedAt": "2026-10-03",
+      "summary": "60,354字节候选包，修正空白、缺失与重复ID提示，关联范围扩至200行；21项程序检查及Writer原生编辑保存通过，Excel/Calc原生重算未验，无真实客户或收入证据。",
       "access": "public",
       "metadataApproved": true
     }
@@ -187,7 +198,7 @@
       "task": "project-6",
       "url": "https://1337816143.github.io/Paper/",
       "updatedAt": "2026-10-03",
-      "summary": "v5.4.2已发布；学习、筛选、笔记本地恢复等线上交互已核，真实登录与双设备恢复仍未验收。",
+      "summary": "三课深化与原创教学脚本已在独立站和个人进化镜像发布；内容版本5a6f6cb7e798。云端手机、离线与合成笔记检查通过，真实登录和双设备恢复仍未验。",
       "access": "public",
       "metadataApproved": true
     },
@@ -198,7 +209,7 @@
       "task": "project-5",
       "url": "https://1337816143.github.io/FarmSystemDesign/#research",
       "updatedAt": "2026-10-03",
-      "summary": "2025分类切换已上线；全海南RGB、气候、行政与逐岛第二阶段云端进行，研究校准缺口保留。",
+      "summary": "v0.3.9已上线，主岛/海口/岛屿/农场RGB及动态COG可用；99.122%仅为近似显示掩膜比例，社区18面非官方，三沙完整边界及权威县界仍有缺口。",
       "access": "public",
       "metadataApproved": true
     }
