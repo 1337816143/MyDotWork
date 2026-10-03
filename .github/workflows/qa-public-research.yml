@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y fonts-noto-cjk
-          font_family="$(fc-match -f '%{family}' :lang=zh)"
+          font_family="$(fc-match -f '%{family}' 'Noto Sans CJK SC')"
           test -n "$font_family"
           echo "QA_CJK_FONT=$font_family" >> "$GITHUB_ENV"
       - name: Select the hosted runner browser
