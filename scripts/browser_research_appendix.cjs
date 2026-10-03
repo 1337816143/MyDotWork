@@ -48,7 +48,7 @@ const result = {
   status: 'running', startedAt: new Date().toISOString(), root, dist,
   environment: { node: process.version, chrome, viewportHeight: height, deviceScaleFactor: 1,
     hideNativeScrollbars: true, note: 'Native scrollbar chrome is hidden; page scrollWidth and CSS clientWidth are still checked strictly.' },
-  artifacts: [], fixtures: [], viewports: [], navigation: [], downloads: [],
+  artifacts: [], fixtures: [], viewports: [], navigation: [], downloads: [], clicks: [],
   networkRequests: [], runtimeErrors: [], consoleErrors: [], blockedExternalRequests: [],
   humanPixelReview: 'required; not performed by this script',
 };
@@ -251,11 +251,26 @@ async function shot(filename, selector) {
 async function click(selector) {
   await evaluate(`(()=>{const n=document.querySelector(${JSON.stringify(selector)});if(!n)throw Error('Missing click target');n.scrollIntoView({block:'center',inline:'nearest',behavior:'instant'});})()`);
   await stableGeometry();
-  const point = await evaluate(`(()=>{const n=document.querySelector(${JSON.stringify(selector)}),r=n.getBoundingClientRect(),
-    x=Math.max(1,Math.min(innerWidth-1,r.x+r.width/2)),y=Math.max(1,Math.min(innerHeight-1,r.y+r.height/2));
-    if(!r.width||!r.height||getComputedStyle(n).visibility==='hidden')throw Error('Invisible target');
-    const hit=document.elementFromPoint(x,y);if(hit!==n&&!n.contains(hit))throw Error('Click target is obscured');
-    return {x,y};})()`);
+  const hitTest = await evaluate(`(()=>{
+    const n=document.querySelector(${JSON.stringify(selector)}),style=getComputedStyle(n);
+    const rects=[...n.getClientRects()].map((r,index)=>({index,left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height}));
+    const visibleFragments=rects.map(r=>({...r,left:Math.max(0,r.left),top:Math.max(0,r.top),right:Math.min(innerWidth,r.right),bottom:Math.min(innerHeight,r.bottom)}))
+      .filter(r=>r.width>0&&r.height>0&&r.right>r.left&&r.bottom>r.top);
+    const tests=visibleFragments.map(r=>{
+      const point={x:(r.left+r.right)/2,y:(r.top+r.bottom)/2},hit=document.elementFromPoint(point.x,point.y);
+      return {fragmentIndex:r.index,point,matchesTarget:!!hit&&(hit===n||n.contains(hit)),
+        hit:hit?{tag:hit.tagName,id:hit.id,className:hit.getAttribute('class'),href:hit.getAttribute('href')}:null};
+    });
+    const chosen=tests.find(test=>test.matchesTarget);
+    const invisible=!visibleFragments.length||style.visibility==='hidden'||style.visibility==='collapse'||style.display==='none';
+    return {url:location.href,rects,visibleFragments,tests,chosenPoint:invisible?null:chosen?.point,
+      chosenFragment:invisible?null:chosen?.fragmentIndex,
+      error:invisible?'Invisible target':chosen?null:'Click target is obscured'};
+  })()`);
+  result.clicks.push({ stage: currentStage, selector, ...hitTest }); save();
+  assert(!hitTest.error, hitTest.error || 'Click fragment must be visible and unobscured');
+  assert(hitTest.chosenPoint, 'A hit-tested visible fragment is required for trusted input');
+  const point = hitTest.chosenPoint;
   await send('Input.dispatchMouseEvent', { type: 'mouseMoved', ...point });
   await send('Input.dispatchMouseEvent', { type: 'mousePressed', button: 'left', clickCount: 1, ...point });
   await send('Input.dispatchMouseEvent', { type: 'mouseReleased', button: 'left', clickCount: 1, ...point });
@@ -479,8 +494,16 @@ async function checkDownloads() {
         const filename = path.basename(runDir) + '-first-failure-' + currentStage.replace(/[^a-zA-Z0-9_-]/g, '-') + '.png';
         fs.writeFileSync(path.join(runDir, filename), bytes, { flag: 'wx' });
         fs.writeFileSync(path.join(out, filename), bytes, { flag: 'wx' });
+        const rootCopy = fs.readFileSync(path.join(out, filename));
+        const preservedCopy = fs.readFileSync(path.join(runDir, filename));
+        assert.deepEqual(rootCopy, bytes, 'Root failure PNG must be readable and byte-exact immediately after write');
+        assert.deepEqual(preservedCopy, bytes, 'Preserved failure PNG must be readable and byte-exact immediately after write');
+        assert.equal(sha(rootCopy), sha(bytes), 'Root failure PNG hash');
+        assert.equal(sha(preservedCopy), sha(bytes), 'Preserved failure PNG hash');
         result.failure.screenshot = { file: filename, preservedFile: path.relative(out, path.join(runDir, filename)),
           width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20), sha256: sha(bytes), stability,
+          writeVerification: { rootReadable: true, preservedReadable: true, bytes: bytes.length,
+            rootSha256: sha(rootCopy), preservedSha256: sha(preservedCopy) },
           location: await evaluate('({url:location.href,scrollY,innerWidth,clientWidth:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth})') };
       } catch (captureError) { result.failure.screenshotError = captureError.message; }
     }

@@ -36,7 +36,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: mydotwork-v182-qa-a2
+          name: mydotwork-v182-qa-a3
           path: |
             output/navigation-review/*.png
             output/navigation-review/browser-results.json
