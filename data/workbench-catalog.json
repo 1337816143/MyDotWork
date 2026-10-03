@@ -85,8 +85,8 @@
       "type": "archive",
       "task": "project-4",
       "url": "../chat/index.html",
-      "updatedAt": "2026-10-02T05:58:03.520076Z",
-      "summary": "既有229条已授权公开消息；目录不读取其他会话或附件。",
+      "updatedAt": "2026-10-02T22:00:20.523564+00:00",
+      "summary": "355条已授权公开记录，其中346条有文字；附件本体未纳入，目录不读取其他会话。",
       "access": "public",
       "metadataApproved": true
     },
@@ -96,7 +96,7 @@
       "type": "dataset",
       "task": "project-4",
       "url": "../projects/status.json",
-      "updatedAt": "2026-10-02T14:20:00Z",
+      "updatedAt": "2026-10-03T00:59:19Z",
       "summary": "17项公开项目进度快照，记录已有研究、方案、缺口与验收范围。",
       "access": "public",
       "metadataApproved": true

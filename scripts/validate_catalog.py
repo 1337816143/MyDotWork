@@ -4,6 +4,7 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
+from datetime import datetime
 from build_catalog import load_catalog
 from validate_archive import scan
 
@@ -17,6 +18,43 @@ scan(json.dumps(actual,ensure_ascii=False))
 assert len(actual['tasks'])==len(manifest['tasks'])
 assert actual['counts']['artifacts']==len(manifest['artifacts'])
 assert actual['counts']['websites']==len(manifest['websites'])
+
+# These catalogue entries describe explicit public outputs. Keep their visible
+# counts and timestamps tied to that same release, without reading other chats.
+archive=json.loads((ROOT/'dist/chat/messages.json').read_bytes())
+coverage=json.loads((ROOT/'dist/chat/coverage.json').read_bytes())
+project_output=json.loads((ROOT/'dist/projects/status.json').read_bytes())
+
+def validate_archive_catalog(catalog, public_archive, public_coverage, public_projects):
+    records={record['id']:record for record in catalog['records']}
+    chat=records['public-chat-archive'];project=records['public-project-data']
+    messages=public_archive['messages']
+    count=len(messages);nonempty=sum(bool(message['text']) for message in messages)
+    assert len({message['id'] for message in messages})==count
+    assert public_archive['coverage']==public_coverage
+    assert public_coverage['messageCount']==count
+    assert public_coverage['userCount']==sum(message['role']=='user' for message in messages)
+    assert public_coverage['assistantCount']==sum(message['role']=='assistant' for message in messages)
+    assert chat['summary'].startswith(f'{count}条已授权公开记录，其中{nonempty}条有文字；'), 'Stale chat catalogue count'
+    parse=lambda value:datetime.fromisoformat(value.replace('Z','+00:00'))
+    assert parse(chat['updatedAt'])==parse(public_coverage['end']), 'Stale chat catalogue timestamp'
+    assert parse(project['updatedAt'])==parse(public_projects['updatedAt']), 'Stale project catalogue timestamp'
+    assert chat['url']=='../chat/index.html' and chat['task']=='project-4'
+    assert project['url']=='../projects/status.json' and project['task']=='project-4'
+    assert catalog['counts']['tasks']==len(public_projects['projects'])
+
+validate_archive_catalog(actual,archive,coverage,project_output)
+for record_id, field, stale in [('public-chat-archive','summary','229条已授权公开记录，其中224条有文字；'),('public-chat-archive','updatedAt','2026-10-02T05:58:03.520076Z'),('public-chat-archive','url','../projects/index.html'),('public-project-data','updatedAt','2026-10-02T14:20:00Z')]:
+    bad=copy.deepcopy(actual)
+    next(record for record in bad['records'] if record['id']==record_id)[field]=stale
+    try:validate_archive_catalog(bad,archive,coverage,project_output)
+    except AssertionError:pass
+    else:raise AssertionError('Stale catalogue metadata accepted')
+bad_coverage=copy.deepcopy(coverage);bad_coverage['messageCount']-=1
+try:validate_archive_catalog(actual,archive,bad_coverage,project_output)
+except AssertionError:pass
+else:raise AssertionError('Inconsistent public archive count accepted')
+print('PASS: catalogue counts, nonempty text, roles, timestamps and targets match public archive/project outputs; stale metadata rejected')
 
 class IDs(HTMLParser):
     def __init__(self):super().__init__();self.ids=set()
