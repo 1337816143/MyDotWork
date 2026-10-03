@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '24'
       - name: Build and validate public report
-        run: python scripts/build.py && python scripts/validate.py && node scripts/test_dashboard.cjs && node scripts/test_status.cjs
+        run: python scripts/build.py && python scripts/validate.py && node scripts/test_dashboard.cjs && node scripts/test_status.cjs && node scripts/test_publication.cjs
       - uses: actions/upload-pages-artifact@v4
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:

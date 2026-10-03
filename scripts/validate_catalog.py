@@ -51,7 +51,7 @@ assert snapshot['coverage']['end']==coverage['end']
 assert snapshot['coverage']['partial']==(not coverage['readApiHistoryExhausted'])
 message_ids={m['id'] for m in archive['messages']}
 for item in snapshot['items']:
-    assert set(item['evidenceMessageIds'])<=message_ids, 'Task has no public original evidence'
+    assert set(item['contextMessageIds'])<=message_ids, 'Task requirement context has no public original message'
     assert '完成' not in item['state']  # State values are the four reviewed enum keys.
 for note in snapshot['decisions']:
     assert note['messageId'] in message_ids and set(note['supersedes'])<=message_ids
@@ -60,6 +60,11 @@ for mutate in [lambda m:m['statusSnapshot'].update(mode='realtime'),lambda m:m['
     try:load_catalog(bad,projects)
     except AssertionError:pass
     else:raise AssertionError('Unverified state metadata accepted')
+for mutate in [lambda m:m['statusSnapshot'].update(staleAfterMinutes=0),lambda m:m['statusSnapshot']['items'][0]['verification'].update(kind='message'),lambda m:m['statusSnapshot']['items'][0]['verification'].update(observedAt='2099-01-01T00:00:00Z'),lambda m:m['statusSnapshot']['items'][0]['verification'].update(links=[]),lambda m:m['statusSnapshot']['publicationChecks']['source'].update(runUrl='https://example.org/run'),lambda m:m['statusSnapshot']['publicationChecks']['mirror'].update(upstreamCommit='0'*40),lambda m:m['statusSnapshot']['publicationChecks'].update(checkedAt='2099-01-01T00:00:00Z')]:
+    bad=copy.deepcopy(manifest);mutate(bad)
+    try:load_catalog(bad,projects)
+    except AssertionError:pass
+    else:raise AssertionError('Unproven status or publication metadata accepted')
 for record_id, field, stale in [('public-chat-archive','summary','229条已授权公开记录，其中224条有文字；'),('public-chat-archive','updatedAt','2026-10-02T05:58:03.520076Z'),('public-chat-archive','url','../projects/index.html'),('public-project-data','updatedAt','2026-10-02T14:20:00Z')]:
     bad=copy.deepcopy(actual)
     next(record for record in bad['records'] if record['id']==record_id)[field]=stale
@@ -87,7 +92,7 @@ for r in actual['records']:
         parser=IDs();parser.feed(target.read_text(encoding='utf-8'));assert url.fragment in parser.ids or (url.fragment=='tutorial' and 'id="tutorial"' in target.read_text(encoding='utf-8')),r['url']
 
 for item in snapshot['items']:
-    for link in item['links']:
+    for link in item['links'] + item['verification']['links']:
         url=urlsplit(link['url'])
         if url.scheme:continue
         target=((ROOT/'dist/dashboard')/url.path).resolve() if url.path else (ROOT/'dist/dashboard/index.html').resolve()

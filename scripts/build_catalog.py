@@ -33,7 +33,7 @@ def timestamp(value):
 def load_catalog(manifest=None, projects=None):
     m = manifest if manifest is not None else json.loads((ROOT/'data/workbench-catalog.json').read_text(encoding='utf-8'))
     p = projects if projects is not None else json.loads((ROOT/'data/projects.json').read_text(encoding='utf-8'))
-    assert m['schemaVersion'] == 2
+    assert m['schemaVersion'] == 3
     assert set(m) == {'schemaVersion', 'scope', 'artifacts', 'websites', 'tasks', 'statusSnapshot'}
     tasks = []
     for ref in m['tasks']:
@@ -72,20 +72,21 @@ def load_catalog(manifest=None, projects=None):
     assert len({r['id'] for r in records}) == len(records)
     snapshot = m['statusSnapshot']
     validate_status_snapshot(snapshot, set(ids))
-    return dict(schemaVersion=2, scope=m['scope'], records=records, tasks=tasks,
+    return dict(schemaVersion=3, scope=m['scope'], records=records, tasks=tasks,
                 counts=dict(artifacts=len(m['artifacts']), websites=len(m['websites']), tasks=len(tasks)),
                 projectSnapshotUpdatedAt=p['updatedAt'], statusSnapshot=snapshot)
 
 
 def validate_status_snapshot(snapshot, project_ids):
-    assert set(snapshot) == {'mode', 'asOf', 'notice', 'items', 'coverage', 'decisions'}
+    assert set(snapshot) == {'mode', 'asOf', 'notice', 'items', 'coverage', 'decisions', 'staleAfterMinutes', 'publicationChecks'}
     assert snapshot['mode'] == 'snapshot', 'Static data cannot claim real-time monitoring'
+    assert snapshot['staleAfterMinutes'] == 30
     timestamp(snapshot['asOf'])
     assert 'T' in snapshot['asOf'] and '不是实时' in snapshot['notice']
     assert len(snapshot['items']) == 7
     assert [item['number'] for item in snapshot['items']] == list(range(1, 8))
     for item in snapshot['items']:
-        assert set(item) == {'id', 'number', 'title', 'state', 'currentAction', 'waitingFor', 'verifiedAt', 'publication', 'completion', 'links', 'projectIds', 'evidenceMessageIds', 'access', 'metadataApproved'}
+        assert set(item) == {'id', 'number', 'title', 'state', 'currentAction', 'waitingFor', 'verifiedAt', 'publication', 'completion', 'links', 'projectIds', 'contextMessageIds', 'verification', 'access', 'metadataApproved'}
         assert item['id'] == 'task-' + str(item['number']) and item['state'] in STATES
         assert item['access'] == 'public' and item['metadataApproved'] is True
         assert all(isinstance(item[key], str) and item[key].strip() for key in ['title', 'currentAction', 'waitingFor', 'publication', 'completion'])
@@ -96,11 +97,37 @@ def validate_status_snapshot(snapshot, project_ids):
             assert set(link) == {'label', 'url'} and isinstance(link['label'], str) and link['label'].strip()
             approved_url(link['url'])
         assert item['projectIds'] and set(item['projectIds']) <= project_ids
-        assert item['evidenceMessageIds'] and all(re.fullmatch(r'Sentinel_[a-z0-9]+', value) for value in item['evidenceMessageIds'])
+        assert item['contextMessageIds'] and all(re.fullmatch(r'Sentinel_[a-z0-9]+', value) for value in item['contextMessageIds'])
+        proof = item['verification']
+        assert set(proof) == {'kind', 'summary', 'observedAt', 'links'}
+        assert proof['kind'] in {'project_check', 'public_release'} and isinstance(proof['summary'], str) and proof['summary'].strip()
+        timestamp(proof['observedAt'])
+        if proof['observedAt'] is not None:
+            assert 'T' in proof['observedAt'] and datetime.fromisoformat(proof['observedAt'].replace('Z', '+00:00')) <= datetime.fromisoformat(item['verifiedAt'].replace('Z', '+00:00'))
+        assert isinstance(proof['links'], list) and len(proof['links']) <= 3
+        if proof['kind'] == 'public_release': assert proof['links'], 'Public-release verification needs a public source'
+        for link in proof['links']:
+            assert set(link) == {'label', 'url'} and isinstance(link['label'], str) and link['label'].strip()
+            approved_url(link['url'])
     coverage = snapshot['coverage']
     assert set(coverage) == {'messageCount', 'nonemptyCount', 'end', 'partial', 'summary'}
     assert type(coverage['partial']) is bool and 0 <= coverage['nonemptyCount'] <= coverage['messageCount']
     timestamp(coverage['end'])
+    publication = snapshot['publicationChecks']
+    assert set(publication) == {'checkedAt', 'source', 'mirror', 'status'} and publication['status'] == 'consistent'
+    timestamp(publication['checkedAt'])
+    check_time = datetime.fromisoformat(publication['checkedAt'].replace('Z', '+00:00'))
+    assert check_time <= datetime.fromisoformat(snapshot['asOf'].replace('Z', '+00:00'))
+    for kind, repository, fields in [('source', 'MyDotWork', {'version','commit','deployedAt','runId','runUrl'}), ('mirror', 'Evolution', {'version','upstreamCommit','sourceCommit','commit','syncedAt','deployedAt','runId','runUrl'})]:
+        record = publication[kind]
+        assert set(record) == fields and re.fullmatch(r'\d+\.\d+\.\d+', record['version'])
+        assert type(record['runId']) is int and record['runId'] > 0
+        assert record['runUrl'] == f'https://github.com/1337816143/{repository}/actions/runs/{record["runId"]}'
+        for key in fields & {'commit','sourceCommit','upstreamCommit'}: assert re.fullmatch(r'[a-f0-9]{40}', record[key])
+        for key in fields & {'deployedAt','syncedAt'}:
+            timestamp(record[key]); assert 'T' in record[key] and datetime.fromisoformat(record[key].replace('Z', '+00:00')) <= check_time
+    assert publication['source']['commit'] == publication['mirror']['upstreamCommit']
+    assert publication['source']['version'] == publication['mirror']['version']
     for note in snapshot['decisions']:
         assert set(note) == {'title', 'summary', 'messageId', 'supersedes'}
         assert all(isinstance(note[key], str) and note[key] for key in ['title', 'summary', 'messageId'])
