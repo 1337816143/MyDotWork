@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "scope": "仅明确公开或明确授权公开元数据的成果；不自动扫描对话、Library或本机目录。",
   "artifacts": [
     {
@@ -96,7 +96,7 @@
       "type": "dataset",
       "task": "project-4",
       "url": "../projects/status.json",
-      "updatedAt": "2026-10-03T10:43:00Z",
+      "updatedAt": "2026-10-03T17:12:00Z",
       "summary": "17项历史项目与七项当前任务对应的进度快照；区分本轮发布、运行状态和未解决需求。",
       "access": "public",
       "metadataApproved": true
@@ -197,8 +197,8 @@
       "type": "website",
       "task": "project-6",
       "url": "https://1337816143.github.io/Paper/",
-      "updatedAt": "2026-10-03",
-      "summary": "现有论文站和镜像已发布；新一轮首页、导航与论文/方法知识库实现已启动，改为研究证据、开放示例与研究备忘，原笔记存储保留。",
+      "updatedAt": "2026-10-03T16:41:42Z",
+      "summary": "Paper主站5.5.2独立证据指南已上线；22主条目、研究账本与旧笔记接口保留。博士全文仍禁运。",
       "access": "public",
       "metadataApproved": true
     },
@@ -208,8 +208,8 @@
       "type": "website",
       "task": "project-5",
       "url": "https://1337816143.github.io/FarmSystemDesign/#research",
-      "updatedAt": "2026-10-03",
-      "summary": "v0.3.10已发布；地图可用性与博士三模型整体设计继续推进，海南地图尚未完整进入农场模型，全域数据和功能覆盖仍有缺口。",
+      "updatedAt": "2026-10-03T17:09:00Z",
+      "summary": "v0.3.13完整前沿缺陷已修复并上线；地图与现有内容保留，科学模型缺口另列。",
       "access": "public",
       "metadataApproved": true
     }
@@ -337,19 +337,19 @@
   ],
   "statusSnapshot": {
     "mode": "snapshot",
-    "asOf": "2026-10-03T10:43:00Z",
-    "notice": "这是有时间标记的状态快照，不是实时后台监控。运行、等待、受阻和本轮完成分别记录；网页已发布不代表全部研究目标已达成。",
+    "asOf": "2026-10-03T17:12:00Z",
+    "notice": "这是有时间标记的状态快照，不是实时后台监控。超过30分钟的任务记录标为待重新核验；需求背景、状态依据和发布结果分别展示。发布页面不会刷新研究观察时间。",
     "items": [
       {
         "id": "task-1",
         "number": 1,
         "title": "聊天与项目归档",
-        "state": "running",
-        "currentAction": "核对本轮79条增量的原文、覆盖边界和发布结果；本页保留旧355条。",
-        "waitingFor": "本轮两站发布与浏览器核验结果，随后等待新的可见原文",
-        "verifiedAt": "2026-10-03T10:22:00Z",
-        "publication": "本页收录434条记录，其中424条有文字。",
-        "completion": "本轮候选已整理；部分分页、附件和不可见记录仍不代表完整取得。",
+        "state": "waiting",
+        "currentAction": "434条脱敏记录、424条有文字已在两站一致发布；本轮没有继续采集原文。",
+        "waitingFor": "新的本dot可见原文；现有部分分页缺口仍待核对",
+        "verifiedAt": "2026-10-03T16:34:37Z",
+        "publication": "v1.8两站归档与检索已验收，原355条原文完整保留。",
+        "completion": "本轮公开归档完成不等于完整历史已取得；附件及其他GPT全文不在公开范围。",
         "links": [
           {
             "label": "读聊天原文",
@@ -363,22 +363,37 @@
         "projectIds": [
           "project-4"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "public_release",
+          "summary": "两站19项产物、原文数量与覆盖提示已逐项核验。",
+          "observedAt": "2026-10-03T10:00:30.694564+00:00",
+          "links": [
+            {
+              "label": "归档覆盖说明",
+              "url": "../chat/coverage.json"
+            },
+            {
+              "label": "镜像部署记录",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37136819207"
+            }
+          ]
+        }
       },
       {
         "id": "task-2",
         "number": 2,
         "title": "AI工作台与个人进化网站",
         "state": "running",
-        "currentAction": "实施任务状态快照、成果直达和覆盖提示，进行发布前及两站测试。",
-        "waitingFor": "云端视口检查与正式部署/镜像校验结果",
-        "verifiedAt": "2026-10-03T10:22:00Z",
-        "publication": "当前页面版本见页首；两站分别保留同批内容和发布清单。",
-        "completion": "状态面板本轮正在验收；七项研究需求并未因此全部完成，状态不会实时刷新。",
+        "currentAction": "v1.8两站同步已完成；正在修复筛选后原文跳转、过期状态及发布核验展示。",
+        "waitingFor": "本轮功能的对抗审查、云端浏览器测试和下一版正式发布",
+        "verifiedAt": "2026-10-03T17:12:00Z",
+        "publication": "主站与个人进化镜像均已发布v1.8；本轮修复在验收前不视为已上线。",
+        "completion": "发布成功与全部需求完成分开；旧状态快照和筛选跳转缺陷正在本批处理。",
         "links": [
           {
             "label": "看全部成果",
@@ -392,22 +407,37 @@
         "projectIds": [
           "project-4"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "project_check",
+          "summary": "本轮实现已在云端开始；对等发布结论来自已完成的v1.8验收。",
+          "observedAt": "2026-10-03T16:34:37Z",
+          "links": [
+            {
+              "label": "主站部署记录",
+              "url": "https://github.com/1337816143/MyDotWork/actions/runs/37131755410"
+            },
+            {
+              "label": "镜像部署记录",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37136819207"
+            }
+          ]
+        }
       },
       {
         "id": "task-3",
         "number": 3,
         "title": "AI上游调研",
         "state": "waiting",
-        "currentAction": "本轮报价、发票与转售权矩阵已发布，等待下一次证据复查。",
-        "waitingFor": "真实开票主体、最终费用、准确SKU转售权及新的核验材料",
-        "verifiedAt": "2026-10-03T10:22:00Z",
-        "publication": "第3—8轮与7家票据/授权矩阵、询证清单已上线。",
-        "completion": "尚无同时满足低价、正规发票与稳定授权供货的完整候选。",
+        "currentAction": "统一报告与证据缺口清单已整理并复审，待独立资料版本整合；没有新一轮搜价在运行。",
+        "waitingFor": "开票主体、含票全部费用、准确SKU转售授权及真实履约证据",
+        "verifiedAt": "2026-10-03T17:10:00Z",
+        "publication": "已上线历史研究和票据授权矩阵；本轮增量尚未加入现有报告。",
+        "completion": "目前含票全费与授权闭环仍未成立；不能把候选观察数当作合格上游数。",
         "links": [
           {
             "label": "看上游报告",
@@ -421,23 +451,29 @@
         "projectIds": [
           "project-1"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_cb8e4c24d624819194109212e6d68409",
           "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "project_check",
+          "summary": "17:10 UTC核验本轮统一报告已完成、等待入库；原五家观察日期仍为13:20 UTC。",
+          "observedAt": "2026-10-03T13:20:00Z",
+          "links": []
+        }
       },
       {
         "id": "task-4",
         "number": 4,
         "title": "Codex／GPT资料接管",
-        "state": "waiting",
-        "currentAction": "本轮私有快照与指定工具的定向只读核验已完成，等待后续增量。",
-        "waitingFor": "下一批明确提供的导出或定时检查返回的新材料",
-        "verifiedAt": "2026-10-03T10:22:00Z",
-        "publication": "私有234对话、4012条记录、3860个唯一ID保持；本轮导出另补13条Codex可见消息，不公开全文。",
-        "completion": "仍有206处正文/媒体缺口、未知分支和2条会话级缺口；本轮核验完成不等于全量接管。",
+        "state": "round_complete",
+        "currentAction": "本轮只读资料质量分类已完成，没有新增正文或对话；等待后续材料。",
+        "waitingFor": "新的明确提供的导出、原文或附件，以及下一轮只读检查",
+        "verifiedAt": "2026-10-03T17:10:00Z",
+        "publication": "公开页面仅保留汇总进度；234对话、4012条记录、3860个唯一ID仍属于09:08 UTC旧导出统计。",
+        "completion": "质量分类完成不等于缺失正文已补齐；旧导出统计保持原日期，私有全文和媒体不公开。",
         "links": [
           {
             "label": "看公开进度",
@@ -452,23 +488,29 @@
           "project-2",
           "project-3"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_41779a8d34cc8191b163e6128ea80fbd",
           "Sentinel_3ee1c49f20dc8191ade208c5fd74df53"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "project_check",
+          "summary": "17:10 UTC确认本轮质量整理完成，未增加原始正文；15:58 UTC检查也没有新导出。",
+          "observedAt": "2026-10-03T09:08:00Z",
+          "links": []
+        }
       },
       {
         "id": "task-5",
         "number": 5,
         "title": "AI副业与真实收益验证",
         "state": "waiting",
-        "currentAction": "原创4镜头分镜、提示词及计时质量准备包已完成；S01实际生成尚未启动。",
-        "waitingFor": "既有GPU空闲；当前不抢占正在使用的算力，没有新生成视频",
-        "verifiedAt": "2026-10-03T10:43:00Z",
-        "publication": "已有研究报告和评估包可访问；本轮另交付32项证据的实证方案，公开入口仍保留已上线版本。",
-        "completion": "新样片和交易验证尚未完成；已有短片与准备包不等于真实盈利，尚无本人订单或收入证据。",
+        "currentAction": "本轮统一试单方案已完成复审；5秒预演仍是待验证假设，没有新生成或订单验证。",
+        "waitingFor": "声音试听、完整许可链、真实需求和最小付费试单验证",
+        "verifiedAt": "2026-10-03T17:10:00Z",
+        "publication": "现有公开报告与科研评估候选保留；本轮统一方案待独立整合，视频和音轨继续私有。",
+        "completion": "未试听声音、没有已验证客户或收入；≥3笔且≥2个独立客户仅是观察门槛，不是已完成结果。",
         "links": [
           {
             "label": "看现有报告",
@@ -482,23 +524,29 @@
         "projectIds": [
           "project-17"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
           "Sentinel_5ca085ee1be08191a2a93a26a52cf70a"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "project_check",
+          "summary": "本轮主报告与准备包已统一并复审，等待公开安全增量整合；声音未试听、许可链和真实需求仍待核。",
+          "observedAt": null,
+          "links": []
+        }
       },
       {
         "id": "task-6",
         "number": 6,
         "title": "Paper论文与方法知识库",
-        "state": "running",
-        "currentAction": "博士研究设计方案已交付；云端正重组Paper首页、导航和内容覆盖，转向研究证据、开放示例与研究备忘。",
-        "waitingFor": "新首页与知识库实现、原笔记保留检查和发布前验收",
-        "verifiedAt": "2026-10-03T10:25:35Z",
-        "publication": "现有Paper站和镜像已发布；本轮研究导向改版正在实现，尚未上线。",
-        "completion": "用户已取消练习题、错题和知识自测方向；真实登录与双设备恢复仍待验证。",
+        "state": "waiting",
+        "currentAction": "Paper主站5.5.2的独立会议短文证据指南已上线；个人进化镜像待串行同步。",
+        "waitingFor": "5.5.2镜像验收；博士全文仍禁运，等待合法开放材料",
+        "verifiedAt": "2026-10-03T17:10:00Z",
+        "publication": "Paper主站已发布5.5.2；当前镜像为已验收的5.5.1，22主条目和原笔记接口保留。",
+        "completion": "目标是理解论文方法、工具与研究体系，不设置练习题、错题和知识自测。会议材料与学位全文分开；内容覆盖不等于全文取得、原模型复现或真实跨设备恢复已验证。",
         "links": [
           {
             "label": "打开论文网站",
@@ -512,42 +560,68 @@
         "projectIds": [
           "project-6"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
           "Sentinel_9358551240b88191ac0cadd343b9a958"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "public_release",
+          "summary": "精确主站d949f4dc的完整CI及部署成功；镜像5.5.1仍可用。",
+          "observedAt": "2026-10-03T16:41:42Z",
+          "links": [
+            {
+              "label": "Paper 5.5.2部署记录",
+              "url": "https://github.com/1337816143/Paper/actions/runs/37137496555"
+            },
+            {
+              "label": "独立证据指南",
+              "url": "https://1337816143.github.io/Paper/#/cheng-landscape-evidence-2025"
+            }
+          ]
+        }
       },
       {
         "id": "task-7",
         "number": 7,
         "title": "Farm多尺度设计与优化",
-        "state": "running",
-        "currentAction": "地图修复和数据生成持续运行；博士三模型整体重构设计已完成，等待分阶段实施。",
-        "waitingFor": "地图与数据接入测试；FarmDesign/FarmSTEPS/Landscape IMAGES功能实现与验证",
-        "verifiedAt": "2026-10-03T10:22:00Z",
-        "publication": "v0.3.10已发布；本轮地图修复与模型整体设计尚未交付。",
-        "completion": "现有计算仍以崖州简化季度筛选为主；三模型完整功能、博士三个目标及全域覆盖均未完成。",
+        "state": "round_complete",
+        "currentAction": "完整前沿缺陷本轮修复并验收，v0.3.13已上线；正在等待下一轮检查。",
+        "waitingFor": "下一轮检查，以及三个模型仍需补齐的科学实现、校准和验证",
+        "verifiedAt": "2026-10-03T17:09:00Z",
+        "publication": "v0.3.13已发布；1414个全量方案、40项分页、跨偏好保存与完整导出已核验。",
+        "completion": "本轮前沿网页缺陷修复完成；全部博士模型实现与科学验证仍未完成，不以UI测试替代模型校准。",
         "links": [
           {
-            "label": "打开海南数据入口",
-            "url": "https://1337816143.github.io/FarmSystemDesign/#research"
+            "label": "看完整前沿",
+            "url": "https://1337816143.github.io/FarmSystemDesign/#planner"
           },
           {
-            "label": "看数据资源",
-            "url": "https://1337816143.github.io/FarmSystemDesign/#resources"
+            "label": "海南数据入口",
+            "url": "https://1337816143.github.io/FarmSystemDesign/#research"
           }
         ],
         "projectIds": [
           "project-5"
         ],
-        "evidenceMessageIds": [
+        "access": "public",
+        "metadataApproved": true,
+        "contextMessageIds": [
           "Sentinel_f94aa57a1e8c81918d67abfff839eb23",
           "Sentinel_9358551240b88191ac0cadd343b9a958"
         ],
-        "access": "public",
-        "metadataApproved": true
+        "verification": {
+          "kind": "public_release",
+          "summary": "独立云测试、部署与线上验收完成；此前0.3.12保持的地图和模型功能未被替换。",
+          "observedAt": "2026-10-03T17:09:00Z",
+          "links": [
+            {
+              "label": "Farm线上验收",
+              "url": "https://github.com/1337816143/FarmSystemDesign/actions/runs/37139112291"
+            }
+          ]
+        }
       }
     ],
     "coverage": {
@@ -581,6 +655,28 @@
         "messageId": "Sentinel_a8d0aafef44c8191a8144b29309ebb49",
         "supersedes": []
       }
-    ]
+    ],
+    "staleAfterMinutes": 30,
+    "publicationChecks": {
+      "checkedAt": "2026-10-03T16:33:20Z",
+      "source": {
+        "version": "1.8.0",
+        "commit": "820260fe1eab13726df6aa574bb036b524024ca6",
+        "deployedAt": "2026-10-03T15:02:13Z",
+        "runId": 37131755410,
+        "runUrl": "https://github.com/1337816143/MyDotWork/actions/runs/37131755410"
+      },
+      "mirror": {
+        "version": "1.8.0",
+        "upstreamCommit": "820260fe1eab13726df6aa574bb036b524024ca6",
+        "sourceCommit": "a920bb1b52a280fa698304b763f017ff33aedef1",
+        "commit": "2add58d84bec3447bca9389cbb3ee2084931448a",
+        "syncedAt": "2026-10-03T16:25:48Z",
+        "deployedAt": "2026-10-03T16:27:06Z",
+        "runId": 37136819207,
+        "runUrl": "https://github.com/1337816143/Evolution/actions/runs/37136819207"
+      },
+      "status": "consistent"
+    }
   }
 }
