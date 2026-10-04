@@ -18,6 +18,12 @@ PUBLICATIONS = (
     ('research/2026-10-04/index.html', '5667340997a912b9c40bf2c8d445764f83cf4c00df7bb2df979dd73a8ec1d8d5'),
     ('research/2026-10-04/supplier-delta.json', '806985c63c7fea9226cf46cca52f4e06e39c4970d14adfdaba6e582bd8328873'),
     ('projects/vector-2026-10-04.json', '744daf41fcf3f955e980815d16fba2858b95b95599a0148ae73de1f956a0b480'),
+    ('research/2026-10-04/task5-business-validation-20261004.html', 'dc4bf1e2a3142bc4b5c5d67d18c3cb48c8eae19db6730e5f3e8bfba991064486'),
+    ('research/2026-10-04/task5-business-validation-20261004.txt', '9d84054f8d51479a03b7796049d4abdcf4c6f774de303112e942088d439f0aa7'),
+    ('research/2026-10-04/task5-business-validation-20261004-evidence.json', '2554cbcc5aea6e38bf29f87cf8cccfba77748fc99ce085bc8bbfec3c6e2b5db2'),
+    ('projects/vector-0.11.1-2026-10-04.json', '6052415a81a2b54228ad7123b7d0e4d685afdab9b7f0160e43fef09afa7f151b'),
+    ('projects/smartdrop-r1-2026-10-04.json', '13f5846221ab08a83cfd4b43a1aa94461c32af5c22a64740166020e964782751'),
+    ('projects/wetype-2026-10-04.json', '5b5fbf09d7cb8fd8974690f7a57ab51b9cdb433072af1cef6514734dbfffa274'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 

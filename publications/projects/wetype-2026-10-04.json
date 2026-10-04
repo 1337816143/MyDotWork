@@ -1,0 +1,43 @@
+{
+  "project": "WeType原生候选窗英文",
+  "taskId": "task-9",
+  "projectId": "project-18",
+  "verifiedAtUtc": "2026-10-04T15:09:00Z",
+  "status": "环境与接口核验中；Windows真实验证未完成",
+  "goal": "仅Windows，在微信输入法原生候选窗中显示英文；保留中文提交与原输入引擎，不用覆盖浮窗，不切换输入法。",
+  "validation": {
+    "environment": "Linux / GCC，仅自研核心合成测试",
+    "syntheticTestsPassed": 27,
+    "assertionsPassed": 4810,
+    "analyzerTestsPassed": 10,
+    "windowsRuns": 0,
+    "nativeEnglishWindowVerified": false,
+    "installerExecuted": false,
+    "productionVersionAllowlist": [],
+    "productionAdapter": "unavailable"
+  },
+  "boundaries": [
+    "已有工程源码与合成测试不等于WeType兼容实现。",
+    "TSF是Windows输入法框架，文档本身不证明WeType提供可用的第三方候选文本替换接口。",
+    "Qingjian是独立输入法，不能作为保留WeType原引擎目标的已完成方案。",
+    "颜色控制台仅修改候选背景色，作者声明测试2.1.2.11；此声明不证明当前WeType兼容或候选文字注入可行。",
+    "未在真实Windows、用户账号或用户输入上验证；后续先核验接口、版本与云端Windows环境。"
+  ],
+  "sources": [
+    {
+      "id": "W01",
+      "title": "Qingjian公开源码与GPL-3.0许可",
+      "url": "https://github.com/qingjian-team/qingjian"
+    },
+    {
+      "id": "W02",
+      "title": "WeType候选颜色控制台，MIT、非官方",
+      "url": "https://github.com/Rural-Dynamics/wechat-wetype-candidate-color-console"
+    },
+    {
+      "id": "W03",
+      "title": "Microsoft Text Services Framework官方文档",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/tsf/text-services-framework"
+    }
+  ]
+}

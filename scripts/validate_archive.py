@@ -119,7 +119,7 @@ def validate():
     assert chat['coverage']['messageCount']==len(chat['messages'])
     assert type(chat['coverage']['readApiHistoryExhausted']) is bool
     increment = chat['coverage']['latestIncrement']
-    assert increment['allPagesPartial'] is True and increment['partialPageCount'] == 3
+    assert increment['allPagesPartial'] is True and increment['partialPageCount'] == 5
     assert chat['coverage']['readApiHistoryExhausted'] is False, 'Partial pages cannot prove exhaustive coverage'
     integrity = json.loads((ROOT/'data/chat-integrity.json').read_bytes())
     validate_archive_integrity(chat['messages'], increment, integrity)

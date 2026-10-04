@@ -1,0 +1,37 @@
+{
+  "project": "SmartDrop",
+  "verifiedAtUtc": "2026-10-04T14:46:43.899Z",
+  "digitalRevision": "A5-P0.7-R1",
+  "websiteRevision": "WEB-2B",
+  "hardwareRevision": "A5-P0.7",
+  "website": "https://1337816143.github.io/Evolution/pages/smartdrop.html#library",
+  "sourceCommit": "353aacbfa0e6a8c05ae1a27d836bfebd9dee70b0",
+  "publicMirrorCommit": "fb72126cf049682bf4afa4f5e001f93b2c731565",
+  "productionPagesUrl": "https://github.com/1337816143/Evolution/actions/runs/37210296363",
+  "validation": {
+    "softwareTestsPassed": 296,
+    "nativeStorageChecksPassed": 8,
+    "publicationBoundaryCounterexamples": 12,
+    "viewports": [
+      390,
+      1280
+    ],
+    "physicalResults": 0,
+    "physicalValidation": "NOT_RUN"
+  },
+  "boundary": "R1是独立离线Node数值校核核心与新版9页指南。历史HTML校核器与旧PDF未修改，离线核心尚未接入在线页面；硬件仍为A5-P0.7，软件检查不代替实物校准和机械验证。",
+  "artifacts": [
+    {
+      "name": "SmartDrop_A5_P07_R1_Guide.pdf",
+      "url": "https://1337816143.github.io/Evolution/smartdrop/revisions/A5-P0.7-R1/SmartDrop_A5_P07_R1_Guide.pdf",
+      "bytes": 64080,
+      "sha256": "2aabb6a4c97e816e995a7638603122282fdc6ccc54358714219a93c0795c1525"
+    },
+    {
+      "name": "SmartDrop_A5_P07_R1_Core.zip",
+      "url": "https://1337816143.github.io/Evolution/smartdrop/revisions/A5-P0.7-R1/SmartDrop_A5_P07_R1_Core.zip",
+      "bytes": 127191,
+      "sha256": "797a6be59c36cd54b3e54ed9be4d4e198692ab15cb5f0d118dc6dc28d6a271a0"
+    }
+  ]
+}

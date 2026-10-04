@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
 const S=require('../src/status.js'),A=require('../src/archive.js');
 const data=JSON.parse(fs.readFileSync('dist/dashboard/catalog.json','utf8'));
 const items=data.statusSnapshot.items;
-assert.equal(items.length,8);assert.equal(S.filter(items).length,8);
+assert.equal(items.length,9);assert.equal(S.filter(items).length,9);
 const fixture=['running','running','waiting','blocked','round_complete'].map((state,i)=>({id:String(i),state}));
 assert.deepEqual(S.counts(fixture),{running:2,waiting:1,blocked:1,round_complete:1});
 assert.deepEqual(S.filter(fixture,'waiting').map(x=>x.id),['2']);

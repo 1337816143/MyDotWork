@@ -83,8 +83,8 @@ def validate_status_snapshot(snapshot, project_ids):
     assert snapshot['staleAfterMinutes'] == 30
     timestamp(snapshot['asOf'])
     assert 'T' in snapshot['asOf'] and '不是实时' in snapshot['notice']
-    assert len(snapshot['items']) == 8
-    assert [item['number'] for item in snapshot['items']] == list(range(1, 9))
+    assert len(snapshot['items']) == 9
+    assert [item['number'] for item in snapshot['items']] == list(range(1, 10))
     for item in snapshot['items']:
         assert set(item) == {'id', 'number', 'title', 'state', 'currentAction', 'waitingFor', 'verifiedAt', 'publication', 'completion', 'links', 'projectIds', 'contextMessageIds', 'verification', 'access', 'metadataApproved'}
         assert item['id'] == 'task-' + str(item['number']) and item['state'] in STATES

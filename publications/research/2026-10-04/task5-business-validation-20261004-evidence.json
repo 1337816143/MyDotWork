@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.1",
+  "title": "任务3/5：公开买方需求对照与零新增购买验证",
+  "as_of_utc": "2026-10-04T12:26:00Z",
+  "scope": "本轮为公开只读研究与纸面规格/成本验证；研究阶段未登录、注册、联系、投标、付款或新增生成，未公开样片/媒体。脱敏研究文字的网站发布与样片公开分开记录。",
+  "baseline_url": "https://1337816143.github.io/MyDotWork/research/2026-10-03/index.html",
+  "decision": "保留AI单镜服务为待验证假设；当前未找到明确接受5秒480P静音预演的付费需求，不进入成片分账或会员进货。",
+  "new_findings": [
+    "新增3条目的性选取的公开买方需求规格对照，显示曾有公开采购需求，均不能当已完成订单",
+    "优酷实时页面纠正搜索索引旧公式；30分钟成片门槛排除当前样品直接入场",
+    "补入国内兼职入口的投标/抽成边界，区别外包类目规则",
+    "完成39/59/99元三档内部敏感性测算；不是市场报价",
+    "会员线沿用B15的10月4日02:46 UTC既有五家定点记录及0/0/0结果，本轮未新增供应商或授权证据"
+  ],
+  "demand_matrix": [
+    {
+      "source": "B03",
+      "buyer": "已有分镜的内容制作方",
+      "deliverable": "按分镜生成单镜",
+      "budget": "项目挂牌2000元；单镜预算未知",
+      "fit": "部分匹配",
+      "reject_or_gap": "需要480P预演的明确用途、当前需求与单镜验收未知；2025历史记录",
+      "paid_evidence": false
+    },
+    {
+      "source": "B04",
+      "buyer": "原创建模/动画系列制作方（美国）",
+      "deliverable": "20秒、5镜、1080P、有对话与基础口型",
+      "budget": "挂牌50美元测试价",
+      "fit": "不匹配",
+      "reject_or_gap": "时长、分辨率、跨镜一致性、口型和地区均不满足当前H3方案",
+      "paid_evidence": false
+    },
+    {
+      "source": "B05",
+      "buyer": "产品广告主（意大利）",
+      "deliverable": "30–60秒9:16成片，字幕、音乐音效",
+      "budget": "需另报总价；时薪栏非总预算",
+      "fit": "不匹配",
+      "reject_or_gap": "完整广告、时长、声音/后期与地区超过当前方案",
+      "paid_evidence": false
+    },
+    {
+      "source": "B06",
+      "buyer": "咪咕具名剧目合作方",
+      "deliverable": "整部AI沙雕漫剧",
+      "budget": "当前规则及金额未知",
+      "fit": "不匹配/证据不全",
+      "reject_or_gap": "历史招募；不证明承接5秒样片或尚有名额",
+      "paid_evidence": false
+    }
+  ],
+  "cost_model": {
+    "currency": "CNY",
+    "mode": "内部敏感性测算，非报价或收入预测",
+    "formula": "最低含税总报价=(全部非比例成本+目标时薪×全部人工小时)/(1-已确认比例费用率)",
+    "unknown_rule": "任何必需费用、税费或人工时间未知，实际全成本和净利润保持null。比例分母须采用真实合同口径，不能漏税或重复扣费。",
+    "actual": {
+      "orders": 0,
+      "settlements": 0,
+      "new_purchase_cny": 0,
+      "all_in_cost_cny": null,
+      "active_hours": null,
+      "electricity_cny": null,
+      "model_licenses_cleared": false,
+      "net_profit_cny": null,
+      "effective_hourly_income_cny": null,
+      "new_generations": 0
+    },
+    "sensitivity": {
+      "commission_assumed": 0.2,
+      "hourly_target_assumed": 30,
+      "non_commission_costs_assumed": 0,
+      "warning": "30元目标时薪是计算示例，不是用户已选目标；0成本只用于理论上限，非实际成本。",
+      "rows": [
+        {
+          "gross": 39,
+          "after_commission_before_other_costs": 31.2,
+          "max_total_active_minutes_if_other_costs_zero": 62.4,
+          "margin_for_all_other_costs_at_75min": -6.3
+        },
+        {
+          "gross": 59,
+          "after_commission_before_other_costs": 47.2,
+          "max_total_active_minutes_if_other_costs_zero": 94.4,
+          "margin_for_all_other_costs_at_75min": 9.7
+        },
+        {
+          "gross": 99,
+          "after_commission_before_other_costs": 79.2,
+          "max_total_active_minutes_if_other_costs_zero": 158.4,
+          "margin_for_all_other_costs_at_75min": 41.7
+        }
+      ]
+    },
+    "historic_runtime": {
+      "clip_seconds": 5.166667,
+      "process_wall_seconds": 822.375,
+      "single_sample_only": true,
+      "three_runs_same_rate_minutes": null,
+      "linear_30_min_output_hours": null,
+      "warning": "时长沿用既有S01记录；本次公开资料核对未独立复验原媒体。只作为历史观察，不作为新成本或产能模型输入；三次运行和30分钟成片外推值均为null。没有新增生成。",
+      "used_as_model_input": false,
+      "independently_reverified_for_this_public_copy": false,
+      "evidence_status": "inherited_historical_observation_not_independently_reverified",
+      "media_publication": "未公开原视频、验收报告、私人路径或其他原媒体。"
+    }
+  },
+  "sources": [
+    {
+      "id": "B01",
+      "title": "优酷动漫合作实时规则",
+      "url": "https://om.youku.com/home/detail?openCategory=100",
+      "observation": "云端浏览器可见正文，2026-10-04 12:23 UTC",
+      "finding": "2026-08-20起签约适用新规则；个人可申请；成片至少30分钟、授权至少3年。会员基础收入按会员贡献价值及独家等合作类型比例计算，酷漫计划另设90天贡献值门槛。",
+      "limit": "搜索索引还显示旧广告/类型系数公式，不能当现行规则；实际签约、审核和收益均未发生。"
+    },
+    {
+      "id": "B02",
+      "title": "阅文 DramaBuddy 官方首页",
+      "url": "https://aicomic.yuewen.com/",
+      "observation": "官方公开正文，2026-10-04读取",
+      "finding": "列有IP合作、剧本市集与接单广场；项目方可发布制作需求，创作者/团队可承接。",
+      "limit": "具体项目、个人准入、抽佣、付款周期及素材授权合同未公开核到；不能把平台宣传当真实订单。"
+    },
+    {
+      "id": "B03",
+      "title": "猪八戒：按分镜生成AI镜头的买方需求",
+      "url": "https://m.zbj.com/xq/vBUhld4tWGo1PfjJ.html",
+      "observation": "平台需求详情公开读取，2026-10-04",
+      "finding": "项目预算显示2000元；买方提供分镜，寻按镜头付费的AI生成兼职合作。参与交稿记录在2025年3月。",
+      "limit": "2000元不是单镜成交价；单镜长度、480P接受度、付费完成和本日仍在招聘都未证实。"
+    },
+    {
+      "id": "B04",
+      "title": "Upwork：20秒双角色动画付费测试",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Paid-Anime-Animation-Test-for-Children-YouTube-Series_~022099523440338611864/",
+      "observation": "平台需求正文读取，2026-10-04；来源视图相对日期不同",
+      "finding": "标价50美元，20秒5镜、1920×1080、角色忠实与跨镜一致性、对话/基础口型、1次客观纠错。买方在美国，客户材料保密，未书面允许不得公开或复用。",
+      "limit": "招聘页面及Hires字段不等于本任务的验收、实际成交额、到账或利润；当前可投状态未核。"
+    },
+    {
+      "id": "B05",
+      "title": "Upwork：Bright实体闹钟动画广告需求",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Create-animated-video-ads-for-physical-alarm-clock-product_~022105280821078239968/",
+      "observation": "平台需求正文读取，2026-10-04",
+      "finding": "试单要求30–60秒9:16成品广告，含字幕及音乐音效；客户提供产品素材，询问单条完整报价；买方所在地显示意大利。",
+      "limit": "页面5–20美元/小时范围不是成品成交价；没有用户接单或结算证据。"
+    },
+    {
+      "id": "B06",
+      "title": "咪咕：5部沙雕漫剧项目合作公告",
+      "url": "https://www.cmread.com/wenxuenew/announcementDetail/2000000053290232",
+      "observation": "官方域名搜索索引正文；公告日期2026-03-24；2026-10-04访问",
+      "finding": "具名招募5部AI沙雕漫剧，允许递交个人或团队资料，声明招满为止。",
+      "limit": "云端实时详情仅加载空壳/NaN日期，总招募规则未读出；保留为历史需求，不能说当前有空位、保底或确定结算。"
+    },
+    {
+      "id": "B07",
+      "title": "猪八戒兼职常见问答",
+      "url": "https://news.zbj.com/newsdetail-6878.html",
+      "observation": "官方帮助正文，2026-10-04读取；页面未展示明确更新日期",
+      "finding": "需个人实名并公开完整主页；文中称每日1次免费投标，成交按项目等因素抽成5%–20%，使用官方托管。",
+      "limit": "属于兼职说明，不能套给所有外包类目；免费次数、佣金、保证金及到账限制需具体账号/订单核实。"
+    },
+    {
+      "id": "B08",
+      "title": "猪八戒平台交易规则",
+      "url": "https://rule.zbj.com/ruleshow-0?categoryId=278&pid=716",
+      "observation": "官方规则正文，2025-01-02版，2026-10-04复读",
+      "finding": "区分项目外包和灵活兼职；按合同/平台完成托管、交付和验收；费用与保证金、知识产权归属应在接单前查明。",
+      "limit": "本次没有入驻、提交个人资料、投标或承诺交易。既有报告的不同类目费率和90天延迟风险仍保留。"
+    },
+    {
+      "id": "B09",
+      "title": "MiniMax H3官方许可",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE",
+      "observation": "官方许可正文，2026-08-02版，2026-10-04复读",
+      "finding": "适用区域排除欧盟、英国、韩国、美国；限制明确覆盖输出在排除地区的使用/分发/展示；商业界面标识与公开AI披露亦有要求。",
+      "limit": "当前本机量化文件对应、再分发链及部分依赖尚未闭合；国内客户不自动解决全球平台公开展示范围。未取得专项例外。"
+    },
+    {
+      "id": "B10",
+      "title": "Upwork自由职业者费用",
+      "url": "https://www.upwork.com/pricing/freelancer",
+      "observation": "官方价格正文，2026-10-04读取",
+      "finding": "佣金范围为每合同0%–15%。",
+      "limit": "不是固定10%；具体合同、支付/汇兑和税费未知，不能用挂牌50美元当到手50美元。"
+    },
+    {
+      "id": "B11",
+      "title": "Upwork Connects规则",
+      "url": "https://support.upwork.com/hc/en-us/articles/211062898-Understanding-and-using-Connects",
+      "observation": "官方帮助检索正文，2026-10-04",
+      "finding": "Connects单价0.15美元，投递可能消耗Connects。",
+      "limit": "未核用户免费额度及具体职位消耗；不能把免费注册等同零成本获客。"
+    },
+    {
+      "id": "B12",
+      "title": "Upwork固定价里程碑付款",
+      "url": "https://support.upwork.com/hc/en-us/articles/211063718-How-payments-for-milestones-and-fixed-price-contracts-work?mobile_site=true",
+      "observation": "官方帮助检索正文，2026-10-04",
+      "finding": "固定价提交后的审阅期可达14天，另有5天安全期。",
+      "limit": "不是保证从接单起19天到账；返工、争议、提款和账户条件仍影响收款。"
+    },
+    {
+      "id": "B13",
+      "title": "OpenAI支持地区",
+      "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries",
+      "observation": "官方正文，2026-10-04复读",
+      "finding": "支持地区列表未列中国大陆；列表外提供或使用访问可能导致暂停或封禁。",
+      "limit": "不推定某供应商有未公开专项许可；票据或境外支付不改变终端资格。 本页五家样本与0/0/0统计另见B15，不由此规则页面证明。"
+    },
+    {
+      "id": "B14",
+      "title": "OpenAI礼卡购买与兑换",
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observation": "官方正文，2026-10-04复读",
+      "finding": "目前限美国购买/兑换及美国USD账号；普通官方零售入口存在。",
+      "limit": "不是中国大陆Plus下级供货授权，亦不是人民币含票总成本证明。 本页五家样本与0/0/0统计另见B15，不由此规则页面证明。"
+    },
+    {
+      "id": "B15",
+      "title": "MyDotWork：10月4日五家供货定点复核公开证据",
+      "url": "https://1337816143.github.io/MyDotWork/research/2026-10-04/supplier-delta.json",
+      "observation": "来源观察截至2026-10-04 02:46 UTC；本页交叉引用既有公开结构化记录，不新增供货观察。",
+      "finding": "supplier_prices列出五家候选且qualified均为false；qualification_totals记录新增合格供应商0、完整授权供货链0、真实大陆票据验真0。",
+      "limit": "这是既有公开研究的统计来源，不是商家履约、采购成交或专项授权原件。B13、B14只支持官方规则边界，不支持这组样本与计数。",
+      "evidence_class": "existing_public_research_record"
+    }
+  ],
+  "baseline_url_role": "10月3日既有公开背景；不作为S01原媒体独立复验或10月4日五家统计的精确来源。",
+  "demand_experiment": {
+    "sample_sources": [
+      "B03",
+      "B04",
+      "B05"
+    ],
+    "purpose_selected_samples": 3,
+    "explicit_current_spec_acceptances": 0,
+    "representative_market_sample": false,
+    "additional_historical_platform_source": "B06",
+    "note": "B06是另列的历史平台合作公告，不是需求匹配实验的第四条样本；公开需求不等于成交。"
+  },
+  "supplier_audit_carryover": {
+    "source": "B15",
+    "url": "https://1337816143.github.io/MyDotWork/research/2026-10-04/supplier-delta.json",
+    "as_of_utc": "2026-10-04T02:46:00Z",
+    "sample_count": 5,
+    "qualified_suppliers": 0,
+    "new_verified_qualified_suppliers": 0,
+    "verified_complete_authorized_supply_chains": 0,
+    "verified_mainland_invoice_transactions": 0,
+    "count_provenance": {
+      "sample_count": "supplier_prices.length",
+      "qualified_suppliers": "supplier_prices[*].qualified",
+      "other_totals": "qualification_totals"
+    },
+    "note": "沿用既有公开记录；本轮商业需求研究没有新增供应商核验。B13、B14不支持这些计数。"
+  },
+  "public_copy_provenance": {
+    "kind": "corrected_public_copy",
+    "source_observation_cutoff_utc": "2026-10-04T12:26:00Z",
+    "original_public_input_sha256": {
+      "public-fragment.html": "2aba53dc4c91b516c899221bda62cb106f0011b0dd6fca1347015f81a3e1d65a",
+      "validation-brief.txt": "5a04f563e634949ae3262a73c4de3aab929062a700cc8daf1dc021cf48a34bb2",
+      "evidence.json": "8e4df98bbb0c359146e2ab1bed12c1fe24e0162c7093333ea0057c5e2595fa96"
+    },
+    "original_inputs_preserved": true,
+    "supplier_record_sha256": "806985c63c7fea9226cf46cca52f4e06e39c4970d14adfdaba6e582bd8328873",
+    "supplier_record_cutoff_utc": "2026-10-04T02:46:00Z",
+    "independent_reviewed_sources": [
+      {
+        "source": "B01",
+        "observed_at_utc": "2026-10-04T14:53:30Z",
+        "scope": "官方规则正文复核；不涉及申请、签约或收益。"
+      },
+      {
+        "source": "B09",
+        "observed_at_utc": "2026-10-04T14:52:57Z",
+        "scope": "官方许可正文复核；不验证本机权重链或媒体。"
+      }
+    ],
+    "other_original_sources": "B02–B08及B10–B14沿用原研究的来源与限制；本次公开副本修订未重新逐条联网核验。",
+    "runtime_provenance": "S01时长是继承的历史记录，本次未独立复验原媒体。单次时长不验证重复运行或长片产能。",
+    "original_historical_reports_preserved": true,
+    "public_safety": "仅公开脱敏研究文字、来源URL和数值边界；不附原媒体、私聊、账户数据、私人路径或验收报告。",
+    "supplier_public_url_read_check": {
+      "url": "https://1337816143.github.io/MyDotWork/research/2026-10-04/supplier-delta.json",
+      "http_status": 200,
+      "bytes": 19455,
+      "sha256": "806985c63c7fea9226cf46cca52f4e06e39c4970d14adfdaba6e582bd8328873",
+      "matches_local_public_record": true,
+      "note": "仅核验已发布文件可读且内容一致；不将文件读取时间替换02:46 UTC来源观察截止时间。"
+    }
+  }
+}

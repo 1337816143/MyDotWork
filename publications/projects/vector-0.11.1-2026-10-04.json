@@ -1,0 +1,125 @@
+{
+  "project": "Real-Time-Vector-Keyframe",
+  "version": "0.11.1",
+  "sourceRepository": "https://github.com/1337816143/Real-Time-Vector-Keyframe",
+  "website": "https://1337816143.github.io/Real-Time-Vector-Keyframe/",
+  "sourceCommit": "6ed352df3b722409e387cb39a17abb2eca488df1",
+  "commitUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/commit/6ed352df3b722409e387cb39a17abb2eca488df1",
+  "buildInfoUrl": "https://1337816143.github.io/Real-Time-Vector-Keyframe/build-info.json",
+  "verifiedAtUtc": "2026-10-04T14:59:29.563825+00:00",
+  "productionCiUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/actions/runs/37211004267",
+  "productionPagesUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/actions/runs/37211004455",
+  "pullRequestUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/pull/4",
+  "currentMilestone": "面罩阶段与摄像头/RAW模式生命周期修复已发布，完成精确提交、测试产物和线上文件一致性核验",
+  "implemented": [
+    "默认LI→RI→RT→LT四个实际指尖闭环GPU窗口保持可用，原高级蒙版/Scene/运动与特效序列保留",
+    "显式选择蜘蛛英雄面罩后，启用原创红色面罩、白色镜片与蛛网线条；这是面部对齐的2D/2.5D效果，不是写实生成式换脸",
+    "面罩绘制严格限于人脸轮廓与四指尖有效窗口的交集；边缘抗锯齿向内收，窗口外不溢色",
+    "Face Landmarker按需在独立Worker加载，一次只处理一帧，以最多12Hz采样最新帧，250毫秒过期结果丢弃",
+    "有界冷启动、预热与GPU→CPU恢复，慢后端明确停止面罩而不绘制过期人脸；这些策略上限不是端到端延迟测量",
+    "切换模式/特效或退出时释放Worker；轮播和手势切换不会自动开启面部追踪，也不会破坏高级模式",
+    "项目JSON保存面罩设置，不保存人脸关键点或摄像头画面",
+    "最终GPU合成画布直接用于VP9录制，回放中确认眼睛、面罩和窗口外画面",
+    "Pages只部署同次完整验证通过的构建产物，发布标识包含commit、run和验证机器架构",
+    "摄像头等待授权、拒绝、结束或未就绪时，不启动也不重建面部Worker；摄像头恢复就绪后恢复当前选择",
+    "切到原始摄像头RAW模式时，终止不可见的人脸推理并清除旧脸；切回特效自动后恢复",
+    "人脸重试按钮检查相机/RAW状态，界面明确显示等待或暂停原因"
+  ],
+  "validation": {
+    "deterministicSyntheticTests": 58,
+    "runner": "Ubuntu 24.04 / Linux ARM64",
+    "productionBrowserScenarios": [
+      "桌面合成视频",
+      "手机尺寸合成视频",
+      "摄像头拒绝",
+      "WebGL不可用",
+      "面罩显式启用/重试/高级模式保留/退出释放",
+      "RAW→特效自动释放与恢复",
+      "切换摄像头等待→拒绝→重试，不提前重建Worker"
+    ],
+    "quadWebglPixelSamples": 5968,
+    "quadWebglPixelMismatches": 0,
+    "faceIntersectionPixelChecks": 2041,
+    "faceExteriorPixelChecks": 175322,
+    "faceNearBoundaryPixelChecks": 5422,
+    "faceLeaks": 0,
+    "faceWorker": "实际产品FaceTracker + 生产Worker + 官方哈希固定公开人像，仅测试内存使用",
+    "consecutiveFreshPositiveFrames": 3,
+    "positiveLandmarkCount": 478,
+    "positiveResultAgeMs": [
+      166,
+      84.8,
+      87.1
+    ],
+    "positiveInferenceMs": [
+      163.3,
+      82.3,
+      85.4
+    ],
+    "observedPositivePipelineTotalMs": 3687.4,
+    "forcedGpuFailureCpuRecovery": "passed",
+    "unexpectedNetworkDestinations": 0,
+    "recording": "产品RecordingSession VP9 640×360，已呈现中段帧通过像素颜色容差检查，并完整播放至ended；不是解码字节精确相等",
+    "deployment": "main CI与Pages validate/deploy成功；线上全部5文件、tested-dist清单与部署tar的SHA256逐一一致",
+    "liveLandingBrowser": "云端浏览器正常渲染，未请求摄像头；仅发现扩展自身日志，无站点报错"
+  },
+  "limitations": [
+    "单独的x64共享Runner/SwiftShader能力检查未满足250毫秒新鲜度门槛，保留失败结果；不据此推断所有x64、Windows或手机表现",
+    "未测试用户摄像头、真实人物手/脸跟踪准确率、手机相机或热稳定性",
+    "官方人像回放验证不等于实时手+脸模型与GPU渲染同时满载性能验证",
+    "初始化和首次人脸推理可能出现冷启动等待，过期结果仍丢弃，不伪称零延迟"
+  ],
+  "x64CapabilityProbeUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/actions/runs/37210499744",
+  "privacy": "不请求麦克风，不上传用户媒体，帧与关键点在浏览器内处理。首次使用下载官方WASM/模型；SDK可发送性能/使用统计，已链接官方隐私说明，不宣称零网络。",
+  "notYetComplete": [
+    "真实设备手部/人脸质量与端到端延迟",
+    "Android/iOS真实相机及热稳定性",
+    "实时手+脸联合负载持续性能验证",
+    "Fire/Ice边缘",
+    "手部推理及完整渲染链的Worker/OffscreenCanvas拆分",
+    "实体设备录制按钮与下载流程验收"
+  ],
+  "nextPriority": "继续修复重复进入/退出工作室时的资源生命周期；真实摄像头、手机和联合模型负载验证保持明确边界",
+  "artifactSha256": {
+    "testedDistZip": "c19bfd2b40a6a17f066b225119bfcb0da760c94d286730e35d9daa5b818b8265",
+    "evidenceZip": "1a25a82005404da3ac0b18e9161a35982526379fe17e1b37895c6b1d20d2f18c",
+    "pagesZip": "f5bbfefdd5dd090f31635841872acacac284fa955ca0798e75f197f7a21e08e9"
+  },
+  "publishedFiles": [
+    {
+      "path": "assets/face.worker-BMZwjpOC.js",
+      "status": 200,
+      "bytes": 128609,
+      "sha256": "b9b2e3f6e13437bebc63aa825abc6124d3207f98f7e69e1f234ca6c72d5e100c",
+      "matchesTestedArtifact": true
+    },
+    {
+      "path": "assets/index-DkvqpWM2.js",
+      "status": 200,
+      "bytes": 495732,
+      "sha256": "50633d5aed4c20d596bdd4e4b25ec05b60f4906cf39b8cc9522ef30d0c491e17",
+      "matchesTestedArtifact": true
+    },
+    {
+      "path": "assets/index-iHsa4P5A.css",
+      "status": 200,
+      "bytes": 44143,
+      "sha256": "c64d731025d4a32cb22638f3a2b9a56c160095da23cce311e1690e142bf89303",
+      "matchesTestedArtifact": true
+    },
+    {
+      "path": "build-info.json",
+      "status": 200,
+      "bytes": 195,
+      "sha256": "90f45c54cbecb8a2f406d87fb55a52fed08da6539d1849f3e34f840cb8f21acf",
+      "matchesTestedArtifact": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 645,
+      "sha256": "3c176df6b36fb079d2e0bd8216a25f0b200fc1667e4209f098af2c61982c9d77",
+      "matchesTestedArtifact": true
+    }
+  ]
+}
