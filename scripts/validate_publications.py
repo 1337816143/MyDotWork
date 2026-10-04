@@ -131,15 +131,17 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 20, 'websites': 4, 'tasks': 17}
+    assert catalog['counts'] == {'artifacts': 23, 'websites': 6, 'tasks': 17}
     assert by_id['paper-learning-site']['task'] == 'project-6' and by_id['paper-learning-site']['url'] == 'https://1337816143.github.io/Paper/'
     assert by_id['farm-system-site']['task'] == 'project-5' and by_id['farm-system-site']['url'] == 'https://1337816143.github.io/FarmSystemDesign/#research'
     projects = {p['name']: p for p in json.loads((ROOT / 'data/projects.json').read_bytes())['projects']}
     assert re.search(r'v\d+\.\d+\.\d+', projects['FarmSystemDesign农业系统平台']['progress']) and '未实现' in projects['FarmSystemDesign农业系统平台']['gaps']
     assert '练习题、错题和知识自测' in projects['Paper论文学习平台']['gaps']
+    from validate_current_updates import validate_current_updates
+    validate_current_updates()
     from validate_task35 import validate_task35, negative_tests
     validate_task35(); negative_tests()
-    print('PASS: eleven exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
+    print('PASS: fourteen exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
 if __name__ == '__main__': validate_publications()

@@ -1,0 +1,63 @@
+{
+  "project": "Real-Time-Vector-Keyframe",
+  "version": "0.10.1",
+  "sourceRepository": "https://github.com/1337816143/Real-Time-Vector-Keyframe",
+  "website": "https://1337816143.github.io/Real-Time-Vector-Keyframe/",
+  "sourceCommit": "9c6b8b62ec0602bb28db143b3c9040667660645c",
+  "commitUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/commit/9c6b8b62ec0602bb28db143b3c9040667660645c",
+  "buildInfoUrl": "https://1337816143.github.io/Real-Time-Vector-Keyframe/build-info.json",
+  "verifiedAtUtc": "2026-10-04T05:05:52Z",
+  "productionCiUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/actions/runs/37178521418",
+  "productionPagesUrl": "https://github.com/1337816143/Real-Time-Vector-Keyframe/actions/runs/37178521521",
+  "currentMilestone": "双手四指尖GPU窗口与摄像头/录制可靠性基础阶段已发布",
+  "implemented": [
+    "默认交互为左食指→右食指→右拇指→左拇指闭环，使用四个实际指尖组成可变四边形",
+    "WebGL四边形内部显示特效，外部保留实时摄像头；合成与边缘通道共用真实多边形距离计算",
+    "支持有效凸/凹四边形；自交或过小区域明确降级，不改成外接矩形或凸包",
+    "短时追踪丢失维持后淡出，250毫秒过期；该数字是行为参数，不是测得的端到端延迟",
+    "修复相机并发/晚到请求、退出释放、录制资源归属；切相机正常结束并保留录制片段",
+    "基于时间连续性和可靠左右手标签稳定身份；原捏合模式改用等比例像素度量",
+    "Quad运动关键帧和JSON持久化；明确关键帧预览及恢复实时入口",
+    "相机、默认替代画面和冻结画面镜像一致；文件素材保持原方向",
+    "中文界面与移动端提示布局完善，无有效合成画面时禁止误录静止/空白canvas",
+    "Pages部署只消费同一次完整验证通过的构建产物，并公开build-info提交与run标识"
+  ],
+  "preserved": [
+    "原捏合/拖拽与双手整体变换",
+    "Bezier/Freehand与Custom蒙版",
+    "多蒙版Scene和持久化Scene Trail",
+    "Scene Motion、Effect Sequence、每蒙版特效过渡",
+    "Temporal、有序Effect Stack、轮播、JSON和最终画布录制"
+  ],
+  "validation": {
+    "deterministicSyntheticTests": 32,
+    "productionBrowserScenarios": [
+      "桌面合成视频",
+      "手机尺寸合成视频",
+      "摄像头拒绝",
+      "WebGL不可用"
+    ],
+    "quadWebglPixelSamples": 5968,
+    "quadWebglPixelMismatches": 0,
+    "otherGpuChecks": [
+      "四边Neon",
+      "透明度归零后无残留边缘",
+      "默认camera fallback镜像",
+      "相机冻结画面镜像",
+      "外部素材方向保留"
+    ],
+    "recording": "产品RecordingSession默认VP9，640×360合成画面中段呈现帧颜色在测试容差内符合预期，完整播放至ended",
+    "deployment": "main CI与Pages validate/deploy成功；线上4个发布文件与该Pages运行tested-dist的SHA256完全一致",
+    "inputBoundary": "上述运行验证使用合成媒体与合成关键点；不含真实摄像头、真实MediaPipe推理或实体手机测试"
+  },
+  "notYetComplete": [
+    "蜘蛛侠面部替换",
+    "真实设备手部识别质量和端到端跟手延迟",
+    "Android/iOS真实相机及热稳定性",
+    "Fire/Ice边缘",
+    "Worker/OffscreenCanvas推理与渲染拆分",
+    "完整实体设备录制按钮/下载流程验收"
+  ],
+  "privacy": "摄像头画面本地处理，不请求麦克风，不上传个人媒体",
+  "nextPriority": "在基础阶段门禁通过后，推进人脸效果与四指尖区域交集；真实设备验收保持独立待办"
+}

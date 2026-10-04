@@ -96,8 +96,8 @@
       "type": "dataset",
       "task": "project-4",
       "url": "../projects/status.json",
-      "updatedAt": "2026-10-03T22:34:00Z",
-      "summary": "17项历史项目与七项当前任务对应的进度快照；区分本轮发布、运行状态和未解决需求。",
+      "updatedAt": "2026-10-04T05:16:29Z",
+      "summary": "17项历史项目与八项当前任务对应的进度快照；区分本轮发布、运行状态和未解决需求。",
       "access": "public",
       "metadataApproved": true
     },
@@ -221,6 +221,39 @@
       "summary": "五家票费与全费保持null；S01仅单次样本，无需求、客户、收入或低维护盈利的验证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "supplier-delta-20261004",
+      "title": "供货定点补证 · 10月4日",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-10-04/index.html",
+      "updatedAt": "2026-10-04T02:46:00Z",
+      "summary": "五家25条来源复读；ChatShare准确SKU重读与Claude身份规则细化。未知票费、含票全费及授权缺口保留。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "supplier-delta-data-20261004",
+      "title": "供货补证结构化观察 · 10月4日",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-10-04/supplier-delta.json",
+      "updatedAt": "2026-10-04T02:46:00Z",
+      "summary": "准确SKU、公开来源、观察时间、证据边界及未知费用；保留历史日期，不把复读算净新增。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "vector-validation-20261004",
+      "title": "实时手势VFX · 发布与验证边界",
+      "type": "dataset",
+      "task": "project-15",
+      "url": "../projects/vector-2026-10-04.json",
+      "updatedAt": "2026-10-04T05:05:52Z",
+      "summary": "v0.10.1精确提交、四指尖窗口和合成媒体验证；真实硬件与蜘蛛侠效果未验收。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
@@ -265,6 +298,28 @@
       "url": "https://1337816143.github.io/FarmSystemDesign/#research",
       "updatedAt": "2026-10-03T18:25:00Z",
       "summary": "v0.3.14证据背景、FrozenRun身份摘要和版本加载已上线；1414项数值未变，科学模型与资源联合优化待实现。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "smartdrop-site",
+      "title": "SmartDrop · 拼豆工程工作台",
+      "type": "website",
+      "task": "project-14",
+      "url": "https://1337816143.github.io/Evolution/pages/smartdrop.html",
+      "updatedAt": "2026-10-04T05:13:27.308Z",
+      "summary": "WEB-2A动画、记录事务和缓存更新已验收；实体试验0，机械核心与PDF修订待完成。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "vector-keyframe-site",
+      "title": "实时手势VFX · 四指尖特效窗口",
+      "type": "website",
+      "task": "project-15",
+      "url": "https://1337816143.github.io/Real-Time-Vector-Keyframe/",
+      "updatedAt": "2026-10-04T05:05:52Z",
+      "summary": "v0.10.1已发布；四指尖GPU窗口及合成媒体录制门禁通过，真实摄像头和实体手机未验。",
       "access": "public",
       "metadataApproved": true
     }
@@ -392,7 +447,7 @@
   ],
   "statusSnapshot": {
     "mode": "snapshot",
-    "asOf": "2026-10-03T22:34:00Z",
+    "asOf": "2026-10-04T05:16:29Z",
     "notice": "这是有时间标记的状态快照，不是实时后台监控。超过30分钟的任务记录标为待重新核验；需求背景、状态依据和发布结果分别展示。发布页面不会刷新研究观察时间。",
     "items": [
       {
@@ -400,10 +455,10 @@
         "number": 1,
         "title": "聊天与项目归档",
         "state": "round_complete",
-        "currentAction": "新增73条逐条审计完成，共507条、496条有文字；原434条原文与时间不变。",
+        "currentAction": "507条、496条有文字已双站发布验收；原434条原文与时间保留，暂无新增采集。",
         "waitingFor": "下一批当前dot可见原文或缺页材料",
-        "verifiedAt": "2026-10-03T21:54:00Z",
-        "publication": "本版本归档数量、覆盖及来源记录在下方原文与覆盖文件中；两站实际部署由四种时间中的公开核验分别展示。",
+        "verifiedAt": "2026-10-04T05:16:29Z",
+        "publication": "v1.8.3归档已发布，原文、搜索和新增ID定位已验收；实际部署时间单独展示。",
         "completion": "本轮整理完成不等于完整历史已取得；全部三页仍为partial，1条新增空正文不推断附件。 目前没有持续采集在运行。",
         "links": [
           {
@@ -439,12 +494,12 @@
         "id": "task-2",
         "number": 2,
         "title": "AI工作台与个人进化网站",
-        "state": "running",
-        "currentAction": "v1.8.2资料、搜索和双站发布已验收；本轮聚焦507条归档与新增ID集合保护的独立发布核验。",
-        "waitingFor": "本批归档校验的完整测试、云端回归及两站部署结果",
-        "verifiedAt": "2026-10-03T21:54:00Z",
-        "publication": "已有v1.8.2两站24项产物和703文件镜像验收；新版本实际发布结果通过公开部署记录单独核对。",
-        "completion": "既有界面和研究资料本轮已完成；归档新批与长期历史缺口分开处理，发布成功不代表历史已收齐。",
+        "state": "round_complete",
+        "currentAction": "v1.8.3双站和归档入口现阶段已验收；本轮更新八项任务入口及公开补证。",
+        "waitingFor": "下一轮真实需求与状态变化；新的发布时间以公开核验为准",
+        "verifiedAt": "2026-10-04T05:16:29Z",
+        "publication": "v1.8.3已核24项公开产物；本版本补充的目录与状态快照不表示历史缺口已补齐。",
+        "completion": "界面发布与本轮验收已完成；旧研究、507条归档与真实需求缺口分别保留，状态不是实时监控。",
         "links": [
           {
             "label": "看全部成果",
@@ -464,17 +519,17 @@
           "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
         ],
         "verification": {
-          "kind": "project_check",
-          "summary": "v1.8.2两站24项产物、真实搜索与资料入口已验收；本轮原文整理及ID保护正在独立小批处理，研究日期未刷新。",
-          "observedAt": "2026-10-03T20:48:10Z",
+          "kind": "public_release",
+          "summary": "v1.8.3主站、镜像24项产物逐字节一致，507条搜索与新增原文定位已实际核验；最新私仓发布保留该内容。",
+          "observedAt": "2026-10-04T05:13:27.308Z",
           "links": [
             {
-              "label": "主站v1.8.2部署",
-              "url": "https://github.com/1337816143/MyDotWork/actions/runs/37151320233"
+              "label": "主站v1.8.3部署",
+              "url": "https://github.com/1337816143/MyDotWork/actions/runs/37159726771"
             },
             {
-              "label": "镜像v1.8.2部署",
-              "url": "https://github.com/1337816143/Evolution/actions/runs/37152638115"
+              "label": "镜像当前部署",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37179195905"
             }
           ]
         }
@@ -484,18 +539,18 @@
         "number": 3,
         "title": "AI上游调研",
         "state": "round_complete",
-        "currentAction": "五家复核、完整原文及证据缺口已随v1.8.2在两站发布；本轮资料整合完成，没有新一轮搜价在运行。",
-        "waitingFor": "开票主体、含票全部费用、准确SKU转售授权及真实履约证据",
-        "verifiedAt": "2026-10-03T20:48:10Z",
-        "publication": "当前证据门槛、完整复核及原数据双站可用；旧报告与历史记录全部保留。",
-        "completion": "目前含票全费与授权闭环仍未成立；不能把候选观察数当作合格上游数。",
+        "currentAction": "10月4日五家定点补证完成：ChatShare准确SKU重新可读，价格未实质下降；官方身份规则细化。",
+        "waitingFor": "准确SKU开票主体、票费与全部必需费用、转售授权及真实履约证据",
+        "verifiedAt": "2026-10-04T05:16:29Z",
+        "publication": "本版本新增独立日期报告与JSON；10月3日和更早材料保持原字节。",
+        "completion": "25条来源复读不是25个新来源；含票全部费用仍未知，合格≤170元且授权闭环的上游仍为0。",
         "links": [
           {
-            "label": "读本轮完整复核",
-            "url": "../research/2026-10-03/index.html#supplier-original"
+            "label": "读10月4日补证",
+            "url": "../research/2026-10-04/index.html"
           },
           {
-            "label": "看当前证据门槛",
+            "label": "看历史证据门槛",
             "url": "../research/2026-10-03/index.html#current-gates"
           }
         ],
@@ -510,16 +565,12 @@
         ],
         "verification": {
           "kind": "project_check",
-          "summary": "20:48 UTC两站逐文件验收完成。五家19条访问记录含18个URL及1次失败；报价观察仍为13:20 UTC，含票/授权闭环没有新增。",
-          "observedAt": "2026-10-03T13:20:00Z",
+          "summary": "观察截止02:46 UTC。五家SKU与25条来源复读；ChatShare160元加6.40元支付费，预览166.40元，未知票费不填0；当前页面自标日期不当作真实改版时刻。",
+          "observedAt": "2026-10-04T02:46:00Z",
           "links": [
             {
-              "label": "日期与原始观察",
-              "url": "../research/2026-10-03/supplier-review.json"
-            },
-            {
-              "label": "计数与未知费用",
-              "url": "../research/2026-10-03/evidence-gates.json"
+              "label": "本轮原始观察与时间",
+              "url": "../research/2026-10-04/supplier-delta.json"
             }
           ]
         }
@@ -528,10 +579,10 @@
         "id": "task-4",
         "number": 4,
         "title": "Codex／GPT资料接管",
-        "state": "round_complete",
-        "currentAction": "本轮私有资料质量核验完成；最近材料复查没有新的GPT导出，等待真实新来源补缺。",
+        "state": "waiting",
+        "currentAction": "现有私有资料质量核验阶段完成；等待真实新导出补缺，当前没有已确认的新增正文。",
         "waitingFor": "真实新增导出、原文或附件，以补齐现有缺口",
-        "verifiedAt": "2026-10-03T20:51:37Z",
+        "verifiedAt": "2026-10-04T05:16:29Z",
         "publication": "公开页面仅保留汇总进度；234对话、4012条记录、3860个唯一ID仍属于09:08 UTC旧导出统计。",
         "completion": "质量分类完成不等于缺失正文已补齐；旧导出统计保持原日期，私有全文和媒体不公开。",
         "links": [
@@ -556,7 +607,7 @@
         ],
         "verification": {
           "kind": "project_check",
-          "summary": "20:51 UTC材料复查没有新GPT导出；234对话、4012记录、3860唯一ID仍属于09:08 UTC旧导出。本批73条是当前dot公开归档增量，不能计入其他会话接管。",
+          "summary": "当前状态复查仍沿用09:08 UTC旧导出统计：234对话、4012记录、3860唯一ID。当前dot公开507条是另一归档范围，不能计作其他会话接管增量。",
           "observedAt": "2026-10-03T09:08:00Z",
           "links": []
         }
@@ -565,10 +616,10 @@
         "id": "task-5",
         "number": 5,
         "title": "AI副业与真实收益验证",
-        "state": "round_complete",
-        "currentAction": "主报告v5、准备包v4与公开现行方案本轮完成，文字成果已双站发布；没有新增生成、客户或收入。",
+        "state": "waiting",
+        "currentAction": "现行方案和文字报告已交付并公开；等待声音、许可、真实需求与试单验证，没有新增客户或收入。",
         "waitingFor": "声音试听、完整许可链、真实需求和最小付费试单验证",
-        "verifiedAt": "2026-10-03T20:48:10Z",
+        "verifiedAt": "2026-10-04T05:16:29Z",
         "publication": "v1.8.2已公开完整方案、证据门槛及原版下载；旧方向和科研样品保留，视频、音轨与帧图仍私有。",
         "completion": "未试听声音、没有已验证客户或收入；≥3笔且≥2个独立客户仅是观察门槛，不是已完成结果。",
         "links": [
@@ -606,11 +657,11 @@
         "id": "task-6",
         "number": 6,
         "title": "Paper论文与方法知识库",
-        "state": "blocked",
-        "currentAction": "Paper双站5.5.2可用；21:51 UTC自动同步检查网络超时，诊断与有限重试修复排队。",
-        "waitingFor": "自动同步网络故障修复与下一次实际检查；博士全文合法开放、模型复现和真实双设备恢复验证",
-        "verifiedAt": "2026-10-03T22:34:00Z",
-        "publication": "两站5.5.2、内容f01f033da857一致；22主条目、原笔记接口和既有内容保留。",
+        "state": "waiting",
+        "currentAction": "Paper双站5.5.2已发布；同步超时诊断与有限重试补丁已发布，等待修后自然运行。",
+        "waitingFor": "新补丁的首次自然同步结果；博士全文合法开放、模型复现和真实双设备恢复验证",
+        "verifiedAt": "2026-10-04T05:16:29Z",
+        "publication": "两站5.5.2、内容f01f033da857保留；网络修复只改善同步检查，未新增论文正文。",
         "completion": "目标是理解论文方法、工具与研究体系，不设置练习题、错题和知识自测。会议材料与学位全文分开；内容覆盖不等于全文取得、原模型复现或真实跨设备恢复已验证。",
         "links": [
           {
@@ -633,16 +684,16 @@
         ],
         "verification": {
           "kind": "public_release",
-          "summary": "21:51 UTC自然同步检查在网络请求阶段超时，校验和提交未执行，现有发布版本未变。公开指南沿用19:24 UTC验收；20:48 UTC镜像保留5.5.2全部617文件。常规网站发布成功不能代替自动同步检查成功。",
-          "observedAt": "2026-10-03T19:24:00Z",
+          "summary": "网络补丁97项专项与完整测试通过，02:55 UTC镜像部署成功；尚无修后自然运行验收。论文内容仍沿用10月3日19:24 UTC验收，常规发布成功不代替定时同步成功。",
+          "observedAt": "2026-10-04T02:57:10Z",
           "links": [
             {
               "label": "Paper主站部署",
               "url": "https://github.com/1337816143/Paper/actions/runs/37137496555"
             },
             {
-              "label": "本次镜像部署",
-              "url": "https://github.com/1337816143/Evolution/actions/runs/37152638115"
+              "label": "网络补丁后的镜像部署",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37172438154"
             }
           ]
         }
@@ -654,7 +705,7 @@
         "state": "round_complete",
         "currentAction": "v0.3.14本轮线上与备份验收完成；当前没有新代码任务运行，等待下一轮检查。",
         "waitingFor": "下一轮检查，以及三个模型仍需补齐的科学实现、校准和验证",
-        "verifiedAt": "2026-10-03T19:35:00Z",
+        "verifiedAt": "2026-10-04T05:16:29Z",
         "publication": "5指标Paper证据背景、FrozenRun参数身份摘要与版本加载修复已上线；1414项数值与0.3.13完全相同。",
         "completion": "这是页面、证据背景与可追溯性的增量；三个科学模型及资源联合优化仍未实现和校准，不能以网页测试代替。",
         "links": [
@@ -678,7 +729,7 @@
         ],
         "verification": {
           "kind": "public_release",
-          "summary": "19:35 UTC复查18:25 UTC已完成的线上与备份验收；新增证据背景未替换原1414项计算结果。",
+          "summary": "当前复查仍沿用10月3日18:25 UTC的v0.3.14线上与备份验收；证据背景增量未替换原1414项计算结果，科学模型实现缺口保留。",
           "observedAt": "2026-10-03T18:25:00Z",
           "links": [
             {
@@ -687,6 +738,51 @@
             }
           ]
         }
+      },
+      {
+        "id": "task-8",
+        "number": 8,
+        "title": "SmartDrop与实时手势VFX",
+        "state": "running",
+        "currentAction": "SmartDrop网页WEB-2A和Vector四指尖窗口阶段已发布；Vector人脸效果下一阶段正在推进。",
+        "waitingFor": "SmartDrop机械核心与PDF修订；真实摄像头、实体手机及设备试验",
+        "verifiedAt": "2026-10-04T05:16:29Z",
+        "publication": "SmartDrop WEB-2A：114项本地、8项原生存储及14项线上资源检查通过，实体试验0。Vector v0.10.1：32项合成测试、5968个GPU样本与VP9验证通过。",
+        "completion": "软件页面与合成媒体门禁通过不等于实体工程、真实手部识别或端到端延迟已验证；蜘蛛侠效果尚未发布，PDF与核心设计修订仍待完成。",
+        "links": [
+          {
+            "label": "打开SmartDrop",
+            "url": "https://1337816143.github.io/Evolution/pages/smartdrop.html"
+          },
+          {
+            "label": "打开实时手势VFX",
+            "url": "https://1337816143.github.io/Real-Time-Vector-Keyframe/"
+          }
+        ],
+        "projectIds": [
+          "project-14",
+          "project-15"
+        ],
+        "contextMessageIds": [
+          "Sentinel_a8d0aafef44c8191a8144b29309ebb49"
+        ],
+        "verification": {
+          "kind": "public_release",
+          "summary": "SmartDrop于05:13 UTC核14项线上资源哈希；Vector于05:05 UTC核精确提交的部署与合成测试。VP9帧颜色按容差比对；5968个四边形GPU样本另行验证为零差异，均不含真实设备验收。",
+          "observedAt": "2026-10-04T05:13:27.308Z",
+          "links": [
+            {
+              "label": "SmartDrop正式部署",
+              "url": "https://github.com/1337816143/Evolution/actions/runs/37179195905"
+            },
+            {
+              "label": "Vector公开核验边界",
+              "url": "../projects/vector-2026-10-04.json"
+            }
+          ]
+        },
+        "access": "public",
+        "metadataApproved": true
       }
     ],
     "coverage": {
@@ -723,25 +819,25 @@
     ],
     "staleAfterMinutes": 30,
     "publicationChecks": {
-      "checkedAt": "2026-10-03T21:27:51Z",
+      "checkedAt": "2026-10-04T05:13:27.308Z",
+      "status": "consistent",
       "source": {
-        "version": "1.8.2",
-        "commit": "5e120098d2f00e9d4911acdc43b672b5b97af3b8",
-        "deployedAt": "2026-10-03T20:23:50Z",
-        "runId": 37151320233,
-        "runUrl": "https://github.com/1337816143/MyDotWork/actions/runs/37151320233"
+        "version": "1.8.3",
+        "commit": "27462325a490638a9bd625e2b4542c1aa59d86d7",
+        "deployedAt": "2026-10-03T22:49:55Z",
+        "runId": 37159726771,
+        "runUrl": "https://github.com/1337816143/MyDotWork/actions/runs/37159726771"
       },
       "mirror": {
-        "version": "1.8.2",
-        "upstreamCommit": "5e120098d2f00e9d4911acdc43b672b5b97af3b8",
-        "sourceCommit": "bfeff0fac3ce20123ec9b9ec74c173bba2294a6c",
-        "commit": "ce93973fd0a318a7420b8810ecca85658c83d3b2",
-        "syncedAt": "2026-10-03T20:44:43Z",
-        "deployedAt": "2026-10-03T20:46:14Z",
-        "runId": 37152638115,
-        "runUrl": "https://github.com/1337816143/Evolution/actions/runs/37152638115"
-      },
-      "status": "consistent"
+        "version": "1.8.3",
+        "upstreamCommit": "27462325a490638a9bd625e2b4542c1aa59d86d7",
+        "sourceCommit": "b633e91d249f2dcf46778278aa825dac67256363",
+        "commit": "1da8ffd84e2ffb958f9920ce91b4b6c4ac609046",
+        "syncedAt": "2026-10-04T05:11:29Z",
+        "deployedAt": "2026-10-04T05:13:27Z",
+        "runId": 37179195905,
+        "runUrl": "https://github.com/1337816143/Evolution/actions/runs/37179195905"
+      }
     }
   }
 }

@@ -75,8 +75,8 @@
         },
         "items": {
           "type": "array",
-          "minItems": 7,
-          "maxItems": 7,
+          "minItems": 8,
+          "maxItems": 8,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -100,12 +100,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "pattern": "^task-[1-7]$"
+                "pattern": "^task-[1-8]$"
               },
               "number": {
                 "type": "integer",
                 "minimum": 1,
-                "maximum": 7
+                "maximum": 8
               },
               "title": {
                 "type": "string",

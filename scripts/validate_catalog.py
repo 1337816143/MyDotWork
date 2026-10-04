@@ -99,7 +99,7 @@ for item in snapshot['items']:
         assert target.is_relative_to((ROOT/'dist').resolve()) and target.is_file(),link['url']
         if url.fragment:
             parser=IDs();parser.feed(target.read_text(encoding='utf-8'));assert url.fragment in parser.ids,link['url']
-print('PASS: seven dated task states, current actions, waiting objects, completion boundaries and direct outcome/evidence links')
+print('PASS: eight dated task states, current actions, waiting objects, completion boundaries and direct outcome/evidence links')
 
 for mutate in [lambda m:m['artifacts'][0].update(metadataApproved=False),lambda m:m['artifacts'][0].update(access='private'),lambda m:m['artifacts'][0].update(url='https://chatgpt.com/library/private-test'),lambda m:m['artifacts'][0].update(url='https://example.org/?token=test'),lambda m:m['tasks'][0].update(metadataApproved=False),lambda m:m['tasks'][0].update(expectedTitle='Unreviewed task mapping'),lambda m:m['artifacts'][0].update(internalNotes='Not a public field'),lambda m:m['artifacts'][0].update(updatedAt='2026-10-02T06:18:00')]:
     bad=copy.deepcopy(manifest);mutate(bad)

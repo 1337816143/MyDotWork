@@ -1,0 +1,337 @@
+{
+  "schema_version": "1.0",
+  "title": "五家供货候选与Claude官方边界：10月4日定点增量",
+  "as_of_utc": "2026-10-04T02:46:00Z",
+  "baseline_public_url": "https://1337816143.github.io/MyDotWork/research/2026-10-03/index.html",
+  "baseline_rule": "保留10月3日原报告及10月2日历史字节；本文件是新增观察，不重写旧观察日期。",
+  "scope": "只读公开网页；未登录、注册、联系第三方、创建订单、付款、提交账户/身份数据、接受协议或改动用户电脑。",
+  "evidence_legend": {
+    "observed": "证实观察时页面显示；不自动证实宣传所述事实。",
+    "merchant_claim": "价格以外的资金来源、发票、授权及履约宣传仍待独立核验。",
+    "official": "官方普通规则与帮助正文，不代表任何具体第三方取得专项许可。",
+    "unknown": "没有相应证据，费用保留null。"
+  },
+  "substantive_deltas": [
+    "ChatShare准确SKU读取恢复；新增10月4日160元挂牌、166.40元支付宝预览（含费6.40元）观察。10月2日旧观察仍保留，10月3日访问未成功记录不删除。",
+    "ChatShare聚合页当前自标最后更新2026/8/29，与旧记录2025-10-30不同。只记录当前显示差异，不推断实际改版时刻。",
+    "补入Claude官方身份验证专文的细节：部分情形可能要求本人实体照片证件及现场自拍；成品号的卖家KYC、短信可收码或礼赠均不证明买家能完成未来本人验证。该专文是2026年8月既有政策，不能称本日新规。"
+  ],
+  "rechecks_without_substantive_price_change": [
+    "CatFK110.95元、小久115.03元、Morimm单件115元及引路鲸135元本次同值。",
+    "OpenAI礼卡与普通企业/API条款仍未提供本项目所需大陆终端及下级供货授权；Claude礼赠、单月Pro/Max价格和支持地区边界复读无推翻既有结论的证据。"
+  ],
+  "supplier_prices": [
+    {
+      "id": "catfk_ai_source",
+      "merchant": "AI源头 / CatFK云猫",
+      "sku": "g8ptrd",
+      "display_cny": 108.99,
+      "payment_preview_cny": 110.95,
+      "payment_fee_cny": 1.96,
+      "period": "准确SKU声明1个月",
+      "observed_at_utc": "2026-10-04T02:42:40Z",
+      "sources": [
+        "D01"
+      ],
+      "invoice_extra_cny": null,
+      "all_in_mainland_invoice_cny": null,
+      "qualified": false,
+      "evidence_class": "已观察的商家页面显示；非成交或独立履约证明"
+    },
+    {
+      "id": "xiaojiu",
+      "merchant": "小久",
+      "sku": "j0eswz",
+      "display_cny": 113,
+      "payment_preview_cny": 115.03,
+      "payment_fee_cny": 2.03,
+      "period": "准确SKU声明1个月",
+      "observed_at_utc": "2026-10-04T02:42:40Z",
+      "sources": [
+        "D02"
+      ],
+      "invoice_extra_cny": null,
+      "all_in_mainland_invoice_cny": null,
+      "qualified": false,
+      "evidence_class": "已观察的商家页面显示；非成交或独立履约证明"
+    },
+    {
+      "id": "morimm",
+      "merchant": "Morimm",
+      "sku": "gptplus",
+      "display_cny": 115,
+      "payment_preview_cny": null,
+      "payment_fee_cny": null,
+      "period": "准确SKU本轮未明确周期",
+      "observed_at_utc": "2026-10-04T02:44:37Z",
+      "sources": [
+        "D03",
+        "D08"
+      ],
+      "invoice_extra_cny": null,
+      "all_in_mainland_invoice_cny": null,
+      "qualified": false,
+      "evidence_class": "已观察的商家页面显示；非成交或独立履约证明"
+    },
+    {
+      "id": "yinlujing",
+      "merchant": "引路鲸 / ChatGPT直充站",
+      "sku": "LIST-000001",
+      "display_cny": 135,
+      "payment_preview_cny": 135,
+      "payment_fee_cny": null,
+      "period": "准确SKU声明月付",
+      "observed_at_utc": "2026-10-04T02:43:27Z",
+      "sources": [
+        "D04",
+        "D07",
+        "D25"
+      ],
+      "invoice_extra_cny": null,
+      "all_in_mainland_invoice_cny": null,
+      "qualified": false,
+      "evidence_class": "已观察的商家页面显示；非成交或独立履约证明"
+    },
+    {
+      "id": "chatshare",
+      "merchant": "ChatShare",
+      "sku": "yrjao6",
+      "display_cny": 160,
+      "payment_preview_cny": 166.4,
+      "payment_fee_cny": 6.4,
+      "period": "当前聚合页称每月；准确SKU本轮未明确周期",
+      "observed_at_utc": "2026-10-04T02:42:40Z",
+      "sources": [
+        "D05",
+        "D06"
+      ],
+      "invoice_extra_cny": null,
+      "all_in_mainland_invoice_cny": null,
+      "qualified": false,
+      "evidence_class": "已观察的商家页面显示；非成交或独立履约证明"
+    }
+  ],
+  "claude_verification_delta": {
+    "newly_documented_source": "D09",
+    "novelty_scope": "该专文URL未出现于本轮比较的第3—8轮公开补充包和五家10月3日报告；不是新增政策，也不主张完整资料库此前从未涉及KYC风险。",
+    "verified": "特定功能、平台完整性或合规场景可能触发验证；个人须备有效政府实体照片证件，可能要求自拍；页面不接受扫描件、截图及证件翻拍。",
+    "inference": "购买卖家已KYC的成品号不证明买方获得身份、恢复权或未来验证资格。",
+    "unknown": "任一个具体用户/账号是否触发验证、能否通过及持续可用性均未知。"
+  },
+  "official_self_use_boundary": "本人需先满足地区及账户资格，使用本人有权使用的支付方式或官方许可礼赠；官方Plus/Pro的美元单月标价不是含大陆票据的人民币总成本。不能用年付均价、共享账号、API产品或批量最低数量替代本次单件新开Plus一个月标准。",
+  "qualification_totals": {
+    "new_verified_qualified_suppliers": 0,
+    "verified_mainland_invoice_transactions": 0,
+    "verified_complete_authorized_supply_chains": 0
+  },
+  "unclosed_evidence": [
+    "五家均缺完整开票主体、税号、准确票项/费用、真实票据及其订单对应。",
+    "尚无覆盖授权双方、准确SKU、地域、终端资格、下级转售范围和有效期的完整供货合同。",
+    "ChatShare当前SKU周期、Morimm当前周期，以及各自未知必需费用仍不能靠历史或宣传补齐。"
+  ],
+  "cost_rule": "含票总支出=SKU价+全部必需支付/汇兑费+已确认票费+其他必需费。任一必需费用未知则总额null；可选加急未选，不强算必需成本。",
+  "public_safety": "仅公开研究文字、结构化事实与公开来源URL；无私聊、账户数据、凭据、私人路径或个人联系方式。",
+  "source_count_note": "以下为25条本轮来源观察，不是25个新来源或新供应商；官方礼赠等重复页不计新渠道。",
+  "sources": [
+    {
+      "id": "D01",
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_at_utc": "2026-10-04T02:42:40Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "挂牌108.99元，支付宝选中，数量1，预览110.95元含支付费1.96元；商品声明Plus一个月、30天质保、下单后联系开票。",
+      "evidence_limit": "页面观察已证实；资金、授权、履约与开票承诺仍为商家声明。未选微信，不刷新其预览。"
+    },
+    {
+      "id": "D02",
+      "url": "https://catfk.com/item/j0eswz",
+      "observed_at_utc": "2026-10-04T02:42:40Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "挂牌113元，支付宝预览115.03元含费2.03元，单件起购，声明Plus一个月；仍要求Cookie/Session且成功后不退换。",
+      "evidence_limit": "未提交凭据、未建单；平台商品说明不能证明资金合法来源或转售授权。"
+    },
+    {
+      "id": "D03",
+      "url": "https://morimm.com/products/gptplus",
+      "observed_at_utc": "2026-10-04T02:44:37Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "单件115元、5件起每件113元，数量1可选但须登录后购买；仍要求Token、个人版和Free状态，已用卡密不退换。",
+      "evidence_limit": "当前准确商品正文未明确订阅期；支付费未知；5件价不是单件价。"
+    },
+    {
+      "id": "D04",
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_at_utc": "2026-10-04T02:43:27Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "月付有质保Plus135元，订单摘要135元，可选30元加急未选；称提供增值税普通发票；掉订扣20%服务费后按天折算，封号排除。",
+      "evidence_limit": "无邮箱输入、无建单或付款；发票支持、无需密码和正式授权交付均未独立验证。"
+    },
+    {
+      "id": "D05",
+      "url": "https://qfcc99.com/item/yrjao6",
+      "observed_at_utc": "2026-10-04T02:42:40Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "准确SKU读取恢复：挂牌160元、支付宝选中、数量1，预览166.40元含费6.40元。标题称可开正规发票；说明称掉订按天退款。",
+      "evidence_limit": "该准确SKU当前可见正文未明确一个月。未列开票方/税号/票费；商称低封号率无独立样本支持。"
+    },
+    {
+      "id": "D06",
+      "url": "https://chatshare.info/",
+      "observed_at_utc": "2026-10-04T02:44:37Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "聚合页仍列Plus160元/月及所有业务支持发票；API单独声明可对公转账。页首自标最后更新2026/8/29。",
+      "evidence_limit": "自标日期与旧报告2025-10-30记录不同，不能推断实际改版时间；聚合页不是准确SKU成交条款。"
+    },
+    {
+      "id": "D07",
+      "url": "https://www.chatgqt.plus/faq",
+      "observed_at_utc": "2026-10-04T02:44:46Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "展开开票问题后，正文仍说明默认个人服务价格不包含企业发票；对公/报销需先另确认。另称不收密码、验证码、会话凭据或远程控制。",
+      "evidence_limit": "票费、开票主体与实际交付流程仍未知。"
+    },
+    {
+      "id": "D08",
+      "url": "https://morimm.com/terms",
+      "observed_at_utc": "2026-10-04T02:44:46Z",
+      "source_type": "云端浏览器实时可见页面",
+      "finding": "现行条款仍规定退款仅支持u链接或币安ID。",
+      "evidence_limit": "没有证明人民币原路退；未注册或接受条款。"
+    },
+    {
+      "id": "D09",
+      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+      "observed_at_utc": "2026-10-04T02:42:33Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "页面日期2026-08-11。部分能力、平台完整性检查或合规场景可能要求个人/企业验证；个人须备有效实体政府照片证件，可能要求现场自拍。Persona承接验证，扫描件、证件截图或翻拍不获接受。",
+      "evidence_limit": "这是新增原始证据细化，不是本日新政策，也不代表人人必定触发。未对用户账户进行验证。"
+    },
+    {
+      "id": "D10",
+      "url": "https://support.claude.com/en/articles/8287232-verify-your-phone-number",
+      "observed_at_utc": "2026-10-04T02:41:07Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "新账户需支持地区短信号码；不接受VoIP、Google Voice、应用生成号码或座机。文档要求用户实际位于支持地区；已核验电话号码目前不能自行变更，建议长期控制。",
+      "evidence_limit": "手机号可收码不等于通过本人身份验证或取得地区资格。"
+    },
+    {
+      "id": "D11",
+      "url": "https://support.claude.com/en/articles/8461763-where-can-i-access-claude",
+      "observed_at_utc": "2026-10-04T02:41:07Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "所读完整支持地区列表未列中国大陆，列有台湾、新加坡、日本等。",
+      "evidence_limit": "不得通过礼赠、境外支付卡或他人身份推定获得未支持地区例外。"
+    },
+    {
+      "id": "D12",
+      "url": "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan",
+      "observed_at_utc": "2026-10-04T02:45:21Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "美国Pro按月20美元，地区价格和含税方式不同；包括Claude Code，Console API另外计费。",
+      "evidence_limit": "不是人民币全费结算；税、汇兑和支付费未实测，不用年付均价替代单月。"
+    },
+    {
+      "id": "D13",
+      "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+      "observed_at_utc": "2026-10-04T02:45:35Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "网页Max 5x每月100美元、Max 20x每月200美元，目前按月订阅；移动端价格可能不同。",
+      "evidence_limit": "没有人民币含票全费；不把高额度当无限使用。"
+    },
+    {
+      "id": "D14",
+      "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan",
+      "observed_at_utc": "2026-10-04T02:45:21Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "Pro/Max使用同一Claude账户接入Claude Code，共享使用限制；设置ANTHROPIC_API_KEY时会转用API认证并产生API账单。",
+      "evidence_limit": "普通订阅不是独立API额度或可转售账号；本轮未安装或修改任何环境。"
+    },
+    {
+      "id": "D15",
+      "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription",
+      "observed_at_utc": "2026-10-04T02:42:12Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "多数Pro/Max用户可购Pro、Max 5x/20x的1/3/6/12月礼赠；收礼人无需信用卡。一般购买后365天到期，不可同时兑换多份或堆叠。",
+      "evidence_limit": "第3—8轮已收录，不计新渠道；未建立商业再售、批发折扣或大陆终端资格。"
+    },
+    {
+      "id": "D16",
+      "url": "https://support.claude.com/en/articles/12938695-how-to-redeem-a-claude-gift-subscription",
+      "observed_at_utc": "2026-10-04T02:42:12Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "仅网页兑换，已有移动商店订阅须先到期；不同既有计划有延长、升级或抵账差异。",
+      "evidence_limit": "不把收礼无卡要求当成无需注册、手机或本人验证。"
+    },
+    {
+      "id": "D17",
+      "url": "https://www.anthropic.com/legal/consumer-terms",
+      "observed_at_utc": "2026-10-04T02:42:33Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "消费条款要求遵守支持地区政策，不得共享账户登录信息或向别人开放账户，并限制转售服务。",
+      "evidence_limit": "这是普通消费条款边界；不据此否认另有正式受限企业经销合同。"
+    },
+    {
+      "id": "D18",
+      "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
+      "observed_at_utc": "2026-10-04T02:45:21Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "Plus官方基准20美元按月计费，API另计；不支持Plus年付或预付多个月。授权参与工具使用套餐额度不等于共享账号或转售访问许可。",
+      "evidence_limit": "不推定中国大陆可用，不以美元裸价冒充人民币含全部费用与大陆发票价。"
+    },
+    {
+      "id": "D19",
+      "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries",
+      "observed_at_utc": "2026-10-04T02:45:21Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "官方支持列表未列中国大陆；列表外访问或提供访问可能遭暂停或封禁。",
+      "evidence_limit": "海外卡、商家保号承诺及国内发票不改变官方地区条件。"
+    },
+    {
+      "id": "D20",
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observed_at_utc": "2026-10-04T02:40:53Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "OpenAI礼卡购买与兑换目前限定美国；兑换须实际在美国且USD账号。兑换增加钱包余额，不自动开通订阅；可以支付符合条件的网页订阅。",
+      "evidence_limit": "礼卡零售存在不代表买方得到分销权或地区例外。"
+    },
+    {
+      "id": "D21",
+      "url": "https://mycardterms.com/openai/home/terms/",
+      "observed_at_utc": "2026-10-04T02:45:44Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "2026-09-01发行人条款仍禁止持卡者有偿出售/交换礼卡；未授权卖方取得的卡可能无效。",
+      "evidence_limit": "普通持卡条款不等于某个专项经销合同；本轮未取得任何专项授权。"
+    },
+    {
+      "id": "D22",
+      "url": "https://www.perfectgift.com/corporate/terms-of-service",
+      "observed_at_utc": "2026-10-04T02:43:47Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "普通企业/API合同仍限定奖励分发和最终使用，禁止转售；入驻要求美国/DC实体、有效美国税号和可核实美国街址。",
+      "evidence_limit": "API、批量下单能力不证明OpenAI准确SKU下级分销许可。"
+    },
+    {
+      "id": "D23",
+      "url": "https://help.openai.com/en/articles/20001417-gifting-credits-in-chatgpt",
+      "observed_at_utc": "2026-10-04T02:40:53Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "赠送积分供符合资格账号使用受支持的按量功能，与礼卡产品不同；已存余额不可转让或转售。",
+      "evidence_limit": "第5轮已收录，未证明可用来购买Plus订阅或批量经营。"
+    },
+    {
+      "id": "D24",
+      "url": "https://help.openai.com/en/articles/10421635-multicurrency-billing",
+      "observed_at_utc": "2026-10-04T02:45:21Z",
+      "source_type": "官方公开正文；本轮读取时间不等于政策发布日期",
+      "finding": "网页付款支持信用/借记卡及部分地区本地支付；美国钱包支持不自动扩展到所有币种。菲律宾GCash是一种当地支付方式。",
+      "evidence_limit": "本轮没有用户结算页、实时汇兑或完整税费，不能计算人民币合格全价。"
+    },
+    {
+      "id": "D25",
+      "url": "https://yinlujing.com/about/",
+      "observed_at_utc": "2026-10-04T02:43:47Z",
+      "source_type": "第一方公开正文",
+      "finding": "引路鲸仍自述为第三方平台，与OpenAI等无隶属关系且未获其官方授权。",
+      "evidence_limit": "品牌自述及商品页正式授权交付用语不构成可核分销合同。"
+    }
+  ]
+}
