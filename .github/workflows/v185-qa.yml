@@ -1,0 +1,43 @@
+name: Cloud v185 archive and business regression
+on:
+  push:
+    branches: [qa/v185-updates-20261004-a1]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          ref: fc94c5e0405f7e89b8b3baf6f88d1796466ce481
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install official Chinese fonts and select cloud Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          fc-match 'Noto Sans CJK SC'
+          chrome_path="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          test -n "$chrome_path"
+          echo "CHROME_PATH=$chrome_path" >> "$GITHUB_ENV"
+      - name: Build and validate exact public archive and preserved research
+        run: export GITHUB_SHA=fc94c5e0405f7e89b8b3baf6f88d1796466ce481; python scripts/build.py && python scripts/validate.py && for file in scripts/test_*.cjs; do node "$file" || exit; done
+      - name: Verify actual navigation, status, archive dates, repeated anchors and history
+        run: node scripts/browser_navigation.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mydotwork-v185-qa-a1
+          path: |
+            output/navigation-review/*.png
+            output/navigation-review/browser-results.json
+            dist/release-manifest.json
+          retention-days: 14
