@@ -64,14 +64,17 @@ test('DOM fixture: full versus selected export previews report their actual acco
 });
 
 test('DOM fixture: future snapshots stay out of default cards/trends/deltas and require explicit future cutoff',async()=>{
-  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});const app=await mountCreator(store);app.navigate('desk');
+  // Legitimate IDs may contain the digits of a hidden future metric value.
+  let idSequence=0;
+  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'}),idFactory:prefix=>`${prefix}_900_${++idSequence}`});const app=await mountCreator(store);app.navigate('desk');
   const accountId=(await app.controller.action('createAccount',{displayName:'Cutoff demo',platform:'Synthetic'})).result.accountId;
   for(const [value,observedAt]of [[100,'2020-01-01T00:00:00Z'],[160,'2020-01-02T00:00:00Z'],[900,'2099-01-01T00:00:00Z']])await app.controller.action('appendMetrics',{snapshots:[{accountId,metricKey:'followers',value,definition:'cumulative followers',observedAt,sourceRef:'Cutoff synthetic evidence'}]});
   app.render();const metricValues=()=>document.querySelectorAll('span').filter(n=>n.className==='metric-value').map(n=>n.textContent);
-  assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);assert.doesNotMatch(document.getElementById('main').textContent,/2099-01-01|900/);assert.equal(document.getElementById('main').querySelectorAll('circle').length,2);
+  const futureMetricId=Object.values(app.controller.state.metrics).find(metric=>metric.observedAt==='2099-01-01T00:00:00Z').id;
+  assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);assert.doesNotMatch(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').textContent.includes(futureMetricId),false);assert.equal(document.getElementById('main').querySelectorAll('circle').length,2);
   app.navigate('database');assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);
   const cutoff=document.querySelector('[data-focus-key="filter:asof"]');cutoff.value='2100-01-01T00:00:00Z';await fire(cutoff,'change');
-  assert.deepEqual(metricValues(),['900']);assert.match(document.getElementById('main').textContent,/\+740/);assert.match(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').querySelectorAll('circle').length,3);
+  assert.deepEqual(metricValues(),['900']);assert.match(document.getElementById('main').textContent,/\+740/);assert.match(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').textContent.includes(futureMetricId),true);assert.equal(document.getElementById('main').querySelectorAll('circle').length,3);
   // A database-only future filter must not silently carry into the dashboard.
   app.navigate('desk');assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);app.close();
 });
