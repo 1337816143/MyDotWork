@@ -9,7 +9,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   browser-qa:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/qa/six-module-stage1-20261005'
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/qa/six-module-stage1-20261005' || github.ref == 'refs/heads/qa/xuan-studio-stage2-20261005')
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
@@ -28,7 +28,10 @@ jobs:
           node-version: '24'
       - name: Check candidate and build exact approved output
         run: |
-          test "$GITHUB_REF" = 'refs/heads/qa/six-module-stage1-20261005'
+          case "$GITHUB_REF" in
+            refs/heads/qa/six-module-stage1-20261005|refs/heads/qa/xuan-studio-stage2-20261005) ;;
+            *) exit 1 ;;
+          esac
           test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
           test ! -e dist
           python scripts/build.py

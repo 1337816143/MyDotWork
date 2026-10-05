@@ -42,3 +42,6 @@ fieldset{min-width:0;border:1px solid var(--line);border-radius:9px;padding:12px
 @media (max-width:360px){.performance-table tr{grid-template-columns:repeat(2,minmax(0,1fr))}.studio-hero h2{font-size:1.5rem}.studio-nav-slot .nav-link{font-size:14px}.orb-frame svg{max-height:155px}}
 
 .goal-count{padding:24px;flex-wrap:wrap;align-content:center}.goal-count b,.goal-count small{max-width:100%;overflow-wrap:anywhere}
+/* Use the same original mesh in both themes, with visible wires on a dark surface. */
+:root{--studio-orb-wire:#cbd4bf;--studio-orb-gold:#d6bd7b}
+:root[data-color=light],:root[data-layout=A]{--studio-orb-wire:#42473c;--studio-orb-gold:#a58f4e}
