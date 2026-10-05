@@ -28,6 +28,30 @@ async function doubleRenderedText(page){
   });
 }
 
+async function assertCalendarDateLabels(page){
+  const measured=await page.locator('.calendar .calendar-day').evaluateAll(buttons=>buttons.map(button=>{
+    const number=button.querySelector(':scope > .day-number');
+    if(!number)return {date:null,violations:['missing date-number span']};
+    const text=number.textContent.trim();
+    const box=button.getBoundingClientRect(),span=number.getBoundingClientRect();
+    const range=document.createRange();range.selectNodeContents(number);
+    const lines=[...range.getClientRects()].filter(rect=>rect.width>0&&rect.height>0);
+    const epsilon=0.5; // Only fractional CSS-pixel rounding, never whole-pixel overflow.
+    const inside=rect=>rect.left>=box.left-epsilon&&rect.right<=box.right+epsilon&&rect.top>=box.top-epsilon&&rect.bottom<=box.bottom+epsilon;
+    const violations=[];
+    if(!/^([1-9]|[12][0-9]|3[01])$/.test(text))violations.push('invalid day text');
+    if(lines.length!==1)violations.push(`date text occupies ${lines.length} line rectangles`);
+    if(span.width<=0||span.height<=0||!inside(span))violations.push('date span is hidden or extends outside its button');
+    if(lines.some(rect=>!inside(rect)))violations.push('visible date text extends outside its button');
+    const rectData=rect=>({left:rect.left,right:rect.right,top:rect.top,bottom:rect.bottom,width:rect.width,height:rect.height});
+    return {date:Number(text),violations,...(violations.length?{button:rectData(box),span:rectData(span),textRects:lines.map(rectData)}:{})};
+  }));
+  expect(measured.map(item=>item.date),'All 31 October date labels must be tested').toEqual(Array.from({length:31},(_,index)=>index+1));
+  const violations=measured.filter(item=>item.violations.length);
+  expect(violations,'Every calendar date must be one visible line fully contained in its button').toEqual([]);
+  return {checked:measured.length,twoDigitDates:measured.filter(item=>item.date>=10).length,method:'Native Range.getClientRects single-line text and span/button bounds',subpixelTolerance:0.5,violations};
+}
+
 test('12-case appearance/width matrix: six modules, 200% text and reduced motion',async({page,context},testInfo)=>{
   test.setTimeout(180000);
   const {layout,color,width}=testInfo.project.metadata;
@@ -60,8 +84,9 @@ test('12-case appearance/width matrix: six modules, 200% text and reduced motion
       let scaling=null;
       if(textScale===2){scaling=await doubleRenderedText(page);expect(scaling.failed).toBe(0);}
       await screenshot(page,testInfo,`${view}-${width}-${layout}-${color}-text${textScale*100}`);
+      const calendarDates=view==='calendar'?await assertCalendarDateLabels(page):null;
       const geometry=await assertNoOverflow(page);
-      observations.push({view,width,layout,color,textScale,baseline,scaling,...geometry});
+      observations.push({view,width,layout,color,textScale,baseline,scaling,calendarDates,...geometry});
     }
   }
   // Test a native dialog and a domain-validation error at enlarged text.

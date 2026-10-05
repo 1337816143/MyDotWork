@@ -24,6 +24,8 @@ This proposal runs only on `qa/six-module-stage1-20261005` in an ordinary GitHub
 
 Every visual case explicitly reloads its document and verifies zero residual inline font sizes, a 16px body and 14px shell label before taking the baseline. Hash navigation alone is insufficient: prior shell CSSOM mutations otherwise survive and can compound a later 200% pass.
 
+At both normal and 200% text, the calendar additionally verifies all 31 October dates. Each date's native text Range must have exactly one visible line rectangle; that rectangle and its `.day-number` span must stay inside the corresponding button, allowing only 0.5 CSS pixels for subpixel rounding. This catches two-digit dates stacking vertically even when the full page has no horizontal overflow. The existing page overflow checks and all 12 viewport/theme combinations remain active.
+
 `legacy-regression.spec.mjs` verifies the 53 catalog entries, 567 unique archive messages, count/filter behavior, default B dark, and navigation/history through supported browser APIs. It never captures screenshots or text of the archived chat.
 
 ## Evidence

@@ -22,3 +22,16 @@ test('confirmed enlarged badge/filter sizing and opened-state guidance preserve 
   assert.match(css,/width:2\.4em;height:2\.4em/);assert.match(css,/flex:1 1 11em/);assert.match(css,/flex:2 1 16em/);assert.match(css,/flex-basis:9em/);assert.doesNotMatch(css,/flex-basis:125px/);
   assert.doesNotMatch(css,/overflow-x\s*:\s*(?:hidden|clip)/);assert.doesNotMatch(app,/演示工作区为空/);assert.match(app,/onKeydown:handleDialogKeydown/);
 });
+test('publication metadata wraps complete ISO timestamps without reducing text or hiding overflow',()=>{
+  const rule=css.match(/\.publication-row \.hint\s*\{([^}]+)\}/);
+  assert.ok(rule,'Publication metadata needs a scoped long-token wrapping rule');
+  assert.equal(rule[1].replace(/\s/g,''),'overflow-wrap:anywhere');
+  assert.match(app,/para\(`实际发布时间 \$\{pub\.actualPublishedAt\} · 用户手动登记`,'hint'\)/);
+  assert.doesNotMatch(css,/overflow-x\s*:\s*(?:hidden|clip)/);
+});
+test('narrow calendar dates retain both digits at the original enlarged font size',()=>{
+  const rule=css.match(/\.calendar-day \.day-number\s*\{([^}]+)\}/);
+  assert.ok(rule);assert.match(rule[1],/white-space:nowrap/);assert.doesNotMatch(rule[1],/font-size|transform|overflow/);
+  assert.match(css,/@media \(max-width:680px\)\{\.calendar-day\{padding-inline:0\}\}/);
+  assert.match(app,/h\('span',\{class:'day-number'\},Number\(date\.slice\(-2\)\)\)/);
+});
