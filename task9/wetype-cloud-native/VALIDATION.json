@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-04",
+  "stage": "cloud_native_preparation_not_completed_feature",
+  "portable_core": {
+    "compiler": "GCC 14.2.0",
+    "standard": "C++17",
+    "warnings_as_errors": true,
+    "cases": 27,
+    "assertions": 4810,
+    "status": "passed"
+  },
+  "sanitizers": {
+    "asan_ubsan": "passed with detect_leaks=0",
+    "standalone_ubsan": "passed",
+    "leak_sanitizer": "not verified: runtime ptrace restriction"
+  },
+  "report_analyzer": {
+    "synthetic_cases": 10,
+    "status": "passed"
+  },
+  "static_source_boundary": "passed",
+  "windows_csharp_compile": "not_run",
+  "windows_msvc_compile": "not_run",
+  "windows_gui_session_probe": "not_run",
+  "official_wetype_install": "not_run",
+  "actual_wetype_candidate_access": "not_measured",
+  "original_window_layout_drawing_hittest": "not_measured",
+  "native_english_annotation_feature": "not_implemented",
+  "production_allowlist_entries": 0,
+  "production_adapter": "always unavailable",
+  "github": {
+    "repository": "1337816143/MyDotWork",
+    "planned_branch": "task9/probe-20261004",
+    "create_attempt": "first canceled; one explicit user-authorized retry succeeded 2026-10-04 16:56 UTC",
+    "read_only_reconcile": "branch absent before retry",
+    "workflow_run": "preparing",
+    "remote_writes_paused": false
+  },
+  "installer": {
+    "catalog_version": "3.0.0.17",
+    "expected_sha256": "2C16D2BC39E4315817DE7CD6C10D30C1A9D3B5A57EA6373638C2FDEFB86F63AD",
+    "local_download": "rejected HTML placeholder, not an executable"
+  },
+  "third_party_runtime_or_patch_installed": false,
+  "user_computer_used": false,
+  "review_fixes": [
+    "global SendKeys removed; only HWND-scoped WM_CHAR delivery",
+    "raw screen pixels/base64 removed; color counts only",
+    "UIA focus/epoch checks and late-result discard",
+    "report analyzer supports schema 2",
+    "IMM provider remains explicitly unverified"
+  ],
+  "pending": [
+    "Windows compiler execution",
+    "Native session measurements",
+    "Documented WeType extension API or other authorized native adapter entry",
+    "Original-window annotation implementation and acceptance tests"
+  ]
+}

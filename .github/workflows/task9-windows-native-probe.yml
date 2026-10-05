@@ -1,0 +1,40 @@
+name: Task9 Windows native compile and session probe
+on:
+  push:
+    branches: ['task9/probe-20261004']
+    paths: ['task9/wetype-cloud-native/**', '.github/workflows/task9-windows-native-probe.yml']
+permissions:
+  contents: read
+concurrency:
+  group: task9-windows-native-probe
+  cancel-in-progress: false
+jobs:
+  native-probe:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - name: Check out the reviewed source only
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout: task9/wetype-cloud-native
+      - name: Compile read-only diagnostics and measure this Windows session
+        shell: powershell
+        run: ./task9/wetype-cloud-native/scripts/run-windows-probes.ps1
+      - name: Build and run synthetic candidate guard tests with native MSVC
+        shell: powershell
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $vs = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+          if (-not $vs) { throw 'MSVC installation not found' }
+          $dev = Join-Path $vs 'Common7\Tools\VsDevCmd.bat'
+          $root = (Resolve-Path task9/wetype-cloud-native/core).Path
+          cmd /d /s /c "`"$dev`" -arch=x64 -host_arch=x64 && cd /d `"$root`" && build-msvc.cmd"
+          if ($LASTEXITCODE -ne 0) { throw "Native test build/run failed: $LASTEXITCODE" }
+      - name: State verification boundary
+        if: always()
+        shell: powershell
+        run: |
+          Write-Output 'No WeType installer was executed. No user machine, remote desktop, network/security setting, account, credential, autostart or IME registration was modified.'
+          Write-Output 'No original candidate text acquisition, English annotation drawing, layout integration or hit-testing compatibility has been proved by this workflow.'
+          Write-Output 'This standard public-repository Windows job uses no paid larger runner, cache or artifact storage.'
