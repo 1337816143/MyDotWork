@@ -2,6 +2,8 @@ import {createIndexedDBStore} from './core/store.mjs';
 import {readiness,selectWorkspace,latestMetrics,metricDelta} from './core/core.mjs';
 import {exportPackage} from './core/exchange.mjs';
 import {previewMetricsCsv,exportMetricsCsv} from './core/csv.mjs';
+import {selectPerformanceRows,PERFORMANCE_METRICS,goalProgress} from './performance.mjs';
+import {createStudioOrb} from './studio-orb.mjs';
 import {createController,VIEWS,VIEW_NAMES,PHASE_NAMES,TASK_NAMES,METRIC_NAMES,values,randomOperationId,safeExternalUrl,routeHash,parseRoute,calendarCells,matchWork,parseNullableNumber,utcOffsetIso,scheduleLabel,metricSeries,trendPoints,dialogTabTarget} from './controller.mjs';
 
 const document=globalThis.document;
@@ -36,6 +38,40 @@ let lastUndo=null;
 let detailReturn=null;
 let renderQueued=false;
 let renderCutoff=new Date().toISOString();
+const STUDIO_VIEWS=['desk','library','production','ideas','calendar','database'];
+let sidebarNavSlot,studioNavSlot,studioOrb=null;
+const studioMode=()=>document.documentElement.dataset.presentation==='studio';
+function setPresentation(value){
+  document.documentElement.dataset.presentation=value==='classic'?'classic':'studio';
+  try{localStorage.setItem('mydotwork-creator-presentation',document.documentElement.dataset.presentation)}catch{}
+  const order=studioMode()?STUDIO_VIEWS:VIEWS;
+  nav.replaceChildren(...order.map(view=>routeLink(view,[icon(view),h('span',{},VIEW_NAMES[view])],null,{class:'nav-link',dataset:{view}})));
+  (studioMode()?studioNavSlot:sidebarNavSlot).append(nav);
+  render();
+}
+function identityDetails(key,label,value){return disclosure(`identity:${key}`,label,h('p',{class:'id'},value))}
+function studioHero(){
+  studioOrb=createStudioOrb(document,{motion:document.documentElement.dataset.motion});
+  return h('section',{class:'studio-hero','aria-label':'创作工作台介绍'},h('div',{class:'studio-hero-copy'},h('p',{class:'eyebrow'},'MY CREATIVE SPACE'),h('h2',{},'把想法，慢慢做成作品'),para('选题、创作和复盘，回到同一份记录。','hero-summary'),h('div',{class:'actions'},button('收集新灵感',showCapture,'primary'),routeLink('production','继续创作',null,{class:'button'})),para('原创球体动效 · 数据手动登记','hint')),h('div',{class:'orb-frame'},studioOrb.element));
+}
+function goalRing(actual,target){
+  const progress=goalProgress(actual,target),svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.setAttribute('viewBox','0 0 120 120');svg.setAttribute('class','goal-ring');svg.setAttribute('aria-hidden','true');
+  for(const [name,offset]of [['ring-track',null],['ring-value',progress.ratio===null?null:100*(1-progress.ratio)]]){
+    if(name==='ring-value'&&offset===null)continue;
+    const circle=document.createElementNS(svg.namespaceURI,'circle');
+    for(const [key,value]of Object.entries({cx:60,cy:60,r:48,fill:'none',class:name,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':offset??0}))circle.setAttribute(key,String(value));
+    svg.append(circle);
+  }
+  return h('div',{class:'goal-visual'},svg,h('span',{class:'goal-count'},h('b',{},text(progress.actual,'未知')),h('small',{},`/ ${text(progress.target,'未设置')}`)),h('span',{class:'sr-only'},progress.kind==='tracked'?`已完成 ${progress.actual}，目标 ${progress.target}${progress.exceeded?'，已超过目标':''}`:progress.kind==='zero-target'?'目标明确设置为 0，不计算百分比':'目标进度尚未确定'));
+}
+function showPerformanceSource(row){
+  openDialog('核对作品表现来源',()=>h('div',{class:'stack'},h('h3',{},row.title),para(`${row.accountName} · ${row.platform} · 登记发布 ${row.publishedAt}`,'hint'),para('各指标取截至当前视图时间的最新同口径快照；多个口径并列，未知值不当成 0。','hint'),...PERFORMANCE_METRICS.map(key=>h('section',{class:'work-row'},h('h3',{},METRIC_NAMES[key]),row.metrics[key].choices.length?row.metrics[key].choices.map(m=>h('div',{class:'version'},para(`${m.value===null?'未知':m.value} · ${m.unit} · ${m.definition||'未注明口径'}`),para(`观测 ${m.observedAt} · 来源 ${text(m.sourceRef)}`,'hint'),identityDetails(m.id,'快照标识',m.id))):para('没有记录','hint'))),identityDetails(row.publicationId,'作品与发布标识',`WorkID ${row.workId}\nPublicationID ${row.publicationId}`)));
+}
+function renderPerformance({workIds=null,limit=null}={}){
+  const rows=selectPerformanceRows(state(),{workIds,limit,accountId:filters.accountId,platform:route.view==='database'?filters.platform:'',asOf:renderCutoff});
+  return rows.length?h('div',{class:'performance-wrap'},h('table',{class:'performance-table',role:'table'},h('caption',{},'作品表现 · 各账号最新同口径记录（不按月份截取）；未知与 0 分开。'),h('thead',{role:'rowgroup'},h('tr',{role:'row'},h('th',{scope:'col',role:'columnheader'},'作品 / 账号'),...PERFORMANCE_METRICS.map(key=>h('th',{scope:'col',role:'columnheader'},METRIC_NAMES[key])),h('th',{scope:'col',role:'columnheader'},'依据'))),h('tbody',{role:'rowgroup'},rows.map(row=>h('tr',{role:'row',dataset:{performanceRow:row.publicationId,workId:row.workId}},h('th',{scope:'row',role:'rowheader',class:'performance-work'},routeLink('library',row.title,row.workId),para(`${row.accountName} · ${row.platform}`,'hint')),...PERFORMANCE_METRICS.map(key=>{const m=row.metrics[key];return h('td',{role:'cell','data-label':METRIC_NAMES[key],dataset:{metric:key,snapshotId:m.snapshotId||'',kind:m.kind}},h('span',{},m.kind==='mixed'?'多口径':m.value===null?'未记录':m.value))}),h('td',{role:'cell',class:'performance-source'},button('核对来源',()=>showPerformanceSource(row),'tiny'))))))):para('当前筛选范围内没有登记发布的作品。登记发布后可手动记录表现，空白指标保持未知。','hint');
+}
 const state=()=>controller.state;
 const accounts=()=>values(state().accounts);
 const workRecords=()=>values(state().works);
@@ -110,23 +146,25 @@ function setAppearance(){const preference=globalThis.WorkbenchAppearance||{layou
 function shell(){
   const preference=globalThis.WorkbenchAppearance||{layout:'B',color:'dark',effects:'auto'};
   try{document.documentElement.dataset.motion=localStorage.getItem('mydotwork-creator-motion')||'auto'}catch{}
-  nav=h('nav',{'aria-label':'创作模块'},VIEWS.map(view=>routeLink(view,[icon(view),h('span',{},VIEW_NAMES[view])],null,{class:'nav-link',dataset:{view}})));
+  nav=h('nav',{'aria-label':'创作模块'});sidebarNavSlot=h('div',{class:'sidebar-nav-slot'});studioNavSlot=h('div',{class:'studio-nav-slot'});
   content=h('main',{id:'main'});toast=h('div',{id:'save-status',class:'status-box','aria-live':'polite','aria-atomic':'true'});
   storageStatus=h('span',{},'本地读取中');
   dialog=h('dialog',{'aria-labelledby':'dialog-title',tabindex:'-1',onKeydown:handleDialogKeydown,onCancel:e=>{e.preventDefault();closeDialog()},onClose:()=>{if(dialog.open)return;if(activeDialog){activeDialog=null;dialogReturnFocus?.focus({preventScroll:true})}}});
-  const appearance=h('div',{class:'appearance'},h('label',{},'外观',selectInput('layout',preference.layout,[['B','B 默认'],['A','A 经典']],v=>{preference.layout=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'B 配色',selectInput('color',preference.color,[['dark','深色'],['light','浅色']],v=>{preference.color=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'动效',selectInput('motion',document.documentElement.dataset.motion,[['auto','跟随系统'],['off','关闭']],v=>{document.documentElement.dataset.motion=v;try{localStorage.setItem('mydotwork-creator-motion',v)}catch{}})));
+  const appearance=h('div',{class:'appearance'},h('label',{},'外观',selectInput('layout',preference.layout,[['B','B 默认'],['A','A 经典']],v=>{preference.layout=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'B 配色',selectInput('color',preference.color,[['dark','深色'],['light','浅色']],v=>{preference.color=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'动效',selectInput('motion',document.documentElement.dataset.motion,[['auto','跟随系统'],['off','关闭']],v=>{document.documentElement.dataset.motion=v;studioOrb?.setMotion(v);try{localStorage.setItem('mydotwork-creator-motion',v)}catch{}})),h('label',{},'工作区',selectInput('presentation','studio',[['studio','创作面板'],['classic','经典侧栏']],setPresentation)));
   const sidebar=h('aside',{class:'sidebar'},
-    h('a',{class:'brand',href:'../dashboard/'},h('span',{class:'brand-mark'},'MW'),'创作工作区'),nav,
+    h('a',{class:'brand',href:'../dashboard/'},h('span',{class:'brand-mark'},'MW'),'创作工作区'),sidebarNavSlot,
     h('div',{class:'legacy-links'},h('span',{class:'muted'},'既有公开内容'),
       h('a',{href:'../dashboard/'},'研究与成果目录'),h('a',{href:'../chat/'},'公开聊天'),h('a',{href:'../projects/'},'项目进度')));
   const workspace=h('div',{class:'workspace'},
-    h('header',{class:'topbar'},h('strong',{},'MyDotWork · 六模块创作'),appearance),
+    h('header',{class:'topbar'},h('strong',{},'MyDotWork · 六模块创作'),appearance),studioNavSlot,
     h('div',{class:'safety-band',id:'policy-band'}),
     h('div',{class:'topbar'},storageStatus,h('div',{class:'actions'},button('账号',()=>showAccounts()),button('月目标',()=>showGoals()),button('备份 / 恢复',showBackup),button('回收站',showTrash))),
     h('div',{class:'notification-wrap'},toast),content,
     h('footer',{class:'footer'},'独立实现 · 手动登记发布与数据 · 无社媒自动发布、抓取或模型连接。',
       h('div',{class:'actions'},h('a',{href:'../dashboard/'},'研究与目录'),h('a',{href:'../chat/'},'聊天'),h('a',{href:'../projects/'},'项目'))));
   document.getElementById('app').replaceChildren(h('div',{class:'shell'},sidebar,workspace),dialog);
+  let presentation='studio';try{if(localStorage.getItem('mydotwork-creator-presentation')==='classic')presentation='classic'}catch{}
+  appearance.querySelector('[name="presentation"]').value=presentation;setPresentation(presentation);
 }
 function filterBar({month=false,platform=false,phase=false,search=true}={}){
   const update=(key,val)=>{filters[key]=val;if(key==='month')filters.date='';queueRender()};
@@ -135,14 +173,14 @@ function filterBar({month=false,platform=false,phase=false,search=true}={}){
 function heading(title,description,actions=[]){return h('div',{class:'page-heading'},h('div',{},h('h1',{id:'view-title',tabindex:'-1'},title),para(description)),h('div',{class:'actions'},actions))}
 function workRow(work,{view=route.view,showActions=true}={}){
   const p=readiness(state(),work.id);const pending=related('tasks',work.id).find(t=>t.required&&!['done','na'].includes(t.status));
-  return h('article',{class:`work-row ${route.workId===work.id?'is-selected':''}`},h('div',{class:'row-head'},button(work.title,()=>navigate(view,work.id),'work-title',{dataset:{focusKey:`work:${work.id}`}}),badge(PHASE_NAMES[work.phase]||work.phase,work.phase==='ready'?'good':'')),h('div',{class:'work-meta'},badge(work.contentType==='video'?'短视频':'图文'),badge(`优先级 ${work.priority||2}`),work.draftNeedsReview?badge('切入点已改，稿件待复核','warn'):null,...(work.tags||[]).map(x=>badge(x))),para(work.angle||work.summary||'尚未填写原创切入点','muted'),h('p',{class:'id'},`WorkID ${work.id}`),work.phase!=='idea'?h('div',{},h('progress',{class:'progress',value:p.completed,max:Math.max(1,p.total),'aria-label':`必需任务 ${p.completed}/${p.total}`}),para(`必需任务 ${p.completed}/${p.total}${pending?` · 下一步：${pending.title}`:''}`,'hint')):null,showActions?h('div',{class:'actions'},button('打开作品',()=>navigate(view,work.id),'tiny'),work.phase==='idea'?button('开始创作',()=>showStart(work),'tiny'):null,work.phase==='ready'?button('登记发布',()=>{navigate('library',work.id);document.getElementById(`publication-${work.id}`)?.scrollIntoView()},'tiny'):null):null);
+  return h('article',{class:`work-row ${route.workId===work.id?'is-selected':''}`},h('div',{class:'row-head'},button(work.title,()=>navigate(view,work.id),'work-title',{dataset:{focusKey:`work:${work.id}`}}),badge(PHASE_NAMES[work.phase]||work.phase,work.phase==='ready'?'good':'')),h('div',{class:'work-meta'},badge(work.contentType==='video'?'短视频':'图文'),badge(`优先级 ${work.priority||2}`),work.draftNeedsReview?badge('切入点已改，稿件待复核','warn'):null,...(work.tags||[]).map(x=>badge(x))),para(work.angle||work.summary||'尚未填写原创切入点','muted'),identityDetails(`work-${work.id}`,'查看作品标识',`WorkID ${work.id}`),work.phase!=='idea'?h('div',{},h('progress',{class:'progress',value:p.completed,max:Math.max(1,p.total),'aria-label':`必需任务 ${p.completed}/${p.total}`}),para(`必需任务 ${p.completed}/${p.total}${pending?` · 下一步：${pending.title}`:''}`,'hint')):null,showActions?h('div',{class:'actions'},button('打开作品',()=>navigate(view,work.id),'tiny'),work.phase==='idea'?button('开始创作',()=>showStart(work),'tiny'):null,work.phase==='ready'?button('登记发布',()=>{navigate('library',work.id);document.getElementById(`publication-${work.id}`)?.scrollIntoView()},'tiny'):null):null);
 }
 function scopedWorks(q){return q.works.filter(w=>!w.trashedAt&&matchWork(w,state(),filters.search)&&(!['ideas','production','library'].includes(route.view)||!filters.phase||w.phase===filters.phase))}
 function listWorks(rows,message='还没有作品',view=route.view){return rows.length?h('div',{class:'stack'},rows.map(w=>workRow(w,{view}))):empty(message,'先把一个想法存下来，再开始创作。',button('新建选题',showCapture,'primary'))}
 function progressLine(workId){const p=readiness(state(),workId);return `${p.completed}/${p.total} 必需任务完成`}
 function publicationRow(pub,{controls=true}={}){
   const w=state().works[pub.workId];const passed=pub.needsVerification??(pub.status==='planned'&&pub.schedule&&(pub.schedule.allDay?pub.schedule.date<new Date().toLocaleDateString('sv-SE',{timeZone:pub.schedule.timeZone}):Date.parse(pub.schedule.plannedAt)<Date.now()));
-  return h('article',{class:'publication-row'},h('div',{class:'row-head'},routeLink('calendar',w?.title||pub.workId,pub.workId),badge(pub.status==='published'?'用户已登记发布':pub.status==='planned'?'已排期':'未排期',pub.status==='published'?'good':'')),para(`${accountName(pub.accountId)} · ${scheduleLabel(pub)}`,'hint'),para(`${progressLine(pub.workId)}${passed?' · 计划已过期，发布事实待核实':''}`,passed?'warning small':'muted small'),pub.actualPublishedAt?para(`实际发布时间 ${pub.actualPublishedAt} · 用户手动登记`,'hint'):null,pub.publicUrl?external(pub.publicUrl,'打开登记链接'):null,h('p',{class:'id'},`PublicationID ${pub.id}`),controls?h('div',{class:'actions'},pub.status!=='published'?button(pub.schedule?'改期':'安排日期',()=>showSchedule(w,pub),'tiny'):null,pub.status==='planned'?button('取消排期',()=>confirmCancelSchedule(pub),'tiny'):null,pub.status!=='published'?button('登记已经发布',()=>showPublication(w,pub),'tiny'):null):null);
+  return h('article',{class:'publication-row'},h('div',{class:'row-head'},routeLink('calendar',w?.title||pub.workId,pub.workId),badge(pub.status==='published'?'用户已登记发布':pub.status==='planned'?'已排期':'未排期',pub.status==='published'?'good':'')),para(`${accountName(pub.accountId)} · ${scheduleLabel(pub)}`,'hint'),para(`${progressLine(pub.workId)}${passed?' · 计划已过期，发布事实待核实':''}`,passed?'warning small':'muted small'),pub.actualPublishedAt?para(`实际发布时间 ${pub.actualPublishedAt} · 用户手动登记`,'hint'):null,pub.publicUrl?external(pub.publicUrl,'打开登记链接'):null,identityDetails(`pub-${pub.id}`,'查看发布标识',`PublicationID ${pub.id}`),controls?h('div',{class:'actions'},pub.status!=='published'?button(pub.schedule?'改期':'安排日期',()=>showSchedule(w,pub),'tiny'):null,pub.status==='planned'?button('取消排期',()=>confirmCancelSchedule(pub),'tiny'):null,pub.status!=='published'?button('登记已经发布',()=>showPublication(w,pub),'tiny'):null):null);
 }
 
 function renderDesk(q){
@@ -165,8 +203,8 @@ function renderDesk(q){
       empty('当前没有待办作品','新选题会出现在这里。',button('新建选题',showCapture)));
   const goalPanel=h('section',{class:'panel'},h('div',{class:'section-heading'},h('h2',{},'本月目标'),button('设置',()=>showGoals(),'tiny')),renderGoalList(),
     h('hr',{class:'divider'}),h('h3',{},'即将发布 / 待核实'),q.calendar.length?h('div',{class:'stack'},q.calendar.slice(0,5).map(p=>publicationRow(p))):para('本月还没有发布排期','hint'));
-  return [heading('工作台','从下一步行动开始。每个数字都能展开查看构成记录。',[button('新建选题',showCapture,'primary')]),
-    filterBar({month:true}),stats,para(scopeText(),'scope'),h('div',{class:'two-columns'},actionsPanel,goalPanel),
+  return [studioMode()?studioHero():null,heading('工作台','从下一步行动开始。每个数字都能展开查看构成记录。',[button('新建选题',showCapture,'primary')]),
+    filterBar({month:true}),stats,para(scopeText(),'scope'),h('div',{class:'two-columns studio-overview'},h('div',{class:'stack'},h('section',{class:'panel'},h('div',{class:'section-heading'},h('h2',{},'作品表现'),routeLink('library','作品库')),renderPerformance({workIds:rows.map(w=>w.id),limit:8})),actionsPanel),goalPanel),
     h('section',{class:'panel'},h('div',{class:'section-heading'},h('h2',{},'最新表现（不按月份筛选）'),routeLink('database','查看全部快照')),renderMetricCards({limit:4}))];
 }
 function renderIdeas(q){const rows=scopedWorks(q).filter(w=>w.phase!=='archived');return [heading('选题池','参考来源与自己的切入点分别保存。开始创作沿用同一个 WorkID。',[button('新建选题',showCapture,'primary')]),filterBar({phase:true}),para(`${rows.length} 件作品 · 数据来源：此浏览器的已提交选题，包含已进入创作的作品。`,'scope'),listWorks(rows)]}
@@ -186,9 +224,9 @@ function renderLibrary(q){
     return h('section',{class:'panel'},workRow(w),publications);
   })):empty('还没有已登记发布的作品','先完成创作，再登记真实发生的发布。',button('打开创作台',()=>navigate('production')));
   return [heading('作品库','按作品归档。两个账号的发布仍属于同一个作品；保留发布时标题和稿件快照。',[button('手动登记发布',showPublicationPicker,'primary')]),
-    filterBar({phase:true}),para(`${rows.length} 件作品；每件作品可展开多次发布。归档与已发布分别记录。`,'scope'),listing];
+    filterBar({phase:true}),para(`${rows.length} 件作品；每件作品可展开多次发布。归档与已发布分别记录。`,'scope'),h('section',{class:'panel'},h('h2',{},'作品表现'),renderPerformance({workIds:rows.map(w=>w.id)})),listing];
 }
-function renderDatabase(q){return [heading('数据库','手工录入、核对快照、形成复盘。空值表示未知；累计快照不会跨日期相加。',[button('录入指标',()=>showMetrics(),'primary'),button('指标 CSV',showCsv)]),filterBar({platform:true}),h('div',{class:'toolbar'},h('label',{},'截止时刻（含 UTC 偏移；留空为现在）',h('input',{value:filters.asOf,placeholder:'2026-10-05T23:59:59+08:00',dataset:{focusKey:'filter:asof'},onChange:e=>{const v=e.target.value;if(!v||(!Number.isNaN(Date.parse(v))&&/(Z|[+-]\d{2}:\d{2})$/.test(v))){filters.asOf=v;render()}else announce('截止时刻需要有效日期和明确 UTC 偏移',true)}}))),para(`来源：用户手工记录或经预览导入的指标。截止：${renderCutoff}${filters.asOf?'':'（当前渲染时刻）'}。按平台、指标、单位和口径分开显示，无跨平台排行榜。`,'scope'),h('section',{class:'panel'},h('h2',{},'最新值与同口径增量'),renderMetricCards()),h('section',{class:'panel'},h('h2',{},'作品复盘'),listWorks(scopedWorks(q).filter(w=>related('publications',w.id).some(p=>p.status==='published')),'发布登记后可录入数据并复盘','database'))]}
+function renderDatabase(q){return [heading('数据库','手工录入、核对快照、形成复盘。空值表示未知；累计快照不会跨日期相加。',[button('录入指标',()=>showMetrics(),'primary'),button('指标 CSV',showCsv)]),filterBar({platform:true}),h('div',{class:'toolbar'},h('label',{},'截止时刻（含 UTC 偏移；留空为现在）',h('input',{value:filters.asOf,placeholder:'2026-10-05T23:59:59+08:00',dataset:{focusKey:'filter:asof'},onChange:e=>{const v=e.target.value;if(!v||(!Number.isNaN(Date.parse(v))&&/(Z|[+-]\d{2}:\d{2})$/.test(v))){filters.asOf=v;render()}else announce('截止时刻需要有效日期和明确 UTC 偏移',true)}}))),para(`来源：用户手工记录或经预览导入的指标。截止：${renderCutoff}${filters.asOf?'':'（当前渲染时刻）'}。按平台、指标、单位和口径分开显示，无跨平台排行榜。`,'scope'),h('section',{class:'panel'},h('h2',{},'作品表现'),renderPerformance({workIds:scopedWorks(q).map(w=>w.id)})),h('section',{class:'panel'},h('h2',{},'最新值与同口径增量'),renderMetricCards()),h('section',{class:'panel'},h('h2',{},'作品复盘'),listWorks(scopedWorks(q).filter(w=>related('publications',w.id).some(p=>p.status==='published')),'发布登记后可录入数据并复盘','database'))]}
 
 function render(){
   if(!controller?.state||!content)return;
@@ -198,7 +236,8 @@ function render(){
   try{q=query()}catch(error){announce(error.message,true);return}
   for(const item of nav.querySelectorAll('[data-view]')){if(item.dataset.view===route.view)item.setAttribute('aria-current','page');else item.removeAttribute('aria-current')}
   const renderers={desk:renderDesk,ideas:renderIdeas,production:renderProduction,calendar:renderCalendar,library:renderLibrary,database:renderDatabase};
-  const nodes=renderers[route.view](q);
+  studioOrb?.dispose();studioOrb=null;
+  const nodes=renderers[route.view](q).filter(Boolean);
   if(route.workId){const work=state().works[route.workId];nodes.push(work?renderDetail(work):empty('找不到这个作品','它可能尚未导入、已移至另一个工作区，或链接 ID 无效。',button('返回列表',()=>navigate(route.view))))}
   content.replaceChildren(...nodes,h('datalist',{id:'time-zones'},['UTC','Asia/Shanghai','Asia/Tokyo','America/New_York','Europe/London','Europe/Berlin','Australia/Sydney'].map(v=>h('option',{value:v}))));
   storageStatus.textContent=`${controller.policy.mode==='demo'?'虚构演示工作区':'私有工作区'} · 本地版本 ${state().revision} · ${controller.policy.persistence||'浏览器本地存储'}`;
@@ -215,7 +254,7 @@ export async function mountCreator(store){
   addEventListener('popstate',onHistory);addEventListener('hashchange',()=>{const p=parseRoute(location.hash);if(p.view!==route.view||p.workId!==route.workId)onHistory()});
   addEventListener('beforeunload',e=>{if([...controller.buffers.values()].some(b=>b.dirty)){e.preventDefault();e.returnValue=''}});
   if(!workRecords().length)announce('虚构演示工作区已打开；可新建选题开始。保存操作完成后会在这里显示结果');
-  return {controller,navigate,render,close:()=>controller.close()};
+  return {controller,navigate,render,close:()=>{studioOrb?.dispose();studioOrb=null;controller.close()}};
 }
 async function boot(){
   try{
@@ -234,7 +273,7 @@ function showStart(work){const key=`start:${work.id}`;openDialog('选择制作�
 
 function renderDetail(work){
   const workId=work.id,p=readiness(state(),workId),currentDraft=state().drafts[work.bodyRevisionId];
-  const detail=h('section',{id:'work-detail',class:'detail panel',tabindex:'-1','aria-label':`${work.title} 作品详情`},h('div',{class:'page-heading detail-head'},h('div',{},h('h2',{},work.title),para(`WorkID ${work.id} · 修订 ${work.revision}`,'id'),h('div',{class:'badges'},badge(PHASE_NAMES[work.phase]||work.phase),work.trashedAt?badge('在回收站','warn'):null,work.draftNeedsReview?badge('切入点有变，稿件需复核','warn'):null)),button('关闭详情',closeDetail,'quiet')),h('div',{class:'tabs','aria-label':'同一作品的模块入口'},VIEWS.map(v=>button(VIEW_NAMES[v],()=>navigate(v,work.id),'tiny',{'aria-pressed':route.view===v}))),para('此详情显示这件作品的全部账号关联记录，与六个模块共用同一 WorkID；列表上的账号筛选不隐藏详情历史。未保存输入暂存于当前页面，关闭或刷新前请完成保存。','hint'));
+  const detail=h('section',{id:'work-detail',class:'detail panel',tabindex:'-1','aria-label':`${work.title} 作品详情`},h('div',{class:'page-heading detail-head'},h('div',{},h('h2',{},work.title),identityDetails(`detail-${work.id}`,'作品标识与修订',`WorkID ${work.id} · 修订 ${work.revision}`),h('div',{class:'badges'},badge(PHASE_NAMES[work.phase]||work.phase),work.trashedAt?badge('在回收站','warn'):null,work.draftNeedsReview?badge('切入点有变，稿件需复核','warn'):null)),button('关闭详情',closeDetail,'quiet')),h('div',{class:'tabs','aria-label':'同一作品的模块入口'},VIEWS.map(v=>button(VIEW_NAMES[v],()=>navigate(v,work.id),'tiny',{'aria-pressed':route.view===v}))),para('此详情显示这件作品的全部账号关联记录，与六个模块共用同一 WorkID；列表上的账号筛选不隐藏详情历史。未保存输入暂存于当前页面，关闭或刷新前请完成保存。','hint'));
   if(work.trashedAt){detail.append(para('作品已移入可恢复回收站，历史版本和发布事实仍保留。','warning'),button('还原作品',()=>action('restoreWork',{workId},'作品已还原'),'primary'));return detail}
   const metaKey=`idea:${workId}`;
   detail.append(disclosure(`idea:${workId}`,'选题与参考',h('div',{class:'stack'},form(metaKey,{title:work.title,summary:work.summary||'',angle:work.angle||'',priority:String(work.priority||2),tags:(work.tags||[]).join(', ')},()=>h('div',{class:'field-grid'},field(metaKey,'title','选题标题',{required:true}),field(metaKey,'priority','优先级',{options:[['1','1 · 高'],['2','2 · 中'],['3','3 · 低']]}),h('div',{class:'full'},field(metaKey,'summary','简述',{type:'textarea',rows:2})),h('div',{class:'full'},field(metaKey,'angle','自己的切入点',{type:'textarea'})),h('div',{class:'full'},field(metaKey,'tags','标签（逗号分隔）'))),async(v,k)=>save(k,'updateIdea',{workId,title:v.title,summary:v.summary,angle:v.angle,priority:Number(v.priority),tags:v.tags.split(/[,，]/).map(x=>x.trim()).filter(Boolean)}),{submit:'保存选题修改'}),h('div',{class:'section-heading'},h('h3',{},'参考来源'),button('新增参考',()=>showReference(work),'tiny')),related('references',workId).map(ref=>h('article',{class:'work-row'},h('h3',{},ref.title||'参考'),ref.url?external(ref.url,ref.url):null,para(ref.analysis||'尚未拆解参考','small'),ref.excerpt?h('pre',{class:'prose'},ref.excerpt):null,para(`来源作者：${text(ref.author)} · 访问状态：未自动核验`,'hint'),button('编辑参考',()=>showReference(work,ref),'tiny'))),work.phase==='idea'?button('开始创作',()=>showStart(work),'primary'):null),{open:route.view==='ideas'}));
@@ -273,7 +312,7 @@ function showAccounts(editAccount=null){
   openDialog(editAccount?'编辑演示账号':'账号管理',()=>h('div',{class:'stack'},para('只保存展示名、平台和自选标识，不填写密码、Cookie、令牌或密钥。本候选仅接受虚构测试账号。','hint'),!editAccount?h('div',{class:'stack'},accounts().length?accounts().map(a=>h('div',{class:'work-row'},h('div',{class:'row-head'},h('h3',{},a.displayName),button('编辑',()=>showAccounts(a),'tiny')),para(`${a.platform} · ${a.handle||'未设标识'}`,'hint'),h('p',{class:'id'},a.id))):para('尚未创建账号','hint')):null,form(key,{displayName:editAccount?.displayName||'',platform:editAccount?.platform||'',handle:editAccount?.handle||''},()=>h('div',{class:'field-grid'},field(key,'displayName','虚构账号展示名',{required:true,placeholder:'例如：演示账号甲'}),field(key,'platform','平台名称',{required:true,placeholder:'例如：演示平台'}),h('div',{class:'full'},field(key,'handle','自选标识（可选）'))),async(v,k)=>{await save(k,editAccount?'updateAccount':'createAccount',{...(editAccount?{accountId:editAccount.id}:{}),...v});closeDialog();showAccounts()},{submit:editAccount?'保存账号修改':'创建虚构账号'})));
 }
 function goalActual(goal){return selectWorkspace(state(),{month:goal.month,timeZone:goal.timeZone,accountId:goal.accountId||undefined}).goals.find(g=>g.id===goal.id)?.actual??0}
-function renderGoalList(){const goals=values(state().goals).filter(g=>g.month===filters.month&&(!filters.accountId||g.accountId===filters.accountId));return goals.length?h('div',{class:'stack'},goals.map(g=>h('article',{class:'work-row'},h('div',{class:'row-head'},h('h3',{},g.metric==='publications'?'登记发布次数':'完成作品数'),h('b',{},`${goalActual(g)} / ${g.target}`)),para(`${g.month} · ${g.timeZone} · ${g.accountId?accountName(g.accountId):'全部账号'}`,'hint'),button('编辑目标',()=>showGoals(g),'tiny')))):para('本月尚未设置目标。按你的计划设置，不预填目标数字。','hint')}
+function renderGoalList(){const goals=values(state().goals).filter(g=>g.month===filters.month&&(!filters.accountId||g.accountId===filters.accountId));return goals.length?h('div',{class:'stack'},goals.map(g=>h('article',{class:'work-row'},h('div',{class:'goal-content'},goalRing(goalActual(g),g.target),h('h3',{},g.metric==='publications'?'登记发布次数':'完成作品数')),para(`${g.month} · ${g.timeZone} · ${g.accountId?accountName(g.accountId):'全部账号'}`,'hint'),button('编辑目标',()=>showGoals(g),'tiny')))):para('本月尚未设置目标。按你的计划设置，不预填目标数字。','hint')}
 function showGoals(goal=null){const key=`goal:${goal?.id||'new'}`;openDialog(goal?'编辑月目标':'月目标',()=>h('div',{class:'stack'},!goal?renderGoalList():null,form(key,{month:goal?.month||filters.month,timeZone:goal?.timeZone||filters.timeZone,metric:goal?.metric||'worksCompleted',target:goal?.target??'',accountId:goal?.accountId||''},()=>h('div',{class:'field-grid'},field(key,'month','目标月份',{type:'month',required:true}),field(key,'timeZone','统计时区',{required:true}),field(key,'metric','目标指标',{options:[['worksCompleted','完成作品数（进入可发布）'],['publications','手动登记发布次数']]}),field(key,'target','目标值',{type:'number',min:'0',step:'1',required:true}),h('div',{class:'full'},field(key,'accountId','账号范围',{options:[['','所有账号'],...accountOptions()]}))),async(v,k)=>{await save(k,'setGoal',{goalId:goal?.id,month:v.month,timeZone:v.timeZone,metric:v.metric,target:Number(v.target),accountId:v.accountId||null});closeDialog()},{submit:'保存月目标'}),para('账号范围以该账号的发布记录或计划关联作品；未指定账号的灵感不计入单账号目标。','hint')))}
 
 function metricsInScope({workId}={}){
@@ -298,7 +337,7 @@ function renderMetricCards({workId,limit}={}){
     const delta=metricDelta(state(),{...target,metricKey:current.metricKey,definition:current.definition||'',asOf:renderCutoff});
     const pub=current.publicationId?state().publications[current.publicationId]:null;
     const title=pub?`${workName(pub.workId)} · ${accountName(pub.accountId)}`:accountName(current.accountId);
-    return h('article',{class:'snapshot-row'},h('div',{class:'row-head'},h('h3',{},`${title} · ${METRIC_NAMES[current.metricKey]||current.metricKey}`),h('span',{class:'metric-value'},current.value===null?'未记录':current.value)),para(`最新累计值，未将历次快照相加。上次同口径增量：${delta.value===null?'无法计算（缺少有效可比值）':`${delta.value>=0?'+':''}${delta.value}`}`,'hint'),para(`口径：${current.definition||'未注明'} · 单位：${current.unit||'count'} · 观测：${current.observedAt}`,'hint'),para(`来源：${text(current.sourceRef)} · 快照 ${current.id}`,'id'),renderTrend(group),disclosure(`metric:${current.id}`,`核对 ${group.length} 条历史快照`,group.map(m=>h('div',{class:'version'},para(`${m.observedAt} · ${m.value===null?'未知':m.value} · ${text(m.sourceRef)}`,'small'),h('p',{class:'id'},m.id)))));
+    return h('article',{class:'snapshot-row'},h('div',{class:'row-head'},h('h3',{},`${title} · ${METRIC_NAMES[current.metricKey]||current.metricKey}`),h('span',{class:'metric-value'},current.value===null?'未记录':current.value)),para(`最新累计值，未将历次快照相加。上次同口径增量：${delta.value===null?'无法计算（缺少有效可比值）':`${delta.value>=0?'+':''}${delta.value}`}`,'hint'),para(`口径：${current.definition||'未注明'} · 单位：${current.unit||'count'} · 观测：${current.observedAt}`,'hint'),para(`来源：${text(current.sourceRef)}`,'hint'),identityDetails(`metric-id-${current.id}`,'快照标识',current.id),renderTrend(group),disclosure(`metric:${current.id}`,`核对 ${group.length} 条历史快照`,group.map(m=>h('div',{class:'version'},para(`${m.observedAt} · ${m.value===null?'未知':m.value} · ${text(m.sourceRef)}`,'small'),h('p',{class:'id'},m.id)))));
   }));
 }
 function renderTrend(series){

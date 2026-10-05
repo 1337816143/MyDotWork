@@ -21,6 +21,8 @@ tests = [
     'tests/creator/ui/controller.test.mjs',
     'tests/creator/ui/dom-contract.test.mjs',
     'tests/creator/ui/static.test.mjs',
+    'tests/creator/ui/performance.test.mjs',
+    'tests/creator/ui/studio-orb.test.mjs',
     'tests/creator/review/review-core.test.mjs',
     'tests/creator/review/review-exchange.test.mjs',
     'tests/creator/review/review-controller.test.mjs',

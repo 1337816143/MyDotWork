@@ -21,7 +21,7 @@ for(const [name,entry]of Object.entries(lock.packages)){
 assert.match(config,/chromiumSandbox\s*:\s*true/);
 assert.match(config,/channel\s*:\s*'chrome'/);
 assert.match(config,/retries\s*:\s*0/);
-assert.match(workflow,/branches: \[qa\/six-module-stage1-20261005\]/);
+assert.match(workflow,/branches: \[qa\/six-module-stage1-20261005, qa\/xuan-studio-stage2-20261005\]/);
 assert.match(workflow,/contents: read/);
 assert.match(workflow,/persist-credentials: false/);
 assert.match(workflow,/ref: \$\{\{ github.sha \}\}/);

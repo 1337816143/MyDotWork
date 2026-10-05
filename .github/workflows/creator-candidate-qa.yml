@@ -1,7 +1,7 @@
 name: Creator Stage 1 candidate browser QA
 on:
   push:
-    branches: [qa/six-module-stage1-20261005]
+    branches: [qa/six-module-stage1-20261005, qa/xuan-studio-stage2-20261005]
 permissions:
   contents: read
 concurrency:
