@@ -18,6 +18,20 @@ for(const [name,entry]of Object.entries(lock.packages)){
   assert.match(entry.integrity,/^sha512-/);
   if(/(?:playwright|playwright-core|@playwright\/test)$/.test(name))assert.equal(entry.version,'1.63.0');
 }
+// Execute only the isolated environment/ref guard, never import Playwright or launch Chrome here.
+const smoke=await readFile(resolve(here,'sandbox-smoke.mjs'),'utf8');
+const smokeGuard=smoke.split('await mkdir')[0].split('\n').filter(line=>!line.startsWith('import ')).join('\n');
+assert.match(smokeGuard,/approvedCandidateRefs=new Set\(\['refs\/heads\/qa\/six-module-stage1-20261005','refs\/heads\/qa\/xuan-studio-stage2-20261005'\]\)/);
+for(const [ref,ci,actions,allowed]of [
+ ['refs/heads/qa/six-module-stage1-20261005','true','true',true],
+ ['refs/heads/qa/xuan-studio-stage2-20261005','true','true',true],
+ ['refs/heads/main','true','true',false],['refs/heads/qa/unreviewed','true','true',false],
+ ['refs/heads/qa/xuan-studio-stage2-20261005','false','true',false],
+ ['refs/heads/qa/xuan-studio-stage2-20261005','true','false',false],
+ ['','true','true',false]]){
+ const checked=spawnSync(process.execPath,['--input-type=module','-e',smokeGuard],{env:{...process.env,GITHUB_REF:ref,CI:ci,GITHUB_ACTIONS:actions}});
+ assert.equal(checked.status,allowed?0:1,'Isolated launch guard: '+JSON.stringify({ref,ci,actions}));
+}
 assert.match(config,/chromiumSandbox\s*:\s*true/);
 assert.match(config,/channel\s*:\s*'chrome'/);
 assert.match(config,/retries\s*:\s*0/);
