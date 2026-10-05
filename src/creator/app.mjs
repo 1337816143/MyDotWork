@@ -39,7 +39,7 @@ let detailReturn=null;
 let renderQueued=false;
 let renderCutoff=new Date().toISOString();
 const STUDIO_VIEWS=['desk','library','production','ideas','calendar','database'];
-let sidebarNavSlot,studioNavSlot,studioOrb=null;
+let sidebarNavSlot,studioNavSlot,sidebarLegacySlot,studioLegacySlot,legacyLinks,studioOrb=null;
 const studioMode=()=>document.documentElement.dataset.presentation==='studio';
 function setPresentation(value){
   document.documentElement.dataset.presentation=value==='classic'?'classic':'studio';
@@ -47,6 +47,7 @@ function setPresentation(value){
   const order=studioMode()?STUDIO_VIEWS:VIEWS;
   nav.replaceChildren(...order.map(view=>routeLink(view,[icon(view),h('span',{},VIEW_NAMES[view])],null,{class:'nav-link',dataset:{view}})));
   (studioMode()?studioNavSlot:sidebarNavSlot).append(nav);
+  (studioMode()?studioLegacySlot:sidebarLegacySlot).append(legacyLinks);
   render();
 }
 function identityDetails(key,label,value){return disclosure(`identity:${key}`,label,h('p',{class:'id'},value))}
@@ -146,17 +147,17 @@ function setAppearance(){const preference=globalThis.WorkbenchAppearance||{layou
 function shell(){
   const preference=globalThis.WorkbenchAppearance||{layout:'B',color:'dark',effects:'auto'};
   try{document.documentElement.dataset.motion=localStorage.getItem('mydotwork-creator-motion')||'auto'}catch{}
-  nav=h('nav',{'aria-label':'创作模块'});sidebarNavSlot=h('div',{class:'sidebar-nav-slot'});studioNavSlot=h('div',{class:'studio-nav-slot'});
+  nav=h('nav',{'aria-label':'创作模块'});sidebarNavSlot=h('div',{class:'sidebar-nav-slot'});studioNavSlot=h('div',{class:'studio-nav-slot'});sidebarLegacySlot=h('div',{class:'sidebar-legacy-slot'});studioLegacySlot=h('div',{class:'studio-legacy-slot'});
+  legacyLinks=h('nav',{class:'legacy-links','aria-label':'既有公开内容'},h('span',{class:'muted'},'既有公开内容'),h('a',{href:'../dashboard/'},'研究与成果目录'),h('a',{href:'../chat/'},'公开聊天'),h('a',{href:'../projects/'},'项目进度'));
   content=h('main',{id:'main'});toast=h('div',{id:'save-status',class:'status-box','aria-live':'polite','aria-atomic':'true'});
   storageStatus=h('span',{},'本地读取中');
   dialog=h('dialog',{'aria-labelledby':'dialog-title',tabindex:'-1',onKeydown:handleDialogKeydown,onCancel:e=>{e.preventDefault();closeDialog()},onClose:()=>{if(dialog.open)return;if(activeDialog){activeDialog=null;dialogReturnFocus?.focus({preventScroll:true})}}});
   const appearance=h('div',{class:'appearance'},h('label',{},'外观',selectInput('layout',preference.layout,[['B','B 默认'],['A','A 经典']],v=>{preference.layout=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'B 配色',selectInput('color',preference.color,[['dark','深色'],['light','浅色']],v=>{preference.color=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'动效',selectInput('motion',document.documentElement.dataset.motion,[['auto','跟随系统'],['off','关闭']],v=>{document.documentElement.dataset.motion=v;studioOrb?.setMotion(v);try{localStorage.setItem('mydotwork-creator-motion',v)}catch{}})),h('label',{},'工作区',selectInput('presentation','studio',[['studio','创作面板'],['classic','经典侧栏']],setPresentation)));
   const sidebar=h('aside',{class:'sidebar'},
     h('a',{class:'brand',href:'../dashboard/'},h('span',{class:'brand-mark'},'MW'),'创作工作区'),sidebarNavSlot,
-    h('div',{class:'legacy-links'},h('span',{class:'muted'},'既有公开内容'),
-      h('a',{href:'../dashboard/'},'研究与成果目录'),h('a',{href:'../chat/'},'公开聊天'),h('a',{href:'../projects/'},'项目进度')));
+    sidebarLegacySlot);
   const workspace=h('div',{class:'workspace'},
-    h('header',{class:'topbar'},h('strong',{},'MyDotWork · 六模块创作'),h('a',{class:'studio-return',href:'../dashboard/'},'研究与成果目录'),appearance),studioNavSlot,
+    h('header',{class:'topbar'},h('strong',{},'MyDotWork · 六模块创作'),studioLegacySlot,appearance),studioNavSlot,
     h('div',{class:'safety-band',id:'policy-band'}),
     h('div',{class:'topbar'},storageStatus,h('div',{class:'actions'},button('账号',()=>showAccounts()),button('月目标',()=>showGoals()),button('备份 / 恢复',showBackup),button('回收站',showTrash))),
     h('div',{class:'notification-wrap'},toast),content,

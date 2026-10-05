@@ -46,6 +46,10 @@ fieldset{min-width:0;border:1px solid var(--line);border-radius:9px;padding:12px
 :root{--studio-orb-wire:#cbd4bf;--studio-orb-gold:#d6bd7b}
 :root[data-color=light],:root[data-layout=A]{--studio-orb-wire:#42473c;--studio-orb-gold:#a58f4e}
 
-.studio-return{display:none;font-size:14px}:root[data-presentation=studio] .studio-return{display:inline-flex;min-height:44px;align-items:center}
 /* Keep the keyboard skip link visually absent until focus, including a scrolled full-page capture. */
 .skip:not(:focus){clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+
+.sidebar-legacy-slot{margin-top:auto}.studio-legacy-slot:empty{display:none}
+.studio-legacy-slot .legacy-links{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;border:0;align-items:center}
+.studio-legacy-slot .legacy-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}.studio-legacy-slot .legacy-links>span{font-size:12px}
+@media (max-width:680px){.sidebar-legacy-slot .legacy-links{display:flex;flex-wrap:wrap;gap:12px}.sidebar-legacy-slot .legacy-links a{min-height:44px;display:inline-flex;align-items:center}}

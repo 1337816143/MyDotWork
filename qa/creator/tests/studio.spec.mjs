@@ -51,7 +51,7 @@ test('studio native presentation switch preserves input, revision, navigation an
   await page.locator('.page-heading').getByRole('button',{name:'新建选题',exact:true}).click();
   await input(form(page,'capture-idea'),'title').fill('Synthetic unsaved title across presentation switch');
   await page.keyboard.press('Escape');const before=await readState(page);
-  await page.locator('[name="presentation"]').selectOption('classic');await expect(page.locator('.sidebar nav')).toBeVisible();
+  await page.locator('[name="presentation"]').selectOption('classic');await expect(page.locator('.sidebar [aria-label="创作模块"]')).toBeVisible();
   await page.locator('.page-heading').getByRole('button',{name:'新建选题',exact:true}).click();await expect(input(form(page,'capture-idea'),'title')).toHaveValue('Synthetic unsaved title across presentation switch');await page.keyboard.press('Escape');
   await page.locator('[name="presentation"]').selectOption('studio');await expect(page.locator('.studio-nav-slot nav')).toBeVisible();
   expect(await page.locator('nav [data-view]').evaluateAll(nodes=>nodes.map(node=>node.dataset.view))).toEqual(['desk','library','production','ideas','calendar','database']);
@@ -60,6 +60,15 @@ test('studio native presentation switch preserves input, revision, navigation an
   await page.locator('[name="presentation"]').selectOption('classic');await page.reload();await expect(page.locator('html')).toHaveAttribute('data-presentation','classic');
   await page.locator('[name="presentation"]').selectOption('studio');await page.locator('[name="layout"]').selectOption('A');await expect(page.locator('html')).toHaveAttribute('data-layout','A');
   await page.locator('[name="layout"]').selectOption('B');await expect(page.locator('html')).toHaveAttribute('data-layout','B');await assertNoOverflow(page);
+  for(const width of [1280,320]){
+    await page.setViewportSize({width,height:900});
+    for(const mode of ['classic','studio']){
+      await page.locator('[name="presentation"]').selectOption(mode);
+      for(const label of ['研究与成果目录','公开聊天','项目进度'])await expect(page.getByRole('link',{name:label,exact:true})).toBeVisible();
+      await assertNoOverflow(page);
+    }
+  }
+
   await writeEvidence(testInfo,'studio-navigation',{scope:'Native controls and keyboard, unchanged saved state and retained unsubmitted synthetic buffer',businessRevision:before.revision,presentationPersisted:true,legacyLayouts:['A','B']});
 });
 

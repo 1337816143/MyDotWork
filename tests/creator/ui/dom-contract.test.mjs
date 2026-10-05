@@ -33,7 +33,7 @@ test('DOM fixture: actual workbench, library and database rows share one current
 test('DOM fixture: optional studio navigation preserves stable routes, B/A settings, business revision and unsaved form input',async()=>{
   const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});const app=await mountCreator(store);app.navigate('ideas');
   const appearance=document.querySelector('[name="presentation"]');appearance.value='studio';await fire(appearance,'change');
-  const nav=document.querySelector('nav');assert.deepEqual(nav.querySelectorAll('[data-view]').map(n=>n.dataset.view),['desk','library','production','ideas','calendar','database']);
+  const nav=document.querySelector('[aria-label="创作模块"]');assert.deepEqual(nav.querySelectorAll('[data-view]').map(n=>n.dataset.view),['desk','library','production','ideas','calendar','database']);
   assert.equal(nav.parentNode.className,'studio-nav-slot');
   await fire(findButton(document.body,'新建选题'),'click');const form=document.querySelector('[data-buffer="capture-idea"]');
   await input(form,'title','Unsaved synthetic title');const revision=app.controller.state.revision;
@@ -51,6 +51,17 @@ test('DOM fixture: technical identities are recoverable through closed native de
   assert.ok(identities.length>0);assert.equal(identities[0].open,false);assert.ok(identities.some(n=>n.textContent.includes(seeded.workId)));
   app.navigate('desk');const goal=Object.values(app.controller.state.goals)[0];await app.controller.action('setGoal',{goalId:goal.id,month:goal.month,timeZone:goal.timeZone,metric:goal.metric,accountId:goal.accountId,target:0});app.render();
   assert.match(document.getElementById('main').textContent,/目标明确设置为 0，不计算百分比/);app.close();
+});
+
+test('DOM fixture: all three original content links stay one shared node group through both presentations',async()=>{
+ const app=await mountCreator(createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})}));
+ const labels=['研究与成果目录','公开聊天','项目进度'],paths=['../dashboard/','../chat/','../projects/'];
+ const links=labels.map(label=>document.querySelectorAll('a').find(a=>a.textContent===label));
+ for(const mode of ['studio','classic','studio']){
+  const selector=document.querySelector('[name="presentation"]');selector.value=mode;await fire(selector,'change');
+  labels.forEach((label,i)=>{const matched=document.querySelectorAll('a').filter(a=>a.textContent===label);assert.deepEqual(matched,[links[i]]);assert.equal(links[i].getAttribute('href'),paths[i]);assert.equal(links[i].parentNode.parentNode.className,mode==='studio'?'studio-legacy-slot':'sidebar-legacy-slot');});
+ }
+ app.close();
 });
 
 test('DOM fixture: actual form callbacks create account, idea, draft, tasks and schedule across all six views',async()=>{
