@@ -13,4 +13,6 @@ fieldset{min-width:0;border:1px solid var(--line);border-radius:9px;padding:12px
 @media (max-width:360px){.nav-link{font-size:13px;gap:4px}.nav-link svg{display:none}.appearance{align-items:stretch}.appearance label{flex-wrap:wrap}.appearance select{max-width:130px}.calendar-day .day-count{font-size:12px;line-height:1.25}.calendar-day{padding:4px;min-height:62px}.toolbar>label{flex-basis:100%}.stat small{font-size:12px}}
 /* Keep the full narrow day-cell width available to a two-digit date at enlarged text. */
 @media (max-width:680px){.calendar-day{padding-inline:0}}
+/* 320px: (320 - 28 main - 2 border - 4 inset - 6 gaps) / 7 = 40px per day. */
+@media (max-width:360px){.calendar-panel{padding-inline:2px}.calendar-panel .calendar{column-gap:1px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

@@ -35,3 +35,16 @@ test('narrow calendar dates retain both digits at the original enlarged font siz
   assert.match(css,/@media \(max-width:680px\)\{\.calendar-day\{padding-inline:0\}\}/);
   assert.match(app,/h\('span',\{class:'day-number'\},Number\(date\.slice\(-2\)\)\)/);
 });
+test('320px calendar reserves more than the measured 35.640625px two-digit text width',()=>{
+  const narrow=css.match(/@media \(max-width:360px\)\{\.calendar-panel\{padding-inline:(\d+)px\}\.calendar-panel \.calendar\{column-gap:(\d+)px\}\}/);
+  assert.ok(narrow,'Only the narrow calendar panel adjusts horizontal inset and gap');
+  assert.match(app,/class:'panel calendar-panel'/);assert.match(css,/grid-template-columns:repeat\(7,minmax\(0,1fr\)\)/);
+  // Browser run 556999c3 measured the text; this arithmetic checks our CSS width budget, not browser layout.
+  const viewport=320,mainInset=14,panelBorder=1,buttonBorder=1,columns=7;
+  const panelInset=Number(narrow[1]),gap=Number(narrow[2]),measuredTextWidth=35.640625;
+  const gridWidth=viewport-2*mainInset-2*panelBorder-2*panelInset;
+  const cellWidth=(gridWidth-(columns-1)*gap)/columns;
+  const contentWidth=cellWidth-2*buttonBorder;
+  assert.equal(cellWidth,40);assert.equal(contentWidth,38);assert.equal(contentWidth-measuredTextWidth,2.359375);
+  assert.ok(contentWidth>=measuredTextWidth+2);
+});
