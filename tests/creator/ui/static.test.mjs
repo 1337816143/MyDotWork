@@ -22,11 +22,16 @@ test('confirmed enlarged badge/filter sizing and opened-state guidance preserve 
   assert.match(css,/width:2\.4em;height:2\.4em/);assert.match(css,/flex:1 1 11em/);assert.match(css,/flex:2 1 16em/);assert.match(css,/flex-basis:9em/);assert.doesNotMatch(css,/flex-basis:125px/);
   assert.doesNotMatch(css,/overflow-x\s*:\s*(?:hidden|clip)/);assert.doesNotMatch(app,/演示工作区为空/);assert.match(app,/onKeydown:handleDialogKeydown/);
 });
-test('publication metadata wraps complete ISO timestamps without reducing text or hiding overflow',()=>{
-  const rule=css.match(/\.publication-row \.hint\s*\{([^}]+)\}/);
-  assert.ok(rule,'Publication metadata needs a scoped long-token wrapping rule');
+test('shared metadata wraps complete ISO/source/ID text across views, histories and dialogs',()=>{
+  const rule=css.match(/\.hint,\.version \.small,\.checkbox-list \.check-label\s*\{([^}]+)\}/);
+  assert.ok(rule,'Hints, historical samples and review/backup check labels share long-token wrapping');
   assert.equal(rule[1].replace(/\s/g,''),'overflow-wrap:anywhere');
+  assert.doesNotMatch(css,/\.publication-row \.hint\s*\{/);
   assert.match(app,/para\(`实际发布时间 \$\{pub\.actualPublishedAt\} · 用户手动登记`,'hint'\)/);
+  assert.match(app,/观测：\$\{current\.observedAt\}`,'hint'/);
+  assert.match(app,/para\(error\.details\?JSON\.stringify\(error\.details\):'','hint'\)/);
+  assert.match(css,/\.status-box\{[^}]*overflow-wrap:anywhere/);
+  assert.match(css,/\.preview-piece pre\{[^}]*overflow-wrap:anywhere/);
   assert.doesNotMatch(css,/overflow-x\s*:\s*(?:hidden|clip)/);
 });
 test('narrow calendar dates retain both digits at the original enlarged font size',()=>{

@@ -52,6 +52,27 @@ async function assertCalendarDateLabels(page){
   return {checked:measured.length,twoDigitDates:measured.filter(item=>item.date>=10).length,method:'Native Range.getClientRects single-line text and span/button bounds',subpixelTolerance:0.5,violations};
 }
 
+async function assertReviewEvidenceLabels(page){
+  const measured=await page.locator('#work-detail .checkbox-list .check-label').evaluateAll(labels=>labels.map(label=>{
+    const container=label.closest('.checkbox-list');
+    const box=container.getBoundingClientRect();
+    const left=box.left+container.clientLeft,right=left+container.clientWidth;
+    const walker=document.createTreeWalker(label,NodeFilter.SHOW_TEXT);
+    const textRects=[];
+    for(let node=walker.nextNode();node;node=walker.nextNode()){
+      if(!node.textContent.trim())continue;
+      const range=document.createRange();range.selectNodeContents(node);
+      textRects.push(...[...range.getClientRects()].filter(rect=>rect.width>0&&rect.height>0).map(rect=>({left:rect.left,right:rect.right})));
+    }
+    // The list may scroll vertically. Horizontal clipping of evidence text is not allowed.
+    const violations=textRects.filter(rect=>rect.left<left-0.5||rect.right>right+0.5);
+    return {text:label.textContent.trim(),textRectCount:textRects.length,violations,...(violations.length?{container:{left,right}}:{})};
+  }));
+  expect(measured.length,'All four synthetic review-evidence labels must be checked').toBe(4);
+  expect(measured.filter(item=>!item.textRectCount||item.violations.length),'Review evidence text must remain inside its horizontal scroll viewport').toEqual([]);
+  return {checked:measured.length,method:'Native text Range rectangles inside checkbox-list horizontal client bounds',verticalScrollingAllowed:true,subpixelTolerance:0.5};
+}
+
 test('12-case appearance/width matrix: six modules, 200% text and reduced motion',async({page,context},testInfo)=>{
   test.setTimeout(180000);
   const {layout,color,width}=testInfo.project.metadata;
@@ -85,8 +106,9 @@ test('12-case appearance/width matrix: six modules, 200% text and reduced motion
       if(textScale===2){scaling=await doubleRenderedText(page);expect(scaling.failed).toBe(0);}
       await screenshot(page,testInfo,`${view}-${width}-${layout}-${color}-text${textScale*100}`);
       const calendarDates=view==='calendar'?await assertCalendarDateLabels(page):null;
+      const reviewEvidence=view==='database'?await assertReviewEvidenceLabels(page):null;
       const geometry=await assertNoOverflow(page);
-      observations.push({view,width,layout,color,textScale,baseline,scaling,calendarDates,...geometry});
+      observations.push({view,width,layout,color,textScale,baseline,scaling,calendarDates,reviewEvidence,...geometry});
     }
   }
   // Test a native dialog and a domain-validation error at enlarged text.

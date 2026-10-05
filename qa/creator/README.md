@@ -26,6 +26,8 @@ Every visual case explicitly reloads its document and verifies zero residual inl
 
 At both normal and 200% text, the calendar additionally verifies all 31 October dates. Each date's native text Range must have exactly one visible line rectangle; that rectangle and its `.day-number` span must stay inside the corresponding button, allowing only 0.5 CSS pixels for subpixel rounding. This catches two-digit dates stacking vertically even when the full page has no horizontal overflow. The existing page overflow checks and all 12 viewport/theme combinations remain active.
 
+The database view also checks all four synthetic review-evidence labels at both text sizes. Every text Range rectangle must fit within the checkbox list's horizontal client area, with the same 0.5 CSS-pixel rounding tolerance. Vertical scrolling remains allowed. This catches long timestamps clipped inside a scrolling list even when the page itself does not overflow.
+
 `legacy-regression.spec.mjs` verifies the 53 catalog entries, 567 unique archive messages, count/filter behavior, default B dark, and navigation/history through supported browser APIs. It never captures screenshots or text of the archived chat.
 
 ## Evidence
