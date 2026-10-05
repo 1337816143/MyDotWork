@@ -156,7 +156,7 @@ function shell(){
     h('div',{class:'legacy-links'},h('span',{class:'muted'},'既有公开内容'),
       h('a',{href:'../dashboard/'},'研究与成果目录'),h('a',{href:'../chat/'},'公开聊天'),h('a',{href:'../projects/'},'项目进度')));
   const workspace=h('div',{class:'workspace'},
-    h('header',{class:'topbar'},h('strong',{},'MyDotWork · 六模块创作'),appearance),studioNavSlot,
+    h('header',{class:'topbar'},h('strong',{},'MyDotWork · 六模块创作'),h('a',{class:'studio-return',href:'../dashboard/'},'研究与成果目录'),appearance),studioNavSlot,
     h('div',{class:'safety-band',id:'policy-band'}),
     h('div',{class:'topbar'},storageStatus,h('div',{class:'actions'},button('账号',()=>showAccounts()),button('月目标',()=>showGoals()),button('备份 / 恢复',showBackup),button('回收站',showTrash))),
     h('div',{class:'notification-wrap'},toast),content,

@@ -45,3 +45,7 @@ fieldset{min-width:0;border:1px solid var(--line);border-radius:9px;padding:12px
 /* Use the same original mesh in both themes, with visible wires on a dark surface. */
 :root{--studio-orb-wire:#cbd4bf;--studio-orb-gold:#d6bd7b}
 :root[data-color=light],:root[data-layout=A]{--studio-orb-wire:#42473c;--studio-orb-gold:#a58f4e}
+
+.studio-return{display:none;font-size:14px}:root[data-presentation=studio] .studio-return{display:inline-flex;min-height:44px;align-items:center}
+/* Keep the keyboard skip link visually absent until focus, including a scrolled full-page capture. */
+.skip:not(:focus){clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}

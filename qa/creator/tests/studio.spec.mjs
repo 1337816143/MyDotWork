@@ -43,7 +43,11 @@ test('studio actual three-view performance has identical snapshot identity, unkn
 });
 
 test('studio native presentation switch preserves input, revision, navigation and classic fallback',async({page},testInfo)=>{
-  await boot(page);await page.locator('nav [data-view="ideas"]').click();
+  await boot(page);
+  const skip=page.getByRole('link',{name:'跳到当前模块',exact:true});await skip.focus();await expect(skip).toBeFocused();
+  expect(await skip.evaluate(el=>getComputedStyle(el).clipPath)).toBe('none');
+  await page.locator('nav [data-view="ideas"]').click();
+  expect(await skip.evaluate(el=>getComputedStyle(el).clipPath)).toBe('inset(50%)');
   await page.locator('.page-heading').getByRole('button',{name:'新建选题',exact:true}).click();
   await input(form(page,'capture-idea'),'title').fill('Synthetic unsaved title across presentation switch');
   await page.keyboard.press('Escape');const before=await readState(page);

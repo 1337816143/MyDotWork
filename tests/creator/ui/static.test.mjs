@@ -59,3 +59,13 @@ test('mobile performance retains real column headers and explicit table semantic
   assert.match(css,/\.performance-table thead\{position:absolute;width:1px;height:1px/);
   for(const role of ['table','rowgroup','row','columnheader','rowheader','cell'])assert.ok(app.includes(`role:'${role}'`));
 });
+
+test('studio composition keeps the existing named research-directory return link visible',()=>{
+ assert.ok(app.includes("h('a',{class:'studio-return',href:'../dashboard/'},'研究与成果目录')"));
+ assert.match(css,/:root\[data-presentation=studio\] \.studio-return\{display:inline-flex/);
+});
+
+test('unfocused keyboard skip link is visually clipped while the existing focus reveal stays intact',()=>{
+ assert.match(css,/\.skip:not\(:focus\)\{clip-path:inset\(50%\);width:1px;height:1px/);
+ assert.match(css,/\.skip:focus\{top:12px\}/);
+});
