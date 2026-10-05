@@ -41,6 +41,10 @@ jobs:
           node scripts/test_publication.cjs
           node qa/creator/verify-build.mjs
           node qa/creator/check-harness.mjs
+      - name: Install CJK fonts from official Ubuntu repositories
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
           node qa/creator/check-fonts.mjs
       - name: Check runner Chrome and install locked test dependency
         working-directory: qa/creator
