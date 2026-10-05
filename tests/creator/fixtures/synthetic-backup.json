@@ -1,0 +1,1015 @@
+{
+  "protocol": "mydotwork.creator.v1",
+  "schemaVersion": 1,
+  "packageId": "synthetic-fixture-package-v1",
+  "generatedAt": "2026-10-05T00:00:00Z",
+  "sourceWorkspace": {
+    "id": "synthetic-fixture-workspace-v1",
+    "revision": 21,
+    "createdAt": "2026-10-05T00:00:00Z",
+    "updatedAt": "2026-10-05T00:00:00Z",
+    "dataClass": "synthetic",
+    "visibility": "private"
+  },
+  "records": [
+    {
+      "collection": "works",
+      "id": "work-synthetic-20",
+      "revision": 1,
+      "hash": "24da0aa80fbc9d299b4885807dd6caab85bddbc75f102392cfb923a02efb9b74",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "work-synthetic-20",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "title": "示例后续选题：先展示结果还是先提问",
+        "summary": "累计播放从100变为160，增量60；评论尚未记录。",
+        "angle": "下一条只改变开头镜头，继续记录同口径快照。",
+        "contentType": "video",
+        "priority": 2,
+        "tags": [],
+        "phase": "idea",
+        "bodyRevisionId": null,
+        "draftNeedsReview": false,
+        "completedAt": null,
+        "trashedAt": null,
+        "parentWorkId": "work-synthetic-3",
+        "reviewId": "review-synthetic-19",
+        "previousPhase": null,
+        "relatedProjectIds": []
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "works",
+      "id": "work-synthetic-3",
+      "revision": 4,
+      "hash": "3172dda25fe2fbd580c6bf98f703ecc1ac31069ee4315befdbe663fc283d5bb1",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "work-synthetic-3",
+        "revision": 4,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "title": "示例作品一：观察一杯水的变化",
+        "summary": "虚构内容，用于验证六模块完整创作流程。",
+        "angle": "用三个镜头解释同一个小变化。",
+        "contentType": "video",
+        "priority": 2,
+        "tags": [
+          "虚构演示"
+        ],
+        "phase": "ready",
+        "bodyRevisionId": "draft-synthetic-13",
+        "draftNeedsReview": false,
+        "completedAt": "2026-10-05T00:00:00Z",
+        "trashedAt": null,
+        "parentWorkId": null,
+        "reviewId": null,
+        "previousPhase": null,
+        "relatedProjectIds": []
+      },
+      "ancestors": [
+        {
+          "hash": "a6f337371fe5a9bb6705d56cd0f2b7fc0a0efb7fb27547de09bb78cd12c7fe79",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "work-synthetic-3",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "title": "示例作品一：观察一杯水的变化",
+            "summary": "虚构内容，用于验证六模块完整创作流程。",
+            "angle": "用三个镜头解释同一个小变化。",
+            "contentType": "video",
+            "priority": 2,
+            "tags": [
+              "虚构演示"
+            ],
+            "phase": "idea",
+            "bodyRevisionId": null,
+            "draftNeedsReview": false,
+            "completedAt": null,
+            "trashedAt": null,
+            "parentWorkId": null,
+            "reviewId": null,
+            "previousPhase": null,
+            "relatedProjectIds": []
+          }
+        },
+        {
+          "hash": "e8e0e6f2450f85094ada27eed041117a6704d577f690925e2da138d94b858a59",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "work-synthetic-3",
+            "revision": 2,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "title": "示例作品一：观察一杯水的变化",
+            "summary": "虚构内容，用于验证六模块完整创作流程。",
+            "angle": "用三个镜头解释同一个小变化。",
+            "contentType": "video",
+            "priority": 2,
+            "tags": [
+              "虚构演示"
+            ],
+            "phase": "producing",
+            "bodyRevisionId": null,
+            "draftNeedsReview": false,
+            "completedAt": null,
+            "trashedAt": null,
+            "parentWorkId": null,
+            "reviewId": null,
+            "previousPhase": null,
+            "relatedProjectIds": []
+          }
+        },
+        {
+          "hash": "d926048a6c66436f8077a6c8a248866a0d040f36958e1de4a18caa57f40a069f",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "work-synthetic-3",
+            "revision": 3,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "title": "示例作品一：观察一杯水的变化",
+            "summary": "虚构内容，用于验证六模块完整创作流程。",
+            "angle": "用三个镜头解释同一个小变化。",
+            "contentType": "video",
+            "priority": 2,
+            "tags": [
+              "虚构演示"
+            ],
+            "phase": "producing",
+            "bodyRevisionId": "draft-synthetic-13",
+            "draftNeedsReview": false,
+            "completedAt": null,
+            "trashedAt": null,
+            "parentWorkId": null,
+            "reviewId": null,
+            "previousPhase": null,
+            "relatedProjectIds": []
+          }
+        }
+      ]
+    },
+    {
+      "collection": "references",
+      "id": "reference-synthetic-4",
+      "revision": 1,
+      "hash": "7ded293fe9e45867258d035b48b403cdd6a86ce0fe4b449d9f195e87dbc40cb6",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "reference-synthetic-4",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "url": "https://example.com/creator-reference",
+        "title": "示例参考",
+        "analysis": "只借鉴观察顺序；原创切入点另存。",
+        "excerpt": "",
+        "author": "",
+        "rightsNote": "example.com 占位来源，未下载媒体。",
+        "retrievedAt": null,
+        "availability": "unverified",
+        "assetId": null
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "drafts",
+      "id": "draft-synthetic-13",
+      "revision": 1,
+      "hash": "154ad5f21edc327e762c71eed97c5be1598c71b4cae0700524a9449e25daeb24",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "draft-synthetic-13",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "title": "示例作品一：观察一杯水的变化",
+        "body": "这是完全虚构的示例脚本。\n第一镜：展示一杯水。\n第二镜：记录表面变化。\n第三镜：解释观察方法。",
+        "parentDraftId": null
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-10",
+      "revision": 2,
+      "hash": "d51beb625d4cba95b91f3480bccf4890fb3526fb5590d411423082b404bb902c",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-10",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "cover",
+        "title": "封面",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "97775cbe667a20368dd8d2aa476397089cafa087832cd181f140f85b4b3dd72b",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-10",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "cover",
+            "title": "封面",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-11",
+      "revision": 2,
+      "hash": "f276585565cc8020a7da8a9f112f0cda96b4d7499a4af37bcaecbf852fa39778",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-11",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "captions",
+        "title": "字幕",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "1859815b12b75218378e2aeed5be6ec3a2cfe4a76d8a258ac0819d736ddd310d",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-11",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "captions",
+            "title": "字幕",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-12",
+      "revision": 2,
+      "hash": "7567006cced31b46bf08cf799f948e7835e05ec9c944f9d0136a02fe4ba353a2",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-12",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "check",
+        "title": "检查",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "9e675b015ed0e301320cfd78845ae6faabd7c8617dd065da5d4a27791d708e91",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-12",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "check",
+            "title": "检查",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-5",
+      "revision": 2,
+      "hash": "fa90fe5b18656d6b9a6d8be6665706899bec12d76c497a305e6bb3a85b22aba5",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-5",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "outline",
+        "title": "提纲",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "f9eaea7bf24d67ebe955fd7f562abdca6bf281a2ec8a4efafd855e0ff478affa",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-5",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "outline",
+            "title": "提纲",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-6",
+      "revision": 2,
+      "hash": "d714707a62117718705f8a27f135cce2cdae4077faabba462ae0757732bfc290",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-6",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "script",
+        "title": "脚本",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "4865443a200d6f8a9606f23102a167ac4170d0b216a38329ca17eafd34ec589e",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-6",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "script",
+            "title": "脚本",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-7",
+      "revision": 2,
+      "hash": "218245fe38810fab0c04a67520706c1d1f384e7553900caa16ff1eaca9a546b8",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-7",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "record",
+        "title": "录制",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "f3e214d549c546f9ddf4bdd8feb608710cbba6484c9023a77dec05ce66ab1fc1",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-7",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "record",
+            "title": "录制",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-8",
+      "revision": 2,
+      "hash": "1235490947817bfabb58e2a67f45d218f8057a0385384f96d60dfe291ce32c78",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-8",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "roughEdit",
+        "title": "粗剪",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "44f0fef3f960791490133ccc0989e252c6b7501c9a041f7c9a08d3877d5c59f2",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-8",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "roughEdit",
+            "title": "粗剪",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "tasks",
+      "id": "task-synthetic-9",
+      "revision": 2,
+      "hash": "5c7fc052929ee8aab79b817e7d6e90eb3026b71de52df585cd991975a64aaedb",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "task-synthetic-9",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "stage": "finalEdit",
+        "title": "精剪",
+        "required": true,
+        "status": "done",
+        "reason": null,
+        "completedAt": "2026-10-05T00:00:00Z"
+      },
+      "ancestors": [
+        {
+          "hash": "3b497fa784c44873e3e5faf4d3cc2e30ee6d634a035f2a34faf8eea505c03de3",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "task-synthetic-9",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "stage": "finalEdit",
+            "title": "精剪",
+            "required": true,
+            "status": "todo",
+            "reason": null,
+            "completedAt": null
+          }
+        }
+      ]
+    },
+    {
+      "collection": "publications",
+      "id": "publication-synthetic-14",
+      "revision": 2,
+      "hash": "e23e35339385d2ad0be0dc49530eb056434e21d5584931091c47df186ee94e0c",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "publication-synthetic-14",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "accountId": "account-synthetic-1",
+        "status": "published",
+        "schedule": {
+          "date": "2026-10-02",
+          "time": "18:00",
+          "timeZone": "Asia/Shanghai",
+          "allDay": false,
+          "offsetMinutes": 480,
+          "plannedAt": "2026-10-02T10:00:00.000Z"
+        },
+        "actualPublishedAt": "2026-10-02T18:05:00+08:00",
+        "publicUrl": "https://example.com/synthetic-publication",
+        "finalRevisionId": "draft-synthetic-13",
+        "finalSnapshot": {
+          "title": "示例作品一：观察一杯水的变化",
+          "body": "这是完全虚构的示例脚本。\n第一镜：展示一杯水。\n第二镜：记录表面变化。\n第三镜：解释观察方法。",
+          "draftId": "draft-synthetic-13",
+          "assetIds": []
+        },
+        "verification": "user-recorded"
+      },
+      "ancestors": [
+        {
+          "hash": "ed346363909ec5fb0cee086e0d33cbc3107a72dd33044893e4f31cee11fe1125",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "publication-synthetic-14",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "accountId": "account-synthetic-1",
+            "status": "planned",
+            "schedule": {
+              "date": "2026-10-02",
+              "time": "18:00",
+              "timeZone": "Asia/Shanghai",
+              "allDay": false,
+              "offsetMinutes": 480,
+              "plannedAt": "2026-10-02T10:00:00.000Z"
+            },
+            "actualPublishedAt": null,
+            "publicUrl": null,
+            "finalRevisionId": null,
+            "finalSnapshot": null,
+            "verification": "not-published"
+          }
+        }
+      ]
+    },
+    {
+      "collection": "metrics",
+      "id": "metric-synthetic-15",
+      "revision": 1,
+      "hash": "77cb92346cca725bb330d9d9f92e9bacf648ff6e53c96738b13434bd19289db9",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "metric-synthetic-15",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "publicationId": "publication-synthetic-14",
+        "accountId": null,
+        "metricKey": "views",
+        "value": 100,
+        "unit": "count",
+        "definition": "cumulative",
+        "observedAt": "2026-10-03T10:00:00+08:00",
+        "sourceRef": "虚构手工样本",
+        "importRowId": null
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "metrics",
+      "id": "metric-synthetic-16",
+      "revision": 1,
+      "hash": "737019baff356c03b883b17b2eb82759e1a54f00208540191e7a1b8731575a0b",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "metric-synthetic-16",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "publicationId": "publication-synthetic-14",
+        "accountId": null,
+        "metricKey": "views",
+        "value": 160,
+        "unit": "count",
+        "definition": "cumulative",
+        "observedAt": "2026-10-04T10:00:00+08:00",
+        "sourceRef": "虚构手工样本",
+        "importRowId": null
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "metrics",
+      "id": "metric-synthetic-17",
+      "revision": 1,
+      "hash": "c5b82521ac2506f23e272243003d5ed70c208d3ef343046e9c0475d9b296566e",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "metric-synthetic-17",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "publicationId": "publication-synthetic-14",
+        "accountId": null,
+        "metricKey": "comments",
+        "value": null,
+        "unit": "count",
+        "definition": "cumulative",
+        "observedAt": "2026-10-04T10:00:00+08:00",
+        "sourceRef": "未录入",
+        "importRowId": null
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "metrics",
+      "id": "metric-synthetic-18",
+      "revision": 1,
+      "hash": "46cb80c5de086f0d4d7ce325eae0217f6e34666249ef4512729862a93d1ec8de",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "metric-synthetic-18",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "publicationId": "publication-synthetic-14",
+        "accountId": null,
+        "metricKey": "shares",
+        "value": 0,
+        "unit": "count",
+        "definition": "cumulative",
+        "observedAt": "2026-10-04T10:00:00+08:00",
+        "sourceRef": "虚构手工样本",
+        "importRowId": null
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "accounts",
+      "id": "account-synthetic-1",
+      "revision": 1,
+      "hash": "55107fc1fae24cbe3ef4f0df8ca3373e4cd1801a1f09d99c42479edd92514124",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "account-synthetic-1",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "displayName": "示例账号 · 视频",
+        "platform": "示例视频平台",
+        "handle": "synthetic-video"
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "accounts",
+      "id": "account-synthetic-2",
+      "revision": 1,
+      "hash": "70a8eee3520cdebe7d061fb1aa85784f40a280c99074eff8d7e08e21b43c71f2",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "account-synthetic-2",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "displayName": "示例账号 · 图文",
+        "platform": "示例图文平台",
+        "handle": "synthetic-text"
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "goals",
+      "id": "goal-synthetic-21",
+      "revision": 1,
+      "hash": "ea0ebc1e8a17272ec66ce8bb61e18409f05293905596ec8ae35150c3be45f2c1",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "goal-synthetic-21",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "month": "2026-10",
+        "timeZone": "Asia/Shanghai",
+        "metric": "publications",
+        "target": 4,
+        "accountId": "account-synthetic-1"
+      },
+      "ancestors": []
+    },
+    {
+      "collection": "reviews",
+      "id": "review-synthetic-19",
+      "revision": 2,
+      "hash": "a1e14699cf8d736706689468fec31419c1b6c6c0dfd0d6e01c2ee41540d32574",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "review-synthetic-19",
+        "revision": 2,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "observation": "累计播放从100变为160，增量60；评论尚未记录。",
+        "hypothesis": "变化可能与发布后累计曝光有关，未证明因果。",
+        "nextExperiment": "下一条只改变开头镜头，继续记录同口径快照。",
+        "evidenceMetricIds": [
+          "metric-synthetic-15",
+          "metric-synthetic-16",
+          "metric-synthetic-17",
+          "metric-synthetic-18"
+        ],
+        "followupWorkIds": [
+          "work-synthetic-20"
+        ]
+      },
+      "ancestors": [
+        {
+          "hash": "d5e45f1d250f80974c95938ff5b0c48d5ad3dc88173c93cc330821a96119f579",
+          "entity": {
+            "schemaVersion": 1,
+            "id": "review-synthetic-19",
+            "revision": 1,
+            "createdAt": "2026-10-05T00:00:00Z",
+            "updatedAt": "2026-10-05T00:00:00Z",
+            "sourceRefs": [],
+            "visibility": "private",
+            "workId": "work-synthetic-3",
+            "observation": "累计播放从100变为160，增量60；评论尚未记录。",
+            "hypothesis": "变化可能与发布后累计曝光有关，未证明因果。",
+            "nextExperiment": "下一条只改变开头镜头，继续记录同口径快照。",
+            "evidenceMetricIds": [
+              "metric-synthetic-15",
+              "metric-synthetic-16",
+              "metric-synthetic-17",
+              "metric-synthetic-18"
+            ],
+            "followupWorkIds": []
+          }
+        }
+      ]
+    },
+    {
+      "collection": "assets",
+      "id": "asset-synthetic-22",
+      "revision": 1,
+      "hash": "fc905c210cc3be78781bb7c1d3aee4da5da773d5a6ad5d1ce320170639ac3ea7",
+      "entity": {
+        "schemaVersion": 1,
+        "id": "asset-synthetic-22",
+        "revision": 1,
+        "createdAt": "2026-10-05T00:00:00Z",
+        "updatedAt": "2026-10-05T00:00:00Z",
+        "sourceRefs": [],
+        "visibility": "private",
+        "workId": "work-synthetic-3",
+        "name": "synthetic-demo-video.mp4",
+        "mimeType": "video/mp4",
+        "size": 1024,
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "url": null,
+        "availability": "unverified",
+        "note": "仅保存引用，未保存或验证文件本体"
+      },
+      "ancestors": []
+    }
+  ],
+  "relations": [
+    {
+      "from": "goals:goal-synthetic-21",
+      "field": "accountId",
+      "to": "accounts:account-synthetic-1"
+    },
+    {
+      "from": "publications:publication-synthetic-14",
+      "field": "accountId",
+      "to": "accounts:account-synthetic-1"
+    },
+    {
+      "from": "works:work-synthetic-3",
+      "field": "bodyRevisionId",
+      "to": "drafts:draft-synthetic-13"
+    },
+    {
+      "from": "reviews:review-synthetic-19",
+      "field": "evidenceMetricIds",
+      "to": "metrics:metric-synthetic-15"
+    },
+    {
+      "from": "reviews:review-synthetic-19",
+      "field": "evidenceMetricIds",
+      "to": "metrics:metric-synthetic-16"
+    },
+    {
+      "from": "reviews:review-synthetic-19",
+      "field": "evidenceMetricIds",
+      "to": "metrics:metric-synthetic-17"
+    },
+    {
+      "from": "reviews:review-synthetic-19",
+      "field": "evidenceMetricIds",
+      "to": "metrics:metric-synthetic-18"
+    },
+    {
+      "from": "publications:publication-synthetic-14",
+      "field": "finalRevisionId",
+      "to": "drafts:draft-synthetic-13"
+    },
+    {
+      "from": "reviews:review-synthetic-19",
+      "field": "followupWorkIds",
+      "to": "works:work-synthetic-20"
+    },
+    {
+      "from": "works:work-synthetic-20",
+      "field": "parentWorkId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "metrics:metric-synthetic-15",
+      "field": "publicationId",
+      "to": "publications:publication-synthetic-14"
+    },
+    {
+      "from": "metrics:metric-synthetic-16",
+      "field": "publicationId",
+      "to": "publications:publication-synthetic-14"
+    },
+    {
+      "from": "metrics:metric-synthetic-17",
+      "field": "publicationId",
+      "to": "publications:publication-synthetic-14"
+    },
+    {
+      "from": "metrics:metric-synthetic-18",
+      "field": "publicationId",
+      "to": "publications:publication-synthetic-14"
+    },
+    {
+      "from": "works:work-synthetic-20",
+      "field": "reviewId",
+      "to": "reviews:review-synthetic-19"
+    },
+    {
+      "from": "assets:asset-synthetic-22",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "drafts:draft-synthetic-13",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "publications:publication-synthetic-14",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "references:reference-synthetic-4",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "reviews:review-synthetic-19",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-10",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-11",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-12",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-5",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-6",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-7",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-8",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    },
+    {
+      "from": "tasks:task-synthetic-9",
+      "field": "workId",
+      "to": "works:work-synthetic-3"
+    }
+  ],
+  "assetManifest": [
+    {
+      "assetId": "asset-synthetic-22",
+      "name": "synthetic-demo-video.mp4",
+      "mimeType": "video/mp4",
+      "size": 1024,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "included": false,
+      "availability": "unverified",
+      "bytesVerified": false
+    }
+  ],
+  "packageHash": "51dd8f7be940dc05abf053e9987a38bf4bb6f8bca86592829424982c98e812d9"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mydotwork-creator-candidate-qa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "playwright test", "check": "node check-harness.mjs" },
+  "devDependencies": { "@playwright/test": "1.63.0" }
+}

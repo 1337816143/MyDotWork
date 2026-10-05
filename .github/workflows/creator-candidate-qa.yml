@@ -1,0 +1,67 @@
+name: Creator Stage 1 candidate browser QA
+on:
+  push:
+    branches: [qa/six-module-stage1-20261005]
+permissions:
+  contents: read
+concurrency:
+  group: creator-stage1-candidate-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  browser-qa:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/qa/six-module-stage1-20261005'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      CI: 'true'
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check candidate and build exact approved output
+        run: |
+          test "$GITHUB_REF" = 'refs/heads/qa/six-module-stage1-20261005'
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test ! -e dist
+          python scripts/build.py
+          python scripts/validate.py
+          python scripts/check_creator.py
+          node scripts/test_dashboard.cjs
+          node scripts/test_catalog.cjs
+          node scripts/test_appearance_boot.cjs
+          node scripts/test_status.cjs
+          node scripts/test_publication.cjs
+          node qa/creator/verify-build.mjs
+          node qa/creator/check-harness.mjs
+          node qa/creator/check-fonts.mjs
+      - name: Check runner Chrome and install locked test dependency
+        working-directory: qa/creator
+        run: |
+          google-chrome --version
+          test -f package-lock.json
+          npm ci --ignore-scripts --no-audit --no-fund
+      - name: Test with sandboxed runner Chrome
+        working-directory: qa/creator
+        run: |
+          node sandbox-smoke.mjs
+          npm test
+      - name: Collect only reviewed ordinary evidence
+        id: evidence
+        if: always()
+        run: node qa/creator/collect-evidence.mjs
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success'
+        with:
+          name: creator-stage1-browser-${{ github.sha }}
+          path: qa/creator/evidence/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false

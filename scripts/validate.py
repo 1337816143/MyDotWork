@@ -46,3 +46,6 @@ validate_publications()
 
 from test_publication_archive import run_tests
 run_tests()
+
+from validate_creator import validate_creator
+validate_creator()
