@@ -28,12 +28,28 @@ assert.match(workflow,/ref: \$\{\{ github.sha \}\}/);
 assert.match(workflow,/timeout-minutes: 20/);
 assert.match(workflow,/id: evidence\s+if: always\(\)/);
 assert.match(workflow,/uses: actions\/upload-artifact@v4\s+if: always\(\) && steps\.evidence\.outcome == 'success'/);
+const uploads=workflow.split('      - uses: actions/upload-artifact@v4').slice(1);
+assert.equal(uploads.length,40);
+for(const upload of uploads){
+  assert.match(upload,/if: always\(\) && steps\.evidence\.outcome == 'success' && hashFiles\('qa\/creator\/artifact-groups\//);
+  assert.match(upload,/path: qa\/creator\/artifact-groups\/[a-zA-Z0-9-]+\//);
+  assert.match(upload,/compression-level: 0/);
+}
+assert.doesNotMatch(workflow,/path: qa\/creator\/evidence\//,'Never upload the aggregate evidence directory');
+assert.match(workflow,/node qa\/creator\/partition-evidence\.mjs/);
+const visual=await readFile(resolve(here,'tests/visual.spec.mjs'),'utf8');
+assert.match(visual,/async function freshVisualDocument/);
+assert.match(visual,/await page\.reload\(\)/);
+assert.match(visual,/inlineFontSizes:0,bodyFontSize:16,shellLabelFontSize:14/);
+assert.match(visual,/freshVisualDocument\(page,`\/creator\/index\.html#view=\$\{view\}/);
+assert.equal((visual.match(/await boot\(page/g)||[]).length,1,'All visual cases must go through the fresh-document guard');
+assert.match(visual,/expect\(scaling.failed\)\.toBe\(0\)/,'Retain exact doubled-font assertions');
 assert.doesNotMatch(workflow,/pull_request|workflow_dispatch|pull_request_target|pages:|id-token:|secrets\.|contents: write|deploy-pages|upload-pages/);
 const forbidden=[/connectOverCDP\s*\(/,/newCDPSession\s*\(/,/chromiumSandbox\s*:\s*false/,/bypassCSP\s*:\s*true/,/ignoreHTTPSErrors\s*:\s*true/,/--no-sandbox/,/--disable-web-security/,/ignoreDefaultArgs\s*:/,/executablePath\s*:/];
 let checked=0;
 async function walk(dir){
   for(const item of await readdir(dir,{withFileTypes:true})){
-    if(['node_modules','evidence','test-results'].includes(item.name))continue;
+    if(['node_modules','evidence','artifact-groups','test-results'].includes(item.name))continue;
     const file=resolve(dir,item.name);
     if(item.isDirectory()){await walk(file);continue;}
     if(!item.name.endsWith('.mjs'))continue;

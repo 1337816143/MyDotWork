@@ -14,12 +14,14 @@ class FixtureNode {
   get value(){if(this.tagName==='SELECT')return this.children.find(o=>o.selected)?.value??this.children[0]?.value??'';if(this.tagName==='TEXTAREA')return this._value||this.textContent;return this._value}
   set value(v){this._value=String(v);if(this.tagName==='SELECT')for(const option of this.children)option.selected=option.value===String(v)}
   get isConnected(){let n=this;while(n){if(n===this.ownerDocument.documentElement)return true;n=n.parentNode}return false}
+  get tabIndex(){if(this.attributes.tabindex!==undefined)return Number(this.attributes.tabindex);return ['BUTTON','INPUT','SELECT','TEXTAREA','SUMMARY'].includes(this.tagName)||(this.tagName==='A'&&this.getAttribute('href'))?0:-1}
+  getClientRects(){let n=this;while(n){if(n.hidden||(n.tagName==='DIALOG'&&!n.open))return [];n=n.parentNode}return this.isConnected?[{}]:[]}
   contains(node){return this===node||this.children.some(c=>c.contains(node))}
   focus(){this.ownerDocument.activeElement=this}
   scrollIntoView(){}
   setSelectionRange(start,end){this.selectionStart=start;this.selectionEnd=end}
   showModal(){this.open=true}
-  close(){this.open=false;for(const fn of this.handlers.get('close')||[])fn({target:this,currentTarget:this})}
+  close(){this.open=false;queueMicrotask(()=>{for(const fn of this.handlers.get('close')||[])fn({target:this,currentTarget:this})})}
   click(){return fire(this,'click')}
   matches(selector){
     if(selector.startsWith('#'))return this.getAttribute('id')===selector.slice(1);

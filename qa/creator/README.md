@@ -22,6 +22,8 @@ This proposal runs only on `qa/six-module-stage1-20261005` in an ordinary GitHub
 
 `visual.spec.mjs` runs all six views at 320/390/768/1280 CSS pixels in B dark/B light/A light. Each view receives normal text and a CSSOM text-size stress pass that doubles every existing HTMLElement's computed font size from one collected baseline. It asserts that sizes really doubled and checks horizontal overflow. This is 200% rendered text, not deviceScaleFactor or native browser zoom. The app CSP remains active. Synthetic records for these layout tests are seeded through the actual adapter; creation is covered separately by the UI lifecycle. It captures native dialogs, a real domain-validation error, system reduced-motion, and persisted explicit motion-off. Screenshots need human visual review before pixel-quality acceptance is claimed.
 
+Every visual case explicitly reloads its document and verifies zero residual inline font sizes, a 16px body and 14px shell label before taking the baseline. Hash navigation alone is insufficient: prior shell CSSOM mutations otherwise survive and can compound a later 200% pass.
+
 `legacy-regression.spec.mjs` verifies the 53 catalog entries, 567 unique archive messages, count/filter behavior, default B dark, and navigation/history through supported browser APIs. It never captures screenshots or text of the archived chat.
 
 ## Evidence
@@ -34,6 +36,8 @@ This proposal runs only on `qa/six-module-stage1-20261005` in an ordinary GitHub
 - `evidence/artifact-manifest.json`: exact uploaded artifact hashes
 
 Traces, video, browser profiles, raw IndexedDB files, backup packages, source trees and archived conversation contents are excluded. Failures remain failures. A screenshot's existence is not proof that the corresponding test passed. Partial runs or absent results must not be summarized as full browser acceptance.
+
+`partition-evidence.mjs` preserves every collected PNG/JSON byte and produces separate ordinary artifacts for each viewport/theme at 100%/200% text, associated failure captures, functional captures, and compact metadata/failure JSON. A small representative screenshot set is copied separately with its original hashes. Each artifact directory, including its manifest, must be no larger than 24 MiB uncompressed; oversized groups fail collection before any upload, with no deletion, resizing, image re-encoding, or omitted tests. The official upload action uses compression level 0, leaving at least 1 MiB below the 25 MiB per-archive limit for archive framing. No artifact SDK, credential handling, or additional permission is introduced. The old combined evidence directory is never uploaded.
 
 ## Prepared, not executed
 

@@ -5,6 +5,14 @@ export const TASK_NAMES = Object.freeze({todo:'未开始',doing:'进行中',bloc
 export const METRIC_NAMES = Object.freeze({views:'播放量',likes:'点赞',comments:'评论',saves:'收藏',shares:'分享',followers:'粉丝数'});
 export const randomOperationId = () => `ui-${globalThis.crypto.randomUUID()}`;
 export const values = map => Object.values(map || {});
+export function dialogTabTarget(focusables,current,shiftKey=false){
+  if(!focusables.length)return null;
+  const index=focusables.indexOf(current);
+  if(index<0)return shiftKey?focusables.at(-1):focusables[0];
+  if(shiftKey&&index===0)return focusables.at(-1);
+  if(!shiftKey&&index===focusables.length-1)return focusables[0];
+  return null;
+}
 // Optional form fields must be omitted, not serialized as undefined into strict commands.
 export function compactPayload(value){
   if(Array.isArray(value))return value.map(compactPayload);

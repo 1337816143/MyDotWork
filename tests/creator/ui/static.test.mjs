@@ -18,3 +18,7 @@ test('six module renderers, conflict facts and truthful private-data gates exist
   for(const name of ['renderDesk','renderIdeas','renderProduction','renderCalendar','renderLibrary','renderDatabase'])assert.match(app,new RegExp(`function ${name}\\(`));
   assert.match(app,/noCommonBase/);assert.match(app,/commonBase/);assert.match(app,/missingAssets/);assert.match(app,/preview\.conflicts\.some/);assert.match(app,/allowBackupImport/);assert.match(app,/input\.v1/);assert.match(app,/发布快照|不可变发布快照/);
 });
+test('confirmed enlarged badge/filter sizing and opened-state guidance preserve visible content',()=>{
+  assert.match(css,/width:2\.4em;height:2\.4em/);assert.match(css,/flex:1 1 11em/);assert.match(css,/flex:2 1 16em/);assert.match(css,/flex-basis:9em/);assert.doesNotMatch(css,/flex-basis:125px/);
+  assert.doesNotMatch(css,/overflow-x\s*:\s*(?:hidden|clip)/);assert.doesNotMatch(app,/演示工作区为空/);assert.match(app,/onKeydown:handleDialogKeydown/);
+});

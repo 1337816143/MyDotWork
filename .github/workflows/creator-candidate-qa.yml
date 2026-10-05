@@ -57,15 +57,369 @@ jobs:
         run: |
           node sandbox-smoke.mjs
           npm test
-      - name: Collect only reviewed ordinary evidence
+      - name: Collect and partition only reviewed ordinary evidence
         id: evidence
         if: always()
-        run: node qa/creator/collect-evidence.mjs
+        run: |
+          node qa/creator/collect-evidence.mjs
+          node qa/creator/partition-evidence.mjs
       - uses: actions/upload-artifact@v4
-        if: always() && steps.evidence.outcome == 'success'
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/metadata/*') != ''
         with:
-          name: creator-stage1-browser-${{ github.sha }}
-          path: qa/creator/evidence/
+          name: creator-stage1-metadata-${{ github.sha }}
+          path: qa/creator/artifact-groups/metadata/
           if-no-files-found: error
           retention-days: 7
           include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/representative/*') != ''
+        with:
+          name: creator-stage1-representative-${{ github.sha }}
+          path: qa/creator/artifact-groups/representative/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/functional/*') != ''
+        with:
+          name: creator-stage1-functional-${{ github.sha }}
+          path: qa/creator/artifact-groups/functional/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/functional-failures/*') != ''
+        with:
+          name: creator-stage1-functional-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/functional-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-B-dark-text100/*') != ''
+        with:
+          name: creator-stage1-visual-320-B-dark-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-B-dark-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-B-dark-text200/*') != ''
+        with:
+          name: creator-stage1-visual-320-B-dark-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-B-dark-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-B-dark-failures/*') != ''
+        with:
+          name: creator-stage1-visual-320-B-dark-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-B-dark-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-B-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-320-B-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-B-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-B-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-320-B-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-B-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-B-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-320-B-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-B-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-A-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-320-A-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-A-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-A-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-320-A-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-A-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-320-A-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-320-A-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-320-A-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-B-dark-text100/*') != ''
+        with:
+          name: creator-stage1-visual-390-B-dark-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-B-dark-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-B-dark-text200/*') != ''
+        with:
+          name: creator-stage1-visual-390-B-dark-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-B-dark-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-B-dark-failures/*') != ''
+        with:
+          name: creator-stage1-visual-390-B-dark-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-B-dark-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-B-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-390-B-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-B-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-B-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-390-B-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-B-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-B-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-390-B-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-B-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-A-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-390-A-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-A-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-A-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-390-A-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-A-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-390-A-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-390-A-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-390-A-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-B-dark-text100/*') != ''
+        with:
+          name: creator-stage1-visual-768-B-dark-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-B-dark-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-B-dark-text200/*') != ''
+        with:
+          name: creator-stage1-visual-768-B-dark-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-B-dark-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-B-dark-failures/*') != ''
+        with:
+          name: creator-stage1-visual-768-B-dark-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-B-dark-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-B-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-768-B-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-B-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-B-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-768-B-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-B-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-B-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-768-B-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-B-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-A-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-768-A-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-A-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-A-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-768-A-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-A-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-768-A-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-768-A-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-768-A-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-B-dark-text100/*') != ''
+        with:
+          name: creator-stage1-visual-1280-B-dark-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-B-dark-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-B-dark-text200/*') != ''
+        with:
+          name: creator-stage1-visual-1280-B-dark-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-B-dark-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-B-dark-failures/*') != ''
+        with:
+          name: creator-stage1-visual-1280-B-dark-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-B-dark-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-B-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-1280-B-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-B-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-B-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-1280-B-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-B-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-B-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-1280-B-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-B-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-A-light-text100/*') != ''
+        with:
+          name: creator-stage1-visual-1280-A-light-text100-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-A-light-text100/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-A-light-text200/*') != ''
+        with:
+          name: creator-stage1-visual-1280-A-light-text200-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-A-light-text200/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.evidence.outcome == 'success' && hashFiles('qa/creator/artifact-groups/visual-1280-A-light-failures/*') != ''
+        with:
+          name: creator-stage1-visual-1280-A-light-failures-${{ github.sha }}
+          path: qa/creator/artifact-groups/visual-1280-A-light-failures/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
+          compression-level: 0

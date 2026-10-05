@@ -11,6 +11,18 @@ const jsonNames=new Set(['ui-flow.json','native-interaction.json','adapter-resto
 const png=/^(failure-synthetic-creator|ui-flow-synthetic-final|ui-private-import-disabled|ui-injected-quota-preserves-buffer|ui-two-tab-conflict|ui-persistent-profile-reopened|(?:desk|ideas|production|calendar|library|database|error|dialog)-(?:320|390|768|1280)-[AB]-(?:dark|light)-text(?:100|200)|reduced-motion-(?:320|390|768|1280)-[AB]-(?:dark|light))\.png$/;
 const exists=async path=>{try{await stat(path);return true;}catch{return false;}};
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+const collectedGroups=new Map();
+function screenshotGroup(name,file){
+  const visual=/(320|390|768|1280)-([AB])-(dark|light)-text(100|200)\.png$/.exec(name);
+  if(visual)return `visual-${visual[1]}-${visual[2]}-${visual[3]}-text${visual[4]}`;
+  const reduced=/^reduced-motion-(320|390|768|1280)-([AB])-(dark|light)\.png$/.exec(name);
+  if(reduced)return `visual-${reduced[1]}-${reduced[2]}-${reduced[3]}-text100`;
+  if(name==='failure-synthetic-creator.png'){
+    const project=/visual-(320|390|768|1280)-(B-dark|B-light|A-light)(?:[\/\\]|$)/.exec(relative(root,file));
+    return project?`visual-${project[1]}-${project[2]}-failures`:'functional-failures';
+  }
+  return 'functional';
+}
 async function copyReviewed(dir){
   if(!await exists(dir))return;
   for(const item of await readdir(dir,{withFileTypes:true})){
@@ -26,7 +38,9 @@ async function copyReviewed(dir){
       assert.equal(data.sourceCommit,process.env.GITHUB_SHA);
     }else assert.equal(bytes.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
     const prefix=hash(Buffer.from(relative(root,file))).slice(0,10);
-    await copyFile(file,resolve(evidence,`${prefix}-${basename(file)}`));
+    const target=`${prefix}-${basename(file)}`;
+    await copyFile(file,resolve(evidence,target));
+    collectedGroups.set(target,item.name.endsWith('.png')?screenshotGroup(item.name,file):'metadata');
   }
 }
 await copyReviewed(resolve(root,'test-results'));
@@ -53,7 +67,7 @@ for(const file of await readdir(evidence,{withFileTypes:true})){
     assert.equal(data.schema,controlled?topLevel[file.name]:'mydotwork.creator-browser-evidence.v1');
     assert.equal(data.sourceCommit,process.env.GITHUB_SHA);
   }else assert.equal(bytes.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
-  artifacts.push({path:file.name,sha256:hash(bytes),bytes:bytes.length});
+  artifacts.push({path:file.name,sha256:hash(bytes),bytes:bytes.length,group:collectedGroups.get(file.name)||(file.name.endsWith('.png')?screenshotGroup(reviewedName,file.name):'metadata')});
 }
 await writeFile(resolve(evidence,'artifact-manifest.json'),JSON.stringify({schema:'mydotwork.creator-browser-artifact-manifest.v1',sourceCommit:process.env.GITHUB_SHA,policy:'Only controlled synthetic screenshots, summarized results, and hash manifests. No source tree, backup packages, browser profiles, traces, videos or archive chat content.',artifacts:artifacts.sort((a,b)=>a.path.localeCompare(b.path))},null,2)+'\n');
 console.log(`Collected ${artifacts.length} reviewed evidence files`);

@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const ui=process.env.CREATOR_UI_DIR||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const core=process.env.CREATOR_CORE_DIR||path.join(ui,'core');
-const {createController,compactPayload,routeHash,parseRoute,calendarCells,parseNullableNumber,utcOffsetIso,matchWork,trendPoints,safeExternalUrl}=await import(pathToFileURL(path.join(ui,'controller.mjs')));
+const {createController,compactPayload,routeHash,parseRoute,calendarCells,parseNullableNumber,utcOffsetIso,matchWork,trendPoints,safeExternalUrl,dialogTabTarget}=await import(pathToFileURL(path.join(ui,'controller.mjs')));
 const {createMemoryStore}=await import(pathToFileURL(path.join(core,'store.mjs')));
 const {createWorkspace,readiness,selectWorkspace,metricDelta}=await import(pathToFileURL(path.join(core,'core.mjs')));
 
@@ -17,6 +17,12 @@ test('routes retain safe opaque IDs and never contain title/body/account values'
 test('safe URLs reject executable schemes and embedded credentials',()=>{
   assert.equal(safeExternalUrl('javascript:alert(1)'),null);assert.equal(safeExternalUrl('data:text/html,test'),null);assert.equal(safeExternalUrl('https://u:p@example.com'),null);
   assert.equal(safeExternalUrl('https://example.com/a'),'https://example.com/a');
+});
+test('modal Tab wrap only redirects boundaries and handles one or no focusable controls',()=>{
+  const a={},b={},c={};assert.equal(dialogTabTarget([a,b,c],c),a);assert.equal(dialogTabTarget([a,b,c],a,true),c);
+  assert.equal(dialogTabTarget([a,b,c],b),null);assert.equal(dialogTabTarget([a,b,c],b,true),null);
+  assert.equal(dialogTabTarget([a],a),a);assert.equal(dialogTabTarget([a],a,true),a);assert.equal(dialogTabTarget([],null),null);
+  assert.equal(dialogTabTarget([a,b,c],null),a);assert.equal(dialogTabTarget([a,b,c],null,true),c);
 });
 test('unknown numeric inputs, explicit offsets and leap-month dates are preserved',()=>{
   assert.equal(parseNullableNumber(''),null);assert.equal(parseNullableNumber('0'),0);assert.equal(parseNullableNumber('160'),160);assert.throws(()=>parseNullableNumber('-1'));

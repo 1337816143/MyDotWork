@@ -75,3 +75,23 @@ test('DOM fixture: future snapshots stay out of default cards/trends/deltas and 
   // A database-only future filter must not silently carry into the dashboard.
   app.navigate('desk');assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);app.close();
 });
+
+test('DOM fixture: modal keyboard handler wraps boundary controls and cancel restores opener',async()=>{
+  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});const app=await mountCreator(store);app.navigate('desk');
+  await app.controller.action('createAccount',{displayName:'Focus synthetic account',platform:'Demo'});app.render();
+  const opener=findButton(document.body,'账号');opener.focus();await fire(opener,'click');const modal=document.querySelector('dialog');
+  const controls=modal.querySelectorAll('button,input,select,textarea').filter(n=>!n.disabled),first=controls[0],last=controls.at(-1);let prevented=false;
+  last.focus();await fire(modal,'keydown',{key:'Tab',shiftKey:false,preventDefault(){prevented=true}});assert.equal(prevented,true);assert.equal(document.activeElement,first);
+  prevented=false;first.focus();await fire(modal,'keydown',{key:'Tab',shiftKey:true,preventDefault(){prevented=true}});assert.equal(prevented,true);assert.equal(document.activeElement,last);
+  prevented=false;controls[1].focus();await fire(modal,'keydown',{key:'Tab',shiftKey:false,preventDefault(){prevented=true}});assert.equal(prevented,false);
+  await fire(modal,'cancel');assert.equal(modal.open,false);assert.equal(document.activeElement,opener);
+  await fire(opener,'click');await fire(findButton(modal,'编辑'),'click');await fire(modal,'cancel');assert.equal(document.activeElement,opener);app.close();
+});
+
+test('DOM fixture: queued close event cannot clear or steal focus from a reopened account dialog',async()=>{
+  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});const app=await mountCreator(store);app.navigate('desk');
+  const opener=findButton(document.body,'账号');opener.focus();await fire(opener,'click');const form=document.querySelector('[data-buffer="account:new"]');
+  await input(form,'displayName','Queued-close synthetic account');await input(form,'platform','Demo');await submit(form);
+  const modal=document.querySelector('dialog');assert.equal(modal.open,true);assert.equal(modal.contains(document.activeElement),true);
+  await fire(findButton(modal,'编辑'),'click');await fire(modal,'cancel');assert.equal(document.activeElement,opener);app.close();
+});

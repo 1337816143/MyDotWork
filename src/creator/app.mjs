@@ -2,7 +2,7 @@ import {createIndexedDBStore} from './core/store.mjs';
 import {readiness,selectWorkspace,latestMetrics,metricDelta} from './core/core.mjs';
 import {exportPackage} from './core/exchange.mjs';
 import {previewMetricsCsv,exportMetricsCsv} from './core/csv.mjs';
-import {createController,VIEWS,VIEW_NAMES,PHASE_NAMES,TASK_NAMES,METRIC_NAMES,values,randomOperationId,safeExternalUrl,routeHash,parseRoute,calendarCells,matchWork,parseNullableNumber,utcOffsetIso,scheduleLabel,metricSeries,trendPoints} from './controller.mjs';
+import {createController,VIEWS,VIEW_NAMES,PHASE_NAMES,TASK_NAMES,METRIC_NAMES,values,randomOperationId,safeExternalUrl,routeHash,parseRoute,calendarCells,matchWork,parseNullableNumber,utcOffsetIso,scheduleLabel,metricSeries,trendPoints,dialogTabTarget} from './controller.mjs';
 
 const document=globalThis.document;
 const h=(tag,props={},...children)=>{
@@ -94,9 +94,16 @@ async function showConflict(key,error){
     h('div',{class:'preview-grid'},h('section',{class:'preview-piece'},h('h3',{},'当前输入（未保存）'),h('pre',{},JSON.stringify(controller.buffers.get(key)?.values,null,2))),h('section',{class:'preview-piece'},h('h3',{},'当前已保存内容（含稿件正文）'),h('pre',{},JSON.stringify(currentSaved,null,2)))),
     para(error.details?JSON.stringify(error.details):'','hint'),h('div',{class:'actions'},button('保留输入，采用当前版本作为重试基线',async()=>{try{await controller.refresh();if(state().revision!==comparedRevision){announce('比较后又出现新的修改，请重新比较后选择',true);await showConflict(key,error);return}controller.rebase(key,comparedRevision);closeDialog();announce('已保留输入。请核对后再次点击保存');render()}catch(rebaseError){handleError(rebaseError,key)}},'primary'),button('继续编辑，不保存',closeDialog))))
 }
-function openDialog(title,builder){dialogReturnFocus=document.activeElement;activeDialog={title,builder};renderDialog();dialog.showModal();dialog.querySelector('input,select,textarea,button')?.focus()}
+function openDialog(title,builder){if(!dialog.open)dialogReturnFocus=document.activeElement;activeDialog={title,builder};renderDialog();if(!dialog.open)dialog.showModal();dialog.querySelector('input,select,textarea,button')?.focus()}
 function renderDialog(){if(!activeDialog)return;dialog.replaceChildren(h('div',{class:'dialog-head'},h('h2',{id:'dialog-title'},activeDialog.title),button('关闭',closeDialog,'quiet',{'aria-label':'关闭对话框'})),h('div',{class:'dialog-body'},activeDialog.builder()))}
 function closeDialog(){if(dialog.open)dialog.close();activeDialog=null;dialogReturnFocus?.focus({preventScroll:true});dialogReturnFocus=null}
+function handleDialogKeydown(event){
+  if(event.key!=='Tab'||!dialog.open)return;
+  const focusables=[...dialog.querySelectorAll('a[href],button,input,select,textarea,summary,[tabindex]')].filter(node=>!node.disabled&&!node.hidden&&node.tabIndex>=0&&node.getClientRects().length>0);
+  const target=dialogTabTarget(focusables,document.activeElement,event.shiftKey);
+  if(target){event.preventDefault();target.focus()}
+  else if(!focusables.length){event.preventDefault();dialog.focus()}
+}
 function disclosure(key,title,body,{open=false}={}){const item=h('details',{open:expanded.has(key)||open,onToggle:e=>{if(e.target.open)expanded.add(key);else expanded.delete(key)}},h('summary',{},title),h('div',{class:'disclosure-body'},body));return item}
 
 function setAppearance(){const preference=globalThis.WorkbenchAppearance||{layout:'B',color:'dark',effects:'auto'};const root=document.documentElement;root.dataset.layout=preference.layout;root.dataset.color=preference.layout==='A'?'light':preference.color;root.dataset.glass=preference.effects==='solid'?'solid':globalThis.WorkbenchBoot?.glass||'solid';try{localStorage.setItem('mydotwork-appearance',JSON.stringify(preference))}catch{announce('外观已应用；浏览器未允许记住偏好',true)}}
@@ -106,7 +113,7 @@ function shell(){
   nav=h('nav',{'aria-label':'创作模块'},VIEWS.map(view=>routeLink(view,[icon(view),h('span',{},VIEW_NAMES[view])],null,{class:'nav-link',dataset:{view}})));
   content=h('main',{id:'main'});toast=h('div',{id:'save-status',class:'status-box','aria-live':'polite','aria-atomic':'true'});
   storageStatus=h('span',{},'本地读取中');
-  dialog=h('dialog',{'aria-labelledby':'dialog-title',onCancel:e=>{e.preventDefault();closeDialog()},onClose:()=>{if(activeDialog){activeDialog=null;dialogReturnFocus?.focus({preventScroll:true})}}});
+  dialog=h('dialog',{'aria-labelledby':'dialog-title',tabindex:'-1',onKeydown:handleDialogKeydown,onCancel:e=>{e.preventDefault();closeDialog()},onClose:()=>{if(dialog.open)return;if(activeDialog){activeDialog=null;dialogReturnFocus?.focus({preventScroll:true})}}});
   const appearance=h('div',{class:'appearance'},h('label',{},'外观',selectInput('layout',preference.layout,[['B','B 默认'],['A','A 经典']],v=>{preference.layout=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'B 配色',selectInput('color',preference.color,[['dark','深色'],['light','浅色']],v=>{preference.color=v;globalThis.WorkbenchAppearance=preference;setAppearance()})),h('label',{},'动效',selectInput('motion',document.documentElement.dataset.motion,[['auto','跟随系统'],['off','关闭']],v=>{document.documentElement.dataset.motion=v;try{localStorage.setItem('mydotwork-creator-motion',v)}catch{}})));
   const sidebar=h('aside',{class:'sidebar'},
     h('a',{class:'brand',href:'../dashboard/'},h('span',{class:'brand-mark'},'MW'),'创作工作区'),nav,
@@ -207,7 +214,7 @@ export async function mountCreator(store){
   controller.subscribe(queueRender);render();history.replaceState(currentHistory(),'',routeHash(route.view,route.workId));
   addEventListener('popstate',onHistory);addEventListener('hashchange',()=>{const p=parseRoute(location.hash);if(p.view!==route.view||p.workId!==route.workId)onHistory()});
   addEventListener('beforeunload',e=>{if([...controller.buffers.values()].some(b=>b.dirty)){e.preventDefault();e.returnValue=''}});
-  if(!workRecords().length)announce('演示工作区为空。新建一个虚构选题即可开始；所有表单通过同一个本地存储保存');
+  if(!workRecords().length)announce('虚构演示工作区已打开；可新建选题开始。保存操作完成后会在这里显示结果');
   return {controller,navigate,render,close:()=>controller.close()};
 }
 async function boot(){

@@ -1,5 +1,21 @@
 import {test,expect,boot,assertNoOverflow,screenshot,writeEvidence,VIEWS} from './helpers.mjs';
 
+async function freshVisualDocument(page,path='/creator/index.html'){
+  await boot(page,path);
+  // Hash-only navigation retains shell CSSOM mutations. Reload the document
+  // before each case so a prior 200% pass cannot compound into 400% or more.
+  await page.reload();
+  await expect(page.locator('#view-title')).toBeVisible();
+  await expect(page.locator('#policy-band')).toContainText('虚构演示');
+  const baseline=await page.evaluate(()=>({
+    inlineFontSizes:[...document.querySelectorAll('body,body *')].filter(el=>el instanceof HTMLElement&&el.style.fontSize).length,
+    bodyFontSize:parseFloat(getComputedStyle(document.body).fontSize),
+    shellLabelFontSize:parseFloat(getComputedStyle(document.querySelector('.topbar strong')).fontSize),
+  }));
+  expect(baseline,'Every visual case must begin with untouched baseline text').toEqual({inlineFontSizes:0,bodyFontSize:16,shellLabelFontSize:14});
+  return baseline;
+}
+
 async function doubleRenderedText(page){
   return page.evaluate(()=>{
     const nodes=[...document.querySelectorAll('body,body *')].filter(el=>el instanceof HTMLElement);
@@ -16,7 +32,7 @@ test('12-case appearance/width matrix: six modules, 200% text and reduced motion
   test.setTimeout(180000);
   const {layout,color,width}=testInfo.project.metadata;
   await context.addInitScript(({layout,color})=>localStorage.setItem('mydotwork-appearance',JSON.stringify({layout,color,effects:'auto'})),{layout,color});
-  await boot(page);
+  await freshVisualDocument(page);
   const ids=await page.evaluate(async()=>{
     const {createIndexedDBStore}=await import('/creator/core/store.mjs');
     const {seedDemo}=await import('/creator/core/fixtures.mjs');
@@ -33,7 +49,7 @@ test('12-case appearance/width matrix: six modules, 200% text and reduced motion
   const observations=[];
   for(const [view,title]of Object.entries(VIEWS)){
     for(const textScale of [1,2]){
-      await boot(page,`/creator/index.html#view=${view}&work=${ids.workId}`);
+      const baseline=await freshVisualDocument(page,`/creator/index.html#view=${view}&work=${ids.workId}`);
       await expect(page.locator('#view-title')).toHaveText(title);
       await expect(page.locator('html')).toHaveAttribute('data-layout',layout);
       await expect(page.locator('html')).toHaveAttribute('data-color',color);
@@ -45,17 +61,17 @@ test('12-case appearance/width matrix: six modules, 200% text and reduced motion
       if(textScale===2){scaling=await doubleRenderedText(page);expect(scaling.failed).toBe(0);}
       await screenshot(page,testInfo,`${view}-${width}-${layout}-${color}-text${textScale*100}`);
       const geometry=await assertNoOverflow(page);
-      observations.push({view,width,layout,color,textScale,scaling,...geometry});
+      observations.push({view,width,layout,color,textScale,baseline,scaling,...geometry});
     }
   }
   // Test a native dialog and a domain-validation error at enlarged text.
-  await boot(page,`/creator/index.html#view=production&work=${ids.workId}`);
+  await freshVisualDocument(page,`/creator/index.html#view=production&work=${ids.workId}`);
   await page.getByRole('button',{name:'检查并设为可发布'}).click();
   await expect(page.locator('#save-status')).toHaveAttribute('role','alert');
   await doubleRenderedText(page);
   await screenshot(page,testInfo,`error-${width}-${layout}-${color}-text200`);
   await assertNoOverflow(page);
-  await boot(page);
+  await freshVisualDocument(page);
   await page.getByRole('button',{name:'账号',exact:true}).click();
   const scale=await doubleRenderedText(page);
   expect(scale.failed).toBe(0);
@@ -65,7 +81,7 @@ test('12-case appearance/width matrix: six modules, 200% text and reduced motion
   await expect(page.getByRole('button',{name:'账号',exact:true})).toBeFocused();
 
   await page.emulateMedia({reducedMotion:'reduce'});
-  await boot(page);
+  await freshVisualDocument(page);
   await expect(page.locator('html')).toHaveAttribute('data-glass','solid');
   const motion=await page.evaluate(()=>({
     system:matchMedia('(prefers-reduced-motion: reduce)').matches,
