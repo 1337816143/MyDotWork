@@ -1,4 +1,5 @@
 #requires -Version 5.1
+param([switch]$SkipInstallerDownload)
 $ErrorActionPreference = 'Stop'
 if ([Environment]::OSVersion.Platform -ne [PlatformID]::Win32NT) { throw 'Windows required' }
 $root = Split-Path $PSScriptRoot -Parent
@@ -23,6 +24,12 @@ Add-Type -Path (Join-Path $root 'probe\SessionProbe.cs') -ReferencedAssemblies $
 # Only known runner metadata is logged. No environment/credentials dump.
 $os = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion'
 [ordered]@{ imageOS=$env:ImageOS; imageVersion=$env:ImageVersion; build=$os.CurrentBuild; ubr=$os.UBR; powershell=$PSVersionTable.PSVersion.ToString() } | ConvertTo-Json -Compress | ForEach-Object { Write-Output ('TASK9_RUNNER_JSON=' + $_) }
+
+if ($SkipInstallerDownload) {
+    Write-Output 'TASK9_INSTALLER_STATUS=skipped_for_source_lifecycle_regression'
+    Write-Output 'TASK9_NATIVE_CANDIDATE_STATUS=not_tested_no_WeType_install_or_adapter'
+    return
+}
 
 # Download and verify one official installer only. NEVER execute or accept terms here.
 $url = 'https://download.z.weixin.qq.com/app/win/WeTypeSetup_3.0.0.17_3.exe'

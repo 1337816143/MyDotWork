@@ -321,16 +321,44 @@ namespace WeTypeNativeProbe
                 // Do not read protected nodes or their children, ValuePattern, TextPattern,
                 // clipboard, window titles, or the test edit box contents.
                 if (password) return;
+                if (!stillScoped()) return;
                 TreeWalker walker = TreeWalker.RawViewWalker;
                 AutomationElement child = walker.GetFirstChild(element);
                 int siblings = 0;
-                while (child != null && siblings++ < 100 && nodes.Count < 160 && watch.ElapsedMilliseconds <= 1800)
+                while (stillScoped() && child != null && siblings++ < 100 && nodes.Count < 160 && watch.ElapsedMilliseconds <= 1800)
                 {
                     Walk(child, depth + 1, root, pids, nodes, errors, watch, stillScoped);
+                    if (!stillScoped()) return;
                     child = walker.GetNextSibling(child);
                 }
             }
             catch (Exception e) { errors.Add(Entry.ErrorTag(e)); }
+        }
+    }
+
+    // A capture ticket is permanently revoked when the controlled editor loses its
+    // scope. A fresh capture cannot revive an old ticket, including after a quick
+    // lose/regain-focus cycle between timer ticks. This is not a WeType session ID.
+    internal sealed class CaptureScope
+    {
+        private readonly object sync;
+        private object current;
+        internal CaptureScope(object synchronization) { sync = synchronization; }
+        internal object Begin()
+        { lock (sync) { current = new object(); return current; } }
+        internal void Invalidate()
+        { lock (sync) { current = null; } }
+        internal bool IsCurrent(object ticket)
+        { lock (sync) { return ticket != null && Object.ReferenceEquals(ticket, current); } }
+        internal bool TryPublish(object ticket, Func<bool> eligible, Action publish)
+        {
+            lock (sync)
+            {
+                if (ticket == null || !Object.ReferenceEquals(ticket, current) || !eligible()) return false;
+                current = null; // At most one publication for one capture.
+                publish();
+                return true;
+            }
         }
     }
 
@@ -352,11 +380,13 @@ namespace WeTypeNativeProbe
         private volatile bool uiaBusy, saving;
         private bool started, saved, optedIn;
         private int focusedTicks;
-        private volatile int scopeEpoch;
+        private readonly CaptureScope scope;
+        private volatile bool editorFocused;
         
         internal ProbeForm(string folder)
         {
             output = folder;
+            scope = new CaptureScope(sync);
             Text = "WeType cloud test editor - read-only discovery";
             Width = 900; Height = 640; MinimumSize = new Size(700, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -388,6 +418,11 @@ namespace WeTypeNativeProbe
             layout.Controls.Add(allowAccessibility, 0, 2);
             input = new TextBox(); input.Multiline = true; input.Dock = DockStyle.Fill;
             input.Font = new Font(Font.FontFamily, 15F); input.ScrollBars = ScrollBars.Vertical;
+            input.GotFocus += delegate { editorFocused = true; };
+            input.LostFocus += InvalidateScope;
+            input.HandleDestroyed += InvalidateScope;
+            Deactivate += InvalidateScope;
+            HandleDestroyed += InvalidateScope;
             layout.Controls.Add(input, 0, 3);
             FlowLayoutPanel buttons = new FlowLayoutPanel(); buttons.AutoSize = true;
             buttons.Dock = DockStyle.Fill; buttons.Margin = new Padding(0, 12, 0, 8);
@@ -403,7 +438,12 @@ namespace WeTypeNativeProbe
             privacy.Margin = new Padding(0, 12, 0, 0); layout.Controls.Add(privacy, 0, 6);
             Controls.Add(layout);
             timer = new System.Windows.Forms.Timer(); timer.Interval = 300; timer.Tick += Tick;
-            FormClosing += delegate { Save(); };
+            FormClosing += delegate { InvalidateScope(this, EventArgs.Empty); Save(); };
+        }
+
+        private void InvalidateScope(object sender, EventArgs args)
+        {
+            lock (sync) { editorFocused = false; scope.Invalidate(); }
         }
 
         private void Start(object sender, EventArgs args)
@@ -423,10 +463,12 @@ namespace WeTypeNativeProbe
         {
             if (!started || saving) return;
             if (clock.ElapsedMilliseconds >= 60000) { timer.Stop(); Close(); return; }
-            bool focus = input.Focused && Native.GetForegroundWindow() == Handle;
+            bool focus = input.Focused && Native.GetForegroundWindow() == Handle
+                && !input.UseSystemPasswordChar && input.PasswordChar == '\0';
             status.Text = "已运行 " + (clock.ElapsedMilliseconds / 1000) + " 秒；窗口采样 " + frames.Count
                 + "；" + (focus ? "仅采集本测试场景" : "已暂停：请回到测试框") ;
-            if (!focus) { unchecked { scopeEpoch++; } return; }
+            if (!focus) { InvalidateScope(this, EventArgs.Empty); return; }
+            editorFocused = true;
             focusedTicks++;
             if (clock.ElapsedMilliseconds - lastPidRefresh >= 2000)
             { pids = Inventory.Pids(); lastPidRefresh = clock.ElapsedMilliseconds; }
@@ -435,24 +477,30 @@ namespace WeTypeNativeProbe
             List<WindowInfo> windows = Native.Windows(pids);
             List<Dictionary<string, object>> values = new List<Dictionary<string, object>>();
             foreach (WindowInfo w in windows) values.Add(w.Data);
+            Dictionary<string, object> imm = StandardImeCandidates.Read(input.Handle);
+            // A native/provider call can pump messages; recheck after synchronous reads.
+            if (!input.Focused || Native.GetForegroundWindow() != Handle || saving
+                || input.UseSystemPasswordChar || input.PasswordChar != '\0')
+            { InvalidateScope(this, EventArgs.Empty); return; }
             frames.Add(Entry.Obj("elapsed_ms", clock.ElapsedMilliseconds, "windows", values,
-                "target_process_count", pids.Count, "standard_imm_candidates", StandardImeCandidates.Read(input.Handle)));
+                "target_process_count", pids.Count, "standard_imm_candidates", imm));
             if (!optedIn || uiaBusy || windows.Count == 0 || clock.ElapsedMilliseconds - lastAccessibility < 1800) return;
             lastAccessibility = clock.ElapsedMilliseconds;
             long captureTime = clock.ElapsedMilliseconds;
             HashSet<int> allowed = new HashSet<int>(pids);
             IntPtr scopedHost = Handle;
-            int scopedEpoch = scopeEpoch;
+            object scopedTicket = scope.Begin();
             uiaBusy = true;
             // One worker at a time. A stuck provider cannot block the UI or spawn more workers.
             Thread worker = new Thread(delegate()
             {
                 Dictionary<string, object> captured;
-                Func<bool> stillScoped = delegate { return !saving && scopeEpoch == scopedEpoch && Native.GetForegroundWindow() == scopedHost; };
+                Func<bool> eligible = delegate { return !saving && editorFocused && Native.GetForegroundWindow() == scopedHost; };
+                Func<bool> stillScoped = delegate { return scope.IsCurrent(scopedTicket) && eligible(); };
                 try { captured = Accessibility.Read(windows, allowed, stillScoped); }
                 catch (Exception e) { captured = Entry.Obj("error", Entry.ErrorTag(e)); }
                 captured["elapsed_from_start_ms"] = captureTime;
-                lock (sync) { if (stillScoped()) accessibility.Add(captured); }
+                scope.TryPublish(scopedTicket, eligible, delegate { accessibility.Add(captured); });
                 uiaBusy = false;
             });
             worker.IsBackground = true; worker.SetApartmentState(ApartmentState.MTA); worker.Start();
@@ -462,7 +510,7 @@ namespace WeTypeNativeProbe
         {
             if (saved) return;
             timer.Stop();
-            lock (sync) { saving = true; }
+            lock (sync) { saving = true; editorFocused = false; scope.Invalidate(); }
             try
             {
                 List<Dictionary<string, object>> finalProcesses = started ? Inventory.Read() : new List<Dictionary<string, object>>();
@@ -481,7 +529,8 @@ namespace WeTypeNativeProbe
                         "limitations", new string[] {
                             "Process names are discovery hints, not verified patch targets.",
                             "No foreground titles, full paths, keystrokes, clipboard, typed text or dictionary files are saved.",
-                            "UIA scheduling and each traversal step check test-window focus; an in-flight provider call may finish after focus loss, and stale results are discarded.",
+                            "UIA capture tickets are revoked by editor focus loss, host deactivation, closing and handle destruction; in-flight provider calls cannot be interrupted, but revoked results are discarded.",
+                            "IMM polling and accessibility sample hits are diagnostics, not authoritative WeType candidate events or session identities.",
                             "An unresponsive UIA call can outlast the soft time budget; it runs on one background worker only.",
                             "Missing windows or sample hits do not prove that native modification is impossible.",
                             "Rectangle coordinates follow the diagnostic process DPI context, not a proven physical-pixel mapping.",
@@ -496,6 +545,9 @@ namespace WeTypeNativeProbe
         }
 
         protected override void Dispose(bool disposing)
-        { if (disposing && timer != null) timer.Dispose(); base.Dispose(disposing); }
+        {
+            if (disposing) { InvalidateScope(this, EventArgs.Empty); if (timer != null) timer.Dispose(); }
+            base.Dispose(disposing);
+        }
     }
 }

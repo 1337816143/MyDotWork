@@ -20,7 +20,11 @@ jobs:
           sparse-checkout: task9/wetype-cloud-native
       - name: Compile read-only diagnostics and measure this Windows session
         shell: powershell
-        run: ./task9/wetype-cloud-native/scripts/run-windows-probes.ps1
+        run: ./task9/wetype-cloud-native/scripts/run-windows-probes.ps1 -SkipInstallerDownload
+      - name: Compile lifecycle source and exercise owned WinForms focus cancellation
+        timeout-minutes: 2
+        shell: powershell
+        run: ./task9/wetype-cloud-native/scripts/run-probe-lifecycle-tests.ps1
       - name: Build and run synthetic candidate guard tests with native MSVC
         shell: powershell
         run: |
