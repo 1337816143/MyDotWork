@@ -5,8 +5,9 @@ from public_output import assert_output_tree
 ROOT = Path(__file__).resolve().parents[1]
 CREATOR_FILES = (
     'index.html', 'styles.css', 'appearance-boot.js', 'app.mjs',
-    'controller.mjs', 'core/core.mjs', 'core/store.mjs', 'core/exchange.mjs',
+    'controller.mjs', 'performance.mjs', 'studio-orb.mjs', 'core/core.mjs', 'core/store.mjs', 'core/exchange.mjs',
     'core/csv.mjs', 'core/fixtures.mjs',
+    'graph/web.mjs', 'graph/snapshot.mjs', 'graph/project.mjs', 'graph/model.mjs', 'graph/view.mjs',
 )
 CREATOR_ARTIFACTS = ['creator/' + name for name in CREATOR_FILES]
 

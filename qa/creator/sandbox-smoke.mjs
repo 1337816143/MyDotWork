@@ -1,6 +1,7 @@
 import {chromium} from '@playwright/test';
 import {mkdir,writeFile} from 'node:fs/promises';
-if(process.env.CI!=='true'||process.env.GITHUB_ACTIONS!=='true'||process.env.GITHUB_REF!=='refs/heads/qa/six-module-stage1-20261005')throw new Error('Sandbox launch is restricted to the exact approved candidate CI branch');
+const approvedCandidateRefs=new Set(['refs/heads/qa/six-module-stage1-20261005','refs/heads/qa/xuan-studio-stage2-20261005']);
+if(process.env.CI!=='true'||process.env.GITHUB_ACTIONS!=='true'||!approvedCandidateRefs.has(process.env.GITHUB_REF))throw new Error('Sandbox launch is restricted to the exact approved candidate CI branches');
 await mkdir(new URL('./evidence/',import.meta.url),{recursive:true});
 let browser;
 try{

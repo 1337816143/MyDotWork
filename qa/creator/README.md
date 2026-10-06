@@ -1,6 +1,6 @@
 # Stage 1 candidate browser acceptance harness
 
-This proposal runs only on `qa/six-module-stage1-20261005` in an ordinary GitHub Ubuntu runner. It has no deploy job, Pages permissions, identity-token permission, secrets, scheduled trigger, external service calls, or user-computer access. The existing main-branch deployment workflow remains separate.
+This proposal runs only on the reviewed `qa/six-module-stage1-20261005` and `qa/xuan-studio-stage2-20261005` branches in an ordinary GitHub Ubuntu runner. It has no deploy job, Pages permissions, identity-token permission, secrets, scheduled trigger, external service calls, or user-computer access. The existing main-branch deployment workflow remains separate.
 
 ## Execution boundary
 

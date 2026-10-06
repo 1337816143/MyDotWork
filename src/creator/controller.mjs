@@ -24,15 +24,15 @@ export function safeExternalUrl(raw) {
   try { const u = new URL(String(raw)); return ['https:','http:'].includes(u.protocol) && !u.username && !u.password ? u.href : null; }
   catch { return null; }
 }
-export function routeHash(view,workId=null) {
+export function routeHash(view,workId=null,panel=null) {
   const validView=VIEWS.includes(view)?view:'desk';
-  return `#view=${validView}${isRouteId(workId)?`&work=${encodeURIComponent(workId)}`:''}`;
+  return `#view=${validView}${isRouteId(workId)?`&work=${encodeURIComponent(workId)}`:''}${validView==='database'&&panel==='relations'?'&panel=relations':''}`;
 }
 export function parseRoute(hash) {
   const p=new URLSearchParams(String(hash).replace(/^#/,''));
   const view=VIEWS.includes(p.get('view'))?p.get('view'):'desk';
   const candidate=p.get('work');
-  return {view,workId:isRouteId(candidate)?candidate:null};
+  return {view,workId:isRouteId(candidate)?candidate:null,...(view==='database'&&p.get('panel')==='relations'?{panel:'relations'}:{})};
 }
 export function calendarCells(month) {
   if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) return [];

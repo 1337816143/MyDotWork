@@ -8,6 +8,61 @@ const {document}=installDomFixture();
 const {mountCreator}=await import(pathToFileURL(path.join(ui,'app.mjs')));
 const {createMemoryStore,storagePolicy}=await import(pathToFileURL(path.join(ui,'core/store.mjs')));
 const {createWorkspace}=await import(pathToFileURL(path.join(ui,'core/core.mjs')));
+const {seedDemo}=await import(pathToFileURL(path.join(ui,'core/fixtures.mjs')));
+
+test('DOM fixture: actual workbench, library and database rows share one current 195 snapshot and update together',async()=>{
+  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});
+  const seeded=await seedDemo(store);const app=await mountCreator(store);
+  const result=await app.controller.action('appendMetrics',{snapshots:[{publicationId:seeded.publicationId,metricKey:'views',value:195,observedAt:'2026-10-04T11:00:00Z',sourceRef:'Explicit synthetic sample'}]});
+  const check=(value,id)=>{
+    for(const view of ['desk','library','database']){
+      app.navigate(view);const row=document.querySelector(`[data-performance-row="${seeded.publicationId}"]`);assert.ok(row,view);
+      assert.equal(row.dataset.workId,seeded.workId);const metric=row.querySelector('[data-metric="views"]');
+      assert.equal(metric.textContent,String(value));assert.equal(metric.dataset.snapshotId,id);
+      assert.equal(row.querySelector('[data-metric="comments"]').textContent,'未记录');
+      assert.equal(row.querySelector('[data-metric="shares"]').textContent,'0');
+    }
+  };
+  check(195,result.result.metricIds[0]);
+  const newer=await app.controller.action('appendMetrics',{snapshots:[{publicationId:seeded.publicationId,metricKey:'views',value:201,observedAt:'2026-10-04T12:00:00Z',sourceRef:'Later synthetic sample'}]});check(201,newer.result.metricIds[0]);
+  const row=document.querySelector(`[data-performance-row="${seeded.publicationId}"]`);await fire(findButton(row,'核对来源'),'click');
+  assert.match(document.querySelector('dialog').textContent,/Later synthetic sample/);assert.ok(document.querySelector('dialog').textContent.includes(newer.result.metricIds[0]));
+  await fire(findButton(document.querySelector('dialog'),'关闭'),'click');app.close();
+});
+
+test('DOM fixture: optional studio navigation preserves stable routes, B/A settings, business revision and unsaved form input',async()=>{
+  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});const app=await mountCreator(store);app.navigate('ideas');
+  const appearance=document.querySelector('[name="presentation"]');appearance.value='studio';await fire(appearance,'change');
+  const nav=document.querySelector('[aria-label="创作模块"]');assert.deepEqual(nav.querySelectorAll('[data-view]').map(n=>n.dataset.view),['desk','library','production','ideas','calendar','database']);
+  assert.equal(nav.parentNode.className,'studio-nav-slot');
+  await fire(findButton(document.body,'新建选题'),'click');const form=document.querySelector('[data-buffer="capture-idea"]');
+  await input(form,'title','Unsaved synthetic title');const revision=app.controller.state.revision;
+  appearance.value='classic';await fire(appearance,'change');assert.equal(nav.parentNode.className,'sidebar-nav-slot');assert.equal(form.querySelector('[name="title"]').value,'Unsaved synthetic title');
+  assert.equal(app.controller.state.revision,revision);assert.equal(location.hash,'#view=ideas');
+  const layout=document.querySelector('[name="layout"]');layout.value='A';await fire(layout,'change');assert.equal(document.documentElement.dataset.layout,'A');
+  layout.value='B';await fire(layout,'change');assert.equal(document.documentElement.dataset.layout,'B');
+  appearance.value='studio';await fire(appearance,'change');assert.equal(app.controller.state.revision,revision);assert.equal(form.querySelector('[name="title"]').value,'Unsaved synthetic title');
+  await fire(findButton(document.querySelector('dialog'),'关闭'),'click');app.close();
+});
+
+test('DOM fixture: technical identities are recoverable through closed native details and goal zero stays literal',async()=>{
+  const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})});const seeded=await seedDemo(store);const app=await mountCreator(store);app.navigate('ideas');
+  const identities=document.querySelectorAll('details').filter(n=>n.querySelector('summary')?.textContent==='查看作品标识');
+  assert.ok(identities.length>0);assert.equal(identities[0].open,false);assert.ok(identities.some(n=>n.textContent.includes(seeded.workId)));
+  app.navigate('desk');const goal=Object.values(app.controller.state.goals)[0];await app.controller.action('setGoal',{goalId:goal.id,month:goal.month,timeZone:goal.timeZone,metric:goal.metric,accountId:goal.accountId,target:0});app.render();
+  assert.match(document.getElementById('main').textContent,/目标明确设置为 0，不计算百分比/);app.close();
+});
+
+test('DOM fixture: all three original content links stay one shared node group through both presentations',async()=>{
+ const app=await mountCreator(createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'})}));
+ const labels=['研究与成果目录','公开聊天','项目进度'],paths=['../dashboard/','../chat/','../projects/'];
+ const links=labels.map(label=>document.querySelectorAll('a').find(a=>a.textContent===label));
+ for(const mode of ['studio','classic','studio']){
+  const selector=document.querySelector('[name="presentation"]');selector.value=mode;await fire(selector,'change');
+  labels.forEach((label,i)=>{const matched=document.querySelectorAll('a').filter(a=>a.textContent===label);assert.deepEqual(matched,[links[i]]);assert.equal(links[i].getAttribute('href'),paths[i]);assert.equal(links[i].parentNode.parentNode.className,mode==='studio'?'studio-legacy-slot':'sidebar-legacy-slot');});
+ }
+ app.close();
+});
 
 test('DOM fixture: actual form callbacks create account, idea, draft, tasks and schedule across all six views',async()=>{
   const store=createMemoryStore({initialState:createWorkspace({dataClass:'synthetic'}),policy:storagePolicy({origin:'https://example.github.io',persistence:'memory-test'})});
@@ -71,10 +126,10 @@ test('DOM fixture: future snapshots stay out of default cards/trends/deltas and 
   for(const [value,observedAt]of [[100,'2020-01-01T00:00:00Z'],[160,'2020-01-02T00:00:00Z'],[900,'2099-01-01T00:00:00Z']])await app.controller.action('appendMetrics',{snapshots:[{accountId,metricKey:'followers',value,definition:'cumulative followers',observedAt,sourceRef:'Cutoff synthetic evidence'}]});
   app.render();const metricValues=()=>document.querySelectorAll('span').filter(n=>n.className==='metric-value').map(n=>n.textContent);
   const futureMetricId=Object.values(app.controller.state.metrics).find(metric=>metric.observedAt==='2099-01-01T00:00:00Z').id;
-  assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);assert.doesNotMatch(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').textContent.includes(futureMetricId),false);assert.equal(document.getElementById('main').querySelectorAll('circle').length,2);
+  assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);assert.doesNotMatch(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').textContent.includes(futureMetricId),false);assert.equal(document.getElementById('main').querySelectorAll('svg').filter(svg=>svg.getAttribute('class')==='spark').flatMap(svg=>svg.querySelectorAll('circle')).length,2);
   app.navigate('database');assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);
   const cutoff=document.querySelector('[data-focus-key="filter:asof"]');cutoff.value='2100-01-01T00:00:00Z';await fire(cutoff,'change');
-  assert.deepEqual(metricValues(),['900']);assert.match(document.getElementById('main').textContent,/\+740/);assert.match(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').textContent.includes(futureMetricId),true);assert.equal(document.getElementById('main').querySelectorAll('circle').length,3);
+  assert.deepEqual(metricValues(),['900']);assert.match(document.getElementById('main').textContent,/\+740/);assert.match(document.getElementById('main').textContent,/2099-01-01/);assert.equal(document.getElementById('main').textContent.includes(futureMetricId),true);assert.equal(document.getElementById('main').querySelectorAll('svg').filter(svg=>svg.getAttribute('class')==='spark').flatMap(svg=>svg.querySelectorAll('circle')).length,3);
   // A database-only future filter must not silently carry into the dashboard.
   app.navigate('desk');assert.deepEqual(metricValues(),['160']);assert.match(document.getElementById('main').textContent,/\+60/);app.close();
 });

@@ -53,3 +53,16 @@ test('320px calendar reserves more than the measured 35.640625px two-digit text 
   assert.equal(cellWidth,40);assert.equal(contentWidth,38);assert.equal(contentWidth-measuredTextWidth,2.359375);
   assert.ok(contentWidth>=measuredTextWidth+2);
 });
+
+test('mobile performance retains real column headers and explicit table semantics',()=>{
+  assert.doesNotMatch(css,/\.performance-table thead\{display:none/);
+  assert.match(css,/\.performance-table thead\{position:absolute;width:1px;height:1px/);
+  for(const role of ['table','rowgroup','row','columnheader','rowheader','cell'])assert.ok(app.includes(`role:'${role}'`));
+});
+
+
+
+test('unfocused keyboard skip link is visually clipped while the existing focus reveal stays intact',()=>{
+ assert.match(css,/\.skip:not\(:focus\)\{clip-path:inset\(50%\);width:1px;height:1px/);
+ assert.match(css,/\.skip:focus\{top:12px\}/);
+});
