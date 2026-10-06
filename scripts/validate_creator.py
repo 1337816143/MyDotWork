@@ -93,6 +93,7 @@ process.stdout.write(JSON.stringify(output));"""
     parsed = subprocess.run(['node', '--experimental-vm-modules', '--input-type=module', '-e', parser], input=json.dumps(module_sources), capture_output=True, text=True, check=True)
     imports = json.loads(parsed.stdout)
     for name in CREATOR_FILES:
+        assert (creator / name).read_bytes() == (ROOT / 'src/creator' / name).read_bytes(), 'Creator output differs from current source: ' + name
         text = (creator / name).read_text()
         scan(text)
         assert '/workspace/' not in text and 'libfile_' not in text, 'Internal location in creator output'
@@ -101,7 +102,7 @@ process.stdout.write(JSON.stringify(output));"""
             assert not re.search(r'\b(?:fetch|XMLHttpRequest|WebSocket|EventSource)\s*\(|\.sendBeacon\s*\(', text), 'Unexpected creator network API'
             assert not re.search(r'\bimport\s*\(', text), 'Unlisted dynamic creator module'
             for path in imports[name]:
-                assert path.startswith('./') and (creator / name).parent.joinpath(path).resolve() in module_paths, 'Unlisted creator module dependency'
+                assert path.startswith(('./', '../')) and (creator / name).parent.joinpath(path).resolve() in module_paths, 'Unlisted creator module dependency'
         elif name.endswith('.css'):
             assert not re.search(r'@import|url\s*\(', text, flags=re.I), 'Unlisted creator CSS resource'
     manifest = json.loads((out / 'release-manifest.json').read_text())

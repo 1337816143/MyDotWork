@@ -4,6 +4,7 @@ import {exportPackage} from './core/exchange.mjs';
 import {previewMetricsCsv,exportMetricsCsv} from './core/csv.mjs';
 import {selectPerformanceRows,PERFORMANCE_METRICS,goalProgress} from './performance.mjs';
 import {createStudioOrb} from './studio-orb.mjs';
+import {createGraphView} from './graph/view.mjs';
 import {createController,VIEWS,VIEW_NAMES,PHASE_NAMES,TASK_NAMES,METRIC_NAMES,values,randomOperationId,safeExternalUrl,routeHash,parseRoute,calendarCells,matchWork,parseNullableNumber,utcOffsetIso,scheduleLabel,metricSeries,trendPoints,dialogTabTarget} from './controller.mjs';
 
 const document=globalThis.document;
@@ -35,6 +36,7 @@ const filters={month:new Date().toISOString().slice(0,7),timeZone:'UTC',accountI
 const expanded=new Set();
 let content,toast,nav,dialog,storageStatus;
 let lastUndo=null;
+let graphView=null;
 let detailReturn=null;
 let renderQueued=false;
 let renderCutoff=new Date().toISOString();
@@ -88,12 +90,12 @@ function snapshotFocus(){const e=document.activeElement;if(!e||!content.contains
 function restoreFocus(snapshot){if(!snapshot?.key)return;const target=[...content.querySelectorAll('[data-focus-key]')].find(el=>el.dataset.focusKey===snapshot.key);if(target){target.focus({preventScroll:true});if(typeof target.setSelectionRange==='function'&&snapshot.start!==null){try{target.setSelectionRange(snapshot.start,snapshot.end)}catch{}}}}
 function queueRender(){if(renderQueued)return;renderQueued=true;queueMicrotask(()=>{renderQueued=false;render()})}
 function currentHistory(){return {creator:true,filters:{...filters},scroll:scrollY,focusKey:document.activeElement?.dataset.focusKey||null}}
-function navigate(view,workId=null,{replace=false}={}){
+function navigate(view,workId=null,{replace=false,panel=null}={}){
   if(workId&&!route.workId)detailReturn={view:route.view,scroll:scrollY,focusKey:document.activeElement?.dataset.focusKey||`work:${workId}`};
   history.replaceState(currentHistory(),'');
-  route={view:VIEWS.includes(view)?view:'desk',workId};
-  const next=routeHash(route.view,workId);history[replace?'replaceState':'pushState']({creator:true,filters:{...filters},scroll:0},'',next);
-  render();const target=document.getElementById(workId?'work-detail':'view-title');target?.focus({preventScroll:true});target?.scrollIntoView({block:'start'});
+  route={view:VIEWS.includes(view)?view:'desk',workId,...(view==='database'&&panel==='relations'?{panel:'relations'}:{})};
+  const next=routeHash(route.view,workId,route.panel);history[replace?'replaceState':'pushState']({creator:true,filters:{...filters},scroll:0},'',next);
+  render();const target=document.getElementById(workId&&route.panel!=='relations'?'work-detail':'view-title');target?.focus({preventScroll:true});target?.scrollIntoView({block:'start'});
 }
 function closeDetail(){const back=detailReturn;detailReturn=null;navigate(route.view);if(back&&back.view===route.view)requestAnimationFrame(()=>{scrollTo(0,back.scroll);[...content.querySelectorAll('[data-focus-key]')].find(el=>el.dataset.focusKey===back.focusKey)?.focus({preventScroll:true})})}
 function routeLink(view,label,workId=null,props={}){return h('a',{href:routeHash(view,workId),onClick:e=>{if(!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&e.button===0){e.preventDefault();navigate(view,workId)}},...props},label)}
@@ -227,7 +229,7 @@ function renderLibrary(q){
   return [heading('作品库','按作品归档。两个账号的发布仍属于同一个作品；保留发布时标题和稿件快照。',[button('手动登记发布',showPublicationPicker,'primary')]),
     filterBar({phase:true}),para(`${rows.length} 件作品；每件作品可展开多次发布。归档与已发布分别记录。`,'scope'),h('section',{class:'panel'},h('h2',{},'作品表现'),renderPerformance({workIds:rows.map(w=>w.id)})),listing];
 }
-function renderDatabase(q){return [heading('数据库','手工录入、核对快照、形成复盘。空值表示未知；累计快照不会跨日期相加。',[button('录入指标',()=>showMetrics(),'primary'),button('指标 CSV',showCsv)]),filterBar({platform:true}),h('div',{class:'toolbar'},h('label',{},'截止时刻（含 UTC 偏移；留空为现在）',h('input',{value:filters.asOf,placeholder:'2026-10-05T23:59:59+08:00',dataset:{focusKey:'filter:asof'},onChange:e=>{const v=e.target.value;if(!v||(!Number.isNaN(Date.parse(v))&&/(Z|[+-]\d{2}:\d{2})$/.test(v))){filters.asOf=v;render()}else announce('截止时刻需要有效日期和明确 UTC 偏移',true)}}))),para(`来源：用户手工记录或经预览导入的指标。截止：${renderCutoff}${filters.asOf?'':'（当前渲染时刻）'}。按平台、指标、单位和口径分开显示，无跨平台排行榜。`,'scope'),h('section',{class:'panel'},h('h2',{},'作品表现'),renderPerformance({workIds:scopedWorks(q).map(w=>w.id)})),h('section',{class:'panel'},h('h2',{},'最新值与同口径增量'),renderMetricCards()),h('section',{class:'panel'},h('h2',{},'作品复盘'),listWorks(scopedWorks(q).filter(w=>related('publications',w.id).some(p=>p.status==='published')),'发布登记后可录入数据并复盘','database'))]}
+function renderDatabase(q){if(route.panel==='relations'){graphView.setWorkScope(route.workId);graphView.setState(state());return [heading('关系视图','数据库中的只读来源检查。六个模块继续使用同一份记录。',[button('返回数据表',()=>navigate('database'))]),graphView.element]}return [heading('数据库','手工录入、核对快照、形成复盘。空值表示未知；累计快照不会跨日期相加。',[button('关系视图',()=>navigate('database',null,{panel:'relations'})),button('录入指标',()=>showMetrics(),'primary'),button('指标 CSV',showCsv)]),filterBar({platform:true}),h('div',{class:'toolbar'},h('label',{},'截止时刻（含 UTC 偏移；留空为现在）',h('input',{value:filters.asOf,placeholder:'2026-10-05T23:59:59+08:00',dataset:{focusKey:'filter:asof'},onChange:e=>{const v=e.target.value;if(!v||(!Number.isNaN(Date.parse(v))&&/(Z|[+-]\d{2}:\d{2})$/.test(v))){filters.asOf=v;render()}else announce('截止时刻需要有效日期和明确 UTC 偏移',true)}}))),para(`来源：用户手工记录或经预览导入的指标。截止：${renderCutoff}${filters.asOf?'':'（当前渲染时刻）'}。按平台、指标、单位和口径分开显示，无跨平台排行榜。`,'scope'),h('section',{class:'panel'},h('h2',{},'作品表现'),renderPerformance({workIds:scopedWorks(q).map(w=>w.id)})),h('section',{class:'panel'},h('h2',{},'最新值与同口径增量'),renderMetricCards()),h('section',{class:'panel'},h('h2',{},'作品复盘'),listWorks(scopedWorks(q).filter(w=>related('publications',w.id).some(p=>p.status==='published')),'发布登记后可录入数据并复盘','database'))]}
 
 function render(){
   if(!controller?.state||!content)return;
@@ -239,7 +241,7 @@ function render(){
   const renderers={desk:renderDesk,ideas:renderIdeas,production:renderProduction,calendar:renderCalendar,library:renderLibrary,database:renderDatabase};
   studioOrb?.dispose();studioOrb=null;
   const nodes=renderers[route.view](q).filter(Boolean);
-  if(route.workId){const work=state().works[route.workId];nodes.push(work?renderDetail(work):empty('找不到这个作品','它可能尚未导入、已移至另一个工作区，或链接 ID 无效。',button('返回列表',()=>navigate(route.view))))}
+  if(route.workId&&route.panel!=='relations'){const work=state().works[route.workId];nodes.push(work?renderDetail(work):empty('找不到这个作品','它可能尚未导入、已移至另一个工作区，或链接 ID 无效。',button('返回列表',()=>navigate(route.view))))}
   content.replaceChildren(...nodes,h('datalist',{id:'time-zones'},['UTC','Asia/Shanghai','Asia/Tokyo','America/New_York','Europe/London','Europe/Berlin','Australia/Sydney'].map(v=>h('option',{value:v}))));
   storageStatus.textContent=`${controller.policy.mode==='demo'?'虚构演示工作区':'私有工作区'} · 本地版本 ${state().revision} · ${controller.policy.persistence||'浏览器本地存储'}`;
   restoreFocus(focus);
@@ -248,14 +250,16 @@ function render(){
 function showRecords(title,rows){openDialog(title,()=>h('div',{class:'stack'},para(scopeText(),'hint'),rows.length?rows.map(w=>workRow(w,{showActions:false})):para('当前范围没有记录')))}
 
 export async function mountCreator(store){
+  graphView?.close();
+  graphView=createGraphView(document,{onNavigate:(view,workId)=>navigate(view,workId)});
   controller=createController(store);await controller.init();shell();
   const policy=controller.policy;
   document.getElementById('policy-band').replaceChildren(h('strong',{},'虚构演示 · 请勿输入真实私稿或真实账号数据。 '),h('span',{},`${policy.warning||''} 浏览器本地保存不是云端备份。清理浏览器数据或换设备可能丢失内容。`));
-  controller.subscribe(queueRender);render();history.replaceState(currentHistory(),'',routeHash(route.view,route.workId));
-  addEventListener('popstate',onHistory);addEventListener('hashchange',()=>{const p=parseRoute(location.hash);if(p.view!==route.view||p.workId!==route.workId)onHistory()});
+  controller.subscribe(queueRender);render();history.replaceState(currentHistory(),'',routeHash(route.view,route.workId,route.panel));
+  addEventListener('popstate',onHistory);addEventListener('hashchange',()=>{const p=parseRoute(location.hash);if(p.view!==route.view||p.workId!==route.workId||p.panel!==route.panel)onHistory()});
   addEventListener('beforeunload',e=>{if([...controller.buffers.values()].some(b=>b.dirty)){e.preventDefault();e.returnValue=''}});
   if(!workRecords().length)announce('虚构演示工作区已打开；可新建选题开始。保存操作完成后会在这里显示结果');
-  return {controller,navigate,render,close:()=>{studioOrb?.dispose();studioOrb=null;controller.close()}};
+  return {controller,navigate,render,close:()=>{graphView?.close();graphView=null;studioOrb?.dispose();studioOrb=null;controller.close()}};
 }
 async function boot(){
   try{
@@ -274,7 +278,7 @@ function showStart(work){const key=`start:${work.id}`;openDialog('选择制作�
 
 function renderDetail(work){
   const workId=work.id,p=readiness(state(),workId),currentDraft=state().drafts[work.bodyRevisionId];
-  const detail=h('section',{id:'work-detail',class:'detail panel',tabindex:'-1','aria-label':`${work.title} 作品详情`},h('div',{class:'page-heading detail-head'},h('div',{},h('h2',{},work.title),identityDetails(`detail-${work.id}`,'作品标识与修订',`WorkID ${work.id} · 修订 ${work.revision}`),h('div',{class:'badges'},badge(PHASE_NAMES[work.phase]||work.phase),work.trashedAt?badge('在回收站','warn'):null,work.draftNeedsReview?badge('切入点有变，稿件需复核','warn'):null)),button('关闭详情',closeDetail,'quiet')),h('div',{class:'tabs','aria-label':'同一作品的模块入口'},VIEWS.map(v=>button(VIEW_NAMES[v],()=>navigate(v,work.id),'tiny',{'aria-pressed':route.view===v}))),para('此详情显示这件作品的全部账号关联记录，与六个模块共用同一 WorkID；列表上的账号筛选不隐藏详情历史。未保存输入暂存于当前页面，关闭或刷新前请完成保存。','hint'));
+  const detail=h('section',{id:'work-detail',class:'detail panel',tabindex:'-1','aria-label':`${work.title} 作品详情`},h('div',{class:'page-heading detail-head'},h('div',{},h('h2',{},work.title),identityDetails(`detail-${work.id}`,'作品标识与修订',`WorkID ${work.id} · 修订 ${work.revision}`),h('div',{class:'badges'},badge(PHASE_NAMES[work.phase]||work.phase),work.trashedAt?badge('在回收站','warn'):null,work.draftNeedsReview?badge('切入点有变，稿件需复核','warn'):null)),h('div',{class:'actions'},button('查看关系',()=>navigate('database',work.id,{panel:'relations'})),button('关闭详情',closeDetail,'quiet'))),h('div',{class:'tabs','aria-label':'同一作品的模块入口'},VIEWS.map(v=>button(VIEW_NAMES[v],()=>navigate(v,work.id),'tiny',{'aria-pressed':route.view===v}))),para('此详情显示这件作品的全部账号关联记录，与六个模块共用同一 WorkID；列表上的账号筛选不隐藏详情历史。未保存输入暂存于当前页面，关闭或刷新前请完成保存。','hint'));
   if(work.trashedAt){detail.append(para('作品已移入可恢复回收站，历史版本和发布事实仍保留。','warning'),button('还原作品',()=>action('restoreWork',{workId},'作品已还原'),'primary'));return detail}
   const metaKey=`idea:${workId}`;
   detail.append(disclosure(`idea:${workId}`,'选题与参考',h('div',{class:'stack'},form(metaKey,{title:work.title,summary:work.summary||'',angle:work.angle||'',priority:String(work.priority||2),tags:(work.tags||[]).join(', ')},()=>h('div',{class:'field-grid'},field(metaKey,'title','选题标题',{required:true}),field(metaKey,'priority','优先级',{options:[['1','1 · 高'],['2','2 · 中'],['3','3 · 低']]}),h('div',{class:'full'},field(metaKey,'summary','简述',{type:'textarea',rows:2})),h('div',{class:'full'},field(metaKey,'angle','自己的切入点',{type:'textarea'})),h('div',{class:'full'},field(metaKey,'tags','标签（逗号分隔）'))),async(v,k)=>save(k,'updateIdea',{workId,title:v.title,summary:v.summary,angle:v.angle,priority:Number(v.priority),tags:v.tags.split(/[,，]/).map(x=>x.trim()).filter(Boolean)}),{submit:'保存选题修改'}),h('div',{class:'section-heading'},h('h3',{},'参考来源'),button('新增参考',()=>showReference(work),'tiny')),related('references',workId).map(ref=>h('article',{class:'work-row'},h('h3',{},ref.title||'参考'),ref.url?external(ref.url,ref.url):null,para(ref.analysis||'尚未拆解参考','small'),ref.excerpt?h('pre',{class:'prose'},ref.excerpt):null,para(`来源作者：${text(ref.author)} · 访问状态：未自动核验`,'hint'),button('编辑参考',()=>showReference(work,ref),'tiny'))),work.phase==='idea'?button('开始创作',()=>showStart(work),'primary'):null),{open:route.view==='ideas'}));

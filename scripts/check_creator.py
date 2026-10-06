@@ -17,6 +17,7 @@ for name in CREATOR_FILES:
     if name.endswith(('.mjs', '.js')):
         subprocess.run(['node', '--check', str(ROOT / 'src/creator' / name)], cwd=ROOT, env=env, check=True)
 tests = [
+    *[str(p.relative_to(ROOT)) for p in sorted((ROOT / 'tests/creator/graph').glob('*.test.mjs'))],
     'tests/creator/core/creator.test.mjs',
     'tests/creator/ui/controller.test.mjs',
     'tests/creator/ui/dom-contract.test.mjs',
