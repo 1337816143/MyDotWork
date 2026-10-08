@@ -1,7 +1,7 @@
 """Regressions for exact baseline preservation with non-positional archive increments."""
 import copy
 import unittest
-from validate_archive import archive_messages_sha256, validate_archive_integrity, validate_no_platform_control_cards
+from validate_archive import archive_messages_sha256, validate_archive_integrity, validate_no_platform_control_cards, scan
 
 
 def fixture():
@@ -16,6 +16,23 @@ def fixture():
 
 
 class ArchiveIntegrityTests(unittest.TestCase):
+    def test_archive_scan_rejects_synthetic_windows_profile_names(self):
+        samples = [
+            r'Log: C:\Users\synthetic-person\.codex\sample.log',
+            r'路径是C:\Users\synthetic-person\sample.log',
+            r'日志在c:/uSeRs/synthetic-person/sample.log',
+            r'路径是D:\\USERS\\synthetic-person\\sample.log',
+            r'路径是C:\u005cUsers\u005csynthetic-person\u005csample.log',
+        ]
+        for text in samples:
+            with self.subTest(sample=samples.index(text)):
+                with self.assertRaises(AssertionError) as caught:
+                    scan(text)
+                self.assertNotIn('synthetic-person', str(caught.exception))
+        scan(r'Log: C:\Users\[已脱敏用户名]\.codex\sample.log')
+        scan(r'Error: C:\Users\[已脱敏用户名].codex.sandbox')
+        scan(r'路径是C:\Users\[已脱敏用户名]\.codex\sample.log')
+
     def test_early_and_noncontiguous_backfills_with_empty_text(self):
         messages, increment, integrity = fixture()
         self.assertLess(messages[0]['time'], messages[1]['time'])

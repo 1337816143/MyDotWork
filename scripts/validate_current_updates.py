@@ -98,14 +98,22 @@ def latest_boundaries(vector, smart, wet, catalog, integrity):
     assert 'Linux / GCC' in w['environment'] and wet['projectId']=='project-18' and wet['taskId']=='task-9'
     assert catalog['statusSnapshot']['items'][8]['projectIds']==['project-18']
     assert integrity['baselineMessageCount']==507 and integrity['incrementMessageCount']==60 and integrity['approvedMessageCount']==567
-    assert integrity['baselineMessagesSha256']=='fb40dad941642796939b1848439fe0317128f0a17efecabc818f4055f0de1598'
-    assert integrity['approvedMessagesSha256']=='96529d5864ba34d2c45f166058fd3661f05eaeed010c5f5f22709cde94bc2e06'
+    # 2026-10-08 privacy correction; historical 507 + 60 message counts stay fixed.
+    assert integrity['baselineMessagesSha256']=='3c9fa183e46935fc727d45e748bca712510e7b10139e23cae31fb31e9f898db6'
+    assert integrity['approvedMessagesSha256']=='3a41a4f29db97224c9f947ca9a47fb64f3b6a46b48e6a05cd043e213d87be8c2'
 
 def validate_latest_boundaries():
-    for path, digest in {'data/dot-chat.json':'12ae4cc0f3a04d18a7d59db0d3e4294cca314be3f9103da9f66de502d7d0eda0','data/chat-integrity.json':'e1de383d2f86231f638011cd658fe1cf1847836d1210fe4dd481f87e43fe02fa'}.items():
+    for path, digest in {'data/dot-chat.json':'c2529cf0b26eda4b33dc8ce37d60e462cdde8caababb3bc4cddff68a5d90223e','data/chat-integrity.json':'6b8a08c59a0bb7e25ba6f4aa1e8c72ed5c1a56d5859e4a4fae566ca16c0ec0bd'}.items():
         assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,'Reviewed archive ID set/body/coverage changed'
     values=tuple(json.loads((ROOT/path).read_bytes()) for path in ['dist/projects/vector-0.11.1-2026-10-04.json','dist/projects/smartdrop-r1-2026-10-04.json','dist/projects/wetype-2026-10-04.json','dist/dashboard/catalog.json','data/chat-integrity.json'])
     latest_boundaries(*values)
+    correction=json.loads((ROOT/'data/dot-chat.json').read_bytes())['coverage']['privacyCorrections'][-1]
+    assert correction['addedMessageCount']==0 and correction['messageCount']==3 and correction['occurrenceCount']==5
+    assert correction['appliedAt']=='2026-10-08T03:30:00Z'
+    assert correction['previousMessagesSha256']=='96529d5864ba34d2c45f166058fd3661f05eaeed010c5f5f22709cde94bc2e06'
+    assert correction['previousBaselineMessagesSha256']=='fb40dad941642796939b1848439fe0317128f0a17efecabc818f4055f0de1598'
+    assert correction['messagesSha256']==values[-1]['approvedMessagesSha256']
+    assert correction['baselineMessagesSha256']==values[-1]['baselineMessagesSha256']
     mutations=[
         lambda v,s,w,c,i:v['validation'].update(recording='像素字节精确相等'),
         lambda v,s,w,c,i:v['validation'].update(runner='Windows x64'),

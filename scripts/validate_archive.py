@@ -11,6 +11,7 @@ from build_research import RESEARCH_ARTIFACTS
 from build_dashboard import DASHBOARD_ARTIFACTS
 from build_publications import PUBLICATION_ARTIFACTS
 from build_creator import CREATOR_ARTIFACTS
+from public_output import assert_no_windows_user_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 PATTERNS = [
@@ -23,6 +24,10 @@ PATTERNS = [
 ]
 
 def scan(text):
+    try:
+        assert_no_windows_user_paths(text)
+    except ValueError as error:
+        raise AssertionError(str(error)) from None
     for pattern in PATTERNS:
         assert not re.search(pattern, text), 'Secret-pattern check failed (value suppressed)'
     for raw in re.findall(r'https?://[^\s<>"\)\]]+', text):

@@ -3,7 +3,7 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
-from public_output import assert_output_tree, install_output
+from public_output import assert_output_tree, install_output, assert_no_windows_user_paths
 
 
 class PublicOutputTests(unittest.TestCase):
@@ -90,6 +90,70 @@ class PublicOutputTests(unittest.TestCase):
             with self.assertRaises(OSError):
                 install_output(staged, self.target, self.files)
         self.assertEqual((self.target / 'index.html').read_text(), 'old public output')
+
+    def test_synthetic_windows_profiles_are_rejected_without_echoing(self):
+        samples = [
+            r'C:\Users\synthetic-person\logs\sample.log',
+            r'C:\Users\synthetic-person.codex.sandbox',
+            r'c:/USERS/synthetic-person/AppData/example',
+            r'D:\\Users\\synthetic-person\\example',
+            r'file:///C:/Users/synthetic-person/example',
+            r'C%3A%5CUsers%5Csynthetic-person%5Cexample',
+            r'C&#58;&#92;Users&#92;synthetic-person&#92;example',
+            r'C:\u005cUsers\u005csynthetic-person\u005cexample',
+            r'路径是C:\Users\synthetic-person\sample.log',
+            r'日志在c:/uSeRs/synthetic-person/sample.log',
+            r'路径是D:\\USERS\\synthetic-person\\sample.log',
+            r'labelC:\Users\synthetic-person\sample.log',
+            r'路径是C:\u005cUsers\u005csynthetic-person\u005csample.log',
+            r'路径是c%3a%5cusers%5csynthetic-person%5csample.log',
+            r'路径是c&#58;&#92;users&#92;synthetic-person&#92;sample.log',
+        ]
+        for text in samples:
+            with self.subTest(sample=samples.index(text)):
+                with self.assertRaises(ValueError) as caught:
+                    assert_no_windows_user_paths(text)
+                self.assertNotIn('synthetic-person', str(caught.exception))
+                self.assertNotIn(text, str(caught.exception))
+
+    def test_explicit_marker_preserves_normal_and_malformed_path_suffixes(self):
+        samples = [
+            r'C:\Users\[已脱敏用户名]',
+            r'C:\Users\[已脱敏用户名]\.codex\.sandbox\sample.log',
+            r'C:\Users\[已脱敏用户名].codex.sandbox',
+            r'C:\\Users\\[已脱敏用户名]\\AppData\\example',
+            r'路径是C:\Users\[已脱敏用户名]\.codex\sample.log',
+            r'日志在c:/uSeRs/[已脱敏用户名]/sample.log',
+            r'路径是D:\\USERS\\[已脱敏用户名]\\sample.log',
+            'No profile path is present.',
+        ]
+        for text in samples:
+            original = text
+            assert_no_windows_user_paths(text)
+            self.assertEqual(text, original)
+        with self.assertRaises(ValueError):
+            assert_no_windows_user_paths(r'C:\Users\[已脱敏用户名]synthetic-person\example')
+
+    def test_profile_leak_in_each_text_artifact_blocks_install(self):
+        for suffix in ('.html', '.json', '.js', '.mjs', '.css', '.txt', '.md', '.csv', '.svg'):
+            with self.subTest(suffix=suffix):
+                staged = self.root / ('staged-' + suffix[1:])
+                staged.mkdir()
+                name = 'payload' + suffix
+                (staged / 'index.html').write_text('new public output')
+                (staged / name).write_text(r'路径是C:\Users\synthetic-person\example')
+                with self.assertRaises(ValueError):
+                    install_output(staged, self.target, [name, 'index.html'])
+                self.assertEqual((self.target / 'index.html').read_text(), 'old public output')
+                self.assertTrue(staged.exists())
+
+    def test_prior_output_can_be_replaced_by_reviewed_redacted_output(self):
+        # The previous output may be exactly what the repair is removing.
+        (self.target / 'index.html').write_text(r'C:\Users\synthetic-person\example')
+        staged = self.stage()
+        (staged / 'index.html').write_text(r'C:\Users\[已脱敏用户名]\example')
+        install_output(staged, self.target, self.files)
+        assert_output_tree(self.target, self.files, complete=True)
 
 
 if __name__ == '__main__':
