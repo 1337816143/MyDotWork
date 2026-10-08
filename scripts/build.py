@@ -34,7 +34,11 @@ def build():
             'sourceCommit': os.environ.get('GITHUB_SHA', 'local'),
             'reportSha256': hashlib.sha256(payload).hexdigest(),
             'reportPath': 'index.html',
-            'researchDate': '2026-10-01',
+            # Latest bounded research observation; individual offer dates remain authoritative.
+            'researchDate': '2026-10-08',
+            'baselineResearchDate': '2026-10-01',
+            'researchVersion': '1.8.12',
+            # Historical dates of research/2026-10-02.html and its round2 supplement.
             'supplementResearchDate': '2026-10-02',
             'creator': {'schema': 'mydotwork.creator.v1', 'stage': 'stage1-candidate', 'dataMode': 'synthetic', 'privateOriginEnabled': False},
         }
