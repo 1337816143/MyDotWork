@@ -1,7 +1,11 @@
 """Regressions for exact baseline preservation with non-positional archive increments."""
 import copy
+import json
+from pathlib import Path
+import tempfile
 import unittest
-from validate_archive import archive_messages_sha256, validate_archive_integrity, validate_no_platform_control_cards, scan
+from unittest.mock import patch
+from validate_archive import archive_messages_sha256, validate_archive_integrity, validate_no_platform_control_cards, scan, scan_archive_message
 
 
 def fixture():
@@ -16,6 +20,58 @@ def fixture():
 
 
 class ArchiveIntegrityTests(unittest.TestCase):
+    def test_archive_account_emails_require_redaction_without_echoing(self):
+        samples = [
+            '账号：synthetic.account@example.invalid，密码：[已移除密码]',
+            '登录邮箱SYNTHETIC.Account+tag@EXAMPLE.INVALID',
+            'Login: synthetic-account@accounts.example.invalid',
+            'mailto:synthetic.account@example.invalid',
+            '账号是synthetic.account%40example.invalid',
+            '账号是synthetic.account&#64;example.invalid',
+            r'账号是synthetic.account\u0040example.invalid',
+        ]
+        for text in samples:
+            with self.subTest(sample=samples.index(text)):
+                with self.assertRaises(AssertionError) as caught:
+                    scan_archive_message(text)
+                self.assertNotIn('synthetic', str(caught.exception).lower())
+                self.assertNotIn('example.invalid', str(caught.exception))
+        scan_archive_message('账号：[已移除账号邮箱]，密码：[已移除密码]')
+        # Research public-contact scanning is intentionally outside this gate.
+        scan('商家公开客服：support@example.invalid')
+
+    def test_archive_build_rejects_personal_identifiers_before_writing(self):
+        from build_archive import build_archive
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            message = {'id': 'Sentinel_fixture', 'role': 'user', 'time': '2026-10-08T00:00:00Z', 'text': '账号synthetic.account@example.invalid，密码[已移除密码]'}
+            (root / 'data/projects.json').write_text('{}')
+            out = root / 'dist'
+            for text in ('账号synthetic.account@example.invalid，密码[已移除密码]', '本机LAPTOP-SYNTHETIC01'):
+                message['text'] = text
+                (root / 'data/dot-chat.json').write_text(json.dumps({'messages': [message], 'coverage': {}}))
+                with patch('build_archive.ROOT', root):
+                    with self.assertRaises(ValueError) as caught:
+                        build_archive(out, 'test')
+                self.assertNotIn('example.invalid', str(caught.exception))
+                self.assertNotIn('SYNTHETIC01', str(caught.exception))
+                self.assertFalse(out.exists())
+
+    def test_archive_device_names_require_redaction_without_echoing(self):
+        samples = [
+            'Windows 电脑为 LAPTOP-SYNTHETIC01',
+            '本机Desktop-SYNTHETIC02',
+            r'本机LAPTOP\u002dSYNTHETIC01',
+            '本机LAPTOP%2dSYNTHETIC01',
+        ]
+        for text in samples:
+            with self.subTest(sample=samples.index(text)):
+                with self.assertRaises(AssertionError) as caught:
+                    scan_archive_message(text)
+                self.assertNotIn('synthetic', str(caught.exception).lower())
+        scan_archive_message('Windows 电脑为[已移除本机设备标识]；本地诊断127.0.0.1:8000，Get-Date成功。')
+
     def test_archive_scan_rejects_synthetic_windows_profile_names(self):
         samples = [
             r'Log: C:\Users\synthetic-person\.codex\sample.log',

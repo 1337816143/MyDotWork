@@ -2,6 +2,7 @@
 import json
 from html import escape
 from pathlib import Path
+from public_output import assert_no_archive_email_addresses, assert_no_archive_device_names
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ['chat/index.html', 'chat/messages.json', 'chat/coverage.json', 'projects/index.html', 'projects/status.json']
@@ -22,6 +23,8 @@ def build_archive(out, version):
         assert set(m) == {'id','role','time','text'}
         assert m['role'] in ['user','assistant'] and isinstance(m['text'], str)
         assert m['id'] and m['time']
+        assert_no_archive_email_addresses(m['text'])
+        assert_no_archive_device_names(m['text'])
     assert messages == sorted(messages, key=lambda m: m['time'])
     coverage = {**coverage, 'messageCount': len(messages), 'userCount': sum(m['role'] == 'user' for m in messages), 'assistantCount': sum(m['role'] == 'assistant' for m in messages), 'textCharacters': sum(len(m['text']) for m in messages), 'contentVersion': version}
     chat = {**chat, 'coverage': coverage}

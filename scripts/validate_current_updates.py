@@ -99,19 +99,22 @@ def latest_boundaries(vector, smart, wet, catalog, integrity):
     assert catalog['statusSnapshot']['items'][8]['projectIds']==['project-18']
     assert integrity['baselineMessageCount']==507 and integrity['incrementMessageCount']==60 and integrity['approvedMessageCount']==567
     # 2026-10-08 privacy correction; historical 507 + 60 message counts stay fixed.
-    assert integrity['baselineMessagesSha256']=='3c9fa183e46935fc727d45e748bca712510e7b10139e23cae31fb31e9f898db6'
-    assert integrity['approvedMessagesSha256']=='3a41a4f29db97224c9f947ca9a47fb64f3b6a46b48e6a05cd043e213d87be8c2'
+    assert integrity['baselineMessagesSha256']=='fe2627290cb82e0539680f543361c49b8b5cded4206f49b3dfe178fca491c0cf'
+    assert integrity['approvedMessagesSha256']=='f34195211ccd4988583b3f54fd19a97872f5e910c5d2feac60264f09da3f193a'
 
 def validate_latest_boundaries():
-    for path, digest in {'data/dot-chat.json':'c2529cf0b26eda4b33dc8ce37d60e462cdde8caababb3bc4cddff68a5d90223e','data/chat-integrity.json':'6b8a08c59a0bb7e25ba6f4aa1e8c72ed5c1a56d5859e4a4fae566ca16c0ec0bd'}.items():
+    for path, digest in {'data/dot-chat.json':'7fb4ad093fcca329c2f08f80a6d4a8cb8b765559bfac0543584da4e015486a50','data/chat-integrity.json':'27e85bba44c7373f5eb6dabc86c6eed0b1be4d48c7da078b20386fa591035c61'}.items():
         assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,'Reviewed archive ID set/body/coverage changed'
     values=tuple(json.loads((ROOT/path).read_bytes()) for path in ['dist/projects/vector-0.11.1-2026-10-04.json','dist/projects/smartdrop-r1-2026-10-04.json','dist/projects/wetype-2026-10-04.json','dist/dashboard/catalog.json','data/chat-integrity.json'])
     latest_boundaries(*values)
     correction=json.loads((ROOT/'data/dot-chat.json').read_bytes())['coverage']['privacyCorrections'][-1]
-    assert correction['addedMessageCount']==0 and correction['messageCount']==3 and correction['occurrenceCount']==5
-    assert correction['appliedAt']=='2026-10-08T03:30:00Z'
-    assert correction['previousMessagesSha256']=='96529d5864ba34d2c45f166058fd3661f05eaeed010c5f5f22709cde94bc2e06'
-    assert correction['previousBaselineMessagesSha256']=='fb40dad941642796939b1848439fe0317128f0a17efecabc818f4055f0de1598'
+    assert correction['addedMessageCount']==0 and correction['messageCount']==2 and correction['occurrenceCount']==2
+    assert correction['appliedAt']=='2026-10-08T04:00:49Z'
+    assert correction['baselineSourceCommit']=='b9a8f7613231c61358f80519610893e131a3ba48'
+    assert correction['cumulativeChangedMessageCount']==4 and correction['cumulativeRedactedIdentifierCount']==7
+    assert correction['cumulativeAddedMessageCount']==0
+    assert correction['previousMessagesSha256']=='3a41a4f29db97224c9f947ca9a47fb64f3b6a46b48e6a05cd043e213d87be8c2'
+    assert correction['previousBaselineMessagesSha256']=='3c9fa183e46935fc727d45e748bca712510e7b10139e23cae31fb31e9f898db6'
     assert correction['messagesSha256']==values[-1]['approvedMessagesSha256']
     assert correction['baselineMessagesSha256']==values[-1]['baselineMessagesSha256']
     mutations=[

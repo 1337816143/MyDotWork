@@ -11,21 +11,41 @@ WINDOWS_USER_MARKER = '[已脱敏用户名]'
 # word boundary would miss those cases because both the label and drive letter
 # are word characters. The explicit drive/path syntax is sufficient here.
 WINDOWS_USER_PREFIX = re.compile(r'(?i)[a-z]:[\\/]+users[\\/]+')
+ARCHIVE_EMAIL_ADDRESS = re.compile(r"(?i)[\w.!#$%&'*+/=?^`{|}~+-]+@(?:[\w-]+\.)+[\w-]{2,}")
+ARCHIVE_WINDOWS_DEVICE = re.compile(r'(?i)(?:LAPTOP|DESKTOP)-[a-z0-9]{4,}')
 TEXT_SUFFIXES = {'.html', '.json', '.js', '.mjs', '.css', '.txt', '.md', '.csv', '.svg'}
 
 
-def assert_no_windows_user_paths(text):
-    """Reject personal profile names; retain explicit markers and error suffixes.
-
-    Decode common HTML, URL, and JSON-ASCII escapes for output inspection only.
-    This check never rewrites the source or prints a matched name/path.
-    """
+def decoded_scan_text(text):
+    """Decode common output escapes for inspection; never rewrite the source."""
     for _ in range(3):
         decoded = unescape(unquote(text))
         decoded = re.sub(r'\\u00([0-9a-fA-F]{2})', lambda match: chr(int(match[1], 16)), decoded)
         if decoded == text:
             break
         text = decoded
+    return text
+
+
+def assert_no_archive_email_addresses(text):
+    """Chat bodies must be pre-redacted; intact email addresses require review.
+
+    Apply only to archive message text, not research or public merchant contact
+    information. Never print a matched account identifier into an error/log.
+    """
+    if ARCHIVE_EMAIL_ADDRESS.search(decoded_scan_text(text)):
+        raise ValueError('Email address in public archive message requires redaction review (value suppressed)')
+
+
+def assert_no_archive_device_names(text):
+    """Reject Windows machine labels in chat; keep ordinary diagnostic values."""
+    if ARCHIVE_WINDOWS_DEVICE.search(decoded_scan_text(text)):
+        raise ValueError('Windows device identifier in public archive message requires redaction review (value suppressed)')
+
+
+def assert_no_windows_user_paths(text):
+    """Reject profile names; retain explicit markers and malformed error suffixes."""
+    text = decoded_scan_text(text)
     for match in WINDOWS_USER_PREFIX.finditer(text):
         tail = text[match.end():]
         if not tail.startswith(WINDOWS_USER_MARKER):

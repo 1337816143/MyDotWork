@@ -11,7 +11,7 @@ from build_research import RESEARCH_ARTIFACTS
 from build_dashboard import DASHBOARD_ARTIFACTS
 from build_publications import PUBLICATION_ARTIFACTS
 from build_creator import CREATOR_ARTIFACTS
-from public_output import assert_no_windows_user_paths
+from public_output import assert_no_windows_user_paths, assert_no_archive_email_addresses, assert_no_archive_device_names
 
 ROOT = Path(__file__).resolve().parents[1]
 PATTERNS = [
@@ -35,6 +35,16 @@ def scan(text):
         keys = {k.lower() for k in parse_qs(url.query)}
         assert not keys.intersection({'sig','signature','token','access_token','x-amz-signature','x-goog-signature','api_key','password'}), 'Signed or credential URL (value suppressed)'
         assert not url.username and not url.password, 'URL credentials (value suppressed)'
+
+
+def scan_archive_message(text):
+    scan(text)
+    try:
+        assert_no_archive_email_addresses(text)
+        assert_no_archive_device_names(text)
+    except ValueError as error:
+        raise AssertionError(str(error)) from None
+
 
 class TextAudit(HTMLParser):
     def __init__(self, allow_png_previews=False):
@@ -134,7 +144,7 @@ def validate():
     assert max(m['time'] for m in chat['messages'])==chat['coverage']['end']
     projects=json.loads((ROOT/'dist/projects/status.json').read_text())
     assert projects==json.loads((ROOT/'data/projects.json').read_text())
-    for message in chat['messages']:scan(message['text'])
+    for message in chat['messages']:scan_archive_message(message['text'])
     scan(json.dumps(projects,ensure_ascii=False))
     scan((ROOT/'data/research-2026-10-02.json').read_text())
     newer=(ROOT/'data/research-2026-10-02-round2.json').read_text()
