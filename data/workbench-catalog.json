@@ -320,6 +320,28 @@
       "summary": "仅Linux/GCC合成测试，Windows真实验证未完成；生产适配器不可用。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "vpn-report",
+      "title": "VPN不限时与低价研究：22家入口、费用和可靠性边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/vpn/index.html",
+      "updatedAt": "2026-10-29T06:40:00Z",
+      "summary": "22家低价与不限时VPN研究：逐项网站、真实付款缺口、闲置清号、叠加退款及大陆连接证据；保留勘误，不把营销或短测当全天稳定保证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "vpn-evidence",
+      "title": "VPN研究 · 公开证据与网站目录",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/vpn/evidence.json",
+      "updatedAt": "2026-10-29T06:40:00Z",
+      "summary": "22项公开入口、来源日期、费用与有效期边界；商家声明和已验证事实分开，不是实时连接测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

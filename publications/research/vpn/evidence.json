@@ -1,0 +1,750 @@
+{
+  "schemaVersion": 1,
+  "version": "v6",
+  "researchCutoff": "2026-10-29T06:40:00Z",
+  "title": "VPN不限时与低价研究：22家入口、费用和可靠性边界",
+  "method": "公开资料只读复核；没有注册、登录、购买、安装或付费测速。官网身份、商家声明、独立测量分开；未核全费不是零。",
+  "providers": [
+    {
+      "name": "魔戒",
+      "website": "https://xn--xnun88j.com/",
+      "websiteIdentityStatus": "official_channel_explicit_link",
+      "identityEvidence": [
+        "https://t.me/s/The_Lord_Rings"
+      ],
+      "announcementUrls": [
+        "https://t.me/The_Lord_Rings/290",
+        "https://t.me/The_Lord_Rings/293",
+        "https://t.me/The_Lord_Rings/297"
+      ],
+      "thirdPartyReviewUrls": [
+        "https://linux.do/t/topic/2457252?tl=en"
+      ],
+      "note": "官方频道头部直接给出魔戒.com。19.9元130GB等按量不限时为经营方公开价，未结算全费；293多个订阅并列取代290旧同套餐覆盖规则。末尾恢复仍建议更新订阅，不保证随时可连。购买入口未完成核验；不作当前可购或可连证明。",
+      "fetchStatus": "channel_read; entrance_click_prior_block_not_retried",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "价格2026-05-01生效；293/297本次未显示完整发布日期",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://xn--xnun88j.com/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-1",
+      "publicPrice": "CNY 19.9 / 130GB；52 / 420GB；85 / 750GB；179 / 1660GB；330 / 3600GB；888 / 10TB",
+      "expiryAndInactivity": "商家称按量不限时；闲置清号、激活规则未知",
+      "stacking": "新旧订阅并列；不等于余额合并；已替代旧同套餐覆盖规则",
+      "refund": "未知",
+      "ranking": "可考虑小额条件候选",
+      "mainlandAndGptEvidence": "官方恢复公告仍持续观察、建议更新订阅。2026-06-23原帖 GeeSeeker 称新加坡及 Codex 可用；所在地/运营商/套餐/连续时长未交代，不能拼接另一位楼主的两月 VPS 经历。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://t.me/s/The_Lord_Rings",
+        "https://t.me/The_Lord_Rings/290",
+        "https://t.me/The_Lord_Rings/293",
+        "https://t.me/The_Lord_Rings/297",
+        "https://linux.do/t/topic/2457252?tl=en"
+      ],
+      "websiteIdentityLabel": "官方公告频道直接列出入口"
+    },
+    {
+      "name": "八戒",
+      "website": "https://bajie.la/",
+      "websiteIdentityStatus": "related_operator_channel_explicit_link",
+      "identityEvidence": [
+        "https://t.me/s/The_Lord_Rings",
+        "https://t.me/s/bajievs",
+        "https://bajie.la/login"
+      ],
+      "announcementUrls": [
+        "https://t.me/s/bajievs",
+        "https://t.me/bajievs/67",
+        "https://t.me/bajievs/68"
+      ],
+      "thirdPartyReviewUrls": [],
+      "note": "魔戒官方频道直接标明八戒官网bajie.la；本轮打开进入八戒登录页，未登录。bajie.one仅旧频道兔年促销链接，不当当前首选。34.8元100GB经营方历史调价仍可读，2026/6/23活动已过期；与魔戒关联不等于独立冗余。",
+      "fetchStatus": "public_login_shell_only",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "618活动截止2026-06-23；34.8调价消息完整发布日期未显示",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://bajie.la/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-2",
+      "publicPrice": "CNY 34.8 / 100GB；调价完整发布日期未显示，当前结算未核",
+      "expiryAndInactivity": "商家称不限时；闲置和激活规则未知",
+      "stacking": "历史同套餐覆盖风险；当前完整规则未核",
+      "refund": "未知",
+      "ranking": "不首推",
+      "mainlandAndGptEvidence": "与魔戒有运营关联，不能作已证独立冗余；历史质量下降及恢复并存。ChatGPT 只有历史宣传。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://t.me/s/The_Lord_Rings",
+        "https://t.me/s/bajievs",
+        "https://bajie.la/login",
+        "https://t.me/bajievs/67",
+        "https://t.me/bajievs/68"
+      ],
+      "websiteIdentityLabel": "关联运营方官方频道直接列出入口，并核到品牌登录页"
+    },
+    {
+      "name": "自由猫",
+      "website": "https://xn--z7x16bf6t.com/",
+      "websiteIdentityStatus": "official_channel_explicit_link",
+      "identityEvidence": [
+        "https://t.me/s/FreeCatCloud",
+        "https://ziyoumao.cloud/docs/"
+      ],
+      "announcementUrls": [
+        "https://t.me/s/FreeCatCloud",
+        "https://t.me/FreeCatCloud/403"
+      ],
+      "thirdPartyReviewUrls": [
+        "https://github.com/limbopro/Paolujichang/issues/197"
+      ],
+      "note": "官方频道列自由猫.com，并列ziyoumao.cloud；docs可读。65元500GB不限时等仍属商家声明。保留Windows关闭防火墙/安全防护红旗；Linux/软路由本轮docs明确不支持，不能宣传全平台。此为风险资料，不是安装操作建议。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "调价2026-08-15生效；docs更新时间未显示",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://xn--z7x16bf6t.com/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-3",
+      "publicPrice": "CNY 65 / 500GB；118 / 1000GB；439 / 5000GB",
+      "expiryAndInactivity": "商家称不限时；闲置清号未知",
+      "stacking": "不限时互购可叠加；改买月付会覆盖",
+      "refund": "未知",
+      "ranking": "不首推：安全红旗",
+      "mainlandAndGptEvidence": "官方 Windows 教程要求关闭防火墙并涉及安全防护降级，不执行也不建议照做。Linux/软路由官方明确不支持。原始讨论既有半天失效/超时，也有2026-10-14/21仍能用；GPT 解锁只是商家声明。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://t.me/s/FreeCatCloud",
+        "https://ziyoumao.cloud/docs/",
+        "https://t.me/FreeCatCloud/403",
+        "https://github.com/limbopro/Paolujichang/issues/197"
+      ],
+      "websiteIdentityLabel": "官方公告频道直接列出入口"
+    },
+    {
+      "name": "SS-ID",
+      "website": "https://ss-id.com/#/",
+      "websiteIdentityStatus": "prior_browser_redirect_chain_verified",
+      "identityEvidence": [
+        "https://ss-id.com/#/",
+        "https://tos.ssidcloud.com/terms?lang=zh"
+      ],
+      "announcementUrls": [
+        "https://tos.ssidcloud.com/terms?lang=zh"
+      ],
+      "thirdPartyReviewUrls": [
+        "https://jcnotes.com/airports/ssid/",
+        "https://jcnotes.com/airports/ssid/20260814_203602/",
+        "https://jcnotes.com/changelog/",
+        "https://jcnotes.com/airports/ssid/20260815_152047/"
+      ],
+      "note": "此前核查云浏览器由已知cdn1.ssidcloud.com跳转核实20元月付100GB。本轮核验web解析首页空白，非无法连节点证据。ss-id.app不作为官网。8/14报告异常不得归因为全节点故障；未核当前在售不限时产品。",
+      "fetchStatus": "web_empty_shell; prior_rendered_evidence_retained",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "条款2026-10-27生效；当前套餐同日先前云浏览器已核；8/14、8/15、8/31为历史测试",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://ss-id.com/#/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-4",
+      "publicPrice": "CNY 20 / 月100GB；30/200GB；45/300GB；72/500GB；85/600GB",
+      "expiryAndInactivity": "当前公开仅核到月付；一般条款不限时不证明在售",
+      "stacking": "账单周期重置；当前不限时包未核",
+      "refund": "本地网络不兼容等通常不退款；可能支付手续费",
+      "ranking": "不首推：非不限时",
+      "mainlandAndGptEvidence": "2026-08-31湖南联通短测15/15、香港30–41ms，旧端点且直连基准失败，无网页TTFB；不是长期可用率。8/14采样异常不证明供应商全断。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://ss-id.com/#/",
+        "https://tos.ssidcloud.com/terms?lang=zh",
+        "https://jcnotes.com/airports/ssid/",
+        "https://jcnotes.com/airports/ssid/20260814_203602/",
+        "https://jcnotes.com/changelog/",
+        "https://jcnotes.com/airports/ssid/20260815_152047/"
+      ],
+      "websiteIdentityLabel": "此前公开页面实际跳转链已核，当前解析仅页面外壳"
+    },
+    {
+      "name": "TAG",
+      "website": "https://tagss.pro/",
+      "websiteIdentityStatus": "prior_rendered_official_site",
+      "identityEvidence": [
+        "https://tagss.pro/"
+      ],
+      "announcementUrls": [],
+      "thirdPartyReviewUrls": [
+        "https://www.shuijingwanwq.com/2026/09/17/27599/"
+      ],
+      "note": "本轮只取得TAG Internet登录/注册壳与JS要求；此前核查浏览器公开套餐证据保留。162元年包200GB仅9/17历史第三方记录，不是不限时、不代表当前可购；不为核价登录。",
+      "fetchStatus": "public_js_shell_only",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "第三方年包记录2026-09-17；官网本轮未展开Special",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://tagss.pro/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-5",
+      "publicPrice": "历史 CNY 162 / 年、全年200GB（2026-09-17第三方）；现价未核。官网先前大套餐 USD 28.46/季、17.54/月、33.69/月，非该年包",
+      "expiryAndInactivity": "一年不是不限时；Special当前须登录未读",
+      "stacking": "未知",
+      "refund": "未知",
+      "ranking": "不首推：周期与证据不匹配",
+      "mainlandAndGptEvidence": "历史推广关系评测称系统代理可用而 TUN 不可用；不能代替最新长期业务测试。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://tagss.pro/",
+        "https://www.shuijingwanwq.com/2026/09/17/27599/"
+      ],
+      "websiteIdentityLabel": "此前已读取品牌官方公开页面；本轮仅页面外壳"
+    },
+    {
+      "name": "青云梯",
+      "website": null,
+      "websiteIdentityStatus": "current_official_root_unverified",
+      "identityEvidence": [
+        "https://xinghewall.cc/posts/qingyunti-review/",
+        "https://t.me/s/v4speed",
+        "https://qingyunti.org/"
+      ],
+      "announcementUrls": [],
+      "thirdPartyReviewUrls": [
+        "https://xinghewall.cc/posts/qingyunti-review/",
+        "https://linux.do/t/topic/1713171"
+      ],
+      "note": "没有已闭环当前官方根域。目录应写官网未核实，提供带身份标注的公开研究来源，不将SEO站作为官网。qingyunti.org仅品牌自称页面；旧250订阅频道v4speed指qingyunti.cc并转发v4speedc，无法证明当前入口。qingyunti.vip称25元200GB永久，与原周期套餐冲突，身份未核，不新增为可购方案。",
+      "fetchStatus": "qingyunti.cc_unavailable; t.me/s/v4speedc_unavailable; no_bypass",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "既有测试2026-10-13；负面原帖2026-03-09至12；v4speed含2024/2025旧公告",
+      "evidenceStrength": "弱：当前官方根域未闭环；仅明确标注的第三方评测与历史频道可用",
+      "displayLink": "https://xinghewall.cc/posts/qingyunti-review/",
+      "displayLinkLabel": "研究来源（第三方；官网尚未核实）",
+      "id": "provider-6",
+      "publicPrice": "第三方 CNY 96/年每月60GB、25/月150GB；当前官网结算未核",
+      "expiryAndInactivity": "周期套餐；另有未核站称永久包，不纳入可购价",
+      "stacking": "未知",
+      "refund": "未知",
+      "ranking": "待核：官网身份未闭环",
+      "mainlandAndGptEvidence": "2026-10-13移动2Gbps各地区择优测量：香港TLS RTT50ms；2026-03-09至12原帖有联通超时/移动高延迟。样本不同，不能互相抵消或推断今天全故障。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://xinghewall.cc/posts/qingyunti-review/",
+        "https://t.me/s/v4speed",
+        "https://qingyunti.org/",
+        "https://linux.do/t/topic/1713171"
+      ],
+      "websiteIdentityLabel": "当前官方根域身份未闭环，链接仅为标注的第三方研究来源"
+    },
+    {
+      "name": "WgetCloud",
+      "website": "https://wgetcloud.org/",
+      "websiteIdentityStatus": "official_help_explicit_link",
+      "identityEvidence": [
+        "https://help-info.wgetcloud.org/zh/"
+      ],
+      "announcementUrls": [
+        "https://help-info.wgetcloud.org/zh/"
+      ],
+      "thirdPartyReviewUrls": [],
+      "note": "官方帮助首页跳转至网站直接指wgetcloud.org。官网本轮web获取返回402，不能当VPN故障或收费封锁事实。既有官方规则：仅季/年付；360天流量包需有效基础套餐，不是独立不限时备用。",
+      "fetchStatus": "homepage_fetch_http402; help_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "服务区分说明2026-10-25；流量包文更新时间未显示",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://wgetcloud.org/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-7",
+      "publicPrice": "当前完整报价未知；官方只季/年付，无免费试用",
+      "expiryAndInactivity": "附加流量包360天且需生效基础套餐；非独立不限时包",
+      "stacking": "依赖基础套餐；排队套餐不算生效",
+      "refund": "本轮未核",
+      "ranking": "排除于不限时低门槛优先",
+      "mainlandAndGptEvidence": "官网抓取402仅抓取失败；官方停止不停机/竞速场，不等于整个服务中断。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://help-info.wgetcloud.org/zh/"
+      ],
+      "websiteIdentityLabel": "官方帮助站直接指向网站入口"
+    },
+    {
+      "name": "狗狗加速",
+      "website": "https://dg1.top/",
+      "websiteIdentityStatus": "existing_brand_pages_same_panel_link",
+      "identityEvidence": [
+        "https://dg1.top/pricing/",
+        "https://go.dg6.me/",
+        "https://dg1.top/tos/"
+      ],
+      "announcementUrls": [],
+      "thirdPartyReviewUrls": [],
+      "note": "dg1.top与go.dg6.me均为既有品牌页，均指userpanel.dginv.click面板。本轮重核15.8元160GB/月、20.8元200GB/月、39.8元500GB/月；3天每日1GB试用仅广告未领用。新增官方ToS付款概不退还、禁止多人共享/商业转售及未授权自动脚本；条款仅称发布起生效无日期。自称稳定不是实测。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "价格及ToS本轮2026-10-29实读；ToS具体发布/生效日未标",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://dg1.top/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-8",
+      "publicPrice": "CNY 15.8 / 月160GB；20.8 / 月200GB；39.8 / 月500GB",
+      "expiryAndInactivity": "周期套餐；非不限时",
+      "stacking": "周期重置；完整额外规则未知",
+      "refund": "本轮新核官方条款：付款后不退款",
+      "ranking": "不首推：周期且不退",
+      "mainlandAndGptEvidence": "3天每日1GB试用仅广告，未领取。ChatGPT及稳定性仅商家宣传。禁止多人共享、商业转售及未经授权自动脚本。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://dg1.top/pricing/",
+        "https://go.dg6.me/",
+        "https://dg1.top/tos/"
+      ],
+      "websiteIdentityLabel": "既有两处品牌页指向同一面板"
+    },
+    {
+      "name": "MITCE",
+      "website": "https://mitce.io/",
+      "websiteIdentityStatus": "official_homepage_links_status_and_terms",
+      "identityEvidence": [
+        "https://mitce.io/",
+        "https://mitce.io/pages/tos"
+      ],
+      "announcementUrls": [
+        "https://notify.mitce.net/"
+      ],
+      "thirdPartyReviewUrls": [],
+      "note": "主页直接指向notify.mitce.net；最新可读公告10/21恢复但仍优化，要求重新导入，10/18中断历史保留。2025/8 ChatGPT解锁不是当前独立证据。页面Service Normal与运行恢复限制并列，不只摘正常。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "最新公告2026-10-21；严重中断2026-10-18；ChatGPT解锁2025-08-04/05",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://mitce.io/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-9",
+      "publicPrice": "2026-10-27历史核价 USD 0.6/月100GB、1.2/月500GB、2/月1000GB、3/月无限；非本轮结算",
+      "expiryAndInactivity": "每月1日00:00重置；时区未充分核实",
+      "stacking": "月度重置",
+      "refund": "历史条款24小时内且用量<10%，仍由商家酌情",
+      "ranking": "不首推：周期/恢复边界",
+      "mainlandAndGptEvidence": "2026-10-18中断、10/21恢复但继续优化，要求重导入；首页正常状态不可删去恢复限制。2025-08 GPT 解锁宣传不是当前测试。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://mitce.io/",
+        "https://mitce.io/pages/tos",
+        "https://notify.mitce.net/"
+      ],
+      "websiteIdentityLabel": "官方首页关联公告与条款"
+    },
+    {
+      "name": "Windscribe",
+      "website": "https://windscribe.com/",
+      "websiteIdentityStatus": "official_domain_brand_and_policy_chain",
+      "identityEvidence": [
+        "https://windscribe.com/",
+        "https://windscribe.com/terms",
+        "https://windscribe.com/privacy"
+      ],
+      "announcementUrls": [
+        "https://windscribe.com/knowledge-base/articles/does-windscribe-work-in-china-and-other-restricted-countries"
+      ],
+      "thirdPartyReviewUrls": [
+        "https://testedinchina.com/vpn/windscribe-pro",
+        "https://testedinchina.com/changelog",
+        "https://www.top10vpn.com/best-vpn/china/"
+      ],
+      "note": "本轮首页可读；既有Pro/Build-a-Plan不同，不能把Pro测试套最低配置。周期方案非买量不限时；保留Android测试故障勘误，不把无效失败样本当服务商故障。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "本轮首页2026-10-29实读；价格2026-10-27历史核验；中国支持文2025-10-23",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://windscribe.com/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-10",
+      "publicPrice": "2026-10-27历史 Pro USD9/月或69/年；最低 Build-a-Plan USD3/月配置沿用10/22，不等同 Pro",
+      "expiryAndInactivity": "周期套餐；隐私政策有不活跃清理，固定期限未核",
+      "stacking": "套餐配置不同不能互套监测",
+      "refund": "历史首次用量<10GB；帮助7天与条款7工作日冲突保留；续费不退",
+      "ranking": "不首推：非买量不限时",
+      "mainlandAndGptEvidence": "Pro第三方浙江移动短时观测不能套最低配置。三次Android环境故障已撤为无效失败样本，不当供应商中断。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://windscribe.com/",
+        "https://windscribe.com/terms",
+        "https://windscribe.com/privacy",
+        "https://windscribe.com/knowledge-base/articles/does-windscribe-work-in-china-and-other-restricted-countries",
+        "https://testedinchina.com/vpn/windscribe-pro",
+        "https://testedinchina.com/changelog",
+        "https://www.top10vpn.com/best-vpn/china/"
+      ],
+      "websiteIdentityLabel": "品牌域名、官方政策及相关页面来源链"
+    },
+    {
+      "name": "Mullvad",
+      "website": "https://mullvad.net/en",
+      "websiteIdentityStatus": "official_domain_brand_and_policy_chain",
+      "identityEvidence": [
+        "https://mullvad.net/en",
+        "https://mullvad.net/en/pricing"
+      ],
+      "announcementUrls": [
+        "https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations"
+      ],
+      "thirdPartyReviewUrls": [
+        "https://www.top10vpn.com/best-vpn/china/"
+      ],
+      "note": "本轮首页5欧/月明确；非买量不限时。既有指定范围审计支持对应安全维度，不支持指定网络长会话、长期闲置启动或永远可连。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "本轮首页5欧2026-10-29实读；受限地区说明2026-04-22历史已读",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://mullvad.net/en",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-11",
+      "publicPrice": "EUR 5 / 月，价格含VAT；其他付款成本未结算",
+      "expiryAndInactivity": "周期套餐，非不限时",
+      "stacking": "按购买服务时间",
+      "refund": "历史14天、现金除外；支付细则待核",
+      "ranking": "不首推：计费不匹配",
+      "mainlandAndGptEvidence": "限定范围审计支持相应安全工程，不证明大陆长会话或长期闲置启动；官方承认受限地区连接限制。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://mullvad.net/en",
+        "https://mullvad.net/en/pricing",
+        "https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations",
+        "https://www.top10vpn.com/best-vpn/china/"
+      ],
+      "websiteIdentityLabel": "品牌域名、官方政策及相关页面来源链"
+    },
+    {
+      "name": "Proton VPN",
+      "website": "https://protonvpn.com/",
+      "websiteIdentityStatus": "official_brand_ecosystem_crosslinks",
+      "identityEvidence": [
+        "https://protonvpn.com/",
+        "https://proton.me/legal/terms"
+      ],
+      "announcementUrls": [
+        "https://protonvpn.com/support/does-protonvpn-work-in-china",
+        "https://proton.me/support/inactive-accounts"
+      ],
+      "thirdPartyReviewUrls": [
+        "https://www.top10vpn.com/best-vpn/china/"
+      ],
+      "note": "本轮主页可读并与proton.me生态互链。Free不是买断永久权；Plus周期付费与Free分开，旧优惠不自动续为当前报价。保留不活跃账号及中国可用性边界。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "本轮首页2026-10-29实读；价格2026-10-27历史核验",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://protonvpn.com/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-12",
+      "publicPrice": "Free免费档；2026-10-27历史 Plus USD83.76首期24个月、之后83.88/12个月；非当前优惠承诺",
+      "expiryAndInactivity": "Free不是永久购买权；不活跃账户政策与持续付费状态分开",
+      "stacking": "周期方案；非永久流量包",
+      "refund": "30天为价格页宣传，细则未完整核实",
+      "ranking": "不首推：非已证不限时应急",
+      "mainlandAndGptEvidence": "免费/付费、审计/大陆连接必须分开。官方中国说明不保证100%可用。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://protonvpn.com/",
+        "https://proton.me/legal/terms",
+        "https://protonvpn.com/support/does-protonvpn-work-in-china",
+        "https://proton.me/support/inactive-accounts",
+        "https://www.top10vpn.com/best-vpn/china/"
+      ],
+      "websiteIdentityLabel": "品牌官网与产品生态页面互相链接"
+    },
+    {
+      "name": "Astrill",
+      "website": "https://www.astrill.com/",
+      "websiteIdentityStatus": "official_domain_brand_and_policy_chain",
+      "identityEvidence": [
+        "https://www.astrill.com/",
+        "https://www.astrill.com/privacy-policy",
+        "https://www.astrill.com/terms-of-service"
+      ],
+      "announcementUrls": [],
+      "thirdPartyReviewUrls": [
+        "https://www.top10vpn.com/reviews/astrill/"
+      ],
+      "note": "本轮主页可读，StealthVPN宣传不是可用率实测。历史高价周期候选保留不提升为低价不限时推荐；平台差异与退款限制不能忽略。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "本轮首页2026-10-29实读；第三方2026-07-17历史记录",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://www.astrill.com/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-13",
+      "publicPrice": "历史 USD30/月，未本轮重新结算",
+      "expiryAndInactivity": "高价周期套餐；非不限时",
+      "stacking": "未知",
+      "refund": "历史条款不因ISP封锁或地区功能限制退款；未购买验证",
+      "ranking": "不首推：历史高价保留",
+      "mainlandAndGptEvidence": "第三方上海观察有商业关系；StealthVPN 营销、平台功能差异均不构成全天可用证明。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://www.astrill.com/",
+        "https://www.astrill.com/privacy-policy",
+        "https://www.astrill.com/terms-of-service",
+        "https://www.top10vpn.com/reviews/astrill/"
+      ],
+      "websiteIdentityLabel": "品牌域名、官方政策及相关页面来源链"
+    },
+    {
+      "name": "LetsVPN",
+      "website": "https://letsvpn.world/",
+      "websiteIdentityStatus": "prior_app_listing_identity_plus_official_blog",
+      "identityEvidence": [
+        "https://letsvpn.world/blog/h20kxb"
+      ],
+      "announcementUrls": [
+        "https://letsvpn.world/blog/h20kxb"
+      ],
+      "thirdPartyReviewUrls": [],
+      "note": "补入既有对话的排除项。官方2026/5/15信件本轮实读：不能继续向中国大陆用户提供VPN服务，不能提供稳定可靠大陆服务。不能以全球标准运营恢复掩盖该地域排除；不纳入当前购买候选。",
+      "fetchStatus": "public_read",
+      "checkedAt": "2026-10-29T06:39:00Z",
+      "sourceDates": "官方信件2026-05-15；本轮2026-10-29实读",
+      "evidenceStrength": "官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定",
+      "displayLink": "https://letsvpn.world/",
+      "displayLinkLabel": "官网／官方提供入口",
+      "id": "provider-14",
+      "publicPrice": "未核；已因大陆服务边界排除，不以价格挽回",
+      "expiryAndInactivity": "不适用本轮候选",
+      "stacking": "未核",
+      "refund": "未核",
+      "ranking": "排除：官方大陆服务限制",
+      "mainlandAndGptEvidence": "官方2026-05-15信件称不能继续向中国大陆用户提供稳定可靠VPN服务；全球运营恢复不能抹去该地域限制。",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前完整倍率未知；标称GB不等于已证实际可传输GB",
+      "sources": [
+        "https://letsvpn.world/blog/h20kxb"
+      ],
+      "websiteIdentityLabel": "此前应用商店身份资料与官方博客对应"
+    },
+    {
+      "id": "peiqian",
+      "name": "赔钱机场",
+      "website": "https://xn--mes358aby2apfg.com/",
+      "displayLink": "https://xn--mes358aby2apfg.com/",
+      "displayLinkLabel": "官方频道所列入口",
+      "websiteIdentityStatus": "官方频道简介直接指向网站；未完成网站反向链接复核",
+      "sources": [
+        "https://t.me/s/peiqianjichangpd",
+        "https://t.me/peiqianjichangpd/83",
+        "https://t.me/s/peiqianjichangpd?before=85"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "官方春节历史公告；完整发布日期未在本轮核得；第三方报价2026-09-03，不是官方现价",
+      "publicPrice": "当前官方售价未知；第三方2026-09-03声称18.90元/1000G，不作为官方现价",
+      "expiryAndInactivity": "历史官方明确不限时不可叠加，不同套餐相互覆盖；官方明确长期未使用可能删除账号且无法恢复；未公开具体期限",
+      "stacking": "历史官方明确不限时不可叠加，不同套餐相互覆盖",
+      "refund": "当前官方未知",
+      "ranking": "不首推：闲置清号风险",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。不满足已证明无保号的长期备用条件；非断言所有账户都会删除",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "当前官方未知",
+      "note": "https://dash.pqjc.site 公开抓取403；未绕过 法律主体及与其他供应商独立性未核实",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "官方频道简介直接指向网站；未完成网站反向链接复核"
+    },
+    {
+      "id": "aky",
+      "name": "AKY/艾可云",
+      "website": "https://d77inv.akjpa.com/",
+      "displayLink": "https://d77inv.akjpa.com/",
+      "displayLinkLabel": "官方频道所列入口",
+      "websiteIdentityStatus": "2026-06-18官方频道帖子直接指向动态官网",
+      "sources": [
+        "https://t.me/s/v2akygg",
+        "https://t.me/v2akygg/451"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "官方公告2026-06-18；当前售价与库存未核",
+      "publicPrice": "当前官方售价未知；已核单次流量额度55 / 120 / 280 / 650GB，不把未知价格写成零",
+      "expiryAndInactivity": "官方按量Timeless单次付；不叠加，必须用完再购；未知",
+      "stacking": "官方按量Timeless单次付；不叠加，必须用完再购",
+      "refund": "开通后不更换不退款",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。保留真实按量产品候选，但现价/现库存/闲置规则未核，不升级为低价首推",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "未知；按量产品归常规线路，不可等同专线",
+      "note": "动态官网公开抓取不可用，未注册或换路绕过 频道自称株式会社M.H.ソリューション所属HKYYT運営部；未独立验证法律主体",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "2026-06-18官方频道帖子直接指向动态官网"
+    },
+    {
+      "id": "poxiao",
+      "name": "云通→破晓",
+      "website": "https://xn--1jvw11b.com/",
+      "displayLink": "https://xn--1jvw11b.com/",
+      "displayLinkLabel": "官方频道所列入口",
+      "websiteIdentityStatus": "原云通官方频道迁移公告直接给破晓.com",
+      "sources": [
+        "https://t.me/s/yuntong_office2",
+        "https://t.me/yuntong_office2/85",
+        "https://t.me/yuntong_office2/90"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "迁移与国庆历史公告；完整发布日期未在本轮核得，当前库存未知",
+      "publicPrice": "当前官方售价未知",
+      "expiryAndInactivity": "原按量改套餐制；国庆公告不限时限量100个，现库存未知；迁移只近期活跃且余额>1元自动迁入；其他历史余额需工单解除限制",
+      "stacking": "原按量改套餐制；国庆公告不限时限量100个，现库存未知",
+      "refund": "未知",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。撤销把旧云通一元起充当现行不限时现货；破晓待核，不是独立于云通的备用商",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "未知",
+      "note": "旧yuntong.one公开抓取521，非证明节点全故障 与云通明确同一迁移链，不可重复算独立供应商",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "原云通官方频道迁移公告直接给破晓.com"
+    },
+    {
+      "id": "surfcat",
+      "name": "冲浪猫",
+      "website": "https://www.clmgw.com/",
+      "displayLink": "https://www.clmgw.com/",
+      "displayLinkLabel": "官网（网站与公告互链）",
+      "websiteIdentityStatus": "imclm.com导航→msclminfo；该频道反向列clmgw.com、imclm.com，身份闭环",
+      "sources": [
+        "https://imclm.com/",
+        "https://www.clmgw.com/",
+        "https://t.me/s/msclminfo?before=94",
+        "https://t.me/msclminfo/65"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "官方历史不限时公告2024-08-10；现行售价未核",
+      "publicPrice": "当前官方售价未知",
+      "expiryAndInactivity": "2024-08-10官方活动确有不限时流量包；现行公开首页只见月付起价，非现价证明；未知",
+      "stacking": "2024-08-10官方活动确有不限时流量包；现行公开首页只见月付起价，非现价证明",
+      "refund": "未知",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。有官方身份与历史不限时证据；价格和最新可售条件未核，待核而非推荐",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "2024-08公告部分节点有倍率，未来恢复1倍只是计划，当前未知",
+      "note": " 团队自称修猫团队；法律主体/其他品牌关系未核",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "imclm.com导航→msclminfo；该频道反向列clmgw.com、imclm.com，身份闭环"
+    },
+    {
+      "id": "unicorn",
+      "name": "独角兽",
+      "website": "https://91unicorn.cloud/",
+      "displayLink": "https://91unicorn.cloud/",
+      "displayLinkLabel": "官方频道所列入口",
+      "websiteIdentityStatus": "官方频道简介指向官网；网站抓取仅标题，反链未核",
+      "sources": [
+        "https://t.me/s/UnicornCloudChannel",
+        "https://t.me/UnicornCloudChannel/127",
+        "https://91unicorn.cloud/"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "官方最新可见规则公告2025-01；2024旧不叠加规则已被替代",
+      "publicPrice": "当前官方售价未知",
+      "expiryAndInactivity": "2025-01春节公告已允许不限时流量叠加，替代2024不叠加说明；未知",
+      "stacking": "2025-01春节公告已允许不限时流量叠加，替代2024不叠加说明",
+      "refund": "未知",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。保留规则明确的历史候选，最新公开公告停留2025-01，不应据旧价购买",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "历史官方IEPL及澳门3倍，CMI1倍；当前未复核",
+      "note": " 运营主体未核",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "官方频道简介指向官网；网站抓取仅标题，反链未核"
+    },
+    {
+      "id": "huabanmao",
+      "name": "滑板猫",
+      "website": null,
+      "displayLink": "https://www.huabanmao.com/",
+      "displayLinkLabel": "待核网站，勿据此付款/提交凭据",
+      "websiteIdentityStatus": "第三方原作者评测指向；官网仅标题，频道现为Contact页面，无当前官方身份闭环",
+      "sources": [
+        "https://baobaoap.com/archives/73.html",
+        "https://www.huabanmao.com/",
+        "https://t.me/huabanmao"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "第三方评测2025-04-09；官网当前条款未核",
+      "publicPrice": "当前官方售价未知；2025-04-09评测表99元600GB、189元1500GB、299元3000GB；同页总结却写1TB起，内部矛盾",
+      "expiryAndInactivity": "第三方称不限时，当前官方未核；未知",
+      "stacking": "第三方称不限时，当前官方未核",
+      "refund": "未知",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。不采用第三方99元1TB为可靠现价；需官方公开价与身份闭环",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "未知",
+      "note": " 不能仅同为猫类名称认定与自由猫/冲浪猫同商或异商",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "第三方原作者评测指向；官网仅标题，频道现为Contact页面，无当前官方身份闭环"
+    },
+    {
+      "id": "sammao",
+      "name": "三毛机场",
+      "website": null,
+      "displayLink": "https://3mao.bid/",
+      "displayLinkLabel": "待核网站，勿据此付款/提交凭据",
+      "websiteIdentityStatus": "这是待核销售/导航页，不标已确认官网；所有订购链接指向第三方c.jichangs.com",
+      "sources": [
+        "https://3mao.bid/",
+        "https://t.me/sanmaojichang"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "待核销售页完整发布日期未核；读取日期不能代替发布日期",
+      "publicPrice": "当前官方售价未知；待核页25.99元1000G一次性；不当官方报价",
+      "expiryAndInactivity": "页面声称用完为止，尚未核官方条款；未知",
+      "stacking": "页面声称用完为止，尚未核官方条款",
+      "refund": "未知",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。身份未闭环，暂不进入购买推荐",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "未知",
+      "note": " 未知",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "这是待核销售/导航页，不标已确认官网；所有订购链接指向第三方c.jichangs.com"
+    },
+    {
+      "id": "fish",
+      "name": "鱼鱼的超级机场",
+      "website": null,
+      "displayLink": "https://yydcjjc.sbs/index.html",
+      "displayLinkLabel": "待核网站，勿据此付款/提交凭据",
+      "websiteIdentityStatus": "待核自称官网；另有yydcjjc.top、历史yvyv2.top，未闭环",
+      "sources": [
+        "https://yydcjjc.sbs/index.html",
+        "https://www.jichangbang.cc/vpn/126-%E9%B1%BC%E9%B1%BC%E7%9A%84%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%9C%BA",
+        "https://telemetr.io/en/channels/1980152396-hkcaliairtz/posts"
+      ],
+      "checkedAt": "2026-10-29T06:40:00Z",
+      "sourceDates": "待核页面及频道镜像完整发布日期未核；读取日期不能代替发布日期",
+      "publicPrice": "当前官方售价未知；19.99元100GB仅未核身份网页/推广材料",
+      "expiryAndInactivity": "声称不限时，未核官方现规则；未知",
+      "stacking": "声称不限时，未核官方现规则",
+      "refund": "未知",
+      "ranking": "待核：不进入确定购买推荐",
+      "mainlandAndGptEvidence": "未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。页面称Clash兼容与频道镜像称仅官方客户端相冲突；不作推荐",
+      "actualCheckoutTotal": "未支付核实；未知手续费/税费/最低支付门槛不按零",
+      "nodeMultiplier": "未知",
+      "note": " 未知",
+      "evidenceStrength": "经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证",
+      "websiteIdentityLabel": "待核自称官网；另有yydcjjc.top、历史yvyv2.top，未闭环"
+    }
+  ],
+  "corrections": [
+    "SS-ID 2026-08-14为订阅采样异常，不证明供应商全节点故障；7/18撤回条目与仍显示60%记录映射不明，不作可靠失败率。",
+    "Windscribe三次Android测试环境失败已撤为无效样本，不归因服务商。",
+    "魔戒多个订阅并列替代旧同套餐覆盖；并列不等于合并。",
+    "自由猫旧优惠与八戒已截止618优惠不作现价；TAG年包不是不限时。",
+    "狗狗加速退款由未知更新为官方付款后不退；该更正不追溯改写旧快照。",
+    "云通迁至破晓，旧1元起充非当前不限时现货；二者不重复计算独立商。",
+    "抓取403/402/521或空JS壳不是节点服务故障；未知不等于不可用。"
+  ]
+}

@@ -25,7 +25,7 @@ def boundaries(supplier,vector,catalog):
     assert '不含真实摄像头' in val['inputBoundary'] and '合成' in val['inputBoundary']
     assert '容差' in val['recording'] and '像素一致' not in val['recording']
     assert '蜘蛛侠面部替换' in vector['notYetComplete']
-    assert catalog['counts']=={'artifacts':29,'websites':6,'tasks':18}
+    assert catalog['counts']=={'artifacts':31,'websites':6,'tasks':18}
     snapshot=catalog['statusSnapshot'];items=snapshot['items']
     assert [item['number'] for item in items]==list(range(1,10))
     assert items[7]['projectIds']==['project-14','project-15']

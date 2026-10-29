@@ -49,3 +49,6 @@ run_tests()
 
 from validate_creator import validate_creator
 validate_creator()
+
+from validate_vpn import validate_vpn
+validate_vpn()
