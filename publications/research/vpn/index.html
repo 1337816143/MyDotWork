@@ -1,6 +1,24 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VPN不限时与低价研究：22家入口、费用和可靠性边界</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#182b3d;font:16px/1.75 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:24px 20px 70px}header{background:#142f43;color:white;padding:34px;border-radius:18px}header a{color:#c4eaff}h1{font-size:clamp(27px,4vw,39px);line-height:1.3}h2{font-size:25px}h3{font-size:21px;margin:0}a{color:#126091;overflow-wrap:anywhere}section,article{background:white;border:1px solid #dce5ec;border-radius:12px;padding:25px;margin:20px 0}.note{border-left:5px solid #d29332;background:#fff6e7;padding:16px}.badge{font-size:13px;font-weight:700;color:#784c0c}.muted,small{color:#536575}.toc{columns:2;column-gap:30px}.toc li{break-inside:avoid;margin:7px 0}dl{display:grid;grid-template-columns:140px 1fr;gap:7px 16px}dt{font-weight:700}dd{margin:0;min-width:0}details{border-top:1px solid #e0e7ec;padding-top:12px;margin-top:15px}summary{cursor:pointer;font-weight:650}li{margin:5px 0}footer{font-size:13px;color:#536575}@media(max-width:650px){main{padding:12px}header,section,article{padding:18px}.toc{columns:1}dl{display:block}dt{margin-top:12px}}@media print{body{background:white}main{max-width:none}header{background:white;color:#182b3d;border:1px solid}header a{color:#126091}details{display:block}}</style></head><body><main><header id="top"><p>公开研究 · v6 · 截止 2026-10-29 06:40 UTC</p><h1>不限时优先：22家 VPN / 代理服务筛选</h1><p>每家都有可点击入口，但“有网址”不等于身份核实，更不等于稳定性认证。</p><p><a href="../../dashboard/index.html" rel="noopener noreferrer">← 返回工作台</a></p></header>
-<section><h2>先给结论</h2><p><strong>魔戒是目前公开报价清晰、起付较低的不限时条件候选：19.9元 / 130GB。</strong>不是已验证的全天稳定保障；不建议因大包单价低就长期大额预付。</p><p>扩围没有找到证据足够的“更便宜且保证随时能连”的替代。新增8家中，赔钱存在闲置清号，AKY不叠加且开通不退，云通已迁移，其他多有现价/身份缺口。自由猫保留安全降级红旗，不能仅凭便宜不限时列首选。</p><div class="note">不限时 ≠ 不限流量 ≠ 账号永不清除 ≠ 服务永久运营。按量包、年包、依赖基础订阅的流量包与免费档分开；没有一家已由本研究证明同时满足低价、不限时与随时稳定连接。网站入口不是购买按钮或安全背书。</div><p>研究只读公开材料，未付费实测。节点延迟、TLS RTT、下载速度、GPT连续会话和长期可用率不是同一指标；单次或择优样本不能推广到所有网络。服务商销售地域与目标平台支持地域也应分别核对。</p></section>
-<section><h2>完整网站目录</h2><ol class="toc">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>应急 VPN 筛选：可靠性优先，同条件价格升序</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#182b3d;font:16px/1.75 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:24px 20px 70px}header{background:#142f43;color:white;padding:34px;border-radius:18px}header a{color:#c4eaff}h1{font-size:clamp(27px,4vw,39px);line-height:1.3}h2{font-size:25px}h3{font-size:21px;margin:0}a{color:#126091;overflow-wrap:anywhere}section,article{background:white;border:1px solid #dce5ec;border-radius:12px;padding:25px;margin:20px 0}.note{border-left:5px solid #d29332;background:#fff6e7;padding:16px}.badge{font-size:13px;font-weight:700;color:#784c0c}.muted,small{color:#536575}.toc{columns:2;column-gap:30px}.toc li{break-inside:avoid;margin:7px 0}dl{display:grid;grid-template-columns:140px 1fr;gap:7px 16px}dt{font-weight:700}dd{margin:0;min-width:0}details{border-top:1px solid #e0e7ec;padding-top:12px;margin-top:15px}summary{cursor:pointer;font-weight:650}li{margin:5px 0}footer{font-size:13px;color:#536575}@media(max-width:650px){main{padding:12px}header,section,article{padding:18px}.toc{columns:1}dl{display:block}dt{margin-top:12px}}@media print{body{background:white}main{max-width:none}header{background:white;color:#182b3d;border:1px solid}header a{color:#126091}details{display:block}}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{border:1px solid #dce5ec;padding:10px;text-align:left;vertical-align:top}th{background:#eef4f8}.tier{font-weight:700} .withdrawn{border-left:5px solid #b53636;background:#fff1f0;padding:16px}</style></head><body><main><header id="top"><p>公开研究 · v7 · 2026-10-29T08:25:00Z</p><h1>先看稳定与应急可用，再比价格</h1><p>按适用场景与可靠性证据分层，同证据组、同付款周期按统一日期人民币参考标价由低到高；不限时是偏好，不再凌驾于连接可靠性。</p><p><a href="../../dashboard/index.html" rel="noopener noreferrer">← 返回工作台</a></p></header>
+<section><h2>本次结论与更正</h2><div class="withdrawn"><strong>撤回魔戒首推。</strong>此前“便宜且不限时”的筛选把价格放在了应急可靠性前面。魔戒仍保留完整记录，但仅列低价待核对照，不能因 19.9 元起付进入可靠性第一梯队。</div><p><strong>若已经提前装好、登录并保持订阅有效：本轮先考虑 Windscribe Pro，最低适用的是 $9 月付，不是 $3 自选套餐。</strong>近期可追溯重复测试证据比单条“好用”反馈更充分，但只支持对应测试网络与平台，不能代替不同线路上的保证。</p><p><strong>更低支出且愿意接受历史单网络证据的条件候选：SS-ID，20元/月100GB。</strong>官方 App 与通用客户端的更新前置条件不同；这不是用便宜胜过稳定，而是在第二层证据内先看低额方案。Nexitally仍保留较完整历史月度体验，但现价未知且维护负担较高，未证额外价格换来更强应急可靠性。</p><p>从零下载、首登、失效后恢复，仍没有足够证据给出同样推荐。Mullvad、JMS等作为有明确限制的第二选择继续比较；Astrill近期故障使“昂贵所以稳定”不成立。下列价格顺序仅在标明分组内有效。</p><p>价格人民币参考使用<a href="https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760" rel="noopener noreferrer">国家外汇局2026-10-29中间价</a>，并非银行卡实付汇率。</p></section>
+<section><h2>两个不同的应急场景</h2><dl><dt>预先配置后启用</dt><dd>客户端、订阅、登录态及有效服务已准备好，临时需要时连接。连续在线测试只能支持其测试条件；仍须单列长期闲置后的重新连接。</dd><dt>从零登录／恢复</dt><dd>安装包、官网、登录、订阅更新、付款及验证各环节都可能成为前置依赖。连接成功样本不等于这些环节已通过，更不等于没有已有配置也可临时买到即用。</dd></dl><p>“随时能连”作为筛选目标；本报告不作任意时间、任意网络的绝对保证，也不因无法保证 100% 就取消有条件的现实比较。</p></section>
+<section><h2>可靠性分层</h2>
+<h3>第一梯队：近期重复测试条件推荐</h3><p>优先预先安装、预登录后应急启用。此处第一是当前证据较强，不是任何网络实际成功率已证明最高。</p><p>Windscribe Pro：近期多轮及7日站点汇总，但仅浙江移动家庭宽带虚拟Android；首登与真实GPT对话未测。</p>
+<h3>第二梯队：历史多轮有条件候选</h3><p>有可追溯多轮原始测试，但日期、网络与第一梯队不同，不能机械比较节点成功比例。价清楚的先列；当前价格未知者另列。</p><p>SS-ID：8月湖南联通多轮15/15，20元月付可作为低支出优先复核；Nexitally：历史31天8轮体验，当前价待核且需更新订阅。</p>
+<h3>第三层：单次／原始用户反馈或存在显著冲突</h3><p>保留比较价值，不当与前两层同等可靠。价格便宜不能消除实际故障与维护负担；当前连接证据欠缺的单列。</p><p>Mullvad、Just My Socks、TAG、Proton；Astrill有近期反复掉线负面，不优先新购。</p>
+<h3>待核与排除对照</h3><p>保留完整历史，不能混进稳定应急推荐价榜；未知不等于不可用，排除只针对明确风险或地域限制。</p><p>魔戒等低价不限时服务为待核；LetsVPN官方大陆边界排除；自由猫安全降级说明不合应急首推；Dler/oix当前身份和恢复持续性未核。</p>
+<p>先按可靠性证据分组（不表示实际可靠性相等），组内按同付款周期、统一日期人民币参考标价升序；未知现价另列。换算采用国家外汇局2026-10-29中间价：1 USD=6.7147 CNY、1 EUR=7.457 CNY，仅供比较，不是支付汇率。税费、支付费、汇兑成本未知不记零，参考标价不是实际全费；年付按一次首付全额另列，不摊月替代月付。</p></section>
+<section><h2>分层价格与适用性对比</h2><p>下列价格区分公开套餐应付金额与尚未核完的结算附加费，不将未知费用记为零；不同币种采用明确日期的中间价参考换算，并非实付金额，年付全额不摊成低月价。</p><div class="table-wrap"><table><thead><tr><th>证据层／对象</th><th>最低适用套餐与总付款口径</th><th>预配置应急</th><th>从零／闲置恢复</th><th>GPT 证据</th></tr></thead><tbody>
+<tr><td>第一梯队｜Windscribe Pro</td><td>月付USD9≈¥60.43；另年付USD69≈¥463.31一次付清。支付与换汇费未知；$3档不适用此证据</td><td>近期24h 11/11；7日100%仅站点汇总，未得完整样本数。浙江移动虚拟Android，非连续可用率</td><td>首登未测，可能需已有可用连接；长期闲置恢复未测</td><td>网页11/11仅在VPN成功轮次中；实际发问、长会话未知</td></tr>
+<tr><td>第二梯队｜SS-ID</td><td>CNY20/月100GB；全费待核</td><td>8月湖南联通多轮高峰15/15，非当期跨ISP连续监控；8/31仅1组可识别入口、抖动中位94ms/峰263ms，不等独立容灾或低抖动</td><td>官方App预登录自动处理；通用客户端需官网临时开启订阅；新设备可能邮件验证</td><td>8/31 ChatGPT可访问性探测15/15；不等真实浏览器登录/发问/长对话</td></tr>
+<tr><td>第二梯队｜Nexitally（现价待核，另列）</td><td>历史CNY123.33/31天500GB；不作为现价排序或购买承诺</td><td>历史31天8轮普通节点97.1–100%；慢组有替代组，不是全断</td><td>作者称订阅需定期后台更新；自动切换与闲置恢复未测</td><td>未核真实业务</td></tr>
+<tr><td>第三层｜Mullvad</td><td>EUR5/月≈¥37.29，含VAT；换汇/付款费待核</td><td>近期原始可连与慢/视频失败冲突，可能需调参；无同Pro重复日志</td><td>未测</td><td>实际业务未核</td></tr>
+<tr><td>第三层｜Just My Socks</td><td>USD5.88/月500GB≈¥39.48；5设备；税费支付费待核。移动专用HK不适用电信/联通</td><td>单次上海电信测评；缺多日多ISP序列，维护公告不当全断</td><td>9月协议及安全升级可能要求旧客户端升级/刷新</td><td>未核</td></tr>
+<tr><td>第三层｜TAG</td><td>USD17.54/月500GB≈¥117.78；季度USD28.46≈¥191.10另计，非月付价；附加费待核</td><td>旧年多节点样本与2026系统代理/TUN差异，不是2026长期样本</td><td>未核</td><td>当前业务未核</td></tr>
+<tr><td>第三层｜Astrill（不优先新购）</td><td>USD30/月≈¥201.44；年付USD180≈¥1208.65；税费/VIP另计</td><td>10月掉线/全天失败与部分可用反馈冲突，旧上海100%不覆盖现在</td><td>闲置清号/平台功能条件；iOS无Stealth</td><td>当前业务未核</td></tr>
+<tr><td>第三层｜Proton（价格与套餐匹配待核，另列）</td><td>不以旧促销或Free替代当前Plus可比报价</td><td>有正负反馈，Free和Plus不可混用</td><td>未核</td><td>未核</td></tr>
+</tbody></table></div></section>
+<section><h2>完整网站与证据目录</h2><ol class="toc">
 <li><a href="#provider-1">魔戒</a> — <a href="https://xn--xnun88j.com/" rel="noopener noreferrer">官网／官方提供入口</a></li>
 <li><a href="#provider-2">八戒</a> — <a href="https://bajie.la/" rel="noopener noreferrer">官网／官方提供入口</a></li>
 <li><a href="#provider-3">自由猫</a> — <a href="https://xn--z7x16bf6t.com/" rel="noopener noreferrer">官网／官方提供入口</a></li>
@@ -23,313 +41,508 @@
 <li><a href="#huabanmao">滑板猫</a> — <a href="https://www.huabanmao.com/" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></li>
 <li><a href="#sammao">三毛机场</a> — <a href="https://3mao.bid/" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></li>
 <li><a href="#fish">鱼鱼的超级机场</a> — <a href="https://yydcjjc.sbs/index.html" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></li>
-</ol><p><a href="evidence.json" rel="noopener noreferrer">下载结构化公开证据 JSON</a> · 全部正文与CSS内嵌，正文离线可读；点击来源仍需网络，未将外部网站缓存为离线材料。</p></section>
-<article id="provider-1"><p class="badge">可考虑小额条件候选</p><h2>魔戒</h2><p><a href="https://xn--xnun88j.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<li><a href="#justmysocks">Just My Socks</a> — <a href="https://justmysocks.net/members/" rel="noopener noreferrer">官网／官方公告所列网站</a></li>
+<li><a href="#nexitally">Nexitally</a> — <a href="https://nexitally.com/" rel="noopener noreferrer">官网／官方公告所列网站</a></li>
+<li><a href="#dler-oix">DlerCloud / oixCloud</a> — <a href="https://oixcloud.com/" rel="noopener noreferrer">待核恢复地址，不据此付款</a></li>
+</ol><p><a href="evidence.json" rel="noopener noreferrer">下载结构化公开证据</a>。条目数量不等于购买推荐数量。正文与样式已内嵌，点击外部来源仍需网络。</p></section>
+<article id="provider-1"><h2>魔戒</h2><p><a href="https://xn--xnun88j.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>仅低价不限时待核对照：撤出首推</dd>
 <dt>入口身份</dt><dd>官方公告频道直接列出入口</dd>
 <dt>价格与流量</dt><dd>CNY 19.9 / 130GB；52 / 420GB；85 / 750GB；179 / 1660GB；330 / 3600GB；888 / 10TB</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>商家称按量不限时；闲置清号、激活规则未知</dd>
-<dt>重买/叠加</dt><dd>新旧订阅并列；不等于余额合并；已替代旧同套餐覆盖规则</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>官方恢复公告仍持续观察、建议更新订阅。2026-06-23原帖 GeeSeeker 称新加坡及 Codex 可用；所在地/运营商/套餐/连续时长未交代，不能拼接另一位楼主的两月 VPS 经历。</dd>
-<dt>限制与缺口</dt><dd>官方频道头部直接给出魔戒.com。19.9元130GB等按量不限时为经营方公开价，未结算全费；293多个订阅并列取代290旧同套餐覆盖规则。末尾恢复仍建议更新订阅，不保证随时可连。购买入口未完成核验；不作当前可购或可连证明。</dd>
+<dt>重买／叠加</dt><dd>新旧订阅并列；不等于余额合并；已替代旧同套餐覆盖规则</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>短时用户反馈与经营方恢复公告，不足以列入当前可靠性第一梯队</dd>
+<dt>从零／闲置恢复</dt><dd>长期闲置清号、订阅恢复与从零启用链条未知</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>官方恢复公告仍持续观察、建议更新订阅。2026-06-23原帖 GeeSeeker 称新加坡及 Codex 可用；所在地/运营商/套餐/连续时长未交代，不能拼接另一位楼主的两月 VPS 经历。</dd>
+<dt>限制与冲突</dt><dd>官方频道头部直接给出魔戒.com。19.9元130GB等按量不限时为经营方公开价，未结算全费；293多个订阅并列取代290旧同套餐覆盖规则。末尾恢复仍建议更新订阅，不保证随时可连。购买入口未完成核验；不作当前可购或可连证明。</dd>
 <dt>来源日期</dt><dd>价格2026-05-01生效；293/297本次未显示完整发布日期</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/The_Lord_Rings" rel="noopener noreferrer">https://t.me/s/The_Lord_Rings</a></li><li><a href="https://t.me/The_Lord_Rings/290" rel="noopener noreferrer">https://t.me/The_Lord_Rings/290</a></li><li><a href="https://t.me/The_Lord_Rings/293" rel="noopener noreferrer">https://t.me/The_Lord_Rings/293</a></li><li><a href="https://t.me/The_Lord_Rings/297" rel="noopener noreferrer">https://t.me/The_Lord_Rings/297</a></li><li><a href="https://linux.do/t/topic/2457252?tl=en" rel="noopener noreferrer">https://linux.do/t/topic/2457252?tl=en</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-2"><p class="badge">不首推</p><h2>八戒</h2><p><a href="https://bajie.la/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/The_Lord_Rings" rel="noopener noreferrer">https://t.me/s/The_Lord_Rings</a></li><li><a href="https://t.me/The_Lord_Rings/290" rel="noopener noreferrer">https://t.me/The_Lord_Rings/290</a></li><li><a href="https://t.me/The_Lord_Rings/293" rel="noopener noreferrer">https://t.me/The_Lord_Rings/293</a></li><li><a href="https://t.me/The_Lord_Rings/297" rel="noopener noreferrer">https://t.me/The_Lord_Rings/297</a></li><li><a href="https://linux.do/t/topic/2457252?tl=en" rel="noopener noreferrer">https://linux.do/t/topic/2457252?tl=en</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-2"><h2>八戒</h2><p><a href="https://bajie.la/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>关联运营方官方频道直接列出入口，并核到品牌登录页</dd>
 <dt>价格与流量</dt><dd>CNY 34.8 / 100GB；调价完整发布日期未显示，当前结算未核</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>商家称不限时；闲置和激活规则未知</dd>
-<dt>重买/叠加</dt><dd>历史同套餐覆盖风险；当前完整规则未核</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>与魔戒有运营关联，不能作已证独立冗余；历史质量下降及恢复并存。ChatGPT 只有历史宣传。</dd>
-<dt>限制与缺口</dt><dd>魔戒官方频道直接标明八戒官网bajie.la；本轮打开进入八戒登录页，未登录。bajie.one仅旧频道兔年促销链接，不当当前首选。34.8元100GB经营方历史调价仍可读，2026/6/23活动已过期；与魔戒关联不等于独立冗余。</dd>
+<dt>重买／叠加</dt><dd>历史同套餐覆盖风险；当前完整规则未核</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>与魔戒有运营关联，不能作已证独立冗余；历史质量下降及恢复并存。ChatGPT 只有历史宣传。</dd>
+<dt>限制与冲突</dt><dd>魔戒官方频道直接标明八戒官网bajie.la；本轮打开进入八戒登录页，未登录。bajie.one仅旧频道兔年促销链接，不当当前首选。34.8元100GB经营方历史调价仍可读，2026/6/23活动已过期；与魔戒关联不等于独立冗余。</dd>
 <dt>来源日期</dt><dd>618活动截止2026-06-23；34.8调价消息完整发布日期未显示</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/The_Lord_Rings" rel="noopener noreferrer">https://t.me/s/The_Lord_Rings</a></li><li><a href="https://t.me/s/bajievs" rel="noopener noreferrer">https://t.me/s/bajievs</a></li><li><a href="https://bajie.la/login" rel="noopener noreferrer">https://bajie.la/login</a></li><li><a href="https://t.me/bajievs/67" rel="noopener noreferrer">https://t.me/bajievs/67</a></li><li><a href="https://t.me/bajievs/68" rel="noopener noreferrer">https://t.me/bajievs/68</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-3"><p class="badge">不首推：安全红旗</p><h2>自由猫</h2><p><a href="https://xn--z7x16bf6t.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/The_Lord_Rings" rel="noopener noreferrer">https://t.me/s/The_Lord_Rings</a></li><li><a href="https://t.me/s/bajievs" rel="noopener noreferrer">https://t.me/s/bajievs</a></li><li><a href="https://bajie.la/login" rel="noopener noreferrer">https://bajie.la/login</a></li><li><a href="https://t.me/bajievs/67" rel="noopener noreferrer">https://t.me/bajievs/67</a></li><li><a href="https://t.me/bajievs/68" rel="noopener noreferrer">https://t.me/bajievs/68</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-3"><h2>自由猫</h2><p><a href="https://xn--z7x16bf6t.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>排除应急首推：安全降级说明与连接冲突需解决</dd>
 <dt>入口身份</dt><dd>官方公告频道直接列出入口</dd>
 <dt>价格与流量</dt><dd>CNY 65 / 500GB；118 / 1000GB；439 / 5000GB</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>商家称不限时；闲置清号未知</dd>
-<dt>重买/叠加</dt><dd>不限时互购可叠加；改买月付会覆盖</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>官方 Windows 教程要求关闭防火墙并涉及安全防护降级，不执行也不建议照做。Linux/软路由官方明确不支持。原始讨论既有半天失效/超时，也有2026-10-14/21仍能用；GPT 解锁只是商家声明。</dd>
-<dt>限制与缺口</dt><dd>官方频道列自由猫.com，并列ziyoumao.cloud；docs可读。65元500GB不限时等仍属商家声明。保留Windows关闭防火墙/安全防护红旗；Linux/软路由本轮docs明确不支持，不能宣传全平台。此为风险资料，不是安装操作建议。</dd>
+<dt>重买／叠加</dt><dd>不限时互购可叠加；改买月付会覆盖</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>官方 Windows 教程要求关闭防火墙并涉及安全防护降级，不执行也不建议照做。Linux/软路由官方明确不支持。原始讨论既有半天失效/超时，也有2026-10-14/21仍能用；GPT 解锁只是商家声明。</dd>
+<dt>限制与冲突</dt><dd>官方频道列自由猫.com，并列ziyoumao.cloud；docs可读。65元500GB不限时等仍属商家声明。保留Windows关闭防火墙/安全防护红旗；Linux/软路由本轮docs明确不支持，不能宣传全平台。此为风险资料，不是安装操作建议。</dd>
 <dt>来源日期</dt><dd>调价2026-08-15生效；docs更新时间未显示</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/FreeCatCloud" rel="noopener noreferrer">https://t.me/s/FreeCatCloud</a></li><li><a href="https://ziyoumao.cloud/docs/" rel="noopener noreferrer">https://ziyoumao.cloud/docs/</a></li><li><a href="https://t.me/FreeCatCloud/403" rel="noopener noreferrer">https://t.me/FreeCatCloud/403</a></li><li><a href="https://github.com/limbopro/Paolujichang/issues/197" rel="noopener noreferrer">https://github.com/limbopro/Paolujichang/issues/197</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-4"><p class="badge">不首推：非不限时</p><h2>SS-ID</h2><p><a href="https://ss-id.com/#/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/FreeCatCloud" rel="noopener noreferrer">https://t.me/s/FreeCatCloud</a></li><li><a href="https://ziyoumao.cloud/docs/" rel="noopener noreferrer">https://ziyoumao.cloud/docs/</a></li><li><a href="https://t.me/FreeCatCloud/403" rel="noopener noreferrer">https://t.me/FreeCatCloud/403</a></li><li><a href="https://github.com/limbopro/Paolujichang/issues/197" rel="noopener noreferrer">https://github.com/limbopro/Paolujichang/issues/197</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-4"><h2>SS-ID</h2><p><a href="https://ss-id.com/#/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>低价优先复核候选；多轮单ISP高峰正样本，另有旧多ISP自购图；非随时连接保证</dd>
 <dt>入口身份</dt><dd>此前公开页面实际跳转链已核，当前解析仅页面外壳</dd>
-<dt>价格与流量</dt><dd>CNY 20 / 月100GB；30/200GB；45/300GB；72/500GB；85/600GB</dd>
+<dt>价格与流量</dt><dd>v6官网已核CNY20/月100GB，手续费未知；非不限时不再作为降级理由</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>当前公开仅核到月付；一般条款不限时不证明在售</dd>
-<dt>重买/叠加</dt><dd>账单周期重置；当前不限时包未核</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>本地网络不兼容等通常不退款；可能支付手续费</dd>
-<dt>连接与GPT</dt><dd>2026-08-31湖南联通短测15/15、香港30–41ms，旧端点且直连基准失败，无网页TTFB；不是长期可用率。8/14采样异常不证明供应商全断。</dd>
-<dt>限制与缺口</dt><dd>此前核查云浏览器由已知cdn1.ssidcloud.com跳转核实20元月付100GB。本轮核验web解析首页空白，非无法连节点证据。ss-id.app不作为官网。8/14报告异常不得归因为全节点故障；未核当前在售不限时产品。</dd>
+<dt>重买／叠加</dt><dd>账单周期重置；当前不限时包未核</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>本地网络不兼容等通常不退款；可能支付手续费</dd>
+<dt>预配置应急</dt><dd>湖南联通1000M：8/16、8/24、8/31晚高峰主要节点15/15；旧测速目标、8/31直连基准失败，不是连续监控；8/14采样异常非全断；7/18撤回报告不能当真实60%故障率；海豚自购深圳电信/湖南联通/浙江联通图片是旧价版本，不算2026当前套餐实测；10/27官方条款：订阅默认关闭，网站临时开启可导入更新，官方App登录后自动处理；新设备可能邮箱验证码；重置旧凭据失效；本地网络不适合通常不退款；不同公网IP并发限制，上传下载与倍率均计流量；8/31拓扑仅1组可识别国内入口（ASN/地区推断，不等于实际端点总数），15个节点不是15组独立容灾；8/31抖动中位94ms、峰263ms，8/16中位298ms。可达率不等于低抖动。</dd>
+<dt>从零／闲置恢复</dt><dd>闲置后真实冷启动</dd>
+<dt>GPT 网页</dt><dd>2026-08-31原始报告 ChatGPT 可访问性探测15/15；探测方法不是已验证真实浏览器登录或发问</dd>
+<dt>GPT 对话</dt><dd>真实浏览器登录和发问未知</dd>
+<dt>GPT 长会话</dt><dd>真实持续对话未知</dd>
+<dt>适用网络与原始证据</dt><dd>湖南联通1000M：8/16、8/24、8/31晚高峰主要节点15/15；旧测速目标、8/31直连基准失败，不是连续监控；8/14采样异常非全断；7/18撤回报告不能当真实60%故障率；海豚自购深圳电信/湖南联通/浙江联通图片是旧价版本，不算2026当前套餐实测；10/27官方条款：订阅默认关闭，网站临时开启可导入更新，官方App登录后自动处理；新设备可能邮箱验证码；重置旧凭据失效；本地网络不适合通常不退款；不同公网IP并发限制，上传下载与倍率均计流量</dd>
+<dt>限制与冲突</dt><dd>当前跨ISP长期成功率；闲置后真实冷启动；GPT实际业务及自动切换；最终支付额；8/31拓扑仅1组可识别国内入口（ASN/地区推断，不等于实际端点总数），15个节点不是15组独立容灾；8/31抖动中位94ms、峰263ms，8/16中位298ms。可达率不等于低抖动。</dd>
 <dt>来源日期</dt><dd>条款2026-10-27生效；当前套餐同日先前云浏览器已核；8/14、8/15、8/31为历史测试</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
-<dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://ss-id.com/#/" rel="noopener noreferrer">https://ss-id.com/#/</a></li><li><a href="https://tos.ssidcloud.com/terms?lang=zh" rel="noopener noreferrer">https://tos.ssidcloud.com/terms?lang=zh</a></li><li><a href="https://jcnotes.com/airports/ssid/" rel="noopener noreferrer">https://jcnotes.com/airports/ssid/</a></li><li><a href="https://jcnotes.com/airports/ssid/20260814_203602/" rel="noopener noreferrer">https://jcnotes.com/airports/ssid/20260814_203602/</a></li><li><a href="https://jcnotes.com/changelog/" rel="noopener noreferrer">https://jcnotes.com/changelog/</a></li><li><a href="https://jcnotes.com/airports/ssid/20260815_152047/" rel="noopener noreferrer">https://jcnotes.com/airports/ssid/20260815_152047/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-5"><p class="badge">不首推：周期与证据不匹配</p><h2>TAG</h2><p><a href="https://tagss.pro/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>核查时间</dt><dd>2026-10-29T08:23:00Z</dd>
+<dt>证据强度</dt><dd>低价优先复核候选；多轮单ISP高峰正样本，另有旧多ISP自购图；非随时连接保证。所有测量均为对应原作者与条件；非本报告自行实测。</dd>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://ss-id.com/#/" rel="noopener noreferrer">https://ss-id.com/#/</a></li><li><a href="https://tos.ssidcloud.com/terms?lang=zh" rel="noopener noreferrer">https://tos.ssidcloud.com/terms?lang=zh</a></li><li><a href="https://jcnotes.com/airports/ssid/" rel="noopener noreferrer">https://jcnotes.com/airports/ssid/</a></li><li><a href="https://jcnotes.com/airports/ssid/20260814_203602/" rel="noopener noreferrer">https://jcnotes.com/airports/ssid/20260814_203602/</a></li><li><a href="https://jcnotes.com/changelog/" rel="noopener noreferrer">https://jcnotes.com/changelog/</a></li><li><a href="https://jcnotes.com/airports/ssid/20260815_152047/" rel="noopener noreferrer">https://jcnotes.com/airports/ssid/20260815_152047/</a></li><li><a href="https://t.me/s/haitun_channel?q=%23SSID" rel="noopener noreferrer">https://t.me/s/haitun_channel?q=%23SSID</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-5"><h2>TAG</h2><p><a href="https://tagss.pro/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>保留可靠性候选，不因年付淘汰；当前独立长期证据弱于标题所暗示</dd>
 <dt>入口身份</dt><dd>此前已读取品牌官方公开页面；本轮仅页面外壳</dd>
-<dt>价格与流量</dt><dd>历史 CNY 162 / 年、全年200GB（2026-09-17第三方）；现价未核。官网先前大套餐 USD 28.46/季、17.54/月、33.69/月，非该年包</dd>
+<dt>价格与流量</dt><dd>v6此前官方USD28.46/季250GB每月、17.54/月500GB、33.69/月999GB；CNY162/年总200GB仅2026-09-17第三方历史，不当当前价或不限时</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>一年不是不限时；Special当前须登录未读</dd>
-<dt>重买/叠加</dt><dd>未知</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>历史推广关系评测称系统代理可用而 TUN 不可用；不能代替最新长期业务测试。</dd>
-<dt>限制与缺口</dt><dd>本轮只取得TAG Internet登录/注册壳与JS要求；此前核查浏览器公开套餐证据保留。162元年包200GB仅9/17历史第三方记录，不是不限时、不代表当前可购；不为核价登录。</dd>
+<dt>重买／叠加</dt><dd>未知</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>GitHub自述长期使用，实际列2022年176/177节点、2025年电信列表、2025年3月4K记录；2026更新标题不是2026多日样本；有推广短链；旧记录未独立核图或原始日志，不能据此打败SSID或Nexitally；9/17历史系统代理可用而TUN问题仍须保留，不等于服务所有模式不可用</dd>
+<dt>从零／闲置恢复</dt><dd>退款/费用/闲置规则；2026跨ISP连接成功率和冷启动</dd>
+<dt>GPT 网页</dt><dd>未知，测速节点成功不等于 GPT 网页验证</dd>
+<dt>GPT 对话</dt><dd>未知</dd>
+<dt>GPT 长会话</dt><dd>未知</dd>
+<dt>适用网络与原始证据</dt><dd>GitHub自述长期使用，实际列2022年176/177节点、2025年电信列表、2025年3月4K记录；2026更新标题不是2026多日样本；有推广短链；旧记录未独立核图或原始日志，不能据此打败SSID或Nexitally；9/17历史系统代理可用而TUN问题仍须保留，不等于服务所有模式不可用</dd>
+<dt>限制与冲突</dt><dd>当前Special总价；退款/费用/闲置规则；2026跨ISP连接成功率和冷启动</dd>
 <dt>来源日期</dt><dd>第三方年包记录2026-09-17；官网本轮未展开Special</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
-<dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://tagss.pro/" rel="noopener noreferrer">https://tagss.pro/</a></li><li><a href="https://www.shuijingwanwq.com/2026/09/17/27599/" rel="noopener noreferrer">https://www.shuijingwanwq.com/2026/09/17/27599/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-6"><p class="badge">待核：官网身份未闭环</p><h2>青云梯</h2><p><a href="https://xinghewall.cc/posts/qingyunti-review/" rel="noopener noreferrer">研究来源（第三方；官网尚未核实）</a></p><dl>
+<dt>核查时间</dt><dd>2026-10-29T08:23:00Z</dd>
+<dt>证据强度</dt><dd>保留可靠性候选，不因年付淘汰；当前独立长期证据弱于标题所暗示。所有测量均为对应原作者与条件；非本报告自行实测。</dd>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://tagss.pro/" rel="noopener noreferrer">https://tagss.pro/</a></li><li><a href="https://www.shuijingwanwq.com/2026/09/17/27599/" rel="noopener noreferrer">https://www.shuijingwanwq.com/2026/09/17/27599/</a></li><li><a href="https://github.com/xiaoming2028/TAG-VPN" rel="noopener noreferrer">https://github.com/xiaoming2028/TAG-VPN</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-6"><h2>青云梯</h2><p><a href="https://xinghewall.cc/posts/qingyunti-review/" rel="noopener noreferrer">研究来源（第三方；官网尚未核实）</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>当前官方根域身份未闭环，链接仅为标注的第三方研究来源</dd>
 <dt>价格与流量</dt><dd>第三方 CNY 96/年每月60GB、25/月150GB；当前官网结算未核</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>周期套餐；另有未核站称永久包，不纳入可购价</dd>
-<dt>重买/叠加</dt><dd>未知</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>2026-10-13移动2Gbps各地区择优测量：香港TLS RTT50ms；2026-03-09至12原帖有联通超时/移动高延迟。样本不同，不能互相抵消或推断今天全故障。</dd>
-<dt>限制与缺口</dt><dd>没有已闭环当前官方根域。目录应写官网未核实，提供带身份标注的公开研究来源，不将SEO站作为官网。qingyunti.org仅品牌自称页面；旧250订阅频道v4speed指qingyunti.cc并转发v4speedc，无法证明当前入口。qingyunti.vip称25元200GB永久，与原周期套餐冲突，身份未核，不新增为可购方案。</dd>
+<dt>重买／叠加</dt><dd>未知</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>2026-10-13移动2Gbps各地区择优测量：香港TLS RTT50ms；2026-03-09至12原帖有联通超时/移动高延迟。样本不同，不能互相抵消或推断今天全故障。</dd>
+<dt>限制与冲突</dt><dd>没有已闭环当前官方根域。目录应写官网未核实，提供带身份标注的公开研究来源，不将SEO站作为官网。qingyunti.org仅品牌自称页面；旧250订阅频道v4speed指qingyunti.cc并转发v4speedc，无法证明当前入口。qingyunti.vip称25元200GB永久，与原周期套餐冲突，身份未核，不新增为可购方案。</dd>
 <dt>来源日期</dt><dd>既有测试2026-10-13；负面原帖2026-03-09至12；v4speed含2024/2025旧公告</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>弱：当前官方根域未闭环；仅明确标注的第三方评测与历史频道可用</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://xinghewall.cc/posts/qingyunti-review/" rel="noopener noreferrer">https://xinghewall.cc/posts/qingyunti-review/</a></li><li><a href="https://t.me/s/v4speed" rel="noopener noreferrer">https://t.me/s/v4speed</a></li><li><a href="https://qingyunti.org/" rel="noopener noreferrer">https://qingyunti.org/</a></li><li><a href="https://linux.do/t/topic/1713171" rel="noopener noreferrer">https://linux.do/t/topic/1713171</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-7"><p class="badge">排除于不限时低门槛优先</p><h2>WgetCloud</h2><p><a href="https://wgetcloud.org/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://xinghewall.cc/posts/qingyunti-review/" rel="noopener noreferrer">https://xinghewall.cc/posts/qingyunti-review/</a></li><li><a href="https://t.me/s/v4speed" rel="noopener noreferrer">https://t.me/s/v4speed</a></li><li><a href="https://qingyunti.org/" rel="noopener noreferrer">https://qingyunti.org/</a></li><li><a href="https://linux.do/t/topic/1713171" rel="noopener noreferrer">https://linux.do/t/topic/1713171</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-7"><h2>WgetCloud</h2><p><a href="https://wgetcloud.org/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>官方帮助站直接指向网站入口</dd>
 <dt>价格与流量</dt><dd>当前完整报价未知；官方只季/年付，无免费试用</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>附加流量包360天且需生效基础套餐；非独立不限时包</dd>
-<dt>重买/叠加</dt><dd>依赖基础套餐；排队套餐不算生效</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>本轮未核</dd>
-<dt>连接与GPT</dt><dd>官网抓取402仅抓取失败；官方停止不停机/竞速场，不等于整个服务中断。</dd>
-<dt>限制与缺口</dt><dd>官方帮助首页跳转至网站直接指wgetcloud.org。官网本轮web获取返回402，不能当VPN故障或收费封锁事实。既有官方规则：仅季/年付；360天流量包需有效基础套餐，不是独立不限时备用。</dd>
+<dt>重买／叠加</dt><dd>依赖基础套餐；排队套餐不算生效</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>本轮未核</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>官网抓取402仅抓取失败；官方停止不停机/竞速场，不等于整个服务中断。</dd>
+<dt>限制与冲突</dt><dd>官方帮助首页跳转至网站直接指wgetcloud.org。官网本轮web获取返回402，不能当VPN故障或收费封锁事实。既有官方规则：仅季/年付；360天流量包需有效基础套餐，不是独立不限时备用。</dd>
 <dt>来源日期</dt><dd>服务区分说明2026-10-25；流量包文更新时间未显示</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://help-info.wgetcloud.org/zh/" rel="noopener noreferrer">https://help-info.wgetcloud.org/zh/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-8"><p class="badge">不首推：周期且不退</p><h2>狗狗加速</h2><p><a href="https://dg1.top/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://help-info.wgetcloud.org/zh/" rel="noopener noreferrer">https://help-info.wgetcloud.org/zh/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-8"><h2>狗狗加速</h2><p><a href="https://dg1.top/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>既有两处品牌页指向同一面板</dd>
 <dt>价格与流量</dt><dd>CNY 15.8 / 月160GB；20.8 / 月200GB；39.8 / 月500GB</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>周期套餐；非不限时</dd>
-<dt>重买/叠加</dt><dd>周期重置；完整额外规则未知</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>本轮新核官方条款：付款后不退款</dd>
-<dt>连接与GPT</dt><dd>3天每日1GB试用仅广告，未领取。ChatGPT及稳定性仅商家宣传。禁止多人共享、商业转售及未经授权自动脚本。</dd>
-<dt>限制与缺口</dt><dd>dg1.top与go.dg6.me均为既有品牌页，均指userpanel.dginv.click面板。本轮重核15.8元160GB/月、20.8元200GB/月、39.8元500GB/月；3天每日1GB试用仅广告未领用。新增官方ToS付款概不退还、禁止多人共享/商业转售及未授权自动脚本；条款仅称发布起生效无日期。自称稳定不是实测。</dd>
+<dt>重买／叠加</dt><dd>周期重置；完整额外规则未知</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>本轮新核官方条款：付款后不退款</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>3天每日1GB试用仅广告，未领取。ChatGPT及稳定性仅商家宣传。禁止多人共享、商业转售及未经授权自动脚本。</dd>
+<dt>限制与冲突</dt><dd>dg1.top与go.dg6.me均为既有品牌页，均指userpanel.dginv.click面板。本轮重核15.8元160GB/月、20.8元200GB/月、39.8元500GB/月；3天每日1GB试用仅广告未领用。新增官方ToS付款概不退还、禁止多人共享/商业转售及未授权自动脚本；条款仅称发布起生效无日期。自称稳定不是实测。</dd>
 <dt>来源日期</dt><dd>价格及ToS本轮2026-10-29实读；ToS具体发布/生效日未标</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://dg1.top/pricing/" rel="noopener noreferrer">https://dg1.top/pricing/</a></li><li><a href="https://go.dg6.me/" rel="noopener noreferrer">https://go.dg6.me/</a></li><li><a href="https://dg1.top/tos/" rel="noopener noreferrer">https://dg1.top/tos/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-9"><p class="badge">不首推：周期/恢复边界</p><h2>MITCE</h2><p><a href="https://mitce.io/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://dg1.top/pricing/" rel="noopener noreferrer">https://dg1.top/pricing/</a></li><li><a href="https://go.dg6.me/" rel="noopener noreferrer">https://go.dg6.me/</a></li><li><a href="https://dg1.top/tos/" rel="noopener noreferrer">https://dg1.top/tos/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-9"><h2>MITCE</h2><p><a href="https://mitce.io/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>故障恢复条件候选：近期中断与重新导入要求，当前长时应急证据不足</dd>
 <dt>入口身份</dt><dd>官方首页关联公告与条款</dd>
 <dt>价格与流量</dt><dd>2026-10-27历史核价 USD 0.6/月100GB、1.2/月500GB、2/月1000GB、3/月无限；非本轮结算</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>每月1日00:00重置；时区未充分核实</dd>
-<dt>重买/叠加</dt><dd>月度重置</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>历史条款24小时内且用量&lt;10%，仍由商家酌情</dd>
-<dt>连接与GPT</dt><dd>2026-10-18中断、10/21恢复但继续优化，要求重导入；首页正常状态不可删去恢复限制。2025-08 GPT 解锁宣传不是当前测试。</dd>
-<dt>限制与缺口</dt><dd>主页直接指向notify.mitce.net；最新可读公告10/21恢复但仍优化，要求重新导入，10/18中断历史保留。2025/8 ChatGPT解锁不是当前独立证据。页面Service Normal与运行恢复限制并列，不只摘正常。</dd>
+<dt>重买／叠加</dt><dd>月度重置</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>历史条款24小时内且用量&lt;10%，仍由商家酌情</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>2026-10-18中断、10/21恢复但继续优化，要求重导入；首页正常状态不可删去恢复限制。2025-08 GPT 解锁宣传不是当前测试。</dd>
+<dt>限制与冲突</dt><dd>主页直接指向notify.mitce.net；最新可读公告10/21恢复但仍优化，要求重新导入，10/18中断历史保留。2025/8 ChatGPT解锁不是当前独立证据。页面Service Normal与运行恢复限制并列，不只摘正常。</dd>
 <dt>来源日期</dt><dd>最新公告2026-10-21；严重中断2026-10-18；ChatGPT解锁2025-08-04/05</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://mitce.io/" rel="noopener noreferrer">https://mitce.io/</a></li><li><a href="https://mitce.io/pages/tos" rel="noopener noreferrer">https://mitce.io/pages/tos</a></li><li><a href="https://notify.mitce.net/" rel="noopener noreferrer">https://notify.mitce.net/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-10"><p class="badge">不首推：非买量不限时</p><h2>Windscribe</h2><p><a href="https://windscribe.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://mitce.io/" rel="noopener noreferrer">https://mitce.io/</a></li><li><a href="https://mitce.io/pages/tos" rel="noopener noreferrer">https://mitce.io/pages/tos</a></li><li><a href="https://notify.mitce.net/" rel="noopener noreferrer">https://notify.mitce.net/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-10"><h2>Windscribe</h2><p><a href="https://windscribe.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>推荐层（预置应急，条件推荐）</dd>
 <dt>入口身份</dt><dd>品牌域名、官方政策及相关页面来源链</dd>
-<dt>价格与流量</dt><dd>2026-10-27历史 Pro USD9/月或69/年；最低 Build-a-Plan USD3/月配置沿用10/22，不等同 Pro</dd>
+<dt>价格与流量</dt><dd>Pro USD9/月；USD69/年一次付清；Build-a-Plan最低USD3/月为另一配置，不能套用Pro连接证据</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>周期套餐；隐私政策有不活跃清理，固定期限未核</dd>
-<dt>重买/叠加</dt><dd>套餐配置不同不能互套监测</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>历史首次用量&lt;10GB；帮助7天与条款7工作日冲突保留；续费不退</dd>
-<dt>连接与GPT</dt><dd>Pro第三方浙江移动短时观测不能套最低配置。三次Android环境故障已撤为无效失败样本，不当供应商中断。</dd>
-<dt>限制与缺口</dt><dd>本轮首页可读；既有Pro/Build-a-Plan不同，不能把Pro测试套最低配置。周期方案非买量不限时；保留Android测试故障勘误，不把无效失败样本当服务商故障。</dd>
-<dt>来源日期</dt><dd>本轮首页2026-10-29实读；价格2026-10-27历史核验；中国支持文2025-10-23</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
-<dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://windscribe.com/" rel="noopener noreferrer">https://windscribe.com/</a></li><li><a href="https://windscribe.com/terms" rel="noopener noreferrer">https://windscribe.com/terms</a></li><li><a href="https://windscribe.com/privacy" rel="noopener noreferrer">https://windscribe.com/privacy</a></li><li><a href="https://windscribe.com/knowledge-base/articles/does-windscribe-work-in-china-and-other-restricted-countries" rel="noopener noreferrer">https://windscribe.com/knowledge-base/articles/does-windscribe-work-in-china-and-other-restricted-countries</a></li><li><a href="https://testedinchina.com/vpn/windscribe-pro" rel="noopener noreferrer">https://testedinchina.com/vpn/windscribe-pro</a></li><li><a href="https://testedinchina.com/changelog" rel="noopener noreferrer">https://testedinchina.com/changelog</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-11"><p class="badge">不首推：计费不匹配</p><h2>Mullvad</h2><p><a href="https://mullvad.net/en" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>重买／叠加</dt><dd>套餐配置不同不能互套监测</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>历史首次用量&lt;10GB；帮助7天与条款7工作日冲突保留；续费不退</dd>
+<dt>预配置应急</dt><dd>浙江移动家庭宽带Android官方App；2026-10-29 14:10 CST，近24h11/11；7日100%为站点报告，样本总数未取得，不称连续7日无中断。测试自10月5日起，非完整30日。</dd>
+<dt>从零／闲置恢复</dt><dd>官方说明部分受限网络首登与官网可受阻；预登录通过不能推出首登通过；长期闲置后启用未测</dd>
+<dt>GPT 网页</dt><dd>仅连接成功轮次中ChatGPT网页打开11/11；不是登录/实际发问/长对话。ChatGPT独立页快照10:20 CST与VPN页14:10 CST不同，不能当完全同步数据。</dd>
+<dt>GPT 对话</dt><dd>未核</dd>
+<dt>GPT 长会话</dt><dd>未核</dd>
+<dt>适用网络与原始证据</dt><dd>浙江移动家庭宽带Android官方App；2026-10-29 14:10 CST，近24h11/11；7日100%为站点报告，样本总数未取得，不称连续7日无中断。测试自10月5日起，非完整30日。</dd>
+<dt>限制与冲突</dt><dd>单省单ISP虚拟Android，不能外推其他地区与Windows；首登未测，官网/登录服务无VPN受阻；30分钟会话与抖动未运行；有affiliate；10月25三次无效Android环境失败已撤回</dd>
+<dt>来源日期</dt><dd>测试页2026-10-29 14:10 CST；测试起始10月5日；ChatGPT独立页10:20 CST非同步快照</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:25:00Z</dd>
+<dt>证据强度</dt><dd>当前较强的单网络重复测试条件证据，含推广利益；7日样本数未取得，不是已证7日零中断</dd>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://windscribe.com/" rel="noopener noreferrer">https://windscribe.com/</a></li><li><a href="https://windscribe.com/terms" rel="noopener noreferrer">https://windscribe.com/terms</a></li><li><a href="https://windscribe.com/privacy" rel="noopener noreferrer">https://windscribe.com/privacy</a></li><li><a href="https://windscribe.com/knowledge-base/articles/does-windscribe-work-in-china-and-other-restricted-countries" rel="noopener noreferrer">https://windscribe.com/knowledge-base/articles/does-windscribe-work-in-china-and-other-restricted-countries</a></li><li><a href="https://testedinchina.com/vpn/windscribe-pro" rel="noopener noreferrer">https://testedinchina.com/vpn/windscribe-pro</a></li><li><a href="https://testedinchina.com/changelog" rel="noopener noreferrer">https://testedinchina.com/changelog</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li><li><a href="https://windscribe.com/upgrade" rel="noopener noreferrer">https://windscribe.com/upgrade</a></li><li><a href="https://testedinchina.com/method" rel="noopener noreferrer">https://testedinchina.com/method</a></li><li><a href="https://testedinchina.com/chatgpt-in-china" rel="noopener noreferrer">https://testedinchina.com/chatgpt-in-china</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-11"><h2>Mullvad</h2><p><a href="https://mullvad.net/en" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>有冲突条件备选（更低月费，需调参）</dd>
 <dt>入口身份</dt><dd>品牌域名、官方政策及相关页面来源链</dd>
-<dt>价格与流量</dt><dd>EUR 5 / 月，价格含VAT；其他付款成本未结算</dd>
+<dt>价格与流量</dt><dd>EUR5/月（含VAT）；买12个月需EUR60全额，不是折扣价；支付换汇费未核</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>周期套餐，非不限时</dd>
-<dt>重买/叠加</dt><dd>按购买服务时间</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>历史14天、现金除外；支付细则待核</dd>
-<dt>连接与GPT</dt><dd>限定范围审计支持相应安全工程，不证明大陆长会话或长期闲置启动；官方承认受限地区连接限制。</dd>
-<dt>限制与缺口</dt><dd>本轮首页5欧/月明确；非买量不限时。既有指定范围审计支持对应安全维度，不支持指定网络长会话、长期闲置启动或永远可连。</dd>
-<dt>来源日期</dt><dd>本轮首页5欧2026-10-29实读；受限地区说明2026-04-22历史已读</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>重买／叠加</dt><dd>按购买服务时间</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>历史14天、现金除外；支付细则待核</dd>
+<dt>预配置应急</dt><dd>近期大陆原始自述QUIC可连、一周仍能连；另有长期多城旅客正面，但其混用eSIM不可全部归VPN；负面包括慢/视频不可用/WiFi与移动差异</dd>
+<dt>从零／闲置恢复</dt><dd>从零首登、长期闲置后启动及自动恢复未取得充分证据</dd>
+<dt>GPT 网页</dt><dd>未核</dd>
+<dt>GPT 对话</dt><dd>未核</dd>
+<dt>GPT 长会话</dt><dd>未核</dd>
+<dt>适用网络与原始证据</dt><dd>近期大陆原始自述QUIC可连、一周仍能连；另有长期多城旅客正面，但其混用eSIM不可全部归VPN；负面包括慢/视频不可用/WiFi与移动差异</dd>
+<dt>限制与冲突</dt><dd>没有与Pro相同的重复测试日志；官方4月亚洲封锁与近期用户HK可连并列，不抹平时间网络差；未取得GPT真实会话与冷启动证据</dd>
+<dt>来源日期</dt><dd>2026-10近期原始用户帖子；官方当前价格核查2026-10-29</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:25:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://mullvad.net/en" rel="noopener noreferrer">https://mullvad.net/en</a></li><li><a href="https://mullvad.net/en/pricing" rel="noopener noreferrer">https://mullvad.net/en/pricing</a></li><li><a href="https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations" rel="noopener noreferrer">https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-12"><p class="badge">不首推：非已证不限时应急</p><h2>Proton VPN</h2><p><a href="https://protonvpn.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://mullvad.net/en" rel="noopener noreferrer">https://mullvad.net/en</a></li><li><a href="https://mullvad.net/en/pricing" rel="noopener noreferrer">https://mullvad.net/en/pricing</a></li><li><a href="https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations" rel="noopener noreferrer">https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li><li><a href="https://www.reddit.com/r/mullvadvpn/comments/1x79fmf/just_tried_connecting_from_china/" rel="noopener noreferrer">https://www.reddit.com/r/mullvadvpn/comments/1x79fmf/just_tried_connecting_from_china/</a></li><li><a href="https://www.reddit.com/r/chinatravel/comments/1wuqhxw/vpns_in_china_what_worked_for_me_2_weeks_travel/" rel="noopener noreferrer">https://www.reddit.com/r/chinatravel/comments/1wuqhxw/vpns_in_china_what_worked_for_me_2_weeks_travel/</a></li><li><a href="https://www.reddit.com/r/mullvadvpn/comments/1wdeush/down_in_china/" rel="noopener noreferrer">https://www.reddit.com/r/mullvadvpn/comments/1wdeush/down_in_china/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-12"><h2>Proton VPN</h2><p><a href="https://protonvpn.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>有冲突条件备选（套餐/平台证据仍不足）</dd>
 <dt>入口身份</dt><dd>品牌官网与产品生态页面互相链接</dd>
 <dt>价格与流量</dt><dd>Free免费档；2026-10-27历史 Plus USD83.76首期24个月、之后83.88/12个月；非当前优惠承诺</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>Free不是永久购买权；不活跃账户政策与持续付费状态分开</dd>
-<dt>重买/叠加</dt><dd>周期方案；非永久流量包</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>30天为价格页宣传，细则未完整核实</dd>
-<dt>连接与GPT</dt><dd>免费/付费、审计/大陆连接必须分开。官方中国说明不保证100%可用。</dd>
-<dt>限制与缺口</dt><dd>本轮主页可读并与proton.me生态互链。Free不是买断永久权；Plus周期付费与Free分开，旧优惠不自动续为当前报价。保留不活跃账号及中国可用性边界。</dd>
+<dt>重买／叠加</dt><dd>周期方案；非永久流量包</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>30天为价格页宣传，细则未完整核实</dd>
+<dt>预配置应急</dt><dd>官方仍大陆指导，无退出；Free失败不外推Plus。</dd>
+<dt>从零／闲置恢复</dt><dd>从零首登、长期闲置后启动及自动恢复未取得充分证据</dd>
+<dt>GPT 网页</dt><dd>未核</dd>
+<dt>GPT 对话</dt><dd>未核</dd>
+<dt>GPT 长会话</dt><dd>未核</dd>
+<dt>适用网络与原始证据</dt><dd>官方仍大陆指导，无退出；Free失败不外推Plus。</dd>
+<dt>限制与冲突</dt><dd></dd>
 <dt>来源日期</dt><dd>本轮首页2026-10-29实读；价格2026-10-27历史核验</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:25:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://protonvpn.com/" rel="noopener noreferrer">https://protonvpn.com/</a></li><li><a href="https://proton.me/legal/terms" rel="noopener noreferrer">https://proton.me/legal/terms</a></li><li><a href="https://protonvpn.com/support/does-protonvpn-work-in-china" rel="noopener noreferrer">https://protonvpn.com/support/does-protonvpn-work-in-china</a></li><li><a href="https://proton.me/support/inactive-accounts" rel="noopener noreferrer">https://proton.me/support/inactive-accounts</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-13"><p class="badge">不首推：历史高价保留</p><h2>Astrill</h2><p><a href="https://www.astrill.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://protonvpn.com/" rel="noopener noreferrer">https://protonvpn.com/</a></li><li><a href="https://proton.me/legal/terms" rel="noopener noreferrer">https://proton.me/legal/terms</a></li><li><a href="https://protonvpn.com/support/does-protonvpn-work-in-china" rel="noopener noreferrer">https://protonvpn.com/support/does-protonvpn-work-in-china</a></li><li><a href="https://proton.me/support/inactive-accounts" rel="noopener noreferrer">https://proton.me/support/inactive-accounts</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li><li><a href="https://www.reddit.com/r/chinatravel/comments/1wuqhxw/vpns_in_china_what_worked_for_me_2_weeks_travel/" rel="noopener noreferrer">https://www.reddit.com/r/chinatravel/comments/1wuqhxw/vpns_in_china_what_worked_for_me_2_weeks_travel/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-13"><h2>Astrill</h2><p><a href="https://www.astrill.com/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>有冲突条件备选（近期故障，不优先购买）</dd>
 <dt>入口身份</dt><dd>品牌域名、官方政策及相关页面来源链</dd>
-<dt>价格与流量</dt><dd>历史 USD30/月，未本轮重新结算</dd>
+<dt>价格与流量</dt><dd>USD30/月；USD180/年；USD300/两年均为首付全额，VIP另USD10/月起；税费未结算</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
-<dt>期限与闲置</dt><dd>高价周期套餐；非不限时</dd>
-<dt>重买/叠加</dt><dd>未知</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>历史条款不因ISP封锁或地区功能限制退款；未购买验证</dd>
-<dt>连接与GPT</dt><dd>第三方上海观察有商业关系；StealthVPN 营销、平台功能差异均不构成全天可用证明。</dd>
-<dt>限制与缺口</dt><dd>本轮主页可读，StealthVPN宣传不是可用率实测。历史高价周期候选保留不提升为低价不限时推荐；平台差异与退款限制不能忽略。</dd>
-<dt>来源日期</dt><dd>本轮首页2026-10-29实读；第三方2026-07-17历史记录</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>期限与闲置</dt><dd>非不限时；无当前付费且不活跃12个月账号可删除</dd>
+<dt>重买／叠加</dt><dd>未知</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>官方条款对ISP封锁不退款或赔偿；功能可因地区限制</dd>
+<dt>预配置应急</dt><dd>Top10VPN长期上海100%但最后实测7月、有affiliate；10月原始掉线/全天失败，与联通Android/桌面可用及多城两周可用报告并存</dd>
+<dt>从零／闲置恢复</dt><dd>从零首登、长期闲置后启动及自动恢复未取得充分证据</dd>
+<dt>GPT 网页</dt><dd>未核</dd>
+<dt>GPT 对话</dt><dd>未核</dd>
+<dt>GPT 长会话</dt><dd>未核</dd>
+<dt>适用网络与原始证据</dt><dd>Top10VPN长期上海100%但最后实测7月、有affiliate；10月原始掉线/全天失败，与联通Android/桌面可用及多城两周可用报告并存</dd>
+<dt>限制与冲突</dt><dd>iOS无Stealth，桌面不可外推；ISP封锁不退款/赔偿；无当前付费且不活跃12个月账号可删；不是已核当前官方全网故障；用户截图转呈官方提示</dd>
+<dt>来源日期</dt><dd>近期10月原始故障帖；官方条款2026-09；Top10VPN最后实测7月，不作当期100%</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:25:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://www.astrill.com/" rel="noopener noreferrer">https://www.astrill.com/</a></li><li><a href="https://www.astrill.com/privacy-policy" rel="noopener noreferrer">https://www.astrill.com/privacy-policy</a></li><li><a href="https://www.astrill.com/terms-of-service" rel="noopener noreferrer">https://www.astrill.com/terms-of-service</a></li><li><a href="https://www.top10vpn.com/reviews/astrill/" rel="noopener noreferrer">https://www.top10vpn.com/reviews/astrill/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="provider-14"><p class="badge">排除：官方大陆服务限制</p><h2>LetsVPN</h2><p><a href="https://letsvpn.world/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://www.astrill.com/" rel="noopener noreferrer">https://www.astrill.com/</a></li><li><a href="https://www.astrill.com/privacy-policy" rel="noopener noreferrer">https://www.astrill.com/privacy-policy</a></li><li><a href="https://www.astrill.com/terms-of-service" rel="noopener noreferrer">https://www.astrill.com/terms-of-service</a></li><li><a href="https://www.top10vpn.com/reviews/astrill/" rel="noopener noreferrer">https://www.top10vpn.com/reviews/astrill/</a></li><li><a href="https://www.astrill.com/pricing" rel="noopener noreferrer">https://www.astrill.com/pricing</a></li><li><a href="https://www.top10vpn.com/best-vpn/china/" rel="noopener noreferrer">https://www.top10vpn.com/best-vpn/china/</a></li><li><a href="https://www.reddit.com/r/AstrillVPN/comments/1x321ug/best_servers_china/" rel="noopener noreferrer">https://www.reddit.com/r/AstrillVPN/comments/1x321ug/best_servers_china/</a></li><li><a href="https://www.reddit.com/r/AstrillVPN/comments/1wu2p10/connection_problems_in_china/" rel="noopener noreferrer">https://www.reddit.com/r/AstrillVPN/comments/1wu2p10/connection_problems_in_china/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="provider-14"><h2>LetsVPN</h2><p><a href="https://letsvpn.world/" rel="noopener noreferrer">官网／官方提供入口</a></p><dl>
+<dt>当前分层</dt><dd>排除：官方大陆服务限制</dd>
 <dt>入口身份</dt><dd>此前应用商店身份资料与官方博客对应</dd>
 <dt>价格与流量</dt><dd>未核；已因大陆服务边界排除，不以价格挽回</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>不适用本轮候选</dd>
-<dt>重买/叠加</dt><dd>未核</dd>
-<dt>流量倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
-<dt>退款边界</dt><dd>未核</dd>
-<dt>连接与GPT</dt><dd>官方2026-05-15信件称不能继续向中国大陆用户提供稳定可靠VPN服务；全球运营恢复不能抹去该地域限制。</dd>
-<dt>限制与缺口</dt><dd>补入既有对话的排除项。官方2026/5/15信件本轮实读：不能继续向中国大陆用户提供VPN服务，不能提供稳定可靠大陆服务。不能以全球标准运营恢复掩盖该地域排除；不纳入当前购买候选。</dd>
+<dt>重买／叠加</dt><dd>未核</dd>
+<dt>倍率</dt><dd>当前完整倍率未知；标称GB不等于已证实际可传输GB</dd>
+<dt>退款</dt><dd>未核</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>官方2026-05-15信件称不能继续向中国大陆用户提供稳定可靠VPN服务；全球运营恢复不能抹去该地域限制。</dd>
+<dt>限制与冲突</dt><dd>补入既有对话的排除项。官方2026/5/15信件本轮实读：不能继续向中国大陆用户提供VPN服务，不能提供稳定可靠大陆服务。不能以全球标准运营恢复掩盖该地域排除；不纳入当前购买候选。</dd>
 <dt>来源日期</dt><dd>官方信件2026-05-15；本轮2026-10-29实读</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:39:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:39:00Z</dd>
 <dt>证据强度</dt><dd>官网入口身份与公开条款较强；可用性仅运营声明/有条件第三方历史信号，未证任意指定网络长时稳定</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://letsvpn.world/blog/h20kxb" rel="noopener noreferrer">https://letsvpn.world/blog/h20kxb</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="peiqian"><p class="badge">不首推：闲置清号风险</p><h2>赔钱机场</h2><p><a href="https://xn--mes358aby2apfg.com/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://letsvpn.world/blog/h20kxb" rel="noopener noreferrer">https://letsvpn.world/blog/h20kxb</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="peiqian"><h2>赔钱机场</h2><p><a href="https://xn--mes358aby2apfg.com/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>官方频道简介直接指向网站；未完成网站反向链接复核</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知；第三方2026-09-03声称18.90元/1000G，不作为官方现价</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>历史官方明确不限时不可叠加，不同套餐相互覆盖；官方明确长期未使用可能删除账号且无法恢复；未公开具体期限</dd>
-<dt>重买/叠加</dt><dd>历史官方明确不限时不可叠加，不同套餐相互覆盖</dd>
-<dt>流量倍率</dt><dd>当前官方未知</dd>
-<dt>退款边界</dt><dd>当前官方未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。不满足已证明无保号的长期备用条件；非断言所有账户都会删除</dd>
-<dt>限制与缺口</dt><dd>https://dash.pqjc.site 公开抓取403；未绕过 法律主体及与其他供应商独立性未核实</dd>
+<dt>重买／叠加</dt><dd>历史官方明确不限时不可叠加，不同套餐相互覆盖</dd>
+<dt>倍率</dt><dd>当前官方未知</dd>
+<dt>退款</dt><dd>当前官方未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。不满足已证明无保号的长期备用条件；非断言所有账户都会删除</dd>
+<dt>限制与冲突</dt><dd>https://dash.pqjc.site 公开抓取403；未绕过 法律主体及与其他供应商独立性未核实</dd>
 <dt>来源日期</dt><dd>官方春节历史公告；完整发布日期未在本轮核得；第三方报价2026-09-03，不是官方现价</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/peiqianjichangpd" rel="noopener noreferrer">https://t.me/s/peiqianjichangpd</a></li><li><a href="https://t.me/peiqianjichangpd/83" rel="noopener noreferrer">https://t.me/peiqianjichangpd/83</a></li><li><a href="https://t.me/s/peiqianjichangpd?before=85" rel="noopener noreferrer">https://t.me/s/peiqianjichangpd?before=85</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="aky"><p class="badge">待核：不进入确定购买推荐</p><h2>AKY/艾可云</h2><p><a href="https://d77inv.akjpa.com/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/peiqianjichangpd" rel="noopener noreferrer">https://t.me/s/peiqianjichangpd</a></li><li><a href="https://t.me/peiqianjichangpd/83" rel="noopener noreferrer">https://t.me/peiqianjichangpd/83</a></li><li><a href="https://t.me/s/peiqianjichangpd?before=85" rel="noopener noreferrer">https://t.me/s/peiqianjichangpd?before=85</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="aky"><h2>AKY/艾可云</h2><p><a href="https://d77inv.akjpa.com/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>2026-06-18官方频道帖子直接指向动态官网</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知；已核单次流量额度55 / 120 / 280 / 650GB，不把未知价格写成零</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>官方按量Timeless单次付；不叠加，必须用完再购；未知</dd>
-<dt>重买/叠加</dt><dd>官方按量Timeless单次付；不叠加，必须用完再购</dd>
-<dt>流量倍率</dt><dd>未知；按量产品归常规线路，不可等同专线</dd>
-<dt>退款边界</dt><dd>开通后不更换不退款</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。保留真实按量产品候选，但现价/现库存/闲置规则未核，不升级为低价首推</dd>
-<dt>限制与缺口</dt><dd>动态官网公开抓取不可用，未注册或换路绕过 频道自称株式会社M.H.ソリューション所属HKYYT運営部；未独立验证法律主体</dd>
+<dt>重买／叠加</dt><dd>官方按量Timeless单次付；不叠加，必须用完再购</dd>
+<dt>倍率</dt><dd>未知；按量产品归常规线路，不可等同专线</dd>
+<dt>退款</dt><dd>开通后不更换不退款</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。保留真实按量产品候选，但现价/现库存/闲置规则未核，不升级为低价首推</dd>
+<dt>限制与冲突</dt><dd>动态官网公开抓取不可用，未注册或换路绕过 频道自称株式会社M.H.ソリューション所属HKYYT運営部；未独立验证法律主体</dd>
 <dt>来源日期</dt><dd>官方公告2026-06-18；当前售价与库存未核</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/v2akygg" rel="noopener noreferrer">https://t.me/s/v2akygg</a></li><li><a href="https://t.me/v2akygg/451" rel="noopener noreferrer">https://t.me/v2akygg/451</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="poxiao"><p class="badge">待核：不进入确定购买推荐</p><h2>云通→破晓</h2><p><a href="https://xn--1jvw11b.com/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/v2akygg" rel="noopener noreferrer">https://t.me/s/v2akygg</a></li><li><a href="https://t.me/v2akygg/451" rel="noopener noreferrer">https://t.me/v2akygg/451</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="poxiao"><h2>云通→破晓</h2><p><a href="https://xn--1jvw11b.com/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>原云通官方频道迁移公告直接给破晓.com</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>原按量改套餐制；国庆公告不限时限量100个，现库存未知；迁移只近期活跃且余额&gt;1元自动迁入；其他历史余额需工单解除限制</dd>
-<dt>重买/叠加</dt><dd>原按量改套餐制；国庆公告不限时限量100个，现库存未知</dd>
-<dt>流量倍率</dt><dd>未知</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。撤销把旧云通一元起充当现行不限时现货；破晓待核，不是独立于云通的备用商</dd>
-<dt>限制与缺口</dt><dd>旧yuntong.one公开抓取521，非证明节点全故障 与云通明确同一迁移链，不可重复算独立供应商</dd>
+<dt>重买／叠加</dt><dd>原按量改套餐制；国庆公告不限时限量100个，现库存未知</dd>
+<dt>倍率</dt><dd>未知</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。撤销把旧云通一元起充当现行不限时现货；破晓待核，不是独立于云通的备用商</dd>
+<dt>限制与冲突</dt><dd>旧yuntong.one公开抓取521，非证明节点全故障 与云通明确同一迁移链，不可重复算独立供应商</dd>
 <dt>来源日期</dt><dd>迁移与国庆历史公告；完整发布日期未在本轮核得，当前库存未知</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/yuntong_office2" rel="noopener noreferrer">https://t.me/s/yuntong_office2</a></li><li><a href="https://t.me/yuntong_office2/85" rel="noopener noreferrer">https://t.me/yuntong_office2/85</a></li><li><a href="https://t.me/yuntong_office2/90" rel="noopener noreferrer">https://t.me/yuntong_office2/90</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="surfcat"><p class="badge">待核：不进入确定购买推荐</p><h2>冲浪猫</h2><p><a href="https://www.clmgw.com/" rel="noopener noreferrer">官网（网站与公告互链）</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/yuntong_office2" rel="noopener noreferrer">https://t.me/s/yuntong_office2</a></li><li><a href="https://t.me/yuntong_office2/85" rel="noopener noreferrer">https://t.me/yuntong_office2/85</a></li><li><a href="https://t.me/yuntong_office2/90" rel="noopener noreferrer">https://t.me/yuntong_office2/90</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="surfcat"><h2>冲浪猫</h2><p><a href="https://www.clmgw.com/" rel="noopener noreferrer">官网（网站与公告互链）</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>imclm.com导航→msclminfo；该频道反向列clmgw.com、imclm.com，身份闭环</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>2024-08-10官方活动确有不限时流量包；现行公开首页只见月付起价，非现价证明；未知</dd>
-<dt>重买/叠加</dt><dd>2024-08-10官方活动确有不限时流量包；现行公开首页只见月付起价，非现价证明</dd>
-<dt>流量倍率</dt><dd>2024-08公告部分节点有倍率，未来恢复1倍只是计划，当前未知</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。有官方身份与历史不限时证据；价格和最新可售条件未核，待核而非推荐</dd>
-<dt>限制与缺口</dt><dd> 团队自称修猫团队；法律主体/其他品牌关系未核</dd>
+<dt>重买／叠加</dt><dd>2024-08-10官方活动确有不限时流量包；现行公开首页只见月付起价，非现价证明</dd>
+<dt>倍率</dt><dd>2024-08公告部分节点有倍率，未来恢复1倍只是计划，当前未知</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。有官方身份与历史不限时证据；价格和最新可售条件未核，待核而非推荐</dd>
+<dt>限制与冲突</dt><dd> 团队自称修猫团队；法律主体/其他品牌关系未核</dd>
 <dt>来源日期</dt><dd>官方历史不限时公告2024-08-10；现行售价未核</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://imclm.com/" rel="noopener noreferrer">https://imclm.com/</a></li><li><a href="https://www.clmgw.com/" rel="noopener noreferrer">https://www.clmgw.com/</a></li><li><a href="https://t.me/s/msclminfo?before=94" rel="noopener noreferrer">https://t.me/s/msclminfo?before=94</a></li><li><a href="https://t.me/msclminfo/65" rel="noopener noreferrer">https://t.me/msclminfo/65</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="unicorn"><p class="badge">待核：不进入确定购买推荐</p><h2>独角兽</h2><p><a href="https://91unicorn.cloud/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://imclm.com/" rel="noopener noreferrer">https://imclm.com/</a></li><li><a href="https://www.clmgw.com/" rel="noopener noreferrer">https://www.clmgw.com/</a></li><li><a href="https://t.me/s/msclminfo?before=94" rel="noopener noreferrer">https://t.me/s/msclminfo?before=94</a></li><li><a href="https://t.me/msclminfo/65" rel="noopener noreferrer">https://t.me/msclminfo/65</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="unicorn"><h2>独角兽</h2><p><a href="https://91unicorn.cloud/" rel="noopener noreferrer">官方频道所列入口</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>官方频道简介指向官网；网站抓取仅标题，反链未核</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>2025-01春节公告已允许不限时流量叠加，替代2024不叠加说明；未知</dd>
-<dt>重买/叠加</dt><dd>2025-01春节公告已允许不限时流量叠加，替代2024不叠加说明</dd>
-<dt>流量倍率</dt><dd>历史官方IEPL及澳门3倍，CMI1倍；当前未复核</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。保留规则明确的历史候选，最新公开公告停留2025-01，不应据旧价购买</dd>
-<dt>限制与缺口</dt><dd> 运营主体未核</dd>
+<dt>重买／叠加</dt><dd>2025-01春节公告已允许不限时流量叠加，替代2024不叠加说明</dd>
+<dt>倍率</dt><dd>历史官方IEPL及澳门3倍，CMI1倍；当前未复核</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。保留规则明确的历史候选，最新公开公告停留2025-01，不应据旧价购买</dd>
+<dt>限制与冲突</dt><dd> 运营主体未核</dd>
 <dt>来源日期</dt><dd>官方最新可见规则公告2025-01；2024旧不叠加规则已被替代</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://t.me/s/UnicornCloudChannel" rel="noopener noreferrer">https://t.me/s/UnicornCloudChannel</a></li><li><a href="https://t.me/UnicornCloudChannel/127" rel="noopener noreferrer">https://t.me/UnicornCloudChannel/127</a></li><li><a href="https://91unicorn.cloud/" rel="noopener noreferrer">https://91unicorn.cloud/</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="huabanmao"><p class="badge">待核：不进入确定购买推荐</p><h2>滑板猫</h2><p><a href="https://www.huabanmao.com/" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://t.me/s/UnicornCloudChannel" rel="noopener noreferrer">https://t.me/s/UnicornCloudChannel</a></li><li><a href="https://t.me/UnicornCloudChannel/127" rel="noopener noreferrer">https://t.me/UnicornCloudChannel/127</a></li><li><a href="https://91unicorn.cloud/" rel="noopener noreferrer">https://91unicorn.cloud/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="huabanmao"><h2>滑板猫</h2><p><a href="https://www.huabanmao.com/" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>第三方原作者评测指向；官网仅标题，频道现为Contact页面，无当前官方身份闭环</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知；2025-04-09评测表99元600GB、189元1500GB、299元3000GB；同页总结却写1TB起，内部矛盾</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>第三方称不限时，当前官方未核；未知</dd>
-<dt>重买/叠加</dt><dd>第三方称不限时，当前官方未核</dd>
-<dt>流量倍率</dt><dd>未知</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。不采用第三方99元1TB为可靠现价；需官方公开价与身份闭环</dd>
-<dt>限制与缺口</dt><dd> 不能仅同为猫类名称认定与自由猫/冲浪猫同商或异商</dd>
+<dt>重买／叠加</dt><dd>第三方称不限时，当前官方未核</dd>
+<dt>倍率</dt><dd>未知</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。不采用第三方99元1TB为可靠现价；需官方公开价与身份闭环</dd>
+<dt>限制与冲突</dt><dd> 不能仅同为猫类名称认定与自由猫/冲浪猫同商或异商</dd>
 <dt>来源日期</dt><dd>第三方评测2025-04-09；官网当前条款未核</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://baobaoap.com/archives/73.html" rel="noopener noreferrer">https://baobaoap.com/archives/73.html</a></li><li><a href="https://www.huabanmao.com/" rel="noopener noreferrer">https://www.huabanmao.com/</a></li><li><a href="https://t.me/huabanmao" rel="noopener noreferrer">https://t.me/huabanmao</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="sammao"><p class="badge">待核：不进入确定购买推荐</p><h2>三毛机场</h2><p><a href="https://3mao.bid/" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://baobaoap.com/archives/73.html" rel="noopener noreferrer">https://baobaoap.com/archives/73.html</a></li><li><a href="https://www.huabanmao.com/" rel="noopener noreferrer">https://www.huabanmao.com/</a></li><li><a href="https://t.me/huabanmao" rel="noopener noreferrer">https://t.me/huabanmao</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="sammao"><h2>三毛机场</h2><p><a href="https://3mao.bid/" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>这是待核销售/导航页，不标已确认官网；所有订购链接指向第三方c.jichangs.com</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知；待核页25.99元1000G一次性；不当官方报价</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>页面声称用完为止，尚未核官方条款；未知</dd>
-<dt>重买/叠加</dt><dd>页面声称用完为止，尚未核官方条款</dd>
-<dt>流量倍率</dt><dd>未知</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。身份未闭环，暂不进入购买推荐</dd>
-<dt>限制与缺口</dt><dd> 未知</dd>
+<dt>重买／叠加</dt><dd>页面声称用完为止，尚未核官方条款</dd>
+<dt>倍率</dt><dd>未知</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。身份未闭环，暂不进入购买推荐</dd>
+<dt>限制与冲突</dt><dd> 未知</dd>
 <dt>来源日期</dt><dd>待核销售页完整发布日期未核；读取日期不能代替发布日期</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://3mao.bid/" rel="noopener noreferrer">https://3mao.bid/</a></li><li><a href="https://t.me/sanmaojichang" rel="noopener noreferrer">https://t.me/sanmaojichang</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<article id="fish"><p class="badge">待核：不进入确定购买推荐</p><h2>鱼鱼的超级机场</h2><p><a href="https://yydcjjc.sbs/index.html" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></p><dl>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://3mao.bid/" rel="noopener noreferrer">https://3mao.bid/</a></li><li><a href="https://t.me/sanmaojichang" rel="noopener noreferrer">https://t.me/sanmaojichang</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="fish"><h2>鱼鱼的超级机场</h2><p><a href="https://yydcjjc.sbs/index.html" rel="noopener noreferrer">待核网站，勿据此付款/提交凭据</a></p><dl>
+<dt>当前分层</dt><dd>待核对照：尚无足够当前适用网络应急证据</dd>
 <dt>入口身份</dt><dd>待核自称官网；另有yydcjjc.top、历史yvyv2.top，未闭环</dd>
 <dt>价格与流量</dt><dd>当前官方售价未知；19.99元100GB仅未核身份网页/推广材料</dd>
 <dt>真实全费</dt><dd>未支付核实；未知手续费/税费/最低支付门槛不按零</dd>
 <dt>期限与闲置</dt><dd>声称不限时，未核官方现规则；未知</dd>
-<dt>重买/叠加</dt><dd>声称不限时，未核官方现规则</dd>
-<dt>流量倍率</dt><dd>未知</dd>
-<dt>退款边界</dt><dd>未知</dd>
-<dt>连接与GPT</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。页面称Clash兼容与频道镜像称仅官方客户端相冲突；不作推荐</dd>
-<dt>限制与缺口</dt><dd> 未知</dd>
+<dt>重买／叠加</dt><dd>声称不限时，未核官方现规则</dd>
+<dt>倍率</dt><dd>未知</dd>
+<dt>退款</dt><dd>未知</dd>
+<dt>预配置应急</dt><dd>未取得明确的长期闲置后、预配置状态启用测试</dd>
+<dt>从零／闲置恢复</dt><dd>从零注册/登录、找回入口及恢复配置未核验</dd>
+<dt>GPT 网页</dt><dd>未核验当前条件</dd>
+<dt>GPT 对话</dt><dd>未核验当前条件</dd>
+<dt>GPT 长会话</dt><dd>未核验当前条件</dd>
+<dt>适用网络与原始证据</dt><dd>未取得足够当前、有网络/套餐/持续时长条件的独立大陆 GPT 会话证据。页面称Clash兼容与频道镜像称仅官方客户端相冲突；不作推荐</dd>
+<dt>限制与冲突</dt><dd> 未知</dd>
 <dt>来源日期</dt><dd>待核页面及频道镜像完整发布日期未核；读取日期不能代替发布日期</dd>
-<dt>本轮读取</dt><dd>2026-10-29T06:40:00Z</dd>
+<dt>核查时间</dt><dd>2026-10-29T06:40:00Z</dd>
 <dt>证据强度</dt><dd>经营方声明或历史第三方资料；非本研究付费实测，非全天在线保证</dd>
-</dl><details open><summary>逐项公开来源</summary><ul><li><a href="https://yydcjjc.sbs/index.html" rel="noopener noreferrer">https://yydcjjc.sbs/index.html</a></li><li><a href="https://www.jichangbang.cc/vpn/126-%E9%B1%BC%E9%B1%BC%E7%9A%84%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%9C%BA" rel="noopener noreferrer">https://www.jichangbang.cc/vpn/126-%E9%B1%BC%E9%B1%BC%E7%9A%84%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%9C%BA</a></li><li><a href="https://telemetr.io/en/channels/1980152396-hkcaliairtz/posts" rel="noopener noreferrer">https://telemetr.io/en/channels/1980152396-hkcaliairtz/posts</a></li></ul></details><p><a href="#top">返回顶部 / 目录</a></p></article>
-<section><h2>修正历史与证据边界</h2><ol><li>SS-ID 2026-08-14为订阅采样异常，不证明供应商全节点故障；7/18撤回条目与仍显示60%记录映射不明，不作可靠失败率。</li><li>Windscribe三次Android测试环境失败已撤为无效样本，不归因服务商。</li><li>魔戒多个订阅并列替代旧同套餐覆盖；并列不等于合并。</li><li>自由猫旧优惠与八戒已截止618优惠不作现价；TAG年包不是不限时。</li><li>狗狗加速退款由未知更新为官方付款后不退；该更正不追溯改写旧快照。</li><li>云通迁至破晓，旧1元起充非当前不限时现货；二者不重复计算独立商。</li><li>抓取403/402/521或空JS壳不是节点服务故障；未知不等于不可用。</li></ol><p>v6：原有13家逐项补网站，加回既有排除项LetsVPN，再扩围8家，共22个研究对象；不是22家购买推荐。狗狗退款、赔钱闲置清号、AKY叠加限制、云通迁移为实质补充。旧原文与私人背景不进入公开页。</p><p>历史v5：不限时优先；v4：SS-ID采样归因勘误；v3及更早：周期低价与分维质量研究。此公共版仅保留公共研究事实及必要更正，不发布私人原始报告。</p></section><footer>价格为注明日期的公开资料切片；未知全费不按零。无登录、购买、安装或第三方联系；没有取得服务持续可用的合同或实测保证。使用须遵守适用规则及服务条款。公开版 v6。</footer></main></body></html>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://yydcjjc.sbs/index.html" rel="noopener noreferrer">https://yydcjjc.sbs/index.html</a></li><li><a href="https://www.jichangbang.cc/vpn/126-%E9%B1%BC%E9%B1%BC%E7%9A%84%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%9C%BA" rel="noopener noreferrer">https://www.jichangbang.cc/vpn/126-%E9%B1%BC%E9%B1%BC%E7%9A%84%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%9C%BA</a></li><li><a href="https://telemetr.io/en/channels/1980152396-hkcaliairtz/posts" rel="noopener noreferrer">https://telemetr.io/en/channels/1980152396-hkcaliairtz/posts</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="justmysocks"><h2>Just My Socks</h2><p><a href="https://justmysocks.net/members/" rel="noopener noreferrer">官网／官方公告所列网站</a></p><dl>
+<dt>当前分层</dt><dd>运营/价格透明的独立候选；近期连续多ISP证据不足，维护事项单列不淘汰</dd>
+<dt>入口身份</dt><dd>主站内部导航直达产品、条款、隐私、About；About现写Fiber Logic加拿大和注册号741783880RC0001，未独立查注册；不得照抄测评IT7主体</dd>
+<dt>价格与流量</dt><dd>官网LA500 USD5.88/月500GB5设备；HK China Mobile ONLY USD8.99/月500GB5设备明确NO CT/CU；税汇率手续费未核，不能视最终CNY总额</dd>
+<dt>真实全费</dt><dd>尚未结算；税费、汇率差及支付费用未知，不计为零</dd>
+<dt>期限与闲置</dt><dd>周期套餐；长期闲置清号条件未核</dd>
+<dt>重买／叠加</dt><dd>未核</dd>
+<dt>倍率</dt><dd>当前完整倍率未核</dd>
+<dt>退款</dt><dd>新账号首次付款7日内、月额度用量低于10%、无违约/支付争议且未曾退款等条件，方适用官方退款条款；非无条件退款</dd>
+<dt>预配置应急</dt><dd>9/25官方s2改VLESS/Reality，旧SS条目失效须刷新订阅；9/28服务端安全升级，部分旧客户端不再支持，失败需更新App/Xray重启；连接正常无需操作，不能把公告当整体不稳定；7日内新账号且月流量低于10%、无违约/争议、未曾退款等条件可全退原支付方式；不是无条件退款；官方隐私称仅账号邮箱国家，第三方支付，不收活动/IP/DNS/会话时间，保留月流量计数；厂商声明非独立审计；9/22更新测评上海电信LA500单次87.13Mbps/176ms，没有多日原始时间序列；其中主体和隐私叙述与官网不同，证据折减</dd>
+<dt>从零／闲置恢复</dt><dd>长期闲置升级后是否能自行恢复</dd>
+<dt>GPT 网页</dt><dd>未知，测速节点成功不等于 GPT 网页验证</dd>
+<dt>GPT 对话</dt><dd>未知</dd>
+<dt>GPT 长会话</dt><dd>未知</dd>
+<dt>适用网络与原始证据</dt><dd>9/25官方s2改VLESS/Reality，旧SS条目失效须刷新订阅；9/28服务端安全升级，部分旧客户端不再支持，失败需更新App/Xray重启；连接正常无需操作，不能把公告当整体不稳定；7日内新账号且月流量低于10%、无违约/争议、未曾退款等条件可全退原支付方式；不是无条件退款；官方隐私称仅账号邮箱国家，第三方支付，不收活动/IP/DNS/会话时间，保留月流量计数；厂商声明非独立审计；9/22更新测评上海电信LA500单次87.13Mbps/176ms，没有多日原始时间序列；其中主体和隐私叙述与官网不同，证据折减</dd>
+<dt>限制与冲突</dt><dd>长期闲置升级后是否能自行恢复；当前多日三ISP成功率；GPT实测；当前全套最终付款；运营独立于其他候选的完整网络关系；公开页面未能完整读取，不把读取失败视为服务故障。</dd>
+<dt>来源日期</dt><dd>原始来源日期见证据正文；核查日期不是发布日期</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:23:00Z</dd>
+<dt>证据强度</dt><dd>运营/价格透明的独立候选；近期连续多ISP证据不足，维护事项单列不淘汰。所有测量均为对应原作者与条件；非本报告自行实测。</dd>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://justmysocks.net/members/cart.php" rel="noopener noreferrer">https://justmysocks.net/members/cart.php</a></li><li><a href="https://justmysocks.net/members/index.php?rp=/announcements/40/Server-software-security-update.html" rel="noopener noreferrer">https://justmysocks.net/members/index.php?rp=/announcements/40/Server-software-security-update.html</a></li><li><a href="https://justmysocks.net/members/index.php?rp=/announcements/39/Protocol-update-on-s2---VlessorReality.html" rel="noopener noreferrer">https://justmysocks.net/members/index.php?rp=/announcements/39/Protocol-update-on-s2---VlessorReality.html</a></li><li><a href="https://justmysocks.net/members/index.php?rp=/knowledgebase/1/Terms-of-Service.html" rel="noopener noreferrer">https://justmysocks.net/members/index.php?rp=/knowledgebase/1/Terms-of-Service.html</a></li><li><a href="https://justmysocks.net/members/index.php?rp=/knowledgebase/17/Privacy-Policy.html" rel="noopener noreferrer">https://justmysocks.net/members/index.php?rp=/knowledgebase/17/Privacy-Policy.html</a></li><li><a href="https://justmysocks.net/members/index.php?rp=/knowledgebase/2/About-Just-My-Socks.html" rel="noopener noreferrer">https://justmysocks.net/members/index.php?rp=/knowledgebase/2/About-Just-My-Socks.html</a></li><li><a href="https://jmsjctest.com/just-my-socks-review/" rel="noopener noreferrer">https://jmsjctest.com/just-my-socks-review/</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="nexitally"><h2>Nexitally</h2><p><a href="https://nexitally.com/" rel="noopener noreferrer">官网／官方公告所列网站</a></p><dl>
+<dt>当前分层</dt><dd>较强历史单ISP月度体验参照；高价不直接代表更稳，当前价与闲置适配未核</dd>
+<dt>入口身份</dt><dd>https://t.me/s/Nexitally_Official描述直链nexitally.com，并链官方用户群/文档；根站403后未换入口绕过</dd>
+<dt>价格与流量</dt><dd>原作者2026-08-09记Smart Access CNY123.33/31天500GB2设备；半年623.70/186天，年1157.52/372天；不是当前官网结账。Premium额外170.1/31天且依赖基础包，不可单独当最低价</dd>
+<dt>真实全费</dt><dd>尚未结算；税费、汇率差及支付费用未知，不计为零</dd>
+<dt>期限与闲置</dt><dd>周期套餐；长期闲置清号条件未核</dd>
+<dt>重买／叠加</dt><dd>未核</dd>
+<dt>倍率</dt><dd>当前完整倍率未核</dd>
+<dt>退款</dt><dd>未核</dd>
+<dt>预配置应急</dt><dd>原作者湖南联通千兆/Clash Verge自购31天，8轮测点；普通节点连接97.1–100%，不是月uptime；8/5 Tomorin入口72节点全部低于20Mbps；Akari入口50节点中位287.6Mbps；作者日常未明显断流，不可说全断；原作者称订阅用几天需回后台更新；GPT实际完成、自动切换、冷启动未核；全订阅档案85–90%含Premium无权限，博客97.1–100%排除Premium；不同分母不能混用；相同Tomorin→Akari/M247服务商组合也见SSRDOG/奈云/忍者云，但非同具体服务器或已证同运营；官方公开频道最后可见2025-06-21计划East1/2停机切换通知，非2026持续运行证据</dd>
+<dt>从零／闲置恢复</dt><dd>升级后闲置恢复与GPT</dd>
+<dt>GPT 网页</dt><dd>未知，测速节点成功不等于 GPT 网页验证</dd>
+<dt>GPT 对话</dt><dd>未知</dd>
+<dt>GPT 长会话</dt><dd>未知</dd>
+<dt>适用网络与原始证据</dt><dd>原作者湖南联通千兆/Clash Verge自购31天，8轮测点；普通节点连接97.1–100%，不是月uptime；8/5 Tomorin入口72节点全部低于20Mbps；Akari入口50节点中位287.6Mbps；作者日常未明显断流，不可说全断；原作者称订阅用几天需回后台更新；GPT实际完成、自动切换、冷启动未核；全订阅档案85–90%含Premium无权限，博客97.1–100%排除Premium；不同分母不能混用；相同Tomorin→Akari/M247服务商组合也见SSRDOG/奈云/忍者云，但非同具体服务器或已证同运营；官方公开频道最后可见2025-06-21计划East1/2停机切换通知，非2026持续运行证据</dd>
+<dt>限制与冲突</dt><dd>当前价格及退款；2026官方故障台账；多ISP当期可用性；升级后闲置恢复与GPT；公开页面未能完整读取，不把读取失败视为服务故障。</dd>
+<dt>来源日期</dt><dd>作者文章2026-08-09；当月31天与8轮测点，当前官网价未核</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:23:00Z</dd>
+<dt>证据强度</dt><dd>较强历史单ISP月度体验参照；高价不直接代表更稳，当前价与闲置适配未核。所有测量均为对应原作者与条件；非本报告自行实测。</dd>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://kerrynotes.com/nexitally-review/" rel="noopener noreferrer">https://kerrynotes.com/nexitally-review/</a></li><li><a href="https://jcnotes.com/airports/nx/" rel="noopener noreferrer">https://jcnotes.com/airports/nx/</a></li><li><a href="https://t.me/s/Nexitally_Official" rel="noopener noreferrer">https://t.me/s/Nexitally_Official</a></li><li><a href="https://telegram.me/nexitallyusers" rel="noopener noreferrer">https://telegram.me/nexitallyusers</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<article id="dler-oix"><h2>DlerCloud / oixCloud</h2><p><a href="https://oixcloud.com/" rel="noopener noreferrer">待核恢复地址，不据此付款</a></p><dl>
+<dt>当前分层</dt><dd>暂不进入稳定应急候选；真实历史中断与接手身份/当前恢复证据待核</dd>
+<dt>入口身份</dt><dd>仅2026-02-26原始用户V2EX给出新址；本轮未取得官方交接证据，不能称现官方身份已核</dd>
+<dt>价格与流量</dt><dd>未知</dd>
+<dt>真实全费</dt><dd>尚未结算；税费、汇率差及支付费用未知，不计为零</dd>
+<dt>期限与闲置</dt><dd>周期套餐；长期闲置清号条件未核</dd>
+<dt>重买／叠加</dt><dd>未核</dd>
+<dt>倍率</dt><dd>当前完整倍率未核</dd>
+<dt>退款</dt><dd>未核</dd>
+<dt>预配置应急</dt><dd>原作者自称多年用户、春节前后失联大半月，2/26发现改名恢复；2/27补充后加推广链接，应披露利益相关；搜索有二次跑路说法但仅二手，未据此认定现已跑路；dlercloud.org等自称官网不可替代旧品牌身份链</dd>
+<dt>从零／闲置恢复</dt><dd>持续恢复时长</dd>
+<dt>GPT 网页</dt><dd>未知，测速节点成功不等于 GPT 网页验证</dd>
+<dt>GPT 对话</dt><dd>未知</dd>
+<dt>GPT 长会话</dt><dd>未知</dd>
+<dt>适用网络与原始证据</dt><dd>原作者自称多年用户、春节前后失联大半月，2/26发现改名恢复；2/27补充后加推广链接，应披露利益相关；搜索有二次跑路说法但仅二手，未据此认定现已跑路；dlercloud.org等自称官网不可替代旧品牌身份链</dd>
+<dt>限制与冲突</dt><dd>当前官方运营主体；持续恢复时长；当前价格退款；近期多日实测</dd>
+<dt>来源日期</dt><dd>V2EX原帖2026-02-26，2月27日补充推广链接</dd>
+<dt>核查时间</dt><dd>2026-10-29T08:23:00Z</dd>
+<dt>证据强度</dt><dd>暂不进入稳定应急候选；真实历史中断与接手身份/当前恢复证据待核。所有测量均为对应原作者与条件；非本报告自行实测。</dd>
+</dl><details open><summary>来源链接</summary><ul><li><a href="https://www.v2ex.com/t/1194117" rel="noopener noreferrer">https://www.v2ex.com/t/1194117</a></li></ul></details><p><a href="#top">返回目录</a></p></article>
+<section><h2>修正历史</h2><ol><li>v7 撤回魔戒首推：低价、不限时不是应急稳定证据；改为可靠性优先、同层同周期按标价参考排序，全费未知继续保留。</li><li>Windscribe Pro 的连接与网页测试不能转用于USD3自选档；11/11 ChatGPT网页以连接成功轮次为分母，不是完整业务成功率；7日100%为站点汇总，未取得样本总数。</li><li>Astrill历史长年100%宣传与近期10月原始掉线反馈冲突；不再以高价或旧成功记录列应急首推。</li><li>SS-ID 不再因月付而降级；官方 App 与通用客户端更新订阅的前置条件分开，旧单网络多轮样本不是随时可连证明。</li><li>JMS 协议与安全升级是旧客户端恢复依赖，不等于服务整体不稳定；当前官网主体及隐私说法优先于旧测评，但未独立审计。</li><li>Nexitally 月内8轮节点测试不是月uptime；慢入口仍有可用替代组，不作全断结论，含无权限Premium与仅普通节点不可混分母。</li><li>TAG 2026标题含2022/2024/2025历史样本，不作当前长期实测。</li><li>SS-ID 2026-08-14为订阅采样异常，不证明供应商全节点故障；7/18撤回条目与仍显示60%记录映射不明，不作可靠失败率。</li><li>Windscribe三次Android测试环境失败已撤为无效样本，不归因服务商。</li><li>魔戒多个订阅并列替代旧同套餐覆盖；并列不等于合并。</li><li>自由猫旧优惠与八戒已截止618优惠不作现价；TAG年包不是不限时。</li><li>狗狗加速退款由未知更新为官方付款后不退；该更正不追溯改写旧快照。</li><li>云通迁至破晓，旧1元起充非当前不限时现货；二者不重复计算独立商。</li><li>抓取403/402/521或空JS壳不是节点服务故障；未知不等于不可用。</li></ol><p>v7 为可靠性优先重排；v6 的低价不限时排序已被替代，不是当前建议。旧版原文在私有累计报告中完整保留，公开版仅展示公开研究事实及必要更正。</p></section><footer>公开资料研究；未购买、未执行网络实测。商家声明、独立样本和未核验事项分开。单地区样本不能外推所有运营商；流量不失效不等于账号不清理或经营永久持续。</footer></main></body></html>

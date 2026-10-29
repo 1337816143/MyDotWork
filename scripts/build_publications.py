@@ -4,8 +4,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLICATIONS = (
-    ('research/vpn/index.html', '8e99ecb7a7541563c47dd08380552c89b57a3c6e9cb8654e751e0b8534f80ee9'),
-    ('research/vpn/evidence.json', '72e84cca9a9ce8487f8712ef2c77af7cb533c2c913fa52e0362e5f8f6c0c6822'),
+    ('research/vpn/index.html', 'fc5787bbba50443336e09ad2a735cc0af6d2c9a2baafb46cb367be4677feb05f'),
+    ('research/vpn/evidence.json', 'b7e5f0eabdfeb4ecb760f1fafb07f8a68525a76cdae46cb3953de73972ded2b8'),
     ('research/round3-7/report.html', '429df06b58d1219e3097697bc45025003a1360a9eb026e3e67cd1f588e7d3598'),
     ('research/round3-7/ai-upstream-public.json', '8ba73d0aa0b5ba8605972801bd6cf3a3b243786c40037f2c0bd82adf6c02c0fa'),
     ('research/ai-side-income/report.html', 'd93d3eb7fc859a7b194c873d201da1372bfdeab41cb8ce853043edc8bb1bb80a'),

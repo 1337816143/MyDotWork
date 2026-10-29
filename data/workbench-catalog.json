@@ -323,12 +323,12 @@
     },
     {
       "id": "vpn-report",
-      "title": "VPN不限时与低价研究：22家入口、费用和可靠性边界",
+      "title": "应急VPN可靠性优先研究：25家入口与分层比较",
       "type": "report",
       "task": "project-1",
       "url": "../research/vpn/index.html",
-      "updatedAt": "2026-10-29T06:40:00Z",
-      "summary": "22家低价与不限时VPN研究：逐项网站、真实付款缺口、闲置清号、叠加退款及大陆连接证据；保留勘误，不把营销或短测当全天稳定保证。",
+      "updatedAt": "2026-10-29T08:25:00Z",
+      "summary": "先按稳定与应急启用证据分层，同条件标价参考升序；25家为研究对象非推荐数，保留预配置/从零恢复、GPT网页/实际会话、全费和闲置缺口。",
       "access": "public",
       "metadataApproved": true
     },
@@ -338,8 +338,8 @@
       "type": "dataset",
       "task": "project-1",
       "url": "../research/vpn/evidence.json",
-      "updatedAt": "2026-10-29T06:40:00Z",
-      "summary": "22项公开入口、来源日期、费用与有效期边界；商家声明和已验证事实分开，不是实时连接测试。",
+      "updatedAt": "2026-10-29T08:25:00Z",
+      "summary": "25项公开入口与schema v2证据：可靠性层级、同条件价格参考、来源日期及已撤回判断；不把未知全费当零，不是私人网络实测。",
       "access": "public",
       "metadataApproved": true
     }
