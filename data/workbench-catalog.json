@@ -584,6 +584,28 @@
       "summary": "10条重新阅读的商家原页；GETGPT个人无税票，PAYPRM原号/新号区分；费用未知null，实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r11-20261103",
+      "title": "GPT源头 · Morimm ¥3 Codex接码及iOS Plus SKU复核",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r11.html",
+      "updatedAt": "2026-11-03T12:54:37.061Z",
+      "summary": "Morimm独立Codex接码¥3/次（实卡仅商称，网页/API与退款待核）、iOS Plus¥130/月可覆盖已有Plus；菲区¥115仅Free。CatFK旧平台招商费率与授权缺口独立列示。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r11-evidence-20261103",
+      "title": "Morimm接码及Plus多渠道、CatFK平台条款 · 原始来源JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r11-evidence.json",
+      "updatedAt": "2026-11-03T12:54:37.061Z",
+      "summary": "8条当日可读原始网页、1条空正文；SKU价格与限制、号码类型/期限、支付和开票费null、授权及验证实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
