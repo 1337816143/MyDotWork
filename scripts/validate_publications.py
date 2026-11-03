@@ -131,13 +131,15 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 49, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 51, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.8'
-    assert latest['path'] == 'research/2026-11-03/supplier-followup-20261103-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-03/supplier-followup-20261103-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-03/supplier-followup-20261103-r7.html'
+    assert latest['version'] == '1.9'
+    assert latest['path'] == 'research/2026-11-03/supplier-followup-20261103-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-03/supplier-followup-20261103-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-03/supplier-followup-20261103-r8.html'
+    assert by_id['gpt-source-followup-r9-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r9.html'
+    assert by_id['gpt-source-followup-r9-evidence-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r9-evidence.json'
     assert by_id['gpt-source-followup-r8-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r8.html'
     assert by_id['gpt-source-followup-r8-evidence-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r8-evidence.json'
     assert by_id['gpt-source-followup-r7-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r7.html'

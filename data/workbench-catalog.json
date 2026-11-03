@@ -540,6 +540,28 @@
       "summary": "5条成功可读网页与5条外部失败或零正文：SKU单月¥110无现货提示、收据非税票、外部支付/开票费null及未开展实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r9-20261103",
+      "title": "GPT源头 · wind89发票前置与卡密Session验证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r9.html",
+      "updatedAt": "2026-11-03T10:49:22.304Z",
+      "summary": "现行SKU 27原号Plus¥139.99/月，商称开普票加¥10但申请须先登录商家账号下单；卡密仍需ChatGPT Session，旧接码价未核今价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r9-evidence-20261103",
+      "title": "wind89原号Plus开票/Session/旧接码信息 · 原始URL与缺口",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r9-evidence.json",
+      "updatedAt": "2026-11-03T10:49:22.304Z",
+      "summary": "9条本轮可读原页与1条旧索引重定向对照；+¥10发票费为商家声明，支付全费、票据主体与手机号验证测试均未核。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

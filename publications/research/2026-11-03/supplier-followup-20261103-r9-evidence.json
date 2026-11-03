@@ -1,0 +1,180 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.9",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T10:49:22.304Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r8.html",
+  "scope": "wind89现行原始商品、发票申请门槛、Session/卡密登录前提与短信旧索引适用性的有界补证；未实测采购、发票或验证码。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "merchant": "互联互通AI / wind89",
+  "sku": {
+    "sku_id": "27",
+    "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+    "product": "ChatGPT Plus 原账号单月",
+    "quantity": 1,
+    "period": "1个月",
+    "price_currency": "CNY",
+    "price_cny": 139.99,
+    "claimed_invoice_extra_cny": 10,
+    "known_component_sum_cny": 149.99,
+    "paid_checkout_extra_cny": null,
+    "payee_legal_entity": null,
+    "tax_invoice_issuer": null,
+    "final_invoiced_paid_total_cny": null,
+    "existing_subscription_early_renewal": false,
+    "buyer_merchant_login_required_to_invoice": true,
+    "merchant_own_account_claim": true,
+    "session_required_for_direct_topup": true,
+    "session_required_for_card_redemption": true,
+    "official_openai_resale_authorization_verified": false,
+    "verified_wholesale": false,
+    "real_order_tested": false,
+    "tax_invoice_verified": false
+  },
+  "invoice_rules": {
+    "seller_claim": "仅电子普通发票，商家账号必须下单前登录；单笔Plus开票费+10元；最多30笔订单合开；称最晚1工作日",
+    "guest_purchase_possible": true,
+    "guest_invoice_self_service_available": false,
+    "logged_out_invoice_page_redirects_login": true,
+    "invoice_portal_url": "https://wind89.com/me/invoices",
+    "legal_invoice_issuer": null,
+    "verified_valid_tax_invoice": false,
+    "old_search_index_external_form_is_current": null,
+    "actual_invoice_receipt_or_issuer_proven": false
+  },
+  "phone_verification": {
+    "session_before_account_login_possible": false,
+    "card_code_auto_binds_phone_proven": false,
+    "web_login_success_tested": false,
+    "codex_success_tested": false,
+    "api_key_success_tested": false,
+    "legacy_index_one_time_sms_cny": 10,
+    "legacy_index_longterm_60days_sms_cny": 20,
+    "legacy_prices_current_sku_verified": false,
+    "current_one_time_sms_price_cny": null,
+    "current_60day_price_cny": null,
+    "current_phone_number_type": null,
+    "number_control_days": null,
+    "phone_verification_failure_refund": null,
+    "subscription_warranty_covers_phone_cost": false
+  },
+  "evidence_classes": {
+    "live_site": "实时可读到的商家网页文字和展示值",
+    "seller_commitment": "未经过真实订单、票据或独立履约核实的承诺",
+    "old_index": "历史搜索索引摘要不能充当现行在售证据",
+    "independent_real_testing": "本轮未实施"
+  },
+  "sources": [
+    {
+      "id": "W01",
+      "url": "https://wind89.com/plans",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "当前套餐表Plus本人原号¥139.99/月、直充或卡密两方式；未见上游批发价。"
+    },
+    {
+      "id": "W02",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "准确SKU=27展示Plus ¥139.99/1个月、可选开票+¥10，微信/支付宝可选；此为报价页面，不是实付收据或税票。"
+    },
+    {
+      "id": "W03",
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "现行商家电子普通发票申请指南：只能给已登录wind89会员，须先登录再下单；Plus开票费¥10，最多30张订单合开，商称最晚一个工作日；没有显示真实出票主体。"
+    },
+    {
+      "id": "W04",
+      "url": "https://wind89.com/guide/buy",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "普通购买仅留邮箱不必登录，但开发票明确要求登录商家会员后下单并勾选；支付环节扫码但未实际下单。"
+    },
+    {
+      "id": "W05",
+      "url": "https://wind89.com/guide/redeem",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "卡密兑换仍需要在浏览器登录ChatGPT并复制完整Session JSON；已付费账号可能不符资格；无法把卡密当作首次网页登录验证码方案。"
+    },
+    {
+      "id": "W06",
+      "url": "https://wind89.com/guide/session",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "Session JSON含accessToken，有效取得前提是已登录目标账号；需粘给商家；包含敏感登录凭据，未独立验卖家存储承诺。"
+    },
+    {
+      "id": "W07",
+      "url": "https://wind89.com/guide/trouble",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "商家问题处理说明：平台手机号验证费用不在保障范围；当前可读页面未显示独立短信接码准确商品及价格。"
+    },
+    {
+      "id": "W08",
+      "url": "https://wind89.com/warranty",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "商称正常使用30天保障掉订、未到账、未兑卡密；账号封禁及手机号登录验证费用不在质保内，未购买未测。"
+    },
+    {
+      "id": "W09",
+      "url": "https://wind89.com/me/invoices",
+      "observed_on": "2026-11-03",
+      "status": "successful_live_page_read",
+      "type": "merchant_primary_source",
+      "detail": "以未登录身份访问开票入口，页面跳转到/auth/login?redirect=/me/invoices；无法据此验证开票主体及实际发票。"
+    },
+    {
+      "id": "W10",
+      "url": "https://wind89.com/help/faq.html",
+      "observed_on": "2026-11-03",
+      "status": "live_redirect_and_historical_index_comparison",
+      "type": "historical_index_comparison",
+      "detail": "历史搜索索引曾提到另一个发票表单、单次接码¥10与60天服务¥20；本轮访问旧URL重定向至/guide，现行页面不能核实短信商品在售及现价。历史索引不刷新报价。"
+    }
+  ],
+  "totals": {
+    "new_verified_wholesale_sources": 0,
+    "confirmed_plus_all_in_invoiced_under_170": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "conclusions": [
+    "Plus SKU27仍展示¥139.99/月，票费+¥10是商家费用声明，不是新降价；公开分项和¥149.99，真实支付全费及税票未核。",
+    "商家普通游客单可下单，但发票自助申请只面向登录用户；须先登录商家会员再下单。旧搜索索引开票入口不能覆盖现行规则。",
+    "直充和卡密两方式都需要目标ChatGPT已登录并取得含accessToken的Session；不能直接替代网页首次手机号验证，且分享Session存在账号安全风险。",
+    "历史索引提及的单次短信¥10、60天短信¥20不是已核2026-11-03现价或在售商品；当前号码权益、号码种类、失败退款都未核。",
+    "商家当前明确手机号验证费用及账号封禁不在Plus质保范围，批发价/实体/供货授权及实际服务验收依然没有证据。"
+  ]
+}
