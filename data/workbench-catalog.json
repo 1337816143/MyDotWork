@@ -760,6 +760,28 @@
       "updatedAt": "2026-11-03T19:24:17Z",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r19-20261104",
+      "title": "GPT源头 · ChatGPT直充站¥3000代理入驻费与小小AI单件收据限制",
+      "type": "report",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r5.html",
+      "summary": "两家新零售候选：直充站原号Plus¥125/¥135月卡，代理拿货先付¥3000入驻费（非余额）；小小AI准确单件¥145，PDF付款收据非税务发票。零已核上游。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T20:20:08Z",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r19-20261104-evidence",
+      "title": "新候选单件Plus、资格费和税票边界 · r19公开证据",
+      "type": "dataset",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r5-evidence.json",
+      "summary": "12条原始商家网页，准确¥125/135/145分SKU和¥3000代理资格费，税票附费/收付款主体null，实际采购和短信验证均0。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T20:20:08Z",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
