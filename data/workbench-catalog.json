@@ -738,6 +738,28 @@
       "updatedAt": "2026-11-03T18:33:42Z",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r18-20261104",
+      "title": "GPT源头 · 瑶瑶Plus ¥112代理价需¥500预存的硬门槛",
+      "type": "report",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r4.html",
+      "summary": "本人原号Plus零售¥129/月、代理明示拿货¥112/月，但享拿货价须先预存账户¥500；电子税票种类/附费及履约主体仍未知，不能当作免预存合格源头。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T19:24:17Z",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r18-20261104-evidence",
+      "title": "瑶瑶Plus准确SKU、预存代理条款、发票与续费证据 · r18数据",
+      "type": "dataset",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r4-evidence.json",
+      "summary": "7条商家原页：¥129单月零售价、¥112拿货价须先存¥500、无强制代理费；真实票种与最终结算均null，实付款/发票/手机验证数0。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T19:24:17Z",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

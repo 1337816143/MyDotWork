@@ -131,13 +131,24 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 67, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 69, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.17'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r2.html'
+    assert latest['version'] == '1.18'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r3.html'
+    assert by_id['gpt-source-followup-r18-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r4.html'
+    assert by_id['gpt-source-followup-r18-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r4-evidence.json'
+    r18 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r4-evidence.json').read_bytes())
+    assert r18['round'] == 18 and len(r18['sources']) == 7
+    assert r18['verified_plus_wholesale_count'] == r18['actual_purchase_count'] == r18['phone_verification_success_count'] == r18['real_invoice_verified_count'] == 0
+    assert r18['offers'][0]['retail_price_cny'] == 129 and r18['offers'][0]['wholesale_display_price_cny'] == 112
+    assert r18['offers'][0]['wholesale_minimum_prepaid_balance_cny'] == 500
+    assert r18['offers'][0]['meets_no_upfront_deposit_rule'] is False
+    assert r18['offers'][0]['invoice_fee_cny'] is None and r18['offers'][0]['final_tax_invoice_all_in_cny'] is None
+    assert r18['other_business_models'][0]['first_conversion_commission_cny'] == 20
+    assert r18['historical_126_quote_records_preserved'] is True and r18['old_prices_refreshed'] == 0
     assert by_id['gpt-source-followup-r17-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r3.html'
     assert by_id['gpt-source-followup-r17-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r3-evidence.json'
     r17 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r3-evidence.json').read_bytes())
