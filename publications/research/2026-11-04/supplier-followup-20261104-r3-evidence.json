@@ -1,0 +1,221 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 17,
+  "date": "2026-11-04",
+  "site_version": "1.9.25",
+  "scope": "新增UpPlusPro和CallAI小铺公开准确商品/开票/退款/凭据安全边界，不更新历史未重读商家日期",
+  "selection": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "upfront_agent_fee_must_be_zero": true,
+    "tax_invoice_payment_fx_total_cap_cny": 170
+  },
+  "offers": [
+    {
+      "name": "UpPlusPro",
+      "product": "本人原号Plus月付",
+      "product_url": "https://uppluspro.com/",
+      "machine_sku": null,
+      "price_cny": 143,
+      "unit": "CNY/1个月/1份",
+      "invoice_fee_cny": 10,
+      "invoice_type_claim": "增值税电子普通发票/技术服务费",
+      "known_component_sum_cny": 153,
+      "payment_fee_cny": null,
+      "fx_fee_cny": null,
+      "final_checkout_cny": null,
+      "final_tax_invoice_all_in_cny": null,
+      "legal_payee": null,
+      "legal_invoice_issuer": null,
+      "preorder_invoice_selection_required": true,
+      "post_payment_reissue_claimed": false,
+      "already_plus_cover_claimed": true,
+      "unused_days_stack_claimed": false,
+      "session_required": true,
+      "session_json_contains_access_token": true,
+      "upstream_authorization_verified": false,
+      "merchant_disclaims_official_authorization": true,
+      "single_unit_wholesale_price_cny": null,
+      "agent_upfront_fee_cny": null,
+      "refund_claim": "未充值成功全退，30天内掉订可按剩余天数退或补差续费，违规封禁除外",
+      "actual_checkout_tested": false,
+      "valid_invoice_verified": false
+    },
+    {
+      "name": "CallAI小铺",
+      "product": "本人原号Plus月付",
+      "product_url": "https://shop.callai.one/products/codex-plus-monthly",
+      "machine_sku": "codex-plus-monthly",
+      "price_cny": 107,
+      "unit": "CNY/1个月/1份",
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "fx_fee_cny": null,
+      "final_checkout_cny": null,
+      "final_tax_invoice_all_in_cny": null,
+      "legal_payee": null,
+      "legal_invoice_issuer": null,
+      "active_plus_renewal_auto_supported": false,
+      "apple_subscription_must_end": true,
+      "session_required": true,
+      "upstream_authorization_verified": false,
+      "single_unit_wholesale_price_cny": null,
+      "agent_upfront_fee_cny": null,
+      "refund_claim": "商称一个月订阅保障，封号停用不保",
+      "actual_checkout_tested": false,
+      "valid_invoice_verified": false
+    }
+  ],
+  "phone_verification": {
+    "vendor": "CallAI小铺",
+    "url": "https://shop.callai.one/products/codex-sms-verification",
+    "sku": "codex-sms-verification",
+    "price_cny": 3,
+    "unit": "CNY/账号/一次Codex手机号验证CDK",
+    "phone_country": null,
+    "number_type": null,
+    "number_holding_days": null,
+    "checkout_fee_cny": null,
+    "number_reuse_supported": null,
+    "requires_prior_session": false,
+    "requires_third_party_login_email": true,
+    "requires_third_party_password": true,
+    "requires_third_party_email_or_authenticator_otp": true,
+    "merchant_claims_discard_credentials_after_task": true,
+    "credential_security_audited": false,
+    "website_first_login_supported": null,
+    "codex_scope_merchant_claim": true,
+    "api_first_key_supported": null,
+    "claimed_cdk_spent_only_on_success": true,
+    "fail_claimed_not_spend_cdk": true,
+    "cash_refund_on_failure": null,
+    "actual_verified_success": false,
+    "security_assessment": "重大账号安全风险：不能建议将密码或二次验证码交给第三方兑换站"
+  },
+  "sources": [
+    {
+      "id": "U1",
+      "merchant": "UpPlusPro 首页",
+      "url": "https://uppluspro.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "display",
+      "fact": "Plus本人原号月付网页标¥143；KyrenPay微信/支付宝结算，联系手机号只供查单，不能视为绑定ChatGPT号。",
+      "purchase_tested": false
+    },
+    {
+      "id": "U2",
+      "merchant": "UpPlusPro服务条款",
+      "url": "https://uppluspro.com/legal/terms",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "明确与OpenAI无官方合作、代理或授权；充值前需已登录账号的session JSON；掉订30天按剩余期限退或补差续订。",
+      "purchase_tested": false
+    },
+    {
+      "id": "U3",
+      "merchant": "UpPlusPro质保/税票",
+      "url": "https://uppluspro.com/warranty",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "Plus电子普票另¥10，下单时必须选，付款后不可补开；已有Plus可以覆盖但原剩余天数不叠加；实际出票未验证。",
+      "purchase_tested": false
+    },
+    {
+      "id": "U4",
+      "merchant": "UpPlusPro隐私",
+      "url": "https://uppluspro.com/legal/privacy",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "要求session JSON中accessToken/sessionToken，商家自称不持久保存原文；实际收款/开票法人和网络安全审计未核。",
+      "purchase_tested": false
+    },
+    {
+      "id": "C1",
+      "merchant": "CallAI商品中心",
+      "url": "https://shop.callai.one/products",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "display",
+      "fact": "目录展示本人原号Plus ¥107/月、Codex验证¥3/次，均是网页价格而非已付款金额。",
+      "purchase_tested": false
+    },
+    {
+      "id": "C2",
+      "merchant": "CallAI Plus准确SKU",
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "display_merchant_claim",
+      "fact": "SKU codex-plus-monthly当前标107 CNY/份单月；有效个人订阅期内不能直接自助，苹果渠道须结束，要求已有ChatGPT登录和Session。",
+      "purchase_tested": false
+    },
+    {
+      "id": "C3",
+      "merchant": "CallAI Codex验证准确SKU",
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "display_merchant_claim",
+      "fact": "SKU codex-sms-verification标3 CNY/次；商称成功才消耗CDK，可自动换号；第三方兑换页要求账号密码/邮箱验证码/认证器动态码，不含长期号码或网页/API保证。",
+      "purchase_tested": false
+    },
+    {
+      "id": "C4",
+      "merchant": "CallAI代理公告",
+      "url": "https://shop.callai.one/blog/agent",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "公告发表日2026-10-23，自称源头供货，但价格、拿货量须联系客服，未公开单件批发条件或供货授权。",
+      "purchase_tested": false
+    },
+    {
+      "id": "C5",
+      "merchant": "CallAI服务条款",
+      "url": "https://shop.callai.one/terms",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "充值成功后质保一个月，封号与停用除外；没有直接公开含税开票价格与现金退款标准。",
+      "purchase_tested": false
+    },
+    {
+      "id": "O1",
+      "merchant": "OpenAI安全帮助",
+      "url": "https://help.openai.com/en/articles/8304786-keeping-your-openai-account-secure",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "official",
+      "fact": "官方建议警惕索要账户凭据的外部链接；第三方索要密码/OTP具有账户安全风险，不意味着已发生安全事件。",
+      "purchase_tested": false
+    }
+  ],
+  "read_failures": [
+    {
+      "url": "https://shop.callai.one/about",
+      "date": "2026-11-04",
+      "status": "open_timed_out; no facts inferred"
+    },
+    {
+      "url": "https://shop.callai.one/privacy",
+      "date": "2026-11-04",
+      "status": "open_timed_out; no facts inferred"
+    }
+  ],
+  "verified_plus_wholesale_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "evidence_categories": {
+    "webpage_display": "精确链接公开价格不是成交；没有观察到具体涨降日期",
+    "merchant_claim": "开票/删除凭据/质保/批发均商家自述",
+    "inference": "低价和自称源头不足以证明持货授权；输入密码、OTP存在高风险",
+    "actual_test": "本轮没有购买、交付、验证码实测、售后退款或有效发票验真"
+  }
+}
