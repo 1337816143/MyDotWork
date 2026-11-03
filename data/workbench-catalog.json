@@ -782,6 +782,28 @@
       "updatedAt": "2026-11-03T20:20:08Z",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r20-20261104",
+      "title": "GPT源头 · 独立自持英国手机卡与OpenAI验证适用条件",
+      "type": "report",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r6.html",
+      "summary": "运营商实体卡英国境内邮寄、首次激活须付款、6个月主动保号；中国漫游列入清单但OpenAI接码未实测。官方区分ChatGPT、Codex和API手机号要求。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T21:22:09Z",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r20-20261104-evidence",
+      "title": "自持手机号核查 · 5条OpenAI/运营商原始规则与缺口JSON",
+      "type": "dataset",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r6-evidence.json",
+      "summary": "5条实际打开的官方来源：未知激活和漫游费用null，英国未列WhatsApp验证名单，验证码成功实测0；不刷新旧Plus价格。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T21:22:09Z",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
