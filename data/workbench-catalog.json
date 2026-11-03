@@ -562,6 +562,28 @@
       "summary": "9条本轮可读原页与1条旧索引重定向对照；+¥10发票费为商家声明，支付全费、票据主体与手机号验证测试均未核。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r10-20261103",
+      "title": "GPT源头 · GETGPT个人税票资格与PAYPRM原号SKU补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r10.html",
+      "updatedAt": "2026-11-03T11:43:34.333Z",
+      "summary": "GETGPT原号Plus¥179/月超采购线且个人单商称无税票；PAYPRM本人原号¥155与会员号¥160分开，Token有条件、票费不明。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r10-evidence-20261103",
+      "title": "GETGPT和PAYPRM准确SKU、税票/Token边界 · 原始URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r10-evidence.json",
+      "updatedAt": "2026-11-03T11:43:34.333Z",
+      "summary": "10条重新阅读的商家原页；GETGPT个人无税票，PAYPRM原号/新号区分；费用未知null，实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
