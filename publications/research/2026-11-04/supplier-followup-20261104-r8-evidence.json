@@ -1,0 +1,161 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 22,
+  "date": "2026-11-04",
+  "site_version": "1.9.30",
+  "prepared_at_utc": "2026-11-03T23:16:45.686Z",
+  "scope": "新增两家独立零售服务的准确单件商品、开票费下限与售后条款；本轮已读来源不证明批发授权或真实履约。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_upfront_agent_fee": true,
+    "no_mandatory_prepaid_balance": true,
+    "plus_all_in_invoice_cap_cny": 170
+  },
+  "candidates": [
+    {
+      "name": "星桥订阅",
+      "source_url": "https://xingqiaosub.com/",
+      "seller_type": "independent_retail_topup_candidate",
+      "accurate_sku": "ChatGPT Plus/one own-account free-tier account",
+      "currency": "CNY",
+      "base_listed_price_cny": 165,
+      "quantity": 1,
+      "period": "one month (page references official $20/month)",
+      "invoice_type_claim": "电子普通发票",
+      "invoice_rate": 0.07,
+      "invoice_minimum_per_invoice_cny": 50,
+      "invoice_fee_for_one_order_cny": 50,
+      "known_price_plus_invoice_components_cny": 215,
+      "additional_payment_and_fx_fees_cny": null,
+      "final_paid_total_with_invoice_cny": null,
+      "under_170_eligible": false,
+      "existing_paid_membership_early_renewal": false,
+      "session_required": true,
+      "session_requires_prior_login": true,
+      "invoice_issuer_legal_entity": null,
+      "payee_legal_entity": null,
+      "verified_upstream_authorization": false,
+      "actual_invoice_verified": false,
+      "actual_delivery_tested": false,
+      "additional_limit": "订单成功后原则不退；付后30日未提交资料且未申请退款，商称视为放弃；5人以上团队优惠不构成单件批发价"
+    },
+    {
+      "name": "明月Plus",
+      "source_url": "https://aicz123.com/packages.html",
+      "accurate_sku_url": "https://aicz123.com/checkout.html?pid=28",
+      "sku_id": "pid=28",
+      "seller_type": "independent_retail_topup_candidate",
+      "delivery_channel_claim": "US iOS",
+      "currency": "CNY",
+      "base_listed_price_cny": 165,
+      "unit_on_page": "CNY/per package",
+      "quantity": 1,
+      "period_days": null,
+      "invoice_type_claim": "正规公司发票（商家首页宣传，准确票种未知）",
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "final_paid_total_with_invoice_cny": null,
+      "checkout_final_price_cny": null,
+      "invoice_issuer_legal_entity": null,
+      "payee_legal_entity": null,
+      "official_openai_resale_authorization_claim": false,
+      "verified_upstream_authorization": false,
+      "actual_invoice_verified": false,
+      "actual_delivery_tested": false,
+      "actual_sms_verification_tested": false,
+      "refund_warning": "未使用卡密不等于享有无条件退款；商称站方原因充值失败退款，须核实"
+    }
+  ],
+  "comparison": {
+    "xingqiao_invoice_formula": "max(7% of one-order amount, CNY50)",
+    "xingqiao_standalone_one_order_known_components_cny": 215,
+    "xingqiao_exceeds_cap_cny": 45,
+    "mingyue_requires_precise_period_invoice_and_fee_proof": true,
+    "retail_listing_is_not_wholesale_authorization": true
+  },
+  "phone_verification": {
+    "chatgpt_web_login_otp_success": null,
+    "codex_otp_success": null,
+    "api_first_key_otp_success": null,
+    "phone_number_service_sku_present": false,
+    "phone_number_control_period_days": null,
+    "phone_sms_failure_refund": null,
+    "session_paste_bypasses_initial_login": false,
+    "apple_ios_topup_automatically_binds_phone": false,
+    "any_otp_tested": false
+  },
+  "sources": [
+    {
+      "id": "X22-1",
+      "url": "https://xingqiaosub.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "直接打开商家主页及套餐模块",
+      "evidence_class": "merchant_self_page_claim",
+      "fact": "页面显示本人免费版ChatGPT Plus ¥165、须登录后提交含访问令牌的Session；电子普票7%，单张最低¥50；单件已知分项¥215，支付宝/银行卡可能港币计价有汇率差。"
+    },
+    {
+      "id": "X22-2",
+      "url": "https://xingqiaosub.com/support/refund-policy",
+      "observed_on": "2026-11-04",
+      "read_method": "直接打开商家退款条款",
+      "evidence_class": "merchant_self_page_claim",
+      "fact": "页面注明2026-11-02更新；未开通成功核实后全额原路退款、成功开通后原则不退；付后30天不提供Session亦不申请退款，商称视为放弃。"
+    },
+    {
+      "id": "M22-1",
+      "url": "https://aicz123.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "直接打开商家首页",
+      "evidence_class": "merchant_self_page_claim",
+      "fact": "商家声称本人原号、可开正规公司发票，无官方OpenAI授权；首页只作声明证据，非实付税票。"
+    },
+    {
+      "id": "M22-2",
+      "url": "https://aicz123.com/packages.html",
+      "observed_on": "2026-11-04",
+      "read_method": "直接打开商家购买套餐页",
+      "evidence_class": "merchant_self_page_claim",
+      "fact": "美区iOS通道ChatGPT Plus对应20美元档，标¥165/套餐；页面未明确交付日数、税票费或最终结算价。"
+    },
+    {
+      "id": "M22-3",
+      "url": "https://aicz123.com/checkout.html?pid=28",
+      "observed_on": "2026-11-04",
+      "read_method": "直接打开准确购买链接（仅预览未下单）",
+      "evidence_class": "merchant_self_page_claim",
+      "fact": "Plus菜单跳转pid=28；页面称单件购买、微信/支付宝，但订单总价处显示加载中；不能证明实际单份含票全费。"
+    },
+    {
+      "id": "M22-4",
+      "url": "https://aicz123.com/refund-policy/",
+      "observed_on": "2026-11-04",
+      "read_method": "直接打开商家售后原条款",
+      "evidence_class": "merchant_self_page_claim",
+      "fact": "页面标注2025-01-22生效；已付款的未用卡密不自动享受无理由退款；经确认站方原因开通失败商称全额原路退，符合条件的掉订按已用天数退款。"
+    }
+  ],
+  "source_count_direct_read": 6,
+  "source_count_search_snippet_only": 0,
+  "verified_plus_wholesale_count": 0,
+  "verified_all_in_invoice_under_cap_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "older_reports_preserved": true,
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ]
+}
