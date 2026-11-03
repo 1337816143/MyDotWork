@@ -364,6 +364,28 @@
       "summary": "18条公开来源、逐项观察日期、号码期限和未知费用；零售线索未计为已核实源头。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-20261103",
+      "title": "GPT源头调研 · 新增零售候选与含票价格核对",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103.html",
+      "updatedAt": "2026-11-03T02:26:39Z",
+      "summary": "新增UpPlusPro 143元月卡+10元商称票费，V3两SKU 135/145元；Session前提、授权缺口及零实测明确标注。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-evidence-20261103",
+      "title": "新增供货线索 · SKU与发票证据数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-evidence.json",
+      "updatedAt": "2026-11-03T02:26:39Z",
+      "summary": "5条新读取原链、3个SKU及未知费用null；均非已核批发源头。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

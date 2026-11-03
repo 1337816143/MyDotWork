@@ -28,6 +28,8 @@ PUBLICATIONS = (
     ('projects/wetype-2026-10-04.json', '5b5fbf09d7cb8fd8974690f7a57ab51b9cdb433072af1cef6514734dbfffa274'),
     ('research/2026-11-03/index.html', '1971b0095bff3a0e5d8a8eeec63b5f27a35823cf58ffd3210793181f5959e53c'),
     ('research/2026-11-03/phone-subscription-evidence.json', 'd8ea34f19a941db91d8344cef8df763be1e778b3f1fe973c79ebee533be85abb'),
+    ('research/2026-11-03/supplier-followup-20261103.html', 'cafae56ae1aa7252262142499adb068e61f969cef38db82ed66a1a3c4dc1e120'),
+    ('research/2026-11-03/supplier-followup-20261103-evidence.json', '5a752b17573d0873a18a4686abc25afe54b844881e1628e60e4c784c80c7bad8'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 
