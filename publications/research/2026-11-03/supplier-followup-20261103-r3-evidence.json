@@ -1,0 +1,185 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.3",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T04:55:24Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r2.html",
+  "scope": "仅对本轮确实读取的商家或OpenAI官方网页记录增量；不建单、不购买、不接码、不提交凭据、不联系商家",
+  "criteria": {
+    "own_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "new_or_reconciled_skus": [
+    {
+      "merchant": "GetVIP",
+      "sku": "ChatGPT Plus · 人工代充",
+      "source_url": "https://getvip.pro/product/chatgpt",
+      "price_cny": 118,
+      "price_unit": "1个月／1件（商家当前商品页）",
+      "quantity": 1,
+      "month_count": 1,
+      "other_public_same_site_price_cny": 132,
+      "other_public_same_site_price_url": "https://getvip.pro/chatgpt-plus",
+      "other_public_price_page_self_updated": "2026-10-29",
+      "current_product_route_en_price_cny": 118,
+      "interpretation": "同站两路报价不一致。¥118仅为当前商品页面标价，非经登录支付实测；不得将¥132视为本轮已确认的当前成交价。",
+      "payment_online_fee_rate_claim": 0.06,
+      "payment_online_fee_cny_known_arithmetic": 7.08,
+      "payment_online_known_subtotal_cny": 125.08,
+      "payment_online_actual_checkout_verified": false,
+      "payment_wechat_fee_cny_merchant_claim": 0,
+      "payment_wechat_transfer_claim": "商称与支持微信转账零手续费，但没有取得实际收款账户、付款页面或真实发票",
+      "invoice_extra_cny": null,
+      "invoice_tax_rate": null,
+      "all_in_invoice_cny": null,
+      "collection_entity": null,
+      "mainland_vat_invoice_issuer": null,
+      "actual_invoice_checked": false,
+      "website_footer_operator_name_claim": "KAELIS TECHNOLOGIES, S.L.",
+      "website_footer_address_claim": "Calle Rafael Alberti, 23, PBJ, Puerta 0002, 46530 Puçol, Valencia, España",
+      "operator_registration_verified": false,
+      "operator_same_as_payee_or_invoice_issuer_verified": false,
+      "wholesale_min_quantity": null,
+      "wholesale_price_cny": null,
+      "agency_upfront_fee_cny": null,
+      "upstream_reseller_authorization_verified": false,
+      "official_openai_partnership_claimed": false,
+      "session_required": true,
+      "session_timing_claims_conflict": "页面主文称付款后提交Session；同一商品结算表单称须预先输入Session并核验后才能选支付",
+      "supports_prelogin_phone_block_verified": false,
+      "active_membership_note": "商称仍有有效订阅须到期；并非可任意覆盖续费",
+      "after_sales_claim": "30天内掉订阅按剩余天数处理，封号不保，未完成代充可申请退款；没有独立实测",
+      "real_purchase_tested": false,
+      "real_delivery_tested": false,
+      "source_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05"
+      ]
+    }
+  ],
+  "official_verification_scope": {
+    "chatgpt_web": "OpenAI当前称开户/使用ChatGPT一般不需手机号，但具体账号仍可能出现核验，不能推断用户的网页拦截必然自动解除",
+    "codex_desktop": "桌面端Codex可能请求手机号；并非每次均要求",
+    "api": "目前初次生成API key需手机号，以后生成API key不需重复同项验证",
+    "supported_methods": "支持真实移动号码SMS；部分地区支持WhatsApp。座机、VoIP、Google Voice、付费增值号不支持；应使用账户所有人可控制的号码",
+    "associated_number_change": "OpenAI当前不支持更改账户关联的手机号；不等于所有一次验证码均会绑定号码",
+    "api_number_reuse_limit": "首次API密钥验证的同号码最多3次；不外推ChatGPT网页或Codex通用号码上限",
+    "third_party_sms_risks": "接码平台需逐个核号码是否支持、是否长期可控、相关平台条款及失败售后，不能以短期租用号码保证验证或长期恢复",
+    "merchant_phone_services_actually_tested": false,
+    "source_ids": [
+      "T06",
+      "T07",
+      "T08"
+    ]
+  },
+  "payprm_after_sales_delta": {
+    "source_url": "https://www.payprm.com/faq/after-sales/coverage",
+    "type": "merchant_claim",
+    "third_party_account_email_verification_region_not_guaranteed": true,
+    "merchant_claim_summary": "第三方平台独立决定的账号状态、邮箱故障、验证要求、地区资格或功能变化通常不属售后；交付不符/未使用先失效卡密可申请核验",
+    "independent_codex_phone_sms_refund_policy_verified": false,
+    "refund_if_sms_not_received_cny": null,
+    "refund_if_verification_rejected_cny": null,
+    "source_ids": [
+      "T09"
+    ]
+  },
+  "monitored_not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "旧ChatShare",
+    "wind89",
+    "GETGPT Pro",
+    "ChongPay",
+    "PAYPRM订阅价"
+  ],
+  "qualifications": {
+    "new_verified_upstreams": 0,
+    "real_mainland_tax_invoices_checked": 0,
+    "real_orders": 0,
+    "real_phone_verification_tests": 0
+  },
+  "note": "本轮GetVIP新增SKU和条件为商家网页展示，不等于新的实质成交价格变更；旧记录保留旧观察日期，不重报价其他未重读商品。",
+  "sources": [
+    {
+      "id": "T01",
+      "url": "https://getvip.pro/product/chatgpt",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "当前商品页：Plus ¥118/月、Session必填、Stripe线上支付6%、微信转账标称免手续费、开票税点另计、30天掉订售后"
+    },
+    {
+      "id": "T02",
+      "url": "https://getvip.pro/chatgpt-plus",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "自标2026-10-29的说明页仍为Plus ¥132/月，和准确当前产品页¥118/月并存；日期未被视为现价更新时间"
+    },
+    {
+      "id": "T03",
+      "url": "https://getvip.pro/en/product/chatgpt",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "英文当前商品页与中文当前商品页同为Plus ¥118/月，价格冲突来自旧说明页而非中英即时变价"
+    },
+    {
+      "id": "T04",
+      "url": "https://getvip.pro/en/about",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "网站显示KAELIS TECHNOLOGIES, S.L.及西班牙瓦伦西亚地址；两种支付方法及线上6%附费，未说明大陆税票实际开具者"
+    },
+    {
+      "id": "T05",
+      "url": "https://getvip.pro/en/terms",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "商称非OpenAI官方代理；条款留有上线前审阅模板占位语，与付款说明存在一致性风险"
+    },
+    {
+      "id": "T06",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-03",
+      "type": "official",
+      "status": "success_read",
+      "supports": "ChatGPT一般不要求手机号；Codex桌面端可能要求；初次API密钥需要；不支持VoIP/Google Voice/座机，使用可控制的支持手机号码"
+    },
+    {
+      "id": "T07",
+      "url": "https://help.openai.com/en/articles/9135134",
+      "observed_on": "2026-11-03",
+      "type": "official",
+      "status": "success_read",
+      "supports": "OpenAI明确目前不支持变更账户关联手机号；不意味着所有验证码操作都会自动关联"
+    },
+    {
+      "id": "T08",
+      "url": "https://help.openai.com/en/articles/8983031",
+      "observed_on": "2026-11-03",
+      "type": "official",
+      "status": "success_read",
+      "supports": "一个手机号初次API密钥验证最多3次；限定API情境，不推出ChatGPT/Codex通用次数限制"
+    },
+    {
+      "id": "T09",
+      "url": "https://www.payprm.com/faq/after-sales/coverage",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "第三方账号、邮箱、验证、地区资格导致的异常通常不保；交付不符或首次使用前卡密失效可申请核验；SMS服务未见单独无条件退款"
+    }
+  ]
+}

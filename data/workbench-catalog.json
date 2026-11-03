@@ -408,6 +408,28 @@
       "summary": "7条新读取原始URL、准确单位币种与SKU、税票和短信适用性边界；未知数值null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r3-20261103",
+      "title": "GPT源头调研 · GetVIP原号Plus结算与手机号官方验证新边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r3.html",
+      "updatedAt": "2026-11-03T04:55:24Z",
+      "summary": "GetVIP商品Plus¥118/月、线上6%费用推算¥125.08与另一介绍页¥132冲突；西班牙页面主体未验票，官方确认VoIP手机号不支持，PAYPRM售后排除验证/地区异常；含票/授权闭环仍为0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r3-evidence-20261103",
+      "title": "GetVIP准确SKU、主体/手机验证与售后 · 9条证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r3-evidence.json",
+      "updatedAt": "2026-11-03T04:55:24Z",
+      "summary": "9条新读取网页：原币每月与支付分项、Session前置、主体、未核费用null；官方ChatGPT/Codex/API号码约束及PAYPRM退款缺口。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
