@@ -496,6 +496,28 @@
       "summary": "本轮读取5条原始页面及1条SKU访问失败；发卡方禁止转售限制、地区/登录条件、不同SKU与历史报价观察日分列；费用未知null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r7-20261103",
+      "title": "GPT源头 · 引路鲸原号准确SKU与质保例外",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r7.html",
+      "updatedAt": "2026-11-03T08:37:48.723Z",
+      "summary": "核验原号Plus无保准确SKU LIST-000019 ¥125/月、有保LIST-000001 ¥135/月；Outlook/Hotmail目标账号商家不质保，掉订退款有20%扣费公式；最终含票、批发授权未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r7-evidence-20261103",
+      "title": "引路鲸准确SKU、出票费用与质保排除 · 原始证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r7-evidence.json",
+      "updatedAt": "2026-11-03T08:37:48.723Z",
+      "summary": "4条本轮实际读取的商家原URL；¥125/¥135非新降价、票费6%仅分项、Outlook免责公告是5月旧规；支付主体和全费null、真实交易0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
