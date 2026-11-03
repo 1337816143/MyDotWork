@@ -1,0 +1,131 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 20,
+  "date": "2026-11-04",
+  "site_version": "1.9.28",
+  "scope": "Official OpenAI verification applicability and UK giffgaff self-held mobile-number logistics, first activation, inactive number retention and roaming; independent of subscription procurement.",
+  "selection": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_upfront_agent_fee": true,
+    "no_prepaid_float": true,
+    "plus_all_in_invoice_cap_cny": 170
+  },
+  "offers": [],
+  "phone_verification": {
+    "option": "UK giffgaff self-held SIM (+44), NOT a reseller SMS SKU or Plus supplier",
+    "number_holding_model": "number maintained under mobile operator contract, not permanent ownership",
+    "physical_sim_official_delivery_uk_only": true,
+    "official_direct_shipping_to_china": false,
+    "first_activation_payment_required": true,
+    "first_activation_minimum_gbp": null,
+    "new_esim_must_buy_plan": true,
+    "esim_activation_using_credit_only": false,
+    "esim_plan_cost_gbp": null,
+    "mainland_china_in_roaming_list": true,
+    "real_openai_sms_roaming_tested": false,
+    "inactivity_deactivation_months": 6,
+    "qualifying_activity": [
+      "outgoing call/SMS/MMS",
+      "mobile data",
+      "top-up credit or buy plan"
+    ],
+    "incoming_sms_only_counts_for_retention": false,
+    "number_recyclable_after_deactivation_days": 30,
+    "chatgpt_phone_required_generally": false,
+    "codex_desktop_phone_may_be_required": true,
+    "api_first_key_phone_required": true,
+    "uk_whatsapp_otp_listed": false,
+    "chatgpt_website_first_login_success_tested": false,
+    "codex_success_tested": false,
+    "api_success_tested": false,
+    "number_accepted_by_openai": null,
+    "payment_fee_cny": null,
+    "activation_all_in_cny": null,
+    "number_holding_cost_cny": null,
+    "operator_invoice_issuer": null,
+    "failed_otp_refund_policy": null,
+    "actual_purchase_or_activation": false
+  },
+  "older_candidates_unchanged": [
+    {
+      "name": "Morimm Codex_num",
+      "prior_price_cny": 3,
+      "prior_date": "2026-11-03",
+      "rechecked_this_round": false
+    },
+    {
+      "name": "CodeMandi",
+      "prior_price_usd": 0.17,
+      "prior_date": "2026-11-03",
+      "rechecked_this_round": false
+    },
+    {
+      "name": "SMS-GO",
+      "prior_search_index_price_usd": 0.55,
+      "prior_date": "2026-11-03",
+      "rechecked_this_round": false,
+      "index_not_live_checkout": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "O1",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_official_page_open",
+      "type": "official_openai_rule",
+      "fact": "Ordinary ChatGPT signup/use generally needs no phone; Codex desktop may need verification; first API key needs phone. SMS or WhatsApp in specified 12 countries; UK not listed for WhatsApp. Landline, VoIP, Google Voice and premium numbers are not eligible.",
+      "page_updated": "Updated 7 days ago (relative, not exact effective date)"
+    },
+    {
+      "id": "G1",
+      "url": "https://help.giffgaff.com/en/articles/240676-ordering-a-sim",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_carrier_help_open",
+      "type": "operator_policy",
+      "fact": "Physical SIM direct delivery limited to UK addresses; direct international shipment unsupported. eSIM mentioned separately but no guarantee of eligibility abroad.",
+      "page_updated": "Updated over two weeks ago (relative)"
+    },
+    {
+      "id": "G2",
+      "url": "https://help.giffgaff.com/en/articles/240393-activating-your-giffgaff-sim",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_carrier_help_open",
+      "type": "operator_policy",
+      "fact": "First activation requires a payment; amount not established. New eSIM requires buying a plan and cannot be activated with PAYG credit only. Activation may take up to 24h. One active SIM per giffgaff account.",
+      "page_updated": "2026-10-01"
+    },
+    {
+      "id": "G3",
+      "url": "https://help.giffgaff.com/en/articles/242797-understanding-why-your-number-has-been-deactivated",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_carrier_help_open",
+      "type": "operator_policy",
+      "fact": "Six months without eligible activity deactivates the number. Outgoing call/text/MMS, mobile data, credit top-up or plan purchase counts; incoming OTP only not listed. Deactivated SIM cannot be reactivated; after 30 days number may be recycled.",
+      "page_updated": "Updated over a week ago (relative)"
+    },
+    {
+      "id": "G4",
+      "url": "https://help.giffgaff.com/en/articles/229548-using-your-mobile-phone-in-the-rest-of-the-world",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_carrier_help_open",
+      "type": "operator_policy",
+      "fact": "Mainland China and Singapore listed for rest-of-world roaming. Calls/text/data roaming described; outgoing services/data require separate balance outside Europe; no promise OpenAI OTP arrives or SMS receipt fees.",
+      "page_updated": "Updated this week (relative)"
+    }
+  ],
+  "read_failures": [],
+  "verified_plus_wholesale_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "evidence_categories": {
+    "openai_official_rule": "platform may request phone in specified flows; no guarantee it accepts any specific giffgaff number",
+    "operator_policy": "shipping, activation, retention and roaming rules; no claim of cross-platform validation",
+    "inference": "receiving only OTP does not satisfy published retention activity; UK not among WhatsApp OTP countries",
+    "actual_test": "no SIM ordered, activated or roamed; no OpenAI SMS tested; no Plus transaction or genuine invoice"
+  }
+}
