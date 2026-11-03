@@ -1,0 +1,217 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.14",
+  "observed_on": "2026-11-03",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r13.html",
+  "scope": "独立手机号验证渠道新候选：CodeMandi与SMS-GO。浏览器已打开原页与搜索索引有严格区别；官方验证范围对照；无订阅采购、联系商家、账号登录、真实接码或发票。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "phone_validation_records": [
+    {
+      "merchant": "CodeMandi",
+      "product": "ChatGPT verification / US Basic #4 (动态价格卡)",
+      "advertised_amount": 0.17,
+      "currency": "USD",
+      "unit": "每次号码/最长20分钟，2026-11-03直接打开页面展示",
+      "card_price_live_checkout_verified": false,
+      "search_index_old_price_usd": 0.15,
+      "minimum_topup_usd": 1,
+      "topup_refundable": false,
+      "refund_target": "站内余额",
+      "no_sms_refund_window_minutes": 20,
+      "any_sms_voids_refund": true,
+      "incorrect_or_rejected_sms_refundable": false,
+      "returning_same_number_confirmed": false,
+      "number_tenure_minutes": 20,
+      "supports_chatgpt_web_claim": true,
+      "codex_specific_verified": false,
+      "first_api_key_acceptance_verified": false,
+      "real_sim_carrier_verified": false,
+      "real_order": false,
+      "actual_verification_passed": false,
+      "payment_processing_and_network_fees_usd": null,
+      "accurate_all_in_price_cny": null,
+      "operator_and_payment_entity_verified": false,
+      "upstream_type": "merchant_discloses_aggregator",
+      "notes": "商品页断言创建ChatGPT必验手机且虚拟号普遍可用；OpenAI官方文档反证一般使用无需验证且VoIP不支持。仅推断若确有短信验证弹窗且验证码受理才可能适用，尚未实测。帮助页称API private beta。"
+    },
+    {
+      "merchant": "SMS-GO",
+      "product": "OpenAI US, 30-day rental (首页检索索引)",
+      "advertised_amount": 0.55,
+      "currency": "USD",
+      "unit": "美区号码/30日；仅2026-11-03读取的搜索索引首页展示，非实时付款核价",
+      "card_price_live_checkout_verified": false,
+      "minimum_topup_usd": 5,
+      "topup_refundable": false,
+      "refund_target": "站内余额",
+      "no_sms_refund_window_minutes": 20,
+      "any_sms_voids_refund": true,
+      "incorrect_or_rejected_sms_refundable": false,
+      "returning_same_number_claim": true,
+      "returning_same_number_verified": false,
+      "number_tenure_days": 30,
+      "after_expiry_reassigned_to_pool": true,
+      "supports_chatgpt_web_claim": true,
+      "codex_specific_verified": false,
+      "first_api_key_acceptance_verified": false,
+      "real_sim_carrier_verified": false,
+      "real_order": false,
+      "actual_verification_passed": false,
+      "payment_processing_and_network_fees_usd": null,
+      "accurate_all_in_price_cny": null,
+      "operator_and_payment_entity_verified": false,
+      "upstream_type": "merchant_discloses_dependent_on_upstreams",
+      "notes": "首页/服务页搜索索引商称30天续租及OpenAI专用；直接访问商品页超时不能确认实时库存和结算；条款明确号码租用非永久持有、收短信不保证目标平台通过、最低USD5预存余额不能提现。"
+    }
+  ],
+  "official_scope": {
+    "chatgpt_general_login_phone_required": false,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_requires_phone": true,
+    "subsequent_api_key_phone_required": false,
+    "whatsapp_selected_countries": true,
+    "voip_and_landline_supported": false,
+    "session_or_token_required_to_receive_sms": false,
+    "subscription_automatically_binds_phone": false
+  },
+  "unverified_wholesale_plus_count": 0,
+  "actual_purchase_count": 0,
+  "real_tax_invoice_checked_count": 0,
+  "real_phone_verification_count": 0,
+  "plus_price_rows_refreshed": 0,
+  "sources": [
+    {
+      "id": "C01",
+      "merchant": "CodeMandi",
+      "url": "https://codemandi.com/chatgpt-phone-verification",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "ChatGPT/美国号码价格卡显示USD0.17/次，最低USD1加密货币充值；定价据页称每2小时变化。与搜索索引旧USD0.15不同，不能据此证明涨价。商称20分钟无短信退款到余额。",
+      "evidence_class": "merchant_dynamic_card_and_claim",
+      "actual_paid_test": false
+    },
+    {
+      "id": "C02",
+      "merchant": "CodeMandi",
+      "url": "https://codemandi.com/support",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "默认号码有效期最长20分钟；钱包充值不可退款，失败接码只退站内余额；开发者API帮助页称private beta需账号获批。",
+      "evidence_class": "merchant_support_rules",
+      "actual_paid_test": false
+    },
+    {
+      "id": "C03",
+      "merchant": "CodeMandi",
+      "url": "https://codemandi.com/availability-delivery-policy",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "2026年7月已有政策：库存为聚合供应商估计值非锁定现货；收到任意短信即订单完成，错误/无效/延迟/非目标短信均不支持退款；明确依赖第三方上游。",
+      "evidence_class": "merchant_policy",
+      "actual_paid_test": false
+    },
+    {
+      "id": "C04",
+      "merchant": "CodeMandi",
+      "url": "https://codemandi.com/terms",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "2026年5月已有条款：号码为临时单次验证；充值余额不可提现不可退款，不能转让；收到短信与平台接受为不同风险。",
+      "evidence_class": "merchant_terms",
+      "actual_paid_test": false
+    },
+    {
+      "id": "C05",
+      "merchant": "CodeMandi",
+      "url": "https://codemandi.com/partners",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "供应商招募页自述通过多个第三方号码池与已验证成品号供应商进行路由，提供供应商接入规范、每周美元结算且免费申请；CodeMandi本身为聚合层而非已核源头。",
+      "evidence_class": "merchant_supply_network_claim",
+      "actual_paid_test": false
+    },
+    {
+      "id": "S01",
+      "merchant": "SMS-GO",
+      "url": "https://sms-go.pro/",
+      "observed_on": "2026-11-03",
+      "read_method": "search_index_full_excerpt_direct_open_timeout",
+      "content_read": true,
+      "fact": "搜索索引实际返回首页文字：OpenAI美区USD0.55/30天、库存9.1k为页面展示、最低加密货币入金USD5。直接复开首页超时，不能认定实时库存/当下可成交价格。",
+      "evidence_class": "indexed_merchant_catalog_not_live_checkout",
+      "actual_paid_test": false
+    },
+    {
+      "id": "S02",
+      "merchant": "SMS-GO",
+      "url": "https://sms-go.pro/services/openai",
+      "observed_on": "2026-11-03",
+      "read_method": "search_index_excerpt_direct_open_timeout",
+      "content_read": true,
+      "fact": "搜索索引返回OpenAI服务页自述：30天号码可续租，可在租期内多次收短信；20分钟无短信自动退余额、先充值USD5；直接复开超时。",
+      "evidence_class": "indexed_merchant_service_claim",
+      "actual_paid_test": false
+    },
+    {
+      "id": "S03",
+      "merchant": "SMS-GO",
+      "url": "https://sms-go.pro/legal/terms",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "条款自标2026-08-30：最低USD5加密货币充值，余额不能提现；号是最长30天租用并到期回池；平台不保证目标服务接受号码、不承诺第三方拒码退款，也自述依赖上游。",
+      "evidence_class": "merchant_legal_terms",
+      "actual_paid_test": false
+    },
+    {
+      "id": "S04",
+      "merchant": "SMS-GO",
+      "url": "https://sms-go.pro/legal/refund-policy",
+      "observed_on": "2026-11-03",
+      "read_method": "search_index_excerpt_direct_open_timeout",
+      "content_read": true,
+      "fact": "搜索索引返回2026-08-30条款片段：20分钟内未收到任何短信退站内余额；任何短信送达即视为已交付，哪怕不是目标验证码；直接打开超时，不声称全文本轮复读。",
+      "evidence_class": "indexed_merchant_policy_excerpt",
+      "actual_paid_test": false
+    },
+    {
+      "id": "O01",
+      "merchant": "OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-03",
+      "read_method": "web_open_fulltext",
+      "content_read": true,
+      "fact": "官方说明ChatGPT普通账号/网页登录通常无须手机验证，Codex桌面端可能要求，创建首个API key要求验证；支持SMS及指定国家WhatsApp，不接受VoIP/座机/Google Voice。与商家宣传的所有ChatGPT注册都必验相矛盾。",
+      "evidence_class": "official_platform_policy",
+      "actual_paid_test": false
+    }
+  ],
+  "read_failures": [
+    {
+      "url": "https://sms-go.pro/",
+      "date": "2026-11-03",
+      "result": "direct_open_timeout_index_excerpt_available"
+    },
+    {
+      "url": "https://sms-go.pro/services/openai",
+      "date": "2026-11-03",
+      "result": "direct_open_timeout_index_excerpt_available"
+    },
+    {
+      "url": "https://sms-go.pro/legal/refund-policy",
+      "date": "2026-11-03",
+      "result": "direct_open_timeout_index_excerpt_available"
+    }
+  ]
+}
