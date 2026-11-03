@@ -1,0 +1,228 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v2",
+  "report_version": "1.2",
+  "title": "GPT原号供货与验证2026-11-03再次定点补证",
+  "observed_on": "2026-11-03",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103.html",
+  "scope": "实际读取商家公开页，不创建订单、不提交凭据、不联系商家、不购买、不做验证实测",
+  "criteria": {
+    "own_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "evidence_legend": {
+    "observed": "本轮公开网页出现的可读文字及标价，不代表履约",
+    "merchant_claim": "商家自身声明，未独立核验",
+    "inference": "基于公开规则推断，非账号实测",
+    "unknown": "未披露或未验证，数值字段使用null"
+  },
+  "new_leads": [
+    {
+      "id": "gptstore-ios-us",
+      "name": "GPT Store",
+      "merchant_url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "sku": "GPT PLUS 充值卡密（iOS 美区质保）",
+      "channel": "商称iOS美区兑换卡密",
+      "listed_price": 16,
+      "currency": "USD",
+      "price_unit": "份卡密（准确月数未见明确说明）",
+      "quantity": 1,
+      "period_months": null,
+      "advertised_agent_price_usd": 16,
+      "advertised_agent_price_unit": "份卡密",
+      "agent_discount_vs_public_listing_usd": 0,
+      "agency_upfront_fee_usd": null,
+      "wholesale_minimum_quantity": null,
+      "wholesale_authorization_verified": false,
+      "official_reseller_authorization": false,
+      "payment_processor_claim": "Stripe",
+      "payment_currency": "USD",
+      "payment_fee_usd": null,
+      "subscription_extra_tax_usd": null,
+      "invoice_fee_cny": null,
+      "all_in_invoice_cny": null,
+      "invoice_issuer": null,
+      "collection_entity": null,
+      "legal_entity": null,
+      "account_prerequisite": "需具备可自行完成iOS美区兑换的账号/设备环境；兑换机制可能因卡密或Apple礼品卡类型而异",
+      "session_required": null,
+      "can_bypass_chatgpt_web_login_verification_verified": false,
+      "phone_binding_verified": false,
+      "refund_claim": "商称未交付/充值失败且符合规则可当天全退；已交付数字商品通常不无理由退，特殊异常由商家确认",
+      "evidence_limit": "代理价与零售价均USD16，不证明上游批发条件；月周期未在所读准确商品页证实，人民币最终含票价不可计算；店铺条款主动声明无OpenAI代理授权",
+      "real_order_tested": false,
+      "invoice_verified": false,
+      "source_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ]
+    }
+  ],
+  "supplier_verification_deltas": [
+    {
+      "id": "payprm-invoice",
+      "name": "PAYPRM",
+      "scope": "本站商品价格的税费与票据",
+      "invoice_price_excludes_tax_claim": true,
+      "invoice_tax_surcharge_required_claim": true,
+      "invoice_rate": null,
+      "invoice_fee_cny": null,
+      "invoice_issuer": null,
+      "all_in_invoice_cny": null,
+      "receipt_equivalent_to_mainland_vat_invoice": false,
+      "detail": "商家FAQ明确标价未含税，税务发票另按实际税点及开票金额收费且需要确认。此前不明的开票收费政策得以补证，但税点/主体/真实发票仍未知。",
+      "verified_tax_invoice": false,
+      "source_ids": [
+        "R05"
+      ]
+    },
+    {
+      "id": "payprm-codex-phone",
+      "name": "PAYPRM",
+      "scope": "Codex App 手机号验证（不外推ChatGPT网页首次登录或API）",
+      "merchant_experience_claim": "商称按自身收到的Codex用户反馈，超过98%免费号升级Plus/Pro后不再出现原先手机提示",
+      "independently_verified": false,
+      "sample_size": null,
+      "test_method": null,
+      "can_solve_web_login_verification_verified": false,
+      "merchant_alternative": "升级后仍提示可另购Codex短信验证商品；未来是否二次验证取决于OpenAI",
+      "phone_ownership_duration": null,
+      "failed_sms_refund_policy": null,
+      "inference": "不能由商家反馈推出升级必然清除验证，更不能把普通充值解释为绑定手机号；无现成Session账号须先解决登录条件。",
+      "source_ids": [
+        "R06"
+      ]
+    },
+    {
+      "id": "chatshare-name-disambiguation",
+      "name": "chatshare.tv（与旧chatshare.info及qfcc99准确SKU身份关系未证实）",
+      "sku": "Plus五人共享或三人共享",
+      "display_prices_cny": [
+        {
+          "amount": 31,
+          "unit": "每人·30天",
+          "shared_seats": 5
+        },
+        {
+          "amount": 59,
+          "unit": "每人·30天",
+          "shared_seats": 3
+        }
+      ],
+      "supported": "仅Webchat",
+      "not_supported": [
+        "Codex",
+        "Work",
+        "API"
+      ],
+      "own_account_plus": false,
+      "identity_equivalence_to_tracked_chatshare_verified": false,
+      "upstream_verified": false,
+      "note": "共享席位而非本人原号个人Plus，不能混入原号供货比价，也不能把两个同名站认作同一主体",
+      "source_ids": [
+        "R07"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "R01",
+      "url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "美元16商品价和同价至尊代理拿货价，卡密交付说明"
+    },
+    {
+      "id": "R02",
+      "url": "https://gptstore.lol/price/chatgpt-plus",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "标价不含额外官方税和第三方费，Stripe美元支付与美区兑换前提"
+    },
+    {
+      "id": "R03",
+      "url": "https://gptstore.lol/terms",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "无OpenAI代理/授权关系，收款与有条件退款；条款标注生效2026-08-15"
+    },
+    {
+      "id": "R04",
+      "url": "https://gptstore.lol/blog/chatgpt-ios-us-card-redeem-guide",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "卡密可能为Apple礼品卡或平台凭证，需要逐单核交付内容"
+    },
+    {
+      "id": "R05",
+      "url": "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "未含税标价、开税票额外税费率待确定、普通付款收据不等于税票"
+    },
+    {
+      "id": "R06",
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "商称Codex用户反馈98%+升级后免重复验证、仍可能需要独立接码；非官方政策"
+    },
+    {
+      "id": "R07",
+      "url": "https://chatshare.tv/plans",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "type": "merchant",
+      "supports": "两种共享30天套餐31/59元每人、Webchat独占范围、排除Codex/Work/API"
+    }
+  ],
+  "access_notes": [
+    "catfk.com/item/g8ptrd本轮未取得可核商品正文，不刷新2026-10-04旧价或断言下架。",
+    "morimm.com/products/gptplus本轮访问受限，不刷新旧价。",
+    "旧ChatShare及wind89部分原页本轮无可读正文，不更新旧观察日期或断言服务失效。",
+    "小久与引路鲸准确SKU重读未发现影响现有定价结论的变化，因此不制造价格变更。",
+    "本次新增已核批发源头、真实票据、真实购买、手机验证实测均为0；未知数额用null。"
+  ],
+  "attempted_but_no_new_price_evidence": [
+    {
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_on": "2026-11-03",
+      "status": "no_readable_body",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-03",
+      "status": "access_limited",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://chatshare.info/",
+      "observed_on": "2026-11-03",
+      "status": "access_limited",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-03",
+      "status": "no_readable_body",
+      "price_refreshed": false
+    }
+  ],
+  "qualifications": {
+    "new_verified_upstreams": 0,
+    "real_tax_invoice_checked": 0,
+    "real_orders": 0,
+    "real_phone_verification_tests": 0
+  }
+}
