@@ -386,6 +386,28 @@
       "summary": "5条新读取原链、3个SKU及未知费用null；均非已核批发源头。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r2-20261103",
+      "title": "GPT源头调研 · iOS卡密上游资格与含票费用再次补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r2.html",
+      "updatedAt": "2026-11-03T03:21:14Z",
+      "summary": "GPT Store美区卡密US$16公开价与代理价相同，PAYPRM开票需另付税费；Codex验证98%仅为商家反馈；共享ChatShare不属原号。零个已核上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r2-evidence-20261103",
+      "title": "GPT源头再补证 · 原始来源与未知费用JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r2-evidence.json",
+      "updatedAt": "2026-11-03T03:21:14Z",
+      "summary": "7条新读取原始URL、准确单位币种与SKU、税票和短信适用性边界；未知数值null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
