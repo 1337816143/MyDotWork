@@ -452,6 +452,28 @@
       "summary": "8条本轮读取原始URL；价格单位/周期、票费和支付手续费null、Reseller资格、平台退款与OpenAI验证码范围缺口。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r5-20261103",
+      "title": "GPT源头 · ChongPay票据资格及SKU冲突复核",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r5.html",
+      "updatedAt": "2026-11-03T06:54:39Z",
+      "summary": "ChongPay明确不支持国内增值税票，PDF商业凭证与自助开票路径冲突；Plus菲律宾/iOS两SKU各¥150，关于页另称¥189月卡；授权、真实票据及结算全费均未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r5-evidence-20261103",
+      "title": "ChongPay开票口径、渠道SKU与售后 · 6条原页证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r5-evidence.json",
+      "updatedAt": "2026-11-03T06:54:39Z",
+      "summary": "6条本轮实际读取的商家原URL：¥150渠道差异、¥189不同描述、国内税票否、PDF开票方式冲突；费用和主体null，实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
