@@ -1,0 +1,186 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.16",
+  "observed_on": "2026-11-04",
+  "previous_report": "research/2026-11-04/supplier-followup-20261104.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "scope": "新调查AIXiamo准确本人原号Plus SKU、入口价与动态库存矛盾、免费账号限定、开票和售后，以及返佣与批发关系。新零售候选并非已证实Plus批发源头。",
+  "merchant": "AIXiamo / AI夏末",
+  "exact_sku": "item/10 ChatGPT Plus充值与开通，1个月",
+  "category": "third_party_retail_reseller_unverified_upstream",
+  "offer": {
+    "homepage_display_price_cny": 148.8,
+    "display_price_unit": "CNY/1个月/一份",
+    "exact_sku_static_checkout_price_cny": null,
+    "actual_single_unit_checkout_price_cny": null,
+    "payment_channel_fee_cny": null,
+    "invoice_fee_cny": null,
+    "fx_network_fee_cny": null,
+    "tax_invoice_all_in_cny": null,
+    "upfront_agent_fee_cny": null,
+    "bulk_price_cny": null,
+    "homepage_displayed_stock": 27,
+    "exact_page_displayed_stock": 26,
+    "exact_page_sold_out_banner": true,
+    "stock_confirmed": false,
+    "product_scope": "本人已有ChatGPT Free账号，在已登录的目标账号中自助激活一个月Plus",
+    "own_account": true,
+    "single_month_claimed": true,
+    "already_plus_active_renewal_supported": false,
+    "unused_cdk_no_expiry_claimed": true
+  },
+  "invoice": {
+    "merchant_claims_invoice_application": true,
+    "request_after_paid_and_delivered": true,
+    "contact_customer_service_required": true,
+    "invoice_type_cny": null,
+    "invoice_issuer_legal_name": null,
+    "payment_merchant_legal_name": null,
+    "additional_invoice_fee_cny": null,
+    "real_invoice_received": false,
+    "old_announcement_date": "2026-08-06"
+  },
+  "delivery_and_validation": {
+    "card_after_payment_claimed": true,
+    "chatgpt_login_before_activation_required": true,
+    "account_info_copy_required": true,
+    "session_or_token_data_may_be_involved": true,
+    "chatgpt_web_first_login_bypass_verified": false,
+    "codex_phone_verification_verified": false,
+    "first_api_key_phone_verification_verified": false,
+    "apple_app_store_channel_claimed": true,
+    "apple_payment_and_session_can_coexist": true,
+    "phone_binding_automatic": false
+  },
+  "after_sales": {
+    "merchant_claims_failed_order_full_refund": true,
+    "merchant_claims_30day_plus_interrupt_remedy": true,
+    "merchant_claims_full_original_order_cash_refund_for_non_user_interrupt": true,
+    "merchant_claims_new_full_month_remedy": true,
+    "refund_claim_verified_by_paid_order": false,
+    "exceptions": "用户违规封禁与账号自身异常，及卖家核验后定责；不保首次手机号验证",
+    "old_policy_updated_on": "2026-10-15"
+  },
+  "wholesale": {
+    "referral_commission_scheme_public": true,
+    "no_stock_required_merchant_suggests": true,
+    "referral_commission_rate": null,
+    "wholesale_price_per_single_plus_cny": null,
+    "signed_supply_agreement_verified": false,
+    "upstream_authorization_verified": false,
+    "legal_operator_verified": false,
+    "no_entry_fee_independently_verified": false
+  },
+  "observations": [
+    {
+      "type": "webpage_display",
+      "detail": "首页给¥148.8/月，/item/10动态价加载中；库存26与售罄静态文案并存。不擅称真实售罄，也不刷新其余候选旧价格。"
+    },
+    {
+      "type": "merchant_claim",
+      "detail": "支持电子发票申请、Plus 30天保障、确认失败全额退，尚未经过真实订单和税票验真。"
+    },
+    {
+      "type": "inference",
+      "detail": "返佣合作更多是下游推荐制；不能等同持货一手供货、企业对公转售授权或单件批发资格。"
+    },
+    {
+      "type": "actual_test",
+      "detail": "本轮无付款、兑换、发票、独立手机号成功或退款实测。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "A1",
+      "merchant": "AIXiamo 首页",
+      "url": "https://www.aixiamo.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "首页显示Plus ¥148.8、1个月本人原号自动发卡，并展示库存27；该数字不是已支付结算价。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A2",
+      "merchant": "Plus 准确商品 /item/10",
+      "url": "https://www.aixiamo.com/item/10",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "同页描述1个月Plus，静态正文同时出现库存26及「当前商品已售罄」，价格与总价动态区显示加载中；无法确认最终可下单状态和全费。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A3",
+      "merchant": "自助激活站",
+      "url": "https://plus.aixiamo.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "Plus仅支持Free账号；已有Plus须到期后再充；先登录ChatGPT再复制账号信息，不能作为首次网页手机号验证的先行解决方案。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A4",
+      "merchant": "开票公告",
+      "url": "https://www.aixiamo.com/articles/aixiamo-invoice-application-notice-2026",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "商家2026-08-06旧公告称已付款且发货/充值完成才可申请；需先联系售后，票种、内容和金额逐单确认，通常收齐资料后约一天；未公开单件税票费及出票主体。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A5",
+      "merchant": "退款与售后",
+      "url": "https://www.aixiamo.com/refund-after-sales-policy",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "商家2026-10-15规则称确认失败全额退；Plus成功后30天内非用户原因中断，经核可补全新月或原单全额现金退款；用户违规封禁及账号异常另按规则；真实理赔未核。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A6",
+      "merchant": "代理返佣",
+      "url": "https://www.aixiamo.com/agent-cooperation",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "公开合作为引流订单后按成交返佣、通常无需囤卡；比例、专属进货价格须另协商，不证明一手批发或无前置费的任何特定合同。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A7",
+      "merchant": "企业采购页",
+      "url": "https://www.aixiamo.com/enterprise-ai-procurement?utm_campaign=enterprise_procurement_20260823&utm_content=primary&utm_medium=enterprise_bridge&utm_source=homepage",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "商家称可用企业自有独立账号批量开通和实际交易申请发票，套餐费按确认报价；未列单件Plus含票成交合同或实际代销授权。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    },
+    {
+      "id": "A8",
+      "merchant": "商家关于页",
+      "url": "https://www.aixiamo.com/about-aixiamo",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "fact": "团队声称2023年开始、2026年1月网站上线及累计4.2万客户；均为商家自述，未发现可独立核对的经营/收款/开票主体。",
+      "evidence_class": "merchant_page_or_claim_not_transaction",
+      "actual_purchase_tested": false
+    }
+  ],
+  "verified_plus_wholesale_count": 0,
+  "actual_purchase_count": 0,
+  "verified_real_invoice_count": 0,
+  "phone_verification_success_count": 0,
+  "old_plus_prices_refreshed": 0,
+  "historic_plus_price_count_preserved": 126
+}

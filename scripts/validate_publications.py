@@ -131,13 +131,21 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 63, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 65, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.15'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-03/supplier-followup-20261103-r14.html'
+    assert latest['version'] == '1.16'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r2-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104.html'
+    assert by_id['gpt-source-followup-r16-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r2.html'
+    assert by_id['gpt-source-followup-r16-evidence-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r2-evidence.json'
+    r16 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r2-evidence.json').read_bytes())
+    assert len(r16['sources']) == 8 and r16['verified_plus_wholesale_count'] == r16['actual_purchase_count'] == r16['phone_verification_success_count'] == 0
+    assert r16['offer']['homepage_display_price_cny'] == 148.8
+    assert r16['offer']['tax_invoice_all_in_cny'] is None and r16['offer']['actual_single_unit_checkout_price_cny'] is None
+    assert r16['offer']['already_plus_active_renewal_supported'] is False and r16['wholesale']['upstream_authorization_verified'] is False
+    # Prior r15 report is preserved and checked below.
     assert by_id['gpt-source-followup-r15-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104.html'
     assert by_id['gpt-source-followup-r15-evidence-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-evidence.json'
     r15 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-evidence.json').read_bytes())
