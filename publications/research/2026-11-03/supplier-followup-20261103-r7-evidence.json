@@ -1,0 +1,169 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.7",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T08:37:48.723Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r6.html",
+  "scope": "本轮只读引路鲸/ChatGPT直充站准确Plus商品与平台条款。新证据重点是准确无质保SKU、商家旧公告对微软邮箱用户的质保排除、实际掉订退款公式；不是新涨跌价，未操作订单、支付、账号或短信。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "main_findings": [
+    "准确SKU LIST-000019为本人原号Plus代充（月付·无质保）¥125/件；站内订单创建前只读摘要为¥125，成功交付后无退款/补发；不是含票最终成交价。历史聚合页已见¥125，此处新增SKU级明确证据而非新降价。",
+    "LIST-000001为本人原号Plus（月付·有质保）¥135/件；站内未提交订单。两种SKU不可因同为Plus而合并售后承诺。",
+    "商家2026-05-24旧公告明确Outlook/Hotmail邮箱注册的目标账号Plus不提供质保；这与商品页概述30天保障形成条件性例外，是本轮首次补入的采购风险，并非2026-11-03新生效。",
+    "商家2026-05-24另一公告给出掉订退款公式：实付×80%−实付÷30×已使用天数，正数之外如何处理未公开；对¥135且用15天的纯算术例子为¥40.50，实际由订单规则和实付额决定。",
+    "两SKU商品页可选开中国增值税普票，商称额外6%。原号Plus ¥125/¥135分别有公开分项推算¥132.50/¥143.10，但支付手续费、实际出票主体、票据有效性未知，总含票价null。",
+    "公开代理费¥3000（独立站另¥2000）不符合零前置目标，推广返佣不是无费拿货；商家自承与OpenAI无官方关联。未取得有效原厂转售授权、真实履约、发票或号码通过证据。"
+  ],
+  "merchant": "引路鲸 / ChatGPT直充站",
+  "exact_skus": [
+    {
+      "id": "LIST-000019",
+      "name": "ChatGPT Plus 代充（月付·无质保）",
+      "url": "https://chatgqt.plus/buy?sku=LIST-000019",
+      "account": "本人原号（商称）",
+      "quantity": 1,
+      "unit": "CNY/件/月",
+      "price_cny": 125,
+      "old_known_aggregation_price_cny": 125,
+      "price_change_proven": false,
+      "pre_order_summary_cny": 125,
+      "pre_order_summary_not_paid": true,
+      "invoice_extra_rate_claim": 0.06,
+      "invoice_extra_cny_calculated": 7.5,
+      "known_component_sum_cny": 132.5,
+      "payment_extra_cny": null,
+      "invoice_issuer": null,
+      "receipt_verified": false,
+      "all_in_invoiced_cny": null,
+      "after_sales": "商称仅保证成功交付当时可用，交付成功后不补发、不退款；未成功交付按订单规则处理",
+      "reliability": "商家声明，非独立订单实测"
+    },
+    {
+      "id": "LIST-000001",
+      "name": "ChatGPT Plus 代充（月付·有质保）",
+      "url": "https://chatgqt.plus/buy?sku=LIST-000001",
+      "account": "本人原号（商称）",
+      "quantity": 1,
+      "unit": "CNY/件/月",
+      "price_cny": 135,
+      "old_known_aggregation_price_cny": 135,
+      "price_change_proven": false,
+      "pre_order_summary_cny": 135,
+      "pre_order_summary_not_paid": true,
+      "invoice_extra_rate_claim": 0.06,
+      "invoice_extra_cny_calculated": 8.1,
+      "known_component_sum_cny": 143.1,
+      "payment_extra_cny": null,
+      "invoice_issuer": null,
+      "receipt_verified": false,
+      "all_in_invoiced_cny": null,
+      "after_sales": "商称30天掉订保障但公告另明确微软邮箱账号排除；仅适用范围内掉订按公开公式退，不保证封号退款",
+      "reliability": "商家声明，非独立订单实测"
+    }
+  ],
+  "refund_terms": {
+    "page_published_date": "2026-05-24",
+    "source_url": "https://chatgqt.plus/announcement",
+    "claimed_formula": "actual_paid * 0.80 - actual_paid / 30 * used_days",
+    "example_paid_cny": 135,
+    "example_used_days": 15,
+    "example_formula_result_cny": 40.5,
+    "example_only": true,
+    "refund_negative_value_handling": null,
+    "excluded_registered_email_domains": [
+      "outlook.com",
+      "hotmail.com"
+    ],
+    "exclusion_origin": "merchant_assertion_not_openai_policy",
+    "real_claims_tested": 0
+  },
+  "supplier_conditions": {
+    "merchant_agent_onboarding_cny": 3000,
+    "agent_fee_separate_from_stock_balance": true,
+    "standalone_store_extra_setup_cny": 2000,
+    "standalone_store_next_year_cny": 999,
+    "single_unit_no_agent_fee": "零售商品可单件下单；不是已证批发价",
+    "verified_direct_upstream": false,
+    "verified_factory_or_official_resale_authorization": false,
+    "merchant_disclaims_openai_affiliation": true,
+    "exact_agent_unit_price_cny": null,
+    "payee_entity": null,
+    "invoice_entity": null
+  },
+  "phone_service_boundary": {
+    "merchant_offers_independent_verified_sms_service_in_sources": false,
+    "web_first_login_phone_solution_proven": false,
+    "codex_desktop_sms_proven": false,
+    "api_key_phone_proven": false,
+    "session_or_token_requirement_verified": false,
+    "remark": "商家自称无需密码及原号升级，不等于无登录前提，更不等于充值自动绑定手机；本轮未重新核其他独立接码商家。"
+  },
+  "qualification_totals": {
+    "new_verified_plus_upstreams": 0,
+    "verified_invoice_all_in_under_170": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "sources": [
+    {
+      "id": "H01",
+      "url": "https://chatgqt.plus/buy?sku=LIST-000019",
+      "observed_on": "2026-11-03",
+      "kind": "商家原号Plus无质保准确SKU下单预览（只读）",
+      "status": "success_read",
+      "fact": "URL含sku=LIST-000019；¥125/月，数量1、¥125预创建订单摘要；额外6%税票选项，非必选加急¥30；无质保款成功交付不支持退款/补发；未进入支付。"
+    },
+    {
+      "id": "H02",
+      "url": "https://chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-03",
+      "kind": "商家原号Plus有质保准确SKU下单预览（只读）",
+      "status": "success_read",
+      "fact": "URL含sku=LIST-000001；¥135/月，数量1；页面标示30天保障但独立公告有邮箱例外；可选普票加6%、额外加急¥30。"
+    },
+    {
+      "id": "H03",
+      "url": "https://chatgqt.plus/announcement",
+      "observed_on": "2026-11-03",
+      "kind": "商家规则与售后公告",
+      "status": "success_read",
+      "page_published_date": "2026-05-24",
+      "fact": "旧公告明确outlook.com/hotmail.com邮箱目标账号不质保；另一公告给出实付×80%−(实付÷30×已用天数)的退款计算式。属于商家政策而非OpenAI风控事实。"
+    },
+    {
+      "id": "H04",
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-03",
+      "kind": "商家代理招募与收款责任页面",
+      "status": "success_read",
+      "fact": "进货代理一次性¥3000资格费，不抵拿货余额；独立站再收¥2000/次年¥999；代理价需审核开通后登录查看；无前置费推广返佣不等于批发。"
+    }
+  ],
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "ChatShare准确SKU",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "not_tested": [
+    "付款或折扣核销",
+    "税票领取验真",
+    "上游授权证明",
+    "订单交付",
+    "ChatGPT网页登录手机号验证",
+    "Codex桌面端验证",
+    "API Key验证"
+  ]
+}
