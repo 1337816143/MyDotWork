@@ -650,6 +650,28 @@
       "summary": "13条实际可读页面、3家新补证对象，商家承诺与真实授权/税票/履约分别标注，未知费用null、成功实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r14-20261103",
+      "title": "GPT源头 · 独立接码服务、可续租号码及实际退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r14.html",
+      "updatedAt": "2026-11-03T15:32:49Z",
+      "summary": "CodeMandi ChatGPT美区页USD0.17/次、最低USD1预存且错码不退；SMS-GO索引显示USD0.55/30天但需USD5不可提预存，直接商品访问超时；OpenAI官方区分网页、Codex、首API Key。实测0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r14-evidence-20261103",
+      "title": "CodeMandi/SMS-GO号码价格、租期和退余额规则 · 原始URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r14-evidence.json",
+      "updatedAt": "2026-11-03T15:32:49Z",
+      "summary": "10条原始来源，直接打开与搜索索引分级；两家手机号服务已知展示价与不可提现预存、错误验证码不退，Plus历史报价不刷新、验证成功数0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
