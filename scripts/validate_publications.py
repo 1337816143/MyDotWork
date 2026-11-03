@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 71, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 73, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.19'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r5.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r5-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r4.html'
+    assert latest['version'] == '1.20'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r6.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r6-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r5.html'
+    assert by_id['gpt-source-followup-r20-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r6.html'
+    assert by_id['gpt-source-followup-r20-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r6-evidence.json'
+    r20 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r6-evidence.json').read_bytes())
+    assert r20['round'] == 20 and len(r20['sources']) == 5
+    assert r20['phone_verification']['first_activation_payment_required'] is True
+    assert r20['phone_verification']['first_activation_minimum_gbp'] is None
+    assert r20['phone_verification']['official_direct_shipping_to_china'] is False
+    assert r20['phone_verification']['inactivity_deactivation_months'] == 6
+    assert r20['phone_verification']['uk_whatsapp_otp_listed'] is False
+    assert r20['phone_verification_success_count'] == r20['verified_plus_wholesale_count'] == r20['actual_purchase_count'] == 0
+    assert r20['historical_126_quote_records_preserved'] is True and r20['old_prices_refreshed'] == 0
+    # r19 remains a reviewed historical fixed artifact, tested below.
     assert by_id['gpt-source-followup-r19-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r5.html'
     assert by_id['gpt-source-followup-r19-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r5-evidence.json'
     r19 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r5-evidence.json').read_bytes())
