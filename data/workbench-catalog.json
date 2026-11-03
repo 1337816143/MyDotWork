@@ -474,6 +474,28 @@
       "summary": "6条本轮实际读取的商家原URL：¥150渠道差异、¥189不同描述、国内税票否、PDF开票方式冲突；费用和主体null，实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r6-20261103",
+      "title": "GPT源头 · 官方礼品卡转售限制与ChatShare品类辨别",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r6.html",
+      "updatedAt": "2026-11-03T07:20:37.634Z",
+      "summary": "OpenAI品牌礼品卡发卡条款禁止持卡人有偿转售，区别Gifting Credits/Plus会员；ChatShare镜像与独享账号价不并入本人原号SKU；未核上游仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r6-evidence-20261103",
+      "title": "OpenAI礼品卡与赠送Credits、ChatShare入口证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r6-evidence.json",
+      "updatedAt": "2026-11-03T07:20:37.634Z",
+      "summary": "本轮读取5条原始页面及1条SKU访问失败；发卡方禁止转售限制、地区/登录条件、不同SKU与历史报价观察日分列；费用未知null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

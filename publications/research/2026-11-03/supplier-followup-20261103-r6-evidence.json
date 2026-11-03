@@ -1,0 +1,190 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.6",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T07:20:37.634Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r5.html",
+  "scope": "本轮读取OpenAI礼品卡发卡方条款、官方不同赠礼机制与ChatShare入口；未建单、未提交Session或手机号；不得把旧126条报价整体刷新。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "main_findings": [
+    "官方OpenAI品牌美元礼品卡的持卡人转售被发卡条款禁止，未授权商贩取得的卡可能无效；不能将持卡人转售当成已证批发授权，且此条款不等于全部Apple iOS礼品卡禁止销售。",
+    "ChatGPT赠送Credits不同于OpenAI礼品卡、API余额及Plus会员。适用Codex额度不等于开通Plus；两类官方赠礼均需登录，不能解决首次网页登录手机验证。",
+    "ChatShare.ren同时提供镜像、所谓独享账号/官网套餐入口，链接至不同域名；与原ChatShare.info的本人原号Plus月付¥160不得合并报价、推断主体或授权。",
+    "本轮仍无核实含票≤¥170、单件单月免代理费且具备供货授权的Plus批发源头；现有商品所有未知结算或票据费用不按0。"
+  ],
+  "gift_card_constraints": {
+    "product": "OpenAI-branded Gift Card (not Apple App Store gift card)",
+    "terms_as_of": "2026-09-01",
+    "card_issuer": "CIMI2604, Inc.",
+    "cardholder_resale_prohibited": true,
+    "unauthorized_reseller_origin_may_invalidate": true,
+    "official_authorized_retailers_exist": true,
+    "us_location_and_usd_billing_required": true,
+    "web_redemption_requires_login": true,
+    "redeeming_automatically_starts_subscription": false,
+    "usable_for_web_subscription_renewals": true,
+    "usable_for_app_store_or_google_play": false,
+    "api_credit_prepayment_covered": false,
+    "phone_verification_bypass_proven": false,
+    "price_usd": null,
+    "payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "all_in_invoice_cny": null
+  },
+  "gifted_credits_distinction": {
+    "product": "Gifting Credits (not gift card; not Plus subscription)",
+    "eligible_purchasers": "Plus/Pro or eligible associated personal workspace; subject to rollout",
+    "eligible_recipients": "Free/Go/Plus/Pro personal accounts or eligible associated personal workspace",
+    "must_sign_in": true,
+    "claim_expiry_days": 30,
+    "redeemed_credit_expiry_months": 12,
+    "usable_for_eligible_codex_extra_credits": true,
+    "automatically_upgrades_subscription": false,
+    "api_billing_covered": false,
+    "phone_verification_bypass_proven": false,
+    "eligible_currency": "must match gift purchase",
+    "price": null,
+    "invoice_fee_cny": null
+  },
+  "chatshare_scope": {
+    "original_own_account_merchant": "chatshare.info",
+    "original_own_account_plus_monthly_display_cny": 160,
+    "original_exact_sku_last_payment_preview_cny": 166.4,
+    "original_exact_sku_last_checked_on": "2026-10-04",
+    "original_exact_sku_repriced_this_round": false,
+    "other_market_domain": "chatshare.ren",
+    "marketpage_separate_offers": [
+      {
+        "label": "聚合镜像月卡",
+        "display_price_cny": 69.9,
+        "period": "月",
+        "link_domain": "qfcc99.com",
+        "matches_own_account": false
+      },
+      {
+        "label": "官网套餐、独享账号（非本人原号已证）",
+        "display_price_cny": 170,
+        "period": "月",
+        "link_domain": "gptplus.org.cn",
+        "matches_own_account": null
+      },
+      {
+        "label": "Plus独享账号",
+        "display_price_cny": 165,
+        "period": null,
+        "link_domain": "gptpluszh.com",
+        "matches_own_account": false
+      }
+    ],
+    "business_entity_relationship_verified": false,
+    "receipt_invoice_issuer": null,
+    "actual_payee": null,
+    "vat_invoice_extra_cny": null,
+    "payment_extra_cny": null,
+    "final_invoiced_cny": null,
+    "wholesale_contract_verified": false,
+    "authorized_openai_resale_verified": false,
+    "invoice_seen": false,
+    "real_orders": 0
+  },
+  "phone_service_boundary": {
+    "getvip_wind89_getgpt_payprm_chongpay_new_phone_success_tests": 0,
+    "chatgpt_web_first_login_compatibility_verified": false,
+    "codex_desktop_number_verified": false,
+    "api_key_number_verified": false,
+    "independent_sms_refund_reverified": false,
+    "apple_automatic_binding_proven": false,
+    "notes": "本轮无新接码独立服务条款；历史号码期限及失败退款缺口不刷新。"
+  },
+  "qualification_totals": {
+    "new_verified_plus_upstreams": 0,
+    "verified_invoice_all_in_under_170": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "sources": [
+    {
+      "id": "G01",
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observed_on": "2026-11-03",
+      "kind": "OpenAI官方说明",
+      "status": "success_read",
+      "page_updated_label": "5 days ago (relative label on observation date; exact update date not inferred)",
+      "finding": "OpenAI品牌美元礼品卡仅适用于美国境内、美元计价账号，先登录ChatGPT网页兑换钱包余额；兑换不自动开Plus，不能转为Apple/Google内购、API预付费；余额可付符合条件的ChatGPT网页订阅及部分ChatGPT Work/Codex用量额度，需另行购买。OpenAI说明提供发卡机构条款链接。"
+    },
+    {
+      "id": "G02",
+      "url": "https://mycardterms.com/openai/home/terms/",
+      "observed_on": "2026-11-03",
+      "kind": "OpenAI官方帮助页所链接的发卡机构条款",
+      "status": "success_read",
+      "terms_as_of": "2026-09-01",
+      "issuer": "CIMI2604, Inc.",
+      "finding": "卡持有人不得将OpenAI礼品卡出售、交换或有偿转让；允许无偿馈赠。未授权卖家/转售商取得的卡可能无效；个人购买仅供本人使用或赠礼。条款适用OpenAI品牌的卡，并不自动适用于Apple礼品卡或一般iOS内购。"
+    },
+    {
+      "id": "G03",
+      "url": "https://help.openai.com/en/articles/20001417-gifting-credits-in-chatgpt",
+      "observed_on": "2026-11-03",
+      "kind": "OpenAI官方说明",
+      "status": "success_read",
+      "page_updated_label": "6 days ago (relative label on observation date; exact update date not inferred)",
+      "finding": "ChatGPT赠送Credits是与品牌礼品卡不同的独立功能，限符合资格的Plus/Pro购买方、Free/Go可领取；须登录、币种匹配、30天领取窗口，到账后12个月过期。可支付符合条件的Codex等弹性用量但不代表买到Plus月会员，API也不能因此视为已覆盖；原余额不可转售或赠送。"
+    },
+    {
+      "id": "G04",
+      "url": "https://chatshare.ren/",
+      "observed_on": "2026-11-03",
+      "kind": "商家自述的ChatShare营销及入口页面",
+      "status": "success_read",
+      "finding": "一页同时列¥69.9/月聚合镜像、¥170/月所谓官网套餐独享账号与¥165独享账号；其中¥69.9聚合链接指qfcc99.com，官网套餐另指gptplus.org.cn，¥165产品另指gptpluszh.com。不同域名、不同交付和SKU不混入历史本人原号Plus ¥160/月。品牌宣称官方直营不等于OpenAI官方授权、主体关联或上游批发。"
+    },
+    {
+      "id": "G05",
+      "url": "https://chatshare.info/",
+      "observed_on": "2026-11-03",
+      "kind": "既有ChatShare聚合站商家主页复读",
+      "status": "success_read",
+      "finding": "ChatShare聚合页当前仍展示官方原号代充Plus ¥160/月，同时将镜像服务列为独立¥70/月产品；'支持开具正规发票'是商家公告文案，未提供发票主体与真实票据。本轮未读取准确SKU qfcc99.com/item/yrjao6支付预览，不刷新其历史¥166.40含支付宝费值。"
+    },
+    {
+      "id": "G06",
+      "url": "https://qfcc99.com/item/yrjao6",
+      "observed_on": "2026-11-03",
+      "kind": "既有ChatShare准确SKU直接访问尝试",
+      "status": "read_failed",
+      "finding": "本轮未取得准确SKU正文，因此2026-10-04的¥160与支付宝预览¥166.40保留旧观察日期，不宣称服务失效或价格变化。"
+    }
+  ],
+  "failed_reads": [
+    {
+      "id": "G06",
+      "url": "https://qfcc99.com/item/yrjao6",
+      "observed_on": "2026-11-03",
+      "kind": "既有ChatShare准确SKU直接访问尝试",
+      "status": "read_failed",
+      "finding": "本轮未取得准确SKU正文，因此2026-10-04的¥160与支付宝预览¥166.40保留旧观察日期，不宣称服务失效或价格变化。"
+    }
+  ],
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare准确SKU",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "GPT100X",
+    "98 GPT"
+  ]
+}
