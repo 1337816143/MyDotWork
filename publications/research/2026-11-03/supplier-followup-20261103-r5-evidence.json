@@ -1,0 +1,186 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.5",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T06:54:39Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r4.html",
+  "scope": "本轮仅写入实际读取ChongPay原页与发生冲突的公开口径；仅公开资料，不建单、不提交Session、不实测，不刷新旧126条报价。",
+  "criteria": {
+    "own_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "finding_priority": "开票资格直接影响Plus含票≤¥170筛选；此前ChongPay重点为¥20/25天Codex接码，当前新增订阅票据与SKU证据",
+  "merchant": "ChongPay",
+  "skus": [
+    {
+      "merchant": "ChongPay",
+      "sku": "ChatGPT Plus 充值（菲律宾渠道）",
+      "source_id": "C02",
+      "listed_price_cny": 150,
+      "price_unit": "CNY/公开商品卡片1件",
+      "term_months_explicit_on_card": null,
+      "quantity": 1,
+      "renewal": "商称到期才能充",
+      "apple_in_app": false,
+      "requires_preexisting_chatgpt_login_session_claim": true,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "invoice_issuer": null,
+      "domestic_vat_invoice_supported_claim": false,
+      "invoice_type_supported": "商称可提供的PDF商业凭证需向外部店铺核准；国内增值税票主页明确不支持",
+      "all_in_invoiced_cny": null,
+      "auth_resale_verified": false,
+      "real_order_tested": false
+    },
+    {
+      "merchant": "ChongPay",
+      "sku": "ChatGPT Plus 充值（iOS 礼品卡）",
+      "source_id": "C02",
+      "listed_price_cny": 150,
+      "price_unit": "CNY/公开商品卡片1件",
+      "term_months_explicit_on_card": null,
+      "quantity": 1,
+      "renewal": "SKU标称在期可以充；与主页FAQ‘任何在期订阅都不能办’冲突，实际资格未证",
+      "apple_in_app": "渠道称iOS礼品卡，交付步骤未核实",
+      "requires_preexisting_chatgpt_login_session_claim": true,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "invoice_issuer": null,
+      "domestic_vat_invoice_supported_claim": false,
+      "invoice_type_supported": "PDF商业凭证须由实际店铺确认，非中国增值税票",
+      "all_in_invoiced_cny": null,
+      "auth_resale_verified": false,
+      "real_order_tested": false
+    },
+    {
+      "merchant": "ChongPay",
+      "sku": "ChatGPT Plus 月卡（介绍页，未分渠道）",
+      "source_id": "C03",
+      "listed_price_cny": 189,
+      "price_unit": "CNY/商家关于页1个月",
+      "quantity": 1,
+      "term_months_explicit_on_card": 1,
+      "matching_exact_channel_sku_to_C02": false,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "all_in_invoiced_cny": null,
+      "real_order_tested": false
+    }
+  ],
+  "invoice": {
+    "homepage_claim": "已完成订单可在Dashboard自助生成PDF Invoice; 明确非中国增值税发票, 现不支持国内普票/专票",
+    "help_page_claim": "ChongPay本站无自助开票；需要外部购买店铺核对是否提供Invoice或其他商业凭证",
+    "invoice_type_conflict": "非中国增值税票；自助开票入口主页与帮助页互相矛盾",
+    "domestic_vat_invoice_confirmed_available": false,
+    "actual_invoice_issuer": null,
+    "payee_entity": null,
+    "actual_invoice_seen": false,
+    "invoice_fee_cny": null,
+    "payment_extra_cny": null,
+    "all_in_invoiced_cny": null,
+    "impact": "如采购要求中国增值税普票/专票，按本站公开声明当前不满足；若报销接受其他商业凭证，仍需实际店铺与报销方确认，且含费成本不明"
+  },
+  "availability": {
+    "catalog_philippines_claim": "到期后办理",
+    "catalog_ios_claim": "在期可办理",
+    "homepage_faq_claim": "在期任何档位都不能办理",
+    "actual_renewal_or_override_tested": false,
+    "interpretation": "冲突未解决，不能确认在期续费可行；iOS与Session可能同属交付流程，未证自动绑定手机号"
+  },
+  "sms_verification": {
+    "previous_chongpay_sms_25day_20cny_still_historical": true,
+    "price_not_repriced_this_round": true,
+    "chatgpt_web_first_login_applicability_verified": false,
+    "codex_app_verification_verified": false,
+    "api_first_key_verification_verified": false,
+    "number_type_verified": false,
+    "phone_control_duration_for_any_claim": null,
+    "refund_on_openai_reject": null,
+    "automatic_bind_on_subscription_verified": false
+  },
+  "contract_and_supply": {
+    "third_party_no_official_openai_link_claim": true,
+    "business_legal_entity": null,
+    "merchant_wzyp_cn_checkout_seen": false,
+    "payee_entity": null,
+    "wholesale_terms_verified": false,
+    "minimum_wholesale_quantity": null,
+    "authorized_resale_verified": false,
+    "prepaid_agent_fee_cny": null,
+    "real_transaction_tested": false
+  },
+  "unchanged_prior_candidates": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM"
+  ],
+  "qualifications": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_plus_invoiced_all_in_under_170": 0,
+    "verified_openai_phone_compatibility": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "sources": [
+    {
+      "id": "C01",
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-03",
+      "kind": "merchant_homepage",
+      "status": "success_read",
+      "supports": "主页Plus菲律宾¥150、iOS礼品卡¥150；PDF Invoice商业凭证非国内增值税票；写明暂不支持国内增值税普票/专票；FAQ声称可自助生成PDF并要求先有Session，FAQ对在期订阅一律不接与iOS商品卡片冲突"
+    },
+    {
+      "id": "C02",
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-03",
+      "kind": "merchant_sku_catalog",
+      "status": "success_read",
+      "page_self_price_updated_on": "2026-10-22",
+      "supports": "两款Plus分列菲律宾渠道¥150到期充、iOS礼品卡¥150在期可充；付款及售后在外部wzyp.cn店铺，周期未在SKU卡片独立明示；页面2026-10-22为自标价更新日非本轮调价证据"
+    },
+    {
+      "id": "C03",
+      "url": "https://chongpay.com/about",
+      "observed_on": "2026-11-03",
+      "kind": "merchant_about",
+      "status": "success_read",
+      "supports": "介绍页Plus月卡¥189，与SKU列表¥150的具体渠道产品不同，不能认定同一商品真实降价；商称需要Session Token，第三方非OpenAI关联"
+    },
+    {
+      "id": "C04",
+      "url": "https://chongpay.com/help/create-invoice",
+      "observed_on": "2026-11-03",
+      "kind": "merchant_invoice_help",
+      "status": "success_read",
+      "supports": "开票帮助页否认本站有登录/我的订单/自助开票功能；要求转到外部购买店铺联系客服询问PDF Invoice、收款与出票主体，和主页自助PDF叙述存在冲突"
+    },
+    {
+      "id": "C05",
+      "url": "https://chongpay.com/help/china-vat-invoice",
+      "observed_on": "2026-11-03",
+      "kind": "merchant_invoice_help",
+      "status": "success_read",
+      "supports": "PDF Invoice不能等同中国增值税发票；需实际店铺与报销方分别核对主体、抬头、金额、票据类型；此页未明确证实可提供国内增值税票"
+    },
+    {
+      "id": "C06",
+      "url": "https://chongpay.com/help/after-sales-guarantee",
+      "observed_on": "2026-11-03",
+      "kind": "merchant_after_sales",
+      "status": "success_read",
+      "supports": "售后以外部店铺商品和订单条款为准；补办或退款金额、条件及时限需店铺核验，非无条件售后实测"
+    }
+  ],
+  "failed_reads": []
+}
