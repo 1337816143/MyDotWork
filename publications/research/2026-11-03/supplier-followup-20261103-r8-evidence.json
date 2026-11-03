@@ -1,0 +1,179 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.8",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T09:31:18.309Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r7.html",
+  "scope": "有边界复核小久原号Plus准确商品库存与收据/税票区分；其他供应商失败或未复核旧价不刷新。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "main_findings": [
+    "小久商品页实际展示ChatGPT Plus菲律宾卡充CDK ¥110/件与暂时缺货并存；不是本轮发现涨跌价，且不证明微信/支付宝外部卡网库存相同或全站停止服务。",
+    "卖家商品页新增可见的银行交易凭证与收据查询说明：仅符合条件订单可获得，明确写明交易凭证、收据不等于税务发票。该文字为商家承诺，非真实票据验真或法定开票主体证明。",
+    "用户须先自行处理手机号接码，Plus/Pro/Go现有订阅、历史优惠及邮箱类别有特殊资格限制；这不是解决首次网页登录手机号验证的独立产品。",
+    "该¥110目标价的支付附加费、真实中国税票、开票主体、外部网店实际库存、授权与批发价未证，含税全费null；本轮无新增合格批发源头。"
+  ],
+  "merchant": "小久 / 98-xj.com",
+  "sku": {
+    "product_page_url": "https://98-xj.com/products/gpt%20plus",
+    "name": "〖官方充值〗Chat gpt plus 菲区卡冲cdk（质保30天）",
+    "account": "商称本人已有ChatGPT普通账号，充值前须符合资格",
+    "channel": "商称菲律宾卡冲CDK",
+    "period": "约30天/单月（商称Plus月卡；实单未验证）",
+    "quantity": 1,
+    "price_cny": 110,
+    "price_unit": "CNY/件（单月商品）",
+    "price_change_proven": false,
+    "availability_on_product_page": "暂时缺货",
+    "availability_change_since_prior_observation_proven": false,
+    "external_store_stock_status": null,
+    "external_store_payment_extra_cny": null,
+    "invoice_extra_cny": null,
+    "payee_entity": null,
+    "invoice_issuer": null,
+    "all_in_invoiced_cny": null,
+    "bank_receipt_promised": true,
+    "receipt_or_bank_voucher_not_tax_invoice": true,
+    "authentic_receipt_verified": false,
+    "invoice_verified": false,
+    "seller_authorization_verified": false,
+    "verified_wholesale": false,
+    "real_order_tested": false,
+    "delivery_tested": false
+  },
+  "phone_verification": {
+    "seller_page_explicit": "若账号要求手机号接码需自行解决",
+    "dedicated_web_login_solution_proven": false,
+    "codex_app_solution_proven": false,
+    "api_key_solution_proven": false,
+    "apple_purchase_auto_binds_phone_proven": false,
+    "session_or_token_requirement_in_this_sku_verified": false,
+    "independent_number_service_new_findings": 0
+  },
+  "source_classification": {
+    "readable_primary_sources": 5,
+    "failed_or_unreadable_external_sources": 5,
+    "merchant_claim_is_not_independent_test": true
+  },
+  "qualification_totals": {
+    "new_verified_plus_upstreams": 0,
+    "verified_invoice_all_in_under_170": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "sources": [
+    {
+      "id": "J01",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "source_kind": "seller_exact_product",
+      "evidence_level": "网页实际展示＋商家承诺，不是结算或实测",
+      "detail": "ChatGPT Plus菲律宾卡冲CDK、质保30天、标价¥110、页面显示暂时缺货和自动发货；仅当前该商品页状态，不能推断全网或外部支付渠道断供。账号必须当前无订阅等；下单仍需启用JavaScript。"
+    },
+    {
+      "id": "J02",
+      "url": "https://98-xj.com/",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "source_kind": "seller_catalog",
+      "evidence_level": "网页实际展示",
+      "detail": "目录仍显示同一ChatGPT Plus商品¥110，未显示可即时下单库存；首页也列出第三方支付宝和微信卡网。目录标价与商品页暂缺货可以同时成立。"
+    },
+    {
+      "id": "J03",
+      "url": "https://98-xj.com/terms",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "source_kind": "seller_terms",
+      "evidence_level": "已读原页正文",
+      "detail": "可读服务条款页仅显示暂无内容，无法取得具体经营主体、发票、收费、退款条款；不推断网站其他渠道均没有规则。"
+    },
+    {
+      "id": "J04",
+      "url": "https://98-xj.com/notice",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "source_kind": "seller_notices",
+      "evidence_level": "已读原页正文",
+      "detail": "公告页可读部分显示暂无内容；缺货没有独立公告可证起始时间、恢复时间或缺货范围。"
+    },
+    {
+      "id": "J05",
+      "url": "https://98-xj.com/about",
+      "observed_on": "2026-11-03",
+      "status": "success_read",
+      "source_kind": "seller_about",
+      "evidence_level": "已读原页正文",
+      "detail": "关于页仅展示商家名称、客服电报与通用介绍，未提供可核实的工商注册、收款实体、开票主体或授权资料。"
+    },
+    {
+      "id": "J06",
+      "url": "https://catfk.com/item/j0eswz",
+      "observed_on": "2026-11-03",
+      "status": "no_readable_body",
+      "source_kind": "external_payment_link",
+      "evidence_level": "仅可确认跳转目标URL及访问无正文",
+      "detail": "未取得外部支付宝支付商品页正文；不能推定¥110在此渠道可购买，或支付附费为零。"
+    },
+    {
+      "id": "J07",
+      "url": "https://catfk.com/shop/xiaojiu",
+      "observed_on": "2026-11-03",
+      "status": "fetch_timeout",
+      "source_kind": "external_payment_link",
+      "evidence_level": "读取失败",
+      "detail": "商家指向的外部卡密商店访问超时，未核价格、库存或收款方。"
+    },
+    {
+      "id": "J08",
+      "url": "https://982xj.xyz/subscription",
+      "observed_on": "2026-11-03",
+      "status": "access_failed",
+      "source_kind": "merchant_receipt_portal",
+      "evidence_level": "读取失败",
+      "detail": "卡密查询与收据页面本轮无法取得正文，不能验证商家所称银行交易凭证、PDF收据的真伪、出票主体或实际订单。"
+    },
+    {
+      "id": "J09",
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-03",
+      "status": "access_failed",
+      "source_kind": "merchant_other",
+      "evidence_level": "读取失败",
+      "detail": "不能刷新Morimm既有标价或视为停服。"
+    },
+    {
+      "id": "J10",
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-03",
+      "status": "no_readable_body",
+      "source_kind": "merchant_other",
+      "evidence_level": "本轮直达页面返回0行可读正文",
+      "detail": "未据搜索索引片段刷新139.99元旧价或推定新的公司转账价，先保留原始观察日。"
+    }
+  ],
+  "not_repriced": [
+    "CatFK",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "cautions": [
+    "无实购或结算页，不认定最低含票总价",
+    "缺货只限定本轮商品页，不推定外部支付渠道断货",
+    "网站关于页没有可辨识主体，不证明没有工商主体",
+    "不上传任何用户Session/Token、手机号、凭据"
+  ]
+}
