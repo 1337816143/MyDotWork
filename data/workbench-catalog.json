@@ -716,6 +716,28 @@
       "summary": "8条直接打开商家页面，单件首页显示价与动态结算价分离；税票费、付款费和授权null，实付/接码/票据验真为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r17-20261104",
+      "title": "GPT源头 · UpPlusPro含票分项、CallAI低价Plus与Codex凭据风险",
+      "type": "report",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r3.html",
+      "summary": "Plus ¥143+电子普票商称¥10（支付费未知），CallAI本人原号Plus ¥107；Codex验证¥3但要求第三方输入密码和OTP，高风险，均非已核上游。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T18:33:42Z",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r17-20261104-evidence",
+      "title": "r17完整原始网页及精确SKU费用/接码适用/退款缺口JSON",
+      "type": "dataset",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r3-evidence.json",
+      "summary": "10条直接读取的公开网页；上游授权/含税结算/真实票据与成功验证均0，未知费用保留null。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T18:33:42Z",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
