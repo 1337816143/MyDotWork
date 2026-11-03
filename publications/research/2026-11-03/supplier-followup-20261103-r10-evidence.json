@@ -1,0 +1,233 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.10",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T11:43:34.333Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r9.html",
+  "scope": "GETGPT Pro准确原号Plus月卡超筛选价及个人发票限制；PAYPRM本人原号与新账号商品SKU口径、税票与Token条件的当日公开原页补证。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "merchant_records": [
+    {
+      "merchant": "GETGPT Pro",
+      "url": "https://getgpt.io/price",
+      "sku": "ChatGPT Plus充值 / 原号直充",
+      "period": "1个月",
+      "quantity": 1,
+      "currency": "CNY",
+      "display_price": 179,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "final_all_in_invoiced_cny": null,
+      "invoice_for_individual_claimed_available": false,
+      "invoice_for_enterprise_batch_claimed_consultable": true,
+      "merchant_declared_operator": "NEXCLOUD TECHNOLOGY LIMITED",
+      "payee_verified": false,
+      "tax_invoice_issuer_verified": false,
+      "official_resale_authorization_verified": false,
+      "wholesale_verified": false,
+      "own_account_claim": true,
+      "session_required_merchant_guide": true,
+      "within_budget_before_extras": false,
+      "verified_real_order": false,
+      "verified_real_tax_invoice": false,
+      "source_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05"
+      ]
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "sku": "Plus会员代充 / 我有账号",
+      "period": "1个月",
+      "quantity": 1,
+      "currency": "CNY",
+      "display_price": 155,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "invoice_tax_rate": null,
+      "final_all_in_invoiced_cny": null,
+      "seller_delivery_claim": "邮箱卡密/自助充值入口",
+      "session_required_on_every_order": false,
+      "session_required_on_some_orders_claimed": true,
+      "session_without_login_usable": false,
+      "payee_verified": false,
+      "tax_invoice_issuer_verified": false,
+      "official_resale_authorization_verified": false,
+      "wholesale_verified": false,
+      "own_account_claim": true,
+      "within_budget_before_extras": true,
+      "verified_real_order": false,
+      "verified_real_tax_invoice": false,
+      "source_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ]
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "sku": "Plus会员号 / 我没有账号",
+      "period": "1个月",
+      "quantity": 1,
+      "currency": "CNY",
+      "display_price": 160,
+      "own_account_claim": false,
+      "eligible_for_own_account_requirement": false,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "final_all_in_invoiced_cny": null,
+      "wholesale_verified": false,
+      "source_ids": [
+        "P01",
+        "P04"
+      ]
+    }
+  ],
+  "phone_verification": {
+    "chatgpt_web_new_login_tested": false,
+    "codex_tested": false,
+    "api_key_tested": false,
+    "sms_real_order_tested": false,
+    "apple_auto_binds_phone_proven": false,
+    "payprm_token_optional_but_may_be_requested": true,
+    "getgpt_session_requires_logged_in_account": true,
+    "independent_number_control_duration": null,
+    "phone_verification_failure_refund": null,
+    "previous_getgpt_codex_sms_10_cny_per_use_price_not_repriced": true,
+    "previous_payprm_codex_sms_12_cny_per_use_price_not_repriced": true
+  },
+  "sources": [
+    {
+      "id": "G01",
+      "url": "https://getgpt.io/price",
+      "merchant": "GETGPT Pro",
+      "status": "successful_live_page_read",
+      "finding": "ChatGPT Plus本人原号月卡公开标价¥179/月；超过¥170筛选上限，未涉及支付/开票附费。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "G02",
+      "url": "https://www.getgpt.io/chatgpt-plus",
+      "merchant": "GETGPT Pro",
+      "status": "successful_live_page_read",
+      "finding": "Plus单月¥179；说明中需已有账号正常登录并获取Session，不是首次网页手机号验证的先行解决办法。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "G03",
+      "url": "https://getgpt.io/faq",
+      "merchant": "GETGPT Pro",
+      "status": "successful_live_page_read",
+      "finding": "商家称个人订单暂不开税票，仅提供Receipt；企业/团队可咨询批量对公及开票，零售与批量不可混为同一资格。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "G04",
+      "url": "https://getgpt.io/guide",
+      "merchant": "GETGPT Pro",
+      "status": "successful_live_page_read",
+      "finding": "充值教程要求先登录目标ChatGPT并复制完整Session；支付联系手机号不等于ChatGPT账号绑定手机号。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "G05",
+      "url": "https://getgpt.io/terms",
+      "merchant": "GETGPT Pro",
+      "status": "successful_live_page_read",
+      "page_self_updated_on": "2026-06-02",
+      "finding": "商家条款自述经营者NEXCLOUD TECHNOLOGY LIMITED（香港），与OpenAI无官方隶属关系；真实收款/税票主体、批发权及实际履约未验。6月条款不是本日新规。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "P01",
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "merchant": "PAYPRM",
+      "status": "successful_live_page_read",
+      "finding": "Plus同页区分「我有账号/会员代充」¥155/月和「我没有账号/获取会员账号」¥160/月；只有前者匹配本人原号。网页列卡密自动交付，不等于实际购买与成功充值。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "P02",
+      "url": "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+      "merchant": "PAYPRM",
+      "status": "successful_live_page_read",
+      "finding": "标价均不含税；税务发票另付适用税点，税率与出票主体未知；收款凭证不等于税票。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "P03",
+      "url": "https://www.payprm.com/faq/account/chatgpt-recharge-info",
+      "merchant": "PAYPRM",
+      "status": "successful_live_page_read",
+      "finding": "商家称多数Plus卡密订单不需Access Token，但客服明确要求时须先登录ChatGPT取得Session/Token；不能概括所有卡免Token或保证网页首次登录无需验证。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "P04",
+      "url": "https://www.payprm.com/faq/purchase/order-process",
+      "merchant": "PAYPRM",
+      "status": "successful_live_page_read",
+      "finding": "Plus卡密有库存可从邮箱/订单领取自助入口，缺货等待补发；会员号开通属于不同交付路径。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    },
+    {
+      "id": "P05",
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "merchant": "PAYPRM",
+      "status": "successful_live_page_read",
+      "finding": "Codex升级后无需手机号验证的高比例说法属于商家反馈，不能推断ChatGPT网页首次登录、API首次绑定或自动绑号。",
+      "observed_on": "2026-11-03",
+      "evidence_class": "merchant_page_and_seller_claim_not_independent_transaction"
+    }
+  ],
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "ChongPay"
+  ],
+  "unknowns": [
+    "GETGPT实际收款主体/个人Receipt真实性/转售授权",
+    "PAYPRM适用税率、出票主体、支付额外费、真实付款全额与税票",
+    "双方真实供货与账号履约、手机号验证/接码成功与拒收退款"
+  ],
+  "totals": {
+    "new_verified_wholesale_sources": 0,
+    "confirmed_plus_all_in_invoiced_under_170": 0,
+    "real_orders": 0,
+    "verified_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "conclusions": [
+    "GETGPT本人原号Plus现页面¥179/月，基础价高于采购筛选线；商家目前公开表示个人订单不能开具税票，批量企业方案不等于满足无前置费单件条件。不是证明今日涨价。",
+    "PAYPRM现Plus本人原号代充¥155/月与获取会员账号¥160/月是不同交付商品；税票另收费，支付/税费未核，最终含票成本null。",
+    "PAYPRM卡密通常无需Access Token，但特定订单可能要求先登录取得Token；GETGPT直充则要求Session；两者均无网页首次手机验证成功证据。",
+    "本轮仅公开原页核对，不含采购、发票验真、主体工商验证、上游供货授权或手机号成功实测。"
+  ]
+}
