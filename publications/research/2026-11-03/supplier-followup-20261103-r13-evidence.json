@@ -1,0 +1,252 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.13",
+  "observed_on": "2026-11-03",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r12.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "scope": "本轮新发现条理集采、LinkAi、Dingyue的公开网页与采购/批发技术规则。13条实际读取的原始网页；不采购、不注册、不联系商家、不提交任何账号凭据。",
+  "records": [
+    {
+      "merchant": "条理集采 gongsi.one",
+      "sku": "Plus 1–4席/月付报价档",
+      "price_display": 165,
+      "price_unit": "CNY/席/月，商称含6%数电专票",
+      "payment_fee": null,
+      "invoice_fee": null,
+      "all_in_invoiced_cny": null,
+      "actual_payment_receiver_verified": false,
+      "invoice_issuer_verified": false,
+      "invoice_validated": false,
+      "openai_authorized_reseller_verified": false,
+      "actual_wholesale_price_verified": false,
+      "real_order": false,
+      "notes": "1–4席包括单席，但实际只列企业对公流程；单件能否不预付合同签订、手续费、开票资格、营业执照与具体出票主体均未验证。官网示意发票主体/信用代码含XXXX占位，不是实际可验真税票；官网页脚称与OpenAI无官方代销关系。",
+      "invoice_included_claim": true,
+      "month_tier_min": 1,
+      "month_tier_max": 4,
+      "minimum_upfront_fee_confirmed_absent": false,
+      "claimed_contract": true,
+      "company_issuer_public_invoice_sample_real": false
+    },
+    {
+      "merchant": "LinkAi",
+      "sku": "checkout?product=2 / Plus 30天",
+      "price_display": 150,
+      "price_unit": "CNY/件/30天",
+      "payment_fee": 0,
+      "invoice_fee": null,
+      "all_in_invoiced_cny": null,
+      "actual_payment_receiver_verified": false,
+      "invoice_issuer_verified": false,
+      "invoice_validated": false,
+      "openai_authorized_reseller_verified": false,
+      "actual_wholesale_price_verified": false,
+      "real_order": false,
+      "notes": "基础订单页展示¥150+支付手续费¥0=¥150；快捷下单另一入口同套餐¥168+¥0，冲突或旧缓存未定性。单件商家零售展示并非批发；开票费/出票主体未知。",
+      "other_route_price_cny": 168,
+      "route_price_conflict": true,
+      "automatic_wholesale_supplier_status": false,
+      "first_web_login_solved": false
+    },
+    {
+      "merchant": "Dingyue.app",
+      "sku": "/en/p/chatgpt-plus-subscription / Free及subscribed变体",
+      "price_display": 19.99,
+      "price_unit": "USD/账号/月",
+      "payment_fee": null,
+      "invoice_fee": null,
+      "all_in_invoiced_cny": null,
+      "actual_payment_receiver_verified": false,
+      "invoice_issuer_verified": false,
+      "invoice_validated": false,
+      "openai_authorized_reseller_verified": false,
+      "actual_wholesale_price_verified": false,
+      "real_order": false,
+      "notes": "两个变体各USD19.99，先登录提供Session，美元稳定币付款；平台批发价目当前可见Go USD5.99而无Plus批发价格；USDT/USDC网络/手续费与中国税票未知。",
+      "two_plan_variants": [
+        "Free account",
+        "subscribed account"
+      ],
+      "public_wholesale_plus_price_usd": null,
+      "go_wholesale_price_usd": 5.99,
+      "api_wallet_topup_min_usd": 2,
+      "api_tier2_cumulative_deposit_usd": 100,
+      "phone_verification_first_login_solved": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "T01",
+      "merchant": "条理集采",
+      "url": "https://gongsi.one/docs/pricing/",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "Plus按1–4席月付声称¥165/席/月、包含6%增值税专用发票；5–19席¥155/月、20席以上¥145/月；季度/年价不能当单月价。",
+      "evidence_class": "merchant_display_claim",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "T02",
+      "merchant": "条理集采",
+      "url": "https://gongsi.one/",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "首页自述企业公对公/发票及官方银行卡通道；网页发票样张标有虚拟主体资料及XXXX占位符、示意客户ACME TECH；页脚说明与OpenAI没有官方代销关系。",
+      "evidence_class": "merchant_claim_and_placeholder_not_verified",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "T03",
+      "merchant": "条理集采",
+      "url": "https://gongsi.one/docs/agreement/",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "框架合同为范本，声明采购以盖章订单确认书为准、收到款后两工作日提供等额6%增值税专票；不是已签合同/实收发票。",
+      "evidence_class": "merchant_sample_document",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "T04",
+      "merchant": "条理集采",
+      "url": "https://gongsi.one/docs/sla/",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "售后范本宣称72小时内平台风控免费补换、正常期损失按未生效天数退，未验实际执行。",
+      "evidence_class": "merchant_sample_document",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "L01",
+      "merchant": "LinkAi",
+      "url": "https://www.linkaiu.com/",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "首页Plus本人原号30天标¥150，页面自称可下单；未完成真实下单或验证税票。",
+      "evidence_class": "merchant_display_claim",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "L02",
+      "merchant": "LinkAi",
+      "url": "https://www.linkaiu.com/checkout?product=2",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "商品product=2基础结算前表单显示Plus ¥150、支付手续费¥0、合计¥150；没有最终付款页或税务发票的证据。",
+      "evidence_class": "merchant_checkout_preview_not_paid",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "L03",
+      "merchant": "LinkAi",
+      "url": "https://www.linkaiu.com/quick-buy?product=2",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "另一快捷购买入口同为Plus展示¥168，支付手续费¥0、应付¥168，且要求先登录复制Session JSON；与基础下单入口¥150不同，未能证明价格变化发生时间。",
+      "evidence_class": "merchant_checkout_preview_not_paid",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "L04",
+      "merchant": "LinkAi",
+      "url": "https://www.linkaiu.com/enterprise",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "企业采购页面显示Plus单件参考¥150，合同与批量价需协商确认；库存数字是商家展示。",
+      "evidence_class": "merchant_display_claim",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "L05",
+      "merchant": "LinkAi",
+      "url": "https://www.linkaiu.com/partners",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "代理申请先审核再议价，推介返利当前显示0.00%、不能提现；提交申请不等于获得低价或批发授权。",
+      "evidence_class": "merchant_display_claim",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "L06",
+      "merchant": "LinkAi",
+      "url": "https://www.linkaiu.com/docs",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "公开API为客户兑换已发行卡密及商家接入供货方的技术协议；ChatGPT兑换需session_json；不能凭有API证明其为一手上游。",
+      "evidence_class": "merchant_technical_documentation",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "D01",
+      "merchant": "Dingyue.app",
+      "url": "https://dingyue.app/en/wholesale",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "公开批发分级Lv1起，Lv2累计充值USD100、Lv3 USD500等；可见批发表仅ChatGPT Go USD5.99/单月且各级同价，不显示Plus批发报价；API账户需余额入金，最低单次USD2，使用USDT/USDC。",
+      "evidence_class": "merchant_wholesale_display",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "D02",
+      "merchant": "Dingyue.app",
+      "url": "https://dingyue.app/en/p/chatgpt-plus-subscription",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "Plus准确产品Free account与subscribed account两个变体各USD19.99/1个月，需先登录提供Session；商称iOS或银行卡代付，账号问题由买方负责，未按约交付24小时内退款。",
+      "evidence_class": "merchant_product_display_claim",
+      "real_purchase_or_test": false
+    },
+    {
+      "id": "D03",
+      "merchant": "Dingyue.app",
+      "url": "https://dingyue.app/en",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read",
+      "fact": "目录Plus USD19.99，USDT/USDC多链支付，最终网络/汇兑结算以收银台为准；并未展示中国税务发票。",
+      "evidence_class": "merchant_catalog_display",
+      "real_purchase_or_test": false
+    }
+  ],
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "GetPlus",
+    "PayForGPT"
+  ],
+  "phone_verification": {
+    "new_verified_service": false,
+    "web_first_login_verified": false,
+    "codex_verified": false,
+    "api_verified": false,
+    "number_duration": null,
+    "sms_failure_refund": null,
+    "notes": "LinkAi快捷购买和Dingyue订阅都要求先登录获得Session，不能以此断言自动绑定手机号；此轮未取得独立接码的新准确SKU。"
+  },
+  "totals": {
+    "new_verified_wholesale_sources": 0,
+    "confirmed_plus_all_in_invoiced_under_170": 0,
+    "real_orders": 0,
+    "verified_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "open_gaps": [
+    "条理集采的实体名称/统一社会信用代码/商业授权/真实增值税发票/单件合同与收款",
+    "LinkAi两入口¥150与¥168适用条件、支付全费、企业税票、代理资格",
+    "Dingyue Plus批发价目、钱包充值与单件是否等价、支付链手续费与税票、正常登录前提",
+    "独立手机号类型/期限/ChatGPT网页Codex API适用性/拒码退款"
+  ],
+  "conclusion": "查到更接近要求的对公含票单件报价主张与明确供货接口，但所有自称/样张/报价不能充当批发授权或已验收税票。无新增满足全部条件的已核上游。"
+}
