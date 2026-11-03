@@ -694,6 +694,28 @@
       "summary": "6条商家原网页、两套开卡/支付费率、号码批次期限与政策日、未知税票/退款为null，实际采购和验证均为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r16-20261104",
+      "title": "GPT源头 · AIXiamo原号Plus ¥148.8与续费/税票限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r2.html",
+      "updatedAt": "2026-11-03T17:10:15Z",
+      "summary": "新零售候选主页¥148.8/月，但准确SKU动态价未载入且库存与售罄并列；已有Plus不能提前续费；发票需订单后联系客服，含票总价/主体未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r16-evidence-20261104",
+      "title": "AIXiamo准确SKU、激活前提、开票与返佣性质 · 8条原始来源",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r2-evidence.json",
+      "updatedAt": "2026-11-03T17:10:15Z",
+      "summary": "8条直接打开商家页面，单件首页显示价与动态结算价分离；税票费、付款费和授权null，实付/接码/票据验真为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
