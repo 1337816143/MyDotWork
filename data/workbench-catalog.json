@@ -518,6 +518,28 @@
       "summary": "4条本轮实际读取的商家原URL；¥125/¥135非新降价、票费6%仅分项、Outlook免责公告是5月旧规；支付主体和全费null、真实交易0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r8-20261103",
+      "title": "GPT源头 · 小久Plus缺货提示与收据非税票",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r8.html",
+      "updatedAt": "2026-11-03T09:31:18.309Z",
+      "summary": "小久¥110菲律宾Plus原号CDK准确商品页暂时缺货，目录标价不能代表现货；商称可查银行凭证与收据但明确不等同税务发票，外部卡网/含票全费未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r8-evidence-20261103",
+      "title": "小久准确商品库存、收据与外部渠道核查 · 结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r8-evidence.json",
+      "updatedAt": "2026-11-03T09:31:18.309Z",
+      "summary": "5条成功可读网页与5条外部失败或零正文：SKU单月¥110无现货提示、收据非税票、外部支付/开票费null及未开展实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
