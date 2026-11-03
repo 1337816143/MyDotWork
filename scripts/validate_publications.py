@@ -131,9 +131,11 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 37, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 39, 'websites': 6, 'tasks': 18}
     assert by_id['gpt-source-followup-r2-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r2.html'
     assert by_id['gpt-source-followup-r2-evidence-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r2-evidence.json'
+    assert by_id['gpt-source-followup-r3-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r3.html'
+    assert by_id['gpt-source-followup-r3-evidence-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r3-evidence.json'
     assert by_id['paper-learning-site']['task'] == 'project-6' and by_id['paper-learning-site']['url'] == 'https://1337816143.github.io/Paper/'
     assert by_id['farm-system-site']['task'] == 'project-5' and by_id['farm-system-site']['url'] == 'https://1337816143.github.io/FarmSystemDesign/#research'
     projects = {p['name']: p for p in json.loads((ROOT / 'data/projects.json').read_bytes())['projects']}
