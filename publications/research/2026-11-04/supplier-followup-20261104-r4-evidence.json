@@ -1,0 +1,162 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 18,
+  "date": "2026-11-04",
+  "site_version": "1.9.26",
+  "scope": "新增瑶瑶ai训练师本人原号Plus零售/拿货价及最低预存和发票资格，不覆盖未重读的旧供应商观察日期",
+  "selection": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "upfront_agent_fee_must_be_zero": true,
+    "no_upfront_deposit_or_float": true,
+    "tax_invoice_payment_fx_total_cap_cny": 170
+  },
+  "offers": [
+    {
+      "name": "瑶瑶ai训练师",
+      "product": "ChatGPT Plus 自动发货1个月（本人原号）",
+      "sku": "item/5",
+      "product_url": "https://kw.yaoyao.chat/item/5",
+      "retail_price_cny": 129,
+      "wholesale_display_price_cny": 112,
+      "unit": "CNY/1份/1个月",
+      "retail_purchase_unit_count": 1,
+      "wholesale_minimum_prepaid_balance_cny": 500,
+      "wholesale_minimum_item_count": 1,
+      "agent_membership_fee_cny": 0,
+      "api_access_fee_cny": 0,
+      "optional_white_label_setup_fee_cny": 500,
+      "optional_white_label_required": false,
+      "can_get_wholesale_price_with_single_scan_payment": false,
+      "meets_no_upfront_deposit_rule": false,
+      "invoice_offered_merchant_claim": true,
+      "invoice_type_guaranteed": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "fx_fee_cny": null,
+      "final_checkout_cny": null,
+      "final_tax_invoice_all_in_cny": null,
+      "legal_payee": null,
+      "legal_invoice_issuer": null,
+      "already_paid_plus_early_renewal_supported": false,
+      "own_account_supported_merchant_claim": true,
+      "requires_prior_chatgpt_login": true,
+      "session_or_access_token_required_merchant_claim": true,
+      "first_website_sms_verification_solved": false,
+      "codex_sms_verification_supported": null,
+      "first_api_key_sms_verification_supported": null,
+      "merchant_disclaims_openai_official_affiliation": true,
+      "upstream_authorization_verified": false,
+      "own_upstream_wholesale_cost_verified": false,
+      "retail_transaction_count_claim_unverified": true,
+      "return_failed_redeem_claim": "未成功开通商称卡密不消耗，联系微信核实后可全额退款",
+      "midterm_loss_claim": "本期掉订核实后补一个月",
+      "account_ban_refund_claim": false,
+      "actual_checkout_tested": false,
+      "invoice_verified": false,
+      "supplier_delivery_tested": false
+    }
+  ],
+  "other_business_models": [
+    {
+      "type": "affiliate_referral_not_wholesale",
+      "url": "https://cz.yaoyao.chat/lianmeng.php",
+      "first_conversion_commission_cny": 20,
+      "repeat_commission_cny": 10,
+      "upfront_fee_cny": 0,
+      "wholesale_sku_price": null
+    }
+  ],
+  "phone_verification": {
+    "seller_provides_independent_sms_service": null,
+    "chatgpt_website_first_login_success_tested": false,
+    "codex_sms_success_tested": false,
+    "api_sms_success_tested": false,
+    "number_holding_days": null,
+    "failed_sms_cash_refund": null,
+    "notes": "本轮7个来源均非独立手机号接码准确SKU；Plus充值/Session不等于完成任何短信验证，旧验证服务报价日期未刷新。"
+  },
+  "sources": [
+    {
+      "id": "Y1",
+      "name": "瑶瑶商城Plus单月准确商品",
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "display_and_merchant_claim",
+      "fact": "ChatGPT Plus本人原号一份一个月零售价CNY129；付款页面发卡密、支付宝/微信；仅商家自述到账与订单数，未下单测试。"
+    },
+    {
+      "id": "Y2",
+      "name": "瑶瑶代理拿货价格/门槛",
+      "url": "https://kw.yaoyao.chat/daili",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": "2026-10-29",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_display_and_claim",
+      "fact": "Plus1个月零售价CNY129、拿货价CNY112/份；必须先预存账户余额至少CNY500，账户余额拿货才享112，扫码单件买仍按129。代理服务费为0，API免费；另可选一次性CNY500白标分站搭建费，非必选；不证明上游授权。"
+    },
+    {
+      "id": "Y3",
+      "name": "瑶瑶开票与对公指南",
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": "2026-10-29",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "声明可开票，付款后通过企业微信提供订单号/抬头，发票种类另行确认，未公开票费和收款/开票法人；支付账单和订单号不等于税务发票；无需联系商家即可得出未知缺口。"
+    },
+    {
+      "id": "Y4",
+      "name": "瑶瑶自我介绍、交易主体与授权关系",
+      "url": "https://kw.yaoyao.chat/guide/yaoyao-kaopu.html",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": "2026-10-28",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "公开称个人自媒体品牌/自身卡网，不是OpenAI官方授权代理；订单量和交付率为商家自行统计，非独立履约凭证。"
+    },
+    {
+      "id": "Y5",
+      "name": "瑶瑶Plus续费资格说明",
+      "url": "https://kw.yaoyao.chat/guide/plus-xufei-zanting.html",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": "2026-10-28",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "卡密自助原号续费要求已有Plus到期回Free；新卡仍以CNY129零售价购买，页面声明老客可能按资格减CNY5；登录/Session前提不能解决首次网页登录验证码。"
+    },
+    {
+      "id": "Y6",
+      "name": "瑶瑶售后与退款条款",
+      "url": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": "2026-10-28",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "失败卡密声称不扣可重试，联系售后核实后全额退款；本期掉订核实后补1个月，账号封禁或停用排除退款。无真实退款实测。"
+    },
+    {
+      "id": "Y7",
+      "name": "瑶瑶推广联盟的返佣规则",
+      "url": "https://cz.yaoyao.chat/lianmeng.php",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_public_webpage_open",
+      "evidence_class": "merchant_claim",
+      "fact": "联盟无需预存，推荐首单佣金CNY20、复购CNY10；这是推广返佣，不是单件拿货价，也不能拿来证明零前置费批发。"
+    }
+  ],
+  "read_failures": [],
+  "verified_plus_wholesale_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "evidence_categories": {
+    "webpage_display": "129零售价、112拿货价、500预存为当次可读网页显示价及门槛，不代表11月4日发生变价",
+    "merchant_claim": "发票、实际退款、订单、账号覆盖与未授权声明仅商家承诺或自述，未经独立核实",
+    "inference": "批发价须先预存500余额，不满足免预存单件采购；无需预存的推广联盟是返佣不是供货",
+    "actual_test": "没有付款、核对收款企业、发票查验、官方代理授权、真实交付、真人接码或售后退款"
+  }
+}
