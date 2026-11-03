@@ -1,0 +1,202 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.4",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T05:08:20Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r3.html",
+  "scope": "本轮仅报告真实读取的商家及手机号供应平台原页；不采购、不登录、不验证手机号、不联系商家；126条历史报价不刷新",
+  "criteria": {
+    "own_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "upfront_agent_fee_accepted": false,
+    "max_plus_all_in_invoiced_cny": 170
+  },
+  "new_retail_leads": [
+    {
+      "merchant": "GPT100X",
+      "sku": "ChatGPT Plus 原账号充值",
+      "source_url": "https://gpt100x.com/plus",
+      "price_cny": 138,
+      "price_unit": "人民币/30天·单件（公开页面标价）",
+      "quantity": 1,
+      "month_count": 1,
+      "observed_on": "2026-11-03",
+      "wechat_supported_claim": true,
+      "alipay_supported_current_faq": false,
+      "requires_session": true,
+      "session_name": "AuthSession",
+      "prelogin_phone_block_solution_verified": false,
+      "active_subscription_note": "商品页要求到期后购买；FAQ称不宜过早续费、可能覆盖",
+      "invoice_issuer": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "final_all_in_invoiced_cny": null,
+      "scope_of_public_invoice_claim": "FAQ仅明确Pro 10X/Team可对公转账及发票（税费另计）；不能套用到Plus",
+      "upstream_resale_authorization_verified": false,
+      "upfront_agent_fee_cny": null,
+      "wholesale_min_quantity": null,
+      "real_order_tested": false,
+      "source_ids": [
+        "U01",
+        "U02",
+        "U03"
+      ]
+    },
+    {
+      "merchant": "98 GPT（98gpt.com，不等同小久98-xj.com）",
+      "sku": "Plus 月度会员·充自己的号",
+      "source_url": "https://98gpt.com/buy",
+      "price_cny": 165,
+      "price_unit": "人民币/30天·1个月×1件",
+      "quantity": 1,
+      "month_count": 1,
+      "observed_on": "2026-11-03",
+      "merchant_checkout_form_subtotal_cny": 165,
+      "real_payment_captured": false,
+      "session_or_token_requirement": "页面要求从已登录的个人空间获取Token；当前Plus页未列明具体输入字段",
+      "renewal_note": "商称可提前续费，但会覆盖剩余时长、不可叠加",
+      "after_sales": "商称掉订阅30天按天退款；账号封禁及微软邮箱不售后",
+      "invoice_claim": "主页商称即时开票、对公转账、盖章与合同",
+      "invoice_issuer": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "final_all_in_invoiced_cny": null,
+      "upstream_resale_authorization_verified": false,
+      "upfront_agent_fee_cny": null,
+      "wholesale_min_quantity": null,
+      "real_order_tested": false,
+      "source_ids": [
+        "U04",
+        "U05"
+      ]
+    }
+  ],
+  "sms_network_new_evidence": {
+    "provider": "HeroSMS（独立号码平台，不是ChatGPT Plus上游）",
+    "homepage": "https://hero-sms.com/",
+    "source_ids": [
+      "U06",
+      "U07",
+      "U08"
+    ],
+    "service_specific_openai_price_cny": null,
+    "service_specific_openai_price_usd": null,
+    "minimum_balance_top_up": null,
+    "top_up_commission": null,
+    "number_duration_minutes_for_activation": 20,
+    "prepaid_balance_required": true,
+    "cancel_without_sms_refund_to": "平台余额",
+    "cancel_without_sms_automatic_after_minutes": 20,
+    "refund_after_sms_received": false,
+    "openai_reject_after_sms_refund_guaranteed": false,
+    "payout_withdrawal_fee_rate_claim": 0.05,
+    "payout_review_time_business_days_claim": 3,
+    "standard_payout_days_claim": 7,
+    "upstream_api_reseller_route_documented": true,
+    "reseller_application_required": true,
+    "reseller_price_advantage_claim": "转售者采购价与普通用户相同，仅普通忠诚度折扣适用",
+    "reseller_markup_set_by_reseller": true,
+    "reseller_support_responsibility": "转售商自行承担终端售后",
+    "explicit_prohibition": "禁止把临时号码用于付费订阅服务；不得将该产品承诺为ChatGPT Plus账号绑号或长期可控手机号",
+    "openai_accepts_virtual_number_verified": false,
+    "real_openai_code_tested": false,
+    "real_number_type_checked": false,
+    "real_invoice_verified": false,
+    "note": "主站实时服务菜单未取得OpenAI专属国家/号码实时报价；第三方hero-sms-china.com出现的¥1.05不是本轮已确认的HeroSMS官方有效成交价。"
+  },
+  "rechecked_without_price_update": [
+    {
+      "merchant": "小久",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "result": "商品仍显示¥110/件；明确手机验证需自行解决，银行凭证/收据不等于税票；与11月3日既有来源一致，未作为新价或新源头。"
+    },
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/plans?category=codex-verification",
+      "result": "Codex号码25天¥20/份；页面自标价格更新2026-10-22且仍指向外部店铺；本轮无新售后/退款证明。"
+    }
+  ],
+  "not_repriced_due_to_no_successful_current_product_body": [
+    "CatFK（准确原SKU本轮读取失败）",
+    "Morimm（商品正文未取得）",
+    "wind89（FAQ本轮空正文）",
+    "PAYPRM（本轮商品页失败）",
+    "GetVIP（前一轮已读，不重复刷日期）",
+    "引路鲸/ChatShare（本轮未获新增结算授权证据）"
+  ],
+  "qualifications": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_plus_invoiced_all_in_under_170": 0,
+    "verified_openai_phone_compatibility": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "sources": [
+    {
+      "id": "U01",
+      "url": "https://gpt100x.com/plus",
+      "observed_on": "2026-11-03",
+      "kind": "merchant",
+      "status": "success_read",
+      "supports": "本人原号Plus ¥138/30天单件；微信支付、到期后再充值；商品展示不含真实结算截图"
+    },
+    {
+      "id": "U02",
+      "url": "https://gpt100x.com/faq",
+      "observed_on": "2026-11-03",
+      "kind": "merchant",
+      "status": "success_read",
+      "supports": "下单账号邮箱、实际开通仍需AuthSession；Pro10X/Team可开票税点另计，Plus税票未承诺；商称订阅不自动续费"
+    },
+    {
+      "id": "U03",
+      "url": "https://gpt100x.com/terms",
+      "observed_on": "2026-11-03",
+      "kind": "merchant",
+      "status": "success_read",
+      "supports": "明称独立第三方非OpenAI授权代理；未开通可退款，官方已生效后通常不退"
+    },
+    {
+      "id": "U04",
+      "url": "https://98gpt.com/buy",
+      "observed_on": "2026-11-03",
+      "kind": "merchant",
+      "status": "success_read",
+      "supports": "Plus本人号单月¥165、公开订单小计¥165、Token前提、提前覆盖不叠加、掉订按天退款、账号封禁及微软邮箱例外"
+    },
+    {
+      "id": "U05",
+      "url": "https://98gpt.com/",
+      "observed_on": "2026-11-03",
+      "kind": "merchant",
+      "status": "success_read",
+      "supports": "商称可即时开票/公对公/合同；未提供开票单位、税率和验真票据，用户评价为网页自述"
+    },
+    {
+      "id": "U06",
+      "url": "https://hero-sms.com/",
+      "observed_on": "2026-11-03",
+      "kind": "sms_platform",
+      "status": "success_read",
+      "supports": "有真实号码平台、APP/API/供应与转售入口；首页当前未给OpenAI专属实时单价"
+    },
+    {
+      "id": "U07",
+      "url": "https://hero-sms.com/rules",
+      "observed_on": "2026-11-03",
+      "kind": "sms_platform_terms",
+      "status": "success_read",
+      "supports": "需预存余额、支付方式各异最低充值及手续费；20分钟无短信退余额、提现费5%；需要申请独立Reseller身份且转售不享单独批发价；禁止临时号码用于付费订阅"
+    },
+    {
+      "id": "U08",
+      "url": "https://hero-sms.com/agreement",
+      "observed_on": "2026-11-03",
+      "kind": "sms_platform_terms",
+      "status": "success_read",
+      "supports": "平台声明P2P供应商交易不担保、单次最长20分钟；付费订阅号码用途不允许；OTP已到不保验证被拒"
+    }
+  ]
+}

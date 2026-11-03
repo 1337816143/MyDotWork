@@ -430,6 +430,28 @@
       "summary": "9条新读取网页：原币每月与支付分项、Session前置、主体、未核费用null；官方ChatGPT/Codex/API号码约束及PAYPRM退款缺口。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r4-20261103",
+      "title": "GPT源头调研 · 新零售价与接码分销规则",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r4.html",
+      "updatedAt": "2026-11-03T05:08:20Z",
+      "summary": "新候选GPT100X本人Plus¥138/30天需AuthSession、98 GPT ¥165/30天可商称开票；HeroSMS真实接码转售条款、同价无批发优势、20分钟退余额与付费订阅限制。均非已核Plus上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r4-evidence-20261103",
+      "title": "新增零售候选与HeroSMS接码规则 · 结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r4-evidence.json",
+      "updatedAt": "2026-11-03T05:08:20Z",
+      "summary": "8条本轮读取原始URL；价格单位/周期、票费和支付手续费null、Reseller资格、平台退款与OpenAI验证码范围缺口。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
