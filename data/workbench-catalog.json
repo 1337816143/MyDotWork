@@ -342,6 +342,28 @@
       "summary": "25项公开入口与schema v2证据：可靠性层级、同条件价格参考、来源日期及已撤回判断；不把未知全费当零，不是私人网络实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "phone-subscription-report-20261103",
+      "title": "GPT源头调研 · 代充方式与手机号验证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/index.html",
+      "updatedAt": "2026-11-03T01:32:36Z",
+      "summary": "5家验证服务与4条订阅价格复核；手机号适用范围、会话前提、含票分项和与上游证据分别记录。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "phone-subscription-evidence-20261103",
+      "title": "代充与手机号验证 · 结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/phone-subscription-evidence.json",
+      "updatedAt": "2026-11-03T01:32:36Z",
+      "summary": "18条公开来源、逐项观察日期、号码期限和未知费用；零售线索未计为已核实源头。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -1,0 +1,549 @@
+{
+  "schema": "mydotwork.gpt-source-supplement.v1",
+  "report_version": "1.0",
+  "title": "GPT源头调研增量：代充方式、手机验证与含票价格线索",
+  "prepared_at_utc": "2026-11-03T01:32:36Z",
+  "observation_dates": [
+    "2026-11-02",
+    "2026-11-03"
+  ],
+  "latest_successful_observation_date": "2026-11-03",
+  "scope": "公开页面研究；原账号会员与手机号验证服务。不是实际采购、交付或短信验证记录。",
+  "criteria": {
+    "account": "本人原号",
+    "quantity": 1,
+    "subscription_period": "单月",
+    "agency_upfront_fee_required": false,
+    "plus_all_in_budget_cny": 170,
+    "required_evidence": [
+      "准确SKU及费用",
+      "开票主体与真实大陆票据",
+      "上游或批发关系及授权",
+      "原号履约与售后"
+    ]
+  },
+  "conclusions": [
+    "手机号验证服务确实有公开商品或说明，须与订阅代充分开选。",
+    "无法先登录获得Session时，要求Session的代充不能作为已确认的第一步。GetVIP公开注册指南最贴近网页场景，但未实测账号通过。",
+    "Apple结算和Session交付可以同时出现；首次订阅必须用Apple、Apple自动绑手机均未得到证实。",
+    "149.99元与143.10元是页面已知分项和，不是已验证的最终含票成交价。",
+    "本轮新增已验证源头、真实发票、实际充值和手机验证成功记录均为0。"
+  ],
+  "evidence_legend": {
+    "merchant": "商家自有原页，已读到文案；不是独立履约证明",
+    "official": "官方机制说明，仍以账号实际页面为准",
+    "inference": "根据所列材料作出的适用性判断，未实测",
+    "unknown": "未披露或未核清；金额使用null"
+  },
+  "methods": [
+    {
+      "name": "Session / Access Token 代充",
+      "dimension": "账号接入",
+      "explanation": "通过有效登录会话处理原账号订阅；若各端均无法登录且无有效会话，先取Session的前提不成立。",
+      "phone_effect": "不代表完成手机号验证。",
+      "source_ids": [
+        "S04",
+        "S07",
+        "S11",
+        "S15"
+      ]
+    },
+    {
+      "name": "网页结算或人工授权协助",
+      "dimension": "支付与交付",
+      "explanation": "实际要核对付款或授权流程、账号条件和服务范围；页面写免Session仍不足以证明无须登录。",
+      "phone_effect": "必须有单独的验证服务说明。",
+      "source_ids": [
+        "S13",
+        "S14",
+        "S16"
+      ]
+    },
+    {
+      "name": "Apple App Store 内购",
+      "dimension": "结算渠道",
+      "explanation": "官方iOS升级步骤先登录；有商家同时采用Apple通道和Session/Token交付。",
+      "phone_effect": "没有自动给OpenAI账号绑定手机号的证据。",
+      "source_ids": [
+        "S15",
+        "S16"
+      ]
+    },
+    {
+      "name": "Google Play 内购",
+      "dimension": "结算渠道",
+      "explanation": "与网页账单及Apple账单分开；商家的具体操作要求需逐项核对。",
+      "phone_effect": "结算渠道本身不是接码服务。",
+      "source_ids": [
+        "S17"
+      ]
+    },
+    {
+      "name": "商家卡密 / CDK",
+      "dimension": "订单交付",
+      "explanation": "可能兑换会员，也可能兑换短信服务；需读准确商品，不能只看“卡密”两字。",
+      "phone_effect": "只有对应验证商品才描述验证码交付。",
+      "source_ids": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "name": "官方OpenAI礼品卡 / 钱包",
+      "dimension": "储值支付",
+      "explanation": "当前官方说明限美国所在地及美元账单账号；登录后兑换，余额不会自动启动订阅。",
+      "phone_effect": "不能代替账号登录和手机号验证。",
+      "source_ids": [
+        "S17"
+      ]
+    },
+    {
+      "name": "手机号验证 / 接码协助",
+      "dimension": "账号验证",
+      "explanation": "单独供应号码或当次收码；核网页/Codex范围、号码控制期限与失败退款。",
+      "phone_effect": "属于本轮待验证的直接服务，成功与长期号码权益均未实测。",
+      "source_ids": [
+        "S01",
+        "S04",
+        "S05",
+        "S08",
+        "S09"
+      ]
+    }
+  ],
+  "verification_providers": [
+    {
+      "id": "getvip",
+      "name": "GetVIP",
+      "url": "https://getvip.pro/guides/chatgpt-register",
+      "role": "零售验证协助",
+      "price_options": [
+        {
+          "amount_cny": 10,
+          "unit": "次",
+          "condition": "单独接码费用，不含订阅"
+        }
+      ],
+      "scope": "ChatGPT / Codex；注册和首次登录指南明确列出手机号验证。",
+      "session": "验证说明未要求先提供Session；普通订阅代充另有Session流程。",
+      "duration": "仅当次验证，号码持有期未公布。",
+      "fit": "公开描述最贴近网页注册/登录受阻场景；不能据此保证任一账号通过。",
+      "after_sales": "按确认的线路和时段安排；当次结果为准，通用失败退款条款待核。",
+      "questions": [
+        "免费账号能否直接办理",
+        "未收码与验证码被拒的退款区别",
+        "号码后续使用权"
+      ],
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "phone_verification_tested": false,
+      "upstream_verified": false,
+      "wholesale_verified": false,
+      "all_in_invoice_cny": null
+    },
+    {
+      "id": "wind89",
+      "name": "互联互通 AI / wind89",
+      "url": "https://wind89.com/guide/faq",
+      "role": "零售代充及接码",
+      "price_options": [
+        {
+          "amount_cny": 10,
+          "unit": "次",
+          "condition": "单次接码"
+        },
+        {
+          "amount_cny": 20,
+          "unit": "60天",
+          "condition": "商称长效60天，接收次数与独享性待核"
+        }
+      ],
+      "scope": "FAQ在GPT/Codex登录及验证码问题下提供付费手机接码。",
+      "session": "普通会员卡密兑换需要登录态；接码服务是否另有资料要求未完整披露。",
+      "duration": "单次或60天；不等于永久持有号码。",
+      "fit": "是可核对的验证服务线索；没有明确承诺所有网页阻断均适用。",
+      "after_sales": "会员已开通不退；接码失败退款未见独立明确说明，不能套用会员质保。",
+      "questions": [
+        "网页首次登录是否支持",
+        "验证服务是否接受无Session账号",
+        "60天内收码次数及续期"
+      ],
+      "source_ids": [
+        "S04"
+      ],
+      "phone_verification_tested": false,
+      "upstream_verified": false,
+      "wholesale_verified": false,
+      "all_in_invoice_cny": null
+    },
+    {
+      "id": "getgpt",
+      "name": "GETGPT Pro",
+      "url": "https://getgpt.pro/blog/codex-phone-verification",
+      "role": "零售订阅附加验证",
+      "price_options": [
+        {
+          "amount_cny": 10,
+          "unit": "次",
+          "condition": "Plus用户"
+        },
+        {
+          "amount_cny": 0,
+          "unit": "次",
+          "condition": "Pro用户免费；是否限本站客户未核实"
+        }
+      ],
+      "scope": "手机号专项主要讨论Codex，也提及ChatGPT App。",
+      "session": "普通代充需要先登录并取得Session；单独验证的免费账号准入未说清。",
+      "duration": "当次接码，长期号码权益未知。",
+      "fit": "不能把Codex经验直接推广为网页未登录账户的处理保证。",
+      "after_sales": "验证与订阅分开；验证失败不自动属于订阅退款，接码退款细则待核。",
+      "questions": [
+        "非本站及Free用户能否单买",
+        "Pro免费适用条件",
+        "网页阻断与失败退款"
+      ],
+      "source_ids": [
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "phone_verification_tested": false,
+      "upstream_verified": false,
+      "wholesale_verified": false,
+      "all_in_invoice_cny": null
+    },
+    {
+      "id": "payprm",
+      "name": "PAYPRM / 莱特智能",
+      "url": "https://www.payprm.com/shop/codex-verification",
+      "role": "独立短信验证零售",
+      "price_options": [
+        {
+          "amount_cny": 12,
+          "unit": "次",
+          "condition": "交付验证卡密和接收验证码网址"
+        }
+      ],
+      "scope": "Codex或相应OpenAI页面明确要求短信的当次流程。",
+      "session": "公开下单仅需收货邮箱和自设订单查询密码；未要求ChatGPT密码或Session。",
+      "duration": "仅订单所述当次流程，号码保留期未披露。",
+      "fit": "无Session前置的交付描述较清楚，但未明确包普通网页注册/登录验证。",
+      "after_sales": "无库存可待补发；以卡密能否用于对应流程核验，不覆盖账号资格或地区限制。",
+      "questions": [
+        "ChatGPT网页验证是否适用",
+        "号码保留期",
+        "未收码与账号拒绝各自处理方式"
+      ],
+      "source_ids": [
+        "S08"
+      ],
+      "phone_verification_tested": false,
+      "upstream_verified": false,
+      "wholesale_verified": false,
+      "all_in_invoice_cny": null
+    },
+    {
+      "id": "chongpay",
+      "name": "ChongPay",
+      "url": "https://chongpay.com/plans?category=codex-verification",
+      "role": "零售展示与店铺导购",
+      "price_options": [
+        {
+          "amount_cny": 20,
+          "unit": "份／25天",
+          "condition": "25天为号码有效期；订单以所链接店铺为准"
+        }
+      ],
+      "scope": "商品名明确为Codex短信验证。",
+      "session": "价格页未列完整办理资料，不能直接断言免Session。",
+      "duration": "25天，接收次数及是否独享未披露。",
+      "fit": "网页登录阻断适用性尚未明确。",
+      "after_sales": "实际交易及售后由链接店铺处理；未核到包任意账号成功的承诺。",
+      "questions": [
+        "网页场景是否支持",
+        "25天内收码次数",
+        "实际店铺失败退款"
+      ],
+      "source_ids": [
+        "S09"
+      ],
+      "phone_verification_tested": false,
+      "upstream_verified": false,
+      "wholesale_verified": false,
+      "all_in_invoice_cny": null
+    }
+  ],
+  "supplier_updates": [
+    {
+      "id": "xiaojiu",
+      "name": "小久",
+      "display_price_cny": 110,
+      "unit": "件",
+      "credential_note": "本轮商品页未完整列出会话步骤；不据此认定免Session。",
+      "phone_note": "明确要求手机号验证自理。",
+      "invoice_note": "收据/银行交易凭证不等于税务发票；税务发票主体未核。",
+      "payment_fee_cny": null,
+      "invoice_extra_cny": null,
+      "all_in_invoice_cny": null,
+      "upstream_verified": false,
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "morimm",
+      "name": "Morimm",
+      "display_price_cny": 115,
+      "unit": "件",
+      "credential_note": "要求Token及Free账号；已有会员覆盖需另款。",
+      "phone_note": "未见解决手机号验证的承诺。",
+      "invoice_note": "本轮未核到开票主体及票费。",
+      "payment_fee_cny": null,
+      "invoice_extra_cny": null,
+      "all_in_invoice_cny": null,
+      "upstream_verified": false,
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "id": "chatgqt",
+      "name": "引路鲸 / ChatGPT直充站",
+      "display_price_cny": 135,
+      "alternative_price_cny": 125,
+      "unit": "月",
+      "price_condition": "135元有质保；125元无质保。",
+      "credential_note": "商称不收Session、Token或密码，人工/正式授权的机制未公开。",
+      "phone_note": "没有明确承诺解决网页手机号验证。",
+      "invoice_note": "下单页商称增值税普通发票另加6%；没有真实票据或开票主体验真。",
+      "invoice_extra_cny": 8.1,
+      "invoice_extra_basis": "仅135元有保款乘商家6%加价的算术",
+      "known_subtotal_cny": 143.1,
+      "payment_fee_cny": null,
+      "all_in_invoice_cny": null,
+      "upstream_verified": false,
+      "content_conflict": "下单页列年付1888元，FAQ仍称未开放；不能混用页面套餐说明。",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "id": "wind89",
+      "name": "互联互通 AI / wind89",
+      "display_price_cny": 139.99,
+      "unit": "月",
+      "credential_note": "原账号卡密兑换需要Session，待变回Free后续费。",
+      "phone_note": "接码为另付费服务。",
+      "invoice_note": "商称电子普通发票每份加10元；开票主体、真实发票及最终付款费用未闭合。",
+      "invoice_extra_cny": 10,
+      "known_subtotal_cny": 149.99,
+      "payment_fee_cny": null,
+      "all_in_invoice_cny": null,
+      "upstream_verified": false,
+      "wholesale_note": "FAQ称多份及续费没有额外折扣；不作为已核实批发价。",
+      "source_ids": [
+        "S04"
+      ]
+    }
+  ],
+  "apple_session_counterexample": {
+    "url": "https://ios.afdian.org/",
+    "observed_on": "2026-11-03",
+    "declared_channel": "Apple iOS内购",
+    "required_input": "CDK及AccessToken或完整Session",
+    "price_cny": null,
+    "automatic_phone_binding_verified": false,
+    "source_ids": [
+      "S15",
+      "S16"
+    ]
+  },
+  "qualifications": {
+    "new_verified_upstreams": 0,
+    "actual_invoice_checks": 0,
+    "purchased_subscriptions": 0,
+    "phone_verification_tests": 0
+  },
+  "access_notes": [
+    "GetVIP注册页、PAYPRM商品页和wind89 FAQ首轮读取未成功，随后通过正文读取取得资料；不能将前次失败解释为商家下线。",
+    "未重读的11月2日条款保留原日期。",
+    "5家验证服务、4条订阅价格复核存在wind89重叠，不把它们相加成9家不同商家。",
+    "原126条报价和既有日期报告未被本轮刷新。"
+  ],
+  "next_checks": [
+    "优先确认GetVIP及PAYPRM是否接受网页无法登录且无Session的原账号。",
+    "核wind89的开票主体、结算附加费及真实票据，核引路鲸6%加价对应税票和135元准确SKU。",
+    "区分号码独享、一次收码、25天/60天使用权及后续恢复能力。",
+    "持续核CatFK、小久、Morimm、引路鲸、ChatShare的供货与批发证据；保留零售和上游的区别。"
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "GetVIP 注册与首次登录",
+      "url": "https://getvip.pro/guides/chatgpt-register",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "页面标注10月26日更新；本次先读取失败，后取得正文。"
+    },
+    {
+      "id": "S02",
+      "title": "GetVIP 手机验证教程",
+      "url": "https://getvip.pro/guides/codex-phone-verification",
+      "observed_on": "2026-11-02",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "沿用11月2日成功读取的说明；本轮未重读。"
+    },
+    {
+      "id": "S03",
+      "title": "GetVIP 售后与质保",
+      "url": "https://getvip.pro/guides/after-sales",
+      "observed_on": "2026-11-02",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "页面标注10月29日更新；本轮未重读。"
+    },
+    {
+      "id": "S04",
+      "title": "互联互通 AI FAQ",
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "旧/help/faq.html重定向此页；首轮无正文，后成功读取。"
+    },
+    {
+      "id": "S05",
+      "title": "GETGPT 手机验证专项",
+      "url": "https://getgpt.pro/blog/codex-phone-verification",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "页面标注2026-10-24更新；10元/次与Pro免费文案仍在。"
+    },
+    {
+      "id": "S06",
+      "title": "GETGPT 服务条款",
+      "url": "https://getgpt.pro/terms",
+      "observed_on": "2026-11-02",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "沿用11月2日已读条款；本轮未重读。"
+    },
+    {
+      "id": "S07",
+      "title": "GETGPT 充值教程",
+      "url": "https://getgpt.pro/guide",
+      "observed_on": "2026-11-02",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "沿用11月2日已读Session流程；本轮未重读。"
+    },
+    {
+      "id": "S08",
+      "title": "PAYPRM Codex 验证商品",
+      "url": "https://www.payprm.com/shop/codex-verification",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "首轮读取失败，后取得正文；当前显示12元/次。"
+    },
+    {
+      "id": "S09",
+      "title": "ChongPay Codex 验证价格",
+      "url": "https://chongpay.com/plans?category=codex-verification",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "页面标注价格更新2026-10-22；本轮读取仍为20元/25天。"
+    },
+    {
+      "id": "S10",
+      "title": "小久 Plus 商品",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "当前商品页；不代表其他支付入口同价。"
+    },
+    {
+      "id": "S11",
+      "title": "Morimm Plus 商品",
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "当前商品页；批发旧价未在本轮重新核验。"
+    },
+    {
+      "id": "S12",
+      "title": "ChatGPT直充站 Plus 准确SKU",
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "公开下单页只读，未创建订单；有保与无保分别记录。"
+    },
+    {
+      "id": "S13",
+      "title": "ChatGPT直充站 FAQ",
+      "url": "https://www.chatgqt.plus/faq",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "未提交任何账号资料。"
+    },
+    {
+      "id": "S14",
+      "title": "ChatGPT直充站 教程",
+      "url": "https://www.chatgqt.plus/guide",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "人工/正式授权为商家自述，机制未验证。"
+    },
+    {
+      "id": "S15",
+      "title": "iOS 自助充值公开兑换页",
+      "url": "https://ios.afdian.org/",
+      "observed_on": "2026-11-03",
+      "source_type": "merchant",
+      "read_status": "正文已读取",
+      "note": "Apple通道与Session要求同时可见；未兑换。"
+    },
+    {
+      "id": "S16",
+      "title": "OpenAI：iOS 升级订阅",
+      "url": "https://help.openai.com/en/articles/7905739-chatgpt-ios-app-upgrading-to-a-paid-subscription",
+      "observed_on": "2026-11-03",
+      "source_type": "official",
+      "read_status": "正文已读取",
+      "note": "官方步骤先登录目标ChatGPT账号。"
+    },
+    {
+      "id": "S17",
+      "title": "OpenAI：礼品卡购买与兑换",
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observed_on": "2026-11-03",
+      "source_type": "official",
+      "read_status": "正文已读取",
+      "note": "美国所在地与美元账单条件；兑换需登录，余额不自动开会员。"
+    },
+    {
+      "id": "S18",
+      "title": "OpenAI：手机号验证",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-03",
+      "source_type": "official",
+      "read_status": "正文已读取",
+      "note": "一般注册规则不能代替对特定网页实际提示的判断。"
+    }
+  ]
+}

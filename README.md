@@ -18,6 +18,8 @@ GitHub Actions 在主分支变更时验证并部署 Pages。PR 仅构建验证�
 
 ## 维护
 
+GPT源头调研按[维护说明](docs/gpt-source-maintenance.md)持续更新；最新专项为[2026-11-03代充与手机号验证](publications/research/2026-11-03/index.html)，来源和观察日期见同目录结构化证据。
+
 - `src/` 保存供货研究；`data/` 保存用户已明确授权公开、已脱敏的当前dot对话与项目状态
 - 更新需保留观察日期、来源、证据状态；修改版本与 CHANGELOG
 - 每次构建生成含 SHA-256 的 `release-manifest.json`

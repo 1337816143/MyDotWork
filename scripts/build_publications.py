@@ -26,6 +26,8 @@ PUBLICATIONS = (
     ('projects/vector-0.11.1-2026-10-04.json', '6052415a81a2b54228ad7123b7d0e4d685afdab9b7f0160e43fef09afa7f151b'),
     ('projects/smartdrop-r1-2026-10-04.json', '13f5846221ab08a83cfd4b43a1aa94461c32af5c22a64740166020e964782751'),
     ('projects/wetype-2026-10-04.json', '5b5fbf09d7cb8fd8974690f7a57ab51b9cdb433072af1cef6514734dbfffa274'),
+    ('research/2026-11-03/index.html', '1971b0095bff3a0e5d8a8eeec63b5f27a35823cf58ffd3210793181f5959e53c'),
+    ('research/2026-11-03/phone-subscription-evidence.json', 'd8ea34f19a941db91d8344cef8df763be1e778b3f1fe973c79ebee533be85abb'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 

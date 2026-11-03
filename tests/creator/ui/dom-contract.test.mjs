@@ -1,8 +1,11 @@
-import test from 'node:test';
+import test,{after,mock} from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {installDomFixture,fire,input,submit,findButton} from './dom-fixture.mjs';
+// Set the clock before app import so its initial month matches the October demo fixtures.
+mock.timers.enable({apis:['Date'],now:new Date('2026-10-15T12:00:00Z')});
+after(()=>mock.timers.reset());
 const ui=process.env.CREATOR_UI_DIR||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const {document}=installDomFixture();
 const {mountCreator}=await import(pathToFileURL(path.join(ui,'app.mjs')));
