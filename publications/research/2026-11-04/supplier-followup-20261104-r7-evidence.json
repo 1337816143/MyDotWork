@@ -1,0 +1,174 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 21,
+  "date": "2026-11-04",
+  "site_version": "1.9.29",
+  "scope": "Phone number reuse limits, unchangeable linked numbers, phone-only signup versus API verification, giffgaff eSIM migration and non-EU roaming boundaries; targeted older merchant rechecks; no new Plus wholesale supplier.",
+  "selection": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_upfront_agent_fee": true,
+    "no_prepaid_float": true,
+    "plus_all_in_invoice_cap_cny": 170
+  },
+  "offers": [],
+  "new_verified_plus_wholesalers": 0,
+  "phone_verification": {
+    "api_initial_key_verification_same_number_max_accounts": 3,
+    "phone_only_signup_separate_from_api_verification": true,
+    "phone_only_signup_eligible_region_or_ui_required": true,
+    "phone_only_account_upgrade_requires_verified_email": true,
+    "linked_phone_number_change_supported": false,
+    "recycled_or_preused_number_may_be_rejected": true,
+    "eligible_deleted_consumer_phone_release_wait_days": 30,
+    "release_after_30_days_unconditional": false,
+    "chatgpt_web_phone_verification_success": null,
+    "codex_phone_verification_success": null,
+    "api_phone_verification_success": null,
+    "buying_plus_bypasses_verification_guaranteed": false,
+    "apple_or_session_automatically_binds_phone": false,
+    "sms_service_number_reuse_capacity_known": null,
+    "sms_service_number_exclusivity_known": null,
+    "sms_failure_cash_refund": null
+  },
+  "giffgaff_followup": {
+    "esim_requires_own_app": true,
+    "manual_esim_qr_or_smdp_supported": false,
+    "esim_activated_on_target_device": true,
+    "existing_sim_esim_swap_may_need_otp": true,
+    "broken_esim_replacement_physical_sim_path_without_sms": true,
+    "physical_sim_delivery_to_china": false,
+    "china_non_eu_travel_data_addon": true,
+    "roaming_travel_data_addon_includes_sms": false,
+    "operator_generic_outbound_sms_start_gbp": 0.3,
+    "china_specific_outbound_sms_fee_gbp": null,
+    "incoming_openai_otp_sms_fee_gbp": null,
+    "activation_total_gbp": null,
+    "phone_number_accepted_by_openai": null,
+    "actual_roaming_tested": false,
+    "number_holding_term_and_cost": null
+  },
+  "merchant_rechecks": [
+    {
+      "name": "PAYPRM Codex phone help",
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "observed_on": "2026-11-04",
+      "claim": "Plus/Pro upgrade removes Codex prompt for over 98% (merchant anecdotes, no controlled verification)",
+      "is_new_policy": false,
+      "verified_effect": false,
+      "plus_price_refreshed": false
+    },
+    {
+      "name": "GETGPT Pro price page",
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-04",
+      "plus_price_cny": 179,
+      "unit": "CNY/own-account/one month",
+      "same_as_previous_observation": true,
+      "wholesale_verified": false,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null
+    }
+  ],
+  "failed_visits": [
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "observed_on": "2026-11-04",
+      "result": "not accessible via web open",
+      "effect_on_old_quote": "none"
+    },
+    {
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_on": "2026-11-04",
+      "result": "HTTP page without readable body",
+      "effect_on_old_quote": "none"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-04",
+      "result": "not accessible via web open",
+      "effect_on_old_quote": "none"
+    }
+  ],
+  "sources": [
+    {
+      "id": "O21-1",
+      "url": "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_official_help_open",
+      "evidence_class": "OpenAI_official_documentation",
+      "page_updated_display": "15 days ago (relative at observation)",
+      "fact": "One phone number can be used for verification on up to three OpenAI accounts' first API key; not an unlimited reusable API SMS number. Account deletion/re-registration exceptions have separate 30-day conditions."
+    },
+    {
+      "id": "O21-2",
+      "url": "https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_official_help_open",
+      "evidence_class": "OpenAI_official_documentation",
+      "page_updated_display": "15 days ago (relative at observation)",
+      "fact": "OpenAI currently does not allow changing or updating phone number associated with an account for ChatGPT or API."
+    },
+    {
+      "id": "O21-3",
+      "url": "https://help.openai.com/en/articles/10388702-phone-only-signups",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_official_help_open",
+      "evidence_class": "OpenAI_official_documentation",
+      "page_updated_display": "7 days ago (relative at observation)",
+      "fact": "Phone-only signup is limited to eligible new users and shown choices; Plus/Pro/Business still require verified email; phone-only signup and first API key verification are distinct checks; recycled number may cause too-many-signups; eligible deleted consumer accounts may release phone number after 30 days."
+    },
+    {
+      "id": "G21-1",
+      "url": "https://help.giffgaff.com/en/articles/261570-switching-to-an-esim-with-giffgaff",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_operator_help_open",
+      "evidence_class": "mobile_operator_documentation",
+      "page_updated_display": "over a week ago (relative)",
+      "fact": "eSIM activation must use giffgaff app on target device; no QR/SM-DP+/manual codes. Existing eSIM switching can require SMS to current giffgaff number. Broken eSIM recovery uses new physical SIM while already logged in, without receiving SMS; UK SIM delivery constraint from prior round remains."
+    },
+    {
+      "id": "G21-2",
+      "url": "https://www.giffgaff.com/roaming-charges",
+      "resolved_url": "https://www.giffgaff.com/roaming",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_operator_site_open",
+      "evidence_class": "mobile_operator_price_rules",
+      "page_updated_display": null,
+      "fact": "Roaming site lists China as a non-EU travel data add-on destination, but travel data add-ons do not include calls/texts. PAYG roaming offers texts from 30p per outgoing text generically; China-specific final tariff not extracted from the dynamic country selector, so exact China SMS charge remains unknown."
+    },
+    {
+      "id": "P21-1",
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_merchant_help_open",
+      "evidence_class": "merchant_self_claim_only",
+      "page_updated_display": null,
+      "fact": "Merchant cites over 98% customer feedback that upgrading Plus/Pro removes Codex phone prompt. There is no independently audited sample/denominator and no promise of permanent absence of verification; merchant also offers separate Codex SMS product. Same merchant claim had been noted previously."
+    },
+    {
+      "id": "G21-3",
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_merchant_price_page_open",
+      "evidence_class": "merchant_page_listing",
+      "page_updated_display": null,
+      "fact": "GETGPT Pro Plus display remains CNY179/month for own account; exceeds CNY170 even before invoice/payment fees. No price change compared with prior 2026-11-03 evidence; no qualified wholesale proof."
+    }
+  ],
+  "source_count_direct_read": 7,
+  "evidence_categories": {
+    "platform_official": "API phone reuse at most 3, no associated-number self-update, phone-only and first-API verification distinct",
+    "operator_official": "eSIM activation/replacement constraints, roaming data add-on excludes SMS, China SMS tariff cannot be read from dynamic selector",
+    "merchant_claim": "PAYPRM non-audited >98% feedback is not OpenAI promise",
+    "inference": "shared/recycled phone inventory adds account-linking and reuse risks; could fail despite receiving generic SMS",
+    "actual_test": "No purchases, number possession, OTP completion, validated supplier invoice, or wholesale transaction."
+  },
+  "verified_plus_wholesale_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "older_reports_preserved": true
+}
