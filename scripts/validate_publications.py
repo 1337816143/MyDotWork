@@ -131,13 +131,19 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 61, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 63, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.14'
-    assert latest['path'] == 'research/2026-11-03/supplier-followup-20261103-r14.html'
-    assert latest['dataPath'] == 'research/2026-11-03/supplier-followup-20261103-r14-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-03/supplier-followup-20261103-r13.html'
+    assert latest['version'] == '1.15'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-03/supplier-followup-20261103-r14.html'
+    assert by_id['gpt-source-followup-r15-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104.html'
+    assert by_id['gpt-source-followup-r15-evidence-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-evidence.json'
+    r15 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-evidence.json').read_bytes())
+    assert len(r15['sources']) == 6 and r15['verified_plus_wholesale_count'] == r15['actual_purchase_count'] == r15['phone_verification_success_count'] == 0
+    assert r15['sms_service']['batch_expiry_date'] is None
+    assert r15['virtual_card_payment_route'][0]['topup_percent'] != r15['virtual_card_payment_route'][1]['topup_percent']
     assert by_id['gpt-source-followup-r14-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r14.html'
     assert by_id['gpt-source-followup-r14-evidence-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r14-evidence.json'
     assert by_id['gpt-source-followup-r13-20261103']['url'] == '../research/2026-11-03/supplier-followup-20261103-r13.html'

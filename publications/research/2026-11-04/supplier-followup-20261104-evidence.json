@@ -1,0 +1,155 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.15",
+  "observed_on": "2026-11-04",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r14.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "scope": "新增同品牌虚拟卡支付费率冲突与独立接码批次期限证据；均非已证实Plus一手批发源。",
+  "virtual_card_payment_route": [
+    {
+      "source": "https://www.hifupay.com/",
+      "opening_fee_usd_per_card": 0.5,
+      "topup_percent": 0.3,
+      "transaction_percent": 0,
+      "monthly_fee_usd": 0,
+      "actual_checkout_verified": false,
+      "legal_merchant_entity_verified": false,
+      "real_card_issuer_verified": false,
+      "tax_invoice_verified": false,
+      "all_in_plus_price_cny": null,
+      "wholesale_plus_authorized": false
+    },
+    {
+      "source": "https://www.haifupay.top/",
+      "opening_fee_usd_per_card": 0.5,
+      "topup_percent": 1,
+      "transaction_percent": 0.3,
+      "monthly_fee_usd": 0,
+      "actual_checkout_verified": false,
+      "legal_merchant_entity_verified": false,
+      "real_card_issuer_verified": false,
+      "tax_invoice_verified": false,
+      "all_in_plus_price_cny": null,
+      "wholesale_plus_authorized": false
+    }
+  ],
+  "virtual_card_caveats": {
+    "same_public_brand_and_contact_claim": true,
+    "same_legal_entity_confirmed": false,
+    "rate_change_confirmed": false,
+    "not_plus_supplier": true,
+    "crypto_network_fee_cny": null,
+    "exchange_fee_cny": null,
+    "real_payment": false
+  },
+  "sms_service": {
+    "merchant": "HuiAI",
+    "exact_sku": "ChatGPT 接码服务（美国实体卡）",
+    "advertised_amount": 48,
+    "currency": "CNY",
+    "unit": "1份，人工交付，号期按号码批次",
+    "batch_expiry_date": null,
+    "days_remaining_at_purchase": null,
+    "number_type_independently_verified": false,
+    "physical_sim_delivered": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "number_retention_or_renewal_verified": false,
+    "session_requirement": null,
+    "wrong_sms_refund_verified": false,
+    "no_sms_refund_verified": false,
+    "payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "all_in_cny": null,
+    "real_order": false,
+    "actual_verification_passed": false
+  },
+  "page_note": {
+    "old_refund_policy_effective_date": "2026-07-26",
+    "page_contains_production_gate_unpassed": true,
+    "no_new_policy_date_claim": true
+  },
+  "read_failures": [
+    {
+      "url": "https://cdk.hifupay.com/api-docs.html",
+      "observed_on": "2026-11-04",
+      "status": "direct_open_502",
+      "notes": "不能将搜索索引摘要当本轮直接读取的API全文；不宣称整站失效"
+    }
+  ],
+  "sources": [
+    {
+      "id": "H1",
+      "merchant": "嗨付Pay A",
+      "url": "https://www.hifupay.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_web_open_full_text",
+      "fact": "美国卡标示开卡US$0.50/张、充值0.3%、交易0%、月费0；声称企业API，不提供可验证Plus批发授权或实体收款证明。",
+      "evidence_class": "merchant_webpage_or_merchant_statement",
+      "transaction_tested": false
+    },
+    {
+      "id": "H2",
+      "merchant": "嗨付Pay B",
+      "url": "https://www.haifupay.top/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_web_open_full_text",
+      "fact": "标准方案开卡US$0.50/张、充值1%、交易0.3%、月费0；与同品牌另一域名的费率不一致，未证实法律主体或真实结算关系。",
+      "evidence_class": "merchant_webpage_or_merchant_statement",
+      "transaction_tested": false
+    },
+    {
+      "id": "U1",
+      "merchant": "HuiAI目录",
+      "url": "https://www.huiai.me/digital-goods",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_web_open_full_text",
+      "fact": "单独列出¥48 ChatGPT美国接码商品；成品号为不同品类。",
+      "evidence_class": "merchant_webpage_or_merchant_statement",
+      "transaction_tested": false
+    },
+    {
+      "id": "U2",
+      "merchant": "HuiAI准确SKU",
+      "url": "https://www.huiai.me/digital-goods/chatgpt-sms-us",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_web_open_full_text",
+      "fact": "¥48/份ChatGPT验证码接收服务，人工交付、不寄实体卡；期限按号码批次截止而非下单日。",
+      "evidence_class": "merchant_webpage_or_merchant_statement",
+      "transaction_tested": false
+    },
+    {
+      "id": "U3",
+      "merchant": "HuiAI帮助",
+      "url": "https://www.huiai.me/help",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_web_open_full_text",
+      "fact": "独立接码不含Plus/Pro或API余额；接码批次与验证码类型需确认；支付通道/汇率费视结账页。",
+      "evidence_class": "merchant_webpage_or_merchant_statement",
+      "transaction_tested": false
+    },
+    {
+      "id": "U4",
+      "merchant": "HuiAI退款政策",
+      "url": "https://www.huiai.me/refund-policy?release=20260804-3",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_web_open_full_text",
+      "fact": "自标2026-07-26生效，网页仍有「生产上线门禁未通过」和客服/交付时间留空；没有明确承诺拒码短信可退款。",
+      "evidence_class": "merchant_webpage_or_merchant_statement",
+      "transaction_tested": false
+    }
+  ],
+  "verified_plus_wholesale_count": 0,
+  "actual_purchase_count": 0,
+  "verified_real_invoice_count": 0,
+  "phone_verification_success_count": 0,
+  "old_plus_prices_refreshed": 0,
+  "historic_plus_price_count_preserved": 126
+}
