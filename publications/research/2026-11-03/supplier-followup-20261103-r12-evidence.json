@@ -1,0 +1,184 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v3",
+  "report_version": "1.12",
+  "observed_on": "2026-11-03",
+  "prepared_at_utc": "2026-11-03T13:48:00Z",
+  "previous_report": "research/2026-11-03/supplier-followup-20261103-r11.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "upfront_agent_fee_accepted": false,
+    "plus_all_in_invoice_ceiling_cny": 170
+  },
+  "scope": "8条商家真实可读网页；GetPlus既有候选新补证与PayForGPT首次零售对比；无付款、凭证或商家联系。",
+  "records": [
+    {
+      "merchant": "GetPlus",
+      "sku": "chatgpt-plus-chongzhi / 本人Free原号Plus",
+      "category": "own_account_plus",
+      "price_cny_approx": 148,
+      "price_cny_final": null,
+      "price_usd_display": 22.14,
+      "price_unit": "1个月/USD结算",
+      "invoice_extra_usd_claim": 2.1,
+      "invoice_option_before_payment": true,
+      "invoice_post_payment_supported_claim": false,
+      "usd_24_24_arithmetic_only": true,
+      "payment_fx_fee_cny": null,
+      "invoice_extra_cny": null,
+      "all_in_invoiced_cny": null,
+      "china_mainland_actual_location_eligible_claim": false,
+      "existing_plus_renewal": false,
+      "wholesale_min_units_claim": 5,
+      "wholesale_single_unit_verified": false,
+      "operator_claim": "HONG KONG AIGC LIMITED",
+      "actual_payment_receiver_verified": false,
+      "invoice_issuer_verified": false,
+      "authorized_upstream_verified": false,
+      "phone_contact_purpose": "微信手机号仅查单，不绑定ChatGPT",
+      "web_login_phone_solution_verified": false,
+      "real_order": false,
+      "notes": "旧报告已有GetPlus，本轮新增下单前开票选项、地域禁售与最低企业采购门槛；USD24.24只是页面USD22.14+企业发票差额USD2.10的算术，未核实独立收银台和真实汇兑成本。"
+    },
+    {
+      "merchant": "PayForGPT",
+      "sku": "product/7 / iOS礼品卡形式本人原号Plus月卡",
+      "category": "new_retail_not_verified_upstream",
+      "price_cny": 160,
+      "price_unit": "1个月/单件",
+      "availability_claim": "显示库存44件，实际履约未测",
+      "existing_subscription_coverage_claim": "非菲区可覆盖不叠加；菲区不支持覆盖",
+      "merchant_account_registration_required_claim": false,
+      "chatgpt_login_first_required_claim": true,
+      "session_or_token_may_be_required": true,
+      "web_first_login_verification_verified": false,
+      "api_phone_verification_verified": false,
+      "codex_phone_verification_verified": false,
+      "actual_order_payment_cny": null,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "all_in_invoiced_cny": null,
+      "merchant_of_record_conditional_claim": "仅Waffo Pancake托管收银台付款时由Waffo担任该笔Merchant of Record",
+      "single_item_invoice_supported_verified": false,
+      "invoice_issuer_verified": false,
+      "real_payment_receiver_verified": false,
+      "authorized_upstream_verified": false,
+      "wholesale_eligible_verified": false,
+      "refund_claim": "无效卡密/失败核单退，成功使用不接受无理由退；掉订按天退款有例外",
+      "real_order": false,
+      "notes": "¥160与库存均为商家即时显示，准确税票、费用、企业采购权和真实履约未核实。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "G01",
+      "url": "https://www.getplus.ai/chatgpt-plus-chongzhi",
+      "merchant": "GetPlus",
+      "fact": "Plus原号Free账号，页面约人民币148参考、美元22.14/一个月；企业发票另收美元2.10，付款前必选，选不开票后不可补开；微信手机号只用于查单。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "G02",
+      "url": "https://www.getplus.ai/terms",
+      "merchant": "GetPlus",
+      "page_updated_on": "2026-10-11",
+      "fact": "自称HONG KONG AIGC LIMITED运营、非OpenAI授权；不接受实际位于中国大陆境内客户；Stripe美元收单、外部渠道汇兑费可能存在；Free账号才可单月Plus，服务费上限美元4.24。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "G03",
+      "url": "https://www.getplus.ai/qiye-caigou",
+      "merchant": "GetPlus",
+      "fact": "企业Plus/Pro/Codex至少5个起采，批发价、合同及票种需商家另行确认，不能当单件上游。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "P01",
+      "url": "https://payforgpt.com/product/7",
+      "merchant": "PayForGPT",
+      "fact": "准确Plus月卡¥160/1个月、库存44商家显示、单件可购；原名iOS礼品卡；非菲律宾已订阅账户商称可覆盖不叠加，菲区不可覆盖；先登录ChatGPT，兑换可能要求Session JSON/accessToken；页面自标查询2026-11-03 21:47北京时间。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "P02",
+      "url": "https://payforgpt.com/terms",
+      "merchant": "PayForGPT",
+      "page_updated_on": "2026-08-30",
+      "fact": "选Waffo Pancake托管收银台时该收单方是本笔付款Merchant of Record而非所有付款；可能有税费/汇兑费用；已交付已使用无理由退款通常不接受，失败须按订单核验。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "P03",
+      "url": "https://payforgpt.com/team",
+      "merchant": "PayForGPT",
+      "fact": "企业票据与采购均为需求预检、逐单确认，不是公开单件含票报价或已有批发授权。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "P04",
+      "url": "https://payforgpt.com/trust",
+      "merchant": "PayForGPT",
+      "fact": "自称独立第三方，不属于OpenAI；核单与兑换分开，兑换可能要求Session/accessToken，不能自动解除网页登录手机号验证。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    },
+    {
+      "id": "P05",
+      "url": "https://payforgpt.com/",
+      "merchant": "PayForGPT",
+      "fact": "首页商家目录Plus月卡¥160、可免商家注册购买，支付方式商称支付宝/微信/USDT/人工转账，交付卡密；库存及成交实测均未独立验证。",
+      "observed_on": "2026-11-03",
+      "status": "success_content_read_live",
+      "evidence_class": "merchant_page_display_or_merchant_claim_not_real_order"
+    }
+  ],
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "phone_verification": {
+    "new_verified_service": false,
+    "chatgpt_web_first_login_test": false,
+    "codex_test": false,
+    "api_test": false,
+    "number_duration": null,
+    "sms_failed_refund": null,
+    "notes": "GetPlus微信手机号只用于查单；PayForGPT Session/Token仅为兑换授权前提。两者未证明自动绑号或首次网页验证。"
+  },
+  "totals": {
+    "new_verified_wholesale_sources": 0,
+    "confirmed_plus_all_in_invoiced_under_170": 0,
+    "real_orders": 0,
+    "verified_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "open_gaps": [
+    "最后结算的汇兑/支付/票税全费用",
+    "收款与开票实体及实际税票的独立验真",
+    "分销/批发授权以及合同、原号续订真实交付",
+    "号段/号码持有期限、验证码拒绝或不达退款"
+  ],
+  "conclusion": "GetPlus不能将约¥148标为含票价且不接境内用户；PayForGPT有准确¥160月卡但只是零售展示、含税发票等条件均未知。没有新增达标真实批发上游。"
+}

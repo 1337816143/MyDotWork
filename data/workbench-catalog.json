@@ -606,6 +606,28 @@
       "summary": "8条当日可读原始网页、1条空正文；SKU价格与限制、号码类型/期限、支付和开票费null、授权及验证实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r12-20261103",
+      "title": "GetPlus开票/地区限制、PayForGPT单件月卡 · 本轮定点研究",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r12.html",
+      "updatedAt": "2026-11-03T13:48:00Z",
+      "summary": "8条实读网页；GetPlus美元开票前置、境内拒单，PayForGPT¥160单月零售；最终含票价/授权仍未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r12-evidence-20261103",
+      "title": "GetPlus与PayForGPT · 原始URL/费用/售后 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-03/supplier-followup-20261103-r12-evidence.json",
+      "updatedAt": "2026-11-03T13:48:00Z",
+      "summary": "8个原始可读URL，商家声明、支付前提与null、0实测严格分开。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
