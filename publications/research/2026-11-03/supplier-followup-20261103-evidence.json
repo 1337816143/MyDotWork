@@ -1,0 +1,174 @@
+{
+  "schema": "mydotwork.gpt-source-followup.v1",
+  "title": "GPT源头调研：新增零售候选的含票费用与账号前提",
+  "report_version": "1.1",
+  "observed_on": "2026-11-03",
+  "prepared_after_utc": "2026-11-03T02:26:39Z",
+  "baseline_path": "research/2026-11-03/index.html",
+  "scope": "仅核本轮新读取的商家原页，未采购、未联系、未验证发票或手机号",
+  "criteria": {
+    "account": "本人原号",
+    "quantity": 1,
+    "subscription_period": "1个月",
+    "max_plus_all_in_invoiced_cny": 170,
+    "agent_upfront_fee_accepted": false
+  },
+  "findings": [
+    "UpPlusPro 新发现原号Plus月卡商家报价143元，开国内公司电子普票另加10元，已知分项和153元；支付附加费及真实开票主体未知，不能当已核全费。",
+    "UpPlusPro 要求付款后提交本人账号Session JSON，不能解决尚无法登录获取Session的网页手机号阻断；声明与OpenAI无官方合作、代理或授权关系。",
+    "V3小店新读菲卡135元/月和iOS卡145元/月两个不同SKU；商家称菲卡须等原订阅到期、iOS可覆盖但不叠加，不能以“iOS”为自动绑定手机号的依据。",
+    "V3小店引向外部接码网站处理新账号使用Codex时可能出现的验证，但没提供自身接码成功证据；仅供线索，不承诺网页版首次登录适用。",
+    "新增已核实真正上游、批发采购资格、税票验真、真实履约和手机号验证实测均为0。"
+  ],
+  "new_leads": [
+    {
+      "id": "uppluspro",
+      "name": "UpPlusPro",
+      "role": "零售原号代充与企业采购咨询（非已核实上游）",
+      "url": "https://uppluspro.com/",
+      "product": "ChatGPT Plus 月卡",
+      "channel": "商称第三方自动代订阅",
+      "display_price_cny": 143,
+      "price_unit": "账号·月",
+      "quantity": 1,
+      "invoice_fee_cny": 10,
+      "invoice_fee_condition": "商称选需要企业发票时增加；开增值税电子普通发票，项目技术服务费，5工作日内；不选开票不可补开",
+      "known_subtotal_cny": 153,
+      "payment_fee_cny": null,
+      "invoice_issuer": null,
+      "collection_entity": null,
+      "payment_processor_claim": "KyrenPay托管微信／支付宝",
+      "all_in_invoice_cny": null,
+      "account_prerequisite": "付款后提交账号Session JSON，账号须可登录并预检",
+      "session_required": true,
+      "can_solve_phone_block_without_session": false,
+      "renewal_claim": "商称Plus同档可覆盖、原剩余天数不叠加，人工核对",
+      "refund_claim": "商称未交付前全退；30天内掉订阅按剩余天数退或补差价续订，账号违规封禁不退",
+      "upfront_agency_fee_amount_cny": null,
+      "wholesale_terms": "商称可对公、签合同、批量议价；没有具体一件试单的批发价或签署合同",
+      "official_reseller_authorization_claim": "条款明确自称与OpenAI无官方合作、代理或授权关系",
+      "wholesale_verified": false,
+      "legal_entity_verified": false,
+      "payment_fee_verified": false,
+      "invoice_verified": false,
+      "real_order_tested": false,
+      "source_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ]
+    },
+    {
+      "id": "v3-ph",
+      "name": "V3小店（菲卡）",
+      "role": "零售卡密商品（非已核实上游）",
+      "url": "https://shop.gpt.ge/buy/18",
+      "product": "[自助充值] ChatGPT Plus 会员1个月（菲卡）",
+      "channel": "商称菲卡充值，具体供货授权未核",
+      "display_price_cny": 135,
+      "price_unit": "卡密·1个月",
+      "quantity": 1,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "known_subtotal_cny": 135,
+      "invoice_issuer": null,
+      "all_in_invoice_cny": null,
+      "session_required": null,
+      "account_prerequisite": "商品要求有可登录OpenAI账号，再到自助充值站兑换；是否必须Session未披露",
+      "renewal_claim": "商称须等原订阅到期",
+      "refund_claim": "商称掉订阅按剩余天数退款或补差价开新号；封号不保",
+      "phone_note": "商家另指引全新账号使用Codex遇验证时去第三方接码网站，不能证明验证服务有效",
+      "wholesale_verified": false,
+      "invoice_verified": false,
+      "real_order_tested": false,
+      "source_ids": [
+        "F04"
+      ]
+    },
+    {
+      "id": "v3-ios",
+      "name": "V3小店（iOS）",
+      "role": "零售卡密商品（非已核实上游）",
+      "url": "https://shop.gpt.ge/buy/22",
+      "product": "[自助充值] ChatGPT Plus 会员1个月（iOS）",
+      "channel": "商称iOS充值，机制未独立核对",
+      "display_price_cny": 145,
+      "price_unit": "卡密·1个月",
+      "quantity": 1,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "known_subtotal_cny": 145,
+      "invoice_issuer": null,
+      "all_in_invoice_cny": null,
+      "session_required": null,
+      "account_prerequisite": "商品需要既有账号及自助充值兑换流程，具体登录凭据步骤未披露",
+      "renewal_claim": "商称有订阅时可覆盖，但原时间不叠加",
+      "phone_note": "iOS SKU并无自动绑号声明；另指向外部接码",
+      "wholesale_verified": false,
+      "invoice_verified": false,
+      "real_order_tested": false,
+      "source_ids": [
+        "F05"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "F01",
+      "url": "https://uppluspro.com/",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "Plus月卡143元；开票加10元；Session JSON前提；批量采购咨询；收款通道与退款自述"
+    },
+    {
+      "id": "F02",
+      "url": "https://uppluspro.com/legal/terms",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "无官方合作代理授权；交付、退款、账号前提条款"
+    },
+    {
+      "id": "F03",
+      "url": "https://uppluspro.com/legal/privacy",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "账号会话数据处理及付款商家自述，未独立核验"
+    },
+    {
+      "id": "F04",
+      "url": "https://shop.gpt.ge/buy/18",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "菲卡SKU135元、先登录、到期续费、售后与第三方接码外链"
+    },
+    {
+      "id": "F05",
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-03",
+      "type": "merchant",
+      "status": "success_read",
+      "supports": "iOS SKU145元、覆盖不叠加、第三方接码外链"
+    }
+  ],
+  "access_notes": [
+    "上轮已成功读取的18条来源及126条历史报价本轮未重新核价，仍保留旧观察日期。",
+    "首页缓存摘要曾出现168元但本轮实际打开商家首页及准确SKU均为135元；不能将搜索引擎缓存认定为调价证据。",
+    "商家自述、推断与实测严格区分；未知金额用null。"
+  ],
+  "qualifications": {
+    "new_verified_upstreams": 0,
+    "real_invoice_checks": 0,
+    "real_subscription_purchases": 0,
+    "real_phone_verification_tests": 0
+  },
+  "next_checks": [
+    "核UpPlusPro开票税号、收款和出票主体及支付追加费，取得独立真实票据证明",
+    "核合同条款与一件单月批发价；当前批量议价不等于上游授权",
+    "核V3两款开票/支付费，菲卡与iOS实际兑换条件及售后",
+    "复核已有五家商家与五家验证平台，不修改旧报价观察日期"
+  ]
+}
