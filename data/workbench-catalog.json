@@ -804,6 +804,28 @@
       "updatedAt": "2026-11-03T21:22:09Z",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r21-20261104",
+      "title": "GPT源头 · API号码复用至多3号、不能换绑及giffgaff eSIM限制",
+      "type": "report",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r7.html",
+      "summary": "OpenAI首次API Key单号码至多验证3个账号；已关联手机号不可更新，手机注册与API验证有不同限制；自持giffgaff eSIM需App/原号短信换卡，GETGPT仍¥179。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T22:14:17Z",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r21-20261104-evidence",
+      "title": "手机复用/换绑、eSIM迁移及旧候选复核 · r21原始证据",
+      "type": "dataset",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r7-evidence.json",
+      "summary": "官方3+运营商2+商家2条直接读取证据；手机号共享库存限制与退款未知null，真实接码/采购/税票0，旧价格不刷新。",
+      "task": "project-1",
+      "updatedAt": "2026-11-03T22:14:17Z",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
