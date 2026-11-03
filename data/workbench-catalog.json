@@ -672,6 +672,28 @@
       "summary": "10条原始来源，直接打开与搜索索引分级；两家手机号服务已知展示价与不可提现预存、错误验证码不退，Plus历史报价不刷新、验证成功数0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r15-20261104",
+      "title": "GPT源头 · 虚拟卡费率差异与接码批次有效期",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104.html",
+      "updatedAt": "2026-11-03T16:41:04Z",
+      "summary": "嗨付Pay同品牌两站充值/交易手续费不同；HuiAI接码¥48/份期限按号码批次计算、旧退款页仍有上线门禁缺口。未核一手Plus或真实接码。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r15-evidence-20261104",
+      "title": "GPT源头11月4日补证 · 6条直接可读原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-evidence.json",
+      "updatedAt": "2026-11-03T16:41:04Z",
+      "summary": "6条商家原网页、两套开卡/支付费率、号码批次期限与政策日、未知税票/退款为null，实际采购和验证均为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
