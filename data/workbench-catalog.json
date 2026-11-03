@@ -628,19 +628,6 @@
       "summary": "8个原始可读URL，商家声明、支付前提与null、0实测严格分开。",
       "access": "public",
       "metadataApproved": true
-    }
-  ],
-  "websites": [
-    {
-      "id": "mydotwork-workbench",
-      "title": "MyDotWork · AI工作台",
-      "type": "website",
-      "task": "project-4",
-      "url": "https://1337816143.github.io/MyDotWork/dashboard/",
-      "updatedAt": null,
-      "summary": "统一公开资料入口；保留AI研究、历史供货库、聊天与项目归档。",
-      "access": "public",
-      "metadataApproved": true
     },
     {
       "id": "gpt-source-followup-r13-20261103",
@@ -661,6 +648,19 @@
       "url": "../research/2026-11-03/supplier-followup-20261103-r13-evidence.json",
       "updatedAt": "2026-11-03T15:00:00Z",
       "summary": "13条实际可读页面、3家新补证对象，商家承诺与真实授权/税票/履约分别标注，未知费用null、成功实测0。",
+      "access": "public",
+      "metadataApproved": true
+    }
+  ],
+  "websites": [
+    {
+      "id": "mydotwork-workbench",
+      "title": "MyDotWork · AI工作台",
+      "type": "website",
+      "task": "project-4",
+      "url": "https://1337816143.github.io/MyDotWork/dashboard/",
+      "updatedAt": null,
+      "summary": "统一公开资料入口；保留AI研究、历史供货库、聊天与项目归档。",
       "access": "public",
       "metadataApproved": true
     },
