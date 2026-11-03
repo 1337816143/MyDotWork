@@ -826,6 +826,28 @@
       "updatedAt": "2026-11-03T22:14:17Z",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r22-20261104",
+      "title": "GPT源头 · ¥165 Plus单张发票最低¥50及另一家¥165未核票候选",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r8.html",
+      "updatedAt": "2026-11-03T23:16:45.686Z",
+      "summary": "星桥Plus¥165/单件，电子普票单张最低另¥50，已知分项¥215超筛选线；明月Plus¥165/套餐但单月期限、单件开票费及收款出票主体未知。两家仅零售候选，非已核上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r22-20261104-evidence",
+      "title": "星桥/明月Plus开票费用、SKU、售后与6条原始网页 · r22证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r8-evidence.json",
+      "updatedAt": "2026-11-03T23:16:45.686Z",
+      "summary": "6条当日直读商家源：星桥165+最低票费50，明月准确pid28结算页加载中；全部未知项null，真正批发/实付税票/接码实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
