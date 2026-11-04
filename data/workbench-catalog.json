@@ -1266,6 +1266,28 @@
       "summary": "6条2026-11-05实读网页及自标更新日期，5项Plus SKU，所有未知结算与票据费null；真实购入/短信测试/税票验证均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r42-20261105",
+      "title": "GPT源头 · 单件Plus开票5%与合作充值方Session边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r4.html",
+      "updatedAt": "2026-11-04T21:27:04Z",
+      "summary": "AI充值站Plus¥148/月、+5%开票=¥155.40公开分项但未验税票/上游；Codex SMS单次¥9.99、单号20分钟、30次换号、付款即不退款。合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r42-20261105-evidence",
+      "title": "开票5%、合作充值方与短信接码不退款 · r42证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r4-evidence.json",
+      "updatedAt": "2026-11-04T21:27:04Z",
+      "summary": "8个实际读取URL；¥155.40非已核含全部费用实付，接码单号20分钟/30次换号与付款不退款均商家声明，手机号/税票/授权未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
