@@ -1244,6 +1244,28 @@
       "summary": "6条实际读取原始URL；临时号码、退款去向、票据矛盾、报价条件和兑换码期限；真实接码/出票/Plus批发来源均0，未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r41-20261105",
+      "title": "GPT源头 · 苹果开票版Session与V3支付费、转售限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r3.html",
+      "updatedAt": "2026-11-04T20:07:48Z",
+      "summary": "新读AIPlusGate Plus卡充¥145、苹果充值¥158、开票版¥168未验票；V3菲卡¥133.50/iOS¥143.50及微信手续费3.5%，未经允许转售明禁。合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r41-20261105-evidence",
+      "title": "AIPlusGate开票版、V3手续费与授权边界 · r41原始URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r3-evidence.json",
+      "updatedAt": "2026-11-04T20:07:48Z",
+      "summary": "6条2026-11-05实读网页及自标更新日期，5项Plus SKU，所有未知结算与票据费null；真实购入/短信测试/税票验证均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
