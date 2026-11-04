@@ -936,6 +936,28 @@
       "summary": "6条直接实读的原始URL；单月¥149与匿名弹层¥149.78不混同；含票总费用、出票主体、批发授权null，实购/税票/SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r27-20261104",
+      "title": "GPT源头 · YXAB ¥128.80官方Receipt非税票与OKAI66开票价¥183",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r13.html",
+      "updatedAt": "2026-11-04T04:43:44.584Z",
+      "summary": "新读两家零售候选：YXAB原号Plus¥128.80/月，但官方Invoice不是国内税票、企业另报价且支付费未知；OKAI66月价¥165，明示电子普票开票价¥183且支付费另计；均非合格已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r27-20261104-evidence",
+      "title": "YXAB/OKAI66准确SKU、发票类型、支付与短信验证风险 · r27直接原页证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r13-evidence.json",
+      "updatedAt": "2026-11-04T04:43:44.584Z",
+      "summary": "9条新直读商家URL；国内税票与官方账单分离，旧价表和旧报告不刷新，费用和供货授权null；实购/验票/接码成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
