@@ -1178,6 +1178,28 @@
       "summary": "7条原始商家网页2026-11-04观察；¥165为商称含中国VAT，不是实付；¥149.78仅静态结算预览；开票/付款/授权/真实手机号实测0，未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r38-20261104",
+      "title": "GPT源头 · 双11代充补贴截止与原号售后连续性限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r24.html",
+      "updatedAt": "2026-11-04T15:37:45.894Z",
+      "summary": "引路鲸商家双11有保¥135和无保¥125既有价的补贴至11月11日23:59北京时间，优惠互斥非通用低价；条理集采72h售后含更换全新账号，不能保证原号持续。零批发验真。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r38-20261104-evidence",
+      "title": "引路鲸限时优惠与条理集采换号条款 · r38结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r24-evidence.json",
+      "updatedAt": "2026-11-04T15:37:45.894Z",
+      "summary": "4条直接读取原始URL；2026-10-23公告与2026-11-04观察时间分开，既有SKU价格不作调价；未知含票全价null，无真实出票/订单/手机号验证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
