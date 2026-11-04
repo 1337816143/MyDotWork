@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 85, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 87, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.26'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r12.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r12-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r11.html'
+    assert latest['version'] == '1.27'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r13.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r13-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r12.html'
+    # r27 preserves separate tax-invoice and overseas receipt SKU eligibility.
+    assert by_id['gpt-source-followup-r27-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r13.html'
+    assert by_id['gpt-source-followup-r27-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r13-evidence.json'
+    r27 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r13-evidence.json').read_bytes())
+    assert r27['round'] == 27 and r27['direct_read_source_count'] == len(r27['sources']) == 9
+    assert r27['candidates'][0]['listed_price_cny'] == 128.8 and r27['candidates'][0]['chinese_vat_invoice_available_on_this_sku'] is False
+    assert r27['candidates'][0]['all_in_chinese_invoice_total_cny'] is None and r27['candidates'][0]['payment_channel_fee_cny'] is None
+    assert r27['candidates'][1]['listed_price_cny'] == 165 and r27['candidates'][1]['merchant_stated_invoice_inclusive_price_cny'] == 183
+    assert r27['candidates'][1]['invoice_article_inconsistent_arithmetic'] is True and r27['candidates'][1]['actual_all_in_paid_cny'] is None
+    assert all(x['qualified_wholesale'] is False and x['real_invoice_verified'] is False for x in r27['candidates'])
+    assert r27['verified_plus_wholesale_count'] == r27['actual_purchase_count'] == r27['real_invoice_verified_count'] == r27['phone_verification_success_count'] == 0
+    assert r27['historical_126_quote_records_preserved'] is True and r27['old_prices_refreshed'] == 0
     # r26 separates a real merchant retail SKU from an unconfirmed DOM modal.
     assert by_id['gpt-source-followup-r26-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r12.html'
     assert by_id['gpt-source-followup-r26-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r12-evidence.json'
