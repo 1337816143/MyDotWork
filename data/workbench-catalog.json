@@ -1310,6 +1310,28 @@
       "summary": "11条商家原始网页观察记录，PAYPRM已有账号和新账号SKU区别、税票附费、验证码交付与失败退款缺口；实购/票据/授权/SMS测试为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r44-20261105",
+      "title": "GPT源头 · 自称源头的Plus官网账单与GETGPT个人开票排除",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r6.html",
+      "updatedAt": "2026-11-04T23:44:57.919Z",
+      "summary": "yxab原号Plus¥128.80但含付款手续费且官网Invoice非中国增值税发票，企业采购价另报；GETGPT个人订单无税票仅Receipt且Plus¥179。合格批发源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r44-20261105-evidence",
+      "title": "yxab发票渠道与GETGPT个人订单税票限制 · r44源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r6-evidence.json",
+      "updatedAt": "2026-11-04T23:44:57.919Z",
+      "summary": "7条商家原始可读URL，准确Plus SKU、单件价、另行通道及票据条件；实际附加费与含中国税票总价null、授权和短信实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

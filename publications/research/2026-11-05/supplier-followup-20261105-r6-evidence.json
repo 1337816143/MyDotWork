@@ -1,0 +1,156 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 44,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-04T23:44:57.919Z",
+  "site_version": "1.9.52",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "GPT代充平台 yxab.cn",
+    "category": "retail_candidate_not_verified_upstream",
+    "sku": "ChatGPT Plus 官网订阅代付/原号/1个月",
+    "url": "https://yxab.cn/product/G69666080",
+    "quantity": 1,
+    "period_months": 1,
+    "currency": "CNY",
+    "display_price_cny": 128.8,
+    "site_advertises_source_supply": true,
+    "source_status_verified": false,
+    "subscription_must_be_expired_claim": true,
+    "delivery_method_claim": "卡密+自助兑换入口；需先网页正常登录",
+    "requires_logged_in_account": true,
+    "can_remove_first_web_login_phone_verification": false,
+    "card_delivery_is_activation": false,
+    "payment_fee_cny": null,
+    "china_vat_invoice_available_at_displayed_sku": false,
+    "company_purchase_separate_price_claim": true,
+    "company_purchase_price_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "real_paid_invoice_included_cny": null,
+    "legal_operator_verified": null,
+    "payment_recipient_verified": null,
+    "invoice_issuer_verified": null,
+    "wholesale_authorization_verified": false,
+    "resale_authorization_verified": false,
+    "agent_upfront_fee_zero_verified": null,
+    "actual_order_tested": false,
+    "invoice_verified": false,
+    "real_subscription_activation_tested": false,
+    "source_urls": [
+      "https://yxab.cn/product/G69666080",
+      "https://yxab.cn/products",
+      "https://yxab.cn/",
+      "https://yxab.cn/help"
+    ]
+  },
+  "bounded_recheck": {
+    "merchant": "GETGPT Pro (getgpt.pro)",
+    "sku": "ChatGPT Plus 原账号充值/每月",
+    "url": "https://getgpt.pro/price",
+    "currency": "CNY",
+    "display_price_cny": 179,
+    "price_observation_only_not_new_discount": true,
+    "individual_order_china_tax_invoice_supported_claim": false,
+    "individual_order_receipt_only_claim": true,
+    "enterprise_invoice_quote_required": true,
+    "legal_entity_self_declared": "NEXCLOUD TECHNOLOGY LIMITED",
+    "legal_entity_independently_verified": false,
+    "invoice_issuer_verified": null,
+    "payment_recipient_verified": null,
+    "all_required_fees_including_china_invoice_cny": null,
+    "corrects_assumption_all_users_get_invoice": true,
+    "session_requires_prior_web_login": true,
+    "phone_service_merchant_faq_price_cny_per_one_time": 10,
+    "phone_service_exact_order_sku_verified": false,
+    "phone_service_number_retention_days": null,
+    "failed_sms_original_refund_verified": null,
+    "source_urls": [
+      "https://getgpt.pro/faq",
+      "https://getgpt.pro/price",
+      "https://getgpt.pro/"
+    ]
+  },
+  "independent_phone_verification": {
+    "new_verified_web_service": 0,
+    "new_verified_codex_service": 0,
+    "new_verified_first_api_key_service": 0,
+    "real_sms_success": 0,
+    "automatic_binding_from_plus_or_apple": false,
+    "phone_number_retention_days": null,
+    "failed_sms_original_refund_verified": null
+  },
+  "sources": [
+    {
+      "url": "https://yxab.cn/product/G69666080",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "新零售候选准确Plus商品，¥128.80/月，原号且当前订阅须已结束；原号先网页登录，卡密并不等于生效；官网Invoice/Receipt不是中国大陆增值税发票，国内票需企业独立报价。"
+    },
+    {
+      "url": "https://yxab.cn/products",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "2026-11-05当前可读商品目录同款Plus¥128.80/月（页面未自标调价日期），不是历史搜索摘要中的¥118.72。"
+    },
+    {
+      "url": "https://yxab.cn/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "商家自称源头供货、自动发卡、额外支付通道手续费须在支付前显示，官方网站Invoice与中国税票区分。"
+    },
+    {
+      "url": "https://yxab.cn/help",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "帮助中心确认支付宝/微信手续费另计、卡密发放不等于账号实际充值、退款按具体商品且可能受已发货限制。"
+    },
+    {
+      "url": "https://getgpt.pro/faq",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "个人订单暂不支持开具发票，只能下载Receipt；企业批量/对公/开票需另外咨询，并称可了解10元/次Codex验证（非核验可售SKU）。"
+    },
+    {
+      "url": "https://getgpt.pro/price",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "当前本人原号Plus挂牌¥179/月，超¥170；下单需先登录取得Session，不能当首次网页登录号码验证解决。"
+    },
+    {
+      "url": "https://getgpt.pro/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "站点自列NEXCLOUD TECHNOLOGY LIMITED及香港地址但未完成独立法人登记、收款和开票主体验真；首页声明与官网无隶属。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_all_fees_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r43_original_reports_preserved": true,
+  "note": "2026-11-05是网页观察日，不是商家调价日期。搜索引擎早期摘要不当作同SKU新旧价比较。自称源头≠批发授权；官方Invoice/Receipt≠中国增值税发票；未知费用保持null。"
+}
