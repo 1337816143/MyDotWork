@@ -1046,6 +1046,28 @@
       "summary": "7条直读商家原页、2项无可读正文的访问；所有未知人民币实付、税票及手续费为null，不宣称上游授权或短信实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r32-20261104",
+      "title": "GPT源头 · wind89普票费再证与开票流程双轨冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r18.html",
+      "updatedAt": "2026-11-04T09:43:26Z",
+      "summary": "公开Plus¥139.99＋普票¥10，仅分项推算；主站会员开票与独立截图流程相互矛盾，游客资格未证；SMS人工接码10元/次、60天20元仅商称。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r32-20261104-evidence",
+      "title": "wind89发票冲突及人工接码条件r32 · JSON证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r18-evidence.json",
+      "updatedAt": "2026-11-04T09:43:26Z",
+      "summary": "7条原始页面与观察日，开票+¥10再证、两条出票流程不一致，未知支付费和退款null，无真实税票/短信测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -1,0 +1,124 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 32,
+  "date": "2026-11-04",
+  "observed_on": "2026-11-04",
+  "site_version": "1.9.40",
+  "scope": "wind89站内两个发票入口和旧/新帮助FAQ存在公开口径冲突；新版FAQ与开票指南重证电子普票每份+¥10及商家接码单次/60天报价。仅公开文本，未实购、未验真税票、未完成短信验证。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "candidates": [
+    {
+      "vendor": "wind89",
+      "category": "retail_not_verified_wholesale",
+      "exact_sku": "ChatGPT Plus 原账号卡密1个月",
+      "public_plus_price_cny_per_month": 139.99,
+      "merchant_public_e_invoice_addon_cny_per_unit": 10,
+      "public_component_sum_cny": 149.99,
+      "actual_paid_cny": null,
+      "unknown_payment_fees_cny": null,
+      "invoice_issuer": null,
+      "actual_valid_invoice_verified": false,
+      "all_in_cny": null,
+      "corporate_transfer_monthly_plus_cny": 160,
+      "corporate_payment_invoice_addon_cny": null,
+      "corporate_all_in_cny": null,
+      "invoice_flow_conflict": "新版指南：加10勾选后到fp.wind89.com交支付账单截图；旧FAQ和fp.wind89.com首页：需要商家会员登录后在我的发票选择订单",
+      "guest_checkout_claimed": true,
+      "guest_invoice_eligible_verified": null,
+      "session_needed_for_redemption": true,
+      "can_stack_active_plus": false,
+      "real_wholesale_price_cny": null,
+      "upfront_agent_fee_cny": null,
+      "openai_resale_authorization_verified": false,
+      "actual_payee": null,
+      "qualified_wholesale": false,
+      "actual_purchased": false
+    }
+  ],
+  "independent_phone_verification": {
+    "merchant": "wind89",
+    "claimed_single_sms_price_cny": 10,
+    "claimed_60_day_price_cny": 20,
+    "claimed_long_term_days": 60,
+    "exact_openai_sku": null,
+    "number_country": null,
+    "number_type": null,
+    "chatgpt_web_applicability": null,
+    "codex_applicability": null,
+    "api_first_key_applicability": null,
+    "failed_sms_refund_cny": null,
+    "refund_to_original_payment_method": null,
+    "subscription_warranty_covers_login_phone_fee": false,
+    "tested_success_count": 0
+  },
+  "sources": [
+    {
+      "id": "R32-1",
+      "url": "https://wind89.com/guide/faq",
+      "fact": "新FAQ列Plus¥139.99/月、电子普票每份加¥10、对公转账Plus¥160/月；人工手机号接码单次¥10、60天¥20；未给精准号码SKU。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    },
+    {
+      "id": "R32-2",
+      "url": "https://wind89.com/guide/invoice",
+      "fact": "开票指南自标2026-09-28更新：下单勾选开票+¥10/份，付款后前往fp.wind89.com上传微信/支付宝含交易单号账单截图，填写企业抬头、税号和邮箱，商称2个工作日开电子普票。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    },
+    {
+      "id": "R32-3",
+      "url": "https://fp.wind89.com/",
+      "fact": "独立发票网站可读首页却指示返回wind89.com先登录，进入我的发票勾选订单办理；网页没有展示新版指南要求的支付截图上传表单。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    },
+    {
+      "id": "R32-4",
+      "url": "https://wind89.com/help/faq.html",
+      "fact": "仍公开的旧版FAQ宣称仅对已经登录会员、登录后下单的订单开发票，与新版指南的独立站截图路径冲突。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    },
+    {
+      "id": "R32-5",
+      "url": "https://wind89.com/guide/buy",
+      "fact": "新购买指南明确可游客填联系方式+订单查询密码购买Plus卡密，游客可购买不等于游客订单可开税票。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    },
+    {
+      "id": "R32-6",
+      "url": "https://wind89.com/warranty",
+      "fact": "订阅30日质保不包含平台登录要求的手机验证费用，已兑换会员通常不支持退款；不代表另行付费接码的退款条款。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    },
+    {
+      "id": "R32-7",
+      "url": "https://wind89.com/guide/renew",
+      "fact": "原账号会员需到期回到Free才可续费，卡密兑换先成功网页登录并提供Session，不支持在期叠加。",
+      "observed_on": "2026-11-04",
+      "read_method": "read_indexed_merchant_original_page_text",
+      "evidence_class": "merchant_page_observed_or_claim_not_actual_paid_or_tested"
+    }
+  ],
+  "caveats": [
+    "网页抓取或索引成功读取文本但未创建结算订单；不把网页声明视作实付",
+    "新版指南与现存发票站的办理入口矛盾尚无真实出票结果，不能宣布会员限制已解除",
+    "旧r25对+¥10的未重证结论仅更正证据状态，不能认定11月4日刚修改发票费",
+    "既有126条报价与r1-r31原始报告继续保存，未复查其他商家报价不刷新旧观察日"
+  ]
+}
