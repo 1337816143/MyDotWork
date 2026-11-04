@@ -1,0 +1,165 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 33,
+  "date": "2026-11-04",
+  "observed_on": "2026-11-04",
+  "site_version": "1.9.41",
+  "scope": "重点复核已存在的引路鲸／ChatGPT直充站（chatgqt.plus）；本轮新实读供应商招募页面与当前售前/企业/购买说明。新增的是站方对外征集上游供货和Codex点数非API区分，不新增供应商，不把11月3日已记的Plus两种SKU、代理费及票费伪装为新价或新政策。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "chain_identification": {
+    "merchant": "引路鲸 / ChatGPT直充站",
+    "existing_known_domain": "chatgqt.plus",
+    "also_read_domain": "www.chatgqt.plus",
+    "source_relation": "同域名www与非www；本轮为同一既有候选复核，不增加独立源头计数",
+    "new_primary_source_url": "https://www.chatgqt.plus/supply",
+    "source_recruitment_claim": "站方公开募集ChatGPT Plus/Pro等外部订阅供应商，自称承担获客与C端客诉，供应商负责供货；小单试跑按单现结，放量默认周结；可接受非一手品牌方，但要求渠道可解释。属于站方向供应方征集货源，不是向本研究用户提供零前置费进货价。",
+    "verified_supplier_identity": null,
+    "actual_upstream_payee": null,
+    "openai_resale_authorization_verified": false,
+    "inferred_role": "具有采购外部供应资源、组织渠道和C端零售职能的第三方平台；不证明没有自有渠道，也不能以'直充'认定自己就是一手上游",
+    "supplier_recruitment_business_contract_tested": false
+  },
+  "existing_plus_skus_not_newly_repriced": [
+    {
+      "id": "LIST-000001",
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "description": "本人原号Plus月付有质保",
+      "listed_price_cny_per_unit_month": 135,
+      "quantity": 1,
+      "invoice_addon_claim_percent": 6,
+      "known_component_sum_cny": 143.1,
+      "actual_paid_cny": null,
+      "payment_extra_cny": null,
+      "real_tax_invoice_verified": false,
+      "invoice_issuer": null,
+      "all_in_cny": null,
+      "first_recorded_on": "2026-11-03",
+      "price_change_proven": false
+    },
+    {
+      "id": "LIST-000019",
+      "url": "https://chatgqt.plus/buy?sku=LIST-000019",
+      "description": "本人原号Plus月付无质保；本轮仅在套餐选择卡看到¥125，未重开此准确SKU订单预览",
+      "listed_price_cny_per_unit_month": 125,
+      "quantity": 1,
+      "invoice_addon_claim_percent": 6,
+      "known_component_sum_cny": 132.5,
+      "actual_paid_cny": null,
+      "payment_extra_cny": null,
+      "invoice_issuer": null,
+      "all_in_cny": null,
+      "first_recorded_on": "2026-11-03",
+      "price_change_proven": false
+    }
+  ],
+  "existing_agent_terms_not_newly_changed": {
+    "required_agent_entry_fee_cny": 3000,
+    "standalone_site_extra_setup_cny": 2000,
+    "standalone_site_next_year_fee_cny": 999,
+    "agent_fee_creditable_to_inventory": false,
+    "agent_upfront_fee_waived_publicly": false,
+    "qualified_for_no_upfront_wholesale": false,
+    "agent_exact_wholesale_prices_cny": null,
+    "affiliate_reward_does_not_mean_wholesale": true,
+    "first_recorded_on": "2026-11-03"
+  },
+  "new_distinction": {
+    "source_url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+    "merchant_product_name": "ChatGPT Codex 额度充值 250 点（非 API）",
+    "merchant_listed_price_cny_per_250_points": 168,
+    "period": null,
+    "sku_id": null,
+    "unit": "CNY/250商家所称Codex点数",
+    "claimed_not_api": true,
+    "not_plus_subscription": true,
+    "verified_openai_credits_delivery": false,
+    "invoice_fee_cny": null,
+    "payment_fee_cny": null,
+    "actual_paid_cny": null,
+    "web_login_or_otp_solution_verified": false,
+    "notes": "同一页面目录同时销售Plus与Codex点数，后者是另一个商品；非本人原号Plus单月采购，也非OpenAI官方API额度或独立手机验证服务。"
+  },
+  "independent_phone_verification": {
+    "merchant": "ChatGPT直充站",
+    "exact_verification_service_sku": null,
+    "chatgpt_web_login_supported": null,
+    "codex_phone_supported": null,
+    "api_first_key_supported": null,
+    "phone_country": null,
+    "number_type": null,
+    "number_duration_days": null,
+    "failed_code_refund": null,
+    "seller_faq_explicitly_does_not_offer_account_registration": true,
+    "seller_claims_no_session_token_password_needed": true,
+    "actual_sessionless_delivery_tested": false,
+    "automatic_phone_binding_proven": false,
+    "successful_verification_tests": 0
+  },
+  "sources": [
+    {
+      "id": "R33-1",
+      "url": "https://www.chatgqt.plus/supply",
+      "observed_on": "2026-11-04",
+      "status": "success_read",
+      "relation_to_prior": "new_original_source_not_in_r7_sources",
+      "finding": "公开招募Plus/Pro外部供货方（允许可说明链路的非一手品牌方）；供货方负责履约，站方获客、转化和C端客诉；称试单现结、放量默认周结，具体合同、实际货源与执行证据均无。",
+      "evidence_class": "merchant_first_party_page_claim_not_contracted_or_tested"
+    },
+    {
+      "id": "R33-2",
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-04",
+      "status": "success_read",
+      "relation_to_prior": "same_plus_sku_and_135_cny_price_as_2026-11-03_r7_not_a_reprice",
+      "finding": "本人原号有保月卡SKU LIST-000001¥135/1月数量1，增值税普票勾选额外6%，页面初始未勾选应付¥135；需经真实结账才可核实含票实付及出票主体。本轮目录另外出现Codex额度250点¥168、明确非API，未验证点数到账。",
+      "evidence_class": "merchant_page_observed_not_order_test"
+    },
+    {
+      "id": "R33-3",
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-04",
+      "status": "success_read",
+      "relation_to_prior": "recheck_of_2026-11-03_r7_source_no_change_proven",
+      "finding": "进货代理预收资格费¥3000，独立站另¥2000/次年¥999；代理价先付费审核后展示；推广返佣不等于可无费拿批发SKU。",
+      "evidence_class": "merchant_claim_reconfirmed"
+    },
+    {
+      "id": "R33-4",
+      "url": "https://www.chatgqt.plus/faq",
+      "observed_on": "2026-11-04",
+      "status": "success_read",
+      "relation_to_prior": "merchant_current_faq_first_hand_read_no_new_phone_success",
+      "finding": "商称当前不收账号密码、Session/Token/Cookie或短信验证码；又明确不代注册账号、收不到OpenAI验证码不属服务范围，无法证明首次网页验证可解决。",
+      "evidence_class": "merchant_claim_not_tested"
+    },
+    {
+      "id": "R33-5",
+      "url": "https://www.chatgqt.plus/enterprise",
+      "observed_on": "2026-11-04",
+      "status": "success_read",
+      "relation_to_prior": "corporate_purchase_scope_checked",
+      "finding": "企业发票、合同和对公付款均需交易前另行确认；页面未提供准确收款、出票法律主体或正式本单税票。",
+      "evidence_class": "merchant_claim_not_order_or_invoiced"
+    }
+  ],
+  "qualification_totals": {
+    "new_independent_suppliers_added": 0,
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_invoiced_all_in_under_170": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "caveats": [
+    "这不是新增商家：11月3日r7已记录chatgqt.plus两个Plus SKU和¥3000代理资格费；此次不重新计数、不声称当日调价。",
+    "供应商招募是平台向潜在供货方征集货源的对外营销及条件声明，无法推导其全部现有订单都采用外部代销，也未查得任何真实上游企业或官方转售授权。",
+    "2026-11-04是本轮观察日期，不等于网页发布或修改日期；原126历史报价、r1至r32原文和观察日期不改。",
+    "未建单、未支付、未获取订单信息或提交登录资料；全费、发票主体、供应合同、Codex点数履约与手机验证实测仍为null或0。"
+  ]
+}

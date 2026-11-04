@@ -1068,6 +1068,28 @@
       "summary": "7条原始页面与观察日，开票+¥10再证、两条出票流程不一致，未知支付费和退款null，无真实税票/短信测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r33-20261104",
+      "title": "GPT源头 · 引路鲸供货招募暴露外部货源征集与代理价不可验证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r19.html",
+      "updatedAt": "2026-11-04T10:35:02Z",
+      "summary": "新核引路鲸直充站公开向外部供货商征集Plus/Pro货源，试单现结/量大周结仅商称，不是向用户的免前置批发报价；既有月卡¥125/¥135、6%票费与¥3000资格费不重复计新价，上游仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r33-20261104-evidence",
+      "title": "引路鲸供货角色补证与Codex点数区别 · r33结构化材料",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r19-evidence.json",
+      "updatedAt": "2026-11-04T10:35:02Z",
+      "summary": "5条新实读源，其中/supply首次纳入；目录新增观察到Codex 250点¥168（非API、非Plus），供应链实况、税票和SMS实测均缺。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
