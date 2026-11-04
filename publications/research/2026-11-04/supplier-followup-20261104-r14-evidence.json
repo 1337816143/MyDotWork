@@ -1,0 +1,201 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 28,
+  "date": "2026-11-04",
+  "observed_at_utc": null,
+  "site_version": "1.9.36",
+  "scope": "复核小久同SKU两观察日网页价差、新旧收据与税票区分；新增稳稳接住US$21参考报价及明确不可开票条件。仅商家网页证据，非购买、成功验证或厂商授权。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "historical_comparison": {
+    "vendor": "小久",
+    "same_original_url": "https://98-xj.com/products/gpt%20plus",
+    "prior_source_id": "S04",
+    "prior_observed_on": "2026-10-03",
+    "prior_display_cny": 112,
+    "new_observed_on": "2026-11-04",
+    "new_display_cny": 110,
+    "display_delta_cny": -2,
+    "confirmed_change_time": null,
+    "actual_checkout_price_cny": null
+  },
+  "candidates": [
+    {
+      "vendor": "小久",
+      "exact_sku": "〖官方充值〗Chat gpt plus 菲区卡冲cdk（质保30天）",
+      "sku_url": "https://98-xj.com/products/gpt%20plus",
+      "display_price_cny": 110,
+      "display_unit": "CNY/1份（挂牌；月数本轮未确认）",
+      "prior_display_cny": 112,
+      "prior_observed_on": "2026-10-03",
+      "subscription_period_months_reconfirmed": null,
+      "claimed_payment_currency": "USDT",
+      "actual_payment_currency": null,
+      "wechat_fee_cny": null,
+      "alipay_fee_cny": null,
+      "crypto_or_fx_fee_cny": null,
+      "all_in_cny": null,
+      "quantity_minimum_displayed": 1,
+      "phone_verification_self_resolved_claimed": true,
+      "bank_receipt_is_domestic_tax_invoice": false,
+      "domestic_tax_invoice_available": null,
+      "domestic_invoice_fee_cny": null,
+      "agent_upfront_fee_cny": null,
+      "wholesale_price_cny": null,
+      "payee_legal_entity": null,
+      "tax_invoice_issuer": null,
+      "authorized_reseller_verified": false,
+      "actual_purchase_verified": false,
+      "invoice_verified": false,
+      "subscription_verified": false,
+      "qualified_wholesale": false
+    },
+    {
+      "vendor": "稳稳接住",
+      "exact_sku": "ChatGPT Plus 游客单月直充",
+      "sku_url": "https://wenwenjiezhu.com/",
+      "display_usd": 21,
+      "subscription_part_usd": 20,
+      "service_fee_usd": 1,
+      "price_unit": "USD/账号/1个月",
+      "reference_fx_usd_cny": 6.684,
+      "reference_rate_page_timestamp": "2026-11-04 08:02",
+      "display_cny": 140.36,
+      "actual_checkout_cny": null,
+      "payment_fee_cny": null,
+      "invoice_fee_cny": null,
+      "all_in_cny": null,
+      "domestic_tax_invoice_available_claimed": false,
+      "company_bank_transfer_available_claimed": false,
+      "minimum_quantity_claimed": 1,
+      "prior_chatgpt_login_for_account_id": true,
+      "session_token_requirement_confirmed": null,
+      "agent_upfront_fee_cny": null,
+      "wholesale_price_cny": null,
+      "authorized_reseller_verified": false,
+      "actual_purchase_verified": false,
+      "invoice_verified": false,
+      "subscription_verified": false,
+      "qualified_wholesale": false
+    }
+  ],
+  "independent_phone_verification": {
+    "new_standalone_openai_otp_sku_found": false,
+    "chatgpt_web_applicability": null,
+    "codex_applicability": null,
+    "api_first_key_applicability": null,
+    "phone_tenure_minutes": null,
+    "failed_sms_refund": null,
+    "subscription_automatically_phone_verifies": false,
+    "actual_test_success_count": 0
+  },
+  "access_failures": [
+    {
+      "url": "https://catfk.com/item/j0eswz",
+      "status": "Fetched but no readable product lines: no refreshed price/payment evidence"
+    },
+    {
+      "url": "https://982xj.xyz/subscription",
+      "status": "Unable to fetch usable content: bank receipt not verified"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/XIAOJIU",
+      "status": "No readable checkout"
+    },
+    {
+      "url": "https://wzyp.cn/shop/xiaojiuban",
+      "status": "WAF/robot screen, no usable checkout"
+    }
+  ],
+  "sources": [
+    {
+      "id": "T28-1",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "existing_exact_sku",
+      "fact": "本轮同一原始商品URL展示Plus菲区CDK标价¥110；2026-10-03历史记录S04为¥112。正文仍要求USDT，微信第三方卡网注明有手续费，支付宝卡网提供链接；未结算，不能称实际人民币支付¥110；30天是质保，不代表当次网页新核实订阅月数。"
+    },
+    {
+      "id": "T28-2",
+      "url": "https://98-xj.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "merchant_crosscheck",
+      "fact": "同站Plus目录再次展示¥110；小久将Codex额度另设商品并强调不是ChatGPT API。商品描述称银行交易凭证或官方/平台收据与税务发票不同。"
+    },
+    {
+      "id": "T28-3",
+      "url": "https://98-xj.com/terms",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "merchant_terms_gap",
+      "fact": "服务条款正文为『暂无内容』，无法核实规范订单、退款或争议处理。"
+    },
+    {
+      "id": "T28-4",
+      "url": "https://98-xj.com/privacy",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "merchant_privacy_gap",
+      "fact": "隐私政策正文为『暂无内容』，未核证账号会话信息保存、删除或独立安全审计。"
+    },
+    {
+      "id": "T28-5",
+      "url": "https://98-xj.com/about",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "merchant_identity_gap",
+      "fact": "关于页仅有Telegram联系信息，无可直接核验的收款、经营及开票法律主体。"
+    },
+    {
+      "id": "T28-6",
+      "url": "https://wenwenjiezhu.com/",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "new_retail_display_price",
+      "fact": "本人原号Plus月度游客商品为订阅US$20加服务费US$1，共US$21/1个月；按商家页面标注2026-11-04 08:02的1美元=6.6840元换算展示¥140.36，非实际结算金额。"
+    },
+    {
+      "id": "T28-7",
+      "url": "https://wenwenjiezhu.com/help/faq",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "new_retail_invoice_exclusion",
+      "fact": "FAQ明确暂不支持对公转账与开具发票；声称批量订单可谈折扣及掉订按天退，但不是单件税票或实际退款证明。"
+    },
+    {
+      "id": "T28-8",
+      "url": "https://wenwenjiezhu.com/help/guide",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_html",
+      "class": "new_retail_login_requirement",
+      "fact": "教程说明须先在网页获取并提交原ChatGPT账户ID，再支付宝/微信付款；不能用此代替首次网页登录手机验证。"
+    }
+  ],
+  "direct_read_source_count": 8,
+  "verified_plus_wholesale_count": 0,
+  "verified_all_in_invoiced_under_170_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "previous_reports_preserved": true,
+  "old_price_overwritten": false,
+  "not_repriced": [
+    "CatFK AI源头",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ]
+}
