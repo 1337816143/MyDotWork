@@ -43,4 +43,11 @@ assert(r35cat&&r35data&&r35cat.url.endsWith('supplier-followup-20261104-r21.html
 const r35check=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/supplier-followup-20261104-r21-evidence.json'),'utf8'));
 assert.equal(r35check.round,35);assert.equal(r35check.service_status.backend_outage_confirmed,false);
 assert.equal(r35check.service_status.actual_paid_plus_cny,null);assert.equal(r35check.phone_verification.verified_success_count,0);
+const r36cat=d.records.find(r=>r.id==='gpt-source-followup-r36-20261104');
+const r36data=d.records.find(r=>r.id==='gpt-source-followup-r36-20261104-evidence');
+assert(r36cat&&r36data&&r36cat.url.endsWith('supplier-followup-20261104-r22.html'));
+const r36=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/supplier-followup-20261104-r22-evidence.json'),'utf8'));
+assert.equal(r36.round,36);assert.equal(r36.new_invoice_evidence.site_explicit_no_china_vat_invoice,true);
+assert.equal(r36.new_invoice_evidence.total_plus_invoice_included_cny,null);
+assert.equal(r36.phone_verification.success_tests,0);assert.equal(r36.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

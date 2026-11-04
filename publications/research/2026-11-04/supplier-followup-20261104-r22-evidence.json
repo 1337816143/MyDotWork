@@ -1,0 +1,180 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 36,
+  "date": "2026-11-04",
+  "observed_on": "2026-11-04",
+  "site_version": "1.9.44",
+  "scope": "ChongPay公司/店铺关系与票据资格专项：首次读取主站明确的国内增值税发票不支持及第三方店铺办理边界；旧SKU价格只作同页复读，不刷新历史价。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "merchant": "ChongPay",
+  "new_invoice_evidence": {
+    "site_explicit_no_china_vat_invoice": true,
+    "site_pdf_invoice_is_chinese_vat": false,
+    "site_no_vat_claim_url": "https://chongpay.com/",
+    "help_does_not_offer_self_serve_invoice": true,
+    "merchant_store_may_offer_other_documents_unknown": true,
+    "verified_actual_vat_invoice": false,
+    "vat_invoice_issuer": null,
+    "receipt_issuer": null,
+    "actual_payee": null,
+    "invoice_fee_cny": null,
+    "payment_fee_cny": null,
+    "total_plus_invoice_included_cny": null
+  },
+  "price_context_not_price_change": [
+    {
+      "sku": "ChatGPT Plus 充值（菲律宾渠道）",
+      "display_cny": 150,
+      "unit": "单件",
+      "renewal_condition": "到期才能充",
+      "page_list_self_updated": "2026-10-22",
+      "new_price_change_proven": false
+    },
+    {
+      "sku": "ChatGPT Plus 充值（iOS 礼品卡）",
+      "display_cny": 150,
+      "unit": "单件",
+      "renewal_condition": "商称在期也可充值；是否叠加未知",
+      "page_list_self_updated": "2026-10-22",
+      "new_price_change_proven": false
+    },
+    {
+      "sku": "关于页面Plus月卡",
+      "display_cny": 189,
+      "unit": "月",
+      "relation_to_channel_skus_proven": false,
+      "new_price_change_proven": false
+    }
+  ],
+  "shop": {
+    "url": "https://wzyp.cn/shop/FDDQ3HVD",
+    "linked_from_merchant": true,
+    "observed_on": "2026-11-04",
+    "read_status": "blocked_by_website_protection",
+    "order_tested": false,
+    "seller_entity_verified": false,
+    "stock_verified": false
+  },
+  "session_delivery": {
+    "ordinary_chatgpt_recharge_token_required_merchant_terms": true,
+    "access_to_logged_in_session_prerequisite": true,
+    "token_delete_after_delivery_claim_not_audit": true,
+    "first_web_phone_login_block_solved": false,
+    "real_fulfillment_tests": 0
+  },
+  "refund": {
+    "merchant_claim_failed_order_full_refund": true,
+    "merchant_claim_platform_fault_prorata": true,
+    "openai_policy_ban_excluded_by_terms": true,
+    "store_order_terms_override_needed": true,
+    "verified_refunds": 0
+  },
+  "phone_verification": {
+    "old_known_codex_offer_cny": 20,
+    "old_known_duration_days": 25,
+    "price_previous_observation": "2026-11-03",
+    "price_changed_proven": false,
+    "web_login_verified": null,
+    "codex_verified": null,
+    "first_api_key_verified": null,
+    "number_dedicated": null,
+    "repeat_sms_count": null,
+    "failed_verification_refund_cny": null,
+    "automatic_phone_binding_proven": false,
+    "success_tests": 0
+  },
+  "upstream": {
+    "wholesale_unit_price_cny": null,
+    "minimum_wholesale_quantity": null,
+    "upfront_agent_fee_cny": null,
+    "operating_entity": null,
+    "actual_payee": null,
+    "tax_invoice_issuer": null,
+    "authorized_resale_contract_verified": false,
+    "business_fulfillment_verified": false,
+    "qualified": false
+  },
+  "sources": [
+    {
+      "id": "R36-1",
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": "2026-10-22",
+      "evidence_class": "main_product_listing_and_explicit_no_china_vat",
+      "finding": "主页展示Plus菲律宾/iOS各¥150（价表自标2026-10-22），明确PDF商业凭证≠中国VAT，且当前不支持国内普票/专票；购买跳转外部店铺。"
+    },
+    {
+      "id": "R36-2",
+      "url": "https://chongpay.com/help/create-invoice",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": null,
+      "evidence_class": "merchant_invoice_process",
+      "finding": "帮助称主站无订单/自助开票功能，须到实际购买店铺确认Invoice或其他付款凭证、开具主体及币种。"
+    },
+    {
+      "id": "R36-3",
+      "url": "https://chongpay.com/help/china-vat-invoice",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": null,
+      "evidence_class": "merchant_vat_faq_no_commitment",
+      "finding": "帮助只指出PDF Invoice≠中国VAT，若报销须付款前向店铺确认凭证类型、主体及抬头；不构成可出VAT证明。"
+    },
+    {
+      "id": "R36-4",
+      "url": "https://chongpay.com/about",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": null,
+      "evidence_class": "legacy_about_price_conflict",
+      "finding": "关于页面列Plus月卡¥189，与主站按渠道列¥150并存；未证同SKU，不能断言调价。"
+    },
+    {
+      "id": "R36-5",
+      "url": "https://chongpay.com/terms",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": "2026-09-21",
+      "evidence_class": "merchant_terms_and_refunds",
+      "finding": "条款自标2026-09-21，明确需Session Token、可能违反OpenAI条款，失败退款和因平台原因掉订阅折算退款属商称，封禁免责。"
+    },
+    {
+      "id": "R36-6",
+      "url": "https://chongpay.com/help/after-sales-guarantee",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": null,
+      "evidence_class": "merchant_shop_contract_boundary",
+      "finding": "售后FAQ明确退款金额、条件和时限由购买时的店铺核验决定，未形成独立售后履约证明。"
+    }
+  ],
+  "other_attempts": [
+    {
+      "url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "observed_on": "2026-11-04",
+      "status": "website_waf_page_no_product_checkout_read",
+      "updated_price": false
+    }
+  ],
+  "qualification_totals": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_invoice_inclusive_under_170": 0,
+    "actual_purchases": 0,
+    "verified_tax_invoices": 0,
+    "phone_verification_success_tests": 0
+  },
+  "caveats": [
+    "本站明确不支持中国VAT是站点当前公开说法，但店铺是否另行提供未验证，不能代替店铺税票核验。",
+    "¥189关于页与¥150主站商品属于不同且未对齐SKU的公开口径，不可宣布降价。",
+    "¥20/25天Codex验证属于既有2026-11-03观察，没有新价格。",
+    "没有付费、提交凭据、向商家发讯、进行短信验证或测试付款退款；历史126报价与r1–r35保持原字节。"
+  ]
+}
