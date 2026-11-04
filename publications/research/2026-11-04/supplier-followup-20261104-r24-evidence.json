@@ -1,0 +1,151 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 38,
+  "date": "2026-11-04",
+  "observed_at_utc": "2026-11-04T15:37:45.894Z",
+  "site_version": "1.9.46",
+  "scope": "既有引路鲸月付Plus双11折扣截止日和互斥优惠条件的新证据；条理集采售后替换全新账号与本人原号长期保持要求的冲突。两家的旧挂牌价不当作本轮涨跌。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_invoice_max_cny": 170
+  },
+  "changes": [
+    {
+      "merchant": "引路鲸／ChatGPT直充站（chatgqt.plus）",
+      "source_type": "merchant_announcements_and_exact_sku_page",
+      "discovery": "既有商家公告页面新增至本研究的结束期限与互斥优惠细节；2026-10-23为商家公告标注日而非本轮商家即时更新日。",
+      "announcement_posted_on": "2026-10-23",
+      "observed_on": "2026-11-04",
+      "sku_with_warranty": "ChatGPT Plus 代充（月付·有质保）",
+      "sku_without_warranty": "ChatGPT Plus 代充（月付·无质保）",
+      "posted_monthly_cny_with_30day_warranty": 135,
+      "posted_monthly_cny_without_warranty": 125,
+      "conditional_floor_cny_with_30day_warranty": 120,
+      "conditional_floor_cny_without_warranty": 110,
+      "conditional_floor_is_universal_checkout_price": false,
+      "discount_already_included_in_base_promo_price": true,
+      "offer_end_local": "2026-11-11T23:59:00+08:00",
+      "offer_timezone": "Asia/Shanghai",
+      "coupon_and_first_purchase_task_stack": false,
+      "first_purchase_task_requires_contacting_merchant": true,
+      "promo_official_openai": false,
+      "original_price_change_verified": false,
+      "agent_qualification_upfront_fee_cny_previous_observation": 3000,
+      "agent_qualification_fee_rechecked_this_run": false,
+      "exact_checkout_payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "real_all_required_fees_invoice_included_cny": null,
+      "merchant_legal_payee": null,
+      "invoice_issuer": null,
+      "authorized_upstream": null,
+      "real_one_unit_monthly_purchase_verified": false,
+      "actual_fulfillment_verified": false,
+      "qualified_wholesale": false,
+      "note": "基础价、优惠后价格及代理前置费为既有研究旧数据，本次新核准确截止时间与优惠互斥规则；该限时零售优惠不是免前置费批发进价，也没有任何实际出票/履约证据。"
+    },
+    {
+      "merchant": "条理集采（gongsi.one）",
+      "source_type": "merchant_sla_and_existing_quoted_price",
+      "discovery": "在既有72h售后摘要上增加明确原文：可免费重新充值补齐或更换全新官方账号。",
+      "observed_on": "2026-11-04",
+      "existing_sku": "ChatGPT Plus 单月1~4席",
+      "existing_quoted_cny_per_seat_per_month": 165,
+      "existing_claimed_china_vat_invoice": "6%中国增值税专票（商家宣称）",
+      "sla_trigger": "充值激活72小时内因服务商卡段异常遭遇厂商批量风控使账号失效",
+      "seller_remedy_options": [
+        "重新充值补齐",
+        "更换全新官方账号"
+      ],
+      "guarantee_keep_original_account_as_only_remedy": false,
+      "merchant_has_proven_original_account_continuity": false,
+      "actual_replacement_observed": false,
+      "real_vat_invoice_verified": false,
+      "real_one_seat_order_verified": false,
+      "payee_and_invoice_issuer": null,
+      "payment_fee_cny": null,
+      "real_all_required_fees_invoice_included_cny": null,
+      "supplier_authorization_verified": false,
+      "qualified_wholesale": false,
+      "note": "更换新号是商家公开SLA可能提供的选项，不证明已实际换号，也不证明最初无法充值本人原号；但若用户要求任何售后都保留原账号，公开条款未满足这一保证。¥165旧价未变，样例合同、发票主体与实际履约未证。"
+    }
+  ],
+  "phone_verification": {
+    "new_independent_service_verified": false,
+    "first_chatgpt_web_login_test": null,
+    "codex_test": null,
+    "first_api_key_test": null,
+    "number_type": null,
+    "number_ownership_days": null,
+    "repeated_sms": null,
+    "failed_sms_refund_cny": null,
+    "session_required_for_unverified_service": null,
+    "automatic_phone_binding_verified": false,
+    "tests_done": 0,
+    "notes": "该轮无短信接码服务的新可读有效SKU，普通Plus代充不等于网页首次登录、Codex或API验证成功。"
+  },
+  "sources": [
+    {
+      "id": "R38-1",
+      "url": "https://chatgqt.plus/announcement",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": "2026-10-23",
+      "read_status": "success_read",
+      "evidence_class": "merchant_promotion_expiry_and_conditions",
+      "finding": "双11活动至2026-11-11 23:59北京时间；有保¥135/低至¥120、无保¥125/低至¥110；优惠码/首单任务二选一不叠加；并非OpenAI官方促销。"
+    },
+    {
+      "id": "R38-2",
+      "url": "https://chatgqt.plus/products/chatgpt-plus",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_exact_monthly_sku_display",
+      "finding": "本人账号Plus月付有保挂牌¥135（30天质保）和无保¥125（无订阅质保）属于不同商品规格，不能以¥110作为所有人现付价格。"
+    },
+    {
+      "id": "R38-3",
+      "url": "https://gongsi.one/docs/sla/",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_claimed_refund_and_replace_terms",
+      "finding": "72h内因服务商卡段风控失效，商家承诺免费补充充值或提供全新账号；不是仅对原号修复的售后承诺，也未实际测试。"
+    },
+    {
+      "id": "R38-4",
+      "url": "https://gongsi.one/docs/pricing/",
+      "observed_on": "2026-11-04",
+      "merchant_page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "prior_price_recheck_not_price_change",
+      "finding": "既有Plus单月1～4席¥165、商称6%增值税专票；仍未取得含全部手续费的本单实付/合法出票主体。"
+    }
+  ],
+  "rechecks_without_material_change": [
+    {
+      "merchant": "引路鲸",
+      "recorded_prices_cny": [
+        135,
+        125
+      ],
+      "price_change_proven": false
+    },
+    {
+      "merchant": "条理集采",
+      "recorded_price_cny": 165,
+      "price_change_proven": false
+    }
+  ],
+  "qualification_totals": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_all_fees_and_china_vat_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r37_original_reports_preserved": true
+}

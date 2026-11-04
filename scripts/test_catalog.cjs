@@ -57,4 +57,13 @@ const r37=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/su
 assert.equal(r37.round,37);assert.equal(r37.new_candidates[0].real_paid_invoice_included_cny,null);
 assert.equal(r37.new_candidates[1].payment_subtotal_preview_cny,149.78);
 assert.equal(r37.qualification_totals.new_verified_plus_wholesale_upstreams,0);
+const r38cat=d.records.find(r=>r.id==='gpt-source-followup-r38-20261104');
+const r38data=d.records.find(r=>r.id==='gpt-source-followup-r38-20261104-evidence');
+assert(r38cat&&r38data&&r38cat.url.endsWith('supplier-followup-20261104-r24.html'));
+const r38=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/supplier-followup-20261104-r24-evidence.json'),'utf8'));
+assert.equal(r38.round,38);assert.equal(r38.changes[0].coupon_and_first_purchase_task_stack,false);
+assert.equal(r38.changes[0].offer_end_local,'2026-11-11T23:59:00+08:00');
+assert(r38.changes[1].seller_remedy_options.includes('更换全新官方账号'));
+assert.equal(r38.changes[0].real_all_required_fees_invoice_included_cny,null);
+assert.equal(r38.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
