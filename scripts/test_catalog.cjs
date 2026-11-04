@@ -21,7 +21,7 @@ assert(C.filter(d.records,{sort:'latest'},d.tasks).slice(-sites.length).every(r=
 assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=>r.updatedAt===null));
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
-assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r7-evidence-20261103','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
+assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r7-evidence-20261103','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
 assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['business-validation-20261004','task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 const w32=d.records.find(r=>r.id==='gpt-source-followup-r32-20261104');
@@ -50,4 +50,11 @@ const r36=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/su
 assert.equal(r36.round,36);assert.equal(r36.new_invoice_evidence.site_explicit_no_china_vat_invoice,true);
 assert.equal(r36.new_invoice_evidence.total_plus_invoice_included_cny,null);
 assert.equal(r36.phone_verification.success_tests,0);assert.equal(r36.qualification_totals.new_verified_plus_wholesale_upstreams,0);
+const r37cat=d.records.find(r=>r.id==='gpt-source-followup-r37-20261104');
+const r37data=d.records.find(r=>r.id==='gpt-source-followup-r37-20261104-evidence');
+assert(r37cat&&r37data&&r37cat.url.endsWith('supplier-followup-20261104-r23.html'));
+const r37=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/supplier-followup-20261104-r23-evidence.json'),'utf8'));
+assert.equal(r37.round,37);assert.equal(r37.new_candidates[0].real_paid_invoice_included_cny,null);
+assert.equal(r37.new_candidates[1].payment_subtotal_preview_cny,149.78);
+assert.equal(r37.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

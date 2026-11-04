@@ -1,0 +1,251 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 37,
+  "date": "2026-11-04",
+  "observed_at_utc": "2026-11-04T14:30:35Z",
+  "site_version": "1.9.45",
+  "scope": "新增企业代采月付单席含税公开报价与零售平台推广政策；小久当前前台库存与2026-11-03旧页对照。所有报价均为商家网页声明，未形成真实采购证据。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_invoice_max_cny": 170
+  },
+  "new_candidates": [
+    {
+      "merchant": "条理集采（gongsi.one）",
+      "role": "企业对公代采购网站，未证真正批发上游",
+      "sku": "ChatGPT Plus（月付）1~4席价档",
+      "sku_url": "https://gongsi.one/docs/pricing/",
+      "display_cny_per_seat_per_month": 165,
+      "claimed_invoice_included": true,
+      "claimed_invoice": "6%中国增值税数电专票",
+      "months": 1,
+      "currency": "CNY",
+      "quantity_tier": "1~4",
+      "one_seat_sale_completed": false,
+      "one_seat_contract_accepted": null,
+      "quantity_tiers": [
+        {
+          "seats": "1~4",
+          "monthly_cny": 165
+        },
+        {
+          "seats": "5~19",
+          "monthly_cny": 155
+        },
+        {
+          "seats": "20+",
+          "monthly_cny": 145
+        }
+      ],
+      "seasonal_and_annual_prices_are_separate": true,
+      "merchant_claim_bank_transfer": true,
+      "bank_fee_cny": null,
+      "extra_contract_fee_cny": null,
+      "real_paid_invoice_included_cny": null,
+      "actual_invoice_verified": false,
+      "actual_payee": null,
+      "vat_invoice_issuer": null,
+      "registered_operating_company": null,
+      "company_legal_name_from_address_verified": false,
+      "contract_sample_url": "https://gongsi.one/docs/agreement/",
+      "merchant_claim_delivery_minutes": 30,
+      "merchant_claim_vat_invoice_workdays": 2,
+      "merchant_claim_72h_swap_and_prorata_refund": true,
+      "actual_refund_verified": false,
+      "previous_existing_account_topup_verified": null,
+      "active_subscription_renewal_verified": null,
+      "session_requirement": null,
+      "agent_upfront_fee_cny": null,
+      "minimum_order_verified": null,
+      "bulk_tier_offered": true,
+      "wholesale_price_verified": null,
+      "official_openai_reseller_authorization_verified": false,
+      "openai_resale_relation_disclaimed_by_merchant": true,
+      "actual_fulfillment_verified": false,
+      "qualified_wholesale": false,
+      "warning": "公开含6%专票价不等于实际含全部费用成交价；真实税票及出票主体未验证；样板合同必须另有盖章确认，不能认定1席订单肯定被接受；网页明确自述与OpenAI没有代销关系。"
+    },
+    {
+      "merchant": "词元连接（token5555.com）",
+      "role": "第三方零售及一级推广分佣",
+      "sku": "Plus（官方20刀）",
+      "sku_url": "https://token5555.com/",
+      "qty_preview": 1,
+      "months_confirmed_in_current_exact_sku": null,
+      "product_price_preview_cny": 148,
+      "payment_fee_rate_claimed": 0.012,
+      "payment_fee_preview_cny": 1.78,
+      "payment_subtotal_preview_cny": 149.78,
+      "preview_cny_is_paid_total": false,
+      "invoice_type": null,
+      "invoice_fee_cny": null,
+      "real_paid_invoice_included_cny": null,
+      "actual_payee": null,
+      "vat_invoice_issuer": null,
+      "session_requirement": null,
+      "own_account_renewal_verified": null,
+      "product_delivery_claim": "购买后自动交付卡密",
+      "actual_delivery_verified": false,
+      "merchant_disclaims_openai_authorization": true,
+      "partner_program_url": "https://token5555.com/partner-register.html",
+      "partner_fee_claimed": 0,
+      "partner_type": "一级推荐佣金；非批发采购",
+      "partner_commission_tiers": [
+        {
+          "cumulative_cny": 0,
+          "rate": 0.1
+        },
+        {
+          "cumulative_cny": 1000,
+          "rate": 0.15
+        },
+        {
+          "cumulative_cny": 5000,
+          "rate": 0.2
+        },
+        {
+          "cumulative_cny": 10000,
+          "rate": 0.25
+        }
+      ],
+      "real_wholesale_price_cny": null,
+      "official_wholesale_authorization_verified": false,
+      "qualified_wholesale": false,
+      "warning": "¥149.78是网站静态结算预览，不是实际下单付款；消费者填的手机号码仅用于订单查询与售后，不是OpenAI号码验证。"
+    }
+  ],
+  "existing_candidate_inventory_observation": {
+    "merchant": "小久",
+    "sku": "〖官方充值〗Chat gpt plus 菲区卡冲cdk（质保30天）",
+    "sku_url": "https://98-xj.com/products/gpt%20plus",
+    "previous_visible_status": "暂时缺货",
+    "previous_observed_on": "2026-11-03",
+    "current_visible_status": "现货 · 自动发货",
+    "current_observed_on": "2026-11-04",
+    "previous_price_cny": 110,
+    "current_display_cny": 110,
+    "price_change_proven": false,
+    "external_shop_inventory_verified": false,
+    "actual_checkout_inventory_verified": false,
+    "actual_plus_fulfillment_verified": false,
+    "invoice_fee_cny": null,
+    "payment_fee_cny": null,
+    "real_paid_invoice_included_cny": null,
+    "conclusion": "只是商家前台库存标签变化，未证明何时变化或外部卡网真实有货、实际交付成功。"
+  },
+  "phone_verification": {
+    "new_independent_service_added": false,
+    "chatgpt_web_first_login_success": null,
+    "codex_app_success": null,
+    "first_api_key_success": null,
+    "number_type": null,
+    "number_ownership_days": null,
+    "repeated_sms": null,
+    "failed_sms_refund_cny": null,
+    "required_session_for_new_service": null,
+    "automatic_phone_binding_proven": false,
+    "real_tests": 0,
+    "notes": "企业采购Plus、商品下单联系号码及零售卡密均不能当作独立OpenAI接码；旧GetVIP/wind89/GETGPT/PAYPRM/ChongPay信息未刷新。"
+  },
+  "rechecks_without_material_change": [
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-04",
+      "reading": "页面仍显示自助充值维护提示，不证明永久停服"
+    },
+    {
+      "url": "https://getgpt.pro/",
+      "observed_on": "2026-11-04",
+      "reading": "既有Plus¥179单件不符合上限；没有可证新的税票或授权条件"
+    }
+  ],
+  "attempts_without_usable_body": [
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-04",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_on": "2026-11-04",
+      "price_refreshed": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "R37-1",
+      "url": "https://gongsi.one/docs/pricing/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_price_and_claimed_included_vat",
+      "finding": "Plus单月价1~4席¥165/席，5~19¥155、20+¥145，商称均含6%中国增值税专用发票；季/年须分开。"
+    },
+    {
+      "id": "R37-2",
+      "url": "https://gongsi.one/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_marketing_not_verified_operator",
+      "finding": "商称支持原个人账号、海外商业卡、工行或招行对公转账、数电专票及展示样票；页尾自述不是OpenAI官方股权或代销合作方。"
+    },
+    {
+      "id": "R37-3",
+      "url": "https://gongsi.one/docs/agreement/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "unsigned_merchant_contract_template",
+      "finding": "称每笔订单以双方盖章确认书为准；全款人民币对公转账，2工作日内开具等额6%专票；不是实际签约或验票。"
+    },
+    {
+      "id": "R37-4",
+      "url": "https://gongsi.one/docs/sla/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_service_refund_claim",
+      "finding": "商称首单到账30分钟内激活、异常72小时换号、按剩余有效天数退款；均未实测。"
+    },
+    {
+      "id": "R37-5",
+      "url": "https://token5555.com/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_preview_not_actual_checkout",
+      "finding": "Plus（官方20刀）界面1件¥148+1.2%手续费¥1.78=¥149.78预览，手机号为订单联系方式；商家否认OpenAI授权。"
+    },
+    {
+      "id": "R37-6",
+      "url": "https://token5555.com/partner-register.html",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_referral_not_wholesale",
+      "finding": "免费注册一级推广伙伴，累计销售0/1000/5000/10000元的佣金比例10/15/20/25%，不是批发价或供货权。"
+    },
+    {
+      "id": "R37-7",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_frontend_inventory_display",
+      "finding": "菲律宾Plus CDK挂牌仍¥110，商品页写现货自动发货，与2026-11-03旧纪录暂时缺货对照，实际下单未试。"
+    }
+  ],
+  "qualification_totals": {
+    "new_supplier_leads": 2,
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_all_fees_and_china_vat_invoice_under_170": 0,
+    "actual_plus_orders": 0,
+    "actual_tax_invoices_verified": 0,
+    "actual_sms_verification_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r36_original_reports_preserved": true,
+  "caveats": [
+    "新报价为2026-11-04观察到的网页文本，不证明商家当天发布或降价。",
+    "不按宣传词‘官方’认定取得OpenAI转售授权，含票¥165需独立验证营业/收款/出票主体、单件合同和全部手续费。",
+    "¥149.78没有含票证明且准确权益周期、订单付款与Session前提尚未确认。",
+    "没有真实付费、提交账号凭据、对外联系、取得票据、测试验证码或售后。"
+  ]
+}
