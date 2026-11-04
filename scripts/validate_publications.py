@@ -135,9 +135,9 @@ def validate_publications():
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
     assert latest['version'] == '1.42'
-    assert latest['path'] == 'research/2026-11-05/supplier-followup-20261105-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-05/supplier-followup-20261105-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-05/supplier-followup-20261105-r2.html'
+    assert latest['path'] == 'research/2026-11-05/supplier-followup-20261105-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-05/supplier-followup-20261105-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-05/supplier-followup-20261105-r3.html'
     assert latest['path'] == 'research/2026-11-05/supplier-followup-20261105-r4.html' and latest['dataPath'] == 'research/2026-11-05/supplier-followup-20261105-r4-evidence.json'
     assert by_id['gpt-source-followup-r42-20261105']['url'] == '../research/2026-11-05/supplier-followup-20261105-r4.html'
     assert by_id['gpt-source-followup-r42-20261105-evidence']['url'] == '../research/2026-11-05/supplier-followup-20261105-r4-evidence.json'
