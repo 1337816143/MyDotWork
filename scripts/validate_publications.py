@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 95, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 97, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.31'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r17.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r17-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r16.html'
+    assert latest['version'] == '1.32'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r18.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r18-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r17.html'
+    # r32: public retail invoice components must not imply actual VAT invoice, guest eligibility or verified SMS success.
+    assert by_id['gpt-source-followup-r32-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r18.html'
+    assert by_id['gpt-source-followup-r32-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r18-evidence.json'
+    r32 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r18-evidence.json').read_bytes())
+    assert r32['round'] == 32 and len(r32['sources']) == 7
+    assert r32['candidates'][0]['public_plus_price_cny_per_month'] == 139.99
+    assert r32['candidates'][0]['merchant_public_e_invoice_addon_cny_per_unit'] == 10
+    assert r32['candidates'][0]['public_component_sum_cny'] == 149.99
+    assert r32['candidates'][0]['all_in_cny'] is None and r32['candidates'][0]['guest_invoice_eligible_verified'] is None
+    assert r32['candidates'][0]['qualified_wholesale'] is False and r32['candidates'][0]['actual_purchased'] is False
+    assert r32['independent_phone_verification']['claimed_60_day_price_cny'] == 20
+    assert r32['independent_phone_verification']['tested_success_count'] == 0
     # r31: mainland exclusion/enterprise MOQ and crypto quote must not be misclassified as invoiced wholesale.
     assert by_id['gpt-source-followup-r31-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r17.html'
     assert by_id['gpt-source-followup-r31-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r17-evidence.json'
