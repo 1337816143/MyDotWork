@@ -74,4 +74,13 @@ assert.equal(r39.round,39);assert.equal(r39.new_candidates[0].public_component_s
 assert.equal(r39.new_candidates[0].real_paid_invoice_included_cny,null);
 assert.equal(r39.official_phone_verification.voip_supported,false);
 assert.equal(r39.qualification_totals.new_verified_plus_wholesale_upstreams,0);
+const r40cat=d.records.find(r=>r.id==='gpt-source-followup-r40-20261105');
+const r40data=d.records.find(r=>r.id==='gpt-source-followup-r40-20261105-evidence');
+assert(r40cat&&r40data&&r40cat.url.endsWith('supplier-followup-20261105-r2.html'));
+const r40=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r2-evidence.json'),'utf8'));
+assert.equal(r40.round,40);assert.equal(r40.independent_phone_services[0].display_price_cny_per_one_time,15);
+assert.equal(r40.independent_phone_services[0].scanned_payment_refund_to_original_payment_method_claim,false);
+assert.equal(r40.independent_phone_services[2].real_payable_sku_confirmed,false);
+assert.equal(r40.independent_phone_services[2].number_held_for_30_or_60_days,false);
+assert.equal(r40.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
