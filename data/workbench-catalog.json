@@ -1134,6 +1134,28 @@
       "summary": "2处商家URL实读；前台维护提示不等于后端断供，Session需先登录，票据与支付费用null，历史未重核来源单列。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r36-20261104",
+      "title": "GPT源头 · ChongPay开票限制、第三方店铺及Session退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r22.html",
+      "updatedAt": "2026-11-04T13:19:43.444Z",
+      "summary": "实读ChongPay 6条原始网页：主页明示目前不支持中国增值税普票/专票，PDF Invoice非VAT；购买店铺另核凭证；¥150渠道价与¥189关于页非可比SKU，合格批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r36-20261104-evidence",
+      "title": "ChongPay开票主体、商称价格差异与外部店铺待核 · r36结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r22-evidence.json",
+      "updatedAt": "2026-11-04T13:19:43.444Z",
+      "summary": "6条商家原页实读，1条店铺受WAF阻挡；票据/收款/支付全费null，25天接码为11月3日旧价，不冒充新报价，无真实成交与税票。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
