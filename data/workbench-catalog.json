@@ -848,6 +848,28 @@
       "summary": "6条当日直读商家源：星桥165+最低票费50，明月准确pid28结算页加载中；全部未知项null，真正批发/实付税票/接码实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r23-20261104",
+      "title": "GPT源头 · Supakook运营主体、自有账号Session与无后续质保",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r9.html",
+      "updatedAt": "2026-11-04T00:36:46Z",
+      "summary": "Supakook公开Plus¥125仅目录价，单月周期/全费未知；商称aibibu LLC但未查到注册记录，原号用Session且普通代充无后续质保；API中转非官方API。未核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r23-20261104-evidence",
+      "title": "Supakook原号Plus、主体自述、售后、API范围与OpenAI退款 · 9条原始页证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r9-evidence.json",
+      "updatedAt": "2026-11-04T00:36:46Z",
+      "summary": "7条商家原页+OpenAI退款官方+Wyoming登记检索入口；票税/结算/批发/官方查册为null或未完成，采购/发票/短信测试0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

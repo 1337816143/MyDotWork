@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 77, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 79, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.22'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r7.html'
+    assert latest['version'] == '1.23'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r8.html'
+    # r23 is the newest release; retain independent frozen r22 evidence assertions below.
+    assert by_id['gpt-source-followup-r23-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r9.html'
+    assert by_id['gpt-source-followup-r23-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r9-evidence.json'
+    r23 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r9-evidence.json').read_bytes())
+    assert r23['round'] == 23 and len(r23['sources']) == 9
+    assert r23['candidates'][0]['base_listed_price_cny'] == 125
+    assert r23['candidates'][0]['period_days'] is None
+    assert r23['candidates'][0]['invoice_fee_cny'] is None and r23['candidates'][0]['final_paid_total_with_invoice_cny'] is None
+    assert r23['candidates'][0]['post_delivery_warranty_for_normal_topup'] is False
+    assert r23['candidates'][0]['entity_registration_independently_verified'] is False
+    assert r23['verified_plus_wholesale_count'] == r23['real_invoice_verified_count'] == r23['phone_verification_success_count'] == 0
+    assert r23['historical_126_quote_records_preserved'] is True and r23['old_prices_refreshed'] == 0
     assert by_id['gpt-source-followup-r22-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r8.html'
     assert by_id['gpt-source-followup-r22-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r8-evidence.json'
     r22 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r8-evidence.json').read_bytes())
