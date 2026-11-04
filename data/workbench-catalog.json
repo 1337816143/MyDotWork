@@ -870,6 +870,28 @@
       "summary": "7条商家原页+OpenAI退款官方+Wyoming登记检索入口；票税/结算/批发/官方查册为null或未完成，采购/发票/短信测试0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r24-20261104",
+      "title": "GPT源头 · Tangguo企业可开票Plus月卡¥179/¥189与零售起价不可混比",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r10.html",
+      "updatedAt": "2026-11-04T01:07:00.014Z",
+      "summary": "企业可开票准确月卡菲区¥179、iOS¥189，均高于¥170；官网¥128起非同一可开票SKU。CDK发货非充值完成、账款和税票主体未核，非已核批发源头。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r24-20261104-evidence",
+      "title": "Tangguo企业SKU、票据资格与Hero-SMS接码售后 · r24数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r10-evidence.json",
+      "updatedAt": "2026-11-04T01:07:00.014Z",
+      "summary": "7条原始商家页面，准确¥179/¥189单件月卡、官网¥128起差异；Hero-SMS不收码退款退站内余额，OpenAI准确号码价格和期限null，真实实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

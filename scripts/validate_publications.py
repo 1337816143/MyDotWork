@@ -131,14 +131,30 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 79, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 81, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.23'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r9.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r9-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r8.html'
-    # r23 is the newest release; retain independent frozen r22 evidence assertions below.
+    assert latest['version'] == '1.24'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r9.html'
+    # r24 contains two distinct enterprise-invoice SKUs, not the homepage family starting price.
+    assert by_id['gpt-source-followup-r24-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r10.html'
+    assert by_id['gpt-source-followup-r24-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r10-evidence.json'
+    r24 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r10-evidence.json').read_bytes())
+    assert r24['round'] == 24 and len(r24['sources']) == 7
+    assert [x['price_per_unit_cny'] for x in r24['candidates']] == [179, 189]
+    assert [x['known_base_price_exceeds_cap_cny'] for x in r24['candidates']] == [9, 19]
+    assert all(x['period_months'] == 1 and x['min_quantity'] == 1 for x in r24['candidates'])
+    assert all(x['final_paid_total_with_invoice_cny'] is None and x['payment_fee_cny'] is None for x in r24['candidates'])
+    assert r24['pricing_differentiation']['homepage_starting_price_is_enterprise_invoicable_sku'] is False
+    assert r24['independent_phone_verification']['specific_openai_number_price_cny'] is None
+    assert r24['independent_phone_verification']['number_duration_minutes'] is None
+    assert r24['independent_phone_verification']['chatgpt_web_applicability'] is None
+    assert r24['verified_plus_wholesale_count'] == r24['real_invoice_verified_count'] == r24['phone_verification_success_count'] == 0
+    assert r24['historical_126_quote_records_preserved'] is True and r24['old_prices_refreshed'] == 0
+    # r23 remains immutable and independently tested below.
+
     assert by_id['gpt-source-followup-r23-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r9.html'
     assert by_id['gpt-source-followup-r23-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r9-evidence.json'
     r23 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r9-evidence.json').read_bytes())
