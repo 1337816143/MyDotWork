@@ -1200,6 +1200,28 @@
       "summary": "4条直接读取原始URL；2026-10-23公告与2026-11-04观察时间分开，既有SKU价格不作调价；未知含票全价null，无真实出票/订单/手机号验证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r39-20261105",
+      "title": "GPT源头 · Plus普票分项与官方手机号验证边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105.html",
+      "updatedAt": "2026-11-04T16:31:57.576Z",
+      "summary": "新候选UpPlusPro本人原号Plus¥143/月+商称普票¥10，¥153仅分项非实付；OpenAI官方区分Codex桌面与首次API Key验证及排除VoIP；批发验证0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r39-20261105-evidence",
+      "title": "UpPlusPro含票分项与官方号码适用 · r39结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-evidence.json",
+      "updatedAt": "2026-11-04T16:31:57.576Z",
+      "summary": "实读商家原页、OpenAI官方FAQ和旧候选；¥153非实付，支付费与出票主体null；GETGPT/wind89无法读完整，不刷新价格；SMS实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
