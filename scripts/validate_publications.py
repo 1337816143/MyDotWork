@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 81, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 83, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.24'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r9.html'
+    assert latest['version'] == '1.25'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r10.html'
+    # r25 is a new observation; keep r24 and all earlier frozen evidence below.
+    assert by_id['gpt-source-followup-r25-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r11.html'
+    assert by_id['gpt-source-followup-r25-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r11-evidence.json'
+    r25 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r11-evidence.json').read_bytes())
+    assert r25['round'] == 25 and len(r25['sources']) == 5
+    assert r25['offer']['sku_parameter'] == 27 and r25['offer']['observed_display_price_cny'] == 139.99
+    assert r25['offer']['member_login_required_for_e_invoice_claimed'] is True
+    assert r25['offer']['logged_in_at_order_time_required_for_invoice_claimed'] is True
+    assert r25['offer']['invoice_fee_cny'] is None and r25['offer']['final_paid_total_with_invoice_cny'] is None
+    assert r25['offer']['actual_tax_invoice_verified'] is False and r25['offer']['warranty_excludes_platform_phone_verification_fee_claimed'] is True
+    assert r25['independent_phone_verification']['sms_price_cny'] is None
+    assert r25['verified_plus_wholesale_count'] == r25['actual_purchase_count'] == r25['real_invoice_verified_count'] == r25['phone_verification_success_count'] == 0
+    assert r25['historical_126_quote_records_preserved'] is True and r25['old_prices_refreshed'] == 0
     # r24 contains two distinct enterprise-invoice SKUs, not the homepage family starting price.
     assert by_id['gpt-source-followup-r24-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r10.html'
     assert by_id['gpt-source-followup-r24-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r10-evidence.json'
