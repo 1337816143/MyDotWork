@@ -980,6 +980,28 @@
       "summary": "8条直读原始商家URL、日期与价差；单件含票实付、批发与手机号验证证据不足均如实记录null，原126报价与全部旧报告不变。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r29-20261104",
+      "title": "GPT源头 · chong-zhen大陆接单限制与HuolalaAI ¥168的会话前提",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r15.html",
+      "updatedAt": "2026-11-04T06:45:00Z",
+      "summary": "chong-zhen Plus约US$22.14/月、开票+$2.10但拒绝实际位于大陆订单；HuolalaAI月卡¥168需先登录获取Session，票费/主体/授权和实付未核；批发源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r29-20261104-evidence",
+      "title": "GPT上游 JSON · 地域资格/发票与Session安全边界 r29证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r15-evidence.json",
+      "updatedAt": "2026-11-04T06:45:00Z",
+      "summary": "6条当轮可读公开商家原始URL；USD参考价不等于人民币含票结算、税票费用null、无交易/OTP成功实测；旧126报价不刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
