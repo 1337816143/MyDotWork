@@ -1,0 +1,180 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 40,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-04T17:20:04Z",
+  "site_version": "1.9.48",
+  "scope": "贝果Codex单次SMS商品、2026-11-02商家条款退款和开票冲突；Boaile接码演练状态及兑换期限；CallAI与OpenAI官方有界重读。未核Plus价格变化。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_invoice_max_cny": 170
+  },
+  "independent_phone_services": [
+    {
+      "merchant": "贝果科技 Bigolab",
+      "sku": "美区实体卡单次Codex SMS（实体卡仅商家声明）",
+      "source": "https://bigolab.com/zh-hk/products/10",
+      "observed_on": "2026-11-05",
+      "currency": "CNY",
+      "display_price_cny_per_one_time": 15,
+      "claimed_invoice_fee_rate": 0.06,
+      "computed_display_plus_invoice_fee_cny": 15.9,
+      "payment_processing_fee_cny": null,
+      "real_paid_invoice_included_cny": null,
+      "temporary_number": true,
+      "long_term_number_ownership_verified": false,
+      "later_sms_retention_guaranteed": false,
+      "refund_if_no_sms_to_nonwithdrawable_store_balance_claim": true,
+      "refund_to_original_payment_method_claim": false,
+      "actual_refund_tested": false,
+      "invoice_self_service_conflict": true,
+      "actual_invoice_verified": false,
+      "merchant_legal_entity_claim": "益阳市赫山区必高科技有限公司",
+      "legal_entity_registration_verified": false,
+      "invoice_issuer_legal_entity_verified": false,
+      "chatgpt_web_tested_success": null,
+      "codex_tested_success": null,
+      "first_api_key_tested_success": null
+    },
+    {
+      "merchant": "贝果科技 Bigolab",
+      "sku": "随机地区单次Codex SMS",
+      "source": "https://bigolab.com/zh-hk/products/28",
+      "observed_on": "2026-11-05",
+      "currency": "CNY",
+      "display_price_cny_per_one_time": 8,
+      "claimed_invoice_fee_rate": 0.06,
+      "computed_display_plus_invoice_fee_cny": 8.48,
+      "payment_processing_fee_cny": null,
+      "real_paid_invoice_included_cny": null,
+      "temporary_number": true,
+      "long_term_number_ownership_verified": false,
+      "later_sms_retention_guaranteed": false,
+      "refund_if_no_sms_to_nonwithdrawable_store_balance_claim": true,
+      "refund_to_original_payment_method_claim": false,
+      "actual_refund_tested": false,
+      "invoice_self_service_conflict": true,
+      "actual_invoice_verified": false,
+      "chatgpt_web_tested_success": null,
+      "codex_tested_success": null,
+      "first_api_key_tested_success": null
+    },
+    {
+      "merchant": "Boaile Tools",
+      "source": "https://tools.boaile.com/sms/chatgpt/",
+      "observed_on": "2026-11-05",
+      "sku": "美区实体号/随机实体号单次接码展示价",
+      "currency": "CNY",
+      "display_us_one_time_cny": 4.99,
+      "display_random_one_time_cny": 2.99,
+      "stock_state_claim": "正在核对库存与报价",
+      "visible_payment_environment": "此环境不收款，也不会采购真实号码",
+      "real_payable_sku_confirmed": false,
+      "actual_checkout_completed": false,
+      "redemption_code_valid_days_claim": 30,
+      "redemption_code_grace_total_days_claim": 60,
+      "number_held_for_30_or_60_days": false,
+      "us_daily_replacements_claim": 5,
+      "random_daily_replacements_claim": 10,
+      "random_replacement_requires_switching_country_claim": true,
+      "first_sms_consumes_redemption_claim": true,
+      "payment_processing_fee_cny": null,
+      "vat_invoice_fee_cny": null,
+      "real_paid_invoice_included_cny": null,
+      "refund_if_failed": null,
+      "actual_sms_tested": false,
+      "chatgpt_web_tested_success": null,
+      "codex_tested_success": null,
+      "first_api_key_tested_success": null
+    }
+  ],
+  "bounded_rechecks": [
+    {
+      "merchant": "CallAI小铺",
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "observed_on": "2026-11-05",
+      "old_display_cny_one_time": 3,
+      "new_price_change_proven": false,
+      "requires_sensitive_account_credentials_or_otp_claim": true,
+      "actual_sms_tested": false
+    },
+    {
+      "merchant": "OpenAI官方手机号验证说明",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-05",
+      "new_policy_change_proven": false,
+      "chatgpt_general_phone_required": false,
+      "codex_desktop_may_require_phone": true,
+      "first_api_key_phone_required": true,
+      "voip_accepted": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "R40-1",
+      "url": "https://bigolab.com/zh-hk/products/10",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_product_claim",
+      "finding": "美区Codex一次性号码标价¥15，另+6%开票，商品页描述换号/未收码退款。"
+    },
+    {
+      "id": "R40-2",
+      "url": "https://bigolab.com/zh-hk/products/28",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_product_claim",
+      "finding": "随机地区Codex单次¥8，临时号，不含税。"
+    },
+    {
+      "id": "R40-3",
+      "url": "https://bigolab.com/zh-hk/terms",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-11-02 (merchant-labelled)",
+      "read_status": "success_read",
+      "evidence_class": "merchant_contract_terms",
+      "finding": "未收短信款退至不可提现站内余额而非原路退；短信成功后一般不退；短信商品不支持自助开票，须人工客服，与商品页可勾选开票描述冲突。"
+    },
+    {
+      "id": "R40-4",
+      "url": "https://tools.boaile.com/sms/chatgpt/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_demo_environment",
+      "finding": "¥4.99美区和¥2.99随机为展示价，同页明确演练不收款、不采购号码且正在核对库存报价；30天和60天为兑换码期限，不是号码保留。"
+    },
+    {
+      "id": "R40-5",
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read_bounded_recheck",
+      "evidence_class": "prior_price_no_change_proven",
+      "finding": "既有¥3/次，第三方账号密码或邮箱OTP输入风险，无新增实付证明。"
+    },
+    {
+      "id": "R40-6",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read_bounded_recheck",
+      "evidence_class": "official_platform_scope",
+      "finding": "普通ChatGPT一般无需手机；Codex桌面可能要求；首次API Key需要；VoIP不适用。未证新规变更。"
+    }
+  ],
+  "qualification_totals": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_all_fees_plus_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r39_original_reports_preserved": true
+}
