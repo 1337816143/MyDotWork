@@ -1,0 +1,171 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 23,
+  "date": "2026-11-04",
+  "site_version": "1.9.31",
+  "prepared_at_utc": "2026-11-04T00:36:46Z",
+  "scope": "新增Supakook商家公开运营主体自述、SKU含义、原号Session、普通充值无后续质保、API中转与官方API差异，补充OpenAI官方退款责任边界。未证实真正批发或含票采购。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_upfront_agent_fee": true,
+    "no_mandatory_prepaid_balance": true,
+    "plus_all_in_invoice_cap_cny": 170
+  },
+  "candidates": [
+    {
+      "name": "Supakook",
+      "source_url": "https://www.supakook.com/products/",
+      "seller_type": "independent_retail_subscription_candidate",
+      "accurate_sku_display": "ChatGPT 代充 / 成品账号 — Plus · ¥125",
+      "sku_unique_id": null,
+      "currency": "CNY",
+      "base_listed_price_cny": 125,
+      "price_display_unit": "Plus · ¥125（目录未给周期单位）",
+      "quantity_confirmed_single": null,
+      "period_days": null,
+      "one_month_confirmed": false,
+      "own_account_supported_claim": true,
+      "session_required_claim": true,
+      "prior_chatgpt_login_needed_for_session": true,
+      "existing_paid_plus_early_renewal_support": null,
+      "operating_legal_entity_claim": "aibibu LLC, Wyoming, USA; Entity ID 2026-001983176（商家自述）",
+      "entity_registration_independently_verified": false,
+      "payee_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "invoice_available_for_single_unit": null,
+      "invoice_type": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "fx_fee_cny": null,
+      "final_paid_total_with_invoice_cny": null,
+      "agent_entry_fee_cny": null,
+      "required_prepaid_balance_cny": null,
+      "wholesale_sku_price_cny": null,
+      "verified_upstream_or_authorization": false,
+      "operator_claims_official_openai_affiliation": false,
+      "post_delivery_warranty_for_normal_topup": false,
+      "refund_terms": "依商品/订单附带协议，无统一退款比率、时限或SLA；未读取准确Plus订单协议",
+      "merchant_api_different_sku": true,
+      "merchant_api_delivery_description": "商称自购会员账号CPA反向代理，ChatGPT API中转仅供Codex；非OpenAI API key额度",
+      "verified_under_cap": false,
+      "actual_purchase_tested": false,
+      "actual_invoice_verified": false,
+      "actual_delivery_tested": false
+    }
+  ],
+  "comparison": {
+    "new_merchant_sku_vs_r22": "Supakook ¥125仅品牌产品页标签，不含周期/税票；不能与r22星桥¥165/月含票分项¥215按相同口径直接排序。",
+    "operator_registry_search_performed": false,
+    "seller_own_account_topup_vs_managed_account_warranty_is_same_sku": false,
+    "seller_api_relay_is_official_openai_api": false
+  },
+  "phone_verification": {
+    "independent_phone_sku_found": false,
+    "chatgpt_web_verification_success": null,
+    "codex_verification_success": null,
+    "first_openai_api_key_verification_success": null,
+    "number_control_period_days": null,
+    "sms_failure_refund": null,
+    "session_requires_existing_logged_in_account": true,
+    "apple_in_app_purchase_automatically_binds_phone": false,
+    "any_otp_tested": false
+  },
+  "sources": [
+    {
+      "id": "S23-1",
+      "url": "https://www.supakook.com/products/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家产品目录原页直接读取",
+      "evidence_class": "merchant_public_listing",
+      "fact": "目录分别列ChatGPT代充/成品账号、Plus ¥125（未写明按月或30天），又列4人共享¥300/人/月和其他Pro价；不同SKU不可混淆；运营品牌称aibibu LLC，未验证收款。"
+    },
+    {
+      "id": "S23-2",
+      "url": "https://doc.supakook.com/chatgpt/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家ChatGPT商品与交付说明直接读取",
+      "evidence_class": "merchant_self_description",
+      "fact": "自有账号通过Session代充，普通订阅交付后不提供继续使用的质保；质保版由商家管理账号和浏览器/API，非同一原号SKU；会话须先持有效登录。"
+    },
+    {
+      "id": "S23-3",
+      "url": "https://doc.supakook.com/service-guarantee/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家售后保障说明直接读取",
+      "evidence_class": "merchant_self_terms",
+      "fact": "质保期限、处理方式、退款均以准确订单协议为准，不提供统一退费比例、响应时限或SLA；本轮未取得Plus准确单件协议。"
+    },
+    {
+      "id": "S23-4",
+      "url": "https://doc.supakook.com/about/what-is-supakook/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家经营主体及模式介绍直接读取",
+      "evidence_class": "merchant_legal_entity_claim_unverified",
+      "fact": "商家自称由怀俄明州aibibu LLC运营，列Wyoming Entity ID 2026-001983176和美国Sheridan地址；同时声明与OpenAI没有官方隶属关系，以服务费和地区/促销差价获利。未在州注册结果验证其实体及状态。"
+    },
+    {
+      "id": "S23-5",
+      "url": "https://doc.supakook.com/about/how-supakook-works/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家工作机制与API范围原页直接读取",
+      "evidence_class": "merchant_self_description",
+      "fact": "商称原号充值使用Session；普通代充交付后不质保；其另行出售的ChatGPT API中转通过自购会员账号CPA反向代理，商称只供Codex，并不等同OpenAI官方API额度；API自购账号说明不能证实Plus批发授权。"
+    },
+    {
+      "id": "S23-6",
+      "url": "https://doc.supakook.com/memberships/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家会员与API区分说明直接读取",
+      "evidence_class": "merchant_self_description",
+      "fact": "会员不自动包含Supakook API中转额度；ChatGPT套餐和API服务分开，网页登录、Codex、首次API Key不能混为一码。"
+    },
+    {
+      "id": "S23-7",
+      "url": "https://doc.supakook.com/privacy/",
+      "observed_on": "2026-11-04",
+      "read_method": "商家运营/隐私声明原页直接读取",
+      "evidence_class": "merchant_self_claim",
+      "fact": "商家声称不使用来源不明的第三方转售上游，并提醒不要把密码验证码和完整会话交给陌生网站；仍未提供实际供货授权、可验验收或收款主体证据。"
+    },
+    {
+      "id": "O23-1",
+      "url": "https://help.openai.com/en/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription",
+      "observed_on": "2026-11-04",
+      "read_method": "OpenAI官方订阅退款帮助页直接读取",
+      "evidence_class": "official_policy",
+      "fact": "官方当前说明普通付款原则上不予退款；未使用的个人订阅若在扣款后7天内联系可能酌情退款并受条件限制；Apple订阅的取消/退款须向Apple申请。上述是官方直接支付规则，不自动等于第三方商家售后承诺。"
+    },
+    {
+      "id": "W23-1",
+      "url": "https://wyobiz.wyo.gov/Business/filingSearch.aspx",
+      "observed_on": "2026-11-04",
+      "read_method": "打开怀俄明州官方公开企业检索入口但未完成实体编号检索",
+      "evidence_class": "official_search_entry_only",
+      "fact": "州官方检索支持按Entity Filing ID/名称搜索。此轮仅核对入口，未取得编号2026-001983176的搜索结果，因此aibibu LLC注册真实性/存续状态仍未知。"
+    }
+  ],
+  "source_count_direct_read": 9,
+  "source_count_search_snippet_only": 0,
+  "verified_plus_wholesale_count": 0,
+  "verified_all_in_invoice_under_cap_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "older_reports_preserved": true,
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ]
+}
