@@ -131,13 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 97, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 99, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.32'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r18.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r18-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r17.html'
+    assert latest['version'] == '1.33'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r19.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r19-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r18.html'
+    # r33: old supplier, genuinely new supply-recruitment evidence; no fabricated new wholesaler or price.
+    assert by_id['gpt-source-followup-r33-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r19.html'
+    assert by_id['gpt-source-followup-r33-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r19-evidence.json'
+    r33 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r19-evidence.json').read_bytes())
+    assert r33['round'] == 33 and len(r33['sources']) == 5
+    chain = r33['chain_identification']
+    assert chain['new_primary_source_url'] == 'https://www.chatgqt.plus/supply'
+    assert chain['verified_supplier_identity'] is None and chain['openai_resale_authorization_verified'] is False
+    assert r33['qualification_totals']['new_independent_suppliers_added'] == 0
+    assert r33['qualification_totals']['new_verified_plus_wholesale_upstreams'] == 0
+    assert r33['existing_agent_terms_not_newly_changed']['required_agent_entry_fee_cny'] == 3000
+    assert r33['existing_plus_skus_not_newly_repriced'][0]['all_in_cny'] is None
+    assert r33['new_distinction']['claimed_not_api'] is True
+    assert r33['independent_phone_verification']['successful_verification_tests'] == 0
     # r32: public retail invoice components must not imply actual VAT invoice, guest eligibility or verified SMS success.
     assert by_id['gpt-source-followup-r32-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r18.html'
     assert by_id['gpt-source-followup-r32-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r18-evidence.json'
