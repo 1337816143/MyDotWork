@@ -958,6 +958,28 @@
       "summary": "9条新直读商家URL；国内税票与官方账单分离，旧价表和旧报告不刷新，费用和供货授权null；实购/验票/接码成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r28-20261104",
+      "title": "GPT源头 · 小久同URL挂牌¥112→¥110但实付税票仍未知",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r14.html",
+      "updatedAt": "2026-11-04T05:30:37Z",
+      "summary": "相同小久Plus URL 10/03挂牌¥112、11/04¥110，须用USDT且费用未知；新零售稳稳接住US$21/月≈¥140.36却明示不提供发票，两者均非已核批发源。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r28-20261104-evidence",
+      "title": "小久挂牌价、收据与税务票据/稳稳接住付款条件 · r28证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r14-evidence.json",
+      "updatedAt": "2026-11-04T05:30:37Z",
+      "summary": "8条直读原始商家URL、日期与价差；单件含票实付、批发与手机号验证证据不足均如实记录null，原126报价与全部旧报告不变。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

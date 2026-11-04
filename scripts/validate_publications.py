@@ -134,10 +134,23 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 87, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.27'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r13.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r13-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r12.html'
+    assert latest['version'] == '1.28'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r14.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r14-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r13.html'
+    # r28: same-URL display-price difference does not prove real paid USDT or VAT.
+    assert by_id['gpt-source-followup-r28-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r14.html'
+    assert by_id['gpt-source-followup-r28-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r14-evidence.json'
+    r28 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r14-evidence.json').read_bytes())
+    assert r28['round'] == 28 and r28['direct_read_source_count'] == len(r28['sources']) == 8
+    assert r28['historical_comparison']['prior_display_cny'] == 112 and r28['historical_comparison']['new_display_cny'] == 110
+    assert r28['historical_comparison']['same_original_url'] == r28['candidates'][0]['sku_url']
+    assert r28['candidates'][0]['all_in_cny'] is None and r28['candidates'][0]['subscription_period_months_reconfirmed'] is None
+    assert r28['candidates'][1]['display_usd'] == 21 and r28['candidates'][1]['domestic_tax_invoice_available_claimed'] is False
+    assert r28['candidates'][1]['all_in_cny'] is None
+    assert all(not c['qualified_wholesale'] and not c['invoice_verified'] for c in r28['candidates'])
+    assert r28['verified_plus_wholesale_count'] == r28['actual_purchase_count'] == r28['real_invoice_verified_count'] == r28['phone_verification_success_count'] == 0
+    assert r28['historical_126_quote_records_preserved'] is True and r28['old_price_overwritten'] is False
     # r27 preserves separate tax-invoice and overseas receipt SKU eligibility.
     assert by_id['gpt-source-followup-r27-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r13.html'
     assert by_id['gpt-source-followup-r27-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r13-evidence.json'
