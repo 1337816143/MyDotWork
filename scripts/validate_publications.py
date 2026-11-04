@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 89, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 91, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.28'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r14.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r14-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r13.html'
+    assert latest['version'] == '1.29'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r15.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r15-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r14.html'
+    # r29 newly read merchant disclosures are not proof of successful wholesale transactions.
+    assert by_id['gpt-source-followup-r29-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r15.html'
+    assert by_id['gpt-source-followup-r29-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r15-evidence.json'
+    r29 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r15-evidence.json').read_bytes())
+    assert r29['round'] == 29 and r29['direct_read_source_count'] == len(r29['sources']) == 6
+    assert r29['candidates'][0]['mainland_physically_present_customers_accepted_claimed'] is False
+    assert r29['candidates'][0]['actual_invoice_inclusive_checkout_cny'] is None
+    assert r29['candidates'][1]['display_price_cny'] == 168
+    assert r29['candidates'][1]['session_requirement_claimed'] is True
+    assert r29['candidates'][1]['all_in_tax_invoice_checkout_cny'] is None
+    assert all(not x['qualified_wholesale'] and not x['actual_purchase_verified'] for x in r29['candidates'])
+    assert r29['verified_plus_wholesale_count'] == r29['actual_purchase_count'] == r29['real_invoice_verified_count'] == r29['phone_verification_success_count'] == 0
+    assert r29['historical_126_quote_records_preserved'] and not r29['old_price_overwritten']
     # r28: same-URL display-price difference does not prove real paid USDT or VAT.
     assert by_id['gpt-source-followup-r28-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r14.html'
     assert by_id['gpt-source-followup-r28-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r14-evidence.json'
