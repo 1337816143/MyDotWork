@@ -83,4 +83,14 @@ assert.equal(r40.independent_phone_services[0].scanned_payment_refund_to_origina
 assert.equal(r40.independent_phone_services[2].real_payable_sku_confirmed,false);
 assert.equal(r40.independent_phone_services[2].number_held_for_30_or_60_days,false);
 assert.equal(r40.qualification_totals.new_verified_plus_wholesale_upstreams,0);
+const r41cat=d.records.find(r=>r.id==='gpt-source-followup-r41-20261105');
+const r41data=d.records.find(r=>r.id==='gpt-source-followup-r41-20261105-evidence');
+assert(r41cat&&r41data&&r41cat.url.endsWith('supplier-followup-20261105-r3.html'));
+const r41=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r3-evidence.json'),'utf8'));
+assert.equal(r41.round,41);assert.equal(r41.new_candidates.length,5);
+assert.equal(r41.new_candidates[2].display_price_cny,168);
+assert.equal(r41.new_candidates[2].real_paid_invoice_included_cny,null);
+assert.equal(r41.new_candidates[4].calculated_wechat_amount_cny,148.52);
+assert.equal(r41.new_candidates[4].unauthorized_resale_prohibited_by_terms,true);
+assert.equal(r41.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
