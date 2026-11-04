@@ -134,10 +134,10 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 103, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.34'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r20.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r20-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r19.html'
+    assert latest['version'] == '1.35'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r21.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r21-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r20.html'
     assert by_id['gpt-source-followup-r34-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r20.html'
     assert by_id['gpt-source-followup-r34-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r20-evidence.json'
     r34 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r20-evidence.json').read_bytes())
