@@ -50,4 +50,11 @@ const r36=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/su
 assert.equal(r36.round,36);assert.equal(r36.new_invoice_evidence.site_explicit_no_china_vat_invoice,true);
 assert.equal(r36.new_invoice_evidence.total_plus_invoice_included_cny,null);
 assert.equal(r36.phone_verification.success_tests,0);assert.equal(r36.qualification_totals.new_verified_plus_wholesale_upstreams,0);
+const r37cat=d.records.find(r=>r.id==='gpt-source-followup-r37-20261104');
+const r37data=d.records.find(r=>r.id==='gpt-source-followup-r37-20261104-evidence');
+assert(r37cat&&r37data&&r37cat.url.endsWith('supplier-followup-20261104-r23.html'));
+const r37=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/supplier-followup-20261104-r23-evidence.json'),'utf8'));
+assert.equal(r37.round,37);assert.equal(r37.new_candidates[0].real_paid_invoice_included_cny,null);
+assert.equal(r37.new_candidates[1].payment_subtotal_preview_cny,149.78);
+assert.equal(r37.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

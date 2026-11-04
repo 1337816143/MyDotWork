@@ -1156,6 +1156,28 @@
       "summary": "6条商家原页实读，1条店铺受WAF阻挡；票据/收款/支付全费null，25天接码为11月3日旧价，不冒充新报价，无真实成交与税票。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r37-20261104",
+      "title": "GPT源头 · 单席含税Plus企业代采公开价与零售推广辨别",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r23.html",
+      "updatedAt": "2026-11-04T14:30:35Z",
+      "summary": "新见条理集采1～4席Plus单月¥165/席含6%专票商称（真实出票/单席订单未验）；词元连接一件结算预览¥149.78含支付费未核票；小久页面库存状态变更，合格批发源仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r37-20261104-evidence",
+      "title": "条理集采月付含票商称、零售预览及库存 · r37证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r23-evidence.json",
+      "updatedAt": "2026-11-04T14:30:35Z",
+      "summary": "7条原始商家网页2026-11-04观察；¥165为商称含中国VAT，不是实付；¥149.78仅静态结算预览；开票/付款/授权/真实手机号实测0，未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
