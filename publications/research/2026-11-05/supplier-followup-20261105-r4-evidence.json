@@ -1,0 +1,168 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 42,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-04T21:27:04Z",
+  "site_version": "1.9.50",
+  "scope": "新读AI充值站Plus开票5%与Session交合作履约方条款，以及Codex SMS单号20分钟、最多30次换号、付款不退款限制；旧商家复读不刷新旧价。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_invoice_max_cny": 170
+  },
+  "new_candidates": [
+    {
+      "merchant": "AI充值站",
+      "sku": "ChatGPT Plus本人原账号充值一件一月",
+      "url": "https://ai-chongzhi.com/",
+      "quantity": 1,
+      "period_months": 1,
+      "currency": "CNY",
+      "display_price_cny": 148,
+      "invoice_fee_percent_claim": 5,
+      "invoice_fee_cny_calculated": 7.4,
+      "public_component_sum_cny": 155.4,
+      "merchant_no_other_checkout_fee_claim": true,
+      "payment_fee_cny": null,
+      "invoice_type_verified": null,
+      "invoice_issuer_entity_verified": null,
+      "receipt_entity_verified": null,
+      "real_paid_invoice_included_cny": null,
+      "invoice_must_select_before_payment_claim": true,
+      "retroactive_invoicing_supported_claim": false,
+      "session_required_after_payment": true,
+      "session_shared_with_partner_fulfillment_claim": true,
+      "session_retention_hours_max_claim": 72,
+      "session_fields_merchant_claim": [
+        "accessToken",
+        "sessionToken",
+        "账号邮箱",
+        "账号ID",
+        "用户ID",
+        "套餐类型"
+      ],
+      "first_login_phone_verification_bypass_supported": false,
+      "wholesale_authorization_verified": false,
+      "real_purchase_tested": false,
+      "real_invoice_verified": false,
+      "sources": [
+        "https://ai-chongzhi.com/",
+        "https://ai-chongzhi.com/help"
+      ]
+    }
+  ],
+  "independent_phone_services": [
+    {
+      "merchant": "Codex SMS",
+      "url": "https://shanma.store/",
+      "sku": "OpenAI/Codex单次临时海外手机号接收一条验证码",
+      "currency": "CNY",
+      "display_price_cny_per_one_time": 9.99,
+      "number_session_window_minutes_claim": 20,
+      "free_number_swaps_max_claim": 30,
+      "redemption_code_no_expiry_claim": true,
+      "phone_number_retention_days_verified": null,
+      "post_payment_refund_supported_claim": false,
+      "failed_sms_refund_original_payment_claim": false,
+      "post_30_swaps_claim": "人工协助，不保证成功",
+      "inventory_verified": false,
+      "mobile_carrier_status_verified": false,
+      "chatgpt_web_tested_success": false,
+      "codex_tested_success": false,
+      "first_api_key_tested_success": false,
+      "real_payment_tested": false,
+      "actual_sms_tested": false,
+      "sources": [
+        "https://shanma.store/",
+        "https://shanma.store/help/",
+        "https://shanma.store/faq/",
+        "https://shanma.store/terms/"
+      ]
+    }
+  ],
+  "bounded_rechecks": {
+    "chatgqt_guaranteed_plus_old_cny": 135,
+    "chatgqt_no_warranty_plus_old_cny": 125,
+    "chatgqt_price_changed_proven": false,
+    "chatshare_prior_maintenance_frontend_still_visible": true,
+    "chatshare_backend_tested": false,
+    "other_priority_merchants_without_new_usable_price_authorization_or_invoice_evidence": true
+  },
+  "sources": [
+    {
+      "url": "https://ai-chongzhi.com/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_product_and_invoice_selection",
+      "finding": "ChatGPT Plus本人原号1月¥148，企业开票另+5%（¥7.40）；公开页面声明显示全部费用，实际订单与税票未验。"
+    },
+    {
+      "url": "https://ai-chongzhi.com/help",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_session_partner_and_invoice_policy",
+      "finding": "付款后收集登录会话六项并交合作充值方处理，商称保留最多72h；开票须下单时选，付后不补开。"
+    },
+    {
+      "url": "https://shanma.store/",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_sms_product",
+      "finding": "OpenAI/Codex临时号码兑换码¥9.99/个，接收一次短信，结算价以付款页为准。"
+    },
+    {
+      "url": "https://shanma.store/help/",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-24",
+      "read_status": "success_read",
+      "evidence_class": "merchant_sms_number_window",
+      "finding": "单号码20分钟接收窗口，单卡密最多30次免费换号，卡密无使用期限，非号码保留期。"
+    },
+    {
+      "url": "https://shanma.store/faq/",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-29",
+      "read_status": "success_read",
+      "evidence_class": "merchant_sms_no_refund_policy",
+      "finding": "付款成功后不支持退款，即使未出码只提供最多30次免费自动换号与人工协助；真实售后未验证。"
+    },
+    {
+      "url": "https://shanma.store/terms/",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-18",
+      "read_status": "success_read",
+      "evidence_class": "merchant_sms_inventory_and_disclaimer",
+      "finding": "无实时库存保证，且非OpenAI官方；支付/短信并未测试。"
+    },
+    {
+      "url": "https://chatgqt.plus/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "bounded_existing_merchant_price_recheck",
+      "finding": "原号Plus有质保¥135、无质保¥125的历史优惠价仍展示，无本轮价格变化证据。"
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "bounded_existing_merchant_maintenance_recheck",
+      "finding": "原ChatShare自助入口仍前台显示维护，未经后台或人工履约实测。"
+    }
+  ],
+  "qualification_totals": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_all_fees_plus_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r41_original_reports_preserved": true
+}
