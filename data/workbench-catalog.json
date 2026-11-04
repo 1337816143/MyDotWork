@@ -892,6 +892,28 @@
       "summary": "7条原始商家页面，准确¥179/¥189单件月卡、官网¥128起差异；Hero-SMS不收码退款退站内余额，OpenAI准确号码价格和期限null，真实实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r25-20261104",
+      "title": "GPT源头 · wind89开票须会员登录下单与OTP质保排除",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r11.html",
+      "updatedAt": "2026-11-04T02:38:14.109Z",
+      "summary": "wind89原号Plus¥139.99/月，但仅商家登录会员且登录下单后可申请电子普票；历史加¥10未复核，票费/实际出票主体null。30天质保明确排除登录手机号验证费用；仍非已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r25-20261104-evidence",
+      "title": "wind89准确SKU、开票登录门槛与手机验证售后 · r25证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r11-evidence.json",
+      "updatedAt": "2026-11-04T02:38:14.109Z",
+      "summary": "5条真实读取商家网页，公开¥139.99/份/月SKU 27，游客下单与电子普票资格分离；当前票费/支付费/上游授权null，0真票、0采购、0SMS测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

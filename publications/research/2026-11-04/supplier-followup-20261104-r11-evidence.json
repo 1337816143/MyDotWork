@@ -1,0 +1,162 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 25,
+  "date": "2026-11-04",
+  "site_version": "1.9.33",
+  "prepared_at_utc": "2026-11-04T02:38:14.109Z",
+  "scope": "wind89本人原号单月SKU与电子普票须登录会员且登录下单的新核条件；无须注册即可普通下单不等于游客订单可获发票。商家售后明确排除平台要求的登录手机号验证费用，验证应单独解决。第三方再售授权、票费、支付费、有效税票和履约均未核。此次复核不将历史¥10票费称作今日新确认。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_upfront_agent_fee": true,
+    "no_mandatory_prepaid_balance": true,
+    "plus_all_in_invoice_cap_cny": 170
+  },
+  "offer": {
+    "vendor": "互联互通AI / wind89",
+    "exact_sku": "ChatGPT Plus",
+    "sku_parameter": 27,
+    "sku_url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+    "currency": "CNY",
+    "observed_display_price_cny": 139.99,
+    "price_unit": "CNY/1份/1个月",
+    "quantity": 1,
+    "delivery_options_claimed": [
+      "原号直充",
+      "卡密兑换到本人原号"
+    ],
+    "checkout_without_vendor_account_claimed": true,
+    "member_login_required_for_e_invoice_claimed": true,
+    "logged_in_at_order_time_required_for_invoice_claimed": true,
+    "enterprise_title_and_tax_id_required_claimed": true,
+    "invoice_application_url": "https://wind89.com/me/invoices",
+    "invoice_page_redirects_to_vendor_login_when_unauthenticated": true,
+    "invoice_type_claim": "电子普通发票",
+    "invoice_fee_cny": null,
+    "previous_report_merchant_claim_invoice_fee_cny": 10,
+    "previous_fee_observation_ref": "此前wind89历史报告，当前FAQ不再展示固定加¥10；旧观察日未刷新",
+    "payment_fee_cny": null,
+    "fx_fee_cny": null,
+    "final_paid_total_with_invoice_cny": null,
+    "live_paid_checkout_reached": false,
+    "actual_member_invoice_request_eligible_verified": false,
+    "payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "registered_operator_legal_entity": null,
+    "actual_tax_invoice_verified": false,
+    "wholesale_single_unit_price_cny": null,
+    "wholesale_contract_verified": false,
+    "upstream_authorization_verified": false,
+    "no_upfront_agent_fee_verified": null,
+    "mandatory_prepaid_balance_cny": null,
+    "prior_chatgpt_login_required": true,
+    "session_required_for_own_account_activation_claimed": true,
+    "token_required": null,
+    "existing_active_plus_renewal_supported_claimed": false,
+    "renew_on_same_account_after_expiry_claimed": true,
+    "merchant_warranty_days_claimed": 30,
+    "warranty_excludes_account_ban_claimed": true,
+    "warranty_excludes_platform_phone_verification_fee_claimed": true,
+    "unused_redeem_code_refundable_claimed": true,
+    "redeemed_subscription_refundable_on_change_of_mind_claimed": false,
+    "actual_purchase_tested": false,
+    "actual_delivery_tested": false,
+    "verified_eligible_plus_wholesale_under_cap": false
+  },
+  "independent_phone_verification": {
+    "vendor_standalone_otp_sku_found": false,
+    "sms_price_cny": null,
+    "number_duration_minutes": null,
+    "number_reuse_policy": null,
+    "sms_failure_refund": null,
+    "chatgpt_web_applicability": null,
+    "codex_applicability": null,
+    "api_applicability": null,
+    "initial_chatgpt_login_required_for_session_claimed": true,
+    "subscription_automatically_binds_phone": false,
+    "merchant_warranty_covers_login_phone_otp_fee": false,
+    "chatgpt_web_verified": false,
+    "codex_verified": false,
+    "api_verified": false
+  },
+  "findings": [
+    {
+      "type": "newly_verified_public_restriction",
+      "field": "invoice_guest_checkout",
+      "previous_assumption": "不注册即可下单、商称电子普票加¥10；此前未明确游客订单开票资格",
+      "new_claim": "仅已登录会员可以开电子普票，需登录后下单，再在我的发票提交单位名称和税号；游客下单不是合格含票路径",
+      "impact": "必须在付款前登录商家会员账号；不能因首页可游客下单即计入合格含票采购"
+    },
+    {
+      "type": "merchant_warranty_boundary",
+      "field": "phone_otp_warranty",
+      "new_claim": "登录时平台要求的手机号验证费用明示不在订阅质保中",
+      "impact": "手机号验证与Plus采购必须分开预算、分开实测；不能以30天订阅质保承诺覆盖OTP"
+    }
+  ],
+  "sources": [
+    {
+      "id": "T25-1",
+      "url": "https://wind89.com/plans",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_page_scrape_live_max_age_0",
+      "evidence_class": "merchant_current_plan_listing",
+      "fact": "本人原号Plus价格¥139.99/月、卡密或直充，SKU链接sku=27；可仅邮箱下单，页面声称30天质保及可开票，未进入付款收银台。"
+    },
+    {
+      "id": "T25-2",
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_page_scrape_live_max_age_0",
+      "evidence_class": "merchant_faq_terms",
+      "fact": "不注册也能普通下单，但开电子普票只给登录会员，要求登录后下单、付款后申请并填单位名称/税号；须先登录ChatGPT并提供Session；原号Plus到期再续费，不叠加。FAQ没有给出现行固定发票附加费数字。"
+    },
+    {
+      "id": "T25-3",
+      "url": "https://wind89.com/me/invoices",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_page_scrape_live_max_age_0",
+      "evidence_class": "merchant_invoice_access_gate",
+      "fact": "未登录访问我的发票页面跳转至微信会员登录 /auth/login?redirect=/me/invoices；无法不登录进入申请页面；没有验真任何税票。"
+    },
+    {
+      "id": "T25-4",
+      "url": "https://wind89.com/warranty",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_page_scrape_live_max_age_0",
+      "evidence_class": "merchant_refund_and_warranty_terms",
+      "fact": "正常本人使用商称30天质保，掉订/未到账/未兑换码可申请处理，已兑且开通成功不因反悔退款；封号/平台限制、平台要求的登录手机号验证费用明确被排除。"
+    },
+    {
+      "id": "T25-5",
+      "url": "https://wind89.com/about",
+      "observed_on": "2026-11-04",
+      "read_method": "direct_page_scrape_live_max_age_0",
+      "evidence_class": "merchant_own_business_claim",
+      "fact": "自称走官方支付渠道、可提供遮挡隐私的支付截图、可开票；未披露可独立核验的经营、收款与税票主体或可核授权，上述仅商家声称并非履约证明。"
+    }
+  ],
+  "source_count_direct_read": 5,
+  "source_count_search_snippet_only": 0,
+  "observed_date_is_policy_effective_date": false,
+  "verified_plus_wholesale_count": 0,
+  "verified_all_in_invoice_under_cap_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "old_prices_refreshed": 0,
+  "older_reports_preserved": true,
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ]
+}
