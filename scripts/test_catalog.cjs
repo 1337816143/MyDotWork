@@ -37,4 +37,10 @@ const supplement=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-1
 assert.equal(supplement.round,33);assert.equal(supplement.qualification_totals.new_independent_suppliers_added,0);
 assert.equal(supplement.existing_agent_terms_not_newly_changed.required_agent_entry_fee_cny,3000);
 assert.equal(supplement.new_distinction.claimed_not_api,true);
+const r35cat=d.records.find(r=>r.id==='gpt-source-followup-r35-20261104');
+const r35data=d.records.find(r=>r.id==='gpt-source-followup-r35-20261104-evidence');
+assert(r35cat&&r35data&&r35cat.url.endsWith('supplier-followup-20261104-r21.html'));
+const r35check=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-04/supplier-followup-20261104-r21-evidence.json'),'utf8'));
+assert.equal(r35check.round,35);assert.equal(r35check.service_status.backend_outage_confirmed,false);
+assert.equal(r35check.service_status.actual_paid_plus_cny,null);assert.equal(r35check.phone_verification.verified_success_count,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

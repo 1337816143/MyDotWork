@@ -404,6 +404,14 @@ def validate_publications():
     projects = {p['name']: p for p in json.loads((ROOT / 'data/projects.json').read_bytes())['projects']}
     assert re.search(r'v\d+\.\d+\.\d+', projects['FarmSystemDesign农业系统平台']['progress']) and '未实现' in projects['FarmSystemDesign农业系统平台']['gaps']
     assert '练习题、错题和知识自测' in projects['Paper论文学习平台']['gaps']
+    # r35 self-service banner is an observed merchant notice, not a backend outage test.
+    assert by_id['gpt-source-followup-r35-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r21.html'
+    assert by_id['gpt-source-followup-r35-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r21-evidence.json'
+    r35 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r21-evidence.json').read_bytes())
+    assert r35['round'] == 35 and r35['service_status']['backend_outage_confirmed'] is False
+    assert r35['service_status']['actual_paid_plus_cny'] is None and r35['service_status']['invoice_fee_cny'] is None
+    assert r35['phone_verification']['verified_success_count'] == 0
+    assert r35['qualification_totals']['new_verified_plus_wholesale_upstreams'] == 0
     from validate_current_updates import validate_current_updates
     validate_current_updates()
     from validate_task35 import validate_task35, negative_tests
