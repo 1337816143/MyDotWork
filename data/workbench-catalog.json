@@ -1288,6 +1288,28 @@
       "summary": "8个实际读取URL；¥155.40非已核含全部费用实付，接码单号20分钟/30次换号与付款不退款均商家声明，手机号/税票/授权未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r43-20261105",
+      "title": "GPT源头 · PAYPRM原号Plus的税票费用及Codex短信验证边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r5.html",
+      "updatedAt": "2026-11-04T22:36:28.510Z",
+      "summary": "PAYPRM原号Plus¥155/月属未含税页面价，中国税票另付未知税费；Codex单次短信¥12，升级免提示98%仅商称且手机号核验不属于会员保障。批发源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r43-20261105-evidence",
+      "title": "PAYPRM准确SKU、发票税费与单次手机号验证 · r43证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r5-evidence.json",
+      "updatedAt": "2026-11-04T22:36:28.510Z",
+      "summary": "11条商家原始网页观察记录，PAYPRM已有账号和新账号SKU区别、税票附费、验证码交付与失败退款缺口；实购/票据/授权/SMS测试为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

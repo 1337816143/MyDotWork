@@ -103,4 +103,11 @@ assert.equal(r42.new_candidates[0].session_shared_with_partner_fulfillment_claim
 assert.equal(r42.independent_phone_services[0].post_payment_refund_supported_claim,false);
 assert.equal(r42.independent_phone_services[0].number_session_window_minutes_claim,20);
 assert.equal(r42.qualification_totals.new_verified_plus_wholesale_upstreams,0);
+const r43cat=d.records.find(r=>r.id==='gpt-source-followup-r43-20261105'),r43data=d.records.find(r=>r.id==='gpt-source-followup-r43-20261105-evidence');
+assert(r43cat&&r43data&&r43cat.url.endsWith('supplier-followup-20261105-r5.html'));
+const r43=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r5-evidence.json'),'utf8'));
+assert.equal(r43.round,43);assert.equal(r43.current_plus.display_price_cny,155);
+assert.equal(r43.current_plus.real_paid_invoice_included_cny,null);
+assert.equal(r43.independent_phone_service.display_price_cny_per_one_time,12);
+assert.equal(r43.qualification_totals.new_verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

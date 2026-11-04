@@ -1,0 +1,186 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 43,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-04T22:36:28.510Z",
+  "site_version": "1.9.51",
+  "scope": "PAYPRM准确Plus商品、未含税发票、卡密与Session、独立Codex验证和手机号售后边界；其余商家无新费用/授权闭环。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_invoice_max_cny": 170
+  },
+  "current_plus": {
+    "merchant": "PAYPRM",
+    "sku": "ChatGPT Plus 我有账号会员代充",
+    "url": "https://www.payprm.com/shop/chatgpt-plus",
+    "quantity": 1,
+    "period_months": 1,
+    "currency": "CNY",
+    "display_price_cny": 155,
+    "other_new_account_sku_price_cny": 160,
+    "merchant_invoice_fee_cny": null,
+    "applicable_invoice_tax_percent": null,
+    "payment_fee_cny": null,
+    "all_required_fees_invoice_included_cny": null,
+    "real_paid_invoice_included_cny": null,
+    "invoice_type_verified": null,
+    "actual_invoice_issuer_entity_verified": null,
+    "actual_payment_recipient_entity_verified": null,
+    "operating_legal_entity_verified": null,
+    "wholesale_authorization_verified": false,
+    "resale_rights_verified": false,
+    "agent_upfront_fee_zero_verified": null,
+    "real_order_or_tax_invoice_tested": false,
+    "merchant_auto_card_delivery_claim": true,
+    "actual_card_stock_verified": null,
+    "card_delivery_is_subscription_activation": false,
+    "session_default_required_claim": false,
+    "session_may_be_required_on_specific_orders_claim": true,
+    "already_logged_in_prerequisite_for_session": true,
+    "first_login_phone_verification_solved": false,
+    "refund_or_reupgrade_guaranteed": false,
+    "sources": [
+      "https://www.payprm.com/shop/chatgpt-plus",
+      "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+      "https://www.payprm.com/faq/delivery/gpt-recharge",
+      "https://www.payprm.com/faq/account/chatgpt-recharge-info",
+      "https://www.payprm.com/policy",
+      "https://www.payprm.com/terms",
+      "https://www.payprm.com/about"
+    ]
+  },
+  "independent_phone_service": {
+    "merchant": "PAYPRM",
+    "sku": "Codex 一次短信验证卡密与接码网址",
+    "url": "https://www.payprm.com/shop/codex-verification",
+    "currency": "CNY",
+    "display_price_cny_per_one_time": 12,
+    "number_country_verified": null,
+    "real_mobile_carrier_verified": null,
+    "number_window_minutes": null,
+    "phone_number_retention_days": null,
+    "repeat_sms_supported_verified": null,
+    "failed_sms_original_refund_verified": null,
+    "actual_codex_success": false,
+    "actual_chatgpt_web_success": false,
+    "actual_first_api_key_success": false,
+    "merchant_claim_98percent_plus_users_no_phone_prompt": true,
+    "claim_independently_tested": false,
+    "auto_phone_binding": false,
+    "verification_success_guaranteed": false,
+    "source_urls": [
+      "https://www.payprm.com/shop/codex-verification",
+      "https://www.payprm.com/faq/account/codex-phone",
+      "https://www.payprm.com/policy"
+    ]
+  },
+  "bounded_rechecks": {
+    "chatshare_maintenance_frontend_prior_state": true,
+    "chatgqt_plus_guaranteed_old_cny": 135,
+    "chatgqt_plus_no_guarantee_old_cny": 125,
+    "other_priority_merchants_no_new_usable_price_invoice_or_authorization": true
+  },
+  "sources": [
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "原号Plus¥155/月，与新号¥160不同；页面合计¥155为未含税价。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "网页标价未含税；发票另付税费，税点和总支付价需要另行核实；订单收据不等于中国税务发票。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/delivery/gpt-recharge",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "库存足时发卡密和自助入口，缺货需等补发；卡密交付不等于会员生效。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/account/chatgpt-recharge-info",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "多数卡密单不要求Access Token，指定订单可能要求用户先登录、取得Session再自助处理。"
+    },
+    {
+      "url": "https://www.payprm.com/shop/codex-verification",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "Codex单次验证码¥12/次，卡密及接码网址为商品交付；不包括API/会员/额度。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "商称用户反馈98%以上升级Plus/Pro后不再提示Codex手机验证，非官方保证及实测。"
+    },
+    {
+      "url": "https://www.payprm.com/policy",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-02",
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "账号手机验证独立于订阅；未完成验证不属订阅售后；会员失效补偿要求官方退款凭证及订单等条件。"
+    },
+    {
+      "url": "https://www.payprm.com/terms",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-02",
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "自述独立第三方，不代表获得正式供货与转售授权；运营团队名称不等于核验的营业主体。"
+    },
+    {
+      "url": "https://www.payprm.com/about",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_page",
+      "finding": "企业支付卡及企业采购宣称，不构成真实收款/出票法人和供货权证据。"
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "bounded_prior_source",
+      "finding": "旧自助维护提示复读，不证明新停服。"
+    },
+    {
+      "url": "https://chatgqt.plus/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "bounded_prior_source",
+      "finding": "旧Plus有保¥135/无保¥125仍见，不证明涨跌。"
+    }
+  ],
+  "qualification_totals": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_all_fees_plus_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r42_original_reports_preserved": true,
+  "note": "商家声明≠官方证实/真实实测。2026-10-02为条款页面自标更新日期，不等于本轮11月5日新改版或调价。未知费用不填0。"
+}
