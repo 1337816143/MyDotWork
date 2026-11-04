@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 83, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 85, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.25'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r10.html'
+    assert latest['version'] == '1.26'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r12.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r12-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r11.html'
+    # r26 separates a real merchant retail SKU from an unconfirmed DOM modal.
+    assert by_id['gpt-source-followup-r26-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r12.html'
+    assert by_id['gpt-source-followup-r26-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r12-evidence.json'
+    r26 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r12-evidence.json').read_bytes())
+    assert r26['round'] == 26 and len(r26['sources']) == 6
+    assert r26['candidates'][0]['display_price_cny'] == 149 and r26['candidates'][0]['merchant_terms_invoice_promised'] is False
+    assert r26['candidates'][0]['all_in_invoice_total_cny'] is None
+    assert r26['candidates'][1]['embedded_modal_total_cny'] == 149.78 and r26['candidates'][1]['real_sku_selected'] is False
+    assert r26['candidates'][1]['actual_checkout_fee_cny'] is None and r26['candidates'][1]['affiliate_self_purchase_qualifies'] is False
+    assert all(x['authorized_resale_verified'] is False and x['verified_qualified'] is False for x in r26['candidates'])
+    assert r26['verified_plus_wholesale_count'] == r26['actual_purchase_count'] == r26['real_invoice_verified_count'] == r26['phone_verification_success_count'] == 0
+    assert r26['historical_126_quote_records_preserved'] is True and r26['old_prices_refreshed'] == 0
     # r25 is a new observation; keep r24 and all earlier frozen evidence below.
     assert by_id['gpt-source-followup-r25-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r11.html'
     assert by_id['gpt-source-followup-r25-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r11-evidence.json'

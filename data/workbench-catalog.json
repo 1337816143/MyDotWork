@@ -914,6 +914,28 @@
       "summary": "5条真实读取商家网页，公开¥139.99/份/月SKU 27，游客下单与电子普票资格分离；当前票费/支付费/上游授权null，0真票、0采购、0SMS测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r26-20261104",
+      "title": "GPT源头 · Plus宇宙¥149月卡无发票承诺与词元连接支付费/推广边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r12.html",
+      "updatedAt": "2026-11-04T03:10:17Z",
+      "summary": "Plus宇宙自有账号¥149/月但条款不承诺税票；词元连接匿名弹层¥148+¥1.78=¥149.78未核SKU/期限，推广佣金最高25%不计自购，仍无合格批发上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r26-20261104-evidence",
+      "title": "Plus宇宙发票条款与词元连接支付费、分佣条件 · r26证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r12-evidence.json",
+      "updatedAt": "2026-11-04T03:10:17Z",
+      "summary": "6条直接实读的原始URL；单月¥149与匿名弹层¥149.78不混同；含票总费用、出票主体、批发授权null，实购/税票/SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
