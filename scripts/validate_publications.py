@@ -142,7 +142,7 @@ def validate_publications():
     assert by_id['gpt-source-followup-r40-20261105-evidence']['url'] == '../research/2026-11-05/supplier-followup-20261105-r2-evidence.json'
     r40 = json.loads((ROOT / 'dist/research/2026-11-05/supplier-followup-20261105-r2-evidence.json').read_bytes())
     assert r40['round'] == 40 and r40['site_version'] == '1.9.48'
-    assert r40['independent_phone_services'][0]['refund_to_original_payment_method_claim'] is False
+    assert r40['independent_phone_services'][0]['scanned_payment_refund_to_original_payment_method_claim'] is False
     assert r40['independent_phone_services'][2]['real_payable_sku_confirmed'] is False
     assert r40['independent_phone_services'][2]['number_held_for_30_or_60_days'] is False
     assert r40['qualification_totals']['new_verified_plus_wholesale_upstreams'] == 0

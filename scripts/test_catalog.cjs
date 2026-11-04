@@ -79,7 +79,7 @@ const r40data=d.records.find(r=>r.id==='gpt-source-followup-r40-20261105-evidenc
 assert(r40cat&&r40data&&r40cat.url.endsWith('supplier-followup-20261105-r2.html'));
 const r40=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r2-evidence.json'),'utf8'));
 assert.equal(r40.round,40);assert.equal(r40.independent_phone_services[0].display_price_cny_per_one_time,15);
-assert.equal(r40.independent_phone_services[0].refund_to_original_payment_method_claim,false);
+assert.equal(r40.independent_phone_services[0].scanned_payment_refund_to_original_payment_method_claim,false);
 assert.equal(r40.independent_phone_services[2].real_payable_sku_confirmed,false);
 assert.equal(r40.independent_phone_services[2].number_held_for_30_or_60_days,false);
 assert.equal(r40.qualification_totals.new_verified_plus_wholesale_upstreams,0);
