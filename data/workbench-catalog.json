@@ -1222,6 +1222,28 @@
       "summary": "实读商家原页、OpenAI官方FAQ和旧候选；¥153非实付，支付费与出票主体null；GETGPT/wind89无法读完整，不刷新价格；SMS实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r40-20261105",
+      "title": "GPT源头 · Codex短信退款、发票矛盾与兑换码期限",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r2.html",
+      "updatedAt": "2026-11-04T17:20:04Z",
+      "summary": "Bigolab ¥15/¥8单次接码退款仅退不可提现站内余额、接码开票流程冲突；Boaile ¥4.99/¥2.99显示演练不购买真实号码，30～60天是兑换码期限。批发验真仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r40-20261105-evidence",
+      "title": "贝果短信退款及Boaile演练入口 · r40结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r2-evidence.json",
+      "updatedAt": "2026-11-04T17:20:04Z",
+      "summary": "6条实际读取原始URL；临时号码、退款去向、票据矛盾、报价条件和兑换码期限；真实接码/出票/Plus批发来源均0，未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
