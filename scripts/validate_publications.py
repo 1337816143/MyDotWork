@@ -147,7 +147,7 @@ def validate_publications():
     assert [x['known_base_price_exceeds_cap_cny'] for x in r24['candidates']] == [9, 19]
     assert all(x['period_months'] == 1 and x['min_quantity'] == 1 for x in r24['candidates'])
     assert all(x['final_paid_total_with_invoice_cny'] is None and x['payment_fee_cny'] is None for x in r24['candidates'])
-    assert r24['pricing_differentiation']['homepage_plus_starting_price_is_enterprise_invoicable_sku'] is False
+    assert r24['pricing_differentiation']['homepage_starting_price_is_enterprise_invoicable_sku'] is False
     assert r24['independent_phone_verification']['specific_openai_number_price_cny'] is None
     assert r24['independent_phone_verification']['number_duration_minutes'] is None
     assert r24['independent_phone_verification']['chatgpt_web_applicability'] is None
