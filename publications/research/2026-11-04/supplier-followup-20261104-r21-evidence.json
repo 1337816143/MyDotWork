@@ -1,0 +1,113 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 35,
+  "date": "2026-11-04",
+  "observed_on": "2026-11-04",
+  "site_version": "1.9.43",
+  "scope": "ChatShare聚合主站所链接自助充值站，首次观察到首页维护提示；既有价不刷新，不将前台提示认定全部业务中断。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "merchant": "ChatShare",
+  "service_status": {
+    "merchant_main_url": "https://chatshare.info/",
+    "own_self_service_url": "https://gptchongzhi.com/",
+    "official_link_from_merchant_main_site": true,
+    "notice_text": "ChatGPT官方直充系统当前维护中，暂不可提交拉取，请稍后再试。",
+    "notice_observed_on": "2026-11-04",
+    "incident_start_date": null,
+    "backend_outage_confirmed": false,
+    "actual_submission_tested": false,
+    "manual_service_alternative_merchant_claim": true,
+    "manual_delivery_tested": false,
+    "active_orders_affected_verified": null,
+    "original_plus_list_price_cny": 160,
+    "original_plus_price_previous_observation": "2026-10-02",
+    "price_change_confirmed": false,
+    "site_self_last_updated": "2026/10/29",
+    "actual_paid_plus_cny": null,
+    "invoice_offer_merchant_claim": true,
+    "chinese_vat_invoice_type": null,
+    "invoice_fee_cny": null,
+    "invoice_issuer": null,
+    "actual_payee": null,
+    "actual_invoice_verified": false,
+    "own_account_session_required": true,
+    "must_first_login_chatgpt": true,
+    "session_submit_tested": false,
+    "redemption_code_unlimited_claim": true,
+    "redemption_code_tested": false,
+    "wholesale_price_cny": null,
+    "agency_upfront_fee_cny": null,
+    "wholesale_contract_verified": false,
+    "official_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "chatgpt_web_working": null,
+    "codex_working": null,
+    "first_api_key_working": null,
+    "number_type": null,
+    "number_duration_days": null,
+    "failed_sms_refund_cny": null,
+    "automatic_phone_binding_proven": false,
+    "verified_success_count": 0
+  },
+  "sources": [
+    {
+      "id": "R35-1",
+      "url": "https://chatshare.info/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "page_self_updated": "2026-10-29",
+      "evidence_class": "merchant_price_listing_and_link",
+      "finding": "聚合站原号Plus公开¥160/月并链接到gptchongzhi.com。本站自称所有业务可开正规发票，但未出示真实税票和准确费用，¥160不是本轮新价。"
+    },
+    {
+      "id": "R35-2",
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "visible_public_maintenance_banner_not_backend_test",
+      "finding": "首页公开显示“ChatGPT官方直充系统当前维护中，暂不可提交拉取，请稍后再试。”另提示人工办理。本轮未提交卡密或测试交易接口，不能确认后台全部失效。"
+    },
+    {
+      "id": "R35-3",
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_session_instructions_not_fulfillment",
+      "finding": "需要先登录ChatGPT，再从官方会话页面复制全部Session信息，核对账号邮箱后提交；安全验证和Session过期需补交。网站称卡密购买后无期限，未实测。"
+    }
+  ],
+  "other_attempts": [
+    {
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_on": "2026-11-04",
+      "status": "no_readable_content",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-04",
+      "status": "open_failed",
+      "price_refreshed": false
+    }
+  ],
+  "qualification_totals": {
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_invoice_inclusive_under_170": 0,
+    "actual_purchases": 0,
+    "verified_tax_invoices": 0,
+    "phone_verification_success_tests": 0
+  },
+  "caveats": [
+    "前台维护提示并不证明全站停业、起始日期、后端接口是否可达及人工交付能力。",
+    "本轮页面¥160是旧价重见，不是当日调价，也不是含税票实际成交价。",
+    "不得把Apple结算、Session交付与自动手机号验证混同；此路由需先登录。",
+    "未知费用和主体明确为null，未购买、提交凭据、联系商家或实测。历史126条报价和r1–r34原字节保留。"
+  ]
+}

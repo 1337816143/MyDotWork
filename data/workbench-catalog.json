@@ -1112,6 +1112,28 @@
       "summary": "6条当轮实读商家自有URL及观察日期，旧Plus ¥118/件/月和+6%不冒充调价；普票/专票加费、主体、合规全费null，实购/发票/SMS成功均为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r35-20261104",
+      "title": "GPT源头 · ChatShare自助充值显示维护提示及Session限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r21.html",
+      "updatedAt": "2026-11-04T12:20:01.037Z",
+      "summary": "直读ChatShare官网链接的充值站首页提示系统维护、暂不可提交拉取；人工备选仍属商家声明。旧¥160/月未核含票费用及授权，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r35-20261104-evidence",
+      "title": "ChatShare前台维护状态、原号充值与独立验证码适用性 · r35证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r21-evidence.json",
+      "updatedAt": "2026-11-04T12:20:01.037Z",
+      "summary": "2处商家URL实读；前台维护提示不等于后端断供，Session需先登录，票据与支付费用null，历史未重核来源单列。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
