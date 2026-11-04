@@ -1024,6 +1024,28 @@
       "summary": "6条商家原页，¥160匿名表单为预览非含票实价；可选Waffo名义商户、Session可能必需、退款条款及费用null；无采购、税票或SMS实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r31-20261104",
+      "title": "GPT源头 · GetPlus大陆订单禁区与USDT单月新报价",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r17.html",
+      "updatedAt": "2026-11-04T08:20:36Z",
+      "summary": "GetPlus有US$2.10中国VAT开票选项却拒绝中国大陆境内下单、企业最低5件；AI Shop 91月卡13.8 USDT的人民币实付及税票未核；More of AI需完整Session。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r31-20261104-evidence",
+      "title": "GetPlus 地域/5件开票门槛与13.8 USDT套餐 · r31原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r17-evidence.json",
+      "updatedAt": "2026-11-04T08:20:36Z",
+      "summary": "7条直读商家原页、2项无可读正文的访问；所有未知人民币实付、税票及手续费为null，不宣称上游授权或短信实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
