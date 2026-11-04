@@ -131,13 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 91, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 93, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.29'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r15.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r15-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r14.html'
+    assert latest['version'] == '1.30'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r16.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r16-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r15.html'
+    # r30: preliminary price and company invoice precheck cannot prove an invoice-inclusive wholesale cost.
+    assert by_id['gpt-source-followup-r30-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r16.html'
+    assert by_id['gpt-source-followup-r30-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r16-evidence.json'
+    r30 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r16-evidence.json').read_bytes())
+    assert r30['round'] == 30 and r30['direct_read_source_count'] == len(r30['sources']) == 6
+    assert len(r30['candidates']) == 1
+    item = r30['candidates'][0]
+    assert item['sku_product_id'] == '7' and item['display_price_cny'] == 160
+    assert item['all_in_tax_invoice_checkout_cny'] is None and item['invoice_fee_cny'] is None
+    assert item['actual_purchase_verified'] is False and item['invoice_verified'] is False
+    assert item['qualified_wholesale'] is False and item['wholesale_unit_price_cny'] is None
+    assert item['prior_chatgpt_web_login_required'] is True and item['session_or_token_may_be_required_claimed'] is True
+    assert r30['independent_phone_verification']['new_standalone_openai_sms_sku_found'] is False
+    assert r30['verified_plus_wholesale_count'] == r30['actual_purchase_count'] == r30['real_invoice_verified_count'] == r30['phone_verification_success_count'] == 0
+    assert r30['historical_126_quote_records_preserved'] and r30['old_price_overwritten'] is False
     # r29 newly read merchant disclosures are not proof of successful wholesale transactions.
     assert by_id['gpt-source-followup-r29-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r15.html'
     assert by_id['gpt-source-followup-r29-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r15-evidence.json'

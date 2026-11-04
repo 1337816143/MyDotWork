@@ -1002,6 +1002,28 @@
       "summary": "6条当轮可读公开商家原始URL；USD参考价不等于人民币含票结算、税票费用null、无交易/OTP成功实测；旧126报价不刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r30-20261104",
+      "title": "GPT源头 · PayForGPT 单件¥160月卡企业开票预检与Session条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r16.html",
+      "updatedAt": "2026-11-04T07:53:51Z",
+      "summary": "新零售候选PayForGPT Plus准确商品7标¥160/件/月，iOS礼品卡渠道；已有会员覆盖不叠加，发票仅逐单预检、实付及主体未知；无已核批发源。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r30-20261104-evidence",
+      "title": "PayForGPT 准确SKU、原号覆盖与企业税票缺口 · r30证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r16-evidence.json",
+      "updatedAt": "2026-11-04T07:53:51Z",
+      "summary": "6条商家原页，¥160匿名表单为预览非含票实价；可选Waffo名义商户、Session可能必需、退款条款及费用null；无采购、税票或SMS实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
