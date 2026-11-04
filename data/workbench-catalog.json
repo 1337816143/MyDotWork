@@ -1090,6 +1090,28 @@
       "summary": "5条新实读源，其中/supply首次纳入；目录新增观察到Codex 250点¥168（非API、非Plus），供应链实况、税票和SMS实测均缺。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r34-20261104",
+      "title": "GPT源头 · GetVIP中国VAT电子普票/专票声明与含票成本缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r20.html",
+      "updatedAt": "2026-11-04T11:53:06Z",
+      "summary": "本轮新实读GetVIP发票专项指南承诺中国增值税电子普票/专票，但税点、出票主体、真实税票及实付未知；¥118+Stripe6%是11月3日既有价、非含票实付。已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r34-20261104-evidence",
+      "title": "GetVIP税票种类、含费及独立验证码退款边界 · r34证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-04/supplier-followup-20261104-r20-evidence.json",
+      "updatedAt": "2026-11-04T11:53:06Z",
+      "summary": "6条当轮实读商家自有URL及观察日期，旧Plus ¥118/件/月和+6%不冒充调价；普票/专票加费、主体、合规全费null，实购/发票/SMS成功均为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

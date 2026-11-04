@@ -1,0 +1,144 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 34,
+  "date": "2026-11-04",
+  "observed_on": "2026-11-04",
+  "site_version": "1.9.42",
+  "scope": "首次将GetVIP中国增值税电子普票/专票的专门指南及详细申请条件纳入证据；11月3日已记录的Plus ¥118/月和6%线上费不作为新价。未购买、未验发票、未交账号凭据或实测验证码。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "invoice_progress": {
+    "merchant": "GetVIP",
+    "exact_sku": "ChatGPT Plus · Manual top-up",
+    "unit": "CNY/1份/1个月",
+    "exact_product_url": "https://getvip.pro/en/product/chatgpt",
+    "plus_display_price_cny_per_unit_month": 118,
+    "price_first_recorded_on": "2026-11-03",
+    "price_change_proven": false,
+    "older_guide_price_cny": 132,
+    "merchant_online_stripe_fee_rate": 0.06,
+    "known_stripe_fee_cny": 7.08,
+    "known_stripe_subtotal_before_invoice_cny": 125.08,
+    "merchant_wechat_transfer_fee_cny": 0,
+    "real_paid_checkout_total_cny": null,
+    "invoice_guide_url": "https://getvip.pro/en/guides/invoice",
+    "invoice_guide_self_updated": "2026-11-03",
+    "chinese_vat_electronic_general_invoice_merchant_claim": true,
+    "chinese_vat_electronic_special_invoice_merchant_claim": true,
+    "invoice_general_tax_point_rate": null,
+    "invoice_special_tax_point_rate": null,
+    "invoice_issuer_name": null,
+    "actual_payee_name": null,
+    "actual_stripe_invoice_all_in_cny": null,
+    "actual_wechat_invoice_all_in_cny": null,
+    "tax_invoice_verified": false,
+    "invoice_claim_process": "下单前向客服确认金额/票种/税点；付款后提交订单号及发票信息，专票需税号、注册地址电话及银行账号；商称电子票发送邮箱。",
+    "site_operator_self_claim": "KAELIS TECHNOLOGIES, S.L.（西班牙）",
+    "site_operator_equals_chinese_invoice_issuer_verified": false,
+    "official_openai_partner": false,
+    "wholesale_contract_verified": false,
+    "wholesale_price_cny": null,
+    "agency_upfront_fee_cny": null,
+    "session_required": true,
+    "logged_in_chatgpt_needed": true,
+    "session_step_merchant_wording_conflicting": true,
+    "active_subscription_must_expire": true,
+    "actual_purchase_tested": false
+  },
+  "independent_phone_verification": {
+    "merchant": "GetVIP",
+    "claimed_single_sms_price_cny": 10,
+    "first_recorded_on": "2026-11-03",
+    "claimed_chatgpt_web_and_codex_scope": true,
+    "verified_chatgpt_web_scope": null,
+    "verified_codex_scope": null,
+    "api_first_key_scope": null,
+    "number_country": null,
+    "number_type": null,
+    "number_duration_days": null,
+    "number_exclusivity": null,
+    "failed_sms_refund_cny": null,
+    "refund_to_original_payment_for_failed_sms": null,
+    "successful_tests": 0,
+    "automatic_phone_binding_proven": false
+  },
+  "refund_statement": {
+    "merchant_refund_to_original_payment": true,
+    "possible_incurred_payment_forex_cost_deduction": true,
+    "delivered_virtual_goods_refund_unconditionally": false,
+    "actual_refund_tested": false
+  },
+  "sources": [
+    {
+      "id": "R34-1",
+      "url": "https://getvip.pro/en/guides/invoice",
+      "observed_on": "2026-11-04",
+      "page_self_updated": "2026-11-03",
+      "read_status": "success_read",
+      "evidence_class": "merchant_claim_not_actual_ticket",
+      "finding": "独立指南承诺中国增值税电子普票/专票，票种税点不同均另收，须先确认报价；发票开具主体和真实票据未给。"
+    },
+    {
+      "id": "R34-2",
+      "url": "https://getvip.pro/en/product/chatgpt",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "merchant_offer_not_paid_checkout",
+      "finding": "Plus公开¥118/件/月及Stripe+6%，微信转账商称零附费；需先登录后提供Session，已有Plus到期再充，页面初始默认为Go¥48而不是Plus订单付款核对。"
+    },
+    {
+      "id": "R34-3",
+      "url": "https://getvip.pro/en/about",
+      "observed_on": "2026-11-04",
+      "read_status": "success_read",
+      "evidence_class": "self_declared_operator_not_issuer",
+      "finding": "页脚自报西班牙KAELIS TECHNOLOGIES, S.L.且自述没有OpenAI官方代理关系；实际收款及中国税票出票主体未核。"
+    },
+    {
+      "id": "R34-4",
+      "url": "https://getvip.pro/en/refund",
+      "observed_on": "2026-11-04",
+      "page_self_updated": "2026-10",
+      "read_status": "success_read",
+      "evidence_class": "merchant_after_sales_terms_not_tested",
+      "finding": "符合条件退款原渠道，但可扣除已发生支付、汇兑费；通常先尝试更换，未明确独立验证码失败退款。"
+    },
+    {
+      "id": "R34-5",
+      "url": "https://getvip.pro/en/guides/chatgpt-register",
+      "observed_on": "2026-11-04",
+      "page_self_updated": "2026-10-26",
+      "read_status": "success_read",
+      "evidence_class": "merchant_phone_claim_not_tested",
+      "finding": "商称ChatGPT/Codex遇短信可提供¥10/次协助；号码期限、手机号属性、失败退款、API场景适用及成功率未知，此报价11月3日已记录。"
+    },
+    {
+      "id": "R34-6",
+      "url": "https://getvip.pro/en/guides/faq",
+      "observed_on": "2026-11-04",
+      "page_self_updated": "2026-10-26",
+      "read_status": "success_read",
+      "evidence_class": "merchant_invoice_fee_confirmation",
+      "finding": "FAQ要求下单前明确税点与开票信息，税点非零且不提供准确税率；商称无官方品牌授权。"
+    }
+  ],
+  "qualification_totals": {
+    "new_independent_suppliers": 0,
+    "new_verified_plus_wholesale_upstreams": 0,
+    "verified_invoiced_all_in_under_170": 0,
+    "real_orders": 0,
+    "real_tax_invoices": 0,
+    "real_phone_verification_tests": 0
+  },
+  "caveats": [
+    "新增税票类别为商家承诺，不是经独立查验的中国合规发票；没有税票号码、实出票/收款主体或实际订单。",
+    "网页自标2026-11-03更新而观察日2026-11-04；不等于11月4日发票政策更新或Plus降价。",
+    "Session必先能登录，Apple结算与Session交付可并存，普通Plus充值不代表绑定手机号或解决网页登录验证码。",
+    "原126报价和r1–r33原文保留；未知费率、票费、真实含票成本、上游批发价均使用null。"
+  ]
+}
