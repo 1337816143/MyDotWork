@@ -27,8 +27,6 @@
       "temporary_number": true,
       "long_term_number_ownership_verified": false,
       "later_sms_retention_guaranteed": false,
-      "refund_if_no_sms_to_nonwithdrawable_store_balance_claim": true,
-      "refund_to_original_payment_method_claim": false,
       "actual_refund_tested": false,
       "invoice_self_service_conflict": true,
       "actual_invoice_verified": false,
@@ -37,7 +35,10 @@
       "invoice_issuer_legal_entity_verified": false,
       "chatgpt_web_tested_success": null,
       "codex_tested_success": null,
-      "first_api_key_tested_success": null
+      "first_api_key_tested_success": null,
+      "scanned_payment_refund_to_nonwithdrawable_balance_claim": true,
+      "balance_paid_part_returned_to_original_balance_category_claim": true,
+      "scanned_payment_refund_to_original_payment_method_claim": false
     },
     {
       "merchant": "贝果科技 Bigolab",
@@ -53,14 +54,15 @@
       "temporary_number": true,
       "long_term_number_ownership_verified": false,
       "later_sms_retention_guaranteed": false,
-      "refund_if_no_sms_to_nonwithdrawable_store_balance_claim": true,
-      "refund_to_original_payment_method_claim": false,
       "actual_refund_tested": false,
       "invoice_self_service_conflict": true,
       "actual_invoice_verified": false,
       "chatgpt_web_tested_success": null,
       "codex_tested_success": null,
-      "first_api_key_tested_success": null
+      "first_api_key_tested_success": null,
+      "scanned_payment_refund_to_nonwithdrawable_balance_claim": true,
+      "balance_paid_part_returned_to_original_balance_category_claim": true,
+      "scanned_payment_refund_to_original_payment_method_claim": false
     },
     {
       "merchant": "Boaile Tools",
@@ -138,7 +140,7 @@
       "page_date": "2026-11-02 (merchant-labelled)",
       "read_status": "success_read",
       "evidence_class": "merchant_contract_terms",
-      "finding": "未收短信款退至不可提现站内余额而非原路退；短信成功后一般不退；短信商品不支持自助开票，须人工客服，与商品页可勾选开票描述冲突。"
+      "finding": "未收短信后，扫码付款部分退至不可提现站内余额而非原路退；余额抵扣部分返还原余额类别；首码收到后通常不退。接码商品不自助开票需人工客服，与商品页开票勾选口径冲突。"
     },
     {
       "id": "R40-4",
