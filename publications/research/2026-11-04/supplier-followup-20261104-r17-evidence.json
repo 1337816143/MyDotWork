@@ -1,0 +1,211 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 31,
+  "date": "2026-11-04",
+  "observed_on": "2026-11-04",
+  "site_version": "1.9.39",
+  "scope": "新增直接可读商家自有网页7条：GetPlus明示中国大陆所在地不接单、企业渠道5个起及单件开票前置勾选；AI Shop 91有低价USDT月付SKU但币种/主体/税票未闭合；More of AI页面月卡及完整sessionToken前提。无交易、真实票据或手机号验证实测，不视为获授权批发源。",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "invoice_inclusive_plus_max_cny": 170
+  },
+  "candidates": [
+    {
+      "vendor": "GetPlus AI",
+      "site": "https://www.getplus.ai/en",
+      "category": "retail_candidate_excluded_mainland_and_enterprise_moq",
+      "plus_month_official_base_usd": 20,
+      "claimed_max_merchant_service_fee_usd": 4.24,
+      "claimed_max_plus_order_subtotal_usd": 24.24,
+      "claimed_chinese_vat_invoice_addon_usd": 2.1,
+      "claimed_max_known_components_with_invoice_usd": 26.34,
+      "live_checkout_base_usd": null,
+      "all_in_cny": null,
+      "payment_or_bank_fx_fee": null,
+      "invoice_issuer_verified": null,
+      "invoice_validity_verified": false,
+      "enterprise_min_units_claimed": 5,
+      "enterprise_single_unit_eligible": false,
+      "strictly_excludes_users_physically_in_mainland_china": true,
+      "claimed_operator": "HONG KONG AIGC LIMITED",
+      "official_business_registration_verified": false,
+      "actual_payee_verified": null,
+      "openai_resale_authorization_verified": false,
+      "own_account_claimed": true,
+      "one_month_claimed": true,
+      "existing_active_subscription_stacking_claimed": false,
+      "phone_field_use": "WeChat/order support only; not OpenAI phone verification",
+      "invoice_must_choose_before_checkout": true,
+      "invoice_can_be_added_after_payment": false,
+      "actual_paid": false,
+      "qualified_wholesale": false
+    },
+    {
+      "vendor": "AI Shop 91",
+      "site": "https://aishop91.com/products/chatgpt",
+      "category": "crypto_retail_quote_not_verified_wholesale",
+      "exact_sku": "Plus 独享代充 · 月付 / 1个月",
+      "display_price_usdt": 13.8,
+      "merchant_display_estimate_cny": 99.36,
+      "settlement_currency": "USDT",
+      "payment_networks": [
+        "TRC20",
+        "ERC20"
+      ],
+      "actual_paid_cny": null,
+      "actual_paid_usdt": null,
+      "payment_network_fee_usdt": null,
+      "invoice_fee_cny": null,
+      "invoice_issuer": null,
+      "all_in_cny": null,
+      "domestic_vat_invoice_supported": null,
+      "own_existing_account_verified": null,
+      "merchant_claims_no_official_authorization": true,
+      "wholesale_price_cny": null,
+      "agent_upfront_fee_cny": null,
+      "unfulfilled_order_claimed_refundable": true,
+      "fulfilled_order_no_reason_refund_claimed": false,
+      "actual_purchase_verified": false,
+      "real_refund_verified": false,
+      "qualified_wholesale": false
+    },
+    {
+      "vendor": "More of AI",
+      "site": "https://moreofai.com/",
+      "category": "retail_homepage_only_exact_sku_unreadable",
+      "homepage_plus_month_card_price_cny": 138,
+      "store_product_url": "https://shop.moreofai.com/products/chatgpt-plus-monthly",
+      "store_product_body_accessible": false,
+      "accurate_sku_terms_verified": false,
+      "payment_claimed": [
+        "Alipay",
+        "WeChat Pay"
+      ],
+      "final_checkout_cny": null,
+      "payment_fee_cny": null,
+      "invoice_fee_cny": null,
+      "all_in_cny": null,
+      "own_existing_account_delivery_verified": null,
+      "session_token_mandatory_claimed": true,
+      "access_token_alone_accepted_claimed": false,
+      "prior_chatgpt_login_required": true,
+      "retailer_qualified_wholesale": false,
+      "actual_purchase_verified": false,
+      "qualified_wholesale": false
+    }
+  ],
+  "independent_phone_verification": {
+    "new_standalone_openai_sms_sku_found": false,
+    "chatgpt_web_applicability": null,
+    "codex_applicability": null,
+    "api_first_key_applicability": null,
+    "number_tenure_minutes": null,
+    "failed_sms_cash_refund": null,
+    "merchant_wechat_contact_phone_is_openai_verification": false,
+    "session_token_requires_existing_web_login": true,
+    "apple_ios_purchase_auto_binds_phone": false,
+    "verified_success_count": 0
+  },
+  "sources": [
+    {
+      "id": "R31-1",
+      "url": "https://www.getplus.ai/en",
+      "category": "plus_checkout_invoice_choice",
+      "fact": "GetPlus本人原号Plus；结账主体报价动态位置显示Loading price，无法取得现时报价；勾选中国增值税发票的网页加收$2.10，未在订单时勾选不允许事后补开。下单填写WeChat手机号仅供售后查单，与OpenAI号码绑定无关。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    },
+    {
+      "id": "R31-2",
+      "url": "https://www.getplus.ai/terms",
+      "page_last_updated": "2026-10-11",
+      "category": "geographical_eligibility_operating_entity_and_usd_ceiling",
+      "fact": "商家公开条款明示不接受实际位于中国大陆境内用户下单，称由HONG KONG AIGC LIMITED运营；未通过官方工商登记验证。Plus官方基价$20、商家最高服务费$4.24、商品订单金额最高$24.24；美元计价且渠道可能产生独立换汇费用；单件现价、实际扣费及大陆发票验真未知。Plus需订阅到期（无在期叠加）。商家明言非OpenAI授权代理。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    },
+    {
+      "id": "R31-3",
+      "url": "https://www.getplus.ai/qiye-caigou",
+      "category": "minimum_enterprise_volume",
+      "fact": "企业渠道明确最低5个起采、折扣需逐单洽谈；支持普通/专用发票的商家承诺不等于真实有效票据，单件需求不符合其企业最低数量。商称专票1%或6%依合作情况确定，合同/收款/出票主体无实单验证。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    },
+    {
+      "id": "R31-4",
+      "url": "https://aishop91.com/products/chatgpt",
+      "category": "crypto_plus_single_month_pricing",
+      "fact": "AI Shop 91的Plus独享代充月付准确套餐单月13.8 USDT，选择TRC20/ERC20等链上支付网络，下单浮层应付13.8 USDT（未交易）。人民币≈¥99.36为商家网页折算参考，不是人民币结算金额；矿工费、USDT取得成本及发票仍未知。账号是否必须是本人既有账号未闭合。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    },
+    {
+      "id": "R31-5",
+      "url": "https://aishop91.com/terms",
+      "category": "not_authorized_reseller",
+      "fact": "商家声明属于独立代购/代付中介，与OpenAI无授权或合作；独享账号建议改密码和绑定安全信息，但不等于向本人原账号充值已核；若账号遭官方风控商家排除赔偿。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    },
+    {
+      "id": "R31-6",
+      "url": "https://aishop91.com/refund",
+      "category": "refund_terms_only",
+      "fact": "条款商称未发货可退全额、已发货不支持无理由退，在保异常优先补发/换新后退款；USDT退款按同币种/网络原路处理且平台承担退款链费。均未通过订单验证。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    },
+    {
+      "id": "R31-7",
+      "url": "https://moreofai.com/",
+      "category": "month_card_listing_and_session_requirement",
+      "fact": "More of AI主页展示ChatGPT Plus月卡¥138、自动发CDK，付费可支付宝或微信；其FAQ明确完整sessionToken必需，单独Access Token会被拒绝，表示先完成ChatGPT网页登录才能使用。原号交付、开票费、上游和实付待核。",
+      "observed_on": "2026-11-04",
+      "read_method": "merchant_original_page_read",
+      "evidence_class": "observed_page_or_merchant_claim_not_verified_transaction"
+    }
+  ],
+  "failed_or_empty_reads": [
+    {
+      "url": "https://shop.moreofai.com/products/chatgpt-plus-monthly",
+      "observed_on": "2026-11-04",
+      "result": "page returned no readable product body; no SKU price revalidation"
+    },
+    {
+      "url": "https://shop.moreofai.com/blog/new-customer-guide",
+      "observed_on": "2026-11-04",
+      "result": "page returned no readable body; no terms refreshed"
+    }
+  ],
+  "direct_read_source_count": 7,
+  "verified_plus_wholesale_count": 0,
+  "verified_all_in_invoiced_under_170_count": 0,
+  "actual_purchase_count": 0,
+  "real_invoice_verified_count": 0,
+  "phone_verification_success_count": 0,
+  "historical_126_quote_records_preserved": true,
+  "previous_reports_preserved": true,
+  "old_price_overwritten": false,
+  "not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ]
+}

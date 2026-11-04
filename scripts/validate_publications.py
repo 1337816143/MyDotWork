@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 93, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 95, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.30'
-    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r16.html'
-    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r16-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r15.html'
+    assert latest['version'] == '1.31'
+    assert latest['path'] == 'research/2026-11-04/supplier-followup-20261104-r17.html'
+    assert latest['dataPath'] == 'research/2026-11-04/supplier-followup-20261104-r17-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-04/supplier-followup-20261104-r16.html'
+    # r31: mainland exclusion/enterprise MOQ and crypto quote must not be misclassified as invoiced wholesale.
+    assert by_id['gpt-source-followup-r31-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r17.html'
+    assert by_id['gpt-source-followup-r31-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r17-evidence.json'
+    r31 = json.loads((ROOT / 'dist/research/2026-11-04/supplier-followup-20261104-r17-evidence.json').read_bytes())
+    assert r31['round'] == 31 and r31['direct_read_source_count'] == len(r31['sources']) == 7
+    assert len(r31['candidates']) == 3 and r31['candidates'][0]['strictly_excludes_users_physically_in_mainland_china'] is True
+    assert r31['candidates'][0]['enterprise_min_units_claimed'] == 5 and r31['candidates'][0]['live_checkout_base_usd'] is None
+    assert r31['candidates'][0]['all_in_cny'] is None and r31['candidates'][0]['claimed_chinese_vat_invoice_addon_usd'] == 2.10
+    assert r31['candidates'][1]['display_price_usdt'] == 13.8 and r31['candidates'][1]['all_in_cny'] is None
+    assert r31['candidates'][2]['session_token_mandatory_claimed'] is True and r31['candidates'][2]['store_product_body_accessible'] is False
+    assert all(x['qualified_wholesale'] is False for x in r31['candidates'])
+    assert r31['verified_plus_wholesale_count'] == r31['real_invoice_verified_count'] == r31['actual_purchase_count'] == r31['phone_verification_success_count'] == 0
+    assert r31['historical_126_quote_records_preserved'] and r31['old_price_overwritten'] is False
     # r30: preliminary price and company invoice precheck cannot prove an invoice-inclusive wholesale cost.
     assert by_id['gpt-source-followup-r30-20261104']['url'] == '../research/2026-11-04/supplier-followup-20261104-r16.html'
     assert by_id['gpt-source-followup-r30-20261104-evidence']['url'] == '../research/2026-11-04/supplier-followup-20261104-r16-evidence.json'
