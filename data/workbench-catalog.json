@@ -1464,6 +1464,28 @@
       "summary": "9条可读网页、1条无正文直达；Plus与手机服务准确SKU，未知费用null，未经实付、税票或验证码验证；合格上游0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r51-20261105",
+      "title": "GPT源头 · CCSub零售卡密、佣金渠道与代充接口辨析",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r13.html",
+      "updatedAt": "2026-11-05T07:36:00Z",
+      "summary": "CCSub菲律宾Plus本人原号1个月支付宝/微信¥138、USDT限时¥133；佣金非批发，982xj.xyz共用兑换入口仅溯源；KC-PAY-GPT接口示例不能证明实价或履约。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r51-20261105-evidence",
+      "title": "CCSub价格/资格、转售限制与KC-PAY-GPT接口证据 · r51",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r13-evidence.json",
+      "updatedAt": "2026-11-05T07:36:00Z",
+      "summary": "6条公开可读资料、2条不可访问入口；分离Plus零售与外部兑换、引荐佣金/历史快照、技术API演示；支付及票据全费null、0真实实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
