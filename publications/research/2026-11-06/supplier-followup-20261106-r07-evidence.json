@@ -1,0 +1,113 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 62,
+  "date": "2026-11-06",
+  "site_version": "1.9.70",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-05T22:03:24.770Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "correction": {
+    "supersedes_r61_current_catalog_display_claim": true,
+    "superseded_report": "research/2026-11-06/supplier-followup-20261106-r06.html",
+    "superseded_observation": "r61初次页面读取称分类页菲律宾/iOS均¥150，后续两条分类路径新读取为Plus到期办/iOS各¥139，分类页自标2026-11-05更新。原r61观察保留，不可再当作当前价签或认定确定调价时刻。",
+    "merchant": "ChongPay",
+    "homepage_price_cny_per_public_card": {
+      "non_ios_expire_required": 139,
+      "ios_gift_card": 139
+    },
+    "catalog_price_cny_per_public_card": {
+      "non_ios_expire_required": 139,
+      "ios_gift_card": 139
+    },
+    "catalog_self_marked_update_date": "2026-11-05",
+    "catalog_path_check": [
+      "https://chongpay.com/plans?category=gpt",
+      "https://chongpay.com/plans"
+    ],
+    "archived_2026_11_03_homepage_cards_price_cny_each": 150,
+    "prior_r61_catalog_recorded_cny_each": 150,
+    "verified_real_price_drop": false,
+    "actual_checkout_price_cny": null,
+    "payment_extra_fee_cny": null,
+    "invoice_extra_fee_cny": null,
+    "all_required_fees_including_china_invoice_cny": null,
+    "actual_payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "verified_domestic_tax_invoice": false,
+    "verified_wholesale_authorization": false,
+    "one_month_exact_subscription_duration_on_card": null,
+    "real_order_tested": false,
+    "interpretation": "新复核纠正前一轮当前分类价签信息：现在首页与分类页同列¥139，旧档¥150是历史页面观察；官网自标2026-11-05更新不等于交易降价当日的独立验证，外部结算价及税票仍未知。"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:03:24.770Z",
+      "read_status": "readable",
+      "finding": "再次直接打开，页面现显示Plus到期版¥139/商品卡片、iOS礼品卡¥139/商品卡片，页面底部自标「价格更新于2026-11-05」，不是前轮曾记录的两卡¥150。",
+      "kind": "merchant_page_display",
+      "success_tested": false
+    },
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:03:24.770Z",
+      "read_status": "readable",
+      "finding": "独立无参数分类页面复核相同两款Plus¥139/商品卡片，底部自标更新于2026-11-05；属于两个路径看到一致展示，未取得实际成交订单。",
+      "kind": "merchant_page_display",
+      "success_tested": false
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:03:24.770Z",
+      "read_status": "readable",
+      "finding": "首页到期办Plus和iOS礼品卡继续各展示¥139/卡片，与现时分类页一致。非付款实测或供货授权。",
+      "kind": "merchant_page_display",
+      "success_tested": false
+    },
+    {
+      "url": "https://chongpay.com/help/create-invoice",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "商家帮助仍要求外部购买店铺核票，不支持本网站自助出票；本站没有税票验证。",
+      "kind": "merchant_claim",
+      "success_tested": false
+    },
+    {
+      "url": "https://chongpay.com/help/china-vat-invoice",
+      "observed_on": "2026-11-06",
+      "read_status": "not_rechecked",
+      "finding": "沿用r61先前实读本网站帮助：PDF Invoice不等于中国增值税票；本次未另行刷新该页证据日期。",
+      "kind": "prior_verified_not_new_observation",
+      "success_tested": false
+    },
+    {
+      "url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "observed_on": "2026-11-06",
+      "read_status": "prior_blocked_not_rechecked",
+      "finding": "此前r61尝试访问WAF阻断，本次未进行真实购买店铺结算验证；真实支付与开票成本保持null。",
+      "kind": "prior_access_failure",
+      "success_tested": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_61_unchanged": true
+  },
+  "methodology": "承认并保留r61原观察内容，单独发布r62更正。仅前三条来源证实当轮新现价，第四条商家票据描述为复读，后两条为历史参照没有再访问。所有价格为网页展示非下单实付；未知费用为null。未付款、发送账号凭据、联系商家或测试接码。"
+}
