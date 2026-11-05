@@ -1,0 +1,144 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 55,
+  "date": "2026-11-05",
+  "site_version": "1.9.63",
+  "observed_on": "2026-11-05",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "candidate": {
+    "merchant": "GETGPT — getgpt.homes (not assumed the same legal entity as getgpt.pro or getgpt.io)",
+    "sku": "GPT PLUS 充值卡密(IOS美区质保)",
+    "source": "https://getgpt.homes/products/chatgpt-plus-ios-us-card",
+    "one_piece_list_price_cny": 115,
+    "three_piece_min_unit_price_cny": 114,
+    "ten_piece_min_unit_price_cny": 113,
+    "thirty_piece_min_unit_price_cny": 112,
+    "public_bulk_discounts_apply_to_one_piece": false,
+    "one_month_subscription_term_explicitly_verified": null,
+    "delivered_card_is_apple_gift_card_verified": null,
+    "ios_us_region_redemption_required_by_merchant": true,
+    "submit_session_at_order_required": false,
+    "session_or_login_required_in_later_redeem_process_verified": null,
+    "existing_paid_plus_seamless_renewal_verified": null,
+    "wechat_processor_claim": "Waffo Pancake",
+    "payment_surcharge_cny": null,
+    "usdt_network_fx_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "actual_all_in_cny": null,
+    "legal_receiving_entity_verified": null,
+    "legal_china_invoice_issuer_verified": null,
+    "valid_china_vat_invoice_verified": false,
+    "formal_openai_resale_or_wholesale_authorization_verified": false,
+    "merchant_declares_no_openai_authorization": true,
+    "real_paid_order_completed": false,
+    "real_card_redeemed": false
+  },
+  "api": {
+    "documentation": "https://getgpt.homes/api-docs",
+    "merchant_doc_updated_on": "2026-11-03",
+    "ordinary_buyer_purchase_api": true,
+    "api_buyer_key_required_according_to_merchant": false,
+    "example_quantity_default": 1,
+    "example_max_quantity": 99,
+    "example_success_order_cny": 115,
+    "example_amount_is_real_checkout": false,
+    "old_reseller_api_endpoint_pattern": "/api/open/v1/*",
+    "merchant_states_old_reseller_api_returns_http_410": true,
+    "independently_verified_old_api_http_410": false,
+    "merchant_states_reseller_balance_hmac_callbacks_not_open": true,
+    "order_token_valid_days_claim": 30,
+    "order_token_is_not_phone_number_lifetime": true,
+    "automated_wholesale_supply_authorization_verified": false,
+    "independent_live_api_and_payment_test_completed": false
+  },
+  "inventory_and_fulfillment": {
+    "stock_page": "https://getgpt.homes/status",
+    "merchant_claims_in_stock_auto_delivery": true,
+    "stock_count_verified_by_paid_order": false,
+    "waiting_time_from_payment_reported": true,
+    "stock_when_paid_out_may_enter_backorder": true,
+    "merchant_claims_refund_on_undelivered_or_qualifying_failure": true,
+    "actual_refund_tested": false,
+    "delivered_digital_goods_no_reason_refund_accepted": false
+  },
+  "phone_verification": {
+    "chatgpt_web_verified": null,
+    "codex_verified": null,
+    "api_first_key_verified": null,
+    "phone_lifetime_days": null,
+    "session_requirement_for_sms": null,
+    "sms_failure_refund_verified": null,
+    "merchant_claims_ios_card_auto_binds_openai_phone": false,
+    "real_sms_success_count": 0
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://getgpt.homes/products/chatgpt-plus-ios-us-card",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_original",
+      "finding": "准确iOS美区卡密SKU¥115单件、3+/10+/30+分别¥114/¥113/¥112；未写确定月数；下单不收Session；明示与OpenAI无授权。"
+    },
+    {
+      "url": "https://getgpt.homes/price/chatgpt-plus",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_original",
+      "finding": "确认¥115为卡密交付价，不含官方订阅额外税费和第三方费用；需要iOS美区兑换环境；微信支付由Waffo Pancake处理，后续费用和税票未知。"
+    },
+    {
+      "url": "https://getgpt.homes/api-docs",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_documentation",
+      "finding": "文档自标2026-11-03更新；当前API为普通买家订单API，老代理余额/HMAC/回调不开放、旧/api/open/v1/*商称返回410，非本轮亲测；样例115元非真实结算。"
+    },
+    {
+      "url": "https://getgpt.homes/terms",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_legal_terms",
+      "finding": "条款自标2026-10-23生效；与OpenAI无代理/授权；交付后无理由退款被排除，失败退款只是条款承诺。"
+    },
+    {
+      "url": "https://getgpt.homes/blog/chatgpt-ios-us-card-redeem-guide",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_old_blog",
+      "finding": "文章自标2026-09-02：iOS美区卡密可为Apple礼品卡也可为平台充值码；并不能仅凭名称认定交付品类、Plus成功或手机号验证。"
+    },
+    {
+      "url": "https://getgpt.homes/status",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_original",
+      "finding": "站方称商品可有货、补货中可下单或暂停，付款后按时长显示等待；订单库存与真实自动交付未采购核验。"
+    },
+    {
+      "url": "https://getgpt.homes/faq",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "source_class": "merchant_original",
+      "finding": "重申只提供购买卡密及售后订单查询、无账号凭据下单；未交付合条件退款为商称，未测试。"
+    }
+  ],
+  "preservation": {
+    "historical_126_quotes_untouched": true,
+    "all_previous_54_report_files_untouched": true,
+    "older_prices_updated_without_new_evidence": false
+  },
+  "methodology": "本轮7条实际可读商家原页；商品页挂牌与自称条款不同于实购，旧API返回410未通过独立HTTP确认。旧商品未重新核价或声称变更。独立API Key/手机接码未测试。中国票据、支付全费、授权和履约缺口均null或false；没有付款/交Session/联系客服。"
+}

@@ -1552,6 +1552,28 @@
       "summary": "6条实际读到的商家原URL，SKU、阶梯报价、税票声明、企业付款、库存与微信手续费；真实含票全费null、正式供货授权0、短信实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r55-20261105",
+      "title": "GPT源头 · GETGPT零售API与批发接口停用边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r17.html",
+      "updatedAt": "2026-11-05T15:42:00Z",
+      "summary": "GETGPT美区iOS卡密单件¥115，3+批发阶梯不适用单件；普通买家API仍文档化但旧代理API自称410停用；未核单月权益、票据或授权。合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r55-20261105-evidence",
+      "title": "GETGPT卡密SKU、普通买家API及旧代理接口声明 · r55证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r17-evidence.json",
+      "updatedAt": "2026-11-05T15:42:00Z",
+      "summary": "7条直接读取商家原页；SKU阶梯、iOS美区卡密种类、旧代理API商称410而未亲测、微信支付、退款条件；支付+税票全费null，实购验票接码0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
