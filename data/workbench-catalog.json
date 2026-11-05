@@ -1354,6 +1354,28 @@
       "summary": "7条可读原始网页、1条不可读结账入口；¥139+3%为公开分项非实付，未知费用null，未核授权/法定主体，真实订单/税票/SMS实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r46-20261105",
+      "title": "GPT源头 · Morimm两渠道同SKU价格下降与USDT退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r8.html",
+      "updatedAt": "2026-11-05T01:25:42.074Z",
+      "summary": "同SKU对照：Morimm菲区Free-only ¥115→¥113、iOS可覆盖旧Plus ¥130→¥129；首页USDT退款提示属旧政策；2smx ¥138结账处于测试模式。含票实付及批发授权仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r46-20261105-evidence",
+      "title": "Morimm SKU价格对比、独立接码与测试结账排除 · r46证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r8-evidence.json",
+      "updatedAt": "2026-11-05T01:25:42.074Z",
+      "summary": "8条原始URL含Morimm两价格同页新旧对照、仅USDT退款公告、CatFK独立小店、2smx测试收银台；未知付款费/票费/主体null，零实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
