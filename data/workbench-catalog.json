@@ -1442,6 +1442,28 @@
       "summary": "9条URL观察，直读11AI商品/接码限制与接码扫码费，AIGOOD第三方快照日期和无法打开原店区分，成品号¥79排除；全部未知税票/正式授权null、零实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r50-20261105",
+      "title": "GPT源头 · GPTHubs/GPT101履约链、含票超线及长效接码",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r12.html",
+      "updatedAt": "2026-11-05T05:11:00Z",
+      "summary": "GPTHubs原号Plus¥160转发Session到GPT101、在期Plus不支持续，GPT101单月¥179且禁止转售已购服务；闪充AI ¥168+6%已超170；接码价仅第三方快照。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r50-20261105-evidence",
+      "title": "GPT101交付/授权、闪充AI发票与Codex长效号码 · r50源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r12-evidence.json",
+      "updatedAt": "2026-11-05T05:11:00Z",
+      "summary": "9条可读网页、1条无正文直达；Plus与手机服务准确SKU，未知费用null，未经实付、税票或验证码验证；合格上游0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
