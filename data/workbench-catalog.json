@@ -1332,6 +1332,28 @@
       "summary": "7条商家原始可读URL，准确Plus SKU、单件价、另行通道及票据条件；实际附加费与含中国税票总价null、授权和短信实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r45-20261105",
+      "title": "GPT源头 · 单月Plus开票3%与原号Session/余期风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r7.html",
+      "updatedAt": "2026-11-05T00:30:58.773Z",
+      "summary": "硅基面包原号Plus¥139/月+商称数电普票3%（¥4.17），¥143.17仅已知分项和；30天出票窗口、在期覆盖风险及Session前提，批发授权/最终全费未验，合格源头仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r45-20261105-evidence",
+      "title": "硅基面包普票3%及原号风险 · r45源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r7-evidence.json",
+      "updatedAt": "2026-11-05T00:30:58.773Z",
+      "summary": "7条可读原始网页、1条不可读结账入口；¥139+3%为公开分项非实付，未知费用null，未核授权/法定主体，真实订单/税票/SMS实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
