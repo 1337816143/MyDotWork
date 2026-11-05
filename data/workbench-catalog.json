@@ -1420,6 +1420,28 @@
       "summary": "6条URL观察（5条正文可读、1条不可读），美元价格、成功积分、准确售后窗口和前置Session，真实票据/授权/电话号码验证为null或未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r49-20261105",
+      "title": "GPT源头 · 11AI原号Plus、Codex接码与雷达供货链核查",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r11.html",
+      "updatedAt": "2026-11-05T04:14:13Z",
+      "summary": "11AI Plus ¥140/30天需Session、含票费未核；Codex单次¥18+支付宝2%；AIGOOD第3方快照Plus¥112、旧Codex¥0.75仅共享接码兑换入口，非已核上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r49-20261105-evidence",
+      "title": "11AI、AIGOOD快照与365buygpt售后风险 · r49源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r11-evidence.json",
+      "updatedAt": "2026-11-05T04:14:13Z",
+      "summary": "9条URL观察，直读11AI商品/接码限制与接码扫码费，AIGOOD第三方快照日期和无法打开原店区分，成品号¥79排除；全部未知税票/正式授权null、零实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
