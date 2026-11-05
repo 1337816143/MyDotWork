@@ -1,0 +1,183 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 58,
+  "date": "2026-11-06",
+  "site_version": "1.9.66",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_sms_service": {
+    "name": "SMSPool",
+    "website": "https://www.smspool.net/",
+    "classification": "独立号码服务候选，不是Plus批发上游，未证OpenAI短信成功",
+    "discovery": "https://shop.gpt.ge/buy/22",
+    "discovery_caveat": "V3商家在Codex需验证码场景外链推荐，不是第三方实测",
+    "openai_exact_sku_current_price": null,
+    "openai_exact_sku_currency": null,
+    "payment_surcharge": null,
+    "minimum_deposit": null,
+    "real_all_in_cost": null,
+    "non_voip_merchant_claim": true,
+    "exact_number_carrier_independently_verified": false,
+    "one_time_number_lifetime_usual_hours_up_to_claim": 24,
+    "us_foxtrot_claimed_lifetime_days": "3–5, not guaranteed",
+    "long_term_rental_one_month_or_more_claim": true,
+    "long_term_openai_compatibility_verified": null,
+    "temporary_number_reusable_after_expiry": false,
+    "resend_up_to_claim": 25,
+    "resend_surcharge_claim": "每四次成功重发收原订单价50%；需以实单为准",
+    "real_resend_charge": null,
+    "no_sms_no_charge_merchant_claim": true,
+    "no_sms_balance_kept_claim": true,
+    "failed_otp_original_payment_automatically_refunded": false,
+    "deposit_original_full_refund_eligibility_claim": "14天内整笔充值未使用；部分消费后不支持原款退回",
+    "actual_refund_tested": false,
+    "legal_name_from_site": "SMSPool B.V.",
+    "kvk_from_site": "42005953",
+    "vat_from_site": "NL869249599B01",
+    "independent_lei": "724500PFIZKXR82CO373",
+    "registry_status": "ACTIVE / ISSUED",
+    "company_registration_cross_checked": true,
+    "contracting_or_payment_receiver_verified": null,
+    "china_vat_invoice_verified": false,
+    "api_for_sms_orders_not_openai_api": true,
+    "api_uses_smspool_own_key": true,
+    "chatgpt_login_session_required_by_sms_service_claim": false,
+    "received_code_and_text_stored_by_service_claim": true,
+    "chatgpt_web_phone_success_tested": false,
+    "codex_desktop_phone_success_tested": false,
+    "first_openai_api_key_phone_success_tested": false,
+    "no_purchase_or_credentials_submitted": true
+  },
+  "official_boundary": {
+    "chatgpt_account_creation_generally_no_phone": true,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_requires_phone": true,
+    "voip_and_landline_unsupported": true,
+    "whatsapp_some_countries": true,
+    "apple_or_session_recharge_does_not_automatically_bind_phone": true
+  },
+  "historical_recheck": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "no_new_verified_change": true,
+    "old_prices_not_refreshed": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_reference",
+      "published": null,
+      "finding": "V3 iOS Plus ¥143.50/月、库存一般，与前次一致；明确外链SMSPool用于Codex可能的手机号验证。"
+    },
+    {
+      "url": "https://www.smspool.net/zh/article/getting-started-with-smspool-a269862fdb3f",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_guide",
+      "published": "2026-06-18",
+      "finding": "非VoIP是商称；一次号码一般最多24小时、US Foxtrot可能3–5天不保；长租一个月以上，重发与余额退款条件。"
+    },
+    {
+      "url": "https://www.smspool.net/article/how-to-request-a-balance-refund-on-smspool--484d70f56719",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_refund",
+      "published": "2026-01-23",
+      "finding": "无短信不扣费但保留预充值余额；14天内且整笔未消费才受理原支付全额退款；部分消费不退充值原款。"
+    },
+    {
+      "url": "https://www.smspool.net/privacy-policy",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_policy",
+      "published": "2026-11",
+      "finding": "自称荷兰SMSPool B.V., KvK 42005953, VAT NL869249599B01；短信代码和全文被存储，付款走第三方处理器。"
+    },
+    {
+      "url": "https://lei-nederland.nl/gedetailleerde-informatie/66951969/724500PFIZKXR82CO373/smspool-b-v/",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "independent_LEI_record",
+      "published": "2026-09-01",
+      "finding": "第三方GLEIF数据列SMSPool B.V.和一致的KvK 42005953，LEI ACTIVE/ISSUED；并不核实实际收款。"
+    },
+    {
+      "url": "https://www.smspool.net/article/how-to-use-the-smspool-api-0dd6eadf4c",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_api",
+      "published": "2021-12-20",
+      "finding": "SMSPool API用于号码下单、租号和余额查询，用其自己的API Key，非ChatGPT API/会员。"
+    },
+    {
+      "url": "https://www.smspool.net/article/how-to-register-on-openai-without-phone-dcfb693467",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_old_marketing",
+      "published": "2022-12-08",
+      "finding": "2022文章说注册必须短信；已过时，不作为2026年的ChatGPT短信必需证明。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "official_OpenAI",
+      "published": null,
+      "finding": "ChatGPT注册通常不需手机、Codex桌面可能需、首个API Key需、VoIP不支持、部分国家WhatsApp。"
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_recheck",
+      "published": null,
+      "finding": "PAYPRM本人Plus仍显示¥155/月；未出现新的中国税票和授权证据。"
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_recheck",
+      "published": null,
+      "finding": "ChatShare关联自助站仍展示维护、不可提交拉取；不代表已测试后台全面停用。"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "kind": "merchant_recheck",
+      "published": null,
+      "finding": "ChongPay自述PDF Invoice等路径不证真实中国VAT发票或正式批发授权。"
+    }
+  ],
+  "preservation": {
+    "historical_126_quotes_untouched": true,
+    "previous_57_reports_untouched": true
+  },
+  "methodology": "仅录本轮2026-11-06实际读取的11条网页；区分文章发布日、观察日、商家承诺、第三方企业登记和真实交易。没有购买、真实税票、验证码成功、提交账号凭据或联系商家。价格未核设null。"
+}
