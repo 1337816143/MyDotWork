@@ -1508,6 +1508,28 @@
       "summary": "9条直读来源；支付/汇兑/票据全费null、苹果卡及Apple渠道资格未核，OpenAI礼卡非Apple礼卡，手机验证实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r53-20261105",
+      "title": "GPT源头 · MaplePass批发参考价、法定主体与交付冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r15.html",
+      "updatedAt": "2026-11-05T10:57:37.688Z",
+      "summary": "两个Plus SKU批发参考价15.50/15.80 USDT/件、无押金B2B接口；真实鉴权报价及发票主体未核，Session文件有矛盾，合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r53-20261105-evidence",
+      "title": "MaplePass批发接口与法定资格风险 · r53源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r15-evidence.json",
+      "updatedAt": "2026-11-05T10:57:37.688Z",
+      "summary": "六条商家原页与OpenAPI，公开参考价非已认证进货价；中国税票/换汇费null、转售授权不成立、无实购接码。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

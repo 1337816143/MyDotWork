@@ -210,4 +210,12 @@ assert.equal(r52.separate_apple_gift_card.apple_resale_authorization_verified,fa
 assert.equal(r52.official_openai_gift_card.apple_or_google_billed_subscription_not_eligible,true);
 assert.equal(r52.prior_candidate_check.price_change_confirmed,false);
 assert.equal(r52.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r53cat=d.records.find(r=>r.id==='gpt-source-followup-r53-20261105'),r53data=d.records.find(r=>r.id==='gpt-source-followup-r53-20261105-evidence');
+assert(r53cat&&r53data&&r53cat.url.endsWith('supplier-followup-20261105-r15.html'));
+const r53=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r15-evidence.json'),'utf8'));
+assert.equal(r53.round,53);assert.equal(r53.site_version,'1.9.61');assert.equal(r53.sources.length,6);
+assert.deepEqual(r53.public_reference_skus.map(x=>x.merchant_public_wholesale_reference_usdt_per_item),[15.5,15.8]);
+assert.equal(r53.new_wholesale_interface_lead.final_invoiced_payment_cny,null);
+assert.equal(r53.conflicts.separate_openapi_redeem_endpoint_requires_cardkey_and_accountsession,true);
+assert.equal(r53.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
