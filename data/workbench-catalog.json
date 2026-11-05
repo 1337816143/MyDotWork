@@ -1640,6 +1640,28 @@
       "summary": "11条直读原URL；OpenAI单价/支付手续费null、公司LEI登记可核不代表真实收款；短信成功0、原号Plus合法批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r59-20261106",
+      "title": "GPT源头 · 新接码¥9.99与失败不退款限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r04.html",
+      "updatedAt": "2026-11-05T19:18:17Z",
+      "summary": "Codex SMS独立一次号商家标价¥9.99，商称免预存和最多30次换号，FAQ却明确支付后不退款；未经交易与短信实测，Plus批发合格源仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r59-20261106-evidence",
+      "title": "新接码服务的准确SKU、号码期限、换号与退款原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r04-evidence.json",
+      "updatedAt": "2026-11-05T19:18:17Z",
+      "summary": "11个本轮直读来源，¥9.99/一次验证码，含支付额和开票主体null；网页/Codex/API均零成功测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

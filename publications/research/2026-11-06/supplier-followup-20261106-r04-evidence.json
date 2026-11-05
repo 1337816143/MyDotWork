@@ -1,0 +1,164 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 59,
+  "date": "2026-11-06",
+  "site_version": "1.9.67",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_independent_phone_service": {
+    "name": "Codex SMS",
+    "site": "https://shanma.store/",
+    "not_a_plus_wholesale_supplier": true,
+    "accurate_sku": "OpenAI / Codex 临时手机号接码卡",
+    "listed_price_cny_per_one_time_code": 9.99,
+    "exact_currency": "CNY",
+    "all_payment_fees_cny": null,
+    "real_payment_total_cny": null,
+    "minimum_deposit_merchant_claim": 0,
+    "merchant_claimed_payment": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "payment_tested": false,
+    "refund_after_payment_supported_by_faq": false,
+    "no_sms_refund_to_original_payment_verified": false,
+    "free_automatic_number_swaps_claim_max": 30,
+    "unlimited_swaps_marketing_conflict": true,
+    "help_number_receive_window_minutes_claim": 20,
+    "faq_window_actual_checkout_depends_on_countdown": true,
+    "card_never_expires_merchant_claim": true,
+    "merchant_mobile_non_voip_claim": true,
+    "carrier_independently_verified": false,
+    "number_country_selection_guaranteed": false,
+    "long_term_number_keepable_verified": false,
+    "session_or_chatgpt_token_required_merchant_claim": false,
+    "chatgpt_login_required_for_number_purchase_merchant_claim": false,
+    "order_lookup_contact_required": true,
+    "homepage_says_no_password": true,
+    "help_requires_order_lookup_password": true,
+    "chatgpt_web_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_openai_api_key_success_tested": false,
+    "legal_entity_verified": null,
+    "receiving_company_verified": null,
+    "vat_invoice_verified": false,
+    "reseller_authorization_verified": false
+  },
+  "rechecks": {
+    "PAYPRM_plus_cny_per_month": 155,
+    "V3_ios_cny_per_month": 143.5,
+    "V3_ios_frontend_stock": "一般",
+    "ChatShare_frontend": "维护中",
+    "all_required_fees_plus_cny": null,
+    "old_quotes_not_refreshed": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://shanma.store/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家首页",
+      "finding": "OpenAI/Codex单次卡¥9.99/个，商称免注册免预存，支付宝/微信/USDT；付款附费未知",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shanma.store/help/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家帮助",
+      "finding": "称最多30次免费自动换号，卡密永不过期；此次直读20分钟单号窗口及下单设置查询密码，与首页不同",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shanma.store/faq/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家FAQ",
+      "finding": "明确支付后虚拟商品不退款；30次自动换号后联系客服，不保证一定收到OpenAI短信",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shanma.store/about/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家介绍",
+      "finding": "宣传换到收到为止，未展示可核法定经营主体和实际收款主体",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shanma.store/terms/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家条款",
+      "finding": "承认非OpenAI官方合作方，目标网站验证规则与风控可独立变化",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shanma.store/privacy/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家隐私",
+      "finding": "查单联系方式、查询安全密码和订单付款状态均会处理，真实号码产权与短信数据审计未证",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shanma.store/codex-register/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家旧教程",
+      "finding": "将Codex首启电话验证泛化为必须，不能当OpenAI官方规则",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "OpenAI官方",
+      "finding": "ChatGPT通常不需手机号；Codex桌面可能要求；首个API Key要求，VoIP不支持",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "既有商家复核",
+      "finding": "PAYPRM本人原号Plus显示¥155/月，未获全费和合法批发授权",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "既有商家复核",
+      "finding": "V3 iOS Plus¥143.50、库存一般、微信附加3.5%，非成交测试",
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "既有商家复核",
+      "finding": "ChatShare关联自助页面显示维护中，不能由此推断整个服务或后台失效",
+      "real_transaction_tested": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_58_unchanged": true
+  },
+  "methodology": "仅使用2026-11-06实际直读原始网页，分开商家展示、商家主张、官方规则与未发生的购买测试。未充值、验票、接码、提交账户凭据或联系商家。未核金额为null。"
+}
