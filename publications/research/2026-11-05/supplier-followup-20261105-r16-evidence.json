@@ -1,0 +1,144 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 54,
+  "date": "2026-11-05",
+  "site_version": "1.9.62",
+  "observed_on": "2026-11-05",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_max_all_required_fees_including_china_vat_invoice_cny": 170,
+    "formal_resale_authorization_required": true
+  },
+  "corporate_lead": {
+    "merchant": "条理集采（gongsi.one）",
+    "source": "https://gongsi.one/docs/pricing/",
+    "sku": "ChatGPT Plus · 企业对公代采1–4席 · 1席1月报价",
+    "price_cny_per_seat_month": 165,
+    "merchant_declares_includes_china_vat_invoice_6pct": true,
+    "merchant_published_5_to_19_seat_price_cny_per_month": 155,
+    "merchant_published_20_plus_seat_price_cny_per_month": 145,
+    "merchant_declares_1_seat_purchasable": true,
+    "corporate_bank_transfer_required": true,
+    "individual_buyer_without_corporate_account_eligible": null,
+    "upfront_reseller_or_agent_fee_cny": null,
+    "bank_or_other_payment_fee_cny": null,
+    "china_invoice_additional_fee_cny": null,
+    "real_paid_all_in_cny": null,
+    "merchant_claims_same_personal_email_topup": true,
+    "active_plus_seamless_renewal_verified": null,
+    "formal_resale_authorization_verified": false,
+    "actual_fulfillment_or_paid_order": false,
+    "legal_registration_verified": null,
+    "receiving_account_verified": null,
+    "invoice_issuer_verified": null,
+    "real_china_vat_invoice_verified": false,
+    "invoice_sample_is_issued_verified": false,
+    "invoice_sample_has_placeholder_xxxx_identifiers": true,
+    "example_company_name_visible": "成都游手科技有限公司",
+    "merchant_disclaims_openai_resale_relationship": true,
+    "merchant_published_contract_is_unsigned_template": true,
+    "merchant_claims_72_hour_replacement_can_be_new_account": true,
+    "real_refund_tested": false
+  },
+  "v3_retail_skus": [
+    {
+      "merchant": "V3小店",
+      "sku": "ChatGPT Plus IOS充值1个月",
+      "url": "https://shop.gpt.ge/buy/22",
+      "current_list_price_cny": 143.5,
+      "reported_inventory": "无货",
+      "reported_button": "已被抢光了",
+      "previous_comparable_inventory_snapshot": null,
+      "stock_change_proven": false,
+      "wechat_fee_rate": 0.035,
+      "usd_fee_rate": 0.035,
+      "merchant_claims_active_plus_can_be_overwritten_without_duration_stack": true,
+      "invoice_fee_cny": null,
+      "real_full_cost_cny": null,
+      "formal_wholesale_authorization_verified": false
+    },
+    {
+      "merchant": "V3小店",
+      "sku": "ChatGPT Plus 菲律宾卡充值1个月",
+      "url": "https://shop.gpt.ge/buy/18",
+      "current_list_price_cny": 133.5,
+      "reported_inventory": "非常多",
+      "previous_comparable_inventory_snapshot": null,
+      "stock_change_proven": false,
+      "wechat_fee_rate": 0.035,
+      "usd_fee_rate": 0.035,
+      "merchant_claims_active_subscription_must_expire_first": true,
+      "invoice_fee_cny": null,
+      "real_full_cost_cny": null,
+      "formal_wholesale_authorization_verified": false
+    }
+  ],
+  "independent_phone": {
+    "merchant_v3_mentions_codex_may_require_phone": true,
+    "referral_only": "https://www.smspool.net",
+    "chatgpt_web_verified": null,
+    "codex_verified": null,
+    "api_first_key_verified": null,
+    "number_lifetime_days": null,
+    "session_requirement": null,
+    "failed_sms_refund_verified": null,
+    "actual_sms_success_count": 0,
+    "subscription_or_apple_auto_binds_number": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://gongsi.one/docs/pricing/",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "class": "merchant_original",
+      "finding": "企业Plus月价1–4席¥165/席、5–19席¥155、20+¥145；含6%专票商家声明。未核真实税票。"
+    },
+    {
+      "url": "https://gongsi.one/",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "class": "merchant_original",
+      "finding": "首页称可1席、个人已有邮箱直充，票据展示XXXX占位税号且footer声明非OpenAI代销；收款/出票主体未证明。"
+    },
+    {
+      "url": "https://gongsi.one/docs/agreement/",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "class": "merchant_unsigned_template",
+      "finding": "企业银行对公全款转账，另行盖章订单确认书，商称到账两工作日开6%专票，非签署合同和真实发票。"
+    },
+    {
+      "url": "https://gongsi.one/docs/sla/",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "class": "merchant_unsigned_template",
+      "finding": "72h卡段异常商称重新充值或更换新账号，后续按天对公原路退款；均非实际履约。"
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "class": "merchant_original",
+      "finding": "iOS Plus1个月¥143.50、商品当前无货、微信/USD另收3.5%；在期覆盖但时长不叠加。旧库存未知，不能认定新断供。"
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/18",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "class": "merchant_original",
+      "finding": "菲律宾卡Plus1个月¥133.50、商品页库存非常多、微信/USD另收3.5%，在期订阅不可直接续，Codex新账号可能另需接码。"
+    }
+  ],
+  "preserved_old_126_quotes_and_all_53_reports": true,
+  "old_prices_refreshed_without_new_direct_evidence": false,
+  "methodology": "本轮仅计6条商家原页。商家自称开票/报价/退赔与真实付款、验票、授权和订单不同；未知款项为null；未付款、未传凭据、未联系商家、未接码。两个V3 SKU价格前轮已知并未证明改价，库存为本轮观察不能冒称变更时间。"
+}

@@ -218,4 +218,14 @@ assert.deepEqual(r53.public_reference_skus.map(x=>x.merchant_public_wholesale_re
 assert.equal(r53.new_wholesale_interface_lead.final_invoiced_payment_cny,null);
 assert.equal(r53.conflicts.separate_openapi_redeem_endpoint_requires_cardkey_and_accountsession,true);
 assert.equal(r53.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r54cat=d.records.find(r=>r.id==='gpt-source-followup-r54-20261105'),r54data=d.records.find(r=>r.id==='gpt-source-followup-r54-20261105-evidence');
+assert(r54cat&&r54data&&r54cat.url.endsWith('supplier-followup-20261105-r16.html'));
+const r54=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r16-evidence.json'),'utf8'));
+assert.equal(r54.round,54);assert.equal(r54.site_version,'1.9.62');assert.equal(r54.sources.length,6);
+assert.equal(r54.corporate_lead.price_cny_per_seat_month,165);
+assert.equal(r54.corporate_lead.real_paid_all_in_cny,null);
+assert.equal(r54.corporate_lead.invoice_sample_is_issued_verified,false);
+assert.equal(r54.v3_retail_skus[0].reported_inventory,'无货');
+assert.equal(r54.v3_retail_skus[0].stock_change_proven,false);
+assert.equal(r54.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

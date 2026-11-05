@@ -1530,6 +1530,28 @@
       "summary": "六条商家原页与OpenAPI，公开参考价非已认证进货价；中国税票/换汇费null、转售授权不成立、无实购接码。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r54-20261105",
+      "title": "GPT源头 · 企业单席含票月价与V3 iOS库存",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r16.html",
+      "updatedAt": "2026-11-05T12:04:24Z",
+      "summary": "条理集采企业对公Plus公开¥165/席/月、声称6%专票，票据样本XXXX占位、真实主体授权未验；V3 iOS¥143.50显示无货，菲卡¥133.50仍有货。合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r54-20261105-evidence",
+      "title": "企业报价、占位税票与V3库存 · r54证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r16-evidence.json",
+      "updatedAt": "2026-11-05T12:04:24Z",
+      "summary": "6条实际读到的商家原URL，SKU、阶梯报价、税票声明、企业付款、库存与微信手续费；真实含票全费null、正式供货授权0、短信实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
