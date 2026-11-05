@@ -1706,6 +1706,28 @@
       "summary": "11个当轮原始网址、1次WAF不可读；SKU与两页价差、票据/授权/费用null明确分开，真实购买、税票和短信验真均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r62-20261106",
+      "title": "GPT源头 · 更正ChongPay最新分类页与首页均¥139",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r07.html",
+      "updatedAt": "2026-11-05T22:03:24.770Z",
+      "summary": "二次直接读取两条分类URL均显示Plus到期版/iOS各¥139，自标2026-11-05更新；纠正r61最新分类仍¥150的判断，成交价、税票和授权未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r62-20261106-evidence",
+      "title": "ChongPay价签复读与r61更正证据r62",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r07-evidence.json",
+      "updatedAt": "2026-11-05T22:03:24.770Z",
+      "summary": "实际新读两条分类路径和首页，保留旧r61观察为历史；只证实网页挂牌¥139而非含票实付或有授权批发源。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
