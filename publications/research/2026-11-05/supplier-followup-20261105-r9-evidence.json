@@ -1,0 +1,202 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 47,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-05T02:50:09Z",
+  "site_version": "1.9.55",
+  "scope": "本轮9条原始网页新增CallAI低价Plus及Codex短信的凭据风险、GPT Store代理同价、智品码头前置费与支付宝费；所有事实为页面商称非实测。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170
+  },
+  "new_supplier_candidates": [
+    {
+      "merchant": "CallAI小铺",
+      "sku": "products/codex-plus-monthly",
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "display_price_cny": 107,
+      "currency": "CNY",
+      "unit": "本人账号/1个月/件",
+      "quantity": 1,
+      "period_months": 1,
+      "merchant_claims_existing_account_supported": true,
+      "existing_active_plus_direct_renewal_supported_claim": false,
+      "requires_existing_subscription_expiry_for_app_store_claim": true,
+      "session_in_separate_redemption_site_claim": true,
+      "agent_offer_url": "https://shop.callai.one/blog/agent",
+      "agent_offer_page_date": "2026-10-23",
+      "agent_price_cny": null,
+      "wholesale_min_quantity": null,
+      "agent_upfront_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "fx_fee_cny": null,
+      "all_required_fees_including_china_invoice_cny": null,
+      "legal_business_verified": null,
+      "payment_recipient_verified": null,
+      "invoice_issuer_verified": null,
+      "genuine_invoice_verified": false,
+      "authorized_upstream_verified": false,
+      "one_piece_wholesale_no_upfront_verified": false,
+      "real_order_tested": false,
+      "merchant_warranty_months_claim": 1,
+      "ban_covered_claim": false
+    },
+    {
+      "merchant": "GPT Store",
+      "sku": "GPT PLUS 充值卡密（iOS 美区质保）",
+      "url": "https://gptstore.lol/price/chatgpt-plus",
+      "display_price_usd": 16,
+      "currency": "USD",
+      "unit": "一张iOS美区Plus卡密（页未独立证明有效准确月数）",
+      "quantity": 1,
+      "period_months_verified": null,
+      "top_agent_display_price_usd": 16,
+      "top_agent_discount_usd": 0,
+      "agent_upfront_fee_usd": null,
+      "requires_us_ios_redemption_environment_claim": true,
+      "can_recharge_current_active_plus_verified": null,
+      "payment_method_claim": "Stripe银行卡/美元结算",
+      "payment_fee_usd": null,
+      "fx_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "all_required_fees_including_china_invoice_cny": null,
+      "legal_business_verified": null,
+      "real_invoice_verified": false,
+      "authorized_upstream_verified": false,
+      "real_order_tested": false,
+      "returned_card_after_delivery_no_reason_refund_supported_claim": false
+    }
+  ],
+  "independent_phone_services": [
+    {
+      "merchant": "CallAI小铺",
+      "sku": "products/codex-sms-verification",
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "display_price_cny_per_one_time_cdk": 3,
+      "quantity": 1,
+      "login_password_requested_by_third_party_claim": true,
+      "email_otp_or_authenticator_code_requested_by_third_party_claim": true,
+      "session_export_required_claim": false,
+      "automatic_phone_number_retry_claim": true,
+      "cdk_consumed_only_if_success_claim": true,
+      "cdk_not_consumed_on_explicit_fail_claim": true,
+      "failed_sms_refund_to_original_payment_verified": null,
+      "retention_days": null,
+      "repeat_receive_supported_verified": null,
+      "codex_compatibility_seller_claim": true,
+      "chatgpt_web_eligibility_verified": null,
+      "first_openai_api_key_eligibility_verified": null,
+      "security_assessment": "高风险：商家要求在外部网页提交OpenAI账户登录密码或邮箱/MFA动态码，不应与仅输入短信验证码的服务混同。",
+      "real_sms_success_tested": false
+    }
+  ],
+  "other_supplier_route_excluded": {
+    "merchant": "智品码头",
+    "url": "https://www.zpmt.com/",
+    "public_agent_program_upfront_cny": [
+      399,
+      1980,
+      3980
+    ],
+    "unit": "人民币/终身网站代理档",
+    "no_upfront_qualified": false,
+    "alipay_surcharge_percent_claim": 5,
+    "alipay_fee_refunded_claim": false,
+    "accurate_plus_single_month_sku_display_cny": null,
+    "invoice_support_verified": null,
+    "one_piece_bulk_price_verified": null,
+    "actual_transaction_verified": false
+  },
+  "recheck_without_price_refresh": {
+    "historical_candidates": "CatFK既有店、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay",
+    "finding": "未取得足以更新其含票全费、授权、真实履约及号码期限的新一手闭环，本轮不刷新历史价；CallAI新短信SKU与既有接码价分开，GPT Store代理同价无批发价优势证明。"
+  },
+  "sources": [
+    {
+      "url": "https://shop.callai.one/products",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "商家商品目录",
+      "finding": "显示CallAI Plus本人原号月卡107.00 CNY、Codex单次验证3.00 CNY；价格为本轮原始网页观察，搜索缓存中的108.98未证具体旧观察日期，不作降价结论。"
+    },
+    {
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "Plus准确商品页",
+      "finding": "Plus月卡107.00 CNY，只能为无有效个人订阅的正常登录账号申请；有会员须先咨询，Apple等应用商店订阅需结束后恢复Free，交付卡密后通过Session兑换；质保一月不保封号。"
+    },
+    {
+      "url": "https://shop.callai.one/blog/agent",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-23",
+      "read_status": "success_read",
+      "evidence_class": "商家代理合作声明（页面自标2026-10-23）",
+      "finding": "宣传源头价供货及代理合作，但准确批发单价、起订量、免代理费合同与转售授权未公开，均须联系客服；非已核实一手批发。"
+    },
+    {
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "Codex短信商品准确页",
+      "finding": "3.00 CNY/单次CDK，自动换号；实际验证要求在第三方网站输入登录密码、邮箱验证码或验证器动态码。验证成功消耗CDK，明确失败或无需验证时声称不消耗，但没有明确付款失败原路退款承诺；仅Codex，非网页/API。"
+    },
+    {
+      "url": "https://shop.callai.one/privacy",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "商家隐私政策",
+      "finding": "声明商店订单不得放Session，应只交到其兑换网站；与短信验证页要求直接填写账号密码/邮箱或MFA码是不同业务，安全风险不可被‘不需要导出Session’消除。"
+    },
+    {
+      "url": "https://shop.callai.one/terms",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "商家服务条款",
+      "finding": "声明月卡兑换码交付与一月会员质保、封号不保，未说明中国VAT发票实付与法人、真实转售授权或短信失败退款路径。"
+    },
+    {
+      "url": "https://gptstore.lol/price/chatgpt-plus",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "GPT Store准确价与条款",
+      "finding": "美区iOS Plus卡密展示USD 16.00；所谓至尊代理拿货价同为USD 16.00，无公开可证单件价格优势，商品不含第三方费用/官方额外税，需美区iOS兑换环境；中国税票、手续费与实际人民币全费未知。"
+    },
+    {
+      "url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "GPT Store商品页",
+      "finding": "再次展示USD 16.00及代理同价，卡密交付后不支持无理由退款；平台自称库存、销量均不能当成交/实际供货证据。"
+    },
+    {
+      "url": "https://www.zpmt.com/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "智品码头前台/代理方案",
+      "finding": "面向网站代理公开399/1980/3980 CNY终身档，均有前置费用，不能归为免加盟费进货渠道；付款提示支付宝手续费5%且不退；商品列表需加载，未得Plus准确SKU现价。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_all_fees_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r46_original_reports_preserved": true,
+  "caveats": "仅为商家公开网页及用户此前已确认的筛选标准。禁止将标价、代理自称、网页库存或自动换号宣传认定为实付、批发授权或实测成功；未知费用均null。没有付款、没有联系商家、没有提交凭据、没有短信验证实测。"
+}
