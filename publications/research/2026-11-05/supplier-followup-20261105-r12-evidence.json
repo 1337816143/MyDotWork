@@ -1,0 +1,209 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 50,
+  "date": "2026-11-05",
+  "site_version": "1.9.58",
+  "observed_on": "2026-11-05",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170,
+    "formal_resale_authorization_required": true
+  },
+  "supplier_chain": [
+    {
+      "merchant": "GPTHubs",
+      "url": "https://gpthubs.net/buy/chatgpt-plus",
+      "sku": "ChatGPT Plus自助升级卡密",
+      "display_price_cny": 160,
+      "merchant_demo_period_days": 30,
+      "requires_existing_chatgpt_login": true,
+      "active_plus_recharge_supported_claim": false,
+      "requires_sensitive_session_json": true,
+      "external_fulfiller": "GPT101 (gpt101.org)",
+      "forwards_session_to_third_party_claim": true,
+      "own_account": true,
+      "payment_extra_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "full_invoice_included_cny": null,
+      "verified_supplier_legal_name": false,
+      "verified_wholesale_authorization": false,
+      "actual_delivery_tested": false,
+      "refund_terms_url": "https://gpthubs.net/refunds"
+    },
+    {
+      "merchant": "GPT101",
+      "url": "https://gpt101.org/products?source=home",
+      "sku": "本人原号Plus单件单月",
+      "display_price_cny": 179,
+      "period_months_claim": 1,
+      "merchant_declares_not_openai_authorized": true,
+      "terms_prohibit_resale_of_purchased_services": true,
+      "legal_operator_text": "以实际开票主体为准",
+      "legal_entity_verified": false,
+      "payment_extra_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "full_invoice_included_cny": null,
+      "actual_delivery_tested": false,
+      "formal_upstream_authorization_verified": false
+    },
+    {
+      "merchant": "闪充AI",
+      "url": "https://gptpro20x.com/chatgpt/",
+      "sku": "ChatGPT Plus月付非Go/年付",
+      "display_price_cny": 168,
+      "merchant_invoice_percent_claim": 6,
+      "known_invoice_component_cny": 10.08,
+      "public_essential_cost_component_sum_cny": 178.08,
+      "alipay_payment_extra_percent_claim": 0,
+      "wechat_payment_extra_percent_claim": 3,
+      "actual_total_paid_with_china_invoice_cny": null,
+      "known_components_exceed_170": true,
+      "merchant_disclaims_openai_authorization": true,
+      "formal_wholesale_authorization_verified": false
+    }
+  ],
+  "independent_phone_services": [
+    {
+      "sku": "Codex美区长效20–30天",
+      "aggregator_url": "https://www.aigood.chat/price-radar/products/codex-20-30-plus-codex-codex",
+      "third_party_snapshot_price_cny_per_item": 2.9,
+      "merchant_validity_days_claim": [
+        20,
+        30
+      ],
+      "repeat_sms_claim": true,
+      "merchant_three_bindings_only_one_guaranteed_claim": true,
+      "validity_starts_at_verified": null,
+      "chatgpt_web_success_tested": false,
+      "codex_success_tested": false,
+      "first_official_api_key_success_tested": false,
+      "failed_sms_original_route_refund_verified": null,
+      "real_checkout_verified": false
+    },
+    {
+      "sku": "美区25–29天号码",
+      "aggregator_url": "https://www.aigood.chat/price-radar/products/codex-25-api",
+      "third_party_snapshot_price_cny_per_item": 5.5,
+      "merchant_validity_days_claim": [
+        25,
+        29
+      ],
+      "starts_from_listing_not_purchase_claim": true,
+      "merchant_claims_chatgpt_and_codex": true,
+      "redeem_url": "https://chongpt.xyz/",
+      "first_official_api_key_success_tested": false,
+      "failed_sms_original_route_refund_verified": null,
+      "real_checkout_verified": false
+    },
+    {
+      "sku": "随机Codex单次",
+      "aggregator_url": "https://www.aigood.chat/price-radar/products/5-codex",
+      "third_party_snapshot_price_cny_per_item": 0.28,
+      "merchant_success_rate_percent_claim_approx": 30,
+      "no_refunds_for_unreceivable_or_invalid_number_claim": true,
+      "real_success_tested": false,
+      "real_checkout_verified": false
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_plus_orders": 0,
+    "verified_legal_vat_invoices": 0,
+    "real_sms_success": 0
+  },
+  "independent_verification": {
+    "chatgpt_web_sms_success": 0,
+    "codex_sms_success": 0,
+    "first_official_api_key_sms_success": 0,
+    "verified_long_term_number_control": 0,
+    "apple_or_session_plus_purchase_automatically_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://gpthubs.net/buy/chatgpt-plus",
+      "source_kind": "seller SKU",
+      "finding": "GPTHubs Plus本人原号¥160/份，网页演示30天，需已登录并转交Session JSON至GPT101；在期Plus无法重复升级",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": null
+    },
+    {
+      "url": "https://gpthubs.net/refunds",
+      "source_kind": "seller terms",
+      "finding": "上游或库存无法履约先补发、重试再退款；账号不符不保。原路退款仅商称（自标2026-10-28旧条款）",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": null
+    },
+    {
+      "url": "https://gpt101.org/products?source=home",
+      "source_kind": "seller SKU",
+      "finding": "GPT101本人原号Plus单月¥179，商称可开票，最终全费未知",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": null
+    },
+    {
+      "url": "https://gpt101.org/terms-of-service",
+      "source_kind": "seller terms",
+      "finding": "GPT101自称非OpenAI授权经销商，禁止转售购买服务，经营主体以实际开票主体为准（条款自标2026-08）",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": null
+    },
+    {
+      "url": "https://gptpro20x.com/chatgpt/",
+      "source_kind": "seller SKU",
+      "finding": "闪充AI Plus单月¥168，中国电子增值税普票另+6%，已知分项¥178.08超170元",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": null
+    },
+    {
+      "url": "https://gptpro20x.com/",
+      "source_kind": "seller site",
+      "finding": "商称支付宝无附费、微信+3%；独立第三方不具有OpenAI官方代理授权",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": null
+    },
+    {
+      "url": "https://www.aigood.chat/price-radar/products/codex-20-30-plus-codex-codex",
+      "source_kind": "third party snapshot",
+      "finding": "美国Codex长效20-30天聚合最低价CNY2.90/张；商称最多三绑只保一绑，期限内可重复取码，非实测",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": "20261105T045410Z-6455f2a7"
+    },
+    {
+      "url": "https://www.aigood.chat/price-radar/products/codex-25-api",
+      "source_kind": "third party snapshot",
+      "finding": "美国25-29天号码聚合价CNY5.50；商称ChatGPT/Codex，期限上架起算不从购买起算，API首key未测试",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": "20261105T045410Z-6455f2a7"
+    },
+    {
+      "url": "https://www.aigood.chat/price-radar/products/5-codex",
+      "source_kind": "third party snapshot",
+      "finding": "随机Codex一次码聚合价CNY0.28；商称成功率约30%，收不到码/号码不可用不退款",
+      "observed_on": "2026-11-05",
+      "read_status": "readable",
+      "aggregator_snapshot_id": "20261105T045410Z-6455f2a7"
+    },
+    {
+      "url": "https://chongpt.xyz/",
+      "source_kind": "redeem site attempted",
+      "finding": "无可读商品正文，不确认AIGOOD的¥5.50能在兑换网站直接成交",
+      "observed_on": "2026-11-05",
+      "read_status": "no_readable_body",
+      "aggregator_snapshot_id": null
+    }
+  ],
+  "legacy_126_quotes_preserved": true,
+  "previous_r1_r49_original_reports_preserved": true,
+  "methodology": "9条可读源、1条不可读原站；不同商家真实SKU与AIGOOD第三方快照分开；GPT101零售价不是GPTHubs批发成本证明；未支付、未取得发票/供货授权、未输入账号凭据或接码。所有未知费用null。"
+}
