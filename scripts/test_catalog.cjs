@@ -186,4 +186,15 @@ assert.equal(r50.supplier_chain[2].public_essential_cost_component_sum_cny,178.0
 assert.equal(r50.independent_phone_services[1].starts_from_listing_not_purchase_claim,true);
 assert.equal(r50.independent_phone_services[2].no_refunds_for_unreceivable_or_invalid_number_claim,true);
 assert.equal(r50.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r51cat=d.records.find(r=>r.id==='gpt-source-followup-r51-20261105'),r51data=d.records.find(r=>r.id==='gpt-source-followup-r51-20261105-evidence');
+assert(r51cat&&r51data&&r51cat.url.endsWith('supplier-followup-20261105-r13.html'));
+const r51=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r13-evidence.json'),'utf8'));
+assert.equal(r51.round,51);assert.equal(r51.site_version,'1.9.59');assert.equal(r51.sources.length,8);
+assert.equal(r51.new_retail_supplier.alipay_wechat_display_cny_per_month,138);
+assert.equal(r51.new_retail_supplier.usdt_discounted_display_cny_per_month,133);
+assert.equal(r51.new_retail_supplier.real_all_required_fees_including_china_invoice_cny,null);
+assert.equal(r51.new_retail_supplier.external_redemption_flow_session_or_token_requirements_verified,null);
+assert.equal(r51.reseller_claims_and_terms.partner_program_is_referral_not_verified_wholesale,true);
+assert.equal(r51.upstream_infrastructure_traces[1].public_verified_wholesale_price_cny,null);
+assert.equal(r51.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

@@ -1,0 +1,177 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 51,
+  "date": "2026-11-05",
+  "site_version": "1.9.59",
+  "observed_on": "2026-11-05",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170,
+    "formal_resale_authorization_required": true
+  },
+  "new_retail_supplier": {
+    "merchant": "CCSub",
+    "sku": "ChatGPT Plus 菲区本人原号 1个月",
+    "chinese_merchant_page_url": "https://ccsub.cyou/zh/gpt-plus-recharge",
+    "english_sku_page_url": "https://www.ccsub.net/en/membership-recharge",
+    "alipay_wechat_display_cny_per_month": 138,
+    "usdt_discounted_display_cny_per_month": 133,
+    "usdt_discount_limited_promo_cny": 5,
+    "real_all_required_fees_including_china_invoice_cny": null,
+    "payment_extra_fee_cny": null,
+    "usdt_network_and_fx_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "china_invoice_type": null,
+    "legal_merchant_name_verified": false,
+    "legal_payment_recipient_verified": false,
+    "legal_invoice_issuer_verified": false,
+    "documented_formal_wholesale_or_resale_authorization_verified": false,
+    "merchant_explicitly_disclaims_openai_authorization": true,
+    "requires_free_account_without_paid_subscription_claim": true,
+    "active_subscription_recharge_supported_claim": false,
+    "former_ios_or_google_subscription_must_expire_claim": true,
+    "team_membership_must_exit_first_claim": true,
+    "no_previous_zero_yuan_topup_claim": true,
+    "merchant_claims_no_password_or_session_received_by_ccsub": true,
+    "external_redemption_domain": "https://982xj.xyz/",
+    "external_redemption_flow_session_or_token_requirements_verified": null,
+    "merchant_30_day_warranty_from_activation_claim": true,
+    "merchant_channel_failure_refund_claim": true,
+    "merchant_drop_subscription_pro_rata_refund_claim": true,
+    "merchant_banned_account_refund_claim": false,
+    "original_route_refund_verified": false,
+    "merchant_displayed_cumulative_sales_independently_verified": false,
+    "actual_checkout_paid": false,
+    "actual_membership_activated": false,
+    "merchant_requires_customer_to_resolve_official_phone_verification_claim": true
+  },
+  "reseller_claims_and_terms": {
+    "partner_url": "https://www.ccsub.net/en/partner",
+    "referral_commission_percent_claim": [
+      15,
+      25,
+      40
+    ],
+    "partner_program_is_referral_not_verified_wholesale": true,
+    "terms_url": "https://www.ccsub.net/en/terms-of-service",
+    "terms_self_marked_updated": "2026-03",
+    "terms_prohibit_resale_of_api_service_or_credits": true,
+    "terms_apply_to_chatgpt_plus_cards_explicitly": null
+  },
+  "upstream_infrastructure_traces": [
+    {
+      "url": "https://aigood.chat/price-radar/products/codex-1000-api",
+      "source_kind": "third party old snapshot",
+      "snapshot_date": "2026-10-14",
+      "sku": "Codex 1000额度 非Plus",
+      "seller": "小久CatFK",
+      "redemption_url": "https://982xj.xyz/",
+      "same_domain_proves_shared_supplier_or_identical_sku": false,
+      "todays_plus_price_from_snapshot_cny": null
+    },
+    {
+      "url": "https://github.com/KC-CatK/KC-PAY-GPT/blob/main/%E5%AF%B9%E6%8E%A5api.md",
+      "source_kind": "public technical documentation",
+      "doc_self_version": "2026-08-16",
+      "api_base_example": "https://gogpt.id88.icu/api/v1",
+      "endpoints": [
+        "GET /plans",
+        "POST /pay/inspect",
+        "POST /pay",
+        "GET /pay/orders/{order_id}"
+      ],
+      "requires_chatgpt_session": true,
+      "requires_card_source": true,
+      "inspect_is_session_local_check_not_accepted_by_chatgpt": true,
+      "post_pay_ok_only_queue_not_fulfilled": true,
+      "doc_demo_success_cost_points": 100,
+      "doc_demo_cost_is_yuan": false,
+      "subscription_purchase_endpoint_documented_disabled": true,
+      "public_verified_wholesale_price_cny": null,
+      "live_api_confirmed": false,
+      "verified_wholesale_authorization": false
+    }
+  ],
+  "independent_phone_verification": {
+    "chatgpt_web_success_count": 0,
+    "codex_success_count": 0,
+    "first_official_api_key_success_count": 0,
+    "new_sms_offer_with_verified_price_count": 0,
+    "number_control_period_days": null,
+    "failed_sms_refund_verified": null,
+    "apple_or_session_topup_automatically_binds_phone": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_plus_orders": 0,
+    "verified_legal_vat_invoices": 0,
+    "real_sms_success": 0
+  },
+  "sources": [
+    {
+      "url": "https://ccsub.cyou/zh/gpt-plus-recharge",
+      "observed_on": "2026-11-05",
+      "kind": "seller Plus SKU",
+      "status": "readable",
+      "finding": "本人原号Plus一月支付宝/微信¥138、USDT促销¥133、无当前订阅、30天保，需自行应对手机号验证"
+    },
+    {
+      "url": "https://www.ccsub.net/en/membership-recharge",
+      "observed_on": "2026-11-05",
+      "kind": "seller Plus English SKU",
+      "status": "readable",
+      "finding": "英文Plus准确月数及人民币两种通道报价；商家声明不获OpenAI授权"
+    },
+    {
+      "url": "https://www.ccsub.net/en/partner",
+      "observed_on": "2026-11-05",
+      "kind": "seller partner page",
+      "status": "readable",
+      "finding": "引荐佣金15、25、40%，非Plus进货批发价"
+    },
+    {
+      "url": "https://www.ccsub.net/en/terms-of-service",
+      "observed_on": "2026-11-05",
+      "source_self_marked": "March 2026",
+      "kind": "seller API terms",
+      "status": "readable",
+      "finding": "API服务及credits禁止转售，不直接证明Plus卡密条款"
+    },
+    {
+      "url": "https://aigood.chat/price-radar/products/codex-1000-api",
+      "observed_on": "2026-11-05",
+      "source_snapshot_date": "2026-10-14",
+      "kind": "historical third party snapshot",
+      "status": "readable",
+      "finding": "小久不同SKU Codex 1000额度也指向982xj.xyz；仅公共兑换入口线索"
+    },
+    {
+      "url": "https://github.com/KC-CatK/KC-PAY-GPT/blob/main/%E5%AF%B9%E6%8E%A5api.md",
+      "observed_on": "2026-11-05",
+      "source_self_marked": "2026-08-16",
+      "kind": "public technical doc",
+      "status": "readable",
+      "finding": "代充需先有Session、卡和API凭证；100成功积分是示例非真实批发价；POST /pay排队不代表生效"
+    },
+    {
+      "url": "https://982xj.xyz/",
+      "observed_on": "2026-11-05",
+      "kind": "redemption attempted",
+      "status": "inaccessible",
+      "finding": "不能核兑换页是否需Session或Token、现时可用"
+    },
+    {
+      "url": "https://gogpt.id88.icu/",
+      "observed_on": "2026-11-05",
+      "kind": "service host attempted",
+      "status": "inaccessible",
+      "finding": "无法核实接口在线运营、Plus批发价、法定开票或真实交付"
+    }
+  ],
+  "legacy_126_quotes_preserved": true,
+  "previous_r1_r50_original_reports_preserved": true,
+  "methodology": "直接读取6条公开页面/历史文档及两条不可访问入口；不同SKU与2026-10-14旧快照不冒称今日价；所有未核费用null；未付款、未索取Session、未验发票、未接码、未证批发。"
+}
