@@ -1,0 +1,163 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 56,
+  "date": "2026-11-06",
+  "site_version": "1.9.64",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "v3_inventory_delta": {
+    "merchant": "V3小店",
+    "exact_sku": "[自助充值] ChatGPT Plus会员-正规代充值、代续费 1个月 ios充值",
+    "source": "https://shop.gpt.ge/buy/22",
+    "prior_observed_on": "2026-11-05",
+    "prior_stock_label": "无货",
+    "prior_evidence": "research/2026-11-05/supplier-followup-20261105-r16-evidence.json",
+    "current_observed_on": "2026-11-06",
+    "current_stock_label": "一般",
+    "front_end_stock_changed": true,
+    "actual_checkout_availability_tested": false,
+    "one_month_price_cny": 143.5,
+    "confirmed_price_change": false,
+    "wechat_payment_surcharge_rate": 0.035,
+    "usd_payment_surcharge_rate": 0.035,
+    "alipay_payment_surcharge_cny": null,
+    "china_invoice_fee_cny": null,
+    "chinese_vat_invoice_verified": false,
+    "real_all_in_cny": null,
+    "legal_receiving_entity_verified": null,
+    "formal_resale_authorization_verified": false,
+    "existing_paid_plus_coverage_not_additive": true,
+    "refund_may_offer_new_account": true,
+    "english_variant_price_cny": 145,
+    "english_variant_stock": "Plenty",
+    "locale_mismatch_reason_verified": null,
+    "philippine_sku_price_cny": 133.5,
+    "philippine_sku_stock": "非常多",
+    "philippine_requires_subscription_expired": true
+  },
+  "sms_service_new_unverified": {
+    "name": "SMSCode",
+    "type": "Temporary OTP number, separate from Plus subscription",
+    "usa_openai_starting_price_usd": 0.143,
+    "indonesia_openai_starting_price_usd": 0.008,
+    "not_paid_checkout_quote": true,
+    "number_lifetime_minutes_claim": 20,
+    "minimum_wallet_topup_usd_claim": 0.5,
+    "refund_if_no_sms_claim": true,
+    "refund_only_to_nonwithdrawable_wallet": true,
+    "refund_to_original_payment_verified": false,
+    "any_sms_triggers_fulfilled": true,
+    "later_receive_after_expiry_verified": null,
+    "payment_extra_fee_usd": null,
+    "real_paid_order": false,
+    "terms_currency_idr_vs_product_display_usd": true,
+    "legal_entity_claim": "Danver LLC (Wyoming, unverified)",
+    "legal_entity_independently_verified": false,
+    "about_claims_voip_and_sim": true,
+    "blog_claims_sim_only": true,
+    "blog_claims_every_chatgpt_register_needs_phone": true,
+    "official_openai_says_generally_not": true,
+    "chatgpt_web_verified": null,
+    "codex_desktop_verified": null,
+    "api_first_key_verified": null,
+    "sms_success_test_count": 0
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant",
+      "finding": "准确iOS Plus月卡¥143.50，前台库存「一般」；微信及USD手续费3.5%；已订Plus覆盖不叠加。"
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/18",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant",
+      "finding": "准确菲卡Plus月卡¥133.50、库存「非常多」；在期Plus不能直接续。"
+    },
+    {
+      "url": "https://shop.gpt.ge/en/buy/22",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_localized_snapshot",
+      "finding": "英语同SKU网页显示¥145、Stock Plenty，与同时读取的简体¥143.50/「一般」不同，不可直接判定调价。"
+    },
+    {
+      "url": "https://shop.gpt.ge/help",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant",
+      "finding": "发票/收据FAQ通用标题但无可验证中国增值税票据或出票主体。"
+    },
+    {
+      "url": "https://smscode.gg/virtual-number/us/openai",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant",
+      "finding": "OpenAI(ChatGPT)美国临时号码动态起价USD0.143/次，未测试成交。"
+    },
+    {
+      "url": "https://smscode.gg/virtual-number/id/openai",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant",
+      "finding": "OpenAI(ChatGPT)印尼临时号码动态起价USD0.008/次，未测试成交。"
+    },
+    {
+      "url": "https://smscode.gg/faq",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_terms",
+      "finding": "通常20分钟收短信，没短信退不可提现站内余额，收到任意短信视为已履约；最低充值USD0.50（站方称）。"
+    },
+    {
+      "url": "https://smscode.gg/terms",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_terms",
+      "finding": "号非永久，余额不可提现；条款写IDR计价与USD商品页不同；Danver LLC美国WY注册为自述未核验；不保证第三方接受号码。"
+    },
+    {
+      "url": "https://smscode.gg/about",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant",
+      "finding": "自称VoIP与实体SIM双来源，非所有号码实卡。"
+    },
+    {
+      "url": "https://smscode.gg/blog/chatgpt-virtual-number-verification",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_marketing",
+      "finding": "自标2026-03-14文章称ChatGPT全部新注册必须验手机且号码纯实体SIM；与官方和本站About矛盾，成功率无独立实测。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "official",
+      "finding": "官方区分ChatGPT通常无需验手机号、Codex桌面可能需、API首个密钥需要；VoIP号码不被接受。"
+    }
+  ],
+  "preservation": {
+    "historical_126_quotes_untouched": true,
+    "all_previous_55_reports_untouched": true,
+    "prior_observation_not_overwritten": true
+  },
+  "methodology": "2026-11-06直接读11个原始URL，与2026-11-05 r54归档的同一简体V3商品库存比较：仅展示库存变化，未测试实际订单。英语页面有跨语言差异不判价变。接码服务仅站方起价和条款，不保证OpenAI接受，未知费为null。未付款、未交凭据、未联系商家、未验票和短信。"
+}

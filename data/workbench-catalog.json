@@ -1574,6 +1574,28 @@
       "summary": "7条直接读取商家原页；SKU阶梯、iOS美区卡密种类、旧代理API商称410而未亲测、微信支付、退款条件；支付+税票全费null，实购验票接码0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r56-20261106",
+      "title": "GPT源头 · V3 iOS库存恢复迹象与临时号码风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r01.html",
+      "updatedAt": "2026-11-05T16:48:00Z",
+      "summary": "iOS Plus一月¥143.50旧「无货」改前台「一般」，并非实购恢复；SMSCode仅USD起价、退款到不可提现余额及VoIP声明冲突。合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r56-20261106-evidence",
+      "title": "V3库存对照与SMSCode起价/号码期限/退款边界 · r56证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r01-evidence.json",
+      "updatedAt": "2026-11-05T16:48:00Z",
+      "summary": "11条实读URL，旧r54库存归档保留，真实含票金额null；账号保号及网页/Codex/API手机实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
