@@ -1684,6 +1684,28 @@
       "summary": "12条直读原URL，3元验证卡风险、107元一月零售SKU、商称源头及真实全费授权null；没有登录凭据发送或实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r61-20261106",
+      "title": "GPT源头 · ChongPay首页¥139与分类页¥150同站价签冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r06.html",
+      "updatedAt": "2026-11-06T00:00:00Z",
+      "summary": "同一商家首页原号Plus与iOS各¥139、分类页菲律宾/iOS仍各¥150、关于页¥189；外部店铺WAF阻断，不能认定真实降价。已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r61-20261106-evidence",
+      "title": "ChongPay Plus价签、税票、真实结算与付款链 · r61",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r06-evidence.json",
+      "updatedAt": "2026-11-06T00:00:00Z",
+      "summary": "11个当轮原始网址、1次WAF不可读；SKU与两页价差、票据/授权/费用null明确分开，真实购买、税票和短信验真均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
