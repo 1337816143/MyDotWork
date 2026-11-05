@@ -257,4 +257,12 @@ assert.equal(r57.new_retail_candidate_unverified.known_advertised_components_sum
 assert.equal(r57.new_retail_candidate_unverified.real_all_in_cny,null);
 assert.equal(r57.new_retail_candidate_unverified.formal_resale_authorization_verified,false);
 assert.equal(r57.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r58cat=d.records.find(v=>v.id==='gpt-source-followup-r58-20261106'),r58data=d.records.find(v=>v.id==='gpt-source-followup-r58-20261106-evidence');
+assert(r58cat&&r58data);
+const r58=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r03-evidence.json'),'utf8'));
+assert.equal(r58.round,58);assert.equal(r58.site_version,'1.9.66');assert.equal(r58.sources.length,11);
+assert.equal(r58.new_sms_service.openai_exact_sku_current_price,null);
+assert.equal(r58.new_sms_service.company_registration_cross_checked,true);
+assert.equal(r58.new_sms_service.codex_desktop_phone_success_tested,false);
+assert.equal(r58.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
