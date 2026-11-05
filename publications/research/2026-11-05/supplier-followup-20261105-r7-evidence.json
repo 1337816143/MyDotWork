@@ -1,0 +1,147 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 45,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-05T00:30:58.773Z",
+  "site_version": "1.9.53",
+  "scope": "硅基面包原号Plus单件单月¥139、另+3%数电增值税普通发票与30天开票窗口；历史旧价不当作当日新调价。没有证明一手批发授权或实付验真。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "硅基面包 gjmb.cn",
+    "category": "retail_candidate_not_verified_upstream",
+    "sku": "本人原有ChatGPT账号 Plus 1个月 iOS美区卡渠道（商称）",
+    "url": "https://www.gjmb.cn/pricing",
+    "quantity": 1,
+    "period_months": 1,
+    "currency": "CNY",
+    "display_price_cny": 139,
+    "china_vat_invoice_type_claim": "数电增值税普通发票",
+    "invoice_fee_rate_claim": 0.03,
+    "invoice_fee_cny_calculated_from_display_price": 4.17,
+    "public_known_components_sum_cny": 143.17,
+    "invoice_request_deadline_days_after_payment_claim": 30,
+    "invoice_request_conditions_claim": "已付款且已交付未退款；每单一票；需另行付款申请",
+    "invoice_processing_business_days_claim": "1–3",
+    "payment_fee_cny": null,
+    "fx_fee_cny": null,
+    "invoice_issuer_verified": null,
+    "legal_operator_verified": null,
+    "verified_payment_recipient": null,
+    "actual_invoice_verified": false,
+    "real_paid_all_fees_including_invoice_cny": null,
+    "merchant_requires_successful_prior_chatgpt_web_login": true,
+    "merchant_requires_session_after_payment": true,
+    "automatic_openai_phone_binding_from_purchase": false,
+    "merchant_self_declares_not_openai_authorized": true,
+    "wholesale_purchase_price_cny": null,
+    "formal_wholesale_or_resale_authorization_verified": false,
+    "agent_upfront_fee_zero_verified": null,
+    "actual_order_tested": false,
+    "actual_subscription_activation_tested": false,
+    "stock_tested": false,
+    "refund_method_tested": false,
+    "existing_subscription_overlap_without_compensation_claim": true,
+    "warranty_months_claim": 1
+  },
+  "bounded_rechecks": {
+    "merchant": "V3小店 / 引路鲸",
+    "v3_original_price_cny_plus_filipino": 133.5,
+    "v3_original_price_cny_plus_ios": 143.5,
+    "v3_read_price_changed": false,
+    "yinlujing_agent_fee_cny_historical_and_rechecked": 3000,
+    "wholesale_fee_free_qualified": false,
+    "other_merchants_unreadable_or_no_material_new_original_evidence_not_refreshed": true
+  },
+  "phone_verification": {
+    "verified_new_web_sms_services": 0,
+    "verified_new_codex_sms_services": 0,
+    "verified_new_first_api_key_sms_services": 0,
+    "real_sms_success": 0,
+    "phone_number_retention_days_verified": null,
+    "failed_sms_original_refund_verified": null,
+    "purchase_requires_session_prior_login": true,
+    "phone_number_from_merchant_order_is_not_openai_binding": true
+  },
+  "sources": [
+    {
+      "url": "https://www.gjmb.cn/pricing",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_price_page",
+      "finding": "ChatGPT Plus单件每月人民币139元，号称iOS美区卡渠道、30天售后；没有确认支付最终结算。"
+    },
+    {
+      "url": "https://www.gjmb.cn/invoice",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_invoice_terms",
+      "finding": "商称支持中国数电增值税普通发票，开票附费为票面金额3%，购买并支付后30天内提交；订单须已支付交付且未退款，同一订单仅开一次，开票费需另外支付。"
+    },
+    {
+      "url": "https://www.gjmb.cn/about",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-15 (merchant-labelled)",
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_about",
+      "finding": "自述与OpenAI没有官方授权或隶属；Plus领取流程需先登录既有ChatGPT账号并提供Session信息；商称不保存Session，未独立验证。批量/企业报价不公开。"
+    },
+    {
+      "url": "https://www.gjmb.cn/refund",
+      "observed_on": "2026-11-05",
+      "page_date": "2026-10-15 (merchant-labelled)",
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_refund",
+      "finding": "自述掉订按剩余期限比例处理；在期原订阅可能被新订阅覆盖而不补偿，封号不在常规售后内；退款方式及真实履约未验证。"
+    },
+    {
+      "url": "https://www.gjmb.cn/products",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_catalog",
+      "finding": "Plus单月¥139和现货/自动发卡仅为商家前台展示，不等于已验证库存、订单或充值成功。"
+    },
+    {
+      "url": "https://www.gjmb.cn/plus",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_plus_landing",
+      "finding": "再展示原号Plus单月¥139、提供Session才可办理；未独立核实实际Apple收据及收款主体。"
+    },
+    {
+      "url": "https://www.gjmb.cn/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_home",
+      "finding": "主页重复¥139/月、商称苹果渠道；渠道自述不等同OpenAI批准代销或公开批发授权。"
+    },
+    {
+      "url": "https://www.gjmb.cn/shop",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "unreadable_no_product_content",
+      "evidence_class": "access_limitation",
+      "finding": "商城支付页本轮未读到可独立确认的订单/收银台正文；不把公开报价记为实际最终结算价。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_all_fees_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r44_original_reports_preserved": true,
+  "note": "2026-11-05为本轮读取观察日，并非商品调价日；¥143.17仅以139*1.03计算的公开组件和，未取得订单、真实支付手续费、中国税票或授权。网页声明、推断和实测分开；不读取Session、不购买、不联系商家。"
+}
