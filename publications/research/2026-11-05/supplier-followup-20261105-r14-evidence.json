@@ -1,0 +1,158 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 52,
+  "date": "2026-11-05",
+  "site_version": "1.9.60",
+  "observed_on": "2026-11-05",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170,
+    "formal_resale_authorization_required": true
+  },
+  "new_retail_candidate": {
+    "merchant": "AI Shop 91",
+    "sku": "ChatGPT Plus 独享代充·月付",
+    "url": "https://aishop91.com/products/chatgpt",
+    "price_usdt_per_month": 13.8,
+    "merchant_reference_cny_per_month": 99.36,
+    "actual_cny_total_with_invoice": null,
+    "crypto_network_and_fx_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "legal_invoice_issuer": null,
+    "own_existing_chatgpt_account_accepted_verified": null,
+    "merchant_says_30_day_warranty": true,
+    "merchant_explicitly_disclaims_openai_authorization": true,
+    "verified_wholesale_authorization": false,
+    "real_order_verified": false
+  },
+  "separate_apple_gift_card": {
+    "sku": "美区Apple账号充值卡·20 USD面额",
+    "url": "https://aishop91.com/gift-cards/us?buy=1",
+    "face_value_usd": 20,
+    "merchant_display_price_usd_equivalent": 14,
+    "nominal_discount_pct": 30,
+    "merchant_claims_single_unit_dropshipping": true,
+    "price_is_real_paid_usdt": null,
+    "legal_source_and_unredeemed_code_verified": false,
+    "actual_valid_apple_card_redeemed": false,
+    "apple_resale_authorization_verified": false,
+    "full_payment_with_china_invoice_cny": null,
+    "is_openai_chatgpt_gift_card": false,
+    "is_direct_plus_subscription": false
+  },
+  "merchant_terms": {
+    "urls": [
+      "https://aishop91.com/faq",
+      "https://aishop91.com/terms",
+      "https://aishop91.com/refund",
+      "https://aishop91.com/about"
+    ],
+    "merchant_disclaims_brand_authorization": true,
+    "seller_claims_payment_confirmation_before_delivery": true,
+    "crypto_send_fee_external": true,
+    "refund_claim_undelivered_order_full": true,
+    "refund_claim_delivered_no_unconditional_refund": true,
+    "refund_claim_crypto_original_route": true,
+    "refund_claim_apple_code_tested": false,
+    "actual_refund_verified": false
+  },
+  "official_openai_gift_card": {
+    "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+    "is_different_from_apple_gift_card": true,
+    "us_only_usd_billed_account": true,
+    "eligible_chatgpt_web_subscription_can_be_paid": true,
+    "apple_or_google_billed_subscription_not_eligible": true,
+    "redemption_does_not_auto_start_plus": true,
+    "mainland_user_eligibility_verified": false,
+    "official_bulk_price_verified": null
+  },
+  "prior_candidate_check": {
+    "merchant": "硅基面包",
+    "url": "https://www.gjmb.cn/pricing",
+    "prior_r45_plus_cny": 139,
+    "current_direct_plus_cny": 139,
+    "price_change_confirmed": false,
+    "another_similar_site": "https://gptdcvip.com/pricing",
+    "another_site_direct_plus_cny": 139,
+    "same_legal_entity_proved": null,
+    "search_cached_148_is_current_direct_price": false
+  },
+  "phone_verification": {
+    "new_distinct_sms_service_verified": false,
+    "web_sms_success": 0,
+    "codex_sms_success": 0,
+    "api_initial_sms_success": 0,
+    "number_retention_days": null,
+    "refund_for_failed_sms_verified": null,
+    "plus_or_apple_purchase_automatically_binds_phone": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_plus_orders": 0,
+    "verified_legal_vat_invoices": 0,
+    "real_sms_success": 0,
+    "real_apple_cards_redeemed": 0
+  },
+  "sources": [
+    {
+      "url": "https://aishop91.com/products/chatgpt",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "Plus独享一月13.8USDT，人民币数仅站内折算，本人已有账号和税票未证"
+    },
+    {
+      "url": "https://aishop91.com/gift-cards/us?buy=1",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "20USD卡面显示USD14等值，商称一件代发，非实际卡兑换证据"
+    },
+    {
+      "url": "https://aishop91.com/faq",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "链费外收、USDT付款通知非实际到账，已有订阅资格待确认"
+    },
+    {
+      "url": "https://aishop91.com/terms",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "无品牌官方授权；可能按保修更换新账号"
+    },
+    {
+      "url": "https://aishop91.com/refund",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "商称未发全退、已发货不无理由退、原加密币路径退"
+    },
+    {
+      "url": "https://aishop91.com/about",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "商称苹果卡逐单供应商家，但未见合法供货合同"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "OpenAI自己的礼卡仅美国美元账号，用于ChatGPT网页，不是Apple卡"
+    },
+    {
+      "url": "https://www.gjmb.cn/pricing",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "前轮硅基面包Plus¥139本轮无变化"
+    },
+    {
+      "url": "https://gptdcvip.com/pricing",
+      "observed_on": "2026-11-05",
+      "status": "readable",
+      "finding": "另域名直接读Plus¥139，同法律主体与否不明，旧缓存148不可当现价"
+    }
+  ],
+  "legacy_126_quotes_preserved": true,
+  "prior_r1_r51_original_reports_preserved": true,
+  "methodology": "9条公开商家/官方原页；只认所读观察日不冒充调价；区分Apple卡与OpenAI礼卡；不付款、不验票、不交Session、不接码；费用及税票null，合同与真实履约0。"
+}
