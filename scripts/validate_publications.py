@@ -131,13 +131,24 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 121, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 123, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.44'
-    assert latest['path'] == 'research/2026-11-05/supplier-followup-20261105-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-05/supplier-followup-20261105-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-05/supplier-followup-20261105-r5.html'
+    assert latest['version'] == '1.45'
+    assert latest['path'] == 'research/2026-11-05/supplier-followup-20261105-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-05/supplier-followup-20261105-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-05/supplier-followup-20261105-r6.html'
+    assert by_id['gpt-source-followup-r45-20261105']['url'] == '../research/2026-11-05/supplier-followup-20261105-r7.html'
+    assert by_id['gpt-source-followup-r45-20261105-evidence']['url'] == '../research/2026-11-05/supplier-followup-20261105-r7-evidence.json'
+    r45 = json.loads((ROOT / 'dist/research/2026-11-05/supplier-followup-20261105-r7-evidence.json').read_bytes())
+    assert r45['round'] == 45 and r45['site_version'] == '1.9.53'
+    assert r45['new_candidate']['display_price_cny'] == 139
+    assert r45['new_candidate']['invoice_fee_rate_claim'] == 0.03
+    assert r45['new_candidate']['public_known_components_sum_cny'] == 143.17
+    assert r45['new_candidate']['payment_fee_cny'] is None
+    assert r45['new_candidate']['real_paid_all_fees_including_invoice_cny'] is None
+    assert len([source for source in r45['sources'] if source['read_status'] == 'success_read']) == 7
+    assert r45['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r44-20261105']['url'] == '../research/2026-11-05/supplier-followup-20261105-r6.html'
     assert by_id['gpt-source-followup-r44-20261105-evidence']['url'] == '../research/2026-11-05/supplier-followup-20261105-r6-evidence.json'
     r44 = json.loads((ROOT / 'dist/research/2026-11-05/supplier-followup-20261105-r6-evidence.json').read_bytes())
