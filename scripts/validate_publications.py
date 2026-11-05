@@ -137,7 +137,7 @@ def validate_publications():
     assert latest['version'] == '1.53'
     assert latest['path'] == 'research/2026-11-05/supplier-followup-20261105-r15.html'
     assert latest['dataPath'] == 'research/2026-11-05/supplier-followup-20261105-r15-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-05/supplier-followup-20261105-r13.html'
+    assert latest['previousPath'] == 'research/2026-11-05/supplier-followup-20261105-r14.html'
     assert by_id['gpt-source-followup-r52-20261105']['url'] == '../research/2026-11-05/supplier-followup-20261105-r14.html'
     assert by_id['gpt-source-followup-r52-20261105-evidence']['url'] == '../research/2026-11-05/supplier-followup-20261105-r14-evidence.json'
     r52 = json.loads((ROOT / 'dist/research/2026-11-05/supplier-followup-20261105-r14-evidence.json').read_bytes())
