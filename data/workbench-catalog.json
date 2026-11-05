@@ -1398,6 +1398,28 @@
       "summary": "9条商家原始URL；准确Plus/SMS报价、密码和动态码处理风险、人民币/美元币种分开，未知开票费/税票/上游/号码期限为null，实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r48-20261105",
+      "title": "GPT源头 · TokenSpark卡池内测与美区Plus零售分轨",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r10.html",
+      "updatedAt": "2026-11-05T03:24:20.017Z",
+      "summary": "TokenSpark展示批量API和卡池内测演示，成功10积分并非人民币价格；美区Plus零售$24.99/件领卡后自行官网付款；中国税票授权未核，合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r48-20261105-evidence",
+      "title": "TokenSpark API演示、Plus SKU与含票全费缺口 · r48源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r10-evidence.json",
+      "updatedAt": "2026-11-05T03:24:20.017Z",
+      "summary": "6条URL观察（5条正文可读、1条不可读），美元价格、成功积分、准确售后窗口和前置Session，真实票据/授权/电话号码验证为null或未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
