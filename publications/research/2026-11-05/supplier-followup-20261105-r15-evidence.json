@@ -1,0 +1,155 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 53,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-05T10:56:18.078Z",
+  "site_version": "1.9.61",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_max_all_china_vat_fee_cny": 170,
+    "resale_authorization_required": true
+  },
+  "new_wholesale_interface_lead": {
+    "merchant": "MaplePass",
+    "category": "public_merchant_api_lead_not_verified_qualified_upstream",
+    "api_cooperation_url": "https://maple1189ai.com/api-cooperation",
+    "merchant_claim_zero_deposit": true,
+    "merchant_claim_100_item_test_quota_not_free_items": true,
+    "requires_reseller_signin_approval": true,
+    "requires_prepaid_usdt_wallet_for_order": true,
+    "actual_authenticated_wholesale_prices_observed": false,
+    "api_order_schema_minimum_quantity": 1,
+    "actual_one_unit_api_fulfillment_tested": false,
+    "legal_operator_registration_verified": null,
+    "actual_payment_recipient_verified": null,
+    "actual_china_invoice_issuer_verified": null,
+    "formal_resale_authorization_verified": null,
+    "final_invoiced_payment_cny": null,
+    "fx_fee_cny": null,
+    "crypto_network_fee_cny": null,
+    "invoice_fee_cny": null,
+    "actual_paid_order_tested": false
+  },
+  "public_reference_skus": [
+    {
+      "product_code": "gptplus_google",
+      "sku": "ChatGPT Plus 谷歌免密秒充",
+      "merchant_public_wholesale_reference_usdt_per_item": 15.5,
+      "merchant_claims_account_id_only": true,
+      "merchant_claims_no_session": true,
+      "actual_approved_price_usdt": null,
+      "one_month_membership_period_verified_on_listing": null,
+      "own_existing_account_renewal_without_loss_verified": null,
+      "all_required_cny_fees_with_china_vat_invoice": null
+    },
+    {
+      "product_code": "gptplus",
+      "sku": "ChatGPT Plus 菲律宾卡充",
+      "merchant_public_wholesale_reference_usdt_per_item": 15.8,
+      "merchant_claims_own_account_upgrade": true,
+      "actual_approved_price_usdt": null,
+      "one_month_membership_period_verified_on_listing": null,
+      "own_existing_account_renewal_without_loss_verified": null,
+      "all_required_cny_fees_with_china_vat_invoice": null
+    }
+  ],
+  "conflicts": {
+    "merchant_policy_forbids_product_requiring_session_or_otp": true,
+    "separate_openapi_redeem_endpoint_requires_cardkey_and_accountsession": true,
+    "these_are_potentially_distinct_fulfillment_paths": true,
+    "actual_sku_session_requirement_verified": null,
+    "first_web_phone_verification_solved": false,
+    "marketplace_not_third_party_brand_authorized": true,
+    "terms_say_legal_operating_entity_and_jurisdiction_not_formally_established_for_public_registration_disclosure": true,
+    "real_legal_entity_verified": null
+  },
+  "refund_claims": {
+    "merchant_says_30_day_warranty_and_wallet_refund": true,
+    "published_terms_require_review": true,
+    "after_review_may_repair_replace_refund_partial_or_full_or_reject": true,
+    "refund_to_original_channel_verified": null,
+    "actual_refund_tested": false
+  },
+  "separate_phone_validation": {
+    "new_verified_service": false,
+    "web_sms_success_count": 0,
+    "codex_sms_success_count": 0,
+    "initial_api_key_sms_success_count": 0,
+    "number_retention_days": null,
+    "failed_sms_original_refund_verified": null,
+    "plus_auto_binds_phone": false
+  },
+  "priority_older_merchants": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "old_quotes_not_refreshed_without_new_price_evidence": true,
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_plus_orders": 0,
+    "verified_china_tax_invoices": 0,
+    "actual_sms_success_count": 0
+  },
+  "sources": [
+    {
+      "url": "https://maple1189ai.com/api-cooperation",
+      "observed_on": "2026-11-05",
+      "page_self_updated_on": null,
+      "read_status": "success",
+      "class": "original_merchant",
+      "finding": "宣称零押金和100件测试配额，实际需审批及USDT钱包入金；获批后才显示商户价。"
+    },
+    {
+      "url": "https://maple1189ai.com/guide/faka-api-integration",
+      "observed_on": "2026-11-05",
+      "page_self_updated_on": null,
+      "read_status": "success",
+      "class": "original_merchant",
+      "finding": "两种不同Plus SKU参考底价15.50/15.80 USDT/件，非获批商户实际进货价且此表未确认精准一个月。"
+    },
+    {
+      "url": "https://maple1189ai.com/api/openapi.json",
+      "observed_on": "2026-11-05",
+      "page_self_updated_on": null,
+      "read_status": "success",
+      "class": "original_api_spec",
+      "finding": "批发订单quantity最小1和HMAC，示例价格非成交；另一CDK核销端点accountSession必填。"
+    },
+    {
+      "url": "https://maple1189ai.com/prohibited-products",
+      "observed_on": "2026-11-05",
+      "page_self_updated_on": "2026-09-03",
+      "read_status": "success",
+      "class": "original_terms",
+      "finding": "禁止需要Session/Token/OTP的商品，与核销端点例子存在待核冲突。"
+    },
+    {
+      "url": "https://maple1189ai.com/terms",
+      "observed_on": "2026-11-05",
+      "page_self_updated_on": "2026-09-03",
+      "read_status": "success",
+      "class": "original_terms",
+      "finding": "独立交易市场非品牌授权商；未提供确证法律经营实体、收款、税务出票及供货授权。"
+    },
+    {
+      "url": "https://maple1189ai.com/refund-policy",
+      "observed_on": "2026-11-05",
+      "page_self_updated_on": "2026-09-03",
+      "read_status": "success",
+      "class": "original_terms",
+      "finding": "退款经审核可维修/补发/部分或全部退款/拒绝，加密币网络成本可能影响退回金额。"
+    }
+  ],
+  "methodology": "公开商家声明/技术样例不等于批发实际订单、正式转售授权或已验发票。仅新读六条页面，历史126条报价、旧r1-r52报告原字节未动。没有付款、登录凭据、短信实测。"
+}
