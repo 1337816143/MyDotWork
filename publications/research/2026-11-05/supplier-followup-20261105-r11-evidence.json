@@ -1,0 +1,230 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 49,
+  "date": "2026-11-05",
+  "site_version": "1.9.57",
+  "observed_on": "2026-11-05",
+  "observed_time_precision": "date-only; separate platform snapshot timestamps provided",
+  "scope": "11AI原号Plus和Codex独立接码的首次原始SKU核实；AIGOOD第三方报价快照追踪供货链线索；GPT-Buy错误低价SKU与售后公告边界。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170,
+    "formal_resale_authorization_required": true
+  },
+  "newly_read_direct_merchant": {
+    "merchant": "11AI",
+    "plus": {
+      "url": "https://11aix.com/store/4",
+      "sku": "ChatGPT Plus 代充",
+      "display_price": 140,
+      "currency": "CNY",
+      "quantity": 1,
+      "period_days_claim": 30,
+      "requires_existing_chatgpt_login": true,
+      "requires_session_json": true,
+      "session_json_is_sensitive_login_credential": true,
+      "successful_charge_tested": false,
+      "alipay_checkout_fee_percent_verified_for_this_sku": null,
+      "other_payment_fee_cny": null,
+      "china_vat_invoice_available_verified": null,
+      "china_vat_invoice_fee_cny": null,
+      "collection_legal_entity_verified": false,
+      "issuer_legal_entity_verified": false,
+      "resale_permission_verified": false,
+      "one_unit_wholesale_terms_verified": false,
+      "all_required_fees_with_invoice_cny": null,
+      "merchant_warranty_days_claim": 30,
+      "valid_active_plus_renewal_verified": false
+    },
+    "sms": {
+      "url": "https://11aix.com/store/17",
+      "sku": "Codex 接码一次（美国实体卡）",
+      "display_price": 18,
+      "currency": "CNY",
+      "unit": "元/一次性CDK",
+      "alipay_fee_percent_claim": 2,
+      "alipay_page_claimed_total_cny": 18.36,
+      "redeem_url": "https://cdk.sms688.cc/",
+      "phone_valid_minutes_claim": 20,
+      "usable_for_codex_claim": true,
+      "usable_for_chatgpt_web_claim": false,
+      "usable_for_first_openai_api_key_claim": null,
+      "number_change_when_no_sms_claim": true,
+      "number_renewal_possible_verified": null,
+      "phone_ownership_verified": false,
+      "sms_real_success": false,
+      "merchant_success_rate_100_claim_unverified": true,
+      "failed_sms_original_route_refund_verified": null
+    },
+    "classification": "本人原号零售候选及独立接码转售，未有一手供货或法定授权闭环"
+  },
+  "upstream_trace_secondary": {
+    "aggregator": "AIGOOD AI价格雷达",
+    "merchant_profile": "https://www.aigood.chat/price-radar/shops/GUAI",
+    "merchant_display_name": "怪兽源头小铺〖对接:guai〗",
+    "source_store_url": "https://wzyp.cn/shop/GUAI",
+    "direct_store_read_status": "unreadable",
+    "aggregation_not_direct_merchant_checkout": true,
+    "plus": {
+      "url": "https://www.aigood.chat/price-radar/products/plus-codex-plus",
+      "sku": "Plus|官方正价代充|质保一个月订阅|秒充值无需排队 codex plus",
+      "screenshot_or_snapshot_at": "2026-11-05T04:10:00Z",
+      "source_merchant_last_updated": "2026-11-05T03:56:00Z",
+      "display_cny": 112,
+      "quantity": 1,
+      "claims_one_month": true,
+      "session_required_claim": true,
+      "renewal_only_if_eligible_claim": true,
+      "aggregator_displayed_stock_count": 4,
+      "actual_checkout_price_verified": false,
+      "merchant_legal_identity_verified": false,
+      "real_payment_fee_cny": null,
+      "china_tax_invoice_fee_cny": null,
+      "full_legal_invoice_all_in_cny": null,
+      "formal_wholesale_authorization_verified": false
+    },
+    "codex_sms": {
+      "url": "https://www.aigood.chat/price-radar/products/cdk-codex-api-codex-plus-codex",
+      "sku": "CDK 美国实卡codex 单次接马 可以api对接 自动化codex绑定 PLUS接马codex接马",
+      "snapshot_date": "2026-11-02",
+      "display_cny_per_one_time_cdk": 0.75,
+      "currency": "CNY",
+      "redeem_url": "https://cdk.sms688.cc/",
+      "published_as_of_nov5_snapshot": false,
+      "same_redeem_url_as_11ai": true,
+      "same_batch_or_wholesale_chain_verified": false,
+      "service_scope_web_verified": null,
+      "service_scope_codex_tested": false,
+      "service_scope_official_api_key_verified": null,
+      "phone_validity_days_verified": null,
+      "sms_success_tested": false,
+      "original_route_refund_verified": null
+    },
+    "inference": "11AI的¥18与AIGOOD的旧快照¥0.75链接相同兑换站，只能认定第三方商品文案共享兑换入口；不推断同SKU、同质量、利润率、共同供货主体或当前¥0.75成交价。"
+  },
+  "separate_other_candidate": {
+    "merchant": "GPT-Buy / 365buygpt.com",
+    "url": "https://www.365buygpt.com/products/chatgpt-plus",
+    "teaser_price_cny": 79,
+    "teaser_sku": "菲律宾半价成品号",
+    "own_account": false,
+    "own_account_variant_prices_without_verified_duration": [
+      {
+        "sku": "iOS 充值",
+        "display_price_cny": 155,
+        "period_days_verified": null
+      },
+      {
+        "sku": "菲律宾卡充值",
+        "display_price_cny": 130,
+        "period_days_verified": null
+      }
+    ],
+    "philippines_annual_sku_cny": 1800,
+    "unit_limit": 1,
+    "service_terms_url": "https://www.365buygpt.com/legal/terms",
+    "service_terms_published": false,
+    "help_url": "https://www.365buygpt.com/help/faq",
+    "late_payment_holds_for_manual_review": true,
+    "automatic_refund_for_late_payment_claimed": false,
+    "vat_invoice_fee_cny": null,
+    "full_fee_cny": null,
+    "resale_authorization_verified": false
+  },
+  "independent_verification": {
+    "chatgpt_web_login_sms_tested": false,
+    "codex_sms_tested": false,
+    "first_openai_api_key_sms_tested": false,
+    "session_delivery_not_first_login_solution": true,
+    "apple_recharge_not_auto_phone_binding": true,
+    "confirmed_successful_sms_orders": 0,
+    "verified_long_term_number_retention": 0
+  },
+  "sources": [
+    {
+      "url": "https://11aix.com/store/4",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "商家自身商品/政策页面",
+      "snapshot_date": null,
+      "finding": "Plus ¥140/份、商称30天、需先登录并提交Session；30天质保商称；本页当前正文未展示可核的Plus付款费或中国发票流程"
+    },
+    {
+      "url": "https://11aix.com/store/17",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "商家自身商品/政策页面",
+      "snapshot_date": null,
+      "finding": "Codex US实体卡一次CDK ¥18、支付宝手续费+2%页面¥18.36、20分钟号码、仅Codex并跳转cdk.sms688.cc；100%成功率仅宣传"
+    },
+    {
+      "url": "https://www.aigood.chat/price-radar/products/plus-codex-plus",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "第三方价格聚合快照",
+      "snapshot_date": "2026-11-05T04:10:00Z",
+      "finding": "第三方AIGOOD 2026-11-05T04:10Z快照关联怪兽源头小铺本人原号一月SKU ¥112，非直接店铺结账；已登录Session且仅符合条件才能续费"
+    },
+    {
+      "url": "https://www.aigood.chat/price-radar/shops/GUAI",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "第三方价格聚合商家档案",
+      "snapshot_date": "2026-11-05T04:10:00Z",
+      "finding": "聚合店档案展示wzyp.cn/shop/GUAI与多种SKU；店名自称源头不等于已核授权"
+    },
+    {
+      "url": "https://www.aigood.chat/price-radar/products/cdk-codex-api-codex-plus-codex",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "第三方历史聚合快照",
+      "snapshot_date": "2026-11-02T11:46:00Z",
+      "finding": "第三方2026-11-02旧快照一次性Codex CDK ¥0.75与11AI商品共享cdk.sms688.cc兑换入口；不是11月5日新价、同源未证"
+    },
+    {
+      "url": "https://www.365buygpt.com/products/chatgpt-plus",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "商家自身商品/政策页面",
+      "snapshot_date": null,
+      "finding": "首页¥79对应菲律宾成品号非本人原号；iOS ¥155、菲律宾卡充¥130另独立规格，月数及全费未确证"
+    },
+    {
+      "url": "https://www.365buygpt.com/legal/terms",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "商家自身商品/政策页面",
+      "snapshot_date": null,
+      "finding": "服务条款页面明确「站点尚未发布此内容」，不能凭客服营销推断法定履约保障"
+    },
+    {
+      "url": "https://www.365buygpt.com/help/faq",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "source_kind": "商家自身商品/政策页面",
+      "snapshot_date": null,
+      "finding": "订单过期后到账只会人工复核，不自动保留库存、立即交付或自动退款"
+    },
+    {
+      "url": "https://wzyp.cn/shop/GUAI",
+      "observed_on": "2026-11-05",
+      "read_status": "unreadable",
+      "source_kind": "原店铺直达尝试",
+      "snapshot_date": null,
+      "finding": "原商家店铺未取得可用正文，仅第三方价格雷达快照可读；不得刷新原店当前报价"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_legal_vat_invoices": 0,
+    "verified_one_unit_no_deposit_contracts": 0,
+    "real_plus_orders": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r48_original_reports_preserved": true,
+  "caveats": "11AI Plus ¥140是商品报价，Plus付款附费及中国税票均未知null；¥18.36仅接码支付宝网页声称支付总价。AIGOOD ¥112是第三方快照，¥0.75是2026-11-02旧快照；原店不可读，非当前实付价。同兑换域名不能证明同一张卡、同渠道或同批发授权。所有证据非真实采购、发票验真或短信测试。"
+}
