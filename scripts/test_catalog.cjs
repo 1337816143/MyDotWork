@@ -161,4 +161,18 @@ assert.equal(r48.new_upstream_candidate.costs.points_per_success,10);assert.equa
 assert.equal(r48.new_upstream_candidate.marketing_demo.example_wallet_price_is_verified_live_sku,false);
 assert.equal(r48.api_distinction.sms_verification_service_discovered,false);
 assert.equal(r48.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r49cat=d.records.find(r=>r.id==='gpt-source-followup-r49-20261105'),r49data=d.records.find(r=>r.id==='gpt-source-followup-r49-20261105-evidence');
+assert(r49cat&&r49data&&r49cat.url.endsWith('supplier-followup-20261105-r11.html'));
+const r49=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r11-evidence.json'),'utf8'));
+assert.equal(r49.round,49);assert.equal(r49.site_version,'1.9.57');assert.equal(r49.sources.length,9);
+assert.equal(r49.newly_read_direct_merchant.plus.display_price,140);
+assert.equal(r49.newly_read_direct_merchant.plus.all_required_fees_with_invoice_cny,null);
+assert.equal(r49.newly_read_direct_merchant.sms.alipay_page_claimed_total_cny,18.36);
+assert.equal(r49.newly_read_direct_merchant.sms.usable_for_chatgpt_web_claim,false);
+assert.equal(r49.upstream_trace_secondary.plus.display_cny,112);
+assert.equal(r49.upstream_trace_secondary.plus.actual_checkout_price_verified,false);
+assert.equal(r49.upstream_trace_secondary.codex_sms.snapshot_date,'2026-11-02');
+assert.equal(r49.upstream_trace_secondary.codex_sms.same_batch_or_wholesale_chain_verified,false);
+assert.equal(r49.separate_other_candidate.own_account,false);
+assert.equal(r49.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
