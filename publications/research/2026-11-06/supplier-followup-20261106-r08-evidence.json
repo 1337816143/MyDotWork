@@ -1,0 +1,205 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 63,
+  "date": "2026-11-06",
+  "site_version": "1.9.71",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-05T22:25:10.976Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_phone_verification_candidate": {
+    "merchant": "MY-GPT NET",
+    "service_url": "https://my-gpt.net/sms",
+    "sms_product_not_plus": true,
+    "short": {
+      "sku": "短效·一次性接码卡密",
+      "listed_price_cny_per_card": 10,
+      "cards_per_purchase": 1,
+      "number_lifetime_minutes": null,
+      "first_success_guaranteed_merchant_claim": true,
+      "after_receiving_sms_no_return_merchant_claim": true,
+      "failed_receive_original_payment_refund_guaranteed": null
+    },
+    "long": {
+      "sku": "长效·长期接码卡密",
+      "listed_price_cny_per_card": 20,
+      "number_lifetime_days_min": 20,
+      "number_lifetime_days_max": 30,
+      "first_success_guaranteed_merchant_claim": true,
+      "number_fixed_after_first_success_merchant_claim": true,
+      "repeat_codes_guaranteed": false,
+      "extra_accounts_guaranteed": false,
+      "failed_first_sms_original_payment_refund_guaranteed": null
+    },
+    "number_origin_country": null,
+    "sim_or_voip_verified": null,
+    "phone_number_control_verified": false,
+    "requires_chatgpt_session_merchant_claim": false,
+    "requires_chatgpt_password_merchant_claim": false,
+    "number_change_attempts_merchant_claim": "一般1–2次；耗尽须人工客服",
+    "minimum_minutes_between_new_code_requests": 5,
+    "actual_checkout_cny": null,
+    "payment_extra_fee_cny": null,
+    "domestic_invoice_supported": null,
+    "real_received_sms_tests": 0,
+    "web_chatgpt_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "initial_api_key_success_tested": false
+  },
+  "same_merchant_plus_offer": {
+    "merchant": "MY-GPT NET",
+    "sku": "本人原号ChatGPT Plus·30天",
+    "listed_price_cny_per_30_days": 179,
+    "quantity": 1,
+    "requires_existing_login_session_json": true,
+    "session_tokens_may_be_forwarded_to_actual_upstream_merchant_disclosure": true,
+    "merchant_says_invoice_not_provided": true,
+    "domestic_china_vat_invoice_verified": false,
+    "actual_payment_extra_fee_cny": null,
+    "invoice_extra_fee_cny": null,
+    "all_required_invoiced_cny": null,
+    "actual_payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "wholesale_floor_price_cny": null,
+    "formal_wholesale_authorization_verified": false,
+    "qualified_for_plus_170_cny": false,
+    "real_purchase_tested": false,
+    "impact": "公开单件挂牌¥179已超170上限；商家不出票，且代充上游非透明，不构成合格批发源。"
+  },
+  "getgpt_pro_codex_sms_recheck": {
+    "merchant": "GETGPT Pro",
+    "source_url": "https://www.getgpt.io/blog/codex-phone-verification",
+    "merchant_self_updated_on": "2026-10-24",
+    "plus_sms_merchant_price_cny_per_try": 10,
+    "pro_sms_price_merchant_claim_cny": 0,
+    "pro_free_claim_subscription_qualification_unverified": true,
+    "requires_customer_contact_merchant_claim": true,
+    "claims_over_98_percent_post_upgrade_no_sms_prompt": true,
+    "claims_rate_strictly_statistical": false,
+    "claim_independently_verified": false,
+    "codex_sms_success_tested": false,
+    "phone_number_lifetime_minutes": null,
+    "payment_extra_fee_cny": null,
+    "failed_sms_refund_original_payment_cny": null,
+    "web_or_api_verification_success_tested": false,
+    "significance": "商家所称免验证高比例只是回访描述；不能当作充值自动免短信的官方规则或接码成功率。"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://my-gpt.net/sms",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "merchant_page_display",
+      "finding": "短效一次接码卡密公开¥10/张，长效¥20/张，声称长效同号码20–30天、首码成功后固定且可复用。两次点击发送验证码间隔≥5分钟，自助换号一般1–2次；收到短信后不再退换，失败仅提客服换号，未承诺原路退现。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://my-gpt.net/terms",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "merchant_claim",
+      "finding": "商家条款自标2026-10-10更新：短信卡不需要ChatGPT Session/密码；Plus/Pro需要登录后Session JSON；Plus/Pro实际购买为30天，自称不另行开具发票；既有会员可能覆盖余期不叠加。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://my-gpt.net/privacy",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "merchant_claim",
+      "finding": "商家隐私政策自标2026-10-09更新：接码卡密/号码/验证码可能流转实际短信商；Plus的Session JSON可能包含令牌且必要时传给实际充值服务商。不能由此认定自身为独立批发上游或可安全提交Session。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://my-gpt.net/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "merchant_page_display",
+      "finding": "本人原号Plus公开标价¥179/30天，超过本项含票¥170筛选上限；需先有登录Session。1.2万用户、退款比例及到账速度等均为商家宣传未核。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.getgpt.io/blog/codex-phone-verification",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "merchant_claim",
+      "finding": "GETGPT Pro教程自标2026-10-24更新，称Codex接码Plus用户¥10/次、Pro用户免费，需联系商家；称98%以上用户升级后免遇SMS提示，但明确不是严格统计或官方承诺，非实测成功率；号码期限、退费未知。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "official_platform_rule",
+      "finding": "OpenAI帮助中心：ChatGPT普通创建或使用一般不要求手机号；ChatGPT桌面Codex可能要求；platform.openai.com首次创建API Key要求验证；VoIP或座机不可用于验证。第三方号码的适用性不得推定。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "再次读取ChongPay同站Plus到期版及iOS礼品卡公开卡片各¥139，与r62一致；旧类¥150是历史观察，未重新核实真实结算。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "PAYPRM本人原号Plus公开¥155/月，与r61历史相同，未获得新的开票/批发授权或实付证据。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "V3小店iOS Plus¥143.50/月、库存一般，未出现改变采购判断的新证据；没有刷新其他未访问SKU。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "CallAI原号Plus零售公开¥107/月，与r60一致，要求Session；本人原号合法批发和国内税票未证。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-05T22:25:10.976Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "ChatShare关联自助页面继续显示维护提示，不据此断言整个商家完全停服。",
+      "paid_or_success_tested": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_62_unchanged": true
+  },
+  "methodology": "2026-11-06读取商家官网4页、GETGPT Pro教程、OpenAI帮助和5个旧候选页，记录原始链接及当轮页面可读信息；商家网页价签和自述不代表订单、授权、收款、出票或成功接码。旧候选未见实质变化，不刷新其他商家旧价。未买卡、未发送账号/Session或验证码、未联系商家。"
+}
