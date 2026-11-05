@@ -1,0 +1,161 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 48,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-05T03:24:20.017Z",
+  "site_version": "1.9.56",
+  "scope": "新增TokenSpark批量充值平台及独立美区Plus零售SKU可读证据，区分宣传演示、真实商品页与模型调用API；6条尝试URL其中5条有可读正文。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170
+  },
+  "new_upstream_candidate": {
+    "merchant": "TokenSpark",
+    "url": "https://tokenspark.app/zh",
+    "classification": "内测中批量充值卡池平台；尚非已核批发源头",
+    "claims": {
+      "subscription_api": true,
+      "bulk_orders": true,
+      "white_label_redeem": true,
+      "platform_card_pool": true,
+      "prepaid_usd_wallet": true,
+      "session_required": true,
+      "existing_active_member_skipped": true
+    },
+    "costs": {
+      "points_per_success": 10,
+      "unit": "平台积分/成功订单，不是人民币",
+      "own_card_decline_points": 2,
+      "other_failed_points": 0,
+      "points_cny_rate": null,
+      "real_pool_card_fee_usd": null,
+      "payment_fee_cny": null,
+      "usdt_topup_fee": null,
+      "fx_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "all_in_invoice_cny": null,
+      "agent_upfront_fee_cny": null
+    },
+    "marketing_demo": {
+      "explicit_nontransactional_demo": true,
+      "order_api_example_host": "api.example.com",
+      "example_wallet_price_usd": "16.00",
+      "example_wallet_price_is_verified_live_sku": false,
+      "merchant_label_internal_test": true
+    },
+    "proof": {
+      "legal_entity_verified": false,
+      "collection_entity_verified": false,
+      "invoice_issuer_verified": false,
+      "real_china_vat_invoice_verified": false,
+      "authorization_verified": false,
+      "one_piece_no_upfront_wholesale_verified": false,
+      "real_successful_delivery_verified": false
+    }
+  },
+  "new_retail_sku": {
+    "merchant": "TokenSpark",
+    "url": "https://tokenspark.app/recharge/chatgpt-plus",
+    "sku": "ChatGPT Plus (US) top-up",
+    "display_price": 24.99,
+    "currency": "USD",
+    "quantity": 1,
+    "unit": "美元/件；未核会员实际生效月数",
+    "plan": "Plus",
+    "region": "US",
+    "support_window_days_claim": 30,
+    "period_months_verified": null,
+    "requires_signed_in_account": true,
+    "delivery_claim": "支付审核后从My Cards领取卡，由用户自行前往OpenAI官网付款",
+    "payment_methods_claim": [
+      "Card",
+      "Alipay",
+      "WeChat",
+      "USDC"
+    ],
+    "actual_payment_additional_fee_usd": null,
+    "fx_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "all_in_invoice_cny": null,
+    "actual_purchase_tested": false,
+    "official_renewal_of_active_plus_verified": false,
+    "formal_wholesale_authorization_verified": false
+  },
+  "api_distinction": {
+    "homepage_topup_endpoint_demo_not_live_verified": true,
+    "homepage_topup_demo_host": "https://api.example.com",
+    "public_docs_url": "https://tokenspark.app/docs",
+    "public_docs_content": "Third-party LLM model API gateway /v1/chat/completions, not official OpenAI API key and not proven top-up API",
+    "sms_verification_service_discovered": false,
+    "web_first_login_sms_verified": null,
+    "codex_sms_verified": null,
+    "first_openai_api_key_sms_verified": null,
+    "number_retention_days": null,
+    "sms_failure_refund": null,
+    "real_sms_success": false
+  },
+  "bounded_recheck": {
+    "chatgqt_warranty_plus_cny_per_month": 135,
+    "chatgqt_without_warranty_cny_per_month": 125,
+    "chatgqt_new_price_change": false,
+    "morimm_ios_content_readable": false,
+    "other_existing_candidates": "CatFK、小久、Morimm、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay均未取得本轮可核新含票全费/授权证据；历史日期不刷新"
+  },
+  "sources": [
+    {
+      "url": "https://tokenspark.app/zh",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "evidence_class": "商家官网原始网页",
+      "finding": "首页宣称多地区、批量/卡池/白标卡密与订单接口，但标注「内测中」且交互演示明确不会真实充值；示例wallet_price 16.00不得当作有效批发价"
+    },
+    {
+      "url": "https://tokenspark.app/zh/charge",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "evidence_class": "商家官网原始网页",
+      "finding": "目录美区ChatGPT Plus代充挂牌USD 24.99/件；「有货/已售0」为网站标识，未采购验真"
+    },
+    {
+      "url": "https://tokenspark.app/recharge/chatgpt-plus",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "evidence_class": "商家官网原始网页",
+      "finding": "准确Plus美国SKU，数量1 Total USD24.99；30 days为Support window，需已登录OpenAI账号，付款并获批后到My Cards领卡，由用户自行到官方网站支付；接受银行卡、支付宝、微信、USDC"
+    },
+    {
+      "url": "https://tokenspark.app/docs",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "evidence_class": "商家官网原始网页",
+      "finding": "公开文档描述 api.tokenspark.app/v1 模型网关而非已实测的订阅充值API；主页订单接口示例使用 api.example.com"
+    },
+    {
+      "url": "https://www.chatgqt.plus/",
+      "observed_on": "2026-11-05",
+      "read_status": "read_200",
+      "evidence_class": "既有候选有界复读",
+      "finding": "引路鲸Plus有保¥135/月无保¥125/月与旧记录一致；不刷新新调价"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-05",
+      "read_status": "unreadable",
+      "evidence_class": "页面正文不可读",
+      "finding": "本次页面无可用正文，不刷新旧的¥129/月观察值，不推断停服"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_all_fees_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r47_original_reports_preserved": true,
+  "caveats": "平台积分不是人民币，卡池报价演示不是可成交价格；USD24.99零售卡与批量API不能等价。30天为Support window不是已核会员周期。所有网页为商家声明，未经下单、实付、税票或授权与短信实测；缺失费用null。"
+}
