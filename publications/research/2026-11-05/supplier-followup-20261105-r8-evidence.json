@@ -1,0 +1,218 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 46,
+  "date": "2026-11-05",
+  "observed_at_utc": "2026-11-05T01:25:42.074Z",
+  "site_version": "1.9.54",
+  "scope": "Morimm旧SKU与本轮新读商家原页对照：菲区Free-only ¥115→¥113、iOS覆盖型Plus单月¥130→¥129；首页仅USDT退款/提余额旧告示复读；2smx ¥138月卡结账显示测试模式。未证明最终含中国税票全费或批发授权。",
+  "criteria": {
+    "own_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "agent_upfront_fee_accepted": false,
+    "plus_all_required_fees_including_china_invoice_max_cny": 170
+  },
+  "material_observation": {
+    "merchant": "Morimm / 小恐龙发卡网",
+    "merchant_home": "https://morimm.com/",
+    "observed_on": "2026-11-05",
+    "account_skus": [
+      {
+        "sku": "products/gptplus / 菲区正规代充 (Free个人版账号)",
+        "source": "https://morimm.com/products/gptplus",
+        "historical_observed_on": "2026-11-03",
+        "historical_display_price_cny": 115,
+        "current_display_price_cny": 113,
+        "display_price_change_cny": -2,
+        "currency": "CNY",
+        "unit": "每份代充卡密（本轮产品正文未注明准确订阅期限，不能单独当作明确一个月）",
+        "quantity": 1,
+        "period_months_verified_on_current_page": null,
+        "eligible_free_personal_account_claim": true,
+        "eligible_active_plus_account_claim": false,
+        "requires_prior_chatgpt_login_to_get_token": true,
+        "token_required_claim": true,
+        "stock_display_claim": "In stock / Members only",
+        "used_card_refundable_claim": false,
+        "payment_fee_cny": null,
+        "fx_fee_cny": null,
+        "china_vat_invoice_fee_cny": null,
+        "all_required_fees_including_china_invoice_cny": null,
+        "verified_real_order": false,
+        "authorized_wholesale_resale_verified": false
+      },
+      {
+        "sku": "products/gptplus-ios / iOS Plus卡密可覆盖现有Plus",
+        "source": "https://morimm.com/products/gptplus-ios",
+        "historical_observed_on": "2026-11-03",
+        "historical_display_price_cny": 130,
+        "current_display_price_cny": 129,
+        "display_price_change_cny": -1,
+        "currency": "CNY",
+        "unit": "每份/1个月",
+        "quantity": 1,
+        "period_months": 1,
+        "existing_plus_coverage_claim": true,
+        "remaining_time_accumulates_claim": false,
+        "coverage_term_claim": "覆盖后新的30天，不叠加现有余期",
+        "merchant_login_required": true,
+        "stock_display_claim": "Low stock / Members only",
+        "warranty_days_claim": 30,
+        "account_ban_covered_claim": false,
+        "already_used_card_refundable_claim": false,
+        "google_grace_or_unclosed_subscription_eligible_claim": false,
+        "payment_fee_cny": null,
+        "fx_fee_cny": null,
+        "china_vat_invoice_fee_cny": null,
+        "all_required_fees_including_china_invoice_cny": null,
+        "verified_real_order": false,
+        "authorized_wholesale_resale_verified": false
+      }
+    ],
+    "refund_notice": {
+      "url": "https://morimm.com/",
+      "merchant_notice": "退款与提余额只支持U 介意勿拍",
+      "seller_restricts_refunds_or_balance_withdrawals_to_usdt_claim": true,
+      "notice_first_read_on": "2026-11-03",
+      "notice_read_again_on": "2026-11-05",
+      "policy_effective_date": null,
+      "refund_reaches_original_payment_channel_verified": false,
+      "actual_usdt_refund_verified": false
+    },
+    "legal_business_verified": null,
+    "payment_recipient_verified": null,
+    "invoice_issuer_verified": null,
+    "real_china_vat_invoice_verified": false,
+    "upstream_wholesale_contract_verified": false,
+    "no_agent_upfront_fee_in_wholesale_contract_verified": null
+  },
+  "additional_bounded_sources": {
+    "independent_codex_sms": {
+      "merchant": "Morimm",
+      "sku": "products/Codex_num",
+      "url": "https://morimm.com/products/Codex_num",
+      "display_price_cny_per_single_cdk": 3,
+      "prior_price_cny_same_sku": 3,
+      "price_changed": false,
+      "merchant_says_us_physical_sim": true,
+      "stock_claim": "In stock / Members only",
+      "codex_app_sms_success_tested": false,
+      "chatgpt_web_sms_eligible_verified": null,
+      "first_openai_api_key_sms_eligible_verified": null,
+      "phone_number_retention_days": null,
+      "repeat_sms_supported_verified": null,
+      "failed_sms_original_payment_refund_verified": null
+    },
+    "second_shop_not_same_merchant": {
+      "platform": "CatFK / 云猫寄售",
+      "shop": "AI猫站长的小店",
+      "source": "https://catfk.com/shop/cat",
+      "display_filipino_plus_recharge_cny": 129,
+      "sku_period_months_verified": null,
+      "other_different_skus_displayed": "¥95 成品账号 / ¥40 三人拼车，均不属于本人原号",
+      "individual_small_business_no_registration_self_declaration": true,
+      "platform_verified_badge_is_not_openai_or_wholesale_license": true,
+      "actual_invoice_verified": false,
+      "auth_resale_verified": false,
+      "not_same_shop_as_prior_catfk_g8ptrd": true,
+      "real_invoiced_total_cny": null
+    },
+    "new_retail_candidate_checkout_test_mode": {
+      "merchant": "GPT订阅站 2smx.com",
+      "sku": "本人原账号 ChatGPT Plus 每月商品",
+      "source": "https://2smx.com/buy?plan=plus",
+      "site_home": "https://2smx.com/",
+      "display_price_cny": 138,
+      "currency": "CNY",
+      "period_months": 1,
+      "quantity": 1,
+      "test_mode_notice_verbatim": "当前为测试模式，点击付款后可模拟支付成功，不会真实扣款。",
+      "real_money_checkout_confirmed": false,
+      "real_orders_tested": false,
+      "requires_chatgpt_session_in_redemption": true,
+      "requires_prior_successful_chatgpt_web_login": true,
+      "fully_invoiced_paid_cny": null,
+      "payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "invoice_issuer_verified": null,
+      "wholesale_authorization_verified": false,
+      "first_chatgpt_login_phone_verification_bypassed_verified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "first_party_sku_page",
+      "finding": "菲区Plus商品113.00 CNY；必须Free个人版，不能覆盖已有Plus；发卡Token兑换，已用卡密不退。对照2026-11-03相同URL历史¥115，降¥2，但当前页未明示准确订阅月数。"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "first_party_sku_page",
+      "finding": "iOS Plus一月129 CNY，旧记录同URL2026-11-03 ¥130；覆盖现有Plus为新30天并非叠加，已有Pro或谷歌自动续费等场景不可用；卖家称质保掉订但不保封号。"
+    },
+    {
+      "url": "https://morimm.com/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "seller_original_home_and_refund_notice",
+      "finding": "目录交叉展示菲区Plus ¥113、iOS Plus ¥129、Codex单次CDK ¥3；公告‘退款与提余额只支持U’，2026-11-03档案已记录同句，非本轮新生效政策，实际退款未试。"
+    },
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "seller_original_phone_sku",
+      "finding": "Codex所谓美国实卡单次接码CDK ¥3、商称有货；与2026-11-03同SKU同价，非新降价；无号码期限、后续复用短信、接码失败退款或ChatGPT网页登录/API适用证据。"
+    },
+    {
+      "url": "https://morimm.com/terms",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "http_200_no_substantive_terms",
+      "evidence_class": "no_terms_content",
+      "finding": "仅Terms of Service / No Content；不能推断实际退款有效性、税票或转售授权。"
+    },
+    {
+      "url": "https://catfk.com/shop/cat",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "distinct_marketplace_storefront",
+      "finding": "‘AI猫站长的小店’而非历史CatFK g8ptrd商家，展示代充菲区Plus¥129；¥95成品号/¥40拼车不可混作原号，商家自行声明小额经营免登记，仅为网页声明非票据授权或已验供货。"
+    },
+    {
+      "url": "https://2smx.com/buy?plan=plus",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_checkout_test_mode",
+      "finding": "Plus页面展示¥138/月，同时明确‘当前为测试模式，点击付款后可模拟支付成功，不会真实扣款’，不能证明真实可下单实付。"
+    },
+    {
+      "url": "https://2smx.com/",
+      "observed_on": "2026-11-05",
+      "page_date": null,
+      "read_status": "success_read",
+      "evidence_class": "merchant_original_home",
+      "finding": "购买卡密、已登录ChatGPT粘贴Session兑换的商家自述；不代表首次网页验证可以绕过或手机号自动绑定。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_all_fees_invoice_under_170": 0,
+    "real_plus_orders": 0,
+    "real_tax_invoices_verified": 0,
+    "real_sms_success": 0
+  },
+  "legacy_126_price_quotes_preserved": true,
+  "previous_r1_r45_original_reports_preserved": true,
+  "caveats": "只有可读网页的观察结果与历史同URL对照；不宣称11月5日是商家调价生效日。商品前台价≠最终含票含支付费价格、真实现货或合法一手批发；Apple与Session可并存，首次网页手机验证需独立处理。未购买、未交Token/Session、未联系商家。"
+}
