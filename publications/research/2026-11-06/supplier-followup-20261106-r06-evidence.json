@@ -1,0 +1,168 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 61,
+  "date": "2026-11-06",
+  "site_version": "1.9.69",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-05T21:58:29.960Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "material_new_finding": {
+    "merchant": "ChongPay",
+    "type": "same_site_display_price_conflict_not_verified_transaction_price",
+    "previous_homepage_observation": {
+      "date": "2026-11-03",
+      "url": "https://chongpay.com/",
+      "two_cards_price_cny_each": 150,
+      "archived_evidence": "research/2026-11-03/supplier-followup-20261103-r5-evidence.json"
+    },
+    "homepage_current": {
+      "url": "https://chongpay.com/",
+      "expired_subscription_plus_card_price_cny": 139,
+      "ios_gift_card_plus_card_price_cny": 139,
+      "expired_subscription_channel_explicitly_philippines": false,
+      "monthly_duration_explicit_on_product_card": null
+    },
+    "catalog_current": {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "philippines_plus_card_cny": 150,
+      "ios_gift_card_plus_card_cny": 150,
+      "self_marked_price_date": "2026-10-22"
+    },
+    "about_generic_plus_monthly_cny": 189,
+    "homepage_catalog_display_gap_cny_per_card": 11,
+    "actual_checkout_store_url": "https://wzyp.cn/shop/FDDQ3HVD",
+    "store_access_status": "blocked_by_waf",
+    "actual_checkout_unit_price_cny": null,
+    "payment_extra_fee_cny": null,
+    "invoice_extra_fee_cny": null,
+    "verified_all_in_china_vat_invoice_price_cny": null,
+    "actual_payee_entity": null,
+    "invoice_issuer_entity": null,
+    "verified_china_vat_invoice": false,
+    "formal_wholesale_authorization_verified": false,
+    "verified_wholesale_one_unit_terms": false,
+    "real_price_reduction_proven": false,
+    "real_paid_order_tested": false,
+    "conclusion": "首页¥139、分类¥150与介绍¥189同日并存；两页SKU名称不完全一致，无法推定同一SKU实际降价或¥139可成交。"
+  },
+  "renewal_and_sms": {
+    "session_or_token_required_merchant_claim": true,
+    "ios_active_subscription_override_merchant_claim": true,
+    "homepage_general_active_subscription_conflict": true,
+    "auto_bind_phone_on_recharge_proven": false,
+    "previous_25_day_sms_chongpay_price_cny": 20,
+    "price_not_rechecked_this_round": true,
+    "chatgpt_web_sms_success_tested": false,
+    "codex_sms_success_tested": false,
+    "first_api_key_sms_success_tested": false,
+    "sms_failed_original_payment_refund_tested": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "2026-11-06首页的ChatGPT Plus充值（要求旧订阅到期）和iOS礼品卡两个公开卡片各¥139；未核成交/周期。",
+      "classification": "merchant_self_page",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "菲律宾渠道和iOS礼品卡分别¥150/公开卡片；页面自标2026-10-22更新，实际成交价须由外部店铺决定。",
+      "classification": "merchant_self_page",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://chongpay.com/about",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "未区分渠道的通用Plus月卡¥189/月；不能与菲律宾或iOS某准确SKU直接判同款。",
+      "classification": "merchant_self_page",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://chongpay.com/help/create-invoice",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "商家帮助页说明本站无自助开票，须联系实际购买店铺确认Invoice及主体；未开票验真。",
+      "classification": "merchant_self_page",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://chongpay.com/help/china-vat-invoice",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "说明PDF Invoice不等于中国增值税发票，是否可由购买店铺另出中国票据未知。",
+      "classification": "merchant_self_page",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://chongpay.com/help/after-sales-guarantee",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "订单退款和补办依外部店铺条款，未实测。",
+      "classification": "merchant_self_page",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "observed_on": "2026-11-06",
+      "read_status": "blocked_by_waf",
+      "finding": "阿里云WAF安全验证，未取得商品可下单价格、实际付款费、发票费或收款主体。",
+      "classification": "access_failure",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "V3小店iOS Plus¥143.50/月、库存一般，微信和美元付款商称另3.5%，与旧状态一致。",
+      "classification": "unchanged_candidate_recheck",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/18",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "V3小店菲律宾Plus¥133.50/月、库存非常多，微信和美元付款商称另3.5%，与旧状态一致。",
+      "classification": "unchanged_candidate_recheck",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "PAYPRM本人原号Plus仍挂牌¥155/月，未获中国票据/正式批发授权。",
+      "classification": "unchanged_candidate_recheck",
+      "real_purchase_or_sms_test": false
+    },
+    {
+      "url": "https://www.getgpt.io/price",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "finding": "GETGPT Pro本人原号Plus挂牌¥179/月；网站称NEXCLOUD TECHNOLOGY LIMITED但非收款/开票主体实证。",
+      "classification": "unchanged_candidate_recheck",
+      "real_purchase_or_sms_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_60_unchanged": true
+  },
+  "methodology": "仅将本轮实际读取原URL计入2026-11-06新观察；访问失败不更新价格。卖家页声明、推断、真实履约分开；真实结算与税费未知使用null。无付款、联系、账号凭据传递或验证码测试。"
+}
