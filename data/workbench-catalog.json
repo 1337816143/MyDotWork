@@ -1618,6 +1618,28 @@
       "summary": "6条直接读取的商家网址；付款附费、收款及开票主体、正式授权未知null，实购、验票、接码均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r58-20261106",
+      "title": "GPT源头 · SMSPool号码期限、退款边界与荷兰主体核对",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r03.html",
+      "updatedAt": "2026-11-05T18:38:00Z",
+      "summary": "V3推荐的第三方Codex号码平台；SMSPool荷兰KvK登记有第三方LEI交叉证据，号码时限/退款有条款但OpenAI准确价格和短信成功未证。Plus合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r58-20261106-evidence",
+      "title": "SMSPool独立手机号验证与退款证据 · r58",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r03-evidence.json",
+      "updatedAt": "2026-11-05T18:38:00Z",
+      "summary": "11条直读原URL；OpenAI单价/支付手续费null、公司LEI登记可核不代表真实收款；短信成功0、原号Plus合法批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
