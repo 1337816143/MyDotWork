@@ -1691,7 +1691,7 @@
       "type": "report",
       "task": "project-1",
       "url": "../research/2026-11-06/supplier-followup-20261106-r06.html",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-05T21:58:29.960Z",
       "summary": "同一商家首页原号Plus与iOS各¥139、分类页菲律宾/iOS仍各¥150、关于页¥189；外部店铺WAF阻断，不能认定真实降价。已核批发0。",
       "access": "public",
       "metadataApproved": true
@@ -1702,7 +1702,7 @@
       "type": "dataset",
       "task": "project-1",
       "url": "../research/2026-11-06/supplier-followup-20261106-r06-evidence.json",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-05T21:58:29.960Z",
       "summary": "11个当轮原始网址、1次WAF不可读；SKU与两页价差、票据/授权/费用null明确分开，真实购买、税票和短信验真均0。",
       "access": "public",
       "metadataApproved": true
