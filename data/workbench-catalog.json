@@ -1728,6 +1728,28 @@
       "summary": "实际新读两条分类路径和首页，保留旧r61观察为历史；只证实网页挂牌¥139而非含票实付或有授权批发源。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r63-20261106",
+      "title": "GPT源头 · MY-GPT接码¥10/¥20长效号码及上游凭据披露",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r08.html",
+      "updatedAt": "2026-11-05T22:25:10.976Z",
+      "summary": "11条当轮实读原URL；独立SMS短效¥10/次，长效¥20/卡20–30天；接码失败现金退费未承诺；同商Plus¥179且不出票/转交上游Session，不列合格批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r63-20261106-evidence",
+      "title": "MY-GPT接码号码期限、GETGPT Pro价格/免验证宣传及Session上游披露·r63",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r08-evidence.json",
+      "updatedAt": "2026-11-05T22:25:10.976Z",
+      "summary": "明确¥10/张与¥20/张、20–30天、GETGPT Pro Plus¥10/次/Pro商称免费；98%未再提示不当作实测统计，真实收码与含票批发合格均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
