@@ -1,0 +1,214 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 60,
+  "date": "2026-11-06",
+  "site_version": "1.9.68",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-05T20:15:37.394Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_phone_verification_candidate": {
+    "name": "CallAI小铺 · Codex 手机号自动验证",
+    "site": "https://shop.callai.one/",
+    "exact_sku": "Codex 手机号自动验证｜自助 CDK｜自动换号重试",
+    "category": "第三方代登录/自动号码验证服务，非纯独立接码号码租用",
+    "displayed_stock": "有库存",
+    "listed_price_cny_per_one_codex_verification_cdk": 3,
+    "unit": "CNY/张CDK/单账号一次验证",
+    "paid_final_price_cny": null,
+    "login_account_email_required": true,
+    "chatgpt_account_password_may_be_required": true,
+    "email_otp_may_be_required": true,
+    "authenticator_mfa_code_may_be_required": true,
+    "chatgpt_session_export_not_required_merchant_claim": true,
+    "credential_handling_short_encrypted_storage_merchant_claim": true,
+    "credential_deletion_independently_verified": false,
+    "automatically_swaps_numbers_merchant_claim": true,
+    "maximum_swaps_claim": null,
+    "phone_number_long_term_keepable": false,
+    "cdk_consumed_only_on_success_merchant_claim": true,
+    "cdk_not_consumed_on_explicit_failure_or_not_required_merchant_claim": true,
+    "refund_to_original_payment_if_sms_fails_verified": false,
+    "account_access_or_security_independent_audit": false,
+    "verified_non_voip_number": false,
+    "number_country": null,
+    "number_receive_window_minutes": null,
+    "chatgpt_web_phone_success_tested": false,
+    "codex_desktop_phone_success_tested": false,
+    "first_api_key_phone_success_tested": false,
+    "real_purchase_tested": false,
+    "unapproved_request_for_login_secrets": "商品和兑换页明确会要求账号密码、邮箱验证码、验证器MFA动态码；不建议向第三方提供这些凭据。"
+  },
+  "new_retail_plus_candidate_unverified": {
+    "merchant": "CallAI小铺",
+    "exact_sku": "ChatGPT Plus 月卡｜正价代充 · 本人账号开通 · 自动发卡",
+    "price_cny_per_piece_per_month": 107,
+    "quantity": 1,
+    "period_months": 1,
+    "displayed_stock": "有库存",
+    "existing_original_account_merchant_claim": true,
+    "already_paid_account_renewal_supported_without_waiting_verified": false,
+    "apple_or_other_store_subscription_must_expire_merchant_claim": true,
+    "account_must_be_logged_in": true,
+    "session_required_for_subscription_redeem_merchant_claim": true,
+    "payment_methods_merchant_claim": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "payment_extra_fee_cny": null,
+    "invoice_extra_fee_cny": null,
+    "foreign_exchange_or_chain_fee_cny": null,
+    "real_invoiced_all_in_cny": null,
+    "prepaid_agent_join_fee_cny": null,
+    "exact_wholesale_price_cny": null,
+    "minimum_order_quantity_wholesale": null,
+    "merchant_says_source_wholesale": true,
+    "wholesale_authorization_independently_verified": false,
+    "business_registration_entity": null,
+    "invoice_issuer_entity": null,
+    "actual_payee_entity": null,
+    "verified_domestic_vat_invoice": false,
+    "real_order_fulfilled": false,
+    "merchant_claim_subscription_warranty_one_month": true,
+    "merchant_claim_account_ban_excluded_from_warranty": true,
+    "failed_order_original_payment_refund_verified": false,
+    "legitimate_bulk_upstream_verified": false
+  },
+  "distinction": "直接读取的商家网页标价/商家承诺与官方规则分开；3元服务要求高敏感登录凭据，不是只买手机号收短信；107元Plus只是零售标价，不代表全费批发源头。",
+  "rechecks": {
+    "PAYPRM_plus_cny_per_month": 155,
+    "V3_ios_plus_cny_per_month": 143.5,
+    "V3_ios_stock": "一般",
+    "ChatShare_frontend": "维护中",
+    "old_other_candidates_price_dates_not_refreshed": true,
+    "other_named_prior_merchants": "CatFK、小久、Morimm、引路鲸、GetVIP、wind89、GETGPT Pro、ChongPay沿用历史证据、未获取新税票/授权/履约闭环"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家独立Codex验证CDK商品",
+      "finding": "Codex手机号自动验证CDK ¥3.00/张、有库存、自动交付；需登录配合，填账号密码/邮箱码/MFA，验成功消耗CDK，失败/无需验证不消耗；不提供号码长期收码",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://redeem.callai.one/sms",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家直接验证操作页",
+      "finding": "明确邮箱、账号登录密码、邮箱验证码或验证器MFA动态码；提交授权登录与号码验证；网页称临时保存并清理；首次手机验证是否成功未知",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家本人原号Plus一月零售SKU",
+      "finding": "标价人民币107/件/月；已有付费订阅须先询问，应用商店到期后恢复免费才可充；要求账号可登录并获取Session；质保仅掉订、封号不保",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/blog/agent",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家自标2026-10-23代理招募页",
+      "finding": "宣传源头价及批量合作，具体采购价和拿货量须联系客服；公开无批发价/单件免代理费/正式转售授权/合同，未联系",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家首页及支付方式",
+      "finding": "列Plus107元与Codex手机号自动验证3元，支付宝/微信/USDT商称可用，未进入结算",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/privacy",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家隐私政策",
+      "finding": "商城不收Session、兑换页面收Session；此声明不覆盖短信验证页另行要求账号密码与MFA；处理数据主体未知",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/terms",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家售后条款",
+      "finding": "仅笼统说明订阅一个月质保，未独立保证SMS兑换码未耗用时原路退款或商家完全无登录凭据保留",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/about",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "商家关于页面",
+      "finding": "列客服渠道及个人套餐，未展示可交叉核验工商主体或中国增值税开票主体；未向商家联系",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "OpenAI官方手机号验证规则",
+      "finding": "ChatGPT通常无手机号前提，Codex桌面可能要求、首个API Key要求，VoIP不支持；不能推论商家能过网页/Codex/API任一实际测试",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "既有候选有界复核",
+      "finding": "PAYPRM本人原号Plus仍显示人民币155/月，本轮未取得真实开票/批发授权，属于旧状态，不重新计价",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "既有候选有界复核",
+      "finding": "V3小店iOS Plus仍￥143.50/月、库存一般、微信及USD额外3.5%，为前台标示非付款实测",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "既有候选有界复核",
+      "finding": "ChatShare关联自助入口仍有维护中提示，不能推断商家整体断供",
+      "merchant_claims_not_test_result": true,
+      "real_transaction_tested": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_59_unchanged": true
+  },
+  "methodology": "只保存2026-11-06实际读取的12个原始URL的展示或商家承诺；未付款、发送凭据、联系客服或实测；未知全费和主体用null，不把零售或自称源头认定为上游。"
+}

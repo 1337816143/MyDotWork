@@ -1662,6 +1662,28 @@
       "summary": "11个本轮直读来源，¥9.99/一次验证码，含支付额和开票主体null；网页/Codex/API均零成功测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r60-20261106",
+      "title": "GPT源头 · ¥3 Codex验证卡需提供登录密码/MFA",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r05.html",
+      "updatedAt": "2026-11-05T20:15:37.394Z",
+      "summary": "CallAI ¥3/次Codex验证CDK要求第三方输入账号密码/邮箱验证码或MFA码，安全与退款未验证；同商Plus零售价¥107不构成合法批发源。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r60-20261106-evidence",
+      "title": "CallAI验证卡登录凭据、Session和零售Plus费用缺口 · r60",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r05-evidence.json",
+      "updatedAt": "2026-11-05T20:15:37.394Z",
+      "summary": "12条直读原URL，3元验证卡风险、107元一月零售SKU、商称源头及真实全费授权null；没有登录凭据发送或实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
