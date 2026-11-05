@@ -1486,6 +1486,28 @@
       "summary": "6条公开可读资料、2条不可访问入口；分离Plus零售与外部兑换、引荐佣金/历史快照、技术API演示；支付及票据全费null、0真实实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r52-20261105",
+      "title": "GPT源头 · AI Shop 91 USDT Plus、七折Apple卡与OpenAI官方礼卡区分",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r14.html",
+      "updatedAt": "2026-11-05T08:12:00Z",
+      "summary": "13.8 USDT原号Plus资格未知；Apple 20 USD卡面展示USD14等值、单件代发但真卡与授权未证；OpenAI ChatGPT礼卡美国网页限定。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r52-20261105-evidence",
+      "title": "AIShop91 USDT Plus与Apple卡卡源缺口、OpenAI Gift Card官方范围·r52",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r14-evidence.json",
+      "updatedAt": "2026-11-05T08:12:00Z",
+      "summary": "9条直读来源；支付/汇兑/票据全费null、苹果卡及Apple渠道资格未核，OpenAI礼卡非Apple礼卡，手机验证实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
