@@ -1596,6 +1596,28 @@
       "summary": "11条实读URL，旧r54库存归档保留，真实含票金额null；账号保号及网页/Codex/API手机实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r57-20261106",
+      "title": "GPT源头 · UpPlusPro含票价分项与Session依赖",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r02.html",
+      "updatedAt": "2026-11-05T17:33:46Z",
+      "summary": "Plus一件一月¥143、商称电子普票+¥10，分项¥153而真实含票额null；提交Session、Plus余期覆盖不叠加且无官方授权。合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r57-20261106-evidence",
+      "title": "UpPlusPro SKU、发票、Session、退款条件 · r57源证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r02-evidence.json",
+      "updatedAt": "2026-11-05T17:33:46Z",
+      "summary": "6条直接读取的商家网址；付款附费、收款及开票主体、正式授权未知null，实购、验票、接码均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

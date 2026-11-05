@@ -1,0 +1,130 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 57,
+  "date": "2026-11-06",
+  "site_version": "1.9.65",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_retail_candidate_unverified": {
+    "merchant": "UpPlusPro",
+    "exact_sku": "ChatGPT Plus 月卡 (sku_plus_1m)",
+    "price_cny_per_month_per_unit": 143,
+    "quantity": 1,
+    "period_months": 1,
+    "invoice_kind_claim": "国内企业增值税电子普通发票，技术服务费",
+    "invoice_surcharge_cny_claim": 10,
+    "invoice_at_checkout_only_claim": true,
+    "known_advertised_components_sum_cny": 153,
+    "payment_methods_claim": [
+      "微信",
+      "支付宝"
+    ],
+    "payment_processor_claim": "KyrenPay",
+    "payment_surcharge_cny": null,
+    "real_all_in_cny": null,
+    "real_paid_order": false,
+    "invoice_issuer_legal_entity_verified": null,
+    "receiving_legal_entity_verified": null,
+    "chinese_invoice_verified": false,
+    "formal_resale_authorization_verified": false,
+    "merchant_disclaims_official_openai_authorization": true,
+    "public_single_unit_wholesale_price_cny": null,
+    "wholesale_upfront_fee_cny": null,
+    "account_own_existing_claim": true,
+    "paid_plus_coverage_claim": true,
+    "remaining_days_not_additive_claim": true,
+    "apple_subscription_exception_claim": true,
+    "session_json_required_after_payment": true,
+    "session_may_include_access_token": true,
+    "session_passed_to_recharge_service_claim": true,
+    "session_safety_verified": false,
+    "requires_prior_login": true,
+    "checkout_wechat_phone_is_for_order_lookup_only": true,
+    "chatgpt_web_sms_verified": null,
+    "codex_sms_verified": null,
+    "api_first_key_sms_verified": null,
+    "refund_before_fulfillment_claim": true,
+    "refund_within_30days_claim": true,
+    "refund_to_payment_original_tested": false,
+    "invoice_method_conflict": "首页写5工作日邮箱，质保页写订单页下载",
+    "classification": "第三方零售候选非已核合法批发上游"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://uppluspro.com/",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_product",
+      "finding": "准确Plus月卡¥143/月，下单选国内企业普票加¥10；在期Plus覆盖，余期不叠加；Session。"
+    },
+    {
+      "url": "https://uppluspro.com/warranty",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_terms",
+      "finding": "电子普通发票+¥10，订单页下载；30天退款规则，Plus覆盖余期不叠加。"
+    },
+    {
+      "url": "https://uppluspro.com/legal/terms",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_terms",
+      "finding": "明示与OpenAI无官方代理或授权，需已登录Session；退款原路或转账。"
+    },
+    {
+      "url": "https://uppluspro.com/legal/privacy",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_policy",
+      "finding": "Session可能有accessToken/sessionToken、转交充值服务、商称仅存哈希，未验安全性。"
+    },
+    {
+      "url": "https://uppluspro.com/codex",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_instructions",
+      "finding": "Codex由本人ChatGPT订阅享受，先付款后交Session，不等于API或短信服务。"
+    },
+    {
+      "url": "https://uppluspro.com/offline?sku=sku_plus_1m&topic=invoice",
+      "observed_on": "2026-11-06",
+      "status": "readable",
+      "source_class": "merchant_inquiry",
+      "finding": "单独企业发票咨询页，未填写、未联系商家。"
+    }
+  ],
+  "other_priority_recheck": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "no_verified_new_change": true,
+    "old_prices_not_refreshed": true
+  },
+  "preservation": {
+    "historical_126_quotes_untouched": true,
+    "all_previous_56_reports_untouched": true
+  },
+  "methodology": "只使用2026-11-06直接读到的6条原始商家网址；商家声明与独立真实实测分开。¥153是已知挂牌分项而非结算价，未知费用null。没有付款/凭据/联系/验票/短信测试。"
+}
