@@ -1376,6 +1376,28 @@
       "summary": "8条原始URL含Morimm两价格同页新旧对照、仅USDT退款公告、CatFK独立小店、2smx测试收银台；未知付款费/票费/主体null，零实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r47-20261105",
+      "title": "GPT源头 · CallAI低价原号月卡与Codex密码/MFA凭据风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r9.html",
+      "updatedAt": "2026-11-05T02:50:09Z",
+      "summary": "CallAI Plus ¥107/月仅无有效订阅账号；Codex短信¥3需在第三方输入密码/邮箱或MFA码；GPT Store代理价与零售价同为$16；智品码头代理有入驻费。含票全费与批发授权仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r47-20261105-evidence",
+      "title": "CallAI月卡、密码型SMS、GPT Store代理同价与代理入驻门槛 · r47证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-05/supplier-followup-20261105-r9-evidence.json",
+      "updatedAt": "2026-11-05T02:50:09Z",
+      "summary": "9条商家原始URL；准确Plus/SMS报价、密码和动态码处理风险、人民币/美元币种分开，未知开票费/税票/上游/号码期限为null，实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
