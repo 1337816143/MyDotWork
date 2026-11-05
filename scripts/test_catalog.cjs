@@ -197,4 +197,17 @@ assert.equal(r51.new_retail_supplier.external_redemption_flow_session_or_token_r
 assert.equal(r51.reseller_claims_and_terms.partner_program_is_referral_not_verified_wholesale,true);
 assert.equal(r51.upstream_infrastructure_traces[1].public_verified_wholesale_price_cny,null);
 assert.equal(r51.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r52cat=d.records.find(r=>r.id==='gpt-source-followup-r52-20261105'),r52data=d.records.find(r=>r.id==='gpt-source-followup-r52-20261105-evidence');
+assert(r52cat&&r52data&&r52cat.url.endsWith('supplier-followup-20261105-r14.html'));
+const r52=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-05/supplier-followup-20261105-r14-evidence.json'),'utf8'));
+assert.equal(r52.round,52);assert.equal(r52.site_version,'1.9.60');assert.equal(r52.sources.length,9);
+assert.equal(r52.new_retail_candidate.price_usdt_per_month,13.8);
+assert.equal(r52.new_retail_candidate.own_existing_chatgpt_account_accepted_verified,null);
+assert.equal(r52.new_retail_candidate.actual_cny_total_with_invoice,null);
+assert.equal(r52.separate_apple_gift_card.face_value_usd,20);
+assert.equal(r52.separate_apple_gift_card.merchant_display_price_usd_equivalent,14);
+assert.equal(r52.separate_apple_gift_card.apple_resale_authorization_verified,false);
+assert.equal(r52.official_openai_gift_card.apple_or_google_billed_subscription_not_eligible,true);
+assert.equal(r52.prior_candidate_check.price_change_confirmed,false);
+assert.equal(r52.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
