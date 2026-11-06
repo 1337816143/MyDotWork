@@ -1992,6 +1992,28 @@
       "summary": "7条原始URL分类记录，历史缺货与当前现货分开；会员等级价不是无门槛批发，渠道内地限制、退款例外、含票全费null及实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r75-20261106",
+      "title": "GPT源头第75轮 · Morimm Plus¥113挂牌及独立Codex接码¥3",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r20.html",
+      "updatedAt": "2026-11-06T11:36:00Z",
+      "summary": "Morimm同款本人原号菲律宾Plus从历史¥115变为商品挂牌¥113/件；新核Codex美国实卡一次CDK¥3/次，会员/税票/退款/实测均未闭合。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r75-20261106-evidence",
+      "title": "Morimm Plus价差、Codex SMS单次CDK及CatFK商家主体缺口 · r75数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r20-evidence.json",
+      "updatedAt": "2026-11-06T11:36:00Z",
+      "summary": "本轮7条实际读取原始URL、观察日、113/3人民币价格与单位；会员及Token前提、税票全费/号码期限/短信退款null，真实实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
