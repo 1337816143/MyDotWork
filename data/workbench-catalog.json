@@ -1750,6 +1750,28 @@
       "summary": "明确¥10/张与¥20/张、20–30天、GETGPT Pro Plus¥10/次/Pro商称免费；98%未再提示不当作实测统计，真实收码与含票批发合格均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r64-20261106",
+      "title": "GPT源头 · GPT-Buy ¥79成品号与本人原号¥130/¥155 SKU辨析",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r09.html",
+      "updatedAt": "2026-11-06T00:09:40.717Z",
+      "summary": "本轮新发现GPT-Buy首页¥79为成品号非原号Plus；菲卡充值¥130、iOS¥155且库存紧张，服务条款未发布、退款须复核、真实含票全费及授权未知；合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r64-20261106-evidence",
+      "title": "GPT-Buy准确SKU、退款复核及未知含票全费 · r64证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r09-evidence.json",
+      "updatedAt": "2026-11-06T00:09:40.717Z",
+      "summary": "当轮12条直读URL，明确本人原号与成品号不同SKU；含票费用、开票主体、授权和真实履约null/未证，SMS成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
