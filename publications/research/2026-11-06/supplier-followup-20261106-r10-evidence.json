@@ -1,0 +1,254 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 65,
+  "date": "2026-11-06",
+  "site_version": "1.9.73",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-06T00:23:01.744Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "newly_observed_candidates": {
+    "chatgqt_direct_topup": {
+      "merchant": "ChatGPT直充站",
+      "merchant_url": "https://chatgqt.plus/",
+      "sku_page": "https://chatgqt.plus/products",
+      "own_account_monthly_skus": [
+        {
+          "sku": "ChatGPT Plus 代充（月付·有质保）",
+          "listed_cny_per_month": 135,
+          "merchant_promised_warranty_days": 30,
+          "eligibility_discounted_price_cny_per_month": 120,
+          "discount_is_unconditional": false
+        },
+        {
+          "sku": "ChatGPT Plus 代充（月付·无质保）",
+          "listed_cny_per_month": 125,
+          "merchant_promised_warranty_days": 0,
+          "eligibility_discounted_price_cny_per_month": 110,
+          "discount_is_unconditional": false
+        }
+      ],
+      "agent_terms_url": "https://chatgqt.plus/cooperation",
+      "wholesale_agent_entry_fee_cny": 3000,
+      "entry_fee_included_in_procurement_balance": false,
+      "independent_store_extra_setup_fee_cny": 2000,
+      "independent_store_second_year_annual_service_fee_cny": 999,
+      "agent_tier_order_value_thresholds_cny": [
+        10000,
+        50000
+      ],
+      "agent_wholesale_price_cny_per_unit": null,
+      "referrer_program_first_order_commission_cny": 18.88,
+      "referrer_program_is_wholesale": false,
+      "existing_customer_fee_waiver_guaranteed": false,
+      "invoice_fee_cny": null,
+      "payment_extra_fee_cny": null,
+      "verified_all_in_cny": null,
+      "legal_operating_entity": null,
+      "actual_payee_entity": null,
+      "invoice_issuer": null,
+      "chinese_vat_invoice_verified": false,
+      "formal_openai_resale_authorization_verified": false,
+      "actual_order_fulfillment_verified": false,
+      "agent_meets_no_upfront_fee": false,
+      "qualified": false,
+      "assessment": "公开批发路径需先缴¥3000资格费，单件价格/票费/主体/正式转售授权均不闭合；推广员无费返佣不是可按批发价进货。"
+    },
+    "getplus_ai": {
+      "merchant": "GetPlus AI",
+      "sku_page": "https://www.getplus.ai/chatgpt-plus-chongzhi",
+      "merchant_terms_url": "https://www.getplus.ai/terms",
+      "enterprise_terms_url": "https://www.getplus.ai/qiye-caigou",
+      "sku": "ChatGPT Plus本人Free账号激活1个月",
+      "listed_reference_cny_per_month": 148,
+      "listed_merchant_usd_price": 22.14,
+      "invoice_surcharge_usd": 2.1,
+      "enterprise_min_account_quantity": 5,
+      "enterprise_chinese_invoice_tax_rates_claimed_percent": [
+        1,
+        6
+      ],
+      "claimed_operating_entity": "HONG KONG AIGC LIMITED",
+      "operating_entity_independently_verified": false,
+      "payment_extra_fee_cny": null,
+      "invoice_extra_fee_cny": null,
+      "final_invoiced_cost_cny": null,
+      "final_invoiced_cost_usd": null,
+      "actual_payee_entity": null,
+      "invoice_issuer": null,
+      "chinese_vat_invoice_verified": false,
+      "formal_resale_authorization_verified": false,
+      "merchant_disclaims_official_partnership": true,
+      "merchant_terms_do_not_accept_currently_in_mainland_china_orders": true,
+      "requires_current_free_subscription": true,
+      "existing_plus_cannot_be_stacked": true,
+      "order_contact_mobile_is_openai_phone_verification": false,
+      "refund_for_failure_to_original_payment": "merchant_claim_only",
+      "actual_order_fulfillment_verified": false,
+      "qualified": false,
+      "assessment": "商家条款明确不接受身处中国大陆的下单人；企业最低5个账号，与单件目标冲突；USD票费和第三方换汇成本未知，不得以¥148认定含票总价。"
+    }
+  },
+  "bounded_rechecks": {
+    "chongpay": {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "listed_plus_cny_each": 139,
+      "change_vs_r64": false
+    },
+    "payprm": {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "listed_plus_cny_per_month": 155,
+      "change_vs_r64": false
+    },
+    "v3_ios": {
+      "url": "https://shop.gpt.ge/buy/22",
+      "listed_cny_per_month": 143.5,
+      "stock": "一般",
+      "change_vs_r64": false
+    },
+    "chatshare_related": {
+      "url": "https://gptchongzhi.com/",
+      "selfservice_maintenance_notice": true,
+      "whole_business_stopped_verified": false
+    }
+  },
+  "legacy_candidates_not_repriced_this_round": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "ChongPay以外其他未实读旧SKU"
+  ],
+  "independent_phone_verification": {
+    "new_candidate_this_round": false,
+    "verified_successful_tests": 0,
+    "chatgpt_web_verified": false,
+    "codex_desktop_verified": false,
+    "first_api_key_verified": false,
+    "phone_code_return_policy_new_evidence": false,
+    "session_or_token_require_preexisting_login_when_used": true,
+    "apple_purchase_auto_verifies_sms": false,
+    "official_rule_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://chatgqt.plus/products",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "merchant_page_display",
+      "finding": "ChatGPT直充站原账号Plus有质保月付¥135/月、无质保¥125/月，均公开挂牌；资格优惠低至¥120/¥110不得算无门槛成交价。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "merchant_agent_terms",
+      "finding": "进货代理¥3000一次性入驻资格费，拿货款另付；独立站须另加¥2000建站，次年¥999服务；公开商品不展示真实代理进货价。无成本推广员¥18.88返佣不是批发拿货。老客户可申请减免但非自动免除。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://chatgqt.plus/enterprise",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "merchant_enterprise_claim",
+      "finding": "声称可申请公司采购、票据与对公渠道；确切中国增值税发票、法律主体、票费及样票均未独立核实。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://www.getplus.ai/chatgpt-plus-chongzhi",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "merchant_product_page",
+      "finding": "本人Free账号Plus一个月，参考约¥148、标注约USD22.14美元结算；企业发票增收USD2.10（不是¥2.10）；手机号仅用于订单查询，已有Plus/Pro不可直购。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://www.getplus.ai/terms",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "merchant_terms",
+      "finding": "自标更新2026-10-11；商家称运营HONG KONG AIGC LIMITED，否认OpenAI官方授权；自定不接受中国大陆境内用户订单，已有会员不能叠加。美元结算、渠道换汇可能额外收费、失败原路退款仅为商家承诺。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://www.getplus.ai/qiye-caigou",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "merchant_enterprise_terms",
+      "finding": "企业采购最少5个账号起，公开说支持普通票与1%/6%专票，对公与合同需人工确认；不满足单件采购及已核批发授权。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "same_as_prior",
+      "finding": "Plus到期充值和iOS礼品卡网页挂牌仍各¥139，缺真实全费、开票及上游授权。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "same_as_prior",
+      "finding": "原账号Plus仍显示¥155/月；发票、付款附费、正式上游授权尚未形成闭环。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "same_as_prior",
+      "finding": "V3 iOS Plus一月¥143.50、库存一般；微信及USD支付选项商称附加3.5%，未按新报价变化处理。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "same_as_prior",
+      "finding": "ChatShare相关自助提交网页显示维护中并提供人工客服选项；未能证实整体业务关闭。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:23:01.744Z",
+      "read_status": "readable",
+      "kind": "official_rule",
+      "finding": "OpenAI明确ChatGPT一般注册/使用通常不需电话；Codex桌面端可能要求验证；首次API Key需验证；不意味着普通充值会自动绑定手机号。",
+      "real_purchase_or_phone_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_64_unchanged": true
+  },
+  "methodology": "仅保存本轮实际读取的11个原始URL；页面价、商家条款、独立证明与真实交易区分。真实费用未见用null，¥/USD不混加。没有付款、提供会话或验证码、联系商家、验真税票和接码实测。"
+}

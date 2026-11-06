@@ -1772,6 +1772,28 @@
       "summary": "当轮12条直读URL，明确本人原号与成品号不同SKU；含票费用、开票主体、授权和真实履约null/未证，SMS成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r65-20261106",
+      "title": "GPT源头 · 代理¥3000前置费与GetPlus大陆限制核查",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r10.html",
+      "updatedAt": "2026-11-06T00:23:01.744Z",
+      "summary": "两家新零售/代理线索：直充站代理¥3000前置费、零售¥135/¥125；GetPlus约¥148加USD2.10票费，企业至少5个账号且条款不收大陆境内订单；已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r65-20261106-evidence",
+      "title": "新候选代理条款、发票币种与区域采购约束 · r65证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r10-evidence.json",
+      "updatedAt": "2026-11-06T00:23:01.744Z",
+      "summary": "11条本轮实际读的原始URL、准确Plus月付SKU、¥3000/¥2000代理前置费及USD2.10发票差额；实际全费null，SMS、验票、履约均未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
