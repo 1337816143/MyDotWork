@@ -1926,6 +1926,28 @@
       "summary": "10条直接阅读商家原始URL；示例¥141.55非可成交批发价，实际结算与国内税票null，号码期限和网页/API适用null，真实付款/接码0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r72-20261106",
+      "title": "GPT源头第72轮 · 瑶瑶经营主体、单件发票与优惠券补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r17.html",
+      "updatedAt": "2026-11-06T08:03:20.803Z",
+      "summary": "商家自述经营为个人品牌而非公司名义；能开票声明无正式出票主体，Plus¥129券码减¥3仅条件计算，代理¥112仍须预存¥500。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r72-20261106-evidence",
+      "title": "瑶瑶企业票据、主体与券码计算 · r72结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r17-evidence.json",
+      "updatedAt": "2026-11-06T08:03:20.803Z",
+      "summary": "6条本轮直接读取商家原始URL及自标更新日期，含票全费与法人证明null，券码未试、合格批发0家。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
