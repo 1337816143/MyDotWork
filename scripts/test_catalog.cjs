@@ -297,4 +297,15 @@ assert.equal(r66.new_candidate.verified_invoice_including_payment_all_in_cny,nul
 assert.equal(r66.new_candidate.faq_admits_simulated_queue_count,true);
 assert.equal(r66.new_candidate.wholesale_qualified,false);
 assert.equal(r66.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r67cat=d.records.find(v=>v.id==='gpt-source-followup-r67-20261106'),r67data=d.records.find(v=>v.id==='gpt-source-followup-r67-20261106-evidence');
+assert(r67cat&&r67data);assert(r67cat.url.endsWith('supplier-followup-20261106-r12.html'));
+const r67=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r12-evidence.json'),'utf8'));
+assert.equal(r67.round,67);assert.equal(r67.site_version,'1.9.75');assert.equal(r67.sources.length,8);
+assert.equal(r67.new_disclosed_fulfillment_link.seller_listed_retail_cny_per_card,160);
+assert.equal(r67.new_disclosed_fulfillment_link.session_json_forwarded_to,'GPT101');
+assert.equal(r67.new_disclosed_fulfillment_link.named_processor_listed_retail_cny_per_month,179);
+assert.equal(r67.new_disclosed_fulfillment_link.actual_reseller_wholesale_cost_cny,null);
+assert.equal(r67.new_disclosed_fulfillment_link.verified_chinese_vat_invoice_all_in_cny,null);
+assert.equal(r67.new_disclosed_fulfillment_link.qualified_wholesale_upstream,false);
+assert.equal(r67.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
