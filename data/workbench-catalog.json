@@ -1816,6 +1816,28 @@
       "summary": "6条新可读原网页与1条CatFK直接访问0正文，含USD/张、合同和票费null、已交付不无理由退、真实购买/税票/SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r67-20261106",
+      "title": "GPT源头 · ProdClub Plus 5%票费边界与Codex号码不退换",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r12.html",
+      "updatedAt": "2026-11-06T02:41:24.633Z",
+      "summary": "新核ProdClub本人原号Plus¥168/月，开票限标注SKU、加5%后条件小计¥176.40高于预算；¥35 Codex号码21–30天且不自助退款换号；批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r67-20261106-evidence",
+      "title": "ProdClub现价与5%票费、推广旧¥138及美国+1长效接码售后 · r67证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r12-evidence.json",
+      "updatedAt": "2026-11-06T02:41:24.633Z",
+      "summary": "7条当轮实读商家或官方URL，区分¥168挂牌与条件¥176.40、¥138旧推广未验证、¥35号码21–30天及退款限制；未验票、未接码。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

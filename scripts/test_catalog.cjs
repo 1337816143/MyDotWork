@@ -297,4 +297,17 @@ assert.equal(r66.new_candidate.verified_invoice_including_payment_all_in_cny,nul
 assert.equal(r66.new_candidate.faq_admits_simulated_queue_count,true);
 assert.equal(r66.new_candidate.wholesale_qualified,false);
 assert.equal(r66.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r67cat=d.records.find(v=>v.id==='gpt-source-followup-r67-20261106'),r67data=d.records.find(v=>v.id==='gpt-source-followup-r67-20261106-evidence');
+assert(r67cat&&r67data);assert(r67cat.url.endsWith('supplier-followup-20261106-r12.html'));
+const r67=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r12-evidence.json'),'utf8'));
+assert.equal(r67.round,67);assert.equal(r67.site_version,'1.9.75');assert.equal(r67.sources.filter(x=>x.read_status==='readable').length,7);
+assert.equal(r67.new_retail_plus_candidate_unverified.displayed_price_cny_per_account_month,168);
+assert.equal(r67.new_retail_plus_candidate_unverified.conditional_price_plus_five_percent_invoice_cny,176.4);
+assert.equal(r67.new_retail_plus_candidate_unverified.plus_sku_invoice_eligibility_verified,false);
+assert.equal(r67.new_retail_plus_candidate_unverified.actual_total_payment_with_china_vat_invoice_cny,null);
+assert.equal(r67.independent_phone_verification.displayed_price_cny_per_number,35);
+assert.equal(r67.independent_phone_verification.merchant_terms_allow_number_replacement,false);
+assert.equal(r67.independent_phone_verification.merchant_terms_allow_self_service_refund,false);
+assert.equal(r67.partner_promotion_historical_claim.promotion_current_checkout_price_verified,false);
+assert.equal(r67.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
