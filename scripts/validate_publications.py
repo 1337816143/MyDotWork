@@ -134,10 +134,24 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 175, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.70'
-    assert latest['path'] == 'research/2026-11-06/supplier-followup-20261106-r15.html'
-    assert latest['dataPath'] == 'research/2026-11-06/supplier-followup-20261106-r15-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-06/supplier-followup-20261106-r14.html'
+    assert latest['version'] == '1.71'
+    assert latest['path'] == 'research/2026-11-06/supplier-followup-20261106-r16.html'
+    assert latest['dataPath'] == 'research/2026-11-06/supplier-followup-20261106-r16-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-06/supplier-followup-20261106-r15.html'
+    assert by_id['gpt-source-followup-r71-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r16.html'
+    assert by_id['gpt-source-followup-r71-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r16-evidence.json'
+    r71 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r16-evidence.json').read_bytes())
+    assert r71['round'] == 71 and r71['site_version'] == '1.9.79' and len(r71['sources']) == 10
+    assert r71['new_candidate']['retail_price_cny_per_account_month'] == 149
+    assert r71['new_candidate']['agent_discounts_are_illustrative'] is True
+    assert r71['new_candidate']['illustrative_bronze_price_cny'] == 141.55
+    assert r71['new_candidate']['actual_one_piece_wholesale_cny'] is None
+    assert r71['new_candidate']['actual_one_account_month_invoiced_all_in_cny'] is None
+    assert r71['new_candidate']['enterprise_minimum_accounts'] == 5
+    assert r71['new_candidate']['wholesale_qualified'] is False
+    assert r71['independent_codex_phone_verification']['display_price_cny_per_attempt'] == 12
+    assert r71['independent_codex_phone_verification']['sms_failure_original_refund_guaranteed'] is False
+    assert r71['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r70-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r15.html'
     assert by_id['gpt-source-followup-r70-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r15-evidence.json'
     r70 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r15-evidence.json').read_bytes())
