@@ -1,0 +1,241 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 64,
+  "date": "2026-11-06",
+  "site_version": "1.9.72",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-06T00:09:40.717Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "newly_observed_retail_candidate": {
+    "merchant": "GPT-Buy",
+    "merchant_url": "https://www.gpt-buy.com/",
+    "sku_page": "https://www.gpt-buy.com/products/chatgpt-plus",
+    "distinct_existing_account_skus": [
+      {
+        "sku": "菲律宾卡充值",
+        "listed_price_cny_per_item": 130,
+        "listed_stock": "库存紧张",
+        "merchant_says_existing_account_topup": true,
+        "exact_validity_months_confirmed": null
+      },
+      {
+        "sku": "iOS 充值",
+        "listed_price_cny_per_item": 155,
+        "listed_stock": "库存紧张",
+        "merchant_says_existing_account_topup": true,
+        "exact_validity_months_confirmed": null
+      }
+    ],
+    "different_not_eligible_skus": [
+      {
+        "sku": "半价成品号菲律宾",
+        "listed_price_cny_per_item": 79,
+        "listed_stock": "有货",
+        "existing_account_topup": false,
+        "reason": "新账号交付，不是给本人原账号充值"
+      },
+      {
+        "sku": "菲律宾年付",
+        "listed_price_cny_per_item": 1800,
+        "period_months": 12,
+        "existing_account_topup": null,
+        "reason": "与单件单月目标不同"
+      }
+    ],
+    "product_page_default_price_cny": 79,
+    "product_page_default_is_own_existing_account": false,
+    "quantity_min": 1,
+    "quantity_max": 1,
+    "order_payment_extra_fee_cny": null,
+    "invoice_extra_fee_cny": null,
+    "verified_invoiced_final_cost_cny": null,
+    "domestic_vat_invoice_verified": false,
+    "legal_operating_entity": null,
+    "actual_payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "formal_resale_authorization_verified": false,
+    "public_wholesale_tier_price_cny": null,
+    "upfront_agent_fee_requirement_cny": null,
+    "agent_without_fee_confirmed": false,
+    "existing_paid_plus_period_stacking_policy": null,
+    "requires_chatgpt_session_or_token": null,
+    "real_purchase_tested": false,
+    "refund_policy": "根据实际交易事实逐单复核，未承诺一律自动退款；超时后到款转人工复核，不自动补发或退款",
+    "terms_page_readable_but_unpublished": true,
+    "privacy_page_complete_policy_published": false,
+    "order_failure_refund_to_original_payment_guaranteed": null,
+    "actual_after_sale_fulfillment_verified": false,
+    "qualified_for_required_170_cny_plus_wholesale": false,
+    "assessment": "页面标题和最低¥79为成品号，不能当作本人原号Plus单月报价；本人原号两种充值挂牌¥130/¥155，精确权益期限、实际支付/票费、出票法人、上游授权和履约未核。"
+  },
+  "same_round_bounded_rechecks": {
+    "chongpay": {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "listed_plus_cny_each": 139,
+      "change_vs_r63": false,
+      "checkout_verified": false
+    },
+    "payprm": {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "listed_own_account_cny_per_month": 155,
+      "change_vs_r63": false
+    },
+    "v3_ios": {
+      "url": "https://shop.gpt.ge/buy/22",
+      "listed_cny_per_item": 143.5,
+      "stock": "一般",
+      "change_vs_r63": false
+    },
+    "callai": {
+      "url": "https://shop.callai.one/products",
+      "listed_plus_cny_per_item": 107,
+      "change_vs_r63": false
+    },
+    "chatshare_related_checkout": {
+      "url": "https://gptchongzhi.com/",
+      "merchant_page_says_selfservice_maintenance": true,
+      "whole_business_closed_verified": false
+    },
+    "other_priority_legacy_candidates": "CatFK、小久、Morimm、引路鲸、GetVIP、wind89及其他未直接读取到新有效报价；沿用原始观察日期"
+  },
+  "independent_phone_verification": {
+    "new_candidate_this_round": false,
+    "new_successful_tests": 0,
+    "chatgpt_web_verified": false,
+    "codex_desktop_verified": false,
+    "first_api_key_verified": false,
+    "applicable_official_rule_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "carrier_or_apple_purchase_auto_binds_phone": false,
+    "session_or_token_requires_existing_login_for_session_delivery": true,
+    "note": "OpenAI官方区分一般ChatGPT网页、Codex桌面端可能的SMS及首次API Key必须验证；普通订阅、Apple结算或代充不能证明电话号码自动绑定。"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.gpt-buy.com/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "merchant_page_display",
+      "finding": "首页Plus总入口显示¥79起；该数本身不是本人原号充值SKU价。1–5分钟、销量及成功率属于商家自述，未实测。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.gpt-buy.com/products/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "merchant_page_display",
+      "finding": "实际可选规格中半价成品号菲律宾¥79，菲律宾卡充值¥130、iOS充值¥155，另有菲律宾年付¥1800；两充值款库存标为紧张。单份每笔限1，期限及最终支付与发票未知。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.gpt-buy.com/legal/terms",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable_unpublished",
+      "kind": "merchant_policy_gap",
+      "finding": "服务条款页面可读，但正文仅显示「站点尚未发布此内容」，不能视作已核完整合同条款。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.gpt-buy.com/legal/privacy",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable_incomplete",
+      "kind": "merchant_policy_gap",
+      "finding": "隐私政策主体显示「站点尚未发布此内容」，页面另有站内访问分析说明，不能认定完整隐私政策已公开。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.gpt-buy.com/legal/refund-and-delivery",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "merchant_self_updated_on": "2026-08-24",
+      "kind": "merchant_terms",
+      "finding": "商家写明交付异常需复核，拒绝预设一律退款；超时后到款会转人工复核且不自动补发或退款。未进行真实售后测试。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.gpt-buy.com/help/faq",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "merchant_terms",
+      "finding": "每笔订单仅一个SKU且数量固定1；可选游客订单，但要求订单邮箱和独立查询密码，不代表已核收款、开票或供货授权。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "既有Plus到期版与iOS渠道挂牌各¥139，未见不同于r63的实质证据。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "本人原号Plus挂牌¥155/月，未证含税全费与转售授权。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "V3 iOS Plus挂牌¥143.50且库存一般；微信/USD手续费3.5%页面可见，税票和实购未证。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://shop.callai.one/products",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "CallAI Plus挂牌¥107，旧r60相同；网页自称批发不代表确认可免代理前置费、出具增值税票或授予转售权。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "same_display_as_prior",
+      "finding": "ChatShare关联自助入口仍称维护中，不推论商家全部停止服务。",
+      "paid_or_success_tested": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T00:09:40.717Z",
+      "read_status": "readable",
+      "kind": "official_platform_rule_same_as_prior",
+      "finding": "ChatGPT普通使用通常不要求手机号，Codex桌面版可能要求，平台首个API Key需要；任何商家充值均不等于自动绑定手机号。",
+      "paid_or_success_tested": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_63_unchanged": true
+  },
+  "methodology": "2026-11-06实际读取GPT-Buy SKU页面、主页、条款缺页、隐私缺页、退款规则与FAQ及5个旧候选页和OpenAI帮助；准确SKU与最低默认价分开。商称不是官方授权或真实收款、税票、短信成功证明；没有购买、提交秘密、发信或联系商家。"
+}
