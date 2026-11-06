@@ -1,0 +1,131 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 72,
+  "date": "2026-11-06",
+  "site_version": "1.9.80",
+  "observed_on": "2026-11-06",
+  "observed_at_utc": "2026-11-06T08:02:13.657Z",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "merchant": "瑶瑶ai训练师",
+  "prior_evidence": "research/2026-11-06/supplier-followup-20261106-r15-evidence.json",
+  "new_operator_clarification": {
+    "merchant_public_self_description": "个人品牌，不以公司名义对外",
+    "verified_legal_operating_entity": null,
+    "legal_entity_registration_number": null,
+    "payment_receiving_legal_entity": null,
+    "invoice_issuing_legal_entity": null,
+    "official_openai_authorization_verified": false,
+    "formal_wholesale_contract_verified": false,
+    "merchant_self_reported_sales_independently_verified": false
+  },
+  "single_piece_invoice": {
+    "merchant_claims_invoice_available": true,
+    "merchant_claims_invoicing_past_paid_orders": true,
+    "invoice_type_must_confirm_offline": true,
+    "one_plus_sku_eligible_for_chinese_vat_invoice_verified": false,
+    "invoice_type_verified": null,
+    "invoice_fee_cny": null,
+    "actual_vat_invoice_verified": false,
+    "payment_extra_fee_cny": null,
+    "all_required_payment_and_invoiced_cost_cny": null
+  },
+  "conditional_promotion": {
+    "sku": "ChatGPT Plus 1个月自动发货",
+    "sku_code_prior_observation": "55E12C278B07774A",
+    "currency": "CNY",
+    "months": 1,
+    "quantity": 1,
+    "displayed_retail_cny": 129,
+    "displayed_repeat_customer_cny": 124,
+    "repeat_customer_requires_prior_paid_order": true,
+    "new_coupon_code": "888888",
+    "seller_claims_coupon_reduction_cny": 3,
+    "seller_claims_coupon_multi_use": true,
+    "coupon_not_stackable_with_repeat_or_referral": true,
+    "conditional_retention_math_cny": 126,
+    "real_checkout_coupon_redeemed_verified": false,
+    "actual_paid_discounted_total_cny": null,
+    "actual_china_vat_invoiced_total_cny": null,
+    "seller_wholesale_price_cny": 112,
+    "mandatory_reusable_wallet_predeposit_cny": 500,
+    "wholesale_price_available_without_deposit": false,
+    "real_one_piece_no_upfront_wholesale_offer_verified": false
+  },
+  "sms_and_credential_scope": {
+    "seller_plus_redeem_requires_prior_chatgpt_login": true,
+    "redeem_may_require_sensitive_session": true,
+    "ordinary_plus_recharge_automatically_solves_first_chatgpt_web_phone_verification": false,
+    "codex_desktop_sms_working_verified": null,
+    "api_first_key_sms_working_verified": null,
+    "any_real_sms_successes": 0,
+    "real_refund_test": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://kw.yaoyao.chat/guide/yaoyao-kaopu.html",
+      "observed_on": "2026-11-06",
+      "page_self_updated_on": "2026-11-04",
+      "read_status": "direct_read",
+      "evidence_class": "seller_owned_public_page_or_claim_not_user_transaction",
+      "observation": "self-operated shop identifies operator as personal brand, not operating outward as a company; seller not OpenAI authorized",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-06",
+      "page_self_updated_on": "2026-10-29",
+      "read_status": "direct_read",
+      "evidence_class": "seller_owned_public_page_or_claim_not_user_transaction",
+      "observation": "seller claims invoice and corporate payment incl already paid orders, but invoice type requires offline confirmation; no invoice issuer or fee disclosed",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/",
+      "observed_on": "2026-11-06",
+      "page_self_updated_on": null,
+      "read_status": "direct_read",
+      "evidence_class": "seller_owned_public_page_or_claim_not_user_transaction",
+      "observation": "Plus retail one account one month ¥129, repeat customer ¥124, storefront sales figures self-reported",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/daili",
+      "observed_on": "2026-11-06",
+      "page_self_updated_on": "2026-10-29",
+      "read_status": "direct_read",
+      "evidence_class": "seller_owned_public_page_or_claim_not_user_transaction",
+      "observation": "Plus wholesale ¥112 only after ¥500 reusable wallet advance deposit; retail ¥129",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://sites.google.com/view/yaoyao-ai/youhuima",
+      "observed_on": "2026-11-06",
+      "page_self_updated_on": "2026-11-03",
+      "read_status": "direct_read",
+      "evidence_class": "seller_owned_public_page_or_claim_not_user_transaction",
+      "observation": "merchant promotional site coupon 888888 claims ¥3 off per order; not stackable with repeat customer ¥5",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://sites.google.com/view/yaoyao-ai/plus-jiage",
+      "observed_on": "2026-11-06",
+      "page_self_updated_on": "2026-11-03",
+      "read_status": "direct_read",
+      "evidence_class": "seller_owned_public_page_or_claim_not_user_transaction",
+      "observation": "merchant promotional site confirms Plus retail ¥129 and coupon 888888; no live checkout proof",
+      "actual_paid_or_credential_submitted": false
+    }
+  ]
+}
