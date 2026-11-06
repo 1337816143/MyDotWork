@@ -2036,6 +2036,28 @@
       "summary": "8条当轮原始网页，¥143/月+¥10/单件发票为商家披露分项，¥153非实付含票全价；会话令牌安全风险及手机号适用区别。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r77-20261107",
+      "title": "GPT源头第77轮 · 分销履约关系与英国号码接码价格冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107.html",
+      "updatedAt": "2026-11-06T18:26:36Z",
+      "summary": "独立零售线索Plus原号30天¥125/张；商家承认使用第三方分销发货、上游负责质保；英国Lebara接码同页¥27.99与¥5/次冲突。含票结算与授权未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r77-20261107-evidence",
+      "title": "分销平台、开票缺口和接码冲突 · r77结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-evidence.json",
+      "updatedAt": "2026-11-06T18:26:36Z",
+      "summary": "本轮10条来源含2条商城无法读取；¥125仅商家挂牌，英国接码成交价null，未验正式供货与含票金额、手机号各场景实测为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

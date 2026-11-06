@@ -397,3 +397,14 @@ assert.equal(r76.new_retail_candidate.merchant_acknowledges_access_token_and_ses
 assert.equal(r76.new_retail_candidate.wholesale_qualified,false);
 assert.equal(r76.independent_phone_verification.auto_binds_phone,false);
 assert.equal(r76.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r77cat=d.records.find(r=>r.id==='gpt-source-followup-r77-20261107');
+const r77data=d.records.find(r=>r.id==='gpt-source-followup-r77-20261107-evidence');
+assert(r77cat&&r77data&&r77cat.url.endsWith('supplier-followup-20261107.html'));
+const r77=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-evidence.json'),'utf8'));
+assert.equal(r77.round,77);assert.equal(r77.site_version,'1.9.85');assert.equal(r77.sources.length,10);
+assert.equal(r77.new_retail_lead_unverified.public_displayed_price_cny_per_30_day_card,125);
+assert.equal(r77.new_retail_lead_unverified.wholesale_qualified,false);
+assert.equal(r77.independent_phone_verification.conflicting_price_display,true);
+assert.equal(r77.independent_phone_verification.actual_checkout_price_cny,null);
+assert.equal(r77.qualification_totals.verified_plus_wholesale_upstreams,0);
