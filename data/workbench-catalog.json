@@ -1904,6 +1904,28 @@
       "summary": "8条实读商家原网址，准确区分¥500可用余额与另¥500可选建站费；实际含中国税票全费null，售后与销量仅商称，无实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r71-20261106",
+      "title": "GPT源头第71轮 · 扭蛋AI代理示例折扣与Codex独立接码退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r16.html",
+      "updatedAt": "2026-11-06T06:09:42Z",
+      "summary": "原号Plus零售¥149/月，青铜9.5折仅示例且实际批发价/首批门槛未知；企业开票最低5账号。Codex¥12/次不保证KYC失败退款，尚无合格上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r71-20261106-evidence",
+      "title": "扭蛋Plus代理阶梯、Session、发票与短信售后 · r71结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r16-evidence.json",
+      "updatedAt": "2026-11-06T06:09:42Z",
+      "summary": "10条直接阅读商家原始URL；示例¥141.55非可成交批发价，实际结算与国内税票null，号码期限和网页/API适用null，真实付款/接码0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

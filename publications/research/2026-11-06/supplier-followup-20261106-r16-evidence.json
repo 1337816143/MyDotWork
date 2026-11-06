@@ -1,0 +1,202 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 71,
+  "date": "2026-11-06",
+  "site_version": "1.9.79",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "扭蛋AI代充",
+    "domain": "shop.niudan.cc",
+    "classification": "unverified_retail_agent_CDk_reseller_not_proven_genuine_wholesale_upstream",
+    "plus_sku": "ChatGPT Plus 代充",
+    "plus_sku_url": "https://shop.niudan.cc/shop/chatgpt/chatgpt-plus",
+    "quantity": 1,
+    "months": 1,
+    "currency": "CNY",
+    "retail_price_cny_per_account_month": 149,
+    "visible_single_item_order_preview_cny": 149,
+    "actual_one_piece_wholesale_cny": null,
+    "agent_discount_examples": [
+      {
+        "tier": "青铜Lv1",
+        "monthly_turnover_cny": "<10000",
+        "example_discount": 0.95
+      },
+      {
+        "tier": "白银Lv2",
+        "monthly_turnover_cny": "10000-50000",
+        "example_discount": 0.9
+      },
+      {
+        "tier": "黄金Lv3",
+        "monthly_turnover_cny": "50000-200000",
+        "example_discount": 0.85
+      },
+      {
+        "tier": "钻石Lv4",
+        "monthly_turnover_cny": ">200000",
+        "example_discount": null
+      }
+    ],
+    "agent_discounts_are_illustrative": true,
+    "illustrative_bronze_price_cny": 141.55,
+    "agent_application_review_required": true,
+    "final_agent_price_list_not_public": true,
+    "bulk_cdk_human_delivery": true,
+    "agent_entry_fee_cny": null,
+    "minimum_agent_batch_quantity": null,
+    "mandatory_wallet_deposit_cny": null,
+    "agent_deposit_refund_terms": null,
+    "enterprise_minimum_accounts": 5,
+    "merchant_claims_can_issue_vat_general_and_special": true,
+    "one_piece_plus_invoice_eligibility_verified": false,
+    "invoice_type_one_piece": null,
+    "invoice_extra_fee_cny": null,
+    "issuer_legal_entity": null,
+    "merchant_legal_entity_verified": null,
+    "payment_receiving_legal_entity": null,
+    "payment_extra_fee_cny": null,
+    "actual_one_account_month_invoiced_all_in_cny": null,
+    "official_openai_authorization_verified": false,
+    "formal_resale_supply_contract_verified": false,
+    "genuine_one_hop_upstream_verified": false,
+    "old_own_account_supported_claim": true,
+    "renewal_allowed_only_after_previous_subscription_expires": true,
+    "active_plus_stacking_supported": false,
+    "session_json_required_during_redemption": true,
+    "session_json_may_contain_accessToken": true,
+    "site_claims_no_password_but_session_not_safe": true,
+    "possible_session_transfer_to_fulfillment_partner": true,
+    "first_chatgpt_web_sms_verification_auto_solved": false,
+    "actual_payment_and_fulfillment_verified": false,
+    "wholesale_qualified": false
+  },
+  "independent_codex_phone_verification": {
+    "sku": "Codex 短信验证 代充",
+    "sku_url": "https://shop.niudan.cc/shop/codex/codex-sms",
+    "display_price_cny_per_attempt": 12,
+    "quantity": 1,
+    "claim_no_login_password": true,
+    "merchant_wording_login_email_for_codex_sku": true,
+    "chatgpt_session_required_for_this_specific_sku": null,
+    "exact_number_type": null,
+    "country_code": null,
+    "number_validity_days": null,
+    "repeat_sms_allowed": null,
+    "chatgpt_web_supported_proven": null,
+    "first_api_key_supported_proven": null,
+    "codex_desktop_passed_success_verified": false,
+    "sms_failure_original_refund_guaranteed": false,
+    "merchant_claim_non_account_caused_failure_refund": true,
+    "account_related_kyc_fail_refund_exclusion": true,
+    "payment_extra_fee_cny": null,
+    "actual_paid_total_cny": null
+  },
+  "merchant_claims_aftersales": {
+    "unused_cdk_can_request_full_refund": true,
+    "non_account_cause_technical_failure_claims_full_refund": true,
+    "account_not_eligible_or_kyc_unfinished_claims_no_refund": true,
+    "claimed_original_payment_refund_business_days": "1-3",
+    "actual_refund_verified": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://shop.niudan.cc/shop/chatgpt/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "Plus一月精确SKU、¥149单件、会话JSON/到期规则及账号原因不可退款",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/agent",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "示例阶梯9.5/9/8.5折、审核报价及批次CDK结算流程",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/enterprise",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "5账号企业采购门槛及普票/专票商家宣传",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/shop/codex/codex-sms",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "独立Codex单次验证码¥12、无密码口径、退款例外",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/support",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "未用CDK/非账号原因失败退、账号自身原因不退款，原路退1-3工作日",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/terms",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "商家标准条款对转售需另约定及无官方合作边界",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/privacy",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "Session信息可能转交履约渠道及隐私自述",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/about",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "经营主体和销量自述而非独立工商或履约验证",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/shop/chatgpt",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "目录产品与不同套餐对照，仅作准确SKU交叉验证",
+      "actual_paid_or_credential_submitted": false
+    },
+    {
+      "url": "https://shop.niudan.cc/shop",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "总目录的Codex核验 SKU/商家销售计数，不作为交易实测",
+      "actual_paid_or_credential_submitted": false
+    }
+  ],
+  "preservation": {
+    "historic_126_quotes_unchanged": true,
+    "rounds_1_to_70_unchanged": true
+  },
+  "methodology": "代理折扣为商家明确写出的示例，不是已审核给出的可成交折扣；¥141.55为¥149×95%条件算例，非商家实收票据或批发进价。零售单件可下单不证明代理单件可拿。企业5账号开票声明不证明单件¥149可开中国增值税发票。短信¥12为Codex单次验证并非Plus且不得推到ChatGPT网页及首次API Key。通用“失败退”有账号不合格/KYC未完成免责例外。未下单、未提交Session/Token、未接码、未联系商家。"
+}
