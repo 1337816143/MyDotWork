@@ -1,0 +1,173 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 67,
+  "date": "2026-11-06",
+  "site_version": "1.9.75",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-06T02:41:24.633Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_retail_plus_candidate_unverified": {
+    "merchant": "ProdClub",
+    "sku_name": "ChatGPT Plus（1 个月）",
+    "sku_url": "https://prodclub.xyz/offers/chatgpt-plus-1m",
+    "displayed_price_cny_per_account_month": 168,
+    "displayed_period_months": 1,
+    "existing_own_account_claimed": true,
+    "requires_current_free_account": true,
+    "already_active_plus_can_cover": false,
+    "renewal_only_after_expiry": true,
+    "session_json_required_after_payment": true,
+    "session_is_sensitive_authentication_credential": true,
+    "alipay_extra_service_fee_cny_merchants_faq_claim": 0,
+    "invoice_only_if_sku_marked_invoice_eligible": true,
+    "plus_sku_invoice_eligibility_verified": false,
+    "invoice_surcharge_rate_if_eligible": 0.05,
+    "conditional_price_plus_five_percent_invoice_cny": 176.4,
+    "conditional_invoice_scenario_exceeds_user_limit_cny": 6.4,
+    "verified_actual_china_vat_invoice": false,
+    "invoice_actual_fee_cny": null,
+    "actual_total_payment_with_china_vat_invoice_cny": null,
+    "legal_operator_name": null,
+    "payee_legal_name": null,
+    "invoice_issuer_legal_name": null,
+    "upfront_agent_fee_cny": null,
+    "formal_reseller_authorization_verified": false,
+    "actual_wholesale_price_cny": null,
+    "minimum_wholesale_quantity": null,
+    "actual_single_month_fulfillment_verified": false,
+    "wholesale_qualified": false,
+    "warranty_days_claimed": 30,
+    "subscription_drop_refund_by_remaining_days_claimed": true,
+    "account_ban_warranty_exclusion_claimed": true,
+    "assessment": "本轮直接商品页¥168/人/月、需Free与Session，5%仅有「可开发票」标记的SKU适用；当前Plus单独商品页没有核出该标记。若可开票且加5%，算术小计¥176.40已超¥170，但真实含中国增值税税票成交价与出票主体仍null。没有任何已核批发或转售授权。"
+  },
+  "independent_phone_verification": {
+    "merchant": "ProdClub",
+    "sku_url": "https://prodclub.xyz/offers/codex-sms-us-21d",
+    "sku_name": "ChatGPT/Codex 美国+1长效接码（21天）",
+    "displayed_price_cny_per_number": 35,
+    "country_code": "+1",
+    "advertised_term_days_in_title": 21,
+    "merchant_body_validity_days_min": 21,
+    "merchant_body_validity_days_max": 30,
+    "precise_assigned_number_expiry_not_public_until_order": true,
+    "one_number_for_one_chatgpt_account": true,
+    "merchant_claimed_supported_scenario": "Codex登录验证码",
+    "chatgpt_web_supported_verified": false,
+    "codex_desktop_verified_success": false,
+    "first_api_key_supported_verified": false,
+    "phone_number_voip_or_real_sim_verified": null,
+    "payment_surcharge_cny": null,
+    "refund_if_no_sms_original_payment_verified": false,
+    "merchant_terms_allow_self_service_refund": false,
+    "merchant_terms_allow_number_replacement": false,
+    "merchant_suggested_escalation": "contact_support_not_refund_commitment",
+    "actual_sms_successes": 0,
+    "assessment": "实际SKU标题21天、商品正文称21–30天，号码按订单分配；到手不能换号、不能自行退款。不把标题「ChatGPT/Codex」当成网页或API验证通过证据。"
+  },
+  "partner_promotion_historical_claim": {
+    "publisher": "小码AI",
+    "merchant_relation_claim": "ProdClub合作/推广入口",
+    "page_url": "https://kekaoplus.com/tutorials/chatgpt-plus-recharge-buying-guide",
+    "page_self_updated_on": "2026-10-29",
+    "stated_standard_price_cny": 168,
+    "stated_promotional_price_cny": 138,
+    "promotion_current_checkout_price_verified": false,
+    "current_direct_sku_showed_cny": 168,
+    "current_merchant_affiliate_landing_showed_cny": 168,
+    "full_invoice_cost_at_promotional_price_verified_cny": null,
+    "classification": "older_merchant_affiliate_marketing_claim_not_current_wholesale_or_sale_confirmation"
+  },
+  "official_sms_boundary": {
+    "source": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "general_chatgpt_account_phone_normally_required": false,
+    "codex_desktop_phone_may_be_required": true,
+    "first_api_key_phone_required": true,
+    "voip_landline_google_voice_and_premium_numbers_not_supported": true,
+    "reseller_plus_payment_or_session_not_automatic_phone_binding": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://prodclub.xyz/offers/chatgpt-plus-1m",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "read_status": "readable",
+      "kind": "merchant_exact_plus_sku",
+      "finding": "Plus本人原号单月¥168，须先Free再交Session，不能覆盖已有Plus；30日售后商称；未实测。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://prodclub.xyz/offers/codex-sms-us-21d",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "read_status": "readable",
+      "kind": "merchant_exact_phone_sku",
+      "finding": "美国+1长效号码¥35/个；标题21日、正文21–30日；一号一账号；买后不换号、不自行退款；未证真实收码。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://prodclub.xyz/help",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "read_status": "readable",
+      "kind": "merchant_faq",
+      "finding": "商称支付宝服务费¥0，开票+5%且仅带可开票标签SKU；Plus到期重购，登录需Session；接码称Codex专用。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://prodclub.xyz/help/invoice",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "read_status": "readable",
+      "kind": "merchant_invoice_policy",
+      "finding": "仅有可开发票标记报价可开票，成功后联系客服，另收5%，非所有SKU自动可开票；Plus准确SKU资格未证。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://kekaoplus.com/tutorials/chatgpt-plus-recharge-buying-guide",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "page_self_updated_on": "2026-10-29",
+      "read_status": "readable",
+      "kind": "affiliate_past_dated_marketing",
+      "finding": "10月29日稿自称ProdClub原价¥168经推广入口¥138；本轮未在准确商品或支付结算页复现¥138，不认定现货价/批发价。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://prodclub.xyz/r/Z4GP7M?src=410",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "read_status": "readable",
+      "kind": "affiliate_landing",
+      "finding": "推广链接打开的前台可读Plus挂牌仍¥168，不能作为¥138实际到账订单或最终价。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T02:41:24.633Z",
+      "read_status": "readable",
+      "kind": "openai_official_phone_policy",
+      "finding": "ChatGPT普通注册一般不需SMS、Codex桌面可能触发、首个API Key需手机号；不接受VoIP、陆线等，不保证任何第三方号码通过。",
+      "real_purchase_or_phone_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_66_unchanged": true
+  },
+  "methodology": "仅纳入2026-11-06实际读到的商家原URL和OpenAI官方页；伙伴¥138是页面自标2026-10-29推广承诺，未当作本轮新成交价或已核批发价格。5%按¥168演示仅在SKU可开发票时成立，真实含中国增值税票付款和出票主体为null；¥35号码未实购不称OpenAI实测成功。无下单、没有联系方式外发、无凭据、无开票实物。"
+}
