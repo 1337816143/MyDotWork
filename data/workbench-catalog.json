@@ -2014,6 +2014,28 @@
       "summary": "本轮7条实际读取原始URL、观察日、113/3人民币价格与单位；会员及Token前提、税票全费/号码期限/短信退款null，真实实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r76-20261106",
+      "title": "GPT源头第76轮 · UpPlusPro含票条件价与完整Session风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r21.html",
+      "updatedAt": "2026-11-06T13:06:00Z",
+      "summary": "本人Plus月卡¥143+商称中国电子普票¥10，¥153仅条件算术；完整Session含敏感令牌，出票/收款/授权及实际结算均未核，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r76-20261106-evidence",
+      "title": "UpPlusPro分项含票价、支付/开票缺口与Session交付证据·r76 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r21-evidence.json",
+      "updatedAt": "2026-11-06T13:06:00Z",
+      "summary": "8条当轮原始网页，¥143/月+¥10/单件发票为商家披露分项，¥153非实付含票全价；会话令牌安全风险及手机号适用区别。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
