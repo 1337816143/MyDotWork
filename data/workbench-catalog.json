@@ -1794,6 +1794,28 @@
       "summary": "11条本轮实际读的原始URL、准确Plus月付SKU、¥3000/¥2000代理前置费及USD2.10发票差额；实际全费null，SMS、验票、履约均未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r66-20261106",
+      "title": "GPT源头 · GPT Store代理价无价差、美元iOS卡密不含税费",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r11.html",
+      "updatedAt": "2026-11-06T01:31:04.972Z",
+      "summary": "直接核6页：GPT Store美区iOS Plus卡密USD16，至尊代理价也USD16；另有官方订阅税/第三方费未含、模拟排队数及无OpenAI授权声明，非合格批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r66-20261106-evidence",
+      "title": "GPT Store准确SKU、代理价、模拟排队及售后·r66证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r11-evidence.json",
+      "updatedAt": "2026-11-06T01:31:04.972Z",
+      "summary": "6条新可读原网页与1条CatFK直接访问0正文，含USD/张、合同和票费null、已交付不无理由退、真实购买/税票/SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
