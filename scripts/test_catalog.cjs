@@ -310,4 +310,8 @@ assert.equal(r67.independent_phone_verification.merchant_terms_allow_number_repl
 assert.equal(r67.independent_phone_verification.merchant_terms_allow_self_service_refund,false);
 assert.equal(r67.partner_promotion_historical_claim.promotion_current_checkout_price_verified,false);
 assert.equal(r67.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r69cat=d.records.find(x=>x.id==='gpt-source-followup-r69-20261106');assert(r69cat&&r69cat.url.endsWith('supplier-followup-20261106-r14.html'));
+const r69=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r14-evidence.json'),'utf8'));
+assert.equal(r69.round,69);assert.equal(r69.new_candidate_unverified.displayed_price,14.93);assert.equal(r69.new_candidate_unverified.all_required_costs_including_china_vat_cny,null);
+assert.equal(r69.prior_candidate_material_clarification.asks_to_paste_entire_account_info_page,true);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
