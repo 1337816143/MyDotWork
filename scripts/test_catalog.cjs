@@ -339,4 +339,16 @@ assert.equal(r71.independent_codex_phone_verification.display_price_cny_per_atte
 assert.equal(r71.independent_codex_phone_verification.number_validity_days,null);
 assert.equal(r71.independent_codex_phone_verification.sms_failure_original_refund_guaranteed,false);
 assert.equal(r71.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r72cat=d.records.find(x=>x.id==='gpt-source-followup-r72-20261106');
+const r72data=d.records.find(x=>x.id==='gpt-source-followup-r72-20261106-evidence');
+assert(r72cat&&r72data&&r72cat.url.endsWith('supplier-followup-20261106-r17.html'));
+const r72=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r17-evidence.json'),'utf8'));
+assert.equal(r72.round,72);assert.equal(r72.site_version,'1.9.80');assert.equal(r72.sources.length,6);
+assert.equal(r72.new_operator_clarification.verified_legal_operating_entity,null);
+assert.equal(r72.single_piece_invoice.invoice_fee_cny,null);
+assert.equal(r72.conditional_promotion.new_coupon_code,'888888');
+assert.equal(r72.conditional_promotion.conditional_retention_math_cny,126);
+assert.equal(r72.conditional_promotion.real_checkout_coupon_redeemed_verified,false);
+assert.equal(r72.conditional_promotion.mandatory_reusable_wallet_predeposit_cny,500);
+assert.equal(r72.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
