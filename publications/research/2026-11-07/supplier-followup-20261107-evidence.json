@@ -41,7 +41,7 @@
     "wholesale_one_piece_price_cny": null,
     "wholesale_contract_verified": false,
     "openai_reseller_authorization_verified": false,
-    "actual_supplier_cannot_be_inferred_from_shop": false,
+    "actual_supplier_cannot_be_inferred_from_shop": true,
     "own_account_renewal_success_tested": false,
     "requires_session_or_token_at_external_redemption": null,
     "privacy_policy_covers_checkout": false,
