@@ -1,0 +1,122 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 78,
+  "site_version": "1.9.86",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "material_policy_scope_discovery": {
+    "merchant": "ChongPay",
+    "old_history_reference": "2026-11-04 r36 与后续历史记录曾按商家声明记载平台原因掉订阅按剩余时间折算；该表述在2026-11-07主页仍存在。",
+    "revision_label_observed": "服务条款 · 2026-11 修订版",
+    "exact_revision_effective_date": null,
+    "explicit_warranty_only_for_marked_items": true,
+    "explicit_marked_items": [
+      "ChatGPT Plus Gmail 成品账号（¥120/账号）",
+      "Claude Pro 会员（¥210/份）",
+      "Claude Max 5×（¥960/份）"
+    ],
+    "unmarked_products_merchant_terms_delivery_standard": "充上为止",
+    "original_account_skus": [
+      {
+        "sku": "ChatGPT Plus 充值（到期才能充）",
+        "displayed_price_cny_per_item": 139,
+        "warranty_mark_on_current_catalog": false,
+        "period_days": null,
+        "actual_checkout_including_all_required_fees_and_chinese_vat_invoice_cny": null
+      },
+      {
+        "sku": "ChatGPT Plus 充值（iOS 礼品卡；会员没到期可充）",
+        "displayed_price_cny_per_item": 139,
+        "warranty_mark_on_current_catalog": false,
+        "period_days": null,
+        "actual_checkout_including_all_required_fees_and_chinese_vat_invoice_cny": null
+      }
+    ],
+    "homepage_says_platform_attributable_cancel_prorated_refund": true,
+    "homepage_says_warranty_for_all_original_account_skus": false,
+    "merchant_site_public_claims_conflict": true,
+    "binding_store_order_terms_read_this_round": false,
+    "warranty_entitlement_of_specific_paid_order_verified": null,
+    "independent_cancellation_refund_tested": false,
+    "interpretation": "现行条款文字将未标质保的渠道商品划归充上为止，而首页仍对平台原因掉订阅宣传按天退；不同责任归因或具体订单合同能否调和两种规则尚未证实，不可据此保证原号Plus在期掉订阅赔付。",
+    "merchant_self_labels_terms_month": "2026-11",
+    "actual_change_date_verified": null,
+    "wholesale_status": "guide_site_links_to_external_wzyp_shop_not_verified_wholesale",
+    "independent_legal_payment_receiver": null,
+    "verified_china_vat_invoice_issuer": null,
+    "verified_china_vat_invoice": false,
+    "verified_supplier_authorization": false,
+    "verified_plus_one_unit_wholesale_invoiced_full_cost_cny": null,
+    "confidence": "directly_read_current_vendor_terms_catalog_homepage_help; not_independent_transaction"
+  },
+  "independent_phone_verification": {
+    "merchant": "ChongPay",
+    "sku": "Codex 短信验证（25天）",
+    "displayed_price_cny_per_25_day_service": 20,
+    "number_lifetime_days_claim": 25,
+    "phone_operator_verified": false,
+    "number_followup_receipt_guaranteed": null,
+    "failed_sms_refund_to_original_verified": false,
+    "chatgpt_web_registration_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_api_key_success_tested": false,
+    "autobinds_openai_phone": false,
+    "claim_changed_from_prior_round": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/terms",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_live_merchant",
+      "source_status": "merchant_public_terms_not_order_contract",
+      "page_label": "服务条款 · 2026-11 修订版",
+      "page_effective_date": null,
+      "facts": "仅有明确「质保掉订阅」标志的成品号Plus ¥120/Claude部分商品含在期保障；未标注或明确不质保商品按「充上为止」交付；失败核验后商称原路退款。"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_live_merchant",
+      "source_status": "merchant_public_homepage_own_marketing",
+      "page_label": "价格更新于 2026-11-05",
+      "facts": "本人Plus到期渠道¥139和iOS可在期渠道¥139，二者没有「质保掉订阅」标记；相邻Gmail成品号¥120有；首页又宣称「成功后因本平台原因掉订阅，按已使用天数折算退款」，FAQ也同样宣称。"
+    },
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_live_merchant",
+      "source_status": "merchant_public_catalog_not_checkout",
+      "page_label": "价格更新于 2026-11-05",
+      "facts": "Plus原号到期才能充¥139/份与iOS会员没到期可充¥139/份仍未标「质保掉订阅」，成品号¥120明确标质保；Codex短信25天¥20，仅商家挂牌。"
+    },
+    {
+      "url": "https://chongpay.com/help",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_live_merchant",
+      "source_status": "merchant_help_general_not_sale_contract",
+      "page_label": null,
+      "facts": "页面统一要求以实际商品/订单售后为准，确认PDF Invoice与中国增值税发票不同；未提供原号Plus成功后掉订阅专项保障闭环。"
+    }
+  ],
+  "historical_data_preserved": true,
+  "cautions": [
+    "本次确认的是已公开现行网页之间的质保适用范围冲突，不能断定11月7日新生效或已经发生退款拒绝事件。",
+    "商家价签¥139仍是导购页价格快照，实际订单主体、票费、支付附加费、真实含票成本与合法转售授权均未知null。",
+    "不将无质保的原号商品与有质保的Gmail成品账号混合比较。",
+    "普通Plus充值不是手机号验证服务，不能证明首次网页登录、Codex或首次API Key自动通过。",
+    "没有支付订单、提交Session/Token、实际收票、接收短信或联系商家。"
+  ]
+}

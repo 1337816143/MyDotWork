@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPT源头第78轮：ChongPay 原号Plus质保适用范围冲突</title>
+<style>body{font:16px/1.75 system-ui,"Microsoft YaHei",sans-serif;background:#f3f6fb;color:#16364d;max-width:1040px;margin:auto;padding:22px}main,section{background:white;border:1px solid #d8e3eb;padding:23px;margin:16px 0;border-radius:12px}a{color:#07659b;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%}td,th{border:1px solid #d9e2eb;padding:10px;text-align:left;vertical-align:top}th{background:#eff6fa}.warn{background:#fff1dd;border-left:4px solid #bd7c0e;padding:14px}code{overflow-wrap:anywhere}</style></head>
+<body><main><p><a href="../../dashboard/index.html">返回工作台</a> · <a href="supplier-followup-20261107-r2-evidence.json">本轮证据JSON</a> · <a href="supplier-followup-20261107.html">上一轮r77</a></p>
+<h1>GPT源头调研 · 第78轮（2026-11-07）</h1>
+<p class="warn"><b>实质售后风险补证：</b> ChongPay的<strong>「2026-11 修订版」服务条款</strong>将未明确标「质保掉订阅」的渠道商品划为「充上为止」，但<a href="https://chongpay.com/">同站首页</a>仍称平台原因导致订阅中断可按已使用天数折算退款。目前本人原号Plus到期渠道与iOS渠道均只显示¥139，未标该质保；另售Gmail成品号¥120则明确标质保。两处公开表述冲突，<strong>不能认定原号Plus成功充值后的掉订阅必定可退款</strong>，也不宜断定商家已实际拒绝退款。</p>
+<p>条款仅自称「2026-11 修订版」，未给出精确生效日。本轮日期是网页观察日，不是确认的改规时间。历史r36及前77轮资料保持原始内容。</p></main>
+<section><h2>同站准确SKU与售后条款对照</h2>
+<table><tr><th>条目</th><th>网页实际文字或标签</th><th>采购影响</th></tr>
+<tr><td>本人原号Plus（会员到期才能充）</td><td><a href="https://chongpay.com/plans">公开价 ¥139/份</a>，没有「质保掉订阅」标签</td><td rowspan="2">按<a href="https://chongpay.com/terms">现行条款</a>对未标质保的渠道商品适用「充上为止」，但首页的平台责任例外是否涵盖本SKU尚无实际订单/合同证据；实际成功后售后权益<b>未知</b>。</td></tr>
+<tr><td>本人原号Plus（iOS 礼品卡，在期可办理）</td><td>公开价 ¥139/份，没有「质保掉订阅」标签；不能当作前一SKU的同等续费条件</td></tr>
+<tr><td>Gmail Plus成品账号</td><td>¥120/账号，<strong>明确标「质保掉订阅」</strong></td><td>属于新账号商品，不满足本人原号要求；其质保不能迁移给原号Plus。</td></tr>
+<tr><td>首页/FAQ的退款宣传</td><td><a href="https://chongpay.com/">「成功后因本平台原因掉订阅，按已使用天数折算退款」</a></td><td>与「未标保按充上为止」存在适用范围矛盾；平台原因的认定主体、举证门槛和最终应适用的订单条款不明。</td></tr>
+<tr><td>外部真正交易及票据</td><td>ChongPay自称导购站，交易转往wzyp.cn，¥139只是人工快照；<a href="https://chongpay.com/help">帮助中心</a>指出PDF Invoice非中国增值税票</td><td>本轮未读取到真实订单条款、付款主体、合法中国税票或完整费用；费用与已核一手供货资格仍为 <code>null</code>。</td></tr>
+</table>
+</section><section><h2>手机号验证独立线索未变</h2><p>ChongPay目录仍展示「Codex短信验证（25天）」<b>¥20/次服务</b>，号码期限25天只是商家商品声明；号码归属、续收能力、短信失败退款、ChatGPT网页/Codex/首次API Key真实通过情况均未验证。普通Plus订阅与独立手机号验证是不同商品，不意味着自动绑定OpenAI手机号。</p></section>
+<section><h2>原始URL与证据等级（2026-11-07实际读取）</h2><ol>
+<li><a href="https://chongpay.com/terms">https://chongpay.com/terms</a>：商家「2026-11 修订版」售后条款；未标质保商品「充上为止」；精确修订日期未知。</li>
+<li><a href="https://chongpay.com/">https://chongpay.com/</a>：两款本人原号Plus各¥139且未标质保、Gmail成品号¥120标质保；同页称平台原因掉订阅按天折退。</li>
+<li><a href="https://chongpay.com/plans">https://chongpay.com/plans</a>：准确价签与标签、25天Codex接码¥20；页面自称「价格更新于2026-11-05」，并非本轮调价证明。</li>
+<li><a href="https://chongpay.com/help">https://chongpay.com/help</a>：声明实际售后由订单条款决定，PDF Invoice不等于中国增值税发票。</li>
+</ol><p>四条都是<strong>商家公开网页声明</strong>，不是独立订单履约、真实退款案例或合法中国税票。前轮公开¥139及¥20只是本轮复核的旧价，不刷新其他商家的历史价格。</p></section>
+<section><h2>资格判断与待核缺口</h2><p><b>符合全条件的Plus批发源仍为0家；真实付款、合法增值税票据验真、SMS通过实测均为0。</b> 原号续费能否实购、单件真正批发价、代理前置费、支付附费、收款与开票法律主体、正式授权和成功后退保依然缺失或不可独立证明。不得依据网站承诺写成已验成功。未购买、未联系、未提交任何登录凭据。</p></section></body></html>
