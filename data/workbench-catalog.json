@@ -1970,6 +1970,28 @@
       "summary": "8条直读自有原网址及日期，区分含票价¥179与实付null、授权/经营/税票主体缺口，手机号实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r74-20261106",
+      "title": "GPT源头第74轮 · 小久Plus库存恢复与新批发店前置费核查",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r19.html",
+      "updatedAt": "2026-11-06T10:28:00Z",
+      "summary": "小久准确Plus¥110 SKU从11/03暂时缺货变为11/06页面现货；zhanghao66普通¥110起/会员¥107起，但宣传代理费¥99、内地拒单与预订，含票全费未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r74-20261106-evidence",
+      "title": "小久库存状态变化、代理资格/付款及手机号验证缺口 · r74证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r19-evidence.json",
+      "updatedAt": "2026-11-06T10:28:00Z",
+      "summary": "7条原始URL分类记录，历史缺货与当前现货分开；会员等级价不是无门槛批发，渠道内地限制、退款例外、含票全费null及实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
