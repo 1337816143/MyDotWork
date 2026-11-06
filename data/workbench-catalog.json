@@ -1882,6 +1882,28 @@
       "summary": "10条实际直读来源，准确USD/一月，USDT成本null、税票null，AIXiamo历史价不刷新；真实接码0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r70-20261106",
+      "title": "GPT源头第70轮 · 瑶瑶Plus¥112拿货与¥500预存门槛",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r15.html",
+      "updatedAt": "2026-11-06T05:35:00Z",
+      "summary": "新核Plus单件月卡API code及¥112余额拿货价／¥129零售价，声称0代理费但必须先预存¥500；税票费用及正式一手授权未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r70-20261106-evidence",
+      "title": "瑶瑶代理余额、准确SKU与票据售后 · 第70轮证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r15-evidence.json",
+      "updatedAt": "2026-11-06T05:35:00Z",
+      "summary": "8条实读商家原网址，准确区分¥500可用余额与另¥500可选建站费；实际含中国税票全费null，售后与销量仅商称，无实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

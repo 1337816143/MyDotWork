@@ -1,0 +1,157 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 70,
+  "date": "2026-11-06",
+  "site_version": "1.9.78",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "瑶瑶ai训练师",
+    "domain": "kw.yaoyao.chat",
+    "sku": "ChatGPT Plus 1个月自动发货",
+    "sku_code": "55E12C278B07774A",
+    "quantity": 1,
+    "months": 1,
+    "currency": "CNY",
+    "merchant_published_retail_cny": 129,
+    "merchant_published_wholesale_cny": 112,
+    "retail_wholesale_difference_cny": 17,
+    "claimed_agent_entry_fee_cny": 0,
+    "mandatory_reusable_wallet_topup_cny": 500,
+    "wholesale_price_without_topup_available": false,
+    "optional_white_label_or_api_setup_fee_cny": 500,
+    "api_access_fee_cny_merchant_claim": 0,
+    "api_min_items_per_order": 1,
+    "api_max_items_per_order": 2,
+    "logged_in_actual_wholesale_checkout_verified": false,
+    "real_wallet_deposit_paid_cny": null,
+    "wallet_balance_cash_refund_policy_verified": null,
+    "merchant_invoice_possible_claim": true,
+    "invoice_type_guaranteed": null,
+    "invoice_issuer_entity": null,
+    "invoice_extra_fee_cny": null,
+    "payment_extra_fee_cny": null,
+    "merchant_operating_legal_entity": null,
+    "payment_receiving_legal_entity": null,
+    "actual_china_vat_invoice_verified": false,
+    "actual_all_in_cny_for_one_account_month": null,
+    "merchant_claims_existing_account": true,
+    "session_or_login_info_required_for_redemption": true,
+    "first_login_sms_block_solved_by_recharge": false,
+    "active_plus_can_be_stacked": false,
+    "old_account_renew_at_expiry_claim": true,
+    "merchant_denies_official_openai_affiliation": true,
+    "formal_resale_authorization_verified": false,
+    "genuine_one_hop_upstream_verified": false,
+    "actual_transaction_and_fulfillment_verified": false,
+    "qualified_wholesale": false,
+    "classification": "published_distributor_API_and_wholesale_rate_but_mandatory_500_wallet_topup;not_verified_original_upstream"
+  },
+  "merchant_claims_aftersales": {
+    "failed_redemption_card_not_consumed": true,
+    "optional_original_payment_method_refund_after_manual_review_24h": true,
+    "original_payment_refund_verified": false,
+    "early_revocation_claims_extra_month": true,
+    "ordinary_account_ban_refund_excluded": true
+  },
+  "merchant_site_statistics_only": {
+    "self_reported_as_of": "2026-11-06 13:29 Asia/Shanghai",
+    "plus_monthly_self_service_success_count": 448,
+    "all_products_monthly_success_count": 515,
+    "failed_attempt_count": 77,
+    "affected_cards": 43,
+    "cards_subsequently_success_claim": 38,
+    "independent_audit": false
+  },
+  "sms_verification": {
+    "new_independent_number_service_found": false,
+    "chatgpt_web_verified_success": 0,
+    "codex_desktop_verified_success": 0,
+    "first_api_key_verified_success": 0,
+    "number_validity": null,
+    "sms_failure_refund": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://kw.yaoyao.chat/daili",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "批发SKU价格与500元预存/可选500元建站",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/daili/api",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "API产品code、1至2件接口约束",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "零售本人原号Plus月卡129元",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "声称可开票，票种须事后联系，发票主体和费率未知",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "商称充值失败人工确认后24小时退原支付账户",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/plus-xufei.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "原号到期才能继续充值，不能在期叠加",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/plus-129-weishenme.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "商称成本约108元并明确非OpenAI隶属，未经独立核验",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://kw.yaoyao.chat/tongji/",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_public_page_or_claim_not_user_transaction",
+      "observation": "2026-11-06 13:29北京时间自报Plus成功448次、失败77次",
+      "real_paid_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_quotes_unchanged": true,
+    "rounds_1_to_69_unchanged": true
+  },
+  "methodology": "¥112为商家公开余额拿货价，零售扫码¥129；零代理资格费≠无需预存500元，另500元搭建费可选。原号Plus到期后再充，兑码需事先登录和会话资料，非首次网页手机号自动验证。商家自称可开票、退款、销量均非独立实测；费用/票据/主体/正式授权缺口null。未付款、预存、提供Session、联系商家、接码。"
+}
