@@ -1,0 +1,140 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 75,
+  "site_version": "1.9.83",
+  "date": "2026-11-06",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "material_price_observation": {
+    "merchant": "Morimm",
+    "exact_sku_url": "https://morimm.com/products/gptplus",
+    "sku": "ChatGPT PLUS 菲区正规代充 同步官方售后",
+    "previous_recorded_price_cny": 115,
+    "previous_observation_on": "2026-11-03",
+    "historical_source": "research/2026-11-03/phone-subscription-evidence.json",
+    "current_public_price_cny": 113,
+    "current_observation_on": "2026-11-06",
+    "shown_price_change_cny": -2,
+    "unit": "CNY/单件，本人Free账号菲律宾Plus卡付（商称一月）",
+    "members_only": true,
+    "login_before_purchase": true,
+    "free_account_required_merchant_claim": true,
+    "token_required_after_login_merchant_claim": true,
+    "actual_checkout_cost_cny": null,
+    "member_upfront_fee_cny": null,
+    "payment_extra_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "china_vat_invoice_issuer": null,
+    "all_required_invoiced_cny": null,
+    "legal_payment_receiver": null,
+    "wholesale_authorization_verified": false,
+    "real_paid_order": false
+  },
+  "independent_phone_verification": {
+    "merchant": "Morimm",
+    "exact_sku_url": "https://morimm.com/products/Codex_num",
+    "sku": "【codex 接码 】美国实卡包来码 一次用cdk",
+    "public_price_cny": 3,
+    "unit": "CNY/单次CDK",
+    "members_only": true,
+    "merchant_claimed_sim_type": "美国实卡（未验证）",
+    "merchant_claimed_auto_delivery": true,
+    "required_member_fee_cny": null,
+    "actual_all_in_sms_cost_cny": null,
+    "session_requirement": null,
+    "number_validity_days": null,
+    "reusability": null,
+    "chatgpt_web_scope_verified": null,
+    "codex_scope_tested": false,
+    "api_first_key_scope_verified": null,
+    "sms_failure_refund": null,
+    "original_payment_refund": null,
+    "real_openai_verification_passed": false
+  },
+  "refund_note": {
+    "url": "https://morimm.com/",
+    "seller_public_banner": "退款与提余额只支持U",
+    "meaning_of_u": null,
+    "guaranteed_original_payment_refund": null
+  },
+  "cross_sku_note": {
+    "ios_plus_url": "https://morimm.com/products/gptplus-ios",
+    "ios_plus_price_cny": 129,
+    "ios_can_override_active_plus_seller_claim": true,
+    "ios_unused_days_lost_seller_claim": true,
+    "ios_different_from_philippines_sku": true
+  },
+  "catfk_store_observation": {
+    "url": "https://catfk.com/shop/cat",
+    "specific_merchant": "AI猫站长",
+    "ph_plus_own_account_cny": 129,
+    "ready_made_account_not_own_account_cny": 85,
+    "self_declared_individual_small_trader": true,
+    "independently_verified_legal_entity": null,
+    "identical_to_prior_catfk_operator_verified": false,
+    "china_vat_invoice_issuer": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "description": "同一本人原号菲律宾Plus SKU当前113.00 CNY/件，会员才能下单、Free账号先登录取Token，历史11月3日115.00 CNY；只是公开商品标价",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    },
+    {
+      "url": "https://morimm.com/categories/gpt",
+      "description": "分类目录确认同SKU113.00 CNY与iOS独立SKU129.00 CNY，不能混用",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    },
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "description": "独立Codex美国实卡一次性接码CDK公开3.00 CNY/次，需登录且Members only，商称自动发CDK和兑换页，未知收码与退款",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    },
+    {
+      "url": "https://morimm.com/",
+      "description": "首页目录再次显示Plus113和Codex一次CDK3；公告称退款与提余额只支持U，无U定义及退款方式保证",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "description": "另一个iOS Plus月卡SKU129.00 CNY；商称可覆盖在期Plus但原剩余时长作废，已使用卡密不退、不质保封号",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    },
+    {
+      "url": "https://morimm.com/about",
+      "description": "通用FAQ称数字商品退款按具体商品/售后政策，未公开独立Codex失败可自动原路退",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    },
+    {
+      "url": "https://catfk.com/shop/cat",
+      "description": "卡网AI猫站长小店菲区本人Plus代充129 CNY及成品号85 CNY（不同SKU）；自我公示个人小额交易免登记，不能与原CatFK源头主体混同",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_live_page_http_200",
+      "evidence_level": "merchant_visible_claim_not_transaction"
+    }
+  ]
+}
