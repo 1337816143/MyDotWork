@@ -1,0 +1,150 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 76,
+  "site_version": "1.9.84",
+  "date": "2026-11-06",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "new_retail_candidate": {
+    "merchant": "UpPlusPro",
+    "site": "https://uppluspro.com/",
+    "exact_sku": "ChatGPT Plus 月卡",
+    "period": "1 month",
+    "quantity": 1,
+    "account_type": "本人OpenAI账户，Free/Go可升级、在期Plus可覆盖（商家声明）",
+    "public_base_price_cny_per_account_month": 143,
+    "public_china_vat_invoice_surcharge_cny": 10,
+    "conditional_displayed_components_total_cny": 153,
+    "invoice_type_claimed": "中国增值税电子普通发票（技术服务费）",
+    "invoice_required_at_checkout": true,
+    "post_purchase_invoice_addition_supported": false,
+    "invoice_delivery_claim": "完成订单后填写企业抬头/税号，5工作日内邮件发送；质保页另称订单页下载",
+    "other_mandatory_payment_processing_fees_cny": null,
+    "verified_actual_checkout_total_with_valid_china_vat_invoice_cny": null,
+    "verified_china_vat_invoice_original": false,
+    "verified_china_vat_invoice_issuer": null,
+    "registered_legal_entity": null,
+    "payment_channel_claimed": "KyrenPay托管微信/支付宝",
+    "verified_legal_payment_receiver": null,
+    "wholesale_one_piece_price_cny": null,
+    "agent_entrance_fee_cny": null,
+    "minimum_wholesale_quantity": null,
+    "wholesale_supply_contract_verified": false,
+    "openai_reseller_authorization_verified": false,
+    "merchant_disclaims_openai_authorization": true,
+    "claim_of_30_day_warranty": true,
+    "failed_delivery_full_refund_claimed": true,
+    "remaining_days_refund_or_pay_to_reactivate_claimed": true,
+    "refund_real_tested": false,
+    "paid_order_real_tested": false,
+    "invoice_real_tested": false,
+    "requires_login_first": true,
+    "full_session_json_required": true,
+    "merchant_acknowledges_access_token_and_session_token": true,
+    "merchant_claims_no_raw_json_stored": true,
+    "claims_to_forward_session_to_fulfillment_service": true,
+    "active_plus_same_plan_override_claimed": true,
+    "remaining_days_carried_forward_claimed": false,
+    "successful_renewal_tested": false,
+    "confidence": "direct_read_merchant_claims_not_independent_wholesale_or_vat_verification",
+    "wholesale_qualified": false
+  },
+  "independent_phone_verification": {
+    "merchant": "UpPlusPro",
+    "separate_sms_service_sku_found": false,
+    "sms_price_cny": null,
+    "number_validity_days": null,
+    "codex_sms_success_tested": false,
+    "api_first_key_scope_verified": null,
+    "chatgpt_web_signup_scope_verified": null,
+    "requires_existing_openai_session": true,
+    "auto_binds_phone": false,
+    "web_form_phone_usage": "only merchant order lookup and aftersales, not OpenAI phone",
+    "sms_failure_refund": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://uppluspro.com/",
+      "observed_on": "2026-11-06",
+      "description": "官网直接读取：Plus月卡¥143/月，企业发票加¥10；支付前金额为准；表单手机号仅查单，与ChatGPT绑定号码无关；一次性付款未实测",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://uppluspro.com/warranty",
+      "observed_on": "2026-11-06",
+      "description": "具体产品质保说明：单件Plus +¥10增值税电子普票自称，未交付失败全额退款/30天掉订按剩余日处理，已订Plus覆盖且未用天数不叠加",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://uppluspro.com/legal/terms",
+      "observed_on": "2026-11-06",
+      "description": "服务条款明确第三方无OpenAI授权；KyrenPay收款、需要预检；退款可原路或转账，账号行为封禁例外",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://uppluspro.com/legal/privacy",
+      "observed_on": "2026-11-06",
+      "description": "隐私政策明确会话JSON包含accessToken/sessionToken，将JSON提供给实际充值服务；卖家宣称不保存原JSON，仅保留哈希与脱敏订单数据",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://uppluspro.com/blog/is-chatgpt-daichong-safe",
+      "observed_on": "2026-11-06",
+      "description": "教程页自标2026-08-13更新，明确先成功登录再复制完整Session；上交后建议退出全部设备；不可解除首次网页登录手机号验证",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": "2026-08-13"
+    },
+    {
+      "url": "https://uppluspro.com/codex",
+      "observed_on": "2026-11-06",
+      "description": "商家区分ChatGPT订阅附带的Codex权限与API中转；仍需登录Session，非独立短信服务",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://uppluspro.com/offline?intent=business",
+      "observed_on": "2026-11-06",
+      "description": "企业多账号/开票咨询属于线下人工报价；未披露可验证的单件批发价、进货门槛及开票法人",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "merchant_published_not_verified_transaction",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-06",
+      "description": "OpenAI官方当前区分ChatGPT常规注册、Codex桌面端可能要求、首次API key需验证；不支持VoIP，短信/部分地区WhatsApp",
+      "read_status": "direct_live_web_page",
+      "evidence_level": "official_rule",
+      "page_claimed_update_date": null
+    }
+  ],
+  "important_caveats": [
+    "¥153是官网公开¥143+开票¥10的条件算术额，未真正创建订单或验证任何支付附费；真实含票总价仍null。",
+    "开票渠道展示的是技术服务费电子普票，非OpenAI订阅购买凭证；经营/收款/出票主体以及真实性未验证。",
+    "优惠零售报价不能证明批发或授权，上游资格仍0。",
+    "完整Session JSON具有敏感令牌，第三方获得会话访问权，即使未提交密码也存在账号访问风险。",
+    "独立手机号验证与Plus订阅需分开；本站暂未发现公开短信SKU。"
+  ]
+}
