@@ -287,4 +287,14 @@ assert.equal(r60.new_retail_plus_candidate_unverified.price_cny_per_piece_per_mo
 assert.equal(r60.new_retail_plus_candidate_unverified.real_invoiced_all_in_cny,null);
 assert.equal(r60.new_retail_plus_candidate_unverified.wholesale_authorization_independently_verified,false);
 assert.equal(r60.qualification_totals.verified_plus_wholesale_upstreams,0);
+const r66cat=d.records.find(v=>v.id==='gpt-source-followup-r66-20261106'),r66data=d.records.find(v=>v.id==='gpt-source-followup-r66-20261106-evidence');
+assert(r66cat&&r66data);assert(r66cat.url.endsWith('supplier-followup-20261106-r11.html'));
+const r66=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r11-evidence.json'),'utf8'));
+assert.equal(r66.round,66);assert.equal(r66.site_version,'1.9.74');assert.equal(r66.sources.filter(x=>x.read_status==='readable').length,6);
+assert.equal(r66.new_candidate.advertised_price_usd_per_card,16);
+assert.equal(r66.new_candidate.claimed_supreme_agent_price_usd_per_card,16);
+assert.equal(r66.new_candidate.verified_invoice_including_payment_all_in_cny,null);
+assert.equal(r66.new_candidate.faq_admits_simulated_queue_count,true);
+assert.equal(r66.new_candidate.wholesale_qualified,false);
+assert.equal(r66.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');

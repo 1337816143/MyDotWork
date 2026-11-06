@@ -1,0 +1,146 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 66,
+  "date": "2026-11-06",
+  "site_version": "1.9.74",
+  "observed_on": "2026-11-06",
+  "prepared_at_utc": "2026-11-06T01:31:04.972Z",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_candidate": {
+    "merchant": "GPT Store",
+    "domain": "https://gptstore.lol/",
+    "item_name": "GPT PLUS 充值卡密（iOS 美区质保）",
+    "sku_url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+    "advertised_price_usd_per_card": 16,
+    "claimed_supreme_agent_price_usd_per_card": 16,
+    "listed_agent_discount_usd_per_card": 0,
+    "month_duration_explicitly_guaranteed": false,
+    "period_months_verified": null,
+    "existing_account_same_account_fulfillment_tested": false,
+    "apple_us_ios_redemption_environment_required": true,
+    "original_web_account_direct_topup_claimed": false,
+    "final_official_subscription_tax_usd": null,
+    "official_subscription_tax_explicitly_excluded_from_card_price": true,
+    "stripe_service_fee_usd": null,
+    "fx_and_bank_fee_cny": null,
+    "invoice_fee_cny": null,
+    "verified_invoice_including_payment_all_in_cny": null,
+    "upfront_agent_fee_usd": null,
+    "reseller_contract_verified": false,
+    "claims_any_official_openai_agent_authorization": false,
+    "chinese_vat_invoice_verified": false,
+    "actual_payee_legal_name": null,
+    "invoice_legal_name": null,
+    "legal_operator_name": null,
+    "stock_label_at_observation": 110,
+    "claimed_sold_count": 1104830,
+    "sold_count_independently_audited": false,
+    "faq_admits_simulated_queue_count": true,
+    "card_delivered_without_reason_refundable": false,
+    "refund_if_no_delivery_or_failed": "merchant_says_eligible_cases_same_day_full_refund_not_tested",
+    "wholesale_qualified": false,
+    "assessment": "公开至尊代理价与零售挂牌均USD16/张，尚无真实批发价差；SKU是美区iOS卡密而非已证成1月ChatGPT官方订阅的完整含税付款。未核正式授权、单件批发资格及中国税票，按零售卡密线索记录，不能作为已核批发源。"
+  },
+  "bounded_recheck": {
+    "catfk_other_seller_indexed_link": "https://catfk.com/item/q8ukke",
+    "catfk_direct_page_read_status": "zero_readable_lines",
+    "catfk_current_price_reconfirmed": false,
+    "wind89_faq_url": "https://wind89.com/guide/faq",
+    "wind89_company_plus_cny_per_month_from_older_material": 160,
+    "wind89_new_price_change_verified": false,
+    "other_legacy_prices_not_refreshed": true
+  },
+  "independent_phone_verification": {
+    "new_service_this_round": false,
+    "verified_sms_successes": 0,
+    "chatgpt_web_tested": false,
+    "codex_desktop_tested": false,
+    "first_api_key_tested": false,
+    "session_or_token_delivery_does_not_automatically_bind_phone": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://gptstore.lol/",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "readable",
+      "kind": "merchant_homepage_claim",
+      "finding": "Plus iOS美区卡密USD16；至尊代理价同为USD16；库存110、已售1104830仅前台自述，未独立验量。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "readable",
+      "kind": "merchant_product_page",
+      "finding": "Plus iOS美区卡密USD16，至尊代理拿货价USD16，交付后不支持无理由退款；具体月数与最终官方订阅费用未证。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gptstore.lol/price/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "readable",
+      "kind": "merchant_price_detail",
+      "finding": "明确仅含一次卡密交付与说明链接，不含官方订阅额外税费和第三方费用；需要可用美区iOS兑换环境，现有Plus到期后再购；Stripe美元结算，支付总费未见。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gptstore.lol/terms",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "readable",
+      "page_claimed_effective_on": "2026-08-15",
+      "kind": "merchant_service_terms",
+      "finding": "明确与OpenAI无隶属、代理、授权关系；已交付数字商品通常不退，未交付或失败符合条件可申请当日全退，但并非实测。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gptstore.lol/faq",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "readable",
+      "kind": "merchant_faq",
+      "finding": "自述缺货排队显示模拟排队人数；该数字不能作为真实履约量证据；银行卡Stripe美元支付，退款商称。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gptstore.lol/about",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-09-02",
+      "kind": "merchant_about_disclosure",
+      "finding": "GPT Store编辑团队为统一署名、未提供可核法律法人；本站销售站内分析的订阅卡密，商业内容非独立背书。",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://catfk.com/item/q8ukke",
+      "observed_on": "2026-11-06",
+      "observed_at_utc": "2026-11-06T01:31:04.972Z",
+      "read_status": "failed_zero_readable_body",
+      "kind": "failed_access_not_reprice",
+      "finding": "直接访问只返回0行可读正文；搜索索引摘要不用于刷新CatFK任何SKU价格、退款条款或观察日期。",
+      "real_purchase_or_phone_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_65_unchanged": true
+  },
+  "methodology": "新SKU仅列本轮实读商家页面，页面价与商家承诺≠真实成交/授权；美元单价不换算成人民币已验总价；CatFK页面直接读取无正文故不重定价。无购买、无验票、无Session/OTP提交、无联系商家，短信0实测。"
+}
