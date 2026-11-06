@@ -131,12 +131,12 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 187, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 189, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.77'
-    assert latest['path'] == 'research/2026-11-07/supplier-followup-20261107.html'
-    assert latest['dataPath'] == 'research/2026-11-07/supplier-followup-20261107-evidence.json'
+    assert latest['version'] == '1.78'
+    assert latest['path'] == 'research/2026-11-07/supplier-followup-20261107-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-07/supplier-followup-20261107-r2-evidence.json'
     assert latest['previousPath'] == 'research/2026-11-06/supplier-followup-20261106-r21.html'
     assert by_id['gpt-source-followup-r72-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17.html'
     assert by_id['gpt-source-followup-r72-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17-evidence.json'
@@ -848,6 +848,16 @@ def validate_publications():
     assert r77['independent_phone_verification']['conflicting_price_display'] is True
     assert r77['independent_phone_verification']['actual_checkout_price_cny'] is None
     assert r77['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+
+    assert by_id['gpt-source-followup-r78-20261107']['url'] == '../research/2026-11-07/supplier-followup-20261107-r2.html'
+    assert by_id['gpt-source-followup-r78-20261107-evidence']['url'] == '../research/2026-11-07/supplier-followup-20261107-r2-evidence.json'
+    r78 = json.loads((ROOT / 'dist/research/2026-11-07/supplier-followup-20261107-r2-evidence.json').read_bytes())
+    assert r78['round'] == 78 and r78['site_version'] == '1.9.86' and len(r78['sources']) == 4
+    assert r78['material_policy_scope_discovery']['explicit_warranty_only_for_marked_items'] is True
+    assert all(item['warranty_mark_on_current_catalog'] is False for item in r78['material_policy_scope_discovery']['original_account_skus'])
+    assert r78['material_policy_scope_discovery']['merchant_site_public_claims_conflict'] is True
+    assert r78['material_policy_scope_discovery']['warranty_entitlement_of_specific_paid_order_verified'] is None
+    assert r78['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
 
     from validate_current_updates import validate_current_updates
     validate_current_updates()

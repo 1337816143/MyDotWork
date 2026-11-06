@@ -408,3 +408,14 @@ assert.equal(r77.new_retail_lead_unverified.wholesale_qualified,false);
 assert.equal(r77.independent_phone_verification.conflicting_price_display,true);
 assert.equal(r77.independent_phone_verification.actual_checkout_price_cny,null);
 assert.equal(r77.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r78cat=d.records.find(r=>r.id==='gpt-source-followup-r78-20261107');
+const r78data=d.records.find(r=>r.id==='gpt-source-followup-r78-20261107-evidence');
+assert(r78cat&&r78data&&r78cat.url.endsWith('supplier-followup-20261107-r2.html'));
+const r78=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r2-evidence.json'),'utf8'));
+assert.equal(r78.round,78);assert.equal(r78.site_version,'1.9.86');assert.equal(r78.sources.length,4);
+assert.equal(r78.material_policy_scope_discovery.explicit_warranty_only_for_marked_items,true);
+assert(r78.material_policy_scope_discovery.original_account_skus.every(s=>s.warranty_mark_on_current_catalog===false&&s.displayed_price_cny_per_item===139));
+assert.equal(r78.material_policy_scope_discovery.merchant_site_public_claims_conflict,true);
+assert.equal(r78.material_policy_scope_discovery.warranty_entitlement_of_specific_paid_order_verified,null);
+assert.equal(r78.qualification_totals.verified_plus_wholesale_upstreams,0);

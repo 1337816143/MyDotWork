@@ -2058,6 +2058,28 @@
       "summary": "本轮10条来源含2条商城无法读取；¥125仅商家挂牌，英国接码成交价null，未验正式供货与含票金额、手机号各场景实测为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r78-20261107",
+      "title": "GPT源头第78轮 · ChongPay原号Plus质保条款与首页赔付宣传冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r2.html",
+      "updatedAt": "2026-11-06T21:32:08Z",
+      "summary": "当前服务条款仅标质保商品获在期掉订阅售后，未标质保「充上为止」；两款原号Plus¥139均无标记，而首页仍称平台原因中断按天退，实际订单范围待核，非今日改价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r78-20261107-evidence",
+      "title": "ChongPay新修订条款、原号SKU标签与售后冲突 · r78 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r2-evidence.json",
+      "updatedAt": "2026-11-06T21:32:08Z",
+      "summary": "4条当轮实读原网址，区分2026-11条款自标、¥139旧快照、原号无保标记与平台原因退款例外；真实订单售后/中国税票/短信成功仍未验。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
