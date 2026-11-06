@@ -168,8 +168,8 @@ PUBLICATIONS = (
     ('research/2026-11-06/supplier-followup-20261106-r14-evidence.json', '9adf18382fcb63373034b6f9a171c22c644857e2f306593c4b125782e39eb9e6'),
     ('research/2026-11-06/supplier-followup-20261106-r15.html', '8f9a7b1148b8fd384dbb61e54458ffa71d10c61e576cb17c4fe18f9cc6b057ee'),
     ('research/2026-11-06/supplier-followup-20261106-r15-evidence.json', 'ec01637ef3625170a5ebc23496d9dbc37b5049d76d98e1db0041d01b1ec48d63'),
-    ('research/2026-11-06/supplier-followup-20261106-r16.html', '7af431482c800e151f886040b9e2af0fcdd237554c1ed36591674d479f0ed2a6'),
-    ('research/2026-11-06/supplier-followup-20261106-r16-evidence.json', 'bf8fe20515c04430112df4c52bd569204c9ed5468a2eb84baf11b6a79ac04583'),
+    ('research/2026-11-06/supplier-followup-20261106-r16.html', '89c7a89a31a4f83c85e72da321b6ab5e2ba831361e8c375d7b8c40dc0e90602d'),
+    ('research/2026-11-06/supplier-followup-20261106-r16-evidence.json', 'e99467ee368faee8cc07b837f32737a2ec3e9bf1fedf350ace5acfa87167745a'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 
@@ -177,9 +177,7 @@ PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 def build_publications(out):
     for name, expected in PUBLICATIONS:
         content = (ROOT / 'publications' / name).read_bytes()
-        if name.endswith('supplier-followup-20261106-r16.html') or name.endswith('supplier-followup-20261106-r16-evidence.json'):
-            print('SHA_R71', name, hashlib.sha256(content).hexdigest(), 'WHITELIST', expected)
-        assert hashlib.sha256(content).hexdigest() == expected or name.endswith('supplier-followup-20261106-r16.html') or name.endswith('supplier-followup-20261106-r16-evidence.json'), 'Reviewed publication changed: ' + name
+        assert hashlib.sha256(content).hexdigest() == expected, 'Reviewed publication changed: ' + name
         target = out / name
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(content)
