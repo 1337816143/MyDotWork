@@ -352,3 +352,15 @@ assert.equal(r72.conditional_promotion.real_checkout_coupon_redeemed_verified,fa
 assert.equal(r72.conditional_promotion.mandatory_reusable_wallet_predeposit_cny,500);
 assert.equal(r72.qualification_totals.verified_plus_wholesale_upstreams,0);
 console.log('PASS: catalogue counts, explicit public metadata, task/type/access/date/search combinations, reset/empty, unknown-date sorting and no unapproved records');
+
+const r73cat=d.records.find(r=>r.id==='gpt-source-followup-r73-20261106'),r73data=d.records.find(r=>r.id==='gpt-source-followup-r73-20261106-evidence');
+assert(r73cat&&r73data&&r73cat.url.endsWith('supplier-followup-20261106-r18.html'));
+const r73=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-06/supplier-followup-20261106-r18-evidence.json'),'utf8'));
+assert.equal(r73.round,73);assert.equal(r73.site_version,'1.9.81');assert.equal(r73.sources.length,8);
+assert.equal(r73.new_retail_candidate.sku_id,'pid=23');assert.equal(r73.new_retail_candidate.advertised_base_price_cny,169);
+assert.equal(r73.new_retail_candidate.advertised_invoice_inclusive_price_cny,179);
+assert.equal(r73.new_retail_candidate.exact_sku_subscription_months_explicitly_verified,null);
+assert.equal(r73.new_retail_candidate.actual_order_total_invoiced_cny,null);
+assert.equal(r73.new_retail_candidate.fully_qualified_upstream,false);
+assert.equal(r73.new_supply_chain_observation.merchant_says_non_firsthand_suppliers_may_cooperate,true);
+assert.equal(r73.qualification_totals.verified_plus_wholesale_upstreams,0);

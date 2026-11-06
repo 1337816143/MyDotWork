@@ -1948,6 +1948,28 @@
       "summary": "6条本轮直接读取商家原始URL及自标更新日期，含票全费与法人证明null，券码未试、合格批发0家。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r73-20261106",
+      "title": "GPT源头第73轮 · 小羊Plus含票报价及供货链招募",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r18.html",
+      "updatedAt": "2026-11-06T09:23:02Z",
+      "summary": "准确pid=23本人Plus ¥169/份、含发票标价¥179超170限额，期限和支付/税票验真未完成；直充站公开招募外部供货。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r73-20261106-evidence",
+      "title": "小羊Plus价格、售后及外部供货招募 · 第73轮证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r18-evidence.json",
+      "updatedAt": "2026-11-06T09:23:02Z",
+      "summary": "8条直读自有原网址及日期，区分含票价¥179与实付null、授权/经营/税票主体缺口，手机号实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

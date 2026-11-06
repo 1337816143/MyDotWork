@@ -1,0 +1,155 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 73,
+  "date": "2026-11-06",
+  "site_version": "1.9.81",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "new_retail_candidate": {
+    "name": "小羊Plus",
+    "site": "xiaoyangplus.com",
+    "sku": "ChatGPT Plus",
+    "sku_id": "pid=23",
+    "sku_url": "https://xiaoyangplus.com/checkout.html?pid=23",
+    "quantity": 1,
+    "currency": "CNY",
+    "advertised_base_price_cny": 169,
+    "advertised_invoice_inclusive_price_cny": 179,
+    "advertised_invoice_increase_cny": 10,
+    "advertised_invoice_price_over_ceiling_cny": 9,
+    "exact_sku_subscription_months_explicitly_verified": null,
+    "own_account_supported_claim": true,
+    "merchant_says_apple_app_store_channel": true,
+    "merchant_says_partner_upstream": true,
+    "real_merchant_upstream_identified": null,
+    "official_openai_reseller_authorization_verified": false,
+    "merchant_explicitly_disclaims_openai_authorization": true,
+    "merchant_registered_legal_name": null,
+    "verified_payment_receiver": null,
+    "verified_china_invoice_issuer": null,
+    "invoice_type_verified": null,
+    "additional_checkout_payment_fee_cny": null,
+    "actual_order_total_invoiced_cny": null,
+    "real_paid_order": false,
+    "real_china_vat_invoice_verified": false,
+    "real_subscription_delivered_verified": false,
+    "no_agent_upfront_fee_verified": null,
+    "real_wholesale_price_verified_cny": null,
+    "actual_one_month_period_verified": false,
+    "public_invoice_price_within_ceiling": false,
+    "fully_qualified_upstream": false
+  },
+  "refund_scope": {
+    "merchant_claims_platform_fault_confirmed_failure_full_refund": true,
+    "automatic_unconditional_original_payment_refund": false,
+    "merchant_claims_early_loss_prorated_when_their_fault": true,
+    "real_refund_test": false
+  },
+  "new_supply_chain_observation": {
+    "merchant": "ChatGPT直充站",
+    "source_url": "https://www.chatgqt.plus/supply",
+    "publicly_recruits_external_plus_pro_suppliers": true,
+    "merchant_says_non_firsthand_suppliers_may_cooperate": true,
+    "pilot_claims_pay_per_order": true,
+    "scaled_default_claims_weekly_settlement": true,
+    "real_supplier_contract_or_payment_verified": false,
+    "wholesale_purchase_price_cny": null,
+    "prior_agent_fee_for_buyers_cny": 3000
+  },
+  "phone_validation": {
+    "seller_plus_redeem_requires_prior_chatgpt_login": true,
+    "ordinary_plus_recharge_binds_phone_or_bypasses_initial_web_sms": false,
+    "codex_sms_test_success_count": 0,
+    "api_first_key_test_success_count": 0,
+    "third_party_cdk_token_scope_verified": null,
+    "independent_phone_number_new_candidate": false,
+    "phone_number_validity_days": null,
+    "sms_failure_cash_refund_guaranteed": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://xiaoyangplus.com/",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": null,
+      "observation": "Plus展示¥169/份；另有12个月SKU；商家建议到期续费，会员时长不保证叠加。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://xiaoyangplus.com/checkout.html?pid=23",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": null,
+      "observation": "准确pid=23商品显示¥169/份与含发票¥179/份；声明Apple App Store订阅、ChatGPT Account ID、合作上游；该详情未明确独立标出1个月有效期。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://xiaoyangplus.com/invoice.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": null,
+      "observation": "出票项目生产生活服务技术服务费，处理时间商称1–2工作日；开票实体、票种需先确认。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://xiaoyangplus.com/refund.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": "2026-11-03",
+      "observation": "商家责任最终失败100%实付退款，通常原支付渠道，例外可协商其他方式；交付成功、用户账号问题不保障退款。自标2026-11-03更新。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://xiaoyangplus.com/about.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": "2026-11-03",
+      "observation": "商家明确自称独立第三方，与OpenAI无授权代理关系，自标2026-11-03更新。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://xiaoyangplus.com/terms.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": null,
+      "observation": "商家称各SKU周期以准确商品页为准；可能使用卡密/自助/人工等不同方式；发票和主体依具体业务决定。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://xiaoyangplus.com/guide.html",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": null,
+      "observation": "充值教程明确需要在浏览器先登录自己的ChatGPT，再使用卡密到核销页操作；订单联系方式仅用于订单售后，不是ChatGPT绑定手机号。",
+      "actual_order_or_sms_test": false
+    },
+    {
+      "url": "https://www.chatgqt.plus/supply",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "seller_claim_or_public_web_listing_not_user_transaction",
+      "page_self_updated_on": null,
+      "observation": "直充站公开招募Plus/Pro外部货源，小单试跑按单结算，放量后默认周结；明确不是第一手但供货链可说明也可合作。",
+      "actual_order_or_sms_test": false
+    }
+  ]
+}
