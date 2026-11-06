@@ -1,0 +1,150 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 67,
+  "date": "2026-11-06",
+  "site_version": "1.9.75",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_disclosed_fulfillment_link": {
+    "seller": "GPTHubs",
+    "seller_url": "https://gpthubs.net/",
+    "product_url": "https://gpthubs.net/buy/chatgpt-plus",
+    "sku": "GPT Plus 自助升级（本人原号）",
+    "seller_listed_retail_cny_per_card": 160,
+    "seller_card_claimed_duration_30_days_in_illustration": true,
+    "one_month_fulfillment_actually_verified": false,
+    "first_login_session_required": true,
+    "session_json_forwarded_to": "GPT101",
+    "supplier_url": "https://gpt101.org/",
+    "self_disclosed_supply_link_independently_audited": false,
+    "session_is_sensitive_login_credential": true,
+    "existing_paid_subscription_can_stack": false,
+    "named_processor_listed_retail_cny_per_month": 179,
+    "named_processor_product_url": "https://gpt101.org/products",
+    "difference_seller_minus_processor_retail_cny": -19,
+    "actual_reseller_wholesale_cost_cny": null,
+    "actual_checkout_payment_fee_cny": null,
+    "invoice_surcharge_cny": null,
+    "verified_chinese_vat_invoice_all_in_cny": null,
+    "seller_legal_operator": null,
+    "actual_payee_legal_name": null,
+    "invoice_issuer_legal_name": null,
+    "upstream_legal_operator": null,
+    "bulk_unit_price_cny": null,
+    "agent_upfront_fee_cny": null,
+    "supplier_terms_disallow_retail_resale": true,
+    "seller_terms_disallow_card_resale_unless_permitted": true,
+    "express_resale_authorization_contract_verified": false,
+    "official_openai_agent_authorization_verified": false,
+    "merchant_claims_invoice_available_for_wechat_orders": true,
+    "actual_vat_invoice_tested": false,
+    "refund_claim": "Seller says supplier delivery failure may be repaired/retried then refunded; delivered virtual item is usually not no-reason refundable",
+    "actual_refund_tested": false,
+    "already_authenticated_user_only": true,
+    "chatgpt_web_phone_bypass_tested": false,
+    "codex_phone_tested": false,
+    "first_api_key_phone_tested": false,
+    "qualified_wholesale_upstream": false,
+    "inference_boundary": "Disclosed supplier name is merchant statement, not independently verified supply contract or transaction; lower downstream list price does not prove any real upstream wholesale purchase price or authorized resale."
+  },
+  "phone_verification": {
+    "new_phone_service": false,
+    "sms_tests_succeeded": 0,
+    "session_does_not_auto_bind_phone": true,
+    "apple_in_app_purchase_and_session_delivery_may_coexist": true
+  },
+  "legacy_supplier_prices_refreshed": [],
+  "recheck_note": "无新的可信同SKU成交全费/发票/正式授权证据，既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay旧观察不重新定价。",
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://gpthubs.net/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "home",
+      "finding": "Plus官方原账号自助卡密公开CNY160，镜像为另一独立商品。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpthubs.net/buy/chatgpt-plus",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "plus_sku_and_processing",
+      "finding": "Plus单件CNY160、卡密+已登录的ChatGPT Session JSON，明确转交GPT101处理，示意图片标30天，仍在期Plus不可重复叠加。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpthubs.net/about",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "explicit_supplier_disclosure",
+      "finding": "商家自称其Session JSON转发给第三方服务商GPT101 (gpt101.org)，本站不存储；未给经营、实际收款、出票法律实体。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpthubs.net/refunds",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "refund_policy",
+      "finding": "自标2026-10-28，已交付/履约的虚拟商品一般不无理由退款；上游失败先补发重试再看退款，Stripe在线退款商称原渠道。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpthubs.net/terms",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "seller_terms",
+      "finding": "自标2026-05-25；除商品明确允许，不得转售、共享卡密和镜像入口；第三方独立站点。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpt101.org/",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "named_processor_home",
+      "finding": "商称提供iOS/平台订阅路径、批量采购、微信支付订单可申请增值税普票或专票，税票主体及实际税费未核实。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpt101.org/products",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "named_processor_retail_product",
+      "finding": "本人原号Plus单次月付公开零售CNY179/月，未提供对应GPTHubs的供货价或免前置费批发合同。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    },
+    {
+      "url": "https://gpt101.org/terms-of-service",
+      "observed_on": "2026-11-06",
+      "read_status": "readable",
+      "kind": "named_processor_terms",
+      "finding": "自标更新2026年8月，否认OpenAI官方授权，禁止转售/分享购买的服务，运营主体仅写以实际开票主体为准。",
+      "evidence_status": "page_content_or_merchant_claim_not_actual_transaction",
+      "real_purchase_or_phone_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_offers_unchanged": true,
+    "rounds_1_to_66_unchanged": true
+  },
+  "methodology": "本轮只新增8个实际读取的原始网站URL，网页价格、条款和上游名称均为商家页面内容；真实进价、收款开票主体和附加费保持null。未购买、未验证短信、未提交Session/OTP、未联系商家。"
+}

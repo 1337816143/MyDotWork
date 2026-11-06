@@ -1816,6 +1816,28 @@
       "summary": "6条新可读原网页与1条CatFK直接访问0正文，含USD/张、合同和票费null、已交付不无理由退、真实购买/税票/SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r67-20261106",
+      "title": "GPT源头 · GPTHubs公开披露GPT101履约方与授权缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r12.html",
+      "updatedAt": "2026-11-06T02:15:08Z",
+      "summary": "GPTHubs原号Plus¥160，明示将Session转交GPT101；GPT101直销¥179且条款禁转售，授权与含票全费未知，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r67-20261106-evidence",
+      "title": "GPTHubs→GPT101履约披露、Session前提和转售条款 · r67证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r12-evidence.json",
+      "updatedAt": "2026-11-06T02:15:08Z",
+      "summary": "8条实读原始URL，人民币挂牌价与退款、票据、主体缺口；真正进货价和支付附加费null，实购与短信成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
