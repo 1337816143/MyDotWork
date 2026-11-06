@@ -1860,6 +1860,28 @@
       "summary": "14条观察来源含1条搜索页文字非直接打开；手机接码商品非真实成功，税票/结算费用null、主体与授权未证、无支付或账号秘密。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r69-20261106",
+      "title": "GPT源头r69 · subai原号美元Plus与Session信息安全补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r14.html",
+      "updatedAt": "2026-11-06T04:17:07Z",
+      "summary": "新增subai USD14.93/账号/月，仅需账号ID但实际履约经合作供应商；批发授权、含中国税票总费未知。AIXiamo兑换需复制会话JSON，存在Token泄露风险，0已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r69-20261106-evidence",
+      "title": "subai业务关系与AIXiamo会话端点 · r69 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r14-evidence.json",
+      "updatedAt": "2026-11-06T04:17:07Z",
+      "summary": "10条实际直读来源，准确USD/一月，USDT成本null、税票null，AIXiamo历史价不刷新；真实接码0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
