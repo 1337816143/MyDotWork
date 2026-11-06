@@ -1,0 +1,135 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 74,
+  "date": "2026-11-06",
+  "site_version": "1.9.82",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "material_change": {
+    "merchant": "小久",
+    "historical_observation_on": "2026-11-03",
+    "historical_observation_from": "research/2026-11-03/supplier-followup-20261103-r8-evidence.json",
+    "historical_exact_sku_url": "https://98-xj.com/products/gpt%20plus",
+    "historical_visible_availability": "暂时缺货",
+    "new_observation_on": "2026-11-06",
+    "new_visible_availability": "现货 · 自动发货",
+    "sku": "Chat gpt plus 菲区卡冲cdk（质保30天）",
+    "advertised_price_cny_per_unit": 110,
+    "advertised_price_changed": false,
+    "new_status_is_merchant_listing_not_inventory_or_delivery_test": true,
+    "third_party_payment_stock_verified": null,
+    "third_party_payment_fee_cny": null,
+    "china_vat_invoice_available_verified": null,
+    "china_vat_invoice_fee_cny": null,
+    "actual_invoiced_total_cny": null,
+    "legal_operator_verified": null,
+    "actual_payment_receiver_verified": null,
+    "openai_redistribution_authorization_verified": false,
+    "wholesale_status_verified": false,
+    "real_paid_delivery_test": false
+  },
+  "new_retail_wholesale_advertising_candidate": {
+    "name": "全网最低批发ai账号店铺",
+    "site": "zhanghao66.com",
+    "exact_sku_url": "https://zhanghao66.com/item/51",
+    "sku": "GPT PLUS〖官方直充｜月卡｜质保30天订阅〗",
+    "public_regular_channel1_30day_cny": 110,
+    "public_regular_channel3_ios_30day_cny": 120,
+    "membership_ai_agent_channel1_cny": 108,
+    "membership_ai_partner_channel1_cny": 107,
+    "membership_prices_are_not_verified_wholesale_checkout": true,
+    "merchant_promoted_agent_entry_fee_cny": 99,
+    "merchant_promoted_no_stockpile": true,
+    "merchant_explicitly_declines_mainland_china_users": true,
+    "merchant_page_says_preorder_current": true,
+    "merchant_page_also_says_auto_ship_stock_abundant": true,
+    "in_stock_ready_immediate_shipping_verified": false,
+    "merchant_detailed_fee_notice_alipay_percent": 5,
+    "actual_checkout_payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "actual_all_in_invoiced_cny": null,
+    "merchant_legal_entity_verified": null,
+    "invoice_issuer_verified": null,
+    "sales_or_procurement_authorization_verified": false,
+    "delivery_tested": false,
+    "wholesale_qualified": false,
+    "first_web_login_sms_solved": false,
+    "session_or_token_sensitivity": "Requires account authorization info after prior ChatGPT login; actual payload not verified",
+    "channel3_seller_claims_can_replace_active_subscription": true,
+    "channel1_seller_claims_free_account_required": true,
+    "refund_scope_merchant_claim": "Official refund, if eligible, pays customer 80% and retains 20% as card fee; channel3 banned account nonrefundable",
+    "actual_refund_test": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "independent_phone_validation": {
+    "new_verified_provider": false,
+    "chatgpt_web_sms_verified": false,
+    "codex_sms_verified": false,
+    "api_first_key_sms_verified": false,
+    "number_validity_days": null,
+    "sms_failure_original_refund_guarantee": null,
+    "apple_in_app_payment_automatically_binds_phone_proven": false
+  },
+  "sources": [
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "public_merchant_listing_not_transaction",
+      "observation": "本人Plus菲律宾CDK 质保30天 标价¥110; 与2026-11-03同一SKU当时暂缺货相比现展示现货·自动发货。商称正常登录前提、短信问题自行处理、银行交易凭证与收据不等同税票；实际库存发货与税票未验证。"
+    },
+    {
+      "url": "https://98-xj.com/",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "public_merchant_listing",
+      "observation": "商品目录继续列Plus ¥110，目录不能证明外部卡网可完成现货采购或不收附加费。"
+    },
+    {
+      "url": "https://98-xj.com/about",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_profile",
+      "observation": "仅自述服务及售后联系；本轮未读到能独立核验的正式经营、支付及中国增值税开票主体。"
+    },
+    {
+      "url": "https://98-xj.com/notice",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_notices",
+      "observation": "公告页没有补货时间/范围的独立说明；商品页现货仅限该展示口径。"
+    },
+    {
+      "url": "https://catfk.com/item/j0eswz",
+      "observed_on": "2026-11-06",
+      "read_status": "no_readable_body",
+      "evidence_class": "external_payment_unverified",
+      "observation": "商家挂出的支付宝卡网外部商品直链本轮未返回可读商品结算信息；不刷新外部渠道报价、库存或附费。"
+    },
+    {
+      "url": "https://zhanghao66.com/item/51",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_read",
+      "evidence_class": "merchant_listing_terms_not_purchase",
+      "observation": "本人Plus 30天Channel1普通¥110、Channel3 iOS普通¥120；AI代理Channel1¥108、AI合伙人¥107；自称¥99代理资格、声明不支持中国大陆用户，SKU同时展示预订购买和自动发货；支付宝5%仅店家通用告示非实单全费。需已登录再提供授权信息，退款限制20%。"
+    },
+    {
+      "url": "https://www.aizhanghao.com/",
+      "observed_on": "2026-11-06",
+      "read_status": "no_readable_body",
+      "evidence_class": "linked_agent_qualification_unverified",
+      "observation": "来自zhanghao66代理¥99入口，原页本轮未取得可读正文；¥99仅为zhanghao66页面的推广文字，非已完成代理付款或合同。"
+    }
+  ]
+}
