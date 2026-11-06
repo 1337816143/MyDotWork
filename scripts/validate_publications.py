@@ -131,13 +131,21 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 169, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 171, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.68'
-    assert latest['path'] == 'research/2026-11-06/supplier-followup-20261106-r13.html'
-    assert latest['dataPath'] == 'research/2026-11-06/supplier-followup-20261106-r13-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-06/supplier-followup-20261106-r12.html'
+    assert latest['version'] == '1.69'
+    assert latest['path'] == 'research/2026-11-06/supplier-followup-20261106-r14.html'
+    assert latest['dataPath'] == 'research/2026-11-06/supplier-followup-20261106-r14-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-06/supplier-followup-20261106-r13.html'
+    assert by_id['gpt-source-followup-r69-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r14.html'
+    assert by_id['gpt-source-followup-r69-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r14-evidence.json'
+    r69 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r14-evidence.json').read_bytes())
+    assert r69['round'] == 69 and r69['site_version'] == '1.9.77' and len(r69['sources']) == 10
+    assert r69['new_candidate_unverified']['displayed_price'] == 14.93 and r69['new_candidate_unverified']['merchant_admits_partner_supplier'] is True
+    assert r69['new_candidate_unverified']['all_required_costs_including_china_vat_cny'] is None
+    assert r69['prior_candidate_material_clarification']['asks_to_paste_entire_account_info_page'] is True
+    assert r69['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r68-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r13.html'
     assert by_id['gpt-source-followup-r68-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r13-evidence.json'
     r68 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r13-evidence.json').read_bytes())

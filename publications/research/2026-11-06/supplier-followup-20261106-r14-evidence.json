@@ -1,0 +1,172 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 69,
+  "date": "2026-11-06",
+  "site_version": "1.9.77",
+  "observed_on": "2026-11-06",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "period_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_payment_invoice_fees_max_cny": 170,
+    "formal_wholesale_authorization_required": true
+  },
+  "new_candidate_unverified": {
+    "merchant": "subai.zip",
+    "sku": "ChatGPT Plus — 1 month — activate by account ID",
+    "url": "https://subai.zip/p/chatgpt?v=chatgpt-plus",
+    "displayed_price": 14.93,
+    "unit": "USD/1 account/1 month",
+    "quantity": 1,
+    "period_months": 1,
+    "merchant_claims_existing_account": true,
+    "merchant_claims_only_account_id_required": true,
+    "account_id_length": 36,
+    "requires_prior_chatgpt_login": true,
+    "claimed_automatic_activation_minutes": "1–2",
+    "actual_automatic_delivery_verified": false,
+    "merchant_admits_partner_supplier": true,
+    "merchant_declares_no_openai_affiliation": true,
+    "merchant_offers_bulk_negotiation": true,
+    "bulk_price_usd": null,
+    "minimum_wholesale_quantity": null,
+    "agent_upfront_fee_cny": null,
+    "formal_wholesale_authorization_verified": false,
+    "payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "china_vat_invoice_verified": false,
+    "china_vat_invoice_fee_cny": null,
+    "merchant_payment_usdt": true,
+    "crypto_network_fee_cny": null,
+    "fx_fee_cny": null,
+    "actual_paid_amount_cny": null,
+    "all_required_costs_including_china_vat_cny": null,
+    "merchant_claimed_refund": "full when seller/partner fails activation, one account ID correction",
+    "original_payment_method_refund_verified": false,
+    "refund_after_activation_merchant_rule": "no refund",
+    "active_plus_renewal_verified": null,
+    "actual_purchase_and_delivery_tested": false,
+    "classification": "unverified_retail_intermediary_not_wholesale"
+  },
+  "prior_candidate_material_clarification": {
+    "merchant": "AIXiamo",
+    "prior_round": 16,
+    "old_price_cny": 148.8,
+    "old_price_observation_date": "2026-11-04",
+    "old_price_refreshed_this_round": false,
+    "activation_url": "https://plus.aixiamo.com/",
+    "target_of_get_account_info_link": "https://chatgpt.com/api/auth/session",
+    "asks_to_paste_entire_account_info_page": true,
+    "session_json_may_contain_access_token": true,
+    "login_before_activation_required": true,
+    "plus_requires_free_account": true,
+    "renew_before_expiry_allowed": false,
+    "exact_sku_current_checkout_price_cny": null,
+    "invoice_issuer_and_total_unknown": true,
+    "account_token_not_submitted_in_this_round": true,
+    "phone_verification_bypass_tested": false,
+    "delta": "r16已提示可能涉及Session/Token；本轮实际打开按钮确认/ api/auth/session 精确链接及整页粘贴要求。"
+  },
+  "phone_verification": {
+    "new_verified_service_this_round": false,
+    "chatgpt_web_test_success": 0,
+    "codex_desktop_test_success": 0,
+    "first_api_key_test_success": 0,
+    "independent_number_validity_verified": null,
+    "failed_sms_cash_refund_verified": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://subai.zip/p/chatgpt?v=chatgpt-plus",
+      "kind": "sku",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "准确Plus商品一人一月USD14.93，仅account id，商称自动激活",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://subai.zip/p/chatgpt",
+      "kind": "merchant_account_id",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "要求从已登录ChatGPT会话JSON仅摘取account.id，不可复制accessToken；有批量优惠字样",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://subai.zip/terms",
+      "kind": "merchant_terms",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "明确通过合作供应商激活，与OpenAI无关联；因商家或供应商原因失败商称全退，成功不退",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://subai.zip/privacy",
+      "kind": "merchant_privacy",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "商称只保存account id/付款记录并给供应商，不保存Cookie、Token或密码；无独立审计",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://subai.zip/",
+      "kind": "merchant_payment",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "USDT-TRC20/BEP20/TON、TON、BTC收款说明；无国内发票信息",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://plus.aixiamo.com/",
+      "kind": "previous_candidate_recheck",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "先登录ChatGPT，复制整页账号信息粘贴第三方；Plus仅Free可激活",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://chatgpt.com/api/auth/session",
+      "kind": "link_target",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "实际从AIXiamo激活页按钮跳转的官方会话JSON地址；不读取登录私密内容",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://www.aixiamo.com/item/10",
+      "kind": "previous_candidate_sku",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "准确SKU动态价加载中，库存和售罄提示并存；不核定本轮成交价",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://www.aixiamo.com/agent-cooperation",
+      "kind": "previous_candidate_cooperation",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "官方合作为推广按成交返佣，不等于批发进价",
+      "real_paid_test": false
+    },
+    {
+      "url": "https://www.aixiamo.com/articles/aixiamo-invoice-application-notice-2026",
+      "kind": "previous_candidate_invoice",
+      "observed_on": "2026-11-06",
+      "read_status": "direct_public_page_or_clicked_public_link",
+      "finding": "自标2026-08-06，商称付款完成交付后才能申请发票，票种费用主体未知",
+      "real_paid_test": false
+    }
+  ],
+  "preservation": {
+    "historic_126_quotes_unchanged": true,
+    "rounds_1_to_68_unchanged": true
+  },
+  "methodology": "将商家原始网页实读、商家声明与真实交易分开；新候选为零售中介线索而非已核一手供货；未知支付费、开票费与币种换汇均null；未付款、登录、读取个人会话JSON、接码、联系商家或传输秘密。"
+}
