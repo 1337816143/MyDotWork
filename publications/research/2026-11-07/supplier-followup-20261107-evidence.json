@@ -1,0 +1,175 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 77,
+  "site_version": "1.9.85",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "new_retail_lead_unverified": {
+    "merchant": "Ai极速补给站",
+    "origin": "https://get-codex.cc/",
+    "claimed_operator": "个人独立运营",
+    "legal_operator_verified": null,
+    "registered_legal_entity": null,
+    "payment_fulfillment_site": "https://shop.get-codex.cc/",
+    "merchant_admits_third_party_distributor_order_and_fulfillment": true,
+    "merchant_admits_upstream_controls_warranty": true,
+    "exact_sku": "ChatGPT Plus 月卡（30天，卡密）",
+    "single_quantity_limit_per_order": 1,
+    "period_days": 30,
+    "own_account_claim": true,
+    "requires_login_first": true,
+    "allowed_current_subscription_claim": "Free或已到期Plus；在期同档或高档不保证",
+    "public_displayed_price_cny_per_30_day_card": 125,
+    "accurate_sku_current_checkout_verified": false,
+    "public_invoice_claim": "可申请开票，税点由买家承担",
+    "invoice_tax_rate": null,
+    "invoice_fee_cny": null,
+    "payment_processing_fee_cny": null,
+    "actual_one_unit_total_cny_with_valid_china_vat_invoice": null,
+    "verified_invoice_issuer": null,
+    "verified_payment_receiver": null,
+    "verified_china_vat_invoice": false,
+    "agent_entry_fee_cny": null,
+    "minimum_wholesale_quantity": null,
+    "wholesale_one_piece_price_cny": null,
+    "wholesale_contract_verified": false,
+    "openai_reseller_authorization_verified": false,
+    "actual_supplier_cannot_be_inferred_from_shop": true,
+    "own_account_renewal_success_tested": false,
+    "requires_session_or_token_at_external_redemption": null,
+    "privacy_policy_covers_checkout": false,
+    "refund_success_tested": false,
+    "order_fulfillment_tested": false,
+    "wholesale_qualified": false,
+    "confidence": "read_merchants_own_public_content_not_transaction_or_wholesale_verification"
+  },
+  "independent_phone_verification": {
+    "merchant": "Ai极速补给站",
+    "sku": "英国 +44 Lebara 实体卡池单次短信转发",
+    "public_card_price_cny_per_one_service": 27.99,
+    "public_subtitle_conflicting_price_cny_per_attempt": 5,
+    "conflicting_price_display": true,
+    "actual_checkout_price_cny": null,
+    "number_country_code": "+44",
+    "physical_sim_operator_merchant_claim": "Lebara",
+    "verified_physical_sim_or_operator": false,
+    "service_type": "一次性客服转发短信；不是保号或号码独享",
+    "number_validity_days": null,
+    "number_reusable_after_one_attempt": false,
+    "followup_sms_receipt_guaranteed": false,
+    "openai_chatgpt_web_success_tested": false,
+    "openai_codex_success_tested": false,
+    "openai_first_api_key_success_tested": false,
+    "requires_preexisting_session": null,
+    "claims_sms_success_guarantee": false,
+    "no_sms_refund_claim": "客服核实后可申请退款",
+    "refund_to_original_payment_verified": false,
+    "refund_success_tested": false,
+    "distinct_us_codex_catalog_sku_still_buyable": null,
+    "auto_binds_openai_phone": false,
+    "confidence": "merchant_pricing_conflict_and_claimed_service; no real_sms_test"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://get-codex.cc/about",
+      "observed_on": "2026-11-07",
+      "description": "商家自述个人独立运营；商城由第三方分销平台完成订单与发货，30天质保责任在上游；第三方与OpenAI无正式关系",
+      "read_status": "direct_live_merchant",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": "2026-10-11"
+    },
+    {
+      "url": "https://get-codex.cc/pricing/chatgpt-plus",
+      "observed_on": "2026-11-07",
+      "description": "明确Plus一张30天卡密￥125、一单一件，Free或到期Plus，先登录；商称发票支持但税点自理，真实税率、出票主体与结算费用未知",
+      "read_status": "direct_live_merchant",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://get-codex.cc/pricing",
+      "observed_on": "2026-11-07",
+      "description": "商家目录Plus￥125；英国Lebara单次收码商品卡显示￥27.99、摘要却称￥5/次，存在同SKU价格自相矛盾",
+      "read_status": "direct_live_merchant",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://get-codex.cc/pricing/uk-sms-verification",
+      "observed_on": "2026-11-07",
+      "description": "英国+44 Lebara卡池转发验证码；挂牌￥27.99与正文￥5/次冲突；明确不保号、不保证送达、失败申请客服核实退款",
+      "read_status": "direct_live_merchant",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://get-codex.cc/pricing/codex-sms-verification",
+      "observed_on": "2026-11-07",
+      "description": "先前可能指向美国Codex接码的页面实际跳往英国Lebara品类；不能将目录中的美国￥6/次当成当前有效可买美国SKU",
+      "read_status": "redirect_observed",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://get-codex.cc/privacy",
+      "observed_on": "2026-11-07",
+      "description": "隐私条款仅适用于内容站，明确不约束收款与兑换所在shop.get-codex.cc；不能因此证明外部商城不用Session/Token",
+      "read_status": "direct_live_merchant",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": "2026-10-11"
+    },
+    {
+      "url": "https://get-codex.cc/guides/subscription-not-covered",
+      "observed_on": "2026-11-07",
+      "description": "商家说明菲区续费与iOS渠道可叠加性不同，但是否支持当前账号在期续费仍须依准确SKU与登录状态核验",
+      "read_status": "direct_live_merchant",
+      "evidence_level": "merchant_page_statement_only",
+      "page_claimed_update_date": "2026-09-06"
+    },
+    {
+      "url": "https://shop.get-codex.cc/products/gpt-codex-plus",
+      "observed_on": "2026-11-07",
+      "description": "已尝试直接读取实际结算商品页，但无法取得可读订单/费用内容，支付附加费及真实成交价不刷新",
+      "read_status": "read_failed",
+      "evidence_level": "failed_fetch_not_evidence",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://shop.get-codex.cc/products/uk-sms-verification",
+      "observed_on": "2026-11-07",
+      "description": "已尝试直接读取收码商城结算页但未取得正文，挂牌价冲突未解决",
+      "read_status": "read_failed",
+      "evidence_level": "failed_fetch_not_evidence",
+      "page_claimed_update_date": null
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-07",
+      "description": "OpenAI官方将一般ChatGPT注册、Codex桌面端可能请求手机号及首次API Key验证区分，不能从充值推断自动绑号",
+      "read_status": "direct_live_official",
+      "evidence_level": "official_policy",
+      "page_claimed_update_date": null
+    }
+  ],
+  "important_caveats": [
+    "￥125为内容站公开30天Plus卡密标价，不是经过商城结算的含票人民币实际采购全额。",
+    "接码同页￥27.99商品卡与￥5/次副标题冲突；准确可付金额未知，记录null，不以较低数字推荐。",
+    "商家明确称商城使用第三方分销系统、上游供应商负责保修；因此不能认定该零售前台是真正上游或获授权转售。",
+    "商家隐私政策只管内容站，不保证外部商城及兑换流程不索取Session、Token或其他登录凭据。",
+    "未付款、未验中国增值税发票、未独立接收OpenAI短信；仅记录实读网页，不等同实测。",
+    "Plus订阅与手机号验证独立；一般ChatGPT网页、Codex与首次API Key适用范围不可混同。"
+  ]
+}
