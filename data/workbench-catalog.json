@@ -1838,6 +1838,28 @@
       "summary": "7条当轮实读商家或官方URL，区分¥168挂牌与条件¥176.40、¥138旧推广未验证、¥35号码21–30天及退款限制；未验票、未接码。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r68-20261106",
+      "title": "GPT源头第68轮 · BBShare接码退款与Plus宇宙开票限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r13.html",
+      "updatedAt": "2026-11-06T03:27:58.686Z",
+      "summary": "本轮实读BBShare Plus ¥138/月、Codex接码¥15/次但100%仅商称且不保证失败自动原路退；Plus宇宙¥149/月明确当前不承诺开票；CodexPay¥169订单手机号仅查单。批发合格仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r68-20261106-evidence",
+      "title": "BBShare ¥138/¥15、Plus宇宙发票与CodexPay手机号边界 · r68证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-06/supplier-followup-20261106-r13-evidence.json",
+      "updatedAt": "2026-11-06T03:27:58.686Z",
+      "summary": "14条观察来源含1条搜索页文字非直接打开；手机接码商品非真实成功，税票/结算费用null、主体与授权未证、无支付或账号秘密。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
