@@ -2256,6 +2256,28 @@
       "summary": "核实游客开票限制、旧fp站停收、登录跳转、会员订单可补交¥10、商称最晚1工作日、¥149.99非实付；全费/出票主体/真实合同/SMS仍null或0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r87-20261107",
+      "title": "GPT源头第87轮 · PAYPRM大规模风控售后及Codex短信交付界限",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r11.html",
+      "updatedAt": "2026-11-07",
+      "summary": "现行售后明确非商家履约原因的OpenAI大规模撤订/封号不承诺常规退款；Codex¥12/次只保卡密/接码网址可用而非短信通过。旧Plus¥155未含税非新价，批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r87-20261107-evidence",
+      "title": "PAYPRM规模风险与Codex验证码退款界限 · 第87轮13条原始URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r11-evidence.json",
+      "updatedAt": "2026-11-07",
+      "summary": "明确大规模第三方异常售后不保、SMS交付只看卡密网址，号码期限及失败退款null；旧价格与发票规则不刷新，实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
