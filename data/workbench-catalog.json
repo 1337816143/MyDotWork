@@ -2278,6 +2278,28 @@
       "summary": "明确大规模第三方异常售后不保、SMS交付只看卡密网址，号码期限及失败退款null；旧价格与发票规则不刷新，实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r88-20261107",
+      "title": "GPT源头第88轮 · GPT-DUO单月原号SKU与企业5号最低采购",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r12.html",
+      "updatedAt": "2026-11-07",
+      "summary": "新入库零售：本人Plus菲区¥128/账号·月仅Free、iOS¥148/账号·月可条件续订但需Session；企业最低5账号且商称专票另加6%技术服务费，不可套至单件含票价，合格批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r88-20261107-evidence",
+      "title": "GPT-DUO准确Plus SKU、五号采购门槛与Session交付差异 · 第88轮证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r12-evidence.json",
+      "updatedAt": "2026-11-07",
+      "summary": "8条本轮商家及OpenAI原始URL、128/148元一号一月价和企业5号、6%条件分离；单件含票实费、出票法人、批发合同、SMS成功仍null或0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

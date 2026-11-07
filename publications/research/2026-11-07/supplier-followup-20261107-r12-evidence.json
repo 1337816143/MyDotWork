@@ -1,0 +1,183 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 88,
+  "site_version": "1.9.96",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "scope": "GPT-DUO新入候选：本人原号菲区/iOS准确Plus单月SKU、企业最少5号起批及仅企业专票6%条件；区分商品人工/自动发卡矛盾、Session与手机验证，不认为已符合批发上游。",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "material_new_candidate": {
+    "merchant": "GPT-DUO",
+    "new_to_this_bounded_catalog_review": true,
+    "is_verified_wholesale_upstream": false,
+    "is_openai_authorized_partner": false,
+    "independent_third_party_merchant_self_disclosure": true,
+    "displayed_retail_skus": [
+      {
+        "name": "ChatGPT Plus 月卡充值｜菲区",
+        "url": "https://www.gpt-duo.com/products/chatgpt-plus-philippines-monthly",
+        "public_list_price_cny": 128,
+        "unit": "1个本人原号·1个月",
+        "billing_channel": "菲律宾",
+        "account_must_show_free": true,
+        "can_cover_active_subscription": false,
+        "delivery_claim": "付款后自动发卡密，尚需自行兑换和核验",
+        "page_stock_label": "库存紧张/默认规格库存可用",
+        "real_stock_verified": false,
+        "session_json_required": true,
+        "real_paid_all_in_china_vat_invoice_cny": null
+      },
+      {
+        "name": "ChatGPT Plus 月卡充值／续费｜iOS",
+        "url": "https://www.gpt-duo.com/products/chatgpt-plus-ios-monthly",
+        "public_list_price_cny": 148,
+        "unit": "1个本人原号·1个月",
+        "billing_channel": "iOS",
+        "account_must_show_free": null,
+        "active_subscription_renewal_sometimes_supported_subject_to_prior_confirmation": true,
+        "remaining_days_auto_stack_guaranteed": false,
+        "product_delivery_label": "人工交付卡密",
+        "tutorial_conflicting_delivery_text": "2026-10-19的对应教程称自动交付卡密",
+        "page_stock_label": "有库存",
+        "real_stock_verified": false,
+        "apple_id_required": false,
+        "session_json_required": true,
+        "real_paid_all_in_china_vat_invoice_cny": null
+      }
+    ],
+    "enterprise_supply": {
+      "url": "https://www.gpt-duo.com/enterprise",
+      "merchant_claim_minimum_account_count": 5,
+      "merchant_claim_volume_discount_available": true,
+      "real_quote_per_one_account_month_cny": null,
+      "bulk_discount_brackets": null,
+      "contracting_entity_legal_name": null,
+      "payee_legal_entity": null,
+      "vat_invoice_issuer_legal_entity": null,
+      "claimed_china_vat_special_invoice_available_for_enterprise": true,
+      "claimed_technical_service_fee_percent_for_enterprise_special_invoice": 6,
+      "one_item_retail_china_vat_invoice_available": null,
+      "one_item_retail_invoice_fee_cny": null,
+      "one_item_payment_surcharge_cny": null,
+      "one_item_real_vat_invoice_total_cny": null,
+      "no_upfront_agent_fee_positively_verified": false,
+      "verified_contract_or_reseller_authorization": false,
+      "meets_one_item_wholesale_requirement": false
+    },
+    "aftersales": {
+      "merchant_claim_30_day_issue_assistance": true,
+      "unconditional_refund_guaranteed": false,
+      "real_refund_tested": false,
+      "actual_paid_order_tested": false,
+      "same_account_renewal_success_tested": false
+    },
+    "conclusion": "挂出的两个单月零售SKU满足本人原号和单月描述，但前者只适用Free，后者续订需先确认；企业批发5账号起、不满足1号进货要求，单件含税、支付手续费、出票/收款主体和正式供货权均未闭合。"
+  },
+  "independent_phone_verification": {
+    "merchant": "GPT-DUO",
+    "dedicated_sms_verification_sku_observed_in_read_pages": false,
+    "verified_independent_service": false,
+    "public_sms_unit_price_cny": null,
+    "number_validity_minutes": null,
+    "number_retention_days": null,
+    "real_sim_verified": null,
+    "failed_sms_refund_cny": null,
+    "chatgpt_web_login_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_api_key_success_tested": false,
+    "requires_preexisting_logged_in_chatgpt_session_for_subscription_redemption": true,
+    "ordinary_plus_purchase_auto_binds_phone": false,
+    "apple_ios_billing_alone_guarantees_phone_bypass": false
+  },
+  "sources": [
+    {
+      "url": "https://www.gpt-duo.com/products/chatgpt-plus-philippines-monthly",
+      "observed_on": "2026-11-07",
+      "read_status": "readable web merchant page",
+      "evidence_class": "merchant_product",
+      "fact": "本人原号菲区Plus ¥128 CNY/1号·1月，需Free；自动交付CDK需登录后的Session兑换；页面称库存紧张，但未实付/未核真实库存。",
+      "classification": "new_retail_sku_not_wholesale"
+    },
+    {
+      "url": "https://www.gpt-duo.com/products/chatgpt-plus-ios-monthly",
+      "observed_on": "2026-11-07",
+      "read_status": "readable web merchant page",
+      "evidence_class": "merchant_product",
+      "fact": "本人Plus iOS ¥148 CNY/1号·1月，产品标人工发卡、需ChatGPT Session；续费/覆盖要先确认剩余天数处理，不保原天数自动叠加。",
+      "classification": "new_retail_sku_not_wholesale"
+    },
+    {
+      "url": "https://www.gpt-duo.com/enterprise",
+      "observed_on": "2026-11-07",
+      "read_status": "readable web merchant page",
+      "evidence_class": "merchant_enterprise_qualification",
+      "fact": "企业渠道最低5个账号；声称可对公、签合同、开中国增值税专票，另6%技术服务费；承认与OpenAI无代理/授权/合作；批量价、法律主体未公布。",
+      "classification": "new_material_wholesale_minimum_and_enterprise_invoice_scope"
+    },
+    {
+      "url": "https://www.gpt-duo.com/blog/chatgpt-plus-ios-handling-guide",
+      "observed_on": "2026-11-07",
+      "page_display_published_on": "2026-10-19",
+      "read_status": "readable merchant tutorial",
+      "evidence_class": "merchant_session_tutorial",
+      "fact": "需已登录ChatGPT、读取完整auth/session内容并放入商家兑换页；教程写自动发卡，但当前iOS商品页写人工发卡，真实交付形式未测。",
+      "classification": "new_explicit_session_security_and_delivery_inconsistency"
+    },
+    {
+      "url": "https://www.gpt-duo.com/blog/faq",
+      "observed_on": "2026-11-07",
+      "page_display_published_on": "2026-09-10",
+      "read_status": "readable merchant FAQ",
+      "evidence_class": "merchant_delivery_aftersales",
+      "fact": "现行FAQ区分菲区自动发卡与其他充值人工发卡；30天问题协助不等于无条件退款，须订单核实。",
+      "classification": "new_delivery_crosscheck_not_tested"
+    },
+    {
+      "url": "https://www.gpt-duo.com/privacy",
+      "observed_on": "2026-11-07",
+      "page_display_updated_on": "2026-09-10",
+      "read_status": "readable merchant privacy policy",
+      "evidence_class": "merchant_session_privacy",
+      "fact": "声明菲区/iOS使用ChatGPT Session、自述可能收集订单及访问日志；仅称必要期限保留，Session具体保存时长/范围不清。",
+      "classification": "new_session_policy_boundary"
+    },
+    {
+      "url": "https://www.gpt-duo.com/about",
+      "observed_on": "2026-11-07",
+      "read_status": "readable merchant about",
+      "evidence_class": "merchant_identity",
+      "fact": "仅显示平台服务介绍/联系方式，未直接提供可核验工商全称、收款和出票法人、有效转售授权。",
+      "classification": "identity_remains_unverified"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-07",
+      "read_status": "readable official OpenAI help",
+      "evidence_class": "official_platform_scope",
+      "fact": "一般ChatGPT无需手机号；Codex桌面可能要求；平台首次API Key要求手机号，SMS/部分地区WhatsApp；不能用普通Plus充值代替相应验证。",
+      "classification": "official_scope_recheck_not_new_change"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "earlier_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "本轮新纳入研究对象不证明商家11月7日新开、调价或补货；观察时间与网页自标时间分开。",
+    "6%仅商家企业>=5账号专票声明，不能拿来推导单件零售含票价格。",
+    "售价128/148元为网页挂牌CNY/1个账号·1个月，最终成交/手续费/税票全费均null，不称购买成功。",
+    "不传任何密码、Session/Token/验证码，不付款、不联系商家；零售平台自称有企业批发页面不等于真正上游授权。"
+  ]
+}
