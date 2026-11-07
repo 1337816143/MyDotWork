@@ -1,0 +1,192 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 80,
+  "site_version": "1.9.88",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "瑶瑶ai训练师",
+    "type": "unverified_downstream_retail_not_confirmed_wholesale",
+    "sku_url": "https://kw.yaoyao.chat/item/5",
+    "sku": "ChatGPT Plus本人原号1个月卡密",
+    "public_list_price_cny_per_account_month": 129,
+    "currency": "CNY",
+    "months": 1,
+    "quantity": 1,
+    "conditional_returning_customer_discount_cny": 5,
+    "unconditional_wholesale_rate_cny": null,
+    "login_before_redemption_required": true,
+    "chatgpt_session_auth_information_required": true,
+    "session_is_sensitive_auth_credential": true,
+    "currently_active_plus_card_redeemable": false,
+    "renew_original_account_after_expiry_merchant_claim": true,
+    "merchant_claimed_personal_operator": true,
+    "merchant_claimed_personal_wechat_alipay_receiving_account": true,
+    "company_operating_registration_verified": false,
+    "company_vat_invoice_issuer_name": null,
+    "invoice_issuer_tax_id": null,
+    "invoice_can_be_requested_merchant_claim": true,
+    "invoice_type_guaranteed": null,
+    "china_vat_invoice_actual_copy_verified": false,
+    "invoice_surcharge_cny": null,
+    "payment_processing_fee_cny": null,
+    "final_payable_all_in_china_vat_invoice_cny": null,
+    "merchant_explicitly_not_official_authorized_agent": true,
+    "independent_wholesale_supply_agreement_verified": false,
+    "real_reseller_wholesale_permission_verified": false,
+    "no_upfront_agent_fee_public_sku_claim": true,
+    "no_upfront_agent_fee_end_to_end_verified": false,
+    "vendor_self_reported_cost_cny_per_order": 108,
+    "self_reported_cost_is_wholesale_offer": false,
+    "actual_supplier_cost_cny": null,
+    "actual_openai_billing_receipt_verified": false,
+    "merchant_claim_failed_activation_refund_to_original_method_24h": true,
+    "merchant_claim_midterm_revoked_membership_extra_month": true,
+    "merchant_claim_account_ban_excluded_except_own_payment_revocation": true,
+    "refund_from_real_own_order_verified": false,
+    "real_transaction_fulfillment_tested": false,
+    "wholesale_qualified": false,
+    "within_170_ceiling_verified": false,
+    "order_count_claim_independent_audit": false,
+    "claims_not_platform_verification": true
+  },
+  "independent_phone_verification": {
+    "dedicated_sms_sku_from_new_candidate_discovered": false,
+    "ordinary_plus_purchase_automatically_binds_phone": false,
+    "ordinary_plus_purchase_guarantees_codex_sms_verification": false,
+    "chatgpt_web_phone_required_generally": false,
+    "codex_desktop_phone_may_be_required": true,
+    "initial_api_key_phone_required": true,
+    "phone_number_holding_period_days": null,
+    "otp_failed_refund_policy": null,
+    "successful_openaI_sms_tests_this_research": 0
+  },
+  "unchanged_public_observations": [
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/plans",
+      "plus_own_account_skus_displayed_cny_per_piece": [
+        139,
+        139
+      ],
+      "codex_sms_25days_displayed_cny_per_service": 20,
+      "new_price_change": false,
+      "actual_all_required_invoice_cost_cny": null
+    },
+    {
+      "merchant": "V3",
+      "url": "https://shop.gpt.ge/",
+      "plus_original_philippines_cny_per_month": 133.5,
+      "plus_original_ios_cny_per_month": 143.5,
+      "new_price_change": false,
+      "actual_all_required_invoice_cost_cny": null
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_sku",
+      "source_kind": "merchant_claim_not_order",
+      "facts": "ChatGPT Plus original-account one-month card ¥129/piece; old-customer account-linked conditional ¥5 discount; Alipay/WeChat advertised; already active Plus cannot redeem until expiry; session information required; claimed ratings/orders not independently audited."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_invoice_policy",
+      "source_kind": "merchant_invoice_claim_not_validated_china_vat_invoice",
+      "page_self_updated_on": "2026-10-29",
+      "facts": "Merchant says invoice and corporate transfer available by contacting Enterprise WeChat after ordering; type/heading confirmed before issue; page does not give VAT issuer legal name/tax ID or exact added charge. Payment receipt is not automatically China VAT invoice."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/yaoyao-zhenggui.html",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_operator_disclosure",
+      "source_kind": "self_declaration_not_independently_verified_company_or_bank_owner",
+      "page_self_updated_on": "2026-10-28",
+      "facts": "Self-declared personal business not represented as company; claims personal Alipay/WeChat recipient QR; explicitly denies OpenAI official or authorized agent status; reconciliation with purported China VAT invoice issuer not available."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_warranty_terms",
+      "source_kind": "merchant_promise_not_independent_paid_order",
+      "page_self_updated_on": "2026-11-04",
+      "facts": "If not activated, card is claimed reusable and full refund to original payment method within 24 hours after manual case check; if subscription disappears midterm, claims one extra month; account ban generally outside warranty with seller-payment-revocation exception."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/plus-129-weishenme.html",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_self_authored_cost_explanation",
+      "source_kind": "merchant_marketing_cost_not_verified_wholesale",
+      "page_self_updated_on": "2026-11-04",
+      "facts": "Merchant estimates its own monthly card funding cost ¥108 and gross gap ¥21; not acquisition invoice, settlement receipt, reseller authorization or available wholesale price."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/daichong-duibi.html",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_self_authored_comparison",
+      "source_kind": "merchant_self_marketing",
+      "page_self_updated_on": "2026-10-29",
+      "facts": "Compares own ¥129 to other vendors; discloses need for ChatGPT login information. Competitor prices not independently refreshed from this comparison."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_platform_official_help",
+      "source_kind": "official_scoping_not_phone_test",
+      "facts": "Phone generally not required for ordinary ChatGPT; desktop Codex can request phone; first platform API key requires verification; mobile SMS/region-dependent WhatsApp, no VoIP or landline."
+    },
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_catalog",
+      "source_kind": "merchant_listing_not_paid_order",
+      "page_self_updated_on": "2026-11-05",
+      "facts": "Two original-account Plus SKUs ¥139 each; 25-day Codex SMS ¥20; unchanged compared with r79, no new warranty resolution."
+    },
+    {
+      "url": "https://shop.gpt.ge/",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_catalog",
+      "source_kind": "merchant_listing_not_paid_order",
+      "facts": "V3 Philippine original Plus ¥133.5 per month and iOS Plus ¥143.5 per month; unchanged."
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-07",
+      "read_status": "unreadable",
+      "source_kind": "access_failure_not_price_update",
+      "facts": null
+    },
+    {
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "unreadable",
+      "source_kind": "access_failure_not_price_update",
+      "facts": null
+    }
+  ],
+  "historical_data_preserved": true,
+  "cautions": [
+    "New direct retail merchant pages are not wholesale-source authorization or independent delivery verification.",
+    "Personal payment-collection representation and ability to request invoices are not proof of the legally identified Chinese VAT invoice issuer; no offsite verification or actual invoice.",
+    "Merchant site FAQ advertises invoice but does not state an unconditional invoice fee. Unknown costs are null; no conditional 10% is treated as current direct-page fact.",
+    "OpenAI official help distinguishes normal ChatGPT, desktop Codex and first API key; neither purchasing Plus nor furnishing Session automatically binds phone or fixes verification.",
+    "Price checks are page observations, not transactions. Seller order counts and claimed cost are self-report. Morimm and PAYPRM unreadable are not outages or refreshed prices.",
+    "No purchase, merchant contact, payment, username/password/Session/token submission, SMS test or invoice validation."
+  ]
+}

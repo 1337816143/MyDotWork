@@ -2102,6 +2102,28 @@
       "summary": "12条原始URL含不可读状态，明确2026年7月事件和11月7日观察时间；退款、号码期限、含票成本null，本项目实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r80-20261107",
+      "title": "GPT源头第80轮 · 瑶瑶¥129个人代充与税票主体缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r4.html",
+      "updatedAt": "2026-11-07T02:09:26.186Z",
+      "summary": "新增个人运营零售候选原号Plus ¥129/1个月、老客条件减¥5；自称个人收款且可开票，合法出票与含费总额null，Session前置及售后未实测，不列已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r80-20261107-evidence",
+      "title": "瑶瑶准确SKU、个人收款、开票与Session门槛 · r80证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r4-evidence.json",
+      "updatedAt": "2026-11-07T02:09:26.186Z",
+      "summary": "11条直接可读/不可读URL逐项记录；¥129仅单月挂牌，实际含中国增值税票成本null、票种出票主体及授权未核，无法解决首次手机号验证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
