@@ -2366,6 +2366,28 @@
       "summary": "8条当天实际读取原始URL；普通¥145、iOS¥165均是套餐挂牌/结算预览；商称质保30天不等于会员月数；法定收款出票、税票费及授权null；Vidora演示商品不计。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r92-20261108",
+      "title": "GPT源头第92轮 · 贝果代理SKU前置费与转售授权矛盾",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r4.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新增贝果¥88代理服务准确SKU，通用条款禁止转售却宣传自定价；代理有前置费、单件真实批发价及授权未公开。信用卡Plus¥135、iOS¥145与6%税票仅既有售价复核，未核合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r92-20261108-evidence",
+      "title": "第92轮 · 贝果代理收费、禁售条款与两路Plus月卡 · 5原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r4-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "5条商家原始URL；¥88代理建站/货源前置费（+6%票费仅分项），禁止转售与招代理并存需书面合同；Plus¥135/¥145非新价，完整含票实付、授权、主体及实测均null/0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

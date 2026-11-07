@@ -1,0 +1,145 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 92,
+  "site_version": "1.9.100",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "scope": "新补录既有贝果科技的代理服务准确SKU¥88，以及同站代理招募与禁止转售/无OpenAI授权条款的供货资格冲突；Plus两条既有零售价与6%票费仅定点复核，未认定新价。无真实订单、发票、短信验证。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "newly_documented_agent_program": {
+    "merchant": "贝果科技 Bigolab",
+    "agent_product_url": "https://bigolab.com/zh-hk/products/32",
+    "product_name": "AI 代充代理 · 一站式開店服務",
+    "program_public_upfront_service_price_cny": 88,
+    "service_price_unit": "1份人工代理建站/货源对接服务",
+    "service_price_excludes_vat": true,
+    "merchant_claimed_invoice_addon_rate_percent": 6,
+    "public_price_plus_invoice_component_cny": 93.28,
+    "program_is_upfront_fee_free": false,
+    "program_requires_customer_service_contact_after_payment": true,
+    "program_provides_exact_plus_wholesale_sku_price": false,
+    "program_public_wholesale_plus_price_cny": null,
+    "program_public_wholesale_minimum_units": null,
+    "formal_merchant_resale_grant_document": null,
+    "claimed_merchant_operator_name": "益阳市赫山区必高科技有限公司",
+    "merchant_operator_registration_independently_verified": false,
+    "actual_payment_recipient_verified": false,
+    "actual_china_vat_invoice_issuer_verified": false,
+    "real_vat_invoice_issued_and_checked": false,
+    "merchant_explicitly_disclaims_openai_authorization": true,
+    "merchant_general_terms_prohibit_resale": true,
+    "agent_advertises_customer_resale_and_own_pricing": true,
+    "agent_product_and_general_terms_conflict_requires_specific_contract_or_exception": true,
+    "actual_invoice_including_other_fees_cny": null,
+    "qualified_no_upfront_wholesale_supplier": false
+  },
+  "bounded_recheck_of_existing_retail_skus": [
+    {
+      "product_url": "https://bigolab.com/zh-hk/products/4",
+      "route": "upstream_card_payment_redeem",
+      "product_description": "ChatGPT Plus自助充值 | 信用卡衝",
+      "public_price_cny_per_account_month": 135,
+      "quantity": 1,
+      "months": 1,
+      "claimed_invoice_addon_percent": 6,
+      "public_price_plus_invoice_component_cny": 143.1,
+      "actual_all_required_payment_and_china_vat_invoice_cny": null,
+      "requires_active_login_session_submit_to_merchant": false,
+      "requires_account_email_for_redeem": true,
+      "requires_no_current_subscription": true,
+      "inventory_merchant_claim": "大量",
+      "real_paid_order_tested": false
+    },
+    {
+      "product_url": "https://bigolab.com/zh-hk/products/21",
+      "route": "ios_subscription_redeem",
+      "product_description": "ChatGPT Plus自助充值 | iOS訂閱充值",
+      "public_price_cny_per_account_month": 145,
+      "quantity": 1,
+      "months": 1,
+      "claimed_invoice_addon_percent": 6,
+      "public_price_plus_invoice_component_cny": 153.7,
+      "actual_all_required_payment_and_china_vat_invoice_cny": null,
+      "requires_active_login_session_submit_to_merchant": true,
+      "requires_no_current_subscription": true,
+      "inventory_merchant_claim": "补货中",
+      "real_stock_or_delivery_verified": false,
+      "real_paid_order_tested": false
+    }
+  ],
+  "independent_phone_verification": {
+    "new_substantive_sms_verification_evidence": false,
+    "merchant_bigo_prior_sms_refund_discovery_in_round": 40,
+    "chatgpt_web_success_tested": false,
+    "codex_success_tested": false,
+    "first_api_key_success_tested": false,
+    "automatic_phone_binding_from_plus_purchase": false,
+    "phone_number_duration": null,
+    "failed_sms_cash_refund_cny": null,
+    "successfully_received_sms_total": 0
+  },
+  "sources": [
+    {
+      "url": "https://bigolab.com/zh-hk/products/32",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_agent_sku_newly_documented",
+      "fact": "贝果代理建站/货源服务单件挂牌¥88，标价不含税，商称开票另加6%；代理服务包含自定售价与后台，但未列具体Plus批发单价、代理合作合同或免费入驻；人工交付，不发卡密。"
+    },
+    {
+      "url": "https://bigolab.com/zh-hk/terms",
+      "observed_on": "2026-11-08",
+      "page_self_updated_on": "2026-11-02",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_terms_resale_conflict",
+      "fact": "页面自称经营主体益阳市赫山区必高科技有限公司，自认非OpenAI官方代理/授权；禁止转售倒卖。与代理商品宣传售卖获利并存，专项授权/例外未见；SMS未收码仅退不可提现充值余额为此前第40轮旧证据。"
+    },
+    {
+      "url": "https://bigolab.com/zh-hk/products/4",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_retail_sku_recheck",
+      "fact": "已有零售候选Plus信用卡通道¥135/张，需原号无在期订阅；公开开票费6%，分项和¥143.10非真实全部实付；兑换提供账号邮件而非完整Session，核销后的异常不保退。"
+    },
+    {
+      "url": "https://bigolab.com/zh-hk/products/21",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_retail_sku_recheck",
+      "fact": "已有零售候选Plus iOS通道¥145/张，商称开票费6%，分项和¥153.70；兑换要求Session、当前SKU显示补货中且需原号无有效订阅；不可推定可叠加原订阅或直接买到货。"
+    },
+    {
+      "url": "https://bigolab.com/zh-hk/chongzhi/chatgpt-plus",
+      "observed_on": "2026-11-08",
+      "page_self_content_checked_on": "2026-09-24",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_sku_term_and_redeem_guide_recheck",
+      "fact": "商家指南明确最低¥135/一个月；信用卡SKU与iOS SKU分别¥135/¥145，iOS显示补货中；两条兑换链中账号状态不合时存在卡密损失风险；与已知旧价一致，并非11月8日新调价。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "prior_round_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "¥88是代理建站/货源服务SKU，不是本人Plus每月进货价；这条代理路线违反无前置费筛选，与可单件零售下单是不同的供货资格。",
+    "通用条款第5节禁止转售，但商品页宣传代理获利；单凭广告不得推定特许转售，须取得具体合同/书面授权，未联系商家。",
+    "商家自称公司名称不是工商核验、收款主体核验或真实开具有效中国增值税发票。",
+    "¥143.10与¥153.70只是商家公开零售价与自称6%开票费的算术小计，支付手续费及合法实付税票均未知null。",
+    "当前页面库存‘补货中’为本次商家显示，缺此前可比的确切库存观察日，不证明今天发生缺货变更。",
+    "不会因为iOS路线同时有Session操作而推定首次网页登录自动完成手机绑定；既有接码政策第40轮已记录，本次无新SMS成功实测。",
+    "本轮未购买、充值、联系商家、提供Session/Token、提取用户登录信息或查验税票。"
+  ]
+}

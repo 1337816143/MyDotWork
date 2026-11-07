@@ -577,3 +577,20 @@ assert.equal(r91.new_retail_intermediary.exact_public_skus[0].actual_subscriptio
 assert.equal(r91.new_retail_intermediary.exact_public_skus[1].actual_china_vat_invoice_all_in_cny,null);
 assert.equal(r91.excluded_example.real_plus_subscription_sku_verified,false);
 assert.equal(r91.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r92cat=d.records.find(r=>r.id==='gpt-source-followup-r92-20261108');
+const r92data=d.records.find(r=>r.id==='gpt-source-followup-r92-20261108-evidence');
+assert(r92cat&&r92data&&r92cat.url.endsWith('supplier-followup-20261108-r4.html'));
+const r92=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r4-evidence.json'),'utf8'));
+assert.equal(r92.round,92);assert.equal(r92.site_version,'1.9.100');assert.equal(r92.sources.length,5);
+assert.equal(r92.newly_documented_agent_program.program_public_upfront_service_price_cny,88);
+assert.equal(r92.newly_documented_agent_program.program_is_upfront_fee_free,false);
+assert.equal(r92.newly_documented_agent_program.public_price_plus_invoice_component_cny,93.28);
+assert.equal(r92.newly_documented_agent_program.merchant_general_terms_prohibit_resale,true);
+assert.equal(r92.newly_documented_agent_program.agent_advertises_customer_resale_and_own_pricing,true);
+assert.equal(r92.newly_documented_agent_program.formal_merchant_resale_grant_document,null);
+assert.equal(r92.newly_documented_agent_program.program_public_wholesale_plus_price_cny,null);
+assert.deepEqual(r92.bounded_recheck_of_existing_retail_skus.map(s=>s.public_price_cny_per_account_month),[135,145]);
+assert.equal(r92.bounded_recheck_of_existing_retail_skus[1].actual_all_required_payment_and_china_vat_invoice_cny,null);
+assert.equal(r92.independent_phone_verification.successfully_received_sms_total,0);
+assert.equal(r92.qualification_totals.verified_plus_wholesale_upstreams,0);
