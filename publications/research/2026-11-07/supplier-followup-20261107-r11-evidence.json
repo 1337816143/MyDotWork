@@ -1,0 +1,196 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 87,
+  "site_version": "1.9.95",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "scope": "PAYPRM规模化订阅异常、Codex验证码交付验收边界的本轮明确补证；订阅标价与税票规则属于r43已知事实，不制造重复调价。",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "substantive_aftersales_clarification": {
+    "merchant": "PAYPRM",
+    "historical_baseline_round": 43,
+    "baseline_invoice_and_price_already_known": true,
+    "prior_r43_recorded": "个人掉订需官方退款凭证；验证码阻断不在订阅保障，SMS未保证成功",
+    "present_merchant_rule": "第三方平台出现大规模批量取消订阅/回收权益/账号风控，商称在非PAYPRM交付原因时排除常规补偿、退款或重新开通，仅提供合理排查建议；确属商家未交付、重复收费或操作失误按订单责任处理",
+    "mass_incident_refund_unconditionally_guaranteed": false,
+    "official_refund_email_receipt_required_for_individual_paid_subscription_remedy": true,
+    "real_refund_or_reactivation_tested": false,
+    "policy_effective_or_revision_day_verified": null,
+    "policy_read_on": "2026-11-07",
+    "latest_product_price_cny": 155,
+    "price_unit": "1账号·1个月",
+    "list_price_tax_inclusive": false,
+    "invoice_tax_rate_percent": null,
+    "additional_invoice_tax_fee_cny": null,
+    "payment_surcharge_cny": null,
+    "real_all_in_vat_invoice_total_cny": null,
+    "invoice_issuer_legal_entity": null,
+    "payee_legal_entity": null,
+    "operator_registration_verified": false,
+    "verified_reseller_and_wholesale_authorization": false,
+    "qualified_wholesale_upstream": false
+  },
+  "independent_codex_verification": {
+    "merchant": "PAYPRM",
+    "sku": "Codex短信验证单次卡密+接码网址",
+    "url": "https://www.payprm.com/shop/codex-verification",
+    "public_price_cny": 12,
+    "unit": "每次单件",
+    "price_newly_changed_verified": false,
+    "merchant_warranty_acceptance": "卡密能用、接码网址可访问与按单交付，未承诺必然收到OpenAI短信或通过验证",
+    "number_country": null,
+    "mobile_carrier_or_real_sim_verified": null,
+    "number_validity_minutes": null,
+    "number_retention_days": null,
+    "repeated_receiving_verified": null,
+    "unable_to_receive_sms_refund_cny": null,
+    "unable_to_receive_sms_original_payment_refund_verified": null,
+    "web_login_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_api_key_success_tested": false,
+    "token_or_session_needed_for_sms_claim": false,
+    "plus_activating_with_session_may_be_needed": true,
+    "plus_purchase_auto_binds_openai_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_product",
+      "fact": "本人原账号Plus¥155/账号·月、自动卡密商称1分钟；无真实订单，价格不含中国税务开票额外费用",
+      "classification": "historical_r43_price_reconfirmed"
+    },
+    {
+      "url": "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_invoice_rule",
+      "fact": "所有网页标价不含税，税务发票需按实际金额及适用税点另付；具体税点未公布；付款收据不是中国增值税票",
+      "classification": "historical_r43_invoice_rule_reconfirmed"
+    },
+    {
+      "url": "https://www.payprm.com/policy",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_aftersales_rule",
+      "fact": "平台大规模风控、批量取消会员权益或回收订阅，若非PAYPRM交付原因，不在常规售后退款及补偿范围；个人掉订须核官方退款凭证；Codex接码以卡密/网址可用为交付判定",
+      "classification": "newly_explicit_aftersales_exclusion"
+    },
+    {
+      "url": "https://www.payprm.com/faq/after-sales/platform-incident",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_aftersales_guide",
+      "fact": "第三方大规模风控/批量取消会员权益时客服协助排查，是否由商家交付原因造成须依订单和完整售后政策判断",
+      "classification": "newly_explicit_bounded_detail"
+    },
+    {
+      "url": "https://www.payprm.com/faq/after-sales/verification",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_sms_warranty",
+      "fact": "Codex短信订单以卡密和接码网址能否正常使用判交付；未将实际收到短信或OpenAI验证成功列为交付标准",
+      "classification": "newly_explicit_delivery_boundary"
+    },
+    {
+      "url": "https://www.payprm.com/shop/codex-verification",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_exact_phone_sku",
+      "fact": "Codex短信卡密¥12/次；自动发卡密及接码网址，无法接码的具体退款金额及号码可持有期限未公开",
+      "classification": "old_r43_price_reconfirmed_not_new_price"
+    },
+    {
+      "url": "https://www.payprm.com/faq/account/chatgpt-recharge-info",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_session_prerequisite",
+      "fact": "多数单领卡密；部分单需先登录ChatGPT后复制完整Session JSON发至第三方自助页面，可能含Access Token",
+      "classification": "historical_r43_session_rule_reconfirmed"
+    },
+    {
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_claim_not_official",
+      "fact": "98%以上升级后未再遇Codex手机验证仅商家自报回访；不能当自动绑定手机号或网页/API验证成功",
+      "classification": "historical_r43_claim_reconfirmed"
+    },
+    {
+      "url": "https://www.payprm.com/about",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_identity_claim",
+      "fact": "自述莱特智能运营团队、企业支付卡及批量企业采购；未见已验营业执照、收款/出票法人或代理合同",
+      "classification": "historical_identity_reconfirmed"
+    },
+    {
+      "url": "https://www.payprm.com/terms",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "merchant_terms",
+      "fact": "条款版本自标2026.10；明确独立第三方，不是OpenAI官方；禁止个人订阅转售/反代等违反服务条款的行为",
+      "classification": "terms_rechecked_no_verified_authorization"
+    },
+    {
+      "url": "https://morimm.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "bounded_prior_candidate",
+      "fact": "原号菲律宾Plus¥113、iOS¥129、Codex单次CDK¥3商家页面可读；这些都是历史r75旧SKU而非本轮新报价",
+      "classification": "bounded_no_new_substance"
+    },
+    {
+      "url": "https://catfk.com/shop/cat",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "bounded_prior_candidate",
+      "fact": "云猫寄售AI猫站长店菲区Plus¥129、成品号¥85及免登记自述；历史r75已收录且与另一CatFK店主体不可混同",
+      "classification": "bounded_no_new_substance"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable via fresh merchant scrape",
+      "method": "Firecrawl maxAge=0 live fetch",
+      "evidence_class": "bounded_prior_candidate",
+      "fact": "仅会员先登录购买才可开票；Plus¥10电子普票条件保持第86轮记录",
+      "classification": "bounded_no_new_substance"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "earlier_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "第43轮已记录PAYPRM¥155不含税、需另付开票税费、个人订单须官方退款凭证及接码¥12；本轮只是对规模化第三方账号处置和Codex卡密可用即交付两项售后条款做更明确的原网页补证，不声称当天新改价或改政策。",
+    "商品页面与商家条款仅属商家声明，尚无合同、实际付款、主体登记/收款/中国增值税票据验真、真实账号履约和SMS成功。",
+    "独立接码的网页、Codex与首次API Key适用不能互推，Session要求先登录，Apple付款不会自动绑定OpenAI号码。",
+    "未知付款手续费、税点、票费、号码寿命、未收到验证码原路退款仍写null；未购买、联系商家、登录商家、提交密码、Session、Token或验证码。"
+  ]
+}
