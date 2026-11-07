@@ -2234,6 +2234,28 @@
       "summary": "区分US$16卡密与完整单月订阅、公开代理价同零售、静态预置结算与真实订单；累计销售额佣金门槛非前置费，全部真实税票/授权/验证为0或null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r86-20261107",
+      "title": "GPT源头第86轮 · wind89旧开票站停收申请及会员下单限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r10.html",
+      "updatedAt": "2026-11-07",
+      "summary": "旧fp.wind89.com不再受理，商家新指南明确游客订单不能申请发票，需登录会员后购Plus ¥139.99再加¥10普票；¥149.99仅分项和，合法税票/批发仍未实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r86-20261107-evidence",
+      "title": "wind89会员开票入口、旧域名失效、退款红冲及7条原始URL · r86",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r10-evidence.json",
+      "updatedAt": "2026-11-07",
+      "summary": "核实游客开票限制、旧fp站停收、登录跳转、会员订单可补交¥10、商称最晚1工作日、¥149.99非实付；全费/出票主体/真实合同/SMS仍null或0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
