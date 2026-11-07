@@ -2168,6 +2168,28 @@
       "summary": "4个原URL提取与时效限制；¥149.99仅条件算术、对公¥160是否含票及支付主体真实票据null；实测与授权0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r83-20261107",
+      "title": "GPT源头第83轮 · V3 iOS库存再挂牌、yxab暂时缺货与原号售后风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r7.html",
+      "updatedAt": "2026-11-07T10:15:48.372Z",
+      "summary": "V3同一iOS原号Plus¥143.50上次无货、此次库存一般；售后可换新号不保原号。yxab¥128.80暂时缺货，未证今日断供；含中国税票、批发授权均未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r83-20261107-evidence",
+      "title": "V3与yxab库存直读、退款方式及手机验证边界 · 第83轮证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r7-evidence.json",
+      "updatedAt": "2026-11-07T10:15:48.372Z",
+      "summary": "5条本轮直接读取URL，两次库存快照、V3原号售后可能换号；付款附费/税票/授权/短信实测仍null或0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

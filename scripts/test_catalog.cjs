@@ -461,3 +461,18 @@ assert.equal(r82.material_discovery.corporate_price_includes_einvoice,null);
 assert.equal(r82.material_discovery.actual_paid_invoice_total_cny,null);
 assert.equal(r82.material_discovery.guest_checkout_invoice_eligibility_verified,false);
 assert.equal(r82.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r83cat=d.records.find(r=>r.id==='gpt-source-followup-r83-20261107');
+const r83data=d.records.find(r=>r.id==='gpt-source-followup-r83-20261107-evidence');
+assert(r83cat&&r83data&&r83cat.url.endsWith('supplier-followup-20261107-r7.html'));
+const r83=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r7-evidence.json'),'utf8'));
+assert.equal(r83.round,83);assert.equal(r83.site_version,'1.9.91');assert.equal(r83.sources.length,5);
+assert.equal(r83.material_discoveries[0].previous_stock_label,'无货');
+assert.equal(r83.material_discoveries[0].current_stock_label,'一般');
+assert.equal(r83.material_discoveries[0].previous_list_price_cny,143.5);
+assert.equal(r83.material_discoveries[0].current_list_price_cny,143.5);
+assert.equal(r83.material_discoveries[0].real_paid_full_cost_cny,null);
+assert.equal(r83.material_discoveries[0].same_original_account_preserved_after_failure_guaranteed,false);
+assert.equal(r83.material_discoveries[1].current_stock_label,'暂时缺货');
+assert.equal(r83.material_discoveries[1].actual_stock_status_change_proven,false);
+assert.equal(r83.qualification_totals.verified_plus_wholesale_upstreams,0);
