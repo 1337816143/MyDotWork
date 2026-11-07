@@ -134,9 +134,9 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 211, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.89'
-    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108.html'
-    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-evidence.json'
+    assert latest['version'] == '1.90'
+    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-r2-evidence.json'
     assert latest['previousPath'] == 'research/2026-11-07/supplier-followup-20261107-r12.html'
     assert by_id['gpt-source-followup-r72-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17.html'
     assert by_id['gpt-source-followup-r72-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17-evidence.json'
@@ -976,6 +976,16 @@ def validate_publications():
     assert r84['phone_verification']['plus6_price_cny'] is None
     assert r84['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
 
+    assert by_id['gpt-source-followup-r90-20261108']['url'] == '../research/2026-11-08/supplier-followup-20261108-r2.html'
+    assert by_id['gpt-source-followup-r90-20261108-evidence']['url'] == '../research/2026-11-08/supplier-followup-20261108-r2-evidence.json'
+    r90 = json.loads((ROOT / 'dist/research/2026-11-08/supplier-followup-20261108-r2-evidence.json').read_bytes())
+    assert r90['round'] == 90 and r90['site_version'] == '1.9.98' and len(r90['sources']) == 8
+    assert r90['newly_documented_public_api']['customer_supplies_payment_card'] is True
+    assert r90['newly_documented_public_api']['public_example_plus_price_credits'] == 50
+    assert r90['newly_documented_public_api']['real_live_plus_price_credits'] is None
+    assert r90['newly_documented_public_api']['real_all_in_china_vat_invoice_total_cny'] is None
+    assert r90['newly_documented_public_api']['eligible_verified_plus_upstream'] is False
+    assert r90['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     from validate_current_updates import validate_current_updates
     validate_current_updates()
     from validate_task35 import validate_task35, negative_tests
