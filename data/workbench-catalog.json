@@ -2344,6 +2344,28 @@
       "summary": "8条本轮直接打开/失败原始URL；Plus积分示例非真实标价，需现有Session和银行卡CVV；全费、法律主体、批发授权和实际SMS均未证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r91-20261108",
+      "title": "GPT源头第91轮 · upapi.ai原号Plus零售渠道、Session转发与批量转售限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r3.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新证普通Plus¥145/套餐及iOS Plus¥165/套餐的未提交订单预览；完整Session传给渠道商、条款禁批量转售；含中国税票全费及实际会员期限null，不列批发源。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r91-20261108-evidence",
+      "title": "第91轮 · 两种Plus商品、未提交订单结算、转售限制及演示SKU排除 · 8原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r3-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "8条当天实际读取原始URL；普通¥145、iOS¥165均是套餐挂牌/结算预览；商称质保30天不等于会员月数；法定收款出票、税票费及授权null；Vidora演示商品不计。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

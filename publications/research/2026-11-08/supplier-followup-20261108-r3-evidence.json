@@ -1,0 +1,168 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 91,
+  "site_version": "1.9.99",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "scope": "本轮新增直接读取的upapi.ai两种本人原号Plus零售套餐、未提交订单的支付预览、向渠道商转发Session的交付链条及禁止批量转售条款；另排除商品页明示的演示商品。不作为已核批发上游。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_retail_intermediary": {
+    "merchant": "upapi.ai GPT订阅",
+    "domain": "gpt.upapi.ai",
+    "merchant_role_evidence": "首页和教程称调用渠道商，属于公开可见的渠道集成/零售流程；不能证明实际支付链、合法批发代理或供货授权",
+    "actual_upstream_identity": null,
+    "legal_payee_entity": null,
+    "legal_invoice_issuer_entity": null,
+    "formal_reseller_authorization": null,
+    "exact_public_skus": [
+      {
+        "code": "ph-plus",
+        "name": "GPT Plus会员",
+        "public_list_price_cny_per_package": 145,
+        "unsubmitted_preview_cny_wechat": 145,
+        "unsubmitted_preview_hkd_stripe": 163.18,
+        "eligible_current_subscription": "none",
+        "claimed_warranty_days": 30,
+        "actual_subscription_term_days": null,
+        "requires_postpayment_session_json": true,
+        "china_vat_invoice_type": null,
+        "invoice_addon_cny": null,
+        "other_required_fees_cny": null,
+        "actual_china_vat_invoice_all_in_cny": null
+      },
+      {
+        "code": "ios-plus",
+        "name": "GPT ios Plus会员",
+        "public_list_price_cny_per_package": 165,
+        "unsubmitted_preview_cny_wechat": 165,
+        "unsubmitted_preview_hkd_stripe": 185.69,
+        "claimed_no_wait_for_grace_period": true,
+        "remaining_active_subscription_days_preserved_verified": false,
+        "claimed_warranty_days": 30,
+        "actual_subscription_term_days": null,
+        "requires_postpayment_session_json": true,
+        "china_vat_invoice_type": null,
+        "invoice_addon_cny": null,
+        "other_required_fees_cny": null,
+        "actual_china_vat_invoice_all_in_cny": null
+      }
+    ],
+    "pre_order_real_payment_verified": false,
+    "merchant_claim_can_invoice": true,
+    "verified_china_vat_invoice": false,
+    "merchant_terms_prohibit_bulk_resale": true,
+    "merchant_terms_prohibit_single_resale_explicitly": false,
+    "merchant_terms_restrict_abuse_and_arbitrage": true,
+    "claims_forward_session_to_channel_supplier": true,
+    "session_encryption_independently_audited": false,
+    "merchant_session_retention_days": null,
+    "has_authored_payment_method": false,
+    "wholesale_min_quantity": null,
+    "wholesale_price_cny": null,
+    "wholesale_upfront_fee_cny": null,
+    "independent_cancellation_refund_tested": false,
+    "independent_delivery_tested": false,
+    "eligible_verified_plus_upstream": false
+  },
+  "excluded_example": {
+    "merchant": "Vidora",
+    "url": "https://vidora.cc/item/1",
+    "visible_list_price_cny": 140,
+    "claim_inventory": 3,
+    "item_description": "该商品是演示商品",
+    "real_plus_subscription_sku_verified": false,
+    "eligible_verified_plus_upstream": false
+  },
+  "phone_verification": {
+    "independent_sms_new_success": false,
+    "chatgpt_web_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_api_key_success_tested": false,
+    "automatic_binding_from_plus_purchase": false,
+    "first_login_requires_session_before_seller_purchase": true,
+    "phone_number_duration": null,
+    "failed_sms_refund_cny": null
+  },
+  "sources": [
+    {
+      "url": "https://gpt.upapi.ai/purchase",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_primary_catalog_live",
+      "fact": "Plus普通版¥145/套餐仅无订阅账号；iOS Plus¥165/套餐、商称无需宽限期；两项商称30天质保及可开票，价目未明示准确会员生效天数或增值税票费。"
+    },
+    {
+      "url": "https://gpt.upapi.ai/order?packageId=ph-plus",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_public_unsubmitted_checkout_preview",
+      "fact": "普通Plus预置确认页商品¥145；微信CNY145.00、Stripe HKD163.18；显示应付¥145，但未创建真实订单，不是含中国增值税发票的已核实实付。"
+    },
+    {
+      "url": "https://gpt.upapi.ai/order?packageId=ios-plus",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_public_unsubmitted_checkout_preview",
+      "fact": "iOS Plus预置确认页商品¥165；微信CNY165.00、Stripe HKD185.69；显示应付¥165；无当前会员覆盖/发票费/付款完成凭证。"
+    },
+    {
+      "url": "https://gpt.upapi.ai/guide",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_primary_guide",
+      "fact": "付款后用户须提交完整OpenAI Session JSON，服务端识别Account ID/UUID并调用渠道商；取消退款取决于实际订单状态和支付渠道。"
+    },
+    {
+      "url": "https://gpt.upapi.ai/legal/terms",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_primary_terms",
+      "fact": "条款明确禁止通过本站购买的权益/卡密/兑换码用于批量转售、套利，商家可拒绝后续服务；品牌方政策变更等第三方原因责任限制。"
+    },
+    {
+      "url": "https://gpt.upapi.ai/legal/privacy",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_primary_privacy_claim",
+      "fact": "收集订单通知邮箱、订单记录及时间/IP/浏览器标识，声明在履约必要情况下向渠道方提供部分信息；未说明独立审计或Session JSON明确删除期限。"
+    },
+    {
+      "url": "https://gpt.upapi.ai/",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_primary_home",
+      "fact": "首页明确付款后提交完整Session JSON，后台将资料加密保存并自动调用渠道商，不是商家自有支付卡、OpenAI授权和独立源头供货的证据。"
+    },
+    {
+      "url": "https://vidora.cc/item/1",
+      "observed_on": "2026-11-08",
+      "read_status": "live_page_content_read_not_transaction_tested",
+      "evidence_class": "merchant_primary_demo_listing_excluded",
+      "fact": "虽然可见chatgptplus标价¥140/件及库存3，但商品详情明确‘该商品是演示商品’，不能当作真实可买本人原号Plus SKU。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "prior_round_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "上游转发和禁止批量转售为本轮新补录商家原文，不代表商家在11月8日当天修改条款。",
+    "两种Plus商品标明30天质保，不等于商品页明确承诺30天订阅服务；准确会员天数尚未取得可核文字，故为null。",
+    "HKD是商家未提交结算预览，不以汇率计算人民币实付、也不能当发票/支付手续费已包含。",
+    "普通Plus需账号当前无订阅；iOS商品宣称无需等待宽限期，不代表保证原号已有订阅天数可无损叠加。",
+    "完整Session JSON属于敏感登录凭据；商家称加密及传给渠道不代表风险经独立审计，更不能解决首次ChatGPT网页登录验证。",
+    "本轮没有联系、下单、支付、提交Session/Token、发票查验或短信实测。"
+  ]
+}

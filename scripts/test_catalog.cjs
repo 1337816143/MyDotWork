@@ -564,3 +564,16 @@ assert.equal(r90.newly_documented_public_api.public_example_plus_price_credits,5
 assert.equal(r90.newly_documented_public_api.real_live_plus_price_credits,null);
 assert.equal(r90.newly_documented_public_api.real_all_in_china_vat_invoice_total_cny,null);
 assert.equal(r90.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r91cat=d.records.find(r=>r.id==='gpt-source-followup-r91-20261108');
+const r91data=d.records.find(r=>r.id==='gpt-source-followup-r91-20261108-evidence');
+assert(r91cat&&r91data&&r91cat.url.endsWith('supplier-followup-20261108-r3.html'));
+const r91=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r3-evidence.json'),'utf8'));
+assert.equal(r91.round,91);assert.equal(r91.site_version,'1.9.99');assert.equal(r91.sources.length,8);
+assert.equal(r91.new_retail_intermediary.exact_public_skus[0].public_list_price_cny_per_package,145);
+assert.equal(r91.new_retail_intermediary.exact_public_skus[1].public_list_price_cny_per_package,165);
+assert.equal(r91.new_retail_intermediary.merchant_terms_prohibit_bulk_resale,true);
+assert.equal(r91.new_retail_intermediary.exact_public_skus[0].actual_subscription_term_days,null);
+assert.equal(r91.new_retail_intermediary.exact_public_skus[1].actual_china_vat_invoice_all_in_cny,null);
+assert.equal(r91.excluded_example.real_plus_subscription_sku_verified,false);
+assert.equal(r91.qualification_totals.verified_plus_wholesale_upstreams,0);
