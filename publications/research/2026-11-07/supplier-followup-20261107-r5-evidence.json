@@ -1,0 +1,271 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 81,
+  "site_version": "1.9.89",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "discoveries": [
+    {
+      "merchant": "PlusGO",
+      "type": "third_party_retail_with_optional_enterprise_prepay_not_verified_wholesale",
+      "sku": "ChatGPT Plus本人原号1个月",
+      "sku_url": "https://plusgo.pro/chatgpt-plus",
+      "currency": "CNY",
+      "period_months": 1,
+      "quantity": 1,
+      "public_price_cny_per_account_month": null,
+      "unverified_dynamic_price": true,
+      "prepayment_optional_not_prerequisite_for_single_order": true,
+      "merchant_claim_prepaid_balance_never_expires": true,
+      "merchant_claim_invoiced_unused_prepay_principally_nonrefundable_with_law_and_agreement_exceptions": true,
+      "merchant_claim_uninvoiced_unused_prepay_full_refund_possible": true,
+      "merchant_claim_failed_prepaid_order_restores_balance": true,
+      "merchant_claim_failed_individual_order_original_route_refund": true,
+      "prepayment_does_not_lock_future_price": true,
+      "merchant_terms_self_updated_on": "2026-11-06",
+      "chinese_vat_invoice_issuer_legal_name": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "full_payable_china_vat_invoice_cny": null,
+      "needs_prior_working_chatgpt_login": true,
+      "third_party_chatgpt_session_required": true,
+      "order_contact_phone_is_openai_phone_verification": false,
+      "first_login_phone_verification_solved": false,
+      "actual_supplier_authorization_verified": false,
+      "actually_paid_or_refunded": false,
+      "wholesale_qualified": false
+    },
+    {
+      "merchant": "GPTone",
+      "type": "new_unverified_retail_candidate_with_service_terms_scope_mismatch",
+      "sku": "ChatGPT Plus个人账号充值月卡，商称Apple订阅渠道",
+      "sku_url": "https://www.gptone.win/chatgpt-plus-price",
+      "currency": "CNY",
+      "period_months": 1,
+      "quantity": 1,
+      "merchant_displayed_price_cny_per_month": 158,
+      "merchant_displayed_strikethrough_cny": 199,
+      "card_sale_external_shop_url": "https://qfcc99.com/shop/I0TP6Z4K",
+      "external_checkout_read_status": "empty_body",
+      "legal_receiving_entity": null,
+      "china_vat_invoice_issuer": null,
+      "invoice_surcharge_cny": null,
+      "payment_surcharge_cny": null,
+      "actual_all_required_invoiced_cny": null,
+      "merchant_terms_self_updated_on": "2026-02",
+      "merchant_terms_describe_platform_as_free_information_service": true,
+      "paid_card_sale_on_homepage": true,
+      "terms_paid_order_applicability_unverified": true,
+      "merchant_claim_apple_channel": true,
+      "apple_billing_reconciliation_verified": false,
+      "login_required_before_token": true,
+      "session_json_sensitive_submission_required": true,
+      "refund_merchant_claim_only": true,
+      "real_fulfillment_or_refund_verified": false,
+      "actual_wholesale_authorization_verified": false,
+      "wholesale_qualified": false
+    },
+    {
+      "merchant": "gpt-plus.ai",
+      "type": "merchant_self_disclosed_hk_entity_but_explicitly_excludes_mainland_customers",
+      "sku": "ChatGPT Plus 原号单月充值",
+      "sku_url": "https://gpt-plus.ai/",
+      "currency": "USD",
+      "period_months": 1,
+      "quantity": 1,
+      "homepage_displayed_standard_usd": 22.14,
+      "homepage_displayed_reference_cny_approx": 148,
+      "optional_enterprise_invoice_addition_usd": 2.1,
+      "conditional_display_sum_usd": 24.24,
+      "terms_quoted_max_order_usd": 24.24,
+      "actual_stripe_settlement_usd": null,
+      "actual_all_required_china_vat_invoice_cny": null,
+      "merchant_declared_legal_operator_name": "HONG KONG AIGC LIMITED",
+      "business_registration_third_party_verified": false,
+      "invoice_as_prc_vat_verified": false,
+      "merchant_explicitly_excludes_physically_mainland_china_customer_orders": true,
+      "eligible_mainland_supplier": false,
+      "no_openai_official_reseller_authorization": true,
+      "third_party_chatgpt_session_required": true,
+      "account_must_be_free": true,
+      "wholesale_authorization_verified": false,
+      "paid_delivery_verified": false,
+      "wholesale_qualified": false,
+      "terms_self_updated_on": "2026-10-11"
+    }
+  ],
+  "independent_phone_verification": {
+    "new_dedicated_sms_service_with_independently_confirmed_chatgpt_web_codex_api_successes": false,
+    "ordinary_plus_automatically_binds_openai_phone": false,
+    "independent_codex_sms_tests_this_round": 0,
+    "chatgpt_web_first_login_success_tests_this_round": 0,
+    "first_api_key_success_tests_this_round": 0,
+    "known_number_holding_term_days": null,
+    "otp_failure_refund_verified": null,
+    "contact_phone_in_merchant_order_not_equivalent_openai_sms": true
+  },
+  "unchanged_public_observations": [
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/plans",
+      "original_account_plus_sku_prices_cny": [
+        139,
+        139
+      ],
+      "change_since_r80": false,
+      "actual_all_required_invoice_cost_cny": null
+    },
+    {
+      "merchant": "V3",
+      "url": "https://shop.gpt.ge/",
+      "philippine_plus_cny_per_month": 133.5,
+      "ios_plus_cny_per_month": 143.5,
+      "change_since_r80": false,
+      "actual_all_required_invoice_cost_cny": null
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://plusgo.pro/terms",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_self_updated_merchant_terms",
+      "source_kind": "self_dated_merchant_policies_not_evidence_of_2026_11_06_actual_change",
+      "page_self_updated_on": "2026-11-06",
+      "facts": "2026-11-06自标条款：原号Plus需下单手机号和Session，官方首次登录/身份验证需用户自行解决；个人订单开通失败商称原路退；已开票未用预付余额原则不退（法律/约定例外），未开票未用可申请全退；预存不锁定未来售价。"
+    },
+    {
+      "url": "https://plusgo.pro/chatgpt-plus",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_own_account_sku",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "准确SKU本人原号1个月，一次性充值不自动续费，Session需先登录；页面动态人民币价格未渲染，挂牌价null。"
+    },
+    {
+      "url": "https://plusgo.pro/plans",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_catalog_dynamic_price_missing",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "Plus按月、价格数字未从正文取得；不能用别域plusgo.org/CodexPay的¥169冒充plusgo.pro真实价。"
+    },
+    {
+      "url": "https://plusgo.pro/",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_marketing_catalog",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "网站仅称价格以实时页面为准，首页实际数字缺失；自述1.9万订单不是独立交易实测。"
+    },
+    {
+      "url": "https://www.gptone.win/",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_retail_landing",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "本人账号Plus月卡¥158，付款后到qfcc99.com外部卡密商城，兑换须先登录并提交ChatGPT session JSON，商家称Apple渠道但无独立付款凭证。"
+    },
+    {
+      "url": "https://www.gptone.win/chatgpt-plus-price",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_merchant_price_page",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "¥158/月、原价¥199/月；售后/手续费含票金额和转售资格未验证。"
+    },
+    {
+      "url": "https://www.gptone.win/terms",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_old_self_dated_terms",
+      "source_kind": "merchant_self_declared_terms_not_verified_checkout",
+      "page_self_updated_on": "2026-02",
+      "facts": "页面自标2026年2月，仅称GPTone提供免费信息、付费另行告知，与首页直接销售卡密须分清，不能按首页营销保证已受条款保障。"
+    },
+    {
+      "url": "https://qfcc99.com/shop/I0TP6Z4K",
+      "observed_on": "2026-11-07",
+      "read_status": "no_readable_body",
+      "source_kind": "access_failure_not_commerce_confirmation",
+      "page_self_updated_on": null,
+      "facts": "外部实际商品/结算页返回零可读正文，成交价、支付费用、开票、主体均不能因此刷新或确定。"
+    },
+    {
+      "url": "https://gpt-plus.ai/",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_self_merchant_checkout_display",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "本人原号Plus显示约$22.14与人民币约148参考；可选企业开票+$2.10，条件相加$24.24，实际Stripe支付与中国税票全费null。"
+    },
+    {
+      "url": "https://gpt-plus.ai/terms",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_self_dated_merchant_terms",
+      "source_kind": "merchant_legal_and_geographic_claim_not_independent_registration_verification",
+      "page_self_updated_on": "2026-10-11",
+      "facts": "2026-10-11自标，宣称HONG KONG AIGC LIMITED运营（未经商事登记核验），**明确不接受实际位于中国大陆境内用户下单**，不获OpenAI授权，需已登录会话；服务费最高值和支付币种美元，付款渠道可能另收汇兑费。"
+    },
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_unchanged_catalog",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "本人原号Plus两渠道各¥139/份，仍无有效整单税票/上游授权或售后冲突闭合证据。"
+    },
+    {
+      "url": "https://shop.gpt.ge/",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_unchanged_catalog",
+      "source_kind": "merchant_page_claim_not_transaction",
+      "page_self_updated_on": null,
+      "facts": "V3本人原号菲律宾¥133.50/月，iOS¥143.50/月，均与上一报告一致。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_official_help",
+      "source_kind": "official_scope_not_independent_success_test",
+      "page_self_updated_on": null,
+      "facts": "一般ChatGPT账户不需手机验证；Codex桌面端可能要求，首次API密钥要验证，第三方Plus开通不自动绑号。"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-07",
+      "read_status": "unreadable",
+      "source_kind": "access_failure_not_price_refresh",
+      "page_self_updated_on": null,
+      "facts": null
+    },
+    {
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "unreadable",
+      "source_kind": "access_failure_not_price_refresh",
+      "page_self_updated_on": null,
+      "facts": null
+    }
+  ],
+  "cautions": [
+    "PlusGO self-dated 2026-11-06 does not prove a contract modification took effect that day; compares only current text.",
+    "PlusGO ordinary one-time order and optional enterprise prepay have different refund routes. Do not infer mandatory deposit or merchant wholesale status.",
+    "GPTone ¥158 is self-advertised retail one-month price; external qfcc99.com unreadable, payment and invoices unknown, and free-info terms are not paid fulfillment proof.",
+    "gpt-plus.ai self-disclosed HK operating company is not third-party business-registration proof; its terms explicitly bar mainland user orders; USD amount and approx RMB are not a verified CNY tax-included all-in cost.",
+    "Apple billing and Session credential handling may coexist; must not claim either automatically binds a phone.",
+    "No actual payment, third-party login credentials, invoice receipt, business registration test, successful SMS or merchant contact in this run."
+  ],
+  "historical_data_preserved": true
+}

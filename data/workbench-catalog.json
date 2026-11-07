@@ -2124,6 +2124,28 @@
       "summary": "11条直接可读/不可读URL逐项记录；¥129仅单月挂牌，实际含中国增值税票成本null、票种出票主体及授权未核，无法解决首次手机号验证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r81-20261107",
+      "title": "GPT源头第81轮 · 预付开票退款、¥158售卡与香港地理限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r5.html",
+      "updatedAt": "2026-11-07T03:17:17.380Z",
+      "summary": "PlusGO条款区分已开票预存余额与普通订单退款；GPTone本人Plus¥158/月但外部卡网不可读、付费条款待证；gpt-plus.ai美元开票且明示拒绝大陆地区下单。批发资格仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r81-20261107-evidence",
+      "title": "第81轮 · 上游合同、税票/地区和Session证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r5-evidence.json",
+      "updatedAt": "2026-11-07T03:17:17.380Z",
+      "summary": "15条原URL及直接/失败观察；PlusGO真实人民币价null、GPTone¥158仅挂牌、香港平台US$22.14+$2.10仅条件数值且地理拒单，发票主体与真实交付未证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
