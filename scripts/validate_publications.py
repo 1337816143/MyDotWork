@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 205, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 207, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.86'
-    assert latest['path'] == 'research/2026-11-07/supplier-followup-20261107-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-07/supplier-followup-20261107-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-07/supplier-followup-20261107-r9.html'
+    assert latest['version'] == '1.87'
+    assert latest['path'] == 'research/2026-11-07/supplier-followup-20261107-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-07/supplier-followup-20261107-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-07/supplier-followup-20261107-r10.html'
     assert by_id['gpt-source-followup-r72-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17.html'
     assert by_id['gpt-source-followup-r72-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17-evidence.json'
     r72 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r17-evidence.json').read_bytes())
@@ -921,6 +921,14 @@ def validate_publications():
     assert r83['material_discoveries'][1]['actual_stock_status_change_proven'] is False
     assert r83['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
 
+    assert by_id['gpt-source-followup-r87-20261107']['url'] == '../research/2026-11-07/supplier-followup-20261107-r11.html'
+    assert by_id['gpt-source-followup-r87-20261107-evidence']['url'] == '../research/2026-11-07/supplier-followup-20261107-r11-evidence.json'
+    r87 = json.loads((ROOT / 'dist/research/2026-11-07/supplier-followup-20261107-r11-evidence.json').read_bytes())
+    assert r87['round'] == 87 and r87['site_version'] == '1.9.95' and len(r87['sources']) == 13
+    assert r87['substantive_aftersales_clarification']['mass_incident_refund_unconditionally_guaranteed'] is False
+    assert r87['substantive_aftersales_clarification']['real_all_in_vat_invoice_total_cny'] is None
+    assert r87['independent_codex_verification']['unable_to_receive_sms_refund_cny'] is None
+    assert r87['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r86-20261107']['url'] == '../research/2026-11-07/supplier-followup-20261107-r10.html'
     assert by_id['gpt-source-followup-r86-20261107-evidence']['url'] == '../research/2026-11-07/supplier-followup-20261107-r10-evidence.json'
     r86 = json.loads((ROOT / 'dist/research/2026-11-07/supplier-followup-20261107-r10-evidence.json').read_bytes())
