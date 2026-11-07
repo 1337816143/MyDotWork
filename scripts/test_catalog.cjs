@@ -431,3 +431,20 @@ assert.equal(r79.material_phone_risk.first_person_giffgaff_termination_email_rep
 assert.equal(r79.material_phone_risk.phone_number_validity_guarantee_days,null);
 assert.equal(r79.material_phone_risk.carrier_community_19_days_case_full_page_read,false);
 assert.equal(r79.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r80cat=d.records.find(r=>r.id==='gpt-source-followup-r80-20261107');
+const r80data=d.records.find(r=>r.id==='gpt-source-followup-r80-20261107-evidence');
+assert(r80cat&&r80data&&r80cat.url.endsWith('supplier-followup-20261107-r4.html'));
+const r80=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r4-evidence.json'),'utf8'));
+assert.equal(r80.round,80);assert.equal(r80.site_version,'1.9.88');assert.equal(r80.sources.length,11);
+assert.equal(r80.new_candidate.public_list_price_cny_per_account_month,129);
+assert.equal(r80.new_candidate.conditional_returning_customer_discount_cny,5);
+assert.equal(r80.new_candidate.company_vat_invoice_issuer_name,null);
+assert.equal(r80.new_candidate.final_payable_all_in_china_vat_invoice_cny,null);
+assert.equal(r80.new_candidate.merchant_claimed_personal_operator,true);
+assert.equal(r80.new_candidate.merchant_claimed_personal_wechat_alipay_receiving_account,true);
+assert.equal(r80.new_candidate.invoice_can_be_requested_merchant_claim,true);
+assert.equal(r80.new_candidate.chatgpt_session_auth_information_required,true);
+assert.equal(r80.new_candidate.wholesale_qualified,false);
+assert.equal(r80.independent_phone_verification.ordinary_plus_purchase_automatically_binds_phone,false);
+assert.equal(r80.qualification_totals.verified_plus_wholesale_upstreams,0);
