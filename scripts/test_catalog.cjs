@@ -524,3 +524,14 @@ assert.equal(r85.new_candidates[1].tiers[3].commission_percent,25);
 assert.equal(r85.new_candidates[1].wholesale_unit_cost_cny,null);
 assert.equal(r85.phone_verification.independent_sms_service_verified,false);
 assert.equal(r85.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r88cat=d.records.find(r=>r.id==='gpt-source-followup-r88-20261107'),r88data=d.records.find(r=>r.id==='gpt-source-followup-r88-20261107-evidence');
+assert(r88cat&&r88data&&r88cat.url.endsWith('supplier-followup-20261107-r12.html'));
+const r88=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r12-evidence.json'),'utf8'));
+assert.equal(r88.round,88);assert.equal(r88.site_version,'1.9.96');assert.equal(r88.sources.length,8);
+assert.equal(r88.material_new_candidate.displayed_retail_skus[0].public_list_price_cny,128);
+assert.equal(r88.material_new_candidate.displayed_retail_skus[1].public_list_price_cny,148);
+assert.equal(r88.material_new_candidate.enterprise_supply.merchant_claim_minimum_account_count,5);
+assert.equal(r88.material_new_candidate.enterprise_supply.claimed_technical_service_fee_percent_for_enterprise_special_invoice,6);
+assert.equal(r88.material_new_candidate.enterprise_supply.one_item_real_vat_invoice_total_cny,null);
+assert.equal(r88.qualification_totals.verified_plus_wholesale_upstreams,0);
