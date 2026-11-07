@@ -1,0 +1,209 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 79,
+  "site_version": "1.9.87",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "criteria": {
+    "own_existing_account": true,
+    "single_quantity": 1,
+    "single_month": true,
+    "no_nonrefundable_agent_entrance_fee": true,
+    "plus_all_required_invoiced_cost_ceiling_cny": 170
+  },
+  "material_phone_risk": {
+    "operator": "giffgaff UK +44",
+    "independent_service_not_plus_wholesale": true,
+    "historical_event_from": "2026-07-27",
+    "historical_event_to": "2026-07-28",
+    "discovery_observed_on": "2026-11-07",
+    "prior_repo_coverage": "2026-11-04 r20/r21 recorded six-month inactivity and roaming/activation; historical 2026-07 long-term overseas-use terminations not previously recorded",
+    "direct_operator_terms_effective_date": "2025-10-09",
+    "operator_terms_newly_changed_on_observation_date": false,
+    "source_types": [
+      "operator_current_terms",
+      "third_party_contemporaneous_news",
+      "user_first_person_continuous_account",
+      "not_readable_operator_community_indexed_case"
+    ],
+    "possible_overseas_use_termination_independently_of_inactivity": true,
+    "operator_official_batch_size_confirmation_read": false,
+    "official_service_guarantee_long_term_china_use": false,
+    "threshold_for_termination_days": null,
+    "refunded_balance_actual_case_verified": null,
+    "operator_current_general_terms_credit_refund": "Section 5.3: no obligation to refund applied account credit absent legal or regulatory entitlement",
+    "first_person_codex_otp_success_date_reported": "2026-05-14",
+    "first_person_giffgaff_termination_email_reported": "2026-07-28",
+    "first_person_2026_may_card_purchase_cny": 45,
+    "first_person_2026_may_initial_topup_gbp": 10,
+    "these_are_current_prices": false,
+    "carrier_community_19_days_case_full_page_read": false,
+    "can_generalize_19_days_threshold": false,
+    "phone_number_validity_guarantee_days": null,
+    "phone_reuse_guaranteed": false,
+    "receipt_of_future_openaI_otp_guaranteed": false,
+    "chatgpt_web_verified_by_this_research": false,
+    "codex_verified_by_this_research": false,
+    "first_api_key_verified_by_this_research": false,
+    "autobinds_phone_from_plus_purchase": false,
+    "verified_carrier_activation_cost_cny": null,
+    "verified_china_roaming_full_cost_cny": null,
+    "recommended_classification": "unreliable_as_guaranteed_long_term_China_resident_SMS_number",
+    "independent_sms_successes_by_research": 0
+  },
+  "unchanged_direct_read_vendor_snapshot": [
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/plans",
+      "skus": [
+        "原号Plus到期渠道",
+        "原号Plus iOS可在期渠道"
+      ],
+      "displayed_cny_per_piece": [
+        139,
+        139
+      ],
+      "codex_25_day_sms_cny_per_service": 20,
+      "material_price_change": false,
+      "complete_paid_invoice_cost_cny": null
+    },
+    {
+      "merchant": "V3",
+      "url": "https://shop.gpt.ge/",
+      "skus": [
+        "原号菲律宾Plus",
+        "原号iOS Plus"
+      ],
+      "displayed_cny_per_month": [
+        133.5,
+        143.5
+      ],
+      "material_price_change": false,
+      "complete_paid_invoice_cost_cny": null
+    },
+    {
+      "merchant": "UpPlusPro",
+      "url": "https://uppluspro.com/",
+      "sku": "本人原号Plus",
+      "displayed_cny_per_month": 143,
+      "material_price_change": false,
+      "complete_paid_invoice_cost_cny": null
+    },
+    {
+      "merchant": "Ai极速补给站",
+      "url": "https://get-codex.cc/pricing/uk-sms-verification",
+      "sku": "英国Lebara单次转发验证码",
+      "conflicting_display_cny_per_service": 27.99,
+      "conflicting_text_cny_per_attempt": 5,
+      "actual_checkout_cny": null,
+      "material_price_change": false
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.giffgaff.com/terms",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_operator_terms",
+      "source_status": "operator_rules_not_individual_case_proof",
+      "page_self_effective_date": "2025-10-09",
+      "facts": "General Fair Usage Policy violation termination and credit refund s5.3 with statutory/legal exceptions."
+    },
+    {
+      "url": "https://www.landian.news/archives/114097.html",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_news_article",
+      "source_status": "dated_reporting_of_july_2026_not_operator_incidence_data",
+      "published_on": "2026-07-27",
+      "facts": "Reported long-term overseas-use cancellation notices on/around 2026-07-27."
+    },
+    {
+      "url": "https://www.v2ex.com/t/1211463",
+      "observed_on": "2026-11-07",
+      "read_status": "direct_first_person_forum_post",
+      "source_status": "user_claim_not_our_own_transaction_test",
+      "dates": [
+        "2026-05-14",
+        "2026-07-27",
+        "2026-07-28"
+      ],
+      "facts": "One writer claimed Codex OTP worked in May and receipt of termination email in July."
+    },
+    {
+      "url": "https://community.giffgaff.com/d/34622387-account-terminated-after-19-days-unused-credit-retained-complaints-ignored",
+      "observed_on": "2026-11-07",
+      "read_status": "JS_anti_robot_original_not_readable",
+      "source_status": "unread_full_original_do_not_confirm_specific_case",
+      "facts": null
+    },
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-07",
+      "read_status": "merchant_catalog_direct",
+      "source_status": "merchant_price_claim_not_paid_order",
+      "facts": "Original Plus ¥139×2; Codex 25-day SMS ¥20; unchanged."
+    },
+    {
+      "url": "https://shop.gpt.ge/",
+      "observed_on": "2026-11-07",
+      "read_status": "merchant_catalog_direct",
+      "source_status": "merchant_price_claim_not_paid_order",
+      "facts": "Original Plus Philippines ¥133.50/month, iOS ¥143.50/month; unchanged."
+    },
+    {
+      "url": "https://uppluspro.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "merchant_catalog_direct",
+      "source_status": "merchant_price_claim_not_paid_order",
+      "facts": "Original Plus ¥143/month; unchanged."
+    },
+    {
+      "url": "https://get-codex.cc/pricing/uk-sms-verification",
+      "observed_on": "2026-11-07",
+      "read_status": "merchant_sms_listing_direct",
+      "source_status": "merchant_price_conflict_unresolved",
+      "facts": "¥27.99 listing versus ¥5/attempt text; true settlement null."
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-07",
+      "read_status": "not_readable",
+      "source_status": "access_failure_no_price_refresh",
+      "facts": null
+    },
+    {
+      "url": "https://catfk.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "not_readable",
+      "source_status": "access_failure_no_price_refresh",
+      "facts": null
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-07",
+      "read_status": "not_readable",
+      "source_status": "access_failure_no_price_refresh",
+      "facts": null
+    },
+    {
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "not_readable",
+      "source_status": "access_failure_no_price_refresh",
+      "facts": null
+    }
+  ],
+  "historical_data_preserved": true,
+  "cautions": [
+    "July 27–28 reports are historic events newly read on 2026-11-07, not a new rule issued today.",
+    "Operator terms effective Oct 2025; no verified affected population, individual refund or enforcement threshold.",
+    "Individual successful OTP claim is not an independent SMS test performed by this project.",
+    "Community individual complaint original unavailable; do not claim its specifics verified.",
+    "No purchase, credentials submission, messaging, invoice, real authorization or SMS test. Unknown costs remain null."
+  ]
+}

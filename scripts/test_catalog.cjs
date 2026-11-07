@@ -419,3 +419,15 @@ assert(r78.material_policy_scope_discovery.original_account_skus.every(s=>s.warr
 assert.equal(r78.material_policy_scope_discovery.merchant_site_public_claims_conflict,true);
 assert.equal(r78.material_policy_scope_discovery.warranty_entitlement_of_specific_paid_order_verified,null);
 assert.equal(r78.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r79cat=d.records.find(r=>r.id==='gpt-source-followup-r79-20261107');
+const r79data=d.records.find(r=>r.id==='gpt-source-followup-r79-20261107-evidence');
+assert(r79cat&&r79data&&r79cat.url.endsWith('supplier-followup-20261107-r3.html'));
+const r79=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r3-evidence.json'),'utf8'));
+assert.equal(r79.round,79);assert.equal(r79.site_version,'1.9.87');assert.equal(r79.sources.length,12);
+assert.equal(r79.material_phone_risk.historical_event_from,'2026-07-27');
+assert.equal(r79.material_phone_risk.operator_terms_newly_changed_on_observation_date,false);
+assert.equal(r79.material_phone_risk.first_person_giffgaff_termination_email_reported,'2026-07-28');
+assert.equal(r79.material_phone_risk.phone_number_validity_guarantee_days,null);
+assert.equal(r79.material_phone_risk.carrier_community_19_days_case_full_page_read,false);
+assert.equal(r79.qualification_totals.verified_plus_wholesale_upstreams,0);

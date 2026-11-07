@@ -2080,6 +2080,28 @@
       "summary": "4条当轮实读原网址，区分2026-11条款自标、¥139旧快照、原号无保标记与平台原因退款例外；真实订单售后/中国税票/短信成功仍未验。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r79-20261107",
+      "title": "GPT源头第79轮 · giffgaff境外长期用卡停号风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r3.html",
+      "updatedAt": "2026-11-07T00:27:54Z",
+      "summary": "新补录2026年7月英国giffgaff长期境外使用停号风险；半年保活≠保证长期持号，个别Codex验证码曾成功不等于长期有效；批发源仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r79-20261107-evidence",
+      "title": "giffgaff运营商条款、7月停号报道与短信亲历 · r79证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r3-evidence.json",
+      "updatedAt": "2026-11-07T00:27:54Z",
+      "summary": "12条原始URL含不可读状态，明确2026年7月事件和11月7日观察时间；退款、号码期限、含票成本null，本项目实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
