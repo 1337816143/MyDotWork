@@ -476,3 +476,16 @@ assert.equal(r83.material_discoveries[0].same_original_account_preserved_after_f
 assert.equal(r83.material_discoveries[1].current_stock_label,'暂时缺货');
 assert.equal(r83.material_discoveries[1].actual_stock_status_change_proven,false);
 assert.equal(r83.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r84cat=d.records.find(r=>r.id==='gpt-source-followup-r84-20261107');
+const r84data=d.records.find(r=>r.id==='gpt-source-followup-r84-20261107-evidence');
+assert(r84cat&&r84data&&r84cat.url.endsWith('supplier-followup-20261107-r8.html'));
+const r84=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r8-evidence.json'),'utf8'));
+assert.equal(r84.round,84);assert.equal(r84.site_version,'1.9.92');assert.equal(r84.sources.length,5);
+assert.equal(r84.new_candidates[0].options[0].price_cny,119);assert.equal(r84.new_candidates[0].options[2].price_cny,130);
+assert.equal(r84.new_candidates[0].checkout_warns_preorder_ship_after_restock,true);
+assert.equal(r84.new_candidates[0].actual_all_in_china_vat_invoice_cny,null);
+assert.equal(r84.new_candidates[1].requires_logged_in_session_json,true);
+assert.equal(r84.new_candidates[1].actual_all_in_china_vat_invoice_cny,null);
+assert.equal(r84.phone_verification.plus6_price_cny,null);
+assert.equal(r84.qualification_totals.verified_plus_wholesale_upstreams,0);
