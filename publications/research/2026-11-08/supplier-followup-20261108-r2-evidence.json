@@ -1,0 +1,172 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 90,
+  "site_version": "1.9.98",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "scope": "本轮新查GPT Pay用户自备支付卡API的真实公开接口契约：必须充值积分与提交完整Session、本人授权支付卡及卡片安全码；它不是上游供给订阅成本的批发API，示例plus 50积分非人民币进货价。复读既有原号Plus和手机号规则，无新实质调价。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "newly_documented_public_api": {
+    "merchant": "GPT Pay",
+    "url": "https://gptpay.cmsnav.com/docs",
+    "self_description": "用户自备卡API / Customer Card API v2.2",
+    "actual_api_production_operational_verified": false,
+    "includes_plus_product_code": true,
+    "includes_pro5x_pro20x_pro50x_and_team_product_codes": true,
+    "subscription_months_for_plus_verified": null,
+    "requires_existing_chatgpt_session": true,
+    "session_required_fields": [
+      "user.email",
+      "account.id",
+      "accessToken"
+    ],
+    "customer_supplies_payment_card": true,
+    "card_data_sent_to_merchant_api": [
+      "cardNumber",
+      "expMonth",
+      "expYear",
+      "cvv"
+    ],
+    "merchant_claim_no_persistent_card_details": true,
+    "independently_audited_data_retention": false,
+    "requires_merchant_api_key": true,
+    "requires_preloaded_service_credits": true,
+    "credit_source": "一次性积分卡密兑换或管理员充值",
+    "public_example_plus_price_credits": 50,
+    "example_credit_value_is_not_live_price": true,
+    "real_live_plus_price_credits": null,
+    "one_credit_value_cny": null,
+    "actual_cny_service_fee": null,
+    "actual_payment_card_charge_cny": null,
+    "actual_payment_channel_fee_cny": null,
+    "actual_exchange_fee_cny": null,
+    "vat_invoice_charge_cny": null,
+    "real_all_in_china_vat_invoice_total_cny": null,
+    "payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "legal_reseller_authorization": null,
+    "wholesale_purchase_discount_cny": null,
+    "accepts_single_item_plus_api_claim": true,
+    "third_party_supplies_billing_card": false,
+    "can_solve_first_chatgpt_login_verification": false,
+    "merchant_claim_idempotency_key": true,
+    "merchant_claim_payment_security_verification_stops_auto_retry": true,
+    "merchant_claim_payment_failure_releases_held_credits": true,
+    "independently_verified_paid_order": false,
+    "independently_verified_payment_refund": false,
+    "independently_verified_vat_invoice": false,
+    "eligible_verified_plus_upstream": false,
+    "risk": "客户需向第三方提交当前OpenAI Session和完整银行卡敏感资料；仅是客户自备卡的付费技术服务，不构成无卡成本的上游进货；登录/持卡要求与单件全费未知。"
+  },
+  "phone_verification": {
+    "independent_sms_service_newly_verified": false,
+    "chatgpt_web_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_api_key_success_tested": false,
+    "ordinary_plus_auto_binds_phone": false,
+    "apple_inapp_may_coexist_with_session_delivery": true
+  },
+  "existing_vendor_rechecks": [
+    {
+      "merchant": "V3小店",
+      "url": "https://shop.gpt.ge/buy/22",
+      "sku": "本人原号Plus iOS 1个月",
+      "historical_price_cny": 143.5,
+      "current_read_public_price_cny": 143.5,
+      "material_price_change": false,
+      "stock_label_current": "即将售罄",
+      "actual_stock_verified": false,
+      "all_in_vat_invoice_cost_cny": null
+    },
+    {
+      "merchant": "GETGPT Pro",
+      "url": "https://getgpt.pro/price",
+      "sku": "本人原号Plus 1个月",
+      "historical_price_cny": 179,
+      "current_read_public_price_cny": 179,
+      "material_price_change": false,
+      "all_in_vat_invoice_cost_cny": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://gptpay.cmsnav.com/docs",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_live_http200",
+      "evidence_class": "merchant_primary_api_documentation",
+      "fact": "原页明确‘用户自备卡’、须先充值账户积分且提交完整Session、本人支付卡卡号/年月/CVV；plus在productCode列；示例plus 50只是积分示例，非人民币价或真实订单；API Key鉴权及订单轮询。"
+    },
+    {
+      "url": "https://gptpay.cmsnav.com/",
+      "observed_on": "2026-11-08",
+      "read_status": "live_http200_login_only",
+      "evidence_class": "merchant_public_homepage",
+      "fact": "公开登录/注册入口，未见匿名公开的积分人民币购买价、法定收款/出票主体、单件含票结算或真实转售合同。"
+    },
+    {
+      "url": "https://gptpay.cmsnav.com/api/catalog",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_fetch_failed",
+      "evidence_class": "failed_access_no_price_refresh",
+      "fact": "文档称接口免鉴权，但本轮访问未获可解析内容，不把文档示例50积分或两国目录当作实际返回。"
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_sku_live_http200",
+      "evidence_class": "existing_vendor_price_recheck",
+      "fact": "V3本人原号iOS Plus一月价格¥143.50，与第83轮一致，当前商品卡库存提示即将售罄，但不证明可成交库存与实际履约。"
+    },
+    {
+      "url": "https://getgpt.pro/price",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_price_page_direct_read",
+      "evidence_class": "existing_vendor_unchanged",
+      "fact": "GETGPT Pro本人原号Plus仍¥179/月，第52轮已记录单件不含中国增值税发票，未见可证明新调价。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-08",
+      "read_status": "official_help_direct_read",
+      "evidence_class": "official_verification_scope_unchanged",
+      "fact": "现行官方仍区分普通ChatGPT网页、Codex桌面与首个API Key；购买Plus或向第三方交Session不是自动绑定手机号。"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-08",
+      "read_status": "failed_no_readable_current_sku",
+      "evidence_class": "failed_access_old_price_preserved",
+      "fact": "本轮未取得可靠实时商品正文，不刷新历史¥113记录或判断下架。"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-08",
+      "read_status": "failed_no_readable_live_full_text",
+      "evidence_class": "failed_access_old_policy_preserved",
+      "fact": "本轮未读到可核新开票条款，沿用第86轮历史法定出票及含票全费缺口。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "prior_round_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "本轮新增一份可直接阅读的商家技术接口文档，不是新已核正式批发供货商；新增来源不代表商家2026-11-08开始提供此服务。",
+    "API示例中的Plus 50仅为creditPrices示例，不是人民币单价、卡内货款或一单可执行支付成本；接口/登录/收费/票据尚未真实测试。",
+    "完整ChatGPT Session与支付卡安全码同时交第三方是敏感信息风险，官方并未认可其为OpenAI授权商。",
+    "单件报价、前置积分购买规则、法定收款和出票主体、真实中国增值税发票、正式转售权、无前置代理费及最终含全部支付费用的人民币价格均未知null。",
+    "没有真实付款、卡片提交、商家联系、账号Session提交、验证码接收、退款或发票验真。"
+  ]
+}
