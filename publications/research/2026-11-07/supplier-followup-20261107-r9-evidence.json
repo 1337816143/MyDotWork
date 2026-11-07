@@ -1,0 +1,183 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 85,
+  "site_version": "1.9.93",
+  "date": "2026-11-07",
+  "observed_at_utc": "2026-11-07T12:42:16Z",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_ceiling_cny_including_all_mandatory_payment_and_china_vat_invoice": 170
+  },
+  "new_candidates": [
+    {
+      "merchant": "GPT Store",
+      "merchant_home": "https://gptstore.lol/",
+      "product_url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "sku": "GPT PLUS 充值卡密（iOS 美区质保）",
+      "listed_price": 16,
+      "currency": "USD",
+      "unit": "1张卡密，兑换步骤需符合美区iOS环境",
+      "explicit_30_day_subscription_term_verified": false,
+      "subscription_months": null,
+      "agent_label": "至尊代理拿货价",
+      "agent_label_price_usd": 16,
+      "displayed_retail_price_usd": 16,
+      "actual_agent_discount_usd_from_displayed_retail": 0,
+      "agent_entry_fee_usd": null,
+      "agent_tier_eligibility_verified": false,
+      "payment_method": "Stripe银行卡美元结算（商家声明）",
+      "stripe_actual_payment_usd": null,
+      "currency_conversion_fee_cny": null,
+      "official_subscription_extra_taxes_or_fees_included": false,
+      "china_vat_invoice_fee_cny": null,
+      "china_vat_invoice_issuer_verified": false,
+      "actual_all_in_china_vat_invoice_cny": null,
+      "merchant_claims_order_stock_units": 110,
+      "merchant_claims_sales_count": 1104830,
+      "independent_inventory_and_sales_verification": false,
+      "merchant_says_batch_business_prepayment_and_receipt": true,
+      "china_vat_invoice_explicitly_proven": false,
+      "same_original_chatgpt_account_renewal_tested": false,
+      "merchant_disclaims_openai_authorization": true,
+      "wholesale_purchase_authorization_verified": false,
+      "real_paid_or_fulfilled": false,
+      "verified_wholesale": false
+    },
+    {
+      "merchant": "词元连接 / token5555",
+      "home_url": "https://token5555.com/",
+      "partner_url": "https://token5555.com/partner-register.html",
+      "sku": "Plus（官方20刀）",
+      "unit": "当前网页预置订单组件的一件（未生成真实订单）",
+      "subscription_months": null,
+      "quantity": 1,
+      "currency": "CNY",
+      "displayed_order_subtotal_cny": 148,
+      "displayed_third_party_payment_fee_percent": 1.2,
+      "displayed_third_party_payment_fee_cny": 1.78,
+      "displayed_preorder_total_cny": 149.78,
+      "real_checkout_page_with_generated_order_verified": false,
+      "actual_paid_total_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "china_vat_invoice_issuer_verified": false,
+      "actual_all_in_china_vat_invoice_cny": null,
+      "agent_program_type": "一级引荐推广佣金，非批发供货价",
+      "free_partner_registration_claim": true,
+      "tiers": [
+        {
+          "cumulative_sales_cny": 0,
+          "commission_percent": 10
+        },
+        {
+          "cumulative_sales_cny": 1000,
+          "commission_percent": 15
+        },
+        {
+          "cumulative_sales_cny": 5000,
+          "commission_percent": 20
+        },
+        {
+          "cumulative_sales_cny": 10000,
+          "commission_percent": 25
+        }
+      ],
+      "self_purchase_commission_eligible": false,
+      "wholesale_unit_cost_cny": null,
+      "wholesale_supplier_authorization_verified": false,
+      "no_upfront_fee_for_actual_resale_supply_verified": false,
+      "same_original_account_renewal_tested": false,
+      "session_or_token_requirement_verified": null,
+      "phone_verification_included": false,
+      "real_paid_or_fulfilled": false,
+      "verified_wholesale": false
+    }
+  ],
+  "phone_verification": {
+    "chatgpt_web_real_test": false,
+    "codex_desktop_real_test": false,
+    "initial_api_key_real_test": false,
+    "independent_phone_number_sku_identified": false,
+    "independent_sms_service_verified": false,
+    "phone_number_lifetime_days": null,
+    "no_code_refund_conditions": null,
+    "apple_payment_auto_phone_verification": false,
+    "session_is_sensitive_credential": true,
+    "official_policy_rechecked": true,
+    "official_policy_changed_this_round": false
+  },
+  "sources": [
+    {
+      "url": "https://gptstore.lol/",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct web merchant HTML open",
+      "class": "merchant_page_claim_not_transaction",
+      "fact": "Plus iOS美区卡密前台$16/张与至尊代理拿货价$16相同；库存110/已售1104830为自述非实测；Stripe美元付款；企业批量与收款凭证自述"
+    },
+    {
+      "url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct web merchant product HTML open",
+      "class": "exact_product_display_not_checkout",
+      "fact": "准确SKU GPT PLUS充值卡密(iOS美区质保)，公开价USD16；明确数字商品成功交付原则不支持无理由退款；页面未提供单月交付与出具中国增值税票的证明"
+    },
+    {
+      "url": "https://gptstore.lol/price/chatgpt-plus",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct merchant Plus price detail",
+      "class": "merchant_product_caveat",
+      "fact": "商称USD16仅一次卡密与说明，不含官方订阅额外税及第三方费用；美区iOS兑换环境前置；兑换后订阅到期及单月资格没有实测"
+    },
+    {
+      "url": "https://gptstore.lol/terms",
+      "observed_on": "2026-11-07",
+      "source_self_effective_date": "2026-08-15",
+      "read_status": "readable",
+      "method": "direct merchant legal terms",
+      "class": "merchant_terms_not_legal_entity_verification",
+      "fact": "自认独立第三方非OpenAI授权代理；Stripe实际扣款依收银台；付款未交付或充值失败商称可申请退款；成功交付后一般不退"
+    },
+    {
+      "url": "https://token5555.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct web merchant order-template HTML open",
+      "class": "merchant_display_preorder_not_live_paid_order",
+      "fact": "Plus(官方20刀)静态可读组件小计¥148、手续费1.2%=¥1.78、展示合计¥149.78；无实际生成订单，不能当实付；未见中国增值税票费用与主体"
+    },
+    {
+      "url": "https://token5555.com/partner-register.html",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct merchant partner rules",
+      "class": "merchant_affiliate_terms_not_wholesale",
+      "fact": "商称免费注册一级推广，累计销售¥0/1000/5000/10000对应10/15/20/25%佣金，自购单不计佣金；不能换算成单件批发拿货价或供应授权"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct OpenAI Help Center",
+      "class": "official_phone_verification_rules_recheck_not_new",
+      "fact": "通常ChatGPT无需手机号；Codex桌面端可能需要；首次API Key强制手机号。须支持的移动号码SMS或限定国家WhatsApp；内购与Session不是验证服务"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "notes": [
+    "本轮新增是首次直接读取的零售/推广与代理标价证据；尚非已证批发源。GPT Store所谓至尊代理价与同页零售价相同，不能声称存在采购折扣。",
+    "GPT Store USD16准确单位为单张卡密，不能以账户Plus一个完整月的含税含票成本比较；没有实际Stripe支付或汇率手续费实测。",
+    "token5555可读¥149.78是页面默认预付款展示，不是创建订单后的真实应付或税票全费；¥1000/5000/10000为推广累计销量阈值非必须预付的代理入场费。",
+    "未知付款/汇兑/中国增值税开票及真实收款、出票主体保持null，所有零售平台不因宣传代理/分销自动认定批发上游。",
+    "旧126报价与第1至84轮报告保持原字节不变；未付款、未联系、未交Session/Token/账号秘密、未做SMS验证。"
+  ]
+}

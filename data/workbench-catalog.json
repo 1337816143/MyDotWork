@@ -2212,6 +2212,28 @@
       "summary": "5个原URL含Plus6收银台超时；实付、中国税票、供货授权、SMS成功均无证据；Steadflow含票服务商称¥180超170。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r85-20261107",
+      "title": "GPT源头第85轮 · 代理价与零售同价、推广佣金≠批发",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r9.html",
+      "updatedAt": "2026-11-07T12:42:16Z",
+      "summary": "新读GPT Store Plus iOS卡密US$16/张，所谓至尊代理价与零售价相同、其他税费未含；词元连接Plus预置界面¥148+1.2%手续费=¥149.78，免费推广10%-25%不等于批发授权。中国增值税票与履约未验，批发合格0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r85-20261107-evidence",
+      "title": "第85轮 · 7条原始URL、代理价格、手续费、推广门槛证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r9-evidence.json",
+      "updatedAt": "2026-11-07T12:42:16Z",
+      "summary": "区分US$16卡密与完整单月订阅、公开代理价同零售、静态预置结算与真实订单；累计销售额佣金门槛非前置费，全部真实税票/授权/验证为0或null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

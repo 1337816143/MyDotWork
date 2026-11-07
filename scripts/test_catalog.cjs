@@ -489,3 +489,18 @@ assert.equal(r84.new_candidates[1].requires_logged_in_session_json,true);
 assert.equal(r84.new_candidates[1].actual_all_in_china_vat_invoice_cny,null);
 assert.equal(r84.phone_verification.plus6_price_cny,null);
 assert.equal(r84.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r85cat=d.records.find(r=>r.id==='gpt-source-followup-r85-20261107');
+const r85data=d.records.find(r=>r.id==='gpt-source-followup-r85-20261107-evidence');
+assert(r85cat&&r85data&&r85cat.url.endsWith('supplier-followup-20261107-r9.html'));
+const r85=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-07/supplier-followup-20261107-r9-evidence.json'),'utf8'));
+assert.equal(r85.round,85);assert.equal(r85.site_version,'1.9.93');assert.equal(r85.sources.length,7);
+assert.equal(r85.new_candidates[0].listed_price,16);assert.equal(r85.new_candidates[0].currency,'USD');
+assert.equal(r85.new_candidates[0].actual_agent_discount_usd_from_displayed_retail,0);
+assert.equal(r85.new_candidates[0].subscription_months,null);
+assert.equal(r85.new_candidates[0].actual_all_in_china_vat_invoice_cny,null);
+assert.equal(r85.new_candidates[1].displayed_preorder_total_cny,149.78);
+assert.equal(r85.new_candidates[1].tiers[3].commission_percent,25);
+assert.equal(r85.new_candidates[1].wholesale_unit_cost_cny,null);
+assert.equal(r85.phone_verification.independent_sms_service_verified,false);
+assert.equal(r85.qualification_totals.verified_plus_wholesale_upstreams,0);
