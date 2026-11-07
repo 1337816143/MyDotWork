@@ -4,51 +4,13 @@
   "site_version": "1.9.97",
   "date": "2026-11-08",
   "observed_on": "2026-11-08",
-  "scope": "本轮新增零售Plus含普票分项UpPlusPro及独立接码Shanma的单次价格/换号与退款边界，核清Session与同号覆盖风险；GETGPT Pro和OpenAI机制作为旧事实复核。未经交易，不证明真正批发上游。",
+  "scope": "新增Shanma独立OpenAI/Codex接码SKU与支付不退款、换号和号码时限证据；UpPlusPro原号Plus¥143+¥10普通票历史第76轮已记录，本轮只作相同公开条款复核，不重新登记为新价。",
   "criteria": {
     "own_original_account": true,
     "quantity": 1,
     "months": 1,
     "no_upfront_agent_fee": true,
     "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
-  },
-  "new_retail_candidate": {
-    "merchant": "UpPlusPro",
-    "source_domain": "uppluspro.com",
-    "is_verified_wholesale_upstream": false,
-    "authorized_by_openai_proven": false,
-    "price_cny": 143,
-    "period": "1个月",
-    "quantity": 1,
-    "sku": "ChatGPT Plus 月卡·本人原号",
-    "china_vat_electronic_ordinary_invoice_claim": true,
-    "invoice_item": "技术服务费",
-    "invoice_addon_cny": 10,
-    "public_component_sum_cny": 153,
-    "actual_paid_price_cny": null,
-    "other_mandatory_payment_fee_cny": null,
-    "real_all_in_china_vat_invoice_total_cny": null,
-    "business_registered_full_name": null,
-    "payee_legal_entity": null,
-    "invoice_issuer_legal_entity": null,
-    "payment_processor_merchant_label": "KyrenPay",
-    "payment_processor_is_proof_of_invoice_or_seller_identity": false,
-    "reseller_discount_cny": null,
-    "reseller_authorization_verified": false,
-    "minimum_bulk_order_quoted": null,
-    "authentic_china_vat_invoice_verified": false,
-    "same_account_plus_renewal_claim": "覆盖有效Plus，但原剩余天数不叠加",
-    "existing_member_days_auto_stack": false,
-    "first_web_login_session_required": true,
-    "session_json_submitted_to_third_party_site_required": true,
-    "merchant_claim_no_password_needed": true,
-    "session_is_sensitive_credential": true,
-    "warrantied_days_merchant_claim": 30,
-    "merchant_claim_failure_full_refund": true,
-    "merchant_claim_dropped_subscription_prorata_refund_or_topup": true,
-    "actual_paid_order_tested": false,
-    "refund_tested": false,
-    "invoice_tested": false
   },
   "independent_phone_verification": {
     "merchant": "Codex SMS / 闪马接码",
@@ -93,7 +55,7 @@
       "read_status": "商家首页可读",
       "evidence_class": "merchant_retail_price_and_checkout",
       "fact": "本人原号Plus月卡挂牌¥143/账号·月；勾选国内公司发票Plus另+¥10，展示小计¥153；付款先在KyrenPay扫码，成功后提交已登录Session JSON，商家称无需密码但需敏感登录凭据。",
-      "classification": "new_retail_candidate_not_verified_wholesale"
+      "classification": "historical_r76_uppluspro_recheck_no_material_change"
     },
     {
       "url": "https://uppluspro.com/recharge",
@@ -101,7 +63,7 @@
       "read_status": "商家充值项目与FAQ可读",
       "evidence_class": "merchant_product_invoice_and_renewal",
       "fact": "Plus ¥143/月；增值税电子普通发票项目技术服务费，单件+¥10，先勾选开票，未选不能补开；商称通常5工作日。已有Plus可以覆盖但原剩余天数不叠加；零售无法推导批发折扣。",
-      "classification": "new_price_components_and_same_account_overlap_risk"
+      "classification": "historical_r76_uppluspro_recheck_no_material_change"
     },
     {
       "url": "https://uppluspro.com/warranty",
@@ -109,7 +71,7 @@
       "read_status": "商家售后规则可读",
       "evidence_class": "merchant_aftersales",
       "fact": "未交付商称全退、交付后30天掉订阅按剩余天数退款或补差价续订；违规封号不退；原会员覆盖剩余天数不叠加；中国普票Plus+¥10，专票/企业采购须另询。",
-      "classification": "merchant_claim_no_real_refund_test"
+      "classification": "historical_r76_uppluspro_recheck_no_material_change"
     },
     {
       "url": "https://shanma.store/",
@@ -171,6 +133,49 @@
     "批量采购可议价、展示微信/支付宝收银台及商称国内发票不证明具有上游批发授权。",
     "商家首页“不需密码”与商家要求提交完整Session JSON并不矛盾：Session仍是敏感登录凭据，未提交。",
     "Shanma ¥9.99/个与30次免费换号和未出码不核销均为商家口径，不能视作真实收码成功、成功绑定或OpenAI承认号码类型。",
-    "本站未付款、未联系商家、未访问登录态订单/兑换页、未提供账号信息、未测试收码或退款。"
-  ]
+    "本站未付款、未联系商家、未访问登录态订单/兑换页、未提供账号信息、未测试收码或退款。",
+    "UpPlusPro¥143/月+电子普票¥10及Session、覆盖不叠加、售后条款已在第76轮2026-11-06报告收录；此处严格只记本轮网页复核，绝不作为新增供货候选或降价证据。"
+  ],
+  "existing_retail_candidate_recheck": {
+    "merchant": "UpPlusPro",
+    "source_domain": "uppluspro.com",
+    "is_verified_wholesale_upstream": false,
+    "authorized_by_openai_proven": false,
+    "price_cny": 143,
+    "period": "1个月",
+    "quantity": 1,
+    "sku": "ChatGPT Plus 月卡·本人原号",
+    "china_vat_electronic_ordinary_invoice_claim": true,
+    "invoice_item": "技术服务费",
+    "invoice_addon_cny": 10,
+    "public_component_sum_cny": 153,
+    "actual_paid_price_cny": null,
+    "other_mandatory_payment_fee_cny": null,
+    "real_all_in_china_vat_invoice_total_cny": null,
+    "business_registered_full_name": null,
+    "payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "payment_processor_merchant_label": "KyrenPay",
+    "payment_processor_is_proof_of_invoice_or_seller_identity": false,
+    "reseller_discount_cny": null,
+    "reseller_authorization_verified": false,
+    "minimum_bulk_order_quoted": null,
+    "authentic_china_vat_invoice_verified": false,
+    "same_account_plus_renewal_claim": "覆盖有效Plus，但原剩余天数不叠加",
+    "existing_member_days_auto_stack": false,
+    "first_web_login_session_required": true,
+    "session_json_submitted_to_third_party_site_required": true,
+    "merchant_claim_no_password_needed": true,
+    "session_is_sensitive_credential": true,
+    "warrantied_days_merchant_claim": 30,
+    "merchant_claim_failure_full_refund": true,
+    "merchant_claim_dropped_subscription_prorata_refund_or_topup": true,
+    "actual_paid_order_tested": false,
+    "refund_tested": false,
+    "invoice_tested": false,
+    "previously_documented_in_round": 76,
+    "previous_observed_on": "2026-11-06",
+    "newly_added_or_newly_repriced": false,
+    "material_condition_change_found": false
+  }
 }

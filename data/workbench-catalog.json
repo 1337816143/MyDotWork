@@ -2303,23 +2303,23 @@
     },
     {
       "id": "gpt-source-followup-r89-20261108",
-      "title": "GPT源头第89轮 · UpPlusPro含票分项与Shanma接码售后",
+      "title": "GPT源头第89轮 · Shanma接码退款风险与UpPlusPro历史复核",
       "type": "report",
       "task": "project-1",
       "url": "../research/2026-11-08/supplier-followup-20261108.html",
       "updatedAt": "2026-11-08",
-      "summary": "UpPlusPro原号Plus¥143/月+商称普通票¥10，仅分项和¥153，剩余会员覆盖不叠加且要求Session；Shanma接码¥9.99/次，30次换号但成功收码与现金退款均未保障，合格批发仍0。",
+      "summary": "新入Shanma独立OpenAI/Codex接码¥9.99/次，商称30次换号但付款成功不退款、实测0。UpPlusPro旧第76轮Plus¥143+普通票¥10仅复核，非新价；已核批发仍0。",
       "access": "public",
       "metadataApproved": true
     },
     {
       "id": "gpt-source-followup-r89-20261108-evidence",
-      "title": "第89轮 · UpPlusPro发票/原号覆盖与独立SMS退款证据8 URL",
+      "title": "第89轮 · Shanma接码退费与UpPlusPro第76轮原价复核 · 8 URL",
       "type": "dataset",
       "task": "project-1",
       "url": "../research/2026-11-08/supplier-followup-20261108-evidence.json",
       "updatedAt": "2026-11-08",
-      "summary": "8条实读商家及OpenAI原始URL，¥143+¥10小计非实付，法定收款/出票/批发授权null；Shanma¥9.99/个、20分钟帮助口径、30次换号、付款不退与验证适用边界。",
+      "summary": "新独立SMS服务¥9.99/个、20分钟帮助口径、30次换号及付款不退款；UpPlusPro¥143+¥10历史第76轮已有，未刷新价格。含票全费及短信实测仍null/0。",
       "access": "public",
       "metadataApproved": true
     }
