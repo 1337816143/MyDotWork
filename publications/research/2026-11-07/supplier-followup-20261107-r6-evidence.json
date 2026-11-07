@@ -1,0 +1,139 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 82,
+  "site_version": "1.9.90",
+  "date": "2026-11-07",
+  "observed_on": "2026-11-07",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "upfront_agent_fee_allowed": false,
+    "plus_all_mandatory_payment_and_china_vat_invoice_cost_ceiling_cny": 170
+  },
+  "material_discovery": {
+    "merchant": "互联互通AI wind89",
+    "kind": "different_corporate_and_online_payment_terms_with_old_invoice_login_discrepancy",
+    "sku": "本人已有ChatGPT账号 Plus 单份单月",
+    "currency": "CNY",
+    "quantity": 1,
+    "months": 1,
+    "merchant_public_online_price_cny": 139.99,
+    "merchant_public_online_invoice_fee_cny_per_unit": 10,
+    "online_component_sum_cny": 149.99,
+    "online_component_sum_is_verified_all_in": false,
+    "merchant_public_corporate_school_bank_transfer_price_cny": 160,
+    "corporate_price_includes_einvoice": null,
+    "corporate_invoice_additional_fee_cny": null,
+    "payment_surcharge_cny": null,
+    "actual_paid_invoice_total_cny": null,
+    "invoice_type_merchant_claim": "仅电子普通发票，不开专票",
+    "invoice_item_merchant_claim": "软件服务费",
+    "invoice_service": "https://fp.wind89.com",
+    "invoice_merchant_claim_company_only": true,
+    "required_fields": [
+      "单位名称",
+      "税号",
+      "收票邮箱"
+    ],
+    "invoice_detail_screenshot_required": true,
+    "invoice_merchant_sla_business_days": 2,
+    "invoice_merchant_claim_max_transactions_combined": 30,
+    "payee_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "registered_operator_legal_entity": null,
+    "real_china_tax_invoice_verified": false,
+    "wholesale_or_openai_resale_authorization_verified": false,
+    "paid_checkout_verified": false,
+    "sku_corporate_one_unit_executability_verified": false,
+    "prior_round25_member_login_invoice_constraint": "历史2026-11-04直接读FAQ称必须商家会员登录后下单才能开票，原我的发票入口登录跳转",
+    "current_help_member_requirement_missing": true,
+    "guest_checkout_invoice_eligibility_verified": false,
+    "invoice_help_self_updated_on": "2026-09-28",
+    "not_a_proven_policy_change_today": true,
+    "requires_existing_working_chatgpt_session": true,
+    "full_auth_session_json_may_expose_token": true,
+    "active_plus_can_stack": false,
+    "sms_first_login_or_codex_api_automatically_solved": false,
+    "verified_wholesale_qualified": false
+  },
+  "historical_ref": {
+    "round": 25,
+    "path": "research/2026-11-04/supplier-followup-20261104-r11-evidence.json",
+    "observed_on": "2026-11-04"
+  },
+  "independent_phone_verification": {
+    "chatgpt_web_tested": false,
+    "codex_desktop_tested": false,
+    "first_api_key_tested": false,
+    "sms_sku_price_cny": null,
+    "number_duration_days": null,
+    "sms_failure_refund_verified": null,
+    "merchant_claim_paid_customer_support_available": true,
+    "ordinary_plus_automatically_binds_phone": false
+  },
+  "other_candidate_access_notes": [
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus",
+      "extracted_value_cny": 115,
+      "current_verified_live_price_cny": null,
+      "old_direct_round75_price_cny": 113,
+      "comment": "本轮Exa文本抽取与历史直接观察冲突，不能确认时效和会员SKU，因此不刷新原价格，也不宣称调价"
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://payprm.com/",
+      "accurate_plus_current_price_cny": null,
+      "comment": "本轮网页抽取只有可批量和开票泛化声明，未取得SKU现价/经营出票授权新证据"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-07",
+      "read_method": "Exa publisher-URL text fetch; direct live-browser verification unavailable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_page_claim_not_real_transaction",
+      "facts": "Plus本人原号139.99元/月线上购买，下单勾选发票+10元/份；另称对公/学校转账Plus160元/月，未明确含票；到期后Free再续；先登录账号提供完整Session，接码联系客服付费，无明确独立验证码SKU"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-07",
+      "read_method": "Exa publisher-URL text fetch; direct live-browser verification unavailable",
+      "page_self_updated_on": "2026-09-28",
+      "evidence_class": "merchant_invoice_guide_not_real_invoice",
+      "facts": "只给单位开电子普票；Plus+10元购时勾选，需账单详情截图含交易单号/金额/时间，再到fp.wind89.com申请，填单位/税号/邮箱；声称2工作日内可下载PDF/OFD/XML。帮助未陈述须登录会员，与历史旧FAQ声明待核"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-07",
+      "read_method": "Exa publisher-URL text extraction; direct live-browser failed",
+      "page_self_updated_on": null,
+      "evidence_class": "staleness_unknown_do_not_refresh_price",
+      "facts": "抽取显示115元但历史r75直读113元；因实时性/会员展示未证，本轮不确定当前SKU价"
+    },
+    {
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-07",
+      "read_method": "Exa publisher-URL text extraction; no checkout read",
+      "page_self_updated_on": null,
+      "evidence_class": "unchanged_general_merchant_claim",
+      "facts": "可批量采购/开票自述不构成真实付款、合法中国税票、批发授权的新证据"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "cautions": [
+    "本轮系经第三方网页提取器读取商家原URL文字，未取得可证实时网页收银台，不把摘录价格称已支付价或当天政策变更。",
+    "对公160元路径是否含发票未知，不能把线上发票10元机械加到该路径；线上139.99+10=149.99仅条件算术，真实含票全费null。",
+    "商家2026-09-28自标发票教程和历史2026-11-04会员门槛存在表述差别，不据此宣称游客现在可开票。",
+    "Morimm抽取与旧直读价格不一致未确认时效，旧价观察日原样保留。",
+    "无购买、真实开票验真、正式供货授权、账号凭据提交、对外联系或手机号OTP实测。"
+  ],
+  "historical_data_preserved": true
+}

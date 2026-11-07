@@ -2146,6 +2146,28 @@
       "summary": "15条原URL及直接/失败观察；PlusGO真实人民币价null、GPTone¥158仅挂牌、香港平台US$22.14+$2.10仅条件数值且地理拒单，发票主体与真实交付未证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r82-20261107",
+      "title": "GPT源头第82轮·wind89对公与线上开票报价条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r6.html",
+      "updatedAt": "2026-11-07T04:30:11Z",
+      "summary": "单件Plus线上¥139.99+开票¥10仅公开分项；学校对公Plus另报¥160/月含票未知；旧会员开票门槛与fp站帮助差异待核，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r82-20261107-evidence",
+      "title": "wind89企业转账、开票路线、历史会员限制·第82轮JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r6-evidence.json",
+      "updatedAt": "2026-11-07T04:30:11Z",
+      "summary": "4个原URL提取与时效限制；¥149.99仅条件算术、对公¥160是否含票及支付主体真实票据null；实测与授权0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
