@@ -1,0 +1,146 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 86,
+  "site_version": "1.9.94",
+  "date": "2026-11-07",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_ceiling_cny_all_required_payment_china_vat_invoice": 170
+  },
+  "material_correction": {
+    "merchant": "互联互通AI / wind89",
+    "category": "invoice_access_path_change_and_member_requirement_resolved",
+    "prior_report_round": 82,
+    "prior_report_page": "research/2026-11-07/supplier-followup-20261107-r6.html",
+    "prior_invoice_channel": "https://fp.wind89.com/",
+    "prior_claim_process": "上传付款账单详情至独立开票网页，商称2工作日办理；游客订单有无开票资格此前未核清",
+    "currently_read_invoice_portal_status": "独立旧开票域名公开声明不再接收申请，要求前往wind89.com登录后进入我的发票",
+    "current_invoice_portal_accepting_applications": false,
+    "current_site_invoice_page": "https://wind89.com/guide/invoice",
+    "current_member_invoice_page": "https://wind89.com/me/invoices",
+    "invoice_member_login_required_before_purchase": true,
+    "guest_order_invoice_access_claim": false,
+    "member_invoice_page_redirects_to_login_without_auth": true,
+    "new_invoice_workflow_claim": "登录会员后下单—Plus下单勾需要开票/或登录订单补交¥10—付款后我的发票勾选订单填单位/税号/收票邮箱—一般数分钟、最晚1工作日，税务确认可能延迟",
+    "old_invoice_processing_business_days": 2,
+    "new_invoice_processing_business_days_claim": 1,
+    "actual_invoice_issuance_speed_tested": false,
+    "retroactive_invoice_fee_payment_for_member_order_claim": true,
+    "retroactive_fee_for_guest_order_claim": null,
+    "merchant_claim_refund_auto_closes_invoice_application_and_voids_issued_invoice": true,
+    "merchant_page_self_updated_date_from_text_extraction": "2026-11-01",
+    "observed_on": "2026-11-07",
+    "actual_policy_change_day_verified": null,
+    "sku": "ChatGPT Plus本人原账号月卡（卡密/直充，网页目录sku=27）",
+    "product_url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+    "list_price_cny": 139.99,
+    "unit": "1账号·1个月",
+    "quantity": 1,
+    "invoice_type": "仅单位电子普通发票，商家承诺（非实际验真）",
+    "invoice_fee_cny": 10,
+    "known_component_sum_cny": 149.99,
+    "actual_total_including_any_other_payment_and_valid_china_vat_invoice_cny": null,
+    "other_payment_surcharges_cny": null,
+    "invoice_issuer_legal_entity": null,
+    "payee_legal_entity": null,
+    "operator_legal_entity": null,
+    "signed_in_single_unit_checkout_tested": false,
+    "lawful_china_vat_invoice_tested": false,
+    "resale_authorization_and_wholesale_contract_verified": false,
+    "actual_paid_or_fulfilled": false,
+    "qualified_wholesale": false
+  },
+  "aftersales_and_delivery_boundary": {
+    "merchant_claim_subscription_warranty_days": 30,
+    "excludes_account_bans": true,
+    "excludes_phone_verification_fees": true,
+    "refund_or_restore_conditional_not_tested": true,
+    "requires_working_chatgpt_session_for_activation": true,
+    "session_or_token_secrecy_risk": true,
+    "can_add_time_to_active_plus": false,
+    "must_wait_free_for_new_plus_card_claim": true,
+    "guest_order_allowed_for_basic_purchase_but_not_invoicing": true
+  },
+  "independent_phone_verification": {
+    "chatgpt_web_tested": false,
+    "codex_desktop_tested": false,
+    "first_api_key_tested": false,
+    "new_verified_sku": false,
+    "number_lifetime_days": null,
+    "no_sms_refund_original_channel_verified": null,
+    "apple_in_app_purchase_auto_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable",
+      "method": "fresh Firecrawl merchant page (maxAge 0), corroborated by Exa page extraction",
+      "class": "merchant_invoice_rules_not_true_issuance",
+      "fact": "只给登录会员开票，游客订单无入口；Plus票费¥10，已登录订单可补交，最快数分钟/最晚1工作日，一单一抬头，多单最多30合开，退款红冲；Exa提取标题自标更新2026-11-01"
+    },
+    {
+      "url": "https://wind89.com/help/invoice.html",
+      "observed_on": "2026-11-07",
+      "read_status": "redirects to canonical guide/invoice readable",
+      "method": "fresh Firecrawl",
+      "class": "redirect_confirmation",
+      "fact": "旧help/invoice.html当前转到同一新会员发票指南，不能当不同政策"
+    },
+    {
+      "url": "https://fp.wind89.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable",
+      "method": "fresh Firecrawl",
+      "class": "legacy_invoice_service_status",
+      "fact": "页面明确这个页面不再接受开票申请，要求前往wind89.com登录后我的发票"
+    },
+    {
+      "url": "https://wind89.com/me/invoices",
+      "observed_on": "2026-11-07",
+      "read_status": "redirect to /auth/login?redirect=/me/invoices",
+      "method": "fresh Firecrawl public unauthenticated navigation (no credentials)",
+      "class": "public_redirect_not_logged_in_checkout",
+      "fact": "公开未登录访问会到微信账号扫码登录页；未登入或填写任何信息"
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-07",
+      "read_status": "redirect to /guide readable",
+      "method": "fresh Firecrawl",
+      "class": "merchant_faq",
+      "fact": "FAQ称无需注册可游客买基础商品，但开电子普票只能登录会员下单，保30天与封号不保，原号Plus到期Free后重买"
+    },
+    {
+      "url": "https://wind89.com/plans",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable",
+      "method": "fresh Firecrawl direct merchant price list",
+      "class": "merchant_exact_sku_display_not_checkout",
+      "fact": "本人原号Plus卡密或直充展示¥139.99/月，链接sku=27；无有效增值税票、批发授权或最终订单已验"
+    },
+    {
+      "url": "https://wind89.com/warranty",
+      "observed_on": "2026-11-07",
+      "read_status": "200 readable",
+      "method": "fresh Firecrawl merchant warranty terms",
+      "class": "merchant_service_claim_not_real_refund",
+      "fact": "正常个人使用30天有条件恢复或退款；不保封号、平台登录手机号短信验证费用；没有真实交付退款"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "notes": [
+    "本轮观察到旧独立开票入口明确关闭申请，现行商家指南限定登录会员；与r82游客可否开票未知构成实质补证。不同端旧FAQ与新指南的办理时效差异以当前官方店铺页面为准，尚未实测办票。",
+    "2026-11-01仅来自页面提取的商家自标Updated，不证明该日或本次观察当日才修改，旧r82的2026-09-28原始观察原样保存。",
+    "¥139.99+¥10=¥149.99只是网页分项和，不是支付、合法中国VAT票或实际全费；对公¥160/月另独立路径，不机械叠加开票¥10。",
+    "未付款、登录商家、提交任何OpenAI账号Session、密码或验证码，未联系商家、未查验税票、未完成手机号接码；旧报价不重新刷新。"
+  ]
+}
