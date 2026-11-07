@@ -1,0 +1,163 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 83,
+  "site_version": "1.9.91",
+  "date": "2026-11-07",
+  "observed_at_utc": "2026-11-07T10:15:48.372Z",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_ceiling_cny_including_all_mandatory_payment_and_china_vat_invoice": 170
+  },
+  "material_discoveries": [
+    {
+      "merchant": "V3小店",
+      "finding": "iOS原号Plus商品公开库存由上次直接观察的无货变为本次一般",
+      "sku": "[自助充值] ChatGPT Plus 会员1个月 ios充值",
+      "url": "https://shop.gpt.ge/buy/22",
+      "previous_direct_observed_on": "2026-11-05",
+      "previous_stock_label": "无货",
+      "previous_buy_button": "已被抢光了",
+      "current_direct_observed_on": "2026-11-07",
+      "current_stock_label": "一般",
+      "current_buy_button": "立即购买",
+      "previous_list_price_cny": 143.5,
+      "current_list_price_cny": 143.5,
+      "currency": "CNY",
+      "unit": "1账号·1个月",
+      "quantity": 1,
+      "merchant_wechat_payment_fee_rate": 0.035,
+      "merchant_usd_payment_fee_rate": 0.035,
+      "alipay_payment_fee_cny": null,
+      "usdt_network_and_conversion_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "real_paid_full_cost_cny": null,
+      "operator_verified": false,
+      "payee_verified": false,
+      "invoice_issuer_verified": false,
+      "invoice_verified": false,
+      "formal_upstream_resale_authorization_verified": false,
+      "actual_purchase_or_fulfillment_verified": false,
+      "merchant_claim_active_plus_can_be_overwritten_without_time_stacking": true,
+      "merchant_claim_after_sales": "在期掉Plus优先补差价换新号，或按剩余时间比例退钱；官方封号不保",
+      "same_original_account_preserved_after_failure_guaranteed": false,
+      "refund_to_original_payment_channel_verified": null,
+      "availability_change_exact_occurrence_time": null,
+      "qualification": "retail_merchant_listing_only"
+    },
+    {
+      "merchant": "yxab.cn GPT代充平台",
+      "finding": "当前页面Plus SKU标注暂时缺货，此前r44没有可信可比库存快照，不能推定断货始于本日",
+      "sku": "ChatGPT Plus本人原号官网订阅代付1个月",
+      "url": "https://yxab.cn/product/G69666080",
+      "previous_direct_observed_on": "2026-11-05",
+      "previous_list_price_cny": 128.8,
+      "current_direct_observed_on": "2026-11-07",
+      "current_list_price_cny": 128.8,
+      "current_stock_label": "暂时缺货",
+      "prior_stock_label": null,
+      "actual_stock_status_change_proven": false,
+      "buy_button_text": "暂时缺货",
+      "currency": "CNY",
+      "unit": "1账号·1个月",
+      "alipay_wechat_payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "real_paid_full_cost_cny": null,
+      "merchant_official_invoice_receipt_is_china_vat_invoice": false,
+      "china_vat_requires_separate_corporate_quotation": true,
+      "merchant_says_upstream_not_verified": true,
+      "formal_upstream_resale_authorization_verified": false,
+      "actual_purchase_or_fulfillment_verified": false,
+      "qualification": "not_currently_orderable_and_not_proven_wholesale"
+    }
+  ],
+  "other_bounded_checks": {
+    "v3_philippines": {
+      "sku": "原号Plus菲律宾卡自助充值1个月",
+      "url": "https://shop.gpt.ge/buy/18",
+      "list_price_cny": 133.5,
+      "current_stock_label": "充足",
+      "previous_direct_stock_label_on_2026_11_05": "非常多",
+      "available_quantity_verified": null,
+      "merchant_claim_existing_plus_must_expire": true,
+      "renewal_executed": false,
+      "unchanged_price_not_an_actual_discount": true
+    },
+    "core_supplier_queues": "CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay旧观察不在本轮重新确定付款全费，均不刷新历史价格；Morimm和PAYPRM原页本轮无法读有效正文",
+    "independent_phone_verification": {
+      "chatgpt_web_succeeded": false,
+      "codex_desktop_succeeded": false,
+      "first_api_key_succeeded": false,
+      "sms_sku_for_v3": null,
+      "number_lifetime_days": null,
+      "refund_if_no_code": null,
+      "apple_or_session_auto_binds_phone": false,
+      "merchant_v3_links_to_external_smspool_only": true,
+      "phone_service_resale_tested": false
+    }
+  },
+  "historical_reference": {
+    "round": 54,
+    "evidence_path": "research/2026-11-05/supplier-followup-20261105-r16-evidence.json",
+    "old_observed_on": "2026-11-05"
+  },
+  "sources": [
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "observed_on": "2026-11-07",
+      "read_method": "direct live merchant product HTML",
+      "read_status": "readable",
+      "evidence_class": "merchant_listing_and_merchant_after_sales_claim",
+      "facts": "iOS单月¥143.50，库存一般，页面有立即购买控件，微信及USD标3.5%手续费；可覆盖但不叠加；掉订阅商称优先补差价换新号或按余日退款，封号不保；非真实付款"
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/18",
+      "observed_on": "2026-11-07",
+      "read_method": "direct live merchant product HTML",
+      "read_status": "readable",
+      "evidence_class": "merchant_listing_unchanged_price",
+      "facts": "菲卡单月¥133.50，库存充足；当前Plus未到期不可续，Codex新账号可能仍须SMS；网页指向外部SMSPool，非实测"
+    },
+    {
+      "url": "https://shop.gpt.ge/",
+      "observed_on": "2026-11-07",
+      "read_method": "direct live merchant catalog HTML",
+      "read_status": "readable",
+      "evidence_class": "merchant_catalog",
+      "facts": "目录iOS¥143.50标库存一般、菲卡¥133.50标充足，不代表真实完成履约"
+    },
+    {
+      "url": "https://yxab.cn/product/G69666080",
+      "observed_on": "2026-11-07",
+      "read_method": "direct live merchant product HTML",
+      "read_status": "readable",
+      "evidence_class": "merchant_product_and_current_stock_indicator",
+      "facts": "本人原号Plus月卡¥128.80，当前暂时缺货；官网Invoice/Receipt不等于中国增值税发票，企业票单独报价；支付手续费未结算"
+    },
+    {
+      "url": "https://yxab.cn/products",
+      "observed_on": "2026-11-07",
+      "read_method": "direct live merchant catalog HTML",
+      "read_status": "readable",
+      "evidence_class": "merchant_catalog",
+      "facts": "Plus ¥128.80/月在目录暂时缺货，与原SKU相符"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "cautions": [
+    "两组库存标记仅代表各次网页挂牌；能看到购买按钮不等于能完成收银台支付或实际库存，历史库存变动的准确发生日未知。",
+    "V3 iOS从2026-11-05无货到2026-11-07一般构成两次观察差异；不声称11月7日当天才补货，标价也未变。",
+    "yxab在2026-11-05没有可比的直接库存字段，不得声称本轮发生断货；本轮只是首次直接记录当前暂时缺货。",
+    "V3售后可换新号为商家自己的选择项，不代表本人原账号恢复承诺，不能将商家退款宣称记成真实退款。",
+    "尚无完整付款与中国增值税出票税号、合法收款/出票主体、正式供货关系及批发授权，费用未知填null。",
+    "没有购买、付款、提交Session/Token、联系商家、税票验真或手机号验证码成功实测。"
+  ],
+  "historical_data_preserved": true
+}
