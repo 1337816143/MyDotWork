@@ -552,3 +552,15 @@ assert.equal(r89.independent_phone_verification.max_free_number_swaps_merchant_c
 assert.equal(r89.independent_phone_verification.failed_sms_cash_refund_guaranteed,false);
 assert.equal(r89.independent_phone_verification.actual_sms_receive_tested,false);
 assert.equal(r89.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r90cat=d.records.find(r=>r.id==='gpt-source-followup-r90-20261108');
+const r90data=d.records.find(r=>r.id==='gpt-source-followup-r90-20261108-evidence');
+assert(r90cat&&r90data&&r90cat.url.endsWith('supplier-followup-20261108-r2.html'));
+const r90=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r2-evidence.json'),'utf8'));
+assert.equal(r90.round,90);assert.equal(r90.site_version,'1.9.98');assert.equal(r90.sources.length,8);
+assert.equal(r90.newly_documented_public_api.customer_supplies_payment_card,true);
+assert.equal(r90.newly_documented_public_api.requires_existing_chatgpt_session,true);
+assert.equal(r90.newly_documented_public_api.public_example_plus_price_credits,50);
+assert.equal(r90.newly_documented_public_api.real_live_plus_price_credits,null);
+assert.equal(r90.newly_documented_public_api.real_all_in_china_vat_invoice_total_cny,null);
+assert.equal(r90.qualification_totals.verified_plus_wholesale_upstreams,0);
