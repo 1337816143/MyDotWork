@@ -2322,6 +2322,28 @@
       "summary": "新独立SMS服务¥9.99/个、20分钟帮助口径、30次换号及付款不退款；UpPlusPro¥143+¥10历史第76轮已有，未刷新价格。含票全费及短信实测仍null/0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r90-20261108",
+      "title": "GPT源头第90轮 · GPT Pay自备卡API与真实批发资格分界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r2.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新增直接可读技术API：客户须自备支付卡、预充值积分和现有Session；示例Plus 50积分不是人民币批发价，真实手续费/税票/授权null，已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r90-20261108-evidence",
+      "title": "第90轮 · 客户自备卡API、费用和凭据风险结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r2-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "8条本轮直接打开/失败原始URL；Plus积分示例非真实标价，需现有Session和银行卡CVV；全费、法律主体、批发授权和实际SMS均未证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
