@@ -1,0 +1,177 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 84,
+  "site_version": "1.9.92",
+  "date": "2026-11-07",
+  "observed_at_utc": "2026-11-07T11:14:15Z",
+  "criteria": {
+    "own_original_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_ceiling_cny_including_all_mandatory_payment_and_china_vat_invoice": 170
+  },
+  "new_candidates": [
+    {
+      "merchant": "AI Access Hub",
+      "url": "https://aiwholesale.top/item/51",
+      "sku": "GPT PLUS〖官方直充｜月卡｜质保30天订阅〗",
+      "unit": "1张卡密/账号·月",
+      "currency": "CNY",
+      "options": [
+        {
+          "sku": "渠道1:质保开通卡密",
+          "price_cny": 119
+        },
+        {
+          "sku": "渠道1:质保全程卡密",
+          "price_cny": 119
+        },
+        {
+          "sku": "渠道3 iOS:质保开通卡密",
+          "price_cny": 130
+        },
+        {
+          "sku": "渠道3 iOS:质保全程卡密",
+          "price_cny": 130
+        }
+      ],
+      "alipay_payment_fee_rate_merchant_claim": 0.05,
+      "condition_only_alipay_channel1_cny": 124.95,
+      "condition_only_alipay_channel3_cny": 136.5,
+      "other_payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "actual_all_in_china_vat_invoice_cny": null,
+      "store_says_in_stock_and_auto_ship": true,
+      "checkout_warns_preorder_ship_after_restock": true,
+      "merchant_refund_if_account_banned_channel1": "Buyer must first get OpenAI refund; merchant returns 80% of actual OpenAI refunded amount, keeps 20% card service fee",
+      "merchant_refund_if_account_banned_channel3": "no refund",
+      "merchant_warranty_drops_only_claim": true,
+      "active_plus_channel1_limited": true,
+      "active_plus_channel3_can_overwrite_without_stacking_claim": true,
+      "requires_logged_in_authorization_information": true,
+      "real_inventory_verified": false,
+      "payee_verified": false,
+      "vat_invoice_issuer_verified": false,
+      "wholesale_supplier_authorization_verified": false,
+      "agent_entry_fee_verified_cny": null,
+      "paid_or_delivered_test": false,
+      "verified_wholesale": false
+    },
+    {
+      "merchant": "Plus6",
+      "url": "https://plus6.cn/",
+      "sku": "ChatGPT Plus 无订阅账号直接开通·卡密自助激活",
+      "price_cny": 145,
+      "currency": "CNY",
+      "unit": "1账号·月",
+      "quantity": 1,
+      "existing_subscription_or_unpaid_account_eligible": false,
+      "buy_link": "https://i8c.cn/ZEj93",
+      "buy_link_readable": false,
+      "actual_checkout_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "actual_all_in_china_vat_invoice_cny": null,
+      "requires_logged_in_session_json": true,
+      "transmits_session_to_validation_api": true,
+      "merchant_claims_website_does_not_save_session": true,
+      "merchant_says_api_retains_email_key_id_task_and_ip": true,
+      "merchant_disclaims_openai_affiliation": true,
+      "codex_sms_service": "manual consultation only",
+      "codex_phone_price_cny": null,
+      "number_lifetime_days": null,
+      "sms_failure_refund_cny": null,
+      "payee_verified": false,
+      "vat_invoice_issuer_verified": false,
+      "wholesale_supplier_authorization_verified": false,
+      "agent_entry_fee_verified_cny": null,
+      "paid_or_delivered_test": false,
+      "verified_wholesale": false
+    },
+    {
+      "merchant": "Steadflow",
+      "url": "https://china-models.com/",
+      "sku": "ChatGPT Plus充值",
+      "price_cny": 160,
+      "merchant_invoice_service_option_price_cny": 180,
+      "currency": "CNY",
+      "unit": "1账号·月",
+      "website_price_exceeds_budget_with_invoice": true,
+      "official_china_vat_invoice_verified": false,
+      "payment_fee_cny": null,
+      "real_paid_all_in_cny": null,
+      "web_source_crawl_not_live": true,
+      "codex_api_relay_is_sms": false,
+      "wholesale_authorization_verified": false,
+      "verified_wholesale": false
+    }
+  ],
+  "phone_verification": {
+    "chatgpt_web_real_test": false,
+    "codex_desktop_real_test": false,
+    "initial_api_key_real_test": false,
+    "plus6_codex_manual_phone_service_advertised": true,
+    "plus6_phone_number_sku": null,
+    "plus6_price_cny": null,
+    "plus6_number_lifetime_days": null,
+    "plus6_no_code_refund": null,
+    "apple_payment_auto_phone_verification": false,
+    "session_is_sensitive_credential": true
+  },
+  "sources": [
+    {
+      "url": "https://aiwholesale.top/item/51",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct web merchant HTML open",
+      "class": "merchant_listing_merchant_terms_not_test",
+      "fact": "原号Plus月卡渠道1开通/全程¥119，渠道3 iOS开通/全程¥130；同页库存爆棚和预订付款后补货发货冲突；支付宝加5%；渠道1用户被封后只能买家自行申请官方退款，成功后商家按实际官方退款额80%结算，渠道3封号不退；需登录获取授权信息"
+    },
+    {
+      "url": "https://plus6.cn/",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct web merchant HTML open",
+      "class": "merchant_listing_and_login_risk",
+      "fact": "本人原号无订阅Plus单月¥145，CDK自助激活，欠费/已有订阅不可开；提交完整Session JSON到验证API；商家自称不保存Session但称API长期存邮箱、卡密、任务/IP等；Codex人工接码无公开SKU及价格；商家自称非OpenAI关联"
+    },
+    {
+      "url": "https://i8c.cn/ZEj93",
+      "observed_on": "2026-11-07",
+      "read_status": "timeout",
+      "method": "followed Plus6 official buy link from site",
+      "class": "access_failure",
+      "fact": "未取得实际购买及付款页，不得推断最终支付/税票费"
+    },
+    {
+      "url": "https://china-models.com/",
+      "observed_on": "2026-11-07",
+      "read_status": "cached_page_readable",
+      "method": "merchant page opened, index cache crawled 3 days earlier",
+      "class": "merchant_retail_price_not_checkout",
+      "fact": "Plus原号¥160/月、商称含发票服务¥180/月，后者大于¥170；中国增值税票及出票主体未证；Codex API relay非短信验证"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-07",
+      "read_status": "readable",
+      "method": "direct OpenAI Help Center",
+      "class": "official_rules_not_new_policy",
+      "fact": "ChatGPT一般不强制手机号、Codex桌面端可能需要、首次API Key需要；须符合移动号码短信或规定国家WhatsApp等要求，非今天新政策"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "notes": [
+    "New merchant page reads, not pricing changes of historical identical SKU; no real transaction or wholesale verification.",
+    "AI Access same page says stock plentiful and preorder/restock; do not treat as immediately available.",
+    "Channel1 80% is share of amount actually refunded by OpenAI and requires buyer applying to OpenAI; not 80% of paid cost automatically.",
+    "Steadflow cache is not live checkout; invoice type and actual provider unknown.",
+    "Only 5 original URLs read/attempted this round; one timeout, do not refresh inaccessible offers.",
+    "No purchases, contact, invoice verification, login credentials, Session/Token transfer, SMS test or verified upstream supply authorization."
+  ]
+}

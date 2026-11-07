@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 199, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 201, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.83'
-    assert latest['path'] == 'research/2026-11-07/supplier-followup-20261107-r7.html'
-    assert latest['dataPath'] == 'research/2026-11-07/supplier-followup-20261107-r7-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-07/supplier-followup-20261107-r6.html'
+    assert latest['version'] == '1.84'
+    assert latest['path'] == 'research/2026-11-07/supplier-followup-20261107-r8.html'
+    assert latest['dataPath'] == 'research/2026-11-07/supplier-followup-20261107-r8-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-07/supplier-followup-20261107-r7.html'
     assert by_id['gpt-source-followup-r72-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17.html'
     assert by_id['gpt-source-followup-r72-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17-evidence.json'
     r72 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r17-evidence.json').read_bytes())
@@ -920,6 +920,19 @@ def validate_publications():
     assert r83['material_discoveries'][1]['current_stock_label'] == '暂时缺货'
     assert r83['material_discoveries'][1]['actual_stock_status_change_proven'] is False
     assert r83['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+
+    assert by_id['gpt-source-followup-r84-20261107']['url'] == '../research/2026-11-07/supplier-followup-20261107-r8.html'
+    assert by_id['gpt-source-followup-r84-20261107-evidence']['url'] == '../research/2026-11-07/supplier-followup-20261107-r8-evidence.json'
+    r84 = json.loads((ROOT / 'dist/research/2026-11-07/supplier-followup-20261107-r8-evidence.json').read_bytes())
+    assert r84['round'] == 84 and r84['site_version'] == '1.9.92' and len(r84['sources']) == 5
+    assert r84['new_candidates'][0]['options'][0]['price_cny'] == 119
+    assert r84['new_candidates'][0]['options'][2]['price_cny'] == 130
+    assert r84['new_candidates'][0]['checkout_warns_preorder_ship_after_restock'] is True
+    assert r84['new_candidates'][0]['actual_all_in_china_vat_invoice_cny'] is None
+    assert r84['new_candidates'][1]['requires_logged_in_session_json'] is True
+    assert r84['new_candidates'][1]['actual_all_in_china_vat_invoice_cny'] is None
+    assert r84['phone_verification']['plus6_price_cny'] is None
+    assert r84['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
 
     from validate_current_updates import validate_current_updates
     validate_current_updates()

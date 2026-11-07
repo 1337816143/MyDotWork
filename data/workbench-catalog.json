@@ -2190,6 +2190,28 @@
       "summary": "5条本轮直接读取URL，两次库存快照、V3原号售后可能换号；付款附费/税票/授权/短信实测仍null或0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r84-20261107",
+      "title": "GPT源头第84轮 · AI Access Hub预订与退款80%条件、Plus6 Session风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r8.html",
+      "updatedAt": "2026-11-07T11:14:15Z",
+      "summary": "原号Plus新SKU渠道1¥119、iOS¥130，预订提示与自动发货相冲突，支付宝费5%；封号需官方先退款且仅按实退80%结算。Plus6¥145需Session；已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r84-20261107-evidence",
+      "title": "第84轮五条原URL及准确SKU/发票与手机号证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-07/supplier-followup-20261107-r8-evidence.json",
+      "updatedAt": "2026-11-07T11:14:15Z",
+      "summary": "5个原URL含Plus6收银台超时；实付、中国税票、供货授权、SMS成功均无证据；Steadflow含票服务商称¥180超170。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
