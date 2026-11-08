@@ -2564,6 +2564,28 @@
       "summary": "4条本轮直接提取的商家原网址；¥113是混售默认商品价、¥110仅88件档位、Plus月SKU期限/支付附费/VAT费用null、真实手机验证0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r101-20261108",
+      "title": "GPT源头第101轮 · GETGPT Plus上游身份与Session风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r13.html",
+      "updatedAt": "2026-11-08",
+      "summary": "本人原号Plus单月¥138仅零售价；卖家隐私条款承认自动充值上游主体和服务器地区未知。香港主体商称、中国VAT及转售授权未验证，合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r101-20261108-evidence",
+      "title": "第101轮 · GETGPT Plus SKU、隐私和旧域名去重 · 5 URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r13-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "4条GETGPT Plus原页及1条upchatgpt.pro旧域名跳转，准确零售¥138/单月与Session权限边界；完整税票和批发合同null，接码实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
