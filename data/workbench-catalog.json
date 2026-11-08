@@ -2652,6 +2652,28 @@
       "summary": "5条2026-11-08实读原URL、代理价¥115/张、前置¥29.99、零售¥119、PLS/SMS分线和退款边界；全部税票费用、授权和真实SMS成功仍null/0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r105-20261108",
+      "title": "GPT源头第105轮 · 两店同款Plus的支付费、预订和退款扣费",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r17.html",
+      "updatedAt": "2026-11-08",
+      "summary": "AI Access Hub与泉莘同名Plus单月卡付¥119/¥124、iOS覆盖¥130/¥128；均声明支付宝5%手续费、预订与自动发货矛盾、成功官方退款后卡台扣20%。仅零售候选，合法批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r105-20261108-evidence",
+      "title": "第105轮 · 两店4个Plus SKU、渠道限制、退款和索引去重 · 6原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r17-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "6条原始URL按2026-11-08分级记录，商品原页与第三方聚合价分开；已核零售费不等于含中国VAT实际付款/正式供货权，未知null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

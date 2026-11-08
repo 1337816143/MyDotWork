@@ -748,3 +748,15 @@ assert.equal(r104.new_evidence.suzhe_ai.qualifies_as_verified_wholesale_upstream
 assert.equal(r104.independent_phone_verification.observed_price_cny_per_sms_cdk,null);
 assert.equal(r104.independent_phone_verification.merchant_claim_auto_cancel_if_no_sms_after_minutes,20);
 assert.equal(r104.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 105: independently read merchant products separate from stale third-party index prices.
+const cat105=d.records.find(x=>x.id==='gpt-source-followup-r105-20261108'),data105=d.records.find(x=>x.id==='gpt-source-followup-r105-20261108-evidence');
+assert(cat105&&data105&&cat105.url.endsWith('supplier-followup-20261108-r17.html'));
+const r105=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r17-evidence.json'),'utf8'));
+assert.equal(r105.round,105);assert.equal(r105.site_version,'1.9.113');assert.equal(r105.sources.length,6);
+assert.equal(r105.new_evidence.ai_access_hub.merchant_display_channel_1_card_payment_cny,119);
+assert.equal(r105.new_evidence.ai_access_hub.merchant_says_alipay_fee_percent,5);
+assert.equal(r105.new_evidence.ai_access_hub.merchant_channel_1_refund_service_fee_percent,20);
+assert.equal(r105.new_evidence.quanxin_store.merchant_display_channel_3_ios_cny,128);
+assert.equal(r105.new_evidence.zhang_hao_shang.verified_current_first_party_price_cny,null);
+assert.equal(r105.qualification_totals.verified_plus_wholesale_upstreams,0);
