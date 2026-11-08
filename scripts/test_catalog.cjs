@@ -668,3 +668,19 @@ assert.equal(r98.new_evidence.getplus.enterprise_purchase_minimum_units,5);
 assert.equal(r98.new_evidence.getplus.checkout_total_usd,null);
 assert.equal(r98.new_evidence.getplus.phone_field_links_or_verifies_chatgpt_phone,false);
 assert.equal(r98.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// Research round 99: receipt is not a mainland VAT invoice; verifying CDK flow is not permanent number possession.
+const r99cat=d.records.find(x=>x.id==='gpt-source-followup-r99-20261108'),r99data=d.records.find(x=>x.id==='gpt-source-followup-r99-20261108-evidence');
+assert(r99cat&&r99data&&r99cat.url.endsWith('supplier-followup-20261108-r11.html'));
+const r99=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r11-evidence.json'),'utf8'));
+assert.equal(r99.round,99);assert.equal(r99.site_version,'1.9.107');assert.equal(r99.sources.length,15);
+assert.equal(r99.new_evidence.linkai.unsubmitted_checkout_total_cny,150);
+assert.equal(r99.new_evidence.linkai.verified_legal_operator,null);
+assert.equal(r99.new_evidence.linkai.refund_payment_channel_automatic,false);
+assert.equal(r99.new_evidence.yxab.official_receipt_is_valid_china_vat_invoice,false);
+assert.equal(r99.new_evidence.yxab.current_listed_inventory_status,'暂时缺货');
+assert.equal(r99.new_evidence.callai_codex.price_cny_per_one_verification,3);
+assert.equal(r99.new_evidence.callai_codex.long_term_same_number_control,false);
+assert.equal(r99.new_evidence.callai_codex.cash_refund_if_unsuccessful_cny,null);
+assert.equal(r99.qualification_totals.verified_plus_wholesale_upstreams,0);
