@@ -2520,6 +2520,28 @@
       "summary": "13条直接读取原始URL，V2BK单件进价、MOQ及中国税票null、无质保；GetPlus企业MOQ5与发票附USD2.10非全价，微信联络手机号非OpenAI绑定；Plus宇宙¥149零售不冒充批发。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r99-20261108",
+      "title": "GPT源头第99轮 · LinkAi代理与主体草案、yxab含票和CallAI验证限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r11.html",
+      "updatedAt": "2026-11-08",
+      "summary": "LinkAi Plus¥150/30天未支付预结算，代理价须审核、主体仍草案；yxab Plus¥128.80但缺货，官方Receipt非中国VAT；CallAI ¥3 Codex验证需登录密码/动态码、无长期号。合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r99-20261108-evidence",
+      "title": "第99轮 · LinkAi供货API/退款、yxab税票、CallAI手机验证 · 15条原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r11-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "15条首次或复核直读原URL，准确SKU、单件预结算、独立验证码服务、号码及安全边界，所有中国VAT票总额/批发进价未知null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
