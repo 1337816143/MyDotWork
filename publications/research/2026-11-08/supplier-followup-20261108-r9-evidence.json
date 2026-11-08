@@ -1,0 +1,231 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 97,
+  "site_version": "1.9.105",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次读到AISUBPRO特殊gpt2- Free资格及旧自标隐私条款；新增OKAI66本人Plus月卡零售价和开票报价实质不符预算，旧发票文章有算术冲突。旧渠道有界复读不算调价。",
+  "new_evidence": {
+    "aisubpro_discounted": {
+      "source": "https://aisubpro.vip/recharge2",
+      "accurate_sku": "GPT特价充值卡密",
+      "card_prefix": "gpt2-",
+      "requires_current_chatgpt_free_with_no_active_subscription": true,
+      "valid_existing_plus_renewal": false,
+      "merchant_says_manual_queue": true,
+      "price_cny": null,
+      "months": null,
+      "quantity": null,
+      "cash_refund_tested": false,
+      "ordinary_gpt_card_has_same_restriction_proven": false,
+      "china_vat_invoice": null,
+      "legal_entity": null
+    },
+    "aisubpro_privacy": {
+      "source": "https://aisubpro.vip/privacy",
+      "seller_statement_updated_on": "2026-08-17",
+      "merchant_claims_no_session_persistence": true,
+      "merchant_says_required_fields_transferred_to_service_endpoint": true,
+      "downstream_data_treatment_independently_verified": false,
+      "merchant_says_order_id_email_may_be_retained": true
+    },
+    "okai66_plus": {
+      "source": "https://okai66.com/chatgpt-plus",
+      "accurate_sku": "原号ChatGPT Plus单月",
+      "merchant_retail_cny_per_account_month": 165,
+      "merchant_invoice_total_cny": 183,
+      "claimed_invoice_type": "中国电子普通发票",
+      "invoice_article_published_on": "2026-10-22",
+      "invoice_article_base_cny": 167,
+      "invoice_article_fee_cny": 15,
+      "invoice_article_total_cny": 183,
+      "invoice_article_math_incorrect": true,
+      "old_article_base_differs_from_current_retail": true,
+      "merchant_invoice_quote_over_budget": true,
+      "current_exact_invoice_fee_cny": null,
+      "actual_paid_checkout_cny": null,
+      "all_required_fee_and_verified_china_vat_total_cny": null,
+      "legal_payment_entity": null,
+      "legal_invoicing_entity": null,
+      "verified_vat_invoice": null,
+      "one_unit_wholesale_cost_cny": null,
+      "resale_authorization": null,
+      "requires_logged_in_session": true,
+      "merchant_claims_refund_to_original_payment": true,
+      "real_refund_tests": 0,
+      "qualified_wholesale_upstream": false
+    }
+  },
+  "phone_verification": {
+    "chatgpt_web_normally_phone_required": false,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_phone_required": true,
+    "session_or_apple_pay_automatically_binds_phone": false,
+    "number_control_days": null,
+    "failed_sms_cash_refund_cny": null,
+    "real_sms_successes_web_codex_api": 0
+  },
+  "sources": [
+    {
+      "url": "https://aisubpro.vip/recharge2",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "gpt2-特价人工兑换只支持当前无任何有效订阅的ChatGPT Free个人账号；等待或失败须联系客服，未公开报价及实际退款。",
+      "evidence_class": "merchant_self_published_or_limited_read"
+    },
+    {
+      "url": "https://aisubpro.vip/privacy",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": "2026-08-17",
+      "read_status": "direct_public_page_read",
+      "fact": "商称不持久化Session/Access Token，但必要字段转交服务接口，接口可有自身处理规则；保留必要卡密状态、任务、账号邮箱/ID，非安全实测。",
+      "evidence_class": "merchant_self_published_or_limited_read"
+    },
+    {
+      "url": "https://aisubpro.vip/recharge",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "page_opened_zero_readable_body",
+      "fact": "普通兑换入口未取得可读正文，不把特价gpt2-的Free限制扩散至所有卡密。",
+      "evidence_class": "merchant_self_published_or_limited_read"
+    },
+    {
+      "url": "https://okai66.com/plus-price",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "本人原号ChatGPT Plus单月SKU零售价¥165/账号·月，广告价非实付或批发进价。",
+      "evidence_class": "merchant_self_published_or_limited_read"
+    },
+    {
+      "url": "https://okai66.com/chatgpt-plus",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "原号Plus¥165/月、需先登录并给Session，商称Plus开票价¥183，失败原路退款不等于已实测。",
+      "evidence_class": "merchant_self_published_or_limited_read"
+    },
+    {
+      "url": "https://okai66.com/blog/invoice-electronic-fapiao",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": "2026-10-22",
+      "read_status": "direct_public_page_read",
+      "fact": "商称电子普通发票¥183，文章旧价167+15=183存在算术错且旧价与现价165冲突；真实现行票费null。",
+      "evidence_class": "merchant_self_published_or_limited_read"
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "小久Plus菲区卡密¥110/件，只适用无有效订阅普通个人账号，需自行解决手机号；交易流水凭证/收据非税票，旧价复核。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://chatgqt.plus/buy?sku=LIST-000019",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "引路鲸本人Plus无质保SKU LIST-000019 ¥125/月，旧价复核。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "PAYPRM本人Plus¥155/月，自动卡密，旧价复核未证批发授权。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://chatshare.tv/plans",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "共享Plus五人¥31/人·30天、三人¥59/人·30天，仅Webchat不含Work/Codex/API，非本人原号。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "ChongPay无订阅Plus¥139/月需到期；iOS礼品卡¥139/月可在期办理，旧价复核。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_public_page_read",
+      "fact": "GETGPT Pro原号Plus¥179/月，旧价复核超预算。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://catfk.com/shop/cat",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "page_opened_zero_readable_body",
+      "fact": "CatFK无可读正文，不刷新旧价格或判停供。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://morimm.com/",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "page_opened_zero_readable_body",
+      "fact": "Morimm无可读正文，不刷新旧价格或判停供。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "access_error",
+      "fact": "wind89发票指南未能读取，不刷新旧Plus价格或票费。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://qfcc99.com/shop/panghu",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "page_opened_zero_readable_body",
+      "fact": "hicxy外部卡密店本轮无可读当前结算价或经营主体信息。",
+      "evidence_class": "bounded_prior_supplier_recheck"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "direct_official_help_read",
+      "fact": "官方说明ChatGPT常规通常不要求手机、桌面Codex可能要求、首次API Key要求，Session充值不自动绑定手机号。",
+      "evidence_class": "official_platform_help"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_126_price_rows_unchanged": true,
+    "first_96_reports_unchanged": true
+  },
+  "notes": [
+    "公开标价与商家承诺不等于实际成交或实测。",
+    "2026-08-17与2026-10-22是网页自标发布日期，2026-11-08仅本轮观察日期。",
+    "AISUBPRO特价限制不得错误扩展到未读正文的普通兑换入口。",
+    "发票文章旧值167+15正确算术为182，不等于商称183；当前定价165，不能反推真实补费。",
+    "未知支付附费、中国有效税票、出票及收款主体、授权、批发单价继续null；符合全部条件真实上游0。",
+    "未购物、未联系商家、未提交账号Session/Token或接码。"
+  ]
+}

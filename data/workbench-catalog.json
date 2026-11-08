@@ -2476,6 +2476,28 @@
       "summary": "19条本轮实读/无正文/访问失败原URL。¥135为商家旧日推广价而非当前实付，¥165为hicxy宣传而非qfcc99进货价；中国税票、合同、批发价、SMS成功均null或0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r97-20261108",
+      "title": "GPT源头第97轮 · AISUBPRO特价Free限制及OKAI66含票报价",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r9.html",
+      "updatedAt": "2026-11-08",
+      "summary": "AISUBPRO仅gpt2-特价卡当前无订阅Free账号；OKAI66原号Plus零售¥165/月、商称含中国电子普票¥183超预算；旧文票费算术冲突，真实批发与税票未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r97-20261108-evidence",
+      "title": "第97轮 · 特价渠道资格及电子普票对价 · 17条来源",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r9-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "17条本轮读取或无正文原始URL，保留8月17日隐私声明与10月22日开票文章自标日期；批发单件进价、真实中国税票、转售授权与短信通过仍0或null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

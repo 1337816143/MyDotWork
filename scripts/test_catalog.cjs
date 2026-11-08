@@ -645,3 +645,14 @@ assert.equal(r96.new_candidates[1].merchant_advertised_original_account_plus_pri
 assert.equal(r96.new_candidates[1].merchant_checkout_price_cny,null);
 assert.equal(r96.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r96.phone_verification.successful_web_codex_api_sms_tests,0);
+
+// Round 97: special gpt2- Free restriction is only valid for that SKU.
+const r97cat=d.records.find(x=>x.id==='gpt-source-followup-r97-20261108'),r97data=d.records.find(x=>x.id==='gpt-source-followup-r97-20261108-evidence');
+assert(r97cat&&r97data&&r97cat.url.endsWith('supplier-followup-20261108-r9.html'));
+const r97=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r9-evidence.json'),'utf8'));
+assert.equal(r97.round,97);assert.equal(r97.site_version,'1.9.105');assert.equal(r97.sources.length,17);
+assert.equal(r97.new_evidence.aisubpro_discounted.card_prefix,'gpt2-');
+assert.equal(r97.new_evidence.aisubpro_discounted.ordinary_gpt_card_has_same_restriction_proven,false);
+assert.equal(r97.new_evidence.okai66_plus.merchant_invoice_total_cny,183);
+assert.equal(r97.new_evidence.okai66_plus.all_required_fee_and_verified_china_vat_total_cny,null);
+assert.equal(r97.qualification_totals.verified_plus_wholesale_upstreams,0);
