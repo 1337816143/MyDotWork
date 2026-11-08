@@ -1,0 +1,195 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 102,
+  "site_version": "1.9.110",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次核小羊Plus Plus含票¥179/份与Steadflow Plus含票¥180/月、旧FAQ价签冲突及服务条款转售禁令；商家声明不等同已验批发或中国VAT票。",
+  "new_evidence": {
+    "xiaoyangplus": {
+      "website": "https://xiaoyangplus.com/",
+      "exact_sku": "pid=23 ChatGPT Plus",
+      "checkout": "https://xiaoyangplus.com/checkout.html?pid=23",
+      "price_cny_per_unit": 169,
+      "invoice_option_display_cny_per_unit": 179,
+      "invoice_option_increment_cny": 10,
+      "invoice_option_exceeds_budget_cny": 9,
+      "period_30_days_explicitly_verified_in_checkout": null,
+      "merchant_claims_apple_app_store_account_id": true,
+      "merchant_claims_own_account": true,
+      "requires_prior_chatgpt_login": true,
+      "merchant_claims_no_password_or_otp_sent_to_cs": true,
+      "actual_session_flow_independently_verified": null,
+      "existing_plus_can_stack_verified": null,
+      "merchant_guidance_wait_until_expiry": true,
+      "merchant_claim_failed_delivery_cash_refund": "卖家审核后实付款100%，通常原支付渠道",
+      "merchant_claim_early_loss_refund": "实付金额/30×剩余有效天数，须先审核",
+      "payment_processing_fee_cny": null,
+      "invoice_type_verified": null,
+      "invoice_issuer_verified": null,
+      "invoice_description_merchant_claim": "生产生活服务技术服务费",
+      "real_paid_total_cny": null,
+      "all_required_fees_with_valid_china_vat_invoice_cny": null,
+      "actual_cash_refund_verified": null,
+      "business_payment_entity_verified": null,
+      "resale_authorization_verified": null,
+      "one_piece_wholesale_price_cny": null,
+      "no_agent_entry_fee_verified": null,
+      "qualifies_as_verified_wholesale_upstream": false
+    },
+    "steadflow": {
+      "website": "https://china-models.com/",
+      "homepage_price_cny_per_month": 160,
+      "homepage_invoice_option_cny_per_month": 180,
+      "homepage_invoice_option_increment_cny": 20,
+      "invoice_option_exceeds_budget_cny": 10,
+      "faq_older_price_cny_per_month": 148,
+      "contradictory_price_pages": true,
+      "change_date_verified": null,
+      "exact_checkout_sku_price_cny": null,
+      "merchant_terms_prohibit_resale_and_shared_accounts": true,
+      "terms_last_updated_claim": "2026-07-01",
+      "specific_resale_permission_verified": null,
+      "one_piece_wholesale_price_cny": null,
+      "no_agent_entry_fee_verified": null,
+      "real_paid_total_cny": null,
+      "payment_processing_fee_cny": null,
+      "china_vat_invoice_type_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "all_required_fees_with_valid_china_vat_invoice_cny": null,
+      "merchant_business_identity_verified": null,
+      "merchant_payment_entity_verified": null,
+      "codex_relay_api_is_distinct_from_plus_subscription": true,
+      "qualifies_as_verified_wholesale_upstream": false
+    }
+  },
+  "bounded_existing_candidates": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "verified_new_changes": 0,
+    "old_prices_not_refreshed": true
+  },
+  "independent_phone_verification": {
+    "chatgpt_web_verified_sms": 0,
+    "codex_verified_sms": 0,
+    "first_api_key_verified_sms": 0,
+    "number_duration_verified": null,
+    "failed_sms_cash_refund_verified": null,
+    "apple_purchase_and_session_delivery_can_coexist": true,
+    "ordinary_subscription_automatically_binds_phone": false,
+    "session_fulfillment_may_require_prior_login": true
+  },
+  "sources": [
+    {
+      "url": "https://xiaoyangplus.com/",
+      "fact": "本人原号Plus零售¥169、在期通常不能叠加；价格为网页显示不是批发价。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://xiaoyangplus.com/checkout.html?pid=23",
+      "fact": "Plus pid=23结算预览¥169/份，含票价¥179/份；商称苹果App Store订阅/Account ID和卡密核销。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://xiaoyangplus.com/invoice.html",
+      "fact": "票据项目称生产生活服务技术服务费，实际开票主体、类型仍需询问，未见可验中国VAT。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://xiaoyangplus.com/about.html",
+      "fact": "自称独立非OpenAI授权代理，Account ID方式无需向客服提供密码或邮箱OTP。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://xiaoyangplus.com/guide.html",
+      "fact": "卡密核销先在同浏览器登录ChatGPT；留的联系方式仅为订单查询。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://xiaoyangplus.com/refund.html",
+      "fact": "商称失败经审核退实际支付100%，正常已交付个人原因不退，提前失效按实付与剩余天数计算。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": "2026-01-01",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://china-models.com/",
+      "fact": "Steadflow本人账号Plus零售¥160/月、含票选项¥180/月；并列Codex中转API。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://china-models.com/faq",
+      "fact": "同站FAQ列Plus ¥148/月，旧网页摘要，不能判定当前结算或涨价日期。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "read_page_with_older_index_snapshot",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://china-models.com/services/subscription-recharge",
+      "fact": "准确SKU价正在加载；收银台金额为准、支付宝/对公转账为商称。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://china-models.com/terms",
+      "fact": "自标2026-07-01服务条款禁止转售、共享账号给第三方；无专项批发许可。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": "2026-07-01",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    },
+    {
+      "url": "https://china-models.com/about",
+      "fact": "称第三方平台，Plus充值和Codex中转是两条业务，不等于官方API和手机号验证。",
+      "observed_on": "2026-11-08",
+      "published_or_site_updated_on": null,
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_page_or_claim_not_paid_test"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchases": 0,
+    "verified_china_vat_invoices": 0,
+    "successful_sms_verification_tests": 0
+  }
+}
