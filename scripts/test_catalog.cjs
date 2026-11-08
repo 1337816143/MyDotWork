@@ -774,3 +774,19 @@ assert.equal(r106.new_evidence.codex_sms.rights_expire_after_days,30);
 assert.equal(r106.new_evidence.codex_sms.exclusive_number_control_days,null);
 assert.equal(r106.new_evidence.codex_sms.cash_refund_if_sms_not_received_verified,null);
 assert.equal(r106.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 107: true one-month retail offer, VAT not verified, +44 SMS is separate from Plus.
+const cat107=d.records.find(x=>x.id==='gpt-source-followup-r107-20261109'),data107=d.records.find(x=>x.id==='gpt-source-followup-r107-20261109-evidence');
+assert(cat107&&data107&&cat107.url.endsWith('supplier-followup-20261109.html'));
+const r107=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-evidence.json'),'utf8'));
+assert.equal(r107.round,107);assert.equal(r107.site_version,'1.9.115');assert.equal(r107.sources.length,6);
+assert.equal(r107.new_evidence.xiyueai_plus.merchant_listed_price_cny_per_own_account_month,118);
+assert.equal(r107.new_evidence.xiyueai_plus.merchant_visible_purchase_preview_total_cny,119.77);
+assert.equal(r107.new_evidence.xiyueai_plus.verified_single_unit_wholesale_cost_cny,null);
+assert.equal(r107.new_evidence.xiyueai_plus.all_required_payment_and_valid_china_vat_invoice_cny,null);
+assert.equal(r107.new_evidence.xiyueai_plus.requires_full_authsession_json_including_access_token,true);
+assert.equal(r107.new_evidence.xiyueai_sms.merchant_price_cny_per_sms_right,8);
+assert.equal(r107.new_evidence.xiyueai_sms.phone_exclusive_control_minutes_merchant_claim_approx,20);
+assert.equal(r107.new_evidence.xiyueai_sms.cash_refund_if_no_sms_verified,null);
+assert.equal(r107.new_evidence.payforchat_retail_exclusion.seller_explicitly_cannot_issue_mainland_china_vat_invoice,true);
+assert.equal(r107.qualification_totals.verified_plus_wholesale_upstreams,0);
