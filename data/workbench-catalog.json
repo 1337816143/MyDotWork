@@ -2674,6 +2674,28 @@
       "summary": "6条原始URL按2026-11-08分级记录，商品原页与第三方聚合价分开；已核零售费不等于含中国VAT实际付款/正式供货权，未知null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r106-20261108",
+      "title": "GPT源头第106轮 · GPT补给站Plus卡与独立Codex短信费用边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r18.html",
+      "updatedAt": "2026-11-08",
+      "summary": "首次核到Plus ¥125/张（准确月数未核）、Codex短信接码¥8/次、在线支付费3%；权益30天内使用不等于号码持有30天，失败只明确退站内权益。转售/VAT和实际验证未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r106-20261108-evidence",
+      "title": "第106轮 · Codex接码权益期限、3%附费、会话保留与开票缺口 · 9原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r18-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "9个2026-11-08实读原URL，商家网页承诺与官方规则分级保存；短信¥8/次、使用权益30天、退权益非现金，含票Plus全费和上游授权仍null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
