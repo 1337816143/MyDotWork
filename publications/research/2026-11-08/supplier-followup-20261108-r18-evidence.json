@@ -1,0 +1,191 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 106,
+  "site_version": "1.9.114",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接核实GPT补给站自有商城、Codex独立SMS教程、开票/会话条款及其外链geprosub.com兑换入口。独立接码准确单次标价、权益使用期限、退站内权益与现金退款区别；Plus单卡报价与在线手续费均来自网页，真实单月期限及中国VAT未闭合。不是任何账号或付款实测。",
+  "new_evidence": {
+    "gpt_bu_gei_zhan": {
+      "merchant_url": "https://gptbjz.com/shop",
+      "plus_display_name": "Plus",
+      "plus_listed_cny_per_card": 125,
+      "plus_period_months_confirmed_on_card": null,
+      "merchant_claim_own_account": true,
+      "online_payment_fee_percent_claim": 3,
+      "conditional_plus_plus_3pct_cny": 128.75,
+      "online_checkout_confirmed": false,
+      "merchant_claim_manual_order_no_online_gateway_fee": true,
+      "manual_purchase_attempted": false,
+      "china_vat_invoice_fee_cny": null,
+      "all_required_china_vat_invoice_fees_cny": null,
+      "verified_china_vat_invoice": null,
+      "merchant_operator_verified": null,
+      "actual_payee_verified": null,
+      "invoice_issuer_verified": null,
+      "wholesale_single_unit_price_cny": null,
+      "bulk_threshold": null,
+      "legitimate_resale_authorization_verified": null,
+      "actual_delivery_verified": false,
+      "requires_existing_chatgpt_login_before_plus_redemption": true,
+      "requires_complete_authsession_json_for_plus": true,
+      "merchant_claim_session_destroy_after_success": true,
+      "merchant_claim_temporarily_encrypt_failed_session": true,
+      "redemption_site_url": "https://geprosub.com/",
+      "redemption_site_role": "card_activation_and_upgrade_quote_only",
+      "redemption_site_public_wholesale_price_cny": null,
+      "redemption_site_claim_encrypted_order_session_retention": true,
+      "operator_relationship_legally_verified": false,
+      "qualifies_as_verified_wholesale_upstream": false
+    },
+    "codex_sms": {
+      "product_display_name": "Codex 接码（自选地区）",
+      "exact_unit": "CNY/次接收一次Codex短信验证码权益",
+      "merchant_listed_cny_per_receive_right": 8,
+      "merchant_says_online_gateway_fee_percent": 3,
+      "conditional_cny_with_3pct": 8.24,
+      "actual_paid_cny": null,
+      "rights_expire_after_days": 30,
+      "exclusive_number_control_days": null,
+      "merchant_claim_country_selection_including_us": true,
+      "merchant_platform_login_required": true,
+      "openai_login_session_required_for_sms": false,
+      "verification_code_receipt_consumes_right": true,
+      "openai_success_automatically_guaranteed": false,
+      "failed_no_sms_releases_right_claim": true,
+      "cash_refund_if_sms_not_received_verified": null,
+      "failed_openai_acceptance_cash_refund_verified": null,
+      "number_long_term_recapture_verified": null,
+      "supports_codex_sms_claim": true,
+      "supports_chatgpt_web_sms_verified": null,
+      "supports_first_api_key_sms_verified": null,
+      "successful_phone_verification_tests": 0,
+      "merchant_demo_screenshots_real_order": false
+    },
+    "invoice": {
+      "merchant_claim_einvoice_available": true,
+      "invoice_application_method": "下单后向客服提供商城订单号、抬头和税号；只作为网页声明",
+      "valid_mainland_vat_invoice_verified": null,
+      "issuer_identity_verified": null,
+      "invoice_type_verified": null,
+      "invoice_fee_cny": null
+    },
+    "supply_chain": {
+      "portal_link_label": "代理入口",
+      "portal_url": "https://geprosub.com/",
+      "portal_readable_role": "card redemption, account session submission, and Pro upgrade price inquiry",
+      "wholesale_price_shown": false,
+      "formal_resale_authorization": null,
+      "upstream_legal_entity": null,
+      "platform_relationship_inferred_not_independently_proven": true
+    }
+  },
+  "independent_phone_verification": {
+    "new_service_found": true,
+    "sms_claim_for_codex": true,
+    "chatgpt_web_success_verified": false,
+    "first_api_key_success_verified": false,
+    "number_control_duration_minutes": null,
+    "rights_validity_days": 30,
+    "failed_sms_cash_refund_cny": null,
+    "successful_phone_verifications": 0,
+    "ordinary_plus_recharge_not_automatic_phone_verification": true
+  },
+  "old_priority_sources": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "old_source_prices_refreshed": false,
+  "sources": [
+    {
+      "url": "https://gptbjz.com/",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_landing",
+      "observation": "Plus标价¥125，Codex接码¥8/次；会员交付需先登录ChatGPT提交AuthSession；主页开票承诺未经税票验真。"
+    },
+    {
+      "url": "https://gptbjz.com/shop",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_catalog_and_fee",
+      "observation": "Plus卡¥125/张、Codex SMS自选地区¥8/次（30天内使用权益）；商城在线支付手续费3%，人工下单称免在线手续费（本轮不联系）；准确Plus月数未在此商品卡明示，真实收银台未付款。"
+    },
+    {
+      "url": "https://gptbjz.com/codex-sms-guide",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_smm_manual",
+      "observation": "单次Codex短信权益，需登录商家平台账号但不需AuthSession；收到验证码即消耗一次；权益30天内有效不是保有号码30天；失败释放退权益不等于现金退款；示例截图为虚构而非成功证明；页面自标2026-09-21。"
+    },
+    {
+      "url": "https://gptbjz.com/status-guide",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_warranty_invoice",
+      "observation": "商称订阅期内掉订可恢复、补时或余日退款；开票需订单号抬头税号联系客服，未公开实际出票法人和税票种类；页面自标2026-11-05，来自/invoice跳转。"
+    },
+    {
+      "url": "https://gptbjz.com/about",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_identity",
+      "observation": "本站自认独立第三方非OpenAI官方，品牌使用不代表获授权；交易和开票主体请买家下单前另核；页面自标2026-09-20。"
+    },
+    {
+      "url": "https://gptbjz.com/privacy",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_session_claim",
+      "observation": "商称充值成功后销毁AuthSession，失败时暂加密保存，非独立审计；页面自标2026-11-05。"
+    },
+    {
+      "url": "https://gptbjz.com/terms",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_terms",
+      "observation": "商品支付手续费和实际交付以结算页为准；接码售后单独约定，无现金退款承诺；页面自标2026-09-20。"
+    },
+    {
+      "url": "https://geprosub.com/",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "linked_redemption_portal_not_wholesale",
+      "observation": "GPT补给站标为代理入口，但实际能读到的页面是卡密激活与抵扣核对，无公开进货价格或转售授权；要求先登录ChatGPT并上传完整AuthSession；页面一处称Session不留存，另一处说明按订单加密存储供异常重试与售后。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "official_platform_boundary",
+      "observation": "官方区分一般ChatGPT无需手机号、Codex桌面端可能要验证、首次API Key要求验证；短信或适用国家WhatsApp，不能用会员充值替代。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未实际付款、未下订单",
+    "未联系卖家或客服",
+    "未提交真实Session、密码或短信验证码",
+    "未真实验票、接码或验证履约"
+  ]
+}
