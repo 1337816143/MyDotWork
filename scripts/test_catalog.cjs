@@ -656,3 +656,15 @@ assert.equal(r97.new_evidence.aisubpro_discounted.ordinary_gpt_card_has_same_res
 assert.equal(r97.new_evidence.okai66_plus.merchant_invoice_total_cny,183);
 assert.equal(r97.new_evidence.okai66_plus.all_required_fee_and_verified_china_vat_total_cny,null);
 assert.equal(r97.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 98: claimed wholesale flow and public enterprise MOQ are not paid/authorized verification.
+const r98cat=d.records.find(x=>x.id==='gpt-source-followup-r98-20261108'),r98data=d.records.find(x=>x.id==='gpt-source-followup-r98-20261108-evidence');
+assert(r98cat&&r98data&&r98cat.url.endsWith('supplier-followup-20261108-r10.html'));
+const r98=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r10-evidence.json'),'utf8'));
+assert.equal(r98.round,98);assert.equal(r98.site_version,'1.9.106');assert.equal(r98.sources.length,13);
+assert.equal(r98.new_evidence.v2bk.wholesale_per_account_month_cny,null);
+assert.equal(r98.new_evidence.v2bk.merchant_explicitly_no_warranty,true);
+assert.equal(r98.new_evidence.getplus.enterprise_purchase_minimum_units,5);
+assert.equal(r98.new_evidence.getplus.checkout_total_usd,null);
+assert.equal(r98.new_evidence.getplus.phone_field_links_or_verifies_chatgpt_phone,false);
+assert.equal(r98.qualification_totals.verified_plus_wholesale_upstreams,0);

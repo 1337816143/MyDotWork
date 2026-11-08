@@ -1,0 +1,247 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 98,
+  "site_version": "1.9.106",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "新增V2BK两款Plus卡密及直接承认批发与不质保、具体卡密兑换服务链；GetPlus企业最低5起和香港声明主体/发票条件、订购手机号与ChatGPT验证区别；Plus宇宙零售¥149。并非本日调价或完成交易。",
+  "new_evidence": {
+    "v2bk": {
+      "merchant_source_urls": [
+        "https://www.v2bk.com/shop/851.html",
+        "https://www.v2bk.com/shop/687.html",
+        "https://www.v2bk.com/598.html"
+      ],
+      "accurate_skus": [
+        {
+          "sku": "ChatGPT Plus 正规自动充值〖高质量IOS渠道〗",
+          "period": "一个月",
+          "merchant_display_price_cny": null
+        },
+        {
+          "sku": "ChatGPT Plus 菲区正规官方自动充值〖高质量正规卡〗",
+          "period": "一个月",
+          "merchant_display_price_cny": null
+        }
+      ],
+      "merchant_claims_wholesale_and_first_hand": true,
+      "merchant_claims_no_retail_service": true,
+      "minimum_order_quantity": null,
+      "single_unit_agent_supply_confirmed": false,
+      "wholesale_per_account_month_cny": null,
+      "upfront_agent_fee_cny": null,
+      "payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "total_all_required_fees_and_verified_china_vat_cny": null,
+      "merchant_explicitly_no_warranty": true,
+      "formal_resale_authorization": null,
+      "verified_company": null,
+      "payment_entity": null,
+      "vat_invoice_entity": null,
+      "verified_paid_delivery_count": 0,
+      "apple_ios_and_full_session_possible_together": true,
+      "card_issuer_and_redemption_operator_same_legal_entity_verified": false,
+      "redemption_urls": [
+        "https://iosgpt.github.cn.com/",
+        "https://turkeygpt.github.cn.com/",
+        "https://autogpt.github.cn.com/"
+      ],
+      "requires_logged_in_session_json": true,
+      "session_fields": [
+        "accessToken",
+        "user.email",
+        "account.planType"
+      ],
+      "phone_verification_auto_completed": false,
+      "open_api_kind": "card_validation_and_redemption_not_verified_wholesale_pricing_api",
+      "qualified_wholesale_upstream": false,
+      "historical_iOS_restoration_claimed_date": "2026-09-25",
+      "actual_restoration_in_2026_11_08_proven": false
+    },
+    "getplus": {
+      "source_urls": [
+        "https://www.getplus.ai/en/about",
+        "https://www.getplus.ai/qiye-caigou",
+        "https://www.getplus.ai/en"
+      ],
+      "merchant_claimed_operating_entity": "HONG KONG AIGC LIMITED",
+      "merchant_claimed_jurisdiction": "Hong Kong",
+      "independently_verified_legal_entity": false,
+      "merchant_claims_not_officially_authorized_openai_reseller": true,
+      "enterprise_purchase_minimum_units": 5,
+      "enterprise_discount_price_cny": null,
+      "one_unit_wholesale_available": false,
+      "merchant_claimed_ordinary_and_special_vat_invoices": true,
+      "merchant_claimed_special_invoice_rates_percent": [
+        1,
+        6
+      ],
+      "verified_mainland_vat_invoice_issuer": null,
+      "real_vat_invoice_verified": false,
+      "english_page_checkout_invoice_surcharge_usd": 2.1,
+      "checkout_base_price_usd": null,
+      "checkout_total_usd": null,
+      "all_fees_and_verified_china_vat_total_cny": null,
+      "phone_field_purpose": "WeChat-linked number for order lookup and support",
+      "phone_field_links_or_verifies_chatgpt_phone": false,
+      "refund_claim_tested": false,
+      "qualified_wholesale_upstream": false
+    },
+    "pluscosmo_retail": {
+      "source": "https://www.pluscosmo.com/shop/chatgpt-plus",
+      "accurate_sku": "本人原号ChatGPT Plus",
+      "merchant_display_price_cny_per_account_month": 149,
+      "months": 1,
+      "quantity": 1,
+      "merchant_claimed_warranty_days": 30,
+      "requires_existing_openai_login_session": true,
+      "invoice_eligibility": null,
+      "invoice_fee_cny": null,
+      "full_checkout_total_cny": null,
+      "legal_entity": null,
+      "resale_authorization": null,
+      "qualified_wholesale_upstream": false
+    }
+  },
+  "phone_verification": {
+    "normal_chatgpt_web_phone_required": false,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_phone_required": true,
+    "session_or_apple_pay_automatically_binds_phone": false,
+    "merchant_wechat_contact_phone_is_not_chatgpt_verification": true,
+    "number_control_days": null,
+    "failed_sms_cash_refund_cny": null,
+    "real_sms_successes_web_codex_api": 0
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.v2bk.com/shop/851.html",
+      "read_status": "direct_public_page_read",
+      "fact": "iOS Plus准确商品1月，自称批发商/一手货源、支持批量提卡，称不接散户且不提供质保；当前商品动态价格显示￥--，不能据此确定结算价、最小起订量或供货资质。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.v2bk.com/shop/687.html",
+      "read_status": "direct_public_page_read",
+      "fact": "菲区Plus准确SKU一月，称本人原号、续费、批发商不接散户、无质保；订单价页为￥--；未经独立核实的官方/一手宣传。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.v2bk.com/shop",
+      "read_status": "direct_public_page_read",
+      "fact": "商品目录存在iOS和菲区Plus单月准确SKU，但列表价格￥--、库存￥--。页面购入动态为站内展示，不是外部可验订单。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.v2bk.com/598.html",
+      "read_status": "direct_public_page_read",
+      "fact": "站方教程把本站售卡与iosgpt、turkeygpt、cz.gptdsb及备用地址的外站兑换明确连接；需先在OpenAI成功登录获取Session；自标3月21日但未直接核定年份，不视作当日更新。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://iosgpt.github.cn.com/",
+      "read_status": "direct_public_page_read",
+      "fact": "iOS卡密验证接口POST /api/open/v1/card-query；按卡密路线调用iOS/Google/GPT接口，JSON需包含accessToken、user.email、account.planType；不证明运营主体和实际成功率。",
+      "evidence_class": "redemption_service_self_published",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://turkeygpt.github.cn.com/",
+      "read_status": "direct_public_page_read",
+      "fact": "土区兑换站公开卡密校验与POST /api/open/redeem接口，需要完整ChatGPT Session JSON；所谓API是卡密兑换功能而非报价批发API。",
+      "evidence_class": "redemption_service_self_published",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://autogpt.github.cn.com/",
+      "read_status": "direct_public_page_read",
+      "fact": "菲区商品页另指向autogpt兑换站，支持卡密验证及Session提交；站点展示接口不等于正式批发授权。",
+      "evidence_class": "redemption_service_self_published",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.v2bk.com/circle/936.html",
+      "read_status": "direct_public_page_read",
+      "fact": "商家自标2026-09-25 iOS渠道恢复；本轮才读到该旧帖子，不能冒称2026-11-08最新恢复事件。",
+      "evidence_class": "merchant_self_published_historical",
+      "published_or_site_updated_on": "2026-09-25"
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.getplus.ai/en/about",
+      "read_status": "direct_public_page_read",
+      "fact": "GetPlus自标2026-08-24公司HONG KONG AIGC LIMITED香港注册及地址，并明确不是OpenAI官方或授权代理；公司注册/实际收款/出票未独立验真。",
+      "evidence_class": "merchant_self_published_historical",
+      "published_or_site_updated_on": "2026-08-24"
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.getplus.ai/qiye-caigou",
+      "read_status": "direct_public_page_read",
+      "fact": "企业批量采购FAQ明称最低5个、折扣另询、按月对公付款、普通/专用发票及专票1%/6%是商家自述；明确非OpenAI授权；单件无前置费及中国税务票据主体未验。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.getplus.ai/en",
+      "read_status": "direct_public_page_read",
+      "fact": "Plus结算栏显示发票选项附加USD2.10，但金额本体仍Loading price；用于售后订单查询的微信手机号明确与ChatGPT账号无关，不等于已绑定/验证OpenAI手机号。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://www.pluscosmo.com/shop/chatgpt-plus",
+      "read_status": "direct_public_page_read",
+      "fact": "新增零售Plus本人原号Session一月¥149，付款方式声称微信支付宝且有30天订阅质保，未进入订单/付款；无税票、经营主体、正式批发授权全费证据。",
+      "evidence_class": "merchant_self_published_not_independent",
+      "published_or_site_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://help.openai.com/en/articles/8983040",
+      "read_status": "direct_official_help_read",
+      "fact": "官方指出ChatGPT普通使用通常无需手机号，桌面Codex可能会要求，创建首个API Key需验证，不支持VoIP/Google Voice号码；充值Session不自动建立手机号控制。",
+      "evidence_class": "official_platform_help",
+      "published_or_site_updated_on": null
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_126_price_rows_unchanged": true,
+    "first_97_reports_unchanged": true
+  },
+  "notes": [
+    "本轮来源均为2026-11-08实读；2026-09-25及2026-08-24为网站自标历史日期，非新发布事件。",
+    "V2BK所称一手/批发/官方iOS与续费只是商家自述；当前动态￥--不计为零价或实价，报单价及含票费用均null。",
+    "GetPlus企业最低5个与用户单件目标不符；香港主体仅商称、内地VAT票出票法人未验，专票税率宣称不能证明其合法税票。",
+    "$2.10为英语付款页的附加发票费显示，页面基础价格未加载，不能换算或认定最终CNY含税票金额。",
+    "Plus宇宙¥149是新候选自述零售价非批发价，税票主体/费用/授权未核。",
+    "仅公开页面核查，未付款、未购买卡密、未测试接口、未提交Session/Token、未联系商家、未收短信。"
+  ]
+}
