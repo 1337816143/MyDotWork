@@ -2696,6 +2696,28 @@
       "summary": "9个2026-11-08实读原URL，商家网页承诺与官方规则分级保存；短信¥8/次、使用权益30天、退权益非现金，含票Plus全费和上游授权仍null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r107-20261109",
+      "title": "GPT源头第107轮 · 溪悦AI月卡电子普票商称与独立英国手机接码",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109.html",
+      "updatedAt": "2026-11-09",
+      "summary": "新候选溪悦AI Plus本人原号1个月¥118、前台预览¥119.77；短信¥8、预览¥8.12，临时英国+44号码约20分钟。开中国VAT票为商称，主体、全费、授权、真履约未验。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r107-20261109-evidence",
+      "title": "第107轮 · 溪悦AI Plus、UK手机接码、PayForChat中国税票排除 · 6原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-evidence.json",
+      "updatedAt": "2026-11-09",
+      "summary": "首次读取6个2026-11-09原始URL；零售单月/预览金额和完整Session要求、短信20分钟及现金退款缺口、商业Invoice不等于国内VAT；合格批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
