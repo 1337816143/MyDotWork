@@ -2740,6 +2740,28 @@
       "summary": "2026-11-09直接观察8个原始URL，保留旧页面日期、加密币链费未知null、商家明确不提供VAT及短信未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r109-20261109",
+      "title": "GPT源头第109轮 · V3小店菲卡/iOS真实SKU与SMSPool号码线索",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-r3.html",
+      "updatedAt": "2026-11-09",
+      "summary": "V3 Plus 1个月菲卡¥133.50、iOS¥143.50；微信/USD手续费标3.5%；转售、有效中国VAT票及履约均未闭合；独立SMSPool仅为未验证手机服务线索。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r109-20261109-evidence",
+      "title": "第109轮 · V3小店两单月SKU/转售条款/SMSPool边界 · 9原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-r3-evidence.json",
+      "updatedAt": "2026-11-09",
+      "summary": "2026-11-09直接读取9个原URL；保留商家旧条款自标日期、支付额与中国VAT未知null、实名公司未独验及所有短信成功实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -803,3 +803,18 @@ assert.equal(r108.new_evidence.cdkstore.verified_actual_checkout_cny,null);
 assert.equal(r108.new_evidence.cdkstore.formal_wholesale_supply_resale_authorization_verified,null);
 assert.equal(r108.new_evidence.cdkstore.requires_chatgpt_access_token,true);
 assert.equal(r108.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 109: V3 first-party monthly SKUs, fee disclosure, resale gate and separate untested SMSPool.
+const cat109=d.records.find(x=>x.id==='gpt-source-followup-r109-20261109'),data109=d.records.find(x=>x.id==='gpt-source-followup-r109-20261109-evidence');
+assert(cat109&&data109&&cat109.url.endsWith('supplier-followup-20261109-r3.html'));
+const r109=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-r3-evidence.json'),'utf8'));
+assert.equal(r109.round,109);assert.equal(r109.site_version,'1.9.117');assert.equal(r109.sources.length,9);
+assert.equal(r109.new_evidence.v3_shop.channel_ph_card.retail_display_cny_per_one_account_month,133.5);
+assert.equal(r109.new_evidence.v3_shop.channel_ios.retail_display_cny_per_one_account_month,143.5);
+assert.equal(r109.new_evidence.v3_shop.merchant_display_wechat_payment_fee_percent,3.5);
+assert.equal(r109.new_evidence.v3_shop.terms_forbid_resale_without_permission,true);
+assert.equal(r109.new_evidence.v3_shop.actual_alipay_final_paid_cny,null);
+assert.equal(r109.new_evidence.v3_shop.valid_china_vat_invoice_issuer_verified,null);
+assert.equal(r109.independent_phone_verification.unique_openai_codex_sms_price_usd,null);
+assert.equal(r109.independent_phone_verification.no_sms_original_payment_cash_refund_verified,null);
+assert.equal(r109.qualification_totals.verified_plus_wholesale_upstreams,0);
