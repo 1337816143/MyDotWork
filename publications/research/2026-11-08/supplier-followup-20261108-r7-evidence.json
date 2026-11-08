@@ -1,0 +1,164 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 95,
+  "site_version": "1.9.103",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "OpenGPTPlus代理拿货起量和API押金；GPT100X Plus发票范围；首次入库两家原始商家证据，旧126行和此前94轮不改。",
+  "opengptplus": {
+    "faq_plus_advertised_cny_per_account_month": 159,
+    "homepage_now_no_listed_products": true,
+    "homepage_zero_is_placeholder": true,
+    "actual_plus_current_checkout_cny": null,
+    "merchant_agent_inventory_min_cards": 10,
+    "merchant_agent_initial_inventory_cny_from": 1000,
+    "merchant_api_deposit_cny_min": 3000,
+    "merchant_api_deposit_cny_max": 5000,
+    "deposit_return_claim_but_not_tested": true,
+    "one_item_zero_upfront_wholesale_eligible": false,
+    "real_unit_wholesale_cny": null,
+    "vat_invoice_claimed": true,
+    "china_vat_invoice_issuer": null,
+    "one_item_real_china_vat_invoice_verified": false,
+    "formal_supply_resale_authorization": null,
+    "existing_chatgpt_session_required": true,
+    "real_active_plus_no_loss_renewal_tested": false,
+    "real_cash_refund_tested": false
+  },
+  "gpt100x": {
+    "public_plus_cny_per_account_30days": 138,
+    "period_days": 30,
+    "generic_invoice_surcharge_claim": 0.06,
+    "arithmetic_plus_plus_surcharge_cny": 146.28,
+    "faq_invoice_explicit_pro10x_and_team_only": true,
+    "verified_one_item_plus_vat_invoice": false,
+    "actual_all_required_plus_vat_checkout_cny": null,
+    "checkout_actual_total_unreadable": true,
+    "receipt_legal_entity": null,
+    "invoice_issuer": null,
+    "wholesale_unit_price_cny": null,
+    "formal_supply_resale_authorization": null,
+    "no_agent_upfront_fee_verified": false,
+    "already_logged_in_authsession_needed": true,
+    "real_order_and_refund_tested": false
+  },
+  "phone_verification": {
+    "chatgpt_phone_normally_not_required": true,
+    "desktop_codex_may_ask_phone": true,
+    "first_api_key_phone_required": true,
+    "standalone_sms_sku_new_confirmed": false,
+    "number_control_period_days": null,
+    "failed_sms_cash_refund_cny": null,
+    "successful_sms_tests": 0
+  },
+  "sources": [
+    {
+      "url": "https://opengptplus.com/",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "下单区“暂未上架任何套餐”，¥0只是占位"
+    },
+    {
+      "url": "https://opengptplus.com/faq",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "Plus¥159/月FAQ宣传；中国VAT普通发票、覆盖已有Plus、退款均为商称"
+    },
+    {
+      "url": "https://opengptplus.com/reseller",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "建议零售¥155–175、申请量及默认输入不是实际批发价"
+    },
+    {
+      "url": "https://opengptplus.com/blog/become-chatgpt-plus-reseller",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "文章自标2026-05-17：囤货≥10张、首批资金自称≥¥1000；API模式按单出卡先交保证金¥3000–5000"
+    },
+    {
+      "url": "https://opengptplus.com/terms",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "自标2026-05-16，非OpenAI官方代理、香港争议条款、退款排除情况"
+    },
+    {
+      "url": "https://opengptplus.com/recharge",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "兑换须已有ChatGPT登录Session/access_token和卡密"
+    },
+    {
+      "url": "https://gpt100x.com/",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "本人原号Plus¥138/30天、泛称票费加6%，只明确Pro10X对公"
+    },
+    {
+      "url": "https://gpt100x.com/plus",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "准确Plus原号SKU ¥138/30天、到期再充值"
+    },
+    {
+      "url": "https://gpt100x.com/faq",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "仅Pro10X/Team明确开票；先交AuthSession、商称失败原路退款"
+    },
+    {
+      "url": "https://gpt100x.com/terms",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_public_page",
+      "fact": "非OpenAI官方授权代理，没有出票/收款主体及转售合同"
+    },
+    {
+      "url": "https://gpt100x.com/checkout",
+      "observed_on": "2026-11-08",
+      "read_status": "dynamic_checkout_loaded_no_prices",
+      "evidence_class": "merchant_public_page",
+      "fact": "动态收银台仅“正在准备下单…”无含票总付款价"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "official_policy",
+      "fact": "OpenAI官方：普通ChatGPT一般无手机验证、桌面Codex可能有、首个API Key要手机号"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_baseline_126_rows_original_unchanged": true,
+    "first_94_reports_original_unchanged": true
+  },
+  "notes": [
+    "2026-11-08为页面读取日，文章自标2026-05-17、条款自标2026-05-16，不能冒充今日新政策。",
+    "OpenGPTPlus ¥0占位与无可售套餐不等于零元商品，FAQ¥159不是现行实付。",
+    "商家首批资金¥1000不是已证10张批发成交价，API即使可退押金仍有前置支出。",
+    "GPT100X ¥138加6%只是条件算术¥146.28，Plus单件是否可开合法中国VAT及完整付款费用仍null。",
+    "Apple订阅和Session可能并存，不代表自动绑手机号；本轮零付款、零SMS、零VAT验真。"
+  ]
+}

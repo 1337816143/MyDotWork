@@ -2432,6 +2432,28 @@
       "summary": "实际读6条商家原网址，商品页¥169预览对目录¥159；历史149独立旧日期，真实结算/手续费/税票/采购授权null，手机成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r95-20261108",
+      "title": "GPT源头第95轮 · OpenGPTPlus代理门槛及GPT100X开票资格",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r7.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新证OpenGPTPlus最低囤10张或API押金¥3000–5000且首页无在售SKU；GPT100X Plus¥138/30天的VAT单件资格未证，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r95-20261108-evidence",
+      "title": "第95轮 · OpenGPTPlus和GPT100X代理、票据与接码边界 · 12 URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r7-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "12条本轮实际读取URL；FAQ¥159非实时可购、API押金/起量；¥138加6%仅假设，全部未证费用null，短信实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

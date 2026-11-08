@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 221, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 223, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.94'
-    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r5.html'
+    assert latest['version'] == '1.95'
+    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r6.html'
     assert by_id['gpt-source-followup-r72-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17.html'
     assert by_id['gpt-source-followup-r72-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17-evidence.json'
     r72 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r17-evidence.json').read_bytes())
@@ -1038,6 +1038,18 @@ def validate_publications():
     assert r94['wholesale_and_invoice_bounded_recheck']['real_one_item_wholesale_price_cny'] is None
     assert r94['phone_verification']['successful_sms_tests'] == 0
     assert r94['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert by_id['gpt-source-followup-r95-20261108']['url'] == '../research/2026-11-08/supplier-followup-20261108-r7.html'
+    assert by_id['gpt-source-followup-r95-20261108-evidence']['url'] == '../research/2026-11-08/supplier-followup-20261108-r7-evidence.json'
+    r95 = json.loads((ROOT / 'dist/research/2026-11-08/supplier-followup-20261108-r7-evidence.json').read_bytes())
+    assert r95['round'] == 95 and r95['site_version'] == '1.9.103' and len(r95['sources']) == 12
+    assert r95['opengptplus']['merchant_agent_inventory_min_cards'] == 10
+    assert r95['opengptplus']['merchant_api_deposit_cny_min'] == 3000
+    assert r95['opengptplus']['homepage_now_no_listed_products'] is True
+    assert r95['gpt100x']['public_plus_cny_per_account_30days'] == 138
+    assert r95['gpt100x']['verified_one_item_plus_vat_invoice'] is False
+    assert r95['gpt100x']['actual_all_required_plus_vat_checkout_cny'] is None
+    assert r95['phone_verification']['successful_sms_tests'] == 0
+    assert r95['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
