@@ -2630,6 +2630,28 @@
       "summary": "7个商家原始URL按2026-11-08读源记录；自标条款日期另存，支付费用、VAT出票主体、上游授权和SMS验证仍null/未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r104-20261108",
+      "title": "GPT源头第104轮 · 苏哲AI代理门槛、Session/API与Codex接码",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r16.html",
+      "updatedAt": "2026-11-08",
+      "summary": "苏哲AI本人原号Plus CDK代理¥115/张·1月（零售¥119），但资格先付¥29.99且仅Free可激活；API须预购卡+完整Session，独立SMS失败不消耗卡密仅商称。非法定已核上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r104-20261108-evidence",
+      "title": "第104轮 · 苏哲AI准确代理SKU、前置费、激活API及短信退款 · 5条URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r16-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "5条2026-11-08实读原URL、代理价¥115/张、前置¥29.99、零售¥119、PLS/SMS分线和退款边界；全部税票费用、授权和真实SMS成功仍null/0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
