@@ -2498,6 +2498,28 @@
       "summary": "17条本轮读取或无正文原始URL，保留8月17日隐私声明与10月22日开票文章自标日期；批发单件进价、真实中国税票、转售授权与短信通过仍0或null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r98-20261108",
+      "title": "GPT源头第98轮 · V2BK批发卡密链及GetPlus企业最低5起",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r10.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新增V2BK自称一手批发的iOS/菲区单月SKU及外部卡密Session兑换链，但价格空白且无质保；GetPlus企业5个起采与香港主体声明、中国票据未验，单件合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r98-20261108-evidence",
+      "title": "第98轮 · V2BK批发及GetPlus票据/起订量、零售补录 · 13原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r10-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "13条直接读取原始URL，V2BK单件进价、MOQ及中国税票null、无质保；GetPlus企业MOQ5与发票附USD2.10非全价，微信联络手机号非OpenAI绑定；Plus宇宙¥149零售不冒充批发。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
