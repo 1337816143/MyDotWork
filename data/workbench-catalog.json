@@ -2586,6 +2586,28 @@
       "summary": "4条GETGPT Plus原页及1条upchatgpt.pro旧域名跳转，准确零售¥138/单月与Session权限边界；完整税票和批发合同null，接码实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r102-20261108",
+      "title": "GPT源头第102轮 · 小羊Plus含票价格和Steadflow转售限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r14.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新实读小羊Plus原号Plus¥169/份、含票¥179/份；Steadflow首页¥160/月、含票¥180/月且条款禁止转售，旧FAQ¥148冲突；含票超¥170，实际有效VAT及批发授权未验。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r102-20261108-evidence",
+      "title": "第102轮 · 两家本人原号Plus含票选项、零售/转售边界 · 11条原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r14-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "11条实际访问来源和观察日；商家价与旧FAQ冲突区分，真实支付、中国有效VAT出票、授权及短信验证未取得，不刷新旧价。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
