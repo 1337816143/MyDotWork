@@ -2542,6 +2542,28 @@
       "summary": "15条首次或复核直读原URL，准确SKU、单件预结算、独立验证码服务、号码及安全边界，所有中国VAT票总额/批发进价未知null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r100-20261108",
+      "title": "GPT源头第100轮 · 年华AIStore批量阶梯88件与Free账号限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r12.html",
+      "updatedAt": "2026-11-08",
+      "summary": "首次原站读到代充默认¥113但Plus/Pro选项未拆清、88件起¥110/件；要求Free账号和Session Token，失败退款可能扣¥5。中国VAT、收款/供货授权及单件批发价仍未核，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r100-20261108-evidence",
+      "title": "第100轮 · 年华AIStore原始页面量价、退款与付款公告 · 4原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r12-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "4条本轮直接提取的商家原网址；¥113是混售默认商品价、¥110仅88件档位、Plus月SKU期限/支付附费/VAT费用null、真实手机验证0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

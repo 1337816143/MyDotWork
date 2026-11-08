@@ -684,3 +684,15 @@ assert.equal(r99.new_evidence.callai_codex.price_cny_per_one_verification,3);
 assert.equal(r99.new_evidence.callai_codex.long_term_same_number_control,false);
 assert.equal(r99.new_evidence.callai_codex.cash_refund_if_unsuccessful_cny,null);
 assert.equal(r99.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r100cat=d.records.find(x=>x.id==='gpt-source-followup-r100-20261108'),r100data=d.records.find(x=>x.id==='gpt-source-followup-r100-20261108-evidence');
+assert(r100cat&&r100data&&r100cat.url.endsWith('supplier-followup-20261108-r12.html'));
+const r100=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r12-evidence.json'),'utf8'));
+assert.equal(r100.round,100);assert.equal(r100.site_version,'1.9.108');assert.equal(r100.sources.length,4);
+assert.equal(r100.new_evidence.nianhua_ai_store.displayed_default_product_price_cny,113);
+assert.equal(r100.new_evidence.nianhua_ai_store.public_volume_tier_minimum_units,88);
+assert.equal(r100.new_evidence.nianhua_ai_store.public_volume_tier_price_cny_per_unit,110);
+assert.equal(r100.new_evidence.nianhua_ai_store.displayed_default_price_accurately_identified_as_one_month_plus_sku,false);
+assert.equal(r100.new_evidence.nianhua_ai_store.all_required_fees_and_verified_china_vat_invoice_cny,null);
+assert.equal(r100.new_evidence.nianhua_ai_store.refund_processing_deduction_cny_claim,5);
+assert.equal(r100.qualification_totals.verified_plus_wholesale_upstreams,0);

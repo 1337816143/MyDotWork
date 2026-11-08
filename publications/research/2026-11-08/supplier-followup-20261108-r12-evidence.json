@@ -1,0 +1,127 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 100,
+  "site_version": "1.9.108",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次读年华AIStore自有商品、首页、分类与历史公告：默认Plus/Pro混售商品挂牌¥113、明确88件及以上¥110/件的数量阶梯，个人Free限制、Session Token依赖、售后扣费规则；SKU周期、可验中国VAT和真实授权未闭合。本轮未得旧候选实质变价及手机号真实成功证据。",
+  "new_evidence": {
+    "nianhua_ai_store": {
+      "merchant_website": "https://ultra.makelove.cloud/",
+      "accurate_product_title": "chatgpt自动化代充值（正规）（质保订阅）",
+      "product_page": "https://ultra.makelove.cloud/products/tuerqiplus",
+      "displayed_default_product_price_cny": 113,
+      "displayed_default_price_accurately_identified_as_one_month_plus_sku": false,
+      "exact_plus_option_at_displayed_price": null,
+      "plus_entitlement_duration_days": null,
+      "product_contains_plus_and_pro_options": true,
+      "vendor_claims_own_original_account_supported": true,
+      "vendor_claims_account_must_be_free": true,
+      "vendor_claims_active_plus_stacking_or_renewal_supported": false,
+      "vendor_claims_philippines_and_chile_payment_routes": true,
+      "public_volume_tier_price_cny_per_unit": 110,
+      "public_volume_tier_minimum_units": 88,
+      "public_volume_tier_is_single_piece_wholesale": false,
+      "actual_single_piece_wholesale_cost_cny": null,
+      "actual_mandatory_wholesale_minimum_units": null,
+      "agent_upfront_fee_cny": null,
+      "site_public_guest_purchase_claim": true,
+      "site_public_in_stock_claim": true,
+      "fulfillment_claim_conflict": "商品页同时显示Auto fulfillment与自助提交后手动上号充值，真实交付未测",
+      "requires_prior_login_and_session_token": true,
+      "external_merchant_named_in_instructions": "诺汇盛公司 · VIP 充值服务",
+      "verified_legal_operator": null,
+      "verified_payment_entity": null,
+      "verified_china_vat_invoice_issuer": null,
+      "actual_valid_china_vat_invoice": null,
+      "current_invoice_fee_cny": null,
+      "actual_checkout_payment_processing_fee_cny": null,
+      "all_required_fees_and_verified_china_vat_invoice_cny": null,
+      "vendor_notice_usdt_claimed_no_fee": true,
+      "vendor_notice_date": "2026-07-31",
+      "merchant_maintenance_downtime_warning": true,
+      "refund_for_non_permanent_failure_vendor_claim": "商家语义为非永久不可用退款时每笔从商品价格扣¥5处理费；适用范围需按具体订单再确认",
+      "refund_processing_deduction_cny_claim": 5,
+      "actual_refund_paid_cny": null,
+      "actual_purchase_tested": false,
+      "actual_sms_verification_tested": false,
+      "formal_supply_and_resale_authorization": null,
+      "qualifies_as_verified_one_unit_plus_wholesaler": false
+    }
+  },
+  "bounded_existing_supplier_status": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "new_verified_price_or_invoice_or_authorization_change": false,
+    "historic_prices_not_refreshed": true,
+    "failed_page_reads_not_claimed_as_shutdown": true
+  },
+  "independent_phone_service_status": {
+    "chatgpt_web": "未取得新可核验真实短信通过",
+    "codex": "历史CallAI/CDK与其他服务范围照旧，本轮无新可验证成功或现金退款",
+    "api_first_key": "无新的已验独立号码方案",
+    "automatic_phone_binding_from_apple_or_session": false,
+    "session_requires_prior_login": true,
+    "number_long_term_control_verified": null,
+    "failed_sms_cash_refund_verified": null,
+    "successful_sms_tests": 0
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://ultra.makelove.cloud/products/tuerqiplus",
+      "read_status": "third_party_exa_fetched_original_merchant_page",
+      "evidence_class": "merchant_self_published_not_independently_verified",
+      "published_or_site_updated_on": null,
+      "fact": "原商家商品页实际读取到默认挂牌113.00 CNY；Wholesale pricing 110.00 CNY each for 88+；同商品Plus/Pro混列、未显准确plus一月选项；当前文字标In stock和Auto fulfillment但详细写手动上号、需要Free账号与Session Token；退款部分情况每单扣¥5，商称可能维护。"
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://ultra.makelove.cloud/",
+      "read_status": "third_party_exa_fetched_original_merchant_page",
+      "evidence_class": "merchant_self_published_not_independently_verified",
+      "published_or_site_updated_on": null,
+      "fact": "商家首页显示自动代充值商品113.00 CNY、GPTPlus成品号80.00 CNY；两个不同SKU不混同。"
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://ultra.makelove.cloud/products",
+      "read_status": "third_party_exa_fetched_original_merchant_page",
+      "evidence_class": "merchant_self_published_not_independently_verified",
+      "published_or_site_updated_on": null,
+      "fact": "目录仍列自动代充113.00 CNY，未单独显示精确Plus一个月周期。"
+    },
+    {
+      "observed_on": "2026-11-08",
+      "url": "https://ultra.makelove.cloud/notice",
+      "read_status": "third_party_exa_fetched_original_merchant_page",
+      "evidence_class": "merchant_self_published_historical_notice",
+      "published_or_site_updated_on": "2026-07-31",
+      "fact": "商家公告自标2026-07-31支付说明，宣称支付宝可用、USDT免手续费、延迟到账可能不发货；旧公告不等于2026-11-08当前人民币支付零手续费。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_plus_invoice_included_one_piece_purchases": 0,
+    "actual_purchases": 0,
+    "verified_china_vat_invoices": 0,
+    "successful_sms_verification_tests": 0
+  }
+}
