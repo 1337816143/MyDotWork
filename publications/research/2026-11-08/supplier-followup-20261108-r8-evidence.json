@@ -1,0 +1,230 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 96,
+  "site_version": "1.9.104",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次核实五五AI/aiGPT自售宣传与独立兑换链，以及hicxy到外部发卡店及兑换站的直接公开跳转；两者均只证明零售宣传/下游关系而非真实批发源头。旧重点商家有界复核及访问失败记录不刷新旧价。",
+  "new_candidates": [
+    {
+      "candidate": "aiGPT / 五五AI",
+      "seller_marketing_post_published": "2026-10-30",
+      "seller_marketing_plus_price_cny_per_month": 135,
+      "older_same_seller_post_published": "2026-07-11",
+      "older_seller_marketing_plus_price_cny_per_month": 155,
+      "accurate_sku": "ChatGPT Plus正版订阅一个月激活码",
+      "current_product_checkout_price_cny": null,
+      "merchant_claims_original_account": true,
+      "merchant_claims_renewal": true,
+      "merchant_claims_enterprise_invoice": true,
+      "verifiable_china_vat_invoice_type": null,
+      "real_invoicing_entity": null,
+      "real_payment_entity": null,
+      "storefront_redacted_license_insufficient": true,
+      "actual_checkout_all_fees_including_china_vat_cny": null,
+      "formal_wholesale_supply_authorization": null,
+      "single_item_wholesale_price_cny": null,
+      "verified_no_upfront_agent_fee": false,
+      "existing_logged_in_session_required": true,
+      "external_redeem_url": "https://redeem.hanlu.cfd/",
+      "redeem_site_operator_verified": false,
+      "cash_refund_on_failed_order_verified": false,
+      "real_orders_or_invoice_tests": 0,
+      "qualified_wholesale_upstream": false
+    },
+    {
+      "candidate": "AI会员代充（gpt.hicxy.com）",
+      "merchant_advertised_original_account_plus_price_cny_per_month": 165,
+      "merchant_checkout_price_cny": null,
+      "accurate_sku": "ChatGPT Plus原号卡密自助充值·1个月（宣传）",
+      "merchants_said_invoice_contact_after_purchase": true,
+      "china_vat_invoice_type": null,
+      "invoice_fee_cny": null,
+      "real_invoicing_entity": null,
+      "actual_checkout_all_fees_including_china_vat_cny": null,
+      "external_card_shop": "https://qfcc99.com/shop/panghu",
+      "external_redemption_url": "https://www.aisubpro.vip/",
+      "external_card_shop_actual_sku_and_price": null,
+      "external_shop_is_real_upstream_proven": false,
+      "existing_logged_in_session_required": true,
+      "merchant_claimed_failed_order_full_cash_refund": true,
+      "refund_paid_tested": false,
+      "formal_wholesale_supply_authorization": null,
+      "one_item_wholesale_price_cny": null,
+      "verified_no_upfront_agent_fee": false,
+      "qualified_wholesale_upstream": false
+    }
+  ],
+  "phone_verification": {
+    "chatgpt_web_normally_no_sms": true,
+    "desktop_codex_may_ask_phone": true,
+    "first_api_key_needs_phone": true,
+    "session_or_apple_automatically_binds_phone": false,
+    "independent_new_phone_verification_sku_qualified": false,
+    "number_control_period_days": null,
+    "failed_sms_cash_refund_cny": null,
+    "successful_web_codex_api_sms_tests": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.v2ex.com/t/1253224",
+      "observed_on": "2026-11-08",
+      "published_on": "2026-10-30",
+      "read_status": "direct_post_read",
+      "evidence_class": "self_published_merchant_marketing",
+      "fact": "aiGPT商家称本人账号Plus¥135/月、可续费、可开正规企业发票并引流55ai.net；未提供真实已付订单/税票/供货授权"
+    },
+    {
+      "url": "https://v2ex.com/t/1226557",
+      "observed_on": "2026-11-08",
+      "published_on": "2026-07-11",
+      "read_status": "direct_post_read",
+      "evidence_class": "self_published_merchant_historical_marketing",
+      "fact": "同名aiGPT同联系方式旧帖声称本人Plus¥155/月，不能判定当前真实结算¥135或确切调价日"
+    },
+    {
+      "url": "https://55ai.net/",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_storefront",
+      "fact": "五五AI站显示商家客服与aiGPT推广帖同一big825；商称有营业执照，现行目录动态加载不提供可读价格"
+    },
+    {
+      "url": "https://55ai.net/item/3",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "merchant_sku",
+      "fact": "准确SKU ChatGPT Plus正版订阅一个月激活码，自动发卡；商品页无可读当前实付价格，须先登录OpenAI并向站外兑换页提交完整Session JSON"
+    },
+    {
+      "url": "https://cdn.55ai.net/pic/1906/5566.JPG",
+      "observed_on": "2026-11-08",
+      "read_status": "visual_image_inspected",
+      "evidence_class": "merchant_supplied_redacted_business_screenshot",
+      "fact": "店家公示截图只露湖北博****限公司、遮盖统一社会信用代码，不可据此核对完整工商、付款或开票主体"
+    },
+    {
+      "url": "https://redeem.hanlu.cfd/",
+      "observed_on": "2026-11-08",
+      "read_status": "page_opened_zero_readable_body",
+      "evidence_class": "merchant_external_redemption_target",
+      "fact": "五五AI Plus商品页指向该兑换页，本轮未获可读页面或独立运营主体证明，不能推断上游"
+    },
+    {
+      "url": "https://gpt.hicxy.com/",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "reseller_marketing_page",
+      "fact": "本人原号Plus¥165/月宣传；说明Plus卡密经外部店铺供应、需Session，未成功全额退款为商称"
+    },
+    {
+      "url": "https://gpt.hicxy.com/chatgpt.html",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "reseller_product_instructions",
+      "fact": "¥165/月Plus页明写跳qfcc99店铺买卡密、去aisubpro.vip核销后粘贴完整Session；客服开票但未披露真实税票种类/金额/出票主体"
+    },
+    {
+      "url": "https://qfcc99.com/shop/panghu",
+      "observed_on": "2026-11-08",
+      "read_status": "page_opened_zero_readable_body",
+      "evidence_class": "external_card_shop",
+      "fact": "gpt.hicxy公开跳转的外部卖卡路径，本轮未能读取实际店铺SKU及支付价；历史曾记录qfcc99域名，未确认该店为一级源头"
+    },
+    {
+      "url": "https://www.aisubpro.vip/",
+      "observed_on": "2026-11-08",
+      "read_status": "access_error",
+      "evidence_class": "merchant_external_redemption_target",
+      "fact": "商家宣称的卡密兑换站本轮不能访问可读页面，不等于永久停服"
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "bounded_prior_supplier_recheck",
+      "fact": "旧本人Plus¥139.99/月，未发现相对于前轮新的价格或批发资格变化；未核真实含税票实付"
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "bounded_prior_supplier_recheck",
+      "fact": "旧本人原号Plus¥155/月商品及卡密配送仍可读，未取得新开票授权证据；非新价"
+    },
+    {
+      "url": "https://chatgqt.plus/buy?sku=LIST-000019",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "bounded_prior_supplier_recheck",
+      "fact": "引路鲸无质保Plus本人原号SKU LIST-000019 ¥125/月，既有记录重读无新价格"
+    },
+    {
+      "url": "https://chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "bounded_prior_supplier_recheck",
+      "fact": "引路鲸有质保Plus本人原号SKU LIST-000001 ¥135/月，既有记录重读无新价格"
+    },
+    {
+      "url": "https://chatshare.tv/plans",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_public_page_read",
+      "evidence_class": "bounded_prior_supplier_recheck",
+      "fact": "共享Plus五人¥31/30天、三人¥59/30天；明确仅Webchat不含Work/Codex/API，不符合本人原号"
+    },
+    {
+      "url": "https://catfk.com/shop/cat",
+      "observed_on": "2026-11-08",
+      "read_status": "page_opened_zero_readable_body",
+      "evidence_class": "bounded_prior_supplier_recheck_failed",
+      "fact": "本轮无可读正文，不能据此更新旧报价或认定停止服务"
+    },
+    {
+      "url": "https://morimm.com/",
+      "observed_on": "2026-11-08",
+      "read_status": "page_opened_zero_readable_body",
+      "evidence_class": "bounded_prior_supplier_recheck_failed",
+      "fact": "本轮无可读正文，不能据此更新旧报价或认定停止服务"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-08",
+      "read_status": "access_error",
+      "evidence_class": "bounded_prior_supplier_recheck_failed",
+      "fact": "当前开票指南本轮未成功读取，不刷新商称发票费用或开票限制"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040",
+      "observed_on": "2026-11-08",
+      "read_status": "direct_official_help_read",
+      "evidence_class": "official_policy_bounded_recheck",
+      "fact": "ChatGPT一般不要求手机、Codex桌面端可能要求，首个API Key必须手机号，VoIP不支持；无新实际短信成功样本"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_baseline_126_rows_original_unchanged": true,
+    "first_95_reports_original_unchanged": true
+  },
+  "notes": [
+    "¥135为2026-10-30商家自发V2EX推广口径，¥155为2026-07-11同号旧帖口径；两者都不是本次55ai.net商品现行实付，不断言精准涨跌日。",
+    "商家自己在页面贴营业执照截图且遮盖公司名称/信用代码，不能代替中国工商登记、真实收款及开票主体的独立核实。",
+    "¥165为hicxy零售宣传；实际付款跳转到qfcc99外部店铺，但本轮目标无可读正文，不能继承宣传价当卡密实付、批发进价或VAT含票总价。",
+    "两个候选均要求先网页登录、向第三方提交Session JSON，不能解决首次网页登录短信或自动绑定手机号。",
+    "相同页面的销量/库存与承诺不构成完成交易、正式授权或真实退款证据。未知费用保留null。",
+    "CatFK、Morimm及wind89发票指南本轮读取失败，不更新原价格观察日，也不判网站停业；本轮没有付款、联系、凭据提交或短信实测。"
+  ]
+}

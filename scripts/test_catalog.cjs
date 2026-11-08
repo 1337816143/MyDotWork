@@ -634,3 +634,14 @@ assert.equal(r95.opengptplus.homepage_now_no_listed_products,true);assert.equal(
 assert.equal(r95.gpt100x.public_plus_cny_per_account_30days,138);assert.equal(r95.gpt100x.verified_one_item_plus_vat_invoice,false);
 assert.equal(r95.gpt100x.actual_all_required_plus_vat_checkout_cny,null);assert.equal(r95.phone_verification.successful_sms_tests,0);
 assert.equal(r95.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Research round 96: new retail/provenance leads must not be promoted to verified upstream.
+const r96cat=d.records.find(x=>x.id==='gpt-source-followup-r96-20261108'),r96data=d.records.find(x=>x.id==='gpt-source-followup-r96-20261108-evidence');
+assert(r96cat&&r96data&&r96cat.url.endsWith('supplier-followup-20261108-r8.html'));
+const r96=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r8-evidence.json'),'utf8'));
+assert.equal(r96.round,96);assert.equal(r96.site_version,'1.9.104');assert.equal(r96.sources.length,19);
+assert.equal(r96.new_candidates.length,2);assert.equal(r96.new_candidates[0].current_product_checkout_price_cny,null);
+assert.equal(r96.new_candidates[1].merchant_advertised_original_account_plus_price_cny_per_month,165);
+assert.equal(r96.new_candidates[1].merchant_checkout_price_cny,null);
+assert.equal(r96.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r96.phone_verification.successful_web_codex_api_sms_tests,0);
