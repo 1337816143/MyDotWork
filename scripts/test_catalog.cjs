@@ -733,3 +733,18 @@ assert.equal(r103.new_evidence.payai_plus.chinese_vat_invoice_fee_cny,null);
 assert.equal(r103.new_evidence.payai_plus.requires_full_authsession_json_at_third_party_redeem,true);
 assert.equal(r103.new_evidence.payai_plus.qualifies_as_verified_wholesale_upstream,false);
 assert.equal(r103.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// Round 104: an explicit reseller entry payment disqualifies an otherwise low displayed Plus CDK price.
+const cat104=d.records.find(x=>x.id==='gpt-source-followup-r104-20261108'),data104=d.records.find(x=>x.id==='gpt-source-followup-r104-20261108-evidence');
+assert(cat104&&data104&&cat104.url.endsWith('supplier-followup-20261108-r16.html'));
+const r104=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r16-evidence.json'),'utf8'));
+assert.equal(r104.round,104);assert.equal(r104.site_version,'1.9.112');assert.equal(r104.sources.length,5);
+assert.equal(r104.new_evidence.suzhe_ai.observed_agent_price_cny_per_one_month_cdk,115);
+assert.equal(r104.new_evidence.suzhe_ai.upfront_agent_pass_one_time_cny,29.99);
+assert.equal(r104.new_evidence.suzhe_ai.plus_requires_no_active_subscription,true);
+assert.equal(r104.new_evidence.suzhe_ai.all_required_fees_with_verified_china_vat_invoice_cny,null);
+assert.equal(r104.new_evidence.suzhe_ai.qualifies_as_verified_wholesale_upstream,false);
+assert.equal(r104.independent_phone_verification.observed_price_cny_per_sms_cdk,null);
+assert.equal(r104.independent_phone_verification.merchant_claim_auto_cancel_if_no_sms_after_minutes,20);
+assert.equal(r104.qualification_totals.verified_plus_wholesale_upstreams,0);
