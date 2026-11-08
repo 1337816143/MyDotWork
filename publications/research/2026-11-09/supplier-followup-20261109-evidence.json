@@ -1,0 +1,187 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 107,
+  "site_version": "1.9.115",
+  "date": "2026-11-09",
+  "observed_on": "2026-11-09",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接读取溪悦AI的零售Plus月卡、独立英国号码OpenAI/Codex接码、卡密兑换页面与接码入口，另核PayForChat不支持中国VAT；只记录商家公开声明和演示，不含订单、验票或接码成功实测。",
+  "new_evidence": {
+    "xiyueai_plus": {
+      "merchant_url": "https://xiyueai.cc/item/2",
+      "sku_display_name": "ChatGPT Plus 1个月代充",
+      "merchant_listed_price_cny_per_own_account_month": 118,
+      "unit": "CNY/账号·1个月",
+      "quantity": 1,
+      "merchant_claim_own_account": true,
+      "merchant_claim_channel": "菲律宾/埃及/印度等海外区非iOS卡充",
+      "merchant_visible_purchase_preview_total_cny": 119.77,
+      "preview_payment_uplift_cny": 1.77,
+      "preview_payment_uplift_percent_arithmetic": 1.5,
+      "verified_actual_checkout_payment_cny": null,
+      "site_notice_claim_fee_waiver_for_manual_support_orders_percent": 2,
+      "manual_order_not_attempted": true,
+      "merchant_claim_china_electronic_general_vat_invoice": true,
+      "valid_china_vat_invoice_verified": null,
+      "actual_vat_invoice_extra_fee_cny": null,
+      "all_required_payment_and_valid_china_vat_invoice_cny": null,
+      "invoice_type_verified": null,
+      "invoice_issuer_legal_name_verified": null,
+      "actual_payee_legal_name_verified": null,
+      "merchant_operator_legal_name_verified": null,
+      "verified_single_unit_wholesale_cost_cny": null,
+      "upfront_agent_fee_cny": null,
+      "formal_resale_supply_authorization_verified": null,
+      "merchant_claim_bulk_discounts": true,
+      "bulk_tier_price_verified": null,
+      "bulk_minimum_verified": null,
+      "requires_current_account_free": true,
+      "can_extend_existing_active_plus": false,
+      "requires_previous_mobile_subscription_to_expire": true,
+      "merchant_claim_wait_after_ios_expiry_days": "4–5",
+      "merchant_claim_wait_after_mobile_subscription_expiry_days": "2–3",
+      "requires_successful_chatgpt_web_login": true,
+      "requires_full_authsession_json_including_access_token": true,
+      "redemption_url": "https://cz.xiyueai.cc/",
+      "claimed_warranty_days": 30,
+      "merchant_claim_prorated_refund_for_platform_subscription_drop": true,
+      "merchant_claim_successful_recharge_no_returns": true,
+      "merchant_claim_unused_card_no_refund_after_days": 5,
+      "merchant_claim_bans_excluded_from_warranty": true,
+      "real_subscription_delivery_verified": false,
+      "real_refund_verified": false,
+      "real_invoice_verified": false,
+      "qualifies_as_verified_wholesale_upstream": false
+    },
+    "xiyueai_sms": {
+      "sku_display_name": "OpenAI 手机验证码接码",
+      "product_url": "https://xiyueai.cc/item/20",
+      "unit": "CNY/次OpenAI短信接收机会",
+      "merchant_price_cny_per_sms_right": 8,
+      "merchant_visible_purchase_preview_total_cny": 8.12,
+      "preview_fee_percent_arithmetic": 1.5,
+      "actual_paid_cny": null,
+      "country_code": "+44",
+      "merchant_claim_use_scenarios": [
+        "ChatGPT添加手机号",
+        "Codex添加手机号"
+      ],
+      "supports_first_api_key_sms_verified": null,
+      "chatgpt_web_validation_success_verified": null,
+      "codex_verification_success_verified": null,
+      "first_api_key_sms_success_verified": null,
+      "requires_chatgpt_session_to_buy_sms": false,
+      "phone_exclusive_control_minutes_merchant_claim_approx": 20,
+      "number_long_term_control_verified": false,
+      "merchant_claim_free_number_rotation_if_no_sms_after_minutes": 5,
+      "merchant_claim_unlimited_number_rotation": true,
+      "code_receipt_consumes_one_card": true,
+      "merchant_claim_resend_within_number_validity": true,
+      "cash_refund_if_no_sms_verified": null,
+      "cash_refund_if_number_rejected_verified": null,
+      "cash_refund_if_account_verification_fails_verified": null,
+      "real_phone_verification_successes": 0,
+      "merchant_published_demo_not_real_order": true,
+      "actual_sim_is_non_voip_verified": null
+    },
+    "payforchat_retail_exclusion": {
+      "merchant_url": "https://www.payforchat.com/",
+      "merchant_listed_plus_cny_per_month": 189,
+      "unit": "CNY/账号·月",
+      "seller_explicitly_cannot_issue_mainland_china_vat_invoice": true,
+      "seller_claim_pdf_commercial_invoice_only": true,
+      "requires_existing_chatgpt_session": true,
+      "requires_free_account_for_order": true,
+      "verified_wholesale_price_cny": null,
+      "qualifies_for_170_cny_vat_inclusive_screen": false
+    }
+  },
+  "independent_phone_verification": {
+    "new_service_found": true,
+    "independent_from_plus_payment": true,
+    "merchant_claim_chatgpt_codex_support": true,
+    "first_api_key_real_test_verified": null,
+    "number_window_approx_minutes_claim": 20,
+    "can_reuse_number_long_term": false,
+    "sms_received_vs_account_pass_distinguished": true,
+    "failed_no_sms_refund_to_cash_verified": null,
+    "verified_successful_tests": 0,
+    "ordinary_plus_recharge_auto_phone_binding": false
+  },
+  "incumbent_sources_rechecked_without_material_change": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "historical_prices_refreshed": false,
+  "sources": [
+    {
+      "url": "https://xiyueai.cc/",
+      "observed_on": "2026-11-09",
+      "access_status": "readable_first_party_page",
+      "evidence_class": "merchant_own_landing_and_invoice_marketing",
+      "observation": "首页Plus¥118/月、英国+44接码¥8、公司主体增值税电子普票商称、长期招代理但无公开批发价或法律主体；手工客服下单免2%商称。"
+    },
+    {
+      "url": "https://xiyueai.cc/item/2",
+      "observed_on": "2026-11-09",
+      "access_status": "readable_first_party_product",
+      "evidence_class": "merchant_exact_sku_checkout_preview_and_warranty",
+      "observation": "Plus确切1个月¥118、前台预览¥119.77，未付款；限Free无在期订阅，需登录复制整个Session含accessToken；30天商称质保、掉订按已用天数退，封号不保；5天未兑换CDK不退款；宣传增值税普票但未公开主体与票费。演示账号卡密非真实订单。"
+    },
+    {
+      "url": "https://xiyueai.cc/item/20",
+      "observed_on": "2026-11-09",
+      "access_status": "readable_first_party_product",
+      "evidence_class": "merchant_single_sms_sku_and_number_rules",
+      "observation": "英国+44单次OpenAI/Codex手机号短信¥8，购买页预览¥8.12，5分钟无短信可免费换号，号码声称约20分钟、收码即扣卡密；无长期控制/现金退款/真实验证通过证据，演示是假数据。"
+    },
+    {
+      "url": "https://cz.xiyueai.cc/",
+      "observed_on": "2026-11-09",
+      "access_status": "readable_first_party_redemption",
+      "evidence_class": "merchant_authsession_redemption_requirement",
+      "observation": "Plus兑换要求先登录ChatGPT，再复制并向兑换站提交chatgpt.com/api/auth/session页面全部JSON，包括accessToken；不适用于首次网页登录失败情形。"
+    },
+    {
+      "url": "https://sms.xiyueai.cc/",
+      "observed_on": "2026-11-09",
+      "access_status": "readable_first_party_sms_redemption",
+      "evidence_class": "merchant_sms_operational_instructions",
+      "observation": "OpenAI英国+44短信取号页、5分钟后换号、手机号时效内重发可展示新码；网页DOM显示的各种状态并非交易或成功实测。"
+    },
+    {
+      "url": "https://www.payforchat.com/",
+      "observed_on": "2026-11-09",
+      "access_status": "readable_first_party_retail_exclusion",
+      "evidence_class": "merchant_price_and_no_china_vat_disclosure",
+      "observation": "Plus零售¥189/月超¥170，网站明确目前不支持中国增值税普票或专票，PDF商业凭证不等于中国VAT；需Session，非合格批发。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "没有购买或付款",
+    "没有联系商家或客服",
+    "未提交密码、Session、accessToken或真实短信验证码",
+    "未使用演示代替实测",
+    "未刷新历史商家的旧价"
+  ]
+}
