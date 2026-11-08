@@ -720,3 +720,16 @@ assert.equal(r102.new_evidence.steadflow.homepage_invoice_option_cny_per_month,1
 assert.equal(r102.new_evidence.steadflow.faq_older_price_cny_per_month,148);
 assert.equal(r102.new_evidence.steadflow.merchant_terms_prohibit_resale_and_shared_accounts,true);
 assert.equal(r102.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// Round 103: a single-quantity retail price plus an invoice application claim is NOT a verified wholesale VAT-inclusive offer.
+const cat103=d.records.find(x=>x.id==='gpt-source-followup-r103-20261108'),data103=d.records.find(x=>x.id==='gpt-source-followup-r103-20261108-evidence');
+assert(cat103&&data103&&cat103.url.endsWith('supplier-followup-20261108-r15.html'));
+const r103=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r15-evidence.json'),'utf8'));
+assert.equal(r103.round,103);assert.equal(r103.site_version,'1.9.111');assert.equal(r103.sources.length,7);
+assert.equal(r103.new_evidence.payai_plus.displayed_retail_price_cny_per_account_month,169);
+assert.equal(r103.new_evidence.payai_plus.invoice_application_window_days_merchant_claim,7);
+assert.equal(r103.new_evidence.payai_plus.chinese_vat_invoice_fee_cny,null);
+assert.equal(r103.new_evidence.payai_plus.requires_full_authsession_json_at_third_party_redeem,true);
+assert.equal(r103.new_evidence.payai_plus.qualifies_as_verified_wholesale_upstream,false);
+assert.equal(r103.qualification_totals.verified_plus_wholesale_upstreams,0);
