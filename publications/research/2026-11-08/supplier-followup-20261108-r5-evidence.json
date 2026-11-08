@@ -1,0 +1,129 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 93,
+  "site_version": "1.9.101",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "scope": "新增Pay2GPT企业批量订阅与API原始资料；10份起有批量折扣但不是证实的最小起订量；经营及收款主体仅商称ByteCozy LLC；明确只能出英文商业PDF而不能开中国增值税发票。官网零售Plus $23.90/月作为不同SKU核对。未支付、未申请/收票、未验证短信。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_business_supplier_candidate": {
+    "merchant": "Pay2GPT",
+    "enterprise_page": "https://pay2gpt.com/business",
+    "api_page": "https://pay2gpt.com/business/api",
+    "claimed_contract_and_payment_operator": "ByteCozy LLC",
+    "claimed_operator_jurisdiction": "Wyoming, USA",
+    "operator_registration_independently_verified": false,
+    "real_payment_recipient_independently_verified": false,
+    "real_invoice_issuer_independently_verified": false,
+    "public_volume_discount_threshold_seats": 10,
+    "public_strict_minimum_order_seats": null,
+    "public_bulk_unit_price_usd": null,
+    "real_bulk_checkout_price_cny": null,
+    "agent_entry_fee_cny": null,
+    "enterprise_price_is_quote_only": true,
+    "enterprise_invoice_type_claim": "English-language US commercial PDF invoice",
+    "china_vat_invoice_available": false,
+    "china_vat_invoice_verified": false,
+    "claimed_formal_services_agreement": "PSA based on Common Paper, governed by Wyoming law",
+    "signed_agreement_seen": false,
+    "customer_must_prepay": true,
+    "prepayment_currency_and_method_claims": [
+      "USD wire",
+      "USDT",
+      "bank card",
+      "Alipay"
+    ],
+    "real_all_in_payment_fees_cny": null,
+    "b2b_activation_link_target_business_days_after_settlement": 1,
+    "merchant_claimed_unused_seat_redemption_days": 30,
+    "business_failed_seat_refund_claim": "merchant says per-seat refund or replace account; unredeemed seats refundable under signed contract; no contract or payout seen",
+    "requires_own_logged_in_chatgpt_account": true,
+    "requires_no_active_same_type_subscription": true,
+    "access_via_session_or_session_token": true,
+    "session_security_audit_verified": false,
+    "api_requires_prepaid_product_specific_activation_credits": true,
+    "api_failed_or_cancelled_activation_returns_one_credit": true,
+    "api_credit_refund_is_cash_refund": false,
+    "general_terms_resale_related_restrictions": true,
+    "b2b_retail_resale_authorization_document": null,
+    "official_openai_authorization_claimed": false,
+    "one_account_one_month_without_agent_fee_and_valid_china_vat_invoice_qualified": false
+  },
+  "separate_public_retail_sku": {
+    "merchant": "Pay2GPT",
+    "url": "https://pay2gpt.com/",
+    "product_name": "ChatGPT Plus",
+    "public_display_price_number": 23.9,
+    "public_display_price_currency": "USD ($ on merchant site)",
+    "unit": "one existing account · one month",
+    "b2b_price_equivalent": false,
+    "real_checkout_total_usd": null,
+    "exchange_rate_and_payment_fees_cny": null,
+    "actual_all_required_fees_and_valid_china_vat_invoice_cny": null,
+    "real_paid_order_tested": false
+  },
+  "phone_verification": {
+    "separate_phone_number_product_confirmed_in_this_candidate": false,
+    "web_first_login_automatically_verified_by_recharge": false,
+    "codex_sms_success_tested": false,
+    "first_api_key_sms_success_tested": false,
+    "phone_number_hold_period": null,
+    "failed_sms_cash_refund_cny": null,
+    "verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://pay2gpt.com/business",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_b2b_terms_invoice_and_claimed_operator",
+      "fact": "10个起有批量价，单价需询价、最低购买数未明确；企业协议商称ByteCozy LLC签约收款，英文商业PDF非中国增值税发票，30日兑换；失败名额与未使用名额退款为商家/合同声明，未签约实测。"
+    },
+    {
+      "url": "https://pay2gpt.com/business/api",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_b2b_api_activation_and_credit_refund",
+      "fact": "API按预付Plus次数开通，每单扣1次；要求已登录的完整Session JSON或session-token，只有accessToken不行；API失败/取消退1次信用余额而非现金；未查实合同现金退款。"
+    },
+    {
+      "url": "https://pay2gpt.com/terms",
+      "observed_on": "2026-11-08",
+      "page_self_updated_on": "2026-11-02",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_general_terms_resale_and_official_authorization",
+      "fact": "商家自认不是OpenAI官方授权代理；用户规则对利用服务开展转售及批量转让有禁止/限制措辞，企业销售合同是否例外未见原件，不能认定具备转售授权。"
+    },
+    {
+      "url": "https://pay2gpt.com/",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_content_read",
+      "evidence_class": "merchant_retail_sku_not_wholesale",
+      "fact": "本人原号Plus公开零售价$23.90/账号·1个月，为独立零售SKU；不是企业批发价、中国增值税含票实付价，未结算或实测。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "prior_round_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "公开写“10个起有批量价”仅是批量折扣阈值，不能把10写成强制最低购买量，也不能把官网单份零售价当批发价。",
+    "美国英文商业PDF票据与中国合法增值税发票不同；本目标要求有效中国增值税发票，商家明确开不了，不符合当前采购条件。",
+    "美国实体、收款、合同、发票均为商家公开自述，本研究未取得独立工商核验、签署合同、付款凭据或真实票据。",
+    "B2B文本声称失败名额或30日内未兑换名额可退款；API明确退还次数额度不等于实际退款到现金支付账户，需区分合同和账户额度政策。",
+    "Session或Cookie本质是敏感登录凭证，必须先成功登录；非首次网页手机验证方案，也不等于自动绑定手机号。",
+    "所有未知附加费、含中国增值税发票全额价格和转售授权均保留null。没有联系、购买、交Session或提交支付凭据。"
+  ]
+}
