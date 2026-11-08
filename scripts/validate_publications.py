@@ -131,13 +131,23 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 245, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 247, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.106'
-    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108-r18.html'
-    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-r18-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r17.html'
+    assert latest['version'] == '1.107'
+    assert latest['path'] == 'research/2026-11-09/supplier-followup-20261109.html'
+    assert latest['dataPath'] == 'research/2026-11-09/supplier-followup-20261109-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r18.html'
+    assert by_id['gpt-source-followup-r107-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109.html'
+    assert by_id['gpt-source-followup-r107-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-evidence.json'
+    r107 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-evidence.json').read_bytes())
+    assert r107['round'] == 107 and r107['site_version'] == '1.9.115' and len(r107['sources']) == 6
+    assert r107['new_evidence']['xiyueai_plus']['merchant_listed_price_cny_per_own_account_month'] == 118
+    assert r107['new_evidence']['xiyueai_plus']['verified_single_unit_wholesale_cost_cny'] is None
+    assert r107['new_evidence']['xiyueai_plus']['all_required_payment_and_valid_china_vat_invoice_cny'] is None
+    assert r107['new_evidence']['xiyueai_sms']['merchant_price_cny_per_sms_right'] == 8
+    assert r107['new_evidence']['xiyueai_sms']['cash_refund_if_no_sms_verified'] is None
+    assert r107['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r102-20261108']['url'] == '../research/2026-11-08/supplier-followup-20261108-r14.html'
     assert by_id['gpt-source-followup-r102-20261108-evidence']['url'] == '../research/2026-11-08/supplier-followup-20261108-r14-evidence.json'
     assert by_id['gpt-source-followup-r105-20261108']['url'] == '../research/2026-11-08/supplier-followup-20261108-r17.html'
