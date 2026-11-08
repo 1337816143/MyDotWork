@@ -2608,6 +2608,28 @@
       "summary": "11条实际访问来源和观察日；商家价与旧FAQ冲突区分，真实支付、中国有效VAT出票、授权及短信验证未取得，不刷新旧价。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r103-20261108",
+      "title": "GPT源头第103轮 · PayAI.Plus开票期限与Session交付",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r15.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新读本人原号Plus零售¥169/月；商称7日内申请发票（3工作日出票），真实VAT/票费未验；完整Session JSON、在期覆盖、风控拒退。非批发源头。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r103-20261108-evidence",
+      "title": "第103轮 · PayAI.Plus价格、开票、经营主体及售后 · 7条URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r15-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "7个商家原始URL按2026-11-08读源记录；自标条款日期另存，支付费用、VAT出票主体、上游授权和SMS验证仍null/未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

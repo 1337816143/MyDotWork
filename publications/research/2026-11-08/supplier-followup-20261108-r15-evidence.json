@@ -1,0 +1,158 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 103,
+  "site_version": "1.9.111",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次将PayAI.Plus商家自有零售SKU、发票申请时限、会话凭据交付、在期覆盖与退款除外责任关联核验；不认定新批发上游、合法中国VAT发票或真实付款。",
+  "new_evidence": {
+    "payai_plus": {
+      "merchant_website": "https://payai.plus/",
+      "exact_sku": "ChatGPT Plus（本人原号）",
+      "displayed_retail_price_cny_per_account_month": 169,
+      "price_basis": "商家首页和Plus商品页显示；未支付、非上游拿货价",
+      "display_period_unit": "账号·月",
+      "quantity": 1,
+      "retail_price_within_budget_by_cny_before_unknown_fees": 1,
+      "actual_checkout_final_cny": null,
+      "payment_processing_fee_cny": null,
+      "invoice_application_window_days_merchant_claim": 7,
+      "invoice_normal_processing_working_days_merchant_claim": 3,
+      "invoice_item_merchant_claim": "生产生活服务*技术服务费",
+      "valid_china_vat_invoice_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "chinese_vat_invoice_fee_cny": null,
+      "all_required_fees_with_valid_china_vat_invoice_cny": null,
+      "self_disclosed_operator": "Hong Kong StackPoint Technology Limited",
+      "operator_legal_registration_independently_verified": null,
+      "payment_receiving_entity_verified": null,
+      "invoice_issuing_entity_verified": null,
+      "merchant_not_openai_authorized_agent": true,
+      "agent_single_unit_wholesale_price_cny": null,
+      "no_upfront_agent_fee_independently_verified": null,
+      "formal_right_to_resell_verified": null,
+      "requires_prior_successful_chatgpt_login": true,
+      "requires_full_authsession_json_at_third_party_redeem": true,
+      "merchant_claim_password_not_needed": true,
+      "session_submission_is_sensitive_login_credential": true,
+      "active_subscription_renewal_stacks_time": false,
+      "merchant_claim_active_subscription_is_overwritten_and_restarts_from_redemption_date": true,
+      "merchant_claim_repeat_purchase_does_not_reset_weekly_quota": true,
+      "first_web_login_sms_bypass_verified": false,
+      "codex_sms_auto_binding_verified": false,
+      "first_api_key_sms_success_verified": false,
+      "merchant_claim_codex_phone_verification_is_separate": true,
+      "merchant_claim_non_delivered_or_invalid_card_may_get_refund_after_review": true,
+      "merchant_claim_valid_card_but_account_issues_refund_not_guaranteed": true,
+      "actual_cash_refund_verified": null,
+      "actual_order_and_delivery_verified": null,
+      "qualifies_as_verified_wholesale_upstream": false
+    }
+  },
+  "existing_priority_counters_checked": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "new_verified_changes": 0,
+    "old_prices_not_refreshed": true
+  },
+  "independent_phone_verification": {
+    "chatgpt_web_success_tests": 0,
+    "codex_success_tests": 0,
+    "first_api_key_success_tests": 0,
+    "new_dedicated_sms_service_in_this_round": false
+  },
+  "sources": [
+    {
+      "url": "https://payai.plus/",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "homepage",
+      "observation": "Plus retail ¥169/账号·月，7天内可申请企业发票，展示的宣传不证明真实付款或发票",
+      "merchant_page_self_dated_effective_on": null
+    },
+    {
+      "url": "https://payai.plus/chatgpt?product=chatgpt-plus",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "sku_page",
+      "observation": "明确本人原号Plus ¥169/月；有效会员再次充值覆盖不叠加；Codex手机验证需自行完成；动态支付组件加载中，未获取真实结算价",
+      "merchant_page_self_dated_effective_on": null
+    },
+    {
+      "url": "https://payai.plus/invoice-guide",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "invoice_policy",
+      "observation": "商称支付后7日内在已登录用户中心申请、通常3工作日出票，税目生产生活服务*技术服务费；未查验有效中国VAT税票",
+      "merchant_page_self_dated_effective_on": null
+    },
+    {
+      "url": "https://payai.plus/about",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "operator_claim",
+      "observation": "商家自称运营香港公司Hong Kong StackPoint Technology Limited，地址在香港观塘；无独立登记/收款/出票主体核查",
+      "merchant_page_self_dated_effective_on": null
+    },
+    {
+      "url": "https://payai.plus/guide",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "redemption_flow",
+      "observation": "卡密兑换须先登录ChatGPT并复制提交AuthSession完整JSON，属于敏感登录凭据；无需交密码不等于无凭据，不能解决首次网页登录短信验证",
+      "merchant_page_self_dated_effective_on": null
+    },
+    {
+      "url": "https://payai.plus/terms",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "terms",
+      "observation": "自标2026-06-05生效，非OpenAI授权代理；已交有效卡密但账号/地区/第三方风控引起充值失败，商家不保证退款",
+      "merchant_page_self_dated_effective_on": "2026-06-05"
+    },
+    {
+      "url": "https://payai.plus/refund-policy",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_page_not_test",
+      "page_type": "refund_policy",
+      "observation": "自标2026-07-14生效，系统/卡密责任可申请核验退款；账号已有订阅、受限和用户错误及第三方风控通常排除直接退款",
+      "merchant_page_self_dated_effective_on": "2026-07-14"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未付款",
+    "未联系商家",
+    "未提供Session/Token/密码",
+    "未进行短信验证或发票验真"
+  ]
+}
