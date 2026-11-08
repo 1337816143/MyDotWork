@@ -760,3 +760,17 @@ assert.equal(r105.new_evidence.ai_access_hub.merchant_channel_1_refund_service_f
 assert.equal(r105.new_evidence.quanxin_store.merchant_display_channel_3_ios_cny,128);
 assert.equal(r105.new_evidence.zhang_hao_shang.verified_current_first_party_price_cny,null);
 assert.equal(r105.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 106: merchant first-party checkout price and separate SMS rights, not validated wholesale.
+const cat106=d.records.find(x=>x.id==='gpt-source-followup-r106-20261108'),data106=d.records.find(x=>x.id==='gpt-source-followup-r106-20261108-evidence');
+assert(cat106&&data106&&cat106.url.endsWith('supplier-followup-20261108-r18.html'));
+const r106=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r18-evidence.json'),'utf8'));
+assert.equal(r106.round,106);assert.equal(r106.site_version,'1.9.114');assert.equal(r106.sources.length,9);
+assert.equal(r106.new_evidence.gpt_bu_gei_zhan.plus_listed_cny_per_card,125);
+assert.equal(r106.new_evidence.gpt_bu_gei_zhan.plus_period_months_confirmed_on_card,null);
+assert.equal(r106.new_evidence.gpt_bu_gei_zhan.online_payment_fee_percent_claim,3);
+assert.equal(r106.new_evidence.codex_sms.merchant_listed_cny_per_receive_right,8);
+assert.equal(r106.new_evidence.codex_sms.rights_expire_after_days,30);
+assert.equal(r106.new_evidence.codex_sms.exclusive_number_control_days,null);
+assert.equal(r106.new_evidence.codex_sms.cash_refund_if_sms_not_received_verified,null);
+assert.equal(r106.qualification_totals.verified_plus_wholesale_upstreams,0);
