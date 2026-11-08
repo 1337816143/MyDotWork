@@ -594,3 +594,19 @@ assert.deepEqual(r92.bounded_recheck_of_existing_retail_skus.map(s=>s.public_pri
 assert.equal(r92.bounded_recheck_of_existing_retail_skus[1].actual_all_required_payment_and_china_vat_invoice_cny,null);
 assert.equal(r92.independent_phone_verification.successfully_received_sms_total,0);
 assert.equal(r92.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r93cat=d.records.find(r=>r.id==='gpt-source-followup-r93-20261108');
+const r93data=d.records.find(r=>r.id==='gpt-source-followup-r93-20261108-evidence');
+assert(r93cat&&r93data&&r93cat.url.endsWith('supplier-followup-20261108-r5.html'));
+const r93=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r5-evidence.json'),'utf8'));
+assert.equal(r93.round,93);assert.equal(r93.site_version,'1.9.101');assert.equal(r93.sources.length,4);
+assert.equal(r93.new_business_supplier_candidate.public_volume_discount_threshold_seats,10);
+assert.equal(r93.new_business_supplier_candidate.public_strict_minimum_order_seats,null);
+assert.equal(r93.new_business_supplier_candidate.public_bulk_unit_price_usd,null);
+assert.equal(r93.new_business_supplier_candidate.china_vat_invoice_available,false);
+assert.equal(r93.new_business_supplier_candidate.api_credit_refund_is_cash_refund,false);
+assert.equal(r93.new_business_supplier_candidate.b2b_retail_resale_authorization_document,null);
+assert.equal(r93.separate_public_retail_sku.public_display_price_number,23.9);
+assert.equal(r93.separate_public_retail_sku.actual_all_required_fees_and_valid_china_vat_invoice_cny,null);
+assert.equal(r93.phone_verification.verified_sms_successes,0);
+assert.equal(r93.qualification_totals.verified_plus_wholesale_upstreams,0);

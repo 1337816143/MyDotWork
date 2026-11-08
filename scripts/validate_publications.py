@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 217, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 219, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.92'
-    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108-r4.html'
-    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-r4-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r3.html'
+    assert latest['version'] == '1.93'
+    assert latest['path'] == 'research/2026-11-08/supplier-followup-20261108-r5.html'
+    assert latest['dataPath'] == 'research/2026-11-08/supplier-followup-20261108-r5-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r4.html'
     assert by_id['gpt-source-followup-r72-20261106']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17.html'
     assert by_id['gpt-source-followup-r72-20261106-evidence']['url'] == '../research/2026-11-06/supplier-followup-20261106-r17-evidence.json'
     r72 = json.loads((ROOT / 'dist/research/2026-11-06/supplier-followup-20261106-r17-evidence.json').read_bytes())
@@ -1013,6 +1013,20 @@ def validate_publications():
     validate_current_updates()
     from validate_task35 import validate_task35, negative_tests
     validate_task35(); negative_tests()
+    assert by_id['gpt-source-followup-r93-20261108']['url'] == '../research/2026-11-08/supplier-followup-20261108-r5.html'
+    assert by_id['gpt-source-followup-r93-20261108-evidence']['url'] == '../research/2026-11-08/supplier-followup-20261108-r5-evidence.json'
+    r93 = json.loads((ROOT / 'dist/research/2026-11-08/supplier-followup-20261108-r5-evidence.json').read_bytes())
+    assert r93['round'] == 93 and r93['site_version'] == '1.9.101' and len(r93['sources']) == 4
+    assert r93['new_business_supplier_candidate']['public_volume_discount_threshold_seats'] == 10
+    assert r93['new_business_supplier_candidate']['public_strict_minimum_order_seats'] is None
+    assert r93['new_business_supplier_candidate']['public_bulk_unit_price_usd'] is None
+    assert r93['new_business_supplier_candidate']['china_vat_invoice_available'] is False
+    assert r93['new_business_supplier_candidate']['api_credit_refund_is_cash_refund'] is False
+    assert r93['new_business_supplier_candidate']['b2b_retail_resale_authorization_document'] is None
+    assert r93['separate_public_retail_sku']['public_display_price_number'] == 23.9
+    assert r93['separate_public_retail_sku']['actual_all_required_fees_and_valid_china_vat_invoice_cny'] is None
+    assert r93['phone_verification']['verified_sms_successes'] == 0
+    assert r93['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
