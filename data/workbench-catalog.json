@@ -2410,6 +2410,28 @@
       "summary": "直接核四条商家原链；$23.90/账号·月仅零售，企业批发价及人民币含票实付null，英文商业PDF非中国VAT，失败订单返预付次数非现金；正式授权和实测均0或null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r94-20261108",
+      "title": "GPT源头第94轮 · 扭蛋同一Plus月卡目录¥159与详情¥169冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r6.html",
+      "updatedAt": "2026-11-08",
+      "summary": "同商家Plus一月准确SKU详情与应付预览¥169、总/分类目录¥159，旧11月6日¥149不改；全费含票null，代理折扣只为示例，实付与合格批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r94-20261108-evidence",
+      "title": "第94轮 · 扭蛋SKU三页面价差及批发/税票/售后证据 · 6原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r6-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "实际读6条商家原网址，商品页¥169预览对目录¥159；历史149独立旧日期，真实结算/手续费/税票/采购授权null，手机成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
