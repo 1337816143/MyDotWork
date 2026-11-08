@@ -131,13 +131,24 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 247, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 249, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.107'
-    assert latest['path'] == 'research/2026-11-09/supplier-followup-20261109.html'
-    assert latest['dataPath'] == 'research/2026-11-09/supplier-followup-20261109-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-08/supplier-followup-20261108-r18.html'
+    assert latest['version'] == '1.108'
+    assert latest['path'] == 'research/2026-11-09/supplier-followup-20261109-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-09/supplier-followup-20261109-r2-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-09/supplier-followup-20261109.html'
+    assert by_id['gpt-source-followup-r108-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109-r2.html'
+    assert by_id['gpt-source-followup-r108-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-r2-evidence.json'
+    r108 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-r2-evidence.json').read_bytes())
+    assert r108['round'] == 108 and r108['site_version'] == '1.9.116' and len(r108['sources']) == 8
+    assert r108['new_evidence']['cdkstore']['observed_retail_listed_cny_per_account_month'] == 95
+    assert r108['new_evidence']['cdkstore']['seller_explicitly_says_no_vat_invoice'] is True
+    assert r108['new_evidence']['cdkstore']['buyer_resale_explicitly_prohibited'] is True
+    assert r108['new_evidence']['cdkstore']['verified_actual_checkout_cny'] is None
+    assert r108['new_evidence']['cdkstore']['formal_wholesale_supply_resale_authorization_verified'] is None
+    assert r108['new_evidence']['cdkstore']['requires_chatgpt_access_token'] is True
+    assert r108['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r107-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109.html'
     assert by_id['gpt-source-followup-r107-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-evidence.json'
     r107 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-evidence.json').read_bytes())

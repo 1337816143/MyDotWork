@@ -1,0 +1,178 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 108,
+  "site_version": "1.9.116",
+  "date": "2026-11-09",
+  "observed_on": "2026-11-09",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接读取cdkstore商家原始8个URL的准确Plus月卡SKU、加密币结算、无VAT发票、禁止买家转售、accessToken交付和售后。既有十家仅有界复核，未证实新价，历史不刷新。",
+  "new_evidence": {
+    "cdkstore": {
+      "sku_name": "ChatGPT Plus",
+      "sku_url": "https://cdkstore.com/zh/products/chatgpt-plus/",
+      "own_existing_account_merchant_claim": true,
+      "period_months_merchant_claim": 1,
+      "retail_unit": "CNY/账号·月",
+      "quantity": 1,
+      "observed_retail_listed_cny_per_account_month": 95,
+      "crossed_out_reference_cny": 134,
+      "merchant_price_sheet_dated": "2026-11-06",
+      "merchant_display_stock": 618,
+      "real_inventory_verified": false,
+      "crypto_only": true,
+      "buyer_pays_chain_network_fee": true,
+      "blockchain_network_fee_cny": null,
+      "fx_fee_cny": null,
+      "processing_fee_cny": null,
+      "verified_actual_checkout_cny": null,
+      "all_required_payment_and_valid_china_vat_invoice_cny": null,
+      "seller_explicitly_says_no_vat_invoice": true,
+      "valid_china_vat_invoice_available_from_seller": false,
+      "valid_china_vat_invoice_verified": false,
+      "actual_vat_invoice_fee_cny": null,
+      "receipt_claim": [
+        "chain transaction hash",
+        "order number",
+        "Telegram chat record"
+      ],
+      "independently_verified_operator_legal_entity": null,
+      "verified_payee_legal_entity": null,
+      "verified_invoice_issuer": null,
+      "merchant_calls_self_independent_reseller_without_openai_affiliation": true,
+      "buyer_resale_explicitly_prohibited": true,
+      "verified_single_item_wholesale_price_cny": null,
+      "verified_no_upfront_agent_fee": null,
+      "upstream_supply_authorization_verified": null,
+      "formal_wholesale_supply_resale_authorization_verified": null,
+      "wholesale_minimum_quantity_verified": null,
+      "requires_successful_chatgpt_web_login": true,
+      "requires_chatgpt_access_token": true,
+      "sends_access_token_over_telegram_dm_claim": true,
+      "access_token_is_sensitive_credential": true,
+      "requires_password": false,
+      "merchant_claim_identifiers_deleted_within_days_after_activation": 30,
+      "may_retaining_for_ongoing_warranty": true,
+      "independent_data_deletion_audit": false,
+      "active_plus_lossless_extension_verified": null,
+      "real_delivery_verified": false,
+      "real_purchase_verified": false,
+      "merchant_claim_refund_if_no_delivery": true,
+      "merchant_claim_prorated_refund_if_early_drop": true,
+      "account_ban_refund_excluded": true,
+      "buyer_wrong_chain_or_amount_standard_refund_excluded": true,
+      "real_refund_verified": false,
+      "excluded_by_explicit_no_vat_invoice": true,
+      "excluded_by_resale_restriction": true,
+      "qualifies_as_verified_wholesale_upstream": false
+    }
+  },
+  "independent_phone_verification": {
+    "new_sms_sku_from_this_seller": false,
+    "requires_chatgpt_web_login_before_token": true,
+    "plus_purchase_automatically_binds_phone": false,
+    "web_first_login_sms_success_verified": null,
+    "codex_sms_success_verified": null,
+    "first_api_key_sms_success_verified": null,
+    "number_control_period_verified": null,
+    "failed_sms_cash_refund_verified": null,
+    "successful_phone_tests": 0
+  },
+  "incumbent_sources_rechecked_without_material_change": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "historical_prices_refreshed": false,
+  "sources": [
+    {
+      "url": "https://cdkstore.com/zh/products/chatgpt-plus/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "本人原号1个月Plus挂牌¥95、划线¥134、库存618为店铺显示。只收加密币，发送方付链费；须先网页登录取得accessToken，尚无实付。"
+    },
+    {
+      "url": "https://cdkstore.com/zh/pricing/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": "2026-11-06",
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "商家价格表自标11月6日，Plus售价¥95，11月9日是实际观察日而非确定改价日。"
+    },
+    {
+      "url": "https://cdkstore.com/zh/guides/crypto-receipt-and-records/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": "2026-11-06",
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "明确不提供增值税发票、正式公司抬头凭证和邮件收据，仅交易哈希、订单号、Telegram对话记录。"
+    },
+    {
+      "url": "https://cdkstore.com/zh/terms/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": "2026-10-26",
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "买家不得转售或再授权订阅；商家自称OpenAI无授权的独立转售方，交付与按期退款只是承诺。"
+    },
+    {
+      "url": "https://cdkstore.com/zh/privacy/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": "2026-10-31",
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "可能收集访问令牌，开通后30天内删除账号标识但未完成售后例外；无独立审计。"
+    },
+    {
+      "url": "https://cdkstore.com/zh/activate/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "卡密兑换后须通过Telegram私聊提供账号accessToken、订单和卡密，说明无需密码不等于无敏感凭据。"
+    },
+    {
+      "url": "https://cdkstore.com/zh/refunds/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": "2026-10-31",
+      "access_status": "readable_first_party",
+      "evidence_class": "merchant_first_party_statement",
+      "observation": "无法开通、重复付款可申请退款；掉订先补开，退款按未用天数，封号、错链/金额不属标准退款；未实测。"
+    },
+    {
+      "url": "https://shop.cdkstore.com/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "no_readable_checkout_body",
+      "evidence_class": "checkout_access_boundary",
+      "observation": "商城入口页面本次未取得可读收银台正文；真实付款链、币数、手续费和结算额未知，不宣称停服。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "没有付款或下真实订单",
+    "没有联系商家或提交外部消息",
+    "未交accessToken/Session/密码/短信验证码",
+    "无交易或售后实测",
+    "历史十家价格不刷新"
+  ]
+}
