@@ -1,0 +1,146 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 101,
+  "site_version": "1.9.109",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "GETGPT Plus新零售商及准确本人原号Plus单月¥138，揭示卖家自己不能确定第三方自动充值上游主体/服务器位置、敏感Session传递边界；不把UpPlusPro旧域名重定向计算为新商家。",
+  "new_evidence": {
+    "getgpt_plus": {
+      "brand": "GETGPT Plus",
+      "distinct_from_getgpt_pro": true,
+      "website": "https://getgptplus.ai",
+      "exact_sku": "chatgpt-plus-1m",
+      "exact_checkout_link": "https://getgptplus.ai/checkout?sku=chatgpt-plus-1m",
+      "displayed_plus_one_account_month_retail_cny": 138,
+      "three_month_bundle_cny": 410,
+      "twelve_month_bundle_cny": 1550,
+      "multi_month_topups_by_month_manual_claim": true,
+      "finished_new_account_plus_sku_price_cny": 159,
+      "finished_account_not_own_account": true,
+      "merchant_claimed_operator": "FUTUREQ TECH LIMITED",
+      "merchant_claimed_hong_kong_address": "香港九龍新蒲崗六合街8號六合工業大廈11樓D3室",
+      "merchant_explicitly_disclaims_openai_authorization": true,
+      "verified_real_operator": null,
+      "verified_real_payment_entity": null,
+      "verified_china_vat_issuer": null,
+      "merchant_claimed_payment_method": "Alipay",
+      "actual_checkout_total_cny": null,
+      "extra_payment_fee_cny": null,
+      "valid_china_vat_invoice_eligibility": null,
+      "china_vat_invoice_fee_cny": null,
+      "all_required_fees_with_verified_china_vat_invoice_cny": null,
+      "wholesale_one_piece_price_cny": null,
+      "wholesale_min_order_quantity": null,
+      "upfront_agent_fee_cny": null,
+      "formal_upstream_and_resale_authorization": null,
+      "requires_prior_chatgpt_login_session": true,
+      "session_is_sensitive_login_credential": true,
+      "default_manual_customer_service_delivery_claim": true,
+      "guaranteed_delivery_minutes": null,
+      "merchant_explicitly_cannot_confirm_automated_upstream_operator_and_server_region": true,
+      "session_forwarded_to_external_platform_claim": true,
+      "service_chat_session_may_remain_on_messaging_platform": true,
+      "independent_security_audit": null,
+      "active_plus_remaining_days_stacking_verified": null,
+      "merchant_claims_refund_on_failure_to_original_alipay": true,
+      "refund_requires_manual_request_and_review": true,
+      "automatic_refund": false,
+      "real_cash_refund": null,
+      "phone_entered_for_orders_is_chatgpt_phone_verification": false,
+      "web_sms_success_proven": false,
+      "codex_sms_success_proven": false,
+      "api_first_key_sms_success_proven": false,
+      "qualifies_as_verified_one_piece_plus_wholesale_upstream": false
+    },
+    "upchatgpt_pro_legacy_redirect": {
+      "requested_url": "https://upchatgpt.pro/",
+      "final_url": "https://uppluspro.com/",
+      "current_http_status": 200,
+      "is_new_supplier": false,
+      "existing_uppluspro_prices_not_refreshed": true
+    }
+  },
+  "bounded_existing_candidates": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "new_verified_changes": 0,
+    "old_prices_not_refreshed": true
+  },
+  "independent_phone_services": {
+    "chatgpt_web_verified_sms": 0,
+    "codex_verified_sms": 0,
+    "first_api_key_verified_sms": 0,
+    "number_duration_verified": null,
+    "failed_sms_refund_real_cny": null,
+    "subscription_automatically_binds_phone": false,
+    "session_requires_existing_login": true,
+    "apple_purchase_and_session_delivery_can_coexist": true
+  },
+  "sources": [
+    {
+      "url": "https://getgptplus.ai/pricing",
+      "fact": "本人原号Plus单月¥138,三个月¥410,十二个月¥1550；新号成品¥159为另一SKU。",
+      "published_or_site_updated_on": null,
+      "observed_on": "2026-11-08",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_claim_or_live_redirect_not_paid_test"
+    },
+    {
+      "url": "https://getgptplus.ai/about",
+      "fact": "网站自称香港FUTUREQ TECH LIMITED经营，并明确非OpenAI授权；人工客服办理。",
+      "published_or_site_updated_on": "2026-10-13",
+      "observed_on": "2026-11-08",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_claim_or_live_redirect_not_paid_test"
+    },
+    {
+      "url": "https://getgptplus.ai/terms",
+      "fact": "只称支持支付宝支付；需先能登录ChatGPT取Session并交客服或有条件地转上游；退款须买家主动提出经人工核实后原路返。",
+      "published_or_site_updated_on": "2026-10-20",
+      "observed_on": "2026-11-08",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_claim_or_live_redirect_not_paid_test"
+    },
+    {
+      "url": "https://getgptplus.ai/privacy",
+      "fact": "卖家明确承认自动充值上游平台的运营主体及服务器所在地区无法确认；Session和邮箱转上游，人工客服接收Session可在通讯平台留存；多月套餐逐月人工续充。",
+      "published_or_site_updated_on": "2026-11-02",
+      "observed_on": "2026-11-08",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_claim_or_live_redirect_not_paid_test"
+    },
+    {
+      "url": "https://upchatgpt.pro/",
+      "fact": "本轮直接打开原URL，实际最终跳转到此前已记录UpPlusPro，不是新的零售商；旧缓存¥140不能当新价格。",
+      "published_or_site_updated_on": null,
+      "observed_on": "2026-11-08",
+      "read_status": "original_url_current_live_page",
+      "evidence_class": "merchant_claim_or_live_redirect_not_paid_test"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchases": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_invoiced_one_item_purchases": 0,
+    "successful_sms_verification_tests": 0
+  }
+}

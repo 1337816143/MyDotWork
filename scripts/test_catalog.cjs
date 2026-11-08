@@ -696,3 +696,14 @@ assert.equal(r100.new_evidence.nianhua_ai_store.displayed_default_price_accurate
 assert.equal(r100.new_evidence.nianhua_ai_store.all_required_fees_and_verified_china_vat_invoice_cny,null);
 assert.equal(r100.new_evidence.nianhua_ai_store.refund_processing_deduction_cny_claim,5);
 assert.equal(r100.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 101: upstream and SMS remain unverified.
+const cat101=d.records.find(x=>x.id==='gpt-source-followup-r101-20261108'),data101=d.records.find(x=>x.id==='gpt-source-followup-r101-20261108-evidence');
+assert(cat101&&data101&&cat101.url.endsWith('supplier-followup-20261108-r13.html'));
+const r101=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r13-evidence.json'),'utf8'));
+assert.equal(r101.round,101);assert.equal(r101.site_version,'1.9.109');assert.equal(r101.sources.length,5);
+assert.equal(r101.new_evidence.getgpt_plus.displayed_plus_one_account_month_retail_cny,138);
+assert.equal(r101.new_evidence.getgpt_plus.merchant_explicitly_cannot_confirm_automated_upstream_operator_and_server_region,true);
+assert.equal(r101.new_evidence.getgpt_plus.all_required_fees_with_verified_china_vat_invoice_cny,null);
+assert.equal(r101.new_evidence.upchatgpt_pro_legacy_redirect.is_new_supplier,false);
+assert.equal(r101.qualification_totals.verified_plus_wholesale_upstreams,0);
