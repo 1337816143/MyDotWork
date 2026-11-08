@@ -2454,6 +2454,28 @@
       "summary": "12条本轮实际读取URL；FAQ¥159非实时可购、API押金/起量；¥138加6%仅假设，全部未证费用null，短信实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r96-20261108",
+      "title": "GPT源头第96轮 · 五五AI商家报价和两条外部发卡兑换链",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r8.html",
+      "updatedAt": "2026-11-08",
+      "summary": "新核五五AI商家10月30日宣传原号Plus¥135/月但站内结算价未读取，会员卡须外部Session兑换；hicxy¥165/月转外部qfcc99购卡；税票、授权、批发价格均未闭合，已核上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r96-20261108-evidence",
+      "title": "第96轮 · 55ai商家来源、hicxy发卡跳转及旧候选复核 · 19 URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r8-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "19条本轮实读/无正文/访问失败原URL。¥135为商家旧日推广价而非当前实付，¥165为hicxy宣传而非qfcc99进货价；中国税票、合同、批发价、SMS成功均null或0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
