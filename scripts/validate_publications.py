@@ -1027,6 +1027,17 @@ def validate_publications():
     assert r93['separate_public_retail_sku']['actual_all_required_fees_and_valid_china_vat_invoice_cny'] is None
     assert r93['phone_verification']['verified_sms_successes'] == 0
     assert r93['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert by_id['gpt-source-followup-r94-20261108']['url'] == '../research/2026-11-08/supplier-followup-20261108-r6.html'
+    assert by_id['gpt-source-followup-r94-20261108-evidence']['url'] == '../research/2026-11-08/supplier-followup-20261108-r6-evidence.json'
+    r94 = json.loads((ROOT / 'dist/research/2026-11-08/supplier-followup-20261108-r6-evidence.json').read_bytes())
+    assert r94['round'] == 94 and r94['site_version'] == '1.9.102' and len(r94['sources']) == 6
+    assert [v['public_price_cny'] for v in r94['conflicting_current_retail_sku']['current_observations']] == [169,159,159]
+    assert r94['conflicting_current_retail_sku']['historical_direct_observation']['observed_on'] == '2026-11-06'
+    assert r94['conflicting_current_retail_sku']['verified_single_payable_retail_price_cny'] is None
+    assert r94['conflicting_current_retail_sku']['all_required_fees_including_valid_china_vat_invoice_cny'] is None
+    assert r94['wholesale_and_invoice_bounded_recheck']['real_one_item_wholesale_price_cny'] is None
+    assert r94['phone_verification']['successful_sms_tests'] == 0
+    assert r94['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

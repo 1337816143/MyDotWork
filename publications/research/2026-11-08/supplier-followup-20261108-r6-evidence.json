@@ -1,0 +1,152 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 94,
+  "site_version": "1.9.102",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "scope": "首次记录扭蛋AI同一现存原号ChatGPT Plus单件月卡在商品详情¥169（含未提交的应付¥169）与两个自有目录¥159并存的价格冲突，历史2026-11-06的¥149不改写；批发和发票规则只作有界旧证据复核。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "conflicting_current_retail_sku": {
+    "merchant": "扭蛋AI代充",
+    "product": "ChatGPT Plus 代充",
+    "unit": "CNY / existing ChatGPT account / one month / one item",
+    "delivery": "CDK then complete Session JSON",
+    "active_same_type_subscription_allowed": false,
+    "historical_direct_observation": {
+      "observed_on": "2026-11-06",
+      "public_price_cny": 149,
+      "historical_round": 71,
+      "historical_source_url": "https://shop.niudan.cc/shop/chatgpt/chatgpt-plus"
+    },
+    "current_observations": [
+      {
+        "url": "https://shop.niudan.cc/shop/chatgpt/chatgpt-plus",
+        "public_price_cny": 169,
+        "unsubmitted_widget_amount_cny": 169,
+        "confirmed_paid_amount_cny": null
+      },
+      {
+        "url": "https://shop.niudan.cc/shop",
+        "public_price_cny": 159,
+        "unsubmitted_widget_amount_cny": null,
+        "confirmed_paid_amount_cny": null
+      },
+      {
+        "url": "https://shop.niudan.cc/shop/chatgpt",
+        "public_price_cny": 159,
+        "unsubmitted_widget_amount_cny": null,
+        "confirmed_paid_amount_cny": null
+      }
+    ],
+    "conflict_is_merchant_self_pages": true,
+    "verified_single_payable_retail_price_cny": null,
+    "verified_change_effective_datetime": null,
+    "all_required_fees_including_valid_china_vat_invoice_cny": null,
+    "latest_same_sku_paid_order_verified": false,
+    "price_observation_not_same_as_price_change": true
+  },
+  "wholesale_and_invoice_bounded_recheck": {
+    "agent_discount_examples_only": [
+      0.95,
+      0.9,
+      0.85
+    ],
+    "real_one_item_wholesale_price_cny": null,
+    "mandatory_agent_joining_fee_cny": null,
+    "strict_wholesale_minimum_quantity": null,
+    "merchant_enterprise_advertised_minimum_accounts": 5,
+    "merchant_claims_china_vat_general_and_special_invoices": true,
+    "one_item_invoice_availability_verified": false,
+    "actual_invoice_issuer": null,
+    "actual_receiving_legal_entity": null,
+    "china_vat_invoice_verified": false,
+    "real_resale_and_supply_authorization_document": null,
+    "actual_full_invoice_and_payment_fees_cny": null
+  },
+  "phone_verification": {
+    "chatgpt_web_first_login_success_verified": false,
+    "codex_sms_success_verified": false,
+    "first_api_key_sms_success_verified": false,
+    "number_control_period": null,
+    "failed_sms_cash_refund_cny": null,
+    "existing_historical_codex_sms_unit_price_cny": 12,
+    "existing_sms_price_not_refreshed_by_direct_product_read": true,
+    "successful_sms_tests": 0
+  },
+  "refund_bounded_recheck": {
+    "merchant_says_unused_cdk_or_non_account_failure_refundable": true,
+    "merchant_says_unfinished_kyc_active_subscription_or_restricted_account_is_nonrefundable": true,
+    "real_cash_refund_tested": false
+  },
+  "sources": [
+    {
+      "url": "https://shop.niudan.cc/shop/chatgpt/chatgpt-plus",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_page_read",
+      "evidence_class": "product_detail_and_unsubmitted_payment_preview",
+      "displayed_price_cny_per_account_month": 169,
+      "fact": "准确Plus商品页169元/月，一件默认预览应付169；须CDK后交完整Session，账号无同类有效订阅。尚未提交订单或支付。"
+    },
+    {
+      "url": "https://shop.niudan.cc/shop",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_page_read",
+      "evidence_class": "full_catalog_same_sku_display",
+      "displayed_price_cny_per_account_month": 159,
+      "fact": "总商城Plus同一条目159元/月，不能证明收银台真实以159结算。"
+    },
+    {
+      "url": "https://shop.niudan.cc/shop/chatgpt",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_page_read",
+      "evidence_class": "category_catalog_same_sku_display",
+      "displayed_price_cny_per_account_month": 159,
+      "fact": "ChatGPT分类Plus同一SKU 159元/月，页面另要求完整Session JSON。"
+    },
+    {
+      "url": "https://shop.niudan.cc/agent",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_page_read",
+      "evidence_class": "unchanged_agent_qualification_bounded_recheck",
+      "fact": "9.5折、9折、8.5折明确为示例；真实代理价须审核且按个别价目表，零售变价不能推导实际批发价。"
+    },
+    {
+      "url": "https://shop.niudan.cc/enterprise",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_page_read",
+      "evidence_class": "unchanged_enterprise_invoice_claim_bounded_recheck",
+      "fact": "商家宣传可开中国增值税普票/专票、企业5人起采购，不证明本人原号一件能出票或实际出票法人。"
+    },
+    {
+      "url": "https://shop.niudan.cc/support",
+      "observed_on": "2026-11-08",
+      "read_status": "merchant_primary_page_read",
+      "evidence_class": "unchanged_account_exclusion_refund_bounded_recheck",
+      "fact": "未使用CDK及非账号原因开通失败商称全额退；已有订阅/KYC未完成/受限账号仅更换合格账号不支持退款，未实测。"
+    }
+  ],
+  "retrieval_limitation": "Read-only web retrieval; page crawl snapshots not simultaneous live checkout. Do not infer a verified price rise date or completed checkout from them.",
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_integrity": {
+    "subscription_price_baseline_126_rows_unchanged": true,
+    "prior_round_reports_preserved_byte_for_byte": true
+  },
+  "notes": [
+    "同一商家三个公开自有页面展示159和169两价；第71轮149为2026-11-06历史直接报价，未刷新其旧观察时间。",
+    "标价与应付预览不等于实付含票总额，未知费记null，不以0补齐；按169预算仅余1元不代表确认超标。",
+    "销售代理折扣系示例而非已获报价、批准代理或正式供货授权，企业5账号票据宣传不代表单件中国税票资格。",
+    "Apple内购可能与Session交付并存，普通订阅不能保证首次网页手机验证、Codex或API验证成功。",
+    "未付款、联系、发送消息或提交任何账号/支付凭据。"
+  ]
+}
