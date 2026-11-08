@@ -624,3 +624,13 @@ assert.equal(r94.wholesale_and_invoice_bounded_recheck.real_one_item_wholesale_p
 assert.equal(r94.wholesale_and_invoice_bounded_recheck.one_item_invoice_availability_verified,false);
 assert.equal(r94.phone_verification.successful_sms_tests,0);
 assert.equal(r94.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r95cat=d.records.find(x=>x.id==='gpt-source-followup-r95-20261108'),r95data=d.records.find(x=>x.id==='gpt-source-followup-r95-20261108-evidence');
+assert(r95cat&&r95data&&r95cat.url.endsWith('supplier-followup-20261108-r7.html'));
+const r95=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r7-evidence.json'),'utf8'));
+assert.equal(r95.round,95);assert.equal(r95.site_version,'1.9.103');assert.equal(r95.sources.length,12);
+assert.equal(r95.opengptplus.merchant_agent_inventory_min_cards,10);assert.equal(r95.opengptplus.merchant_api_deposit_cny_min,3000);
+assert.equal(r95.opengptplus.homepage_now_no_listed_products,true);assert.equal(r95.opengptplus.actual_plus_current_checkout_cny,null);
+assert.equal(r95.gpt100x.public_plus_cny_per_account_30days,138);assert.equal(r95.gpt100x.verified_one_item_plus_vat_invoice,false);
+assert.equal(r95.gpt100x.actual_all_required_plus_vat_checkout_cny,null);assert.equal(r95.phone_verification.successful_sms_tests,0);
+assert.equal(r95.qualification_totals.verified_plus_wholesale_upstreams,0);
