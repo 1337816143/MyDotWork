@@ -2718,6 +2718,28 @@
       "summary": "首次读取6个2026-11-09原始URL；零售单月/预览金额和完整Session要求、短信20分钟及现金退款缺口、商业Invoice不等于国内VAT；合格批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r108-20261109",
+      "title": "GPT源头第108轮 · cdkstore低价单月、VAT明确排除与令牌风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-r2.html",
+      "updatedAt": "2026-11-09",
+      "summary": "新核cdkstore原号Plus一月挂牌¥95；仅加密币且无VAT票，条款禁买家转售，激活须经Telegram交accessToken，不是合格上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r108-20261109-evidence",
+      "title": "第108轮 · cdkstore SKU/不开发票/禁转售/Token交付 · 8原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-r2-evidence.json",
+      "updatedAt": "2026-11-09",
+      "summary": "2026-11-09直接观察8个原始URL，保留旧页面日期、加密币链费未知null、商家明确不提供VAT及短信未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

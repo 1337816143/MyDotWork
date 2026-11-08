@@ -790,3 +790,16 @@ assert.equal(r107.new_evidence.xiyueai_sms.phone_exclusive_control_minutes_merch
 assert.equal(r107.new_evidence.xiyueai_sms.cash_refund_if_no_sms_verified,null);
 assert.equal(r107.new_evidence.payforchat_retail_exclusion.seller_explicitly_cannot_issue_mainland_china_vat_invoice,true);
 assert.equal(r107.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 108: ¥95 crypto-only retail excluded by merchant explicit no-VAT and resale ban.
+const cat108=d.records.find(x=>x.id==='gpt-source-followup-r108-20261109'),data108=d.records.find(x=>x.id==='gpt-source-followup-r108-20261109-evidence');
+assert(cat108&&data108&&cat108.url.endsWith('supplier-followup-20261109-r2.html'));
+const r108=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-r2-evidence.json'),'utf8'));
+assert.equal(r108.round,108);assert.equal(r108.site_version,'1.9.116');assert.equal(r108.sources.length,8);
+assert.equal(r108.new_evidence.cdkstore.observed_retail_listed_cny_per_account_month,95);
+assert.equal(r108.new_evidence.cdkstore.seller_explicitly_says_no_vat_invoice,true);
+assert.equal(r108.new_evidence.cdkstore.buyer_resale_explicitly_prohibited,true);
+assert.equal(r108.new_evidence.cdkstore.verified_actual_checkout_cny,null);
+assert.equal(r108.new_evidence.cdkstore.formal_wholesale_supply_resale_authorization_verified,null);
+assert.equal(r108.new_evidence.cdkstore.requires_chatgpt_access_token,true);
+assert.equal(r108.qualification_totals.verified_plus_wholesale_upstreams,0);
