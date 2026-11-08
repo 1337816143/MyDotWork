@@ -1,0 +1,178 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 105,
+  "site_version": "1.9.113",
+  "date": "2026-11-08",
+  "observed_on": "2026-11-08",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接读AI Access Hub和泉莘杂货店同名Plus单月SKU，区分菲律宾卡付与iOS覆盖通道、支付宝5%商称、预订与自动发货冲突、官方退款成功后仅返80%商称；Zhang Hao Shang SKU与第三方比价¥114仅作发现线索，原商家商品页无法直接确认当前价。没有批发主体、有效税票、合法授权或实际订单。",
+  "new_evidence": {
+    "ai_access_hub": {
+      "first_party_product_url": "https://aiwholesale.top/item/51",
+      "exact_sku": "GPT PLUS〖官方直充｜月卡｜质保30天订阅〗",
+      "unit": "CNY/张·1个月",
+      "merchant_display_channel_1_card_payment_cny": 119,
+      "merchant_display_channel_3_ios_cny": 130,
+      "merchant_channel_1_eligible_account": "无当前有效订阅；iOS订阅到期后商称还需等待72小时",
+      "merchant_channel_3_active_subscription_override_claim": true,
+      "merchant_channel_3_existing_days_not_preserved_claim": true,
+      "merchant_page_says_preorder_and_automatic_delivery": true,
+      "confirmed_immediate_stock_delivery": null,
+      "merchant_says_alipay_fee_percent": 5,
+      "merchant_fee_application_to_cny_payments_tested": false,
+      "conditional_channel_1_with_alipay_5pct_cny": 124.95,
+      "conditional_channel_3_with_alipay_5pct_cny": 136.5,
+      "actual_checkout_amount_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "all_fees_with_valid_china_vat_invoice_cny": null,
+      "valid_china_vat_invoice_verified": null,
+      "merchant_operator_verified": null,
+      "actual_payee_verified": null,
+      "issuer_verified": null,
+      "formal_wholesale_resale_authorization_verified": null,
+      "actual_delivery_verified": null,
+      "upstream_supplier_identified": null,
+      "merchant_channel_1_official_refund_success_payout_share_percent": 80,
+      "merchant_channel_1_refund_service_fee_percent": 20,
+      "merchant_channel_3_account_ban_refund_claim": false,
+      "claim_30day_warranty_for_subscription_drop_only": true,
+      "login_to_chatgpt_required_before_redeem": true,
+      "third_party_auth_session_data_required_claim": true,
+      "session_json_exact_fields_verified": null,
+      "qualifies_as_verified_wholesale_upstream": false
+    },
+    "quanxin_store": {
+      "first_party_product_url": "https://yaxin9527.cn/item/51",
+      "exact_sku": "GPT PLUS〖官方直充｜月卡｜质保30天订阅〗",
+      "unit": "CNY/张·1个月",
+      "merchant_display_channel_1_cny": 124,
+      "merchant_display_channel_3_ios_cny": 128,
+      "merchant_page_says_preorder_and_automatic_delivery": true,
+      "merchant_says_alipay_fee_percent": 5,
+      "conditional_channel_1_with_alipay_5pct_cny": 130.2,
+      "conditional_channel_3_with_alipay_5pct_cny": 134.4,
+      "same_item_id_and_nearly_identical_product_text_to_ai_access_hub": true,
+      "shared_upstream_entity_independently_proven": false,
+      "merchant_channel_1_refund_service_fee_percent": 20,
+      "merchant_channel_3_account_ban_refund_claim": false,
+      "existing_plus_override_available_via_ios_merchant_claim": true,
+      "actual_checkout_amount_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "all_fees_with_valid_china_vat_invoice_cny": null,
+      "payment_receiving_entity_verified": null,
+      "invoice_issuer_verified": null,
+      "wholesale_or_resale_authorization_verified": null,
+      "actual_paid_or_delivered_verified": false,
+      "qualifies_as_verified_wholesale_upstream": false
+    },
+    "zhang_hao_shang": {
+      "first_party_product_url": "https://zhanghaoshang.com/item/2",
+      "unit": "CNY/张·1个月",
+      "first_party_page_says_one_month_plus": true,
+      "first_party_page_shows_price_to_reader": false,
+      "verified_current_first_party_price_cny": null,
+      "third_party_pickaiplan_indicative_cny": 114,
+      "third_party_source_url": "https://pickaiplan.com/memberships/chatgpt_plus/?term=1month",
+      "direct_seller_claim_30day_warranty_dropped_subscription": true,
+      "direct_seller_excludes_account_ban": true,
+      "direct_seller_requires_existing_account_and_login_for_cdk": true,
+      "direct_seller_says_existing_pro_cannot_override": true,
+      "third_party_cdk_url": "https://duihuan.app/",
+      "redemption_site_readable_in_this_run": false,
+      "all_required_china_vat_fees_cny": null,
+      "legal_resale_authorization_verified": null,
+      "qualifies_as_verified_wholesale_upstream": false
+    }
+  },
+  "supply_chain_disclosure": {
+    "near_identical_item_content": "AI Access Hub 与泉莘杂货店均使用 /item/51 相同标题、4种细分选项、预订声明和20%退款处理费表述；只能证明公开页面文案重合，不能证明同一供货商、上游签约、法律主体或批发授权。",
+    "retail_low_price_is_not_wholesale_proof": true,
+    "observed_b2b_quote_cny": null,
+    "verified_no_upfront_fee_for_resale": null
+  },
+  "independent_phone_verification": {
+    "new_service_found": false,
+    "successful_phone_verification_tests": 0,
+    "chatgpt_web": "官方通常不要求，但个别账号可能单独触发验证；商家充值不是自动通过",
+    "codex": "官方称桌面端可能要求手机验证",
+    "first_api_key": "官方称初次创建API key要求手机验证",
+    "number_control_duration_minutes": null,
+    "failed_sms_cash_refund_cny": null,
+    "session_or_apple_recharge_not_phone_verification": true
+  },
+  "old_priority_sources": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "old_source_prices_refreshed": false,
+  "sources": [
+    {
+      "url": "https://aiwholesale.top/item/51",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_price_and_terms_not_transaction",
+      "observation": "Plus单月卡付¥119、iOS¥130；支付宝5%商称，退款成功按官方实际退款80%返、20%称卡台手续费；页面既称预订又称自动发码，履约未知。"
+    },
+    {
+      "url": "https://yaxin9527.cn/item/51",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_price_and_terms_not_transaction",
+      "observation": "与前者文案和SKU结构近同：卡付¥124、iOS¥128、支付宝5%及官方退款成功后20%处理费。不能由文案相同判定共同真实上游。"
+    },
+    {
+      "url": "https://zhanghaoshang.com/item/2",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page_current_price_not_rendered",
+      "evidence_class": "merchant_first_party_sku_and_warranty_not_price",
+      "observation": "Plus一个月、须已有账号、Pro有效期不可覆盖、封号不保；原始网页可读正文未显示当前价。"
+    },
+    {
+      "url": "https://zhanghaoshang.com/",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "merchant_first_party_checkout_method_not_test",
+      "observation": "商店称卡密自动发货且兑换入口duihuan.app，USDT可免手续费须联系客服；官网商品列表动态加载，不能证实114元现价。"
+    },
+    {
+      "url": "https://pickaiplan.com/memberships/chatgpt_plus/?term=1month",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "third_party_aggregator_discovery_not_primary_price_proof",
+      "observation": "聚合站显示Zhang Hao Shang ¥114、AI Access Hub ¥119及泉莘¥124；聚合价格、库存、时效不能代替原商家结算验证，且当日与既有旧索引不同。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-08",
+      "access_status": "readable_public_page",
+      "evidence_class": "official_platform_policy_no_new_rule_claim",
+      "observation": "ChatGPT一般不要求手机验证，但Codex桌面端可能要求，首次API Key要求短信或适用国家WhatsApp；未发现因此导致既有独立短信结论发生新变化。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未购买付款",
+    "未联系商家",
+    "未提交Session/Token/账号密码/短信",
+    "未验证发票或代充履约"
+  ]
+}
