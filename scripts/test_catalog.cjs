@@ -707,3 +707,16 @@ assert.equal(r101.new_evidence.getgpt_plus.merchant_explicitly_cannot_confirm_au
 assert.equal(r101.new_evidence.getgpt_plus.all_required_fees_with_verified_china_vat_invoice_cny,null);
 assert.equal(r101.new_evidence.upchatgpt_pro_legacy_redirect.is_new_supplier,false);
 assert.equal(r101.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 102: confirmed merchant-displayed invoice options exceed the ceiling; never classify a merchant promise as an authenticated Chinese VAT invoice.
+const cat102=d.records.find(x=>x.id==='gpt-source-followup-r102-20261108'),data102=d.records.find(x=>x.id==='gpt-source-followup-r102-20261108-evidence');
+assert(cat102&&data102&&cat102.url.endsWith('supplier-followup-20261108-r14.html'));
+const r102=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-08/supplier-followup-20261108-r14-evidence.json'),'utf8'));
+assert.equal(r102.round,102);assert.equal(r102.site_version,'1.9.110');assert.equal(r102.sources.length,11);
+assert.equal(r102.new_evidence.xiaoyangplus.price_cny_per_unit,169);
+assert.equal(r102.new_evidence.xiaoyangplus.invoice_option_display_cny_per_unit,179);
+assert.equal(r102.new_evidence.xiaoyangplus.invoice_issuer_verified,null);
+assert.equal(r102.new_evidence.steadflow.homepage_invoice_option_cny_per_month,180);
+assert.equal(r102.new_evidence.steadflow.faq_older_price_cny_per_month,148);
+assert.equal(r102.new_evidence.steadflow.merchant_terms_prohibit_resale_and_shared_accounts,true);
+assert.equal(r102.qualification_totals.verified_plus_wholesale_upstreams,0);
