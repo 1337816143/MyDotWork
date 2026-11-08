@@ -2388,6 +2388,28 @@
       "summary": "5条商家原始URL；¥88代理建站/货源前置费（+6%票费仅分项），禁止转售与招代理并存需书面合同；Plus¥135/¥145非新价，完整含票实付、授权、主体及实测均null/0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r93-20261108",
+      "title": "GPT源头第93轮 · Pay2GPT批量协议、美国商业发票与API信用退回",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r5.html",
+      "updatedAt": "2026-11-08",
+      "summary": "Pay2GPT十份起才有批量折扣而非证实最低起订数；企业进货价未知，商称ByteCozy LLC收款签约，只能出美国英文商业PDF不能出中国增值税票；预付Session API退款仅返额度，合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r93-20261108-evidence",
+      "title": "第93轮 · Pay2GPT企业折扣、主体及发票、Session API信用退款 · 4原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-08/supplier-followup-20261108-r5-evidence.json",
+      "updatedAt": "2026-11-08",
+      "summary": "直接核四条商家原链；$23.90/账号·月仅零售，企业批发价及人民币含票实付null，英文商业PDF非中国VAT，失败订单返预付次数非现金；正式授权和实测均0或null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
