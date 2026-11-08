@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPT源头第104轮 · 苏哲AI代理价、前置费与接码边界</title><style>body{max-width:1060px;margin:auto;padding:22px;background:#f5f8fc;color:#22364c;font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif}main,section{padding:22px;background:#fff;border:1px solid #dbe4ef;border-radius:12px;margin-bottom:18px}a{color:#176395;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #cbdbe8;padding:9px}.warn{background:#fff3d9;padding:12px;border-radius:8px}</style></head><body>
+<main><p><a href="../../dashboard/index.html">工作台</a> · <a href="supplier-followup-20261108-r16-evidence.json">5条当日原始URL结构化证据</a> · <a href="supplier-followup-20261108-r15.html">第103轮</a></p><h1>GPT源头第104轮 · 2026-11-08</h1>
+<p class="warn"><strong>首次核得苏哲AI准确Plus单月CDK代理¥115/张（零售¥119），但代理价需先付¥29.99开通资格；且Plus要求Free账号。明确违反无代理前置费目标，不能作为在期Plus直接续费上游。</strong></p>
+<p>本轮直接读取5条商家原始网页；页面显示、商家承诺、推断、真正成交和SMS成功严格分级。依然遵循本人原号、单件单月、无代理前置费及全部必须支付和有效中国增值税发票费用合计≤¥170的条件。</p></main>
+<section><h2>一、公开代理价、准确SKU与实质门槛</h2>
+<p><a href="https://suzhe.ai/agent">代理计划/准确价表</a>列“ChatGPT Plus CDK · 1个月订阅”：代理开通后¥115/张；零售¥119/张，明示价差¥4。要取得¥115价，必须先支付一次性的¥29.99代理资格费用。页面称资格永久有效、可购买单张或多张、网站代理订单免支付手续费，<strong>这些均为公开商家声明，不是已支付/供货验证</strong>。哪怕价格低于¥170，因存在前置费，该代理模式也不符合采购约束。零售单张¥119没有明示的代理前置条件，但其性质只是零售。</p>
+<p>开票类型/额外费用、中国有效增值税发票及出票主体、支付最终到账、经营法人、正式进货合同和合法转售授权均未独立验证，数值按 <code>null</code> 保留。<a href="https://suzhe.ai/about">关于页</a>仅公布品牌和社媒身份；卖家<a href="https://suzhe.ai/store">公开声明</a>并非OpenAI关联方。站内提及XorPay为支付回调服务，但不能据此认定真正的收款法人或发票主体。</p></section>
+<section><h2>二、在期会员限制：只能Free激活，不是直接续费</h2>
+<p><a href="https://suzhe.ai/agent">代理价表</a>以及<a href="https://suzhe.ai/activate">激活页</a>均写Plus目标账号需“无任何订阅”（Free计划）；仍有效的Plus不能直接累计续费。取消订阅但未到期也不能提前延长。需先在ChatGPT成功登录，复制完整的 <b>Session JSON</b> 并交第三方服务，<code>accessToken</code>是敏感认证信息；“不需要密码”也不能推出无账号风险。未证实成功充值、不保证在期续费。Apple付款渠道与Session凭据的使用不是互斥的技术概念。</p></section>
+<section><h2>三、公开API是核销接口，不是无门槛批发API</h2>
+<p><a href="https://suzhe.ai/gptapi">开发者文档</a>指定技术API地址 <code>https://www.academicgate.org</code>，需代理账户签发 <code>X-API-Key</code>、预买的 <code>PLS-</code> 卡密和完整Session JSON，调用 <code>POST /api/v1/gptplus/redeem</code> 后轮询任务结果。此接口只提交、查询已购卡密的充值任务，不是公开可直接免代理前置费拿货的采购接口，也不是OpenAI官方API或API Key手机验证通道。商称Session仅在内存中处理，但账号邮箱、订单、调用端Key标识与IP长期保留；未经独立审计。激活域名不同不足以证明独立供货公司。</p></section>
+<section><h2>四、独立手机号验证产品：Codex SMS与TOTP不可混同</h2>
+<p><a href="https://suzhe.ai/activate">激活页</a>另有前缀 <code>SMS-</code> 的“Codex接码”，商称随机地区手机号码、短信通常1–3分钟；取号2分钟后可取消换号，20分钟未收到自动取消且卡密不消耗；收到任何短信后视为消耗、不退不换。这是<strong>商家条款而非成功实测或失败原路退款证据</strong>。准确接码CDK售价、号码是否VoIP、控制期限、后续能否重复接码、现金退款及ChatGPT网页/首次API Key的实际通过率均未知（null）。站内名为“2FA接码”的另一功能实为浏览器本地TOTP代码计算器，不能充当接收手机短信的号码服务。</p></section>
+<section><h2>五、质保、资格结论与历史保留</h2>
+<p><a href="https://suzhe.ai/store">商店说明</a>商称订阅类CDK质保一个月，掉订按剩余日折算退款；封号不保。实际履约、完整到账、掉订现金退款均未测试。CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay已有旧报价及主体证据不因本次研究刷新日期。本轮新增的是一项有明确前置费的代理渠道和区分清晰的核销API、独立SMS线索，<strong>不是已核实合法批发上游</strong>。</p>
+<p><strong>满足全部条件的批发上游0；实际采购0；中国有效增值税税票验真0；ChatGPT网页/Codex/首次API Key的短信成功实测0。</strong> 全部来源、未知费用与结论见<a href="supplier-followup-20261108-r16-evidence.json">结构化证据JSON</a>。未购买、未联系、未输入任何账户凭据。</p></section></body></html>
