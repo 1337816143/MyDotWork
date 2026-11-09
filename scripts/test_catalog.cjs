@@ -842,3 +842,16 @@ assert.equal(r111.newly_read_privacy.upstream_card_suppliers_explicitly_mentione
 assert.equal(r111.historical_candidate_reference.historical_checkout_preview_cny,149.78);
 assert.equal(r111.historical_candidate_reference.price_change_verified_this_round,false);
 assert.equal(r111.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 112: public fee math excludes new retail candidate; SMS is one-time and activation requires Session.
+const cat112=d.records.find(x=>x.id==='gpt-source-followup-r112-20261109'),data112=d.records.find(x=>x.id==='gpt-source-followup-r112-20261109-evidence');
+assert(cat112&&data112&&cat112.url.endsWith('supplier-followup-20261109-r6.html'));
+const r112=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-r6-evidence.json'),'utf8'));
+assert.equal(r112.round,112);assert.equal(r112.site_version,'1.9.120');assert.equal(r112.sources.length,8);
+assert.equal(r112.new_evidence.gptpro_plus.retail_display_cny_per_account_month,168);
+assert.equal(r112.new_evidence.gptpro_plus.china_vat_general_invoice_extra_percent_merchant_claim,6);
+assert.equal(r112.new_evidence.gptpro_plus.merchant_component_math_alipay_with_invoice_cny,178.08);
+assert.equal(r112.new_evidence.gptpro_plus.sensitive_session_json_needed_downstream,true);
+assert.equal(r112.new_evidence.codex_sms.display_cny_per_attempt,10);
+assert.equal(r112.new_evidence.codex_sms.merchant_claim_re_receive_sms_supported,false);
+assert.equal(r112.qualification_totals.verified_plus_wholesale_upstreams,0);

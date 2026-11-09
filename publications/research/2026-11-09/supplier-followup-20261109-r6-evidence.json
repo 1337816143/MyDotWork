@@ -1,0 +1,166 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 112,
+  "site_version": "1.9.120",
+  "date": "2026-11-09",
+  "observed_on": "2026-11-09",
+  "scope": "首次直接读取GPTPro gptpro5x.com 的单月Plus、独立Codex短信、国内增值税开票附加费和外站Session兑换条件；旧条款自标发布日期≠今日新政策；尚未成交。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "gptpro_plus": {
+      "merchant": "GPTPro / gptpro5x.com（独立第三方，非OpenAI授权）",
+      "sku": "ChatGPT Plus 本人原号，1个账号×1个月",
+      "retail_display_cny_per_account_month": 168,
+      "alipay_payment_fee_rate_merchant_claim": 0,
+      "wechat_payment_fee_rate_merchant_claim": 0.01,
+      "china_vat_general_invoice_extra_percent_merchant_claim": 6,
+      "china_vat_claim_label": "开国内增值税普通发票，商称加收6%；页面文字列1%票税+5%企业所得税（非税法验真）",
+      "merchant_component_math_alipay_with_invoice_cny": 178.08,
+      "arithmetic_exceeds_ceiling_cny": 8.08,
+      "checkout_payable_visible_without_account_details": false,
+      "actual_paid_cny": null,
+      "valid_china_vat_invoice_verified": null,
+      "invoice_issuer_legal_entity_verified": null,
+      "receiving_legal_entity_verified": null,
+      "operating_legal_entity_verified": null,
+      "merchant_claim_prior_users": "2万+",
+      "real_orders_independently_verified": null,
+      "wholesale_single_unit_price_cny": null,
+      "wholesale_minimum_quantity_verified": null,
+      "agent_upfront_fee_cny_verified": null,
+      "formal_resale_authorization_verified": null,
+      "official_openai_authorization_claim": false,
+      "condition": "无需实际订单即可确认网页公开的¥168+6%分项计算已高于¥170；并非真实含票实付。若优惠或不同合同则须重新核价。",
+      "account_session_required_on_merchant_activation_page": true,
+      "session_url": "https://chatgpt.com/api/auth/session",
+      "free_account_requirement_merchant_activation_claim": "非免费版账户提示需人工核对，激活码未扣除；故不保证在期自动叠加续费",
+      "password_required_by_order_form": false,
+      "sensitive_session_json_needed_downstream": true,
+      "session_can_bypass_first_login_sms": false,
+      "chatgpt_plus_includes_api_usage": false,
+      "merchant_claim_refund_if_pre_activation_failure": "商家原因代充失败原路退；自标2026-04-28条款",
+      "merchant_claim_refund_if_post_activation_failure": "商品收银台非封禁提前掉订按未使用天数退；旧条款写已开通原则不支持退款，需核实具体优先级",
+      "actual_cash_refund_test": null,
+      "verified_qualified_wholesale_supplier": false
+    },
+    "codex_sms": {
+      "merchant": "GPTPro",
+      "sku": "Codex美区手机号首次验证，一次性",
+      "display_cny_per_attempt": 10,
+      "merchant_claim_first_verification_only": true,
+      "merchant_claim_repeat_verification_supported": false,
+      "merchant_claim_re_receive_sms_supported": false,
+      "account_verification_success_independently_tested": null,
+      "chatgpt_web_login_or_registration_supported_verified": null,
+      "first_api_key_supported_verified": null,
+      "codex_supported_by_merchant_claim": true,
+      "requires_chatgpt_session_to_buy_sms_verified": null,
+      "code_delivery_after_payment_claim": "通过订单号向人工客服领取激活密钥（与自助发码字样并存）",
+      "number_control_duration_days": null,
+      "number_country_claim": "美国+1",
+      "payment_fee_actual_cny": null,
+      "invoice_extra_fee_for_sms_claim_percent": 6,
+      "no_sms_received_original_payment_cash_refund_verified": null,
+      "second_factor_otp_or_password_delivery_requirement_verified": null,
+      "merchant_phone_input_is_order_contact_not_openai_binding": true,
+      "real_sms_success_count": 0
+    }
+  },
+  "existing_focus_names_unchanged": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "incumbent_recheck_boundary": "本轮未获得能够刷新上述各商家旧报价、授权、税票或真实成功率的新可信直接证据，旧观察日不改。",
+  "sources": [
+    {
+      "url": "https://gptpro5x.com/",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_home",
+      "observation": "Plus ¥168/月，站内广告称可开发票；此处价格和授权均仅商家信息"
+    },
+    {
+      "url": "https://gptpro5x.com/plus",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_sku",
+      "observation": "本人账号Plus 1个月¥168；支付宝商称无支付通道费，微信商称+1%；并非真实成交"
+    },
+    {
+      "url": "https://gptpro5x.com/checkout/plus",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_checkout_unpaid",
+      "observation": "中国增值税普通发票选项标额外6%；网页无输入时应付¥--，不是已支付/真实税票；商称1%票税+5%所得税属其文案"
+    },
+    {
+      "url": "https://gptpro5x.com/checkout/codex-phone",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_separate_sms_sku",
+      "observation": "仅Codex首次手机号验证¥10/次；商称不支持第二次验证或再次接码，未给短信失败现金退款承诺及号码持有期限"
+    },
+    {
+      "url": "https://gptpro5x.com/terms",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": "2026-04-28",
+      "access_status": "readable",
+      "evidence_class": "merchant_terms_not_executed_contract",
+      "observation": "自标2026-04-28，商称因商家原因充值失败原路退；成功兑换后通常不退款，与商品页非封号提前掉订按天退的文案存在适用口径需要核对"
+    },
+    {
+      "url": "https://gptpro5x.com/about",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_about_claims",
+      "observation": "自称原gptcz.pro、2023年以来经营、2万用户和300企业；未展示可独立验真的经营、收款、开票法人或转售协议"
+    },
+    {
+      "url": "https://gptpro5x.com/privacy",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": "2026-04-28",
+      "access_status": "readable",
+      "evidence_class": "merchant_privacy_claim",
+      "observation": "自标2026-04-28，手机信息用于联系和售后，非 OpenAI 账号手机号绑定或验证"
+    },
+    {
+      "url": "https://dh5x.com/",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_activation_flow",
+      "observation": "登录ChatGPT后复制 chatgpt.com/api/auth/session 全段JSON交给第三方兑换站；在期非免费版商称需人工处理，非无凭据自动续费"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未付款或填写任何账号/手机号/支付信息",
+    "未联系商家或发送外部消息",
+    "没有真实收到税票、现金退款或完成Codex验证",
+    "零售标价和单独接码SKU不视为批发授权"
+  ]
+}
