@@ -868,3 +868,15 @@ assert.equal(r113.new_candidate.agent_upfront_fee_cny_verified,null);
 assert.equal(r113.new_candidate.all_required_fees_including_vat_cny,null);
 assert.equal(r113.new_candidate.qualified_plus_wholesale_source,false);
 assert.equal(r113.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 114: seller-claimed VAT-included one-seat pricing is not a verified VAT invoice/wholesale right.
+const r114cat=d.records.find(x=>x.id==='gpt-source-followup-r114-20261110'),r114data=d.records.find(x=>x.id==='gpt-source-followup-r114-20261110-evidence');
+assert(r114cat&&r114data);
+const r114=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-evidence.json'),'utf8'));
+assert.equal(r114.round,114);assert.equal(r114.site_version,'1.9.122');assert.equal(r114.sources.length,5);
+assert.equal(r114.new_candidate.public_plus_1_to_4_seats_monthly_cny_per_seat,165);
+assert.equal(r114.new_candidate.merchant_claim_price_includes_six_percent_china_vat_special_invoice,true);
+assert.equal(r114.new_candidate.masked_invoice_demo_contains_placeholders,true);
+assert.equal(r114.new_candidate.actual_invoice_tax_platform_checked,false);
+assert.equal(r114.new_candidate.all_required_fees_and_real_valid_china_vat_total_cny,null);
+assert.equal(r114.qualification_totals.verified_plus_wholesale_upstreams,0);

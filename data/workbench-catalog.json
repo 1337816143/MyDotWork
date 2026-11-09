@@ -2850,6 +2850,28 @@
       "summary": "2026-11-09实际核读店铺公告、两商品URL可访问但正文不可读、第三方动态索引；Plus一月第一方价、含全部票费、批发进价及手机号成功率均null/0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r114-20261110",
+      "title": "GPT源头第114轮 · 一席Plus¥165含票主张与遮挡票据审核",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110.html",
+      "updatedAt": "2026-11-10",
+      "summary": "gongsi.one一席Plus月付商称¥165含6%专票，但税票展示是占位演示，真实出票法人、供货授权和一件全费未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r114-20261110-evidence",
+      "title": "第114轮 · Plus阶梯/商家协议/SLA/发票演示及手机范围证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "2026-11-10首次读取5条原始URL，商家报价与发票样张和实际已核税票严格分离，未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

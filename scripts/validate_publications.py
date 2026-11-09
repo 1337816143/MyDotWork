@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 259, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 261, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.113'
-    assert latest['path'] == 'research/2026-11-09/supplier-followup-20261109-r7.html'
-    assert latest['dataPath'] == 'research/2026-11-09/supplier-followup-20261109-r7-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-09/supplier-followup-20261109-r6.html'
+    assert latest['version'] == '1.114'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-09/supplier-followup-20261109-r7.html'
     assert by_id['gpt-source-followup-r112-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109-r6.html'
     assert by_id['gpt-source-followup-r112-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-r6-evidence.json'
     r112 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-r6-evidence.json').read_bytes())
@@ -1222,6 +1222,15 @@ def validate_publications():
     assert r113['new_candidate']['all_required_fees_including_vat_cny'] is None
     assert r113['new_candidate']['qualified_plus_wholesale_source'] is False
     assert r113['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert by_id['gpt-source-followup-r114-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110.html'
+    assert by_id['gpt-source-followup-r114-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-evidence.json'
+    r114 = json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-evidence.json').read_bytes())
+    assert r114['round']==114 and r114['site_version']=='1.9.122' and len(r114['sources'])==5
+    assert r114['new_candidate']['public_plus_1_to_4_seats_monthly_cny_per_seat']==165
+    assert r114['new_candidate']['masked_invoice_demo_contains_placeholders'] is True
+    assert r114['new_candidate']['all_required_fees_and_real_valid_china_vat_total_cny'] is None
+    assert r114['new_candidate']['documented_lawful_resale_authorization'] is None
+    assert r114['qualification_totals']['verified_plus_wholesale_upstreams']==0
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

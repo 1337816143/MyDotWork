@@ -1,0 +1,139 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 114,
+  "site_version": "1.9.122",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "首次核读gongsi.one企业代采公开一席Plus含票报价、遮挡发票样例、协议/SLA；并重读OpenAI官方手机核验边界。仅网页声明，未验收交易。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "条理集采 / gongsi.one",
+    "kind": "企业采购和API聚合第三方商家（非已证实批发上游）",
+    "first_party_url": "https://gongsi.one/",
+    "plus_price_source_url": "https://gongsi.one/docs/pricing/",
+    "accurate_public_sku": "Plus月付 1~4席档，按席位/月报价，不等于已核单张成交",
+    "public_plus_1_to_4_seats_monthly_cny_per_seat": 165,
+    "merchant_claim_price_includes_six_percent_china_vat_special_invoice": true,
+    "merchant_public_monthly_tiers_per_seat_cny": {
+      "1_to_4": 165,
+      "5_to_19": 155,
+      "20_or_more": 145
+    },
+    "quarterly_one_to_four_per_month_cny": 155,
+    "yearly_one_to_four_per_month_cny": 148,
+    "quarterly_and_yearly_qualify_for_one_month_order": false,
+    "merchant_claim_corporate_bank_transfer": true,
+    "merchant_claim_invoice_issue_within_business_days": 2,
+    "merchant_claim_existing_personal_account_recharge": true,
+    "merchant_claim_no_password_delivery": true,
+    "merchant_claim_invoice_demo_verified": true,
+    "masked_invoice_demo_contains_placeholders": true,
+    "masked_invoice_demo_seller_name": "成都游手科技有限公司",
+    "masked_invoice_demo_seller_uscc_prefix": "91110105",
+    "masked_invoice_demo_uscc_complete": false,
+    "invoice_demo_is_valid_real_verified_vat_invoice": false,
+    "independently_verified_legal_entity": null,
+    "actual_bank_payee_verified": null,
+    "invoice_issuer_actual_verified": null,
+    "one_personal_customer_one_seat_order_acceptance_verified": null,
+    "extra_service_or_bank_fee_cny": null,
+    "all_required_fees_and_real_valid_china_vat_total_cny": null,
+    "agent_upfront_fee_for_one_piece_verified": null,
+    "real_one_item_wholesale_price_cny": null,
+    "documented_lawful_resale_authorization": null,
+    "merchant_disclaimer_no_equity_or_official_reseller_relation_with_openai": true,
+    "session_or_token_required_verified": null,
+    "existing_subscription_renewal_without_replacement_verified": null,
+    "merchant_claim_first_72h_replacement": true,
+    "merchant_claim_refund_remaining_days_original_corporate_bank": true,
+    "actual_refund_verified": false,
+    "actual_payment_verified": false,
+    "actual_invoice_tax_platform_checked": false,
+    "independent_phone_service": {
+      "merchant_specific_openai_sms_sku_verified": false,
+      "price_cny": null,
+      "web_compatible": null,
+      "codex_desktop_compatible": null,
+      "first_api_key_compatible": null,
+      "number_validity_days": null,
+      "failed_sms_cash_refund": null,
+      "actual_successful_sms_test": 0
+    },
+    "qualified_plus_wholesale_source": false,
+    "decision": "表面¥165处于预算但只为商称企业报价；遮挡占位发票无法验真，主体与开票人、法定转售授权、实际全费、是否一件对公可购均未核，不列合格上游。"
+  },
+  "existing_focus_names_unchanged": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "incumbent_recheck": "另读ChongPay首页本人原号Plus仍显示两款¥139和25天Codex短信¥20，PAYPRM原号Plus商品页仍¥155；未拿到相关供应商的批发/税票新证据，不重标旧报价。",
+  "official_phone_verification": "官方分开ChatGPT网页、Codex桌面端、首次API Key；商家未提供独立SMS核验商品或真实成功。",
+  "sources": [
+    {
+      "url": "https://gongsi.one/docs/pricing/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_price",
+      "observation": "Plus 1~4席月付¥165/席·月称含6%中国VAT专票；5~19席¥155，20席及以上¥145。季付/年付月均价非单月采购。"
+    },
+    {
+      "url": "https://gongsi.one/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_marketing_and_placeholder_tax_invoice",
+      "observation": "对公商采、现有个人号直充与免密码只是商称；发票展示标已验真，买方占位，卖方名成都游手科技有限公司、遮挡税号以91110105开头；站尾明确与OpenAI无股权或代销关系。"
+    },
+    {
+      "url": "https://gongsi.one/docs/agreement/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_unsigned_contract_template",
+      "observation": "通用协议约定每次采购以盖章订单确认书为准，2个工作日开票、30分钟交付但本轮未签订或验证。"
+    },
+    {
+      "url": "https://gongsi.one/docs/sla/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_untested_refund_promise",
+      "observation": "72小时可补或更换新账号，剩余天数退款承诺1个工作日对公原路退，未见实际退款，换新账号不满足保证本人原号。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "openai_official_verification_scope",
+      "observation": "普通ChatGPT通常免手机，Codex桌面端可能需验证，首次API Key需验证，SMS/部分国家WhatsApp、不支持VoIP。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未联系卖家",
+    "未下单或付款",
+    "未提交账号凭据或验证码",
+    "未进行验票及手机验证实测"
+  ]
+}
