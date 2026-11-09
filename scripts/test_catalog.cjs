@@ -880,3 +880,16 @@ assert.equal(r114.new_candidate.masked_invoice_demo_contains_placeholders,true);
 assert.equal(r114.new_candidate.actual_invoice_tax_platform_checked,false);
 assert.equal(r114.new_candidate.all_required_fees_and_real_valid_china_vat_total_cny,null);
 assert.equal(r114.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 115: provenance erratum must reference r13/r37/r38; the old r114 artifact stays byte-identical.
+const r115cat=d.records.find(x=>x.id==='gpt-source-followup-r115-20261110'),r115data=d.records.find(x=>x.id==='gpt-source-followup-r115-20261110-evidence');
+assert(r115cat&&r115data&&r115cat.url.endsWith('supplier-followup-20261110-r2.html'));
+const r115=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r2-evidence.json'),'utf8'));
+assert.equal(r115.round,115);assert.equal(r115.site_version,'1.9.123');assert.equal(r115.correction.target_round,114);
+assert.equal(r115.correction.first_observed_merchant_on,'2026-11-03');
+assert.deepEqual(r115.correction.prior_evidence.map(x=>x.round),[13,37,38,114]);
+assert.equal(r115.correction.price_changed_this_round,false);
+assert.equal(r115.correction.historical_records_preserved_unmodified,true);
+assert.equal(r115.sources.length,10);
+assert.equal(r115.current_recheck.verified_all_required_fees_cny,null);
+assert.equal(r115.qualification_totals.verified_plus_wholesale_upstreams,0);

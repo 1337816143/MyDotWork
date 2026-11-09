@@ -1,0 +1,232 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 115,
+  "site_version": "1.9.123",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "历史来源完整性更正（第114轮误称首次发现条理集采）；核对r13、r37、r38与r114原始结构化证据，再复读10条商家原URL。未取得新批发成交、可验税票或手机号成功。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "correction": {
+    "target_round": 114,
+    "target_report": "research/2026-11-10/supplier-followup-20261110.html",
+    "target_claim": "首次核读/本轮首次读取条理集采gongsi.one及其首页、报价、协议、SLA",
+    "correction": "不成立。第13轮于2026-11-03已实际读取同四条商家原始URL；第37轮于11月4日再次完整复读，第38轮也已记录SLA允许换新账号。第114轮应视为再次核验与对遮挡发票显示细节的补充，不是首次发现商家、首次获取一席¥165报价或新上游。",
+    "historical_records_preserved_unmodified": true,
+    "prior_evidence": [
+      {
+        "round": 13,
+        "observed_on": "2026-11-03",
+        "path": "publications/research/2026-11-03/supplier-followup-20261103-r13-evidence.json",
+        "urls": [
+          "https://gongsi.one/",
+          "https://gongsi.one/docs/pricing/",
+          "https://gongsi.one/docs/agreement/",
+          "https://gongsi.one/docs/sla/"
+        ],
+        "finding": "四条商家原URL当时已实际读取：Plus一席¥165含6%专票宣传、遮挡/占位发票、合同与SLA，均标记未验票、未验授权。"
+      },
+      {
+        "round": 37,
+        "observed_on": "2026-11-04",
+        "path": "publications/research/2026-11-04/supplier-followup-20261104-r23-evidence.json",
+        "urls": [
+          "https://gongsi.one/",
+          "https://gongsi.one/docs/pricing/",
+          "https://gongsi.one/docs/agreement/",
+          "https://gongsi.one/docs/sla/"
+        ],
+        "finding": "同四条一方URL复读并再次确认¥165单月一席、票据尚无验真、SLA仅商称。"
+      },
+      {
+        "round": 38,
+        "observed_on": "2026-11-04",
+        "path": "publications/research/2026-11-04/supplier-followup-20261104-r24-evidence.json",
+        "urls": [
+          "https://gongsi.one/docs/sla/",
+          "https://gongsi.one/docs/pricing/"
+        ],
+        "finding": "追加72小时售后可更换全新账号，不保证始终保留本人原号。"
+      },
+      {
+        "round": 114,
+        "observed_on": "2026-11-10",
+        "path": "publications/research/2026-11-10/supplier-followup-20261110-evidence.json",
+        "urls": [
+          "https://gongsi.one/",
+          "https://gongsi.one/docs/pricing/",
+          "https://gongsi.one/docs/agreement/",
+          "https://gongsi.one/docs/sla/"
+        ],
+        "finding": "错误使用首次核读/新候选表述；较早轮次已经读过同源。该轮对遮挡票据公司名称与展示前缀的进一步观察可作为补充细节，但非首次发现商家或价格。"
+      }
+    ],
+    "first_observed_merchant_on": "2026-11-03",
+    "first_observed_plus_cny": 165,
+    "price_changed_this_round": false,
+    "new_merchant_added_this_round": false,
+    "policy_newly_enacted_this_round": false,
+    "invoice_demo_detail_may_be_additional_from_round_114": true,
+    "verified_wholesale_not_changed": true
+  },
+  "current_recheck": {
+    "merchant": "条理集采",
+    "plus_sku": "一席，Plus月付，1～4席价格档",
+    "original_cny_per_seat_per_month": 165,
+    "price_cny_this_round": 165,
+    "merchant_claim_invoice_included": true,
+    "extra_payment_and_invoice_fees_cny": null,
+    "verified_all_required_fees_cny": null,
+    "actual_invoice_verified": false,
+    "authorized_resale_verified": false,
+    "one_seat_contract_and_delivery_verified": false,
+    "existing_account_renewal_verified": null,
+    "phone_verification_success_verified": false
+  },
+  "other_focus_rechecks": [
+    "小久展示价/有货是页面状态、无真实库存或交付测试",
+    "ChatShare共享套餐不是用户原号",
+    "GETGPT Pro原号Plus仍¥179，且需登录Session",
+    "引路鲸代理入驻¥3000，无前置费推广仅佣金",
+    "CatFK无正文、Morimm访问失败，均不刷新价格"
+  ],
+  "sources": [
+    {
+      "url": "https://gongsi.one/docs/pricing/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_price_claim",
+      "observation": "Plus 1–4席月付¥165/席/月，宣称含6%中国增值税专票；当轮未发现相对r13/r37的Plus变价。",
+      "sku": "ChatGPT Plus 1席×1月",
+      "display_cny": 165,
+      "real_paid": false
+    },
+    {
+      "url": "https://gongsi.one/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_marketing_and_placeholder_invoice",
+      "observation": "仍宣传企业代采、对公及发票，首页示例有占位和遮挡信息；未取得已验真税票。",
+      "sku": null,
+      "display_cny": null,
+      "real_paid": false
+    },
+    {
+      "url": "https://gongsi.one/docs/agreement/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_unsigned_contract",
+      "observation": "以双方盖章订单确认书为准，声称到账2工作日开票；未签约。",
+      "sku": null,
+      "display_cny": null,
+      "real_paid": false
+    },
+    {
+      "url": "https://gongsi.one/docs/sla/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_unverified_refund_and_replacement",
+      "observation": "72小时可补充充值或换全新账号，剩余天数退款为商家承诺；不保证原号持续。",
+      "sku": null,
+      "display_cny": null,
+      "real_paid": false
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_product_snapshot",
+      "observation": "小久菲律宾卡冲Plus页面展示¥110/件现货，要求无在期订阅且部分iOS需过期后等待；收据不等同中国税票。",
+      "sku": "Plus菲律宾卡冲CDK 1件",
+      "display_cny": 110,
+      "real_paid": false
+    },
+    {
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_shared_product_not_own_account",
+      "observation": "ChatShare Plus五人共享¥31/人/30天，Pro五人共享¥155/人/30天；Work/Codex/API排除，不符合本人原号。",
+      "sku": "Plus 5人共享/人/30天",
+      "display_cny": 31,
+      "real_paid": false
+    },
+    {
+      "url": "https://getgpt.pro/price",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_retail_price_and_session",
+      "observation": "GETGPT Pro本人原号Plus ¥179/月，教程须已登录后提供Session；高于Plus¥170含票总成本上限。",
+      "sku": "本人原号Plus 1月",
+      "display_cny": 179,
+      "real_paid": false
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_agent_upfront_fee",
+      "observation": "引路鲸进货代理入驻费¥3000（拿货余额另计）；零费用推广员是佣金模式非批发进货；与无代理前置费要求不符。",
+      "sku": null,
+      "display_cny": null,
+      "real_paid": false
+    },
+    {
+      "url": "https://catfk.com/item/g8ptrd",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "no_readable_body",
+      "evidence_class": "failed_access_no_reprice",
+      "observation": "页面无可读商品正文，未更新历史CatFK报价。",
+      "sku": null,
+      "display_cny": null,
+      "real_paid": false
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-10",
+      "page_self_updated_on": null,
+      "access_status": "unavailable",
+      "evidence_class": "failed_access_no_reprice",
+      "observation": "本次未成功读取原页正文，未更新Morimm历史报价，也不判定停服。",
+      "sku": null,
+      "display_cny": null,
+      "real_paid": false
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "independent_phone_verification": {
+    "new_verified_service": false,
+    "chatgpt_web_success": null,
+    "codex_desktop_success": null,
+    "first_api_key_success": null,
+    "number_retention_days": null,
+    "failed_sms_cash_refund": null,
+    "success_tests": 0
+  },
+  "non_actions": [
+    "未联系商家",
+    "未付款",
+    "未提供Session、Token、密码或验证码",
+    "未开展接码或真实税票验真"
+  ],
+  "note": "第114轮旧报告作为历史原字节保留，本轮新报告纠正其证据首次性描述。"
+}
