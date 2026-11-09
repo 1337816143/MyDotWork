@@ -934,3 +934,21 @@ assert.equal(r117.new_evidence.codex_desktop_success_verified,false);
 assert.equal(r117.new_evidence.first_api_key_success_verified,false);
 assert.equal(r117.new_evidence.qualifies_as_plus_wholesale,false);
 assert.equal(r117.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R118: same independent-SMS SKU; multilingual promo and unpaid checkout must remain separate from real payment.
+const r118c=d.records.find(x=>x.id==='gpt-source-followup-r118-20261110');
+const r118d=d.records.find(x=>x.id==='gpt-source-followup-r118-20261110-evidence');
+assert(r118c&&r118d&&r118c.url.endsWith('supplier-followup-20261110-r5.html'));
+const r118=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r5-evidence.json'),'utf8'));
+assert.equal(r118.round,118);assert.equal(r118.site_version,'1.9.126');assert.equal(r118.sources.length,5);
+assert.equal(r118.new_evidence.current_english_product_page_display_usd,3.49);
+assert.equal(r118.new_evidence.current_chinese_product_page_display_usd,4.99);
+assert.equal(r118.new_evidence.current_chinese_homepage_display_usd,4.99);
+assert.equal(r118.new_evidence.checkout_english_base_price_preview_usd,4.99);
+assert.equal(r118.new_evidence.checkout_service_fee_percent_display,5);
+assert.equal(r118.new_evidence.checkout_preview_total_usd,5.24);
+assert.equal(r118.new_evidence.real_payment_usd,null);
+assert.equal(r118.new_evidence.price_change_effective_date_verified,null);
+assert.equal(r118.new_evidence.qualifies_as_plus_wholesale,false);
+assert.equal(r118.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r118.qualification_totals.verified_phone_sms_successes,0);
