@@ -1,0 +1,195 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 116,
+  "site_version": "1.9.124",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "首次专项核读Pay2GPT独立Codex/ChatGPT手机号商品，区分21天号码和退费；yxab旧缺货URL404且新ID另列有货，保留旧SKU证据及所有未知费用。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "pay2gpt_sms": {
+      "merchant": "Pay2GPT",
+      "sku": "Codex login number — US +1 SIM number",
+      "url": "https://pay2gpt.com/en/codex-sms",
+      "public_price_number": 3.49,
+      "public_price_currency": "USD",
+      "unit": "1 US +1 phone number / 21 days",
+      "physical_us_sim_merchant_claim": true,
+      "number_control_days_merchant_claim": 21,
+      "free_replacements_max_merchant_claim": 2,
+      "one_openai_account_per_number_merchant_claim": true,
+      "sms_visible_on_order_page_merchant_claim": true,
+      "card_alipay_usdt_supported_merchant_claim": true,
+      "requires_chatgpt_password_merchant_claim": false,
+      "requires_chatgpt_session_for_sms_merchant_claim": false,
+      "chatgpt_compatibility_merchant_claim": true,
+      "codex_compatibility_merchant_claim": true,
+      "first_api_key_compatibility_merchant_claim": null,
+      "merchant_claim_original_payment_method_refund_if_no_number_or_no_any_sms": true,
+      "merchant_claim_no_refund_once_any_sms_received": true,
+      "number_actual_sim_verified": false,
+      "number_control_days_real_tested": null,
+      "payment_fee_usd": null,
+      "total_sms_checkout_usd": null,
+      "sms_verified_delivery_count": 0,
+      "openai_account_phone_verification_success_count": 0,
+      "real_cash_refund_success_count": 0,
+      "chatgpt_web_verified_success": false,
+      "codex_desktop_verified_success": false,
+      "first_api_key_verified_success": false,
+      "warning": "卖家页面收到验证码截图是示例，不是本次实测。验证码收到≠OpenAI平台验证成功；只要收到短信而后续失败，卖家规则仍写不退款。",
+      "pay2gpt_existing_plus_supplier_round": 93,
+      "pay2gpt_b2b_only_us_commercial_invoice_not_china_vat": true,
+      "qualifies_as_plus_wholesale": false
+    },
+    "yxab_plus_new_sku": {
+      "merchant": "yxab.cn",
+      "old_sku_id": "G69666080",
+      "old_sku_url": "https://yxab.cn/product/G69666080",
+      "old_sku_price_cny_per_month_on_prior_read": 128.8,
+      "old_sku_stock_prior_read": "暂时缺货",
+      "old_sku_last_positive_read_on": "2026-11-08",
+      "old_url_now": "HTTP 404; not readable",
+      "new_sku_id": "G62975691",
+      "new_sku_url": "https://yxab.cn/product/G62975691",
+      "new_sku": "菲区Plus 1个月·自己的号·30天商称质保",
+      "new_sku_public_price_cny_per_account_month": 128.8,
+      "new_sku_stock_label": "有货",
+      "new_sku_current_catalog_linked": true,
+      "require_account_currently_free": true,
+      "can_stack_active_subscription": false,
+      "merchant_own_account_claim": true,
+      "merchant_official_invoice_receipt_claim": true,
+      "verified_valid_china_vat_invoice": false,
+      "china_vat_invoice_issuer": null,
+      "vat_invoice_fee_cny": null,
+      "payment_channel_fee_cny": null,
+      "all_required_fees_with_verified_china_vat_cny": null,
+      "real_order_paid_cny": null,
+      "real_fulfillment_tested": false,
+      "merchant_claim_official_platform_refund_20percent_withheld": true,
+      "actual_refund_verified": false,
+      "verified_wholesale_price_cny": null,
+      "verified_resale_authorization": false,
+      "old_sku_restock_proven": false,
+      "same_sku_price_change_proven": false,
+      "merchant_service_closure_proven": false,
+      "exact_sku_switch_date": null,
+      "warning": "旧地址404不代表整站关闭。不同商品ID的有货不代表旧SKU补货或真实完成订阅；官方账单收据不是已验真中国有效增值税发票。"
+    }
+  },
+  "platform_official_scope": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "ordinary_chatgpt_phone_generally_required": false,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_requires_phone": true,
+    "subsequent_api_key_requires_phone": false,
+    "supported_mobile_sms_or_whatsapp_by_region": true,
+    "voip_supported": false,
+    "plus_purchase_automatically_binds_phone": false,
+    "apple_purchase_automatically_fixes_phone_verification": false,
+    "sms_service_tested_on_chatgpt_web_codex_api": false
+  },
+  "historical_trace": [
+    {
+      "round": 93,
+      "observed_on": "2026-11-08",
+      "source": "research/2026-11-08/supplier-followup-20261108-r5-evidence.json",
+      "fact": "Pay2GPT B2B Plus already known, SMS separate product not confirmed in r93; US-only commercial invoice prevents a valid China VAT invoice."
+    },
+    {
+      "round": 83,
+      "observed_on": "2026-11-07",
+      "source": "research/2026-11-07/supplier-followup-20261107-r7-evidence.json",
+      "fact": "yxab old G69666080 at ¥128.80 per month marked temporarily out of stock."
+    },
+    {
+      "round": 99,
+      "observed_on": "2026-11-08",
+      "source": "research/2026-11-08/supplier-followup-20261108-r11-evidence.json",
+      "fact": "yxab old G69666080 still ¥128.80 per month and temporarily out of stock."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pay2gpt.com/en/codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_self_published",
+      "page_self_updated_on": null,
+      "fact": "US +1 alleged SIM $3.49 per number, 21 days order-page SMS, up to 2 replacements, refund original payment method if no SMS, no refund after any SMS; seller claims for Codex and ChatGPT; no verified testing."
+    },
+    {
+      "url": "https://pay2gpt.com/en/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_terms",
+      "page_self_updated_on": "2026-11-02",
+      "fact": "Self-updated 2026-11-02; general subscription uses Session on order page, not necessarily independent SMS product; platform is not OpenAI authorized; generic refunds subject to reviews."
+    },
+    {
+      "url": "https://pay2gpt.com/business",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_self_published",
+      "page_self_updated_on": null,
+      "fact": "Existing r93 B2B offer: quantity-based Plus quote from 10 seats, no China VAT invoice, only US English commercial invoice; not an independently verified wholesale supplier."
+    },
+    {
+      "url": "https://yxab.cn/product/G62975691",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_self_published",
+      "page_self_updated_on": null,
+      "fact": "Different Plus SKU ID for own-account Philippines 1 month displayed ¥128.80 and in stock; merchant receipt not valid China VAT proof; payment and invoice fees unknown."
+    },
+    {
+      "url": "https://yxab.cn/products",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_self_published",
+      "page_self_updated_on": null,
+      "fact": "Merchant catalog links distinct Plus G62975691 and displays ¥128.80/month and 有货, not confirmed successful delivery."
+    },
+    {
+      "url": "https://yxab.cn/product/G69666080",
+      "observed_on": "2026-11-10",
+      "read_status": "404_no_readable_body",
+      "evidence_class": "failed_direct_access",
+      "page_self_updated_on": null,
+      "fact": "Old SKU read as temporarily out of stock Nov 7/8; current URL returns 404; do not refresh its stock or price or infer merchant closed."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "official_platform_help",
+      "page_self_updated_on": null,
+      "fact": "Official says ordinary ChatGPT generally no phone, Codex desktop may require phone, first API Key requires phone; nonmobile/VoIP not supported; seller claims not real verification."
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "Pay2GPT price $3.49 is a separate SMS number service, not Plus 1 month; it is not compared to the Plus ¥170 ceiling.",
+    "21 days is merchant-claimed phone control period, not number verified lifetime or the voucher validity.",
+    "Unverified SMS refund original payment method applies only if no SMS received, not failure of OpenAI verification after a received code.",
+    "Prior yxab SKU G69666080 and current G62975691 are different IDs; do not assert same SKU restock or price change.",
+    "No actual purchase, ChatGPT webpage/Codex desktop/first API key phone verification, Chinese VAT invoice or supplier authorization verified."
+  ]
+}
