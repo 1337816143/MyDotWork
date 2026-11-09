@@ -818,3 +818,15 @@ assert.equal(r109.new_evidence.v3_shop.valid_china_vat_invoice_issuer_verified,n
 assert.equal(r109.independent_phone_verification.unique_openai_codex_sms_price_usd,null);
 assert.equal(r109.independent_phone_verification.no_sms_original_payment_cash_refund_verified,null);
 assert.equal(r109.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 110: first-party retail and independent SMS; activation maintenance is not verified successful delivery.
+const cat110=d.records.find(x=>x.id==='gpt-source-followup-r110-20261109'),data110=d.records.find(x=>x.id==='gpt-source-followup-r110-20261109-evidence');
+assert(cat110&&data110&&cat110.url.endsWith('supplier-followup-20261109-r4.html'));
+const r110=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-r4-evidence.json'),'utf8'));
+assert.equal(r110.round,110);assert.equal(r110.site_version,'1.9.118');assert.equal(r110.sources.length,11);
+assert.equal(r110.new_evidence.callai_plus.retail_display_cny_per_account_month,108);
+assert.equal(r110.new_evidence.callai_plus.wholesale_unit_price_cny,null);
+assert.equal(r110.new_evidence.callai_plus.activation_service_under_maintenance_notice_observed,true);
+assert.equal(r110.new_evidence.codex_sms.merchant_display_cny_per_verification_cdk,3);
+assert.equal(r110.new_evidence.codex_sms.sms_flow_asks_password_or_email_otp_or_mfa,true);
+assert.equal(r110.qualification_totals.verified_plus_wholesale_upstreams,0);

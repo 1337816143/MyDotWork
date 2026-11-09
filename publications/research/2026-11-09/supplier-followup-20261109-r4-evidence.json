@@ -1,0 +1,187 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 110,
+  "site_version": "1.9.118",
+  "date": "2026-11-09",
+  "observed_on": "2026-11-09",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "callai_plus": {
+      "seller": "CallAI小铺",
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "sku": "ChatGPT Plus 月卡｜本人原账号·自动发卡",
+      "retail_display_cny_per_account_month": 108,
+      "quantity": 1,
+      "months": 1,
+      "payment_options_seller_claim": [
+        "支付宝",
+        "微信",
+        "USDT"
+      ],
+      "actual_paid_cny": null,
+      "payment_fee_cny": null,
+      "forex_or_network_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "valid_china_vat_invoice_verified": null,
+      "legal_operator_verified": null,
+      "legal_payee_verified": null,
+      "invoice_issuer_verified": null,
+      "wholesale_unit_price_cny": null,
+      "wholesale_minimum_quantity": null,
+      "no_upfront_agent_fee_verified": null,
+      "formal_resale_authorization_verified": null,
+      "seller_claims_wholesale_agent_program": true,
+      "agent_article_seller_date": "2026-10-23",
+      "requires_successful_chatgpt_login_first": true,
+      "requires_sensitive_session_token": true,
+      "self_service_requires_no_active_personal_subscription": true,
+      "lossless_renewal_verified": false,
+      "one_month_guarantee_seller_claim": true,
+      "banned_account_excluded_seller_claim": true,
+      "activation_service_under_maintenance_notice_observed": true,
+      "notice_text": "服务正在维护，新的开通申请稍后开放。已提交的申请仍可查询。",
+      "webpage_accessible_when_notice_observed": true,
+      "purchase_delivery_verified": false,
+      "qualified_wholesale_upstream": false
+    },
+    "codex_sms": {
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "redeem_url": "https://redeem.callai.one/sms",
+      "merchant_display_cny_per_verification_cdk": 3,
+      "merchant_claim_auto_number_retry": true,
+      "merchant_claim_no_cdk_consumption_on_explicit_failure": true,
+      "merchant_claim_debit_only_after_success": true,
+      "cash_refund_to_original_payment_verified": null,
+      "number_control_time_minutes_verified": null,
+      "phone_long_term_control_verified": null,
+      "real_nonvoip_verified": null,
+      "web_compatibility_verified": null,
+      "first_api_key_compatibility_verified": null,
+      "merchant_sms_flow_no_session_export": true,
+      "sms_flow_asks_password_or_email_otp_or_mfa": true,
+      "independent_security_audit_verified": false,
+      "codex_verification_success_tested": 0,
+      "plus_automatically_binds_phone": false
+    }
+  },
+  "incumbent_sources_rechecked_without_material_change": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "historical_prices_refreshed": false,
+  "sources": [
+    {
+      "url": "https://shop.callai.one/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "商家主页，展示Plus及独立Codex短信商品；销售不等于批发授权"
+    },
+    {
+      "url": "https://shop.callai.one/products/codex-plus-monthly",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "本人原号Plus单月SKU零售¥108，商称自动发卡、支付宝微信USDT付款、掉订保1个月不保封号；需已登录且无有效订阅"
+    },
+    {
+      "url": "https://shop.callai.one/products/codex-sms-verification",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "Codex短信¥3/次CDK，商称成功才扣、自动换号、失败不扣；需第三方登录密码/邮箱OTP/MFA"
+    },
+    {
+      "url": "https://shop.callai.one/blog/agent",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": "2026-10-23",
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "2026-10-23商家代理源头宣传；无正式转售合同/批发单价和免前置费证据"
+    },
+    {
+      "url": "https://shop.callai.one/terms",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "商家条款无法确认中国有效VAT票、法定付款/供货主体"
+    },
+    {
+      "url": "https://shop.callai.one/privacy",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "商家隐私声明与独立兑换站实际收Session须分别理解"
+    },
+    {
+      "url": "https://shop.callai.one/about",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "商家简介不等于工商注册与VAT开票主体验真"
+    },
+    {
+      "url": "https://redeem.callai.one/",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "2026-11-09现场强制刷新得到维护公告：『服务正在维护，新的开通申请稍后开放。已提交的申请仍可查询。』；须先登录并提交Session"
+    },
+    {
+      "url": "https://redeem.callai.one/batch",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "批量卡密兑换界面不是批发价格、授权或承诺无代理费"
+    },
+    {
+      "url": "https://redeem.callai.one/sms",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_first_party_display_or_claim",
+      "observation": "Codex短信流程引导输入账号密码、邮件OTP或MFA验证码；无需Session导出不等于无敏感信息"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-09",
+      "merchant_page_date": null,
+      "access_status": "readable",
+      "evidence_class": "official_policy",
+      "observation": "OpenAI官方普通ChatGPT/Codex/首次API Key验证场景分离，不接受VoIP号码"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未付款、联系商家或向第三方交账号凭据",
+    "未完成真实商品交付及手机号验证",
+    "旧126条报价与前109轮报告原字节保留"
+  ]
+}
