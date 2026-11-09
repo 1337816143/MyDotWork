@@ -2872,6 +2872,28 @@
       "summary": "2026-11-10首次读取5条原始URL，商家报价与发票样张和实际已核税票严格分离，未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r115-20261110",
+      "title": "GPT源头第115轮 · 条理集采初见轮次溯源更正",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r2.html",
+      "updatedAt": "2026-11-10",
+      "summary": "纠正第114轮误称首次核读：11月3日第13轮已读同四原始URL，11月4日第37/38轮已重复补证。¥165旧价不刷新；全部税票/授权与短信实测仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r115-20261110-evidence",
+      "title": "第115轮 · 历史证据初见日期与10条原URL复核",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r2-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "直接链接r13/r37/r38/r114历史原证据；纠正首次发现说法、保留旧报告原字节；本轮新读10 URL，打不开的价格不刷新，未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
