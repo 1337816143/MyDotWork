@@ -2762,7 +2762,9 @@
       "summary": "2026-11-09直接读取9个原URL；保留商家旧条款自标日期、支付额与中国VAT未知null、实名公司未独验及所有短信成功实测0。",
       "access": "public",
       "metadataApproved": true
-    }
+    },
+    {"id":"gpt-source-followup-r110-20261109","title":"GPT源头第110轮 · CallAI Plus、独立Codex验证与激活维护","type":"report","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r4.html","updatedAt":"2026-11-09","summary":"CallAI本人Plus零售¥108/月、Codex短信CDK¥3/次；兑换站维护中且需Session，短信第三方须密码/OTP/MFA；批发和VAT未核。","access":"public","metadataApproved":true},
+    {"id":"gpt-source-followup-r110-20261109-evidence","title":"第110轮 · CallAI SKU、服务维护、实名凭据风险与授权缺口 · 11原URL","type":"dataset","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r4-evidence.json","updatedAt":"2026-11-09","summary":"2026-11-09读11原始URL；旧代理文自标2026-10-23；批发真实进价、开票主体/全费及SMS成功均未核。","access":"public","metadataApproved":true}
   ],
   "websites": [
     {

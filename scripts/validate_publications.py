@@ -131,13 +131,21 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 251, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 253, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.109'
-    assert latest['path'] == 'research/2026-11-09/supplier-followup-20261109-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-09/supplier-followup-20261109-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-09/supplier-followup-20261109-r2.html'
+    assert latest['version'] == '1.110'
+    assert latest['path'] == 'research/2026-11-09/supplier-followup-20261109-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-09/supplier-followup-20261109-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-09/supplier-followup-20261109-r3.html'
+    assert by_id['gpt-source-followup-r110-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109-r4.html'
+    assert by_id['gpt-source-followup-r110-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-r4-evidence.json'
+    r110 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-r4-evidence.json').read_bytes())
+    assert r110['round'] == 110 and r110['site_version'] == '1.9.118' and len(r110['sources']) == 11
+    assert r110['new_evidence']['callai_plus']['retail_display_cny_per_account_month'] == 108
+    assert r110['new_evidence']['callai_plus']['activation_service_under_maintenance_notice_observed'] is True
+    assert r110['new_evidence']['codex_sms']['sms_flow_asks_password_or_email_otp_or_mfa'] is True
+    assert r110['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r109-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109-r3.html'
     assert by_id['gpt-source-followup-r109-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-r3-evidence.json'
     r109 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-r3-evidence.json').read_bytes())
