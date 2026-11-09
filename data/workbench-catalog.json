@@ -2938,6 +2938,28 @@
       "summary": "2026-11-10实际读5 URL，价格快照自标2026-10-31，最低USD5预存及卡费10%，未收到短信返余额非原路退款、收到不保证验证通过。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r118-20261110",
+      "title": "GPT源头第118轮 · Pay2GPT中英SMS宣传价与5%手续费",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r5.html",
+      "updatedAt": "2026-11-10",
+      "summary": "独立SMS：英文同款宣传US$3.49、中文US$4.99，双语未付款收银台US$4.99+5%总计US$5.24；实际成交与变价日期未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r118-20261110-evidence",
+      "title": "第118轮 · Pay2GPT同款SMS五条原始URL交叉核对",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r5-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "11月10日实读英语/中文商品页、首页、中英收银台；5%费与显示总价是未付款预览，Plus批发和OpenAI真实手机验证实测均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
