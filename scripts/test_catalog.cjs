@@ -830,3 +830,15 @@ assert.equal(r110.new_evidence.callai_plus.activation_service_under_maintenance_
 assert.equal(r110.new_evidence.codex_sms.merchant_display_cny_per_verification_cdk,3);
 assert.equal(r110.new_evidence.codex_sms.sms_flow_asks_password_or_email_otp_or_mfa,true);
 assert.equal(r110.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 111: old merchant terms newly read, explicit resale prohibition, refund still untested.
+const cat111=d.records.find(x=>x.id==='gpt-source-followup-r111-20261109'),data111=d.records.find(x=>x.id==='gpt-source-followup-r111-20261109-evidence');
+assert(cat111&&data111&&cat111.url.endsWith('supplier-followup-20261109-r5.html'));
+const r111=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-r5-evidence.json'),'utf8'));
+assert.equal(r111.round,111);assert.equal(r111.site_version,'1.9.119');assert.equal(r111.sources.length,5);
+assert.equal(r111.newly_read_terms.explicitly_forbids_reselling_codes,true);
+assert.equal(r111.newly_read_terms.page_self_last_updated,'2026-08-20');
+assert.equal(r111.newly_read_privacy.upstream_card_suppliers_explicitly_mentioned_as_data_recipients,true);
+assert.equal(r111.historical_candidate_reference.historical_checkout_preview_cny,149.78);
+assert.equal(r111.historical_candidate_reference.price_change_verified_this_round,false);
+assert.equal(r111.qualification_totals.verified_plus_wholesale_upstreams,0);

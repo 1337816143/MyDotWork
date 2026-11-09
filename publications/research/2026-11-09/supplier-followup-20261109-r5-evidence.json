@@ -1,0 +1,168 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 111,
+  "site_version": "1.9.119",
+  "date": "2026-11-09",
+  "observed_on": "2026-11-09",
+  "scope": "首次单独实读词元连接旧版商家条款及隐私政策对卡密转售、上游供货主体、退款范围和页面计费文案的实质影响；非价格变更、非退款/成交实测。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "historical_candidate_reference": {
+    "merchant": "词元连接/token5555.com",
+    "previous_round": 37,
+    "previous_observed_on": "2026-11-04",
+    "source_report": "research/2026-11-04/supplier-followup-20261104-r23.html",
+    "historical_sku": "Plus（官方20刀）",
+    "historical_sku_months_verified": null,
+    "historical_list_cny_per_one_item": 148,
+    "historical_payment_fee_rate_claim": 0.012,
+    "historical_payment_fee_preview_cny": 1.78,
+    "historical_checkout_preview_cny": 149.78,
+    "price_change_verified_this_round": false,
+    "rechecked_homepage_same_preview": true,
+    "actual_paid_cny": null
+  },
+  "newly_read_terms": {
+    "url": "https://token5555.com/terms.html",
+    "page_self_last_updated": "2026-08-20",
+    "actual_read_date": "2026-11-09",
+    "source_class": "merchant_first_party_legal_terms_claim",
+    "explicitly_disclaims_official_openai_authorization": true,
+    "explicitly_forbids_reselling_codes": true,
+    "forbidden_wording": "倒卖卡密",
+    "separate_negotiated_b2b_resale_permission_verified": null,
+    "independent_upstream_resale_license_verified": null,
+    "actual_upstream_purchase_price_cny": null,
+    "agent_upfront_fee_cny_verified": null,
+    "not_redeemed_refund_merchant_claim": "未在OpenAI账号兑换生效的卡密，可申请整单退回",
+    "merchant_caused_redemption_failure_merchant_claim": "站点/渠道/系统原因致无法兑换的订单，承诺原路全额退款",
+    "after_successful_redemption_general_refund_claim": false,
+    "post_activation_service_claim": "30天质保；非用户原因权益中断按剩余天数补差或补发；违规场景排除",
+    "original_payment_refund_processing_business_days_claim": "3–7",
+    "verified_actual_refund_to_original_payment": null,
+    "fee_wording_on_terms": "页面标价为含第三方支付手续费的最终价格",
+    "real_paid_china_vat_invoice_total_cny": null,
+    "importance": "普通购买卡密须遵守禁倒卖条款；免前置费推广佣金不能推定可合法转售。旧条款2026-08-20发布，不应称本日新生效的变更。"
+  },
+  "newly_read_privacy": {
+    "url": "https://token5555.com/privacy.html",
+    "page_self_last_updated": "2026-08-20",
+    "actual_read_date": "2026-11-09",
+    "source_class": "merchant_first_party_legal_policy_claim",
+    "upstream_card_suppliers_explicitly_mentioned_as_data_recipients": true,
+    "upstream_suppliers_named_or_legal_entities": null,
+    "actual_legal_operator_name_verified": null,
+    "actual_payee_verified": null,
+    "valid_china_vat_invoice_issuer_verified": null,
+    "china_vat_invoice_available_verified": null,
+    "actual_card_supplier_contract_verified": null,
+    "declares_no_openai_password_collection": true,
+    "session_token_needed_for_external_redemption_verified": null,
+    "phone_contact_is_merchant_order_contact_not_openai_verification": true
+  },
+  "same_day_recheck": {
+    "homepage_url": "https://token5555.com/",
+    "homepage_checkout_item_cny": 148,
+    "homepage_payment_fee_percent": 1.2,
+    "homepage_payment_fee_preview_cny": 1.78,
+    "homepage_preview_total_cny": 149.78,
+    "homepage_uses_separate_fee_line": true,
+    "terms_asserts_included_fee_as_final_page_price": true,
+    "wording_conflict_requires_checkout_verification": true,
+    "actual_payment_verified": false,
+    "homepage_same_as_2026_11_04": true,
+    "partner_url": "https://token5555.com/partner-register.html",
+    "partner_free_signup_claim": true,
+    "partner_is_first_level_referral_commission_not_wholesale": true,
+    "commission_tiers": [
+      {
+        "accumulated_sales_cny": 0,
+        "rate": 0.1
+      },
+      {
+        "accumulated_sales_cny": 1000,
+        "rate": 0.15
+      },
+      {
+        "accumulated_sales_cny": 5000,
+        "rate": 0.2
+      },
+      {
+        "accumulated_sales_cny": 10000,
+        "rate": 0.25
+      }
+    ],
+    "reseller_authorization_granted_through_referral_program": false
+  },
+  "phone_verification": {
+    "independent_sms_price_cny": null,
+    "chatgpt_web_verified_success": null,
+    "codex_verified_success": null,
+    "first_api_key_verified_success": null,
+    "number_control_time_days": null,
+    "failed_sending_cash_original_payment_refund_verified": null,
+    "automatic_phone_binding_from_plus": false,
+    "real_sms_success_count": 0,
+    "prior_callai_maintenance_notice_still_visible": true,
+    "callai_url": "https://redeem.callai.one/"
+  },
+  "sources": [
+    {
+      "url": "https://token5555.com/terms.html",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": "2026-08-20",
+      "access_status": "readable",
+      "evidence_class": "merchant_legal_terms_not_executed_contract",
+      "observation": "首次定点直读§7禁倒卖卡密、§5未兑换/商家原因失败商称退款、§4含手续费措辞；无实付或现金退款实测"
+    },
+    {
+      "url": "https://token5555.com/privacy.html",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": "2026-08-20",
+      "access_status": "readable",
+      "evidence_class": "merchant_privacy_policy_not_independent_supplier_verification",
+      "observation": "§4列出上游卡密供应商作为信息共享对象，却不披露上游法定身份或授予分销权；主体仅本站运营团队"
+    },
+    {
+      "url": "https://token5555.com/",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_checkout_static_preview_not_real_payment",
+      "observation": "首页预览仍旧¥148+¥1.78=¥149.78，无新调价；与条款含费措辞不一致；号码输入是订单联系方式非OpenAI短信验证"
+    },
+    {
+      "url": "https://token5555.com/partner-register.html",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_referral_conditions_not_wholesale",
+      "observation": "免费一级分佣10/15/20/25%，不是合法采购折扣或卡密倒卖授权；条件在旧r37已登记"
+    },
+    {
+      "url": "https://redeem.callai.one/",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable",
+      "evidence_class": "merchant_service_notice_unchanged_from_r110",
+      "observation": "仍可见新开通维护公告；不是永久停服证据；旧第110轮观察延续，不构成新价格/履约证明"
+    }
+  ],
+  "incumbent_recheck_result": "既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay及CallAI未取得可改变中国VAT/正式供货授权/真实履约结论的新材料；旧价格不刷新",
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "没有付款、下单、联系商家或提交账号凭据",
+    "没有验证发票真伪或真实到账退款",
+    "未将历史 r37 同一报价视为新调价；旧126条价和前110轮原始文件保持不变"
+  ]
+}
