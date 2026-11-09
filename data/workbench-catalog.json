@@ -2916,6 +2916,28 @@
       "summary": "2026-11-10读取7条商家/官方原URL，旧SKU 404单列；US$3.49为SMS产品，不是Plus；未知手续费和VAT用null，采购及手机验证实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r117-20261110",
+      "title": "GPT源头第117轮 · SMS Nitro接码预存与失败退款界限",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r4.html",
+      "updatedAt": "2026-11-10",
+      "summary": "SMS Nitro +63 OpenAI接码US$0.05为10月31日快照，20分钟临时号。至少预充US$5、银行卡加10%；未收短信仅返站内余额，收到短信后OpenAI拒绝不退；所有场景未实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r117-20261110-evidence",
+      "title": "第117轮 · SMS Nitro商品/最低预存/退款边界 · 5个原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r4-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "2026-11-10实际读5 URL，价格快照自标2026-10-31，最低USD5预存及卡费10%，未收到短信返余额非原路退款、收到不保证验证通过。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
