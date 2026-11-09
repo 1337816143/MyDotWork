@@ -893,3 +893,25 @@ assert.equal(r115.correction.historical_records_preserved_unmodified,true);
 assert.equal(r115.sources.length,10);
 assert.equal(r115.current_recheck.verified_all_required_fees_cny,null);
 assert.equal(r115.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// Round 116: SMS seller's refund after zero texts and yxab different SKU must not be confused with Plus wholesale or old SKU restock.
+const r116cat=d.records.find(x=>x.id==='gpt-source-followup-r116-20261110');
+const r116data=d.records.find(x=>x.id==='gpt-source-followup-r116-20261110-evidence');
+assert(r116cat&&r116data&&r116cat.url.endsWith('supplier-followup-20261110-r3.html'));
+const r116=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r3-evidence.json'),'utf8'));
+assert.equal(r116.round,116);assert.equal(r116.site_version,'1.9.124');assert.equal(r116.sources.length,7);
+assert.equal(r116.new_evidence.pay2gpt_sms.public_price_number,3.49);
+assert.equal(r116.new_evidence.pay2gpt_sms.public_price_currency,'USD');
+assert.equal(r116.new_evidence.pay2gpt_sms.number_control_days_merchant_claim,21);
+assert.equal(r116.new_evidence.pay2gpt_sms.free_replacements_max_merchant_claim,2);
+assert.equal(r116.new_evidence.pay2gpt_sms.merchant_claim_original_payment_method_refund_if_no_number_or_no_any_sms,true);
+assert.equal(r116.new_evidence.pay2gpt_sms.merchant_claim_no_refund_once_any_sms_received,true);
+assert.equal(r116.new_evidence.pay2gpt_sms.openai_account_phone_verification_success_count,0);
+assert.equal(r116.new_evidence.pay2gpt_sms.qualifies_as_plus_wholesale,false);
+assert.equal(r116.new_evidence.yxab_plus_new_sku.old_sku_id,'G69666080');
+assert.equal(r116.new_evidence.yxab_plus_new_sku.new_sku_id,'G62975691');
+assert.equal(r116.new_evidence.yxab_plus_new_sku.old_sku_restock_proven,false);
+assert.equal(r116.new_evidence.yxab_plus_new_sku.new_sku_public_price_cny_per_account_month,128.8);
+assert.equal(r116.new_evidence.yxab_plus_new_sku.payment_channel_fee_cny,null);
+assert.equal(r116.qualification_totals.verified_plus_wholesale_upstreams,0);
