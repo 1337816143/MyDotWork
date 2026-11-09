@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 265, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 267, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.116'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r2.html'
+    assert latest['version'] == '1.117'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r3.html'
+    assert by_id['gpt-source-followup-r117-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r4.html'
+    assert by_id['gpt-source-followup-r117-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r4-evidence.json'
+    r117 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r4-evidence.json').read_bytes())
+    assert r117['round'] == 117 and r117['site_version'] == '1.9.125' and len(r117['sources']) == 5
+    assert r117['new_evidence']['public_price_number'] == 0.05 and r117['new_evidence']['price_table_snapshot_date'] == '2026-10-31'
+    assert r117['new_evidence']['actual_checkout_live_price_usd'] is None
+    assert r117['new_evidence']['minimum_topup_usd'] == 5 and r117['new_evidence']['minimum_card_cash_outlay_arithmetic_usd'] == 5.5
+    assert r117['new_evidence']['no_sms_returns_to_platform_balance_merchant_claim'] is True
+    assert r117['new_evidence']['cash_refund_no_sms_automatic'] is False
+    assert r117['new_evidence']['received_sms_charged_even_if_openai_rejects_merchant_claim'] is True
+    assert r117['new_evidence']['qualifies_as_plus_wholesale'] is False
+    assert r117['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     r116 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r3-evidence.json').read_bytes())
     assert r116['round'] == 116 and r116['site_version'] == '1.9.124'
     assert len(r116['sources']) == 7
