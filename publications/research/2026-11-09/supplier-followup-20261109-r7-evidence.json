@@ -1,0 +1,126 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 113,
+  "site_version": "1.9.121",
+  "date": "2026-11-09",
+  "observed_on": "2026-11-09",
+  "scope": "首次直接核读16688 APIHub订阅批发站店铺公告与两个原始商品URL，辅以第三方索引的独立低可信价格线索；核实平台订单明确不提供发票，企业开票需另询单独报价；无订单/凭据。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "APIHub订阅批发站 / 16688店铺APIHUB",
+    "kind": "自称渠道供货和批量采购、面向16688卖家对接的待核上游线索（非已核批发源头）",
+    "first_party_shop_url": "https://www.16688.com.cn/shop/APIHUB",
+    "merchant_claim_channel_resellers_can_integrate": true,
+    "merchant_claim_bulk_price_quotation_after_contact": true,
+    "merchant_claim_contact_requires_item_and_first_batch_quantity_and_daily_volume": true,
+    "merchant_claim_platform_checkout_no_invoice": true,
+    "merchant_claim_enterprise_procurement_invoice_separately_quoted": true,
+    "merchant_claim_payment_channel_fee_may_apply": true,
+    "first_party_product_list_loaded": false,
+    "first_party_shop_observation": "页面HTTP 200，公告可读，但商品列表显示0种及暂无商品；仅表示本次静态抓取未加载，不证明商品下架或服务终止",
+    "published_sku_page_plus_url": "https://www.16688.com.cn/goods/G49852965",
+    "published_sku_page_codex_sms_url": "https://www.16688.com.cn/goods/G62543956",
+    "exact_one_account_one_month_plus_sku_first_party_verified": false,
+    "plus_first_party_price_cny_per_account_month": null,
+    "third_party_index_plus_preview": {
+      "title": "〖ios渠道美区正价直充〗G·PTI Plus 1个月会员 直充自己号",
+      "display_cny_per_item_month": 126,
+      "source": "https://aiprice.club/market/shop/16688-apihub",
+      "status": "third_party_index_snapshot_not_first_party_verified"
+    },
+    "independent_codex_sms_third_party_index_preview": {
+      "title": "CDK美国实卡codex 20-30天接马",
+      "display_cny_per_listing": 10,
+      "source": "https://aiprice.club/market/shop/16688-apihub",
+      "status": "third_party_index_snapshot_not_first_party_verified",
+      "verified_number_holding_days": null,
+      "verified_chatgpt_web": null,
+      "verified_codex_success": null,
+      "verified_first_api_key": null,
+      "verified_cash_refund_if_sms_fails": null
+    },
+    "platform_checkout_invoice_eligibility_merchant_claim": false,
+    "single_item_enterprise_invoicing_verified": null,
+    "valid_china_vat_invoice_issuer": null,
+    "enterprise_quote_actual_cny": null,
+    "added_platform_fee_cny": null,
+    "all_required_fees_including_vat_cny": null,
+    "verifiable_wholesale_single_unit_price_cny": null,
+    "min_order_quantity_verified": null,
+    "agent_upfront_fee_cny_verified": null,
+    "lawful_resale_authorization_verified": null,
+    "underlying_supply_and_legal_entity_verified": null,
+    "actual_payment_or_order": null,
+    "real_invoice_verified": null,
+    "real_codex_sms_success": null,
+    "delivery_session_or_token_requirement_verified": null,
+    "renewal_of_existing_plus_verified": null,
+    "refund_cash_to_original_payment_verified": null,
+    "qualified_plus_wholesale_source": false,
+    "purchasing_implication": "明确平台普通订单不开票；有发票的企业采购必须另谈，不得把第三方价格索引视为满足一件一月、免入驻费、含票全部费用≤170元的真实报价。"
+  },
+  "existing_focus_names_unchanged": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "incumbent_recheck_boundary": "已对照维护规范、r112及CHANGELOG既有候选与历史报价；本轮未取得足以刷新上述重点商家旧观察价、税票、授权或独立短信成功率的新可靠证据。",
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/shop/APIHUB",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable_200_static_list_not_loaded",
+      "evidence_class": "merchant_first_party_store_announcement",
+      "observation": "店铺自称上游及卖家可对接自助上架，批发按首批数量和日均量另谈；明确平台下单不开发票、企业采购及国内开票另行报价；可能支付附加费；静态列表暂无商品，不代表停服"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G49852965",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "http_200_but_no_readable_sku_body",
+      "evidence_class": "first_party_sku_url_access_insufficient",
+      "observation": "仅能读取16688顶部导航，不能独立核实Plus准确一月SKU、价格和结算条件；未刷新历史报价"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G62543956",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "http_200_but_no_readable_sku_body",
+      "evidence_class": "first_party_phone_url_access_insufficient",
+      "observation": "仅导航可读，不能证实所售号码期限、首次或多次接码、退款和真实OpenAI Codex验证成功"
+    },
+    {
+      "url": "https://aiprice.club/market/shop/16688-apihub",
+      "observed_on": "2026-11-09",
+      "page_self_updated_on": null,
+      "access_status": "readable_third_party_index",
+      "evidence_class": "third_party_dynamic_index_nontransaction",
+      "observation": "网页索引抓取时列9个商品、iOS Plus 1个月¥126/条、Codex美国实卡20-30天接码¥10/条；非商家原页或可支付确认、动态可能变动，不作第一手现价和已核数量/手机号持有期"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_purchase": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "successful_phone_verifications": 0
+  },
+  "non_actions": [
+    "未联系客服、不索取个人报价或合同",
+    "未付款、创建订单、提供Session/Token/密码/OTP",
+    "无有效税票、签约批发或OpenAI手机号验证成功实测"
+  ]
+}
