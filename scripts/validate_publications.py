@@ -131,13 +131,23 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 263, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 265, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.115'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r2.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r2-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110.html'
+    assert latest['version'] == '1.116'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r3.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r3-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r2.html'
+    r116 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r3-evidence.json').read_bytes())
+    assert r116['round'] == 116 and r116['site_version'] == '1.9.124'
+    assert len(r116['sources']) == 7
+    assert r116['new_evidence']['pay2gpt_sms']['public_price_number'] == 3.49
+    assert r116['new_evidence']['pay2gpt_sms']['number_control_days_merchant_claim'] == 21
+    assert r116['new_evidence']['pay2gpt_sms']['merchant_claim_no_refund_once_any_sms_received'] is True
+    assert r116['new_evidence']['yxab_plus_new_sku']['new_sku_id'] == 'G62975691'
+    assert r116['new_evidence']['yxab_plus_new_sku']['old_sku_restock_proven'] is False
+    assert r116['new_evidence']['yxab_plus_new_sku']['payment_channel_fee_cny'] is None
+    assert r116['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     r115 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r2-evidence.json').read_bytes())
     assert r115['round'] == 115 and r115['site_version'] == '1.9.123'
     assert r115['correction']['first_observed_merchant_on'] == '2026-11-03'

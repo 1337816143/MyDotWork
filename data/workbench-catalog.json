@@ -2894,6 +2894,28 @@
       "summary": "直接链接r13/r37/r38/r114历史原证据；纠正首次发现说法、保留旧报告原字节；本轮新读10 URL，打不开的价格不刷新，未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r116-20261110",
+      "title": "GPT源头第116轮 · Pay2GPT 21天短信号码与yxab新商品ID核对",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r3.html",
+      "updatedAt": "2026-11-10",
+      "summary": "首次专项核Pay2GPT独立美国+1短信US$3.49/21天、最多2次换号及仅未收任何短信原路退款；yxab旧缺货SKU已404，新ID现货¥128.80/月。批发/有效税票及短信成功均未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r116-20261110-evidence",
+      "title": "第116轮 · Pay2GPT SMS、yxab两商品ID与7条原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r3-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "2026-11-10读取7条商家/官方原URL，旧SKU 404单列；US$3.49为SMS产品，不是Plus；未知手续费和VAT用null，采购及手机验证实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
