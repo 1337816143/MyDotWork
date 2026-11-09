@@ -2764,7 +2764,9 @@
       "metadataApproved": true
     },
     {"id":"gpt-source-followup-r110-20261109","title":"GPT源头第110轮 · CallAI Plus、独立Codex验证与激活维护","type":"report","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r4.html","updatedAt":"2026-11-09","summary":"CallAI本人Plus零售¥108/月、Codex短信CDK¥3/次；兑换站维护中且需Session，短信第三方须密码/OTP/MFA；批发和VAT未核。","access":"public","metadataApproved":true},
-    {"id":"gpt-source-followup-r110-20261109-evidence","title":"第110轮 · CallAI SKU、服务维护、实名凭据风险与授权缺口 · 11原URL","type":"dataset","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r4-evidence.json","updatedAt":"2026-11-09","summary":"2026-11-09读11原始URL；旧代理文自标2026-10-23；批发真实进价、开票主体/全费及SMS成功均未核。","access":"public","metadataApproved":true}
+    {"id":"gpt-source-followup-r110-20261109-evidence","title":"第110轮 · CallAI SKU、服务维护、实名凭据风险与授权缺口 · 11原URL","type":"dataset","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r4-evidence.json","updatedAt":"2026-11-09","summary":"2026-11-09读11原始URL；旧代理文自标2026-10-23；批发真实进价、开票主体/全费及SMS成功均未核。","access":"public","metadataApproved":true},
+    {"id":"gpt-source-followup-r111-20261109","title":"GPT源头第111轮 · 词元连接禁倒卖卡密与售后条款核实","type":"report","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r5.html","updatedAt":"2026-11-09","summary":"首次直读旧商家条款禁卡密倒卖、旧政策退款限定和隐私中的未具名上游；¥148+¥1.78旧报价未变，合法授权及中国VAT未核。","access":"public","metadataApproved":true},
+    {"id":"gpt-source-followup-r111-20261109-evidence","title":"第111轮 · 旧条款禁止转售、退款与价费口径 · 5个原URL","type":"dataset","task":"project-1","url":"../research/2026-11-09/supplier-followup-20261109-r5-evidence.json","updatedAt":"2026-11-09","summary":"2026-11-09读取5条原始网址，条款自标2026-08-20；¥149.78仅历史同价静态预览，实际全费、合同、授权和短信成功仍null/0。","access":"public","metadataApproved":true}
   ],
   "websites": [
     {

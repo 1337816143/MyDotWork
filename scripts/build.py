@@ -36,7 +36,7 @@ def build():
             'reportPath': 'index.html',
             # Latest bounded research observation; individual offer dates remain authoritative.
             'researchDate': '2026-11-09',
-            'latestResearchSupplement': {'version': '1.110', 'date': '2026-11-09', 'path': 'research/2026-11-09/supplier-followup-20261109-r4.html', 'dataPath': 'research/2026-11-09/supplier-followup-20261109-r4-evidence.json', 'observationDates': ['2026-11-09'], 'previousPath': 'research/2026-11-09/supplier-followup-20261109-r3.html'},
+            'latestResearchSupplement': {'version': '1.111', 'date': '2026-11-09', 'path': 'research/2026-11-09/supplier-followup-20261109-r5.html', 'dataPath': 'research/2026-11-09/supplier-followup-20261109-r5-evidence.json', 'observationDates': ['2026-11-09'], 'previousPath': 'research/2026-11-09/supplier-followup-20261109-r4.html'},
             'baselineResearchDate': '2026-10-01',
             'researchVersion': '1.8.12',
             # Historical dates of research/2026-10-02.html and its round2 supplement.
