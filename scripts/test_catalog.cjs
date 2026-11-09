@@ -915,3 +915,22 @@ assert.equal(r116.new_evidence.yxab_plus_new_sku.old_sku_restock_proven,false);
 assert.equal(r116.new_evidence.yxab_plus_new_sku.new_sku_public_price_cny_per_account_month,128.8);
 assert.equal(r116.new_evidence.yxab_plus_new_sku.payment_channel_fee_cny,null);
 assert.equal(r116.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R117: enforce snapshot-vs-checkout, minimum cash, balance refund and zero success.
+const r117c=d.records.find(x=>x.id==='gpt-source-followup-r117-20261110');
+const r117d=d.records.find(x=>x.id==='gpt-source-followup-r117-20261110-evidence');
+assert(r117c&&r117d&&r117c.url.endsWith('supplier-followup-20261110-r4.html'));
+const r117=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r4-evidence.json'),'utf8'));
+assert.equal(r117.round,117);assert.equal(r117.site_version,'1.9.125');assert.equal(r117.sources.length,5);
+assert.equal(r117.new_evidence.public_price_number,0.05);
+assert.equal(r117.new_evidence.price_table_snapshot_date,'2026-10-31');
+assert.equal(r117.new_evidence.actual_checkout_live_price_usd,null);
+assert.equal(r117.new_evidence.minimum_topup_usd,5);
+assert.equal(r117.new_evidence.minimum_card_cash_outlay_arithmetic_usd,5.5);
+assert.equal(r117.new_evidence.no_sms_returns_to_platform_balance_merchant_claim,true);
+assert.equal(r117.new_evidence.cash_refund_no_sms_automatic,false);
+assert.equal(r117.new_evidence.received_sms_charged_even_if_openai_rejects_merchant_claim,true);
+assert.equal(r117.new_evidence.codex_desktop_success_verified,false);
+assert.equal(r117.new_evidence.first_api_key_success_verified,false);
+assert.equal(r117.new_evidence.qualifies_as_plus_wholesale,false);
+assert.equal(r117.qualification_totals.verified_plus_wholesale_upstreams,0);
