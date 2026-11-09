@@ -131,13 +131,18 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 261, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 263, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.114'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-09/supplier-followup-20261109-r7.html'
+    assert latest['version'] == '1.115'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r2-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110.html'
+    r115 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r2-evidence.json').read_bytes())
+    assert r115['round'] == 115 and r115['site_version'] == '1.9.123'
+    assert r115['correction']['first_observed_merchant_on'] == '2026-11-03'
+    assert [rec['round'] for rec in r115['correction']['prior_evidence']] == [13,37,38,114]
+    assert len(r115['sources']) == 10 and r115['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert by_id['gpt-source-followup-r112-20261109']['url'] == '../research/2026-11-09/supplier-followup-20261109-r6.html'
     assert by_id['gpt-source-followup-r112-20261109-evidence']['url'] == '../research/2026-11-09/supplier-followup-20261109-r6-evidence.json'
     r112 = json.loads((ROOT / 'dist/research/2026-11-09/supplier-followup-20261109-r6-evidence.json').read_bytes())
