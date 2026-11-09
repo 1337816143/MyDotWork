@@ -1,0 +1,139 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 117,
+  "site_version": "1.9.125",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "新发现SMS Nitro独立OpenAI临时号码，准确区分2026-10-31价格表快照、最低预存、10%卡费、站内余额退款与平台通过。与Plus批发分开。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "merchant": "SMS Nitro",
+    "sku": "OpenAI / ChatGPT temporary number / Philippines +63 / 20 minutes",
+    "url": "https://smsnitro.com/number/openai",
+    "service_line": "independent_sms_not_plus",
+    "public_price_number": 0.05,
+    "public_price_currency": "USD",
+    "public_price_unit": "one delivered SMS code on Philippines +63 number",
+    "price_table_snapshot_date": "2026-10-31",
+    "actual_checkout_live_price_usd": null,
+    "other_country_uk_plus44_price_snapshot_usd": 0.07,
+    "temporary_number_reserved_minutes_merchant_claim": 20,
+    "physical_sim_verified": false,
+    "number_control_after_20_minutes_verified": false,
+    "minimum_topup_usd": 5,
+    "card_topup_fee_percent": 10,
+    "minimum_card_cash_outlay_arithmetic_usd": 5.5,
+    "crypto_platform_fee_merchant_claim_usd": 0,
+    "crypto_network_fee_usd": null,
+    "actual_payment_usd": null,
+    "actual_one_sms_paid_price_usd": null,
+    "no_sms_returns_to_platform_balance_merchant_claim": true,
+    "cash_refund_no_sms_automatic": false,
+    "received_sms_charged_even_if_openai_rejects_merchant_claim": true,
+    "unused_deposit_cash_refund_merchant_claim": "case_by_case_only_original_method_card_fee_not_refunded",
+    "real_cash_refund_verified": false,
+    "merchant_claim_legal_entity": "B. FLORES ALVARIZA LTDA",
+    "merchant_claim_cnpj": "62.639.487/0001-04",
+    "merchant_claim_country": "Brazil",
+    "legal_entity_registration_verified": false,
+    "actual_payment_entity_verified": false,
+    "merchant_claim_third_party_number_source": true,
+    "other_rental_periods_claimed": [
+      "24 hours",
+      "7 days",
+      "30 days"
+    ],
+    "openai_rental_exact_price_usd": null,
+    "requires_chatgpt_password_or_session_for_sms_merchant_claim": false,
+    "web_login_precondition_resolved": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "verified_sms_deliveries": 0,
+    "verified_openai_phone_successes": 0,
+    "valid_china_vat_invoice_issuer": null,
+    "plus_wholesale_unit_price_cny": null,
+    "plus_all_required_fees_and_valid_china_vat_cny": null,
+    "qualifies_as_plus_wholesale": false
+  },
+  "official_platform_scope": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "ordinary_chatgpt_phone_generally_required": false,
+    "codex_desktop_may_require": true,
+    "first_api_key_phone_required": true,
+    "voip_unsupported": true,
+    "apple_plus_or_session_auto_phone_verified": false
+  },
+  "historical_reference": {
+    "previous_round": 116,
+    "previous_report": "research/2026-11-10/supplier-followup-20261110-r3.html",
+    "pay2gpt_distinct_21_day_usd_price": 3.49,
+    "products_not_equivalent": true
+  },
+  "sources": [
+    {
+      "url": "https://smsnitro.com/number/openai",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_product",
+      "page_self_updated_on": "2026-10-31 (price table only)",
+      "fact": "OpenAI / ChatGPT Philippines +63 US$0.05 per delivered code, temporary 20-minute number; UK +44 US$0.07; logged-in live checkout not confirmed."
+    },
+    {
+      "url": "https://smsnitro.com/pricing",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_pricing",
+      "page_self_updated_on": null,
+      "fact": "Minimum top-up USD5, card/Stripe 10% on top, crypto vendor fee zero, network fee unknown. No-SMS returns held funds to site balance."
+    },
+    {
+      "url": "https://smsnitro.com/refund-policy",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_refund_terms",
+      "page_self_updated_on": "2026-10-30",
+      "fact": "No code within 20 minutes refunds to platform balance; any SMS delivered is nonrefundable even if OpenAI rejects. Unused deposit cash refund case-by-case; card 10% fee usually nonrefundable."
+    },
+    {
+      "url": "https://smsnitro.com/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "merchant_terms",
+      "page_self_updated_on": "2026-10-30",
+      "fact": "Operator claimed B. FLORES ALVARIZA LTDA, Brazil CNPJ 62.639.487/0001-04, line supply by third parties; claimed rental options separate from temporary SKU."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "evidence_class": "OpenAI_official",
+      "page_self_updated_on": null,
+      "fact": "Ordinary ChatGPT generally needs no phone; Codex desktop may need one; initial API Key generation needs one; VoIP unsupported."
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "US$0.05 is 2026-10-31 merchant snapshot, not live login or checkout on 2026-11-10.",
+    "Minimum card top-up US$5+10%=US$5.50 is arithmetic cash outlay, not already paid.",
+    "No SMS only releases hold to site balance, not original payment account. Once any SMS received, seller treats it as delivered even if OpenAI rejects.",
+    "Separate rentals are not the 20-minute SKU and do not have confirmed OpenAI price.",
+    "No actual Web/Codex/API OpenAI verification tests; Plus purchase does not auto-bind phone."
+  ]
+}
