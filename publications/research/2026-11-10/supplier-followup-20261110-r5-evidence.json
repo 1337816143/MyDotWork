@@ -1,0 +1,118 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 118,
+  "site_version": "1.9.126",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "同一个Pay2GPT美国+1/21天独立Codex/ChatGPT接码SKU，英文营销US$3.49，中文营销US$4.99，中英未付款收银台US$4.99+5%=US$5.24。不是已证涨价或Plus批发。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "merchant": "Pay2GPT",
+    "service_line": "independent_sms_not_plus",
+    "sku": "Codex Login Number / US +1 / one number / 21 days",
+    "historical_r116_english_product_page_display_usd": 3.49,
+    "current_english_product_page_display_usd": 3.49,
+    "current_chinese_product_page_display_usd": 4.99,
+    "current_chinese_homepage_display_usd": 4.99,
+    "checkout_english_base_price_preview_usd": 4.99,
+    "checkout_chinese_base_price_preview_usd": 4.99,
+    "checkout_service_fee_percent_display": 5,
+    "checkout_preview_total_usd": 5.24,
+    "checkout_preview_extra_over_english_promo_usd": 1.75,
+    "checkout_discount_ui_text": "Payment method discount−$-0.25 (ambiguous; do not deduct again from displayed total)",
+    "real_payment_usd": null,
+    "final_payment_method_fee_usd": null,
+    "actual_paid_fee_including_checkout_usd": null,
+    "price_change_effective_date_verified": null,
+    "previous_r116_paid_checkout_price_verified": false,
+    "number_control_days_merchant_claim": 21,
+    "free_number_swaps_merchant_claim": 2,
+    "one_openai_account_per_number_claim": true,
+    "physical_sim_merchant_claim": true,
+    "sim_type_independently_verified": false,
+    "phone_lifetime_verified": false,
+    "openai_password_or_session_needed_for_sms_merchant_claim": false,
+    "merchant_claim_refund": "If no number or no SMS on any available swaps, original payment channel refund; any SMS received does not qualify even if OpenAI rejects.",
+    "cash_refund_real_test": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "verified_phone_sms_successes": 0,
+    "actual_payment_entity_verified": false,
+    "invoice_issuer_verified": false,
+    "plus_single_month_wholesale_cost_cny": null,
+    "plus_payment_and_vat_included_cost_cny": null,
+    "qualifies_as_plus_wholesale": false
+  },
+  "historical_reference": {
+    "previous_round": 116,
+    "previous_report": "research/2026-11-10/supplier-followup-20261110-r3.html",
+    "previous_price_usd": 3.49,
+    "previous_price_type": "English marketing page only, no checkout read",
+    "previous_page_left_unchanged": true
+  },
+  "sources": [
+    {
+      "url": "https://pay2gpt.com/en/codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_english_promo",
+      "fact": "USD3.49 one US+1 number 21 days, not checkout."
+    },
+    {
+      "url": "https://pay2gpt.com/codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_chinese_promo",
+      "fact": "Same +1 number 21 days displays USD4.99 and two swaps."
+    },
+    {
+      "url": "https://pay2gpt.com/",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_chinese_catalog",
+      "fact": "Codex SMS listing USD4.99, separate from Plus."
+    },
+    {
+      "url": "https://pay2gpt.com/en/checkout?plan=codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "unpaid_english_checkout_preview",
+      "fact": "Codex Login Number 21 days; base USD4.99 + 5% service fee => displayed total USD5.24, not an order."
+    },
+    {
+      "url": "https://pay2gpt.com/checkout?plan=codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "unpaid_chinese_checkout_preview",
+      "fact": "Same base/fee/total. Ambiguous -$-0.25 discount text must not be deducted further."
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "No known effective date of price change: this is simultaneous bilingual listing/checkout inconsistency, not proven historical repricing.",
+    "USD5.24 is a prepayment display and may vary by payment method; exact final payment unknown/null.",
+    "SMS service cannot substitute for Plus monthly wholesale; Web/Codex/first API Key verification remain untested."
+  ]
+}
