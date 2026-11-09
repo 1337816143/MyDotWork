@@ -2828,6 +2828,28 @@
       "summary": "2026-11-09直接读取8条商家自有URL；条款自标2026-04-28；旧价不刷新。¥178.08仅按商家分项计算，实际税票/批发/短信成功仍未验。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r113-20261109",
+      "title": "GPT源头第113轮 · APIHub渠道供货候选与平台订单无票限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-r7.html",
+      "updatedAt": "2026-11-09",
+      "summary": "新增16688 APIHub自称渠道/批发对接店铺；平台普通订单明确不开发票，企业开票另报价；索引¥126/月和¥10短信非第一方核价，批发授权/VAT未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r113-20261109-evidence",
+      "title": "第113轮 · APIHub开票限制、批发谈价条件和动态索引边界 · 4原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-09/supplier-followup-20261109-r7-evidence.json",
+      "updatedAt": "2026-11-09",
+      "summary": "2026-11-09实际核读店铺公告、两商品URL可访问但正文不可读、第三方动态索引；Plus一月第一方价、含全部票费、批发进价及手机号成功率均null/0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

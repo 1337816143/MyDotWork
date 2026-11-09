@@ -855,3 +855,16 @@ assert.equal(r112.new_evidence.gptpro_plus.sensitive_session_json_needed_downstr
 assert.equal(r112.new_evidence.codex_sms.display_cny_per_attempt,10);
 assert.equal(r112.new_evidence.codex_sms.merchant_claim_re_receive_sms_supported,false);
 assert.equal(r112.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// Round 113: APIHub first-party reseller claims versus no-invoice platform checkout; third-party index prices are not first-party prices.
+const cat113=d.records.find(x=>x.id==='gpt-source-followup-r113-20261109'),data113=d.records.find(x=>x.id==='gpt-source-followup-r113-20261109-evidence');
+assert(cat113&&data113&&cat113.url.endsWith('supplier-followup-20261109-r7.html'));
+const r113=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-09/supplier-followup-20261109-r7-evidence.json'),'utf8'));
+assert.equal(r113.round,113);assert.equal(r113.site_version,'1.9.121');assert.equal(r113.sources.length,4);
+assert.equal(r113.new_candidate.merchant_claim_platform_checkout_no_invoice,true);
+assert.equal(r113.new_candidate.merchant_claim_enterprise_procurement_invoice_separately_quoted,true);
+assert.equal(r113.new_candidate.plus_first_party_price_cny_per_account_month,null);
+assert.equal(r113.new_candidate.agent_upfront_fee_cny_verified,null);
+assert.equal(r113.new_candidate.all_required_fees_including_vat_cny,null);
+assert.equal(r113.new_candidate.qualified_plus_wholesale_source,false);
+assert.equal(r113.qualification_totals.verified_plus_wholesale_upstreams,0);
