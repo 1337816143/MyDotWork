@@ -131,13 +131,23 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 289, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 291, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.128'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r14.html'
+    assert latest['version'] == '1.129'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r2-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111.html'
+    # R129: GetPlus enterprise minimum and mainland exclusion are new direct reads of old terms.
+    assert by_id['gpt-source-followup-r129-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r2.html'
+    assert by_id['gpt-source-followup-r129-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r2-evidence.json'
+    r129 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r2-evidence.json').read_bytes())
+    assert r129['round']==129 and r129['site_version']=='1.9.137' and len(r129['sources'])==5
+    assert r129['new_evidence']['enterprise_minimum_quantity']==5
+    assert r129['new_evidence']['merchant_terms_disallow_orders_physically_within_mainland_china'] is True
+    assert r129['new_evidence']['retail_single_usd_per_month']==22.14
+    assert r129['new_evidence']['actual_paid_with_valid_china_vat_total_cny'] is None
+    assert r129['qualification_totals']['verified_plus_wholesale_upstreams']==0
     # R128: old, newly read October merchant terms reveal conditional refunds and no SMS-result guarantee.
     assert by_id['gpt-source-followup-r128-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111.html'
     assert by_id['gpt-source-followup-r128-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-evidence.json'
