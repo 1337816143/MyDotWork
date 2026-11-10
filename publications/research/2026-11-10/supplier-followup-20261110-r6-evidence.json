@@ -1,0 +1,151 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 119,
+  "site_version": "1.9.127",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "既有MaplePass第53轮候选：gptplus批发参考价两次观察差异与Google特惠不质保；添加非OpenAI专用泛化SMS产品记录。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "history": {
+    "previous_round_first_merchant_observation": 53,
+    "observed_on": "2026-11-05",
+    "evidence_path": "research/2026-11-05/supplier-followup-20261105-r15-evidence.json",
+    "gptplus_reference_usdt": 15.8,
+    "gptplus_google_reference_usdt": 15.5,
+    "merchant_is_new": false
+  },
+  "new_evidence": {
+    "merchant": "MaplePass",
+    "reference_gptplus_previous_usdt": 15.8,
+    "reference_gptplus_current_usdt": 16.2,
+    "reference_display_difference_usdt": 0.4,
+    "reference_gptplus_google_current_usdt": 15.5,
+    "reference_effective_date_verified": null,
+    "authenticated_wholesale_quote_usdt": null,
+    "actual_paid_wholesale_quote_usdt": null,
+    "gptplus_store_retail_usdt": 16.5,
+    "gptplus_google_store_retail_usdt": 15.8,
+    "gptplus_google_merchant_claim_non_warranty": true,
+    "gptplus_google_merchant_claim_drop_risk_percent": 3,
+    "gptplus_google_actual_drop_risk_verified": false,
+    "general_wholesale_30day_warranty_merchant_claim": true,
+    "google_sku_wholesale_warranty_scope_verified": null,
+    "google_replacement_verified": false,
+    "api_zero_deposit_merchant_claim": true,
+    "api_approval_required": true,
+    "api_usdt_wallet_funding_required": true,
+    "one_unit_actual_wholesale_purchase_verified": false,
+    "merchant_legal_registration_verified": false,
+    "actual_payment_entity_verified": false,
+    "valid_china_vat_invoice_issuer_verified": false,
+    "formal_openai_resale_authorization_verified": false,
+    "usd_to_cny_conversion_fee_cny": null,
+    "usdt_transfer_and_network_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "plus_actual_all_in_with_china_vat_cny": null,
+    "generic_sms": {
+      "sku": "sms_activation",
+      "public_generic_starting_usdt": 0.01,
+      "openai_service_option_verified": false,
+      "openai_specific_price_usdt": null,
+      "number_country": null,
+      "number_control_days": null,
+      "merchant_claim_no_number_wallet_refund": true,
+      "cash_refund_real_test": false,
+      "chatgpt_web_success": false,
+      "codex_desktop_success": false,
+      "first_api_key_success": false
+    },
+    "qualifies_as_verified_plus_wholesale": false
+  },
+  "sources": [
+    {
+      "url": "https://maple1189ai.com/guide/faka-api-integration",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_api_reference",
+      "fact": "批发参考指南当前gptplus_google 15.50、gptplus 16.20 USDT/件。通用文案宣称30天官方质保。"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus_google",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_retail_sku",
+      "fact": "gptplus_google零售挂牌15.80 USDT/卡，特惠不质保，站方自估3%掉订可能性，不能当成外部实测。"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_retail_sku",
+      "fact": "gptplus零售挂牌16.50 USDT/卡，宣称30天保修，与批发参考价身份不同。"
+    },
+    {
+      "url": "https://maple1189ai.com/api-cooperation",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-09-03",
+      "evidence_class": "merchant_api_terms",
+      "fact": "平台宣称零押金、30天商业批发质保；实际必须审批并充值USDT钱包，获批才展示可交易价。"
+    },
+    {
+      "url": "https://maple1189ai.com/store/sms_activation",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_generic_sms",
+      "fact": "泛化接码服务0.01 USDT起；国家及服务动态列表公开页未显示具体选项，OpenAI专用价格与号码寿命未知。"
+    },
+    {
+      "url": "https://maple1189ai.com/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-09-03",
+      "evidence_class": "merchant_terms",
+      "fact": "自标2026-09-03；平台非OpenAI官方授权代理，合法转售/收款与中国税票主体未知。"
+    },
+    {
+      "url": "https://maple1189ai.com/refund-policy",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-09-03",
+      "evidence_class": "merchant_refund",
+      "fact": "自标2026-09-03；售后可修复/替换/部分或全额退款/拒绝，未验证真退款到账。"
+    },
+    {
+      "url": "https://maple1189ai.com/prohibited-products",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-09-03",
+      "evidence_class": "merchant_safety",
+      "fact": "自标2026-09-03；平台禁售需密码、OTP、Session的产品；准确商品的实际兑换流程仍未验证。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "历史第53轮已记录该商家，不能称新源头。两次引用来自不同观察日期的公开批发参考表，无法验证何日更改，非实际获批/实付价格。",
+    "Google特惠商品明确不保，通用批发30天保障是否覆盖该SKU无法核实；3%风险仅商家自估，无独立样本。",
+    "零售店铺的15.80、16.50 USDT不同于API参考15.50、16.20 USDT。",
+    "SMS 0.01 USDT为泛化目录起价，不能当OpenAI专用接码成功价。",
+    "未知支付费和中国增值税发票费用始终为null，四项实测均零。"
+  ]
+}
