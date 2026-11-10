@@ -131,13 +131,24 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 283, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 285, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.125'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r12.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r12-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r11.html'
+    assert latest['version'] == '1.126'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r13.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r13-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r12.html'
+    # R126: Wholesale levels for Go do not verify Plus and a retail ban blocks resale.
+    assert by_id['gpt-source-followup-r126-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r13.html'
+    assert by_id['gpt-source-followup-r126-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r13-evidence.json'
+    r126 = json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-r13-evidence.json').read_bytes())
+    assert r126['round'] == 126 and r126['site_version'] == '1.9.134' and len(r126['sources']) == 8
+    assert r126['new_evidence']['dingyue']['actual_plus_wholesale_unit_usd'] is None
+    assert r126['new_evidence']['dingyue']['api_docs_example_is_actual_wholesale_price'] is False
+    assert r126['new_evidence']['token5555']['unpaid_display_total_cny'] == 149.78
+    assert r126['new_evidence']['token5555']['merchant_terms_ban_resale'] is True
+    assert r126['new_evidence']['token5555']['all_fees_with_valid_china_vat_cny'] is None
+    assert r126['qualification_totals']['verified_plus_wholesale_upstreams'] == r126['qualification_totals']['verified_phone_sms_successes'] == 0
     # R125: matching bilingual live marketing display but same old unpaid checkout; never infer real paid price change.
     assert by_id['gpt-source-followup-r125-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r12.html'
     assert by_id['gpt-source-followup-r125-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r12-evidence.json'
