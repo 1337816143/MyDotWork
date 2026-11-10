@@ -3004,6 +3004,28 @@
       "summary": "11月10日直接读取7个商家/官方原URL，区分首页价、准确商品可购状态、商家承诺和实测，实际含中国VAT全费、收款授权与手机号成功未知。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r121-20261110",
+      "title": "GPT源头第121轮 · UpPlusPro国内电子普票条件与GPT Store同价代理标签",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r8.html",
+      "updatedAt": "2026-11-10",
+      "summary": "新增UpPlusPro本人原号Plus零售¥143/月、卖家称国内电子普票+¥10，¥153仅分项算术；GPT Store iOS美区Plus卡零售和至尊代理公开均US$16，非已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r121-20261110-evidence",
+      "title": "第121轮 · UpPlusPro与GPT Store商品、发票/代理与会话条件8原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r8-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "2026-11-10实际核读两家8条商家自有URL，含¥10发票费、Plus覆盖不叠加、Session前提、iOS卡密美元税费与代理同价；含票全费、实际VAT及授权未核。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
