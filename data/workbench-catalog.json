@@ -2982,6 +2982,28 @@
       "summary": "11月10日实读8个一方URL，对照11月5日第53轮参考价；价格类别严格分离，网络费/中国VAT和OpenAI接码准确SKU为null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r120-20261110",
+      "title": "GPT源头第120轮 · AI充值站Plus发票5%与Codex接码可购性冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r7.html",
+      "updatedAt": "2026-11-10",
+      "summary": "新核AI充值站本人原号Plus零售¥148/月、企业票另称+5%算术¥155.40，结算展示有歧义；Codex SMS首页¥4.90/¥9.90但准确商品页客服报价且暂停在线下单。非合格批发上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r120-20261110-evidence",
+      "title": "第120轮 · AI充值站Session、企业票与Codex接码矛盾7原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r7-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "11月10日直接读取7个商家/官方原URL，区分首页价、准确商品可购状态、商家承诺和实测，实际含中国VAT全费、收款授权与手机号成功未知。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
