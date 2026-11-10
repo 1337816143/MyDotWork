@@ -134,11 +134,11 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 277, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.121'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r7.html'
-    # R121: catalogue and manifest refer to the new bounded merchant retail observation.
+    assert latest['version'] == '1.122'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r8.html'
+    # R122: catalogue/manifest refer to latest bounded warranty-label observation; R121 assertions retained.
     assert by_id['gpt-source-followup-r122-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r9.html'
     assert by_id['gpt-source-followup-r122-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r9-evidence.json'
     r122=json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-r9-evidence.json').read_bytes())
