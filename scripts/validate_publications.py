@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 285, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 287, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.126'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r13.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r13-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r12.html'
+    assert latest['version'] == '1.127'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r14.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r14-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r13.html'
+    # R127: storefront listing difference is not a verified wholesale cost, tax invoice or phone bypass.
+    assert by_id['gpt-source-followup-r127-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r14.html'
+    assert by_id['gpt-source-followup-r127-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r14-evidence.json'
+    r127 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r14-evidence.json').read_bytes())
+    assert r127['round'] == 127 and r127['site_version'] == '1.9.135' and len(r127['sources']) == 9
+    assert r127['new_evidence']['catfk_display_unit_price_cny'] == 113
+    assert r127['new_evidence']['direct_display_unit_price_cny'] == 110
+    assert r127['new_evidence']['actual_single_unit_wholesale_unit_price_cny'] is None
+    assert r127['new_evidence']['valid_china_vat_total_cny'] is None
+    assert r127['new_evidence']['demonstrated_new_price_change'] is False
+    assert r127['new_evidence']['bank_receipt_is_china_vat_invoice'] is False
+    assert r127['phone_verification']['codex_credit_is_sms'] is False
+    assert r127['qualification_totals']['verified_plus_wholesale_upstreams'] == r127['qualification_totals']['verified_phone_sms_successes'] == 0
     # R126: Wholesale levels for Go do not verify Plus and a retail ban blocks resale.
     assert by_id['gpt-source-followup-r126-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r13.html'
     assert by_id['gpt-source-followup-r126-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r13-evidence.json'
