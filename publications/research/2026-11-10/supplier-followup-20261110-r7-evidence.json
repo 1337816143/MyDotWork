@@ -1,0 +1,171 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 120,
+  "site_version": "1.9.128",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "首次记录AI充值站（ai-chongzhi.com）本人原号Plus零售、5%企业开票费、需交Session和独立Codex接码首页与准确商品页的可购状态矛盾；新站点不等于真正批发上游。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "merchant": "AI充值站",
+    "merchant_domain": "ai-chongzhi.com",
+    "merchant_first_observed_in_this_catalog_on": "2026-11-10",
+    "possible_chatshare_outlink_same_operator_verified": null,
+    "plus": {
+      "sku": "ChatGPT Plus 充值",
+      "product_page": "https://ai-chongzhi.com/plus",
+      "public_retail_price_cny_per_original_account_month": 148,
+      "quantity": 1,
+      "months": 1,
+      "invoice_fee_merchant_claim_percent": 5,
+      "invoice_fee_arithmetic_cny": 7.4,
+      "advertised_components_sum_cny": 155.4,
+      "homepage_checkout_preview_stated_total_cny": 148,
+      "homepage_checkout_preview_stated_includes_invoice_fee_cny": 7.4,
+      "checkout_preview_is_inconsistent": true,
+      "real_checkout_with_invoice_cny": null,
+      "actual_paid_all_in_with_valid_china_vat_invoice_cny": null,
+      "valid_china_vat_invoice_type_verified": null,
+      "valid_china_vat_invoice_issuer_verified": null,
+      "payment_channel_actual_surcharge_cny": null,
+      "operator_legal_identity_verified": null,
+      "payee_legal_identity_verified": null,
+      "official_openai_authorized_reseller": false,
+      "formal_lawful_resale_agreement_verified": null,
+      "one_item_wholesale_purchase_quote_cny": null,
+      "wholesale_minimum_quantity_verified": null,
+      "wholesale_no_upfront_agent_fee_verified": null,
+      "affiliate_is_wholesale": false,
+      "affiliate_commission_merchant_claim_percent": 3,
+      "existing_account_used": true,
+      "existing_active_subscription_can_stack": false,
+      "active_subscription_wait_or_replace_merchant_claim": true,
+      "requires_prior_chatgpt_web_login": true,
+      "requires_full_session_json_submission": true,
+      "merchant_claim_session_fields": [
+        "accessToken",
+        "sessionToken",
+        "account_email",
+        "account_id",
+        "user_id",
+        "subscription_type"
+      ],
+      "merchant_claim_forwards_session_to_partner": true,
+      "merchant_claim_session_retention_max_hours": 72,
+      "real_session_deletion_audited": false,
+      "merchant_claim_unfulfilled_refund_to_origin": true,
+      "actual_paid_refund_verified": false,
+      "qualifies_as_verified_plus_wholesale": false
+    },
+    "independent_sms": {
+      "home_cheap_tier": {
+        "advertised_label": "Codex 接码服务",
+        "advertised_cny_per_number": 4.9,
+        "advertised_days_min": 11,
+        "advertised_days_max": 20
+      },
+      "home_long_tier": {
+        "advertised_label": "Codex 接码服务（长效档）",
+        "advertised_cny_per_number": 9.9,
+        "advertised_days_min": 21,
+        "advertised_days_max": 30
+      },
+      "exact_product_detail_id": "CODEX-SMS",
+      "product_detail_supports_online_order": false,
+      "product_detail_current_price_number_cny": null,
+      "product_detail_requires_customer_service_quote": true,
+      "conflict_home_auto_assign_vs_product_detail_manual": true,
+      "actual_buyable_sms_price_cny": null,
+      "real_number_control_days": null,
+      "number_country": null,
+      "number_type_nonvoip_verified": null,
+      "receiving_sms_failed_refund_terms": null,
+      "cash_refund_on_sms_failure": null,
+      "chatgpt_web_success_verified": false,
+      "codex_desktop_success_verified": false,
+      "first_api_key_success_verified": false,
+      "plus_purchase_automatically_binds_openai_phone": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://ai-chongzhi.com/",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_home_current_display",
+      "fact": "Plus本人原号公开单月¥148；Codex接码两个首页宣传档分别¥4.90／11–20天与¥9.90／21–30天，宣传付款自动分配号码。首页模拟结算区混排「应付¥148含开票服务费¥7.40」；是展示矛盾，不是实际下单。"
+    },
+    {
+      "url": "https://ai-chongzhi.com/plus",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-10-27",
+      "evidence_class": "merchant_plus_product_page",
+      "fact": "Plus准确1个月¥148/账号，需已有ChatGPT账号，在订单页面提交会话资料；企业发票加收5%，另述与OpenAI不存在授权/合作。网页自标2026-10-27不能当今天新调价。"
+    },
+    {
+      "url": "https://ai-chongzhi.com/p/codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_sms_exact_product_detail",
+      "fact": "准确商品编号CODEX-SMS，明确「需要接码时联系客服，暂不支持在线下单」「价格由客服确认」「售后以客服为准」；与首页自动下单¥4.90、¥9.90两档宣传冲突。真实可购价及号码期限不能证实。"
+    },
+    {
+      "url": "https://ai-chongzhi.com/help",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_terms_privacy_refund",
+      "fact": "自助Plus成功付款后收集sessionToken、accessToken等六项，转交合作充值方，商称最长保留72小时；充值失败原路退、结果不明先核；人工Plus需额外费用；企业发票+5%且必须下单前选，不能补开；未给真实中国VAT出票主体或税号。"
+    },
+    {
+      "url": "https://ai-chongzhi.com/about",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_identification_and_authorization",
+      "fact": "站方宣称正规信用卡代充、公司票/合同/对公、官网公开声明「与ChatGPT、OpenAI不存在授权、代理或合作关系」，未展示可独立验证经营、收款、开票法人或正式转售合同。"
+    },
+    {
+      "url": "https://ai-chongzhi.com/affiliate",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_affiliate_not_wholesale",
+      "fact": "免费推广联盟无需押金，按定价3%佣金且满¥50结算；商品列Plus¥148、Codex SMS¥4.90/¥9.90；此是推荐分销佣金不是零前置费可按一件批发采购的实价，也不是官方转售授权。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "official_phone_verification_scope",
+      "fact": "官方区分ChatGPT普通使用一般不要求手机号、Codex桌面端可能要求、首次API Key要求；支持SMS及特定国家WhatsApp，VoIP等不支持，商品声称有Codex号码不能证明Web/Codex/API三场景成功。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "价格与窗口来自商家页面的自有显示，不是实付与真实号码占用期；首页接码价与商品页「客服核价/暂停在线下单」同时存在，本轮不将¥4.90与¥9.90误记作真实可购成交价。",
+    "¥155.40是¥148+5%的条件算术，不是实际收银台支付金额、有效中国VAT税票或批发采购价；首页预览同时显示应付¥148与含发票费¥7.40，支付状态有矛盾。",
+    "推广佣金与批发渠道采购资格分开；站方明确不是OpenAI官方授权代理。",
+    "会话资料要求先网页登录，不可能代替首次网页登录手机验证；独立手机号仍无Web/Codex/首次API Key实测或失败退款到账证据。"
+  ]
+}
