@@ -970,3 +970,22 @@ assert.equal(r119.new_evidence.plus_actual_all_in_with_china_vat_cny,null);
 assert.equal(r119.new_evidence.qualifies_as_verified_plus_wholesale,false);
 assert.equal(r119.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r119.qualification_totals.verified_phone_sms_successes,0);
+
+// R120: retail invoice arithmetic is not paid valid VAT; SMS homepage is not a purchasable price.
+const r120c=d.records.find(x=>x.id==='gpt-source-followup-r120-20261110');
+const r120d=d.records.find(x=>x.id==='gpt-source-followup-r120-20261110-evidence');
+assert(r120c&&r120d&&r120c.url.endsWith('supplier-followup-20261110-r7.html'));
+const r120=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r7-evidence.json'),'utf8'));
+assert.equal(r120.round,120);assert.equal(r120.site_version,'1.9.128');assert.equal(r120.sources.length,7);
+assert.equal(r120.new_evidence.plus.public_retail_price_cny_per_original_account_month,148);
+assert.equal(r120.new_evidence.plus.advertised_components_sum_cny,155.4);
+assert.equal(r120.new_evidence.plus.actual_paid_all_in_with_valid_china_vat_invoice_cny,null);
+assert.equal(r120.new_evidence.plus.requires_full_session_json_submission,true);
+assert.equal(r120.new_evidence.plus.affiliate_is_wholesale,false);
+assert.equal(r120.new_evidence.independent_sms.home_cheap_tier.advertised_cny_per_number,4.9);
+assert.equal(r120.new_evidence.independent_sms.home_long_tier.advertised_cny_per_number,9.9);
+assert.equal(r120.new_evidence.independent_sms.product_detail_supports_online_order,false);
+assert.equal(r120.new_evidence.independent_sms.actual_buyable_sms_price_cny,null);
+assert.equal(r120.new_evidence.independent_sms.cash_refund_on_sms_failure,null);
+assert.equal(r120.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r120.qualification_totals.verified_phone_sms_successes,0);
