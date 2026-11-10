@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 291, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 293, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.129'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r2.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r2-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111.html'
+    assert latest['version'] == '1.130'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r3.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r3-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r2.html'
+    # R130: Plus6/GPTDCVIP are separate retail leads; no approved wholesale, VAT or SMS verification.
+    assert by_id['gpt-source-followup-r130-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r3.html'
+    assert by_id['gpt-source-followup-r130-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r3-evidence.json'
+    r130 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r3-evidence.json').read_bytes())
+    assert r130['round'] == 130 and r130['site_version'] == '1.9.138' and len(r130['sources']) == 7
+    assert r130['new_evidence']['plus6']['public_retail_cny_per_account_month'] == 145
+    assert r130['new_evidence']['plus6']['merchant_says_forwards_session_to_third_party_verification_api'] is True
+    assert r130['new_evidence']['plus6']['independent_codex_sms_price_cny'] is None
+    assert r130['new_evidence']['gptdcvip']['public_retail_cny_per_account_month'] == 139
+    assert r130['new_evidence']['gptdcvip']['merchant_requires_existing_logged_in_session_json'] is True
+    assert r130['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+
     # R129: GetPlus enterprise minimum and mainland exclusion are new direct reads of old terms.
     assert by_id['gpt-source-followup-r129-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r2.html'
     assert by_id['gpt-source-followup-r129-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r2-evidence.json'

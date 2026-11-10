@@ -3202,6 +3202,28 @@
       "summary": "直接读取日期2026-11-11，店家旧条款更新时间另列；未知费用null、0实付/验票/SMS。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r130-20261111",
+      "title": "GPT源头第130轮 · Plus6验证API与GPTDCVIP Apple/Session边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r3.html",
+      "updatedAt": "2026-11-11",
+      "summary": "新核Plus6 ¥145/月与GPTDCVIP ¥139/月零售；Plus6第三方API长期元数据留存、人工Codex接码须询价；GPTDCVIP iOS结算仍需Session，旧质保不保封号/覆盖旧天数。均未证实批发授权或VAT全费。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r130-20261111-evidence",
+      "title": "第130轮 · Plus6/GPTDCVIP 七原URL与Session、接码、售后边界",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r3-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "七个2026-11-11实际可读商家页面，2026-10-15旧政策日另记；发卡收银台超时另列，批发、税票、三类SMS成功实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

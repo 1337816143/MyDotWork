@@ -1124,3 +1124,16 @@ assert.equal(r129.new_evidence.retail_single_usd_per_month,22.14);
 assert.equal(r129.new_evidence.invoice_option_addon_usd,2.10);
 assert.equal(r129.new_evidence.actual_paid_with_valid_china_vat_total_cny,null);
 assert.equal(r129.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R130: retailer metadata disclosure and Apple+Session coexist; no VAT/wholesale/SMS success.
+const r130a=d.records.find(x=>x.id==='gpt-source-followup-r130-20261111');
+const r130b=d.records.find(x=>x.id==='gpt-source-followup-r130-20261111-evidence');
+assert(r130a&&r130b&&r130a.url.endsWith('supplier-followup-20261111-r3.html'));
+const r130=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r3-evidence.json'),'utf8'));
+assert.equal(r130.round,130);assert.equal(r130.site_version,'1.9.138');assert.equal(r130.sources.length,7);
+assert.equal(r130.new_evidence.plus6.public_retail_cny_per_account_month,145);
+assert.equal(r130.new_evidence.plus6.merchant_says_forwards_session_to_third_party_verification_api,true);
+assert.equal(r130.new_evidence.plus6.independent_codex_sms_price_cny,null);
+assert.equal(r130.new_evidence.gptdcvip.public_retail_cny_per_account_month,139);
+assert.equal(r130.new_evidence.gptdcvip.merchant_requires_existing_logged_in_session_json,true);
+assert.equal(r130.qualification_totals.verified_plus_wholesale_upstreams,0);
