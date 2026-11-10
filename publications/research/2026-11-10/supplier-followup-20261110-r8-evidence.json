@@ -1,0 +1,175 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 121,
+  "site_version": "1.9.129",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "首次核读UpPlusPro和GPT Store商家自有网页；公开含票价格和代理标签不等于核实批发、实付、有效中国税票或官方授权。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "uppluspro": {
+      "merchant": "UpPlusPro",
+      "domain": "uppluspro.com",
+      "sku": "ChatGPT Plus 本人原号月卡",
+      "advertised_retail_cny_per_account_month": 143,
+      "merchant_claim_china_vat_e_invoice_fee_cny": 10,
+      "advertised_component_sum_cny": 153,
+      "actual_paid_all_in_with_valid_china_vat_cny": null,
+      "payment_channel_fee_cny": null,
+      "invoice_merchant_claim_type": "增值税电子普通发票（技术服务费）",
+      "verified_china_vat_invoice_number": null,
+      "verified_china_vat_invoice_issuer": null,
+      "merchant_claim_pay_provider": "KyrenPay",
+      "merchant_claim_payment_methods": [
+        "微信",
+        "支付宝"
+      ],
+      "verified_operator_legal_entity": null,
+      "verified_payee_legal_entity": null,
+      "merchant_disclaims_openai_authorization": true,
+      "verified_lawful_resale_agreement": null,
+      "merchant_claim_bulk_negotiation": true,
+      "actual_one_item_wholesale_quote_cny": null,
+      "verified_no_upfront_agent_fee": null,
+      "requires_prior_chatgpt_web_login": true,
+      "requires_session_json": true,
+      "actual_session_delivery_verified": false,
+      "merchant_claim_can_cover_existing_plus": true,
+      "merchant_claim_remaining_days_do_not_stack": true,
+      "merchant_claim_undelivered_refund": "全额退款",
+      "merchant_claim_30d_dropout_remedy": "剩余天数退款或补差价续订",
+      "real_refund_or_paid_renewal_verified": false,
+      "qualifies_as_verified_plus_wholesale": false
+    },
+    "gptstore": {
+      "merchant": "GPT Store",
+      "domain": "gptstore.lol",
+      "sku": "GPT PLUS 充值卡密（iOS 美区质保）",
+      "advertised_retail_usd_per_card": 16,
+      "advertised_vip_agent_usd_per_card": 16,
+      "public_price_spread_usd": 0,
+      "verified_agent_wholesale_eligibility": null,
+      "agent_upfront_fee_usd": null,
+      "merchant_claim_stock": 110,
+      "merchant_claim_sold": 1104830,
+      "independent_stock_sales_verified": false,
+      "precise_one_card_subscription_months_verified": null,
+      "existing_account_plus_activation_verified": null,
+      "requires_us_ios_redemption_environment": true,
+      "apple_balance_equals_chatgpt_activation": false,
+      "merchant_claim_gateway": "Stripe",
+      "payment_currency": "USD",
+      "actual_checkout_usd": null,
+      "processing_fee_usd": null,
+      "fx_fee_cny": null,
+      "merchant_declares_extra_subscription_taxes_excluded": true,
+      "actual_paid_all_in_with_valid_china_vat_cny": null,
+      "verified_china_vat_invoice_issuer": null,
+      "merchant_claim_company_payment_receipts": true,
+      "official_openai_reseller_disclaimed": true,
+      "verified_lawful_resale_agreement": null,
+      "merchant_claim_failed_order_refund": "未交付或充值失败可以申请当天全退",
+      "merchant_claim_no_unconditional_refund_after_delivery": true,
+      "real_delivery_or_refund_verified": false,
+      "qualifies_as_verified_plus_wholesale": false
+    }
+  },
+  "phone_verification": {
+    "new_verified_sms_service": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "number_holding_days_verified": null,
+    "sms_failure_cash_refund_verified": null,
+    "plus_recharge_automatically_binds_openai_phone": false,
+    "official_scope_reference": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like"
+  },
+  "sources": [
+    {
+      "url": "https://uppluspro.com/",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_home_current_retail",
+      "fact": "本人原号Plus月付¥143；KyrenPay微信/支付宝支付、公司采购议价；先付款后在订单页复制会话资料，未核收银台全部费用。"
+    },
+    {
+      "url": "https://uppluspro.com/warranty",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_invoice_and_warranty",
+      "fact": "商称国内电子普票Plus另加¥10，须下单选、不可补开；Plus已有订阅可覆盖但剩余天数不叠加。未交付全退、30天掉订可按天退或补差价，均未实测。"
+    },
+    {
+      "url": "https://uppluspro.com/legal/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_terms_no_official_authorization",
+      "fact": "第三方代订阅，明示与OpenAI无合作、代理或授权；提供本人账户session JSON；未核经营、收款、开票法人及独立批发资格。"
+    },
+    {
+      "url": "https://gptstore.lol/",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_home_card_marketplace",
+      "fact": "自称卡密自动交付、Stripe付款；iOS美区Plus价格及其他商品，官网营销的售后/销量未独立验证。"
+    },
+    {
+      "url": "https://gptstore.lol/products/chatgpt-plus-ios-us-card",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_exact_ios_card_sku",
+      "fact": "准确商品GPT PLUS充值卡密（iOS美区质保）零售$16/卡，至尊代理公开拿货价同为$16；显示库存110、已售1104830均商称，已交付数字品一般不可无理由退。"
+    },
+    {
+      "url": "https://gptstore.lol/price/chatgpt-plus",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_price_scope_and_ios_requirements",
+      "fact": "$16仅包含数字卡与说明、不含官方订阅额外税费和第三方费用，需可用美区iOS兑换环境；实际支付汇兑、中国VAT、完整月数未证。"
+    },
+    {
+      "url": "https://gptstore.lol/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-08-15",
+      "evidence_class": "merchant_terms_disclaimer_and_refund",
+      "fact": "条款自标2026-08-15，明确并非OpenAI授权代理；Stripe收款USD，未交付或充值失败商称可申请当天全额退款，已交付原则不无条件退；无实测。"
+    },
+    {
+      "url": "https://gptstore.lol/blog/chatgpt-plus-renewal-guide",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-09-03",
+      "evidence_class": "merchant_subscription_redemption_guidance",
+      "fact": "指南自标2026-09-03，强调美区Apple余额卡兑入不等于Plus自动续费，建议核对原订阅渠道及是否需取消旧订阅。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "¥143+¥10=¥153只是商家公开分项算术，支付通道费/真实税票/主体未知，不能记成含全部费用的核验成交。",
+    "GPT Store公开至尊代理$16与零售$16相等，代理标签不证明真正进价、无前置费或合法转售。",
+    "Session须先网页登录；苹果美区付款或卡密都不保证免OpenAI手机号验证。"
+  ]
+}
