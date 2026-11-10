@@ -131,13 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 293, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 295, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.130'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r2.html'
+    assert latest['version'] == '1.131'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r3.html'
+    # R131: GPTPro is retail and exceeds all-fees ceiling on seller's advertised invoice option; SMS is one-time, not 30 days.
+    assert by_id['gpt-source-followup-r131-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r4.html'
+    assert by_id['gpt-source-followup-r131-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r4-evidence.json'
+    r131 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r4-evidence.json').read_bytes())
+    assert r131['round'] == 131 and r131['site_version'] == '1.9.139' and len(r131['sources']) == 8
+    assert r131['new_evidence']['gptpro5x']['public_retail_base_price_cny_per_account_month'] == 168
+    assert r131['new_evidence']['gptpro5x']['base_plus_invoice_arithmetic_cny'] == 178.08
+    assert r131['new_evidence']['gptpro5x']['actual_paid_with_valid_china_vat_total_cny'] is None
+    assert r131['new_evidence']['codex_sms']['public_price_per_one_time_verification_cny'] == 10
+    assert r131['new_evidence']['codex_sms']['merchant_claims_second_sms_supported'] is False
+    assert r131['new_evidence']['codex_sms']['number_control_days_verified'] is None
+    assert r131['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r131['qualification_totals']['verified_phone_sms_successes'] == 0
+
     # R130: Plus6/GPTDCVIP are separate retail leads; no approved wholesale, VAT or SMS verification.
     assert by_id['gpt-source-followup-r130-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r3.html'
     assert by_id['gpt-source-followup-r130-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r3-evidence.json'
