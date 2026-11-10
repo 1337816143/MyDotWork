@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 281, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 283, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.124'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r10.html'
+    assert latest['version'] == '1.125'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r12.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r12-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r11.html'
+    # R125: matching bilingual live marketing display but same old unpaid checkout; never infer real paid price change.
+    assert by_id['gpt-source-followup-r125-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r12.html'
+    assert by_id['gpt-source-followup-r125-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r12-evidence.json'
+    r125 = json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-r12-evidence.json').read_bytes())
+    assert r125['round'] == 125 and r125['site_version'] == '1.9.133' and len(r125['sources']) == 4
+    assert r125['historical_comparison']['previous_english_product_display_usd'] == 3.49
+    assert r125['new_evidence']['english_product_display_usd_per_number'] == r125['new_evidence']['chinese_product_display_usd_per_number'] == 4.99
+    assert r125['new_evidence']['unpaid_checkout_total_usd'] == 5.24
+    assert r125['new_evidence']['unpaid_checkout_base_and_total_changed_vs_r118'] is False
+    assert r125['new_evidence']['actual_paid_total_usd'] is None
+    assert r125['new_evidence']['realized_price_increase_proven'] is False
+    assert r125['qualification_totals']['verified_plus_wholesale_upstreams'] == r125['qualification_totals']['verified_phone_sms_successes'] == 0
     # R124: vendor coupon only after completion and never a verified SMS success.
     assert by_id['gpt-source-followup-r124-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r11.html'
     assert by_id['gpt-source-followup-r124-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r11-evidence.json'
