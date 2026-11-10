@@ -1077,3 +1077,21 @@ assert.equal(r125.new_evidence.first_api_key_success_verified,false);
 assert.equal(r125.new_evidence.qualifies_as_verified_plus_wholesale,false);
 assert.equal(r125.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r125.qualification_totals.verified_phone_sms_successes,0);
+
+
+// R127: verified direct storefront link is neither paid wholesale price nor a VAT invoice.
+const r127a=d.records.find(x=>x.id==='gpt-source-followup-r127-20261110');
+const r127b=d.records.find(x=>x.id==='gpt-source-followup-r127-20261110-evidence');
+assert(r127a&&r127b&&r127a.url.endsWith('supplier-followup-20261110-r14.html'));
+const r127=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r14-evidence.json'),'utf8'));
+assert.equal(r127.round,127);assert.equal(r127.site_version,'1.9.135');assert.equal(r127.sources.length,9);
+assert.equal(r127.new_evidence.catfk_display_unit_price_cny,113);
+assert.equal(r127.new_evidence.direct_display_unit_price_cny,110);
+assert.equal(r127.new_evidence.cross_platform_display_difference_cny,3);
+assert.equal(r127.new_evidence.actual_single_unit_wholesale_unit_price_cny,null);
+assert.equal(r127.new_evidence.valid_china_vat_total_cny,null);
+assert.equal(r127.new_evidence.demonstrated_new_price_change,false);
+assert.equal(r127.new_evidence.bank_receipt_is_china_vat_invoice,false);
+assert.equal(r127.phone_verification.codex_credit_is_sms,false);
+assert.equal(r127.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r127.qualification_totals.verified_phone_sms_successes,0);
