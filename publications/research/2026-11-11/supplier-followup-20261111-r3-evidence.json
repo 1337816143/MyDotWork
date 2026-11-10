@@ -1,0 +1,182 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 130,
+  "site_version": "1.9.138",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次实读Plus6与GPTDCVIP零售原号Plus公开一方资料，重点核Session向第三方验证API传递、短信服务准确适用范围、iOS内购与Session共存、续充及退款。无支付、收票、转售或验证实测。",
+  "new_evidence": {
+    "plus6": {
+      "merchant": "Plus6",
+      "accurate_sku": "原有ChatGPT账号无订阅 Plus卡密自助激活1个月",
+      "public_retail_cny_per_account_month": 145,
+      "actual_checkout_cny": null,
+      "additional_payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "actual_paid_with_valid_china_vat_total_cny": null,
+      "qualifying_active_subscription_renewal": false,
+      "merchant_requires_existing_logged_in_session_json": true,
+      "merchant_says_forwards_session_to_third_party_verification_api": true,
+      "third_party_api_identity_verified": null,
+      "merchant_says_own_server_does_not_store_session": true,
+      "merchant_reports_api_retains_metadata": [
+        "账号邮箱",
+        "卡密",
+        "任务状态或结果",
+        "API Key标识",
+        "请求IP"
+      ],
+      "metadata_retention_claim": "长期",
+      "independent_security_audit": false,
+      "independent_codex_sms_service_advertised": true,
+      "codex_sms_merchant_requires_customer_service_confirmation": true,
+      "independent_codex_sms_price_cny": null,
+      "codex_sms_number_lifetime_days": null,
+      "codex_sms_refund_to_original_payment_verified": null,
+      "merchant_operator_verified": null,
+      "payment_recipient_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "single_unit_wholesale_cost_cny": null,
+      "verified_no_upfront_agent_fee": null,
+      "formal_resale_authorization_verified": false,
+      "real_paid_order_verified": false,
+      "qualified": false
+    },
+    "gptdcvip": {
+      "merchant": "GPTDCVIP",
+      "accurate_sku": "原有ChatGPT账号 Plus 1个月 iOS美区充值卡直充（商家描述）",
+      "public_retail_cny_per_account_month": 139,
+      "actual_checkout_cny": null,
+      "additional_payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "actual_paid_with_valid_china_vat_total_cny": null,
+      "seller_claims_apple_ios_us_region_settlement": true,
+      "apple_invoice_or_receipt_verified": false,
+      "merchant_requires_existing_logged_in_session_json": true,
+      "merchant_claims_session_not_retained": true,
+      "independent_session_retention_audit": false,
+      "overlapping_subscription_remaining_days_covered_by_warranty": false,
+      "merchant_claims_renewal_after_expiry": true,
+      "seller_refund_terms_last_updated": "2026-10-15",
+      "claims_subscription_drop_warranty_days": 30,
+      "seller_claims_prorated_unused_days_refund": true,
+      "account_ban_covered": false,
+      "claims_activation_failure_refund_after_manual_review": true,
+      "cash_refund_to_original_method_verified": false,
+      "seller_declares_not_openai_authorized": true,
+      "bulk_purchasing_invitation_without_public_unit_pricing": true,
+      "merchant_operator_verified": null,
+      "payment_recipient_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "single_unit_wholesale_cost_cny": null,
+      "verified_no_upfront_agent_fee": null,
+      "formal_resale_authorization_verified": false,
+      "independent_sms_sku_verified": null,
+      "real_paid_order_verified": false,
+      "qualified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://plus6.cn/",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "plus_retail_codex_sms_and_session",
+      "fact": "Plus无订阅原号1月公开零售¥145、第三方卡密店链接；Codex手机号验证仅客服确认范围与费用，页面无准确单价或号码期限。Session表单向未具名第三方验证API发送，商称该API长期留存账号邮箱、卡密、任务状态、API Key标识及请求IP。"
+    },
+    {
+      "url": "https://plus6.cn/guides/chatgpt-plus-checklist.html",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "session_third_party_information_boundary",
+      "fact": "要求已登录ChatGPT浏览器取得完整Session JSON；商称本站不保存但送第三方验证API；后者长期留元数据。卡密查询可提交不等于实际充值成功；在期会员不可充值。"
+    },
+    {
+      "url": "https://gptdcvip.com/",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_home_active_renewal",
+      "fact": "公开本人原号Plus单月¥139；商称iOS美区Apple结算但兑换须提交账号信息；在期会员被覆盖的剩余天数不保障。"
+    },
+    {
+      "url": "https://gptdcvip.com/plus",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "exact_plus_sku",
+      "fact": "Plus人民币¥139/一个月；商称iOS美区充值卡、30天质保、到期续订；页面同时要求购买卡密后提交账号，Apple渠道性质仅为卖家宣称。"
+    },
+    {
+      "url": "https://gptdcvip.com/pricing",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "retail_price_and_bulk",
+      "fact": "准确Plus 1个月零售价¥139，企业批量需要询问客服、未公开单件批发价。"
+    },
+    {
+      "url": "https://gptdcvip.com/about",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-15",
+      "evidence_class": "seller_terms_session_and_authorization",
+      "fact": "2026-10-15商家旧条款写明兑换必须交ChatGPT Session内容；商称不存Session、非OpenAI授权或合作方；有企业批量洽谈但无最低采购量、进货价、正式转售权。"
+    },
+    {
+      "url": "https://gptdcvip.com/refund",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-15",
+      "evidence_class": "seller_old_refund_scope",
+      "fact": "2026-10-15旧条款：商称30天内掉订按剩余天数退差价，但封号、在期续充覆盖旧天数、错误账号等不保；开通失败先人工处理后退款，原路实际到账未核。"
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://i8c.cn/ZEj93",
+      "observed_on": "2026-11-11",
+      "read_status": "timeout_or_no_readable_checkout",
+      "effect": "Plus6外部发卡收银台未取得可读内容，不刷新或填补实际费用和成交价"
+    }
+  ],
+  "phone_verification": {
+    "plus6_codex_sms_merchant_advertised": true,
+    "plus6_web_chatgpt_sms_supported_verified": null,
+    "plus6_codex_sms_price_cny": null,
+    "plus6_number_lifetime_days": null,
+    "plus6_cash_refund_for_failed_sms_verified": false,
+    "gptdcvip_independent_sms_sku": null,
+    "ordinary_apple_subscription_auto_binds_phone": false,
+    "ordinary_session_topup_bypasses_first_web_login_sms": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "两家为公开零售渠道，虽挂牌¥145与¥139，均非可核实的批发上游；不能仅凭零售挂牌推断单件进货价、转售授权或含VAT全费≤¥170。",
+    "Apple内购渠道声明与要求提交ChatGPT Session可同时成立，不能认定自动绑手机或解决首次网页验证。Session是敏感会话凭据，不等同于无凭据。",
+    "Plus6长期保留的只是网站转述验证API文档的账户邮箱/卡密/任务等元数据；未取得上游独立安全审计，不认定Session正文长期存储。",
+    "2026-10-15是GPTDCVIP旧退款条款的页面自标日期，2026-11-11是本轮读取日，不称该政策当天变更。"
+  ]
+}
