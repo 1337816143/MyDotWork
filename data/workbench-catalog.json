@@ -2960,6 +2960,28 @@
       "summary": "11月10日实读英语/中文商品页、首页、中英收银台；5%费与显示总价是未付款预览，Plus批发和OpenAI真实手机验证实测均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r119-20261110",
+      "title": "GPT源头第119轮 · MaplePass批发参考价格与Google特惠不保风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r6.html",
+      "updatedAt": "2026-11-10",
+      "summary": "MaplePass不是新源头；旧gptplus批发参考15.80、当前16.20 USDT/件仅网页差异；Google特惠15.80 U零售价明确无保修，通用30天质保范围未核。合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r119-20261110-evidence",
+      "title": "第119轮 · MaplePass准确SKU、质保适用性和独立SMS的8原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r6-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "11月10日实读8个一方URL，对照11月5日第53轮参考价；价格类别严格分离，网络费/中国VAT和OpenAI接码准确SKU为null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
