@@ -3070,6 +3070,28 @@
       "summary": "11月10日实际读取商城/目录/开票与购买指南/准确SKU/微信会员登录墙/手机号排障，区分商称相互冲突与真实税票实测，未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r124-20261110",
+      "title": "GPT源头第124轮 · KitCarry完成订阅赠Codex短信券及退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r11.html",
+      "updatedAt": "2026-11-10",
+      "summary": "5条一方URL：完成20美元档赠1张注册短信券、100美元及以上最多3张；取消订单先返不可提现站内余额，动态Plus/SMS现价、发票/授权与接码成功仍未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r124-20261110-evidence",
+      "title": "第124轮 · KitCarry Session/Codex赠券/钱包退款五条原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r11-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "逐个商家URL和2026-11-10观察状态，赠券与真实号码成功区分，所有未取得费用为null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

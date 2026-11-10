@@ -1033,3 +1033,16 @@ assert.equal(r122.new_evidence.merchant_claim_warranty_days,30);
 assert.equal(r122.new_evidence.verified_mapping_of_old_two_skus_to_new_generic_sku,null);
 assert.equal(r122.new_evidence.actual_paid_all_in_with_china_vat_cny,null);
 assert.equal(r122.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R124: merchant coupon is not cash or a verified registration success.
+const r124a=d.records.find(x=>x.id==='gpt-source-followup-r124-20261110');
+const r124b=d.records.find(x=>x.id==='gpt-source-followup-r124-20261110-evidence');
+assert(r124a&&r124b&&r124a.url.endsWith('supplier-followup-20261110-r11.html'));
+const r124=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r11-evidence.json'),'utf8'));
+assert.equal(r124.round,124);assert.equal(r124.sources.length,5);
+assert.equal(r124.new_evidence.plus_current_retail_cny_per_account_month,null);
+assert.equal(r124.new_evidence.coupon.coupon_only_issued_after_completed_subscription,true);
+assert.equal(r124.new_evidence.coupon.max_coupon_count_at_completed_higher_tier,3);
+assert.equal(r124.phone_verification.verified_number_control_days,null);
+assert.equal(r124.qualifIcation_totals,undefined);
+assert.equal(r124.qualification_totals.verified_plus_wholesale_upstreams,0);

@@ -1,0 +1,124 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 124,
+  "site_version": "1.9.132",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "KitCarry 5个新实读第一方URL：完成订阅后Codex短信赠券、Session前置、非现金钱包退款、充值页开票限制；动态Plus和SMS现价未取得。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "merchant": "KitCarry",
+    "requires_prior_chatgpt_login": true,
+    "requires_session_json_with_session_token": true,
+    "access_token_alone_not_accepted": true,
+    "merchant_sends_session_to_third_party_partner": true,
+    "merchant_declares_no_openai_authorization": true,
+    "exact_plus_sku_live": null,
+    "plus_current_retail_cny_per_account_month": null,
+    "all_in_cny_with_valid_vat": null,
+    "exact_one_item_wholesale_price_cny": null,
+    "payment_processing_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "verified_invoice_issuer": null,
+    "verified_payee_entity": null,
+    "formal_resale_authorization_verified": false,
+    "verified_no_agent_upfront_fee": null,
+    "verified_own_account_renewal": null,
+    "shop_wallet_recharge_page_says_no_invoice_or_corporate_payment": true,
+    "subscription_invoice_status_verified": null,
+    "unredeemed_order_refund_merchant_claim_wallet_only": true,
+    "wallet_nonwithdrawable_merchant_claim": true,
+    "original_payment_refund_requires_support": true,
+    "original_payment_refund_cash_verified": false,
+    "coupon": {
+      "tier_label_usd_for_one_coupon": 20,
+      "coupon_count_at_completed_tier": 1,
+      "tier_label_usd_for_max_three": 100,
+      "max_coupon_count_at_completed_higher_tier": 3,
+      "non_claude_subscription_gets_codex_registration_sms_coupon": true,
+      "claude_subscription_gets_claude_sms_coupon": true,
+      "coupon_only_issued_after_completed_subscription": true,
+      "failed_sms_claim_coupon_returned_once": true,
+      "undetermined_sms_coupon_held": true,
+      "real_sms_success_verified": false,
+      "coupon_auto_binds_openai_phone": false
+    },
+    "is_verified_wholesale_upstream": false
+  },
+  "phone_verification": {
+    "sms_and_long_rental_products_offered": true,
+    "codex_sms_current_exact_price_cny": null,
+    "chatgpt_sms_current_exact_price_cny": null,
+    "verified_number_control_days": null,
+    "merchant_claim_long_rental_may_not_refund_without_sms": true,
+    "number_expiry_per_upstream_response": true,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "cash_refund_after_failed_sms_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://shop.kitcarry.com/chatgpt",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_html_dynamic_catalog",
+      "page_self_updated_on": null,
+      "evidence_class": "subscription",
+      "fact": "选购先付款、提货需要Session；套餐实时列表仍显示正在加载；非官方授权。"
+    },
+    {
+      "url": "https://shop.kitcarry.com/guide",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_html",
+      "page_self_updated_on": null,
+      "evidence_class": "guide",
+      "fact": "先登录ChatGPT提取完整Session JSON含sessionToken；完成20美元档赠1次券、100美元及以上最多3次；非Claude赠Codex注册短信券。"
+    },
+    {
+      "url": "https://shop.kitcarry.com/sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_html_dynamic_price",
+      "page_self_updated_on": null,
+      "evidence_class": "sms",
+      "fact": "选择国家、目标服务及长租后查实时价格；长租没有SMS可能不退款，号码期限由上游实际返回。"
+    },
+    {
+      "url": "https://shop.kitcarry.com/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_html",
+      "page_self_updated_on": "2026-10-27",
+      "evidence_class": "terms",
+      "fact": "没有OpenAI正式授权；凭据交合作方；退单先返站内余额、原路退款须向支持申请；失败赠券退券一次，状态不明冻结。"
+    },
+    {
+      "url": "https://shop.kitcarry.com/shop",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_html",
+      "page_self_updated_on": null,
+      "evidence_class": "wallet",
+      "fact": "站内余额充值页写不可提现、暂不支持开票或对公转账；不能外推订阅SKU全部法律开票义务。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "赠券20美元/100美元为卖家档位标签，非本轮人民币成交价。",
+    "动态商品价格不可读，不将搜索结果索引价格算作实时挂牌。",
+    "普通Plus充值不自动绑定手机号，也不能解决必须先登录才能获取Session的问题。"
+  ]
+}
