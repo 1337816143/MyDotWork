@@ -3246,6 +3246,28 @@
       "summary": "2026-11-11直接实读；旧条款页面自标2026-04-28。含VAT真实实付null，真实OpenAI短信验证0，旧报价未刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r132-20261111",
+      "title": "GPT源头第132轮 · AIPlusGate标称含票¥168与直充站¥3000代理门槛",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r5.html",
+      "updatedAt": "2026-11-11",
+      "summary": "AIPlusGate苹果Plus单月¥158+开票选项¥10=商称¥168，未验有效中国VAT/授权；ChatGPT直充站进货代理一次性资格费¥3000与免前置费条件冲突。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r132-20261111-evidence",
+      "title": "第132轮 · AIPlusGate/ChatGPT直充站九条原URL与发票/代理/Session证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r5-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "首次阅读9条商家自有网页；开票版未付款、经营收款出票主体/实际批发/独立短信未知null；合格上游及真实验票0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
