@@ -1047,6 +1047,18 @@ assert.equal(r124.phone_verification.verified_number_control_days,null);
 assert.equal(r124.qualifIcation_totals,undefined);
 assert.equal(r124.qualification_totals.verified_plus_wholesale_upstreams,0);
 
+// R126: Go-only tier pricing and card resale ban do not meet Plus wholesale requirements.
+const r126a=d.records.find(x=>x.id==='gpt-source-followup-r126-20261110');
+const r126b=d.records.find(x=>x.id==='gpt-source-followup-r126-20261110-evidence');
+assert(r126a&&r126b&&r126a.url.endsWith('supplier-followup-20261110-r13.html'));
+const r126=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r13-evidence.json'),'utf8'));
+assert.equal(r126.round,126);assert.equal(r126.site_version,'1.9.134');assert.equal(r126.sources.length,8);
+assert.equal(r126.new_evidence.dingyue.actual_plus_wholesale_unit_usd,null);
+assert.equal(r126.new_evidence.dingyue.api_docs_example_is_actual_wholesale_price,false);
+assert.equal(r126.new_evidence.token5555.unpaid_display_total_cny,149.78);
+assert.equal(r126.new_evidence.token5555.merchant_terms_ban_resale,true);
+assert.equal(r126.qualification_totals.verified_plus_wholesale_upstreams,0);
+
 // R125: English marketing display convergence does not prove paid checkout repricing.
 const r125a=d.records.find(x=>x.id==='gpt-source-followup-r125-20261110');
 const r125b=d.records.find(x=>x.id==='gpt-source-followup-r125-20261110-evidence');

@@ -1,0 +1,170 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 126,
+  "site_version": "1.9.134",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次核查dingyue批发和词元连接卡密零售：公开Plus批发价缺失，零售卡密条款明确禁止倒卖。",
+  "new_evidence": {
+    "dingyue": {
+      "merchant_claim_wholesale_levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "cumulative_topup_tier_usd": [
+        0,
+        100,
+        500,
+        2000,
+        10000
+      ],
+      "public_tier_listed_sku": "ChatGPT Go 1 month",
+      "public_tier_listed_price_each_usd": [
+        5.99,
+        5.99,
+        5.99,
+        5.99,
+        5.99
+      ],
+      "actual_plus_wholesale_unit_usd": null,
+      "api_docs_sample_plus_price_usd": 21.99,
+      "api_docs_example_is_actual_wholesale_price": false,
+      "retail_plus_one_month_usd": 19.99,
+      "retail_plus_current_go_variant_usd": 19.99,
+      "requires_existing_chatgpt_session": true,
+      "actual_plus_checkout_all_fees_usd": null,
+      "wallet_topup_min_usd": 2,
+      "network_fees_usd": null,
+      "valid_china_vat_invoice_issuer": null,
+      "valid_china_vat_total_cny": null,
+      "verified_resale_authorization": false,
+      "verified_real_paid_order": false,
+      "verified_phone_success": false,
+      "qualified": false
+    },
+    "token5555": {
+      "exact_sku": "Plus（官方20刀）/ 单件CDK",
+      "public_retail_one_cny": 148,
+      "unpaid_payment_fee_percent": 1.2,
+      "unpaid_payment_fee_cny": 1.78,
+      "unpaid_display_total_cny": 149.78,
+      "actual_paid_total_cny": null,
+      "vat_invoice_cost_cny": null,
+      "all_fees_with_valid_china_vat_cny": null,
+      "merchant_terms_ban_resale": true,
+      "merchant_disclaims_openai_authorization": true,
+      "merchant_mentions_external_upstream_card_supplier": true,
+      "verified_upstream_identity": null,
+      "affiliate_register_fee_claim_cny": 0,
+      "affiliate_commission_percent_range": [
+        10,
+        25
+      ],
+      "affiliate_is_verified_wholesale": false,
+      "invoice_issuer_verified": null,
+      "cash_refund_received": false,
+      "qualified": false
+    },
+    "sms": {
+      "verified_exact_codex_sms_sku_for_either_candidate": null,
+      "chatgpt_web_success": false,
+      "codex_desktop_success": false,
+      "first_api_key_success": false,
+      "number_lifetime_verified_days": null,
+      "failed_sms_cash_refund_verified": false,
+      "ordinary_plus_auto_binds_phone": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://dingyue.app/en/wholesale",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "public_level_table",
+      "page_self_updated_on": null,
+      "fact": "Lv1注册免费、Lv2–Lv5累计充值US$100/500/2000/10000；公开表仅Go 1个月，各级US$5.99，没有公开Plus批发价。"
+    },
+    {
+      "url": "https://dingyue.app/docs/api/shop",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "official_api_docs",
+      "page_self_updated_on": null,
+      "fact": "API余额USDT/USDC预存单次US$2–10000，须权限Key读取自身SKU实时价；Plus US$21.99属于文档示例非真实批发报价。"
+    },
+    {
+      "url": "https://dingyue.app/en/p/chatgpt-plus-subscription",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "exact_plus_retail",
+      "page_self_updated_on": null,
+      "fact": "Plus Free及Go升级1个月变体均显示US$19.99；已有Plus不可覆盖续费，需先登录提供Session；商称iOS/银行卡付款；Go余额天数不保留。"
+    },
+    {
+      "url": "https://dingyue.app/en/refund",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "refund_policy",
+      "page_self_updated_on": "2026-04-21",
+      "fact": "正常交付原则上不退款，未履约或卡密问题须审核才可能退或补；未实测退款到账。"
+    },
+    {
+      "url": "https://token5555.com/",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "unpaid_checkout_preview",
+      "page_self_updated_on": null,
+      "fact": "Plus（官方20刀）一件¥148，独立显示支付手续费1.2% ¥1.78，预览合计¥149.78，非真实支付、非含有效中国增值税发票全费。"
+    },
+    {
+      "url": "https://token5555.com/terms.html",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "terms_ban_resale",
+      "page_self_updated_on": "2026-08-20",
+      "fact": "条款自标2026-08-20，禁止倒卖卡密，不是OpenAI授权商；商称未用卡退款、兑换失败退、已兑30天质保；条款含手续费说法与结算额外列费有口径差。"
+    },
+    {
+      "url": "https://token5555.com/privacy.html",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "upstream_supplier_disclosure",
+      "page_self_updated_on": "2026-08-20",
+      "fact": "商家隐私政策称与其上游卡密供应商共享履约所需数据，本站不应认定成已验证真实批发上游。"
+    },
+    {
+      "url": "https://token5555.com/partner-register.html",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "affiliate_only",
+      "page_self_updated_on": null,
+      "fact": "免费推广、佣金10%–25%属引荐佣金，不能代替批发价格及转售授权。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "未将等级充值当代理入场费；不能将文档示例价当当前Plus批发价。",
+    "买到卡密或普通Plus会员不代表首次网页登录手机验证自动通过。",
+    "卖家宣称退款、30天质保与真实现金到账不同；各项未知费用用null。"
+  ]
+}

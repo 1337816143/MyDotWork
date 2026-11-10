@@ -3114,6 +3114,28 @@
       "summary": "4条2026-11-10再次实读原始URL，与第118轮展示/预览逐项对照。没有实际交易、有效税票、OpenAI三种手机号验证成功或现金退款实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r126-20261110",
+      "title": "GPT源头第126轮 · dingyue公开批发等级与词元连接禁转售",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r13.html",
+      "updatedAt": "2026-11-10",
+      "summary": "批发等级表只列Go，Plus批发价仍null；词元连接Plus预览¥149.78却禁倒卖卡密，非合格上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r126-20261110-evidence",
+      "title": "第126轮 · dingyue及token5555八条商家原URL与费用缺口",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r13-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "记录8条商家原URL、等级预存与API示例/零售价区分、支付预览与禁转售条款；未知税票/授权用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
