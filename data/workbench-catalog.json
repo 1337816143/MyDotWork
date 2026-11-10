@@ -3092,6 +3092,28 @@
       "summary": "逐个商家URL和2026-11-10观察状态，赠券与真实号码成功区分，所有未取得费用为null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r125-20261110",
+      "title": "GPT源头第125轮 · Pay2GPT英文接码展示由$3.49更正为$4.99",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r12.html",
+      "updatedAt": "2026-11-10",
+      "summary": "同一美国+1/21天短信SKU英文商品标价由旧读$3.49变为当前$4.99，现与中文一致；未付款收银台$4.99+5%=$5.24一直相同，非已证成交价上涨或验证成功。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r125-20261110-evidence",
+      "title": "第125轮 · Pay2GPT中英文产品及未付款收银台4条原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r12-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "4条2026-11-10再次实读原始URL，与第118轮展示/预览逐项对照。没有实际交易、有效税票、OpenAI三种手机号验证成功或现金退款实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

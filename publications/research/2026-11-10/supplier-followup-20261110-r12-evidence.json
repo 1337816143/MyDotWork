@@ -1,0 +1,112 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 125,
+  "site_version": "1.9.133",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "Pay2GPT相同美国+1实体SIM声称/21天独立Codex及ChatGPT接码商品：第118轮英文营销US$3.49 vs 中文US$4.99，现英文商品营销价已展示US$4.99且两语一致；未付款结算始终US$4.99+5%≈US$5.24，不能断言真实交易涨价或实际成功。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "historical_comparison": {
+    "previous_round": 118,
+    "previous_report": "research/2026-11-10/supplier-followup-20261110-r5.html",
+    "previous_english_product_display_usd": 3.49,
+    "previous_chinese_product_display_usd": 4.99,
+    "previous_unpaid_checkout_base_usd": 4.99,
+    "previous_unpaid_checkout_fee_percent": 5,
+    "previous_unpaid_checkout_total_usd": 5.24,
+    "previous_page_observed_on": "2026-11-10",
+    "historical_files_preserved": true
+  },
+  "new_evidence": {
+    "merchant": "Pay2GPT",
+    "service_line": "independent_phone_sms_not_plus",
+    "exact_sku": "Codex Login Number · US +1 physical SIM (seller claim) · one number · 21 days",
+    "english_product_display_usd_per_number": 4.99,
+    "chinese_product_display_usd_per_number": 4.99,
+    "english_promo_display_difference_vs_r118_usd": 1.5,
+    "english_promo_display_difference_percent_vs_r118": 42.97994269340975,
+    "english_and_chinese_promo_match_now": true,
+    "unpaid_english_checkout_base_usd": 4.99,
+    "unpaid_chinese_checkout_base_usd": 4.99,
+    "unpaid_checkout_service_fee_percent_display": 5,
+    "unpaid_checkout_total_usd": 5.24,
+    "unpaid_checkout_base_and_total_changed_vs_r118": false,
+    "checkout_discount_ui_text": "−$-0.25 (double-negative ambiguous; not subtracted from displayed USD5.24)",
+    "actual_paid_total_usd": null,
+    "selected_payment_channel_final_fee_usd": null,
+    "exchange_and_network_fees_usd": null,
+    "price_change_effective_date_verified": null,
+    "realized_price_increase_proven": false,
+    "number_control_days_merchant_claim": 21,
+    "number_control_days_independently_verified": null,
+    "physical_sim_independently_verified": false,
+    "merchant_claim_free_swaps": 2,
+    "merchant_claim_refund": "No number assigned or no SMS across swaps: refund to original payment channel; any SMS received: no refund even if OpenAI rejects",
+    "cash_refund_verified": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "plus_price_cny": null,
+    "plus_wholesale_supplier_authorization_verified": false,
+    "china_vat_invoice_issuer_verified": null,
+    "qualifies_as_verified_plus_wholesale": false
+  },
+  "sources": [
+    {
+      "url": "https://pay2gpt.com/en/codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_live_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_english_product_promo",
+      "fact": "原准确独立SMS SKU英文商品页本轮展示US$4.99/美国+1号码/21天；与此前第118轮英文US$3.49相异，不能证实调价生效日。"
+    },
+    {
+      "url": "https://pay2gpt.com/codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_live_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_chinese_product_promo",
+      "fact": "同一SMS SKU中文商品展示US$4.99/号码/21天；商称美国实体SIM、最多免费换号2次、无任何短信可原路退款，均未实测。"
+    },
+    {
+      "url": "https://pay2gpt.com/en/checkout?plan=codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_live_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "unpaid_english_checkout_preview",
+      "fact": "英文未填写邮箱、未选择付款创建订单的预览：商品基价US$4.99、5%服务费、页面合计US$5.24；与第118轮预览一致。"
+    },
+    {
+      "url": "https://pay2gpt.com/checkout?plan=codex-sms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_live_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "unpaid_chinese_checkout_preview",
+      "fact": "中文无付款收银台同样预览基价US$4.99、服务费5%、合计US$5.24。负负号折扣文本有歧义，不能对展示合计再扣款。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "这是独立手机号验证产品的英文页面报价修正/多语价格一致，不是Plus批发价变更。",
+    "仅可确定先前实际已读英文US$3.49、当前实读英文US$4.99；两个证据观察日同为2026-11-10，变更实际发生时间未知。",
+    "原第118轮已明确未付款结算基础US$4.99及总计US$5.24，本轮相同，禁止宣称结算价从US$3.49涨至US$4.99。",
+    "出售号码与收到短信并不证明ChatGPT网页、Codex桌面或首次API Key真正通过验证。",
+    "未采购、未验证税票、未联系卖家、未提交Session/Token。"
+  ]
+}
