@@ -1,0 +1,156 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 127,
+  "site_version": "1.9.135",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次确证小久CatFK商品一方页面指向98-xj.com免手续费“代理拿货”站；同商家同类菲区Plus准确月卡不同平台展示¥113和¥110，不证明真实批发差价或成交涨跌。",
+  "new_evidence": {
+    "seller": "小久",
+    "cross_platform_link_from_catfk_to_direct": "https://98-xj.com/",
+    "catfk_sku": "菲区Gpt plus cdk24小时（质保30天）",
+    "direct_sku": "Chat gpt plus 菲区卡冲cdk（质保30天）",
+    "account": "本人原ChatGPT账号；需先成功登录",
+    "period_months": 1,
+    "quantity": 1,
+    "currency": "CNY",
+    "catfk_display_unit_price_cny": 113,
+    "direct_display_unit_price_cny": 110,
+    "cross_platform_display_difference_cny": 3,
+    "demonstrated_new_price_change": false,
+    "merchant_claim_direct_no_processing_fee": true,
+    "independently_verified_zero_fee": false,
+    "actual_payable_direct_total_cny": null,
+    "actual_paid_total_cny": null,
+    "payment_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "valid_china_vat_total_cny": null,
+    "merchant_claim_wholesale_access": true,
+    "actual_single_unit_wholesale_unit_price_cny": null,
+    "verified_wholesale_upstream_identity": null,
+    "verified_formal_resale_authorization": false,
+    "registered_legal_entity_verified": null,
+    "payment_recipient_verified": null,
+    "china_vat_invoice_issuer_verified": null,
+    "bank_receipt_is_china_vat_invoice": false,
+    "requires_logged_in_session_json": true,
+    "allows_active_plus_renewal": false,
+    "merchant_claim_30_day_warranty": true,
+    "actual_warranty_fulfillment_verified": false,
+    "refund_to_original_payment_verified": false,
+    "seller_display_stock_items": 549,
+    "seller_display_sold_items": 35810,
+    "seller_display_order_count": 13650,
+    "these_counts_are_independently_verified": false,
+    "qualified": false
+  },
+  "phone_verification": {
+    "merchant_explicitly_requires_user_self_remediation_if_prompted": true,
+    "ordinary_plus_auto_binds_phone": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "accurate_independent_sms_sku_on_this_site": null,
+    "number_lifetime_verified_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "codex_credit_is_sms": false
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/item/j0eswz",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "seller_cross_platform_link",
+      "page_self_updated_on": null,
+      "fact": "小久本人同一平台商品页明确称“免手续费卡网（代理拿货）https://98-xj.com/”；菲区Plus卡密一个月、30天保；兑换须先登录并取得Cookie/Session。免手续费、代理资格、退款履约仅是卖家声称。"
+    },
+    {
+      "url": "https://catfk.com/shop/xiaojiu",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "seller_platform_shop_and_identity",
+      "page_self_updated_on": null,
+      "fact": "小久云猫店铺同名菲区Plus卡密30天标价¥113/件；商家信息展示个体零星小额交易可免登记的自我声明，不构成工商登记、开票主体或官方转售授权核验。"
+    },
+    {
+      "url": "https://98-xj.com/",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "seller_direct_storefront_listing",
+      "page_self_updated_on": null,
+      "fact": "小久直接站Plus菲区卡密公开标价¥110/件；显示有库存、自动交付及销量，为商家页面指标，非实际交付证明。"
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "exact_direct_sku_price_and_terms",
+      "page_self_updated_on": null,
+      "fact": "准确Plus商品110.00 CNY/件；明确菲律宾卡冲、CDK兑换、30天掉订按余期退款商称；不覆盖有在期GO/Plus/Pro账号，iOS/Google旧订阅需过期2–3天，手机验证需用户自行处理。银行交易凭证和收据不等同税务发票。"
+    },
+    {
+      "url": "https://982xj.xyz/upgrade-quote",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "logged_in_session_json_prerequisite",
+      "page_self_updated_on": null,
+      "fact": "升级报价页要求Session JSON，查询不扣费；辅助支付报价宣称加密凭据最长保存30分钟，未经安全审计、未提交任何账号秘密。"
+    },
+    {
+      "url": "https://982xj.xyz/",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "external_redeem_entry",
+      "page_self_updated_on": null,
+      "fact": "该站为先取得CDK的卡密兑换入口；直接读取不需支付但没有可证明成功订单或合法税票。"
+    },
+    {
+      "url": "https://98-xj.com/products/codex",
+      "observed_on": "2026-11-10",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "distinct_codex_credits_not_sms",
+      "page_self_updated_on": null,
+      "fact": "单独的Codex额度商品页基础展示¥275、按额度有多档；不是手机号接码，也不是普通OpenAI API余额，不能与验证服务混算。"
+    },
+    {
+      "url": "https://98-xj.com/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "page_readable_no_terms_content",
+      "evidence_class": "missing_terms_text",
+      "page_self_updated_on": null,
+      "fact": "请求取得HTTP200但页面正文仅“No Content”，缺少可核的完整服务和批发合同，不推断服务失效。"
+    },
+    {
+      "url": "https://98-xj.com/about",
+      "observed_on": "2026-11-10",
+      "read_status": "page_readable_minimal_content",
+      "evidence_class": "missing_legal_entity",
+      "page_self_updated_on": null,
+      "fact": "About只提供联系入口，没有可读企业经营、收款和中国VAT出票法人证据。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "¥110为直接店零售可见挂牌，并非已核单件代理批发进价；CatFK¥113与直接站¥110仅同时展示差额，不证明降价日期或实际成交差额。",
+    "CatFK把该站称免手续费“代理拿货”，但尚未得到支付前完整结算、正式可转售协议和中国有效增值税票据，不能称合格批发。",
+    "银行交易凭证及订阅收据不是中国增值税发票；旧Plus/Go在期不可覆盖，因此不符合所有当前原号续费情形。",
+    "Codex额度商品不是独立SMS，Session/Apple交付方式不能保证手机号验证自动通过。"
+  ]
+}

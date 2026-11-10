@@ -3136,6 +3136,28 @@
       "summary": "记录8条商家原URL、等级预存与API示例/零售价区分、支付预览与禁转售条款；未知税票/授权用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r127-20261110",
+      "title": "GPT源头第127轮 · 小久¥110直接站与CatFK¥113跨渠道供货",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r14.html",
+      "updatedAt": "2026-11-10",
+      "summary": "CatFK一方商品明确链到小久“免手续费代理拿货”站98-xj.com；同商家菲区Plus一月卡密CatFK¥113、直站¥110，非已核批发价、实际成交价、合法税票和真实授权。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r127-20261110-evidence",
+      "title": "第127轮 · 小久直接卡网、CatFK与兑换站9个一方URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r14-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "核实卖家自指直供站、两挂牌价、Session限制、税票缺口、Codex额度与SMS区分；未知费用为null，0实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
