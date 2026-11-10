@@ -1,0 +1,139 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 128,
+  "site_version": "1.9.136",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "historical_comparison": {
+    "previous_payprm_detailed_report": "research/2026-11-03/supplier-followup-20261103-r10.html",
+    "old_own_account_plus_display_cny_per_month": 155,
+    "old_member_account_display_cny_per_month": 160,
+    "demonstrated_current_price_change": false,
+    "merchant_policy_self_updated_on": "2026-10-02",
+    "newly_read_old_dated_terms_are_new_policy_changes": false
+  },
+  "new_evidence": {
+    "merchant": "PAYPRM",
+    "reported_operator": "PAYPRM 莱特智能运营团队",
+    "registered_legal_entity_verified": null,
+    "payment_recipient_verified": null,
+    "china_vat_invoice_issuer_verified": null,
+    "exact_own_existing_account_sku": "ChatGPT Plus会员充值 / 我有账号 / 会员代充",
+    "existing_account_sku_public_retail_cny_per_account_month": 155,
+    "separate_new_member_account_sku_public_retail_cny_per_account_month": 160,
+    "payment_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "actual_paid_all_required_fees_with_valid_china_vat_cny": null,
+    "no_upfront_wholesale_fee_verified": null,
+    "one_unit_wholesale_price_cny": null,
+    "merchant_claim_enterprise_batch_procurement": true,
+    "documented_unit_resale_authorization": null,
+    "terms_prohibit_personal_subscription_for_api_resale_bulk_reverse_proxy": true,
+    "terms_do_not_prove_all_retail_cdk_sales_universally_prohibited": true,
+    "warranty_compensation_requires_matching_official_refund_email": true,
+    "absence_of_official_refund_email_excluded_from_pro_rata_reupgrade": true,
+    "merchant_excludes_account_network_email_phone_verification_failure_from_subscription_warranty": true,
+    "merchant_claim_codex_sms_delivery_standard": "卡密和接码网址可使用",
+    "merchant_guarantees_successful_sms_or_openai_verification": false,
+    "merchant_claim_failed_sms_cash_refund": null,
+    "digital_goods_after_delivery_no_unconditional_refund": true,
+    "real_paid_order_verified": false,
+    "real_compensation_verified": false,
+    "valid_china_vat_invoice_verified": false
+  },
+  "phone_verification": {
+    "codex_sms_and_codex_credit_are_distinct": true,
+    "accurate_codex_sms_current_price_cny": null,
+    "older_codex_sms_price_cny_per_use_not_refreshed": 12,
+    "number_lifetime_days": null,
+    "requires_logged_in_chatgpt_session_for_some_plus_orders": true,
+    "automatic_phone_binding_from_plus_or_apple_proven": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "real_received_sms_verified": false,
+    "failed_sms_cash_refund_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://www.payprm.com/policy",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-02",
+      "evidence_class": "official_merchant_aftersales_policy",
+      "fact": "商家自标2026-10-02的售后政策：Plus提前失效/封号欲申请补差升级，要求订单账号与OpenAI官方退款邮件证据匹配；无该证明不适用此补差规则；账号/网络/邮箱/手机身份验证问题排除于订阅售后。Codex短信商品售后以卡密/接码网址可使用为准；未承诺实收SMS或验证通过。"
+    },
+    {
+      "url": "https://www.payprm.com/terms",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-02",
+      "evidence_class": "merchant_service_terms_personal_use_and_resale",
+      "fact": "商家自标2026-10-02的服务条款§5禁止将个人会员订阅转API、批量分发/转售/反代，禁止滥用个人独享卡密/账号；这一条不能不加区分地外推为所有卡密绝不允许合法B2B转售，但本轮无书面分销授权。"
+    },
+    {
+      "url": "https://www.payprm.com/about",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_about_self_declared_operator",
+      "fact": "关于页自称运营方为PAYPRM莱特智能运营团队、面向企业提供批量代充/对公转账，未明确实际登记企业全称、收款主体与中国增值税票出票主体；销量、正常使用成功率和退款都是商家自述、非独立验真。"
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "exact_own_account_plus_sku_recheck",
+      "fact": "商品页面本人原号会员代充¥155/账号·月、不同的现成会员号¥160/账号·月，展示单件卡密交付；同第十轮旧记录，不认定调价，不代表实际成交或供货价。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/receipt/invoice-or-receipt",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "invoice_fee_and_legal_identity_gap",
+      "fact": "商家FAQ称页面报价未含税，税票另付适用税点，具体税点/费用需由客服核验；收据不等于中国大陆税务发票。未见真实合法票种、出票主体或单件含所有费用的已付款。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/account/chatgpt-recharge-info",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "conditional_session_access_token_prerequisite",
+      "fact": "多数代充卡密订单商称不需Access Token，但指定订单被要求时需要先登录ChatGPT取Session或Access Token；不能解决首次网页登录手机号验证。"
+    },
+    {
+      "url": "https://www.payprm.com/faq/purchase/order-process",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "plus_cdk_codex_sms_separate_delivery",
+      "fact": "Plus卡密订单需在订单页或邮箱领取CDK/自助入口，缺货时等待补发；Codex短信是独立卡密+接码网址服务，与Codex额度和ChatGPT会员是不同SKU；并无本次号码租期/接码失败退现承诺。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "本轮新发现是实际读取十月旧版商家条款补齐保修与转售边界，不是2026-11-11政策变更或新调价。",
+    "售后政策可证明商家承诺范围，不能证明有效性、法律效力、真实客户处理和收到退款。",
+    "禁止个人订阅批量分发/转售，不等于证明存在合法供货授权，也不能推断所有独立CDK的合法B2B销售都被全面禁止。",
+    "中国增值税发票、具体支付通道费、真实企业主体和批发价、实际退款与手机号成功测试仍为null或未实测。"
+  ]
+}

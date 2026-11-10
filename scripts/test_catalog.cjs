@@ -1095,3 +1095,19 @@ assert.equal(r127.new_evidence.bank_receipt_is_china_vat_invoice,false);
 assert.equal(r127.phone_verification.codex_credit_is_sms,false);
 assert.equal(r127.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r127.qualification_totals.verified_phone_sms_successes,0);
+
+
+// R128: previously unindexed October terms are new evidence, not a new price or policy change.
+const r128a=d.records.find(x=>x.id==='gpt-source-followup-r128-20261111');
+const r128b=d.records.find(x=>x.id==='gpt-source-followup-r128-20261111-evidence');
+assert(r128a&&r128b&&r128a.url.endsWith('supplier-followup-20261111.html'));
+const r128=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-evidence.json'),'utf8'));
+assert.equal(r128.round,128);assert.equal(r128.site_version,'1.9.136');assert.equal(r128.sources.length,7);
+assert.equal(r128.new_evidence.existing_account_sku_public_retail_cny_per_account_month,155);
+assert.equal(r128.new_evidence.one_unit_wholesale_price_cny,null);
+assert.equal(r128.new_evidence.valid_china_vat_invoice_verified,false);
+assert.equal(r128.new_evidence.warranty_compensation_requires_matching_official_refund_email,true);
+assert.equal(r128.new_evidence.merchant_guarantees_successful_sms_or_openai_verification,false);
+assert.equal(r128.phone_verification.accurate_codex_sms_current_price_cny,null);
+assert.equal(r128.historical_comparison.newly_read_old_dated_terms_are_new_policy_changes,false);
+assert.equal(r128.qualification_totals.verified_plus_wholesale_upstreams,0);
