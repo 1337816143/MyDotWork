@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 273, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 275, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.120'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r7.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r7-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r6.html'
+    assert latest['version'] == '1.121'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r8.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r8-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r7.html'
+    # R121: catalogue and manifest refer to the new bounded merchant retail observation.
+    assert by_id['gpt-source-followup-r121-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r8.html'
+    assert by_id['gpt-source-followup-r121-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r8-evidence.json'
+    r121 = json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-r8-evidence.json').read_bytes())
+    assert r121['round']==121 and r121['site_version']=='1.9.129' and len(r121['sources'])==8
+    assert r121['new_evidence']['uppluspro']['advertised_retail_cny_per_account_month']==143
+    assert r121['new_evidence']['uppluspro']['advertised_component_sum_cny']==153
+    assert r121['new_evidence']['uppluspro']['actual_paid_all_in_with_valid_china_vat_cny'] is None
+    assert r121['new_evidence']['gptstore']['advertised_vip_agent_usd_per_card']==16
+    assert r121['new_evidence']['gptstore']['public_price_spread_usd']==0
+    assert r121['new_evidence']['gptstore']['actual_paid_all_in_with_valid_china_vat_cny'] is None
+    assert r121['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert r121['qualification_totals']['verified_phone_sms_successes']==0
     assert by_id['gpt-source-followup-r120-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r7.html'
     assert by_id['gpt-source-followup-r120-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r7-evidence.json'
     r120 = json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-r7-evidence.json').read_bytes())
