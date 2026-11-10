@@ -1010,6 +1010,19 @@ assert.equal(r121.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r121.qualification_totals.verified_phone_sms_successes,0);
 
 // R122: vendor public warranty label, not verified underlying order guarantee.
+const r123c=d.records.find(x=>x.id==='gpt-source-followup-r123-20261110');
+const r123d=d.records.find(x=>x.id==='gpt-source-followup-r123-20261110-evidence');
+assert(r123c&&r123d&&r123c.url.endsWith('supplier-followup-20261110-r10.html'));
+const r123=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r10-evidence.json'),'utf8'));
+assert.equal(r123.round,123);assert.equal(r123.site_version,'1.9.131');assert.equal(r123.sources.length,7);
+assert.equal(r123.new_evidence.advertised_retail_cny_per_free_existing_account_month,139.99);
+assert.equal(r123.new_evidence.merchant_claim_china_vat_e_invoice_fee_cny,10);
+assert.equal(r123.new_evidence.storefront_says_guest_order_can_invoice_after_signin_with_original_order_email,true);
+assert.equal(r123.new_evidence.invoice_guide_says_guest_order_has_no_invoice_entry,true);
+assert.equal(r123.new_evidence.actual_guest_invoice_success_verified,null);
+assert.equal(r123.new_evidence.actual_paid_all_in_with_valid_china_vat_cny,null);
+assert.equal(r123.phone_verification.chatgpt_web_success_verified,false);
+assert.equal(r123.qualification_totals.verified_plus_wholesale_upstreams,0);
 const r122c=d.records.find(x=>x.id==='gpt-source-followup-r122-20261110');
 const r122d=d.records.find(x=>x.id==='gpt-source-followup-r122-20261110-evidence');
 assert(r122c&&r122d&&r122c.url.endsWith('supplier-followup-20261110-r9.html'));

@@ -1,0 +1,136 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 123,
+  "site_version": "1.9.131",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "wind89商家同站同一观察日关于游客下单后能否补开中国电子普通发票的相反网页声明；不等于新政策生效或真实游客发票成功。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "historical_comparison": {
+    "round": 86,
+    "observed_on": "2026-11-07",
+    "source": "research/2026-11-07/supplier-followup-20261107-r10-evidence.json",
+    "earlier_guide_claim": "第86轮已经记录开票指南称游客订单没有发票入口、要先登录后买。",
+    "new_policy_effective_date_verified": null
+  },
+  "new_evidence": {
+    "merchant": "互联互通AI / wind89",
+    "domain": "wind89.com",
+    "sku": "ChatGPT Plus sku=27",
+    "quantity": 1,
+    "months": 1,
+    "advertised_retail_cny_per_free_existing_account_month": 139.99,
+    "merchant_claim_china_vat_e_invoice_fee_cny": 10,
+    "advertised_components_sum_cny": 149.99,
+    "storefront_says_guest_order_can_invoice_after_signin_with_original_order_email": true,
+    "invoice_guide_says_guest_order_has_no_invoice_entry": true,
+    "buy_guide_and_exact_sku_require_signin_before_purchase_for_invoice": true,
+    "actual_guest_invoice_success_verified": null,
+    "invoice_portal_redirects_to_member_login": true,
+    "actual_paid_all_in_with_valid_china_vat_cny": null,
+    "payment_processing_fee_cny": null,
+    "real_china_vat_invoice_verified": false,
+    "verified_invoice_issuer": null,
+    "verified_operator_entity": null,
+    "verified_payee_entity": null,
+    "formal_resale_authorization_verified": null,
+    "one_item_wholesale_price_cny": null,
+    "verified_no_agent_upfront_fee": null,
+    "requires_prior_chatgpt_web_login": true,
+    "requires_chatgpt_session_to_redeem": true,
+    "active_plus_early_renewal_supported": false,
+    "real_paid_or_renewed_order_verified": false,
+    "qualifies_as_verified_plus_wholesale": false
+  },
+  "phone_verification": {
+    "new_verified_sms_sku": false,
+    "historical_phone_prices_not_refreshed": true,
+    "merchant_says_phone_verification_cost_excluded_from_plus_warranty": true,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "verified_number_holding_days": null,
+    "failed_sms_cash_refund_verified": null,
+    "plus_purchase_auto_binds_openai_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://wind89.com/",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "storefront_guest_invoice_claim",
+      "fact": "首页同时说先登录买可开票、游客可之后用下单邮箱登录补票；商称而非真正出票。"
+    },
+    {
+      "url": "https://wind89.com/plans",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "storefront_guest_invoice_claim",
+      "fact": "购买中心重复游客同邮箱登录可开票承诺。"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "invoice_guide_prelogin_required",
+      "fact": "只给登录会员；游客订单没有开票入口、要票须先登录再买；Plus电子普通发票另¥10，漏勾可从会员我的订单补费。"
+    },
+    {
+      "url": "https://wind89.com/guide/buy",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "purchase_guide_prelogin_required",
+      "fact": "购买教程要求开票先登录商家会员并勾选发票选项。"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "exact_sku_and_invoice_option",
+      "fact": "SKU27本人Free账号Plus单月¥139.99、票费¥10，准确商品页要求开票者登录后购买；未选票默认显示Pay¥139.99。"
+    },
+    {
+      "url": "https://wind89.com/me/invoices",
+      "observed_on": "2026-11-10",
+      "read_status": "redirect_to_login_no_invoice_order_read",
+      "page_self_updated_on": null,
+      "evidence_class": "invoice_portal_login_redirect",
+      "fact": "未登录访问跳至微信扫码商家会员登录界面，未验证游客旧单能否关联到新会员。"
+    },
+    {
+      "url": "https://wind89.com/guide/trouble",
+      "observed_on": "2026-11-10",
+      "read_status": "readable_http_200",
+      "page_self_updated_on": null,
+      "evidence_class": "phone_verification_not_in_plus_warranty",
+      "fact": "故障页称登录手机号码验证费不在Plus质保内，未展示新准确号码价格与真实成功/退款。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "商家首页与官方开票指南正面冲突，无法由未登录只读页面证明历史游客订单能事后补开票，故不能用其保证满足采购含中国有效VAT需求。",
+    "旧第86轮的先登录限制不是今天新政策；SKU27 ¥139.99与+¥10均旧价复核，没有已核含票实付或批发价格。",
+    "未知费用/身份一律null；商称、网页内容、实际验真/交易严格区分。"
+  ]
+}

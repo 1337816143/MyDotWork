@@ -131,13 +131,23 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 277, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 279, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.122'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r9.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r9-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r8.html'
+    assert latest['version'] == '1.123'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r9.html'
+    # R123: Same-day first-party invoice eligibility contradiction, not verified real invoice.
+    assert by_id['gpt-source-followup-r123-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r10.html'
+    assert by_id['gpt-source-followup-r123-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r10-evidence.json'
+    r123 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r10-evidence.json').read_bytes())
+    assert r123['round'] == 123 and r123['site_version'] == '1.9.131' and len(r123['sources']) == 7
+    assert r123['new_evidence']['storefront_says_guest_order_can_invoice_after_signin_with_original_order_email'] is True
+    assert r123['new_evidence']['invoice_guide_says_guest_order_has_no_invoice_entry'] is True
+    assert r123['new_evidence']['actual_guest_invoice_success_verified'] is None
+    assert r123['new_evidence']['actual_paid_all_in_with_valid_china_vat_cny'] is None
+    assert r123['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     # R122: catalogue/manifest refer to latest bounded warranty-label observation; R121 assertions retained.
     assert by_id['gpt-source-followup-r122-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r9.html'
     assert by_id['gpt-source-followup-r122-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r9-evidence.json'
