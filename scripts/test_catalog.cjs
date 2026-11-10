@@ -1046,3 +1046,22 @@ assert.equal(r124.new_evidence.coupon.max_coupon_count_at_completed_higher_tier,
 assert.equal(r124.phone_verification.verified_number_control_days,null);
 assert.equal(r124.qualifIcation_totals,undefined);
 assert.equal(r124.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R125: English marketing display convergence does not prove paid checkout repricing.
+const r125a=d.records.find(x=>x.id==='gpt-source-followup-r125-20261110');
+const r125b=d.records.find(x=>x.id==='gpt-source-followup-r125-20261110-evidence');
+assert(r125a&&r125b&&r125a.url.endsWith('supplier-followup-20261110-r12.html'));
+const r125=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r12-evidence.json'),'utf8'));
+assert.equal(r125.round,125);assert.equal(r125.site_version,'1.9.133');assert.equal(r125.sources.length,4);
+assert.equal(r125.historical_comparison.previous_english_product_display_usd,3.49);
+assert.equal(r125.new_evidence.english_product_display_usd_per_number,4.99);
+assert.equal(r125.new_evidence.chinese_product_display_usd_per_number,4.99);
+assert.equal(r125.new_evidence.english_promo_display_difference_vs_r118_usd,1.5);
+assert.equal(r125.new_evidence.unpaid_checkout_total_usd,5.24);
+assert.equal(r125.new_evidence.unpaid_checkout_base_and_total_changed_vs_r118,false);
+assert.equal(r125.new_evidence.realized_price_increase_proven,false);
+assert.equal(r125.new_evidence.actual_paid_total_usd,null);
+assert.equal(r125.new_evidence.first_api_key_success_verified,false);
+assert.equal(r125.new_evidence.qualifies_as_verified_plus_wholesale,false);
+assert.equal(r125.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r125.qualification_totals.verified_phone_sms_successes,0);
