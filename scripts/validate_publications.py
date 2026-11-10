@@ -131,13 +131,22 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 279, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 281, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.123'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r9.html'
+    assert latest['version'] == '1.124'
+    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r10.html'
+    # R124: vendor coupon only after completion and never a verified SMS success.
+    assert by_id['gpt-source-followup-r124-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r11.html'
+    assert by_id['gpt-source-followup-r124-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r11-evidence.json'
+    r124 = json.loads((ROOT / 'dist/research/2026-11-10/supplier-followup-20261110-r11-evidence.json').read_bytes())
+    assert r124['round'] == 124 and r124['site_version'] == '1.9.132' and len(r124['sources']) == 5
+    assert r124['new_evidence']['plus_current_retail_cny_per_account_month'] is None
+    assert r124['new_evidence']['coupon']['max_coupon_count_at_completed_higher_tier'] == 3
+    assert r124['phone_verification']['codex_desktop_success_verified'] is False
+    assert r124['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     # R123: Same-day first-party invoice eligibility contradiction, not verified real invoice.
     assert by_id['gpt-source-followup-r123-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r10.html'
     assert by_id['gpt-source-followup-r123-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r10-evidence.json'
