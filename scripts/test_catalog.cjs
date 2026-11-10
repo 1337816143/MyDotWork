@@ -952,3 +952,21 @@ assert.equal(r118.new_evidence.price_change_effective_date_verified,null);
 assert.equal(r118.new_evidence.qualifies_as_plus_wholesale,false);
 assert.equal(r118.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r118.qualification_totals.verified_phone_sms_successes,0);
+
+// R119: quote category and SKU warranty boundary; never make generic SMS an OpenAI confirmed code.
+const r119c=d.records.find(x=>x.id==='gpt-source-followup-r119-20261110');
+const r119d=d.records.find(x=>x.id==='gpt-source-followup-r119-20261110-evidence');
+assert(r119c&&r119d&&r119c.url.endsWith('supplier-followup-20261110-r6.html'));
+const r119=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r6-evidence.json'),'utf8'));
+assert.equal(r119.round,119);assert.equal(r119.site_version,'1.9.127');assert.equal(r119.sources.length,8);
+assert.equal(r119.new_evidence.reference_gptplus_previous_usdt,15.8);
+assert.equal(r119.new_evidence.reference_gptplus_current_usdt,16.2);
+assert.equal(r119.new_evidence.reference_display_difference_usdt,0.4);
+assert.equal(r119.new_evidence.authenticated_wholesale_quote_usdt,null);
+assert.equal(r119.new_evidence.gptplus_google_merchant_claim_non_warranty,true);
+assert.equal(r119.new_evidence.gptplus_google_actual_drop_risk_verified,false);
+assert.equal(r119.new_evidence.generic_sms.openai_specific_price_usdt,null);
+assert.equal(r119.new_evidence.plus_actual_all_in_with_china_vat_cny,null);
+assert.equal(r119.new_evidence.qualifies_as_verified_plus_wholesale,false);
+assert.equal(r119.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r119.qualification_totals.verified_phone_sms_successes,0);
