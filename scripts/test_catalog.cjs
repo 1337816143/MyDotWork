@@ -1137,3 +1137,17 @@ assert.equal(r130.new_evidence.plus6.independent_codex_sms_price_cny,null);
 assert.equal(r130.new_evidence.gptdcvip.public_retail_cny_per_account_month,139);
 assert.equal(r130.new_evidence.gptdcvip.merchant_requires_existing_logged_in_session_json,true);
 assert.equal(r130.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R131: advertised China VAT charge excludes Plus base ¥168 from ≤¥170; SMS is one-time without second receipt.
+const r131a=d.records.find(x=>x.id==='gpt-source-followup-r131-20261111');
+const r131b=d.records.find(x=>x.id==='gpt-source-followup-r131-20261111-evidence');
+assert(r131a&&r131b&&r131a.url.endsWith('supplier-followup-20261111-r4.html'));
+const r131=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r4-evidence.json'),'utf8'));
+assert.equal(r131.round,131);assert.equal(r131.site_version,'1.9.139');assert.equal(r131.sources.length,8);
+assert.equal(r131.new_evidence.gptpro5x.public_retail_base_price_cny_per_account_month,168);
+assert.equal(r131.new_evidence.gptpro5x.base_plus_invoice_arithmetic_cny,178.08);
+assert.equal(r131.new_evidence.gptpro5x.actual_paid_with_valid_china_vat_total_cny,null);
+assert.equal(r131.new_evidence.codex_sms.public_price_per_one_time_verification_cny,10);
+assert.equal(r131.new_evidence.codex_sms.merchant_claims_second_sms_supported,false);
+assert.equal(r131.new_evidence.codex_sms.number_control_days_verified,null);
+assert.equal(r131.qualification_totals.verified_plus_wholesale_upstreams,0);

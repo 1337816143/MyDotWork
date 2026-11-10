@@ -3224,6 +3224,28 @@
       "summary": "七个2026-11-11实际可读商家页面，2026-10-15旧政策日另记；发卡收银台超时另列，批发、税票、三类SMS成功实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r131-20261111",
+      "title": "GPT源头第131轮 · GPTPro Plus含票超线与一次性Codex短信",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r4.html",
+      "updatedAt": "2026-11-11",
+      "summary": "GPTPro Plus ¥168/月+商称中国VAT普票6%算术¥178.08超过¥170；Codex美区SMS ¥10仅首次，二次不能再收码；批发/授权/出票主体与真实履约未验。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r131-20261111-evidence",
+      "title": "第131轮 · GPTPro八条原URL、含票算术与一次性短信适用边界",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r4-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "2026-11-11直接实读；旧条款页面自标2026-04-28。含VAT真实实付null，真实OpenAI短信验证0，旧报价未刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
