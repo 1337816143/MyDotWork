@@ -3180,6 +3180,28 @@
       "summary": "7条2026-11-11实际读取页面及2026-10-02自标政策日；零售¥155不当批发，支付/税票/授权null，实付/短信成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r129-20261111",
+      "title": "GPT源头第129轮 · GetPlus企业起订、地域与票据边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r2.html",
+      "updatedAt": "2026-11-11",
+      "summary": "GetPlus本人原号单月美元零售/发票附费；企业至少5单，商家旧条款禁止大陆境内下单，上游合作履约且无验真VAT或批发资格。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r129-20261111-evidence",
+      "title": "第129轮 · GetPlus 五条原始URL与企业/地域/发票核查",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r2-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "直接读取日期2026-11-11，店家旧条款更新时间另列；未知费用null、0实付/验票/SMS。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

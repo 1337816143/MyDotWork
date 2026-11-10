@@ -1,0 +1,141 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 129,
+  "site_version": "1.9.137",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "GetPlus AI 本人原号单件Plus、企业最低起订、地域资格、实际法律/收款/税票主体和第三方上游的首次直接核读。商称、推断、实测分开，失败/未核费用留null。",
+  "new_evidence": {
+    "merchant": "GetPlus AI",
+    "accurate_sku": "本人已有Free账号 ChatGPT Plus 1个月充值",
+    "retail_single_usd_per_month": 22.14,
+    "approximate_reference_cny": 148,
+    "invoice_option_addon_usd": 2.1,
+    "retail_plus_invoice_arithmetic_usd": 24.24,
+    "arithmetic_is_paid_total": false,
+    "actual_paid_total_usd": null,
+    "actual_fx_fee_cny": null,
+    "actual_payment_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "actual_paid_with_valid_china_vat_total_cny": null,
+    "invoice_after_no_invoice_order_allowed": false,
+    "claims_stripe_usd_checkout": true,
+    "claims_plus_max_service_fee_usd": 4.24,
+    "claims_plus_max_order_usd": 24.24,
+    "enterprise_minimum_quantity": 5,
+    "verified_single_unit_wholesale_price": null,
+    "verified_no_upfront_agent_fee": null,
+    "merchant_terms_disallow_orders_physically_within_mainland_china": true,
+    "merchant_hk_operator_claim": "HONG KONG AIGC LIMITED（香港大模型有限公司）",
+    "registered_legal_entity_verified": null,
+    "payment_recipient_verified": null,
+    "china_vat_invoice_issuer_verified": null,
+    "claims_china_vat_regular_special_invoice": true,
+    "claims_special_invoice_rates": [
+      "1%",
+      "6%"
+    ],
+    "valid_china_vat_invoice_verified": false,
+    "official_openai_authorization_claim": false,
+    "formal_resale_authorization_verified": false,
+    "third_party_upstream_activation_disclosed": true,
+    "actual_upstream_identity_verified": null,
+    "requires_free_status_before_plus": true,
+    "allows_active_plus_pro_renewal": false,
+    "plus_session_mandatory_verified": null,
+    "pro20x_session_required_merchant_claim": true,
+    "pro20x_session_storage_years_merchant_claim": 3,
+    "plus_session_storage_years": null,
+    "temporary_other_credentials_max_hours_merchant_claim": 72,
+    "claims_30_days_warranty": true,
+    "claims_failed_topup_original_method_refund": true,
+    "real_paid_order_verified": false,
+    "real_refund_verified": false,
+    "qualified": false
+  },
+  "phone_verification": {
+    "wechat_phone_for_order_contact_not_openai_binding": true,
+    "ordinary_plus_auto_binds_openai_phone": false,
+    "accurate_independent_sms_sku": null,
+    "accurate_sms_price": null,
+    "number_lifetime_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "credits_are_not_sms": true
+  },
+  "historical_comparison": {
+    "seller_terms_self_updated_on": "2026-10-11",
+    "seller_privacy_self_updated_on": "2026-10-12",
+    "first_observed_on": "2026-11-11",
+    "proven_new_price_change": false,
+    "proven_policy_change_today": false
+  },
+  "sources": [
+    {
+      "url": "https://www.getplus.ai/chatgpt-plus-chongzhi",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "exact_plus_sku",
+      "fact": "本人旧Free账号Plus 1个月约US$22.14；人民币约¥148为参考；企业发票预选另收US$2.10，不预选事后不可补开。30天保障卖家自述；在期Plus/Pro不可叠加，未付款。"
+    },
+    {
+      "url": "https://www.getplus.ai/qiye-caigou",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "enterprise_minimum",
+      "fact": "企业采购最低5份；阶梯折扣未公开、需联系商务；自称普通增值税票、专票税率1%或6%、对公合同，尚未核出票法人/有效中国VAT；公开否认OpenAI正式授权。"
+    },
+    {
+      "url": "https://www.getplus.ai/terms",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-11",
+      "evidence_class": "region_and_usd_stripe",
+      "fact": "旧条款明示不接收实际位于中国大陆用户下单；香港HONG KONG AIGC LIMITED为商称主体；非OpenAI授权。Plus服务费最多US$4.24及基础订单最高US$24.24，美元Stripe结算，银行与支付宝可能另计换汇费用；未交付或失败退款与30天质保属卖家声明。"
+    },
+    {
+      "url": "https://www.getplus.ai/privacy",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-12",
+      "evidence_class": "third_party_upstream_and_pro_session",
+      "fact": "合作上游经营激活网页并接收必要信息；Pro20x的Session商称随订单存3年，其他临时凭据最多72小时，不能据此推断Plus必交或存三年。"
+    },
+    {
+      "url": "https://www.getplus.ai/en",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "english_invoice_option",
+      "fact": "英文首页发票选项确认额外US$2.10和不可事后补票；页面Plus当前价格动态Loading，不当作实付。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "US$22.14+US$2.10=US$24.24仅算术而非实际含全费/中国有效VAT; 人民币约¥148仅参考。",
+    "10月11日商家旧政策不收实际位于中国大陆用户下单，首次核读不等于今天新增限制。",
+    "企业最低5单不能算单件批发；香港主体、中文VAT票和真实上游身份未获独立核验。",
+    "Pro20x 3年Session不能套用Plus；下单微信手机号不是OpenAI账号手机号绑定或解决Codex/API/网页验证。"
+  ]
+}

@@ -1111,3 +1111,16 @@ assert.equal(r128.new_evidence.merchant_guarantees_successful_sms_or_openai_veri
 assert.equal(r128.phone_verification.accurate_codex_sms_current_price_cny,null);
 assert.equal(r128.historical_comparison.newly_read_old_dated_terms_are_new_policy_changes,false);
 assert.equal(r128.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R129 GetPlus retail cannot count as an approved one-unit upstream.
+const r129a=d.records.find(x=>x.id==='gpt-source-followup-r129-20261111');
+const r129b=d.records.find(x=>x.id==='gpt-source-followup-r129-20261111-evidence');
+assert(r129a&&r129b&&r129a.url.endsWith('supplier-followup-20261111-r2.html'));
+const r129=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r2-evidence.json'),'utf8'));
+assert.equal(r129.round,129);assert.equal(r129.site_version,'1.9.137');assert.equal(r129.sources.length,5);
+assert.equal(r129.new_evidence.enterprise_minimum_quantity,5);
+assert.equal(r129.new_evidence.merchant_terms_disallow_orders_physically_within_mainland_china,true);
+assert.equal(r129.new_evidence.retail_single_usd_per_month,22.14);
+assert.equal(r129.new_evidence.invoice_option_addon_usd,2.10);
+assert.equal(r129.new_evidence.actual_paid_with_valid_china_vat_total_cny,null);
+assert.equal(r129.qualification_totals.verified_plus_wholesale_upstreams,0);
