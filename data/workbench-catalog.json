@@ -3048,6 +3048,28 @@
       "summary": "11月10日实读目录/条款/帮助与WAF小铺URL，区别历史2026-11-07两旧SKU和当前新泛化标签；无实付/售后/VAT/授权实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r123-20261110",
+      "title": "GPT源头第123轮 · wind89游客补票承诺与开票指南先登录规则冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r10.html",
+      "updatedAt": "2026-11-10",
+      "summary": "wind89商城称游客可用下单邮箱登录补票，开票指南与Plus SKU27要求先登录再购买；¥139.99+¥10仅分项算术，实际有效中国VAT及单件批发未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r123-20261110-evidence",
+      "title": "第123轮 · wind89发票资格矛盾与SKU27七条原始URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-10/supplier-followup-20261110-r10-evidence.json",
+      "updatedAt": "2026-11-10",
+      "summary": "11月10日实际读取商城/目录/开票与购买指南/准确SKU/微信会员登录墙/手机号排障，区分商称相互冲突与真实税票实测，未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
