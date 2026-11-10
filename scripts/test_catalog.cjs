@@ -1008,3 +1008,15 @@ assert.equal(r121.new_evidence.gptstore.public_price_spread_usd,0);
 assert.equal(r121.new_evidence.gptstore.actual_paid_all_in_with_valid_china_vat_cny,null);
 assert.equal(r121.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r121.qualification_totals.verified_phone_sms_successes,0);
+
+// R122: vendor public warranty label, not verified underlying order guarantee.
+const r122c=d.records.find(x=>x.id==='gpt-source-followup-r122-20261110');
+const r122d=d.records.find(x=>x.id==='gpt-source-followup-r122-20261110-evidence');
+assert(r122c&&r122d&&r122c.url.endsWith('supplier-followup-20261110-r9.html'));
+const r122=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-10/supplier-followup-20261110-r9-evidence.json'),'utf8'));
+assert.equal(r122.round,122);assert.equal(r122.site_version,'1.9.130');assert.equal(r122.sources.length,4);
+assert.equal(r122.historical_comparison.old_skus[0].warranty_mark,false);
+assert.equal(r122.new_evidence.merchant_claim_warranty_days,30);
+assert.equal(r122.new_evidence.verified_mapping_of_old_two_skus_to_new_generic_sku,null);
+assert.equal(r122.new_evidence.actual_paid_all_in_with_china_vat_cny,null);
+assert.equal(r122.qualification_totals.verified_plus_wholesale_upstreams,0);

@@ -1,0 +1,115 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 122,
+  "site_version": "1.9.130",
+  "date": "2026-11-10",
+  "observed_on": "2026-11-10",
+  "scope": "ChongPay商家导购站公开Plus质保30天标签、条款与2026-11-07第78轮旧Plus商品的售后边界对照。新页面声明不是独立合同履约证据。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "historical_comparison": {
+    "round": 78,
+    "observed_on": "2026-11-07",
+    "source": "research/2026-11-07/supplier-followup-20261107-r2-evidence.json",
+    "old_skus": [
+      {
+        "sku": "ChatGPT Plus 充值（到期才能充）",
+        "displayed_price_cny_per_item": 139,
+        "warranty_mark": false
+      },
+      {
+        "sku": "ChatGPT Plus 充值（iOS礼品卡；会员没到期可充）",
+        "displayed_price_cny_per_item": 139,
+        "warranty_mark": false
+      }
+    ],
+    "old_terms_for_unmarked_items": "充上为止"
+  },
+  "new_evidence": {
+    "merchant": "ChongPay",
+    "sales_site": "chongpay.com",
+    "current_generic_sku": "Plus（质保30天）",
+    "current_generic_sku_advertised_price_cny_per_item": 139,
+    "merchant_claim_warranty_days": 30,
+    "merchant_claim_all_five_gpt_skus_warranty": true,
+    "merchant_claim_requires_current_member_expired": true,
+    "plans_page_self_updated_on": "2026-11-09",
+    "terms_revision_label": "2026-11 修订版",
+    "verified_change_effective_date": null,
+    "verified_mapping_of_old_two_skus_to_new_generic_sku": null,
+    "actual_warranty_on_underlying_shop_order_verified": false,
+    "actual_dropout_compensation_verified": false,
+    "upstream_shop": "https://wzyp.cn/shop/FDDQ3HVD",
+    "underlying_shop_direct_read": "WAF_challenge_no_readable_sku",
+    "real_single_unit_wholesale_price_cny": null,
+    "payment_channel_fee_cny": null,
+    "china_valid_vat_invoice_fee_cny": null,
+    "verified_invoice_issuer": null,
+    "verified_payee_entity": null,
+    "verified_operator_entity": null,
+    "verified_lawful_resale_agreement": null,
+    "actual_paid_all_in_with_china_vat_cny": null,
+    "verified_no_upfront_agent_fee": null,
+    "qualifies_as_verified_plus_wholesale": false
+  },
+  "phone_verification": {
+    "merchant_claim_codex_sms_cny_per_25day_number": 20,
+    "number_days_merchant_claim": 25,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "failed_sms_cash_refund_verified": null,
+    "number_continued_control_verified": null,
+    "plus_automatically_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": "2026-11-09",
+      "evidence_class": "merchant_catalog",
+      "fact": "当前导购页标单个泛化Plus（质保30天）¥139，现有订阅需到期；Codex短信验证25天¥20。旧两款原号SKU映射不明。"
+    },
+    {
+      "url": "https://chongpay.com/terms",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_terms_claim",
+      "fact": "当前条款以2026-11修订版标签列五个GPT商品均标质保30天（包括Plus ¥139），具体质保与退款由wzyp.cn商品及订单合同决定，修订精确生效日期未知。"
+    },
+    {
+      "url": "https://chongpay.com/help",
+      "observed_on": "2026-11-10",
+      "read_status": "readable",
+      "page_self_updated_on": null,
+      "evidence_class": "merchant_help_payment_invoice",
+      "fact": "订单核验与售后以小铺为准，PDF Invoice非中国增值税发票，无法证明含票全费。"
+    },
+    {
+      "url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "observed_on": "2026-11-10",
+      "read_status": "WAF_challenge_no_product_text",
+      "page_self_updated_on": null,
+      "evidence_class": "failed_access_underlying_shop",
+      "fact": "页面仅呈现WAF挑战/Request ID，无可读准确商品或订单条款；不据此判断商家停服或已履约。"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false
+}
