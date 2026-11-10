@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 295, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 297, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.131'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r4.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r4-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r3.html'
+    assert latest['version'] == '1.132'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r5.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r5-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r4.html'
+    # R132 first-party ad: invoice-option arithmetic is not VAT proof; ¥3000 mandatory agency fee excludes wholesaler qualification.
+    assert by_id['gpt-source-followup-r132-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r5.html'
+    assert by_id['gpt-source-followup-r132-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r5-evidence.json'
+    r132 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r5-evidence.json').read_bytes())
+    assert r132['round'] == 132 and r132['site_version'] == '1.9.140' and len(r132['sources']) == 9
+    assert r132['new_evidence']['aiplusgate']['apple_invoice_option_advertised_total_cny'] == 168
+    assert r132['new_evidence']['aiplusgate']['actual_paid_with_valid_china_vat_total_cny'] is None
+    assert r132['new_evidence']['chatgqt_plus']['agency_restock_precondition_fee_cny'] == 3000
+    assert r132['new_evidence']['chatgqt_plus']['agency_restock_fee_separate_from_goods_balance'] is True
+    assert r132['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r132['qualification_totals']['verified_phone_sms_successes'] == 0
+
     # R131: GPTPro is retail and exceeds all-fees ceiling on seller's advertised invoice option; SMS is one-time, not 30 days.
     assert by_id['gpt-source-followup-r131-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r4.html'
     assert by_id['gpt-source-followup-r131-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r4-evidence.json'

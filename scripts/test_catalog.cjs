@@ -1151,3 +1151,15 @@ assert.equal(r131.new_evidence.codex_sms.public_price_per_one_time_verification_
 assert.equal(r131.new_evidence.codex_sms.merchant_claims_second_sms_supported,false);
 assert.equal(r131.new_evidence.codex_sms.number_control_days_verified,null);
 assert.equal(r131.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R132: invoice-option advertisement is not a valid China VAT invoice; agency fee cannot be ignored.
+const r132a=d.records.find(x=>x.id==='gpt-source-followup-r132-20261111');
+const r132b=d.records.find(x=>x.id==='gpt-source-followup-r132-20261111-evidence');
+assert(r132a&&r132b&&r132a.url.endsWith('supplier-followup-20261111-r5.html'));
+const r132=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r5-evidence.json'),'utf8'));
+assert.equal(r132.round,132);assert.equal(r132.site_version,'1.9.140');assert.equal(r132.sources.length,9);
+assert.equal(r132.new_evidence.aiplusgate.apple_invoice_option_advertised_total_cny,168);
+assert.equal(r132.new_evidence.aiplusgate.actual_paid_with_valid_china_vat_total_cny,null);
+assert.equal(r132.new_evidence.chatgqt_plus.agency_restock_precondition_fee_cny,3000);
+assert.equal(r132.new_evidence.chatgqt_plus.agency_restock_fee_separate_from_goods_balance,true);
+assert.equal(r132.qualification_totals.verified_plus_wholesale_upstreams,0);
