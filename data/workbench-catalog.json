@@ -3158,6 +3158,28 @@
       "summary": "核实卖家自指直供站、两挂牌价、Session限制、税票缺口、Codex额度与SMS区分；未知费用为null，0实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r128-20261111",
+      "title": "GPT源头第128轮 · PAYPRM售后政策、转售与接码边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111.html",
+      "updatedAt": "2026-11-11",
+      "summary": "补读PAYPRM十月旧条款：Plus掉订补差升级要求官方退款证据；手机号验证不在订阅售后，Codex短信仅承诺卡密/网址可用；个人订阅限制转售，非新调价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r128-20261111-evidence",
+      "title": "第128轮 · PAYPRM旧条款与售后范围7条商家原URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "7条2026-11-11实际读取页面及2026-10-02自标政策日；零售¥155不当批发，支付/税票/授权null，实付/短信成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

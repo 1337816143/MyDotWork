@@ -131,13 +131,25 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 287, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 289, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.127'
-    assert latest['path'] == 'research/2026-11-10/supplier-followup-20261110-r14.html'
-    assert latest['dataPath'] == 'research/2026-11-10/supplier-followup-20261110-r14-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r13.html'
+    assert latest['version'] == '1.128'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-10/supplier-followup-20261110-r14.html'
+    # R128: old, newly read October merchant terms reveal conditional refunds and no SMS-result guarantee.
+    assert by_id['gpt-source-followup-r128-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111.html'
+    assert by_id['gpt-source-followup-r128-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-evidence.json'
+    r128 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-evidence.json').read_bytes())
+    assert r128['round'] == 128 and r128['site_version'] == '1.9.136' and len(r128['sources']) == 7
+    assert r128['new_evidence']['existing_account_sku_public_retail_cny_per_account_month'] == 155
+    assert r128['new_evidence']['warranty_compensation_requires_matching_official_refund_email'] is True
+    assert r128['new_evidence']['merchant_guarantees_successful_sms_or_openai_verification'] is False
+    assert r128['new_evidence']['actual_paid_all_required_fees_with_valid_china_vat_cny'] is None
+    assert r128['historical_comparison']['newly_read_old_dated_terms_are_new_policy_changes'] is False
+    assert r128['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r128['qualification_totals']['verified_phone_sms_successes'] == 0
     # R127: storefront listing difference is not a verified wholesale cost, tax invoice or phone bypass.
     assert by_id['gpt-source-followup-r127-20261110']['url'] == '../research/2026-11-10/supplier-followup-20261110-r14.html'
     assert by_id['gpt-source-followup-r127-20261110-evidence']['url'] == '../research/2026-11-10/supplier-followup-20261110-r14-evidence.json'
