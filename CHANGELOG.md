@@ -1,3 +1,9 @@
+## 1.9.154 · 2026-11-11
+
+- 第146轮首次实读OpenAI官方4条一方URL：首个API Key手机验证同一手机号最多跨3个OpenAI账号使用，删除账号不重置该API验证次数；符合条件的消费者删除账号后30天可再用于手机号注册，是另一个独立机制，不能推成API次数恢复。OpenAI目前不提供更改/更新ChatGPT或API账号已关联手机号的选项；手机号单独注册只向符合地区和账号资格且界面显示的用户开放，与首API Key验证区分。规则页面有旧相对更新时间，观察于11月11日，不宣称新实施日期，三账号限制不套用于所有Codex、MFA或ChatGPT网页挑战。
+- 复核ChongPay旧Plus¥139、Codex SMS ¥20/25天与GETGPT Pro Plus用户¥10/次、Pro商称免费均非本轮新价格；卖家自称98%属于服务反馈不代表独立测试。GetVIP及PAYPRM入口访问失败、wind89无可读正文，不能宣告停运或用11月11日刷新旧报价。CatFK、小久、Morimm、引路鲸、ChatShare等历史价格未复核结算；经营/收款/出票主体、真实批发价、支付附费、有效中国VAT票费和合法转售授权仍未知，数值null。满足全部条件Plus批发上游0、实付Plus0、税票验真0、SMS成功0。
+- 仅追加r146 HTML/JSON、SHA256发布白名单、目录、总库入口、VERSION和CHANGELOG；保留旧126条报价及前145轮原始报告，未购货、建单、联系商家或提交凭据。来源：https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation；https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account；https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account；https://help.openai.com/en/articles/10388702-phone-only-signups。
+
 ## 1.9.153 · 2026-11-11
 
 - 第145轮首次直接读取ChongPay 2026-11修订版服务条款，补录Plus办理资格：当前无在期订阅、未加入Team；过往订阅限制仍需按实际小铺核实。导购站明确不是OpenAI官方，所列13商品价目为展示快照，真实库存、结算和售后均以链动小铺订单为准；30天质保不自动证明可退款/原号可提前续充。原Plus ¥139仅旧价复核，未确认今天新增限制或价格变化。

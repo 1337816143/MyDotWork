@@ -1,0 +1,173 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 146,
+  "site_version": "1.9.154",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接核读OpenAI官方首次API Key手机号复用上限、删除账号不恢复验证配额、已关联手机号不可改，以及手机单独注册与API验证是两种机制。2026-11-11为观察日，非规则生效日；商家旧报价只复核不刷新。",
+  "new_evidence": {
+    "official_first_api_key_phone_reuse": {
+      "primary_url": "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+      "corroboration_url": "https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account",
+      "observed_on": "2026-11-11",
+      "maximum_distinct_accounts_for_initial_api_key_phone_verification": 3,
+      "quota_scope": "同一真实手机号为不同OpenAI账号的首个API Key生成进行手机验证的累计次数",
+      "applies_to_all_codex_phone_challenges": false,
+      "applies_to_chatgpt_web_signups": false,
+      "limit_reset_by_chatgpt_account_deletion": false,
+      "exceptions_to_limit_offered": false,
+      "number_can_be_reused_for_eligible_new_consumer_signup_after_deletion_days": 30,
+      "signup_reuse_must_not_be_interpreted_as_api_verification_quota_reset": true,
+      "number_history_for_any_merchant_sms_sku_verified": false,
+      "sms_success_not_verified": true,
+      "evidence_class": "official_platform_rule_not_actual_sms_test"
+    },
+    "official_phone_change": {
+      "primary_url": "https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account",
+      "observed_on": "2026-11-11",
+      "existing_associated_phone_update_supported": false,
+      "scope": "ChatGPT和OpenAI API",
+      "merchants_can_guarantee_new_phone_binding": false,
+      "evidence_class": "official_platform_account_rule"
+    },
+    "official_phone_only_signup_distinction": {
+      "primary_url": "https://help.openai.com/en/articles/10388702-phone-only-signups",
+      "observed_on": "2026-11-11",
+      "availability": "仅符合地区/账号资格且注册页面显示该功能的新用户；不是现有邮箱账号普遍开启的接码功能",
+      "phone_only_signup_separate_from_initial_api_key_verification": true,
+      "plus_pro_business_upgrade_requires_email_verification": true,
+      "changed_api_verification_quota": false,
+      "evidence_class": "official_platform_account_rule"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "page_relative_updated_label": "Updated: 23 days ago (observed view; not an effective date)",
+      "evidence_class": "first_read_official_phone_reuse",
+      "new_research_evidence": true,
+      "description": "同一手机号最多用于3个不同账号首个API Key生成时的手机验证；不提供例外。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "page_relative_updated_label": "Updated: 2 days ago (observed view; not an effective date)",
+      "evidence_class": "first_read_official_deletion_limit",
+      "new_research_evidence": true,
+      "description": "删除账号不恢复首API Key号码验证的累计三账号上限；合规删除后30天可有条件用于新消费账号注册是另一规则。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "page_relative_updated_label": "Updated: 23 days ago (observed view; not an effective date)",
+      "evidence_class": "first_read_official_phone_change",
+      "new_research_evidence": true,
+      "description": "OpenAI暂不提供ChatGPT/API账号已关联手机号的变更或更新选项。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/10388702-phone-only-signups",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "page_relative_updated_label": "Updated: 15 days ago (observed view; not an effective date)",
+      "evidence_class": "first_read_official_phone_only_scope",
+      "new_research_evidence": true,
+      "description": "手机号单独注册取决于资格与界面；与首API Key号码验证是不同检查机制，不能相互替代。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "evidence_class": "old_official_rule_recheck",
+      "new_research_evidence": false,
+      "description": "仍仅能确认ChatGPT普通使用一般无需手机、Codex桌面可能需要、首API Key必须验证、VoIP不支持；不是这次新政策。"
+    },
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-11",
+      "status": "merchant_page_readable",
+      "page_price_self_label": "2026-11-09",
+      "evidence_class": "old_merchant_price_recheck_no_new_price",
+      "new_research_evidence": false,
+      "description": "Plus¥139/件、Codex独立短信¥20/25天与Pro挂牌旧记录相同，订单小铺售后/结算未验；不刷新旧价格。"
+    },
+    {
+      "url": "https://getgpt.pro/blog/codex-phone-verification",
+      "observed_on": "2026-11-11",
+      "status": "merchant_page_readable",
+      "page_self_update": "2026-10-24",
+      "evidence_class": "old_merchant_sms_offer_recheck",
+      "new_research_evidence": false,
+      "description": "Plus用户独立接码10元/次、Pro商称免费；98%是卖家自报经验并非验证成功率或官方保证，非本轮调价。"
+    }
+  ],
+  "access_failures_not_price_observations": [
+    {
+      "url": "https://getvip.pro/guides/codex-phone-verification",
+      "observed_on": "2026-11-11",
+      "status": "read_failed",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://www.payprm.com/shop/codex-verification",
+      "observed_on": "2026-11-11",
+      "status": "read_failed",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-11",
+      "status": "no_readable_body",
+      "prior_price_unchanged": true
+    }
+  ],
+  "old_candidate_rechecks": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "exact_merchant_sms_sku_prices_refreshed": 0,
+  "new_merchant_wholesale_qualification_evidence": 0,
+  "unknown_merchant_costs": {
+    "payment_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "all_in_plus_cny": null,
+    "actual_bulk_purchase_price_cny": null
+  },
+  "boundaries": {
+    "three_account_limit_is_for_initial_api_key_only": true,
+    "no_guarantee_same_limit_applies_to_all_codex_checks": true,
+    "phone_only_signup_separate": true,
+    "apple_subscription_may_coexist_with_session_delivery": true,
+    "ordinary_plus_subscription_does_not_auto_bind_phone": true,
+    "merchant_claim_not_actual_success": true,
+    "original_126_price_records_unchanged": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r18.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

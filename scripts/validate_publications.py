@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 323, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 325, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.145'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r18.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r18-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r17.html'
+    assert latest['version'] == '1.146'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r19.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r19-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r18.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1586,6 +1586,19 @@ def validate_publications():
     assert r145['new_evidence']['chongpay_account_eligibility']['payment_fee_cny'] is None
     assert r145['new_evidence']['official_subscription_receipt_provenance']['apple_google_store_purchase_invoice_appears_in_chatgpt_web_billing'] is False
     assert r145['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    # R146: API-only three-account phone verification cap is not a general Codex or phone-only signup limit.
+    assert by_id['gpt-source-followup-r146-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r19.html'
+    assert by_id['gpt-source-followup-r146-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r19-evidence.json'
+    r146 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-r19-evidence.json').read_bytes())
+    assert r146['round'] == 146 and r146['site_version'] == '1.9.154'
+    assert r146['new_evidence']['official_first_api_key_phone_reuse']['maximum_distinct_accounts_for_initial_api_key_phone_verification'] == 3
+    assert r146['new_evidence']['official_first_api_key_phone_reuse']['limit_reset_by_chatgpt_account_deletion'] is False
+    assert r146['new_evidence']['official_first_api_key_phone_reuse']['applies_to_all_codex_phone_challenges'] is False
+    assert r146['new_evidence']['official_phone_change']['existing_associated_phone_update_supported'] is False
+    assert r146['new_evidence']['official_phone_only_signup_distinction']['phone_only_signup_separate_from_initial_api_key_verification'] is True
+    assert all(value is None for value in r146['unknown_merchant_costs'].values())
+    assert all(value == 0 for value in r146['qualification_totals'].values())
+    assert all(fail['prior_price_unchanged'] for fail in r146['access_failures_not_price_observations'])
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
