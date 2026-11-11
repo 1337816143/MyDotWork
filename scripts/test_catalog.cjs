@@ -1378,3 +1378,14 @@ assert.equal(r149.new_evidence.linkai_retail_plus_offer.all_in_plus_with_valid_c
 assert.equal(r149.new_evidence.linkai_merchant_contract_and_refund.terms_page_says_draft,true);
 assert.equal(r149.new_evidence.linkai_supply_chain_and_api.formal_wholesale_or_openai_resale_authorization_verified,false);
 assert.equal(r149.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R150: same-SKU V3 comparison and unverified payment/VAT/resale boundaries.
+const r150a=d.records.find(x=>x.id==='gpt-source-followup-r150-20261112'),r150b=d.records.find(x=>x.id==='gpt-source-followup-r150-20261112-evidence');
+assert(r150a&&r150b&&r150a.url.endsWith('supplier-followup-20261112-r3.html'));
+const r150=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r3-evidence.json'),'utf8'));
+assert.equal(r150.round,150);assert.equal(r150.site_version,'1.9.158');assert.equal(r150.sources.length,8);
+assert.deepEqual(r150.new_evidence.v3_product_listing_comparison.map(x=>[x.prior_listing_cny,x.current_listing_cny,x.observed_listing_difference_cny]),[[135,133.5,-1.5],[145,143.5,-1.5]]);
+assert.equal(r150.new_evidence.v3_payment_terms.wechat_displayed_percent_fee,3.5);
+assert.equal(r150.new_evidence.v3_payment_terms.actual_total_including_valid_china_vat_cny,null);
+assert.equal(r150.new_evidence.v3_resale_and_warranty.unauthorized_bulk_purchase_stockpiling_resale_restricted_by_merchant,true);
+assert.equal(r150.qualification_totals.verified_plus_wholesale_upstreams,0);
