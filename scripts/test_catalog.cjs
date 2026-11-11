@@ -1163,3 +1163,13 @@ assert.equal(r132.new_evidence.aiplusgate.actual_paid_with_valid_china_vat_total
 assert.equal(r132.new_evidence.chatgqt_plus.agency_restock_precondition_fee_cny,3000);
 assert.equal(r132.new_evidence.chatgqt_plus.agency_restock_fee_separate_from_goods_balance,true);
 assert.equal(r132.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+const r133a=d.records.find(x=>x.id==='gpt-source-followup-r133-20261111');
+const r133b=d.records.find(x=>x.id==='gpt-source-followup-r133-20261111-evidence');
+assert(r133a&&r133b&&r133a.url.endsWith('supplier-followup-20261111-r6.html'));
+const r133=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r6-evidence.json'),'utf8'));
+assert.equal(r133.round,133);assert.equal(r133.site_version,'1.9.141');assert.equal(r133.sources.length,8);
+assert.equal(r133.new_evidence.chatgptchongzhi.unpaid_checkout_preview_payable_cny,139);
+assert.equal(r133.new_evidence.chatgptchongzhi.actual_paid_with_valid_china_vat_total_cny,null);
+assert.equal(r133.new_evidence.chatgptchongzhi.merchant_receives_access_token_claim,true);
+assert.equal(r133.qualification_totals.verified_plus_wholesale_upstreams,0);
