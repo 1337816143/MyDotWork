@@ -1283,3 +1283,20 @@ assert.equal(r140.new_evidence.official_card_and_device_limits.merchant_specific
 assert.equal(r140.supply_reassessment.all_required_fees_with_valid_china_vat_total_cny,null);
 assert.equal(r140.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r140.qualification_totals.verified_phone_sms_successes,0);
+
+
+// R141: official mobile app-store account binding does not establish a seller failure or SMS bypass.
+const r141a=d.records.find(x=>x.id==='gpt-source-followup-r141-20261111');
+const r141b=d.records.find(x=>x.id==='gpt-source-followup-r141-20261111-evidence');
+assert(r141a&&r141b&&r141a.url.endsWith('supplier-followup-20261111-r14.html'));
+const r141=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r14-evidence.json'),'utf8'));
+assert.equal(r141.round,141);assert.equal(r141.site_version,'1.9.149');assert.equal(r141.sources.length,1);
+assert.equal(r141.new_evidence.official_mobile_subscription_binding.mobile_purchase_linked_to_store_account_and_chatgpt_account,true);
+assert.equal(r141.new_evidence.official_mobile_subscription_binding.restore_purchases_transfers_to_another_chatgpt_account,false);
+assert.equal(r141.new_evidence.official_mobile_subscription_binding.apple_account_previously_used_may_block_other_chatgpt_account_purchase_even_after_expiry,true);
+assert.equal(r141.new_evidence.official_mobile_subscription_binding.google_play_account_previously_used_may_block_other_chatgpt_account_purchase_even_after_expiry,true);
+assert.equal(r141.new_evidence.official_mobile_subscription_binding.apple_purchase_auto_binds_phone_number,false);
+assert.equal(r141.new_evidence.official_mobile_subscription_binding.any_named_merchant_verified_to_have_hit_this_block,false);
+assert.equal(r141.supply_reassessment.all_required_fees_with_valid_china_vat_total_cny,null);
+assert.equal(r141.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r141.qualification_totals.verified_phone_sms_successes,0);

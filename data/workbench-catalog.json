@@ -3444,6 +3444,28 @@
       "summary": "1条本轮直接读取OpenAI官方URL；区分官方规则、代付履约推断、实测0和费用/税票/授权null，不更改既有126报价。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r141-20261111",
+      "title": "GPT源头第141轮 · Apple/Google移动订阅双重绑定与跨账号代充风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r14.html",
+      "updatedAt": "2026-11-11",
+      "summary": "OpenAI官方：移动商店付款账号与原ChatGPT账号同时关联，恢复不转移；同商店号跨ChatGPT账号内购即使取消或到期也可能被阻止。无特定商家实测，VAT/授权缺证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r141-20261111-evidence",
+      "title": "第141轮 · Apple和Google商店账号归属、恢复及网页版替代证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r14-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "11月11日首次实读1条OpenAI官方原始URL；区分移动内购绑定、跨号受阻风险、网页替代和SMS边界。没有真实批发、含中国VAT发票或验证测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
