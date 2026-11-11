@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 325, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 327, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.146'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r19.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r19-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r18.html'
+    assert latest['version'] == '1.147'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r20.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r20-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r19.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1599,6 +1599,19 @@ def validate_publications():
     assert all(value is None for value in r146['unknown_merchant_costs'].values())
     assert all(value == 0 for value in r146['qualification_totals'].values())
     assert all(fail['prior_price_unchanged'] for fail in r146['access_failures_not_price_observations'])
+    # R147: Pro API grant is subject to claim/ownership, not a Codex API Key or seller-verified grant.
+    assert by_id['gpt-source-followup-r147-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r20.html'
+    assert by_id['gpt-source-followup-r147-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r20-evidence.json'
+    r147 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-r20-evidence.json').read_bytes())
+    assert r147['round'] == 147 and r147['site_version'] == '1.9.155'
+    assert len(r147['sources']) == 2
+    benefit = r147['new_evidence']['official_chatgpt_subscription_api_credit_benefit']
+    assert benefit['required_paid_active_days_before_claim'] == 7
+    assert benefit['codex_via_api_key_covered'] is False
+    assert benefit['chatgpt_plus_ineligible'] is True
+    assert benefit['grant_automatically_issued_on_purchase'] is False
+    assert r147['new_evidence']['getgpt_pro_current_catalog_claim']['all_required_fees_cny'] is None
+    assert all(v == 0 for v in r147['qualification_totals'].values())
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

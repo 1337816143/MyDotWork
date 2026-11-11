@@ -1,0 +1,144 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 147,
+  "site_version": "1.9.155",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接核查OpenAI的合资格Pro/Business订阅API赠额条件及GETGPT Pro同站Pro商品宣传；区别Pro订阅API赠额、ChatGPT和Codex额度，以及实际API账户发放。首次实读旧有网页规则，不宣称本日刚推出或商家实测履约。既有Plus旧价不刷新。",
+  "new_evidence": {
+    "official_chatgpt_subscription_api_credit_benefit": {
+      "primary_url": "https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions",
+      "observed_on": "2026-11-11",
+      "page_relative_updated_label": "Updated: 13 days ago (viewed 2026-11-11; not policy effective date)",
+      "evidence_class": "official_platform_terms_first_read_not_a_grant_test",
+      "eligible_pro_tiers_full_month_usd": {
+        "Pro 100": 100,
+        "Pro 200": 200,
+        "Pro 500": 500
+      },
+      "eligible_business_standard_seat_full_month_usd": 20,
+      "eligible_business_premium_seat_full_month_usd": 100,
+      "business_workspace_monthly_cap_usd": 500,
+      "chatgpt_plus_ineligible": true,
+      "trial_ineligible": true,
+      "required_paid_active_days_before_claim": 7,
+      "explicit_claim_required": true,
+      "grant_automatically_issued_on_purchase": false,
+      "chatgpt_and_api_account_email_must_match": true,
+      "pro_subscription_owner_and_receiving_api_organization_owner_must_match": true,
+      "one_subscription_to_one_api_org": true,
+      "one_api_org_to_one_subscription": true,
+      "regional_or_enabled_cohort_availability_applies": true,
+      "first_grant_prorated_to_remaining_billing_period": true,
+      "monthly_grant_rolls_over": false,
+      "grant_expires_at_end_of_billing_cycle": true,
+      "api_platform_usage_eligible": true,
+      "codex_via_api_key_covered": false,
+      "chatgpt_signed_in_codex_allowance_increased": false,
+      "chatgpt_billing_separate_from_api_billing": true,
+      "seller_or_account_actual_grant_issuance_verified": false
+    },
+    "getgpt_pro_current_catalog_claim": {
+      "primary_url": "https://getgpt.io/price",
+      "observed_on": "2026-11-11",
+      "evidence_class": "merchant_public_catalog_not_paid_checkout_or_delivery",
+      "accurate_skus": [
+        {
+          "sku": "ChatGPT Plus 充值",
+          "listed_price_cny_per_account_month": 179,
+          "has_advertised_api_credit_benefit": false
+        },
+        {
+          "sku": "ChatGPT Pro 100（5x）",
+          "listed_price_cny_per_account_month": 879,
+          "claimed_full_month_api_credit_usd_up_to": 100
+        },
+        {
+          "sku": "ChatGPT Pro 200（20x）",
+          "listed_price_cny_per_account_month": 1569,
+          "claimed_full_month_api_credit_usd_up_to": 200
+        }
+      ],
+      "claim_is_conditional_in_merchant_page": true,
+      "claim_not_proof_of_entitlement_or_issuance": true,
+      "merchant_says_delivered_by_logged_in_session": true,
+      "site_footer_claimed_operator": "NEXCLOUD TECHNOLOGY LIMITED",
+      "site_footer_claimed_address": "Flat A133, Room 01, 15/F, Block A, Wah Sang Industrial Building, 14-18 Wong Chuk Yeung Street, Fo Tan, Hong Kong",
+      "operator_registry_verified": false,
+      "actual_collecting_entity_verified": false,
+      "valid_china_vat_invoice_issuer_verified": false,
+      "formal_upstream_resale_authorization_verified": false,
+      "actual_purchase_or_payment_verified": false,
+      "wholesale_purchase_price_cny": null,
+      "all_required_fees_cny": null,
+      "plus_all_including_valid_vat_cny": null,
+      "price_change_since_previous_observation_proven": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "evidence_class": "official_rules_first_read",
+      "new_research_evidence": true,
+      "description": "Pro100/200/500及付费Business特定API赠额：必须已付7天、本人申领、同邮箱且组织所有者、支持区域、按余期折算、不结转、Codex API Key不适用。非会员Plus和非自动发放。"
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-11",
+      "status": "merchant_page_readable",
+      "evidence_class": "merchant_claim_and_public_price_recheck",
+      "new_research_evidence": true,
+      "description": "GETGPT Pro公开Pro100 ¥879/月、Pro200 ¥1569/月、Plus ¥179/月；Pro声称符合条件可有API赠额。非本日调价证据、非实际全费付款、非收到API赠额或正规授权。"
+    }
+  ],
+  "old_candidate_rechecks": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "access_failures_not_price_observations": [],
+  "unknown_merchant_costs": {
+    "payment_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "all_in_plus_cny": null,
+    "actual_single_unit_wholesale_price_cny": null
+  },
+  "boundaries": {
+    "eligible_pro_api_grant_is_not_automatic": true,
+    "pro_subscription_does_not_guarantee_api_credit_for_every_customer": true,
+    "grant_does_not_apply_to_codex_api_key_usage": true,
+    "grant_does_not_increase_signed_in_codex_usage": true,
+    "plus_api_grant_not_eligible": true,
+    "apple_purchase_may_coexist_with_session_delivery": true,
+    "ordinary_subscription_does_not_auto_bind_phone": true,
+    "third_party_seller_claim_not_an_independent_test": true,
+    "original_126_price_records_unchanged": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0,
+    "verified_api_credit_grants_from_third_party_recharges": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r19.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
