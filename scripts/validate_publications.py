@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 337, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 339, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.152'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r5.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r5-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r4.html'
+    assert latest['version'] == '1.153'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r6.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r6-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r5.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1657,6 +1657,21 @@ def validate_publications():
     assert all(value is None for value in r152['unknown_costs'].values())
     assert all(value == 0 for value in r152['qualification_totals'].values())
     assert r152['purchase_or_login_attempted'] is False and r152['merchant_contacted'] is False
+    # R153: direct seller Codex card price comparison and unaudited session-dependent redemption.
+    assert by_id['gpt-source-followup-r153-20261112']['url'] == '../research/2026-11-12/supplier-followup-20261112-r6.html'
+    assert by_id['gpt-source-followup-r153-20261112-evidence']['url'] == '../research/2026-11-12/supplier-followup-20261112-r6-evidence.json'
+    r153 = json.loads((ROOT/'dist/research/2026-11-12/supplier-followup-20261112-r6-evidence.json').read_bytes())
+    assert r153['round'] == 153 and r153['site_version'] == '1.9.161'
+    assert len(r153['sources']) == 4
+    assert r153['new_evidence']['morimm_codex_once']['historical_price_cny'] == 3
+    assert r153['new_evidence']['morimm_codex_once']['current_price_cny'] == 4
+    assert r153['new_evidence']['morimm_codex_once']['actual_payment_total_cny'] is None
+    assert r153['new_evidence']['morimm_codex_once']['codex_sms_success_tested'] is False
+    assert r153['new_evidence']['morimm_plus_recheck']['price_cny'] == 114
+    assert r153['new_evidence']['redeem_portal']['session_json_or_access_token_requested'] is True
+    assert r153['new_evidence']['redeem_portal']['first_web_login_sms_can_be_bypassed'] is False
+    assert all(v is None for v in r153['unknown_costs'].values())
+    assert all(v == 0 for v in r153['qualification_totals'].values())
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
