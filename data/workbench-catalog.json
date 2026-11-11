@@ -3488,6 +3488,28 @@
       "summary": "11月11日直接读取2条OpenAI官方原始URL，明确Pro 200可新订；保留生效日、商家合法转售、全部费用与中国VAT等未核字段null，SMS实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r143-20261111",
+      "title": "GPT源头第143轮 · Apple续费失败后恢复扣款与重复付费风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r16.html",
+      "updatedAt": "2026-11-11",
+      "summary": "官方：Apple续费失败不自动取消，之后补扣恢复加跨平台再购可造成重复收费，独立购买不自动退款。无商家实测与新批发资格。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r143-20261111-evidence",
+      "title": "第143轮 · Apple付款恢复及短信验证边界的官方原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r16-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "2026-11-11直接阅读2条官方URL；Apple失败续费恢复新补证、SMS旧规则复核，未知费用null，无采购与验证测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

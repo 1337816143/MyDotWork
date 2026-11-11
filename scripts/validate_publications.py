@@ -131,13 +131,24 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 317, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 319, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.142'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r15.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r15-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r14.html'
+    assert latest['version'] == '1.143'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r16.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r16-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r15.html'
+
+    # R143: Apple recovery may cause double charge, not merchant payment test.
+    assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
+    assert by_id['gpt-source-followup-r143-20261111-evidence']['url'].endswith('supplier-followup-20261111-r16-evidence.json')
+    r143 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-r16-evidence.json').read_bytes())
+    assert r143['round'] == 143 and r143['site_version'] == '1.9.151' and len(r143['sources']) == 2
+    assert r143['new_evidence']['official_apple_payment_recovery']['apple_failed_renewal_automatically_cancels_subscription'] is False
+    assert r143['new_evidence']['official_apple_payment_recovery']['parallel_web_or_google_subscription_may_duplicate_charges'] is True
+    assert r143['new_evidence']['official_apple_payment_recovery']['separately_purchased_subscriptions_automatically_entitled_to_refund'] is False
+    assert r143['supply_reassessment']['all_required_plus_fees_with_valid_china_vat_total_cny'] is None
+    assert r143['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
 
     # R142: official currently available Pro tiers, not a verified reseller fulfilment.
     assert by_id['gpt-source-followup-r142-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r15.html'
