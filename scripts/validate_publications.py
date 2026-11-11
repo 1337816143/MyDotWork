@@ -134,10 +134,10 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 321, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.143'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r16.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r16-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r15.html'
+    assert latest['version'] == '1.144'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r17.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r17-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r16.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
