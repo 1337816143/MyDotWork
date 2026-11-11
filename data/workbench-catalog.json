@@ -3400,6 +3400,28 @@
       "summary": "2026-11-11复读7条自有URL（5条旧政策首次补证、2条历史重读）；第85轮既有价不当新降价，明确禁止卡密转售、上游履约链及有效中国VAT/授权缺口。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r139-20261111",
+      "title": "GPT源头第139轮 · 5SIM OpenAI短信到达率和虚拟号风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r12.html",
+      "updatedAt": "2026-11-11",
+      "summary": "初读5SIM OpenAI/ChatGPT临时短信号码：分类起US$0.050/号，商称最佳短信到达率仅46%，有效期5–30分钟、无短信退站内余额；OpenAI官方不接受VoIP，真实成功0，非Plus批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r139-20261111-evidence",
+      "title": "第139轮 · 5SIM/官方4条原URL、国家运营商精确价及失败退款",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r12-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "4条2026-11-11可读原始URL；US$0.4327等按国别运营商短信SKU及商称到达率，退款站内余额/不可复用；无中国VAT/Plus批发和真实短信成功。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
