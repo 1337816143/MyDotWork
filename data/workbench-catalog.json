@@ -3598,6 +3598,28 @@
       "summary": "2026-11-11官方及商家页2条原始URL；Pro100 ¥879、Pro200 ¥1569为商家挂牌非成交，全费/有效中国VAT/批发授权null，API赠额实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r148-20261112",
+      "title": "GPT源头第148轮 · 小久历史0元充值排除与移动订阅续费等待",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112.html",
+      "updatedAt": "2026-11-12",
+      "summary": "卖家菲区卡充¥110旧价：0刀充值历史、Apple/Google到期等待与Team排除；CatFK收款跳转非批发授权证明。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r148-20261112-evidence",
+      "title": "第148轮 · 小久实际原页与7条付款/兑换路径访问记录",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "1条可读商家正文及7条无法取得真实结算的链接；支付费、有效中国VAT与上游授权null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

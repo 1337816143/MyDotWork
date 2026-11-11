@@ -1357,3 +1357,12 @@ assert.equal(r147.new_evidence.getgpt_pro_current_catalog_claim.formal_upstream_
 assert.equal(r147.new_evidence.getgpt_pro_current_catalog_claim.all_required_fees_cny,null);
 assert.equal(r147.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r147.qualification_totals.verified_api_credit_grants_from_third_party_recharges,0);
+
+// R148 merchant conditions are unverified and CATFK links do not prove a wholesale supply contract.
+const r148a=d.records.find(x=>x.id==='gpt-source-followup-r148-20261112'),r148b=d.records.find(x=>x.id==='gpt-source-followup-r148-20261112-evidence');
+assert(r148a&&r148b&&r148a.url.endsWith('supplier-followup-20261112.html'));
+const r148=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-evidence.json'),'utf8'));
+assert.equal(r148.round,148);assert.equal(r148.site_version,'1.9.156');assert.equal(r148.sources.length,8);
+assert.equal(r148.new_evidence.xiaojiu_account_prerequisites.no_prior_zero_amount_recharge_required,true);
+assert.equal(r148.new_evidence.xiaojiu_account_prerequisites.all_in_plus_with_china_vat_cny,null);
+assert.equal(r148.qualification_totals.verified_plus_wholesale_upstreams,0);
