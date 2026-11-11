@@ -1173,3 +1173,17 @@ assert.equal(r133.new_evidence.chatgptchongzhi.unpaid_checkout_preview_payable_c
 assert.equal(r133.new_evidence.chatgptchongzhi.actual_paid_with_valid_china_vat_total_cny,null);
 assert.equal(r133.new_evidence.chatgptchongzhi.merchant_receives_access_token_claim,true);
 assert.equal(r133.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R134: distinguish ¥5 one-time Codex wallet credit from a successful SMS or cash refund; preserve BuyGPT displayed price conflict.
+const r134a=d.records.find(x=>x.id==='gpt-source-followup-r134-20261111');
+const r134b=d.records.find(x=>x.id==='gpt-source-followup-r134-20261111-evidence');
+assert(r134a&&r134b&&r134a.url.endsWith('supplier-followup-20261111-r7.html'));
+const r134=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r7-evidence.json'),'utf8'));
+assert.equal(r134.round,134);assert.equal(r134.site_version,'1.9.142');assert.equal(r134.sources.length,11);
+assert.equal(r134.new_evidence.ershuiai_codex_sms.public_price_cny_per_one_time_code,5);
+assert.equal(r134.new_evidence.ershuiai_codex_sms.post_delivery_wallet_credit_days_claim,3);
+assert.equal(r134.new_evidence.ershuiai_codex_sms.original_payment_cash_refund_verified,null);
+assert.equal(r134.new_evidence.buygpt_plus.catalog_page_display_cny_per_account_month,149);
+assert.equal(r134.new_evidence.buygpt_plus.product_page_promotion_display_cny_per_account_month,139);
+assert.equal(r134.new_evidence.buygpt_plus.actual_paid_price_cny,null);
+assert.equal(r134.qualification_totals.verified_plus_wholesale_upstreams,0);

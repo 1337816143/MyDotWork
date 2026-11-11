@@ -131,13 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 299, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 301, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.133'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r5.html'
+    assert latest['version'] == '1.134'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r6.html'
+    # R134: wallet credit is not cash refund, and same-day directory/detail are different public price displays.
+    assert by_id['gpt-source-followup-r134-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r7.html'
+    assert by_id['gpt-source-followup-r134-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r7-evidence.json'
+    r134 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r7-evidence.json').read_bytes())
+    assert r134['round'] == 134 and r134['site_version'] == '1.9.142' and len(r134['sources']) == 11
+    assert r134['new_evidence']['ershuiai_codex_sms']['public_price_cny_per_one_time_code'] == 5
+    assert r134['new_evidence']['ershuiai_codex_sms']['post_delivery_wallet_credit_days_claim'] == 3
+    assert r134['new_evidence']['ershuiai_codex_sms']['original_payment_cash_refund_verified'] is None
+    assert r134['new_evidence']['buygpt_plus']['catalog_page_display_cny_per_account_month'] == 149
+    assert r134['new_evidence']['buygpt_plus']['product_page_promotion_display_cny_per_account_month'] == 139
+    assert r134['new_evidence']['buygpt_plus']['actual_paid_price_cny'] is None
+    assert r134['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r134['qualification_totals']['verified_phone_sms_successes'] == 0
+
     # R133: unpaid promo is not VAT wholesale; upstream tokens and backup retention unverified.
     assert by_id['gpt-source-followup-r133-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r6.html'
     assert by_id['gpt-source-followup-r133-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r6-evidence.json'
