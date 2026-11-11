@@ -1,3 +1,9 @@
+## 1.9.161 · 2026-11-12
+
+- 第153轮再次直接核读Morimm准确独立Codex一次性接码SKU https://morimm.com/products/Codex_num ，公开挂牌¥4／次（Members only、Low stock）；与2026-11-06第75轮同SKU实读¥3／次形成+¥1两次观察快照差额。没有证明确切变价日期、真实订单、支付附加费、会员准入成本或可用库存量；“美国实卡”“自动发CDK”只是商家承诺，VoIP/真实号码类型、接码通过、持号期限、网页/首API Key用途、失败原路现金退款均未核实。Codex单次短信不属于Plus采购价格。
+- 同轮核读Morimm菲律宾Plus原SKU https://morimm.com/products/gptplus 仍¥114／份，与先前观察一致，不宣称本轮Plus调价。首次补录商家所列兑换网址 https://deem2.xyz/ ，本轮实读该站HTTP 200：展示ChatGPT菲区/iOS选择、卡密→Token→确认流程，要求输入完整ChatGPT Session JSON或Access Token，提供 https://chatgpt.com/api/auth/session 提取入口，必须先能成功登录，不能解除首次网页登录手机号验证。兑换网站可访问不意味着已核运营主体、上游授权或真正支付履约；卡密使用后不退换为卖家声明，未作实际售后测试。
+- 仅增第153轮HTML、JSON（3条当日直读来源及11月6日保留的旧证据索引）、精确SHA256发布白名单、工作台目录、总库最新入口、VERSION、构建发布指针与回归断言；126条历史价格和前152轮原报告原字节保留。已核本人原号单件单月免代理前置费Plus全部支付及有效中国VAT≤¥170批发上游0，真实Plus购买0、中国有效VAT票验真0、手机短信验证成功0；未知费用继续null。未下单、付款、联系商家或输入账号密钥。
+
 ## 1.9.160 · 2026-11-12
 
 - 第152轮首次直接读取CatFK独立XiaoAI商品https://catfk.com/item/q8ukke 的完整一方HTML，准确q8ukke「GPT Plus一个月卡密」零售挂牌¥168／份；商品HTML两个价格节点可读，但未下单、未实付、未验证本人原号续费、付款附费、中国有效VAT开票及上游授权；全费仍null，理论¥170上限仅剩¥2未知费用空间，不计入合格批发名单。

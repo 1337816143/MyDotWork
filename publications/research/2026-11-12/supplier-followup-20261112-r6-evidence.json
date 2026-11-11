@@ -1,0 +1,153 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 153,
+  "site_version": "1.9.161",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "Morimm Codex_num 独立一次性短信CDK 同一SKU旧新挂牌，及Morimm菲区Plus卡密兑换入口deem2.xyz的登录敏感凭据前提。",
+  "new_evidence": {
+    "morimm_codex_once": {
+      "merchant": "Morimm",
+      "source_url": "https://morimm.com/products/Codex_num",
+      "sku": "Codex_num",
+      "displayed_title": "【codex 接码 】美国实卡包来码 一次用cdk",
+      "unit": "CNY/单次Codex CDK",
+      "historical_price_cny": 3,
+      "historical_observed_on": "2026-11-06",
+      "current_price_cny": 4,
+      "current_observed_on": "2026-11-12",
+      "observed_listing_difference_cny": 1,
+      "price_change_effective_date_verified": false,
+      "current_stock_label": "Low stock",
+      "stock_count_verified": null,
+      "members_only": true,
+      "merchant_claims_us_physical_sim": true,
+      "physical_sim_independently_verified": false,
+      "merchant_claims_auto_cdk_delivery": true,
+      "actual_payment_total_cny": null,
+      "member_entry_fee_cny": null,
+      "number_validity_days": null,
+      "number_reuse_verified": null,
+      "chatgpt_web_sms_success_tested": false,
+      "codex_sms_success_tested": false,
+      "first_api_key_sms_success_tested": false,
+      "failed_sms_cash_refund_verified": null
+    },
+    "morimm_plus_recheck": {
+      "source_url": "https://morimm.com/products/gptplus",
+      "price_cny": 114,
+      "prior_price_cny": 114,
+      "unit": "CNY/1菲区Plus卡密；准确单月权益与真实交付未核验",
+      "members_only": true,
+      "merchant_requires_free_account": true,
+      "merchant_says_cannot_override_existing_plus": true,
+      "merchant_asks_team_members_return_to_personal_before_token": true,
+      "merchant_says_used_card_not_returnable": true,
+      "merchant_listed_redeem_url": "https://deem2.xyz/",
+      "actual_paid_cny": null,
+      "payment_fee_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "verified_all_in_cny": null,
+      "wholesale_cost_cny": null,
+      "legal_collection_entity": null,
+      "invoice_issuer": null,
+      "formal_resale_authorization_verified": false
+    },
+    "redeem_portal": {
+      "source_url": "https://deem2.xyz/",
+      "observed_http_status": 200,
+      "observed_on": "2026-11-12",
+      "displayed_categories": [
+        "ChatGPT iOS",
+        "ChatGPT 菲区",
+        "Claude",
+        "Grok"
+      ],
+      "displayed_steps": [
+        "卡密",
+        "Token",
+        "确认",
+        "完成"
+      ],
+      "session_link": "https://chatgpt.com/api/auth/session",
+      "session_json_or_access_token_requested": true,
+      "requires_successful_chatgpt_login_first": true,
+      "first_web_login_sms_can_be_bypassed": false,
+      "sensitive_credentials_submitted": false,
+      "card_redeemed": false,
+      "portal_legal_operator_verified": false,
+      "morimm_same_legal_entity_verified": false,
+      "legitimate_wholesale_authorization_verified": false
+    },
+    "phone_scope": {
+      "chatgpt_web_successes": 0,
+      "codex_successes": 0,
+      "first_api_key_successes": 0,
+      "failed_sms_original_method_refunds": 0,
+      "phone_control_days_verified": null,
+      "apple_purchase_automatically_binds_phone": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "first_party_live_scrape_maxAge_0",
+      "class": "merchant_display",
+      "note": "¥4/次Codex一次性CDK，Members only，Low stock，商称美国实卡/自动发CDK；旧11/06 ¥3/次仅存档。"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "first_party_live_scrape_maxAge_0",
+      "class": "merchant_display",
+      "note": "¥114/份不变，Free个人号、Team切换、不可覆盖旧Plus、已用卡密不可退换，公示兑换站deem2.xyz。"
+    },
+    {
+      "url": "https://deem2.xyz/",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "first_party_live_scrape_maxAge_0",
+      "class": "redemption_ui_observed",
+      "note": "页面可读卡密→Session/Token→确认流程，向用户要求ChatGPT Session JSON / Access Token，运营及供货授权未知。"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-06/supplier-followup-20261106-r20-evidence.json",
+      "observed_on": "2026-11-06",
+      "http_status": null,
+      "method": "retained_historical_repo_evidence_read_current_run",
+      "class": "historical_price_comparison",
+      "note": "第75轮Morimm相同Codex_num SKU ¥3/次；保留旧观察日期，未对旧数据重标价。"
+    }
+  ],
+  "unknown_costs": {
+    "wholesale_unit_cost_cny": null,
+    "plus_payment_surcharge_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "actual_plus_all_in_cny": null,
+    "actual_sms_checkout_cny": null,
+    "member_entry_fee_cny": null,
+    "legal_receiving_entity": null,
+    "invoice_issuer": null,
+    "formal_resale_authorization": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r5.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
