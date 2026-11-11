@@ -1,0 +1,112 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 143,
+  "site_version": "1.9.151",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "新增OpenAI官方Apple续费失败后可能恢复补扣、跨平台重复订阅及退款边界；手机号规则仅复核旧内容；没有真实商家交易。",
+  "new_evidence": {
+    "official_apple_payment_recovery": {
+      "source_type": "openai_official_help",
+      "source_url": "https://help.openai.com/en/articles/20001043-how-do-i-avoid-being-charged-twice-if-i-subscribe-to-chatgpt-on-ios-android-and-the-web",
+      "relative_updated_label": "Updated: 16 hours ago",
+      "actual_policy_effective_date_verified": null,
+      "apple_failed_renewal_automatically_cancels_subscription": false,
+      "apple_subscription_may_appear_inactive_before_recovery": true,
+      "apple_can_recover_subscription_after_payment_method_update": true,
+      "parallel_web_or_google_subscription_may_duplicate_charges": true,
+      "official_switching_advice_cancel_apple_first_and_wait_until_period_end": true,
+      "separately_purchased_subscriptions_automatically_entitled_to_refund": false,
+      "apple_refunds_through_apple": true,
+      "named_merchant_failed_payment_or_refund_test_verified": false
+    },
+    "official_sms_scope_recheck": {
+      "source_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "policy_change_verified_this_round": false,
+      "chatgpt_generally_requires_phone": false,
+      "codex_desktop_may_require_mobile": true,
+      "first_api_key_requires_mobile": true,
+      "voip_supported": false,
+      "whatsapp_countries": [
+        "AE",
+        "EG",
+        "ID",
+        "IL",
+        "IN",
+        "MY",
+        "NG",
+        "PK",
+        "SA",
+        "TR",
+        "UA",
+        "VN"
+      ],
+      "uk_is_on_whatsapp_list": false,
+      "ordinary_apple_topup_auto_binds_phone": false,
+      "chatgpt_web_codex_api_sms_successes": 0
+    }
+  },
+  "supply_reassessment": {
+    "old_supplier_channels": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay",
+      "AIBulk"
+    ],
+    "any_old_vendor_sku_or_price_reobserved_this_round": false,
+    "new_plus_wholesale_unit_price_cny": null,
+    "actual_checkout_total_cny": null,
+    "additional_payment_fee_cny": null,
+    "china_valid_vat_invoice_fee_cny": null,
+    "all_required_plus_fees_with_valid_china_vat_total_cny": null,
+    "legal_operator_payment_and_invoice_issuer_verified": false,
+    "formal_resale_authorization_verified": false,
+    "real_apple_subscription_recovery_test_verified": false,
+    "failed_recovery_merchant_refund_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001043-how-do-i-avoid-being-charged-twice-if-i-subscribe-to-chatgpt-on-ios-android-and-the-web",
+      "observed_on": "2026-11-11",
+      "read_status": "official_help_page_readable",
+      "relative_page_updated_label": "Updated: 16 hours ago",
+      "evidence_class": "official_apple_payment_recovery_and_refunds",
+      "new_research_evidence": true,
+      "summary": "Apple付款失败不自动取消，ChatGPT看似inactive仍可能Apple追缴；另购网页/Google导致重复扣费；单独购买不自动退款，Apple渠道退款由Apple处理。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-11",
+      "read_status": "official_help_page_readable",
+      "relative_page_updated_label": "Updated: 14 days ago",
+      "evidence_class": "official_mobile_verification_old_rule_recheck",
+      "new_research_evidence": false,
+      "summary": "ChatGPT一般无需号码，Codex桌面可能要求，首个API Key需要；VoIP不支持；WhatsApp仅12国英国未在名单。"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r15.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
