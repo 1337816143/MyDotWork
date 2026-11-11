@@ -1269,3 +1269,17 @@ assert.equal(r139.new_evidence.independent_sms_5sim.sms_reverification_after_ord
 assert.equal(r139.official_openai_reference.voip_numbers_not_supported,true);
 assert.equal(r139.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r139.qualification_totals.verified_phone_sms_successes,0);
+
+// R140: card/device ceiling is official policy, NOT proof of a specific paid vendor failure.
+const r140a=d.records.find(x=>x.id==='gpt-source-followup-r140-20261111');
+const r140b=d.records.find(x=>x.id==='gpt-source-followup-r140-20261111-evidence');
+assert(r140a&&r140b&&r140a.url.endsWith('supplier-followup-20261111-r13.html'));
+const r140=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r13-evidence.json'),'utf8'));
+assert.equal(r140.round,140);assert.equal(r140.site_version,'1.9.148');assert.equal(r140.sources.length,1);
+assert.equal(r140.new_evidence.official_card_and_device_limits.too_many_subscriptions_same_card_or_device_may_block_checkout,true);
+assert.equal(r140.new_evidence.official_card_and_device_limits.device_limit_may_prevent_use_even_after_successful_purchase,true);
+assert.equal(r140.new_evidence.official_card_and_device_limits.per_card_or_device_numeric_threshold_published,null);
+assert.equal(r140.new_evidence.official_card_and_device_limits.merchant_specific_fulfillment_failure_verified,false);
+assert.equal(r140.supply_reassessment.all_required_fees_with_valid_china_vat_total_cny,null);
+assert.equal(r140.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r140.qualification_totals.verified_phone_sms_successes,0);

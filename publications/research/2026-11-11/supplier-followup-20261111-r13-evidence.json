@@ -1,0 +1,78 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 140,
+  "site_version": "1.9.148",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "2026-11-11首次实读OpenAI官方订阅付款卡与设备限制政策（页面相对更新时间11 days ago）；影响本人原号代充履约风险。不是今天新制定的规则、Plus SKU涨价或特定商家付款失败实测。",
+  "new_evidence": {
+    "official_card_and_device_limits": {
+      "source_type": "openai_official_help_center",
+      "source_url": "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt",
+      "page_relative_last_updated_label": "Updated: 11 days ago",
+      "policy_effective_date_verified": null,
+      "per_card_or_device_numeric_threshold_published": null,
+      "too_many_subscriptions_same_card_or_device_may_block_checkout": true,
+      "card_or_device_limit_is_bank_decline": false,
+      "device_limit_may_prevent_use_even_after_successful_purchase": true,
+      "device_limit_may_cause_later_signout": true,
+      "affected_paid_personal_plans": [
+        "ChatGPT Go",
+        "ChatGPT Plus",
+        "ChatGPT Pro 100",
+        "ChatGPT Pro 200",
+        "ChatGPT Pro 500"
+      ],
+      "free_and_business_enterprise_edu_workspace_count_toward_device_limit": false,
+      "account_signout_guarantees_new_eligibility": false,
+      "cancelling_subscription_guarantees_new_purchase": false,
+      "usage_reset_or_credits_clears_card_or_device_limit": false,
+      "apple_refund_handled_directly_by_apple": true,
+      "chatgpt_and_google_play_refund_flows_are_separate": true,
+      "showing_device_warning_means_refund_issued": false,
+      "merchant_specific_fulfillment_failure_verified": false,
+      "seller_resale_authorization_inferred_from_policy": false,
+      "independent_mobile_sms_or_codex_verification_tested": false
+    }
+  },
+  "supply_reassessment": {
+    "bulk_same_card_fulfillment_requires_independent_check": true,
+    "shared_device_paid_accounts_require_independent_check": true,
+    "merchant_specific_card_or_device_limit_observed": false,
+    "merchant_price_change_verified": false,
+    "merchant_stock_or_service_down_verified": false,
+    "verified_real_order_postpurchase_access": false,
+    "merchant_refund_to_buyer_cash_verified": false,
+    "verified_plus_wholesale_price_cny": null,
+    "all_required_fees_with_valid_china_vat_total_cny": null,
+    "valid_china_vat_invoice_issuer": null,
+    "formal_resale_authorization_verified": null
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt",
+      "read_status": "official_help_page_readable",
+      "evidence_class": "official_platform_policy",
+      "page_relative_last_updated_label": "Updated: 11 days ago",
+      "first_read_this_round": true,
+      "fact": "OpenAI官方确认同卡/同设备过多订阅可能阻止购买；购后设备上限也可导致已付费账号无法登录/后来登出，Go/Plus/Pro 100/200/500受限；退出登录或取消订阅不保证解除，Credits无效；设备限制退款ChatGPT或Google Play按其取消退款入口，Apple向Apple申请。没有公开固定数量上限、具体生效日期或某个代充商家失败样本。"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r12.html",
+  "purchase_or_signin_attempted": false
+}

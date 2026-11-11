@@ -131,13 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 311, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 313, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.139'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r12.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r12-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r11.html'
+    assert latest['version'] == '1.140'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r13.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r13-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r12.html'
+
+    # R140: New official card/device policy evidence, not actual seller failure or paid refund.
+    assert by_id['gpt-source-followup-r140-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r13.html'
+    assert by_id['gpt-source-followup-r140-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r13-evidence.json'
+    r140 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r13-evidence.json').read_bytes())
+    assert r140['round'] == 140 and r140['site_version'] == '1.9.148' and len(r140['sources']) == 1
+    d140 = r140['new_evidence']['official_card_and_device_limits']
+    assert d140['too_many_subscriptions_same_card_or_device_may_block_checkout'] is True
+    assert d140['device_limit_may_prevent_use_even_after_successful_purchase'] is True
+    assert d140['per_card_or_device_numeric_threshold_published'] is None
+    assert d140['merchant_specific_fulfillment_failure_verified'] is False
+    assert r140['supply_reassessment']['all_required_fees_with_valid_china_vat_total_cny'] is None
+    assert r140['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r140['qualification_totals']['verified_phone_sms_successes'] == 0
     # R137: a two-text 30-day SKU is not a lasting phone; same-page prices conflict and mainland sales are excluded.
     assert by_id['gpt-source-followup-r137-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10.html'
     assert by_id['gpt-source-followup-r137-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10-evidence.json'
