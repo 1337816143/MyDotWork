@@ -1506,6 +1506,15 @@ def validate_publications():
     assert r114['new_candidate']['all_required_fees_and_real_valid_china_vat_total_cny'] is None
     assert r114['new_candidate']['documented_lawful_resale_authorization'] is None
     assert r114['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert by_id['gpt-source-followup-r139-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r12.html'
+    assert by_id['gpt-source-followup-r139-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r12-evidence.json'
+    r139 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r12-evidence.json').read_bytes())
+    assert r139['round'] == 139 and r139['site_version'] == '1.9.147' and len(r139['sources']) == 4
+    assert r139['new_evidence']['independent_sms_5sim']['merchant_reported_best_sms_receipt_pct'] == 46
+    assert r139['new_evidence']['independent_sms_5sim']['merchant_claim_refund_is_cash_original_payment'] is False
+    assert r139['official_openai_reference']['voip_numbers_not_supported'] is True
+    assert r139['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r139['qualification_totals']['verified_phone_sms_successes'] == 0
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
