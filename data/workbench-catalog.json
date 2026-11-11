@@ -3356,6 +3356,28 @@
       "summary": "11条11月11日实读一方URL；旧规则自标10月，$17.99仅Lv1访客展示、链上费用和VAT null；实付及SMS成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r137-20261111",
+      "title": "GPT源头第137轮 · GoodShopit 30天2短信、Plus同页价差及境内资格限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r10.html",
+      "updatedAt": "2026-11-11",
+      "summary": "GoodShopit本人原号Plus同商品页¥119与规格表¥111冲突、30天接码¥6最多2条短信且先耗尽即结束，独立一次接码¥3；大陆用户不符合卖家公告，兑换页标本地演示；无合格批发与VAT/验证实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r137-20261111-evidence",
+      "title": "第137轮 · GoodShopit八条原URL、准确SMS SKU、地区/会话/演示边界",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r10-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "11月11日首次直接读取8条一方页面：Plus ¥119/¥111同页冲突；¥6限2 SMS至多30天，另¥3一次接码；收款、有效中国VAT、手续费、授权与实测为null或未验证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
