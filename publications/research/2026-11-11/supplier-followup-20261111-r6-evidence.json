@@ -1,0 +1,171 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 133,
+  "site_version": "1.9.141",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次核读八条商家一方原URL，区分首页¥169挂牌和同SKU单件未付款自动优惠¥30后¥139应付预览；补证令牌上游处理与备份、退款/税票及续订限制。不误称新调价或批发价。",
+  "new_evidence": {
+    "chatgptchongzhi": {
+      "merchant": "chatgptchongzhi.com",
+      "domain": "chatgptchongzhi.com",
+      "accurate_sku": "本人原号ChatGPT Plus卡密一件一月；仅免费个人账号",
+      "homepage_display_cny_per_account_month": 169,
+      "unpaid_checkout_quantity": 1,
+      "unpaid_checkout_price_before_promo_cny": 169,
+      "unpaid_checkout_promo_discount_cny": 30,
+      "unpaid_checkout_preview_payable_cny": 139,
+      "unpaid_checkout_payment_method": "Alipay",
+      "coupon_stackable_claim": false,
+      "promotion_start_verified": null,
+      "promotion_end_verified": null,
+      "actual_paid_plus_order_cny": null,
+      "actual_paid_with_valid_china_vat_total_cny": null,
+      "payment_extra_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "china_vat_invoice_verified": false,
+      "receipt_supported_merchant_claim": true,
+      "china_vat_invoice_available_verified": null,
+      "invoice_issuer_verified": null,
+      "payment_recipient_verified": null,
+      "operator_legal_entity_verified": null,
+      "one_unit_wholesale_price_cny": null,
+      "agency_entry_fee_cny": null,
+      "formal_resale_authorization_verified": false,
+      "individual_free_account_required_claim": true,
+      "active_subscription_renewal_supported_claim": false,
+      "card_valid_days_from_issue_claim": 3,
+      "automatic_renewal_claim": false,
+      "existing_chatgpt_login_required_claim": true,
+      "merchant_says_full_session_not_received": true,
+      "merchant_says_session_token_not_received": true,
+      "merchant_receives_access_token_claim": true,
+      "upstream_activation_provider_receives_access_token_claim": true,
+      "access_token_temporary_cache_hours_claim": 1,
+      "encrypted_backup_retention_possible_claim": true,
+      "physical_backup_deletion_days_verified": null,
+      "upstream_token_retention_days_verified": null,
+      "independent_security_audit_verified": false,
+      "personal_reason_unused_refund_request_window_hours_claim": 24,
+      "confirmed_fulfillment_failure_original_route_refund_claim": true,
+      "refund_cash_received_verified": false,
+      "terms_policy_self_updated_on": "2026-11-08",
+      "privacy_policy_self_updated_on": "2026-11-08",
+      "refund_policy_self_updated_on": "2026-11-08",
+      "real_paid_order_verified": false,
+      "qualified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://chatgptchongzhi.com/",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "homepage",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "本人原号Plus卡密每月公开零售价¥169，商称含代付手续费；流程要求先登录后获取Session。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/buy?plan=plus",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "unpaid_checkout",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "Plus×1挂牌¥169，自动限时立减¥30后未付款预览应付¥139；支付宝与不可叠加优惠码可见，未创建订单或付款。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/legal/terms",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-11-08",
+      "evidence_class": "terms",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "仅支持当前为免费版的个人账号，付费订阅与Team/Workspace不可激活；卡密发货后3天有效；访问令牌会提交给上游开通方；非OpenAI关联。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/legal/privacy",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-11-08",
+      "evidence_class": "privacy",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "商称完整Session和sessionToken不上报，但访问令牌、邮箱及账号标识传到商家及上游；临时缓存1小时；密文历史备份物理删除期和上游保留期未公开。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/legal/refund",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-11-08",
+      "evidence_class": "refund",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "个人原因未用卡退款须付款24小时内申请；确证开通失败无法履约商家称可原路全退；封号及个人拖延导致卡密过期不保；未真实测试。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/faq",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "faq",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "商家只承诺可申请收款凭证，不等于有效中国增值税发票；不自动续费，已有Plus不能覆盖激活，卡密3天。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/activate",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "activate",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "必须先成功登录ChatGPT取得Session，免费个人账号才可激活；没有独立Codex短信或自动绑定手机号的确证。"
+    },
+    {
+      "url": "https://chatgptchongzhi.com/tutorial",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "tutorial",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "图文教程要求浏览器已登录ChatGPT，再从官方Session接口复制JSON到店铺激活页。"
+    }
+  ],
+  "failed_access": [],
+  "phone_verification": {
+    "independent_codex_sms_sku_verified": null,
+    "phone_number_control_days_verified": null,
+    "chatgpt_web_login_supported_verified": null,
+    "codex_desktop_supported_verified": null,
+    "first_api_key_supported_verified": null,
+    "failed_sms_original_payment_refund_verified": null,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "ordinary_plus_topup_guarantees_phone_binding": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "同一天首页挂牌¥169、未付款结算优惠价¥139，不证明真正某日调价或最终含有效中国VAT成本。",
+    "商家仅承诺收款凭证，发票有效性和出票/收款/经营主体均未知。",
+    "可转赠卡密不是合法批发分销授权。",
+    "访问令牌会交给商家与上游；1小时临时缓存不证明备份1小时物理清除。",
+    "商家条款自标2026-11-08，观察日期2026-11-11，非当天新规。"
+  ]
+}

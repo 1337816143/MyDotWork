@@ -131,13 +131,24 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 297, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 299, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.132'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r5.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r5-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r4.html'
+    assert latest['version'] == '1.133'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r6.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r6-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r5.html'
+    # R133: unpaid promo is not VAT wholesale; upstream tokens and backup retention unverified.
+    assert by_id['gpt-source-followup-r133-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r6.html'
+    assert by_id['gpt-source-followup-r133-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r6-evidence.json'
+    r133 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r6-evidence.json').read_bytes())
+    assert r133['round'] == 133 and r133['site_version'] == '1.9.141' and len(r133['sources']) == 8
+    assert r133['new_evidence']['chatgptchongzhi']['unpaid_checkout_preview_payable_cny'] == 139
+    assert r133['new_evidence']['chatgptchongzhi']['actual_paid_with_valid_china_vat_total_cny'] is None
+    assert r133['new_evidence']['chatgptchongzhi']['merchant_receives_access_token_claim'] is True
+    assert r133['new_evidence']['chatgptchongzhi']['physical_backup_deletion_days_verified'] is None
+    assert r133['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+
     # R132 first-party ad: invoice-option arithmetic is not VAT proof; ¥3000 mandatory agency fee excludes wholesaler qualification.
     assert by_id['gpt-source-followup-r132-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r5.html'
     assert by_id['gpt-source-followup-r132-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r5-evidence.json'

@@ -3268,6 +3268,28 @@
       "summary": "首次阅读9条商家自有网页；开票版未付款、经营收款出票主体/实际批发/独立短信未知null；合格上游及真实验票0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r133-20261111",
+      "title": "GPT源头第133轮 · 单件Plus限时¥139与令牌留存风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r6.html",
+      "updatedAt": "2026-11-11",
+      "summary": "新核chatgptchongzhi.com：首页¥169单月卡密，未付款单件自动减¥30后显示¥139；Session访问令牌交上游、缓存/备份保留边界与票据缺口。未证批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r133-20261111-evidence",
+      "title": "第133轮 · 8条新读原URL与Plus预览/税票/令牌/退款证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r6-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "2026-11-11实读8个卖家页面，11月8日旧政策日另记；有效中国VAT、实际结算与SMS验证均未证，未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
