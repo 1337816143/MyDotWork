@@ -3730,6 +3730,28 @@
       "summary": "3条当日实际可读URL、旧2026-11-06¥3存档；¥4为单次Codex CDK而非Plus月卡，所有实际支付、发票及SMS成功缺口按null或未实测保留。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r154-20261112",
+      "title": "GPT源头第154轮 · GPTHub AppStore ¥169准确SKU与接码迁移/恢复公告",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r7.html",
+      "updatedAt": "2026-11-12",
+      "summary": "GPTHub tu-plus AppStore口径Plus¥169/件，与历史¥160的GPT101交付不是同SKU涨价；商称接码迁移/恢复，新端抓取502，票费/授权/短信实测未闭环。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r154-20261112-evidence",
+      "title": "第154轮 · GPTHub准确Plus SKU、CIYUANAPI售后及接码迁移8条证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r7-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "7条可读商家原页+1个抓取失败端点；商称与实测分开、所有全费/手机号码时效/退款缺项null；合格批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
