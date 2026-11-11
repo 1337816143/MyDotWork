@@ -134,10 +134,10 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 311, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.138'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r10.html'
+    assert latest['version'] == '1.139'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r12.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r12-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r11.html'
     # R137: a two-text 30-day SKU is not a lasting phone; same-page prices conflict and mainland sales are excluded.
     assert by_id['gpt-source-followup-r137-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10.html'
     assert by_id['gpt-source-followup-r137-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10-evidence.json'
