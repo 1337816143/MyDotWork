@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 305, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 307, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.136'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r9.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r9-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r8.html'
+    assert latest['version'] == '1.137'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r9.html'
+    # R137: a two-text 30-day SKU is not a lasting phone; same-page prices conflict and mainland sales are excluded.
+    assert by_id['gpt-source-followup-r137-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10.html'
+    assert by_id['gpt-source-followup-r137-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10-evidence.json'
+    r137 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-r10-evidence.json').read_bytes())
+    assert r137['round']==137 and r137['site_version']=='1.9.145' and len(r137['sources'])==8
+    assert r137['new_evidence']['goodshopit_plus']['sku_page_prominent_price_cny']==119
+    assert r137['new_evidence']['goodshopit_plus']['sku_page_specification_price_cny_per_single_month']==111
+    assert r137['new_evidence']['goodshopit_plus']['actual_single_item_checkout_cny'] is None
+    assert r137['new_evidence']['goodshopit_plus']['mainland_china_users_excluded_by_seller_notice'] is True
+    assert r137['new_evidence']['independent_sms']['offers'][0]['merchant_claim_max_sms']==2
+    assert r137['new_evidence']['independent_sms']['offers'][0]['ends_on_second_message_even_before_30_days'] is True
+    assert r137['new_evidence']['independent_sms']['real_phone_sms_successes']==0
+    assert r137['qualification_totals']['verified_plus_wholesale_upstreams']==0
     # R136: advertised self-service wholesale levels are not proven one-unit purchase costs, legal resale rights, or VAT invoices.
     assert by_id['gpt-source-followup-r136-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r9.html'
     assert by_id['gpt-source-followup-r136-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r9-evidence.json'

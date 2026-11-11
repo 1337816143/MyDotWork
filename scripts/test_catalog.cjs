@@ -1219,3 +1219,23 @@ assert.equal(r136.new_evidence.aibulk.all_in_paid_valid_china_vat_cny,null);
 assert.equal(r136.new_evidence.aibulk.formal_upstream_resale_authorization_verified,false);
 assert.equal(r136.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r136.qualification_totals.verified_phone_sms_successes,0);
+
+
+// R137: direct seller pages distinguish two-text 30-day SKU and two separate one-time SMS SKUs, no purchase/test.
+const r137cat=d.records.find(x=>x.id==='gpt-source-followup-r137-20261111');
+const r137data=d.records.find(x=>x.id==='gpt-source-followup-r137-20261111-evidence');
+assert(r137cat&&r137data&&r137cat.url.endsWith('supplier-followup-20261111-r10.html'));
+const r137=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r10-evidence.json'),'utf8'));
+assert.equal(r137.round,137);assert.equal(r137.site_version,'1.9.145');assert.equal(r137.sources.length,8);
+assert.equal(r137.new_evidence.goodshopit_plus.sku_page_prominent_price_cny,119);
+assert.equal(r137.new_evidence.goodshopit_plus.sku_page_specification_price_cny_per_single_month,111);
+assert.equal(r137.new_evidence.goodshopit_plus.actual_single_item_checkout_cny,null);
+assert.equal(r137.new_evidence.goodshopit_plus.mainland_china_users_excluded_by_seller_notice,true);
+assert.equal(r137.new_evidence.independent_sms.offers[0].listed_price_cny,6);
+assert.equal(r137.new_evidence.independent_sms.offers[0].merchant_claim_max_sms,2);
+assert.equal(r137.new_evidence.independent_sms.offers[0].merchant_claim_max_hours_from_activation,720);
+assert.equal(r137.new_evidence.independent_sms.offers[0].ends_on_second_message_even_before_30_days,true);
+assert.equal(r137.new_evidence.independent_sms.offers[1].listed_price_cny,3);
+assert.equal(r137.new_evidence.independent_sms.offers[2].listed_price_cny,3);
+assert.equal(r137.new_evidence.independent_sms.real_phone_sms_successes,0);
+assert.equal(r137.qualification_totals.verified_plus_wholesale_upstreams,0);

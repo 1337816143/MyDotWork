@@ -1,0 +1,188 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 137,
+  "site_version": "1.9.145",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "2026-11-11首次直接读取GoodShopit本人原号Plus与三种彼此独立SMS服务、兑换中心和地区/退款政策。商品价为同日页面不同区域展示，不主张11月11日发生变价、批发已获证实或真实交易。因站方限境外用户，海南中国大陆采购者不符合其自述购买政策；地区适用还须按用户实际所在地与账号情况判断。",
+  "new_evidence": {
+    "goodshopit_plus": {
+      "merchant": "GoodShopit",
+      "domain": "goodshopit.online",
+      "sku": "goodshop-gpt-plus-direct",
+      "product_title": "ChatGPT Plus 本人账号直充",
+      "url": "https://goodshopit.online/products/goodshop-gpt-plus-direct",
+      "sku_page_prominent_price_cny": 119,
+      "sku_page_specification_price_cny_per_single_month": 111,
+      "price_discrepancy_cny": 8,
+      "same_page_conflicting_prices": true,
+      "actual_single_item_checkout_cny": null,
+      "product_unit": "one existing authorized personal ChatGPT account; one month subscription CDK",
+      "public_in_stock_marketing_claim": true,
+      "visitor_can_purchase_claim": true,
+      "requires_logged_in_chatgpt_session_json_for_redemption": true,
+      "session_or_token_required_before_first_web_login": false,
+      "cdk_delivery_equals_successful_activation": false,
+      "redeem_portal_banner": "本地演示模式 · 不会购买号码或提交真实充值",
+      "redeem_portal_real_fulfillment_verified": false,
+      "mainland_china_users_excluded_by_seller_notice": true,
+      "existing_paid_subscription_renewal_or_overlap_policy_verified": null,
+      "real_payment_additional_fees_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "real_all_required_payment_and_valid_china_vat_cny": null,
+      "business_operator_verified": null,
+      "payment_recipient_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "china_vat_invoice_legally_valid_verified": false,
+      "actual_one_unit_wholesale_price_cny": null,
+      "no_agent_entry_fee_for_proven_wholesale_verified": null,
+      "formal_resale_authorization_verified": false,
+      "real_plus_purchase_and_activation_success_verified": false,
+      "qualified": false
+    },
+    "independent_sms": {
+      "merchant": "GoodShopit",
+      "offers": [
+        {
+          "sku": "goodshop-openai-pingme-30d",
+          "exact_name": "Codex/OpenAI 30 天接码｜共 2 条短信",
+          "original_url": "https://goodshopit.online/products/goodshop-openai-pingme-30d",
+          "listed_price_cny": 6,
+          "price_unit": "one CDK with two SMS maximum, not per SMS",
+          "merchant_claim_max_sms": 2,
+          "merchant_claim_max_hours_from_activation": 720,
+          "ends_on_second_message_even_before_30_days": true,
+          "actual_same_number_retained_for_30_days_verified": null,
+          "independent_codex_sms_success_verified": false,
+          "independent_chatgpt_web_sms_success_verified": false,
+          "independent_first_api_key_sms_success_verified": false,
+          "failed_sms_cash_refund_verified": null
+        },
+        {
+          "sku": "internal-openai-sms-cdk-20261005",
+          "exact_name": "OpenAI 一次性短信接码 CDK",
+          "original_url": "https://goodshopit.online/products/internal-openai-sms-cdk-20261005",
+          "listed_price_cny": 3,
+          "price_unit": "one attempt / one SMS",
+          "merchant_claim_max_sms": 1,
+          "merchant_claim_max_hours_from_activation": null,
+          "number_waiting_window_minutes": null,
+          "same_number_followup_receipt_supported": false,
+          "failed_sms_cash_refund_verified": null,
+          "verified_success": false
+        },
+        {
+          "sku": "codex-phone-once-channel-2",
+          "exact_name": "Codex 手机验证｜单次接码 · 渠道2",
+          "original_url": "https://goodshopit.online/products/codex-phone-once-channel-2",
+          "listed_price_cny": 3,
+          "price_unit": "one SMS through a distinct disposable channel 2",
+          "merchant_claim_max_sms": 1,
+          "number_waiting_window_minutes": null,
+          "carrier_suggested_by_seller": "Vinaphone when selectable",
+          "same_number_followup_receipt_supported": false,
+          "failed_sms_cash_refund_verified": null,
+          "verified_success": false
+        }
+      ],
+      "seller_claims_platform_verification_success_guaranteed": false,
+      "chatgpt_web_login_supported_verified": null,
+      "codex_desktop_supported_verified": null,
+      "first_api_key_supported_verified": null,
+      "seller_redeem_portal_is_demo_marked": true,
+      "automatic_openai_phone_binding_via_plus_purchase_verified": false,
+      "real_phone_sms_successes": 0
+    },
+    "seller_policy": {
+      "public_notice_url": "https://goodshopit.online/blog/platform-purchase-and-support-policy",
+      "allows_mainland_china_users_by_seller_policy": false,
+      "seller_no_refund_after_used_cdk_claim": true,
+      "abnormal_fulfillment_requires_manual_case_review": true,
+      "failed_sms_automatic_cash_refund_claim": false,
+      "real_refund_receipt_verified": false,
+      "seller_disclaims_account_suspension_login_region_issues_coverage": true,
+      "source_claims_are_not_independent_fulfillment_proof": true
+    }
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_display",
+      "fact": "目录Plus直充¥119、30天2短信¥6、OpenAI一次短信¥3、Codex渠道2一次短信¥3；目录有货为商家标示，并非真实库存或成功测试。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/products/goodshop-gpt-plus-direct",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_display",
+      "fact": "同一SKU主价格¥119与规格表售价¥111/次冲突；本人账号单月CDK，兑换时需要完整Session JSON，未见有效含票全费或单件批发条件。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/products/goodshop-openai-pingme-30d",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_display",
+      "fact": "独立接码SKU公开¥6/一个CDK，激活后30×24小时或第二条短信即结束，先到者为准；不是保号后无限次接收。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/products/internal-openai-sms-cdk-20261005",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_display",
+      "fact": "OpenAI一次性SMS ¥3/次，等待期限以兑换页为准，无30天保号或重复短信、失败现金退款实测。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/products/codex-phone-once-channel-2",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_display",
+      "fact": "单独渠道2 Codex接码¥3/次，一次租号一条验证码；Vinaphone仅为商家建议；是否通过风控不承诺。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/blog/platform-purchase-and-support-policy",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_policy",
+      "fact": "网站明示仅面向中国大陆以外地区，中国大陆用户请勿购买兑换；用后不因个人反悔退款，交付异常需人工核实，未明确现金原路到账保证。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://redeem.goodshopit.online/",
+      "read_status": "seller_portal_readable_demo_label",
+      "evidence_class": "first_party_seller_portal",
+      "fact": "当前可读兑换中心页首明确「本地演示模式 · 不会购买号码或提交真实充值」，不能将界面当作真实充值/短信履约证据，不足以断言整站永久停服。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://goodshopit.online/blog/recharge-redemption-guide",
+      "read_status": "seller_page_readable",
+      "evidence_class": "first_party_seller_guide",
+      "fact": "购买、CDK交付、预检、会话JSON提交和订阅到账是分立步骤；旧指南本轮首次读取，不主张11月11日新修订。",
+      "page_self_updated_on": "2026-10-28"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r9.html"
+}
