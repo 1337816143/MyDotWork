@@ -1,0 +1,68 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 141,
+  "site_version": "1.9.149",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接读取OpenAI官方移动端订阅商店账号和ChatGPT账号双重绑定规则，页面标注Updated: 7 days ago；不能据此声称2026-11-11刚实施。审查Apple内购代充同商店账号跨ChatGPT账号复用风险，非现有商家履约测试。",
+  "new_evidence": {
+    "official_mobile_subscription_binding": {
+      "source_type": "openai_official_help_center",
+      "source_url": "https://help.openai.com/en/articles/20001056-troubleshooting-chatgpt-subscription-access-and-account-changes",
+      "page_relative_last_updated_label": "Updated: 7 days ago",
+      "effective_date_verified": null,
+      "mobile_purchase_linked_to_store_account_and_chatgpt_account": true,
+      "first_purchase_owned_by_selected_chatgpt_account": true,
+      "restore_purchases_transfers_to_another_chatgpt_account": false,
+      "subscriptions_transferable_between_chatgpt_accounts": false,
+      "apple_account_previously_used_may_block_other_chatgpt_account_purchase_even_after_expiry": true,
+      "google_play_account_previously_used_may_block_other_chatgpt_account_purchase_even_after_expiry": true,
+      "cancellation_or_expiry_guarantees_reuse_for_other_account": false,
+      "web_subscription_alternative_officially_suggested_for_other_chatgpt_account": true,
+      "web_payment_guaranteed_success": false,
+      "apple_purchase_auto_binds_phone_number": false,
+      "apple_purchase_guarantees_codex_or_first_api_key_sms_verification": false,
+      "any_named_merchant_verified_to_have_hit_this_block": false
+    }
+  },
+  "supply_reassessment": {
+    "requires_store_account_chatgpt_target_mapping_check": true,
+    "requires_refund_payer_and_receipt_proof": true,
+    "existing_supplier_sku_or_price_changed_this_round": false,
+    "verified_wholesale_unit_cny": null,
+    "all_required_fees_with_valid_china_vat_total_cny": null,
+    "valid_china_vat_invoice_issuer": null,
+    "formal_resale_authorization_verified": null,
+    "merchant_real_mobile_purchase_tested": false,
+    "phone_number_retention_days": null,
+    "sms_failure_cash_refund_verified": null,
+    "chatgpt_web_codex_api_phone_verification_tested": false
+  },
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/20001056-troubleshooting-chatgpt-subscription-access-and-account-changes",
+      "observed_on": "2026-11-11",
+      "read_status": "official_help_page_readable",
+      "evidence_class": "official_platform_policy",
+      "page_relative_last_updated_label": "Updated: 7 days ago",
+      "first_read_this_round": true,
+      "summary": "Apple Account/Google Play与购买时ChatGPT账号双重绑定，恢复不迁移；商店号对另一个ChatGPT账号尝试移动内购可能在前订阅取消或到期后仍受阻，官方指出目标账号的网页版购买选项但不保证支付成功。"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r13.html",
+  "purchase_or_signin_attempted": false
+}
