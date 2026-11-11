@@ -1204,3 +1204,18 @@ assert.equal(r135.new_evidence.yxab_sku_transition.checkout_payment_fee_cny,null
 assert.equal(r135.new_evidence.yxab_sku_transition.china_vat_invoice_fee_cny,null);
 assert.equal(r135.new_evidence.yxab_sku_transition.formal_resale_authorization_verified,false);
 assert.equal(r135.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R136: claimed API wholesaling is not VAT-verified lawful upstream; Session is required.
+const r136a=d.records.find(x=>x.id==='gpt-source-followup-r136-20261111');
+const r136b=d.records.find(x=>x.id==='gpt-source-followup-r136-20261111-evidence');
+assert(r136a&&r136b&&r136a.url.endsWith('supplier-followup-20261111-r9.html'));
+const r136=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r9-evidence.json'),'utf8'));
+assert.equal(r136.round,136);assert.equal(r136.site_version,'1.9.144');assert.equal(r136.sources.length,11);
+assert.equal(r136.new_evidence.aibulk.public_guest_lv1_display_price,17.99);
+assert.equal(r136.new_evidence.aibulk.merchant_level_thresholds_usd_equivalent.Lv2,500);
+assert.equal(r136.new_evidence.aibulk.actual_logged_in_level_specific_plus_wholesale_price,null);
+assert.equal(r136.new_evidence.aibulk.session_json_required_for_redemption,true);
+assert.equal(r136.new_evidence.aibulk.all_in_paid_valid_china_vat_cny,null);
+assert.equal(r136.new_evidence.aibulk.formal_upstream_resale_authorization_verified,false);
+assert.equal(r136.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r136.qualification_totals.verified_phone_sms_successes,0);

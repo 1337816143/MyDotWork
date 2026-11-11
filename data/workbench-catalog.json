@@ -3334,6 +3334,28 @@
       "summary": "2条实际可读商家原URL；旧SKU404、帮助429分列，不刷新历史价；¥128.80原号零售价、官方退款扣20%为商家承诺，全部含VAT成本null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r136-20261111",
+      "title": "GPT源头第136轮 · AIBulk分层批发与Session、VAT缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r9.html",
+      "updatedAt": "2026-11-11",
+      "summary": "新读AIBulk单件API/MCP供货，访客Plus $17.99/件、分层积分$500起；Session转交履约方，未证真一手、等级进价、有效中国VAT与全部链费。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r136-20261111-evidence",
+      "title": "第136轮 · AIBulk 11条原始URL、批发等级与退款/凭据边界",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r9-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "11条11月11日实读一方URL；旧规则自标10月，$17.99仅Lv1访客展示、链上费用和VAT null；实付及SMS成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
