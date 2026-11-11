@@ -131,14 +131,29 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 313, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 315, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.140'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r13.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r13-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r12.html'
+    assert latest['version'] == '1.141'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r14.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r14-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r13.html'
 
+    # R141: official mobile-store account association, not a confirmed merchant failure or phone bypass.
+    assert by_id['gpt-source-followup-r141-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r14.html'
+    assert by_id['gpt-source-followup-r141-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r14-evidence.json'
+    r141 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r14-evidence.json').read_bytes())
+    assert r141['round'] == 141 and r141['site_version'] == '1.9.149' and len(r141['sources']) == 1
+    d141 = r141['new_evidence']['official_mobile_subscription_binding']
+    assert d141['mobile_purchase_linked_to_store_account_and_chatgpt_account'] is True
+    assert d141['restore_purchases_transfers_to_another_chatgpt_account'] is False
+    assert d141['apple_account_previously_used_may_block_other_chatgpt_account_purchase_even_after_expiry'] is True
+    assert d141['google_play_account_previously_used_may_block_other_chatgpt_account_purchase_even_after_expiry'] is True
+    assert d141['apple_purchase_auto_binds_phone_number'] is False
+    assert d141['any_named_merchant_verified_to_have_hit_this_block'] is False
+    assert r141['supply_reassessment']['all_required_fees_with_valid_china_vat_total_cny'] is None
+    assert r141['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r141['qualification_totals']['verified_phone_sms_successes'] == 0
     # R140: New official card/device policy evidence, not actual seller failure or paid refund.
     assert by_id['gpt-source-followup-r140-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r13.html'
     assert by_id['gpt-source-followup-r140-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r13-evidence.json'
