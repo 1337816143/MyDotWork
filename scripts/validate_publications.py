@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 331, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 333, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.149'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r2.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r2-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112.html'
+    assert latest['version'] == '1.150'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r3.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r3-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r2.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')

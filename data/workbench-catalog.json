@@ -3642,6 +3642,28 @@
       "summary": "2026-11-12直读6条商家URL；Plus¥150为零售非实付，真实支付费/VAT税票/单件批发与授权均null；无Session交付、SMS及退款实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r150-20261112",
+      "title": "GPT源头第150轮 · V3同SKU零售挂牌差额与微信/USD手续费",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r3.html",
+      "updatedAt": "2026-11-12",
+      "summary": "V3菲卡135→133.5、iOS145→143.5元／件／月，两商品页微信/USD手续费3.5%；转售须授权，VAT票费和实际结算未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r150-20261112-evidence",
+      "title": "第150轮 · V3原始SKU和支付条款结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r3-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "8条原始访问状态、两个同SKU旧新挂牌、条款、未知费用null，批发上游0、未实购/验票/SMS。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

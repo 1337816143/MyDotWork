@@ -1,0 +1,165 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 150,
+  "site_version": "1.9.158",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "重读2026-11-03归档的V3相同菲卡/iOS Plus月卡商品，记录挂牌观察差异、支付附加费展示和经营转售限制。仅有公开页，未下单、验票或测试短信。",
+  "new_evidence": {
+    "v3_product_listing_comparison": [
+      {
+        "sku": "V3菲区卡密自助充值 Plus 1个月",
+        "url": "https://shop.gpt.ge/buy/18",
+        "unit": "人民币/件/1个月/原账号",
+        "prior_observed_on": "2026-11-03",
+        "prior_listing_cny": 135,
+        "current_observed_on": "2026-11-12",
+        "current_listing_cny": 133.5,
+        "observed_listing_difference_cny": -1.5,
+        "actual_price_change_date_verified": false,
+        "merchant_claim_wait_for_subscription_expiration": true
+      },
+      {
+        "sku": "V3 iOS卡密自助充值 Plus 1个月",
+        "url": "https://shop.gpt.ge/buy/22",
+        "unit": "人民币/件/1个月/原账号",
+        "prior_observed_on": "2026-11-03",
+        "prior_listing_cny": 145,
+        "current_observed_on": "2026-11-12",
+        "current_listing_cny": 143.5,
+        "observed_listing_difference_cny": -1.5,
+        "actual_price_change_date_verified": false,
+        "merchant_claim_can_overwrite_but_not_stack_time": true
+      }
+    ],
+    "v3_payment_terms": {
+      "wechat_displayed_percent_fee": 3.5,
+      "usd_displayed_percent_fee": 3.5,
+      "alipay_displayed_percent_fee": null,
+      "usdt_displayed_percent_fee": null,
+      "actual_payment_surcharge_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "actual_total_including_valid_china_vat_cny": null,
+      "any_paid_checkout_tested": false
+    },
+    "v3_resale_and_warranty": {
+      "terms_url": "https://shop.gpt.ge/terms/terms-of-service",
+      "terms_self_updated_on": "2026-08-10",
+      "unauthorized_bulk_purchase_stockpiling_resale_restricted_by_merchant": true,
+      "formal_openai_resale_authorization_verified": false,
+      "true_wholesale_supplier_identified": null,
+      "merchant_promises_pro_rata_refund_for_subscription_loss": true,
+      "account_ban_excluded_by_merchant": true,
+      "real_refund_tested": false
+    },
+    "independent_phone_verification": {
+      "merchant_links_external_smspool_for_codex_new_account_cases": true,
+      "web_chatgpt_succeeded": false,
+      "codex_succeeded": false,
+      "first_api_key_succeeded": false,
+      "number_term_days": null,
+      "failed_sms_refund_verified": null,
+      "session_requires_prior_login": true,
+      "ordinary_apple_recharge_automatically_binds_phone": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://shop.gpt.ge/buy/18",
+      "status": "readable",
+      "observed_on": "2026-11-12",
+      "note": "菲卡Plus 1个月¥133.50，微信及USD手续费显示3.5%，11月3日同SKU旧价¥135；并非实付。",
+      "evidence_class": "merchant_owned_primary_source"
+    },
+    {
+      "url": "https://shop.gpt.ge/buy/22",
+      "status": "readable",
+      "observed_on": "2026-11-12",
+      "note": "iOS Plus 1个月¥143.50，微信及USD手续费显示3.5%，11月3日同SKU旧价¥145；并非实付。",
+      "evidence_class": "merchant_owned_primary_source"
+    },
+    {
+      "url": "https://shop.gpt.ge/terms/terms-of-service",
+      "status": "readable",
+      "observed_on": "2026-11-12",
+      "note": "网页自标2026-08-10版本：未经允许批量采购、囤货、转售受限；不能据此确认正式供货授权。",
+      "evidence_class": "merchant_owned_primary_source"
+    },
+    {
+      "url": "https://shop.gpt.ge/help",
+      "status": "readable",
+      "observed_on": "2026-11-12",
+      "note": "开票问题仅见FAQ标题，实际有效中国增值税票据及收费未知。",
+      "evidence_class": "merchant_owned_primary_source"
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "status": "readable_old_price_only",
+      "observed_on": "2026-11-12",
+      "note": "小久旧挂牌¥110和原号充值限制仍在；无可证明新变化。",
+      "evidence_class": "prior_price_recheck"
+    },
+    {
+      "url": "https://www.linkaiu.com/products?brand=ChatGPT",
+      "status": "readable_old_price_only",
+      "observed_on": "2026-11-12",
+      "note": "LinkAi旧挂牌¥150/30天仍在；无可证明新变化。",
+      "evidence_class": "prior_price_recheck"
+    },
+    {
+      "url": "https://uppluspro.com/",
+      "status": "readable_old_price_only",
+      "observed_on": "2026-11-12",
+      "note": "UpPlusPro旧挂牌Plus¥143起仍在，批量议价并非单件已核进价。",
+      "evidence_class": "prior_price_recheck"
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "status": "no_readable_lines",
+      "observed_on": "2026-11-12",
+      "note": "直接打开没有可核正文，未刷新旧报价，也不判服务失效。",
+      "evidence_class": "failed_direct_access"
+    }
+  ],
+  "prior_vendor_rechecks_without_new_facts": [
+    "小久",
+    "LinkAi",
+    "UpPlusPro"
+  ],
+  "remaining_priority_candidates_not_repriced": [
+    "CatFK",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "unknown_costs": {
+    "invoice_issuer": null,
+    "payment_entity": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "real_single_unit_wholesale_cny": null,
+    "agent_upfront_fee_cny": null,
+    "all_required_payment_and_invoice_costs_cny": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r2.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
