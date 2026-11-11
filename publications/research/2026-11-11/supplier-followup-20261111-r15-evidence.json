@@ -1,0 +1,76 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 142,
+  "site_version": "1.9.150",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接核读当前OpenAI官方Pro档位帮助与价格页，确认Pro 200当前恢复新订、Pro 100/200/500月价；旧搜索结果可有暂停状态缓存，不作为当前判断。官方页面相对更新时间不等于本轮实施日期。",
+  "new_evidence": {
+    "official_pro_tiers": {
+      "source_type": "openai_official_help_center",
+      "source_url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "pricing_url": "https://chatgpt.com/pricing/",
+      "official_help_page_relative_updated_label": "Updated: 8 days ago",
+      "change_effective_date_verified": null,
+      "pro_100_usd_per_month": 100,
+      "pro_200_usd_per_month": 200,
+      "pro_500_usd_per_month": 500,
+      "pro_200_new_subscriptions_currently_available": true,
+      "pro_500_currently_listed": true,
+      "ultrafast_for_pro_500_only": true,
+      "pro_individual_annual_billing_available": false,
+      "personal_pro_reselling_access_prohibited": true,
+      "named_merchant_delivery_or_authorization_verified": false,
+      "old_pro_200_pause_is_current": false
+    }
+  },
+  "supply_reassessment": {
+    "existing_plus_supplier_sku_or_price_changed_this_round": false,
+    "verified_plus_wholesale_unit_cny": null,
+    "all_required_plus_fees_with_valid_china_vat_total_cny": null,
+    "valid_china_vat_invoice_issuer": null,
+    "legal_entity_and_payment_recipient_verified": false,
+    "formal_resale_authorization_verified": false,
+    "pro_200_merchant_fulfillment_verified": false,
+    "session_or_token_required_for_official_help_page": false,
+    "phone_number_retention_days": null,
+    "sms_failure_cash_refund_verified": null,
+    "chatgpt_web_codex_api_phone_verification_tested": false
+  },
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "observed_on": "2026-11-11",
+      "read_status": "official_help_page_readable",
+      "evidence_class": "official_platform_product_and_policy",
+      "page_relative_last_updated_label": "Updated: 8 days ago",
+      "first_read_this_round": true,
+      "summary": "官方Pro 100/200/500每月US$100/200/500；Pro 200再次开放新订；仅Pro 500可使用Ultrafast；个人Pro不支持年付、个人Pro访问权限不可转售。"
+    },
+    {
+      "url": "https://chatgpt.com/pricing/",
+      "observed_on": "2026-11-11",
+      "read_status": "official_pricing_page_readable",
+      "evidence_class": "official_platform_product_comparison",
+      "page_relative_last_updated_label": null,
+      "first_read_this_round": true,
+      "summary": "官方定价页列出Pro三个用量档位，页面未向未登录文本公开Pro实际收银台结算额，准确美元月价以Pro帮助页为依据。"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r14.html",
+  "purchase_or_signin_attempted": false
+}
