@@ -1,0 +1,182 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 135,
+  "site_version": "1.9.143",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接读取Ai极速补给站(get-codex.cc)6条商家一方原页：本人原号Plus单件¥125；英国+44 Lebara实体卡单次接码商品标价¥27.99但同页副标题¥5/次，且「先付款」与「收到后计费」不一致。其关于页承认第三方分销平台及上游质保，本人原号单件批发/正式授权未证。无购买、无开票/短信实测。",
+  "new_evidence": {
+    "get_codex_plus": {
+      "merchant": "Ai极速补给站",
+      "domain": "get-codex.cc",
+      "accurate_sku": "ChatGPT Plus 月卡（30天，正规充值）",
+      "own_existing_account_merchant_claim": true,
+      "quantity": 1,
+      "months": 1,
+      "public_retail_display_cny_per_account_month": 125,
+      "merchant_checkout_max_per_order_units": 1,
+      "account_free_or_expired_required_claim": true,
+      "active_plus_renewal_supported_verified": false,
+      "card_fulfillment_by_third_party_distributor_claim": true,
+      "upstream_warranty_claim": true,
+      "operator_personally_run_merchant_claim": true,
+      "operator_legal_entity_verified": null,
+      "actual_payment_recipient_verified": null,
+      "invoice_tax_rate_verified": null,
+      "invoice_fee_cny": null,
+      "payment_extra_fee_cny": null,
+      "valid_china_vat_invoice_issuer_verified": null,
+      "wholesale_price_cny_per_one_unit": null,
+      "upfront_agent_fee_cny": null,
+      "formal_resale_authorization_verified": false,
+      "real_paid_with_valid_china_vat_total_cny": null,
+      "real_paid_fulfillment_verified": false,
+      "qualified": false
+    },
+    "uk_lebara_sms": {
+      "merchant": "Ai极速补给站",
+      "accurate_sku": "英国号码接码（Lebara实体卡，单次代收）",
+      "country_code": "+44",
+      "merchant_claims_physical_sim_pool": true,
+      "headline_buy_button_price_cny_per_one_time_service": 27.99,
+      "description_advertised_per_code_cny": 5,
+      "site_display_price_conflict": true,
+      "payment_order_precondition_claim": true,
+      "merchant_claims_charged_only_after_code_received": true,
+      "prepay_vs_postpaid_conflict": true,
+      "actual_checkout_payable_cny": null,
+      "merchant_guarantees_100_percent_arrival": false,
+      "merchant_claims_refund_if_no_sms_after_customer_service_verification": true,
+      "real_refund_original_route_verified": null,
+      "real_refund_elapsed_days_verified": null,
+      "one_time_code_only": true,
+      "phone_number_control_days_verified": null,
+      "second_sms_supported_verified": null,
+      "chatgpt_web_applicability_verified": null,
+      "codex_desktop_applicability_verified": null,
+      "first_api_key_applicability_verified": null,
+      "session_required_for_sms_verified": null,
+      "successful_sms_received_test": false,
+      "successful_openai_verification_test": false,
+      "sku_card_30_day_warranty_label_applies_to_sms_verified": null
+    },
+    "data_boundary": {
+      "content_site_privacy_url": "https://get-codex.cc/privacy",
+      "content_site_only": true,
+      "shop_and_recharge_credential_policy_readable_verified": false,
+      "all_session_or_token_exposure_verified": null
+    }
+  },
+  "sources": [
+    {
+      "url": "https://get-codex.cc/pricing",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "catalog",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "同一实时价格表展示本人原号Plus月卡¥125/件、英国Lebara单次验证码商品售价¥27.99，但其摘要另写¥5/次。"
+    },
+    {
+      "url": "https://get-codex.cc/pricing/chatgpt-plus",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "plus_specific_sku",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "原号Plus月卡30天商品页¥125/件、每单限1张；账号应为Free或旧会员到期；上游只称税点自理，未披露实际税率和开票主体。"
+    },
+    {
+      "url": "https://get-codex.cc/pricing/uk-sms-verification",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "sms_specific_sku",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "UK +44 Lebara实体卡池单次代收，页面购买价¥27.99而副标题声称¥5/次；页面要求先下单付款、又称收到后计费，实际结算规则冲突。商称不保证短信送达、未收可核实后退，无保号。"
+    },
+    {
+      "url": "https://get-codex.cc/about",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-11",
+      "evidence_class": "about_wholesale_and_after_sales",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "页面自标2026-10-11更新，个人运营、明确非OpenAI授权，商城使用第三方分销平台订单系统、售后由上游提供；接码未收退款要客服核实。"
+    },
+    {
+      "url": "https://get-codex.cc/guides/subscription-not-covered",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-09-06",
+      "evidence_class": "subscription_guide",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "自标2026-09-06版；商家区分苹果余额续订与菲区新订，称其在售Plus月卡的上游禁止/可能拒绝在期同档直接叠加；不证明对本人的所有Apple路径均适用。"
+    },
+    {
+      "url": "https://get-codex.cc/privacy",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": "2026-10-11",
+      "evidence_class": "privacy_scope",
+      "evidence_level": "first_party_merchant_display_or_claim_not_paid_test",
+      "fact": "自标2026-10-11；仅适用于内容站，不覆盖shop.get-codex.cc的交易、付款、充值凭据数据处理；不能将内容站不收Token的声明套到充值中心。"
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://shop.get-codex.cc/terms",
+      "observed_on": "2026-11-11",
+      "read_status": "html_zero_readable_lines",
+      "reason": "已打开但页面无可读条款正文，不能套用上游政策、退款或票据"
+    },
+    {
+      "url": "https://shop.get-codex.cc/products/uk-lebara-sms",
+      "observed_on": "2026-11-11",
+      "read_status": "redirect_destination_inaccessible",
+      "reason": "商品购买跳转至商城无法核动态应付价及现货"
+    },
+    {
+      "url": "https://shop.get-codex.cc/products/gpt-codex-plus",
+      "observed_on": "2026-11-11",
+      "read_status": "redirect_destination_inaccessible",
+      "reason": "Plus商品购买跳转无法核实真实含费价"
+    }
+  ],
+  "phone_verification": {
+    "independent_uk_physical_sim_code_observed": true,
+    "public_headline_buy_button_cny": 27.99,
+    "advertised_per_code_cny": 5,
+    "price_conflict_unresolved": true,
+    "sms_delivery_guaranteed": false,
+    "codex_web_api_separately_verified": false,
+    "phone_number_control_days_verified": null,
+    "failed_code_cash_refund_actual_verified": null,
+    "ordinary_plus_topup_guarantees_phone_binding": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "本轮实读的¥125为商家本人原号Plus准确SKU零售展示，不是已核实的批发价，也不代表结算全费。",
+    "英国Lebara接码同页¥27.99购买按钮价与¥5/次广告矛盾，支付前置与收到后计费也存在冲突，实际成交价null。",
+    "商家关于页承认商城第三方分销系统和上游质保，不能认定一手源头或得到正式转售授权。",
+    "内容站隐私声明不适用于商城和最终充值中心；无法核实Session/Token数据处理。",
+    "商家‘30天质保’通用标签不能推为UK单次接码号码可保留30天；未收到可申请退款仅是卖家承诺。"
+  ]
+}

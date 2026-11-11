@@ -3312,6 +3312,28 @@
       "summary": "11条2026-11-11直接实读一方网页；¥5单次Codex钱包3日返利、同站Plus价差¥10；批发、现金退款、真实手机号成功仍为0或null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r135-20261111",
+      "title": "GPT源头第135轮 · 英国Lebara短信价格矛盾与第三方分销",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r8.html",
+      "updatedAt": "2026-11-11",
+      "summary": "Ai极速补给站Plus准确月卡¥125单件零售；UK Lebara短信同SKU购价¥27.99与简介¥5/次及先付/后计冲突。自承认第三方分销，VAT全费/授权/短信实测均缺。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r135-20261111-evidence",
+      "title": "第135轮 · Ai极速补给站6条商家原URL、结算价差与上下游边界",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r8-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "2026-11-11实读6页及3处商城未读正文，价格冲突/税票/转售/SMS未知值null；合格Plus上游和真实付款/验证仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

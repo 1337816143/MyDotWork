@@ -1187,3 +1187,17 @@ assert.equal(r134.new_evidence.buygpt_plus.catalog_page_display_cny_per_account_
 assert.equal(r134.new_evidence.buygpt_plus.product_page_promotion_display_cny_per_account_month,139);
 assert.equal(r134.new_evidence.buygpt_plus.actual_paid_price_cny,null);
 assert.equal(r134.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R135: UK Lebara SMS headline purchase ¥27.99 versus ad ¥5/attempt; third-party upstream is not verified wholesale.
+const r135a=d.records.find(x=>x.id==='gpt-source-followup-r135-20261111');
+const r135b=d.records.find(x=>x.id==='gpt-source-followup-r135-20261111-evidence');
+assert(r135a&&r135b&&r135a.url.endsWith('supplier-followup-20261111-r8.html'));
+const r135=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r8-evidence.json'),'utf8'));
+assert.equal(r135.round,135);assert.equal(r135.site_version,'1.9.143');assert.equal(r135.sources.length,6);
+assert.equal(r135.new_evidence.get_codex_plus.public_retail_display_cny_per_account_month,125);
+assert.equal(r135.new_evidence.get_codex_plus.wholesale_price_cny_per_one_unit,null);
+assert.equal(r135.new_evidence.uk_lebara_sms.headline_buy_button_price_cny_per_one_time_service,27.99);
+assert.equal(r135.new_evidence.uk_lebara_sms.description_advertised_per_code_cny,5);
+assert.equal(r135.new_evidence.uk_lebara_sms.actual_checkout_payable_cny,null);
+assert.equal(r135.new_evidence.uk_lebara_sms.phone_number_control_days_verified,null);
+assert.equal(r135.qualification_totals.verified_plus_wholesale_upstreams,0);
