@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 315, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 317, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.141'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r14.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r14-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r13.html'
+    assert latest['version'] == '1.142'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r15.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r15-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r14.html'
+
+    # R142: official currently available Pro tiers, not a verified reseller fulfilment.
+    assert by_id['gpt-source-followup-r142-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r15.html'
+    assert by_id['gpt-source-followup-r142-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r15-evidence.json'
+    r142 = json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r15-evidence.json').read_bytes())
+    assert r142['round'] == 142 and r142['site_version'] == '1.9.150' and len(r142['sources']) == 2
+    d142 = r142['new_evidence']['official_pro_tiers']
+    assert (d142['pro_100_usd_per_month'], d142['pro_200_usd_per_month'], d142['pro_500_usd_per_month']) == (100, 200, 500)
+    assert d142['pro_200_new_subscriptions_currently_available'] is True
+    assert d142['pro_individual_annual_billing_available'] is False
+    assert d142['named_merchant_delivery_or_authorization_verified'] is False
+    assert r142['supply_reassessment']['all_required_plus_fees_with_valid_china_vat_total_cny'] is None
+    assert r142['qualification_totals']['verified_plus_wholesale_upstreams'] == r142['qualification_totals']['verified_phone_sms_successes'] == 0
 
     # R141: official mobile-store account association, not a confirmed merchant failure or phone bypass.
     assert by_id['gpt-source-followup-r141-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r14.html'

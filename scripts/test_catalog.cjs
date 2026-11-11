@@ -1300,3 +1300,15 @@ assert.equal(r141.new_evidence.official_mobile_subscription_binding.any_named_me
 assert.equal(r141.supply_reassessment.all_required_fees_with_valid_china_vat_total_cny,null);
 assert.equal(r141.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r141.qualification_totals.verified_phone_sms_successes,0);
+
+// R142: official Pro 200 open for new subscription is not third-party resale authorization.
+const r142a=d.records.find(x=>x.id==='gpt-source-followup-r142-20261111');
+const r142b=d.records.find(x=>x.id==='gpt-source-followup-r142-20261111-evidence');
+assert(r142a&&r142b&&r142a.url.endsWith('supplier-followup-20261111-r15.html'));
+const r142=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r15-evidence.json'),'utf8'));
+assert.equal(r142.round,142);assert.equal(r142.site_version,'1.9.150');assert.equal(r142.sources.length,2);
+assert.equal(r142.new_evidence.official_pro_tiers.pro_200_new_subscriptions_currently_available,true);
+assert.equal(r142.new_evidence.official_pro_tiers.pro_500_usd_per_month,500);
+assert.equal(r142.new_evidence.official_pro_tiers.named_merchant_delivery_or_authorization_verified,false);
+assert.equal(r142.supply_reassessment.all_required_plus_fees_with_valid_china_vat_total_cny,null);
+assert.equal(r142.qualification_totals.verified_plus_wholesale_upstreams,0);
