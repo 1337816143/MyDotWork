@@ -3381,12 +3381,12 @@
     },
     {
       "id": "gpt-source-followup-r138-20261111",
-      "title": "GPT源头第138轮 · 词元连接付款费、返佣与禁止卡密转售",
+      "title": "GPT源头第138轮 · 第85轮词元连接禁止转售旧条款与计费冲突补证",
       "type": "report",
       "task": "project-1",
       "url": "../research/2026-11-11/supplier-followup-20261111-r11.html",
       "updatedAt": "2026-11-11",
-      "summary": "一件Plus旧网页预览¥148+1.2%支付费¥1.78=¥149.78，未含已核中国VAT；免费推广返佣10%—25%并非批发，卖家旧条款禁倒卖；上游0。",
+      "summary": "第85轮已记录同一¥149.78未付款Plus预览与推广返佣；本轮新增核读8月旧协议明示禁止倒卖卡密、旧条款与首页1.2%附费口径冲突；仍非合格批发。",
       "access": "public",
       "metadataApproved": true
     },
@@ -3397,7 +3397,7 @@
       "task": "project-1",
       "url": "../research/2026-11-11/supplier-followup-20261111-r11-evidence.json",
       "updatedAt": "2026-11-11",
-      "summary": "11月11日直接读取7条一方URL；¥148商品小计、¥1.78支付附费、¥149.78未付款预览，税票/主体/授权null；一级返佣非批发、条款禁倒卖，短信和实付0。",
+      "summary": "2026-11-11复读7条自有URL（5条旧政策首次补证、2条历史重读）；第85轮既有价不当新降价，明确禁止卡密转售、上游履约链及有效中国VAT/授权缺口。",
       "access": "public",
       "metadataApproved": true
     }
