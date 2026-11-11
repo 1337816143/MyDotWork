@@ -1254,3 +1254,18 @@ assert.equal(r138.new_evidence.token5555.referral_is_verified_wholesale,false);
 assert.equal(r138.new_evidence.token5555.all_required_fees_and_valid_china_vat_total_cny,null);
 assert.equal(r138.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r138.qualification_totals.verified_phone_sms_successes,0);
+
+
+// R139: short-lived SMS product, vendor delivery rate is not OpenAI success; official VoIP policy supersedes marketing.
+const r139a=d.records.find(x=>x.id==='gpt-source-followup-r139-20261111');
+const r139b=d.records.find(x=>x.id==='gpt-source-followup-r139-20261111-evidence');
+assert(r139a&&r139b&&r139a.url.endsWith('supplier-followup-20261111-r12.html'));
+const r139=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r12-evidence.json'),'utf8'));
+assert.equal(r139.round,139);assert.equal(r139.site_version,'1.9.147');assert.equal(r139.sources.length,4);
+assert.equal(r139.new_evidence.independent_sms_5sim.openai_category_table_start_from_usd_per_number,0.05);
+assert.equal(r139.new_evidence.independent_sms_5sim.merchant_reported_best_sms_receipt_pct,46);
+assert.equal(r139.new_evidence.independent_sms_5sim.merchant_claim_refund_is_cash_original_payment,false);
+assert.equal(r139.new_evidence.independent_sms_5sim.sms_reverification_after_order_expiry,false);
+assert.equal(r139.official_openai_reference.voip_numbers_not_supported,true);
+assert.equal(r139.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r139.qualification_totals.verified_phone_sms_successes,0);
