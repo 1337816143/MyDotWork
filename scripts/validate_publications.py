@@ -131,13 +131,29 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 303, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 305, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.135'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r7.html'
+    assert latest['version'] == '1.136'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r8.html'
+    # R136: advertised self-service wholesale levels are not proven one-unit purchase costs, legal resale rights, or VAT invoices.
+    assert by_id['gpt-source-followup-r136-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r9.html'
+    assert by_id['gpt-source-followup-r136-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r9-evidence.json'
+    r136 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-r9-evidence.json').read_bytes())
+    assert r136['round'] == 136 and r136['site_version'] == '1.9.144' and len(r136['sources']) == 11
+    a136 = r136['new_evidence']['aibulk']
+    assert a136['public_guest_lv1_display_price'] == 17.99
+    assert a136['quantity_min_registered_claim'] == 1 and a136['merchant_level_thresholds_usd_equivalent']['Lv2'] == 500
+    assert a136['actual_logged_in_level_specific_plus_wholesale_price'] is None
+    assert a136['session_json_required_for_redemption'] is True
+    assert a136['merchant_claim_downstream_fulfillment_provider_receives_required_account_details'] is True
+    assert a136['china_vat_invoice_fee_cny'] is None and a136['all_in_paid_valid_china_vat_cny'] is None
+    assert a136['formal_upstream_resale_authorization_verified'] is False and a136['qualified'] is False
+    assert r136['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r136['qualification_totals']['verified_phone_sms_successes'] == 0
+
     # R135: distinct SKUs; merchant-stock and official-refund terms are not paid tests.
     assert by_id['gpt-source-followup-r135-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r8.html'
     assert by_id['gpt-source-followup-r135-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r8-evidence.json'
