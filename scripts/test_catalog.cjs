@@ -1366,3 +1366,15 @@ assert.equal(r148.round,148);assert.equal(r148.site_version,'1.9.156');assert.eq
 assert.equal(r148.new_evidence.xiaojiu_account_prerequisites.no_prior_zero_amount_recharge_required,true);
 assert.equal(r148.new_evidence.xiaojiu_account_prerequisites.all_in_plus_with_china_vat_cny,null);
 assert.equal(r148.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R149: LinkAi retail listing, non-final payment preview and legal-entity draft never qualify as wholesale supply.
+const r149a=d.records.find(x=>x.id==='gpt-source-followup-r149-20261112'),r149b=d.records.find(x=>x.id==='gpt-source-followup-r149-20261112-evidence');
+assert(r149a&&r149b&&r149a.url.endsWith('supplier-followup-20261112-r2.html'));
+const r149=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r2-evidence.json'),'utf8'));
+assert.equal(r149.round,149);assert.equal(r149.site_version,'1.9.157');assert.equal(r149.sources.length,6);
+assert.equal(r149.new_evidence.linkai_retail_plus_offer.listed_price_cny_per_30_days,150);
+assert.equal(r149.new_evidence.linkai_retail_plus_offer.checkout_preview_payment_surcharge_cny,0);
+assert.equal(r149.new_evidence.linkai_retail_plus_offer.all_in_plus_with_valid_china_vat_cny,null);
+assert.equal(r149.new_evidence.linkai_merchant_contract_and_refund.terms_page_says_draft,true);
+assert.equal(r149.new_evidence.linkai_supply_chain_and_api.formal_wholesale_or_openai_resale_authorization_verified,false);
+assert.equal(r149.qualification_totals.verified_plus_wholesale_upstreams,0);
