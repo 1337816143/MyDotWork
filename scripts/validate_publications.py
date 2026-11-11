@@ -131,13 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 301, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 303, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.134'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r7.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r7-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r6.html'
+    assert latest['version'] == '1.135'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r8.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r8-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r7.html'
+    # R135: distinct SKUs; merchant-stock and official-refund terms are not paid tests.
+    assert by_id['gpt-source-followup-r135-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r8.html'
+    assert by_id['gpt-source-followup-r135-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r8-evidence.json'
+    r135=json.loads((ROOT / 'dist/research/2026-11-11/supplier-followup-20261111-r8-evidence.json').read_bytes())
+    assert r135['round']==135 and r135['site_version']=='1.9.143' and len(r135['sources'])==2
+    assert r135['new_evidence']['yxab_sku_transition']['historical_sku']=='G69666080'
+    assert r135['new_evidence']['yxab_sku_transition']['new_sku']=='G62975691'
+    assert r135['new_evidence']['yxab_sku_transition']['new_sku_public_price_cny_per_account_month']==128.80
+    assert r135['new_evidence']['yxab_sku_transition']['old_and_new_exact_same_product_or_stock_recovery_verified'] is None
+    assert r135['new_evidence']['yxab_sku_transition']['merchant_claims_takes_fraction_of_openai_refunded_funds']==0.20
+    assert r135['new_evidence']['yxab_sku_transition']['all_in_paid_valid_china_vat_cny'] is None
+    assert len(r135['failed_access'])==2 and r135['qualification_totals']['verified_plus_wholesale_upstreams']==0
+
     # R134: wallet credit is not cash refund, and same-day directory/detail are different public price displays.
     assert by_id['gpt-source-followup-r134-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r7.html'
     assert by_id['gpt-source-followup-r134-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r7-evidence.json'
