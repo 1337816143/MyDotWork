@@ -1,0 +1,132 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 144,
+  "site_version": "1.9.152",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "本轮首次补录ChongPay公开Pro 200与Pro 500精确产品标识和挂牌价。旧Plus和SMS价格只复核，不刷新旧记录。实际下单小铺遭WAF，仅能确认商家声明而非可成交SKU。",
+  "new_evidence": {
+    "chongpay": {
+      "listed_page_self_updated_on": "2026-11-09",
+      "retail_showcase_url": "https://chongpay.com/plans",
+      "actual_order_shop_url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "pro_products": [
+        {
+          "name": "Pro 200 卡充（质保30天）",
+          "display_price_cny": 1188,
+          "price_unit": "商家一件卡充商品",
+          "internal_scheme": "10×",
+          "merchant_says_scheme_not_necessarily_equivalent_to_official_tier": true,
+          "warranty_days_claimed": 30,
+          "subscription_months_verified": null,
+          "store_sku_id": null,
+          "actual_checkout_total_cny": null
+        },
+        {
+          "name": "Pro 500 卡充（质保30天）",
+          "display_price_cny": 3299,
+          "price_unit": "商家一件卡充商品",
+          "internal_scheme": "25×",
+          "merchant_says_scheme_not_necessarily_equivalent_to_official_tier": true,
+          "warranty_days_claimed": 30,
+          "subscription_months_verified": null,
+          "store_sku_id": null,
+          "actual_checkout_total_cny": null
+        }
+      ],
+      "pro100_context_only": {
+        "name": "Pro100 卡充（质保30天）",
+        "display_price_cny": 729,
+        "internal_scheme": "5×"
+      },
+      "old_plus_recheck": {
+        "display_price_cny": 139,
+        "requires_older_plus_subscription_expiry": true,
+        "new_price_change_verified": false
+      },
+      "old_sms_recheck": {
+        "display_price_cny": 20,
+        "merchant_reported_number_lifetime_days": 25,
+        "new_price_change_verified": false,
+        "real_chatgpt_web_codex_api_verification_success": false
+      },
+      "external_shop_readable": false,
+      "external_shop_waf_only": true,
+      "merchant_claimed_catalog_matches_shop_not_verified": true,
+      "upfront_agent_fee_cny": null,
+      "wholesale_price_cny": null,
+      "payment_fee_cny": null,
+      "invoice_fee_cny": null,
+      "all_fees_plus_including_valid_vat_cny": null,
+      "operator_legal_name": null,
+      "actual_payment_recipient": null,
+      "valid_china_vat_invoice_issuer": null,
+      "invoice_authenticity_checked": false,
+      "official_resale_permission_verified": false,
+      "first_hand_supply_verified": false,
+      "plus_qualified": false,
+      "real_subscription_delivery_verified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/plans",
+      "observed_on": "2026-11-11",
+      "read_status": "first_party_page_readable",
+      "page_self_updated_on": "2026-11-09",
+      "evidence_class": "seller_public_display_not_checkout",
+      "new_research_evidence": true,
+      "description": "Pro 200 ¥1188，Pro 500 ¥3299、质保30天，10×/25×为商家内部标识，不可直接等同官方权益。"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-11",
+      "read_status": "first_party_page_readable",
+      "page_self_updated_on": "2026-11-09",
+      "evidence_class": "seller_showcase_corrob",
+      "new_research_evidence": true,
+      "description": "首页重复列示该价目和跳转链动小铺履约；Plus ¥139、SMS ¥20系旧价复核。"
+    },
+    {
+      "url": "https://chongpay.com/help/create-invoice",
+      "observed_on": "2026-11-11",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_old_invoice_rules_recheck",
+      "new_research_evidence": false,
+      "description": "站内没有自助开票，凭证需向实际下单店铺核实；旧有PDF商业凭证不等于有效中国VAT税票。"
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "observed_on": "2026-11-11",
+      "status": "waf_challenge_without_product_text",
+      "reason": "无法核准确店铺SKU、支付手续费、库存、票据和真实成交"
+    }
+  ],
+  "boundaries": {
+    "site_display_date_not_verified_price_change_date": true,
+    "retail_display_not_wholesale": true,
+    "merchant_claim_not_actual_test": true,
+    "apple_payment_may_coexist_with_session_token": true,
+    "topup_does_not_auto_bind_phone": true,
+    "plus_history_126_prices_unchanged": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r16.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
