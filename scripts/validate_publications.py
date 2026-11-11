@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 321, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 323, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.144'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r17.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r17-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r16.html'
+    assert latest['version'] == '1.145'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r18.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r18-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r17.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1577,6 +1577,15 @@ def validate_publications():
     assert r144['new_evidence']['chongpay']['external_shop_readable'] is False
     assert r144['new_evidence']['chongpay']['all_fees_plus_including_valid_vat_cny'] is None
     assert r144['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    # R145: first-party account restrictions and the official receipt channel are not transaction evidence.
+    assert by_id['gpt-source-followup-r145-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r18.html'
+    assert by_id['gpt-source-followup-r145-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r18-evidence.json'
+    r145 = json.loads((ROOT/'dist/research/2026-11-11/supplier-followup-20261111-r18-evidence.json').read_bytes())
+    assert r145['round'] == 145 and r145['site_version'] == '1.9.153'
+    assert r145['new_evidence']['chongpay_account_eligibility']['joined_team_disallowed'] is True
+    assert r145['new_evidence']['chongpay_account_eligibility']['payment_fee_cny'] is None
+    assert r145['new_evidence']['official_subscription_receipt_provenance']['apple_google_store_purchase_invoice_appears_in_chatgpt_web_billing'] is False
+    assert r145['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
