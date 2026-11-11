@@ -1,0 +1,135 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 139,
+  "site_version": "1.9.147",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "5SIM独立短信验证服务初次实读；其价格仅为OpenAI/ChatGPT短信单次号码，不能当Plus月卡、手机号长期租用或确认已验证Codex/API。页面自标2026-09-01，本轮2026-11-11实读，非今天发布的新政策或调价。OpenAI官方与卖家关于虚拟号适用性的陈述存在重大差异。",
+  "new_evidence": {
+    "independent_sms_5sim": {
+      "merchant_public_brand": "5SIM",
+      "domain": "5sim.net",
+      "exact_service_name": "OpenAI/ChatGPT",
+      "product_category": "temporary phone number for one verification",
+      "displayed_generic_navigation_from_usd_per_item": 0.01,
+      "openai_category_table_start_from_usd_per_number": 0.05,
+      "generic_navigation_and_category_table_price_not_same_sku": true,
+      "sample_operator_quotes": [
+        {
+          "country": "Slovakia",
+          "operator_label": "Virtual34",
+          "listed_usd_per_temporary_number": 0.4327,
+          "merchant_reported_sms_delivery_pct": 45.95,
+          "merchant_listed_quantity": 6327
+        },
+        {
+          "country": "Germany",
+          "operator_label": "Virtual51",
+          "listed_usd_per_temporary_number": 0.1705,
+          "merchant_reported_sms_delivery_pct": 40.48,
+          "merchant_listed_quantity": 2
+        },
+        {
+          "country": "United Kingdom",
+          "operator_label": "Virtual66",
+          "listed_usd_per_temporary_number": 0.1601,
+          "merchant_reported_sms_delivery_pct": 34.72,
+          "merchant_listed_quantity": 1113
+        }
+      ],
+      "merchant_reported_best_sms_receipt_pct": 46,
+      "merchant_reported_sms_receipt_is_openai_account_verification_success": false,
+      "merchant_reported_sms_receipt_is_independent_test": false,
+      "source_page_self_updated_on": "2026-09-01",
+      "merchant_claim_active_order_sms_minutes_min": 5,
+      "merchant_claim_active_order_sms_minutes_max": 30,
+      "merchant_claim_one_time_no_repeat_after_order": true,
+      "merchant_claim_refund_unused_or_no_sms_to_platform_wallet": true,
+      "merchant_claim_refund_is_cash_original_payment": false,
+      "merchant_rules_prohibit_use_to_implement_paid_subscriptions": true,
+      "merchant_rules_us_and_russia_resident_excluded": true,
+      "merchant_rules_no_refund_for_account_ban": true,
+      "merchant_claim_paid_sms_arrival_success_not_guaranteed": true,
+      "physical_sim_verified": false,
+      "non_voip_mobile_number_verified": false,
+      "no_upfront_wallet_recharge_verified": null,
+      "minimum_wallet_topup_usd": null,
+      "payment_fees_usd": null,
+      "sms_reverification_after_order_expiry": false,
+      "chatgpt_web_sms_success_verified": false,
+      "codex_desktop_sms_success_verified": false,
+      "first_api_key_sms_success_verified": false,
+      "seller_only_claim_supported_openai_verification": true,
+      "account_password_or_session_needed_to_purchase_sms_merchant_asks": null,
+      "user_must_get_to_openai_verification_screen_first": true,
+      "direct_plus_subscription_sku_observed": false,
+      "phone_number_attached_to_openai_account_verified": false,
+      "verified_plus_wholesale_price_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "verified_resale_authorization": null,
+      "confidence": "original merchant product/rules plus OpenAI official docs; no real SMS transaction; official policy excludes VoIP",
+      "qualified_plus_wholesale": false
+    }
+  },
+  "official_openai_reference": {
+    "phone_generally_not_required_for_chatgpt_signup": true,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_mandates_phone": true,
+    "voip_numbers_not_supported": true,
+    "virtual_merchant_number_is_confirmed_supported_mobile": false
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://5sim.net/zh/products/openai",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "merchant_public_listing_and_claim",
+      "page_self_updated_on": "2026-09-01",
+      "first_read_this_round": true,
+      "fact": "OpenAI/ChatGPT独立临时短信号：分类表起$0.050/次，首页服务导航写$0.01起但非准确相同运营商SKU；具体斯洛伐克Virtual34 $0.4327/次45.95%、德国Virtual51 $0.1705/次40.48%、英国Virtual66 $0.1601/次34.72%；最佳接收率卖家声称46%，为短信到达而非OpenAI验证成功；5-30分钟短期接码，不能重用，未收到短信退款仅进站内余额。"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://5sim.net/rules",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "merchant_legal_terms",
+      "page_self_updated_on": null,
+      "first_read_this_round": true,
+      "fact": "店规订单只收选定服务短信，5-30分钟内到短信；未到或取消退款，余额充值第三方支付费另见收银台；明确禁用来实施付费订阅且不退封号损失；排除美国和俄罗斯居民，所有政策是商家规则而非OpenAI批准。"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://5sim.net/docs2/return.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "merchant_legal_refund_policy",
+      "page_self_updated_on": null,
+      "first_read_this_round": true,
+      "fact": "未收到短信订单取消后自动退，收到短信且激活完成后不予退款；非收码或号码无效申诉5天内提交并可能需要截图等证明；该通用政策混有与短信无关的webhost措辞，不能当现金原路成功退款承诺。"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "read_status": "official_help_page_readable",
+      "evidence_class": "official_platform_policy",
+      "page_self_updated_on": null,
+      "first_read_this_round": true,
+      "fact": "OpenAI官方说明普通ChatGPT注册通常不强制手机；Codex桌面端可能要求手机；创建首个API key需手机；官方只支持符合条件的移动号码，不支持座机、VoIP、Google Voice和premium号码，故卖家虚拟号可到短信不等于通过OpenAI验证。"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r11.html",
+  "purchase_or_signin_attempted": false
+}
