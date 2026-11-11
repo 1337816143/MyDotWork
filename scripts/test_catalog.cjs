@@ -1187,3 +1187,20 @@ assert.equal(r134.new_evidence.buygpt_plus.catalog_page_display_cny_per_account_
 assert.equal(r134.new_evidence.buygpt_plus.product_page_promotion_display_cny_per_account_month,139);
 assert.equal(r134.new_evidence.buygpt_plus.actual_paid_price_cny,null);
 assert.equal(r134.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// R135: seller-advertised new SKU and conditional refund fee are not successful paid fulfillment.
+const r135a=d.records.find(x=>x.id==='gpt-source-followup-r135-20261111');
+const r135b=d.records.find(x=>x.id==='gpt-source-followup-r135-20261111-evidence');
+assert(r135a&&r135b&&r135a.url.endsWith('supplier-followup-20261111-r8.html'));
+const r135=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r8-evidence.json'),'utf8'));
+assert.equal(r135.round,135);assert.equal(r135.site_version,'1.9.143');assert.equal(r135.sources.length,2);
+assert.equal(r135.new_evidence.yxab_sku_transition.historical_sku,'G69666080');
+assert.equal(r135.new_evidence.yxab_sku_transition.new_sku,'G62975691');
+assert.equal(r135.new_evidence.yxab_sku_transition.new_sku_public_price_cny_per_account_month,128.80);
+assert.equal(r135.new_evidence.yxab_sku_transition.old_and_new_exact_same_product_or_stock_recovery_verified,null);
+assert.equal(r135.new_evidence.yxab_sku_transition.merchant_claims_takes_fraction_of_openai_refunded_funds,0.20);
+assert.equal(r135.new_evidence.yxab_sku_transition.checkout_payment_fee_cny,null);
+assert.equal(r135.new_evidence.yxab_sku_transition.china_vat_invoice_fee_cny,null);
+assert.equal(r135.new_evidence.yxab_sku_transition.formal_resale_authorization_verified,false);
+assert.equal(r135.qualification_totals.verified_plus_wholesale_upstreams,0);

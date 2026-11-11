@@ -1,0 +1,144 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 135,
+  "site_version": "1.9.143",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次核读yxab.cn当前Plus准确SKU与目录；第99轮历史旧SKU在11月8日显示缺货，本轮旧URL404，新SKU不同ID商称有货；不能认定同SKU补货/降价/实付。退款20%属于本轮首次读到的条款，生效日期未知。帮助中心429不刷新旧税票条款。",
+  "new_evidence": {
+    "yxab_sku_transition": {
+      "merchant": "GPT代充平台 yxab.cn",
+      "historical_report_url": "https://1337816143.github.io/MyDotWork/research/2026-11-08/supplier-followup-20261108-r11.html",
+      "historical_observation_date": "2026-11-08",
+      "historical_sku": "G69666080",
+      "historical_sku_url": "https://yxab.cn/product/G69666080",
+      "historical_price_cny_per_account_month": 128.8,
+      "historical_merchant_stock_label": "暂时缺货",
+      "historical_observation_evidence_level": "prior_first_party_record_preserved",
+      "old_sku_url_this_run_status": "HTTP_404",
+      "old_sku_sunset_or_service_discontinued_verified": null,
+      "new_sku": "G62975691",
+      "new_sku_url": "https://yxab.cn/product/G62975691",
+      "new_sku_public_price_cny_per_account_month": 128.8,
+      "new_sku_quantity": 1,
+      "new_sku_months": 1,
+      "new_sku_merchant_stock_label": "有货",
+      "new_sku_listed_publicly": true,
+      "new_sku_actual_inventory_and_delivery_verified": false,
+      "old_and_new_exact_same_product_or_stock_recovery_verified": null,
+      "actual_price_change_verified": null,
+      "price_change_effective_date_verified": null,
+      "merchant_claims_own_account_and_automated_card_delivery": true,
+      "merchant_claims_valid_visa_mastercard_subscription": true,
+      "merchant_claims_original_openai_receipt": true,
+      "merchant_claims_free_personal_account_required": true,
+      "merchant_claims_active_go_plus_pro_not_stackable": true,
+      "merchant_claims_ios_google_sub_must_expire": true,
+      "merchant_claims_unused_card_not_expiring": true,
+      "merchant_claims_30_day_drop_off_only_warranty": true,
+      "merchant_excludes_ban_login_network_quota_usage_issues": true,
+      "merchant_claims_official_refund_requested_by_account_owner": true,
+      "merchant_claims_takes_fraction_of_openai_refunded_funds": 0.2,
+      "merchant_claims_pays_remaining_refund_fraction": 0.8,
+      "merchant_claims_no_advance_if_official_refund_denied": true,
+      "refund_20_percent_clause_first_read_on": "2026-11-11",
+      "refund_20_percent_clause_effective_start_date_verified": null,
+      "real_refund_and_enforcement_verified": false,
+      "successful_chatgpt_login_needed_first": true,
+      "session_or_token_required_by_external_redeem_site_verified": null,
+      "plus_topup_guarantees_phone_verification": false,
+      "checkout_payment_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "china_vat_invoice_validity_verified": false,
+      "china_vat_invoice_issuer_verified": null,
+      "operator_entity_verified": null,
+      "payment_recipient_verified": null,
+      "all_in_paid_valid_china_vat_cny": null,
+      "one_unit_wholesale_price_cny": null,
+      "upfront_resale_agent_fee_cny": null,
+      "formal_resale_authorization_verified": false,
+      "real_paid_renewal_success_verified": false,
+      "real_fulfillment_verified": false,
+      "qualified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://yxab.cn/products",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "current_first_party_catalog",
+      "evidence_level": "seller_display_not_paid_or_inventory_test",
+      "fact": "列5个套餐，当前G62975691本人Plus菲区单月¥128.80、标有货、自动发卡；未证库存/结算与真正交付。"
+    },
+    {
+      "url": "https://yxab.cn/product/G62975691",
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "page_self_updated_on": null,
+      "evidence_class": "current_precise_plus_sku_refund_terms",
+      "evidence_level": "first_party_claim_not_real_payment_or_refund",
+      "fact": "G62975691 ¥128.80/账号月，当前仅Free无在期订阅、30天只保掉订；OpenAI真实退款后商家称扣20%退款金额再转余款，不垫付未批退款。结算手续费动态未知。"
+    }
+  ],
+  "failed_access": [
+    {
+      "url": "https://yxab.cn/product/G69666080",
+      "observed_on": "2026-11-11",
+      "read_status": "HTTP_404_not_found",
+      "conclusion_boundary": "不同旧URL本轮404，不能由此推断新SKU或网站停服；旧价保持历史观察日期。"
+    },
+    {
+      "url": "https://yxab.cn/help",
+      "observed_on": "2026-11-11",
+      "read_status": "HTTP_429_rate_limited",
+      "conclusion_boundary": "本轮未读取帮助中心正文；不将旧税票、手续费规则改为本轮新价格。"
+    }
+  ],
+  "comparison": {
+    "historical_date": "2026-11-08",
+    "historical_exact_sku": "G69666080",
+    "historical_merchant_display_stock": "暂时缺货",
+    "historical_price_cny_per_month": 128.8,
+    "current_date": "2026-11-11",
+    "current_exact_sku": "G62975691",
+    "current_merchant_display_stock": "有货",
+    "current_price_cny_per_month": 128.8,
+    "displayed_price_difference_cny": 0,
+    "conclusion": "SKU不同，旧缺货新挂牌有货；不能证明旧SKU恢复库存或实时购买可行。"
+  },
+  "phone_verification": {
+    "independent_new_sms_sku_observed": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "number_lifespan_days_verified": null,
+    "failed_sms_cash_refund_verified": null,
+    "ordinary_plus_topup_guarantees_phone_binding": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_plus_price_records_modified": false,
+  "prior_reports_modified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "notes": [
+    "¥128.80与11月8日历史挂牌相同，不是证实降价。不同SKU及新上架标有货不能称旧SKU真正补货。",
+    "新SKU退款20%仅限OpenAI成功官方退回资金后的商家处理费，不是所有退款。",
+    "商家自称官方账单/收据不等于有效中国增值税发票；真实付款附费/票费/收款出票主体/授权仍未知null。",
+    "帮助429不能刷新旧税票政策，不推定网站失效。"
+  ]
+}

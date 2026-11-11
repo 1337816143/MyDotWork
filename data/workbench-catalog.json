@@ -3312,6 +3312,28 @@
       "summary": "11条2026-11-11直接实读一方网页；¥5单次Codex钱包3日返利、同站Plus价差¥10；批发、现金退款、真实手机号成功仍为0或null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r135-20261111",
+      "title": "GPT源头第135轮 · yxab新Plus SKU与官方退款20%扣费边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r8.html",
+      "updatedAt": "2026-11-11",
+      "summary": "yxab旧SKU G69666080历史标缺货且本轮404，新SKU G62975691同价¥128.80/月、商称有货；新商品说官方实际退款后扣20%，未证真实补货、有效中国VAT和批发权。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r135-20261111-evidence",
+      "title": "第135轮 · yxab新旧Plus SKU、售后和访问失败原URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r8-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "2条实际可读商家原URL；旧SKU404、帮助429分列，不刷新历史价；¥128.80原号零售价、官方退款扣20%为商家承诺，全部含VAT成本null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
