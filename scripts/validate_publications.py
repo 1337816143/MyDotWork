@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 307, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 309, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.137'
-    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r9.html'
+    assert latest['version'] == '1.138'
+    assert latest['path'] == 'research/2026-11-11/supplier-followup-20261111-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-11/supplier-followup-20261111-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-11/supplier-followup-20261111-r10.html'
     # R137: a two-text 30-day SKU is not a lasting phone; same-page prices conflict and mainland sales are excluded.
     assert by_id['gpt-source-followup-r137-20261111']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10.html'
     assert by_id['gpt-source-followup-r137-20261111-evidence']['url'] == '../research/2026-11-11/supplier-followup-20261111-r10-evidence.json'

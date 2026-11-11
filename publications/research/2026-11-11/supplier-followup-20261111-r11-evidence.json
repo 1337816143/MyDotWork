@@ -1,0 +1,169 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 138,
+  "site_version": "1.9.146",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "词元连接/token5555已在2026-11-07第85轮首次记录同样的Plus¥148+1.2%¥1.78=¥149.78未付款预览以及免费推广10%—25%。2026-11-11本轮的新补证限于首次实读2026-08-20版服务条款、用户协议、隐私、关于页、政策页：站方禁止倒卖卡密，承认上游卡密供应商，以及旧条款称标价已含手续费与第85轮/本轮网页分列支付附费不一致。不得将报价和推广模式重复说成新发现或11月11日降价。",
+  "new_evidence": {
+    "token5555": {
+      "merchant_public_brand": "词元连接",
+      "domain": "token5555.com",
+      "exact_displayed_plan": "Plus（官方20刀）",
+      "sku_id_publicly_available": null,
+      "listed_product_subtotal_cny_per_item": 148,
+      "quantity": 1,
+      "listed_purchase_term": "one Plus subscription item; month term inferred from Plus plan, exact downstream account term requires verification",
+      "listed_extra_payment_fee_rate": 0.012,
+      "listed_extra_payment_fee_cny": 1.78,
+      "unpaid_checkout_preview_total_cny": 149.78,
+      "checkout_created_or_paid": false,
+      "merchant_old_terms_say_listed_price_includes_payment_fee": true,
+      "merchant_current_page_displays_extra_payment_fee": true,
+      "price_wording_conflict": true,
+      "listed_referral_commission_initial": 0.1,
+      "listed_referral_commission_max": 0.25,
+      "free_referral_enrollment_claim": true,
+      "referral_is_verified_wholesale": false,
+      "merchant_old_terms_prohibit_reselling_codes": true,
+      "merchant_admits_upstream_code_supplier_in_privacy": true,
+      "first_hand_supplier_verified": false,
+      "merchant_claims_nonofficial_and_not_authorized_by_openai": true,
+      "formal_resale_authorization_verified": false,
+      "real_payment_or_fx_fee_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "all_required_fees_and_valid_china_vat_total_cny": null,
+      "business_operator_legal_name_verified": null,
+      "payment_recipient_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "valid_china_vat_invoice_verified": false,
+      "single_item_wholesale_price_verified": null,
+      "no_upfront_qualified_wholesale_verified": null,
+      "session_or_token_required_by_downstream_redemption_verified": null,
+      "existing_plus_overlap_or_renewal_verified": null,
+      "phone_order_contact_is_openai_phone_verification": false,
+      "chatgpt_web_sms_verified": false,
+      "codex_phone_sms_verified": false,
+      "first_api_key_sms_verified": false,
+      "independent_phone_validation_sku_observed": false,
+      "refund_success_verified": false,
+      "actual_plus_activated_verified": false,
+      "qualified": false,
+      "this_round_new_terms_evidence_only": true,
+      "price_and_commission_are_historical_rechecks_not_new_findings": true,
+      "newly_read_terms_effective_date": "2026-08-20",
+      "policy_conflict_explained_as_unresolved": true
+    }
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": null,
+      "kind": "商品与未付款结算预览",
+      "fact": "页面Plus（官方20刀）一件小计¥148、单列第三方支付费1.2% ¥1.78、界面合计¥149.78；未输入订单联系方式、未付款；结算页没有中国VAT开票明细；订单联系手机号不等于OpenAI账号绑定。",
+      "first_read_this_round": false
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/partner-register.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": null,
+      "kind": "推广计划",
+      "fact": "免费注册的一级推广返佣：初档10%，累计销售¥1000/¥5000/¥10000后依次15%/20%/25%；无代理入驻费不等于以批发价一件拿货，返佣与购货不能混同。",
+      "first_read_this_round": false
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/terms.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": "2026-08-20",
+      "kind": "卖家旧服务条款",
+      "fact": "页面标注2026-08-20；条款第4节称标价包含第三方支付手续费，和首页当前结算预览分列+1.2%不一致；第7节明示禁止倒卖卡密。标称未使用和兑换失败可退、成功兑换后不退，实测0。",
+      "first_read_this_round": true
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/agreement.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": "2026-08-20",
+      "kind": "卖家旧用户协议",
+      "fact": "页面标注2026-08-20；第5节明示禁止倒卖卡密，未见例外授权；不等同于正常推广佣金计划。",
+      "first_read_this_round": true
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/about.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": "2026-08-20",
+      "kind": "主体与支付说明",
+      "fact": "仅自称独立第三方卡密服务站，未给可核验企业法律名称；说USDT已支持、微信和支付宝即将支持，与首页展示的支付选择及正在加载二维码不足以证明实际可支付。",
+      "first_read_this_round": true
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/privacy.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": "2026-08-20",
+      "kind": "隐私与履约链",
+      "fact": "页面标注2026-08-20；披露有上游卡密供应商参与订单履约，订单支付摘要商称留3年，手机联系方式售后结束6个月后匿名化；不收密码≠兑换流程完全不需Session/Token。",
+      "first_read_this_round": true
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/policies.html",
+      "read_status": "first_party_page_readable",
+      "evidence_class": "seller_self_description_or_policy",
+      "page_self_updated_on": "2026-08-20",
+      "kind": "条款索引",
+      "fact": "页面标注2026-08-20；明确第三方、无OpenAI官方隶属关系；没有补充国内有效增值税发票及出票人信息。",
+      "first_read_this_round": true
+    }
+  ],
+  "failed_access": [
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/help.html",
+      "status": "tool_not_accessible_no_price_refresh"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "url": "https://token5555.com/tutorial.html",
+      "status": "tool_not_accessible_no_fulfillment_inference"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r10.html",
+  "previously_recorded": {
+    "round": 85,
+    "observation_date": "2026-11-07",
+    "report_url": "https://1337816143.github.io/MyDotWork/research/2026-11-07/supplier-followup-20261107-r9.html",
+    "same_unpaid_checkout_preview_cny": 149.78,
+    "same_commission_tiers": [
+      10,
+      15,
+      20,
+      25
+    ],
+    "not_new_price_or_commission": true
+  }
+}

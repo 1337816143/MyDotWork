@@ -1239,3 +1239,18 @@ assert.equal(r137.new_evidence.independent_sms.offers[1].listed_price_cny,3);
 assert.equal(r137.new_evidence.independent_sms.offers[2].listed_price_cny,3);
 assert.equal(r137.new_evidence.independent_sms.real_phone_sms_successes,0);
 assert.equal(r137.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R138: unpaid fee breakdown and no lawful bulk purchase despite referral claims.
+const r138cat=d.records.find(x=>x.id==='gpt-source-followup-r138-20261111');
+const r138data=d.records.find(x=>x.id==='gpt-source-followup-r138-20261111-evidence');
+assert(r138cat&&r138data&&r138cat.url.endsWith('supplier-followup-20261111-r11.html'));
+const r138=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r11-evidence.json'),'utf8'));
+assert.equal(r138.round,138);assert.equal(r138.site_version,'1.9.146');assert.equal(r138.sources.length,7);
+assert.equal(r138.new_evidence.token5555.listed_product_subtotal_cny_per_item,148);
+assert.equal(r138.new_evidence.token5555.listed_extra_payment_fee_cny,1.78);
+assert.equal(r138.new_evidence.token5555.unpaid_checkout_preview_total_cny,149.78);
+assert.equal(r138.new_evidence.token5555.merchant_old_terms_prohibit_reselling_codes,true);
+assert.equal(r138.new_evidence.token5555.referral_is_verified_wholesale,false);
+assert.equal(r138.new_evidence.token5555.all_required_fees_and_valid_china_vat_total_cny,null);
+assert.equal(r138.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r138.qualification_totals.verified_phone_sms_successes,0);
