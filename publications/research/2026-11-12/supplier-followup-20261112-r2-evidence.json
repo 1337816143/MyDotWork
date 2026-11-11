@@ -1,0 +1,162 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 149,
+  "site_version": "1.9.157",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "本轮首次核读此前目录未收录的LinkAi自有Plus商品、付款预览、合同草案、代理、企业采购与兑换API。商家挂牌及静态结算预览不等于支付成功；运营主体和税票授权尚未核实。其为新零售线索而非合格批发源。未付款、提交Session或测试短信。",
+  "new_evidence": {
+    "linkai_retail_plus_offer": {
+      "merchant": "LinkAi",
+      "website": "https://www.linkaiu.com",
+      "sku": "ChatGPT Plus / 个人账号充值 / 30天",
+      "listed_price_cny_per_30_days": 150,
+      "merchant_listing_in_stock": true,
+      "checkout_preview_product_cny": 150,
+      "checkout_preview_payment_surcharge_cny": 0,
+      "checkout_preview_total_cny": 150,
+      "preview_is_verified_paid_checkout": false,
+      "actual_paid_payment_surcharge_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "all_in_plus_with_valid_china_vat_cny": null,
+      "retail_not_wholesale": true,
+      "first_observed_on": "2026-11-12",
+      "price_change_proven": false,
+      "session_json_requested_for_own_account": true,
+      "prior_chatgpt_login_needed_to_get_session": true,
+      "session_may_not_be_available_before_web_phone_verification": true,
+      "chatgpt_web_phone_verification_success_verified": false,
+      "codex_phone_verification_success_verified": false,
+      "first_api_key_phone_verification_success_verified": false
+    },
+    "linkai_merchant_contract_and_refund": {
+      "service_terms_url": "https://www.linkaiu.com/terms",
+      "terms_self_version": "2026-10-13-draft",
+      "terms_page_says_draft": true,
+      "operating_entity_text": "运营主体待填写",
+      "contact_address_text": "联系地址待填写",
+      "verified_operating_entity": null,
+      "verified_receiving_entity": null,
+      "verified_china_vat_invoice_issuer": null,
+      "verified_resale_authorization": false,
+      "claims_official_platform_affiliation": false,
+      "delivery_not_all_immediate": true,
+      "refund_automatic_to_payment_channel": false,
+      "refund_subject_to_manual_verification": true,
+      "refund_actual_tested": false
+    },
+    "linkai_supply_chain_and_api": {
+      "agent_url": "https://www.linkaiu.com/partners",
+      "business_url": "https://www.linkaiu.com/business",
+      "api_docs_url": "https://www.linkaiu.com/docs",
+      "published_merchant_single_price_cny": 150,
+      "published_single_unit_wholesale_price_cny": null,
+      "published_wholesale_minimum_quantity": null,
+      "published_upfront_agent_fee_cny": null,
+      "agent_terms_negotiated_after_application": true,
+      "published_api_routes": [
+        "POST /api/v1/redeem",
+        "GET /api/v1/orders?no="
+      ],
+      "api_type": "redeem_existing_linkai_store_codes_and_query_own_orders",
+      "documented_supplier_adapter_routes": [
+        "POST /orders",
+        "POST /orders/query"
+      ],
+      "supplier_adapter_protocol_is_proof_of_live_authorized_supplier": false,
+      "live_upstream_supplier_identified": null,
+      "formal_wholesale_or_openai_resale_authorization_verified": false,
+      "real_fulfillment_tested": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.linkaiu.com/products?brand=ChatGPT",
+      "observed_on": "2026-11-12",
+      "status": "readable",
+      "evidence_class": "merchant_product_listing",
+      "note": "Plus ¥150/30天个人账号零售挂牌，页面自称现货；不是已成交或批发价。"
+    },
+    {
+      "url": "https://www.linkaiu.com/quick-buy?product=2",
+      "observed_on": "2026-11-12",
+      "status": "readable_static_checkout_preview",
+      "evidence_class": "merchant_checkout_claim",
+      "note": "展示商品¥150、手续费¥0、总额¥150及Session JSON字段；没有下单/真实支付/发票。"
+    },
+    {
+      "url": "https://www.linkaiu.com/terms",
+      "observed_on": "2026-11-12",
+      "status": "readable",
+      "evidence_class": "merchant_draft_terms",
+      "source_self_version": "2026-10-13-draft",
+      "note": "运营主体和地址待填、第三方无官方隶属保证、手工核查退款不自动原路退。"
+    },
+    {
+      "url": "https://www.linkaiu.com/partners",
+      "observed_on": "2026-11-12",
+      "status": "readable",
+      "evidence_class": "merchant_partnership_claim",
+      "note": "代理价、交付及售后须申请后协商；未公开单件批发价、前置费或正式授权。"
+    },
+    {
+      "url": "https://www.linkaiu.com/business",
+      "observed_on": "2026-11-12",
+      "status": "readable",
+      "evidence_class": "merchant_business_claim",
+      "note": "Plus ¥150仅标单份参考价，批量报价另谈；自报库存未经独立验真。"
+    },
+    {
+      "url": "https://www.linkaiu.com/docs",
+      "observed_on": "2026-11-12",
+      "status": "readable",
+      "evidence_class": "merchant_api_documentation",
+      "note": "兑换码API和供货适配器协议，不证明已接入合法实际上游，更非OpenAI官方API或接码服务。"
+    }
+  ],
+  "unknown_merchant_costs": {
+    "actual_payment_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "all_in_plus_with_valid_china_vat_cny": null,
+    "real_single_unit_wholesale_price_cny": null,
+    "upfront_agent_fee_cny": null
+  },
+  "old_candidate_rechecks": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "old_candidate_prices_not_refreshed": true,
+  "phone_verification_service_delta": null,
+  "boundaries": {
+    "ordinary_subscription_auto_binds_phone": false,
+    "apple_and_session_delivery_may_coexist": true,
+    "session_or_token_submission_not_authorized": true,
+    "merchant_retail_price_not_upstream_wholesale": true,
+    "merchant_api_spec_not_verified_supplier": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
