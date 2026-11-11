@@ -1,0 +1,198 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 151,
+  "site_version": "1.9.159",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "第151轮：对引路鲸准确Plus原号月付SKU和Morimm菲卡SKU进行实时一方页面读取；两种读取路径对引路鲸价目存在快照冲突，只记录新读取结果及比较，不把页面展示当作已证实调价日期或实际成交；复查CatFK、wind89、GetVIP、PAYPRM，手机号验证未实测。",
+  "new_evidence": {
+    "yinlujing_same_url_listing_comparison": {
+      "merchant": "引路鲸／ChatGPT直充站",
+      "source_url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "sku_id": "LIST-000001",
+      "unit": "人民币/目标本人原号/1个月",
+      "prior_guaranteed_plus_listing_cny": 135,
+      "prior_no_guarantee_plus_listing_cny": 125,
+      "prior_confirmed_observed_on": "2026-11-08",
+      "prior_observation_note": "2026-11-03首次与2026-11-08复读存档",
+      "live_guaranteed_plus_listing_cny": 145,
+      "live_no_guarantee_plus_listing_cny": 135,
+      "live_observed_on": "2026-11-12",
+      "live_read_method": "Live merchant URL fetch HTTP 200, twice, basic and stealth; same displayed amounts",
+      "live_listing_differences_cny": {
+        "guaranteed": 10,
+        "no_guarantee": 10
+      },
+      "confirmed_price_change_date": null,
+      "conflicting_indexed_snapshot_guaranteed_cny": 135,
+      "conflicting_indexed_snapshot_no_guarantee_cny": 125,
+      "conflict_note": "另一网页索引提取同URL仍展示135/125；不应将两次抓取差额写成已发生的确切涨价/已核当前结算。",
+      "merchant_invoice_extra_percentage": 6,
+      "guaranteed_pretax_display_subtotal_cny": 145,
+      "illustrative_plus_6_percent_only_cny": 153.7,
+      "illustrative_total_is_paid_or_tax_verified": false,
+      "actual_order_created": false,
+      "actual_payment_fee_cny": null,
+      "actual_valid_china_vat_invoice_cny": null,
+      "actual_verified_all_in_cny": null,
+      "invoice_issuer": null,
+      "merchant_claim_30_day_warranty": true,
+      "merchant_claim_subscription_loss_refund_service_deduction_percent": 20,
+      "merchant_claim_account_ban_excluded": true,
+      "actual_refund_tested": false,
+      "merchant_mentions_batch_and_authorized_delivery": true,
+      "merchant_wholesale_price_cny": null,
+      "merchant_has_verified_formal_resale_authorization": false,
+      "prior_agent_signup_fee_cny": 3000,
+      "agent_upfront_fee_condition_disqualifies": true
+    },
+    "morimm_exact_product_comparison": {
+      "merchant": "Morimm",
+      "source_url": "https://morimm.com/products/gptplus",
+      "sku": "ChatGPT PLUS 菲区正规代充 同步官方售后 / Default SKU",
+      "unit": "人民币/份；具体购买结算周期应再核实",
+      "prior_listing_cny": 113,
+      "prior_confirmed_observed_on": "2026-11-06",
+      "live_listing_cny": 114,
+      "live_observed_on": "2026-11-12",
+      "observed_listing_difference_cny": 1,
+      "confirmed_change_date": null,
+      "member_login_required_by_page": true,
+      "merchant_claims_in_stock": true,
+      "needs_free_individual_account": true,
+      "team_workspace_excluded": true,
+      "merchant_describes_card_delivery_site": "deem2.xyz",
+      "actual_member_price_and_checkout_cny": null,
+      "actual_vat_invoice_cny": null,
+      "actual_payment_surcharge_cny": null,
+      "verified_bulk_authorization": false,
+      "actual_purchase_tested": false
+    },
+    "catfk_merchant_structure_note": {
+      "source_url": "https://catfk.com/item/xoyimh",
+      "seller_on_source": "NEON AI/霓虹玩家AI, AIDP store",
+      "seller_warns_products_from_different_suppliers": true,
+      "seller_claims_invoice_arrangement_before_order": true,
+      "seller_claims_fee_waiver_by_direct_contact": true,
+      "actual_current_product_price_from_page_cny": null,
+      "actual_vat_issuer_verified": false,
+      "fee_free_checkout_verified": false,
+      "wholesale_authorization_verified": false,
+      "not_same_as_store": "https://catfk.com/shop/cat",
+      "classification": "marketplace_independent_seller_not_verified_upstream"
+    },
+    "independent_phone_services": {
+      "getvip_chatgpt_codex_seller_price_cny_per_use": 10,
+      "payprm_codex_one_time_cny": 12,
+      "wind89_sms_new_terms_verified": false,
+      "actual_web_chatgpt_success_count": 0,
+      "actual_codex_success_count": 0,
+      "actual_first_api_key_success_count": 0,
+      "number_term_days_verified": null,
+      "failed_sms_cash_refund_verified": null,
+      "session_or_token_needed_before_topup": true,
+      "apple_purchase_automatically_binds_phone": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "status": "http_200_live_primary_page_read_twice",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape_basic_and_stealth",
+      "evidence_class": "merchant_owned_page_display",
+      "note": "同一Plus本人原号SKU LIST-000001，直播页面有保¥145/月、无保¥135/月；发票另+6%、掉订退款扣20%为商家条款；未建单、未实付。"
+    },
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "status": "conflicting_indexed_snapshot_seen",
+      "observed_on": "2026-11-12",
+      "method": "web_indexed_text_view",
+      "evidence_class": "conflicting_older_or_differently_rendered_snapshot",
+      "note": "其他索引文本仍展示有保¥135/无保¥125；不能仅据两类页面快照断言确切调价日或实际结算价。"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "status": "http_200_live_primary_page",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape",
+      "evidence_class": "merchant_owned_page_display",
+      "note": "本人菲区Plus商品当前可读页面¥114/Default SKU、Members only；对照2026-11-06旧观察¥113，非实付或已核月期。"
+    },
+    {
+      "url": "https://catfk.com/item/xoyimh",
+      "status": "http_200_live_primary_page",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape",
+      "evidence_class": "marketplace_seller_claim",
+      "note": "NEON AI/AIDP独立摊位自称多供货方、可预先商议开票和免手续费；未取得SKU实时价、真实出票或授权。"
+    },
+    {
+      "url": "https://catfk.com/shop/cat",
+      "status": "http_200_live_old_recheck",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape",
+      "evidence_class": "prior_fact_recheck_not_repriced",
+      "note": "另一个独立AI猫站长摊位，Plus旧¥129；不可与AIDP混为同一供应主体。"
+    },
+    {
+      "url": "https://wind89.com/guide/faq",
+      "status": "http_200_redirects_to_guide",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape",
+      "evidence_class": "prior_terms_recheck",
+      "note": "现官网指南可读，开票需商家会员登录，非新增价格政策，不补写真实票据。"
+    },
+    {
+      "url": "https://getvip.pro/guides/chatgpt-register",
+      "status": "http_200_live",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape",
+      "evidence_class": "prior_seller_SMS_claim_recheck",
+      "note": "卖家¥10/次ChatGPT/Codex验证声明旧值，未证网页和API都适用或通过。"
+    },
+    {
+      "url": "https://www.payprm.com/shop/codex-verification",
+      "status": "http_200_live",
+      "observed_on": "2026-11-12",
+      "method": "fresh_live_scrape",
+      "evidence_class": "prior_seller_SMS_claim_recheck",
+      "note": "Codex独立¥12/次旧挂牌，卡密可用不等于验证成功；无现金退款实测。"
+    }
+  ],
+  "remaining_unchanged_or_unverified_vendors": [
+    "小久",
+    "ChatShare",
+    "GETGPT Pro",
+    "ChongPay",
+    "GetVIP",
+    "PAYPRM",
+    "wind89",
+    "CatFK"
+  ],
+  "unknown_costs": {
+    "payment_entity": null,
+    "invoice_issuer": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "real_single_unit_wholesale_cny": null,
+    "full_payment_fee_cny": null,
+    "all_required_payment_and_invoice_costs_cny": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r3.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

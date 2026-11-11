@@ -3664,6 +3664,28 @@
       "summary": "8条原始访问状态、两个同SKU旧新挂牌、条款、未知费用null，批发上游0、未实购/验票/SMS。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r151-20261112",
+      "title": "GPT源头第151轮 · 引路鲸月卡价目快照冲突、Morimm新观察与CatFK卖家区分",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r4.html",
+      "updatedAt": "2026-11-12",
+      "summary": "引路鲸实时有保¥145/无保¥135，旧索引仍135/125，披露快照冲突不认定实付；Morimm ¥113→¥114，同为公开零售挂牌，非已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r151-20261112-evidence",
+      "title": "第151轮 · 引路鲸与Morimm同SKU快照、CatFK多供方与短信旧价核对的8条原始URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r4-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "2026-11-12实时两次网页读数与索引冲突单列，历史报价不覆盖；真实付款、合法VAT税票与转售授权、Web/Codex/API接码成功均0/null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
