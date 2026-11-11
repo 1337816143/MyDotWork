@@ -1,3 +1,10 @@
+## 1.9.162 · 2026-11-12
+
+- 第154轮首次直读GPTHub/CIYUANAPI自有商品 https://gpthub.ciyuanapi.ai/item/tu-plus ，准确SKU tu-plus「ChatGPT Plus 正规官方充值」挂牌¥169／件，商称AppStore正规充值、人工交付、有库存；本站首页又写Gift Card及月付，具体SKU页未明确30天。购物摘要¥169为预估，支付渠道未加载，不是全费/成交价；有效中国增值税票费、实际收款和出票法人、转售授权、单件批发进价和可续充均null。2026-11-05旧GPTHubs ¥160为转发GPT101的另一条供货链，不能将不同SKU的¥169与¥160写成同款涨价。
+- 商家自有 https://gpthub.ciyuanapi.ai/terms 明确否认与OpenAI官方隶属，自称CIYUANAPI但无可验工商/收款主体；封号、第三方平台大规模异常和账号手机验证失败排除售后，普通掉订在符合条件且无法补订时仅商称剩余天数退款、卡密24小时核验，均无真实退款实测。其商称Apple/AppStore充值不等于自动绑定手机或解除ChatGPT网页、Codex桌面、首次API Key验证。
+- 首次连读 https://gpthub.ciyuanapi.ai/notice 、/notice/D6S、/notice/jiema-qianyi、/notice/jieme-new ：旧公告曾宣称2026-09-16接码暂停，之后列出迁移到https://sms.llmtrade.club/及商称业务恢复，未标明公告实际发布日期；商称旧余额需联系客服迁移，不等于原路退款。新站本轮抓取502且无可用商品正文，不据此断言真实停运/已恢复。SMS号码类型/期限、ChatGPT网页/Codex/API适用性、Session前提、价格及失败现金退款都未核，null且实测0。
+- 仅新增第154轮报告和8条URL状态JSON，精确SHA256发布白名单、project-1目录、总库入口、VERSION、发布指针及回归断言；历史126报价和前153轮报告原字节保留。已核符合本人原号Plus单件单月、免代理前置费、含所有支付及中国有效VAT≤¥170合法批发源0，实购0、有效票验真0、接码成功0。无下单、付款、联系商家或提交登录凭据。
+
 ## 1.9.161 · 2026-11-12
 
 - 第153轮再次直接核读Morimm准确独立Codex一次性接码SKU https://morimm.com/products/Codex_num ，公开挂牌¥4／次（Members only、Low stock）；与2026-11-06第75轮同SKU实读¥3／次形成+¥1两次观察快照差额。没有证明确切变价日期、真实订单、支付附加费、会员准入成本或可用库存量；“美国实卡”“自动发CDK”只是商家承诺，VoIP/真实号码类型、接码通过、持号期限、网页/首API Key用途、失败原路现金退款均未核实。Codex单次短信不属于Plus采购价格。
