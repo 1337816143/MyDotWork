@@ -134,10 +134,10 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 335, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.151'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r4.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r4-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r3.html'
+    assert latest['version'] == '1.152'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r5.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r5-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r4.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1642,6 +1642,21 @@ def validate_publications():
     assert all(v is None for v in r151['unknown_costs'].values())
     assert all(v == 0 for v in r151['qualification_totals'].values())
     assert r151['purchase_or_login_attempted'] is False and r151['merchant_contacted'] is False
+    # R152: independent CatFK seller, same public redemption endpoint, still not a verified wholesale source.
+    assert by_id['gpt-source-followup-r152-20261112']['url'] == '../research/2026-11-12/supplier-followup-20261112-r5.html'
+    assert by_id['gpt-source-followup-r152-20261112-evidence']['url'] == '../research/2026-11-12/supplier-followup-20261112-r5-evidence.json'
+    r152 = json.loads((ROOT/'dist/research/2026-11-12/supplier-followup-20261112-r5-evidence.json').read_bytes())
+    assert r152['round'] == 152 and r152['site_version'] == '1.9.160' and len(r152['sources']) == 4
+    x152 = r152['new_evidence']['catfk_xiaoai_independent_seller']
+    assert x152['displayed_retail_price_cny'] == 168 and x152['verified_all_in_cny'] is None
+    assert x152['seller_claim_refund_deduction_percent'] == 20 and x152['actual_refund_tested'] is False
+    assert x152['verified_formal_resale_authorization'] is False and x152['upstream_qualified'] is False
+    term152 = r152['new_evidence']['shared_redemption_terminal']
+    assert term152['http_status'] == 200 and term152['common_link_proves_same_company_or_verified_wholesale_upstream'] is False
+    assert r152['new_evidence']['yinlujing_current_disclaimer']['formal_resale_authorization_document_verified'] is False
+    assert all(value is None for value in r152['unknown_costs'].values())
+    assert all(value == 0 for value in r152['qualification_totals'].values())
+    assert r152['purchase_or_login_attempted'] is False and r152['merchant_contacted'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
