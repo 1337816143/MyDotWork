@@ -1331,3 +1331,14 @@ assert.deepEqual(r144.new_evidence.chongpay.pro_products.map(x=>x.display_price_
 assert.equal(r144.new_evidence.chongpay.external_shop_readable,false);
 assert.equal(r144.new_evidence.chongpay.all_fees_plus_including_valid_vat_cny,null);
 assert.equal(r144.qualification_totals.verified_phone_sms_successes,0);
+
+// R145: Plus account eligibility and official receipt provenance are newly sourced, not test purchases.
+const r145a=d.records.find(x=>x.id==='gpt-source-followup-r145-20261111'),r145b=d.records.find(x=>x.id==='gpt-source-followup-r145-20261111-evidence');
+assert(r145a&&r145b&&r145a.url.endsWith('supplier-followup-20261111-r18.html'));
+const r145=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r18-evidence.json'),'utf8'));
+assert.equal(r145.round,145);assert.equal(r145.site_version,'1.9.153');
+assert.equal(r145.new_evidence.chongpay_account_eligibility.joined_team_disallowed,true);
+assert.equal(r145.new_evidence.chongpay_account_eligibility.actual_checkout_total_cny,null);
+assert.equal(r145.new_evidence.official_subscription_receipt_provenance.apple_google_store_purchase_invoice_appears_in_chatgpt_web_billing,false);
+assert.equal(r145.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r145.qualification_totals.verified_phone_sms_successes,0);

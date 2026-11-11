@@ -3532,6 +3532,28 @@
       "summary": "直接读取3条商家原始URL与1条小铺WAF；区分2026-11-09网页自标、2026-11-11实读和未知支付/税票/授权null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r145-20261111",
+      "title": "GPT源头第145轮 · ChongPay Plus账号资格、实际售后责任与官方收据路径",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r18.html",
+      "updatedAt": "2026-11-11",
+      "summary": "ChongPay条款要求Plus账号无在期订阅、未加入Team，实际售后按外部店铺；OpenAI官方区分网页发票与Apple/Google商店收据。不等于已核中国VAT税票或批发资格。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r145-20261111-evidence",
+      "title": "第145轮 · ChongPay资格条款与官方发票出处的2条原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r18-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "两条2026-11-11首读原URL：Plus资格、售后订单归属、网页/Apple/Google收据位置。旧价不刷新，未知支付费与有效中国VAT费用null，无真实履约或SMS实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

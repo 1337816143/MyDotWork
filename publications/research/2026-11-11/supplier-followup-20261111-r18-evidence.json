@@ -1,0 +1,109 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 145,
+  "site_version": "1.9.153",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接读取ChongPay服务条款的Plus账号资格和实际小铺售后归属，以及OpenAI官方ChatGPT网页版/Apple/Google购买票据归属说明。非今日新出台规则、非当轮新价格；不改变历史报价日期。",
+  "new_evidence": {
+    "chongpay_account_eligibility": {
+      "primary_url": "https://chongpay.com/terms",
+      "seller_policy_revision_label": "2026-11 修订版",
+      "revision_exact_day": null,
+      "applies_to": "ChongPay链接外部小铺的Plus商品",
+      "current_active_subscription_disallowed": true,
+      "joined_team_disallowed": true,
+      "prior_subscription_account_restrictions": null,
+      "merchant_disclaims_official_affiliation": true,
+      "quoted_plus_price_cny_context_only": 139,
+      "price_unit": "卖家展示单件Plus商品（旧报价复核）",
+      "changed_price_verified": false,
+      "gpt_warranty_days_claimed": 30,
+      "warranty_scope_and_refund_defined_by_external_shop": true,
+      "storefront": "https://wzyp.cn/shop/FDDQ3HVD",
+      "storefront_product_and_terms_independently_verified": false,
+      "actual_checkout_total_cny": null,
+      "payment_fee_cny": null,
+      "invoice_fee_cny": null,
+      "valid_china_vat_invoice_issuer": null,
+      "operator_legal_entity_verified": false,
+      "payment_recipient_verified": false,
+      "first_hand_verified": false,
+      "formal_resale_authorization_verified": false,
+      "real_delivery_verified": false,
+      "evidence_type": "merchant_own_terms_no_real_purchase"
+    },
+    "official_subscription_receipt_provenance": {
+      "primary_url": "https://help.openai.com/en/articles/12356340-finding-past-chatgpt-invoices",
+      "chatgpt_web_purchase_invoice_found_in": "ChatGPT Settings > Billing > Invoices",
+      "apple_google_store_purchase_invoice_appears_in_chatgpt_web_billing": false,
+      "apple_receipt_source": "付款 Apple Account 的邮件或 App Store Purchase History，可能与ChatGPT账号邮箱不同",
+      "google_receipt_source": "Google Play 付款商店订单记录（按官方帮助原文）",
+      "apple_receipt_not_valid_chinese_vat_invoice_by_default": true,
+      "user_merchant_china_vat_invoice_verified": false,
+      "seller_invoice_issuer_verified": false,
+      "evidence_type": "platform_official_billing_documentation_not_seller_invoice"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/terms",
+      "observed_on": "2026-11-11",
+      "status": "first_party_page_readable",
+      "page_self_revision": "2026-11",
+      "evidence_class": "seller_contractual_claim_not_checkout",
+      "new_research_evidence": true,
+      "description": "商家独立导购站不属于官方渠道；Plus要求无在期订阅且未加入Team；30天质保细则取决于外部店铺实际订单条款。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/12356340-finding-past-chatgpt-invoices",
+      "observed_on": "2026-11-11",
+      "status": "official_page_readable",
+      "page_relative_updated_label": "Updated: 7 days ago",
+      "evidence_class": "official_platform_documentation",
+      "new_research_evidence": true,
+      "description": "官网网页订阅发票在ChatGPT账单设置；Apple/Google交易收据由应用商店提供且不出现在ChatGPT网页账单中；Apple收据归付款Apple Account。"
+    }
+  ],
+  "old_candidate_rechecks": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "no_verified_price_change": true,
+  "unknown_fees_must_remain_null": true,
+  "boundaries": {
+    "newly_read_old_policy_not_new_rule_today": true,
+    "site_display_price_not_checkout": true,
+    "merchant_claim_not_real_success": true,
+    "store_receipt_not_proven_valid_china_vat_invoice": true,
+    "apple_purchase_can_coexist_with_session_delivery": true,
+    "ordinary_plus_payment_does_not_automatically_bind_phone": true,
+    "chatgpt_web_codex_api_sms_not_tested": true,
+    "original_126_price_records_unchanged": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r17.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
