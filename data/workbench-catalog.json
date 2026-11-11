@@ -3554,6 +3554,28 @@
       "summary": "两条2026-11-11首读原URL：Plus资格、售后订单归属、网页/Apple/Google收据位置。旧价不刷新，未知支付费与有效中国VAT费用null，无真实履约或SMS实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r146-20261111",
+      "title": "GPT源头第146轮 · 首API Key手机号三账号上限与号码不可更改",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r19.html",
+      "updatedAt": "2026-11-11",
+      "summary": "OpenAI官方新补证：首API Key验证同号最多3账号、删号不恢复额度；30天后注册复用是另一规则，已绑定手机号不可更改。非新商家报价或真实接码测试。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r146-20261111-evidence",
+      "title": "第146轮 · 官方号码次数、删除复用与账号绑定边界的原URL证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r19-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "首次直读4条OpenAI官方URL；另复核2家旧价、3链接访问失败不刷新，未知支付/有效中国VAT费用null，实际SMS成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
