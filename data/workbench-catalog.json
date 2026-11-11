@@ -3290,6 +3290,28 @@
       "summary": "2026-11-11实读8个卖家页面，11月8日旧政策日另记；有效中国VAT、实际结算与SMS验证均未证，未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r134-20261111",
+      "title": "GPT源头第134轮 · ¥5 Codex短信钱包返利与BuyGPT同站Plus价差",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r7.html",
+      "updatedAt": "2026-11-11",
+      "summary": "二水AI Codex单次短信¥5，100%返站内钱包须交付3天后、非现金原路退款；BuyGPT同站目录Plus¥149与SKU详情¥139冲突。真实批发及VAT均未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r134-20261111-evidence",
+      "title": "第134轮 · 二水AI/BuyGPT 11条商家原URL、准确SKU与接码/发票/履约缺口",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r7-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "11条2026-11-11直接实读一方网页；¥5单次Codex钱包3日返利、同站Plus价差¥10；批发、现金退款、真实手机号成功仍为0或null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
