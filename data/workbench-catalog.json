@@ -3686,6 +3686,28 @@
       "summary": "2026-11-12实时两次网页读数与索引冲突单列，历史报价不覆盖；真实付款、合法VAT税票与转售授权、Web/Codex/API接码成功均0/null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r152-20261112",
+      "title": "GPT源头第152轮 · CatFK XiaoAI新卖家、共用兑换端点与售后边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r5.html",
+      "updatedAt": "2026-11-12",
+      "summary": "CatFK XiaoAI Plus月卡¥168仅为零售挂牌，绑手机/KYC不退款且掉订退款扣20%；与不同Pro卖家公开共用卡密兑换端点但不证明正式上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r152-20261112-evidence",
+      "title": "第152轮 · XiaoAI零售SKU、卡密端点、另一卖家聚合快照与引路鲸声明的4条来源",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r5-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "4条原始来源、准确单位、订单及费用null，官方授权/税票/真实SMS均未核，合格批发上游0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

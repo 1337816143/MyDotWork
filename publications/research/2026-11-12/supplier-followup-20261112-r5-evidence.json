@@ -1,0 +1,143 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 152,
+  "site_version": "1.9.160",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接核读CatFK独立XiaoAI摊位及其卡密兑换端点、读取另一卖家历史聚合快照与引路鲸公开独立平台声明；证据是零售供货链和售后责任线索，不是实际采购、官方授权或可用手机号验证。",
+  "new_evidence": {
+    "catfk_xiaoai_independent_seller": {
+      "merchant": "XiaoAI（CatFK独立寄售摊位）",
+      "source_url": "https://catfk.com/item/q8ukke",
+      "sku_id": "q8ukke",
+      "displayed_title": "gpt 卡充 plus 会员充值 （自助充值）",
+      "claimed_product": "GPT Plus 会员 1个月 卡密/自助充值",
+      "currency": "CNY",
+      "unit": "人民币/1份宣称一个月Plus卡密",
+      "displayed_retail_price_cny": 168,
+      "price_observed_on": "2026-11-12",
+      "price_read_from": "200 OK first party HTML price nodes, real and nowPrice, not settlement",
+      "exact_account_renewal_eligibility_verified": false,
+      "delivery_mode_claimed": "卡密自助兑换，卖家网页承诺；未实测",
+      "seller_claims_do_not_stockpile_cards": true,
+      "seller_claim_account_ban_kyc_phone_binding_ineligible_for_refund": true,
+      "seller_claim_subscription_loss_refund_requires_openai_assessment": true,
+      "seller_claim_refund_deduction_percent": 20,
+      "actual_refund_tested": false,
+      "actual_checkout_cny": null,
+      "additional_payment_fee_cny": null,
+      "effective_chinese_vat_invoice_fee_cny": null,
+      "verified_valid_china_vat_invoice_issuer": null,
+      "verified_all_in_cny": null,
+      "wholesale_price_cny": null,
+      "verified_no_upfront_agent_fee": false,
+      "verified_formal_resale_authorization": false,
+      "upstream_qualified": false
+    },
+    "shared_redemption_terminal": {
+      "source_url": "https://chong.66hk.top/",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "visible_functions": [
+        "单卡兑换",
+        "批量兑换",
+        "卡密查询",
+        "进度查询"
+      ],
+      "terminal_ownership_verified": false,
+      "collection_entity": null,
+      "invoice_issuer": null,
+      "official_openai_approval_verified": false,
+      "real_card_redemption_tested": false,
+      "second_independent_merchant_secondary_reference_url": "https://lowb.cc/products/01KYMFT2N39DJM7364XQQ91N1H",
+      "second_seller_name_in_secondary_source": "卖点啥呢",
+      "second_seller_product": "GPT Pro 5X 一个月（不是同一Plus SKU）",
+      "second_seller_listing_last_synchronized_as_displayed": "2026-10-13 10:06",
+      "second_seller_source_class": "secondary_aggregator_snapshot_read_2026-11-12",
+      "common_link_in_multiple_seller_materials": true,
+      "common_link_proves_same_company_or_verified_wholesale_upstream": false
+    },
+    "yinlujing_current_disclaimer": {
+      "source_url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-12",
+      "merchant_labels_itself_independent_third_party": true,
+      "merchant_says_no_openai_affiliation": true,
+      "merchant_also_mentions_formally_authorized_delivery": true,
+      "formal_resale_authorization_document_verified": false,
+      "latest_stated_guaranteed_plus_retail_cny": 145,
+      "latest_stated_no_guarantee_plus_retail_cny": 135,
+      "same_as_previous_report_repricing_count": 0,
+      "whole_order_quoted_total_cny": null,
+      "actual_valid_vat_invoice": null
+    },
+    "independent_phone_services": {
+      "new_verified_web_chatgpt_successes": 0,
+      "new_verified_codex_successes": 0,
+      "new_verified_first_api_key_successes": 0,
+      "number_retention_days_verified": null,
+      "failed_sms_cash_refund_verified": null,
+      "apple_purchase_automatically_binds_phone": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/item/q8ukke",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "live_first_party_html_and_main_markdown_scrape_maxAge_0",
+      "evidence_class": "marketplace_independent_seller_own_listing",
+      "note": "XiaoAI独立摊位，完整HTML商品价格区域￥168，商品说明一个月；KYC/绑手机不退款，掉订先官方确认、退款扣20%均为卖家旧/现条款而非实测。"
+    },
+    {
+      "url": "https://chong.66hk.top/",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "live_terminal_main_content_scrape_maxAge_0",
+      "evidence_class": "public_redemption_portal_observed",
+      "note": "卡密验证、单卡/批量兑换及查询入口可读；没有提交卡密、订单或凭据，也不证明官方授权、供货主体与履约。"
+    },
+    {
+      "url": "https://lowb.cc/products/01KYMFT2N39DJM7364XQQ91N1H",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "live_read_secondary_aggregator_mirror",
+      "evidence_class": "secondary_historical_distinct_seller",
+      "source_page_last_sync": "2026-10-13 10:06",
+      "note": "聚合页列卖点啥呢不同Pro 5X商品也引用同一chong.66hk.top，不能推为同一Plus SKU、今天Pro价或同一法定主体。"
+    },
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "method": "live_first_party_scrape_maxAge_0",
+      "evidence_class": "merchant_owned_disclaimer_and_unchanged_old_price",
+      "note": "卖家明确本站独立第三方与OpenAI无隶属；与'正式授权方式交付'宣传分开，未核授权文件，不刷新此前Plus 145/135历史报价。"
+    }
+  ],
+  "unknown_costs": {
+    "legal_receiving_entity": null,
+    "valid_china_vat_invoice_issuer": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "checkout_total_cny": null,
+    "transaction_payment_fee_cny": null,
+    "wholesale_single_unit_price_cny": null,
+    "all_required_payment_and_invoice_costs_cny": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r4.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
