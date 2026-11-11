@@ -1,0 +1,203 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 136,
+  "site_version": "1.9.144",
+  "date": "2026-11-11",
+  "observed_on": "2026-11-11",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次实读AIBulk批发/API、准确Plus SKU、退款、条款、隐私和ChatGPT兑换教程。网站标注的10月旧条款属于11月11日首次观察，不证明11月11日新出台。批发通道存在≠OpenAI授权的真正一级供货。手续费及中国增值税发票全费未闭合。",
+  "new_evidence": {
+    "aibulk": {
+      "merchant": "AIBulk",
+      "domain": "aibulk.uk",
+      "product_sku_slug": "chatgpt-plus",
+      "product_exact_title": "ChatGPT Plus (1 Month)",
+      "product_url": "https://aibulk.uk/p/chatgpt-plus",
+      "public_guest_lv1_display_price": 17.99,
+      "public_display_price_symbol": "$",
+      "public_price_period": "per single 1-month code",
+      "public_display_currency": "USD_symbolic",
+      "settlement_assets": [
+        "USDT",
+        "USDC"
+      ],
+      "crypto_amount_at_actual_checkout": null,
+      "quantity_min_registered_claim": 1,
+      "quantity_max_registered_claim": 1000,
+      "quantity_max_guest_claim": 5,
+      "merchant_claim_no_wholesale_review": true,
+      "merchant_claim_no_minimum_purchase_or_monthly_fee": true,
+      "merchant_claim_separate_agent_entry_fee": false,
+      "merchant_level_score_rule": "cumulative_spending + current_balance",
+      "merchant_level_thresholds_usd_equivalent": {
+        "Lv1": 0,
+        "Lv2": 500,
+        "Lv3": 1000,
+        "Lv4": 5000,
+        "Lv5": 10000
+      },
+      "merchant_claim_level_discount_available": true,
+      "actual_logged_in_level_specific_plus_wholesale_price": null,
+      "merchant_claim_api_mcp_ordering_and_server_side_redemption": true,
+      "merchant_claim_web_api_mcp_prices_equal_at_same_level": true,
+      "merchant_claim_crypto_only_payment": true,
+      "merchant_claim_instant_code_delivery": true,
+      "merchant_claim_current_in_stock": true,
+      "actual_stock_or_fulfillment_verified": false,
+      "account_requirement": "personal Free plan; active Plus must expire first; Go requires different SKU",
+      "session_json_required_for_redemption": true,
+      "session_required_before_openai_web_login_resolved": false,
+      "merchant_claim_30_day_warranty": true,
+      "merchant_claim_delivered_code_refund_only_for_verified_invalid_or_warranty_failure": true,
+      "merchant_claim_registered_refund_to_internal_balance_by_default": true,
+      "merchant_claim_on_chain_refund_possible_less_network_fee": true,
+      "merchant_claim_refund_1_to_3_business_days": true,
+      "merchant_claim_downstream_fulfillment_provider_receives_required_account_details": true,
+      "merchant_claim_sensitive_sessions_encrypted_at_rest": true,
+      "independent_session_security_audit": false,
+      "merchant_disclaims_official_affiliation_or_authorization": true,
+      "actual_sourcing_first_party_openai_authority_verified": false,
+      "operator_legal_entity_verified": null,
+      "payment_recipient_legal_entity_verified": null,
+      "china_vat_invoice_issuer_verified": null,
+      "china_vat_invoice_fee_cny": null,
+      "china_vat_invoice_validity_verified": false,
+      "actual_crypto_network_fee": null,
+      "fiat_fx_cost_cny": null,
+      "all_in_paid_valid_china_vat_cny": null,
+      "direct_one_unit_wholesale_price_vs_retail_verified": null,
+      "discount_level_prepaid_spend_required_without_deposit_verified": null,
+      "resale_permission_platform_claim": true,
+      "formal_upstream_resale_authorization_verified": false,
+      "real_paid_plus_success_verified": false,
+      "real_vat_invoice_verified": false,
+      "qualified": false
+    },
+    "sms_phone_verification": {
+      "aibulk_independent_sms_sku_found": false,
+      "chatgpt_web_login_supported_verified": null,
+      "codex_desktop_sms_supported_verified": null,
+      "first_api_key_sms_supported_verified": null,
+      "number_control_days": null,
+      "repeated_otp_receipt_supported": null,
+      "failed_sms_cash_refund_verified": null,
+      "real_sms_success_verified": false,
+      "plus_purchase_guarantees_automatic_phone_binding": false
+    }
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/",
+      "fact": "目录本人Free状态Plus月卡US$符号17.99，标In stock/Instant delivery，Go升级为另一SKU。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/p/chatgpt-plus",
+      "fact": "准确ChatGPT Plus (1 Month) $17.99/件，Free个人号，已有Plus须过期，需完整Session，商称30天保障。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/p/chatgpt-plus-subscribed",
+      "fact": "Go账户升Plus独立SKU $19.99/件，剩余Go天数不保；与Free单月SKU不可混价。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/wholesale/",
+      "fact": "商家公开无审核、无最小订量和月费，账户等级按累计消费+余额计算；一单1–1000，Lv2至少500/Lv3 1000/Lv4 5000/Lv5 10000；更低等级价须登录。",
+      "page_self_updated_on": "2026-10-24"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/developers/api",
+      "fact": "批发API支持产品/库存、余额、订单、服务端兑换和幂等请求；内测商品0.01 USDT会真实扣款，非免费实测。",
+      "page_self_updated_on": null
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/guides/chatgpt",
+      "fact": "Free账户Plus兑换必须已登录并提交含accessToken、sessionToken等字段完整Session JSON；不能用于解决首次网页登录验证。",
+      "page_self_updated_on": "2026-10-19"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/faq",
+      "fact": "仅链上USDT/USDC；Guest Lv1最多5件；等级价需账户，失败重试相同卡密；退款默认站内余额。",
+      "page_self_updated_on": "2026-10-24"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/refund-policy",
+      "fact": "交付后无理由不退；确认无效/保期内失效可换码或退；账户退款默认站内余额，链上退扣网络费，商称1–3工作日。",
+      "page_self_updated_on": "2026-10-09"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/terms",
+      "fact": "卖家明确与OpenAI等无官方关联；余额不可转让；API可一单1–1000件；支付仅USDT/USDC。",
+      "page_self_updated_on": "2026-10-24"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/privacy",
+      "fact": "卖家承认把所需ChatGPT登录Session传给履约供方；加密存储及使用范围属卖家承诺而非审计结果。",
+      "page_self_updated_on": "2026-10-17"
+    },
+    {
+      "observed_on": "2026-11-11",
+      "read_status": "merchant_page_readable",
+      "evidence_class": "first_party_seller_page",
+      "evidence_level": "seller_claim_or_display_not_paid_legal_or_fulfillment_verified",
+      "url": "https://aibulk.uk/about",
+      "fact": "按网站自己描述为兑换码平台、批发与零售同一等级价、第三方履约，不能据此认定为真正一手或法定授权。",
+      "page_self_updated_on": "2026-10-09"
+    }
+  ],
+  "failed_access": [],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r8.html"
+}
