@@ -3576,6 +3576,28 @@
       "summary": "首次直读4条OpenAI官方URL；另复核2家旧价、3链接访问失败不刷新，未知支付/有效中国VAT费用null，实际SMS成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r147-20261111",
+      "title": "GPT源头第147轮 · Pro API赠额申领门槛与Codex使用边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r20.html",
+      "updatedAt": "2026-11-11",
+      "summary": "官方Pro100/200/500 API赠额分别US$100/200/500满月账期，须付费7日后主动申领并满足本人组织所有权与地区资格；Codex API Key不适用。GETGPT Pro宣称非实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r147-20261111-evidence",
+      "title": "第147轮 · OpenAI API赠额政策与GETGPT Pro商家页两条实读原URL",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r20-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "2026-11-11官方及商家页2条原始URL；Pro100 ¥879、Pro200 ¥1569为商家挂牌非成交，全费/有效中国VAT/批发授权null，API赠额实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

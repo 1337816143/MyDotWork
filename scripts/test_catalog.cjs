@@ -1342,3 +1342,18 @@ assert.equal(r145.new_evidence.chongpay_account_eligibility.actual_checkout_tota
 assert.equal(r145.new_evidence.official_subscription_receipt_provenance.apple_google_store_purchase_invoice_appears_in_chatgpt_web_billing,false);
 assert.equal(r145.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r145.qualification_totals.verified_phone_sms_successes,0);
+
+// R147: eligible Pro API grants require actual claim; no automatic Codex API credits or supplier proof.
+const r147a=d.records.find(x=>x.id==='gpt-source-followup-r147-20261111'),r147b=d.records.find(x=>x.id==='gpt-source-followup-r147-20261111-evidence');
+assert(r147a&&r147b&&r147a.url.endsWith('supplier-followup-20261111-r20.html'));
+const r147=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r20-evidence.json'),'utf8'));
+assert.equal(r147.round,147);assert.equal(r147.site_version,'1.9.155');assert.equal(r147.sources.length,2);
+assert.equal(r147.new_evidence.official_chatgpt_subscription_api_credit_benefit.required_paid_active_days_before_claim,7);
+assert.equal(r147.new_evidence.official_chatgpt_subscription_api_credit_benefit.chatgpt_plus_ineligible,true);
+assert.equal(r147.new_evidence.official_chatgpt_subscription_api_credit_benefit.codex_via_api_key_covered,false);
+assert.equal(r147.new_evidence.official_chatgpt_subscription_api_credit_benefit.grant_automatically_issued_on_purchase,false);
+assert.deepEqual(Object.values(r147.new_evidence.official_chatgpt_subscription_api_credit_benefit.eligible_pro_tiers_full_month_usd),[100,200,500]);
+assert.equal(r147.new_evidence.getgpt_pro_current_catalog_claim.formal_upstream_resale_authorization_verified,false);
+assert.equal(r147.new_evidence.getgpt_pro_current_catalog_claim.all_required_fees_cny,null);
+assert.equal(r147.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r147.qualification_totals.verified_api_credit_grants_from_third_party_recharges,0);
