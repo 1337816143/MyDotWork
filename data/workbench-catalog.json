@@ -3422,6 +3422,28 @@
       "summary": "4条2026-11-11可读原始URL；US$0.4327等按国别运营商短信SKU及商称到达率，退款站内余额/不可复用；无中国VAT/Plus批发和真实短信成功。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r140-20261111",
+      "title": "GPT源头第140轮 · OpenAI官方同卡同设备订阅上限与退款风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r13.html",
+      "updatedAt": "2026-11-11",
+      "summary": "首次核读官方帮助：同卡或同设备过多订阅可能阻止付款；设备上限可令购后付费账号不能用，Apple退款向Apple申请；未见确定数量上限，非商家实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r140-20261111-evidence",
+      "title": "第140轮 · 官方设备/付款卡上限与售后证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r13-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "1条本轮直接读取OpenAI官方URL；区分官方规则、代付履约推断、实测0和费用/税票/授权null，不更改既有126报价。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
