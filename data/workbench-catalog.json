@@ -3466,6 +3466,28 @@
       "summary": "11月11日首次实读1条OpenAI官方原始URL；区分移动内购绑定、跨号受阻风险、网页替代和SMS边界。没有真实批发、含中国VAT发票或验证测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r142-20261111",
+      "title": "GPT源头第142轮 · 官方Pro 200恢复新订、三档月价与转售限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r15.html",
+      "updatedAt": "2026-11-11",
+      "summary": "首次核读官方帮助和价格页：Pro 200已开放新订，Pro 100/200/500分别US$100/200/500月费，Pro个人无年付、访问不可转售；非批发授权或真实履约证明。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r142-20261111-evidence",
+      "title": "第142轮 · 官方Pro三档准确月价、恢复新订与验收边界证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r15-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "11月11日直接读取2条OpenAI官方原始URL，明确Pro 200可新订；保留生效日、商家合法转售、全部费用与中国VAT等未核字段null，SMS实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
