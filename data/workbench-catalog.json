@@ -3378,6 +3378,28 @@
       "summary": "11月11日首次直接读取8条一方页面：Plus ¥119/¥111同页冲突；¥6限2 SMS至多30天，另¥3一次接码；收款、有效中国VAT、手续费、授权与实测为null或未验证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r138-20261111",
+      "title": "GPT源头第138轮 · 词元连接付款费、返佣与禁止卡密转售",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r11.html",
+      "updatedAt": "2026-11-11",
+      "summary": "一件Plus旧网页预览¥148+1.2%支付费¥1.78=¥149.78，未含已核中国VAT；免费推广返佣10%—25%并非批发，卖家旧条款禁倒卖；上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r138-20261111-evidence",
+      "title": "第138轮 · 词元连接7条原始URL、费用冲突和转售限制证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r11-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "11月11日直接读取7条一方URL；¥148商品小计、¥1.78支付附费、¥149.78未付款预览，税票/主体/授权null；一级返佣非批发、条款禁倒卖，短信和实付0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
