@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 339, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 341, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.153'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r5.html'
+    assert latest['version'] == '1.154'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r6.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1672,6 +1672,23 @@ def validate_publications():
     assert r153['new_evidence']['redeem_portal']['first_web_login_sms_can_be_bypassed'] is False
     assert all(v is None for v in r153['unknown_costs'].values())
     assert all(v == 0 for v in r153['qualification_totals'].values())
+    # R154: documented seller claims are not verified SMS service restoration, whole-price or wholesale rights.
+    assert by_id['gpt-source-followup-r154-20261112']['url'] == '../research/2026-11-12/supplier-followup-20261112-r7.html'
+    assert by_id['gpt-source-followup-r154-20261112-evidence']['url'] == '../research/2026-11-12/supplier-followup-20261112-r7-evidence.json'
+    r154 = json.loads((ROOT/'dist/research/2026-11-12/supplier-followup-20261112-r7-evidence.json').read_bytes())
+    assert r154['round'] == 154 and r154['site_version'] == '1.9.162'
+    assert len(r154['sources']) == 8
+    p154 = r154['new_evidence']['gpthub_plus_appstore_listing']
+    assert p154['displayed_price_cny_per_item'] == 169 and p154['all_required_fees_verified_cny'] is None
+    assert p154['proven_same_sku_price_increase'] is False
+    assert r154['new_evidence']['gpthub_terms']['phone_verification_failure_excluded_from_subscription_aftersales'] is True
+    sms154 = r154['new_evidence']['gpthub_sms_announcements']
+    assert sms154['seller_claims_service_restored'] is True and sms154['verified_actual_service_restored'] is False
+    assert sms154['sms_endpoint_fetch_status'] == 'fetch_failed_502'
+    assert sms154['supports_codex_desktop_sms_verified'] is None
+    assert all(value is None for value in r154['unknown_costs'].values())
+    assert all(value == 0 for value in r154['qualification_totals'].values())
+    assert r154['purchase_or_login_attempted'] is False and r154['merchant_contacted'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
