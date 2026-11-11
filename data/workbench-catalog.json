@@ -3708,6 +3708,28 @@
       "summary": "4条原始来源、准确单位、订单及费用null，官方授权/税票/真实SMS均未核，合格批发上游0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r153-20261112",
+      "title": "GPT源头第153轮 · Morimm Codex接码¥3→¥4与deem2兑换凭据链",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r6.html",
+      "updatedAt": "2026-11-12",
+      "summary": "Morimm同SKU一次性Codex接码CDK公开挂牌¥3（11月6日）→¥4（11月12日）；菲区Plus¥114仍旧价，兑码终端deem2需Session/Access Token，税票/授权/真SMS未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r153-20261112-evidence",
+      "title": "第153轮 · Morimm接码新旧挂牌和Plus兑换端Session风险结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r6-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "3条当日实际可读URL、旧2026-11-06¥3存档；¥4为单次Codex CDK而非Plus月卡，所有实际支付、发票及SMS成功缺口按null或未实测保留。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
