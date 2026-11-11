@@ -3510,6 +3510,28 @@
       "summary": "2026-11-11直接阅读2条官方URL；Apple失败续费恢复新补证、SMS旧规则复核，未知费用null，无采购与验证测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r144-20261111",
+      "title": "GPT源头第144轮 · ChongPay Pro 200/500挂牌SKU与小铺独立核证缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r17.html",
+      "updatedAt": "2026-11-11",
+      "summary": "商家Pro 200卡充¥1188、Pro 500卡充¥3299与30天质保；10×/25×只是内部标识，实际小铺WAF无法读商品。并非已核批发或成交。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r144-20261111-evidence",
+      "title": "第144轮 · ChongPay Pro挂牌、旧Plus/SMS复核及外部店铺WAF证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-11/supplier-followup-20261111-r17-evidence.json",
+      "updatedAt": "2026-11-11",
+      "summary": "直接读取3条商家原始URL与1条小铺WAF；区分2026-11-09网页自标、2026-11-11实读和未知支付/税票/授权null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
