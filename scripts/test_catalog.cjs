@@ -1321,3 +1321,13 @@ assert.equal(r143.new_evidence.official_apple_payment_recovery.parallel_web_or_g
 assert.equal(r143.new_evidence.official_apple_payment_recovery.separately_purchased_subscriptions_automatically_entitled_to_refund,false);
 assert.equal(r143.supply_reassessment.all_required_plus_fees_with_valid_china_vat_total_cny,null);
 assert.equal(r143.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R144: first-party Pro catalog labels are not checkout, wholesale, VAT or SMS evidence.
+const r144a=d.records.find(x=>x.id==='gpt-source-followup-r144-20261111'),r144b=d.records.find(x=>x.id==='gpt-source-followup-r144-20261111-evidence');
+assert(r144a&&r144b&&r144a.url.endsWith('supplier-followup-20261111-r17.html'));
+const r144=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-11/supplier-followup-20261111-r17-evidence.json'),'utf8'));
+assert.equal(r144.round,144);assert.equal(r144.site_version,'1.9.152');
+assert.deepEqual(r144.new_evidence.chongpay.pro_products.map(x=>x.display_price_cny),[1188,3299]);
+assert.equal(r144.new_evidence.chongpay.external_shop_readable,false);
+assert.equal(r144.new_evidence.chongpay.all_fees_plus_including_valid_vat_cny,null);
+assert.equal(r144.qualification_totals.verified_phone_sms_successes,0);
