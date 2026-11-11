@@ -1389,3 +1389,19 @@ assert.equal(r150.new_evidence.v3_payment_terms.wechat_displayed_percent_fee,3.5
 assert.equal(r150.new_evidence.v3_payment_terms.actual_total_including_valid_china_vat_cny,null);
 assert.equal(r150.new_evidence.v3_resale_and_warranty.unauthorized_bulk_purchase_stockpiling_resale_restricted_by_merchant,true);
 assert.equal(r150.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R153: Morimm separate Codex SMS listing and a Session-dependent Plus card redemption portal.
+const r153cat=d.records.find(x=>x.id==='gpt-source-followup-r153-20261112');
+const r153data=d.records.find(x=>x.id==='gpt-source-followup-r153-20261112-evidence');
+assert(r153cat&&r153data&&r153cat.url.endsWith('supplier-followup-20261112-r6.html'));
+const r153=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r6-evidence.json'),'utf8'));
+assert.equal(r153.round,153);assert.equal(r153.site_version,'1.9.161');assert.equal(r153.sources.length,4);
+assert.equal(r153.new_evidence.morimm_codex_once.historical_price_cny,3);
+assert.equal(r153.new_evidence.morimm_codex_once.current_price_cny,4);
+assert.equal(r153.new_evidence.morimm_codex_once.actual_payment_total_cny,null);
+assert.equal(r153.new_evidence.morimm_codex_once.codex_sms_success_tested,false);
+assert.equal(r153.new_evidence.morimm_plus_recheck.price_cny,114);
+assert.equal(r153.new_evidence.morimm_plus_recheck.actual_paid_cny,null);
+assert.equal(r153.new_evidence.redeem_portal.session_json_or_access_token_requested,true);
+assert.equal(r153.new_evidence.redeem_portal.first_web_login_sms_can_be_bypassed,false);
+assert.equal(r153.qualification_totals.verified_plus_wholesale_upstreams,0);
