@@ -1,0 +1,209 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 148,
+  "site_version": "1.9.156",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直接补录小久商品的账号历史排除和售后细项；核其实际列出的7条付款/兑换入口。本轮首次读到的旧文案不代表2026-11-12才实施，不把链接当作一手批发证明。未交易或短信实测。",
+  "new_evidence": {
+    "xiaojiu_account_prerequisites": {
+      "primary_url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-12",
+      "evidence_class": "merchant_claim_not_official_rule_or_transaction",
+      "accurate_sku": "Chat gpt plus 菲区卡冲cdk（质保30天）",
+      "listed_price_cny_per_item": 110,
+      "previous_price_observation_exists": true,
+      "price_change_proven": false,
+      "merchant_lists_in_stock": true,
+      "merchant_claims_auto_delivery": true,
+      "no_active_go_plus_pro_subscription": true,
+      "no_prior_zero_amount_recharge_required": true,
+      "zero_recharge_examples": [
+        "0刀",
+        "嘿充"
+      ],
+      "turkey_ios_exception_claimed": true,
+      "ios_google_must_expire_first": true,
+      "ios_google_after_expiry_wait_days_claimed": [
+        2,
+        3
+      ],
+      "turkey_regular_ios_after_expiry_wait_days_claimed": [
+        4,
+        5
+      ],
+      "claimed_wait_times_not_official_or_tested": true,
+      "team_membership_must_be_exited": true,
+      "gmail_icloud_recharge_failure_risk_is_seller_claim": true,
+      "sms_verification_user_solves_separately": true,
+      "subscription_loss_prorata_refund_claimed": true,
+      "account_ban_not_warrantied": true,
+      "bank_receipt_and_payment_voucher_not_vat_invoice": true,
+      "catfk_payment_link_proves_wholesale_relationship": false,
+      "actual_checkout_total_cny": null,
+      "payment_fee_cny": null,
+      "china_vat_fee_cny": null,
+      "all_in_plus_with_china_vat_cny": null,
+      "single_item_wholesale_cny": null,
+      "valid_china_vat_issuer_verified": false,
+      "real_collecting_entity_verified": false,
+      "formal_resale_authorization_verified": false,
+      "real_purchase_tested": false,
+      "sms_success_tested": false
+    },
+    "payment_route_interpretation": {
+      "merchant_listed_four_payment_urls": [
+        "https://wzyp.cn/shop/xiaojiuban",
+        "https://catfk.com/item/j0eswz",
+        "https://www.16688.com.cn/shop/XIAOJIU",
+        "https://catfk.com/shop/xiaojiu"
+      ],
+      "accessible_exact_checkout_skus": 0,
+      "verified_upstream_legal_authorizations": 0
+    }
+  },
+  "sources": [
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-12",
+      "status": "merchant_page_readable",
+      "note": "卖家Plus商品原页已读取：历史0元充值、iOS/Google到期等待、Team排除及自理接码；¥110旧挂牌。",
+      "evidence_class": "merchant_own_terms"
+    },
+    {
+      "url": "https://wzyp.cn/shop/xiaojiuban",
+      "observed_on": "2026-11-12",
+      "status": "waf_only",
+      "note": "微信购买路径仅有WAF信息；未取得SKU、结算与收款主体。",
+      "evidence_class": "access_failure_not_quote"
+    },
+    {
+      "url": "https://catfk.com/item/j0eswz",
+      "observed_on": "2026-11-12",
+      "status": "no_readable_body",
+      "note": "卖家列出的CatFK支付宝商品链接，无可读结算正文。",
+      "evidence_class": "access_failure_not_quote"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/XIAOJIU",
+      "observed_on": "2026-11-12",
+      "status": "no_readable_body",
+      "note": "卖家列出的另一微信网店，未读到商品正文。",
+      "evidence_class": "access_failure_not_quote"
+    },
+    {
+      "url": "https://catfk.com/shop/xiaojiu",
+      "observed_on": "2026-11-12",
+      "status": "no_readable_body",
+      "note": "卖家列出的另一CatFK网店，未读到收款和SKU。",
+      "evidence_class": "access_failure_not_quote"
+    },
+    {
+      "url": "https://982xj.xyz/",
+      "observed_on": "2026-11-12",
+      "status": "not_accessible",
+      "note": "卖家宣称兑换站，本轮访问失败。",
+      "evidence_class": "access_failure_not_quote"
+    },
+    {
+      "url": "https://982xj.xyz/subscription",
+      "observed_on": "2026-11-12",
+      "status": "not_accessible",
+      "note": "卖家宣称订阅/票据查询页，本轮访问失败。",
+      "evidence_class": "access_failure_not_quote"
+    },
+    {
+      "url": "https://982xj.xyz/upgrade-quote",
+      "observed_on": "2026-11-12",
+      "status": "not_accessible",
+      "note": "卖家宣称续费报价页，本轮访问失败。",
+      "evidence_class": "access_failure_not_quote"
+    }
+  ],
+  "access_failures_not_price_observations": [
+    {
+      "url": "https://wzyp.cn/shop/xiaojiuban",
+      "status": "waf_only",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://catfk.com/item/j0eswz",
+      "status": "no_readable_body",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/XIAOJIU",
+      "status": "no_readable_body",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://catfk.com/shop/xiaojiu",
+      "status": "no_readable_body",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://982xj.xyz/",
+      "status": "not_accessible",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://982xj.xyz/subscription",
+      "status": "not_accessible",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    },
+    {
+      "url": "https://982xj.xyz/upgrade-quote",
+      "status": "not_accessible",
+      "observed_on": "2026-11-12",
+      "prior_price_unchanged": true
+    }
+  ],
+  "old_candidate_rechecks": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "unknown_merchant_costs": {
+    "payment_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "all_in_plus_cny": null,
+    "single_item_wholesale_cny": null
+  },
+  "boundaries": {
+    "apple_and_session_delivery_may_coexist": true,
+    "ordinary_subscription_auto_binds_phone": false,
+    "merchant_wait_times_are_not_openai_policy": true,
+    "catfk_store_link_is_not_upstream_proof": true,
+    "old_126_prices_unchanged": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r20.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
