@@ -3774,6 +3774,28 @@
       "summary": "5条已读原始商家/官方URL；页面价签与演示付款分开、91长租与动态价格null、失败退款边界、网页/Codex/API实测0；合法Plus批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r156-20261112",
+      "title": "GPT源头第156轮 · 盾灵Plus ¥149与开票费最低¥15",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r9.html",
+      "updatedAt": "2026-11-12",
+      "summary": "第三方零售挂牌¥149/账号·月，开票6%最低¥15，算术¥164非已核含票实付；出票授权、批发链未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r156-20261112-evidence",
+      "title": "第156轮 · 盾灵原始商品/开票规则与三条证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r9-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "3条实读原页；静态结算占位与开票公式分开，真实结算/有效税票/转售授权null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

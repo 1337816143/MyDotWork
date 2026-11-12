@@ -1419,3 +1419,12 @@ assert.equal(r155.new_evidence.jiema91_long_rental.listing_price_cny,null);
 assert.equal(r155.new_evidence.jiema91_long_rental.merchant_terms_paid_delivered_service_nonrefundable,true);
 assert.equal(r155.new_evidence.official_phone_applicability.normal_chatgpt_registration_generally_requires_phone,false);
 assert.equal(r155.qualification_totals.verified_plus_wholesale_upstreams,0);
+// R156: static invoice arithmetic not paid total.
+const r156cat=d.records.find(x=>x.id==='gpt-source-followup-r156-20261112');
+const r156data=d.records.find(x=>x.id==='gpt-source-followup-r156-20261112-evidence');
+assert(r156cat&&r156data&&r156cat.url.endsWith('supplier-followup-20261112-r9.html'));
+const r156=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r9-evidence.json'),'utf8'));
+assert.equal(r156.round,156);assert.equal(r156.site_version,'1.9.164');assert.equal(r156.sources.length,3);
+assert.equal(r156.new_evidence.dunling_retail_plus.arithmetic_price_with_invoice_cny,164);
+assert.equal(r156.new_evidence.dunling_retail_plus.real_invoiced_total_cny,null);
+assert.equal(r156.qualification_totals.verified_plus_wholesale_upstreams,0);
