@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 349, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 351, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.158'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r10.html'
+    assert latest['version'] == '1.159'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r12.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r12-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r11.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1742,6 +1742,21 @@ def validate_publications():
     assert r158['new_evidence']['payforgpt_enterprise_invoice_recheck']['single_unit_china_vat_invoice_available_verified'] is None
     assert all(v == 0 for v in r158['qualification_totals'].values())
     assert not r158['purchase_or_login_attempted'] and not r158['merchant_contacted']
+
+    # R159: same exact original-account single-month Plus SKUs, two dated retail snapshots.
+    assert by_id['gpt-source-followup-r159-20261112']['url'].endswith('supplier-followup-20261112-r12.html')
+    assert by_id['gpt-source-followup-r159-20261112-evidence']['url'].endswith('supplier-followup-20261112-r12-evidence.json')
+    r159 = json.loads((ROOT / 'dist/research/2026-11-12/supplier-followup-20261112-r12-evidence.json').read_bytes())
+    assert r159['round'] == 159 and r159['site_version'] == '1.9.167' and len(r159['sources']) == 6
+    offer159 = r159['new_evidence']['chatgqt_plus_same_sku_price_snapshot_comparison']
+    assert (offer159['no_warranty_previous_displayed_cny'],offer159['no_warranty_current_displayed_cny']) == (125,135)
+    assert (offer159['warranty_previous_displayed_cny'],offer159['warranty_current_displayed_cny']) == (135,145)
+    assert offer159['formal_price_change_effective_date'] is None
+    assert offer159['actual_checkout_with_valid_china_vat_cny'] is None
+    assert offer159['wholesale_agent_entry_fee_cny'] == 3000
+    assert offer159['wholesale_unit_price_cny'] is None
+    assert not offer159['qualified_wholesale_upstream']
+    assert all(v == 0 for v in r159['qualification_totals'].values())
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
