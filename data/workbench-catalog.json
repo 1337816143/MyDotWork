@@ -3818,6 +3818,28 @@
       "summary": "6条实读原URL；网页支付预览不是有效VAT实付；游客补票资格不确定；短号30分钟仅商称。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r158-20261112",
+      "title": "GPT源头第158轮 · PayForGPT准确SKU支付方式缩减补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r11.html",
+      "updatedAt": "2026-11-12",
+      "summary": "PayForGPT原号Plus SKU7仍¥160/月，历史支付宝/微信/USDT/人工转账对比现称仅支付宝/人工转账、微信不能付款；未知交易费、中国VAT和上游授权仍null。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r158-20261112-evidence",
+      "title": "第158轮 · PayForGPT两期支付渠道、开票与收款主体结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r11-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "3条当日可读商家原URL与11月4日既有记录；USDT未列不是确认永久停用，z-pay仅商称，真实付款、票据、授权与SMS均未测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
