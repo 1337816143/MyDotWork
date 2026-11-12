@@ -131,7 +131,7 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 343, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 345, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
     assert latest['version'] == '1.156'
