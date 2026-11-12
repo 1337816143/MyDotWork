@@ -3884,6 +3884,28 @@
       "summary": "6条已读商家及OpenAI原URL，网页/商称/计算分开；结算和出票法人null，手机号验证和实际履约0，合格批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r161-20261113",
+      "title": "GPT源头第161轮 · APIHub原号Plus与国内电子票/接码条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r2.html",
+      "updatedAt": "2026-11-13",
+      "summary": "Plus单件月卡¥108.99，支付费预览¥3.0517、合计¥112.04；国内电子票另称¥50但独立报价，算术¥162.04非有效VAT实付；短信¥6/次。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r161-20261113-evidence",
+      "title": "第161轮 · APIHub准确SKU、平台费用、出票与Codex短信证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r2-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "3条一方实读来源与二手发现索引；Plus收银预览、商称¥50开票、真实税票/授权缺口以及Codex一次性¥6接码分别保存。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
