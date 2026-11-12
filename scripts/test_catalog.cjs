@@ -1442,3 +1442,17 @@ assert.equal(r157.new_evidence.catfk_aidp_xoyimh.displayed_wechat_fee_cny,3.29);
 assert.equal(r157.new_evidence.catfk_aidp_xoyimh.all_required_invoiced_checkout_cny,null);
 assert.equal(r157.new_evidence.wind89_guest_invoice_conflict.contradiction_unresolved,true);
 assert.equal(r157.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R158: historical payment-option display versus current merchant checkout statement; no completed payment or VAT evidence.
+const r158cat=d.records.find(x=>x.id==='gpt-source-followup-r158-20261112');
+const r158data=d.records.find(x=>x.id==='gpt-source-followup-r158-20261112-evidence');
+assert(r158cat&&r158data&&r158cat.url.endsWith('supplier-followup-20261112-r11.html'));
+const r158=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r11-evidence.json'),'utf8'));
+assert.equal(r158.round,158);assert.equal(r158.site_version,'1.9.166');assert.equal(r158.sources.length,4);
+assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.displayed_price_cny_per_month_current,160);
+assert.deepEqual(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.previous_displayed_channels,['Alipay','WeChat Pay','USDT','manual bank transfer']);
+assert.deepEqual(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.current_merchant_named_channels,['Alipay','manual bank transfer']);
+assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.merchant_now_explicit_wechat_payment_unavailable,true);
+assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.usdt_service_formally_disabled_verified,null);
+assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.all_required_fees_invoice_included_total_cny,null);
+assert.equal(r158.qualification_totals.verified_plus_wholesale_upstreams,0);
