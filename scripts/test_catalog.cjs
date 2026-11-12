@@ -1487,3 +1487,18 @@ assert.equal(r160.new_evidence.invoice.all_required_payment_and_invoice_fees_tot
 assert.equal(r160.new_evidence.independent_phone.holding_days,null);
 assert.equal(r160.new_evidence.independent_phone.failed_sms_cash_refund,null);
 assert.equal(r160.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R161: unpaid Plus checkout preview plus claimed invoice fee is not proven valid VAT or wholesale.
+const r161cat=d.records.find(x=>x.id==='gpt-source-followup-r161-20261113');
+const r161data=d.records.find(x=>x.id==='gpt-source-followup-r161-20261113-evidence');
+assert(r161cat&&r161data&&r161cat.url.endsWith('supplier-followup-20261113-r2.html'));
+const r161=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r2-evidence.json'),'utf8'));
+assert.equal(r161.round,161);assert.equal(r161.site_version,'1.9.169');
+assert.equal(r161.plus.checkout_preview_rounded_total_cny,112.04);
+assert.equal(r161.plus.arithmetical_sum_checkout_preview_plus_invoice_claim_cny,162.04);
+assert.equal(r161.plus.actual_paid_with_valid_china_vat_cny,null);
+assert.equal(r161.invoice.invoice_verified,false);
+assert.equal(r161.merchant.one_unit_wholesale_price_cny,null);
+assert.equal(r161.sms.merchant_display_cny_per_code,6);
+assert.equal(r161.sms.number_holding_days,null);
+assert.equal(r161.qualification_totals.verified_plus_wholesale_upstreams,0);
