@@ -1,0 +1,196 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 155,
+  "site_version": "1.9.163",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次独立核读Boaile Tools与91接码的OpenAI短信产品及规则：严格区分单次CDK兑换有效期与真实持号期限、商称长租号与实际可持续收码、售后现金退款及OpenAI网页/Codex/API实际需求。以上两站不是Plus合法批发资格证据。",
+  "new_evidence": {
+    "boaile_single_sms": {
+      "merchant_label": "Boaile Tools",
+      "product_url": "https://tools.boaile.com/sms/chatgpt/",
+      "observed_on": "2026-11-12",
+      "offer_variants": [
+        {
+          "displayed_name": "通用版随机实体号码",
+          "displayed_price_cny_per_voucher": 2.99,
+          "unit": "CNY/份",
+          "number_country": null
+        },
+        {
+          "displayed_name": "北美版美国实体号码",
+          "displayed_price_cny_per_voucher": 4.99,
+          "unit": "CNY/份",
+          "number_country": "美国（商称）"
+        }
+      ],
+      "quantity_limit_claim": "同档位1-10份",
+      "merchant_claims_real_mobile_numbers": true,
+      "actual_mobile_carrier_verified": false,
+      "listed_payment_labels": [
+        "微信",
+        "支付宝",
+        "USDT"
+      ],
+      "visible_checkout_status": "正在核对库存与报价",
+      "page_contains_payment_demo": true,
+      "demo_disclaimer": "DEMO：此环境不收款，也不会采购真实号码",
+      "real_order_or_checkout_verified": false,
+      "voucher_valid_days_from_payment_claim": 30,
+      "voucher_grace_end_days_from_payment_claim": 60,
+      "number_retained_for_30_days": false,
+      "actual_number_retention_days": null,
+      "first_code_consumes_right_claim": true,
+      "swap_limits_claim": {
+        "wait_seconds_at_least": 60,
+        "random_country_swaps_per_day_max": 10,
+        "us_swaps_per_day_max": 5,
+        "reset_timezone": "Asia/Shanghai",
+        "requires_supplier_confirm_old_cancel": true
+      },
+      "sms_not_received_cash_refund_rule": null,
+      "switch_number_is_cash_refund": false,
+      "sms_scope_claim": "首个API Key、部分Codex手机号验证、仅在页面要求短信时购买",
+      "chatgpt_web_verified": null,
+      "codex_desktop_verified": null,
+      "first_api_key_verified": null,
+      "actual_sms_successes": 0,
+      "session_or_token_required": null,
+      "payment_fee_cny": null,
+      "receipt_or_china_vat_invoice_fee_cny": null,
+      "real_merchant_collection_entity": null,
+      "actual_cash_refund_tested": false,
+      "operator_wholesale_resale_authorization_verified": false
+    },
+    "jiema91_long_rental": {
+      "merchant_label": "91接码",
+      "product_url": "https://91jiema.com/solutions/openai/",
+      "terms_url": "https://91jiema.com/terms/",
+      "pricing_url": "https://91jiema.com/pricing/",
+      "observed_on": "2026-11-12",
+      "merchant_claims_carrier_mobile_numbers": true,
+      "actual_number_type_verified": false,
+      "claimed_long_term_number_days_min": 12,
+      "claimed_long_term_number_days_max": 90,
+      "renewable_claim": true,
+      "repeated_sms_during_term_claim": true,
+      "actual_long_number_continuity_verified": false,
+      "number_country_for_specific_openai_sku": null,
+      "exact_openai_sms_sku": null,
+      "listing_price_cny": null,
+      "listing_price_usd": null,
+      "actual_full_price_cny": null,
+      "pricing_page_status": "网页可读，标注实时变动；未显示具体OpenAI国家SKU与可读价格行",
+      "merchant_claim_applicability": [
+        "ChatGPT网页/注册",
+        "Plus开通",
+        "Codex",
+        "首次API Key"
+      ],
+      "merchant_claim_all_chatgpt_accounts_need_sms": true,
+      "official_says_all_chatgpt_accounts_need_sms": false,
+      "vendor_named_legal_operator": "广州标品软件有限公司（商家自称，未独立核验）",
+      "operator_registered_verified": false,
+      "collection_legal_entity_verified": false,
+      "vat_invoice_issuer_verified": false,
+      "merchant_terms_self_updated": "2026年1月",
+      "merchant_terms_payments_in_usd_unless_noted": true,
+      "merchant_terms_paid_delivered_service_nonrefundable": true,
+      "merchant_terms_unused_service_refund_discretionary": true,
+      "merchant_terms_unauthorized_resale_forbidden": true,
+      "merchant_terms_network_sms_or_number_availability_not_guaranteed": true,
+      "failed_openai_sms_cash_refund_guaranteed": false,
+      "verified_chatgpt_web_success": null,
+      "verified_codex_desktop_success": null,
+      "verified_first_api_key_success": null,
+      "session_or_token_required": null,
+      "actual_number_rent_or_sms_successes": 0,
+      "real_checkout_or_refund_tested": false,
+      "actual_upstream_authorization_verified": false
+    },
+    "official_phone_applicability": {
+      "source_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-12",
+      "is_new_policy_change": false,
+      "normal_chatgpt_registration_generally_requires_phone": false,
+      "codex_desktop_may_require_phone": true,
+      "first_api_key_requires_phone": true,
+      "supported_sms_or_selected_whatsapp": true,
+      "voip_landline_supported": false,
+      "apple_or_session_subscription_automatically_binds_mobile": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://tools.boaile.com/sms/chatgpt/",
+      "observed_on": "2026-11-12",
+      "read_status": "web_page_parsed",
+      "http_status": null,
+      "classification": "merchant_single_sms_listing_and_demo",
+      "note": "通用¥2.99/份、美国¥4.99/份；页面含DEMO及非收款说明，30天是兑换券有效期而不是保号时长；现金退款未明确"
+    },
+    {
+      "url": "https://91jiema.com/solutions/openai/",
+      "observed_on": "2026-11-12",
+      "read_status": "web_page_parsed",
+      "http_status": null,
+      "classification": "merchant_openai_sms_marketing",
+      "note": "声称12–90天可续租并反复接收；全部ChatGPT必须验证的营销说法与OpenAI官方有冲突；未实测"
+    },
+    {
+      "url": "https://91jiema.com/terms/",
+      "observed_on": "2026-11-12",
+      "read_status": "web_page_parsed",
+      "http_status": null,
+      "classification": "merchant_terms",
+      "page_self_updated": "2026年1月",
+      "note": "商家自称广州标品软件有限公司；服务已提供不退款、未使用可酌情退；不保证运营商短信和号码；禁止未授权转售"
+    },
+    {
+      "url": "https://91jiema.com/pricing/",
+      "observed_on": "2026-11-12",
+      "read_status": "web_page_parsed",
+      "http_status": null,
+      "classification": "merchant_dynamic_pricing_without_values",
+      "note": "实时价格字段未返回OpenAI具体国家/租期SKU价格；费用null"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-12",
+      "read_status": "official_web_page_parsed",
+      "http_status": null,
+      "classification": "official_rules_prior_evidence_rechecked",
+      "note": "通常使用ChatGPT无需手机号；Codex桌面可能需要、首次API Key需要；这不是本轮才更新的官方规则"
+    }
+  ],
+  "unknown_costs": {
+    "boaile_live_checkout_cny": null,
+    "boaile_cash_refund_amount_cny": null,
+    "boaile_number_retention_days": null,
+    "boaile_valid_china_vat_invoice_fee_cny": null,
+    "jiema91_exact_openai_country_sku_usd": null,
+    "jiema91_actual_checkout_cny": null,
+    "jiema91_number_country": null,
+    "jiema91_vat_invoice_fee_cny": null,
+    "plus_real_all_including_vat_cny": null,
+    "plus_true_wholesale_price_cny": null,
+    "actual_plus_collection_and_invoice_issuer": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r7.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

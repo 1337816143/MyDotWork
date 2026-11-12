@@ -3752,6 +3752,28 @@
       "summary": "7条可读商家原页+1个抓取失败端点；商称与实测分开、所有全费/手机号码时效/退款缺项null；合格批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r155-20261112",
+      "title": "GPT源头第155轮 · Boaile与91接码：CDK期限、长效号码与退款界限",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r8.html",
+      "updatedAt": "2026-11-12",
+      "summary": "Boaile¥2.99/¥4.99为含演示支付的接码挂牌，30/60天是CDK兑换期限非保号；91商称12–90天可续租、实际OpenAI价null且已提供服务不退；网页/Codex/API无实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r155-20261112-evidence",
+      "title": "第155轮 · 两家独立接码平台原始URL、价格及号码/退款结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r8-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "5条已读原始商家/官方URL；页面价签与演示付款分开、91长租与动态价格null、失败退款边界、网页/Codex/API实测0；合法Plus批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
