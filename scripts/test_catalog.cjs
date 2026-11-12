@@ -1428,3 +1428,17 @@ assert.equal(r156.round,156);assert.equal(r156.site_version,'1.9.164');assert.eq
 assert.equal(r156.new_evidence.dunling_retail_plus.arithmetic_price_with_invoice_cny,164);
 assert.equal(r156.new_evidence.dunling_retail_plus.real_invoiced_total_cny,null);
 assert.equal(r156.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// R157: precise public fee preview differs from actual tax-paid purchase.
+const r157cat=d.records.find(x=>x.id==='gpt-source-followup-r157-20261112');
+const r157data=d.records.find(x=>x.id==='gpt-source-followup-r157-20261112-evidence');
+assert(r157cat&&r157data&&r157cat.url.endsWith('supplier-followup-20261112-r10.html'));
+const r157=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r10-evidence.json'),'utf8'));
+assert.equal(r157.round,157);assert.equal(r157.site_version,'1.9.165');assert.equal(r157.sources.length,6);
+assert.equal(r157.new_evidence.catfk_aidp_xoyimh.displayed_listing_price_cny,117.46);
+assert.equal(r157.new_evidence.catfk_aidp_xoyimh.displayed_wechat_preview_total_cny,120.75);
+assert.equal(r157.new_evidence.catfk_aidp_xoyimh.displayed_wechat_fee_cny,3.29);
+assert.equal(r157.new_evidence.catfk_aidp_xoyimh.all_required_invoiced_checkout_cny,null);
+assert.equal(r157.new_evidence.wind89_guest_invoice_conflict.contradiction_unresolved,true);
+assert.equal(r157.qualification_totals.verified_plus_wholesale_upstreams,0);

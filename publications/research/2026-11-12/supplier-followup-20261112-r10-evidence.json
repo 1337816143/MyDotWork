@@ -1,0 +1,148 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 157,
+  "site_version": "1.9.165",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "实读CatFK AIDP同SKU零售价及微信手续费预览、wind89同站游客开票矛盾、91接码短号码时限；未下单/开票/接码实测。",
+  "new_evidence": {
+    "catfk_aidp_xoyimh": {
+      "seller": "NEON AI｜霓虹玩家AI / AIDP",
+      "marketplace": "CatFK 云猫寄售",
+      "sku_identifier": "xoyimh",
+      "sku": "【卡充订阅】Gpt Plus 官方充值月卡 | 保订阅不包封号 | 可囤（须会员到期）",
+      "unit": "CNY/件·1个月·本人原账号",
+      "observed_on": "2026-11-12",
+      "round151_prior_observed_price_cny": null,
+      "displayed_listing_price_cny": 117.46,
+      "displayed_wechat_preview_total_cny": 120.75,
+      "displayed_wechat_fee_cny": 3.29,
+      "actual_paid_cny": null,
+      "actual_final_checkout_cny": null,
+      "other_payment_method_fee_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "valid_invoice_issuer": null,
+      "payment_collection_entity": null,
+      "all_required_invoiced_checkout_cny": null,
+      "formal_resale_authorization_verified": false,
+      "wholesale_unit_price_cny": null,
+      "upfront_agent_fee_cny": null,
+      "merchant_claim_one_unit_minimum": true,
+      "merchant_claim_requires_free_account": true,
+      "merchant_claim_no_current_ios_subscriber": true,
+      "merchant_claim_must_exit_team": true,
+      "card_code_delivery_claim": true,
+      "session_or_token_needed_for_redeem": null,
+      "merchant_claim_30_days_subscription_warranty": true,
+      "merchant_claim_ban_excluded": true,
+      "merchant_claim_no_after_sales_without_group": true,
+      "merchant_claim_products_from_multiple_suppliers": true,
+      "merchant_claim_invoice_requires_contact_before_order": true,
+      "refund_tested": false,
+      "purchase_tested": false,
+      "invoice_tested": false,
+      "change_date_verified": null,
+      "different_seller_from": "https://catfk.com/item/q8ukke"
+    },
+    "wind89_guest_invoice_conflict": {
+      "homepage_url": "https://wind89.com/",
+      "guide_url": "https://wind89.com/guide/invoice",
+      "plus_sku_url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-12",
+      "homepage_says_guest_order_email_login_invoice_possible": true,
+      "guide_says_guest_order_has_no_invoice_entry": true,
+      "product_says_sign_in_before_purchase_for_invoice": true,
+      "contradiction_unresolved": true,
+      "policy_change_date_verified": null,
+      "actual_guest_invoice_tested": false,
+      "plus_sku": "27",
+      "plus_list_price_cny_per_month": 139.99,
+      "merchant_plus_invoice_fee_cny": 10,
+      "arithmetic_public_subtotal_cny": 149.99,
+      "actual_full_fees_cny": null,
+      "real_invoice_issuer": null,
+      "valid_vat_invoice_tested": false
+    },
+    "jiema91_short_term_number": {
+      "source_url": "https://91jiema.com/solutions/openai/",
+      "observed_on": "2026-11-12",
+      "merchant_claim_short_standard_number_approx_minutes": 30,
+      "merchant_claim_long_rental_min_days": 12,
+      "merchant_claim_long_rental_max_days": 90,
+      "merchant_claim_long_renewable": true,
+      "openai_country_specific_sku_price_cny": null,
+      "real_operator_number_verified": false,
+      "actual_web_sms_success": false,
+      "actual_codex_sms_success": false,
+      "actual_first_api_key_sms_success": false,
+      "failed_sms_cash_refund_verified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/item/xoyimh",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "read_status": "live_first_party_page",
+      "note": "¥117.46挂牌、微信支付区¥120.75（含手续费¥3.29），不是交易"
+    },
+    {
+      "url": "https://wind89.com/",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "read_status": "live_first_party_homepage",
+      "note": "游客订单凭下单邮箱登录后仍可发票"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "read_status": "live_first_party_invoice_terms",
+      "note": "只给登录会员，游客订单无开票入口，Plus加¥10"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "read_status": "live_first_party_sku_page",
+      "note": "Plus ¥139.99、购买前登录才有发票"
+    },
+    {
+      "url": "https://91jiema.com/solutions/openai/",
+      "observed_on": "2026-11-12",
+      "http_status": 200,
+      "read_status": "live_first_party_sms_page",
+      "note": "商称标准短期号约30分钟，长效12-90天"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-12",
+      "http_status": null,
+      "read_status": "official_web_recheck_prior_rule",
+      "note": "普通ChatGPT一般无需手机，Codex桌面可能，首次API key需验证"
+    }
+  ],
+  "unknown_costs": {
+    "catfk_all_required_vat_invoiced_total_cny": null,
+    "catfk_invoice_fee_cny": null,
+    "wind89_actual_all_required_fees_cny": null,
+    "verified_wholesale_cost_cny": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r9.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
