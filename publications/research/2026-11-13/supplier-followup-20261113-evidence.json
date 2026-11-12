@@ -1,0 +1,152 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 160,
+  "site_version": "1.9.168",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "首次直接读取星创云XCY AI商城及4条准确SKU并对照OpenAI官方说明；仅保存页面事实/商家承诺，不把10件批发写成单件上游，不把接码等同绑定手机。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "merchant": "星创云 / XCY AI",
+    "domain": "xcyun.app",
+    "original_account_plus_skus": [
+      {
+        "sku": "chatgpt-plus-duxiang",
+        "name": "菲区Plus卡密一个月",
+        "displayed_cny_per_account_month": 125,
+        "account_scope": "Free/无生效订阅个人账号，不覆盖Plus/Pro/Team",
+        "merchant_warranty_days": 30,
+        "merchant_refund_claim": "卡密售出不退，无法兑换除外；封号不保",
+        "invoice_fee_rate_claim": 0.06,
+        "invoice_minimum_cny_claim": 10,
+        "arithmetical_listing_plus_minimum_invoice_fee_cny": 135,
+        "actual_checkout_or_paid_total_cny": null
+      },
+      {
+        "sku": "chatgpt-plus-ios",
+        "name": "美区iOS Plus一个月",
+        "displayed_cny_per_account_month": 138,
+        "account_scope": "本人个人账号，商称可覆盖在期Plus但不叠加；Pro不可覆盖",
+        "merchant_claim_no_password": true,
+        "merchant_warranty_days": 30,
+        "merchant_refund_claim": "掉订按剩余天数退差，封号/风控不保，仅商家承诺",
+        "invoice_fee_rate_claim": 0.06,
+        "invoice_minimum_cny_claim": 10,
+        "arithmetical_listing_plus_minimum_invoice_fee_cny": 148,
+        "actual_checkout_or_paid_total_cny": null
+      }
+    ],
+    "wholesale": {
+      "sku": "chatgpt-plus-daily-special",
+      "merchant_displayed_cny_per_item": 113,
+      "merchant_minimum_quantity": 10,
+      "merchant_displayed_bundle_total_cny": 1130,
+      "merchant_agent_gate_claim": true,
+      "additional_agent_entry_fee_cny": null,
+      "one_unit_wholesale_available_verified": false,
+      "formal_resale_authorization_verified": false,
+      "verified_wholesale_upstream": false
+    },
+    "invoice": {
+      "merchant_claim_china_vat_special_or_ordinary": true,
+      "merchant_claim_fee_rate": 0.06,
+      "merchant_claim_minimum_cny": 10,
+      "merchant_claim_invoice_item": "服务费",
+      "merchant_claim_corporate_contract_and_transfer_negotiable": true,
+      "registered_operator_entity": null,
+      "actual_payment_collection_entity": null,
+      "invoice_issuer_entity": null,
+      "valid_china_vat_invoice_verified": false,
+      "all_required_payment_and_invoice_fees_total_cny": null
+    },
+    "independent_phone": {
+      "sku": "chatgpt-us-physical-card",
+      "store_display_cny_per_code": 10,
+      "merchant_claim_number_and_sms_link": true,
+      "physical_sim_independently_verified": false,
+      "merchant_claim_validity_by_batch": true,
+      "holding_days": null,
+      "merchant_claim_repeat_sms_during_validity": true,
+      "chatgpt_web_success_verified": false,
+      "codex_desktop_success_verified": false,
+      "first_api_key_success_verified": false,
+      "session_requirement": null,
+      "failed_sms_cash_refund": null,
+      "real_sms_successes": 0
+    }
+  },
+  "sources": [
+    {
+      "url": "https://xcyun.app/store",
+      "observed_on": "2026-11-13",
+      "read_status": "first_party_store_read",
+      "evidence_level": "merchant_display_not_transaction",
+      "note": "Plus菲卡125、iOS138、批发113每件但10件起、独立SMS10元"
+    },
+    {
+      "url": "https://xcyun.app/store/products/chatgpt-plus-duxiang",
+      "observed_on": "2026-11-13",
+      "read_status": "first_party_sku_read",
+      "evidence_level": "merchant_claim_not_transaction",
+      "note": "Free账号限定，30天订阅质保，专普票加6%最低10元，仅商称"
+    },
+    {
+      "url": "https://xcyun.app/store/products/chatgpt-plus-ios",
+      "observed_on": "2026-11-13",
+      "read_status": "first_party_sku_read",
+      "evidence_level": "merchant_claim_not_transaction",
+      "note": "覆盖不叠加、30天售后、商称无需密码；发票条件重复"
+    },
+    {
+      "url": "https://xcyun.app/store/products/chatgpt-plus-daily-special",
+      "observed_on": "2026-11-13",
+      "read_status": "first_party_wholesale_gate_read",
+      "evidence_level": "merchant_display_not_authorization",
+      "note": "至少10件、代理资格入口，113/件从商城列表读取"
+    },
+    {
+      "url": "https://xcyun.app/store/products/chatgpt-us-physical-card",
+      "observed_on": "2026-11-13",
+      "read_status": "first_party_sms_sku_read",
+      "evidence_level": "merchant_claim_not_sms_test",
+      "note": "手机号和接码链接，具体时效按批次，失败现金退款没有明确承诺"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "read_status": "official_help_read",
+      "evidence_level": "official_policy",
+      "note": "普通ChatGPT、Codex桌面和首次API Key验证分别核查，买Plus或Apple/Session交付不保证自动绑号"
+    }
+  ],
+  "unknown_costs": {
+    "payment_fee_cny": null,
+    "invoice_actual_fee_cny": null,
+    "actual_paid_total_with_valid_china_vat_cny": null,
+    "one_unit_wholesale_price_cny": null
+  },
+  "phone_verification": {
+    "ordinary_plus_guarantees_phone_binding": false,
+    "chatgpt_web_verified": false,
+    "codex_desktop_verified": false,
+    "first_api_key_verified": false,
+    "number_holding_duration_days": null,
+    "failed_sms_original_payment_refund": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r12.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

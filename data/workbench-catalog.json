@@ -3862,6 +3862,28 @@
       "summary": "5条当日已读一方/官方原URL及1条11月11日历史证据；商称零售价快照不是成交价，正式调价日/含票总费/供货授权null，合格批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r160-20261113",
+      "title": "GPT源头第160轮 · 星创云准确Plus SKU、10件批发及开票接码条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113.html",
+      "updatedAt": "2026-11-13",
+      "summary": "新读星创云4条SKU：菲区原号Plus¥125、iOS¥138；商称专普票6%且最低¥10；批发¥113/件但至少10件；接码¥10/件，时效退款未验。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r160-20261113-evidence",
+      "title": "第160轮 · 星创云原号Plus、批发门槛、票费与独立短信结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "6条已读商家及OpenAI原URL，网页/商称/计算分开；结算和出票法人null，手机号验证和实际履约0，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

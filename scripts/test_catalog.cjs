@@ -1471,3 +1471,19 @@ assert.equal(r159p.formal_price_change_effective_date,null);
 assert.equal(r159p.wholesale_agent_entry_fee_cny,3000);assert.equal(r159p.wholesale_unit_price_cny,null);
 assert.equal(r159p.actual_checkout_with_valid_china_vat_cny,null);
 assert.equal(r159.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R160: XCY AI is a new retail observation; ten-unit "wholesale" cannot meet a single-unit requirement.
+const r160cat=d.records.find(x=>x.id==='gpt-source-followup-r160-20261113');
+const r160data=d.records.find(x=>x.id==='gpt-source-followup-r160-20261113-evidence');
+assert(r160cat&&r160data&&r160cat.url.endsWith('supplier-followup-20261113.html'));
+const r160=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-evidence.json'),'utf8'));
+assert.equal(r160.round,160);assert.equal(r160.site_version,'1.9.168');assert.equal(r160.sources.length,6);
+assert.deepEqual(r160.new_evidence.original_account_plus_skus.map(x=>x.displayed_cny_per_account_month),[125,138]);
+assert.equal(r160.new_evidence.wholesale.merchant_minimum_quantity,10);
+assert.equal(r160.new_evidence.wholesale.merchant_displayed_bundle_total_cny,1130);
+assert.equal(r160.new_evidence.wholesale.one_unit_wholesale_available_verified,false);
+assert.equal(r160.new_evidence.invoice.invoice_issuer_entity,null);
+assert.equal(r160.new_evidence.invoice.all_required_payment_and_invoice_fees_total_cny,null);
+assert.equal(r160.new_evidence.independent_phone.holding_days,null);
+assert.equal(r160.new_evidence.independent_phone.failed_sms_cash_refund,null);
+assert.equal(r160.qualification_totals.verified_plus_wholesale_upstreams,0);

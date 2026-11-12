@@ -1,3 +1,10 @@
+## 1.9.168 · 2026-11-13
+
+- 第160轮首次直接实读星创云/XCY AI商城与4条准确SKU：本人原号菲区Plus月卡挂牌¥125（仅Free/无生效订阅、不覆盖在期）；美区iOS原号Plus月卡¥138（商称可覆盖但不叠加余期）；“批发”菲区Plus¥113/件但必须10件起共¥1130，不能作为1件采购价；独立美区手机号接码卡密¥10/件。均为2026-11-13卖家一方网页标价/说明，不是变价生效证据、成交或授权实测。
+- 两款Plus页商称有效中国增值税专普票加票面6%、最低¥10，纯展示分项算术菲区¥135与iOS¥148不等于支付手续费与税票齐全的实付；经营、收款、出票主体、发票验真、真实含票成交额、合法供货/转售授权、单件批发资格及独立代理入门费均未核（null）。菲区卡密30天保订阅但不保封号；iOS商称掉订按余天退差，尚无真实退款证据。
+- 号码卡密商称含手机号/收码链接、时效依批次、有效期内通常可复收码；实际持号天数、实体卡运营商真实性、ChatGPT网页/Codex/首次API Key的适用性与实测成功、失败原路退款均未核（null/0）。Apple内购/Session不自动绑手机。仅追加r160 HTML/JSON、精确SHA256白名单、工作台project-1、总库最新入口、VERSION与验证，历史126条报价和前159轮原报告原字节不改。仍合格单件Plus批发上游0、实际购买0、有效中国VAT验票0、短信成功0。未付款、下单、联系商家或提供账号凭据。
+- 来源：https://xcyun.app/store 、https://xcyun.app/store/products/chatgpt-plus-duxiang 、https://xcyun.app/store/products/chatgpt-plus-ios 、https://xcyun.app/store/products/chatgpt-plus-daily-special 、https://xcyun.app/store/products/chatgpt-us-physical-card 。
+
 ## 1.9.167 · 2026-11-12
 
 - 第159轮将2026-11-11第132轮已归档的ChatGPT直充站同一准确本人原号Plus月付SKU，与2026-11-12新实读 https://chatgqt.plus/products/chatgpt-plus 和 https://chatgqt.plus/ 比对：无质保网页挂牌¥125→¥135／账号·月；含30天质保¥135→¥145／账号·月，均仅为两次可见挂牌差额+¥10，未确认变价生效日、真实收银台或最终付款。优惠条件低价另计（旧¥110/¥120，新¥120/¥130），不得替代无条件挂牌。
