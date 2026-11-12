@@ -3796,6 +3796,28 @@
       "summary": "3条实读原页；静态结算占位与开票公式分开，真实结算/有效税票/转售授权null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r157-20261112",
+      "title": "GPT源头第157轮 · CatFK手续费预览和wind89开票冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r10.html",
+      "updatedAt": "2026-11-12",
+      "summary": "CatFK AIDP原号Plus挂牌¥117.46/件，微信预览¥120.75含¥3.29手续费；wind89游客开票首页与指南相矛盾。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r157-20261112-evidence",
+      "title": "第157轮 · CatFK准确SKU、wind89游客票据和91短效号结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-12/supplier-followup-20261112-r10-evidence.json",
+      "updatedAt": "2026-11-12",
+      "summary": "6条实读原URL；网页支付预览不是有效VAT实付；游客补票资格不确定；短号30分钟仅商称。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
