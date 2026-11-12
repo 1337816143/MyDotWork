@@ -1,0 +1,107 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 156,
+  "site_version": "1.9.164",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "scope": "首次直读盾灵Plus原号月卡零售挂牌、静态开票公式与主体信息；没有批发合同、实际成交或有效中国VAT验真。网页自标11月11日更新，不能推成当日调价。",
+  "new_evidence": {
+    "dunling_retail_plus": {
+      "seller": "盾灵导航",
+      "sku": "Plus 原账号单月代充",
+      "sku_identifier": null,
+      "unit": "CNY/账号·月",
+      "observed_on": "2026-11-12",
+      "merchant_self_updated": "2026-11-11",
+      "list_price_cny_per_account_month": 149,
+      "technical_fee_included_cny": 15,
+      "payment_fee_merchant_claimed_included": true,
+      "real_payment_fee_cny": null,
+      "invoice_fee_formula": "套餐价6%，最低¥15",
+      "invoice_fee_rate": 0.06,
+      "invoice_fee_minimum_cny": 15,
+      "invoice_fee_if_list_price_cny": 15,
+      "arithmetic_price_with_invoice_cny": 164,
+      "arithmetic_not_paid_checkout": true,
+      "real_invoiced_total_cny": null,
+      "china_vat_invoice_verified": false,
+      "claimed_invoice_options": [
+        "个人普通发票",
+        "企业普通发票",
+        "企业增值税专用发票"
+      ],
+      "legal_operator": null,
+      "real_payment_collection_entity": null,
+      "valid_invoice_issuer": null,
+      "displayed_icp": "赣ICP备2025071319号-1（未核ICP备案法人）",
+      "official_openai_resale_authorization_verified": false,
+      "merchant_explicitly_disclaims_openai_authorization": true,
+      "wholesale_unit_price_cny": null,
+      "upfront_agent_fee_verified": null,
+      "own_account_claim": true,
+      "eligible_during_active_subscription_claim": false,
+      "session_json_requested": true,
+      "previous_chatgpt_login_required": true,
+      "can_bypass_first_login_sms": false,
+      "static_checkout_zero_amount_placeholder": true,
+      "real_purchase_verified": false,
+      "real_refund_verified": false,
+      "merchant_refund_claim": "代充未完成前可申请退费，完成后不支持退款，封号免责",
+      "web_phone_tested": false,
+      "codex_phone_tested": false,
+      "api_phone_tested": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.dunling.com/chatgpt-codex",
+      "observed_on": "2026-11-12",
+      "read_status": "merchant_page_parsed",
+      "http_status": null,
+      "page_self_updated": "2026-11-11",
+      "classification": "new_retail_list_price_and_static_invoice_formula",
+      "note": "149元月卡、含15元技术费；开票6%最低15，静态弹窗另有0元占位；未实际建单付款"
+    },
+    {
+      "url": "https://www.dunling.com/fuwuxieyi",
+      "observed_on": "2026-11-12",
+      "read_status": "merchant_page_parsed",
+      "http_status": null,
+      "classification": "site_general_navigation_terms",
+      "note": "一般导航站服务协议不证明第三方GPT代充的法律主体、增值税票及上游授权"
+    },
+    {
+      "url": "https://www.dunling.com/about",
+      "observed_on": "2026-11-12",
+      "read_status": "merchant_page_parsed",
+      "http_status": null,
+      "classification": "site_about",
+      "note": "导航业务说明，未核收款和出票主体"
+    }
+  ],
+  "prior_candidates": "CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay的已存资料未发现可信的新价变更、授权及短信实测；旧观察日期不覆盖",
+  "unknown_costs": {
+    "real_invoiced_checkout_cny": null,
+    "real_processing_fee_cny": null,
+    "actual_vat_invoice_fee_cny": null,
+    "wholesale_unit_cost_cny": null,
+    "legal_invoice_issuer": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r8.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

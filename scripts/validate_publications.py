@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 343, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 345, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.155'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r7.html'
+    assert latest['version'] == '1.156'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r8.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1707,6 +1707,14 @@ def validate_publications():
     assert all(v is None for v in r155['unknown_costs'].values())
     assert all(v == 0 for v in r155['qualification_totals'].values())
     assert not r155['purchase_or_login_attempted'] and not r155['merchant_contacted']
+    # R156: arithmetic invoice estimate is not a paid valid-VAT transaction.
+    r156=json.loads((ROOT / 'dist/research/2026-11-12/supplier-followup-20261112-r9-evidence.json').read_bytes())
+    assert r156['round']==156 and r156['site_version']=='1.9.164' and len(r156['sources'])==3
+    offer=r156['new_evidence']['dunling_retail_plus']
+    assert offer['list_price_cny_per_account_month']==149 and offer['invoice_fee_if_list_price_cny']==15
+    assert offer['arithmetic_price_with_invoice_cny']==164 and offer['real_invoiced_total_cny'] is None
+    assert offer['wholesale_unit_price_cny'] is None and not offer['official_openai_resale_authorization_verified']
+    assert all(x==0 for x in r156['qualification_totals'].values())
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
