@@ -1456,3 +1456,18 @@ assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.merchan
 assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.usdt_service_formally_disabled_verified,null);
 assert.equal(r158.new_evidence.payforgpt_sku7_payment_channel_comparison.all_required_fees_invoice_included_total_cny,null);
 assert.equal(r158.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R159: same-seller, same-SKU 11/11 versus 11/12 public price snapshots only.
+const r159cat=d.records.find(x=>x.id==='gpt-source-followup-r159-20261112');
+const r159data=d.records.find(x=>x.id==='gpt-source-followup-r159-20261112-evidence');
+assert(r159cat&&r159data&&r159cat.url.endsWith('supplier-followup-20261112-r12.html'));
+const r159=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r12-evidence.json'),'utf8'));
+assert.equal(r159.round,159);assert.equal(r159.site_version,'1.9.167');assert.equal(r159.sources.length,6);
+const r159p=r159.new_evidence.chatgqt_plus_same_sku_price_snapshot_comparison;
+assert.equal(r159p.no_warranty_previous_displayed_cny,125);assert.equal(r159p.no_warranty_current_displayed_cny,135);
+assert.equal(r159p.warranty_previous_displayed_cny,135);assert.equal(r159p.warranty_current_displayed_cny,145);
+assert.equal(r159p.no_warranty_snapshot_difference_cny,10);assert.equal(r159p.warranty_snapshot_difference_cny,10);
+assert.equal(r159p.formal_price_change_effective_date,null);
+assert.equal(r159p.wholesale_agent_entry_fee_cny,3000);assert.equal(r159p.wholesale_unit_price_cny,null);
+assert.equal(r159p.actual_checkout_with_valid_china_vat_cny,null);
+assert.equal(r159.qualification_totals.verified_plus_wholesale_upstreams,0);

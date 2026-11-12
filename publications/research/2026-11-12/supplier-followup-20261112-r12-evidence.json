@@ -1,0 +1,125 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 159,
+  "site_version": "1.9.167",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "scope": "对照2026-11-11既有同商家同SKU快照及2026-11-12再次实读的本人原号Plus一个月有/无质保零售价；准确展示差额+¥10，但不推断生效日、真实成交或批发授权。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "chatgqt_plus_same_sku_price_snapshot_comparison": {
+      "merchant": "ChatGPT直充站",
+      "domain": "chatgqt.plus",
+      "previous_observed_on": "2026-11-11",
+      "current_observed_on": "2026-11-12",
+      "currency": "CNY",
+      "unit": "CNY/本人原号·1件·1个月",
+      "no_warranty_sku": "ChatGPT Plus 代充（月付·无质保）",
+      "no_warranty_previous_displayed_cny": 125,
+      "no_warranty_current_displayed_cny": 135,
+      "no_warranty_snapshot_difference_cny": 10,
+      "warranty_30_day_sku": "ChatGPT Plus 代充（月付·有质保）",
+      "warranty_previous_displayed_cny": 135,
+      "warranty_current_displayed_cny": 145,
+      "warranty_snapshot_difference_cny": 10,
+      "previous_lowest_with_extra_conditions_no_warranty_cny": 110,
+      "previous_lowest_with_extra_conditions_warranty_cny": 120,
+      "current_lowest_with_extra_conditions_no_warranty_cny": 120,
+      "current_lowest_with_extra_conditions_warranty_cny": 130,
+      "actual_discount_eligibility_tested": false,
+      "formal_price_change_effective_date": null,
+      "actual_checkout_without_invoice_cny": null,
+      "actual_checkout_with_valid_china_vat_cny": null,
+      "actual_paid_cny": null,
+      "payment_processing_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "invoice_issuer": null,
+      "merchant_operator_entity": null,
+      "actual_collection_entity": null,
+      "merchant_claim_no_credentials_required": true,
+      "actual_fulfillment_verified": false,
+      "actual_refund_verified": false,
+      "wholesale_agent_entry_fee_cny": 3000,
+      "wholesale_agent_entry_fee_part_of_goods_balance": false,
+      "wholesale_unit_price_cny": null,
+      "no_upfront_fee_wholesale_eligibility_verified": false,
+      "formal_resale_authorization_verified": false,
+      "qualified_wholesale_upstream": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://chatgqt.plus/products/chatgpt-plus",
+      "observed_on": "2026-11-12",
+      "read_status": "live_first_party_exact_sku_page",
+      "evidence_level": "merchant_display_not_transaction",
+      "note": "本人原号Plus月付两SKU有质保¥145、无质保¥135；另有成品号/年付不纳入单月原号比较；优惠低价须额外条件"
+    },
+    {
+      "url": "https://chatgqt.plus/",
+      "observed_on": "2026-11-12",
+      "read_status": "live_first_party_homepage",
+      "evidence_level": "merchant_display_not_transaction",
+      "note": "首页同两SKU¥135/¥145、优惠条件下分别可低至¥120/¥130，非所有人直接成交价"
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-12",
+      "read_status": "live_first_party_agency_terms",
+      "evidence_level": "merchant_claim_not_contract",
+      "note": "进货代理一次性资格费¥3000不计入货款，后台另显拿货价；不符合无代理前置费"
+    },
+    {
+      "url": "https://chatgqt.plus/faq",
+      "observed_on": "2026-11-12",
+      "read_status": "live_first_party_faq",
+      "evidence_level": "merchant_claim_not_test",
+      "note": "商家声称不索要Session/Token/账号密码；未验证真实履约、退费或手机验证"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-12",
+      "read_status": "official_help_article_readable",
+      "evidence_level": "official_policy",
+      "note": "ChatGPT通常不需验证、Codex桌面端可能要求、首API Key要求手机；Plus代充不等于自动绑定/保证解除"
+    },
+    {
+      "url": "https://1337816143.github.io/MyDotWork/research/2026-11-11/supplier-followup-20261111-r5-evidence.json",
+      "observed_on": "2026-11-11",
+      "read_status": "existing_archived_record_not_reobserved_at_old_date",
+      "evidence_level": "archived_first_party_observation",
+      "note": "第132轮同一SKU无保¥125、有保¥135、额外优惠低至¥110/¥120；历史内容不更新日期"
+    }
+  ],
+  "unknown_costs": {
+    "all_required_valid_china_vat_total_cny": null,
+    "payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "actual_wholesale_unit_price_cny": null
+  },
+  "phone_verification": {
+    "ordinary_plus_guarantees_phone_binding": false,
+    "chatgpt_web_verified": false,
+    "codex_desktop_verified": false,
+    "first_api_key_verified": false,
+    "independent_sms_sku_this_round": null,
+    "number_holding_duration_days": null,
+    "failed_sms_original_payment_refund": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r11.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
