@@ -1,0 +1,115 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 158,
+  "site_version": "1.9.166",
+  "date": "2026-11-12",
+  "observed_on": "2026-11-12",
+  "scope": "同一准确PayForGPT原号Plus SKU7 2026-11-04历史展示四支付渠道、2026-11-12商家现页仅称支付宝及人工转账且明说微信不能付款；非实付、真实平台关停或已核税票及批发授权。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "payforgpt_sku7_payment_channel_comparison": {
+      "seller": "PayForGPT",
+      "sku_identifier": "7",
+      "sku": "ChatGPT Plus 月卡｜国内支付宝充值",
+      "unit": "CNY/本人原号·1件·1个月",
+      "previous_observed_on": "2026-11-04",
+      "current_observed_on": "2026-11-12",
+      "previous_displayed_channels": [
+        "Alipay",
+        "WeChat Pay",
+        "USDT",
+        "manual bank transfer"
+      ],
+      "current_merchant_named_channels": [
+        "Alipay",
+        "manual bank transfer"
+      ],
+      "merchant_now_explicit_wechat_payment_unavailable": true,
+      "usdt_not_listed_in_current_page": true,
+      "usdt_service_formally_disabled_verified": null,
+      "actual_channel_status_tested": false,
+      "merchant_claim_payment_redirect": "third-party z-pay Alipay checkout",
+      "z_pay_actual_payment_collection_entity_verified": null,
+      "displayed_price_cny_per_month_prior": 160,
+      "displayed_price_cny_per_month_current": 160,
+      "same_sku_price_change_observed": false,
+      "actual_final_checkout_cny": null,
+      "actual_paid_cny": null,
+      "payment_fee_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "valid_china_vat_invoice_issuer": null,
+      "all_required_fees_invoice_included_total_cny": null,
+      "prior_web_login_required_merchant_claim": true,
+      "active_plus_can_cover_without_stacking_merchant_claim": true,
+      "active_philippines_subscription_coverage_supported_merchant_claim": false,
+      "merchant_claim_wechat_for_fulfillment_communication_not_payment": true,
+      "session_or_token_needed_in_this_exact_order": null,
+      "purchase_or_refund_tested": false
+    },
+    "payforgpt_enterprise_invoice_recheck": {
+      "url": "https://payforgpt.com/qiye-caigou",
+      "observed_on": "2026-11-12",
+      "page_self_stated_update_date": "2026-11-06",
+      "merchant_requires_pre_payment_invoice_type_and_issuer_confirmation": true,
+      "merchant_says_its_invoices_are_not_openai_official": true,
+      "single_unit_china_vat_invoice_available_verified": null,
+      "single_unit_invoice_cost_cny": null,
+      "actual_operating_entity": null,
+      "actual_payment_entity": null,
+      "actual_vat_invoice_entity": null,
+      "one_unit_wholesale_price_cny": null,
+      "no_agent_upfront_fee_condition_verified": false,
+      "formal_resale_authorization_verified": false,
+      "qualified_upstream": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-12",
+      "read_status": "live_first_party_product_html",
+      "note": "准确Plus SKU7零售挂牌¥160，支付宝/人工转账且微信不能付款，USDT未列；商称跳转z-pay，未下单"
+    },
+    {
+      "url": "https://payforgpt.com/",
+      "observed_on": "2026-11-12",
+      "read_status": "live_first_party_homepage",
+      "note": "首页再确认微信仅用于开通沟通不可付款，现称支付宝和人工转账"
+    },
+    {
+      "url": "https://payforgpt.com/qiye-caigou",
+      "observed_on": "2026-11-12",
+      "page_self_stated_updated_on": "2026-11-06",
+      "read_status": "live_first_party_enterprise_invoice_page",
+      "note": "需先核本单发票票种和主体；非OpenAI官方发票；不能保证单件有效VAT"
+    },
+    {
+      "url": "https://1337816143.github.io/MyDotWork/research/2026-11-04/supplier-followup-20261104-r16-evidence.json",
+      "observed_on": "2026-11-04",
+      "read_status": "existing_archived_historical_evidence_not_reobserved_on_this_date",
+      "note": "第30轮直接读取历史四支付渠道与¥160 SKU7；对照而不刷新历史日期"
+    }
+  ],
+  "unknown_costs": {
+    "actual_all_in_valid_china_vat_cny": null,
+    "actual_payment_processing_fee_cny": null,
+    "actual_vat_invoice_fee_cny": null,
+    "wholesale_unit_cost_cny": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-12/supplier-followup-20261112-r10.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
