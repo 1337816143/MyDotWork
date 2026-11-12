@@ -131,13 +131,13 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 341, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 343, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.154'
-    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r7.html'
-    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r7-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r6.html'
+    assert latest['version'] == '1.155'
+    assert latest['path'] == 'research/2026-11-12/supplier-followup-20261112-r8.html'
+    assert latest['dataPath'] == 'research/2026-11-12/supplier-followup-20261112-r8-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-12/supplier-followup-20261112-r7.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1689,6 +1689,24 @@ def validate_publications():
     assert all(value is None for value in r154['unknown_costs'].values())
     assert all(value == 0 for value in r154['qualification_totals'].values())
     assert r154['purchase_or_login_attempted'] is False and r154['merchant_contacted'] is False
+    # R155: independently read SMS source offerings; voucher window must not be confused with persistent phone rental.
+    assert by_id['gpt-source-followup-r155-20261112']['url'] == '../research/2026-11-12/supplier-followup-20261112-r8.html'
+    assert by_id['gpt-source-followup-r155-20261112-evidence']['url'] == '../research/2026-11-12/supplier-followup-20261112-r8-evidence.json'
+    r155 = json.loads((ROOT/'dist/research/2026-11-12/supplier-followup-20261112-r8-evidence.json').read_bytes())
+    assert r155['round'] == 155 and r155['site_version'] == '1.9.163' and len(r155['sources']) == 5
+    b155 = r155['new_evidence']['boaile_single_sms']
+    assert [x['displayed_price_cny_per_voucher'] for x in b155['offer_variants']] == [2.99, 4.99]
+    assert b155['page_contains_payment_demo'] and not b155['real_order_or_checkout_verified']
+    assert b155['voucher_valid_days_from_payment_claim'] == 30 and b155['voucher_grace_end_days_from_payment_claim'] == 60
+    assert b155['actual_number_retention_days'] is None and b155['sms_not_received_cash_refund_rule'] is None
+    j155 = r155['new_evidence']['jiema91_long_rental']
+    assert (j155['claimed_long_term_number_days_min'],j155['claimed_long_term_number_days_max']) == (12,90)
+    assert j155['listing_price_cny'] is None and j155['listing_price_usd'] is None
+    assert j155['merchant_claim_all_chatgpt_accounts_need_sms'] and not j155['official_says_all_chatgpt_accounts_need_sms']
+    assert j155['merchant_terms_paid_delivered_service_nonrefundable'] and not j155['operator_registered_verified']
+    assert all(v is None for v in r155['unknown_costs'].values())
+    assert all(v == 0 for v in r155['qualification_totals'].values())
+    assert not r155['purchase_or_login_attempted'] and not r155['merchant_contacted']
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

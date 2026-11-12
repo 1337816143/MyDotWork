@@ -1405,3 +1405,17 @@ assert.equal(r153.new_evidence.morimm_plus_recheck.actual_paid_cny,null);
 assert.equal(r153.new_evidence.redeem_portal.session_json_or_access_token_requested,true);
 assert.equal(r153.new_evidence.redeem_portal.first_web_login_sms_can_be_bypassed,false);
 assert.equal(r153.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R155: new SMS sources, not newly verified Plus wholesale.
+const r155cat=d.records.find(x=>x.id==='gpt-source-followup-r155-20261112');
+const r155data=d.records.find(x=>x.id==='gpt-source-followup-r155-20261112-evidence');
+assert(r155cat&&r155data&&r155cat.url.endsWith('supplier-followup-20261112-r8.html'));
+const r155=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-12/supplier-followup-20261112-r8-evidence.json'),'utf8'));
+assert.equal(r155.round,155);assert.equal(r155.site_version,'1.9.163');assert.equal(r155.sources.length,5);
+assert.deepEqual(r155.new_evidence.boaile_single_sms.offer_variants.map(x=>x.displayed_price_cny_per_voucher),[2.99,4.99]);
+assert.equal(r155.new_evidence.boaile_single_sms.page_contains_payment_demo,true);
+assert.equal(r155.new_evidence.boaile_single_sms.actual_number_retention_days,null);
+assert.equal(r155.new_evidence.jiema91_long_rental.listing_price_cny,null);
+assert.equal(r155.new_evidence.jiema91_long_rental.merchant_terms_paid_delivered_service_nonrefundable,true);
+assert.equal(r155.new_evidence.official_phone_applicability.normal_chatgpt_registration_generally_requires_phone,false);
+assert.equal(r155.qualification_totals.verified_plus_wholesale_upstreams,0);
