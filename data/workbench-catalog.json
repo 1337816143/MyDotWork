@@ -4236,6 +4236,28 @@
       "summary": "4条实际读取原始URL，商品价单位与周期不确定、商家夸大可能性、支付/VAT/退款/null及官方电话用途独立归档。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r177-20261114",
+      "title": "GPT源头第177轮 · NEXUSOTP接码最低入金、Mock支付和50件账号批发筛除",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r5.html",
+      "updatedAt": "2026-11-14",
+      "summary": "新读NEXUSOTP $10 USDT最低预存、$0.45美国10分钟OTP及退款仅bot钱包；¥128含票站点条款承认Mock演示支付、$3.80所谓批发需50个现成账号，已核Plus上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r177-20261114-evidence",
+      "title": "第177轮 · SMS单次号码/退款钱包、Mock支付与MOQ交付证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r5-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "11条本轮直接读取原始URL、国家价格单位/10分钟、$10入金、退余额、零真实支付及官方应用边界；支付附加费和票费null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

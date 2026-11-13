@@ -1,0 +1,231 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 177,
+  "site_version": "1.9.185",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "新发现NEXUSOTP按次Telegram接码USDT$10最低入金、退款仅站内钱包且号码10分钟；筛除星流AI ¥128含票页面因当前仅Mock演示支付；排除BulkWare $3.80低单价因MOQ50且交付账户密码。均无真实交易或正式个人Plus授权证据。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_independent_sms_provider": {
+    "name": "NEXUSOTP",
+    "category": "independent_sms_retail_bot_not_plus_upstream",
+    "service": "OpenAI / ChatGPT OTP",
+    "exact_service_url": "https://nexusotp.com/services/chatgpt",
+    "purchase_interface": "Telegram @nexusotps_bot",
+    "minimum_wallet_funding_usd": 10,
+    "minimum_wallet_funding_currency": "USDT BEP20",
+    "is_minimum_funding_equal_to_per_sms_charge": false,
+    "rates": {
+      "united_states": {
+        "price_usd_per_otp_session": 0.45,
+        "country_dial_code": "+1"
+      },
+      "united_kingdom": {
+        "price_usd_per_otp_session": 0.41,
+        "country_dial_code": "+44"
+      },
+      "philippines": {
+        "price_usd_per_otp_session": 0.3,
+        "country_dial_code": "+63"
+      }
+    },
+    "session_minutes": 10,
+    "number_retention_days": null,
+    "guaranteed_same_number_reuse": false,
+    "max_concurrent_waiting_sessions": 7,
+    "merchant_claim_non_voip_cellular_sim": true,
+    "independently_verified_non_voip_or_carrier": false,
+    "no_sms_within_ten_minutes": {
+      "merchant_claim_automatic_refund_percent": 100,
+      "refund_destination": "bot_wallet_balance",
+      "refund_as_original_payment_cash_verified": false
+    },
+    "sms_delivered_but_openai_rejected": {
+      "merchant_refund_guaranteed": false
+    },
+    "fund_balance_cash_withdrawal_supported": null,
+    "blockchain_fee_usd": null,
+    "currency_conversion_fee_cny": null,
+    "actual_net_price_cny": null,
+    "merchant_claimed_legal_name": "NexusOTP Telecom Network Ltd.",
+    "entity_registration_validated": false,
+    "payee_identity_verified": false,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "actual_sms_purchase_or_test": false
+  },
+  "new_supplier_screens": [
+    {
+      "name": "星流 AI",
+      "url": "https://www.gpt168.cc/product/chatgpt-plus",
+      "offer": "ChatGPT Plus 1 month on own account; self-service card",
+      "advertised_price_cny_per_month": 128,
+      "advertised_corporate_invoice_no_extra_charge": true,
+      "existing_active_subscription_may_be_overwritten": true,
+      "terms_url": "https://www.gpt168.cc/legal/terms",
+      "merchant_discloses_current_payment_mode": "Mock/demo only, real merchant interface not connected",
+      "actual_real_payment_support_confirmed": false,
+      "real_purchase_and_valid_invoice_tested": false,
+      "real_full_cost_cny": null,
+      "invoice_issuer_identity_verified": false,
+      "formal_plus_distribution_authorization_verified": false,
+      "qualifies_for_live_wholesale": false
+    },
+    {
+      "name": "BulkWare",
+      "url": "https://bulkware.co/wholesale/chatgpt-plus-1m",
+      "offer": "ChatGPT Plus 1 month account credentials (login and password)",
+      "advertised_unit_price_usd_at_quantity_50": 3.8,
+      "minimum_order_quantity": 50,
+      "advertised_minimum_order_total_usd": 190,
+      "other_tiers": {
+        "quantity_100_usd_per_key": 2.9,
+        "quantity_250_usd_per_key": 1.9,
+        "quantity_500_usd_per_key": 1.4
+      },
+      "user_original_account_supported": false,
+      "single_unit_sale_supported": false,
+      "authentic_keys_and_formal_authorization_verified": false,
+      "china_vat_invoice_fee_cny": null,
+      "all_payment_extra_fees_usd": null,
+      "qualifies_for_own_account_wholesale": false
+    }
+  ],
+  "preexisting_candidates_rechecked": {
+    "CatFK": "no_verified_new_complete_checkout_or_vat",
+    "小久": "no_verified_new_complete_checkout_or_vat",
+    "Morimm": "no_verified_new_complete_checkout_or_vat",
+    "引路鲸": "no_verified_new_complete_checkout_or_vat",
+    "ChatShare": "shared_or_mirror_not_own_account",
+    "GetVIP": "no_verified_new_complete_checkout_or_vat",
+    "wind89": "invoice_plus_fee_old_claim_only",
+    "GETGPT Pro": "retail_price_and_sms_claim_not_independent_test",
+    "PAYPRM": "no_verified_new_complete_checkout_or_vat",
+    "ChongPay": "no_verified_new_complete_checkout_or_vat"
+  },
+  "existing_comparator": {
+    "name": "SNSOTP",
+    "historical_minimum_deposit_usd": 40,
+    "comparable_new_minimum_deposit_usd": 10,
+    "new_provider_is_lower_funding_barrier_only": true,
+    "price_per_otp_can_be_higher_than_snsotp": true,
+    "old_snsotp_facts_not_reobserved_as_new_prices": true
+  },
+  "official_phone_scope_unchanged": true,
+  "sources": [
+    {
+      "url": "https://nexusotp.com/services/chatgpt",
+      "kind": "merchant_original_exact_sms_service",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "OpenAI/ChatGPT explicit SMS service; US $0.45/OTP, UK $0.41/OTP, 10-min session, claimed SIM non-VoIP",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://nexusotp.com/services/chatgpt/united-states",
+      "kind": "merchant_original_us_country_sku",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "US carrier country $0.45 per 10-minute OTP rental; displayed OTP/phone are illustrative, not live purchase records",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://nexusotp.com/how-it-works",
+      "kind": "merchant_original_payment_and_lifecycle",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "Telegram bot @nexusotps_bot; min USDT BEP20 funding 10 USD; 7 concurrent; automatic 10-minute timeout refund to bot wallet",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://nexusotp.com/refund-policy",
+      "kind": "merchant_original_refund_rules",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "No incoming SMS within 10 min returns credits to bot wallet; delivered SMS means session final, even if service rejects phone; cash withdrawal not documented",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://nexusotp.com/terms-of-service",
+      "kind": "merchant_original_number_limit_and_claimed_entity",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "10-minute access is transient; repeat allocation not guaranteed; footer entity naming not validated",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://www.gpt168.cc/product/chatgpt-plus",
+      "kind": "merchant_original_exact_plus_sku",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "ChatGPT Plus one-month self-recharge on existing account ¥128/listing; merchant advertises free corporate invoice; actual checkout/test unverified",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://www.gpt168.cc/legal/terms",
+      "kind": "merchant_original_actual_payment_status",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "Terms expressly say current checkout is Mock payment demonstration, no real money transaction; not a verified available paid Plus source",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://www.gpt168.cc/",
+      "kind": "merchant_original_homepage",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "FAQ also states Mock demo checkout; existing member may overwrite remaining subscription time",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://bulkware.co/wholesale/chatgpt-plus-1m",
+      "kind": "merchant_original_wholesale_exact_sku",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "50 minimum ChatGPT Plus 1-month account/password credentials; US $3.80 per key with 50 units, US $190 minimum batch; not original account",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://bulkware.co/wholesale/ai-tools",
+      "kind": "merchant_original_wholesale_category",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "Wholesale only, no single-unit purchases",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "kind": "official_openai_phone_scope_recheck",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "Web ChatGPT, Codex desktop and first API Key are distinct mechanisms; no official guarantee rentals work for all",
+      "evidence_type": "official_general_rule"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_prices_refreshed": false
+}

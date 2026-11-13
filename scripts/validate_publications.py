@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 385, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 387, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.176'
+    assert latest['version'] == '1.177'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r4.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r4-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r3.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r5.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r5-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r4.html'
 
     # R170: public $0.01 OpenAI SMS offer has mandatory $40 nonwithdrawable prepay.
     assert by_id['gpt-source-followup-r170-20261113']['url'].endswith('supplier-followup-20261113-r11.html')
@@ -2006,6 +2006,20 @@ def validate_publications():
     assert r175['costs']['new_all_required_fees_valid_china_vat_cny'] is None
     assert all(x==0 for x in r175['qualification_totals'].values())
     assert r175['purchase_or_login_attempted'] is False and r175['merchant_contacted'] is False
+
+    # R177: mock checkout and account-password MOQ cannot qualify as own-account Plus supply.
+    assert by_id['gpt-source-followup-r177-20261114']['url'].endswith('supplier-followup-20261114-r5.html')
+    assert by_id['gpt-source-followup-r177-20261114-evidence']['url'].endswith('supplier-followup-20261114-r5-evidence.json')
+    r177=json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r5-evidence.json').read_bytes())
+    assert r177['round']==177 and r177['site_version']=='1.9.185' and len(r177['sources'])==11
+    sms=r177['new_independent_sms_provider']
+    assert sms['minimum_wallet_funding_usd']==10 and sms['rates']['united_states']['price_usd_per_otp_session']==0.45
+    assert sms['session_minutes']==10 and sms['no_sms_within_ten_minutes']['refund_destination']=='bot_wallet_balance'
+    assert sms['fund_balance_cash_withdrawal_supported'] is None and sms['actual_sms_purchase_or_test'] is False
+    assert r177['new_supplier_screens'][0]['actual_real_payment_support_confirmed'] is False
+    assert r177['new_supplier_screens'][1]['minimum_order_quantity']==50 and r177['new_supplier_screens'][1]['user_original_account_supported'] is False
+    assert all(x==0 for x in r177['qualification_totals'].values())
+    assert r177['actual_purchase_or_sms_test_performed'] is False and r177['historical_prices_refreshed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

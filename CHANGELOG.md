@@ -1,3 +1,11 @@
+## 1.9.185 · 2026-11-14
+
+- 第177轮首次直接核读NEXUSOTP独立OpenAI/ChatGPT单次短信服务：Telegram @nexusotps_bot，USDT BEP20最低US$10入金，不是每次短信的成本；美国US$0.45/OTP、英国US$0.41/OTP、菲律宾US$0.30/OTP，每次临时号码10分钟、7个并发待收码上限。商称非VoIP实体SIM及其电信公司名称未独立验证；无实际ChatGPT网页/Codex/首次API Key验收成功证据。与历史SNSOTP最低US$40预存相比只可称降低资金入场门槛，不证明更低每次费用或成功率。
+- NEXUSOTP明示10分钟无短信100%自动退<strong>Telegram机器人站内钱包</strong>，非原路现金；收到短信后即使OpenAI拒号也无保证退款，不能中途人工取消或保证未来同号复用。提现、网络手续费、换汇和收款主体均null。
+- 新核星流AI本人Plus 1个月商品页标¥128，宣称电子企业发票免费，但商家自身服务协议明确当前仅Mock演示支付、不发生真实资金交易，不能记为可实际下单的含票源头。新核BulkWare声称$3.80/Plus钥匙，实际最低50件共$190、交付现成账号密码，因单件与原号双不符排除。均无正式Plus转售授权、票据与履约独立实测。
+- CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay旧价格未刷新。符合本人原号一件一月、无前置代理费、含全部必需支付费及有效中国增值税票≤¥170的已核Plus批发上游仍0；Plus实购0、验票0、SMS成功0；所有未知费用null。仅新增r177 HTML/JSON、精确SHA256发布白名单、project-1目录、总库最新入口、VERSION、CHANGELOG和回归断言，保留历史126报价和前176轮原件；无付款、商家联络、账号秘密或实测。
+- 新增原始来源：https://nexusotp.com/services/chatgpt 、https://nexusotp.com/services/chatgpt/united-states 、https://nexusotp.com/how-it-works 、https://nexusotp.com/refund-policy 、https://nexusotp.com/terms-of-service 、https://www.gpt168.cc/product/chatgpt-plus 、https://www.gpt168.cc/legal/terms 、https://www.gpt168.cc/ 、https://bulkware.co/wholesale/chatgpt-plus-1m 、https://bulkware.co/wholesale/ai-tools 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.184 · 2026-11-14
 
 - 第176轮首次读取充值管家本人原号Plus商品页（https://chongzhiguanjia.com/buy/12）¥165/商品列示1件，商称人工发货、批量采购及对公支付、失败退款成功不退；商品页没有单独明确单件对应订阅月数，不能将¥165直接标成已核一月批发、完整含票成本或正式授权。文中“GETGPT”仅为文字，不能推定与其他既有GETGPT Pro商家的关系。
