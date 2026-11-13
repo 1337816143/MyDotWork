@@ -1662,3 +1662,16 @@ assert.equal(r174.official_verification_findings.number_association.changing_or_
 assert.equal(r174.official_verification_findings.phone_only_signup.plus_pro_business_require_verified_email,true);
 assert.equal(r174.costs.new_all_required_fees_valid_china_vat_cny,null);
 assert.equal(r174.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R175: consumer Plus authorization is distinct from business/API and Partner Network; no inference of merchant liability.
+const r175cat=d.records.find(x=>x.id==='gpt-source-followup-r175-20261114');
+const r175data=d.records.find(x=>x.id==='gpt-source-followup-r175-20261114-evidence');
+assert(r175cat&&r175data&&r175cat.url.endsWith('supplier-followup-20261114-r3.html'));
+const r175=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r3-evidence.json'),'utf8'));
+assert.equal(r175.round,175);assert.equal(r175.site_version,'1.9.183');assert.equal(r175.sources.length,6);
+assert.equal(r175.authorization_findings.consumer_terms.credentials_sharing_or_account_access_sharing_prohibited,true);
+assert.equal(r175.authorization_findings.business_agreement.excludes_personal_consumer_subscription_by_default,true);
+assert.equal(r175.authorization_findings.partner_network.seller_membership_or_consumer_plus_distribution_right_for_any_candidate_verified,false);
+assert.equal(r175.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r175.costs.new_all_required_fees_valid_china_vat_cny,null);
+assert.equal(r175.historical_prices_refreshed,false);
