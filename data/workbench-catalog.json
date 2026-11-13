@@ -4082,6 +4082,28 @@
       "summary": "7条一方/官方原始URL；模拟示意成本非真实OpenAI单件代理报价，最低入金、转售批准和SMS成功均未核。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r170-20261113",
+      "title": "GPT源头第170轮 · SNSOTP短信验证码SKU和US$40预充值门槛",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r11.html",
+      "updatedAt": "2026-11-13",
+      "summary": "首次实读OpenAI单次验证码US$0.01/次起，美国US$0.06/次，但先预存加密币US$40；收码失败退款仅至不可提现余额，非Plus批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r170-20261113-evidence",
+      "title": "第170轮 · SNSOTP短信一次性码服务代码、各国价及退款证据数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r11-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "7条商家/官方原URL，商页标注2026-11-04旧库存快照与本轮读取日期分开，预存US$40、20分钟余额退款与未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

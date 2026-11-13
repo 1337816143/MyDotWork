@@ -131,14 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 371, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 373, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.169'
+    assert latest['version'] == '1.170'
     assert latest['date'] == '2026-11-13'
-    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r9.html'
+    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r10.html'
+
+    # R170: public $0.01 OpenAI SMS offer has mandatory $40 nonwithdrawable prepay.
+    assert by_id['gpt-source-followup-r170-20261113']['url'].endswith('supplier-followup-20261113-r11.html')
+    assert by_id['gpt-source-followup-r170-20261113-evidence']['url'].endswith('supplier-followup-20261113-r11-evidence.json')
+    r170 = json.loads((ROOT / 'dist/research/2026-11-13/supplier-followup-20261113-r11-evidence.json').read_bytes())
+    assert r170['round'] == 170 and r170['site_version'] == '1.9.178' and len(r170['sources']) == 7
+    sms170 = r170['independent_sms_candidate']
+    assert sms170['exact_service_code'] == 'openai'
+    assert sms170['merchant_public_prices_by_country'][0]['price_usd_per_one_sms_code'] == 0.01
+    assert sms170['minimum_prepaid_crypto_topup_usd'] == 40
+    assert sms170['prepaid_balance_withdrawable'] is False
+    assert sms170['actual_one_order_out_of_pocket_usd'] is None
+    assert all(x == 0 for x in r170['qualification_totals'].values())
 
     # R169: independently observed CODASMS SMS reseller approval terms are not Plus supply authorization.
     assert by_id['gpt-source-followup-r169-20261113']['url'].endswith('supplier-followup-20261113-r10.html')

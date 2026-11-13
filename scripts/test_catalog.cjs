@@ -1592,3 +1592,19 @@ assert.equal(r169.independent_sms_reseller_candidate.independently_verified_nonv
 assert.equal(r169.independent_sms_reseller_candidate.actual_cash_refund_verified,false);
 assert.equal(r169.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r169.qualification_totals.verified_phone_sms_successes,0);
+
+// R170: SNSOTP advertised SMS unit price must not be mistaken for paid one-code cash cost.
+const r170cat=d.records.find(x=>x.id==='gpt-source-followup-r170-20261113');
+const r170data=d.records.find(x=>x.id==='gpt-source-followup-r170-20261113-evidence');
+assert(r170cat && r170data && r170cat.url.endsWith('supplier-followup-20261113-r11.html'));
+const r170=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r11-evidence.json'),'utf8'));
+assert.equal(r170.round,170);assert.equal(r170.site_version,'1.9.178');assert.equal(r170.sources.length,7);
+assert.equal(r170.independent_sms_candidate.exact_service_code,'openai');
+assert.equal(r170.independent_sms_candidate.merchant_public_prices_by_country.find(x=>x.country_code==='us').price_usd_per_one_sms_code,0.06);
+assert.equal(r170.independent_sms_candidate.minimum_prepaid_crypto_topup_usd,40);
+assert.equal(r170.independent_sms_candidate.merchant_stock_snapshot_as_of,'2026-11-04');
+assert.equal(r170.independent_sms_candidate.prepaid_balance_withdrawable,false);
+assert.equal(r170.independent_sms_candidate.actual_one_order_out_of_pocket_usd,null);
+assert.equal(r170.independent_sms_candidate.verified_codex_desktop_sms_success,false);
+assert.equal(r170.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r170.qualification_totals.verified_phone_sms_successes,0);
