@@ -4104,6 +4104,28 @@
       "summary": "7条商家/官方原URL，商页标注2026-11-04旧库存快照与本轮读取日期分开，预存US$40、20分钟余额退款与未知费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r171-20261113",
+      "title": "GPT源头第171轮 · AIBulk Plus单月与转售API限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r12.html",
+      "updatedAt": "2026-11-13",
+      "summary": "新实读原号Free升Plus Lv1 US$17.99/月和Session先决；转售API非官方授权，税票与全部费用未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r171-20261113-evidence",
+      "title": "第171轮 · AIBulk转售与MySubShare、dingyue交叉证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r12-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "10条商家/官方原始URL，Lv1零售与更高阶门槛分开，付款/税票/授权费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
