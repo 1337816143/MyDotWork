@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 363, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 365, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.165'
+    assert latest['version'] == '1.166'
     assert latest['date'] == '2026-11-13'
-    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r5.html'
+    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r6.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1860,6 +1860,22 @@ def validate_publications():
     assert r165['independent_sms']['actual_number_holding_days'] is None
     assert r165['independent_sms']['cash_refund_for_nonuser_sms_failure_verified'] is None
     assert all(v == 0 for v in r165['qualification_totals'].values())
+
+    # R166: public price and alleged 5% invoicing are neither valid VAT nor a legal upstream quotation.
+    assert by_id['gpt-source-followup-r166-20261113']['url'].endswith('supplier-followup-20261113-r7.html')
+    assert by_id['gpt-source-followup-r166-20261113-evidence']['url'].endswith('supplier-followup-20261113-r7-evidence.json')
+    r166 = json.loads((ROOT/'dist/research/2026-11-13/supplier-followup-20261113-r7-evidence.json').read_bytes())
+    assert r166['round'] == 166 and r166['site_version'] == '1.9.174'
+    c166 = r166['new_candidate']
+    assert c166['merchant_product_id'] == 'G25949013'
+    assert c166['display_price_cny'] == 116.98 and c166['unpaid_checkout_preview_payment_fee_cny'] == 3.2754
+    assert c166['merchant_claim_invoice_or_corporate_payment_extra_fee_percent'] == 5
+    assert c166['china_vat_invoice_fee_cny'] is None and c166['real_vat_all_fees_included_total_cny'] is None
+    assert c166['one_unit_wholesale_price_cny'] is None and c166['agent_upfront_fee_cny'] is None
+    assert c166['renewal_terms_conflict_unresolved'] is True
+    assert r166['independent_phone_verification']['number_holding_days'] is None
+    assert all(v == 0 for v in r166['qualification_totals'].values())
+    assert r166['purchase_or_login_attempted'] is False and r166['merchant_contacted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

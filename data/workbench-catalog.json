@@ -3994,6 +3994,28 @@
       "summary": "G11162247与G88621777两个直接读到的商品SKU，含价格/支付预览/售后限制、原始URL、旧源复读及所有未知费用null；真实采购/验票/SMS 0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r166-20261113",
+      "title": "GPT源头第166轮 · 老源头AI Plus开票5%与批发条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r7.html",
+      "updatedAt": "2026-11-13",
+      "summary": "新实读原号Plus G25949013 ¥116.98／件·月、支付费¥3.2754；商称开票/对公额外5%，出票主体、单件批发授权和最终含票价未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r166-20261113-evidence",
+      "title": "第166轮 · 老源头AI SKU支付、税票及代理缺口结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r7-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "商家单件Plus挂牌/未付费用与5%开票声明分别保存，持号短信、合法发票、收款/出票与授权均未核实。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
