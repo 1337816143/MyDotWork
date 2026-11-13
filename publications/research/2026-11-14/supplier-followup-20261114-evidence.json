@@ -1,0 +1,180 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 173,
+  "site_version": "1.9.181",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接读取EVI Shop一件一月本人原号ChatGPT Plus 16.8 USDT商品及FAQ、正式条款与隐私说明，比较AIBulk US$17.99 Free SKU。价格是商家挂牌，非本人实际成交；条款自标2026-10-29，不当成11月14日新政策。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_retail_candidate": {
+    "merchant": "EVI Shop",
+    "product_url": "https://evishopai.com/p/chatgpt-plus-1-month",
+    "product_slug": "chatgpt-plus-1-month",
+    "internal_stable_sku_id": null,
+    "exact_product_name": "ChatGPT Plus — 1 month",
+    "advertised_unit_price": 16.8,
+    "currency": "USDT",
+    "price_unit": "one code / one account / one month",
+    "guest_product_page_price": true,
+    "advertised_stock": "In stock (merchant page claim)",
+    "one_item_quantity_supported_on_product_page": true,
+    "maximum_order_quantity_on_product_page": 100,
+    "current_active_paid_plan_allowed": false,
+    "current_free_account_allowed": true,
+    "go_upgrade_eligible": false,
+    "active_plus_renewal_before_expiry_allowed": false,
+    "pay_methods_merchant_claim": [
+      "USDT TRC20",
+      "USDT BEP20",
+      "prepaid site balance"
+    ],
+    "network_fee_usdt": null,
+    "fx_spread_cny": null,
+    "site_deposit_requirement": null,
+    "activation_steps": "Buy code, then log in to ChatGPT in browser and copy a session token from shown page into seller's activation flow",
+    "session_token_required": true,
+    "first_chatgpt_web_login_required": true,
+    "merchant_claim_session_not_stored": true,
+    "independently_verified_not_stored": false,
+    "merchant_claim_code_unused_after_failed_activation": true,
+    "merchant_claim_one_month_subscription": true,
+    "verified_delivery": false,
+    "refunds": "Seller's October 29 terms: if code cannot be activated due to seller-side problem, replace or refund to account balance; activated code not refundable; account-side and provider-side problems excluded.",
+    "original_payment_method_refund_guaranteed": false,
+    "refund_to_site_balance_only_in_terms": true,
+    "actual_refund_received": false,
+    "official_openai_affiliation_merchant_declares": false,
+    "formal_openai_resale_authorization_verified": false,
+    "one_item_wholesale_price_usdt": null,
+    "wholesale_supply_agreement_verified": false,
+    "no_agent_upfront_fee_confirmed": null,
+    "business_entity_legal_name": null,
+    "payment_receiving_entity": null,
+    "chinese_vat_invoice_type": null,
+    "chinese_vat_invoice_issuer": null,
+    "chinese_vat_invoice_fee_cny": null,
+    "all_required_fees_with_valid_china_vat_cny": null,
+    "qualified_upstream": false,
+    "impact": "New lower-looking USDT guest retail offer only; it explicitly requires third-party session token and permits seller-side failure refund only to non-cash account balance. No basis for legal wholesale, verified receipt or one-item China VAT ceiling."
+  },
+  "comparison_prior": "AIBulk's separately verified 2026-11-13 Free Plus Lv1 guest retail is US$17.99 per item-month, using USDT/USDC; amounts have different displayed units and unknown chain/FX and invoice costs. Neither is verified qualified upstream.",
+  "old_sources_rechecked": {
+    "aibulk_plus_free": {
+      "url": "https://aibulk.uk/p/chatgpt-plus",
+      "visible_price_usd": 17.99,
+      "observed_on": "2026-11-14",
+      "price_change_claimed": false
+    },
+    "aibulk_plus_go": {
+      "url": "https://aibulk.uk/p/chatgpt-plus-subscribed",
+      "visible_price_usd": 19.99,
+      "observed_on": "2026-11-14",
+      "price_change_claimed": false
+    },
+    "chatgqt_plus": {
+      "url": "https://chatgqt.plus/products/chatgpt-plus",
+      "visible_no_warranty_cny": 135,
+      "visible_warranty_cny": 145,
+      "observed_on": "2026-11-14",
+      "price_change_claimed": false
+    },
+    "wind89": {
+      "url": "https://wind89.com/",
+      "access_status": "no_readable_lines",
+      "old_price_refreshed": false
+    },
+    "old_16688_goods": {
+      "urls": [
+        "https://www.16688.com.cn/goods/G25949013",
+        "https://www.16688.com.cn/goods/G11162247"
+      ],
+      "access_status": "not_accessible_via_current_public_reader",
+      "old_price_refreshed": false
+    },
+    "snsotp": {
+      "url": "https://snsotp.com/services/openai",
+      "access_status": "not_accessible_via_current_public_reader",
+      "old_price_refreshed": false
+    }
+  },
+  "phone_verification": {
+    "openai_official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_generally_not_required": true,
+    "codex_desktop_may_require": true,
+    "first_api_key_required": true,
+    "eligible_mobile_number_required": true,
+    "chatgpt_web_sms_success_verified": false,
+    "codex_desktop_sms_success_verified": false,
+    "first_api_sms_success_verified": false,
+    "apple_or_session_autobinds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://evishopai.com/p/chatgpt-plus-1-month",
+      "observed_on": "2026-11-14",
+      "source_page_date": null,
+      "kind": "merchant_product_page_direct_read",
+      "notes": "16.8 USDT per one month, current Free account and no active paid subscription, TRC20/BEP20, 1–100 qty"
+    },
+    {
+      "url": "https://evishopai.com/",
+      "observed_on": "2026-11-14",
+      "source_page_date": null,
+      "kind": "merchant_home_direct_read",
+      "notes": "merchant claims own-account activation, FAQ explicitly says copy session token, no official OpenAI affiliation"
+    },
+    {
+      "url": "https://evishopai.com/faq",
+      "observed_on": "2026-11-14",
+      "source_page_date": null,
+      "kind": "merchant_faq_direct_read",
+      "notes": "session token copied from browser page, USDT transfer mismatch and nonautomatic renewal"
+    },
+    {
+      "url": "https://evishopai.com/terms",
+      "observed_on": "2026-11-14",
+      "source_page_date": "2026-10-29",
+      "kind": "merchant_terms_direct_read",
+      "notes": "seller-side failed activation refund/replacement only, site balance not cash; resale by abuse prohibited"
+    },
+    {
+      "url": "https://evishopai.com/privacy",
+      "observed_on": "2026-11-14",
+      "source_page_date": "2026-10-29",
+      "kind": "merchant_privacy_direct_read",
+      "notes": "session not stored is merchant claim, not proven; account email retained"
+    },
+    {
+      "url": "https://aibulk.uk/p/chatgpt-plus",
+      "observed_on": "2026-11-14",
+      "source_page_date": null,
+      "kind": "comparison_merchant_direct_read",
+      "notes": "existing Lv1 Free-only retail US$17.99 unchanged"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "source_page_date": null,
+      "kind": "openai_official_phone_scope_direct_read",
+      "notes": "ChatGPT web/Codex desktop/initial API key scope, no SMS success test"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r13.html",
+  "historical_prices_refreshed": false,
+  "prior_126_prices_preserved": true,
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

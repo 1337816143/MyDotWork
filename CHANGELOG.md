@@ -1,3 +1,11 @@
+## 1.9.181 · 2026-11-14
+
+- 第173轮首次直接读取EVI Shop准确本人原号 ChatGPT Plus — 1 month SKU（https://evishopai.com/p/chatgpt-plus-1-month）：访客零售挂牌16.8 USDT/件·月，可选1件，最多100件，TRC20/BEP20/站内余额付款；仅无生效付费订阅账号，不支持已有Plus提前覆盖。16.8 USDT不是人民币实付、已核批发或含有效中国VAT总费用，链费/汇兑/出票及经营收款法人、批发门槛和正规转售授权均null。
+- EVI首页与FAQ明确：虽然不要求明文密码，但需先在ChatGPT登录并向第三方激活流程复制Session Token；商称该Token不存储，无安全审计或实测。其条款自标2026-10-29（不是本轮政策变更），若卖方原因无法激活仅可更换码或退款到站内余额，不保证USDT原路现金退款；激活后和账号/服务商侧问题不保退。商家自述与OpenAI无关联。AIBulk Free SKU US$17.99及Go SKU US$19.99复读无明显变化，币种与完整费用不可直接混算。
+- 同轮重读OpenAI官方手机号验证边界；旧16688商品本轮访问失败不刷新历史价，wind89页面无可读正文，CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、GETGPT Pro、PAYPRM、ChongPay缺真实中国VAT/正规授权链。已核本人原号单件一月免代理前置费且全部支付和有效中国VAT≤¥170批发源头仍0；实际Plus购买0、有效VAT验真0、SMS成功0。
+- 仅增2026-11-14 HTML与结构化证据、精确SHA256发布白名单、工作台project-1目录、总库最新入口、VERSION及回归断言；历史126报价及前172轮报告原字节保留。未付款、联系商家或提交账号秘密。
+- 本轮一方/官方原始URL：https://evishopai.com/p/chatgpt-plus-1-month 、https://evishopai.com/ 、https://evishopai.com/faq 、https://evishopai.com/terms 、https://evishopai.com/privacy 、https://aibulk.uk/p/chatgpt-plus 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.180 · 2026-11-13
 
 - 第172轮直接读取AIBulk API变更日志自标2026-11-13 v1.7.0：`prod_chatgpt_plus`严格Free专用，Go提交商称返回400 `account_plan_not_free`、码不消耗，不再可走此前的覆盖渠道。仅记录商家声明，未实际调用或验证。

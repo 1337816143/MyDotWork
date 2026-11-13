@@ -4148,6 +4148,28 @@
       "summary": "6条商家及官方来源，区分Free US$17.99与Go US$19.99、11月13日错误码与11月4日在期Plus规则，费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r173-20261114",
+      "title": "GPT源头第173轮 · EVI Shop 原号Plus 16.8 USDT及Session与退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114.html",
+      "updatedAt": "2026-11-14",
+      "summary": "新读EVI Shop 16.8 USDT/件·月原号Plus零售，须先登录复制Session；卖方激活失败仅退站内余额，中国VAT与正式转售授权未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r173-20261114-evidence",
+      "title": "第173轮 · EVI Shop本人账号Plus准确价格、Token及退款结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "7条本轮直接读取的一方/官方URL，2026-10-29旧条款与11月14日观察时间分开，所有支付和中国VAT费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
