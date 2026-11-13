@@ -1533,3 +1533,25 @@ assert.equal(r164.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r164.qualification_totals.verified_real_plus_purchases,0);
 assert.equal(r164.qualification_totals.verified_valid_china_vat_invoices,0);
 assert.equal(r164.qualification_totals.verified_phone_sms_successes,0);
+
+// R165: first-party 16688 item and SMS code; no invoice, wholesale, or SMS success proof.
+const r165entry=d.records.find(x=>x.id==='gpt-source-followup-r165-20261113');
+const r165evEntry=d.records.find(x=>x.id==='gpt-source-followup-r165-20261113-evidence');
+assert(r165entry && r165evEntry && r165entry.url.endsWith('supplier-followup-20261113-r6.html'));
+const r165=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r6-evidence.json'),'utf8'));
+assert.equal(r165.round,165);assert.equal(r165.site_version,'1.9.173');
+assert.equal(r165.plus_candidate.merchant_product_id,'G11162247');
+assert.equal(r165.plus_candidate.display_price_cny_per_item_30days,108.49);
+assert.equal(r165.plus_candidate.unpaid_checkout_preview_payment_fee_cny,3.0377);
+assert.equal(r165.plus_candidate.unpaid_checkout_preview_total_cny,111.53);
+assert.equal(r165.plus_candidate.china_vat_invoice_fee_cny,null);
+assert.equal(r165.plus_candidate.actual_all_in_with_valid_china_vat_cny,null);
+assert.equal(r165.plus_candidate.single_unit_wholesale_price_cny,null);
+assert.equal(r165.independent_sms.merchant_product_id,'G88621777');
+assert.equal(r165.independent_sms.display_price_cny_per_code,0.53);
+assert.equal(r165.independent_sms.actual_number_holding_days,null);
+assert.equal(r165.independent_sms.cash_refund_for_nonuser_sms_failure_verified,null);
+assert(r165.qualification_totals.verified_plus_wholesale_upstreams===0);
+assert(r165.qualification_totals.verified_real_plus_purchases===0);
+assert(r165.qualification_totals.verified_valid_china_vat_invoices===0);
+assert(r165.qualification_totals.verified_phone_sms_successes===0);

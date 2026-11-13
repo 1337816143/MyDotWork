@@ -1,0 +1,146 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 165,
+  "site_version": "1.9.173",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "非登录访客浏览器直接读取16688小鸟ai Plus原号30天与Codex单次短信准确SKU。商家声明与平台支付预览分开，不宣称已成交、已验真或已批发授权。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "plus_candidate": {
+    "name": "小鸟ai",
+    "merchant_product_id": "G11162247",
+    "original_product_url": "https://www.16688.com.cn/goods/G11162247",
+    "sku": "Plus 官方充值30天直充自己号·30天质保·可开国内发票报销（商家标题）",
+    "merchant_claim_own_account": true,
+    "merchant_claim_duration_days": 30,
+    "display_price_cny_per_item_30days": 108.49,
+    "unpaid_checkout_preview_payment_fee_cny": 3.0377,
+    "unpaid_checkout_preview_total_cny": 111.53,
+    "unpaid_checkout_preview_rounding_note": "108.49 + 3.0377 = 111.5277; preview displays 111.53 CNY; not a paid transaction",
+    "merchant_claim_domestic_invoice_available": true,
+    "china_vat_invoice_type": null,
+    "china_vat_invoice_issuer_entity": null,
+    "china_vat_invoice_fee_cny": null,
+    "valid_china_vat_invoice_verified": false,
+    "merchant_legal_operator_verified": false,
+    "payment_recipient_entity_verified": false,
+    "merchant_claim_warranty_days": 30,
+    "merchant_claim_no_refund_after_successful_recharge": true,
+    "merchant_claim_warranty_exclusions": [
+      "历史低价CDK与未告知的账号历史",
+      "反向代理、网络爬虫、蒸馏模型等禁止用途引发的风控/封号"
+    ],
+    "merchant_claim_payment_fee_excluded_from_warranty_refund": true,
+    "session_required_for_this_sku_verified": null,
+    "renewal_of_active_plus_verified": null,
+    "single_unit_wholesale_price_cny": null,
+    "wholesale_minimum_quantity": null,
+    "upfront_agent_fee_cny": null,
+    "resale_authorization_verified": false,
+    "actual_all_in_with_valid_china_vat_cny": null,
+    "real_delivery_tested": false
+  },
+  "independent_sms": {
+    "name": "小鸟ai",
+    "merchant_product_id": "G88621777",
+    "original_product_url": "https://www.16688.com.cn/goods/G88621777",
+    "sku": "Codex 短信验证码，一次性CDK",
+    "display_price_cny_per_code": 0.53,
+    "payment_fee_cny": null,
+    "unpaid_checkout_preview_total_cny": null,
+    "merchant_claim_one_cdk_one_redeem": true,
+    "merchant_claim_validity_minutes": 10,
+    "actual_number_holding_days": null,
+    "repeat_sms_same_number_verified": false,
+    "merchant_claim_us_numbers_country_code": "+1",
+    "physical_sim_or_voip_verified": null,
+    "merchant_claim_number_swaps": true,
+    "merchant_claim_api_integration": true,
+    "merchant_claim_no_refund_for_wrong_country_or_user_operation": true,
+    "merchant_claim_complaint_screenshot_required": true,
+    "cash_refund_for_nonuser_sms_failure_verified": null,
+    "chatgpt_web_sms_success_verified": false,
+    "codex_sms_success_verified": false,
+    "first_api_key_sms_success_verified": false,
+    "aggregator_secondary_snapshot": {
+      "url": "https://ai.pricememo.cn/shops/16688-S569657",
+      "listed_cny_per_code": 0.69,
+      "observation_time_unreliable": true,
+      "note": "仅聚合索引旧展示，不等于同期原站价或已核实变价生效日"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/goods/G11162247",
+      "observed_on": "2026-11-13",
+      "access_status": "nonlogged_visitor_browser_direct_read",
+      "evidence_class": "merchant_product_statement_and_platform_unpaid_checkout",
+      "observation": "原号Plus30天商品¥108.49/件、未付支付手续费¥3.0377、合计¥111.53；商称可开国内发票报销，实际中国VAT票及开票主体/票费未知，未购买。"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G88621777",
+      "observed_on": "2026-11-13",
+      "access_status": "nonlogged_visitor_browser_direct_read",
+      "evidence_class": "merchant_sms_sku_and_service_terms",
+      "observation": "Codex短信一次CDK ¥0.53；商称10分钟内有效、美国+1号码、操作失败不退且需截图；支付费、持号天数、真短信成功和服务失败退款未知。"
+    },
+    {
+      "url": "https://ai.pricememo.cn/shops/16688-S569657",
+      "observed_on": "2026-11-13",
+      "access_status": "third_party_discovery_result_only",
+      "evidence_class": "aggregator_not_current_original_price",
+      "observation": "聚合旧展示对应短信SKU ¥0.69，与本轮原站¥0.53不同，仅来源快照差额，不认定调价日。"
+    },
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_page_read",
+      "evidence_class": "recheck_no_new_conditions",
+      "observation": "一次性Codex接码CDK ¥4.00、Members only；已归档旧条件。"
+    },
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-13",
+      "access_status": "merchant_order_page_read_unpaid",
+      "evidence_class": "recheck_no_new_conditions",
+      "observation": "本人原号Plus有质保订单显示¥145；旧条件。"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_page_read",
+      "evidence_class": "recheck_no_new_conditions",
+      "observation": "Plus挂牌¥139.99、商称开票另¥10；中国VAT票与付款未核。"
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://www.16688.com.cn/goods/G38223449",
+      "access_status": "visitor_page_empty_no_current_price"
+    },
+    {
+      "url": "https://catfk.com/item/q8ukke",
+      "access_status": "plaintext_fetch_empty_no_current_price"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S569657",
+      "access_status": "text_fetch_empty_no_legal_entity_read"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r5.html"
+}

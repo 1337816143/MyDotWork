@@ -3972,6 +3972,28 @@
       "summary": "2条访客直接读取原SKU、2条第三方发现索引及1条OpenAI官方规则；未付账单¥118.22/¥138.78，出票/收款法人、税费及单件批发价均null，无真实履约。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r165-20261113",
+      "title": "GPT源头第165轮 · 小鸟ai Plus手续费与Codex短信接码售后",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r6.html",
+      "updatedAt": "2026-11-13",
+      "summary": "新实读小鸟ai原号Plus30天¥108.49、支付费¥3.0377/未付¥111.53，可开发票仅商称；Codex单次短信¥0.53及操作不当不退，真实VAT/上游授权与短信成功均未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r165-20261113-evidence",
+      "title": "第165轮 · 小鸟ai原号Plus及短信准确SKU、费用退款VAT缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r6-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "G11162247与G88621777两个直接读到的商品SKU，含价格/支付预览/售后限制、原始URL、旧源复读及所有未知费用null；真实采购/验票/SMS 0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
