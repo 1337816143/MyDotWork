@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 367, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 369, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.167'
+    assert latest['version'] == '1.168'
     assert latest['date'] == '2026-11-13'
-    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r7.html'
+    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r8.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1891,6 +1891,22 @@ def validate_publications():
     assert r167['plus_purchase_gap']['actual_all_required_fees_included_cny'] is None
     assert all(v == 0 for v in r167['qualification_totals'].values())
     assert r167['purchase_or_login_attempted'] is False and r167['merchant_contacted'] is False
+
+
+    # R168: supplier-owned SMS country "from" pricing and wallet-only refund do not prove OpenAI success, real US checkout or Plus wholesale.
+    assert by_id['gpt-source-followup-r168-20261113']['url'].endswith('supplier-followup-20261113-r9.html')
+    assert by_id['gpt-source-followup-r168-20261113-evidence']['url'].endswith('supplier-followup-20261113-r9-evidence.json')
+    r168=json.loads((ROOT/'dist/research/2026-11-13/supplier-followup-20261113-r9-evidence.json').read_bytes())
+    assert r168['round'] == 168 and r168['site_version'] == '1.9.176' and len(r168['sources']) == 6
+    sms168=r168['independent_sms_candidate']
+    assert [(x['country'],x['price_usd_from']) for x in sms168['merchant_displayed_country_starting_prices']] == [
+        ('Philippines',0.11),('United Kingdom',0.13),('Brazil',0.19),('Indonesia',0.19),('United States',None)]
+    assert sms168['minimum_balance_topup_usd_from'] == 2.5 and sms168['minimum_card_topup_usd_from'] == 5
+    assert sms168['actual_chosen_sku_checkout_price_usd'] is None and sms168['actual_controlled_number_holding_days'] is None
+    assert sms168['no_sms_refund_destination'].startswith('nonwithdrawable platform balance')
+    assert sms168['actual_cash_refund_verified'] is False and sms168['actual_openai_verification_success'] is False
+    assert all(v == 0 for v in r168['qualification_totals'].values())
+    assert r168['purchase_or_login_attempted'] is False and r168['merchant_contacted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

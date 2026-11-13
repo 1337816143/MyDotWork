@@ -1,3 +1,11 @@
+## 1.9.176 · 2026-11-13
+
+- 第168轮首次直接读取VirtualSMS OpenAI/ChatGPT接码原商品、价格、FAQ、退款和条款共5条一方URL，另核OpenAI官方手机号边界。按国家单次一次性短信广告起价：菲律宾US$0.11、英国US$0.13、巴西/印尼US$0.19；美国只写Live pricing，准确美国单价null。这些都是“from”零售网页起价，不是某一订单已证实收银价、成交价或真实短信成功；实体SIM、运营商与营销90%+成功率未独立验证。
+- 平台一般最低预充值US$2.50，信用卡最低US$5，实际支付通道费与选定国家含全部必要支出null。全平台租号US$0.25/天起不能冒充OpenAI确定可用的持号SKU；一次性号只收一条短信，最长约20分钟窗口后回收，后续恢复收码无保障。
+- 更重要的售后区别：商品营销称2分钟收不到码可Cancel/full refund，正式退款政策（网站自标2026-10-02旧更新）写明2分钟后可主动取消、最长20分钟无SMS自动退，但<strong>仅退不可提现站内余额</strong>，非现金原路退款；收到SMS则普通订单不退，故障需24小时内申请复核。将两个页面措辞区分，不假称今日变更、实际现金到账或OpenAI最终验证成功。
+- 这是新独立SMS零售来源，不是Plus合法批发上游；ChatGPT网页/Codex桌面/首API Key适用均未经独立实测。复核既有ChatShare、引路鲸、ChongPay、CallAI、UpPlusPro等没有新的可信批发+中国VAT闭环。已核本人原号Plus单件单月免前置费且含全部必需付款和有效中国VAT≤¥170的合法批发0、实际Plus购买0、有效VAT验票0、短信成功0。仅追加r168 HTML/JSON、精确SHA256发布清单、工作台目录、总库入口、VERSION及回归断言，保留旧126报价及前167轮原字节。未付款、联系商家或提交凭据。
+- 来源：https://virtualsms.io/buy/openai 、https://virtualsms.io/pricing 、https://virtualsms.io/faq 、https://virtualsms.io/refund-policy 、https://virtualsms.io/terms ；官方：https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.175 · 2026-11-13
 
 - 第167轮首次直接读取YoTradeApi独立美国接码商家原页：OpenAI一次性短信¥29.90/次，微信无最低预充值、付款后15分钟内取号、最多可免费换3个号码，始终全无SMS商称全额退款；号码收到单条验证码后回收，后续不保证可复收。长租号30天¥149、90天¥399、一年¥1199；商称实体运营商号、有效期独享、到期前续同号。长租退款需开通后24小时完全无任何SMS，收到任一SMS或OpenAI拒号均不保退；号码本身不可修复故障商称按剩余天数退。实体卡/运营商类型、真正持号及续号、原路退款和最终验证未实测。

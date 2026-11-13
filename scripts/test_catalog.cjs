@@ -21,7 +21,7 @@ assert(C.filter(d.records,{sort:'latest'},d.tasks).slice(-sites.length).every(r=
 assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=>r.updatedAt===null));
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
-assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
+assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
 assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['business-validation-20261004','task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 const w32=d.records.find(r=>r.id==='gpt-source-followup-r32-20261104');
@@ -1555,3 +1555,22 @@ assert(r165.qualification_totals.verified_plus_wholesale_upstreams===0);
 assert(r165.qualification_totals.verified_real_plus_purchases===0);
 assert(r165.qualification_totals.verified_valid_china_vat_invoices===0);
 assert(r165.qualification_totals.verified_phone_sms_successes===0);
+
+
+// R168: VirtualSMS is a first-party independent SMS retail observation, not verified Plus wholesale or cash-refunded SMS.
+const r168cat=d.records.find(x=>x.id==='gpt-source-followup-r168-20261113');
+const r168data=d.records.find(x=>x.id==='gpt-source-followup-r168-20261113-evidence');
+assert(r168cat && r168data && r168cat.url.endsWith('supplier-followup-20261113-r9.html'));
+const r168=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r9-evidence.json'),'utf8'));
+assert.equal(r168.round,168);assert.equal(r168.site_version,'1.9.176');
+assert.equal(r168.sources.length,6);
+assert.equal(r168.independent_sms_candidate.merchant_displayed_country_starting_prices[0].price_usd_from,0.11);
+assert.equal(r168.independent_sms_candidate.merchant_displayed_country_starting_prices[1].price_usd_from,0.13);
+assert.equal(r168.independent_sms_candidate.merchant_displayed_country_starting_prices[4].price_usd_from,null);
+assert.equal(r168.independent_sms_candidate.minimum_balance_topup_usd_from,2.5);
+assert.equal(r168.independent_sms_candidate.minimum_card_topup_usd_from,5);
+assert.equal(r168.independent_sms_candidate.no_sms_refund_destination,'nonwithdrawable platform balance; NOT original cash/crypto payment');
+assert.equal(r168.independent_sms_candidate.actual_chosen_sku_checkout_price_usd,null);
+assert.equal(r168.independent_sms_candidate.actual_openai_verification_success,false);
+assert.equal(r168.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r168.qualification_totals.verified_phone_sms_successes,0);
