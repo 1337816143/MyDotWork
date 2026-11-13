@@ -1,3 +1,11 @@
+## 1.9.183 · 2026-11-14
+
+- 第175轮首次归档OpenAI消费者个人ChatGPT使用条款（2026-01-01刊载生效，区域范围排除EEA、瑞士及英国）的禁止出售/分发服务与共享登录凭据条款；区分“代理帮助支付”具体事实与获准转售Plus本身的正式授权，不推断已证明所有第三方代充违法或有书面例外。
+- OpenAI商业/开发者服务协议（网页2025-12-01更新、2026-01-01生效）明确不默认覆盖消费者Plus；API集成终端App的许可不构成个人Plus批发或账号转售权，3.1限制客户及终端用户账号访问权转售。OpenAI Partner Network公开说明定位为AI解决方案伙伴；入网称谓不自动证明个人Plus SKU供货资格，未查到成员也不能反推无授权。
+- 对照引路鲸进货代理¥3000一次性入驻费、AIBulk Lv1零售/Lv2分数≥US$500及GETGPT Pro商称售后，三者无正式个人Plus供货授权、有效中国VAT税票与单件实付闭环；本轮均不刷新旧标价。CatFK、小久、Morimm、ChatShare、GetVIP、wind89、PAYPRM、ChongPay亦无新的可重新定价证据。
+- 本轮只是旧官方规则在本库的新增一方授权证据，非11月14日新政策或指定商家被制裁；符合本人原号1件1月免代理前置费且含全部必要支付与有效中国VAT≤¥170的已核Plus批发上游0；真实Plus付款0、有效税票验真0、手机号短信成功0，未知费用null。仅增r175 HTML/JSON与精确SHA-256白名单、工作台目录、总库最新入口、VERSION、CHANGELOG、发布指针及回归边界；旧126条报价和前174轮原始文件保持。
+- 官方原始URL：https://openai.com/policies/row-terms-of-use/ 、https://openai.com/zh-Hans-CN/policies/services-agreement/ 、https://openai.com/business/partners/locator/ 。商家复核：https://chatgqt.plus/cooperation 、https://aibulk.uk/wholesale/ 、https://getgpt.pro/ 。
+
 ## 1.9.182 · 2026-11-14
 
 - 第174轮首次补入OpenAI官方多篇手机号说明：首次API Key手机验证的同一号码跨账号复用上限为3，删除账号不重置该API验证名额；官方不提供更换/更新ChatGPT/API关联手机号。此为11月14日新增证据归档，而非当天新公布政策。

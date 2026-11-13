@@ -4192,6 +4192,28 @@
       "summary": "10条可读的一方/商家原始URL、1条无正文，不刷新任何旧报价；官方用途边界、三账户额度与邮箱升级要求分开，价格费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r175-20261114",
+      "title": "GPT源头第175轮 · OpenAI个人Plus授权与Partner Network的证据边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r3.html",
+      "updatedAt": "2026-11-14",
+      "summary": "新增OpenAI个人消费者禁止未经授权出售/分发服务、商业协议不赋予个人Plus转售权、Partner Network仅为AI解决方案项目的官方依据；非当日新规；符合条件已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r175-20261114-evidence",
+      "title": "第175轮 · OpenAI消费者条款、业务协议、合作伙伴与批发授权边界证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r3-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "3条本轮首次归档官方原始URL+3条商家复核，一方规则与商家自述分离；旧报价不刷新，授权/税票和费用未核项null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

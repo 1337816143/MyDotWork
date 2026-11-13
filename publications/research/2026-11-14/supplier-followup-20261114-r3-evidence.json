@@ -1,0 +1,184 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 175,
+  "site_version": "1.9.183",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次补入OpenAI消费者使用条款、业务服务协议、Partner Network三类一方授权边界；均为旧有效条款本轮首次归档，不是2026-11-14新禁售政策，不把商家未知授权推定为已证明违法。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "authorization_findings": {
+    "consumer_terms": {
+      "personal_chatgpt_scope": true,
+      "ordinary_resale_or_distribution_without_specific_right": "not permitted under published consumer terms",
+      "credentials_sharing_or_account_access_sharing_prohibited": true,
+      "terms_effective_on": "2026-01-01",
+      "regional_scope": "rest-of-world terms, excluding EEA/Switzerland/UK",
+      "explicit_exception_contract_for_any_named_merchant_verified": false,
+      "source_url": "https://openai.com/policies/row-terms-of-use/"
+    },
+    "business_agreement": {
+      "excludes_personal_consumer_subscription_by_default": true,
+      "api_integration_permission_is_not_consumer_plus_resale_permission": true,
+      "business_account_and_end_user_account_access_resale_prohibited": true,
+      "agreement_effective_on": "2026-01-01",
+      "source_url": "https://openai.com/zh-Hans-CN/policies/services-agreement/"
+    },
+    "partner_network": {
+      "described_scope": "AI solutions partner program",
+      "seller_membership_or_consumer_plus_distribution_right_for_any_candidate_verified": false,
+      "public_page_does_not_prove_any_named_seller_is_not_a_partner": true,
+      "source_url": "https://openai.com/business/partners/locator/"
+    },
+    "qualification_implication": "正式Plus转售授权须具备可核的产品范围及许可/合同链；零售价低、API接口、批发称谓、发票、OpenAI Partner Network成员称号均不能单独证明个人Plus订阅转售资格。未经独立核实不能说某一商家已正式违法、OpenAI授权或绝对无法履约。",
+    "independently_legal_reviewed": false
+  },
+  "merchant_rechecks": [
+    {
+      "name": "引路鲸",
+      "url": "https://chatgqt.plus/cooperation",
+      "upfront_agent_fee_cny": 3000,
+      "upfront_fee_separate_from_goods": true,
+      "qualified": false,
+      "price_refreshed": false
+    },
+    {
+      "name": "AIBulk",
+      "url": "https://aibulk.uk/wholesale/",
+      "lv1": "retail",
+      "lv2_score_threshold_usd": 500,
+      "actual_wholesale_price_usd": null,
+      "consumer_plus_resale_authority_confirmed": false,
+      "price_refreshed": false
+    },
+    {
+      "name": "GETGPT Pro",
+      "url": "https://getgpt.pro/",
+      "verified_entity_invoice": false,
+      "consumer_plus_resale_authority_confirmed": false,
+      "price_refreshed": false
+    }
+  ],
+  "other_priority_candidates": {
+    "CatFK": "not_repriced",
+    "小久": "not_repriced",
+    "Morimm": "not_repriced",
+    "ChatShare": "not_repriced",
+    "GetVIP": "not_repriced",
+    "wind89": "not_repriced",
+    "PAYPRM": "not_repriced",
+    "ChongPay": "not_repriced"
+  },
+  "costs": {
+    "new_plus_one_item_price_cny": null,
+    "new_plus_checkout_payment_fee_cny": null,
+    "new_valid_china_vat_fee_cny": null,
+    "new_all_required_fees_valid_china_vat_cny": null
+  },
+  "verification_scope": {
+    "chatgpt_web": "no_new_test",
+    "codex_desktop": "no_new_test",
+    "first_api_key": "no_new_test",
+    "phone_number_retention": "no_new_test",
+    "failed_sms_cash_refund": "no_new_test",
+    "session_or_apple_automatically_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://openai.com/policies/row-terms-of-use/",
+      "kind": "openai_official_consumer_terms",
+      "observed_on": "2026-11-14",
+      "page_published_on": "2026-01-01",
+      "page_effective_on": "2026-01-01",
+      "scope": "ChatGPT consumer terms for non-EEA, non-Switzerland and non-UK users",
+      "direct_read": true,
+      "facts": [
+        "The consumer terms bar users from selling/distributing services; sharing account credentials or access is prohibited.",
+        "Terms allow an account created/used on another's behalf only with authority to accept terms, which alone is not an explicit right to resell ChatGPT Plus."
+      ]
+    },
+    {
+      "url": "https://openai.com/zh-Hans-CN/policies/services-agreement/",
+      "kind": "openai_official_business_agreement",
+      "observed_on": "2026-11-14",
+      "page_published_on": "2025-12-01",
+      "page_effective_on": "2026-01-01",
+      "scope": "API, ChatGPT Enterprise, Business, other business/developer services; excludes consumer service unless specified",
+      "direct_read": true,
+      "facts": [
+        "Business agreement allows customers to integrate API into applications for end users.",
+        "Section 3.1 bars reselling or renting customer or end-user account access; does not itself authorize resale of an individual's ChatGPT Plus subscription."
+      ]
+    },
+    {
+      "url": "https://openai.com/business/partners/locator/",
+      "kind": "openai_official_partner_network",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "page_effective_on": null,
+      "scope": "Partner Network for building, selling, delivering AI solutions",
+      "direct_read": true,
+      "facts": [
+        "Public partner-locator page describes AI solution partners rather than a public ChatGPT Plus consumer subscription distribution license.",
+        "No individual vendor's partner membership, absence, or product-specific resale authorization verified from this page."
+      ]
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "kind": "merchant_partner_terms_recheck",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "page_effective_on": null,
+      "scope": "引路鲸进货代理入口",
+      "direct_read": true,
+      "facts": [
+        "¥3000 upfront partner fee separate from order balance; does not meet no upfront fee; no full China VAT/authorization closure."
+      ],
+      "old_price_refreshed": false
+    },
+    {
+      "url": "https://aibulk.uk/wholesale/",
+      "kind": "merchant_wholesale_recheck",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "page_effective_on": null,
+      "scope": "AIBulk tier program",
+      "direct_read": true,
+      "facts": [
+        "Lv1 retail, Lv2 score ≥ US$500; no proof of consumer-Plus resale authority, Chinese VAT or full fees."
+      ],
+      "old_price_refreshed": false
+    },
+    {
+      "url": "https://getgpt.pro/",
+      "kind": "merchant_retail_recheck",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "page_effective_on": null,
+      "scope": "GETGPT Pro retail storefront",
+      "direct_read": true,
+      "facts": [
+        "Merchant advertises activation/refund; no independently validated invoices or OpenAI-specific resale authority."
+      ],
+      "old_price_refreshed": false
+    }
+  ],
+  "qualified_plus_wholesale_upstreams": 0,
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-14/supplier-followup-20261114-r2.html",
+  "historical_prices_refreshed": false,
+  "prior_126_prices_preserved": true,
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
