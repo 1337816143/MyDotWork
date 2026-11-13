@@ -1,0 +1,178 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 167,
+  "site_version": "1.9.175",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "2026-11-13首次直接读取YoTradeApi OpenAI一次性验证码及长租美国号的独立产品页；商家条款非实测、非Plus批发资格。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "independent_sms_candidates": [
+    {
+      "merchant": "YoTradeApi",
+      "sku": "US +1 OpenAI single SMS receipt",
+      "url": "https://yotradeapi.com/sms",
+      "currency": "CNY",
+      "unit": "one SMS receipt service attempt",
+      "display_price_cny": 29.9,
+      "merchant_claim_no_minimum_prepayment": true,
+      "merchant_claim_wechat_payment": true,
+      "merchant_claim_take_number_within_minutes_after_payment": 15,
+      "merchant_claim_free_number_changes_max": 3,
+      "merchant_claim_full_refund_if_all_attempts_fail_to_receive_sms": true,
+      "merchant_claim_full_refund_if_sms_received_but_final_verification_fails": false,
+      "merchant_claim_number_recycled_after_single_use": true,
+      "actual_number_holding_minutes": null,
+      "independent_operator_nonvoip_evidence": null,
+      "actual_cash_refund_verified": false,
+      "actual_sms_success_verified": false,
+      "chatgpt_web_phone_verification_success_verified": false,
+      "codex_phone_verification_success_verified": false,
+      "first_api_key_phone_verification_success_verified": false
+    },
+    {
+      "merchant": "YoTradeApi",
+      "sku": "US +1 long-rent SMS-receipt number",
+      "url": "https://yotradeapi.com/sms/long",
+      "currency": "CNY",
+      "offers": [
+        {
+          "duration_days": 30,
+          "price_cny": 149
+        },
+        {
+          "duration_days": 90,
+          "price_cny": 399
+        },
+        {
+          "duration_days": 365,
+          "price_cny": 1199
+        }
+      ],
+      "merchant_claim_real_operator_mobile_number": true,
+      "merchant_claim_exclusive_during_lease": true,
+      "merchant_claim_repeated_sms_during_lease": true,
+      "merchant_claim_renew_same_number_before_expiration": true,
+      "merchant_claim_full_refund_if_zero_sms_within_24h": true,
+      "merchant_claim_no_refund_after_any_sms_received": true,
+      "merchant_claim_no_refund_if_openai_rejects_number": true,
+      "merchant_claim_unrepairable_technical_fault_pro_rata_refund": true,
+      "actual_sim_operator_verified": null,
+      "actual_exclusive_or_renewal_verified": false,
+      "actual_cash_refund_verified": false,
+      "actual_openai_phone_verification_success_verified": false
+    }
+  ],
+  "phone_verification": {
+    "openai_official_chatgpt_usually_requires_phone": false,
+    "openai_official_codex_desktop_may_require_phone": true,
+    "openai_official_first_api_key_requires_phone": true,
+    "openai_official_voip_supported": false,
+    "merchant_claim_web_codex_api_applicability_not_tested": true,
+    "sms_receipt_is_not_final_verification_success": true,
+    "session_or_apple_auto_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://yotradeapi.com/sms",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_merchant_page_read",
+      "evidence_type": "merchant_offer_and_refund_terms",
+      "note": "¥29.90/次、取号15分钟期限、最多免费换3号、全无SMS商称全退；实时成功数非独立证据"
+    },
+    {
+      "url": "https://yotradeapi.com/sms/long",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_merchant_page_read",
+      "evidence_type": "merchant_offer_and_refund_terms",
+      "note": "¥149/30天、¥399/90天、¥1199/年；24小时全无短信才保全退、任何短信已收到不保退、OpenAI拒号不退"
+    },
+    {
+      "url": "https://blog.yotradeapi.com/blog/cn-codex-login-phone-verification/",
+      "observed_on": "2026-11-13",
+      "access_status": "merchant_blog_read",
+      "evidence_type": "discovery_only",
+      "note": "页面自标早期发布日期/更新日期，不认为本轮产品今日上线"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "access_status": "official_help_read",
+      "evidence_type": "official_policy_not_merchant_success_evidence",
+      "note": "ChatGPT通常无需，Codex桌面可能要，首次API Key必须；VoIP等号段不支持"
+    },
+    {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_rechecked",
+      "evidence_type": "existing_terms_no_change",
+      "note": "代理先付¥3000，与免前置费冲突"
+    },
+    {
+      "url": "https://getgpt.pro/",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_rechecked",
+      "evidence_type": "no_new_verified_wholesale_or_vat",
+      "note": "未核实际单件批发正式授权及VAT"
+    },
+    {
+      "url": "https://chatshare.info/",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_rechecked",
+      "evidence_type": "no_new_verified_wholesale_or_vat",
+      "note": "共享/镜像不视为本人原号Plus"
+    },
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "observed_on": "2026-11-13",
+      "access_status": "failed_to_read_page_body",
+      "evidence_type": "access_failure_no_price_refresh",
+      "note": "本轮无法读取，不认定停服或将旧报价标为今日"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-13",
+      "access_status": "failed_to_read_page_body",
+      "evidence_type": "access_failure_no_price_refresh",
+      "note": "本轮无法读取，不认定停服或将旧报价标为今日"
+    },
+    {
+      "url": "https://payprm.com",
+      "observed_on": "2026-11-13",
+      "access_status": "failed_to_read_page_body",
+      "evidence_type": "access_failure_no_price_refresh",
+      "note": "本轮无法读取，不认定停服或将旧报价标为今日"
+    },
+    {
+      "url": "https://getvip.pro/product/gpt",
+      "observed_on": "2026-11-13",
+      "access_status": "failed_to_read_page_body",
+      "evidence_type": "access_failure_no_price_refresh",
+      "note": "本轮无法读取，不认定停服或将旧报价标为今日"
+    }
+  ],
+  "plus_purchase_gap": {
+    "merchant_verified_legal_entity": null,
+    "actual_payment_entity": null,
+    "valid_china_vat_issuer": null,
+    "valid_china_vat_fee_cny": null,
+    "actual_all_required_fees_included_cny": null,
+    "wholesale_one_unit_cost_cny": null,
+    "resale_authorization_verified": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r7.html"
+}

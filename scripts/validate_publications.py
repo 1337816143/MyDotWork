@@ -1877,6 +1877,21 @@ def validate_publications():
     assert all(v == 0 for v in r166['qualification_totals'].values())
     assert r166['purchase_or_login_attempted'] is False and r166['merchant_contacted'] is False
 
+    # R167: vendor phone service offers are neither Plus wholesale nor real SMS verification.
+    assert by_id['gpt-source-followup-r167-20261113']['url'].endswith('supplier-followup-20261113-r8.html')
+    assert by_id['gpt-source-followup-r167-20261113-evidence']['url'].endswith('supplier-followup-20261113-r8-evidence.json')
+    r167=json.loads((ROOT/'dist/research/2026-11-13/supplier-followup-20261113-r8-evidence.json').read_bytes())
+    assert r167['round'] == 167 and r167['site_version'] == '1.9.175'
+    short,long=r167['independent_sms_candidates']
+    assert short['display_price_cny'] == 29.9 and short['merchant_claim_free_number_changes_max'] == 3
+    assert short['actual_number_holding_minutes'] is None and short['actual_sms_success_verified'] is False
+    assert [(x['duration_days'],x['price_cny']) for x in long['offers']] == [(30,149),(90,399),(365,1199)]
+    assert long['merchant_claim_no_refund_if_openai_rejects_number'] is True
+    assert long['actual_exclusive_or_renewal_verified'] is False
+    assert r167['plus_purchase_gap']['actual_all_required_fees_included_cny'] is None
+    assert all(v == 0 for v in r167['qualification_totals'].values())
+    assert r167['purchase_or_login_attempted'] is False and r167['merchant_contacted'] is False
+
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

@@ -4016,6 +4016,28 @@
       "summary": "商家单件Plus挂牌/未付费用与5%开票声明分别保存，持号短信、合法发票、收款/出票与授权均未核实。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r167-20261113",
+      "title": "GPT源头第167轮 · YoTrade一次接码和美国长租号码退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r8.html",
+      "updatedAt": "2026-11-13",
+      "summary": "实读单次OpenAI短信¥29.90、15分钟取号和最多换3号；长租¥149/30天、¥399/90天、¥1199/年，24h无任何SMS才可退，拒号不退。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r167-20261113-evidence",
+      "title": "第167轮 · YoTrade接码价格、持号和失败退款结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r8-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "两项一方页面准确SKU及11条原始URL/访问结果；号码属性、真实退款与验证成功未核，合格Plus批发仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
