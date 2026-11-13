@@ -1675,3 +1675,18 @@ assert.equal(r175.authorization_findings.partner_network.seller_membership_or_co
 assert.equal(r175.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r175.costs.new_all_required_fees_valid_china_vat_cny,null);
 assert.equal(r175.historical_prices_refreshed,false);
+
+// R176: merchant phone-check bypass claims are not official policy or independent tests.
+const r176cat=d.records.find(x=>x.id==='gpt-source-followup-r176-20261114');
+const r176data=d.records.find(x=>x.id==='gpt-source-followup-r176-20261114-evidence');
+assert(r176cat&&r176data&&r176cat.url.endsWith('supplier-followup-20261114-r4.html'));
+const r176=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r4-evidence.json'),'utf8'));
+assert.equal(r176.round,176);assert.equal(r176.site_version,'1.9.184');assert.equal(r176.sources.length,4);
+assert.equal(r176.new_merchant.retail_plus.price_cny_per_listing,165);
+assert.equal(r176.new_merchant.retail_plus.exact_paid_subscription_duration_from_this_sku,null);
+assert.equal(r176.new_merchant.independent_sms.price_cny_per_listing,40);
+assert.equal(r176.new_merchant.independent_sms.refund_on_no_sms_or_openai_rejection,null);
+assert.equal(r176.official_verification_recheck.official_guarantees_plus_removes_all_phone_checks,false);
+assert.equal(r176.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r176.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r176.historical_prices_refreshed,false);
