@@ -1,0 +1,160 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 164,
+  "site_version": "1.9.172",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "新访客浏览器读取16688两家独立Plus零售准确SKU及支付手续费预览；不推断实购、可验真中国VAT或单件批发资格。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "candidates": [
+    {
+      "name": "狗ai",
+      "merchant_product_id": "G46459749",
+      "original_product_url": "https://www.16688.com.cn/goods/G46459749",
+      "discovery_url": "https://ai.pricememo.cn/shops/16688-S114445",
+      "sku": "Plus 30天会员直充自己号（1号1卡1付）",
+      "display_price_cny_per_item_30days": 115,
+      "unpaid_checkout_preview_payment_fee_cny": 3.22,
+      "unpaid_checkout_preview_total_cny": 118.22,
+      "payment_options_observed": [
+        "支付宝",
+        "微信"
+      ],
+      "merchant_claim_existing_account": true,
+      "merchant_workflow_requires_session_token": true,
+      "redeem_url_claim": "https://cz.taomu.xyz/",
+      "merchant_claim_official_invoice_bill": true,
+      "china_vat_invoice_verified": false,
+      "china_vat_invoice_issuer_entity": null,
+      "china_vat_invoice_fee_cny": null,
+      "merchant_actual_legal_operator_verified": false,
+      "actual_payment_entity_verified": false,
+      "platform_footer_is_not_merchant_identity": true,
+      "merchant_wholesale_one_unit_cost_cny": null,
+      "wholesale_minimum_quantity_verified": null,
+      "upfront_agent_fee_cny": null,
+      "resale_authorization_verified": false,
+      "existing_subscription_renewal_policy_verified": null,
+      "cash_refund_terms_verified": null,
+      "real_delivery_tested": false,
+      "actual_all_in_china_vat_cny": null
+    },
+    {
+      "name": "全球云充AI旗舰服务",
+      "merchant_product_id": "G64783075",
+      "original_product_url": "https://www.16688.com.cn/goods/G64783075",
+      "discovery_url": "https://ai.pricememo.cn/shops/16688-S928966",
+      "sku": "GTP plus 20刀菲律宾卡充正规卡充-可开发票",
+      "display_price_cny_per_item": 135,
+      "month_duration_confirmed_in_product_text": null,
+      "unpaid_checkout_preview_payment_fee_cny": 3.78,
+      "unpaid_checkout_preview_total_cny": 138.78,
+      "payment_options_observed": [
+        "支付宝",
+        "微信"
+      ],
+      "merchant_claim_existing_account": null,
+      "merchant_workflow_requires_session_token": true,
+      "redeem_url_claim": "https://182.61.1.238:2053/recharge",
+      "merchant_claim_invoice_available": true,
+      "china_vat_invoice_verified": false,
+      "china_vat_invoice_issuer_entity": null,
+      "china_vat_invoice_fee_cny": null,
+      "merchant_actual_legal_operator_verified": false,
+      "actual_payment_entity_verified": false,
+      "platform_footer_is_not_merchant_identity": true,
+      "merchant_wholesale_one_unit_cost_cny": null,
+      "wholesale_minimum_quantity_verified": null,
+      "upfront_agent_fee_cny": null,
+      "resale_authorization_verified": false,
+      "existing_subscription_renewal_policy_verified": null,
+      "cash_refund_terms_verified": null,
+      "real_delivery_tested": false,
+      "actual_all_in_china_vat_cny": null
+    }
+  ],
+  "independent_sms": {
+    "new_verified_sku_this_round": false,
+    "chatgpt_web_success_verified": false,
+    "codex_success_verified": false,
+    "first_api_key_success_verified": false,
+    "number_holding_days_verified": null,
+    "cash_refund_if_failed_verified": null,
+    "plus_purchase_auto_binds_phone_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/goods/G46459749",
+      "observed_on": "2026-11-13",
+      "access_status": "read_in_nonlogged_visitor_browser",
+      "evidence_class": "merchant_product_text_and_platform_unpaid_checkout_preview",
+      "observation": "狗ai本人原号Plus30天¥115/件；支付预览手续费¥3.22、合计¥118.22；需Session；标题官方发票账单无法证明中国VAT；无可验证主体/批发合同。"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G64783075",
+      "observed_on": "2026-11-13",
+      "access_status": "read_in_nonlogged_visitor_browser",
+      "evidence_class": "merchant_product_text_and_platform_unpaid_checkout_preview",
+      "observation": "全球云充菲区Plus卡充¥135/件；支付预览手续费¥3.78、合计¥138.78；需Session；声称可开票、招代理但中国VAT与批发条款null。"
+    },
+    {
+      "url": "https://ai.pricememo.cn/shops/16688-S114445",
+      "observed_on": "2026-11-13",
+      "access_status": "read_aggregator_discovery",
+      "evidence_class": "third_party_discovery_not_checkout",
+      "observation": "狗ai商品发现入口；索引原价不是本轮首选证据，日期与直接商家收银预览分开。"
+    },
+    {
+      "url": "https://ai.pricememo.cn/shops/16688-S928966",
+      "observed_on": "2026-11-13",
+      "access_status": "read_aggregator_discovery",
+      "evidence_class": "third_party_discovery_not_checkout",
+      "observation": "全球云充商品发现入口；可能为旧扫描，只用来定位原始SKU。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "access_status": "official_page_readable",
+      "evidence_class": "official_phone_verification_policy_no_new_requirement_claim",
+      "observation": "普通ChatGPT、Codex桌面、首次API Key范围不等同；Session不是先前短信登录验证替代品。"
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://www.16688.com.cn/goods/G46459749",
+      "access_status": "plain_text_fetch_empty_but_visitor_browser_readable"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G64783075",
+      "access_status": "plain_text_fetch_empty_but_visitor_browser_readable"
+    },
+    {
+      "url": "https://catfk.com/item/xoyimh",
+      "access_status": "plain_text_fetch_empty_no_new_price"
+    },
+    {
+      "url": "https://morimm.com/",
+      "access_status": "plain_text_fetch_empty_no_new_price"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "access_status": "web_access_failed_no_new_price"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r4.html"
+}

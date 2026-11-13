@@ -21,7 +21,7 @@ assert(C.filter(d.records,{sort:'latest'},d.tasks).slice(-sites.length).every(r=
 assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=>r.updatedAt===null));
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
-assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
+assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
 assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['business-validation-20261004','task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 const w32=d.records.find(r=>r.id==='gpt-source-followup-r32-20261104');
@@ -1518,3 +1518,18 @@ assert.equal(r162.invoice.actual_all_in_with_valid_china_vat_cny,null);
 assert.equal(r162.merchant.one_unit_wholesale_price_cny,null);
 assert.equal(r162.phone_verification.new_independent_sms_sku_found_this_round,false);
 assert.equal(r162.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R164: two newly read retail products are not qualified wholesale or Chinese-VAT-paid purchases.
+const r164cat=d.records.find(x=>x.id==='gpt-source-followup-r164-20261113');
+const r164data=d.records.find(x=>x.id==='gpt-source-followup-r164-20261113-evidence');
+assert(r164cat&&r164data&&r164cat.url.endsWith('supplier-followup-20261113-r5.html'));
+const r164=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r5-evidence.json'),'utf8'));
+assert.equal(r164.round,164);assert.equal(r164.site_version,'1.9.172');
+assert.deepEqual(r164.candidates.map(x=>x.merchant_product_id),['G46459749','G64783075']);
+assert.deepEqual(r164.candidates.map(x=>x.unpaid_checkout_preview_total_cny),[118.22,138.78]);
+assert(r164.candidates.every(x=>x.merchant_workflow_requires_session_token===true&&x.actual_all_in_china_vat_cny===null));
+assert(r164.candidates.every(x=>x.merchant_wholesale_one_unit_cost_cny===null&&x.china_vat_invoice_issuer_entity===null));
+assert.equal(r164.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r164.qualification_totals.verified_real_plus_purchases,0);
+assert.equal(r164.qualification_totals.verified_valid_china_vat_invoices,0);
+assert.equal(r164.qualification_totals.verified_phone_sms_successes,0);

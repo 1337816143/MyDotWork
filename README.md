@@ -18,7 +18,7 @@ GitHub Actions 在主分支变更时验证并部署 Pages。PR 仅构建验证�
 
 ## 维护
 
-GPT源头调研按[维护说明](docs/gpt-source-maintenance.md)持续更新；最新增量为[2026-11-12第159轮ChatGPT直充站同SKU挂牌复核](publications/research/2026-11-12/supplier-followup-20261112-r12.html)，初版[代充与手机号验证专题](publications/research/2026-11-03/index.html)仍独立保留；两份报告的来源和观察日期分别见各自证据JSON。
+GPT源头调研按[维护说明](docs/gpt-source-maintenance.md)持续更新；最新增量为[2026-11-13第164轮16688两家Plus准确SKU及支付/开票核查](publications/research/2026-11-13/supplier-followup-20261113-r5.html)，初版[代充与手机号验证专题](publications/research/2026-11-03/index.html)仍独立保留；两份报告的来源和观察日期分别见各自证据JSON。
 
 - `src/` 保存供货研究；`data/` 保存用户已明确授权公开、已脱敏的当前dot对话与项目状态
 - 更新需保留观察日期、来源、证据状态；修改版本与 CHANGELOG

@@ -3950,6 +3950,28 @@
       "summary": "五条一方/官方原URL，2026-11-13首次补录手动模式及收短信扣卡；验证码可看24小时≠持号，退款/税票/批发价null，真实SMS 0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r164-20261113",
+      "title": "GPT源头第164轮 · 16688两家Plus准确SKU、支付手续费与开票主体缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r5.html",
+      "updatedAt": "2026-11-13",
+      "summary": "新访客实读狗ai G46459749本人原号Plus30天¥115＋支付费¥3.22，全球云充G64783075菲区Plus¥135＋¥3.78；两店需Session，官方账单不等于中国VAT，批发授权null。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r164-20261113-evidence",
+      "title": "第164轮 · 两家16688原始商品、收银预览、Session及VAT缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r5-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "2条访客直接读取原SKU、2条第三方发现索引及1条OpenAI官方规则；未付账单¥118.22/¥138.78，出票/收款法人、税费及单件批发价均null，无真实履约。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
