@@ -1502,3 +1502,19 @@ assert.equal(r161.merchant.one_unit_wholesale_price_cny,null);
 assert.equal(r161.sms.merchant_display_cny_per_code,6);
 assert.equal(r161.sms.number_holding_days,null);
 assert.equal(r161.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R162: new 52XUEAI retail item remains unqualified without valid Chinese VAT and resale evidence.
+const r162cat=d.records.find(x=>x.id==='gpt-source-followup-r162-20261113');
+const r162data=d.records.find(x=>x.id==='gpt-source-followup-r162-20261113-evidence');
+assert(r162cat&&r162data&&r162cat.url.endsWith('supplier-followup-20261113-r3.html'));
+const r162=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r3-evidence.json'),'utf8'));
+assert.equal(r162.round,162);assert.equal(r162.site_version,'1.9.170');
+assert.equal(r162.plus.sku,'G37392923');
+assert.equal(r162.plus.merchant_display_cny_per_item_month,116);
+assert.equal(r162.plus.unpaid_checkout_preview_payment_fee_cny,3.248);
+assert.equal(r162.plus.unpaid_checkout_preview_total_cny,119.25);
+assert.equal(r162.invoice.merchant_claim_invoice_fee_cny,null);
+assert.equal(r162.invoice.actual_all_in_with_valid_china_vat_cny,null);
+assert.equal(r162.merchant.one_unit_wholesale_price_cny,null);
+assert.equal(r162.phone_verification.new_independent_sms_sku_found_this_round,false);
+assert.equal(r162.qualification_totals.verified_plus_wholesale_upstreams,0);
