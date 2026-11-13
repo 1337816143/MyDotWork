@@ -4214,6 +4214,28 @@
       "summary": "3条本轮首次归档官方原始URL+3条商家复核，一方规则与商家自述分离；旧报价不刷新，授权/税票和费用未核项null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r176-20261114",
+      "title": "GPT源头第176轮 · 充值管家零售及Plus手机号验证豁免承诺核对",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r4.html",
+      "updatedAt": "2026-11-14",
+      "summary": "新读零售Plus ¥165/商品件及Codex/ChatGPT接码 ¥40/商品件；Plus能免手机验证是商家说法非官方保证；期限/开票/授权/实测均缺，已核批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r176-20261114-evidence",
+      "title": "第176轮 · 新零售Plus与手机号代验证准确SKU及官方用途边界JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r4-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "4条实际读取原始URL，商品价单位与周期不确定、商家夸大可能性、支付/VAT/退款/null及官方电话用途独立归档。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

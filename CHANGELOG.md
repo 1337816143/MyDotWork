@@ -1,3 +1,11 @@
+## 1.9.184 · 2026-11-14
+
+- 第176轮首次读取充值管家本人原号Plus商品页（https://chongzhiguanjia.com/buy/12）¥165/商品列示1件，商称人工发货、批量采购及对公支付、失败退款成功不退；商品页没有单独明确单件对应订阅月数，不能将¥165直接标成已核一月批发、完整含票成本或正式授权。文中“GETGPT”仅为文字，不能推定与其他既有GETGPT Pro商家的关系。
+- 新增独立「ChatGPT/Codex登录验证手机号代验证」准确商品页（https://chongzhiguanjia.com/buy/24）¥40/商品件，人工发货。商称全部Codex免费用户必须验手机号及升级Plus正常不用验并声称“亲测”；OpenAI官方（https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like）只说一般ChatGPT无需验证、Codex桌面可能要求及首次API Key须验证，并未保证付费Plus永久免验证。没有实际接码/账号证据，不将商家自述当成独立实测或官方新政策。
+- 该独立接码商品号码类型、国家、控制期限、短信次数、失败或拒号退款、网页/Codex/API是否真实适用均null或未实测；Plus商品准确周期、含票支付全费、经营收款开票主体及合法批发授权仍null。原有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay不刷新旧价。合格单件单月本人原号免前置费且含有效中国VAT≤¥170的已核Plus批发0，付款/发票验真/短信成功均0。
+- 仅新增第176轮HTML/JSON、精确SHA256发布白名单、project-1工作台目录、总库最新入口、VERSION和回归检查；保留历史126条报价及前175轮原始文件。未付款、联系商家、提交密码或Session/Token。
+- 原始来源：https://chongzhiguanjia.com/ 、https://chongzhiguanjia.com/buy/12 、https://chongzhiguanjia.com/buy/24 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.183 · 2026-11-14
 
 - 第175轮首次归档OpenAI消费者个人ChatGPT使用条款（2026-01-01刊载生效，区域范围排除EEA、瑞士及英国）的禁止出售/分发服务与共享登录凭据条款；区分“代理帮助支付”具体事实与获准转售Plus本身的正式授权，不推断已证明所有第三方代充违法或有书面例外。
