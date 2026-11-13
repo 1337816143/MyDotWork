@@ -1,3 +1,10 @@
+## 1.9.178 · 2026-11-13
+
+- 第170轮首次直接读取SNSOTP OpenAI独立短信SKU `openai`、按国家报价、API、FAQ、退款与服务条款共6条商家原页及OpenAI官方手机号范围。商家公开挂牌每次短信：菲律宾/巴西US$0.01、哥伦比亚US$0.02、阿根廷US$0.03、美国US$0.06、英国US$0.28、德国US$0.07、印度US$0.25、印尼US$0.04；价格/库存快照自标2026-11-04，11月13日为本轮实读日期，不冒充当日变价、即时成交或成功验证。
+- 单次服务虽然无最低订单数量或月费，但入场需加密币预存最低US$40；余额不能提现，未核链上和换汇费、商户收款/开票主体、现金等效单次成本（null）。20分钟内无短信退款至站内消费余额，非原路现金；已到短信但OpenAI拒号不保退，20分钟同号可复收不等于长期持有或复用。条款与退款页自标2026-11-03而非本轮新增政策；手机号非VoIP与ChatGPT网页、Codex桌面、首次API Key成功均未实测。
+- 仅独立SMS零售/API候选，非Plus本人原号单件批发或OpenAI正式转售授权；旧CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay价格未刷新。满足本人原号1件1月、免代理前置费、全费用与有效中国VAT≤¥170的已核上游0；真Plus购买0、有效税票验真0、SMS验证成功0。只追加r170报告/JSON、精确SHA256白名单、project-1目录、总库入口、版本与回归测试；历史126条报价和前169轮原字节保留。无购买、商家联系或凭据提交。
+- 来源：https://snsotp.com/services/openai 、https://snsotp.com/pricing 、https://snsotp.com/refund-policy 、https://snsotp.com/faq 、https://snsotp.com/terms 、https://snsotp.com/api-docs 及 https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.177 · 2026-11-13
 
 - 第169轮首次直接核读CODASMS独立手机号验证平台的白标转售原页、审批制Reseller API v1、退款和条款等7条一方/官方原URL。平台商称服务目录包括ChatGPT，但转售需要申请审批、书面批准及首笔预存余额；准确OpenAI国家/SKU/零售价/代理进价、最低入金与其他前置费均null。商家USD1.20顾客价、USD0.80成本只是示意例子，不能冒充真实OpenAI批发SKU或零门槛代理证明。

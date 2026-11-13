@@ -1,0 +1,186 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 170,
+  "site_version": "1.9.178",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "首次读SNSOTP独立OpenAI单次SMS代码和价格、USD40最低预存、不能提现余额退款，非Plus上游",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "independent_sms_candidate": {
+    "merchant": "SNSOTP",
+    "category": "independent_sms_retail_api_not_plus_subscription",
+    "service": "OpenAI (ChatGPT)",
+    "exact_service_code": "openai",
+    "merchant_public_prices_by_country": [
+      {
+        "country": "Philippines",
+        "country_code": "ph",
+        "price_usd_per_one_sms_code": 0.01,
+        "source_url": "https://snsotp.com/services/openai"
+      },
+      {
+        "country": "Brazil",
+        "country_code": "br",
+        "price_usd_per_one_sms_code": 0.01,
+        "source_url": "https://snsotp.com/services/openai"
+      },
+      {
+        "country": "Colombia",
+        "country_code": "co",
+        "price_usd_per_one_sms_code": 0.02,
+        "source_url": "https://snsotp.com/services/openai"
+      },
+      {
+        "country": "Argentina",
+        "country_code": "ar",
+        "price_usd_per_one_sms_code": 0.03,
+        "source_url": "https://snsotp.com/services/openai"
+      },
+      {
+        "country": "United States",
+        "country_code": "us",
+        "price_usd_per_one_sms_code": 0.06,
+        "source_url": "https://snsotp.com/pricing"
+      },
+      {
+        "country": "United Kingdom",
+        "country_code": "gb",
+        "price_usd_per_one_sms_code": 0.28,
+        "source_url": "https://snsotp.com/pricing"
+      },
+      {
+        "country": "Germany",
+        "country_code": "de",
+        "price_usd_per_one_sms_code": 0.07,
+        "source_url": "https://snsotp.com/pricing"
+      },
+      {
+        "country": "India",
+        "country_code": "in",
+        "price_usd_per_one_sms_code": 0.25,
+        "source_url": "https://snsotp.com/pricing"
+      },
+      {
+        "country": "Indonesia",
+        "country_code": "id",
+        "price_usd_per_one_sms_code": 0.04,
+        "source_url": "https://snsotp.com/pricing"
+      }
+    ],
+    "merchant_stock_snapshot_as_of": "2026-11-04",
+    "merchant_price_observed_on": "2026-11-13",
+    "actual_checkout_paid": false,
+    "merchant_claim_no_monthly_fee": true,
+    "merchant_claim_no_minimum_order_count": true,
+    "minimum_prepaid_crypto_topup_usd": 40,
+    "merchant_claim_crypto_only": true,
+    "payment_chain_fee_usd": null,
+    "currency_exchange_fee_usd": null,
+    "actual_one_order_out_of_pocket_usd": null,
+    "prepaid_balance_withdrawable": false,
+    "merchant_no_sms_refund": "20 minutes or cancel before SMS -> nonwithdrawable platform credit",
+    "merchant_cash_refund_on_sms_arrives": false,
+    "actual_refund_received": false,
+    "window_minutes": 20,
+    "same_number_resend_only_within_window_merchant_claim": true,
+    "verified_same_number_holding_days": null,
+    "long_term_number_renewal_verified": false,
+    "verified_non_voip_mobile_number": null,
+    "actual_operator_identity": null,
+    "merchant_business_entity": null,
+    "actual_receiving_entity": null,
+    "valid_china_vat_invoice_issuer": null,
+    "invoice_fee_cny": null,
+    "wholesale_plus_sku": null,
+    "verified_plus_resale_authorization": false,
+    "verified_chatgpt_web_sms_success": false,
+    "verified_codex_desktop_sms_success": false,
+    "verified_first_api_key_sms_success": false,
+    "openai_session_or_token_needed_for_sms_vendor": null,
+    "actual_sms_arrival_success": false,
+    "site_access_uses_token_merchant_claim": true,
+    "confidence": "merchant first-party pages not independent completed purchase"
+  },
+  "sources": [
+    {
+      "url": "https://snsotp.com/services/openai",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_exact_sku",
+      "source_date": null,
+      "note": "OpenAI服务代码openai，PHP/BR US$0.01起，窗口20分钟"
+    },
+    {
+      "url": "https://snsotp.com/pricing",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_country_price_and_deposit",
+      "source_date": "2026-11-04",
+      "note": "分国价格库存为11月4日快照，单次低价但最低US$40加密币预存"
+    },
+    {
+      "url": "https://snsotp.com/refund-policy",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_refund_policy",
+      "source_date": "2026-11-03",
+      "note": "无短信20分钟自动退款到站内不可提现余额；收到码不退"
+    },
+    {
+      "url": "https://snsotp.com/faq",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_payment_and_access",
+      "source_date": null,
+      "note": "加密币入金最低US$40，20分钟内可再收码，登录令牌遗失无法恢复"
+    },
+    {
+      "url": "https://snsotp.com/terms",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_terms",
+      "source_date": "2026-11-03",
+      "note": "临时号一次性单个服务20分钟，号码运营商性质仅商称"
+    },
+    {
+      "url": "https://snsotp.com/api-docs",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_api",
+      "source_date": null,
+      "note": "公开GET /prices、需密钥POST /orders；示例号码和费用不是实购"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "official_openai_scope",
+      "source_date": null,
+      "note": "网页一般不要求；桌面Codex可能要求；首次API key要求，VoIP不支持"
+    }
+  ],
+  "notes": {
+    "listed_prices_are_not_verified_cash_checkout": true,
+    "merchant_page_update_dates_not_observed_on": true,
+    "unknown_fees_null": true,
+    "old_prices_not_refreshed": true,
+    "apple_and_session_do_not_auto_bind_phone": true,
+    "prior_126_retail_prices_preserved": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r10.html"
+}
