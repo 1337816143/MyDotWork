@@ -1574,3 +1574,21 @@ assert.equal(r168.independent_sms_candidate.actual_chosen_sku_checkout_price_usd
 assert.equal(r168.independent_sms_candidate.actual_openai_verification_success,false);
 assert.equal(r168.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r168.qualification_totals.verified_phone_sms_successes,0);
+
+// R169: CODASMS has a reseller application and API, not verified OpenAI SKU price, cash refund or Plus wholesale.
+const r169cat=d.records.find(x=>x.id==='gpt-source-followup-r169-20261113');
+const r169data=d.records.find(x=>x.id==='gpt-source-followup-r169-20261113-evidence');
+assert(r169cat && r169data && r169cat.url.endsWith('supplier-followup-20261113-r10.html'));
+const r169=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r10-evidence.json'),'utf8'));
+assert.equal(r169.round,169);assert.equal(r169.site_version,'1.9.177');
+assert.equal(r169.sources.length,7);
+assert.equal(r169.independent_sms_reseller_candidate.exact_openai_service_code,null);
+assert.equal(r169.independent_sms_reseller_candidate.exact_openai_single_sms_reseller_cost_usd,null);
+assert.equal(r169.independent_sms_reseller_candidate.reseller_approval_required,true);
+assert.equal(r169.independent_sms_reseller_candidate.written_resale_permission_required,true);
+assert.equal(r169.independent_sms_reseller_candidate.minimum_initial_funding_usd,null);
+assert.equal(r169.independent_sms_reseller_candidate.zero_upfront_fee_verified,false);
+assert.equal(r169.independent_sms_reseller_candidate.independently_verified_nonvoip_sim,null);
+assert.equal(r169.independent_sms_reseller_candidate.actual_cash_refund_verified,false);
+assert.equal(r169.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r169.qualification_totals.verified_phone_sms_successes,0);
