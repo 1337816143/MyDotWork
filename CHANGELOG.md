@@ -1,3 +1,10 @@
+## 1.9.182 · 2026-11-14
+
+- 第174轮首次补入OpenAI官方多篇手机号说明：首次API Key手机验证的同一号码跨账号复用上限为3，删除账号不重置该API验证名额；官方不提供更换/更新ChatGPT/API关联手机号。此为11月14日新增证据归档，而非当天新公布政策。
+- 官方区分手机号单独注册与首次API Key手机验证；手机号注册限符合资格的新用户和地区，升级Plus/Pro/Business仍需验证邮箱。符合条件的已删除消费账号30天后号码可解除关联，不意味着API 3账号限额重置；已回收/重复利用号码可能遇到Too many signups。对独立接码和长期租号成功、账号恢复风险有实质影响，但不是第三方SMS成功实测。
+- 复核引路鲸进货代理¥3000前置费、PAYPRM/ChongPay/GETGPT Pro首页、AIBulk API；wind89 FAQ无可读正文，其余CatFK/小久/Morimm/ChatShare/GetVIP未取得足以重定价的新证据。中国有效VAT、完整支付费用、经营主体、正式转售授权与履约仍未闭合，符合原号单件单月免代理前置费且含中国VAT≤¥170的已核批发上游0家；购买、验票、SMS成功0，不更新历史126价。
+- 仅新增2026-11-14 r2 HTML/JSON、SHA256白名单、project-1目录、总库最新入口、VERSION及回归边界，历史前173轮原字节保留。官方原始URL：https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation 、https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account 、https://help.openai.com/en/articles/10388702-phone-only-signups 、https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.181 · 2026-11-14
 
 - 第173轮首次直接读取EVI Shop准确本人原号 ChatGPT Plus — 1 month SKU（https://evishopai.com/p/chatgpt-plus-1-month）：访客零售挂牌16.8 USDT/件·月，可选1件，最多100件，TRC20/BEP20/站内余额付款；仅无生效付费订阅账号，不支持已有Plus提前覆盖。16.8 USDT不是人民币实付、已核批发或含有效中国VAT总费用，链费/汇兑/出票及经营收款法人、批发门槛和正规转售授权均null。

@@ -1649,3 +1649,16 @@ assert.equal(r173.new_retail_candidate.refund_to_site_balance_only_in_terms,true
 assert.equal(r173.new_retail_candidate.all_required_fees_with_valid_china_vat_cny,null);
 assert.equal(r173.new_retail_candidate.qualified_upstream,false);
 assert.equal(r173.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R174: OpenAI API first-key phone cap does not imply successful one-off rented SMS or paid subscription.
+const r174cat=d.records.find(x=>x.id==='gpt-source-followup-r174-20261114');
+const r174data=d.records.find(x=>x.id==='gpt-source-followup-r174-20261114-evidence');
+assert(r174cat&&r174data&&r174cat.url.endsWith('supplier-followup-20261114-r2.html'));
+const r174=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r2-evidence.json'),'utf8'));
+assert.equal(r174.round,174);assert.equal(r174.site_version,'1.9.182');assert.equal(r174.sources.length,10);
+assert.equal(r174.official_verification_findings.api_first_key_verification.phone_number_max_distinct_verified_accounts,3);
+assert.equal(r174.official_verification_findings.api_first_key_verification.deleting_account_resets_api_phone_verification_quota,false);
+assert.equal(r174.official_verification_findings.number_association.changing_or_updating_number_supported,false);
+assert.equal(r174.official_verification_findings.phone_only_signup.plus_pro_business_require_verified_email,true);
+assert.equal(r174.costs.new_all_required_fees_valid_china_vat_cny,null);
+assert.equal(r174.qualification_totals.verified_plus_wholesale_upstreams,0);
