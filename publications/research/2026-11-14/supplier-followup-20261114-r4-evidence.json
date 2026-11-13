@@ -1,0 +1,136 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 176,
+  "site_version": "1.9.184",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接读取充值管家Plus代充与ChatGPT/Codex独立手机号验证两个准确商品页面，发现Plus后无需手机号验证的商家普遍性承诺没有OpenAI官方支撑；不是官方政策变化，也未确认第三方测试成功。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_merchant": {
+    "name": "充值管家",
+    "site": "https://chongzhiguanjia.com/",
+    "retail_plus": {
+      "url": "https://chongzhiguanjia.com/buy/12",
+      "price_cny_per_listing": 165,
+      "retail_listing": true,
+      "manually_fulfilled": true,
+      "exact_paid_subscription_duration_from_this_sku": null,
+      "clearly_supported_original_account_renewal": null,
+      "offered_bulk_corporate_payment": true,
+      "public_actual_wholesale_unit_price_cny": null,
+      "merchant_claim_refund_if_activation_fails": true,
+      "merchant_claim_no_refund_after_activation": true,
+      "merchant_claim_no_after_sales_for_account_ban": true,
+      "formal_openai_plus_resale_authorization_verified": false
+    },
+    "independent_sms": {
+      "url": "https://chongzhiguanjia.com/buy/24",
+      "price_cny_per_listing": 40,
+      "service_title": "ChatGPT/Codex 登录验证手机号代验证",
+      "manual_fulfillment": true,
+      "number_country": null,
+      "number_type_or_non_voip_verified": null,
+      "number_retention_days": null,
+      "sms_code_count_per_unit": null,
+      "requires_prior_chatgpt_login_or_session": null,
+      "refund_on_no_sms_or_openai_rejection": null,
+      "merchant_claim_all_free_codex_users_must_verify": true,
+      "merchant_claim_plus_subscribers_normally_do_not_need_phone_verification": true,
+      "merchant_claim_own_tests_worked": true,
+      "independent_codex_sms_success_verified": false,
+      "independent_chatgpt_web_sms_success_verified": false,
+      "independent_first_api_key_success_verified": false
+    },
+    "all_payment_extra_fees_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "valid_china_vat_invoice_verified": false,
+    "actual_checkout_total_cny": null,
+    "corporate_buyer_seller_invoice_identity_verified": false,
+    "official_distribution_or_retail_rights_verified": false,
+    "wholesale_qualified": false
+  },
+  "official_verification_recheck": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_signup_generally_does_not_require_phone": true,
+    "codex_desktop_may_request_phone": true,
+    "first_api_key_must_verify_phone": true,
+    "supported_numbers_exclude_voip": true,
+    "official_guarantees_plus_removes_all_phone_checks": false,
+    "paid_users_have_verified_universal_exemption": null,
+    "phone_number_control_duration_required_for_fulfillment": null,
+    "policy_changed_on_observation_date": false
+  },
+  "preexisting_competitor_rechecks": {
+    "CatFK": "not_repriced",
+    "小久": "not_repriced",
+    "Morimm": "not_repriced",
+    "引路鲸": "not_repriced",
+    "ChatShare": "not_repriced",
+    "GetVIP": "not_repriced",
+    "wind89": "not_repriced",
+    "GETGPT Pro": "not_repriced",
+    "PAYPRM": "not_repriced",
+    "ChongPay": "not_repriced"
+  },
+  "sources": [
+    {
+      "url": "https://chongzhiguanjia.com/",
+      "kind": "merchant_original_catalog",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "statements": [
+        "Homepage displays retail Plus ¥165; SMS product ¥40; self-reported sales and stock are not real fulfillment evidence."
+      ]
+    },
+    {
+      "url": "https://chongzhiguanjia.com/buy/12",
+      "kind": "merchant_original_exact_plus_sku",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "statements": [
+        "Merchant shows ¥165/listing, manual delivery, claims bulk corporate payment by contacting staff and activation failure refund, non-refundable after success.",
+        "Product text mentions general Plus $20/month, but the individual listed price lacks an independently confirmed explicit 1-month order entitlement; seller/GETGPT branding does not prove a supply relationship.",
+        "Payment fee, legal VAT issuer and full amount not visible."
+      ]
+    },
+    {
+      "url": "https://chongzhiguanjia.com/buy/24",
+      "kind": "merchant_original_phone_service",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "statements": [
+        "Merchant shows ¥40/listing and title ChatGPT/Codex login phone verification.",
+        "Claims all free Codex users must verify and Plus upgrades normally avoid phone verification; says it performed tests, but no independent traces or receipts provided.",
+        "No service country, SMS count, number longevity, later SMS support or failed verification refund policy shown."
+      ]
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "kind": "official_openai_verification_scope",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "statements": [
+        "Official states no general phone requirement for ChatGPT registration, Codex ChatGPT desktop may prompt, and first API key requires phone verification.",
+        "Official does not guarantee Plus enrollment removes all verification prompts; supports non-VoIP mobile numbers only."
+      ]
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_prices_refreshed": false
+}
