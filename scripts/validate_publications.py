@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 365, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 367, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.166'
+    assert latest['version'] == '1.167'
     assert latest['date'] == '2026-11-13'
-    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r7.html'
-    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r7-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r6.html'
+    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r8.html'
+    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r8-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r7.html'
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
@@ -1876,6 +1876,21 @@ def validate_publications():
     assert r166['independent_phone_verification']['number_holding_days'] is None
     assert all(v == 0 for v in r166['qualification_totals'].values())
     assert r166['purchase_or_login_attempted'] is False and r166['merchant_contacted'] is False
+
+    # R167: vendor phone service offers are neither Plus wholesale nor real SMS verification.
+    assert by_id['gpt-source-followup-r167-20261113']['url'].endswith('supplier-followup-20261113-r8.html')
+    assert by_id['gpt-source-followup-r167-20261113-evidence']['url'].endswith('supplier-followup-20261113-r8-evidence.json')
+    r167=json.loads((ROOT/'dist/research/2026-11-13/supplier-followup-20261113-r8-evidence.json').read_bytes())
+    assert r167['round'] == 167 and r167['site_version'] == '1.9.175'
+    short,long=r167['independent_sms_candidates']
+    assert short['display_price_cny'] == 29.9 and short['merchant_claim_free_number_changes_max'] == 3
+    assert short['actual_number_holding_minutes'] is None and short['actual_sms_success_verified'] is False
+    assert [(x['duration_days'],x['price_cny']) for x in long['offers']] == [(30,149),(90,399),(365,1199)]
+    assert long['merchant_claim_no_refund_if_openai_rejects_number'] is True
+    assert long['actual_exclusive_or_renewal_verified'] is False
+    assert r167['plus_purchase_gap']['actual_all_required_fees_included_cny'] is None
+    assert all(v == 0 for v in r167['qualification_totals'].values())
+    assert r167['purchase_or_login_attempted'] is False and r167['merchant_contacted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
