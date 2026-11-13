@@ -1,3 +1,11 @@
+## 1.9.180 · 2026-11-13
+
+- 第172轮直接读取AIBulk API变更日志自标2026-11-13 v1.7.0：`prod_chatgpt_plus`严格Free专用，Go提交商称返回400 `account_plan_not_free`、码不消耗，不再可走此前的覆盖渠道。仅记录商家声明，未实际调用或验证。
+- 新增单独准确SKU `prod_chatgpt_plus_subscribed`“Plus for Go Accounts (1 Month)”商家网页Lv1零售US$19.99/件·月；不能与Free专用普通Plus `prod_chatgpt_plus` US$17.99/件·月混价。Go升级Plus立刻生效且Go剩余天数不保留。两款都要先成功登录获取完整Session JSON。
+- 商家API日志2026-11-04既有条款首次补证：`prod_chatgpt_plus_subscribed`从“Plus for Subscribed Accounts”更名为Go专用，stable ID/slug未变；在期Plus同级覆盖报409 `cover_unavailable`，`coverConsent:true`不可强制，码不消耗，须等到期。11月4日变更不可当作11月13日调价，更不能认为老名称仍支持在期Plus续费。
+- Level1均为未付款零售报价，高级别真实单件批发进价、真实所有支付费、有效中国增值税发票和开票主体、收款法人、授权及售后均null或未独立实测。合格本人原号单件单月、免前置费、全部费用与有效中国VAT≤¥170上游仍0；真实Plus付款0、验票0、SMS成功0。仅增r172 HTML/JSON及精确SHA256、project-1目录、总库、版本与回归断言，前171轮报告与126条报价原字节保留；无付款、商家联络和敏感凭据。
+- 原始来源：https://aibulk.uk/developers/api 、https://aibulk.uk/p/chatgpt-plus 、https://aibulk.uk/p/chatgpt-plus-subscribed 、https://aibulk.uk/wholesale/ 、https://aibulk.uk/terms 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.179 · 2026-11-13
 
 - 第171轮首次读取AIBulk本人原号ChatGPT Plus (1 Month) SKU，Lv1零售网页标US$17.99/件·月，仅个人Free账户，已有Plus需等到期；完整Session JSON是激活前提，不等于首次网页验证解锁。商家称即时代码和30天保，未经实购、续费或售后验证。
