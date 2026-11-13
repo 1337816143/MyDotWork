@@ -1635,3 +1635,17 @@ assert.equal(r172.new_findings.earlier_renewal_change.same_tier_active_plus_http
 assert.equal(r172.new_findings.cost_and_authority.all_required_fees_and_valid_china_vat_cny,null);
 assert.equal(r172.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r172.qualification_totals.verified_phone_sms_successes,0);
+
+// R173: EVI guest USDT quote is not a legitimate single-item Chinese-VAT wholesale upstream.
+const r173cat=d.records.find(x=>x.id==='gpt-source-followup-r173-20261114');
+const r173data=d.records.find(x=>x.id==='gpt-source-followup-r173-20261114-evidence');
+assert(r173cat&&r173data&&r173cat.url.endsWith('supplier-followup-20261114.html'));
+const r173=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-evidence.json'),'utf8'));
+assert.equal(r173.round,173);assert.equal(r173.site_version,'1.9.181');assert.equal(r173.sources.length,7);
+assert.equal(r173.new_retail_candidate.advertised_unit_price,16.8);
+assert.equal(r173.new_retail_candidate.currency,'USDT');
+assert.equal(r173.new_retail_candidate.session_token_required,true);
+assert.equal(r173.new_retail_candidate.refund_to_site_balance_only_in_terms,true);
+assert.equal(r173.new_retail_candidate.all_required_fees_with_valid_china_vat_cny,null);
+assert.equal(r173.new_retail_candidate.qualified_upstream,false);
+assert.equal(r173.qualification_totals.verified_plus_wholesale_upstreams,0);
