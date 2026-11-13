@@ -1518,3 +1518,18 @@ assert.equal(r162.invoice.actual_all_in_with_valid_china_vat_cny,null);
 assert.equal(r162.merchant.one_unit_wholesale_price_cny,null);
 assert.equal(r162.phone_verification.new_independent_sms_sku_found_this_round,false);
 assert.equal(r162.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+// R164: two newly read retail products are not qualified wholesale or Chinese-VAT-paid purchases.
+const r164cat=d.records.find(x=>x.id==='gpt-source-followup-r164-20261113');
+const r164data=d.records.find(x=>x.id==='gpt-source-followup-r164-20261113-evidence');
+assert(r164cat&&r164data&&r164cat.url.endsWith('supplier-followup-20261113-r5.html'));
+const r164=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r5-evidence.json'),'utf8'));
+assert.equal(r164.round,164);assert.equal(r164.site_version,'1.9.172');
+assert.deepEqual(r164.candidates.map(x=>x.merchant_product_id),['G46459749','G64783075']);
+assert.deepEqual(r164.candidates.map(x=>x.unpaid_checkout_preview_total_cny),[118.22,138.78]);
+assert(r164.candidates.every(x=>x.merchant_workflow_requires_session_token===true&&x.actual_all_in_china_vat_cny===null));
+assert(r164.candidates.every(x=>x.merchant_wholesale_one_unit_cost_cny===null&&x.china_vat_invoice_issuer_entity===null));
+assert.equal(r164.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r164.qualification_totals.verified_real_plus_purchases,0);
+assert.equal(r164.qualification_totals.verified_valid_china_vat_invoices,0);
+assert.equal(r164.qualification_totals.verified_phone_sms_successes,0);
