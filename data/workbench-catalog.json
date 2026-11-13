@@ -3928,6 +3928,28 @@
       "summary": "2条首次访客实读商家原始URL加1条二手发现索引；¥116／件、¥3.248手续费未付款预览，票费、收款/出票法人、批发价null，真实采购与SMS 0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r163-20261113",
+      "title": "GPT源头第163轮 · CallAI Codex手动接码、扣卡差异与账号安全",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r4.html",
+      "updatedAt": "2026-11-13",
+      "summary": "首次记录CallAI Codex手动接码可自行登录官方页面的替代流程；手动收短信即扣CDK，自动成功才扣；Plus兑换仍维护，已核批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r163-20261113-evidence",
+      "title": "第163轮 · CallAI短信流程、扣卡规则与维护告警结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r4-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "五条一方/官方原URL，2026-11-13首次补录手动模式及收短信扣卡；验证码可看24小时≠持号，退款/税票/批发价null，真实SMS 0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
