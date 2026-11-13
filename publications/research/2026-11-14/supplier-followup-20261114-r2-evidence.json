@@ -1,0 +1,208 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 174,
+  "site_version": "1.9.182",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次归档OpenAI官方关于首次API Key手机号复用上限、账号删除与号码更改、手机号单独注册和Plus邮件验证的可读原文；是本轮新增补证，不把官方旧说明描述为2026-11-14新政策。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "official_verification_findings": {
+    "api_first_key_verification": {
+      "official_required": true,
+      "phone_number_max_distinct_verified_accounts": 3,
+      "deleting_account_resets_api_phone_verification_quota": false,
+      "applies_to": "initial API-key phone verification; not a three-code allowance or Codex desktop success guarantee",
+      "source_urls": [
+        "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+        "https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account"
+      ],
+      "independently_tested": false
+    },
+    "number_association": {
+      "changing_or_updating_number_supported": false,
+      "applies_to": "ChatGPT and OpenAI API associated number",
+      "source_url": "https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account",
+      "independently_tested": false
+    },
+    "phone_only_signup": {
+      "availability": "eligible new users and locations only; offered signup options determine eligibility",
+      "separate_from_api_first_key_verification": true,
+      "plus_pro_business_require_verified_email": true,
+      "linked_email_allows_social_login_switch": true,
+      "eligible_deleted_consumer_number_removal_days": 30,
+      "removal_resets_first_api_key_three_account_limit": false,
+      "recycled_number_may_lead_to_too_many_signups": true,
+      "source_urls": [
+        "https://help.openai.com/en/articles/10388702-phone-only-signups",
+        "https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account"
+      ],
+      "independently_tested": false
+    },
+    "platform_scope": {
+      "chatgpt_general_phone_requirement": false,
+      "codex_desktop_may_require": true,
+      "first_api_key_phone_required": true,
+      "sms_or_whatsapp_where_available": true,
+      "voip_google_voice_landline_premium_supported": false,
+      "source_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like"
+    },
+    "implications_for_rented_numbers": "Single-use/leased numbers may have prior association and cannot be assumed reusable for a new API key, phone-only login, or long-term account recovery. A paid SMS service, Apple in-app purchase, or Session transfer does not prove phone binding, unlocking or recovery.",
+    "third_party_sms_success_verified": false
+  },
+  "last_observed_merchant_rechecks": [
+    {
+      "merchant": "引路鲸 / ChatGPT直充站",
+      "url": "https://chatgqt.plus/cooperation",
+      "access": "readable",
+      "observation": "¥3000 upfront buy-in for procurement agency retained; violates no-upfront-fee condition",
+      "price_refreshed": false
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://www.payprm.com/",
+      "access": "readable",
+      "observation": "site advertises bulk orders and invoices subject to contacting seller; issuer, actual invoice and full one-item costs still unknown",
+      "price_refreshed": false
+    },
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/",
+      "access": "readable",
+      "observation": "merchant advertises failure refund and invoice inquiry; cash refund, valid Chinese VAT and SKU checkout not independently verified",
+      "price_refreshed": false
+    },
+    {
+      "merchant": "GETGPT Pro",
+      "url": "https://getgpt.pro/",
+      "access": "readable",
+      "observation": "merchant advertises successful activation and refund; no verified wholesale authority or single-item VAT cost closure",
+      "price_refreshed": false
+    },
+    {
+      "merchant": "AIBulk",
+      "url": "https://aibulk.uk/developers/api",
+      "access": "readable",
+      "observation": "wholesale API documentation remains available; API existence does not establish upstream authorization",
+      "price_refreshed": false
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/guide/faq",
+      "access": "zero_readable_lines",
+      "observation": "no new verified page body, old price not refreshed",
+      "price_refreshed": false
+    }
+  ],
+  "other_priority_candidates": {
+    "CatFK": "not_repriced",
+    "小久": "not_repriced",
+    "Morimm": "not_repriced",
+    "ChatShare": "not_repriced",
+    "GetVIP": "not_repriced"
+  },
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "openai_official_direct_read",
+      "notes": "Initial API key: number at most 3 accounts; old rule, not a new November 14 change"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9135134-how-to-change-the-phone-number-associated-with-your-account",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "openai_official_direct_read",
+      "notes": "No supported way to change/update number associated with OpenAI account"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/10388702-phone-only-signups",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "openai_official_direct_read",
+      "notes": "Phone-only signup separately gated, email verification for paid upgrade, recycled-number issue, eligible deletion 30 days"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/6378407-deleting-your-chatgpt-account",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "openai_official_direct_read",
+      "notes": "Deleting account does not reset 3-account API initial-key verification number limit"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "openai_official_direct_read",
+      "notes": "ChatGPT generally no phone, Codex desktop may need phone, first API key requires; supported mobile SMS/WhatsApp"
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "merchant_terms_direct_read",
+      "notes": "Recheck existing vendor conditions; no certified wholesale cost closure, no old price refresh"
+    },
+    {
+      "url": "https://www.payprm.com/",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "merchant_home_direct_read",
+      "notes": "Recheck existing vendor conditions; no certified wholesale cost closure, no old price refresh"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "merchant_home_direct_read",
+      "notes": "Recheck existing vendor conditions; no certified wholesale cost closure, no old price refresh"
+    },
+    {
+      "url": "https://getgpt.pro/",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "merchant_home_direct_read",
+      "notes": "Recheck existing vendor conditions; no certified wholesale cost closure, no old price refresh"
+    },
+    {
+      "url": "https://aibulk.uk/developers/api",
+      "observed_on": "2026-11-14",
+      "page_updated_exact": null,
+      "kind": "merchant_api_direct_read",
+      "notes": "Recheck existing vendor conditions; no certified wholesale cost closure, no old price refresh"
+    }
+  ],
+  "observation_failures": [
+    {
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-14",
+      "access": "zero_readable_lines",
+      "old_price_refreshed": false
+    }
+  ],
+  "costs": {
+    "new_plus_one_item_price_cny": null,
+    "new_plus_checkout_payment_fee_cny": null,
+    "new_valid_china_vat_fee_cny": null,
+    "new_all_required_fees_valid_china_vat_cny": null
+  },
+  "qualified_plus_wholesale_upstreams": 0,
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-14/supplier-followup-20261114.html",
+  "historical_prices_refreshed": false,
+  "prior_126_prices_preserved": true,
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

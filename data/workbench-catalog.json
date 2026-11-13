@@ -4170,6 +4170,28 @@
       "summary": "7条本轮直接读取的一方/官方URL，2026-10-29旧条款与11月14日观察时间分开，所有支付和中国VAT费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r174-20261114",
+      "title": "GPT源头第174轮 · 官方手机验证3账户上限、不可换号及Plus邮箱条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r2.html",
+      "updatedAt": "2026-11-14",
+      "summary": "OpenAI一方证据：首次API Key同号最多3账号、删号不重置、不可自行换绑；手机号注册和Plus邮箱验证分离；独立接码未实测，符合含票免前置费批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r174-20261114-evidence",
+      "title": "第174轮 · OpenAI手机号复用/换绑/注册与商家重读证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r2-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "10条可读的一方/商家原始URL、1条无正文，不刷新任何旧报价；官方用途边界、三账户额度与邮箱升级要求分开，价格费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
