@@ -1,0 +1,132 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 169,
+  "site_version": "1.9.177",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "首次读取CODASMS独立SMS白标转售说明、API、条款与退款政策；不是Plus订阅上游，非交易或SMS成功实测。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "independent_sms_reseller_candidate": {
+    "merchant": "CODASMS",
+    "merchant_homepage": "https://codasms.com/",
+    "reseller_page": "https://codasms.com/reseller",
+    "service_type": "SMS activation / rentals, not ChatGPT Plus subscription",
+    "merchant_claim_chatgpt_in_reseller_catalog": true,
+    "exact_openai_country": null,
+    "exact_openai_service_code": null,
+    "exact_openai_single_sms_retail_usd": null,
+    "exact_openai_single_sms_reseller_cost_usd": null,
+    "reseller_page_illustrative_customer_price_usd": 1.2,
+    "reseller_page_illustrative_cost_usd": 0.8,
+    "illustrative_figures_are_not_actual_openai_sku_quotes": true,
+    "reseller_application_required": true,
+    "reseller_approval_required": true,
+    "written_resale_permission_required": true,
+    "prepaid_wallet_funding_required": true,
+    "minimum_initial_funding_usd": null,
+    "separate_agency_fee_usd": null,
+    "zero_upfront_fee_verified": false,
+    "approved_reseller_contract_verified": false,
+    "authenticated_api_catalog": true,
+    "api_price_floats_until_order": true,
+    "api_price_currency_minor_unit": "USD cents",
+    "api_rate_limit_per_minute": 60,
+    "api_order_idempotency_key_required": true,
+    "one_time_activation_window_minutes": 20,
+    "merchant_no_sms_refund_target": "prepaid platform wallet balance, not original payment method",
+    "merchant_claim_delivered_sms_then_rejected_not_refunded": true,
+    "deposit_cash_withdrawal_generally_allowed": false,
+    "phone_number_type_claim": "shared, temporary, recyclable; not personal long-term owned number",
+    "independently_verified_nonvoip_sim": null,
+    "confirmed_number_holding_days": null,
+    "repeat_sms_to_same_number_verified": false,
+    "merchant_claim_entity": "CODASMS TECHNOLOGIES, registered in Nigeria",
+    "independent_business_registry_verified": false,
+    "actual_payment_entity": null,
+    "valid_china_vat_invoice_entity": null,
+    "invoice_fee_cny": null,
+    "user_chatgpt_web_success_verified": false,
+    "user_codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "actual_sms_delivery_verified": false,
+    "actual_cash_refund_verified": false,
+    "session_or_token_required_by_vendor": null,
+    "exclusion": "Merchant SMS reseller approval is not OpenAI subscription reseller authorization; no actual China VAT or single-unit Plus wholesale."
+  },
+  "notes": {
+    "merchant_page_update_dates_are_not_observation_dates": true,
+    "merchant_terms_self_marked_date": "2026-06-19",
+    "merchant_claim_not_independent_test": true,
+    "all_unknown_fees_are_null": true
+  },
+  "sources": [
+    {
+      "url": "https://codasms.com/",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "merchant_service_claims",
+      "note": "服务范围与ChatGPT的商家宣传，不是独立成功验证"
+    },
+    {
+      "url": "https://codasms.com/reseller",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "reseller_application",
+      "note": "代理申请审批、白标及预存余额；示例美元成本不是OpenAI真实报价"
+    },
+    {
+      "url": "https://codasms.com/docs/api",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "api_documentation",
+      "note": "API key须审批；USD分计价；单次激活20分钟；60请求/分钟；准确OpenAI SKU目录需登录"
+    },
+    {
+      "url": "https://codasms.com/refunds",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "merchant_refund_policy",
+      "note": "无短信退款至站内余额，收到短信但目标平台拒号不退；入金通常不原路退",
+      "merchant_page_self_marked_updated": "2026-06-19"
+    },
+    {
+      "url": "https://codasms.com/terms",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "merchant_legal_claims",
+      "note": "自称尼日利亚CODASMS TECHNOLOGIES；共享临时号码可回收；实体未独立验真",
+      "merchant_page_self_marked_updated": "2026-06-19"
+    },
+    {
+      "url": "https://codasms.com/acceptable-use",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "resale_permission",
+      "note": "未获书面许可不能转售",
+      "merchant_page_self_marked_updated": "2026-06-19"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_official_help_read",
+      "evidence_type": "official_phone_scope",
+      "note": "ChatGPT一般无需手机号；Codex桌面可能要求；首次API Key要验证；VoIP不支持"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r9.html"
+}
