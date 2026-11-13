@@ -1608,3 +1608,15 @@ assert.equal(r170.independent_sms_candidate.actual_one_order_out_of_pocket_usd,n
 assert.equal(r170.independent_sms_candidate.verified_codex_desktop_sms_success,false);
 assert.equal(r170.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r170.qualification_totals.verified_phone_sms_successes,0);
+
+// R171: new retail quote and reseller API remain unverified for China VAT and official authorization.
+const r171cat=d.records.find(x=>x.id==='gpt-source-followup-r171-20261113');
+const r171dat=d.records.find(x=>x.id==='gpt-source-followup-r171-20261113-evidence');
+assert(r171cat&&r171dat&&r171cat.url.endsWith('supplier-followup-20261113-r12.html'));
+const r171=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r12-evidence.json'),'utf8'));
+assert.equal(r171.round,171);assert.equal(r171.site_version,'1.9.179');assert.equal(r171.sources.length,10);
+assert.equal(r171.new_plus_reseller_candidate.observed_lv1_price_usd_per_one_month_one_item,17.99);
+assert.equal(r171.new_plus_reseller_candidate.actual_all_required_fees_and_valid_china_vat_cny,null);
+assert.equal(r171.new_plus_reseller_candidate.formal_openai_supply_and_resale_authorization_verified,false);
+assert.equal(r171.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r171.qualification_totals.verified_phone_sms_successes,0);

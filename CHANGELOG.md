@@ -1,3 +1,11 @@
+## 1.9.179 · 2026-11-13
+
+- 第171轮首次读取AIBulk本人原号ChatGPT Plus (1 Month) SKU，Lv1零售网页标US$17.99/件·月，仅个人Free账户，已有Plus需等到期；完整Session JSON是激活前提，不等于首次网页验证解锁。商家称即时代码和30天保，未经实购、续费或售后验证。
+- AIBulk转售页商称无入门代理费/审核或月费，访客可单件，API支持1–1000件；但Lv1仍为零售价，Lv2–Lv5累计花费加余额门槛US$500/1000/5000/10000。更高等级实际Plus单件进价null；仅链上USDT/USDC支付，网络费/汇兑点差/真实收款与经营法人/有效中国VAT票种、票费及出票法人、OpenAI正式授权均null。商家条款明确无OpenAI关联。默认退站内余额，申请链上退币须扣网络费，未实测真实到账。
+- 并列排除MySubShare（主卖共享账号，展示转售API示例但明示不是经授权经销商）与dingyue.app（公开批发仅Go月卡US$5.99，无准确Plus级别价）。本轮是11月13日首次观察而非价格调整日期；AIBulk批发/条款自标10月24日、退款自标10月9日。
+- 原有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay价格不刷新。符合本人原号一件一月无前置代理费且所有支付和有效中国VAT≤¥170的已核批发仍0，实际付款0、有效VAT验真0、手机号短信成功0。仅追加r171 HTML/JSON、发布SHA256白名单、project-1目录、总库入口、VERSION、CHANGELOG及测试，历史126报价和前170轮原内容保留。
+- 来源：https://aibulk.uk/p/chatgpt-plus 、https://aibulk.uk/wholesale/ 、https://aibulk.uk/ 、https://aibulk.uk/terms 、https://aibulk.uk/refund-policy 、https://aibulk.uk/faq 、https://aibulk.uk/developers/api 、https://mysubshare.com/ 、https://dingyue.app/en/wholesale 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.178 · 2026-11-13
 
 - 第170轮首次直接读取SNSOTP OpenAI独立短信SKU `openai`、按国家报价、API、FAQ、退款与服务条款共6条商家原页及OpenAI官方手机号范围。商家公开挂牌每次短信：菲律宾/巴西US$0.01、哥伦比亚US$0.02、阿根廷US$0.03、美国US$0.06、英国US$0.28、德国US$0.07、印度US$0.25、印尼US$0.04；价格/库存快照自标2026-11-04，11月13日为本轮实读日期，不冒充当日变价、即时成交或成功验证。

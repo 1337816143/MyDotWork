@@ -1,0 +1,188 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 171,
+  "site_version": "1.9.179",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "直接首次读取AIBulk原号Plus月卡、转售API与退款，比较MySubShare和dingyue的原号/Plus资格缺口",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_plus_reseller_candidate": {
+    "merchant": "AIBulk",
+    "exact_sku": "ChatGPT Plus (1 Month)",
+    "sku_url": "https://aibulk.uk/p/chatgpt-plus",
+    "observed_lv1_price_usd_per_one_month_one_item": 17.99,
+    "observed_unit": "USD equivalent per item per month; crypto USDT or USDC payment",
+    "site_sku_last_price_change_date": null,
+    "merchant_claim_in_stock": true,
+    "merchant_claim_instant_delivery": true,
+    "merchant_claim_free_account_only": true,
+    "merchant_claim_existing_plus_must_expire": true,
+    "merchant_claim_go_upgrade_other_sku": true,
+    "merchant_claim_complete_session_json_required": true,
+    "first_login_phone_verification_solved": false,
+    "merchant_claim_warranty_days": 30,
+    "merchant_claim_wholesale_api": true,
+    "merchant_claim_no_registration_approval_or_monthly_fee": true,
+    "merchant_claim_minimum_qty": 1,
+    "merchant_claim_max_api_qty": 1000,
+    "guest_order_max_qty": 5,
+    "merchant_claim_level_threshold_spend_plus_balance_usd": {
+      "lv1": 0,
+      "lv2": 500,
+      "lv3": 1000,
+      "lv4": 5000,
+      "lv5": 10000
+    },
+    "lv1_is_retail": true,
+    "actual_lv2_to_lv5_plus_unit_prices_usd": null,
+    "actual_one_unit_price_paid_usd": null,
+    "actual_network_fee_usd": null,
+    "actual_fx_or_spread_fee_usd": null,
+    "actual_out_of_pocket_usd": null,
+    "actual_all_required_fees_and_valid_china_vat_cny": null,
+    "china_vat_invoice_type": null,
+    "china_vat_invoice_fee_cny": null,
+    "china_vat_invoice_issuer": null,
+    "business_entity_verified": null,
+    "actual_payment_recipient_verified": null,
+    "merchant_own_terms_disclaim_openai_affiliation": true,
+    "formal_openai_supply_and_resale_authorization_verified": false,
+    "actual_subscription_delivery_success_verified": false,
+    "merchant_refund_default": "internal wallet credit",
+    "merchant_claim_crypto_refund_on_request_after_verification": true,
+    "merchant_claim_crypto_refund_network_fee_deducted": true,
+    "actual_crypto_cash_refund_received": false,
+    "merchant_claim_no_entry_fee_not_independently_verified": true,
+    "qualified_wholesale_upstream": false
+  },
+  "screened_alternatives": [
+    {
+      "merchant": "MySubShare",
+      "source_url": "https://mysubshare.com/",
+      "reseller_api_claimed": true,
+      "shares_other_people_accounts": true,
+      "explicitly_disclaims_authorized_reseller": true,
+      "verified_existing_account_monthly_plus": false,
+      "actual_plus_api_wholesale_price_usd": null,
+      "exclude_reason": "shared account and no official resale authorization"
+    },
+    {
+      "merchant": "dingyue.app",
+      "source_url": "https://dingyue.app/en/wholesale",
+      "listed_go_month_usd": 5.99,
+      "verified_plus_month_wholesale_unit_price_usd": null,
+      "merchant_claim_auto_tier": true,
+      "vat_invoice_issuer": null,
+      "exclude_reason": "Go SKU not Plus; no precise Plus price"
+    }
+  ],
+  "independent_sms": {
+    "new_verified_phone_service_change": false,
+    "chatgpt_web_sms_success_verified": false,
+    "codex_desktop_sms_success_verified": false,
+    "first_api_key_sms_success_verified": false,
+    "number_holding_days": null,
+    "nonuser_failure_cash_refund_verified": false,
+    "apple_or_session_auto_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://aibulk.uk/p/chatgpt-plus",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_exact_plus_sku",
+      "note": "Lv1 $17.99/件月，仅个人Free账户、完整Session、30天质保"
+    },
+    {
+      "url": "https://aibulk.uk/wholesale/",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-10-24",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_reseller_api",
+      "note": "称免入门费/审核，单件起订，Lv2须消费+余额达$500"
+    },
+    {
+      "url": "https://aibulk.uk/",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_product_catalog",
+      "note": "Go与Plus、Go升Plus不同SKU，不可混用价格"
+    },
+    {
+      "url": "https://aibulk.uk/terms",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-10-24",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_terms",
+      "note": "仅链上USDT/USDC，非OpenAI关联方，访客订单最多5件"
+    },
+    {
+      "url": "https://aibulk.uk/refund-policy",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-10-09",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_refunds",
+      "note": "默认退款至站内余额，申请链上退币扣网络费，未经实际测试"
+    },
+    {
+      "url": "https://aibulk.uk/faq",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-10-24",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_activation",
+      "note": "Plus已在期等到期，Session为登录后凭据；款项与退款仍商称"
+    },
+    {
+      "url": "https://aibulk.uk/developers/api",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_api",
+      "note": "REST API、库存和支付订单示例；0.01 USDT测试单无权益且未测试"
+    },
+    {
+      "url": "https://mysubshare.com/",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "alternative_disqualification",
+      "note": "主营共享账号，虽示例chatgpt-plus转售API，却明确否认获品牌经销授权"
+    },
+    {
+      "url": "https://dingyue.app/en/wholesale",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "alternative_missing_plus_sku",
+      "note": "只展示Go $5.99 1月级别价；Plus单件价格未知"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "openai_phone_scope",
+      "note": "ChatGPT通常不要求手机号，Codex桌面可能需要，首API Key需要，非VoIP限制"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r11.html",
+  "historical_prices_refreshed": false,
+  "prior_126_prices_preserved": true,
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
