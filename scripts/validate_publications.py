@@ -131,14 +131,29 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 369, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 371, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.168'
+    assert latest['version'] == '1.169'
     assert latest['date'] == '2026-11-13'
-    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r9.html'
-    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r9-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r8.html'
+    assert latest['path'] == 'research/2026-11-13/supplier-followup-20261113-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-13/supplier-followup-20261113-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-13/supplier-followup-20261113-r9.html'
+
+    # R169: independently observed CODASMS SMS reseller approval terms are not Plus supply authorization.
+    assert by_id['gpt-source-followup-r169-20261113']['url'].endswith('supplier-followup-20261113-r10.html')
+    assert by_id['gpt-source-followup-r169-20261113-evidence']['url'].endswith('supplier-followup-20261113-r10-evidence.json')
+    r169 = json.loads((ROOT / 'dist/research/2026-11-13/supplier-followup-20261113-r10-evidence.json').read_bytes())
+    assert r169['round'] == 169 and r169['site_version'] == '1.9.177' and len(r169['sources']) == 7
+    sms169 = r169['independent_sms_reseller_candidate']
+    assert sms169['exact_openai_service_code'] is None
+    assert sms169['exact_openai_single_sms_reseller_cost_usd'] is None
+    assert sms169['reseller_approval_required'] is True
+    assert sms169['written_resale_permission_required'] is True
+    assert sms169['minimum_initial_funding_usd'] is None
+    assert sms169['zero_upfront_fee_verified'] is False
+    assert sms169['actual_cash_refund_verified'] is False
+    assert all(v == 0 for v in r169['qualification_totals'].values())
 
     # R143: Apple recovery may cause double charge, not merchant payment test.
     assert by_id['gpt-source-followup-r143-20261111']['url'].endswith('supplier-followup-20261111-r16.html')
