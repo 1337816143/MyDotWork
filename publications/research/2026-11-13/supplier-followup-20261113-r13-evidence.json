@@ -1,0 +1,155 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 172,
+  "site_version": "1.9.180",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "核实2026-11-13 AIBulk API 1.7.0 Free账户限制，补查Go升级准确SKU与11月4日历史在期Plus续费规则。全部仅商家公开网页，未经下单或实际API验证。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_findings": {
+    "merchant": "AIBulk",
+    "free_to_plus_sku": {
+      "stable_id": "prod_chatgpt_plus",
+      "slug": "chatgpt-plus",
+      "url": "https://aibulk.uk/p/chatgpt-plus",
+      "name": "ChatGPT Plus (1 Month)",
+      "advertised_lv1_usd_per_item_month": 17.99,
+      "price_kind": "guest LV1 retail; USDT/USDC final fee unknown",
+      "eligible_current_plan": "Free",
+      "go_eligible": false,
+      "active_plus_eligible": false,
+      "complete_session_json_required": true,
+      "merchant_claim_30day_warranty": true
+    },
+    "go_to_plus_sku": {
+      "stable_id": "prod_chatgpt_plus_subscribed",
+      "slug": "chatgpt-plus-subscribed",
+      "url": "https://aibulk.uk/p/chatgpt-plus-subscribed",
+      "name": "ChatGPT Plus for Go Accounts (1 Month)",
+      "advertised_lv1_usd_per_item_month": 19.99,
+      "price_kind": "guest LV1 retail; USDT/USDC final fee unknown",
+      "prior_name": "ChatGPT Plus for Subscribed Accounts",
+      "merchant_rename_date": "2026-11-04",
+      "id_and_slug_stable": true,
+      "merchant_claim_no_price_change_on_rename": true,
+      "eligible_current_plan": "Go",
+      "go_to_plus_immediate": true,
+      "remaining_go_days_preserved": false,
+      "active_plus_eligible": false,
+      "complete_session_json_required": true,
+      "merchant_claim_30day_warranty": true
+    },
+    "api_v170_change": {
+      "merchant_claim_release_date": "2026-11-13",
+      "version": "1.7.0",
+      "sku": "prod_chatgpt_plus",
+      "failure_code": "account_plan_not_free",
+      "nonfree_http_status": 400,
+      "go_channel_no_longer_covers": true,
+      "code_consumed_on_rejection": false,
+      "api_implementation_independently_tested": false
+    },
+    "earlier_renewal_change": {
+      "merchant_claim_rule_date": "2026-11-04",
+      "same_tier_active_plus_http_status": 409,
+      "error_code": "cover_unavailable",
+      "coverConsent_true_bypass": false,
+      "code_consumed": false,
+      "can_retry_after_expiry": true,
+      "api_response_independently_tested": false
+    },
+    "cost_and_authority": {
+      "lv1_is_retail": true,
+      "lv2_threshold_spend_plus_balance_usd": 500,
+      "actual_one_item_lv2_to_lv5_plus_wholesale_cost_usd": null,
+      "crypto_fee_usd": null,
+      "fx_fee_usd": null,
+      "valid_china_vat_invoice_type": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "vat_invoice_issuer": null,
+      "business_entity_verified": null,
+      "payment_receiver_verified": null,
+      "all_required_fees_and_valid_china_vat_cny": null,
+      "formal_openai_resale_authorization_verified": false,
+      "qualified_wholesale_upstream": false,
+      "actual_delivery_success_verified": false
+    },
+    "impact": "Go不能使用US$17.99 Free SKU，必须使用US$19.99 Go升级SKU且损失剩余Go日期；已在期Plus两SKU都不能保证提前同级续费。销售页面及API自述未经真实账户测试。"
+  },
+  "independent_sms": {
+    "chatgpt_web_sms_success_verified": false,
+    "codex_desktop_sms_success_verified": false,
+    "first_api_key_sms_success_verified": false,
+    "sms_number_holding_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "apple_or_session_automatically_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://aibulk.uk/developers/api",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-11-13 (API 1.7.0); 2026-11-04 (old same-plan rule)",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_api_changelog",
+      "note": "API新错误码与历史同级续费规则；商家自述非真实调用"
+    },
+    {
+      "url": "https://aibulk.uk/p/chatgpt-plus",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_free_plus_sku",
+      "note": "Free-only US$17.99"
+    },
+    {
+      "url": "https://aibulk.uk/p/chatgpt-plus-subscribed",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_go_plus_sku",
+      "note": "Go升级专用US$19.99，Go余期不保留"
+    },
+    {
+      "url": "https://aibulk.uk/wholesale/",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-10-24",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_wholesale_page_recheck",
+      "note": "旧Lv2升级评分最低US$500，仍非实价"
+    },
+    {
+      "url": "https://aibulk.uk/terms",
+      "observed_on": "2026-11-13",
+      "source_date": "2026-10-24",
+      "access_status": "public_page_direct_read",
+      "evidence_type": "merchant_terms_recheck",
+      "note": "仅USDT/USDC等条款；无OpenAI正式授权证据"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "source_date": null,
+      "access_status": "public_page_direct_read",
+      "evidence_type": "openai_phone_scope",
+      "note": "仅官方机制，非SMS实测"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r12.html",
+  "historical_prices_refreshed": false,
+  "prior_126_prices_preserved": true,
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}

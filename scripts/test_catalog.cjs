@@ -1620,3 +1620,18 @@ assert.equal(r171.new_plus_reseller_candidate.actual_all_required_fees_and_valid
 assert.equal(r171.new_plus_reseller_candidate.formal_openai_supply_and_resale_authorization_verified,false);
 assert.equal(r171.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r171.qualification_totals.verified_phone_sms_successes,0);
+
+// R172: no misleading conversion of Free retail to Go upgrade/active Plus wholesale.
+const r172cat=d.records.find(x=>x.id==='gpt-source-followup-r172-20261113');
+const r172data=d.records.find(x=>x.id==='gpt-source-followup-r172-20261113-evidence');
+assert(r172cat&&r172data&&r172cat.url.endsWith('supplier-followup-20261113-r13.html'));
+const r172=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r13-evidence.json'),'utf8'));
+assert.equal(r172.round,172);assert.equal(r172.site_version,'1.9.180');assert.equal(r172.sources.length,6);
+assert.equal(r172.new_findings.free_to_plus_sku.advertised_lv1_usd_per_item_month,17.99);
+assert.equal(r172.new_findings.go_to_plus_sku.advertised_lv1_usd_per_item_month,19.99);
+assert.equal(r172.new_findings.go_to_plus_sku.remaining_go_days_preserved,false);
+assert.equal(r172.new_findings.api_v170_change.nonfree_http_status,400);
+assert.equal(r172.new_findings.earlier_renewal_change.same_tier_active_plus_http_status,409);
+assert.equal(r172.new_findings.cost_and_authority.all_required_fees_and_valid_china_vat_cny,null);
+assert.equal(r172.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r172.qualification_totals.verified_phone_sms_successes,0);

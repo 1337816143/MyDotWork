@@ -4126,6 +4126,28 @@
       "summary": "10条商家/官方原始URL，Lv1零售与更高阶门槛分开，付款/税票/授权费用null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r172-20261113",
+      "title": "GPT源头第172轮 · AIBulk Free与Go升级资格变更",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r13.html",
+      "updatedAt": "2026-11-13",
+      "summary": "11月13日API v1.7.0 Free-only收紧；Go升级专用US$19.99，Plus在期不可同级提前续费；发票和授权待核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r172-20261113-evidence",
+      "title": "第172轮 · AIBulk 两准确SKU与API续费证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r13-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "6条商家及官方来源，区分Free US$17.99与Go US$19.99、11月13日错误码与11月4日在期Plus规则，费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
