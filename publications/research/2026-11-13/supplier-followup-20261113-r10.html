@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPT 源头调研第169轮 · CODASMS SMS转售渠道条件</title><style>body{font:16px/1.75 system-ui,"Microsoft YaHei",sans-serif;max-width:940px;margin:auto;padding:20px;background:#f3f6fa;color:#203247}section{background:#fff;padding:20px;margin:16px 0;border:1px solid #dbe3ec;border-radius:9px}table{width:100%;border-collapse:collapse}td,th{padding:9px;border:1px solid #dbe3ec;text-align:left;vertical-align:top}th{background:#eef4f9}a{color:#17649b;overflow-wrap:anywhere}</style></head><body>
+<p><a href="../../dashboard/index.html">工作台</a> · <a href="../../index.html">总库</a> · <a href="supplier-followup-20261113-r10-evidence.json">结构化证据JSON</a> · <a href="supplier-followup-20261113-r9.html">第168轮</a></p>
+<h1>GPT源头增量核查 · 第169轮 · 2026-11-13</h1>
+<section><h2>新线索：有转售申请与API的独立SMS供应平台</h2><p>直接读取<a href="https://codasms.com/reseller">CODASMS转售页</a>、<a href="https://codasms.com/docs/api">API v1文档</a>、<a href="https://codasms.com/acceptable-use">转售规则</a>及<a href="https://codasms.com/terms">条款</a>。商家宣传其短信服务目录包括ChatGPT，支持白标与自行零售定价，但转售必须申请、审批并取得书面许可，而且需要先向余额账户充值。<strong>尚无实际批准书、供货合同、可购OpenAI准确SKU或进价</strong>。SMS转售权限不等于OpenAI Plus订阅供货授权。</p>
+<table><tr><th>具体核查项目</th><th>证据与缺口</th></tr>
+<tr><td>准确OpenAI服务与成本</td><td>API目录须使用经审批的密钥读取；具体国家/号码类型/单次价格及代理成本<strong>null</strong>。页面示例顾客付USD1.20/代理成本USD0.80仅为模拟商业示意，<strong>不得作为OpenAI SKU报价</strong>。</td></tr>
+<tr><td>前置费用与供货</td><td>需首笔预充余额，最低首充USD金额及另外的代理费<strong>null</strong>，因此未证明无前置费。API宣称60次请求/分钟，美元分计价，价格下单时确定，需幂等请求标识。</td></tr>
+<tr><td>号码持有与属性</td><td>条款明确是可能回收的共享临时号码，单次收码窗口20分钟；租号另有产品但OpenAI准确期限/费用<strong>null</strong>。真实移动运营商实体卡、非VoIP及再次接码能力均未独立验真。</td></tr>
+<tr><td>经营、税票与授权</td><td>商家自称尼日利亚注册CODASMS TECHNOLOGIES；未取得登记证据、实际收款主体、有效中国增值税票据或正式转售批准。可能的书面SMS转售许可不能证明OpenAI Plus官方供货资格。</td></tr></table></section>
+<section><h2>接码退款存在现金回收风险</h2><p><a href="https://codasms.com/refunds">退款政策</a>及<a href="https://codasms.com/docs/api">API文档</a>宣称：20分钟未收短信则将订单金额自动返还到<strong>站内预付余额</strong>，并非原路现金退回；已收到短信但OpenAI拒绝号码或验证失败，通常<strong>不退款</strong>。充值余额通常不能提现。退款与条款自标更新日期2026-06-19，本次只是2026-11-13首次读到，<strong>不代表今日发生政策更改</strong>。没有真实订单、原路退款或成功接码。</p></section>
+<section><h2>ChatGPT网页、Codex、API与Plus采购结论</h2><p>按<a href="https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like">OpenAI官方手机号说明</a>，ChatGPT通常不强制手机，Codex桌面可能要求，首次API Key生成需要且VoIP不支持。CODASMS在这三个场景均<strong>没有独立成功实测</strong>，并非Apple内购或Session交付自动绑号的证据。既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay没有新的可信含税批发授权闭环，本轮不刷新其旧价格。</p>
+<p><strong>符合本人原号、单件单月、无代理前置费、Plus含支付及有效中国增值税票费≤¥170的已核实批发上游仍为0家。</strong> Plus实付0、中国有效VAT验票0、手机号验证成功实测0。未付款、下单、联系商家、申请代理或交账户密码/Session/Token。</p></section>
+</body></html>
