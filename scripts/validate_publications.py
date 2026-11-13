@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 383, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 385, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.175'
+    assert latest['version'] == '1.176'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r2.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r3.html'
 
     # R170: public $0.01 OpenAI SMS offer has mandatory $40 nonwithdrawable prepay.
     assert by_id['gpt-source-followup-r170-20261113']['url'].endswith('supplier-followup-20261113-r11.html')
