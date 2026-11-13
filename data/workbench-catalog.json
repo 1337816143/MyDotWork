@@ -4038,6 +4038,28 @@
       "summary": "两项一方页面准确SKU及11条原始URL/访问结果；号码属性、真实退款与验证成功未核，合格Plus批发仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r168-20261113",
+      "title": "GPT源头第168轮 · VirtualSMS OpenAI按国接码和退款仅返站内余额",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r9.html",
+      "updatedAt": "2026-11-13",
+      "summary": "首次读VirtualSMS原站OpenAI单次号菲律宾USD0.11起、英国USD0.13起；充值USD2.50起/卡USD5起；无SMS商称退仅返不可提现余额，非现金退款。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r168-20261113-evidence",
+      "title": "第168轮 · VirtualSMS准确OpenAI国家/单次价、入金门槛与退款证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r9-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "6条原URL直接读取、国家起价和美国null、退款2/20分钟与退站内余额、未实测和Plus批发缺口分别记录。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
