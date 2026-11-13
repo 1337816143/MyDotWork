@@ -1555,3 +1555,22 @@ assert(r165.qualification_totals.verified_plus_wholesale_upstreams===0);
 assert(r165.qualification_totals.verified_real_plus_purchases===0);
 assert(r165.qualification_totals.verified_valid_china_vat_invoices===0);
 assert(r165.qualification_totals.verified_phone_sms_successes===0);
+
+
+// R168: VirtualSMS is a first-party independent SMS retail observation, not verified Plus wholesale or cash-refunded SMS.
+const r168cat=d.records.find(x=>x.id==='gpt-source-followup-r168-20261113');
+const r168data=d.records.find(x=>x.id==='gpt-source-followup-r168-20261113-evidence');
+assert(r168cat && r168data && r168cat.url.endsWith('supplier-followup-20261113-r9.html'));
+const r168=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-13/supplier-followup-20261113-r9-evidence.json'),'utf8'));
+assert.equal(r168.round,168);assert.equal(r168.site_version,'1.9.176');
+assert.equal(r168.sources.length,6);
+assert.equal(r168.independent_sms_candidate.merchant_displayed_country_starting_prices[0].price_usd_from,0.11);
+assert.equal(r168.independent_sms_candidate.merchant_displayed_country_starting_prices[1].price_usd_from,0.13);
+assert.equal(r168.independent_sms_candidate.merchant_displayed_country_starting_prices[4].price_usd_from,null);
+assert.equal(r168.independent_sms_candidate.minimum_balance_topup_usd_from,2.5);
+assert.equal(r168.independent_sms_candidate.minimum_card_topup_usd_from,5);
+assert.equal(r168.independent_sms_candidate.no_sms_refund_destination,'nonwithdrawable platform balance; NOT original cash/crypto payment');
+assert.equal(r168.independent_sms_candidate.actual_chosen_sku_checkout_price_usd,null);
+assert.equal(r168.independent_sms_candidate.actual_openai_verification_success,false);
+assert.equal(r168.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r168.qualification_totals.verified_phone_sms_successes,0);
