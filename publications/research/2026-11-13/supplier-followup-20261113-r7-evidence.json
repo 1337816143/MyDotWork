@@ -1,0 +1,129 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 166,
+  "site_version": "1.9.174",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "首次未登录访客浏览器直接读取16688老源头AI的准确原号Plus SKU G25949013。未付款支付手续费、商称开票/对公5%和量大谈价不证明真实含票批发采购，未实测履约。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "merchant_display_name": "老源头AI--可开发票可对公--量大谈价",
+    "merchant_product_id": "G25949013",
+    "original_product_url": "https://www.16688.com.cn/goods/G25949013",
+    "merchant_shop_handle_observed": "LYTAI",
+    "discovery_shop_id": "16688-S332095",
+    "same_legal_entity_verified": false,
+    "sku": "【官方充值】Codex Plus 1个月丨菲区正价代充丨带账单丨质保丨无法覆盖",
+    "currency": "CNY",
+    "unit": "one ChatGPT Plus item, one month",
+    "display_price_cny": 116.98,
+    "unpaid_checkout_preview_payment_fee_cny": 3.2754,
+    "unpaid_arithmetic_subtotal_cny_before_rounding": 120.2554,
+    "actual_paid_checkout_total_cny": null,
+    "merchant_claim_invoicing_and_corporate_payment_available": true,
+    "merchant_claim_invoice_or_corporate_payment_extra_fee_percent": 5,
+    "invoice_fee_base_verified": false,
+    "merchant_claim_invoice_flow_is_not_standard_checkout": true,
+    "vat_invoice_type": null,
+    "china_vat_invoice_issuer_entity": null,
+    "china_vat_invoice_fee_cny": null,
+    "real_payment_recipient_entity": null,
+    "real_vat_invoice_verified": false,
+    "real_vat_all_fees_included_total_cny": null,
+    "merchant_claim_volume_wholesale_and_offsite_agent_backend": true,
+    "one_unit_wholesale_price_cny": null,
+    "wholesale_minimum_quantity": null,
+    "agent_upfront_fee_cny": null,
+    "wholesale_authorization_verified": false,
+    "merchant_title_cannot_cover_active_subscription": true,
+    "merchant_body_mentions_active_subscription_renewal": true,
+    "renewal_terms_conflict_unresolved": true,
+    "session_token_must_be_obtained_after_chatgpt_login": true,
+    "works_before_first_web_login_sms_verified": false,
+    "merchant_claim_card_code_auto_delivery": true,
+    "warranty_exact_days": null,
+    "merchants_refund_cash_tested": false,
+    "merchants_fulfillment_tested": false,
+    "merchant_claims_risk_and_refund_exclusions": [
+      "若OpenAI风控影响充值，可能需重提或更换账号",
+      "因违反使用规则被封号，商称不退款"
+    ],
+    "legitimate_resale_authorization_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/goods/G25949013",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_unlogged_visitor_browser_read",
+      "evidence_type": "merchant_statements_and_unpaid_payment_preview",
+      "note": "准确SKU单件月卡¥116.98、平台手续费预览¥3.2754；另称开票/对公5%，不同于普通平台下单；必须先登录获取Session，续费文案矛盾。"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S332095",
+      "observed_on": "2026-11-13",
+      "access_status": "failed_to_load_current_content",
+      "evidence_type": "access_failure_no_price_update",
+      "note": "未取得店铺法人或经营信息；不能认定倒闭或将S332095和LYTAI视为同一法人。"
+    },
+    {
+      "url": "https://ai.pricememo.cn/shops/16688-S332095",
+      "observed_on": "2026-11-13",
+      "access_status": "secondary_search_discovery_only",
+      "evidence_type": "aggregator_index_not_merchant",
+      "note": "仅用于发现线索，不证明上游授权、准确调价日期或合法税票。"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_page_read",
+      "evidence_type": "old_terms_recheck",
+      "note": "Plus ¥139.99，商称开票另¥10，其他必要费用、有效中国VAT未核。"
+    },
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_page_read",
+      "evidence_type": "old_terms_recheck",
+      "note": "Codex接码¥4/次，Members only；无新实测。"
+    },
+    {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_page_read",
+      "evidence_type": "old_terms_recheck",
+      "note": "引路鲸需¥3000一次性进货代理入驻费，批发价格登录代理后台后可见；条件与历史一致。"
+    },
+    {
+      "url": "https://getgpt.pro/",
+      "observed_on": "2026-11-13",
+      "access_status": "original_merchant_page_read",
+      "evidence_type": "already_archived_recheck",
+      "note": "个人不支持税务发票，企业批量另谈，Plus ¥179/月。上述均已归档，不刷新独立历史报价或称本日政策生效。"
+    }
+  ],
+  "independent_phone_verification": {
+    "new_verified_sms_service": false,
+    "chatgpt_web_sms_success_count": 0,
+    "codex_sms_success_count": 0,
+    "first_api_key_sms_success_count": 0,
+    "number_holding_days": null,
+    "nonuser_failure_cash_refund_verified": null,
+    "session_or_apple_payment_automatically_binds_phone": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r6.html"
+}
