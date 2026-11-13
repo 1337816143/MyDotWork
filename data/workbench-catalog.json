@@ -3906,6 +3906,28 @@
       "summary": "3条一方实读来源与二手发现索引；Plus收银预览、商称¥50开票、真实税票/授权缺口以及Codex一次性¥6接码分别保存。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r162-20261113",
+      "title": "GPT源头第162轮 · 52XUEAI Plus单月卡费用与中国VAT缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r3.html",
+      "updatedAt": "2026-11-13",
+      "summary": "新实读52XUEAI G37392923菲区原号Plus一月¥116，支付手续费未付款预览¥3.248、合计¥119.25；本Plus SKU有效中国VAT发票、出票主体、真实批发授权均未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r162-20261113-evidence",
+      "title": "第162轮 · 52XUEAI G37392923单件支付及中国票据缺口证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r3-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "2条首次访客实读商家原始URL加1条二手发现索引；¥116／件、¥3.248手续费未付款预览，票费、收款/出票法人、批发价null，真实采购与SMS 0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

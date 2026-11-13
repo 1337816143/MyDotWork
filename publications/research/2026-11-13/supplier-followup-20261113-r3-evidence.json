@@ -1,0 +1,111 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 162,
+  "site_version": "1.9.170",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "首次以访客图形浏览16688商户52XUEAI店铺和Plus准确SKU；观察是当前网页和未付款收银预览，不断言正式调价、真正批发或中国VAT发票。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "merchant": {
+    "name": "52XUEAI-可开发票",
+    "store_url": "https://www.16688.com.cn/shop/S937885",
+    "platform": "16688",
+    "store_location_displayed": "日本 Kanagawa",
+    "platform_claim_seller_qualification_reviewed": true,
+    "registered_legal_operator": null,
+    "actual_payment_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "one_unit_wholesale_price_cny": null,
+    "upfront_agent_fee_cny": null,
+    "formal_resale_authorization_verified": false,
+    "wholesale_contract_verified": false
+  },
+  "plus": {
+    "sku": "G37392923",
+    "url": "https://www.16688.com.cn/goods/G37392923",
+    "title": "官方订阅-G-PLUS充值一个月直充",
+    "merchant_claim_philippines_plus_one_month": true,
+    "merchant_display_cny_per_item_month": 116,
+    "unpaid_checkout_preview_payment_fee_cny": 3.248,
+    "unpaid_checkout_preview_total_cny": 119.25,
+    "unrounded_arithmetic_total_cny": 119.248,
+    "merchant_claim_cannot_cover_active_plus": true,
+    "merchant_claim_automatic_card_delivery_via_email": true,
+    "merchant_claim_redeem_with_account_details": true,
+    "session_or_token_requirement": null,
+    "merchant_claim_warranty": "掉订联系客服核实；封号、风控、账号异常等不保",
+    "real_delivery_verified": false,
+    "real_refund_verified": false
+  },
+  "invoice": {
+    "store_name_claim_can_invoice": true,
+    "other_store_products_explicitly_label_invoice": true,
+    "this_plus_sku_eligible_for_chinese_vat_verified": false,
+    "merchant_claim_invoice_fee_cny": null,
+    "valid_china_vat_invoice_type": null,
+    "invoice_issuer_entity": null,
+    "invoice_verified": false,
+    "actual_all_in_with_valid_china_vat_cny": null
+  },
+  "wholesale": {
+    "single_retail_item_visible": true,
+    "wholesale_tier_or_unit_price_displayed": false,
+    "one_unit_wholesale_price_cny": null,
+    "upfront_agent_fee_cny": null,
+    "authorized_supplier_verified": false
+  },
+  "phone_verification": {
+    "new_independent_sms_sku_found_this_round": false,
+    "number_holding_days": null,
+    "failed_sms_cash_refund": null,
+    "chatgpt_web_success_verified": false,
+    "codex_success_verified": false,
+    "first_api_key_success_verified": false,
+    "plus_apple_session_auto_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/goods/G37392923",
+      "observed_on": "2026-11-13",
+      "status": "first_party_live_guest_browser_read",
+      "evidence_level": "merchant_sku_unpaid_checkout_preview",
+      "note": "Plus菲区一月卡密¥116/件，支付宝微信未付款支付费预览¥3.248、总额预览¥119.25"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S937885",
+      "observed_on": "2026-11-13",
+      "status": "first_party_live_guest_browser_read",
+      "evidence_level": "merchant_storefront_claim",
+      "note": "可开票为店铺名称和其他SKU标签；真实开票主体、有效中国VAT及本SKU票费未知，平台仅提示资质材料审核"
+    },
+    {
+      "url": "https://ai.pricememo.cn/shops/16688-S937885",
+      "observed_on": "2026-11-13",
+      "status": "secondary_discovery_index",
+      "evidence_level": "secondary_discovery_only",
+      "note": "只作为发现渠道，不作为最新价格证明"
+    }
+  ],
+  "unknown_costs": {
+    "valid_china_vat_invoice_fee_cny": null,
+    "valid_china_vat_all_in_cny": null,
+    "one_unit_wholesale_price_cny": null,
+    "upfront_agent_fee_cny": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r2.html",
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false
+}
