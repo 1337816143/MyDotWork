@@ -1690,3 +1690,21 @@ assert.equal(r176.official_verification_recheck.official_guarantees_plus_removes
 assert.equal(r176.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r176.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r176.historical_prices_refreshed,false);
+
+// R177: new SMS provider must not be conflated with Plus wholesale; mock checkout cannot qualify.
+const r177cat=d.records.find(x=>x.id==='gpt-source-followup-r177-20261114');
+const r177data=d.records.find(x=>x.id==='gpt-source-followup-r177-20261114-evidence');
+assert(r177cat&&r177data&&r177cat.url.endsWith('supplier-followup-20261114-r5.html'));
+const r177=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r5-evidence.json'),'utf8'));
+assert.equal(r177.round,177);assert.equal(r177.site_version,'1.9.185');assert.equal(r177.sources.length,11);
+assert.equal(r177.new_independent_sms_provider.minimum_wallet_funding_usd,10);
+assert.equal(r177.new_independent_sms_provider.rates.united_states.price_usd_per_otp_session,0.45);
+assert.equal(r177.new_independent_sms_provider.session_minutes,10);
+assert.equal(r177.new_independent_sms_provider.no_sms_within_ten_minutes.refund_destination,'bot_wallet_balance');
+assert.equal(r177.new_independent_sms_provider.fund_balance_cash_withdrawal_supported,null);
+assert.equal(r177.new_supplier_screens[0].actual_real_payment_support_confirmed,false);
+assert.equal(r177.new_supplier_screens[1].minimum_order_quantity,50);
+assert.equal(r177.new_supplier_screens[1].user_original_account_supported,false);
+assert.equal(r177.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r177.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r177.historical_prices_refreshed,false);
