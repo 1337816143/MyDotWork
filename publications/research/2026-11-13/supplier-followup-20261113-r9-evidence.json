@@ -1,0 +1,170 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 168,
+  "site_version": "1.9.176",
+  "date": "2026-11-13",
+  "observed_on": "2026-11-13",
+  "scope": "首次直接读取VirtualSMS OpenAI/ChatGPT专用一次短信产品、全站预充值、FAQ、退款政策及服务条款；仅为独立SMS零售服务，不是本人原号Plus批发供货，页面展示价/成功率均非实付与独立实测。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "independent_sms_candidate": {
+    "merchant": "VirtualSMS",
+    "sku": "OpenAI / ChatGPT one-time SMS verification activation by selected country",
+    "url": "https://virtualsms.io/buy/openai",
+    "currency": "USD",
+    "unit": "one SMS code receipt attempt (single-use activation)",
+    "merchant_displayed_country_starting_prices": [
+      {
+        "country": "Philippines",
+        "price_usd_from": 0.11,
+        "unit": "USD per SMS",
+        "offer_type": "from, not fixed checkout quote"
+      },
+      {
+        "country": "United Kingdom",
+        "price_usd_from": 0.13,
+        "unit": "USD per SMS",
+        "offer_type": "from, not fixed checkout quote"
+      },
+      {
+        "country": "Brazil",
+        "price_usd_from": 0.19,
+        "unit": "USD per SMS",
+        "offer_type": "from, not fixed checkout quote"
+      },
+      {
+        "country": "Indonesia",
+        "price_usd_from": 0.19,
+        "unit": "USD per SMS",
+        "offer_type": "from, not fixed checkout quote"
+      },
+      {
+        "country": "United States",
+        "price_usd_from": null,
+        "unit": "USD per SMS",
+        "offer_type": "live pricing only; no readable exact US rate"
+      }
+    ],
+    "actual_chosen_sku_checkout_price_usd": null,
+    "actual_country_stock_confirmed": null,
+    "minimum_balance_topup_usd_from": 2.5,
+    "minimum_card_topup_usd_from": 5,
+    "payment_processing_fee_usd": null,
+    "minimum_initial_cash_outlay_usd": null,
+    "merchant_claim_non_voip_physical_sim": true,
+    "independently_verified_operator_sim": null,
+    "merchant_claim_single_use_number_released_after_code": true,
+    "merchant_faq_activation_window_max_minutes": 20,
+    "merchant_refund_policy_self_marked_last_updated": "2026-10-02",
+    "merchant_marketing_cancel_after_minutes": 2,
+    "merchant_refund_policy_cancel_after_minutes": 2,
+    "merchant_refund_policy_automatic_close_max_minutes": 20,
+    "no_sms_refund_destination": "nonwithdrawable platform balance; NOT original cash/crypto payment",
+    "merchant_policy_received_any_sms_not_refundable": true,
+    "merchant_policy_wrong_code_merchant_fault_requires_review_within_hours": 24,
+    "account_balance_withdrawable_as_cash": false,
+    "merchant_rental_generic_starting_usd_per_day": 0.25,
+    "rental_duration_option_days_min": 1,
+    "rental_duration_option_days_max": 30,
+    "precise_openai_compatible_country_rental_unit_price_usd": null,
+    "actual_controlled_number_holding_days": null,
+    "actual_sms_received": false,
+    "actual_openai_verification_success": false,
+    "sms_received_but_openai_refused_cash_refund_verified": false,
+    "actual_cash_refund_verified": false,
+    "merchant_claims_openai_success_rate_percent_over": 90,
+    "independent_success_rate": null,
+    "session_or_token_required_by_sms_vendor": null,
+    "chatgpt_web_verification_success_verified": false,
+    "codex_desktop_verification_success_verified": false,
+    "first_api_key_verification_success_verified": false,
+    "upfront_topup_is_not_one_sms_purchase_price": true
+  },
+  "merchant_text_discrepancy": {
+    "product_page": "2分钟无短信可点击Cancel，营销语写instant refund/full refund",
+    "actual_refund_policy": "2分钟后可主动取消（条件：尚无SMS），无人手动取消最长20分钟自动退站内余额；押金原则上不可提现",
+    "confirmed_change_effective_date": null,
+    "distinction": "不同网页描述口径，不等于已证商家政策今日变更或成功原路现金退款"
+  },
+  "phone_verification_official": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_registration_usually_requires_phone": false,
+    "codex_chatgpt_desktop_may_require_phone": true,
+    "first_api_key_requires_phone": true,
+    "voip_supported": false,
+    "third_party_sms_received_guarantees_verification": false,
+    "apple_or_plus_or_session_auto_binds_phone": false,
+    "note": "商家的ChatGPT注册普遍必须手机等营销描述不可替代OpenAI官方规则；号码应为用户可控制的合规手机号码"
+  },
+  "sources": [
+    {
+      "url": "https://virtualsms.io/buy/openai",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "merchant_advertised_country_starting_price_and_marketing",
+      "note": "OpenAI单次短信按国家from价：菲律宾USD0.11、英国USD0.13、巴西/印尼USD0.19；美国仅Live pricing；无实付及准确US SKU"
+    },
+    {
+      "url": "https://virtualsms.io/pricing",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "minimum_balance_deposit_and_generic_rental",
+      "note": "一般最低充值USD2.50；所有服务租号USD0.25/日起为起价，非OpenAI精确SKU"
+    },
+    {
+      "url": "https://virtualsms.io/faq",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "payment_method_minimum_and_holding_rules",
+      "note": "银行卡最低入金USD5，手续费由结算页决定；一次性号最多20分钟，一个验证码；退站内余额"
+    },
+    {
+      "url": "https://virtualsms.io/refund-policy",
+      "observed_on": "2026-11-13",
+      "merchant_page_self_marked_updated": "2026-10-02",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "refund_terms",
+      "note": "2分钟后未收SMS可主动取消，最长20分钟自动退不可提现站内余额，收到SMS不自动退；租期20分钟后通常不可退"
+    },
+    {
+      "url": "https://virtualsms.io/terms",
+      "observed_on": "2026-11-13",
+      "merchant_page_self_marked_updated": "2026-10-02",
+      "access_status": "direct_first_party_page_read",
+      "evidence_type": "general_merchant_terms",
+      "note": "收码服务单次最多20分钟；未经书面许可不得转售该服务；仅为零售接码服务"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-13",
+      "access_status": "direct_official_help_read",
+      "evidence_type": "official_scope_recheck_existing_policy",
+      "note": "ChatGPT通常无需手机号；Codex桌面可能要求；首次API Key要求；VoIP不支持"
+    }
+  ],
+  "plus_wholesale_new_qualified_upstreams": 0,
+  "plus_purchase_gap": {
+    "merchant_verified_legal_entity": null,
+    "actual_payment_entity": null,
+    "valid_china_vat_issuer": null,
+    "valid_china_vat_fee_cny": null,
+    "actual_all_required_fees_included_cny": null,
+    "wholesale_one_unit_cost_cny": null,
+    "resale_authorization_verified": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "verified_real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "purchase_or_login_attempted": false,
+  "merchant_contacted": false,
+  "account_credentials_submitted": false,
+  "previous_report": "https://1337816143.github.io/MyDotWork/research/2026-11-13/supplier-followup-20261113-r8.html"
+}
