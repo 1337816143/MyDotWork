@@ -4060,6 +4060,28 @@
       "summary": "6条原URL直接读取、国家起价和美国null、退款2/20分钟与退站内余额、未实测和Plus批发缺口分别记录。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r169-20261113",
+      "title": "GPT源头第169轮 · CODASMS短信转售API审批及退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r10.html",
+      "updatedAt": "2026-11-13",
+      "summary": "首次读取CODASMS公开白标代理/API规则：审批后预存余额，OpenAI准确SKU及代理价null；无码退站内余额，收到码被拒不退，未实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r169-20261113-evidence",
+      "title": "第169轮 · CODASMS短信代理审批、API与退款证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-13/supplier-followup-20261113-r10-evidence.json",
+      "updatedAt": "2026-11-13",
+      "summary": "7条一方/官方原始URL；模拟示意成本非真实OpenAI单件代理报价，最低入金、转售批准和SMS成功均未核。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -1,3 +1,11 @@
+## 1.9.177 · 2026-11-13
+
+- 第169轮首次直接核读CODASMS独立手机号验证平台的白标转售原页、审批制Reseller API v1、退款和条款等7条一方/官方原URL。平台商称服务目录包括ChatGPT，但转售需要申请审批、书面批准及首笔预存余额；准确OpenAI国家/SKU/零售价/代理进价、最低入金与其他前置费均null。商家USD1.20顾客价、USD0.80成本只是示意例子，不能冒充真实OpenAI批发SKU或零门槛代理证明。
+- API文档商称单次SMS 20分钟窗口、60请求/分钟，价格下单时确定；条款承认共享临时可回收号码。无短信则退款至站内预付余额而非原路现金，短信已收到但OpenAI拒号不保退，预充值通常不能提现。商称尼日利亚CODASMS TECHNOLOGIES运营，工商实体、收款/出票主体和有效中国VAT、号码运营商/非VoIP及真实退款均未核；条款自标2026-06-19，本轮11月13日首次实读不等于今日调价或政策变化。
+- 这是独立SMS转售候选，不是ChatGPT Plus合法供货源；ChatGPT网页、Codex桌面和首API Key成功实测均0，普通Apple、Session/Token、Plus代充均不意味着自动绑定手机号。CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay未有可信新含票及授权闭环，旧价格不刷新。已核单件原号Plus、免前置费及含全部支付与有效中国VAT≤¥170批发源仍0、真实Plus采购0、有效VAT验真0、SMS成功0。
+- 本轮只追加r169 HTML/JSON、精确哈希白名单、project-1目录、总库入口、VERSION及回归断言；保留历史126条报价与前168轮报告原字节。未付款、下单、申请代理、联系商家或交账号秘密。
+- 来源：https://codasms.com/ 、https://codasms.com/reseller 、https://codasms.com/docs/api 、https://codasms.com/refunds 、https://codasms.com/terms 、https://codasms.com/acceptable-use ；OpenAI官方：https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.176 · 2026-11-13
 
 - 第168轮首次直接读取VirtualSMS OpenAI/ChatGPT接码原商品、价格、FAQ、退款和条款共5条一方URL，另核OpenAI官方手机号边界。按国家单次一次性短信广告起价：菲律宾US$0.11、英国US$0.13、巴西/印尼US$0.19；美国只写Live pricing，准确美国单价null。这些都是“from”零售网页起价，不是某一订单已证实收银价、成交价或真实短信成功；实体SIM、运营商与营销90%+成功率未独立验证。
