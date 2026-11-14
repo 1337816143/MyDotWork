@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 411, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 413, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.188'
+    assert latest['version'] == '1.190'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r16.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r16-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r15.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r18.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r18-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r17.html'
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
@@ -2210,6 +2210,24 @@ def validate_publications():
     assert c189['is_qualified_verified_wholesale_upstream'] is False
     assert r189['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r189['actual_purchase_or_sms_test_performed'] is False
+
+    # R190: distinct CatFK vendor, invoice per-item threshold and Codex-only SMS durations cannot qualify as verified VAT wholesaler.
+    assert by_id['gpt-source-followup-r190-20261114']['url'].endswith('supplier-followup-20261114-r18.html')
+    assert by_id['gpt-source-followup-r190-20261114-evidence']['url'].endswith('supplier-followup-20261114-r18-evidence.json')
+    r190 = json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r18-evidence.json').read_bytes())
+    assert r190['round'] == 190 and r190['site_version'] == '1.9.198'
+    c190 = r190['candidate']
+    assert c190['display_price_cny_per_one_unit'] == 148 and c190['merchant_invoice_threshold_item_price_greater_than_cny'] == 500
+    assert c190['plus_item_eligible_for_invoice_under_stated_rule'] is False
+    assert c190['actual_all_required_cost_including_china_vat_cny'] is None
+    assert c190['official_openai_resale_authorization_verified'] is False
+    assert c190['existing_paid_subscription_supported_merchant_claim'] is True
+    assert [s['sku_id'] for s in r190['sms']] == ['7i3z80','pncrw0','yjs2ym']
+    assert r190['sms'][1]['description_minimum_duration_days_claim'] == 10
+    assert r190['sms'][1]['duration_conflict'] is True
+    assert r190['sms'][1]['chatgpt_web_registration_supported_claim'] is False
+    assert all(v == 0 for v in r190['qualification_totals'].values())
+    assert r190['account_secrets_submitted'] is False and r190['actual_purchase_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
