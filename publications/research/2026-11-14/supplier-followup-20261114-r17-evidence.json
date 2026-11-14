@@ -1,0 +1,131 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 189,
+  "site_version": "1.9.197",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接读取GetPlus个人Plus美元结算与企业发票加价、企业采购最低5个和服务地区排除条款；零售和企业批购不是已核单件批发，企业发票不等于已验真中国VAT。未付款、未验票、未接码。",
+  "criteria": {
+    "own_account": true,
+    "one_month": true,
+    "one_unit": true,
+    "no_agent_upfront_fee": true,
+    "maximum_verified_all_fees_valid_china_vat_cny": 170
+  },
+  "candidate": {
+    "name": "GetPlus AI",
+    "category": "third_party_retail_and_separate_enterprise_bulk_not_verified_wholesale",
+    "original_sku_url": "https://www.getplus.ai/chatgpt-plus-chongzhi",
+    "merchant_sku_name": "ChatGPT Plus / PLUS 一个月 / 本人原号 / Free状态",
+    "merchant_sku_id": null,
+    "currency_of_charge": "USD",
+    "displayed_base_usd_per_account_month": 22.14,
+    "displayed_cny_approx_reference": 148,
+    "merchant_invoice_option_extra_usd": 2.1,
+    "derived_usd_total_with_invoice_option": 24.24,
+    "terms_official_usd_reference": 20,
+    "terms_max_service_fee_usd": 4.24,
+    "terms_max_total_usd": 24.24,
+    "actual_stripe_checkout_currency": null,
+    "actual_stripe_checkout_amount": null,
+    "unknown_bank_or_fx_fees_cny": null,
+    "invoice_type_merchant_claim": "企业发票（个人付款页）；单独企业批量页声称普通票/专票、专票税率1%或6%，不代表单件中国VAT",
+    "invoice_valid_china_vat_verified": false,
+    "invoice_issuer_tax_id": null,
+    "invoice_real_authenticity_tested": false,
+    "complete_actual_china_vat_cny": null,
+    "merchant_claim_operating_entity": "HONG KONG AIGC LIMITED（香港大模型有限公司）",
+    "operating_entity_independently_verified": false,
+    "payment_settlement_entity": null,
+    "real_invoice_issuer": null,
+    "merchant_declares_not_openai_authorized": true,
+    "official_supply_or_resale_authorization_verified": false,
+    "individual_minimum_quantity": 1,
+    "enterprise_minimum_quantity_claim": 5,
+    "enterprise_unit_wholesale_price_usd": null,
+    "enterprise_invoice_rate_claim": "专票1%或6%（仅企业采购页口径；具体须另行确认）",
+    "single_unit_wholesale_price_usd": null,
+    "reseller_entry_fee_usd": null,
+    "merchant_terms_excludes_actual_mainland_china_users": true,
+    "merchant_terms_restrict_supported_locations": true,
+    "eligible_for_in_mainland_customer_by_terms": false,
+    "requires_free_account_claim": true,
+    "existing_paid_membership_renewal_supported_claim": false,
+    "check_order_phone_not_openai_binding_claim": true,
+    "temporary_session_may_be_required_after_purchase_claim": true,
+    "session_is_sensitive_secret": true,
+    "failed_topup_refund_original_method_merchant_claim": true,
+    "post_activation_ordinary_refund_merchant_claim": false,
+    "warranty_days_claim": 30,
+    "warranty_real_execution_verified": false,
+    "is_qualified_verified_wholesale_upstream": false
+  },
+  "independent_phone": {
+    "new_independent_phone_sku_read": false,
+    "chatgpt_web_success_tests": 0,
+    "codex_desktop_success_tests": 0,
+    "first_api_key_success_tests": 0,
+    "plus_or_apple_payment_auto_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://www.getplus.ai/chatgpt-plus-chongzhi",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_product_page",
+      "level": "merchant_display_not_paid",
+      "facts": "Plus one month for Free own account, USD22.14 and approximately CNY148, invoice option +USD2.10, 30-day merchant warranty, no paid subscription stacking; order contact phone not OpenAI phone; downstream activation may need temporary session."
+    },
+    {
+      "url": "https://www.getplus.ai/terms",
+      "observed_on": "2026-11-14",
+      "merchant_last_updated": "2026-10-11",
+      "status": "direct_merchant_terms",
+      "level": "merchant_claim_unverified",
+      "facts": "USD price binding, CNY merely reference; Plus service fee max USD4.24 and total max USD24.24; other bank/FX fees possible; no retroactive invoice election; no orders physically from Mainland China; free account; merchant Hong Kong entity unverified; refunds and warranty merchant claims."
+    },
+    {
+      "url": "https://www.getplus.ai/en/about",
+      "observed_on": "2026-11-14",
+      "merchant_last_updated": "2026-08-24",
+      "status": "direct_merchant_about",
+      "level": "merchant_self_identification",
+      "facts": "Claims operating entity HONG KONG AIGC LIMITED, registered address in Hong Kong, disclaims authorized OpenAI agency; independently unverified."
+    },
+    {
+      "url": "https://www.getplus.ai/qiye-caigou",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_enterprise_page",
+      "level": "merchant_claim_not_single_unit",
+      "facts": "Enterprise buying minimum 5, prices negotiated, invoices claimed general/special and special 1%/6%; this does not prove validity, single-unit eligibility, actual issuer or official resale authorization."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "status": "direct_official_rules",
+      "level": "official_policy_not_actual_sms_test",
+      "facts": "ChatGPT general registration not usually phone; Codex desktop may require; first API key requires; SMS or supported WhatsApp, no VoIP, no automatic binding via paying Plus."
+    }
+  ],
+  "other_suppliers_not_price_refreshed": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_126_prices_modified": false,
+  "previous_188_reports_modified": false
+}
