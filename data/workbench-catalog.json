@@ -4610,6 +4610,28 @@
       "summary": "2026-11-15直接核读的原始商家页面与变体ID；未知结算与税票费null，商家自述/推断/成交实测分开。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r194-20261115",
+      "title": "GPT源头第194轮 · 云枢AI Partner API批发资格核查",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r4.html",
+      "updatedAt": "2026-11-15",
+      "summary": "首次直接核读云枢AI自营商城和分销Partner API，账号专属报价与真实余额扣款有具体文档，但单件Plus批发、税票/授权均未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r194-20261115-evidence",
+      "title": "第194轮 · 统一API技术、Session与中国VAT证据缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r4-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "2026-11-15直接读取一方URL，技术接口与真采购区分；商品Loading，价/费用保持null；核实Plus批发和短信均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

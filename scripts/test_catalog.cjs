@@ -1948,3 +1948,15 @@ assert.equal(r193.new_retail_candidates[2].all_required_fees_with_valid_china_va
 assert.equal(r193.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r193.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r193.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);
+
+// R194: technical partner API does not establish one-unit wholesale price or VAT.
+const er194=d.records.find(x=>x.id==='gpt-source-followup-r194-20261115'),ed194=d.records.find(x=>x.id==='gpt-source-followup-r194-20261115-evidence');
+assert(er194&&ed194&&er194.url.endsWith('supplier-followup-20261115-r4.html'));
+const r194=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r4-evidence.json'),'utf8'));
+assert.equal(r194.round,194);assert.equal(r194.site_version,'1.9.202');
+assert.equal(r194.new_wholesale_system_candidate.partner_api.order_debits_real_balance,true);
+assert.equal(r194.new_wholesale_system_candidate.partner_api.one_unit_plus_purchase_eligible_verified,false);
+assert.equal(r194.new_wholesale_system_candidate.current_live_wholesale_one_unit_cny,null);
+assert.equal(r194.new_wholesale_system_candidate.valid_china_vat_invoice_total_cny,null);
+assert.equal(r194.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r194.qualification_totals.verified_phone_sms_successes,0);
