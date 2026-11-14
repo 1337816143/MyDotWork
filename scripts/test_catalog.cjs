@@ -21,7 +21,7 @@ assert(C.filter(d.records,{sort:'latest'},d.tasks).slice(-sites.length).every(r=
 assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=>r.updatedAt===null));
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
-assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r169-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r174-20261114-evidence','gpt-source-followup-r176-20261114-evidence','gpt-source-followup-r177-20261114-evidence','gpt-source-followup-r181-20261114-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
+assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r169-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r174-20261114-evidence','gpt-source-followup-r176-20261114-evidence','gpt-source-followup-r177-20261114-evidence','gpt-source-followup-r181-20261114-evidence','gpt-source-followup-r185-20261114-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
 assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['business-validation-20261004','task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 const w32=d.records.find(r=>r.id==='gpt-source-followup-r32-20261104');
@@ -1841,3 +1841,17 @@ assert.equal(r184.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r184.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r184.historical_126_prices_modified,false);
 assert.equal(r184.actual_purchase_or_sms_test_performed,false);
+
+// R185: don't conflate own-account manual retail with dealer redemption card.
+const entry185=d.records.find(x=>x.id==='gpt-source-followup-r185-20261114');
+const data185=d.records.find(x=>x.id==='gpt-source-followup-r185-20261114-evidence');
+assert(entry185&&data185&&entry185.url.endsWith('supplier-followup-20261114-r13.html'));
+const r185=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r13-evidence.json'),'utf8'));
+assert.equal(r185.round,185);assert.equal(r185.site_version,'1.9.193');
+assert.equal(r185.new_candidate.retail.display_cny_per_own_account_month,115);
+assert.equal(r185.new_candidate.wholesale_agent.agent_qualification_upfront_cny,20);
+assert.equal(r185.new_candidate.wholesale_agent.agent_supplier_display_cny_per_undisclosed_unit,120);
+assert.equal(r185.new_candidate.wholesale_agent.retail_sku_same_as_agent_sku_verified,false);
+assert.equal(r185.new_candidate.full_all_fees_valid_china_vat_cny,null);
+assert.equal(r185.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r185.actual_purchase_or_sms_test_performed,false);

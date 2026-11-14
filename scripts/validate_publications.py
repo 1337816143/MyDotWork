@@ -131,14 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 401, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 403, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.184'
+    assert latest['version'] == '1.185'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r12.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r12-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r11.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r13.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r13-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r12.html'
+
+    # R185 separate retail and agent SKU, upfront fee, no valid tax-paid upstream.
+    assert by_id['gpt-source-followup-r185-20261114']['url'] == '../research/2026-11-14/supplier-followup-20261114-r13.html'
+    assert by_id['gpt-source-followup-r185-20261114-evidence']['url'] == '../research/2026-11-14/supplier-followup-20261114-r13-evidence.json'
+    r185 = json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r13-evidence.json').read_bytes())
+    assert r185['round'] == 185 and r185['site_version'] == '1.9.193'
+    assert r185['new_candidate']['retail']['display_cny_per_own_account_month'] == 115
+    assert r185['new_candidate']['wholesale_agent']['agent_qualification_upfront_cny'] == 20
+    assert r185['new_candidate']['wholesale_agent']['agent_supplier_display_cny_per_undisclosed_unit'] == 120
+    assert r185['new_candidate']['wholesale_agent']['retail_sku_same_as_agent_sku_verified'] is False
+    assert r185['new_candidate']['full_all_fees_valid_china_vat_cny'] is None
+    assert r185['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r185['actual_purchase_or_sms_test_performed'] is False
 
     # R184: one-year prepayment, wallet-credit refunds and carrier/SMS compatibility remain seller claims.
     assert by_id['gpt-source-followup-r184-20261114']['url'].endswith('supplier-followup-20261114-r12.html')

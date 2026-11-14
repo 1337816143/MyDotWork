@@ -1,3 +1,11 @@
+## 1.9.193 · 2026-11-14
+
+- 第185轮首次直接核读AI Sivan 7个原URL，代理页自标2026-10-12旧发布时间，本轮观察11月14日：链动小铺代理资格需¥20一次性开通费并审核，“Plus供应商兑换卡密”代理挂牌¥120，最低下游零售价¥132且平台手续费另计。代理费不含卡密，直接不满足免前置费目标。卡密准确月份/渠道/可用账号、真正上游与正式授权没有证据。
+- 同站原号Plus一月人工代充¥115是另一零售SKU，先登录商店及ChatGPT，支付宝付款后交Session，单月不承诺30天质保。¥120虽数值高于¥115，但不是已证同SKU批发倒挂或真实成交；付费、卡密发货都不等于Plus实际开通。
+- 商家自称非OpenAI授权零售商，法人/收款/中国VAT出票人、税号/票费、全付款费及真实税票均null；有效中国VAT总成本null，退现及持续履约未实测。Session和Apple不自动绑手机号；ChatGPT Web/Codex/初次API Key适用范围没有新SMS实测。
+- CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay历史报价与日期不刷新；符合本人原号、单件单月、免代理前置费、全部支付及有效中国VAT≤¥170的已核Plus批发0，实购/验票/接码成功均0。新增r185报告、JSON、精确SHA256白名单、catalog、总库入口、VERSION及验证断言，历史126报价与前184轮字节不动；未付款、联系或交敏感凭据。
+- 原始URL：https://aisivan.store/blog/agent-program 、https://aisivan.store/products/plus 、https://aisivan.store/faq 、https://aisivan.store/about 、https://aisivan.store/terms 、https://aisivan.store/blog/guide-after-sales 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.192 · 2026-11-14
 
 - 第184轮首次直接核读SMSCreation年付持续持号候选：商家声称181国非VoIP移动号、无限入站短信；准确年付SKU公开价格**US$21.60/号码·年一次付清**，US$1.80/月仅为均摊，月付/短租准确结算价null。仅接受USDT/USDC加密货币/站内钱包，链费、汇兑、最低预存及真实结算总额null；不是Plus订阅供货价，已核批发名单不新增。
