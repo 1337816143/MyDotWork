@@ -1,0 +1,145 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 192,
+  "site_version": "1.9.200",
+  "observed_on": "2026-11-15",
+  "type": "historical_first_discovery_erratum",
+  "correction": {
+    "affected_round": 191,
+    "incorrect_attribution": "瑶瑶AI SKU /item/5 在第191轮首次发现/首次直接核读",
+    "correct_first_round": 80,
+    "correct_first_observation": "2026-11-07",
+    "original_url": "https://kw.yaoyao.chat/item/5",
+    "old_html": "research/2026-11-07/supplier-followup-20261107-r4.html",
+    "old_evidence": "research/2026-11-07/supplier-followup-20261107-r4-evidence.json",
+    "nov15_html": "research/2026-11-15/supplier-followup-20261115.html",
+    "nov15_evidence": "research/2026-11-15/supplier-followup-20261115-evidence.json",
+    "same_merch": "瑶瑶ai训练师",
+    "same_sku": true,
+    "previously_recorded_price_cny_per_month": 129,
+    "previously_recorded": [
+      "老客条件减¥5",
+      "先登录Session",
+      "税票主体及费用未知",
+      "¥108自报成本不是批发报价",
+      "退款及掉订售后为商家未实测承诺"
+    ],
+    "actually_new_in_r191": [
+      "2026-11-14 19:59商家自营统计快照",
+      "商家其它月份规格细节与复核材料"
+    ],
+    "preserve_both_prior_files": true
+  },
+  "criteria": {
+    "own_account": true,
+    "one_piece_month": true,
+    "no_agent_upfront_fee": true,
+    "maximum_all_in_with_valid_china_vat_cny": 170
+  },
+  "observations": [
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 129,
+      "unit": "one_month",
+      "note": "same historical price, not new supplier; invoice, resale authorization and whole settlement unknown"
+    },
+    {
+      "url": "https://chatgqt.plus/buy?sku=LIST-000019",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 135,
+      "note": "no-warranty SKU, old observed checkout display unchanged"
+    },
+    {
+      "url": "https://chatgqt.plus/buy?sku=LIST-000001",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 145,
+      "note": "warranty SKU, old observed checkout display unchanged"
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 110,
+      "note": "merchant receipt not Chinese VAT invoice"
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 155,
+      "note": "own account, distinct from new-account ¥160"
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 179,
+      "note": "above ceiling"
+    },
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": 139,
+      "note": "separate Codex phone 25-day ¥20; not a phone test"
+    },
+    {
+      "url": "https://getvip.pro/product/chatgpt",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": null,
+      "note": "Session prerequisite, tax added, no verified VAT"
+    },
+    {
+      "url": "https://chatshare.tv/plans",
+      "date": "2026-11-15",
+      "status": "read_directly",
+      "price_cny_per_account_month": null,
+      "note": "shared Webchat not own-account Plus; excludes Codex/API"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "date": "2026-11-15",
+      "status": "official_help_read",
+      "price_cny_per_account_month": null,
+      "note": "ChatGPT, desktop Codex, first API key are different; no live SMS test"
+    }
+  ],
+  "unreadable": [
+    {
+      "url": "https://morimm.com/products/gptplus",
+      "status": "access_failed"
+    },
+    {
+      "url": "https://morimm.com/products/Codex_num",
+      "status": "access_failed"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "status": "access_failed"
+    },
+    {
+      "url": "https://catfk.com/item/1hkbx9",
+      "status": "access_failed"
+    },
+    {
+      "url": "https://catfk.com/item/yfy1iv",
+      "status": "empty_body"
+    }
+  ],
+  "unknown_all_in_with_valid_china_vat_cny": null,
+  "unknown_actual_upstream_wholesale_cny": null,
+  "verified_invoice_issuer": null,
+  "qualified_wholesale_supplier_count": 0,
+  "actual_purchases": 0,
+  "invoice_verified": 0,
+  "successful_sms_tests": 0,
+  "merchant_contacted": false,
+  "account_credentials_shared": false,
+  "old_quote_history_changed": false,
+  "old_report_content_changed": false
+}
