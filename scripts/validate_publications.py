@@ -131,14 +131,29 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 399, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 401, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.183'
+    assert latest['version'] == '1.184'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r10.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r12.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r12-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r11.html'
+
+    # R184: one-year prepayment, wallet-credit refunds and carrier/SMS compatibility remain seller claims.
+    assert by_id['gpt-source-followup-r184-20261114']['url'].endswith('supplier-followup-20261114-r12.html')
+    assert by_id['gpt-source-followup-r184-20261114-evidence']['url'].endswith('supplier-followup-20261114-r12-evidence.json')
+    r184 = json.loads((ROOT / 'dist/research/2026-11-14/supplier-followup-20261114-r12-evidence.json').read_bytes())
+    assert r184['round'] == 184 and r184['site_version'] == '1.9.192'
+    assert r184['new_independent_phone_number_provider']['annual_payment_required'] is True
+    assert r184['new_independent_phone_number_provider']['display_price_usd_per_number_year'] == 21.60
+    assert r184['new_independent_phone_number_provider']['one_month_sku_checkout_price_usd'] is None
+    assert r184['new_independent_phone_number_provider']['true_mobile_line_type_independently_verified'] is False
+    assert r184['new_independent_phone_number_provider']['guarantee_merchant_claim']['refund_to_original_payment_guaranteed'] is False
+    assert r184['new_independent_phone_number_provider']['official_openai_verification_limits']['phone_call_not_supported'] is True
+    assert r184['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r184['qualification_totals']['verified_phone_sms_successes'] == 0
+    assert r184['actual_purchase_or_sms_test_performed'] is False
 
     # R183: retail invoice claim remains unverified and multi-day virtual number is not OpenAI acceptance proof.
     assert by_id['gpt-source-followup-r183-20261114']['url'].endswith('supplier-followup-20261114-r11.html')

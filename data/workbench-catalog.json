@@ -4390,6 +4390,28 @@
       "summary": "10条读取或访问尝试原始URL；准确价格期间与美元单位、商称票据非验票、官方VoIP限制、缓存与失败边界；所有未知费null，实际购买接码0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r184-20261114",
+      "title": "GPT源头第184轮 · SMSCreation长期非VoIP持号年付与退款真实性缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r12.html",
+      "updatedAt": "2026-11-14",
+      "summary": "商称181国非VoIP年付号US$21.60/年而非US$1.80月付；7日换号/退款与站内钱包、网络费分层，网页语音OTP前后冲突；未独验运营商、注册、收码及真实退款。Plus合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r184-20261114-evidence",
+      "title": "第184轮 · SMSCreation年付号码、加密货币、退款限制与OpenAI官方范围证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r12-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "首次直读6个商家与官方原始URL，年价/期限/条款旧自标与观察日期分离；月付未公开、链费、收款、实际退款、运营商与短信测试null或false。历史126价未动。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

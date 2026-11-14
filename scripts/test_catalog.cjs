@@ -1820,3 +1820,24 @@ assert.equal(r183.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r183.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r183.historical_126_prices_modified,false);
 assert.equal(r183.actual_purchase_or_sms_test_performed,false);
+
+
+// R184: prepaid annual number rental is not US$1.80 billed monthly or verified OpenAI verification; failed activation credits wallet.
+const r184entry=d.records.find(x=>x.id==='gpt-source-followup-r184-20261114');
+const r184dataEntry=d.records.find(x=>x.id==='gpt-source-followup-r184-20261114-evidence');
+assert(r184entry&&r184dataEntry&&r184entry.url.endsWith('supplier-followup-20261114-r12.html'));
+const r184=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r12-evidence.json'),'utf8'));
+assert.equal(r184.round,184);assert.equal(r184.site_version,'1.9.192');
+assert.equal(r184.new_independent_phone_number_provider.display_price_usd_per_number_year,21.60);
+assert.equal(r184.new_independent_phone_number_provider.effective_display_usd_per_month_if_annual_prepaid,1.80);
+assert.equal(r184.new_independent_phone_number_provider.annual_payment_required,true);
+assert.equal(r184.new_independent_phone_number_provider.one_month_sku_checkout_price_usd,null);
+assert.equal(r184.new_independent_phone_number_provider.guarantee_merchant_claim.order_activation_failed,'automatically returns full amount to platform wallet');
+assert.equal(r184.new_independent_phone_number_provider.guarantee_merchant_claim.refund_to_original_payment_guaranteed,false);
+assert.equal(r184.new_independent_phone_number_provider.official_openai_verification_limits.phone_call_not_supported,true);
+assert.equal(r184.new_independent_phone_number_provider.true_mobile_line_type_independently_verified,false);
+assert.equal(r184.new_independent_phone_number_provider.tests.codex_desktop_sms_success,false);
+assert.equal(r184.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r184.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r184.historical_126_prices_modified,false);
+assert.equal(r184.actual_purchase_or_sms_test_performed,false);
