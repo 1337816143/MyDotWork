@@ -1800,3 +1800,23 @@ assert.equal(r182.phone_verification.actual_sms_successes,0);
 assert.equal(r182.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r182.historical_126_prices_modified,false);
 assert.equal(r182.actual_purchase_or_sms_test_performed,false);
+
+// R183: merchant invoice claims are not verified VAT and SMS rental labels are not proven OpenAI-compatible.
+const r183entry=d.records.find(x=>x.id==='gpt-source-followup-r183-20261114');
+const r183dataEntry=d.records.find(x=>x.id==='gpt-source-followup-r183-20261114-evidence');
+assert(r183entry&&r183dataEntry&&r183entry.url.endsWith('supplier-followup-20261114-r11.html'));
+const r183=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r11-evidence.json'),'utf8'));
+assert.equal(r183.round,183);assert.equal(r183.site_version,'1.9.191');
+assert.equal(r183.new_retail_candidate.listed_cny_per_month,140);
+assert.equal(r183.new_retail_candidate.tax_invoice_claim.valid_china_vat_invoice_independently_verified,false);
+assert.equal(r183.new_retail_candidate.total_cny_with_all_required_fees_and_valid_vat,null);
+assert.equal(r183.new_retail_candidate.eligible_wholesale_under_user_criteria,false);
+assert.equal(r183.sms_rental.sku_prices_whole_period_usd.gb.seven_days,0.98);
+assert.equal(r183.sms_rental.sku_prices_whole_period_usd.us.one_day,4.4);
+assert.equal(r183.sms_rental.sku_prices_whole_period_usd.us.three_days,null);
+assert.equal(r183.sms_rental.refund_process.original_payment_method_guaranteed,false);
+assert.equal(r183.sms_rental.openai_official_voip_numbers_not_supported,true);
+assert.equal(r183.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r183.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r183.historical_126_prices_modified,false);
+assert.equal(r183.actual_purchase_or_sms_test_performed,false);

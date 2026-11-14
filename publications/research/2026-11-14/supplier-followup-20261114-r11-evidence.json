@@ -1,0 +1,203 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 183,
+  "site_version": "1.9.191",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接读取锦鹏AI本号Plus ¥140/月商称含中国普通增值税电子发票，但收款出票主体/票样/结算全费/授权均未闭环；首次读取SMSPin OpenAI 1/3/7天不同国家号码租赁与站内退款条件；无真实购买接码。网页可读取不等于实时收银台报价或实测。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_retail_candidate": {
+    "merchant": "锦鹏AI",
+    "site": "https://jinpeng168.online/",
+    "candidate_type": "retailer_claims_invoice_not_verified_wholesale",
+    "sku": "ChatGPT Plus 独享订阅服务（Standard Plan）",
+    "listed_cny_per_month": 140,
+    "quantity": 1,
+    "months": 1,
+    "account_type": "本人原账号",
+    "listed_price_evidence": "merchant_product_landing_page_not_checkout",
+    "renewal_same_price_merchant_claim": true,
+    "delivery_method_claim": "从OpenAI登录后的升级收银台取临时支付链接，以另域购买卡密再提交至代充系统；商称美国借记卡支付、不索取账号密码或动态码",
+    "checkout_domain_claimed": "https://jinpeng168.top",
+    "redemption_domain_claimed": "https://chongplus.xyz",
+    "linked_domains_ownership_payment_operator_verified": false,
+    "tax_invoice_claim": {
+      "merchant_claims_china_vat_ordinary_invoice": true,
+      "claim": "商称持订单ID登记后3工作日提供中国普通增值税电子发票",
+      "valid_china_vat_invoice_independently_verified": false,
+      "real_invoice_sample_verified": false,
+      "invoice_issuer_legal_name": null,
+      "invoice_taxpayer_id": null,
+      "invoice_fee_cny": null
+    },
+    "business_operator_legal_name": null,
+    "actual_payment_collector_legal_name": null,
+    "upstream_supply_legal_entity": null,
+    "official_plus_resale_authorization_verified": false,
+    "wholesale_unit_cost_cny": null,
+    "wholesale_moq": null,
+    "agent_upfront_fee_cny": null,
+    "absence_of_upfront_fee_verified": false,
+    "payment_surcharges_cny": null,
+    "total_cny_with_all_required_fees_and_valid_vat": null,
+    "actual_order_tested": false,
+    "actual_refund_tested": false,
+    "actual_invoice_verified": false,
+    "warranty_claim": "系统通道问题掉订按天补偿、绑定卡片历史冲突经技术确认后24小时原路退款；均未实测",
+    "eligible_wholesale_under_user_criteria": false
+  },
+  "sms_rental": {
+    "merchant": "SMSPin",
+    "exact_product": "OpenAI number rental",
+    "sku_url": "https://smspin.io/rent/openai",
+    "sku_prices_whole_period_usd": {
+      "gb": {
+        "one_day": 0.3,
+        "three_days": 0.53,
+        "seven_days": 0.98
+      },
+      "nl": {
+        "one_day": 0.6,
+        "three_days": 1.05,
+        "seven_days": 1.95
+      },
+      "us": {
+        "one_day": 4.4,
+        "three_days": null,
+        "seven_days": null
+      }
+    },
+    "price_interpretation": "币种USD；整个租号期限总标价，不是单次短信/每天价格；美国未展示3天/7天，不把—写成无货或无服务",
+    "page_refresh_claim": "每小时更新的网页价格，但本轮阅读依赖页面抓取缓存，不能证明实际结算即时价格",
+    "checkout_verified": false,
+    "rental_window_claim": "1、3或7天，具体国家仅页面列出可售期；同号码窗口内商称无限收OpenAI短信、不自动续租；不是长期持有/可随时换绑",
+    "same_number_after_expiry_guaranteed": false,
+    "payment_methods_claim": "站内充值后付款，商称银行卡及加密货币等",
+    "min_deposit_usd": null,
+    "provider_payment_fee_usd": null,
+    "exchange_fees_usd": null,
+    "full_actual_cash_cost_usd": null,
+    "refund_process": {
+      "before_first_sms_cancel_merchant_claim": true,
+      "no_code_general_auto_credit_to_internal_balance_claim": true,
+      "original_payment_method_guaranteed": false,
+      "rental_specific_checkout_refund_override_unknown": true,
+      "code_arrived_but_openai_rejected_refundable_guaranteed": false,
+      "withdrawal_possible_claim": "商称达到最低提现额与反欺诈审核后可提现，手续费未知",
+      "minimum_withdrawal_usd": null,
+      "real_refund_tested": false
+    },
+    "actual_phone_network_type_verified": false,
+    "merchant_describes_virtual_numbers": true,
+    "openai_official_voip_numbers_not_supported": true,
+    "chatgpt_web_verified": false,
+    "codex_desktop_verified": false,
+    "first_api_key_verified": false,
+    "real_sms_success_count": 0,
+    "note": "商家OpenAI页面宣称虚拟号码可用于验证与OpenAI官方不支持VoIP的边界存在风险；并非已独立确认能通过。法律条款标2026-04-18既有内容，不是11月新政策。"
+  },
+  "sources": [
+    {
+      "url": "https://jinpeng168.online/",
+      "observed_on": "2026-11-14",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_public_claim_not_invoice_or_sale",
+      "facts": "本人号Plus ¥140/月；续费同价商称；普通VAT票3工作日商称；卡密域名jinpeng168.top和使用域名chongplus.xyz；未核真人收款出票"
+    },
+    {
+      "url": "https://smspin.io/rent/openai",
+      "observed_on": "2026-11-14",
+      "read_status": "primary_merchant_page_read_crawl_cache",
+      "evidence_level": "merchant_display_not_live_checkout",
+      "facts": "OpenAI租号英国USD0.30/1天、0.53/3天、0.98/7天；美国USD4.40/1天，三/七天无展示；页面缓存不等于当前结算"
+    },
+    {
+      "url": "https://smspin.io/faq",
+      "observed_on": "2026-11-14",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_claim",
+      "facts": "一次性接码与租号区分；预充值与多种支付方式；号码被回收和重复使用风险"
+    },
+    {
+      "url": "https://smspin.io/terms",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-04-18",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_existing_terms",
+      "facts": "单次激活常见20分钟不能套到1-7天租号；未收到短信退余额非原路现金"
+    },
+    {
+      "url": "https://smspin.io/refund-policy",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-04-18",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_existing_refund_policy",
+      "facts": "未收到或不可解析OTP退至站内余额；收到但平台拒绝不保证退；较长租号可能结算页适用特定部分退款规则；提现限制待核"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "read_status": "official_primary_direct_read",
+      "evidence_level": "official_existing_rule_rechecked",
+      "facts": "普通ChatGPT通常无需手机，Codex桌面可能要求，首个API Key须手机；VoIP和座机不支持；不能把虚拟号码宣传作为真实通过证据"
+    },
+    {
+      "url": "https://getgpt.pro/faq",
+      "observed_on": "2026-11-14",
+      "read_status": "existing_supplier_recheck",
+      "evidence_level": "previously_archived_claim_no_new_price",
+      "facts": "Plus接码10元/次及升级免验证98%是历史商称，不刷新旧价或记官方事实"
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-14",
+      "read_status": "existing_supplier_recheck",
+      "evidence_level": "previously_archived_upfront_fee",
+      "facts": "进货代理一次性入驻费¥3000，仍不满足无前置费；不重复记录为新发现"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-14",
+      "read_status": "existing_supplier_recheck",
+      "evidence_level": "no_new_valid_full_cost_authorization",
+      "facts": "首页Codex验证20元起等已归档信息，无新可核含中国VAT授权闭环"
+    },
+    {
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-14",
+      "read_status": "fetch_failed",
+      "evidence_level": "no_new_claim",
+      "facts": "本轮未取得可读页面，不刷新历史价格且不声称停服"
+    }
+  ],
+  "older_supplier_prices_not_refreshed": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "historical_126_prices_modified": false,
+  "previous_182_reports_modified": false
+}

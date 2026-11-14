@@ -1,3 +1,11 @@
+## 1.9.191 · 2026-11-14
+
+- 第183轮首次直接读取锦鹏AI官网，公开本人原号ChatGPT Plus独享¥140／账号·1个月，商称续费同价、经美国借记卡支付官方临时账单链接，另域jinpeng168.top购买卡密、chongplus.xyz兑换。商家明确商称提供中国普通增值税电子发票、订单ID登记后3工作日出具；与其他明确不开票商家不同，但无真实经营收款/出票主体名称税号、有效税票验真、票费、结算手续费、批发价、正式Plus供货授权、单件免代理前置费证明，真实含有效中国VAT全费null，不能称已达≤¥170合法批发条件。商家用户评价和掉订/失败原路退款均非独立实测。
+- 首次直接核读SMSPin OpenAI号码租赁1/3/7天精确SKU和全期美元挂牌价：英国US$0.30/0.53/0.98，荷兰US$0.60/1.05/1.95，美国仅展示1天US$4.40；3/7天未列价不当成零或现货。网页自称按小时更新，但本轮读取的页面可能为缓存，未确认实时收银台、最低预存或支付链费。商称租期内同号多次收码、无码退站内余额；长租可能以结算页特别退款条款为准，实付提现规则待核。FAQ/条款将单次激活（通常20分钟）与多日租号区别开，2026-04-18自标退款/服务条款是旧政策本轮首次归档而非11月新变更。
+- SMSPin自称虚拟号码而OpenAI官方明确不支持VoIP及座机号；号码真实运营商属性、ChatGPT网页/Codex桌面/首个API Key成功率、后续收码和现金退款全部未测。不能因“OpenAI专页”即认定兼容，更不能以买Plus或交Session/Apple结算保证自动绑手机号。
+- 同轮复核引路鲸进货代理¥3000前置费、GETGPT Pro FAQ旧¥10/次接码、ChongPay首页；PAYPRM读取失败，其它CatFK、小久、Morimm、ChatShare、GetVIP、wind89等没有新闭环，不刷新旧报价。满足本人原号单件单月无前置费、全部必要付款及有效中国VAT≤¥170的已核Plus批发上游仍0；真实购买0、税票验真0、SMS成功0。仅新增r183 HTML、结构化证据、精确SHA256发布白名单、工作台目录、总库入口、VERSION、回归断言；历史126条报价与前182轮报告不改。不付款、联系或提供凭据。
+- 新证据原始URL：https://jinpeng168.online/ 、https://smspin.io/rent/openai 、https://smspin.io/faq 、https://smspin.io/terms 、https://smspin.io/refund-policy 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like ；旧来源复读：https://getgpt.pro/faq 、https://chatgqt.plus/cooperation 、https://chongpay.com/ ；失败访问：https://payprm.com/。观察2026-11-14；网页缓存不保证实时价。
+
 ## 1.9.190 · 2026-11-14
 
 - 第182轮新增直接读取的TopupCat本人原号Plus两款独立零售SKU：菲律宾区¥149／账号·月（英文商品页主要要求Free），Apple iOS区¥159／账号·月（Free或个人Plus剩余0–72小时且单独同意iOS覆盖），均先登录并提供Session；中文单品页自标2026-10-19且仍写在期会员不允许购买，与英文页面和中文FAQ/2026-11-03条款关于近到期覆盖的表述存在跨页面冲突。未做登录核验、真实续费或付费测试；两SKU及现存不同口径不能混价或解释为当天政策变化。
