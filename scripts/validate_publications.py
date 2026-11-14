@@ -131,14 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 395, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 397, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.181'
+    assert latest['version'] == '1.182'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r9.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r9-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r8.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r9.html'
+
+    # R182: new merchant's explicit no-invoice status excludes it despite the low retail ticket.
+    assert by_id['gpt-source-followup-r182-20261114']['url'].endswith('supplier-followup-20261114-r10.html')
+    assert by_id['gpt-source-followup-r182-20261114-evidence']['url'].endswith('supplier-followup-20261114-r10-evidence.json')
+    r182 = json.loads((ROOT / 'dist/research/2026-11-14/supplier-followup-20261114-r10-evidence.json').read_bytes())
+    assert r182['round'] == 182 and r182['site_version'] == '1.9.190' and len(r182['sources']) == 8
+    assert [s['display_price_cny_per_account_month'] for s in r182['new_merchant']['retail_skus']] == [149,159]
+    assert r182['new_merchant']['receipt_and_invoice']['seller_claims_valid_china_vat_invoice'] is False
+    assert r182['new_merchant']['receipt_and_invoice']['all_in_plus_with_valid_china_vat_cny'] is None
+    assert r182['new_merchant']['operator_claim']['domain_control_or_contractual_operator_relationship_independently_verified'] is False
+    assert r182['new_merchant']['eligible_upstream_under_user_criteria'] is False
+    assert r182['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
 
     # R170: public $0.01 OpenAI SMS offer has mandatory $40 nonwithdrawable prepay.
     assert by_id['gpt-source-followup-r170-20261113']['url'].endswith('supplier-followup-20261113-r11.html')
