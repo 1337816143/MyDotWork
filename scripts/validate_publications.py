@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 415, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 417, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.191'
+    assert latest['version'] == '1.192'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r18.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r2.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r2-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115.html'
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
@@ -2228,6 +2228,21 @@ def validate_publications():
     assert r190['sms'][1]['chatgpt_web_registration_supported_claim'] is False
     assert all(v == 0 for v in r190['qualification_totals'].values())
     assert r190['account_secrets_submitted'] is False and r190['actual_purchase_or_sms_test_performed'] is False
+
+    # R192: duplicate first-discovery attribution corrected without changing archived r80/r191.
+    assert by_id['gpt-source-followup-r192-20261115']['url'].endswith('supplier-followup-20261115-r2.html')
+    assert by_id['gpt-source-followup-r192-20261115-evidence']['url'].endswith('supplier-followup-20261115-r2-evidence.json')
+    r192 = json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r2-evidence.json').read_bytes())
+    assert r192['round'] == 192 and r192['site_version'] == '1.9.200'
+    assert r192['correction']['correct_first_round'] == 80
+    assert r192['correction']['original_url'] == 'https://kw.yaoyao.chat/item/5'
+    assert r192['correction']['previously_recorded_price_cny_per_month'] == 129
+    assert r192['correction']['preserve_both_prior_files'] is True
+    r80 = json.loads((ROOT/'dist/research/2026-11-07/supplier-followup-20261107-r4-evidence.json').read_bytes())
+    assert r80['new_candidate']['sku_url'] == r192['correction']['original_url']
+    assert r80['new_candidate']['public_list_price_cny_per_account_month'] == 129
+    assert r192['qualified_wholesale_supplier_count'] == 0
+    assert r192['actual_purchases'] == r192['invoice_verified'] == r192['successful_sms_tests'] == 0
 
     # R191: retail cost and seller-run metrics are not wholesale/VAT/transaction evidence.
     assert by_id['gpt-source-followup-r191-20261115']['url'].endswith('supplier-followup-20261115.html')

@@ -4566,6 +4566,28 @@
       "summary": "原始商家商品、售后、统计、成本和官方手机说明；¥108自报成本不是批发进价，实际含票全费null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r192-20261115",
+      "title": "GPT源头第192轮 · 瑶瑶AI重复发现勘误",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r2.html",
+      "updatedAt": "2026-11-15",
+      "summary": "同一SKU在第80轮已实读¥129与Session、票据、售后，纠正第191轮误称首次发现；不改旧文和旧价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r192-20261115-evidence",
+      "title": "第192轮 · 重复SKU与定点复核结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r2-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "r80/r191证据交叉核对，10条当日直接读取原始URL、5条不可读，票费null、无批发与短信实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
