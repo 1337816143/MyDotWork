@@ -1,0 +1,154 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 191,
+  "site_version": "1.9.199",
+  "observed_on": "2026-11-15",
+  "criteria": {
+    "own_original_account": true,
+    "one_unit_one_month": true,
+    "agency_upfront_fee_required": false,
+    "all_required_fees_including_valid_china_vat_max_cny": 170
+  },
+  "candidate": {
+    "name": "瑶瑶ai训练师",
+    "source_url": "https://kw.yaoyao.chat/item/5",
+    "exact_sku_path": "/item/5",
+    "selected_option": "ChatGPT Plus 1 个月",
+    "advertised_price_cny_per_account_month": 129,
+    "other_options": [
+      {
+        "months": 3,
+        "price_cny": 387
+      },
+      {
+        "months": 6,
+        "price_cny": 774
+      },
+      {
+        "months": 12,
+        "price_cny": 1548
+      }
+    ],
+    "payment_methods_merchant_claim": [
+      "支付宝",
+      "微信支付"
+    ],
+    "payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "actual_all_fees_with_valid_china_vat_cny": null,
+    "merchant_invoice_available_claim": true,
+    "merchant_corporate_bank_transfer_claim": true,
+    "invoice_type_confirmed": false,
+    "legal_operating_entity": null,
+    "legal_payment_entity": null,
+    "legal_invoice_issuer": null,
+    "taxpayer_id": null,
+    "china_vat_invoice_verified": false,
+    "wholesale_unit_cost_cny": null,
+    "wholesale_supplier": null,
+    "agency_entry_fee_cny": null,
+    "openai_resale_authorization_verified": false,
+    "seller_declares_nonaffiliation": true,
+    "merchant_self_cost_estimate_cny": 108,
+    "merchant_self_cost_reference_date": "2026-10-24",
+    "self_cost_not_wholesale_quote": true,
+    "own_account_merchant_claim": true,
+    "free_state_required_for_monthly_card": true,
+    "existing_paid_plus_card_topup_supported": false,
+    "card_after_payment_merchant_claim": true,
+    "requires_logged_in_session_or_token": true,
+    "merchant_claims_password_not_needed": true,
+    "not_independent_web_phone_verification": true,
+    "failed_card_not_consumed_claim": true,
+    "manual_refund_original_payment_within_24h_claim": true,
+    "sub_loss_during_term_reissue_month_claim": true,
+    "ordinary_bans_excluded_from_warranty": true,
+    "seller_payment_reversal_exception_claim": true,
+    "actual_purchase": false,
+    "actual_refund_test": false,
+    "qualified_verified_wholesale": false
+  },
+  "seller_controlled_metrics": {
+    "source_url": "https://kw.yaoyao.chat/tongji/",
+    "snapshot_china": "2026-11-14 19:59",
+    "claimed_30day_success_all_products": 640,
+    "claimed_30day_failed_attempts": 75,
+    "claimed_cards_affected": 46,
+    "claimed_cards_later_successful": 39,
+    "claimed_plus_success_sample": 502,
+    "claimed_plus_median_seconds": 80,
+    "independent_audit": false,
+    "cash_refunds_not_in_stats": true
+  },
+  "phone": {
+    "new_independent_sms_skus": 0,
+    "chatgpt_web_successes": 0,
+    "codex_desktop_successes": 0,
+    "first_api_key_successes": 0,
+    "session_or_apple_auto_phone_binding": false
+  },
+  "sources": [
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-15",
+      "status": "direct_read_merchant_product",
+      "evidence_level": "seller_price_and_claims",
+      "facts": "SKU selected Plus one month CNY129, requires Free state and existing login, invoice/corporate transfer claim."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html",
+      "observed_on": "2026-11-15",
+      "page_update_label": "2026-11-04",
+      "status": "direct_read_merchant_terms",
+      "evidence_level": "seller_promise_untested",
+      "facts": "Card fails without consumption; original payment refund after manual review claimed 24h; subscription loss remedied, regular ban excluded."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/tongji/",
+      "observed_on": "2026-11-15",
+      "page_snapshot_china": "2026-11-14 19:59",
+      "status": "direct_read_merchant_statistics",
+      "evidence_level": "seller_report_unaudited",
+      "facts": "640 successes last 30 days all goods, 75 failed attempts of 46 cards, 39 later successful, 502 timed Plus success median 80 seconds; cash refunds not tracked."
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/plus-129-weishenme.html",
+      "observed_on": "2026-11-15",
+      "page_update_label": "2026-11-10",
+      "cost_reference_date": "2026-10-24",
+      "status": "direct_read_merchant_marketing",
+      "evidence_level": "self_cost_claim_not_wholesale",
+      "facts": "CNY108 approximate direct cost is merchant estimate not supplier quote."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "status": "official_rules_read",
+      "evidence_level": "official_rules_not_real_sms_test",
+      "facts": "Web/Codex/API rules differ; no automatic phone verification via a Plus card."
+    }
+  ],
+  "old_supplier_prices_not_refreshed": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_126_prices_modified": false,
+  "previous_190_reports_modified": false
+}

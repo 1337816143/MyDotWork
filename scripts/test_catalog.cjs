@@ -1922,3 +1922,12 @@ assert.equal(r189.candidate.complete_actual_china_vat_cny,null);
 assert.equal(r189.candidate.is_qualified_verified_wholesale_upstream,false);
 assert.equal(r189.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r189.actual_purchase_or_sms_test_performed,false);
+
+// R191: seller-controlled retail evidence is not verified wholesale or VAT.
+const r191new=d.records.find(x=>x.id==='gpt-source-followup-r191-20261115');
+assert(r191new&&r191new.url.endsWith('supplier-followup-20261115.html'));
+const evidence191=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-evidence.json'),'utf8'));
+assert.equal(evidence191.round,191);assert.equal(evidence191.candidate.advertised_price_cny_per_account_month,129);
+assert.equal(evidence191.candidate.wholesale_unit_cost_cny,null);assert.equal(evidence191.candidate.actual_all_fees_with_valid_china_vat_cny,null);
+assert.equal(evidence191.candidate.china_vat_invoice_verified,false);assert.equal(evidence191.seller_controlled_metrics.independent_audit,false);
+assert.equal(evidence191.qualification_totals.verified_plus_wholesale_upstreams,0);
