@@ -4500,6 +4500,28 @@
       "summary": "实读4条原始商家和OpenAI网址；Plus¥149/账号·月、开票费最低¥15，缺真实收款/出票法人、VAT验票及单件批发价；零交易与短信测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r189-20261114",
+      "title": "GPT源头第189轮 · GetPlus美元结算、地域排除与批购门槛",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r17.html",
+      "updatedAt": "2026-11-14",
+      "summary": "首次直接读取个人原号Plus US$22.14/月、企业发票选项另+US$2.10；条款不接受中国大陆实际所在地下单，企业批购5件起。含中国VAT实际成本、供货授权和单件批发均未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r189-20261114-evidence",
+      "title": "第189轮 · GetPlus准确美元单位、开票选项、地域及批发门槛证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r17-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "5个商家和官方页面的原始URL、观察日、US$22.14+2.10分项、未付款USD24.24条件和、条款地域限制、5件企业采购及未知全费null；零购买验票短信测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
