@@ -1872,3 +1872,22 @@ assert.equal(r186.new_candidate.credentials.conflicting_merchant_pages,true);
 assert.equal(r186.new_candidate.qualified_wholesale,false);
 assert.equal(r186.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r186.actual_purchase_or_sms_test_performed,false);
+
+// R187: merchant statements, third-party price index, and no-SMS-success must remain separate.
+const e187=d.records.find(x=>x.id==='gpt-source-followup-r187-20261114');
+const ed187=d.records.find(x=>x.id==='gpt-source-followup-r187-20261114-evidence');
+assert(e187&&ed187&&e187.url.endsWith('supplier-followup-20261114-r15.html'));
+const r187=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r15-evidence.json'),'utf8'));
+assert.equal(r187.round,187);assert.equal(r187.site_version,'1.9.195');
+assert.equal(r187.independent_phone.number_control_period_minutes_merchant_claim,20);
+assert.equal(r187.independent_phone.second_or_repeat_verification_supported_merchant_claim,false);
+assert.equal(r187.independent_phone.direct_merchant_page_price_verified_cny,null);
+assert.equal(r187.independent_phone.refund_to_original_payment_guaranteed,false);
+assert.equal(r187.independent_phone.actual_sms_passed_tested,false);
+assert.equal(r187.plus.existing_period_overwritten_not_accumulated_claim,true);
+assert.equal(r187.plus.all_required_fees_valid_china_vat_cny,null);
+assert.equal(r187.plus.eligible_qualified_upstream,false);
+assert.equal(r187.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r187.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r187.actual_purchase_or_sms_test_performed,false);
+assert.equal(r187.historical_126_prices_modified,false);

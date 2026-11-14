@@ -1,0 +1,148 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 187,
+  "site_version": "1.9.195",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接读取CatFK AI猫站长同一独立卖家Codex接码与原号Plus两种SKU，明确20分钟首验限制、不能二验、收不到码换号与现金退款缺口，以及在期Plus覆盖不叠加；另行区分第三方索引标价、卖家网页声明和真实实测。",
+  "criteria": {
+    "own_existing_chatgpt_account": true,
+    "plus_quantity": 1,
+    "plus_duration_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_max_all_fees_valid_china_vat_cny": 170
+  },
+  "seller": {
+    "shop_display_name": "AI猫站长",
+    "shop_url": "https://catfk.com/shop/cat",
+    "platform": "CatFK多商家寄售平台",
+    "not_same_seller_as_catfk_aidp": true,
+    "registered_legal_entity": null,
+    "payment_legal_entity": null,
+    "china_vat_invoice_issuer": null,
+    "formal_openai_distribution_authorization_verified": false,
+    "bona_fide_wholesale_verified": false
+  },
+  "independent_phone": {
+    "merchant_sku_url": "https://catfk.com/item/1hkbx9",
+    "merchant_sku_title": "Codex接码",
+    "third_party_index_display_price_cny_per_one_code": 3,
+    "third_party_index_observation_date": "2026-11-14",
+    "direct_merchant_page_price_verified_cny": null,
+    "real_payable_total_cny": null,
+    "redemption_site_merchant_claim": "https://verify.hldragon.xyz/countries",
+    "number_country": null,
+    "number_type_true_mobile_verified": false,
+    "number_control_period_minutes_merchant_claim": 20,
+    "use_case_merchant_claim": "Codex首次登录短信验证",
+    "codex_first_login_supported_merchant_claim": true,
+    "second_or_repeat_verification_supported_merchant_claim": false,
+    "chatgpt_web_supported_merchant_claim": false,
+    "first_api_key_supported_merchant_claim": false,
+    "seller_claims_unlimited_number_swaps_if_no_sms": true,
+    "seller_claims_switch_after_waiting_minutes": 2,
+    "seller_claims_code_received_consumes_one_use": true,
+    "seller_claims_no_warranty_after_receiving_code": true,
+    "merchant_page_footer": "虚拟产品 售出不退不换",
+    "merchant_details_suggest_aftersales_on_no_code": true,
+    "refund_to_original_payment_guaranteed": false,
+    "actual_sms_received_tested": false,
+    "actual_sms_passed_tested": false,
+    "effective_country_or_phone_reuse_verified": false,
+    "upfront_account_session_required_to_redeem_verified": null
+  },
+  "plus": {
+    "merchant_sku_url": "https://catfk.com/item/uv27o8",
+    "merchant_sku_title": "【菲区自动化卡充】GPT Plus 官方充值 质保订阅30天",
+    "third_party_index_display_price_cny_per_one_listing": 129,
+    "third_party_index_observation_date": "2026-11-14",
+    "seller_rendered_wechat_fee_included_preview_cny": 132.61,
+    "seller_rendered_wechat_fee_component_cny": 3.61,
+    "merchant_fee_preview_observed_in_one_raw_html_scrape_only": true,
+    "other_payment_fees_cny": null,
+    "exact_paid_order_cny": null,
+    "all_required_fees_valid_china_vat_cny": null,
+    "china_vat_invoice_verified": false,
+    "own_account_merchant_claim": true,
+    "prior_chatgpt_login_required_claim": true,
+    "session_json_required_claim": true,
+    "password_not_requested_merchant_claim": true,
+    "existing_plus_early_renewal_merchant_claim": true,
+    "existing_period_overwritten_not_accumulated_claim": true,
+    "merchant_drop_subscription_warranty_days_claim": 30,
+    "merchant_drop_subscription_prorated_refund_claim": true,
+    "real_subscription_renewal_tested": false,
+    "real_refund_tested": false,
+    "wholesale_one_item_unit_price_cny": null,
+    "upfront_agent_fee_verified": null,
+    "eligible_qualified_upstream": false
+  },
+  "evidentiary_distinction": {
+    "direct_merchant_pages": "商家声明（可读详情不等于实际履约）",
+    "independent_index": "第三方检索展示标价，非卖家结算价",
+    "raw_html_price_preview": "一次非付款原始HTML预览，实际结算、费用与票据未闭合",
+    "actual_purchase_or_sms": "未进行"
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/item/1hkbx9",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_page_text_read",
+      "evidence_level": "merchant_claim_not_sms_test",
+      "facts": "20分钟有效、仅Codex首次登录、二验不支持、收到一个码后不保；无短信可换号；页面底部虚拟商品不退换，现金原路退款无保证，商品价未能从此页面核实"
+    },
+    {
+      "url": "https://catfk.com/item/uv27o8",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_page_text_and_one_rendered_fee_preview_read",
+      "evidence_level": "merchant_claim_and_nonpaid_preview",
+      "facts": "个人原号Plus登录后取Session JSON；在期提前续费直接覆盖不累加；商称30天掉订按日赔；原始HTML一次显示¥132.61含手续费¥3.61，但未下单开票"
+    },
+    {
+      "url": "https://aiprice.club/market/shop/catfk-cat",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_third_party_index_read",
+      "evidence_level": "third_party_index_not_checkout",
+      "facts": "同一AI猫站长摊位为Codex 1hkbx9列¥3、Plus uv27o8列¥129；自标最近刷新8小时前，索引变动/库存/评分不证明实际付款或批发"
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_existing_supplier_terms_reread",
+      "evidence_level": "unchanged_merchant_claim",
+      "facts": "引路鲸进货代理入驻一次性¥3000，与拿货余额独立，既有不合格前置费；不刷新旧价"
+    },
+    {
+      "url": "https://morimm.com",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_existing_catalog_reread",
+      "evidence_level": "previously_archived_prices_not_new",
+      "facts": "Plus菲区¥114、iOS¥129、Codex一次性¥4均已先前归档，本轮不计为调价或新源头"
+    }
+  ],
+  "older_supplier_prices_not_refreshed": [
+    "CatFK其他摊位",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "payment_attempted": false,
+  "invoice_verified": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "historical_126_prices_modified": false,
+  "previous_186_reports_modified": false
+}
