@@ -1,3 +1,12 @@
+## 1.9.186 · 2026-11-14
+
+- 第178轮首次直接读取Pay2GPT一方官网准确本人原号Plus零售US$23.90/件·月（另US$13.90半价SKU明确售罄），10件起企业批发但当前企业页明确“不公开报价”；未获书面批发价、无前置费确认、真实全成本与正式个人Plus供货授权均null或未核，API/Webhook不代表授权。
+- Pay2GPT商称经营、签约与收款主体均ByteCozy LLC（美国怀俄明州），但未独立查验登记、实际入账主体或发票。企业页及帮助页明确只开英文PDF商业发票、不能开中国增值税发票；因此不满足要求有效中国VAT的¥170单件采购标准。支付宝、银行卡、USDT/USDC、电汇链费及汇兑未核一律null。
+- 首次归档独立Pay2GPT Codex/ChatGPT登录短信SKU：美国+1号码US$4.99/号、21天收码窗口、商称实体SIM、每单最多2次免费换号；未能分配或换号后均无短信，商称可原路退款，已收到短信不退。商称适用网页及Codex不等于已实测成功，首次API Key适用性未核；真实收码、原路退款、运营商及号码持有期均未独立核验。
+- 用户原号需先登录提交Session；零售付款后7天内绑定，企业30天名额有效且在期同类订阅不叠加。Session与手机号验证分别对待。既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay价格没有重新确认，不刷新旧观察日期；历史126报价与前177轮原文件保留。已核合格单件Plus批发0、实购0、有效中国VAT票验真0、SMS成功0。
+- 新增r178 HTML/JSON、逐项观察URL/日期/费用null、精确SHA256白名单、project-1目录、总库最新入口、VERSION、CHANGELOG和回归断言；未付款、商家联系、提供登录凭据或进行接码测试。
+- 新增一方来源：https://pay2gpt.com/ 、https://pay2gpt.com/business 、https://pay2gpt.com/help 、https://pay2gpt.com/codex-sms 、https://pay2gpt.com/terms 。条款自标2026-11-02更新，本轮观察2026-11-14，不能当成当日新政策。
+
 ## 1.9.185 · 2026-11-14
 
 - 第177轮首次直接核读NEXUSOTP独立OpenAI/ChatGPT单次短信服务：Telegram @nexusotps_bot，USDT BEP20最低US$10入金，不是每次短信的成本；美国US$0.45/OTP、英国US$0.41/OTP、菲律宾US$0.30/OTP，每次临时号码10分钟、7个并发待收码上限。商称非VoIP实体SIM及其电信公司名称未独立验证；无实际ChatGPT网页/Codex/首次API Key验收成功证据。与历史SNSOTP最低US$40预存相比只可称降低资金入场门槛，不证明更低每次费用或成功率。

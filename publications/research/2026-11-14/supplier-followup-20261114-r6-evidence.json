@@ -1,0 +1,173 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 178,
+  "site_version": "1.9.186",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接核读Pay2GPT本人原号Plus零售、10件起批量询价、商称经营/收款主体和不提供中国VAT，另核独立Codex/ChatGPT登录接码21天及原路退款承诺。商家声明与实际核验分离；无实付与真实短信成功。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "plus_supplier": {
+    "name": "Pay2GPT",
+    "site": "https://pay2gpt.com/",
+    "business_page": "https://pay2gpt.com/business",
+    "help_page": "https://pay2gpt.com/help",
+    "type": "own_account_retail_and_bulk_quote_not_verified_plus_authorized_upstream",
+    "exact_retail_sku": "ChatGPT Plus (1 month) on existing account",
+    "retail_display_price_usd_per_account_month": 23.9,
+    "retail_quantity": 1,
+    "wholesale_min_quantity": 10,
+    "wholesale_price_usd_per_account": null,
+    "wholesale_quote_public": false,
+    "no_upfront_reseller_fee_confirmed": null,
+    "formal_plus_resale_authorization_verified": false,
+    "merchant_claimed_operator_and_contracting_payee": "ByteCozy LLC",
+    "merchant_claimed_registration": "Wyoming, United States",
+    "legal_entity_registration_independently_verified": false,
+    "actual_payment_recipient_verified": false,
+    "merchant_claims_enterprise_english_commercial_pdf_invoice": true,
+    "consumer_china_vat_invoice_available": false,
+    "enterprise_china_vat_invoice_available": false,
+    "valid_china_vat_invoice_obtained_or_verified": false,
+    "payment_methods_claimed": [
+      "Alipay",
+      "bank card",
+      "USDT/USDC",
+      "USD wire (enterprise)"
+    ],
+    "card_or_platform_payment_extra_fee_usd": null,
+    "usdt_network_fee_usd": null,
+    "currency_conversion_fee_cny": null,
+    "all_required_fees_and_china_vat_invoice_included_cost_cny": null,
+    "delivery_requires_prior_login_and_session": true,
+    "session_is_sensitive_credential": true,
+    "merchant_claims_session_deleted_after_activation": true,
+    "session_deletion_independently_verified": false,
+    "supports_extension_of_current_paid_plus_before_expiry": false,
+    "individual_order_connect_deadline_days": 7,
+    "bulk_order_connect_deadline_days": 30,
+    "business_api_webhook_merchant_claim": true,
+    "business_api_proves_authorized_plus_wholesale": false,
+    "merchant_claims_subscription_delivery_30_day_warranty": true,
+    "actual_paid_plus_order_tested": false,
+    "classification": "excluded_from_user_full_requirements_because_china_vat_unavailable_and_moq_bulk_ge_10"
+  },
+  "sms_service": {
+    "provider": "Pay2GPT",
+    "url": "https://pay2gpt.com/codex-sms",
+    "exact_product": "Codex/ChatGPT login OTP number, United States +1",
+    "delivery": "dedicated temporary phone number with order-page SMS inbox",
+    "display_price_usd_per_number": 4.99,
+    "currency": "USD",
+    "retain_days": 21,
+    "claim_physical_sim_non_voip": true,
+    "sim_carrier_independently_verified": false,
+    "merchant_claims_one_openai_account_per_number": true,
+    "merchant_claims_free_replacements_if_no_sms": 2,
+    "merchant_claims_original_payment_refund_when_all_replacement_numbers_no_sms": true,
+    "merchant_claims_original_payment_refund_if_cannot_allocate": true,
+    "merchant_claims_refund_after_sms_received": false,
+    "independent_verified_original_payment_refund": false,
+    "merchant_claimed_chatgpt_login_use": true,
+    "merchant_claimed_codex_login_use": true,
+    "chatgpt_web_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "phone_registration_or_long_term_binding_guaranteed": false,
+    "actual_sms_purchase_or_test": false,
+    "payment_methods_claimed": [
+      "Alipay",
+      "bank card",
+      "USDT"
+    ],
+    "full_payment_extra_fees_usd": null,
+    "actual_net_cny": null,
+    "distinct_from_plus_subscription": true
+  },
+  "sources": [
+    {
+      "url": "https://pay2gpt.com/",
+      "kind": "merchant_original_homepage_current_retail_sku",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "Plus本人原号1个月US$23.90零售价；半价US$13.90另SKU标售罄；短信US$4.99/号；网页自报成功率并非第三方实测",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://pay2gpt.com/business",
+      "kind": "merchant_original_enterprise_contract_invoice_wholesale",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "10个起企业采购；ByteCozy LLC经营签约和收款仅为商称；英文PDF商业发票明确不是中国VAT；批量单价不公开，依数量另询价；Session前提和API声明",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://pay2gpt.com/help",
+      "kind": "merchant_original_faq_retail_session_refund_invoice",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "明确不能开中国VAT；零售付款后7天内连接、在期会员不能叠加、30天商称售后；原路退款须经审核，USDT退款扣网络费",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://pay2gpt.com/codex-sms",
+      "kind": "merchant_original_independent_codex_chatgpt_sms_sku",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "summary": "美国+1实体SIM商称；US$4.99/号码、21天短信窗口、每单最多2次免费换号；全无短信或无法分配商称原路退款，已收短信不退；适用ChatGPT/Codex为商称",
+      "evidence_type": "merchant_page_or_claim_not_independent_test"
+    },
+    {
+      "url": "https://pay2gpt.com/terms",
+      "kind": "merchant_original_third_party_disclaimer_and_session",
+      "observed_on": "2026-11-14",
+      "page_published_on": "2026-11-02",
+      "direct_read": true,
+      "summary": "商家自述非OpenAI官方合作关系；订阅开通订单页提交Session，禁止绕过第三方平台验证",
+      "evidence_type": "merchant_terms_self_statement"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "kind": "official_openai_phone_scope_historical_rule_rechecked",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": false,
+      "summary": "沿用已归档官方规则：网页ChatGPT、Codex桌面与首次API Key验证范围不同；不得把商称用于三者的真实成功记录",
+      "evidence_type": "previously_archived_official_reference_not_newly_verified"
+    }
+  ],
+  "previous_round": {
+    "round": 177,
+    "report": "research/2026-11-14/supplier-followup-20261114-r5.html",
+    "prior_prices_refreshed": false
+  },
+  "existing_suppliers": {
+    "CatFK": "no_new_verified_checkout_or_vat",
+    "小久": "no_new_verified_checkout_or_vat",
+    "Morimm": "no_new_verified_checkout_or_vat",
+    "引路鲸": "no_new_verified_checkout_or_vat",
+    "ChatShare": "no_new_own_account_wholesale_proof",
+    "GetVIP": "no_new_verified_checkout_or_vat",
+    "wind89": "no_new_verified_invoice_or_total_price",
+    "GETGPT Pro": "no_new_verified_authorization",
+    "PAYPRM": "no_new_verified_complete_cost",
+    "ChongPay": "no_new_verified_china_vat"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_prices_refreshed": false
+}

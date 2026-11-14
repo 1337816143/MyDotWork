@@ -4258,6 +4258,28 @@
       "summary": "11条本轮直接读取原始URL、国家价格单位/10分钟、$10入金、退余额、零真实支付及官方应用边界；支付附加费和票费null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r178-20261114",
+      "title": "GPT源头第178轮 · Pay2GPT主体与发票、批发门槛及21天接码",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r6.html",
+      "updatedAt": "2026-11-14",
+      "summary": "本人原号Plus零售US$23.90/月；10件起企业价格不公开；商称ByteCozy LLC英文商业发票，明确无法提供中国VAT；独立21天美国号码US$4.99含2次换号及失败原路退款商称；符合条件批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r178-20261114-evidence",
+      "title": "第178轮 · Pay2GPT供货门槛、发票和手机号验证结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r6-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "5条直接读取的商家原始URL、用途对比及1条此前归档官方参考；未知支付/票费null、商家承诺非真实实测；旧报价不刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
