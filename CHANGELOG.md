@@ -1,3 +1,11 @@
+## 1.9.190 · 2026-11-14
+
+- 第182轮新增直接读取的TopupCat本人原号Plus两款独立零售SKU：菲律宾区¥149／账号·月（英文商品页主要要求Free），Apple iOS区¥159／账号·月（Free或个人Plus剩余0–72小时且单独同意iOS覆盖），均先登录并提供Session；中文单品页自标2026-10-19且仍写在期会员不允许购买，与英文页面和中文FAQ/2026-11-03条款关于近到期覆盖的表述存在跨页面冲突。未做登录核验、真实续费或付费测试；两SKU及现存不同口径不能混价或解释为当天政策变化。
+- TopupCat中文FAQ明确“不提供发票，付款后可以在订单页查看订单凭证”，并自述非OpenAI官方授权经销商：按现有公开声明直接不满足要求有效中国增值税发票的候选资格。公开售价不是实际含票全费，支付附加费、真实收款出票主体、批发进价、代理前置费情况与正式转售合同均null或未核；不可将订单凭证冒充中国VAT税票。
+- 首次作跨域身份核对：商家关于页自称香港艺创室内设计有限公司经营、披露地址及WhatsApp；另一公司域名acdesign.com.hk自列Art Creation Interior Design Limited、相同地址及WhatsApp。仅证明两域公开字段一致，未核香港官方登记、域名实际控制、款项主体或Plus授权。商家失败原路退款、30日掉订按比例补偿与封号不保皆为商称，实测0。
+- OpenAI官方Web/Codex桌面/初次API Key手机号范围无新政策；TopupCat条款要求Codex手机验证自行解决，Session和Apple无法保证首次登录或绑定手机号；没有独立SMS号码期限、失败现金退款的新实测。既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay不刷新旧价格。满足本人原号单件单月、免代理入场费、全部必需支付及有效中国VAT≤¥170的已核Plus批发仍0，实购0、验票0、短信成功0。
+- 新增r182 HTML、8条可读URL结构化JSON、精确SHA256白名单、project-1目录、总库入口、VERSION、发布指针与回归断言，历史126报价及前181轮报告保持原字节；无付款、联系、提交账号密码/Token/Session。观察日期2026-11-14。原始URL：https://topupcat.com/en/chatgpt/plus/ 、https://topupcat.com/en/chatgpt/ 、https://topupcat.com/zh-cn/chatgpt/plus/ 、https://topupcat.com/zh-cn/faq/ 、https://topupcat.com/zh-cn/terms/ 、https://topupcat.com/zh-cn/about/ 、https://www.acdesign.com.hk/contactus/58/ 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.189 · 2026-11-14
 
 - 第181轮取得本人原号Plus准确SKU公开库存实质变化：yxab.cn 的 G62975691 在第135轮2026-11-11同SKU一方商家商品页标“有货”，2026-11-14直接读取商品页及目录均标“暂时缺货”，目录其余四款亦显示暂时缺货。¥128.80/账号·月挂牌未变；库存标签变化不是实际订单失败、永久停服、渠道整体关闭或价格变动证明；旧SKU G69666080不混同。

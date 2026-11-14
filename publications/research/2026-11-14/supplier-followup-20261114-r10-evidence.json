@@ -1,0 +1,183 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 182,
+  "site_version": "1.9.190",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接核读TopupCat本号Plus两款独立渠道SKU、中文与英文/FAQ的在期覆盖声明冲突、明确不提供任何发票、运营公司自述与另一域同名主体地址/WhatsApp交叉一致。商家未宣称获得OpenAI授权；不作为合格批发上游；仅网页声明，无下单或验票实测。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_merchant": {
+    "merchant": "充值猫 TopupCat",
+    "site": "https://topupcat.com",
+    "candidate_type": "direct_merchant_retail_candidate_not_verified_wholesale",
+    "retail_skus": [
+      {
+        "exact_listing_name": "ChatGPT Plus top-up (Philippines region)",
+        "exact_listing_url": "https://topupcat.com/en/chatgpt/plus/",
+        "display_price_cny_per_account_month": 149,
+        "quantity": 1,
+        "months": 1,
+        "channel": "菲律宾区",
+        "account_requirement_on_english_page": "Free personal account; same page includes separate conditional near-expiry iOS-channel override statement",
+        "payment": "Alipay/WeChat QR",
+        "session_json_before_payment_claim": true
+      },
+      {
+        "exact_listing_name": "ChatGPT Plus top-up (Apple iOS region)",
+        "exact_listing_url": "https://topupcat.com/en/chatgpt/",
+        "display_price_cny_per_account_month": 159,
+        "quantity": 1,
+        "months": 1,
+        "channel": "Apple iOS",
+        "account_requirement_on_english_catalog": "Free personal account or web/Apple personal Plus with 0<remaining<=72h, separate override consent; forfeiture of remaining time possible",
+        "payment": "Alipay/WeChat QR",
+        "session_json_before_payment_claim": true
+      }
+    ],
+    "conflicting_eligibility_pages": {
+      "older_zh_cn_exact_plus_url": "https://topupcat.com/zh-cn/chatgpt/plus/",
+      "older_zh_cn_page_self_updated_on": "2026-10-19",
+      "older_zh_cn_says_active_plus_cannot_be_purchased": true,
+      "english_plus_url": "https://topupcat.com/en/chatgpt/plus/",
+      "new_faq_url": "https://topupcat.com/zh-cn/faq/",
+      "english_and_faq_claim_conditional_ios_override_72h": true,
+      "terms_self_updated_on": "2026-11-03",
+      "no_real_checkout_eligibility_test": true,
+      "conflict_requires_exact_checkout_sku_confirmation": true
+    },
+    "receipt_and_invoice": {
+      "merchant_faq_original_url": "https://topupcat.com/zh-cn/faq/",
+      "merchant_explicit_invoice_policy": "本站不提供发票，付款后可以在订单页查看订单凭证",
+      "seller_claims_valid_china_vat_invoice": false,
+      "order_receipt_does_not_prove_china_vat_invoice": true,
+      "valid_china_vat_invoice_fee_cny": null,
+      "checkout_payment_surcharges_cny": null,
+      "all_in_plus_with_valid_china_vat_cny": null,
+      "excluded_from_user_vat_required_upstreams": true
+    },
+    "operator_claim": {
+      "claimed_chinese_name": "艺创室内设计有限公司",
+      "claimed_english_name": "Art Creation Interior Design",
+      "topupcat_claim_url": "https://topupcat.com/zh-cn/about/",
+      "cross_checked_separate_domain_url": "https://www.acdesign.com.hk/contactus/58/",
+      "secondary_domain_entity_english_name": "Art Creation Interior Design Limited",
+      "address_same_in_both_domains": true,
+      "whatsapp_number_same_in_both_domains": "+852 5222 1129",
+      "telecom_fixed_phone_same_in_both_domains": false,
+      "confirmed_registration_in_official_registry": false,
+      "domain_control_or_contractual_operator_relationship_independently_verified": false,
+      "actual_payment_collector_legal_entity": null,
+      "actual_invoice_issuer_legal_entity": null,
+      "supplier_contract_and_own_plus_resale_authorization_verified": false
+    },
+    "seller_warranty_claim": "未成功原路全退；成功30日内中途掉订按剩余天数比例退；封号/主动取消/拒付不保，成功通常不退",
+    "real_warranty_or_original_refund_tested": false,
+    "agent_upfront_fee_cny": null,
+    "absence_of_agent_upfront_fee_verified": false,
+    "actual_single_unit_wholesale_price_cny": null,
+    "valid_wholesale_agreement_verified": false,
+    "merchant_explicitly_says_not_openai_authorized_reseller": true,
+    "true_all_required_payment_and_invoice_cost_cny": null,
+    "eligible_upstream_under_user_criteria": false
+  },
+  "phone_verification": {
+    "merchant_says_codex_phone_may_need_self_verification": true,
+    "merchant_provides_independent_sms_service": false,
+    "chatgpt_web_codex_desktop_first_api_key_roles": "OpenAI官方通常不要求普通ChatGPT，Codex桌面端可能要求，首个API Key需要验证；属于平台官方规则而非本轮政策变化",
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "session_or_apple_guarantees_phone_binding_or_bypass": false,
+    "actual_sms_successes": 0,
+    "actual_cash_refund_tests": 0
+  },
+  "sources": [
+    {
+      "url": "https://topupcat.com/en/chatgpt/plus/",
+      "observed_on": "2026-11-14",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_public_display_not_transaction",
+      "facts": "菲律宾区本人号Plus ¥149/账号·1月；先Session；同页英文条件覆盖72h；未实购"
+    },
+    {
+      "url": "https://topupcat.com/en/chatgpt/",
+      "observed_on": "2026-11-14",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_public_display_not_transaction",
+      "facts": "Apple iOS本人号Plus ¥159/账号·1月；0–72h旧Plus有条件同意覆盖，剩余不叠加"
+    },
+    {
+      "url": "https://topupcat.com/zh-cn/chatgpt/plus/",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-10-19",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "older_merchant_language_page_not_checkout",
+      "facts": "中文单品页仍写在期任何会员都不能购买；与更新的FAQ和英文页面有口径差异"
+    },
+    {
+      "url": "https://topupcat.com/zh-cn/faq/",
+      "observed_on": "2026-11-14",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_terms_claim",
+      "facts": "明确不提供发票，仅订单凭证；与OpenAI无关联、非官方授权经销商；72h iOS覆盖商称，失败原路退及30日按剩余天数售后均未实测"
+    },
+    {
+      "url": "https://topupcat.com/zh-cn/terms/",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-11-03",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "merchant_terms_claim",
+      "facts": "Session=敏感登录凭据；过期Apple可能24h+；Codex手机号需自行验证；仅成功掉订按比例退，封号不赔"
+    },
+    {
+      "url": "https://topupcat.com/zh-cn/about/",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-11-03",
+      "read_status": "primary_merchant_direct_read",
+      "evidence_level": "seller_self_identification",
+      "facts": "自称香港艺创室内设计有限公司运营，披露荔枝角道888号10楼B9室及WhatsApp +85252221129"
+    },
+    {
+      "url": "https://www.acdesign.com.hk/contactus/58/",
+      "observed_on": "2026-11-14",
+      "read_status": "separate_domain_direct_read",
+      "evidence_level": "cross_site_organization_self_display_not_independent_registry",
+      "facts": "同名Art Creation Interior Design Limited、同一地址及WhatsApp；不证明TopupCat合同运营关系、真实收款法人或OpenAI供货授权"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "read_status": "official_primary_direct_read",
+      "evidence_level": "official_existing_rule_rechecked",
+      "facts": "普通ChatGPT通常无需手机，Codex桌面可能要求，初次API Key生成必须验证；未将代充视为手机号解决方案"
+    }
+  ],
+  "other_prior_suppliers_not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_prices_modified": false,
+  "previous_181_reports_modified": false,
+  "actual_purchase_or_sms_test_performed": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false
+}
