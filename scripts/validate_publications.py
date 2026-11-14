@@ -134,11 +134,26 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 403, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.185'
+    assert latest['version'] == '1.186'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r13.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r13-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r12.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r14.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r14-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r13.html'
+
+    # R186 newly read retailer: old base price + conflicting invoice rates are conditional, not a verified payable invoice total.
+    assert by_id['gpt-source-followup-r186-20261114']['url'].endswith('supplier-followup-20261114-r14.html')
+    assert by_id['gpt-source-followup-r186-20261114-evidence']['url'].endswith('supplier-followup-20261114-r14-evidence.json')
+    r186 = json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r14-evidence.json').read_bytes())
+    assert r186['round'] == 186 and r186['site_version'] == '1.9.194'
+    assert r186['new_candidate']['plus_sku']['old_blog_base_cny_per_account_month'] == 168
+    assert r186['new_candidate']['plus_sku']['current_page_live_plus_price_cny'] is None
+    assert r186['new_candidate']['invoicing']['homepage_extra_fee_rate_claim'] == .05
+    assert r186['new_candidate']['invoicing']['old_blog_extra_fee_rate_claim'] == .06
+    assert r186['new_candidate']['invoicing']['all_payment_fees_with_valid_china_vat_cny'] is None
+    assert r186['new_candidate']['credentials']['conflicting_merchant_pages'] is True
+    assert r186['new_candidate']['qualified_wholesale'] is False
+    assert r186['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r186['actual_purchase_or_sms_test_performed'] is False
 
     # R185 separate retail and agent SKU, upfront fee, no valid tax-paid upstream.
     assert by_id['gpt-source-followup-r185-20261114']['url'] == '../research/2026-11-14/supplier-followup-20261114-r13.html'
