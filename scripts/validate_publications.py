@@ -134,11 +134,26 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 399, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.182'
+    assert latest['version'] == '1.183'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r9.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r10.html'
+
+    # R183: retail invoice claim remains unverified and multi-day virtual number is not OpenAI acceptance proof.
+    assert by_id['gpt-source-followup-r183-20261114']['url'].endswith('supplier-followup-20261114-r11.html')
+    assert by_id['gpt-source-followup-r183-20261114-evidence']['url'].endswith('supplier-followup-20261114-r11-evidence.json')
+    r183 = json.loads((ROOT / 'dist/research/2026-11-14/supplier-followup-20261114-r11-evidence.json').read_bytes())
+    assert r183['round'] == 183 and r183['site_version'] == '1.9.191'
+    assert r183['new_retail_candidate']['listed_cny_per_month'] == 140
+    assert r183['new_retail_candidate']['tax_invoice_claim']['valid_china_vat_invoice_independently_verified'] is False
+    assert r183['new_retail_candidate']['total_cny_with_all_required_fees_and_valid_vat'] is None
+    assert r183['sms_rental']['sku_prices_whole_period_usd']['gb']['seven_days'] == 0.98
+    assert r183['sms_rental']['sku_prices_whole_period_usd']['us']['one_day'] == 4.40
+    assert r183['sms_rental']['refund_process']['original_payment_method_guaranteed'] is False
+    assert r183['sms_rental']['openai_official_voip_numbers_not_supported'] is True
+    assert r183['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r183['actual_purchase_or_sms_test_performed'] is False
 
     # R182: new merchant's explicit no-invoice status excludes it despite the low retail ticket.
     assert by_id['gpt-source-followup-r182-20261114']['url'].endswith('supplier-followup-20261114-r10.html')
