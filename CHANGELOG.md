@@ -1,3 +1,10 @@
+## 1.9.194 · 2026-11-14
+
+- 第186轮首次实际核读新零售线索闪电AI：2026-08-26自标旧开票文章给本人Plus ¥168/账号·月示例及开普通VAT票另加6%，11月14日实读首页、ChatGPT目录和关于页则商称开票额外5%。¥168×1.05=¥176.40、×1.06=¥178.08仅是跨页条件计算，均超¥170；动态现行Plus SKU、真实收银台价及有效中国VAT总价仍null，不能把旧文“实时”字样当本轮实时下单价，也不声称11月14日发生调价。
+- 商家首页/关于称GO与Plus只要邮箱、Pro才要临时Token；独立ChatGPT目录却写GO/Plus/Pro都用临时凭证，Session是否需要及原号在期续费未核。营销“无条件退款”与2026-01-01自标正式条款差异：仅商家错误/系统失败的原路退款有承诺，成功后OpenAI封号/功能变动不退，填错邮箱不保证全额；真实现金退款、出票、授权、履约及SMS均未试。商家自称非OpenAI授权渠道，没有单件批发证据。
+- 无独立手机验证SKU，也没有ChatGPT Web/Codex桌面/首次API Key成功证据；Apple与Session/普通充值不自动绑定手机号。符合本人原号单件单月无代理费、含有效中国VAT及所有支付费用≤¥170的已核Plus批发仍0。旧126价格及前185轮报告按原字节保留，CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay历史观察日期不刷新；本轮无付款、联系、验票、凭据和接码实测。
+- 本轮直接读取原始URL：https://electagpt.com/ 、https://electagpt.com/chatgpt 、https://www.electagpt.com/blog/chongzhi-fapiao 、https://electagpt.com/about 、https://electagpt.com/terms 、https://electagpt.com/blog/daichong-tuikuan 。新增r186 HTML/JSON、SHA-256发布白名单、project-1目录、总库入口、VERSION、测试及最新发布指针。
+
 ## 1.9.193 · 2026-11-14
 
 - 第185轮首次直接核读AI Sivan 7个原URL，代理页自标2026-10-12旧发布时间，本轮观察11月14日：链动小铺代理资格需¥20一次性开通费并审核，“Plus供应商兑换卡密”代理挂牌¥120，最低下游零售价¥132且平台手续费另计。代理费不含卡密，直接不满足免前置费目标。卡密准确月份/渠道/可用账号、真正上游与正式授权没有证据。
