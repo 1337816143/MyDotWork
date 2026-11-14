@@ -35,8 +35,8 @@ def build():
             'reportSha256': hashlib.sha256(payload).hexdigest(),
             'reportPath': 'index.html',
             # Latest bounded research observation; individual offer dates remain authoritative.
-            'researchDate': '2026-11-14',
-            'latestResearchSupplement': {'version': '1.190', 'date': '2026-11-14', 'path': 'research/2026-11-14/supplier-followup-20261114-r18.html', 'dataPath': 'research/2026-11-14/supplier-followup-20261114-r18-evidence.json', 'observationDates': ['2026-11-14'], 'previousPath': 'research/2026-11-14/supplier-followup-20261114-r17.html'},
+            'researchDate': '2026-11-15',
+            'latestResearchSupplement': {'version': '1.191', 'date': '2026-11-15', 'path': 'research/2026-11-15/supplier-followup-20261115.html', 'dataPath': 'research/2026-11-15/supplier-followup-20261115-evidence.json', 'observationDates': ['2026-11-15'], 'previousPath': 'research/2026-11-14/supplier-followup-20261114-r18.html'},
             'baselineResearchDate': '2026-10-01',
             'researchVersion': '1.8.12',
             # Historical dates of research/2026-10-02.html and its round2 supplement.

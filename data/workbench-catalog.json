@@ -4544,6 +4544,28 @@
       "summary": "店铺及4件准确商品一方网页＋官方短信规则；店铺公开价不是成交价，票费、付款费、法律主体、转售权及号码实测均未核。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r191-20261115",
+      "title": "GPT源头第191轮 · 瑶瑶AI单月Plus开票承诺与售后边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115.html",
+      "updatedAt": "2026-11-15",
+      "summary": "新零售候选Plus¥129，商家宣称可开票和原路退款，但Session前提、实际税票及履约尚未实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r191-20261115-evidence",
+      "title": "第191轮 · 瑶瑶AI原号Plus、发票与自报履约结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "原始商家商品、售后、统计、成本和官方手机说明；¥108自报成本不是批发进价，实际含票全费null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
