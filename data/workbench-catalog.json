@@ -4588,6 +4588,28 @@
       "summary": "r80/r191证据交叉核对，10条当日直接读取原始URL、5条不可读，票费null、无批发与短信实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r193-20261115",
+      "title": "GPT源头第193轮 · 三家原号Plus独立零售及开票/凭据缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r3.html",
+      "updatedAt": "2026-11-15",
+      "summary": "首次核读V需AI原号精确变体1850 ¥150/月及商称普票、gpt228原号¥148/月商称普票免费、星星小店原号¥128/月但售后/税票缺口；真正含有效中国VAT单件批发上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r193-20261115-evidence",
+      "title": "第193轮 · 新零售商准确SKU、开票主张与未实测原始URL JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r3-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "2026-11-15直接核读的原始商家页面与变体ID；未知结算与税票费null，商家自述/推断/成交实测分开。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

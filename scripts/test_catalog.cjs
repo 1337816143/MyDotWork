@@ -1931,3 +1931,20 @@ assert.equal(evidence191.round,191);assert.equal(evidence191.candidate.advertise
 assert.equal(evidence191.candidate.wholesale_unit_cost_cny,null);assert.equal(evidence191.candidate.actual_all_fees_with_valid_china_vat_cny,null);
 assert.equal(evidence191.candidate.china_vat_invoice_verified,false);assert.equal(evidence191.seller_controlled_metrics.independent_audit,false);
 assert.equal(evidence191.qualification_totals.verified_plus_wholesale_upstreams,0);
+
+
+// R193: exact variant price is not the new-account price, VAT claims are not a paid invoice or wholesale.
+const er193=d.records.find(x=>x.id==='gpt-source-followup-r193-20261115');
+const ed193=d.records.find(x=>x.id==='gpt-source-followup-r193-20261115-evidence');
+assert(er193&&ed193&&er193.url.endsWith('supplier-followup-20261115-r3.html'));
+const r193=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r3-evidence.json'),'utf8'));
+assert.equal(r193.round,193);assert.equal(r193.site_version,'1.9.201');
+assert.deepEqual(r193.new_retail_candidates.map(x=>x.original_account_one_month_advertised_cny),[150,148,128]);
+assert.equal(r193.new_retail_candidates[0].exact_original_account_variant_id,'1850');
+assert.equal(r193.new_retail_candidates[0].other_new_account_variant_id,'1852');
+assert.equal(r193.new_retail_candidates[0].valid_china_vat_total_paid_cny,null);
+assert.equal(r193.new_retail_candidates[1].actual_paid_with_valid_china_vat_cny,null);
+assert.equal(r193.new_retail_candidates[2].all_required_fees_with_valid_china_vat_cny,null);
+assert.equal(r193.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r193.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r193.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);

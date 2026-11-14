@@ -1,0 +1,219 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 193,
+  "site_version": "1.9.201",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r2.html",
+  "scope": "首次直接核读三个尚未在CHANGELOG中出现的原号Plus独立零售卖家，明确变体SKU、人民币单月标价、中国VAT开票商称与售后界限；不将零售价视为批发进价或可实付含票价。",
+  "criteria": {
+    "own_original_account": true,
+    "single_unit_one_month": true,
+    "no_upfront_agent_fee": true,
+    "all_required_payment_and_valid_china_vat_invoice_max_cny": 170
+  },
+  "new_retail_candidates": [
+    {
+      "merchant": "V需AI",
+      "url": "https://vneedai.com/product/buy-chatgpt-plus-subscribe/",
+      "source_class": "seller_first_party_product_page_html_variation_data",
+      "product_id": "1836",
+      "exact_original_account_variant_id": "1850",
+      "other_new_account_variant_id": "1852",
+      "original_account_one_month_advertised_cny": 150,
+      "new_account_one_month_advertised_cny": 170,
+      "currency": "CNY",
+      "quantity": 1,
+      "period": "one_month",
+      "variation_sku_text_blank": true,
+      "price_source": "HTML data-product_variations, not a paid checkout",
+      "chinese_vat_ordinary_invoice_merchant_claim": true,
+      "merchant_says_price_includes_five_points_enterprise_income_tax": true,
+      "invoice_option_additional_checkout_fee_cny": null,
+      "all_payment_extras_cny": null,
+      "valid_china_vat_total_paid_cny": null,
+      "operator_legal_entity": null,
+      "payment_recipient_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "taxpayer_identifier": null,
+      "valid_china_vat_invoice_verified": false,
+      "requires_logged_in_session_token": true,
+      "original_account_existing_app_subscription_must_expire_merchant_claim": true,
+      "month_auto_renews_merchant_claim": false,
+      "merchant_claim_refund_after_openai_card_refund_and_pro_rata": true,
+      "merchant_claim_nonpayment_account_ban_refund_fee_rate": 0.2,
+      "wholesale_single_unit_price_cny": null,
+      "wholesale_minimum": null,
+      "upfront_agent_fee_cny": null,
+      "authorization_verified": false,
+      "fulfillment_tested": false,
+      "refund_tested": false
+    },
+    {
+      "merchant": "gpt228.com",
+      "url": "https://gpt228.com/",
+      "other_direct_urls": [
+        "https://gpt228.com/chatgpt-plus",
+        "https://gpt228.com/jiaocheng",
+        "https://gpt228.com/disclaimer"
+      ],
+      "source_class": "seller_first_party_site_live_scrape",
+      "exact_product_label": "Plus - 开通到你自己的 ChatGPT 账号",
+      "original_account_one_month_advertised_cny": 148,
+      "currency": "CNY",
+      "quantity": 1,
+      "period": "one_month",
+      "distinct_new_account_products_cny": [
+        128,
+        150
+      ],
+      "chinese_vat_ordinary_invoice_no_extra_fee_merchant_claim": true,
+      "china_vat_special_invoice_extra_rate_merchant_claim": 0.06,
+      "actual_payment_extra_cny": null,
+      "actual_paid_with_valid_china_vat_cny": null,
+      "operator_legal_entity": null,
+      "payment_recipient_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "taxpayer_identifier": null,
+      "valid_china_vat_invoice_verified": false,
+      "seller_explicitly_not_openai_authorized": true,
+      "merchant_claim_unfulfilled_order_refund": true,
+      "merchant_claim_completed_card_or_banned_account_no_refund": true,
+      "session_token_mandatory_for_this_exact_sku": null,
+      "prior_login_may_be_needed": true,
+      "wholesale_unit_price_cny": null,
+      "wholesale_minimum": null,
+      "upfront_agent_fee_cny": null,
+      "authorization_verified": false,
+      "fulfillment_tested": false,
+      "refund_tested": false
+    },
+    {
+      "merchant": "星星小店",
+      "url": "https://xingbao-ai.shop/products/1",
+      "source_class": "seller_first_party_product_page",
+      "exact_product_path": "/products/1",
+      "original_account_one_month_advertised_cny": 128,
+      "original_struck_through_price_cny": 149,
+      "currency": "CNY",
+      "quantity": 1,
+      "period": "one_month",
+      "requires_existing_account": true,
+      "requires_logged_in_token": true,
+      "existing_plus_renewal_overwrites_not_accumulated_merchant_claim": true,
+      "merchant_claim_delivered_codes_nonrefundable_except_unredeemable": true,
+      "merchant_claim_same_day_redemption": true,
+      "merchant_claim_30day_service_warranty": true,
+      "valid_china_vat_invoice_claim": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "operator_legal_entity": null,
+      "payment_recipient_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "taxpayer_identifier": null,
+      "wholesale_unit_price_cny": null,
+      "wholesale_minimum": null,
+      "authorization_verified": false,
+      "fulfillment_tested": false,
+      "refund_tested": false
+    }
+  ],
+  "existing_candidates_bounded_recheck": {
+    "sources": [
+      "https://98-xj.com/products/gpt%20plus",
+      "https://chatgqt.plus/buy?sku=LIST-000001",
+      "https://chatgqt.plus/buy?sku=LIST-000019",
+      "https://getgpt.io/price",
+      "https://www.payprm.com/shop/chatgpt-plus",
+      "https://chongpay.com/plans?category=gpt",
+      "https://getvip.pro/product/chatgpt",
+      "https://chatshare.tv/plans",
+      "https://payforgpt.com/qiye-caigou"
+    ],
+    "material_price_or_invoice_change_verified": false,
+    "access_failure_not_a_supply_outage": [
+      "https://morimm.com/products/gptplus",
+      "https://catfk.com/item/yfy1iv",
+      "https://wind89.com/plans/chatgpt-plus?sku=27"
+    ],
+    "source_note": "旧报价仅按旧观察日期保留。PayForGPT一方企业页仍自标2026-11-06、逐单确认出票人及票种；异源索引声称更新并非官方条件变化。"
+  },
+  "independent_phone_verification": {
+    "chatgpt_web_tested_successes": 0,
+    "codex_tested_successes": 0,
+    "first_api_key_tested_successes": 0,
+    "merchant_phone_sku_newly_verified": false,
+    "session_token_requires_existing_login": true,
+    "apple_payment_implies_automatic_phone_bind": false,
+    "ordinary_topup_guarantees_web_phone_unblock": false,
+    "third_party_sms_refund_verified": false,
+    "official_reference_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like"
+  },
+  "sources": [
+    {
+      "url": "https://vneedai.com/product/buy-chatgpt-plus-subscribe/",
+      "observed_on": "2026-11-15",
+      "status": "read_first_party_page_and_raw_html",
+      "finding": "原号变体商品ID1836/variation1850 ¥150/月；新号变体1852 ¥170/月；商称中国增值税普票但选票后附费及出票主体未知",
+      "evidence_class": "displayed_page_and_merchant_claim_not_transaction"
+    },
+    {
+      "url": "https://gpt228.com/",
+      "observed_on": "2026-11-15",
+      "status": "direct_site_live_scrape",
+      "finding": "本人原号Plus零售¥148/月；商称普票免费、专票加6%，无OpenAI授权",
+      "evidence_class": "displayed_page_and_merchant_claim_not_transaction"
+    },
+    {
+      "url": "https://gpt228.com/jiaocheng",
+      "observed_on": "2026-11-15",
+      "status": "direct_site_live_scrape",
+      "finding": "付款后可申请普票（商称0费）；售后、支出及出票主体仍未核",
+      "evidence_class": "merchant_claim_not_tax_invoice_verification"
+    },
+    {
+      "url": "https://gpt228.com/chatgpt-plus",
+      "observed_on": "2026-11-15",
+      "status": "direct_site_live_scrape",
+      "finding": "直充本人原号¥148与¥128／¥150成品号分别列售",
+      "evidence_class": "merchant_page"
+    },
+    {
+      "url": "https://gpt228.com/disclaimer",
+      "observed_on": "2026-11-15",
+      "status": "direct_site_live_scrape",
+      "finding": "明确声明非OpenAI代理、经销商、授权合作方",
+      "evidence_class": "merchant_legal_disclaimer"
+    },
+    {
+      "url": "https://xingbao-ai.shop/products/1",
+      "observed_on": "2026-11-15",
+      "status": "read_first_party_product_page",
+      "finding": "Plus本人原号¥128/月，原Plus未到期覆盖不叠加；需Token；售出卡密原则不退，发票未知",
+      "evidence_class": "merchant_page_and_claim"
+    },
+    {
+      "url": "https://payforgpt.com/qiye-caigou",
+      "observed_on": "2026-11-15",
+      "status": "read_first_party_page",
+      "page_self_updated_on": "2026-11-06",
+      "finding": "仍要求在付款前逐单核对可开票票种和开票主体，不能采信异源索引所称普票免费/当天开票为当前直接商家承诺",
+      "evidence_class": "seller_page"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "status": "read_official_help",
+      "finding": "ChatGPT Web、Codex、首次API Key适用性区分，Apple/代充不能自动绑手机号",
+      "evidence_class": "official_help"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historic_126_prices_modified": false,
+  "actual_purchase_or_contact_or_credentials_or_sms_test_performed": false
+}
