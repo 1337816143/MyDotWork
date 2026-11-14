@@ -4434,6 +4434,28 @@
       "summary": "7个实际读取的原始URL；代理开通费¥20、供货卡密挂牌¥120与另款原号Plus¥115/月独立；未知费用与真实含有效中国VAT全费null，未实购验票接码。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r186-20261114",
+      "title": "GPT源头第186轮 · 闪电AIPlus旧价、票费与凭证口径",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r14.html",
+      "updatedAt": "2026-11-14",
+      "summary": "首次实读闪电AI旧文Plus¥168/月示例、官网开票+5%与旧文+6%冲突，Plus凭证条件和退款条款冲突；全费及上游资格未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r186-20261114-evidence",
+      "title": "第186轮 · 闪电AI两种票费、凭证及退款结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r14-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "6个实际读取商家自有URL，旧文自标日期和本轮观察分开；5%/6%算术不是实付，未知费用null、税票授权及真实SMS为零。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
