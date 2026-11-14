@@ -4412,6 +4412,28 @@
       "summary": "首次直读6个商家与官方原始URL，年价/期限/条款旧自标与观察日期分离；月付未公开、链费、收款、实际退款、运营商与短信测试null或false。历史126价未动。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r185-20261114",
+      "title": "GPT源头第185轮 · AI Sivan代理前置费与零售/供货SKU差异",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r13.html",
+      "updatedAt": "2026-11-14",
+      "summary": "新读AI Sivan ¥20代理资格费且要审核、卡密代理挂牌¥120、零售最低¥132、平台费另计；另主站本人号人工月卡¥115，两种SKU不能混价。无有效中国VAT与授权闭环，合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r185-20261114-evidence",
+      "title": "第185轮 · AI Sivan代理资格¥20、不同SKU与Session/售后证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r13-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "7个实际读取的原始URL；代理开通费¥20、供货卡密挂牌¥120与另款原号Plus¥115/月独立；未知费用与真实含有效中国VAT全费null，未实购验票接码。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

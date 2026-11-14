@@ -1841,3 +1841,17 @@ assert.equal(r184.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r184.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r184.historical_126_prices_modified,false);
 assert.equal(r184.actual_purchase_or_sms_test_performed,false);
+
+// R185: don't conflate own-account manual retail with dealer redemption card.
+const entry185=d.records.find(x=>x.id==='gpt-source-followup-r185-20261114');
+const data185=d.records.find(x=>x.id==='gpt-source-followup-r185-20261114-evidence');
+assert(entry185&&data185&&entry185.url.endsWith('supplier-followup-20261114-r13.html'));
+const r185=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r13-evidence.json'),'utf8'));
+assert.equal(r185.round,185);assert.equal(r185.site_version,'1.9.193');
+assert.equal(r185.new_candidate.retail.display_cny_per_own_account_month,115);
+assert.equal(r185.new_candidate.wholesale_agent.agent_qualification_upfront_cny,20);
+assert.equal(r185.new_candidate.wholesale_agent.agent_supplier_display_cny_per_undisclosed_unit,120);
+assert.equal(r185.new_candidate.wholesale_agent.retail_sku_same_as_agent_sku_verified,false);
+assert.equal(r185.new_candidate.full_all_fees_valid_china_vat_cny,null);
+assert.equal(r185.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r185.actual_purchase_or_sms_test_performed,false);
