@@ -4478,6 +4478,28 @@
       "summary": "两项CatFK商品商家原始URL和独立第三方索引；¥3与¥129非卖家实付，¥132.61仅一次HTML预览；未知票费/授权null，真实SMS与发票为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r188-20261114",
+      "title": "GPT源头第188轮 · 盾灵Plus最低开票费及Session限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r16.html",
+      "updatedAt": "2026-11-14",
+      "summary": "新读盾灵Plus零售价¥149/月、另收开票费6%最低¥15；算术¥164并非实付含VAT。需登录Session且当前有会员不可用；法律出票主体、授权与批发未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r188-20261114-evidence",
+      "title": "第188轮 · 盾灵6%最低¥15开票费与批发条件证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r16-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "实读4条原始商家和OpenAI网址；Plus¥149/账号·月、开票费最低¥15，缺真实收款/出票法人、VAT验票及单件批发价；零交易与短信测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

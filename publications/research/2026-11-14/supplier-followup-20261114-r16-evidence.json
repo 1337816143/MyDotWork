@@ -1,0 +1,127 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 188,
+  "site_version": "1.9.196",
+  "observed_on": "2026-11-14",
+  "scope": "首次直接实读盾灵Plus ¥149/月零售标价和订单内嵌开票费率6%最低¥15；计算¥164只是条件推导，不是含有效中国VAT真实实付。无批发或手机号实测。",
+  "criteria": {
+    "own_account": true,
+    "one_month": true,
+    "one_unit": true,
+    "no_agent_upfront_fee": true,
+    "maximum_verified_all_fees_valid_china_vat_cny": 170
+  },
+  "new_retail_candidate": {
+    "name": "盾灵导航",
+    "original_url": "https://www.dunling.com/chatgpt-codex",
+    "merchant_self_updated": "2026-11-12",
+    "currency": "CNY",
+    "sku": "ChatGPT Plus本人原号 1账号·1个月",
+    "merchant_sku_id": null,
+    "displayed_retail_price_cny_per_account_month": 149,
+    "included_technical_fee_cny": 15,
+    "additional_invoice_fee_rule_merchant_claim": {
+      "rate": 0.06,
+      "minimum_cny": 15,
+      "derived_rate_amount_cny": 8.94,
+      "derived_applicable_invoice_fee_cny": 15
+    },
+    "plus_invoiced_derived_sum_conditional_cny": 164,
+    "actual_checkout_cny": null,
+    "payment_extra_fees_cny": null,
+    "total_verified_with_valid_china_vat_cny": null,
+    "chinese_vat_invoice_claim": {
+      "normal_invoice": true,
+      "special_invoice": true,
+      "days_after_payment": 3,
+      "verified_invoice": false,
+      "issuer_name": null,
+      "issuer_tax_id": null
+    },
+    "website_icp_text": "赣ICP备2025071319号-1",
+    "icp_holder_verified": false,
+    "legal_operator": null,
+    "payment_entity": null,
+    "invoice_entity": null,
+    "own_account_merchant_claim": true,
+    "prior_login_required_claim": true,
+    "session_json_transferred_to_third_party_claim": true,
+    "existing_paid_subscription_not_eligible_claim": true,
+    "renewal_on_existing_plus_verified": false,
+    "wholesale_single_unit_cny": null,
+    "agent_entry_fee_cny": null,
+    "bona_fide_wholesale_verified": false,
+    "openai_authorized_distributor_verified": false,
+    "merchant_denies_openai_affiliation": true,
+    "refund_before_fulfillment_claim": true,
+    "refund_after_fulfillment_claim": false,
+    "real_refund_tested": false,
+    "qualifies_as_verified_upstream": false
+  },
+  "independent_phone": {
+    "new_phone_sku_identified": false,
+    "number_control_period_days": null,
+    "phone_sku_price_cny": null,
+    "refund_when_no_sms_cny": null,
+    "chatgpt_web_sms_successes": 0,
+    "codex_desktop_sms_successes": 0,
+    "first_api_key_sms_successes": 0,
+    "normal_plus_or_apple_binds_phone": false,
+    "official_voip_accepted": false
+  },
+  "sources": [
+    {
+      "url": "https://www.dunling.com/chatgpt-codex",
+      "observed_on": "2026-11-14",
+      "merchant_page_updated": "2026-11-12",
+      "read_status": "direct_merchant_page_and_unpaid_checkout_html",
+      "evidence_level": "merchant_claim_not_paid",
+      "facts": "Plus 149元/账号月；含15元技术费；另收开票价6%最低15元；弹窗动态金额0元为占位，非实际付费；在期会员不适用，需登录复制Session JSON；交付后不退；声明非OpenAI授权经销。"
+    },
+    {
+      "url": "https://www.dunling.com/fuwuxieyi",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_generic_terms",
+      "evidence_level": "site_statement",
+      "facts": "站点通用协议，不能确证实际Plus收款主体或授权"
+    },
+    {
+      "url": "https://www.dunling.com/about",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_about",
+      "evidence_level": "site_statement",
+      "facts": "未见可独立验证开票税号、实际代充进货或授权文件"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_official_help",
+      "evidence_level": "official_policy_not_SMS_test",
+      "facts": "ChatGPT一般无需手机号验证，Codex桌面端可能要求，初次API Key要求；短信或支持的WhatsApp，非VoIP或电话语音"
+    }
+  ],
+  "other_suppliers_not_price_refreshed": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "invoice_verified": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "historical_126_prices_modified": false,
+  "previous_187_reports_modified": false
+}
