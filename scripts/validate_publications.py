@@ -131,14 +131,35 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 405, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 407, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.186'
+    assert latest['version'] == '1.187'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r14.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r14-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r13.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r15.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r15-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r14.html'
+
+    # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
+    assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
+    assert by_id['gpt-source-followup-r187-20261114-evidence']['url'].endswith('supplier-followup-20261114-r15-evidence.json')
+    r187 = json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r15-evidence.json').read_bytes())
+    assert r187['round'] == 187 and r187['site_version'] == '1.9.195'
+    sms187 = r187['independent_phone']
+    assert sms187['number_control_period_minutes_merchant_claim'] == 20
+    assert sms187['second_or_repeat_verification_supported_merchant_claim'] is False
+    assert sms187['third_party_index_display_price_cny_per_one_code'] == 3
+    assert sms187['direct_merchant_page_price_verified_cny'] is None
+    assert sms187['refund_to_original_payment_guaranteed'] is False
+    assert sms187['actual_sms_passed_tested'] is False
+    plus187 = r187['plus']
+    assert plus187['existing_period_overwritten_not_accumulated_claim'] is True
+    assert plus187['all_required_fees_valid_china_vat_cny'] is None
+    assert plus187['eligible_qualified_upstream'] is False
+    assert r187['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r187['qualification_totals']['verified_phone_sms_successes'] == 0
+    assert r187['historical_126_prices_modified'] is False
+    assert r187['actual_purchase_or_sms_test_performed'] is False
 
     # R186 newly read retailer: old base price + conflicting invoice rates are conditional, not a verified payable invoice total.
     assert by_id['gpt-source-followup-r186-20261114']['url'].endswith('supplier-followup-20261114-r14.html')

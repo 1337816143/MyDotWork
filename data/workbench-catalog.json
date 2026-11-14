@@ -4456,6 +4456,28 @@
       "summary": "6个实际读取商家自有URL，旧文自标日期和本轮观察分开；5%/6%算术不是实付，未知费用null、税票授权及真实SMS为零。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r187-20261114",
+      "title": "GPT源头第187轮 · AI猫站长Codex 20分钟首验与Plus覆盖风险",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r15.html",
+      "updatedAt": "2026-11-14",
+      "summary": "首读CatFK AI猫站长Codex仅首次登录且号有效20分钟、卖家退款口径不闭合；原号Plus在期续费覆盖不叠加；第三方索引与未付款手续费预览严格分开。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r187-20261114-evidence",
+      "title": "第187轮 · Codex 20分钟限制与Plus原号Session条件证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r15-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "两项CatFK商品商家原始URL和独立第三方索引；¥3与¥129非卖家实付，¥132.61仅一次HTML预览；未知票费/授权null，真实SMS与发票为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
