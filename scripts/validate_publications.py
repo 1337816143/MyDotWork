@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 393, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 395, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.180'
+    assert latest['version'] == '1.181'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r7.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r8.html'
 
     # R170: public $0.01 OpenAI SMS offer has mandatory $40 nonwithdrawable prepay.
     assert by_id['gpt-source-followup-r170-20261113']['url'].endswith('supplier-followup-20261113-r11.html')
@@ -2066,6 +2066,26 @@ def validate_publications():
     assert retail180['official_consumer_plus_distribution_authorization_verified'] is False
     assert all(x==0 for x in r180['qualification_totals'].values())
     assert r180['historical_prices_refreshed'] is False and r180['actual_purchase_or_sms_test_performed'] is False
+
+    # R181: compare identical SKU G62975691 merchant stock display on two observation dates.
+    assert by_id['gpt-source-followup-r181-20261114']['url'].endswith('supplier-followup-20261114-r9.html')
+    assert by_id['gpt-source-followup-r181-20261114-evidence']['url'].endswith('supplier-followup-20261114-r9-evidence.json')
+    r181=json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r9-evidence.json').read_bytes())
+    assert r181['round']==181 and r181['site_version']=='1.9.189'
+    change=r181['material_change']
+    assert change['exact_sku_id']=='G62975691'
+    assert change['prior_merchant_stock_label']=='有货'
+    assert change['current_merchant_stock_label']=='暂时缺货'
+    assert change['current_display_price_cny_per_account_month']==128.8
+    assert change['price_change_observed'] is False
+    assert change['real_inventory_or_transaction_tested'] is False
+    assert change['checkout_payment_fee_cny'] is None
+    assert change['real_all_in_plus_china_vat_cost_cny'] is None
+    assert change['retailer_service_permanently_discontinued_verified'] is False
+    assert change['eligible_upstream_under_user_criteria'] is False
+    assert all(v==0 for v in r181['qualification_totals'].values())
+    assert r181['historical_126_prices_modified'] is False
+    assert r181['actual_purchase_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

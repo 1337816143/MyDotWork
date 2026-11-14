@@ -1,3 +1,11 @@
+## 1.9.189 · 2026-11-14
+
+- 第181轮取得本人原号Plus准确SKU公开库存实质变化：yxab.cn 的 G62975691 在第135轮2026-11-11同SKU一方商家商品页标“有货”，2026-11-14直接读取商品页及目录均标“暂时缺货”，目录其余四款亦显示暂时缺货。¥128.80/账号·月挂牌未变；库存标签变化不是实际订单失败、永久停服、渠道整体关闭或价格变动证明；旧SKU G69666080不混同。
+- 已有商品规则继续明确Free账号、不可在期Go/Plus/Pro叠加、卡密须先登录兑换；30天仅保掉订、官方实退再扣20%均为商家旧承诺，并非本轮新售后条款。支付通道手续费、真实含有效中国VAT全费、经营/收款/出票主体、真批发进价、单件无前置费及个人Plus转售授权都仍null或未核；OpenAI账单不是已核中国VAT发票。
+- 手机验证仍按OpenAI官方区分ChatGPT网页/Codex桌面端/首次API key；购买Plus或Apple/Session方式不保证自动绑手机号或解除验证，无独立新SMS SKU或实测。符合本人原号单件单月、免前置费、有效中国VAT含全费≤¥170的已核Plus批发仍0，实购0、验票0、短信成功0。未刷新其他CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay及126条历史报价。
+- 本轮新增r181报告HTML/证据JSON、精确SHA256白名单、project-1目录、总库最新入口、VERSION和回归断言；前180轮历史原文保留。不付款、不联系商家、不提交敏感凭据。
+- 新实读2026-11-14原始URL：https://yxab.cn/product/G62975691 和 https://yxab.cn/products；历史比较2026-11-11：publications/research/2026-11-11/supplier-followup-20261111-r8-evidence.json；官方旧规则复核：https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.188 · 2026-11-14
 
 - 第180轮首次直接核读Plus宇宙商家本人原号Plus准确SKU：人民币¥149／30天为零售展示价，先登录并交Session，商称微信/支付宝支付、30天质保和按余天退款；真实结算手续费、有效中国VAT总费、实际开票及履约均null或0，不能标已核上游。
