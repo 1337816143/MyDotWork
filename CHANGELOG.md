@@ -1,3 +1,11 @@
+## 1.9.192 · 2026-11-14
+
+- 第184轮首次直接核读SMSCreation年付持续持号候选：商家声称181国非VoIP移动号、无限入站短信；准确年付SKU公开价格**US$21.60/号码·年一次付清**，US$1.80/月仅为均摊，月付/短租准确结算价null。仅接受USDT/USDC加密货币/站内钱包，链费、汇兑、最低预存及真实结算总额null；不是Plus订阅供货价，已核批发名单不新增。
+- 其商称7天内平台不兼容可换号或100%退款、7天无短信通话使用可无理由退款；未能分配号码自动退站内钱包、钱包退币须申请并扣网络费，故不能宣称原路即时现金退款。7天后当期不可退。真实退款、提现、持续同号与电信合作均未测试。退款及服务条款网页自标2026年9月，本轮仅首次归档，不是2026-11-14新出台政策。
+- SMSCreation自述经营者SMS Creation Inc（美国新墨西哥州La Mesa地址），商称公司2018年成立但官网与号码产品2026年9月上线；登记、收款与实际电信号码来源未独验。其ChatGPT专页前段错误暗示验证码可电话呼入，后段又正确称仅SMS/部分国家WhatsApp；依OpenAI官方，只能SMS或支持的WhatsApp，不可语音呼叫、VoIP/座机。ChatGPT网页、Codex桌面、首次API Key全部真实接码成功0。
+- 复核既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay无新的含有效中国VAT全费、经营收票主体、实际单件批发价、正式个人Plus授权与真实履约闭环，不刷新历史报价。满足本人号单件单月无前置费、含必需支付及有效中国VAT≤¥170的已核Plus批发0；Plus实购0、验票0、短信成功0。只新增r184 HTML/JSON、精确SHA256白名单、project-1目录、最新总库入口、VERSION、CHANGELOG及回归断言；旧126条报价及前183轮报告字节不改；无付款、联系商家或提交敏感凭据。
+- 本轮新读原始URL：https://smscreation.com/apps/chatgpt-number 、https://smscreation.com/pricing 、https://smscreation.com/legal/refund 、https://smscreation.com/legal/terms 、https://smscreation.com/about 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。观察日2026-11-14；商家声明与真实验收分开。
+
 ## 1.9.191 · 2026-11-14
 
 - 第183轮首次直接读取锦鹏AI官网，公开本人原号ChatGPT Plus独享¥140／账号·1个月，商称续费同价、经美国借记卡支付官方临时账单链接，另域jinpeng168.top购买卡密、chongplus.xyz兑换。商家明确商称提供中国普通增值税电子发票、订单ID登记后3工作日出具；与其他明确不开票商家不同，但无真实经营收款/出票主体名称税号、有效税票验真、票费、结算手续费、批发价、正式Plus供货授权、单件免代理前置费证明，真实含有效中国VAT全费null，不能称已达≤¥170合法批发条件。商家用户评价和掉订/失败原路退款均非独立实测。

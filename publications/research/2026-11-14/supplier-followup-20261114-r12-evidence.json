@@ -1,0 +1,167 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 184,
+  "site_version": "1.9.192",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次核读独立持号式接码SMSCreation：US$21.60/号码·年，$1.80/月是按年预付均摊而非月付；商称非VoIP/181国/退款，全部缺独立运营商、真实接码和退款验收。核对商家同页语音验证码自相矛盾，OpenAI官方只支持SMS或符合国家的WhatsApp。无新合格Plus批发。",
+  "criteria": {
+    "own_existing_chatgpt_account": true,
+    "plus_quantity": 1,
+    "plus_duration_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_max_all_fees_valid_china_vat_cny": 170
+  },
+  "new_independent_phone_number_provider": {
+    "merchant": "SMSCreation",
+    "product_type": "independent_long_term_phone_number_rental_not_plus",
+    "product_url": "https://smscreation.com/apps/chatgpt-number",
+    "public_claim_line_type": "real_non_voip_mobile",
+    "true_mobile_line_type_independently_verified": false,
+    "country_count_merchant_claim": 181,
+    "actual_country_stock_tested": false,
+    "exact_sku": "annual mobile phone number rental (advertised same annual rate for 181 countries)",
+    "display_price_usd_per_number_year": 21.6,
+    "effective_display_usd_per_month_if_annual_prepaid": 1.8,
+    "annual_payment_required": true,
+    "one_month_sku_available_claim": true,
+    "one_month_sku_checkout_price_usd": null,
+    "short_term_skus_checkout_prices_usd": null,
+    "annual_price_per_country_live_checkout_verified": false,
+    "payment_methods_claim": [
+      "USDT Tron",
+      "USDT Polygon",
+      "USDT BNB Smart Chain",
+      "USDT Base",
+      "USDT Solana",
+      "USDC on supported chains",
+      "prepaid wallet"
+    ],
+    "bank_card_accepted": false,
+    "payment_network_fee_usd": null,
+    "exchange_rate_fee_usd": null,
+    "minimum_deposit_usd": null,
+    "total_actual_payment_usd": null,
+    "monthly_incoming_sms_claim": "unlimited",
+    "monthly_incoming_calls_claim": "unlimited",
+    "monthly_outgoing_sms_claim": 500,
+    "monthly_outgoing_call_minutes_claim": 1000,
+    "telecom_partner_name_verified": null,
+    "real_sms_delivered_tested": false,
+    "same_number_retained_as_long_as_renewed_claim": true,
+    "renewal_can_use_wallet_auto_pay_claim": true,
+    "expiry_release_after_grace_claim": true,
+    "phone_number_assigned_only_after_activation_claim": true,
+    "previous_number_history_independently_verified": false,
+    "operator_merchant_claim": "SMS Creation Inc.",
+    "operator_claim_address": "6554 Rio Seco Ct, La Mesa, NM 88044, United States",
+    "business_entity_official_registry_verified": false,
+    "website_launch_merchant_claim": "September 2026",
+    "operator_established_merchant_claim": "2018",
+    "invoice_china_vat_available_verified": false,
+    "guarantee_merchant_claim": {
+      "window_days": 7,
+      "app_rejection_offer": "replacement same-country number or 100% refund if within 7 days",
+      "general_refund_if_no_sms_or_calls_used": "merchant claims within 7 days, full refund",
+      "order_activation_failed": "automatically returns full amount to platform wallet",
+      "unused_wallet_cashout": "crypto refund on request less network fee",
+      "after_seven_days": "current term is nonrefundable",
+      "refund_to_original_payment_guaranteed": false,
+      "actual_refund_tested": false,
+      "refund_crypto_network_fee_usd": null
+    },
+    "contradictions": [
+      "One page initially says ChatGPT codes arrive via SMS or voice call; later that page and OpenAI's official policy say SMS or supported WhatsApp only, not voice call",
+      "Vendor claims all 181 countries annual same price and telecom mobile status without checkout/independent evidence; do not treat as verified operator supply"
+    ],
+    "official_openai_verification_limits": {
+      "chatgpt_web_verification_generally_required": false,
+      "codex_desktop_may_require_phone": true,
+      "first_api_key_requires_phone": true,
+      "phone_otp_sms_or_available_whatsapp_only": true,
+      "phone_call_not_supported": true,
+      "voip_landline_not_supported": true
+    },
+    "tests": {
+      "chatgpt_web_sms_success": false,
+      "codex_desktop_sms_success": false,
+      "first_api_key_sms_success": false,
+      "renewal_keep_number": false,
+      "cash_refund": false
+    },
+    "risk_level": "unverified_new_vendor_merchant_claims_only",
+    "not_verified_recommendation": true
+  },
+  "sources": [
+    {
+      "url": "https://smscreation.com/apps/chatgpt-number",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_page",
+      "evidence_level": "merchant_claim_not_independent_success",
+      "facts": "ChatGPT dedicated rental, $21.60 per number/year, $1.80/mo effective on annual prepaid, 181 countries claim, non-VoIP claim, 7d guarantee and intra-page call-versus-SMS inconsistency"
+    },
+    {
+      "url": "https://smscreation.com/pricing",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_page",
+      "evidence_level": "merchant_published_display_only",
+      "facts": "Annual prepay $21.60/year per number, unlimited incoming SMS claim, 500 outgoing SMS+1000 call minutes/month; other plan prices only at number checkout, actual prices unknown; crypto USDT/USDC only; renewal and release"
+    },
+    {
+      "url": "https://smscreation.com/legal/refund",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-09",
+      "read_status": "direct_merchant_policy",
+      "evidence_level": "merchant_terms_not_cash_refund_verified",
+      "facts": "7-day merchant promise replace or full refund; unused no-question 7day; activation failure automatically credits platform wallet; unused wallet crypto refund subject network fee; after 7d current term nonrefundable"
+    },
+    {
+      "url": "https://smscreation.com/legal/terms",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-09",
+      "read_status": "direct_merchant_policy",
+      "evidence_level": "merchant_terms_not_operator_registry",
+      "facts": "Mobile service through unnamed telecom partners; cryptocurrency exact chain matching; merchant states operator SMS Creation Inc; suspension/release on expired rental"
+    },
+    {
+      "url": "https://smscreation.com/about",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_about_page",
+      "evidence_level": "merchant_identity_claim_not_official_registration",
+      "facts": "Merchant says company began 2018 and website/service launched September 2026; registered office claim 6554 Rio Seco Ct, La Mesa NM 88044; no independent registry validation"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "read_status": "official_primary_direct_read",
+      "evidence_level": "official_policy_existing_not_new_policy",
+      "facts": "ChatGPT usually no phone; Codex desktop may, first API Key requires; supports SMS or selected countries WhatsApp, no calls; no VoIP/landline; vendor promise not verified"
+    }
+  ],
+  "older_supplier_prices_not_refreshed": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "new_qualified_plus_wholesale_found": false,
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "invoice_verified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "historical_126_prices_modified": false,
+  "previous_183_reports_modified": false
+}
