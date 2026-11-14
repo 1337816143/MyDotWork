@@ -4280,6 +4280,28 @@
       "summary": "5条直接读取的商家原始URL、用途对比及1条此前归档官方参考；未知支付/票费null、商家承诺非真实实测；旧报价不刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r179-20261114",
+      "title": "GPT源头第179轮 · SMS Portal OpenAI单次接码与退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r7.html",
+      "updatedAt": "2026-11-14",
+      "summary": "OpenAI美国单次验证码0.33美元，预充值、无码退不可提现余额；未实测，月租重定向未核，合格Plus上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r179-20261114-evidence",
+      "title": "第179轮 · 独立接码准确SKU和预付退款结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r7-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "5个直接读取来源，未知费用null，独立实际验证0，既有126价未刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
