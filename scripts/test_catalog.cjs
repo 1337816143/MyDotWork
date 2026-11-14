@@ -1891,3 +1891,17 @@ assert.equal(r187.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r187.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r187.actual_purchase_or_sms_test_performed,false);
 assert.equal(r187.historical_126_prices_modified,false);
+
+// R188: public invoice fee floor is not proof of real-paid valid Chinese VAT or upstream rights.
+const er188=d.records.find(x=>x.id==='gpt-source-followup-r188-20261114');
+const edr188=d.records.find(x=>x.id==='gpt-source-followup-r188-20261114-evidence');
+assert(er188&&edr188&&er188.url.endsWith('supplier-followup-20261114-r16.html'));
+const dr188=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r16-evidence.json'),'utf8'));
+assert.equal(dr188.round,188);assert.equal(dr188.site_version,'1.9.196');
+assert.equal(dr188.new_retail_candidate.displayed_retail_price_cny_per_account_month,149);
+assert.equal(dr188.new_retail_candidate.additional_invoice_fee_rule_merchant_claim.minimum_cny,15);
+assert.equal(dr188.new_retail_candidate.plus_invoiced_derived_sum_conditional_cny,164);
+assert.equal(dr188.new_retail_candidate.total_verified_with_valid_china_vat_cny,null);
+assert.equal(dr188.new_retail_candidate.bona_fide_wholesale_verified,false);
+assert.equal(dr188.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(dr188.actual_purchase_or_sms_test_performed,false);
