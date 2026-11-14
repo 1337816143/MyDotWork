@@ -4654,6 +4654,28 @@
       "summary": "准确商品原链、条件、状态、一方声明与未知费用null；无实际交易、发票、短信测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r196-20261115",
+      "title": "GPT源头第196轮 · HugPass与24Sub自称同经营者及批发资格缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r6.html",
+      "updatedAt": "2026-11-15",
+      "summary": "两品牌Plus均¥155/月、各条款均自称ClyGen Inc运营；代理合作需要审批，真正一件含有效中国VAT的上游仍未验证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r196-20261115-evidence",
+      "title": "第196轮 · 两品牌准确报价、主体声明、代理与兑换API证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r6-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "9条当日实读原始URL；商家声明非验真身份或实际交易，未知费率null，Codex积分不是短信服务。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
