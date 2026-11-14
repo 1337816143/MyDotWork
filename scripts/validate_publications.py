@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 423, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 425, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.195'
+    assert latest['version'] == '1.196'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r5.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r5-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r4.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r6.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r6-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r5.html'
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
@@ -2304,6 +2304,24 @@ def validate_publications():
     assert r195['qualification_totals']['verified_plus_wholesale_upstreams']==0
     assert r195['qualification_totals']['verified_phone_sms_successes']==0
     assert r195['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
+
+    # R196: grouped self-claimed operator, not independently verified upstream or phone service.
+    assert by_id['gpt-source-followup-r196-20261115']['url'].endswith('supplier-followup-20261115-r6.html')
+    assert by_id['gpt-source-followup-r196-20261115-evidence']['url'].endswith('supplier-followup-20261115-r6-evidence.json')
+    r196=json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r6-evidence.json').read_bytes())
+    assert r196['round']==196 and r196['site_version']=='1.9.204'
+    g=r196['new_vendor_group'];bs=g['brands']
+    assert g['declared_operator']=='ClyGen Inc'
+    assert len(bs)==2 and g['independently_verified_wholesale_upstreams']==0
+    assert [b['price_cny_per_account_month'] for b in bs]==[155,155]
+    assert [b['codex_250_credits_price_cny_per_topup'] for b in bs]==[82,85]
+    assert all(b['codex_credits_are_phone_service'] is False for b in bs)
+    assert all(b['valid_china_vat_total_cny'] is None for b in bs)
+    assert g['partner_program']['public_single_unit_wholesale_cny'] is None
+    assert g['api']['bulk_purchase_quote_documented'] is False
+    assert r196['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert r196['qualification_totals']['verified_phone_sms_successes']==0
+    assert r196['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

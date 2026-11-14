@@ -1975,3 +1975,20 @@ assert.equal(r195.yunshu_plus_0006.current_live_plus_price_cny,null);
 assert.equal(r195.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r195.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r195.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);
+
+// R196: distinct public brands are one claimed operator, and Codex points are not a phone/SMS SKU.
+const e196=d.records.find(x=>x.id==='gpt-source-followup-r196-20261115'),ed196=d.records.find(x=>x.id==='gpt-source-followup-r196-20261115-evidence');
+assert(e196&&ed196&&e196.url.endsWith('supplier-followup-20261115-r6.html'));
+const r196=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r6-evidence.json'),'utf8'));
+const group196=r196.new_vendor_group;
+assert.equal(r196.round,196);assert.equal(r196.site_version,'1.9.204');
+assert.equal(group196.declared_operator,'ClyGen Inc');assert.equal(group196.brands.length,2);
+assert.equal(group196.independently_verified_wholesale_upstreams,0);
+assert.deepEqual(group196.brands.map(x=>x.price_cny_per_account_month),[155,155]);
+assert.deepEqual(group196.brands.map(x=>x.codex_250_credits_price_cny_per_topup),[82,85]);
+assert(group196.brands.every(x=>x.codex_credits_are_phone_service===false && x.valid_china_vat_total_cny===null));
+assert.equal(group196.partner_program.public_single_unit_wholesale_cny,null);
+assert.equal(group196.api.bulk_purchase_quote_documented,false);
+assert.equal(r196.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r196.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r196.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);

@@ -1,3 +1,11 @@
+## 1.9.204 · 2026-11-15
+
+- 第196轮首次直接核读HugPass与24Sub两套品牌：本人原号Plus均挂牌¥155/账号·月，Codex 250 credits另为¥82/次和¥85/次，不是手机号验证服务；不是实付价。
+- 两站条款分别自称由ClyGen Inc运营，并声明非OpenAI授权经销商。条款自标2026-10-18，本轮首次归档，非当天政策变化；两个域名合并到同一自称经营主体组，不证明公司登记、收款身份及实际共同货源。
+- 代理合作须申请协商、按销量分级；一件Plus批发进价、入场费、全额支付及有效中国增值税发票、实际税票主体、正式授权与真实履约均未证。API v1.4需要既有兑换码和已登录Session JSON，是兑换/查询而非一件Plus报价采购；不能解除网页登录验证。
+- 合格原号一件一月免前置费、含必要全部付款及有效中国VAT≤¥170的真正批发上游仍0；实购、验票、接码成功均0。新增本轮HTML/JSON、精确哈希白名单、工作台目录、总库入口、版本、CHANGELOG及验证；历史126报价和前195轮原文不修改。无付款、商家联系或账号秘密。
+- 来源（观察2026-11-15）：https://hugpass.com/products/chatgpt 、https://24sub.com/products/chatgpt 、https://hugpass.com/terms 、https://24sub.com/terms 、https://hugpass.com/partners 、https://24sub.com/partners 、https://hugpass.com/docs 、https://24sub.com/docs 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.203 · 2026-11-15
 
 - 第195轮首次直接核王哈哈菲律宾区Plus本人原号CDK：单件公开¥108/件，10件起批量价¥107/件不可当单件批发报价。商称商品有货/自动交付、Free账号、30天按日退款；经营/收款/出票主体、有效中国增值税票、授权、支付费、票费、真实履约仍未验，未知成本为null。
