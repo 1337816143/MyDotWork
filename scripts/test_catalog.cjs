@@ -1782,3 +1782,21 @@ assert.equal(r181.phone_verification.actual_sms_successes,0);
 assert.equal(r181.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r181.actual_purchase_or_sms_test_performed,false);
 assert.equal(r181.historical_126_prices_modified,false);
+
+// R182: TopupCat new explicit no-invoice retailer, not wholesale, and differing exact iOS/Philippines SKUs.
+const r182entry=d.records.find(x=>x.id==='gpt-source-followup-r182-20261114');
+const r182dataEntry=d.records.find(x=>x.id==='gpt-source-followup-r182-20261114-evidence');
+assert(r182entry&&r182dataEntry&&r182entry.url.endsWith('supplier-followup-20261114-r10.html'));
+const r182=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r10-evidence.json'),'utf8'));
+assert.equal(r182.round,182);assert.equal(r182.site_version,'1.9.190');
+assert.deepEqual(r182.new_merchant.retail_skus.map(x=>x.display_price_cny_per_account_month),[149,159]);
+assert.equal(r182.new_merchant.receipt_and_invoice.seller_claims_valid_china_vat_invoice,false);
+assert.equal(r182.new_merchant.receipt_and_invoice.all_in_plus_with_valid_china_vat_cny,null);
+assert.equal(r182.new_merchant.conflicting_eligibility_pages.conflict_requires_exact_checkout_sku_confirmation,true);
+assert.equal(r182.new_merchant.operator_claim.address_same_in_both_domains,true);
+assert.equal(r182.new_merchant.operator_claim.domain_control_or_contractual_operator_relationship_independently_verified,false);
+assert.equal(r182.new_merchant.eligible_upstream_under_user_criteria,false);
+assert.equal(r182.phone_verification.actual_sms_successes,0);
+assert.equal(r182.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r182.historical_126_prices_modified,false);
+assert.equal(r182.actual_purchase_or_sms_test_performed,false);

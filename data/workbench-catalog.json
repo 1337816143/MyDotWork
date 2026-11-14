@@ -4346,6 +4346,28 @@
       "summary": "2条2026-11-14直接读取商家原始URL，1条2026-11-11已归档同SKU状态及官方旧规则复核；价格128.80未刷新其他商家，费用/税票/授权null，实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r182-20261114",
+      "title": "GPT源头第182轮 · TopupCat两类Plus、发票明确缺失与经营主体线索",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r10.html",
+      "updatedAt": "2026-11-14",
+      "summary": "首次核读菲律宾Plus¥149/月和iOS Plus¥159/月；同站近到期覆盖条件跨页面冲突；FAQ明确不提供发票，香港公司地址与WhatsApp跨域一致但授权及真实收款未知，已核合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r182-20261114-evidence",
+      "title": "第182轮 · TopupCat SKU、不开票、条件冲突与主体字段证据数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r10-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "8个本轮直接读取原始URL；两个明确SKU不同渠道，条款旧更新日，发票明确不提供；真实付款、票据、授权及短信均未实测；未知费用null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
