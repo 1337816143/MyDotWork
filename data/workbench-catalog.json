@@ -4632,6 +4632,28 @@
       "summary": "2026-11-15直接读取一方URL，技术接口与真采购区分；商品Loading，价/费用保持null；核实Plus批发和短信均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r195-20261115",
+      "title": "GPT源头第195轮 · 王哈哈单件及批量价、云枢Plus未上架",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r5.html",
+      "updatedAt": "2026-11-15",
+      "summary": "王哈哈Plus菲区单件¥108、10件+ ¥107/件；云枢Plus 0006当前直接提示未上架，索引¥111不能算可交易现价；含中国VAT单件批发未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r195-20261115-evidence",
+      "title": "第195轮 · 菲区Plus价格数量与商品上架状态数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r5-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "准确商品原链、条件、状态、一方声明与未知费用null；无实际交易、发票、短信测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

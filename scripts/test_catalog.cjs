@@ -1960,3 +1960,18 @@ assert.equal(r194.new_wholesale_system_candidate.current_live_wholesale_one_unit
 assert.equal(r194.new_wholesale_system_candidate.valid_china_vat_invoice_total_cny,null);
 assert.equal(r194.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r194.qualification_totals.verified_phone_sms_successes,0);
+
+// R195: quantity tier, stale index, invoice and SMS assertions.
+const er195=d.records.find(x=>x.id==='gpt-source-followup-r195-20261115'),ed195=d.records.find(x=>x.id==='gpt-source-followup-r195-20261115-evidence');
+assert(er195&&ed195&&er195.url.endsWith('supplier-followup-20261115-r5.html'));
+const r195=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r5-evidence.json'),'utf8'));
+assert.equal(r195.round,195);assert.equal(r195.site_version,'1.9.203');
+assert.equal(r195.new_public_tier_candidate.wholesale_tier_min_quantity,10);
+assert.equal(r195.new_public_tier_candidate.wholesale_tier_eligible_single_unit,false);
+assert.equal(r195.new_public_tier_candidate.valid_china_vat_invoice_total_cny,null);
+assert.equal(r195.yunshu_plus_0006.direct_server_message,'该商品暂未上架');
+assert.equal(r195.yunshu_plus_0006.index_price_verified_current,false);
+assert.equal(r195.yunshu_plus_0006.current_live_plus_price_cny,null);
+assert.equal(r195.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r195.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r195.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);
