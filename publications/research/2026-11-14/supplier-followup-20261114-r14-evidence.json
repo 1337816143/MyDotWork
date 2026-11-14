@@ -1,0 +1,153 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 186,
+  "site_version": "1.9.194",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次核读闪电AI旧Plus ¥168/月示例与当前官网+5%票费、旧文+6%冲突；凭证条件及正式退款条款口径差异；准确动态售价、全部费用、有效中国VAT与批发资格未核。",
+  "criteria": {
+    "own_existing_chatgpt_account": true,
+    "plus_quantity": 1,
+    "plus_duration_months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_max_all_fees_valid_china_vat_cny": 170
+  },
+  "new_candidate": {
+    "merchant": "闪电AI ElectaGPT",
+    "retail_not_wholesale": true,
+    "merchant_site": "https://electagpt.com/",
+    "upstream_verified": false,
+    "official_openai_reseller_authorization_verified": false,
+    "merchant_explicitly_not_officially_authorized": true,
+    "registered_business_legal_entity": null,
+    "payment_legal_entity": null,
+    "china_vat_invoice_issuer": null,
+    "taxpayer_id": null,
+    "plus_sku": {
+      "old_blog_base_cny_per_account_month": 168,
+      "old_blog_self_updated_on": "2026-08-26",
+      "old_blog_sku_exact_checkout_verified": false,
+      "current_page_live_plus_price_cny": null,
+      "current_checkout_sku_verified": false,
+      "existing_plus_renewal_verified": false
+    },
+    "invoicing": {
+      "homepage_extra_fee_rate_claim": 0.05,
+      "current_category_extra_fee_rate_claim": 0.05,
+      "about_extra_fee_rate_claim": 0.05,
+      "old_blog_extra_fee_rate_claim": 0.06,
+      "old_blog_and_current_page_conflict": true,
+      "computed_old_base_at_5_percent_cny": 176.4,
+      "computed_old_base_at_6_percent_cny": 178.08,
+      "calculation_is_not_quoted_checkout_total": true,
+      "real_payment_fee_cny": null,
+      "real_invoice_fee_cny": null,
+      "all_payment_fees_with_valid_china_vat_cny": null,
+      "valid_china_vat_invoice_verified": false
+    },
+    "credentials": {
+      "homepage_plus_email_only_claim": true,
+      "about_basics_email_only_claim": true,
+      "category_go_plus_pro_temporary_credentials_claim": true,
+      "conflicting_merchant_pages": true,
+      "actual_session_or_token_required_verified": false,
+      "requires_prior_login_verified": null,
+      "app_store_channel_merchant_claim": true
+    },
+    "refund": {
+      "homepage_unconditional_failure_refund_claim": true,
+      "formal_terms_limits_to_merchant_error_or_system_failure": true,
+      "formal_terms_refund_to_original_payment_claim": true,
+      "successful_delivery_platform_ban_excluded": true,
+      "wrong_email_full_refund_guaranteed": false,
+      "real_refund_tested": false
+    },
+    "official_wholesale_authorization_verified": false,
+    "wholesale_price_per_one_month_cny": null,
+    "minimum_wholesale_quantity": null,
+    "upfront_agent_fee_cny": null,
+    "real_transaction_tested": false,
+    "qualified_wholesale": false
+  },
+  "independent_phone_verification": {
+    "separate_number_product_evidence_found": false,
+    "chatgpt_web_success_tested": false,
+    "codex_desktop_success_tested": false,
+    "first_api_key_success_tested": false,
+    "phone_number_term": null,
+    "sms_failure_refund_to_original_payment_verified": false,
+    "subscription_payment_guarantees_phone_binding": false
+  },
+  "sources": [
+    {
+      "url": "https://electagpt.com/",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_homepage",
+      "evidence_level": "merchant_claim_not_test",
+      "facts": "Current public +5% invoice surcharge; basic GO/Plus email only, Pro token; Apple or bank-card fulfillment; all outcomes self claims"
+    },
+    {
+      "url": "https://electagpt.com/chatgpt",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_category",
+      "evidence_level": "merchant_claim_not_checkout",
+      "facts": "+5% invoice; GO/Plus/Pro all temporary credentials; current Plus dynamic checkout SKU and exact price not exposed"
+    },
+    {
+      "url": "https://www.electagpt.com/blog/chongzhi-fapiao",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-08-26",
+      "read_status": "direct_merchant_older_blog",
+      "evidence_level": "historical_blog_not_current_price",
+      "facts": "Plus CNY168/account month example; electronic normal VAT invoice with +6%; cannot infer current payable sum"
+    },
+    {
+      "url": "https://electagpt.com/about",
+      "observed_on": "2026-11-14",
+      "read_status": "direct_merchant_about",
+      "evidence_level": "merchant_claim_not_authorization",
+      "facts": "Basic email only, Pro temporary token; seller not affiliated/authorized; +5% invoice"
+    },
+    {
+      "url": "https://electagpt.com/terms",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-01-01",
+      "read_status": "direct_merchant_terms",
+      "evidence_level": "merchant_policy_not_refund_test",
+      "facts": "Not OpenAI authorized; full original-channel refund for seller/system-error failure; successful subscription followed by platform bans excluded, wrong email full refund not guaranteed"
+    },
+    {
+      "url": "https://electagpt.com/blog/daichong-tuikuan",
+      "observed_on": "2026-11-14",
+      "page_self_updated_on": "2026-08-26",
+      "read_status": "direct_merchant_older_blog",
+      "evidence_level": "merchant_general_refund_advice_not_real_test",
+      "facts": "Seller describes failed purchase refund path; do not replace formal terms"
+    }
+  ],
+  "older_supplier_prices_not_refreshed": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "invoice_verified": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "historical_126_prices_modified": false,
+  "previous_185_reports_modified": false
+}

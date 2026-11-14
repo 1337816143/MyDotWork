@@ -1855,3 +1855,20 @@ assert.equal(r185.new_candidate.wholesale_agent.retail_sku_same_as_agent_sku_ver
 assert.equal(r185.new_candidate.full_all_fees_valid_china_vat_cny,null);
 assert.equal(r185.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r185.actual_purchase_or_sms_test_performed,false);
+
+
+// R186: do not promote old ¥168 article or conditional tax arithmetic into live payable wholesale prices.
+const entry186=d.records.find(x=>x.id==='gpt-source-followup-r186-20261114');
+const data186=d.records.find(x=>x.id==='gpt-source-followup-r186-20261114-evidence');
+assert(entry186&&data186&&entry186.url.endsWith('supplier-followup-20261114-r14.html'));
+const r186=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r14-evidence.json'),'utf8'));
+assert.equal(r186.round,186);assert.equal(r186.site_version,'1.9.194');
+assert.equal(r186.new_candidate.plus_sku.old_blog_base_cny_per_account_month,168);
+assert.equal(r186.new_candidate.plus_sku.current_page_live_plus_price_cny,null);
+assert.equal(r186.new_candidate.invoicing.homepage_extra_fee_rate_claim,.05);
+assert.equal(r186.new_candidate.invoicing.old_blog_extra_fee_rate_claim,.06);
+assert.equal(r186.new_candidate.invoicing.all_payment_fees_with_valid_china_vat_cny,null);
+assert.equal(r186.new_candidate.credentials.conflicting_merchant_pages,true);
+assert.equal(r186.new_candidate.qualified_wholesale,false);
+assert.equal(r186.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r186.actual_purchase_or_sms_test_performed,false);
