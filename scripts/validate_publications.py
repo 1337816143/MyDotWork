@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 407, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 409, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.187'
+    assert latest['version'] == '1.188'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r15.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r15-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r14.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r16.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r16-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r15.html'
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
@@ -2177,6 +2177,22 @@ def validate_publications():
     assert all(v==0 for v in r181['qualification_totals'].values())
     assert r181['historical_126_prices_modified'] is False
     assert r181['actual_purchase_or_sms_test_performed'] is False
+
+    # R188: merchant invoice minimum fee is publicly displayed, but VAT invoice, payment and wholesaling are not verified.
+    assert by_id['gpt-source-followup-r188-20261114']['url'].endswith('supplier-followup-20261114-r16.html')
+    assert by_id['gpt-source-followup-r188-20261114-evidence']['url'].endswith('supplier-followup-20261114-r16-evidence.json')
+    r188 = json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r16-evidence.json').read_bytes())
+    assert r188['round'] == 188 and r188['site_version'] == '1.9.196'
+    c188 = r188['new_retail_candidate']
+    assert c188['displayed_retail_price_cny_per_account_month'] == 149
+    assert c188['additional_invoice_fee_rule_merchant_claim']['minimum_cny'] == 15
+    assert c188['plus_invoiced_derived_sum_conditional_cny'] == 164
+    assert c188['total_verified_with_valid_china_vat_cny'] is None
+    assert c188['chinese_vat_invoice_claim']['verified_invoice'] is False
+    assert c188['bona_fide_wholesale_verified'] is False
+    assert c188['session_json_transferred_to_third_party_claim'] is True
+    assert r188['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r188['actual_purchase_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
