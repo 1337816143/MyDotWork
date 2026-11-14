@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 419, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 421, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.193'
+    assert latest['version'] == '1.194'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r3.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r3-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r2.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r4.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r4-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r3.html'
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
@@ -2273,6 +2273,21 @@ def validate_publications():
     assert r193['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r193['qualification_totals']['verified_phone_sms_successes'] == 0
     assert r193['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
+
+    # R194: Partner API technical disclosure is not a tested one-unit wholesale offer.
+    assert by_id['gpt-source-followup-r194-20261115']['url'].endswith('supplier-followup-20261115-r4.html')
+    assert by_id['gpt-source-followup-r194-20261115-evidence']['url'].endswith('supplier-followup-20261115-r4-evidence.json')
+    r194 = json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r4-evidence.json').read_bytes())
+    assert r194['round'] == 194 and r194['site_version'] == '1.9.202'
+    c194 = r194['new_wholesale_system_candidate']
+    assert c194['partner_api']['order_debits_real_balance'] is True
+    assert c194['partner_api']['one_unit_plus_purchase_eligible_verified'] is False
+    assert c194['partner_api']['access_token_alone_sufficient'] is False
+    assert c194['current_live_wholesale_one_unit_cny'] is None
+    assert c194['valid_china_vat_invoice_total_cny'] is None
+    assert r194['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r194['qualification_totals']['verified_phone_sms_successes'] == 0
+    assert r194['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
