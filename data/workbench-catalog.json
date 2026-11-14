@@ -4522,6 +4522,28 @@
       "summary": "5个商家和官方页面的原始URL、观察日、US$22.14+2.10分项、未付款USD24.24条件和、条款地域限制、5件企业采购及未知全费null；零购买验票短信测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r190-20261114",
+      "title": "GPT源头第190轮 · Antipro单件Plus票据门槛与Codex长效号码限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r18.html",
+      "updatedAt": "2026-11-14",
+      "summary": "实读Antipro本人原号Plus¥148、在期覆盖不累加，但仅大于¥500的单件商品可另付费开普票；另核英国30天Codex¥10、长效随机¥3.50存在最短10天冲突、美国短效¥1.80及退款限制。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r190-20261114-evidence",
+      "title": "第190轮 · Antipro准确SKU、商品开票门槛与三种Codex号码原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r18-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "店铺及4件准确商品一方网页＋官方短信规则；店铺公开价不是成交价，票费、付款费、法律主体、转售权及号码实测均未核。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

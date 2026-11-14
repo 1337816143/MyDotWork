@@ -1,0 +1,177 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 190,
+  "site_version": "1.9.198",
+  "observed_on": "2026-11-14",
+  "criteria": {
+    "own_original_account": true,
+    "one_unit_one_month": true,
+    "agency_upfront_fee_required": false,
+    "all_required_fees_including_valid_china_vat_max_cny": 170
+  },
+  "candidate": {
+    "merchant_store": "Antipro (CatFK vendor, separate from other CatFK sellers)",
+    "store_url": "https://catfk.com/shop/Antipro",
+    "exact_plus_sku_id": "yfy1iv",
+    "exact_plus_product_url": "https://catfk.com/item/yfy1iv",
+    "display_price_cny_per_one_unit": 148,
+    "display_price_source": "merchant storefront listing, not actual checkout",
+    "billing_cycle_days_claim": 30,
+    "original_account_supported_merchant_claim": true,
+    "existing_paid_subscription_supported_merchant_claim": true,
+    "renewal_overwrites_existing_period_not_accumulative_merchant_claim": true,
+    "account_must_exit_team_merchant_claim": true,
+    "token_or_session_precondition_merchant_claim": true,
+    "requires_account_password_merchant_claim": false,
+    "merchant_invoice_threshold_item_price_greater_than_cny": 500,
+    "invoice_threshold_is_per_product_not_per_order_merchant_wording": true,
+    "plus_item_eligible_for_invoice_under_stated_rule": false,
+    "invoice_issuance_extra_fee_cny": null,
+    "valid_china_vat_invoice_verified": false,
+    "actual_payment_fee_cny": null,
+    "actual_all_required_cost_including_china_vat_cny": null,
+    "legal_operating_entity": null,
+    "legal_payment_recipient": null,
+    "legal_invoice_issuer": null,
+    "taxpayer_number": null,
+    "merchant_page_profile_self_discloses_small_transactions_registration_exemption": true,
+    "wholesale_unit_cost_cny": null,
+    "wholesale_minimum_quantity": null,
+    "agency_entry_fee_cny": null,
+    "official_openai_resale_authorization_verified": false,
+    "merchant_warranty_days_claim": 30,
+    "merchant_claim_sub_loss_prorated_refund": true,
+    "merchant_excludes_official_account_ban_from_warranty": true,
+    "actual_purchase_completed": false,
+    "actual_refund_tested": false,
+    "is_qualified_verified_upstream": false
+  },
+  "sms": [
+    {
+      "sku_id": "7i3z80",
+      "url": "https://catfk.com/item/7i3z80",
+      "seller_display_price_cny_per_card": 10,
+      "country_merchant_claim": "UK",
+      "session_days_claim": 30,
+      "starts_at": "card_redemption",
+      "merchant_claims_renewal": true,
+      "renewal_lead_days_claim": 3,
+      "one_number_one_codex_binding_claim": true,
+      "sms_retry_without_code_merchant_claim": "replace number via web",
+      "refund_after_first_success_claim": false,
+      "actual_paid_price_cny": null,
+      "actual_sms_success_verified": false
+    },
+    {
+      "sku_id": "pncrw0",
+      "url": "https://catfk.com/item/pncrw0",
+      "seller_display_price_cny_per_card": 3.5,
+      "country_merchant_claim": null,
+      "headline_duration_days_range": [
+        15,
+        30
+      ],
+      "description_duration_days_approx": 20,
+      "description_minimum_duration_days_claim": 10,
+      "duration_conflict": true,
+      "restricted_to": "Codex binding only",
+      "chatgpt_web_registration_supported_claim": false,
+      "chatgpt_account_phone_binding_supported_claim": false,
+      "first_hour_multiple_receive_claim": true,
+      "receive_lock_start_hour_claim": 1,
+      "receive_unlock_hour_claim": 8,
+      "merchant_excludes_number_banned_or_account_rate_limited_from_refund_claim": true,
+      "refund_on_no_code_limited_claim": "after exhausting allowed replacement attempts; exact number unknown",
+      "actual_paid_price_cny": null,
+      "actual_sms_success_verified": false
+    },
+    {
+      "sku_id": "yjs2ym",
+      "url": "https://catfk.com/item/yjs2ym",
+      "seller_display_price_cny_per_card": 1.8,
+      "country_merchant_claim": "USA",
+      "duration_minutes": null,
+      "restricted_to": "Codex single binding only",
+      "can_replace_without_code_merchant_claim": true,
+      "refund_after_received_otp_claim": false,
+      "actual_paid_price_cny": null,
+      "actual_sms_success_verified": false
+    }
+  ],
+  "independent_phone": {
+    "verified_chatgpt_web_successes": 0,
+    "verified_codex_desktop_successes": 0,
+    "verified_first_api_key_successes": 0,
+    "voip_or_mno_proven_for_all_skus": false,
+    "automatic_binding_via_plus_apple_session": false
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/shop/Antipro",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_storefront",
+      "level": "merchant_display_unpaid",
+      "facts": "Store directly displays Plus CNY148, UK Codex CNY10, long Codex CNY3.50, US short Codex CNY1.80, invoice claimed only goods individually priced above CNY500 and invoice not free; describes small trader registration exemption."
+    },
+    {
+      "url": "https://catfk.com/item/yfy1iv",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_product",
+      "level": "merchant_claim_unverified",
+      "facts": "Paid account can top-up but new subscription overwrites not accumulates, Team exit and Token required, 30-day prorated sub-loss warranty, not covered for bans."
+    },
+    {
+      "url": "https://catfk.com/item/7i3z80",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_product",
+      "level": "merchant_claim_unverified",
+      "facts": "UK 30-day single-binding Codex number starts at redemption, may be renewed at least 3 days in advance, number replacement before success, no refund after successful binding."
+    },
+    {
+      "url": "https://catfk.com/item/pncrw0",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_product",
+      "level": "merchant_claim_unverified",
+      "facts": "Title 15-30 random days conflicts with text 20 days approximately/minimum 10 days; Codex only, explicit no ChatGPT registration/account number binding; after first OTP one hour of repeated receive, hours 1-8 locked, after 8 hours resumes; refund and rate-limit exclusions."
+    },
+    {
+      "url": "https://catfk.com/item/yjs2ym",
+      "observed_on": "2026-11-14",
+      "status": "direct_merchant_product",
+      "level": "merchant_claim_unverified",
+      "facts": "US Codex short-term single-binding no ChatGPT registration or binding; duration unspecified; no-code number changes but after OTP refund restricted."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "status": "official_policy",
+      "level": "official_rules_not_actual_sms_test",
+      "facts": "ChatGPT web, Codex desktop and initial API key phone requirements distinct; SMS/eligible WhatsApp only; VoIP not supported."
+    }
+  ],
+  "other_suppliers_not_refreshed": [
+    "CatFK AI猫站长",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "GetPlus"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "secondary_index_used_only_for_discovery": "https://aiprice.club/market/shop/catfk-antipro",
+  "merchant_contacted": false,
+  "account_secrets_submitted": false,
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_126_prices_modified": false,
+  "previous_189_reports_modified": false
+}
