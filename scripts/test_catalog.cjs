@@ -1905,3 +1905,20 @@ assert.equal(dr188.new_retail_candidate.total_verified_with_valid_china_vat_cny,
 assert.equal(dr188.new_retail_candidate.bona_fide_wholesale_verified,false);
 assert.equal(dr188.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(dr188.actual_purchase_or_sms_test_performed,false);
+
+// R189: personal USD invoice option is not an issued Chinese VAT invoice; enterprise minimum five excludes single unit.
+const er189=d.records.find(x=>x.id==='gpt-source-followup-r189-20261114');
+const ed189=d.records.find(x=>x.id==='gpt-source-followup-r189-20261114-evidence');
+assert(er189&&ed189&&er189.url.endsWith('supplier-followup-20261114-r17.html'));
+const r189=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r17-evidence.json'),'utf8'));
+assert.equal(r189.round,189);assert.equal(r189.site_version,'1.9.197');
+assert.equal(r189.candidate.displayed_base_usd_per_account_month,22.14);
+assert.equal(r189.candidate.merchant_invoice_option_extra_usd,2.10);
+assert.equal(r189.candidate.derived_usd_total_with_invoice_option,24.24);
+assert.equal(r189.candidate.enterprise_minimum_quantity_claim,5);
+assert.equal(r189.candidate.merchant_terms_excludes_actual_mainland_china_users,true);
+assert.equal(r189.candidate.invoice_valid_china_vat_verified,false);
+assert.equal(r189.candidate.complete_actual_china_vat_cny,null);
+assert.equal(r189.candidate.is_qualified_verified_wholesale_upstream,false);
+assert.equal(r189.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r189.actual_purchase_or_sms_test_performed,false);
