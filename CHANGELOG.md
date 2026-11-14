@@ -1,3 +1,11 @@
+## 1.9.187 · 2026-11-14
+
+- 第179轮首次直接核读SMS Portal独立美国OpenAI单次短信US$0.33/次（2026-11-14观察），非1月租号或本人Plus商品；号称美国非VoIP运营商SIM，运营商与OpenAI是否接受未独立验证。
+- FAQ称Cryptomus加密货币预充值、商家无最低消费；支付网关实付最低充值、链费、汇兑及全部真实费用null。条款明确无码仅自动退款到不能提现的站内钱包，非原路现金；验证码已收到但OpenAI拒绝能否退费未知。ChatGPT网页、Codex桌面端及首次API Key验证真实成功均0、二次收码未验证。
+- OpenAI专属ChatGPT租号URL重定向通用租号目录，无法确认该平台30天准确SKU、价及号码期限，保持null。与NEXUSOTP历史美国单次US$0.45/最低US$10入金仅比公开标价；Pay2GPT的US$4.99/21天SKU不混价。
+- 复核CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay，没有更可靠的供货授权、出票主体、全部支付费用与真实履约闭环；历史126条报价、此前178轮报告字节及各报价历史观察日保留。合格本人原号单件单月免前置费且含中国有效VAT≤¥170的已核Plus批发上游0；真实Plus购买0、税票验真0、SMS成功0。
+- 增加r179 HTML/JSON、精确SHA256发布白名单、project-1目录、总库最新入口、VERSION和回归验证；未付款、联系商家或提供凭据。本轮直接读取原始来源：https://smsportal.io/pricing 、https://smsportal.io/faq 、https://smsportal.io/terms 、https://smsportal.io/rent-phone-number/chatgpt 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.186 · 2026-11-14
 
 - 第178轮首次直接读取Pay2GPT一方官网准确本人原号Plus零售US$23.90/件·月（另US$13.90半价SKU明确售罄），10件起企业批发但当前企业页明确“不公开报价”；未获书面批发价、无前置费确认、真实全成本与正式个人Plus供货授权均null或未核，API/Webhook不代表授权。
