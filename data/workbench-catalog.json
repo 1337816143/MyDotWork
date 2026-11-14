@@ -4302,6 +4302,28 @@
       "summary": "5个直接读取来源，未知费用null，独立实际验证0，既有126价未刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r180-20261114",
+      "title": "GPT源头第180轮 · Plus宇宙原号零售与开票条款冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r8.html",
+      "updatedAt": "2026-11-14",
+      "summary": "首次核读原号Plus ¥149/30天；信任中心开票引导与条款不承诺发票冲突；需Session，含中国VAT全费及真实批发资格未核，已核上游仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r180-20261114-evidence",
+      "title": "第180轮 · Plus宇宙准确SKU、开票冲突与Session售后证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r8-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "4条实际读取原始URL，准确价格单位/条款旧更新日，出票主体、支付费、正式授权及测试缺口null或false；旧报价未刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

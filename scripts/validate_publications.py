@@ -131,7 +131,7 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 391, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 393, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
     assert latest['version'] == '1.179'
@@ -2051,6 +2051,21 @@ def validate_publications():
     assert sms179['real_first_api_key_success'] is False
     assert all(x==0 for x in r179['qualification_totals'].values())
     assert r179['historical_prices_refreshed'] is False and r179['actual_purchase_or_sms_test_performed'] is False
+
+    # R180: exact Plus retailer invoice contradiction; not a verified wholesale or paid test.
+    assert by_id['gpt-source-followup-r180-20261114']['url'].endswith('supplier-followup-20261114-r8.html')
+    assert by_id['gpt-source-followup-r180-20261114-evidence']['url'].endswith('supplier-followup-20261114-r8-evidence.json')
+    r180=json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r8-evidence.json').read_bytes())
+    assert r180['round']==180 and r180['site_version']=='1.9.188'
+    retail180=r180['new_retail_candidate']
+    assert retail180['display_price_cny_per_30_days']==149
+    assert retail180['invoice_statement_conflict'] is True
+    assert retail180['confirmed_valid_china_vat_invoice_available'] is None
+    assert retail180['real_all_required_fees_invoice_included_cny'] is None
+    assert retail180['session_token_required'] is True
+    assert retail180['official_consumer_plus_distribution_authorization_verified'] is False
+    assert all(x==0 for x in r180['qualification_totals'].values())
+    assert r180['historical_prices_refreshed'] is False and r180['actual_purchase_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

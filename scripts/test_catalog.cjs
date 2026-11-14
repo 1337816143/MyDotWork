@@ -1744,3 +1744,21 @@ assert.equal(r179.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r179.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r179.actual_purchase_or_sms_test_performed,false);
 assert.equal(r179.historical_prices_refreshed,false);
+
+// R180: this is a new retail listing with conflicting invoice wording, not a proven VAT-inclusive wholesale purchase.
+const r180cat=d.records.find(x=>x.id==='gpt-source-followup-r180-20261114');
+const r180data=d.records.find(x=>x.id==='gpt-source-followup-r180-20261114-evidence');
+assert(r180cat&&r180data&&r180cat.url.endsWith('supplier-followup-20261114-r8.html'));
+const r180=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r8-evidence.json'),'utf8'));
+assert.equal(r180.round,180);assert.equal(r180.site_version,'1.9.188');
+assert.equal(r180.new_retail_candidate.display_price_cny_per_30_days,149);
+assert.equal(r180.new_retail_candidate.invoice_statement_conflict,true);
+assert.equal(r180.new_retail_candidate.confirmed_valid_china_vat_invoice_available,null);
+assert.equal(r180.new_retail_candidate.real_all_required_fees_invoice_included_cny,null);
+assert.equal(r180.new_retail_candidate.session_token_required,true);
+assert.equal(r180.new_retail_candidate.official_consumer_plus_distribution_authorization_verified,false);
+assert.equal(r180.phone_verification_impact.guaranteed_sms_verification_or_phone_binding_from_plus_order,false);
+assert.equal(r180.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r180.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r180.actual_purchase_or_sms_test_performed,false);
+assert.equal(r180.historical_prices_refreshed,false);
