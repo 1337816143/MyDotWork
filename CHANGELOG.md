@@ -1,3 +1,11 @@
+## 1.9.188 · 2026-11-14
+
+- 第180轮首次直接核读Plus宇宙商家本人原号Plus准确SKU：人民币¥149／30天为零售展示价，先登录并交Session，商称微信/支付宝支付、30天质保和按余天退款；真实结算手续费、有效中国VAT总费、实际开票及履约均null或0，不能标已核上游。
+- 新发现同一商家原页有实质开票口径冲突：信任中心称下单前选票种/征收率并确认服务费，正式条款第3节却明示“本站当前不承诺提供发票，个别商品另说明除外”；准确Plus商品未明确中国VAT开票资格。经营/收款/出票法人、转售授权、真实单件批发价及免前置费证明均缺，故不能把¥149判作含有效中国VAT≤¥170的真实采购价。条款自标2026-09-26旧更新日，非11月14日新政策。
+- 商家帮助页提醒官网订阅、App Store内购与本站订单可能同时存在，不等于Session解决网页登录或自动绑定手机号。独立Codex/网页/API接码新SKU无，独立成功实测仍0。CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM和ChongPay历史价不刷新；已核完整单件含有效中国VAT、免前置费的Plus批发0，真实购买0、验票0、短信成功0。
+- 新增r180 HTML/结构化证据、精确SHA256发布白名单、project-1目录、总库最新入口、VERSION与回归断言；保留历史126条报价及前179轮原文件。无付款、联系商家、提交敏感账号凭据。
+- 本轮直接读取源URL：https://www.pluscosmo.com/shop/chatgpt-plus 、https://www.pluscosmo.com/trust 、https://www.pluscosmo.com/terms.html 、https://www.pluscosmo.com/help 。观察日期2026-11-14。
+
 ## 1.9.187 · 2026-11-14
 
 - 第179轮首次直接核读SMS Portal独立美国OpenAI单次短信US$0.33/次（2026-11-14观察），非1月租号或本人Plus商品；号称美国非VoIP运营商SIM，运营商与OpenAI是否接受未独立验证。

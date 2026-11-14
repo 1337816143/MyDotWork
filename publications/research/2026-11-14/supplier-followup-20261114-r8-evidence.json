@@ -1,0 +1,119 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 180,
+  "site_version": "1.9.188",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "首次核读Plus宇宙本人原号Plus ¥149/30天、Session前提与同站信任中心/正式条款开票承诺冲突；未见本人SKU开票允诺，费用与资格保留null；不刷新旧供应商价格。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_retail_candidate": {
+    "seller": "Plus宇宙",
+    "site": "https://www.pluscosmo.com/",
+    "exact_sku": "ChatGPT Plus 充值 · 自有账号 · Session 充值",
+    "exact_period_days": 30,
+    "display_price_cny_per_30_days": 149,
+    "display_price_is_retail_not_wholesale": true,
+    "merchant_claims_wechat_alipay_payment": true,
+    "checkout_total_observed": false,
+    "full_payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "real_all_required_fees_invoice_included_cny": null,
+    "merchant_claims_invoice_selection_in_trust_center": true,
+    "terms_explicitly_declines_general_invoice_commitment": true,
+    "exact_plus_sku_guarantees_china_vat_invoice": false,
+    "confirmed_valid_china_vat_invoice_available": null,
+    "invoice_statement_conflict": true,
+    "invoice_issuer_legal_name": null,
+    "payment_collector_legal_name": null,
+    "operator_legal_name": null,
+    "official_consumer_plus_distribution_authorization_verified": false,
+    "published_one_unit_wholesale_price_cny": null,
+    "supplier_wholesale_minimum_quantity": null,
+    "upfront_agent_fee_cny": null,
+    "upfront_agent_fee_absence_verified": false,
+    "own_account_requires_existing_login": true,
+    "session_token_required": true,
+    "session_contains_sensitive_login_credential": true,
+    "merchant_claims_30_day_warranty": true,
+    "merchant_claims_subscription_failure_fix_or_prorated_refund": true,
+    "merchant_claims_account_suspension_excluded_from_warranty": true,
+    "existing_paid_subscription_extension_independently_verified": false,
+    "merchant_recommended_customer_service_hours_beijing": "09:00–23:00",
+    "order_fulfillment_or_invoice_independently_tested": false,
+    "classification": "retail_lead_with_invoice_wording_conflict_not_verified_wholesale_or_invoice_supplier"
+  },
+  "phone_verification_impact": {
+    "independent_phone_verification_sku_found": false,
+    "guaranteed_sms_verification_or_phone_binding_from_plus_order": false,
+    "actual_chatgpt_web_success": false,
+    "actual_codex_desktop_success": false,
+    "actual_first_api_key_success": false,
+    "note": "Session交付预设已能登录，与首次网页验证及手机号绑定不同。FAQ说明Apple内购与网页订单可同时存在，不等于自动免手机号验证。"
+  },
+  "sources": [
+    {
+      "url": "https://www.pluscosmo.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-14",
+      "page_updated_on": null,
+      "direct_read": true,
+      "type": "merchant_exact_product_page",
+      "detail": "Own existing ChatGPT account Plus, ¥149/30 days; WeChat/Alipay merchant-claimed; Session required; 30-day warranty claimed; not settled invoice-included total"
+    },
+    {
+      "url": "https://www.pluscosmo.com/trust",
+      "observed_on": "2026-11-14",
+      "page_updated_on": null,
+      "direct_read": true,
+      "type": "merchant_trust_and_invoice_process_claim",
+      "detail": "Suggests selecting invoice type and assessment rate before ordering, supplying invoice details, confirming service fee, customer service issues after payment; no actual tax receipt or settled fees"
+    },
+    {
+      "url": "https://www.pluscosmo.com/terms.html",
+      "observed_on": "2026-11-14",
+      "page_effective_on": "2026-07-15",
+      "page_updated_on": "2026-09-26",
+      "direct_read": true,
+      "type": "merchant_terms_contradictory_invoice_disclaimer",
+      "detail": "Clause 3 expressly declines to promise an invoice unless particular product page specifies one; product SKU lacks explicit invoice eligibility; terms not newly enacted on observation date"
+    },
+    {
+      "url": "https://www.pluscosmo.com/help",
+      "observed_on": "2026-11-14",
+      "page_updated_on": null,
+      "direct_read": true,
+      "type": "merchant_help_and_billing_caveat",
+      "detail": "Official website, app-store and merchant orders may overlap; refunds and renewal disputes subject to actual order, not a proven subscription extension or web-verification bypass"
+    }
+  ],
+  "older_suppliers_not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "previous_round": {
+    "round": 179,
+    "report": "research/2026-11-14/supplier-followup-20261114-r7.html",
+    "prior_prices_refreshed": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_prices_refreshed": false
+}
