@@ -1728,3 +1728,19 @@ assert.equal(r177.historical_prices_refreshed,false);
  assert.equal(r178.qualification_totals.verified_plus_wholesale_upstreams,0);
  assert.equal(r178.qualification_totals.verified_phone_sms_successes,0);
  assert.equal(r178.actual_purchase_or_sms_test_performed,false);
+
+// R179: one-time OpenAI OTP terms are separate from Plus and 30-day number rental.
+const r179cat=d.records.find(x=>x.id==='gpt-source-followup-r179-20261114');
+const r179data=d.records.find(x=>x.id==='gpt-source-followup-r179-20261114-evidence');
+assert(r179cat&&r179data&&r179cat.url.endsWith('supplier-followup-20261114-r7.html'));
+const r179=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r7-evidence.json'),'utf8'));
+assert.equal(r179.round,179);assert.equal(r179.site_version,'1.9.187');
+assert.equal(r179.new_independent_sms_provider.retail_display_price_usd_per_one_otp,0.33);
+assert.equal(r179.new_independent_sms_provider.actual_all_in_payment_cost_usd,null);
+assert.equal(r179.new_independent_sms_provider.automatic_no_sms_refund_to,'nonwithdrawable_platform_wallet_balance');
+assert.equal(r179.new_independent_sms_provider.terms_balance_redeemable_for_cash,false);
+assert.equal(r179.new_independent_sms_provider.openai_month_rental_30_day_price_usd,null);
+assert.equal(r179.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r179.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r179.actual_purchase_or_sms_test_performed,false);
+assert.equal(r179.historical_prices_refreshed,false);

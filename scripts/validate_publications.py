@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 389, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 391, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.178'
+    assert latest['version'] == '1.179'
     assert latest['date'] == '2026-11-14'
-    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r5.html'
+    assert latest['path'] == 'research/2026-11-14/supplier-followup-20261114-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-14/supplier-followup-20261114-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-14/supplier-followup-20261114-r6.html'
 
     # R170: public $0.01 OpenAI SMS offer has mandatory $40 nonwithdrawable prepay.
     assert by_id['gpt-source-followup-r170-20261113']['url'].endswith('supplier-followup-20261113-r11.html')
@@ -2036,6 +2036,21 @@ def validate_publications():
     assert r178['sms_service']['independent_verified_original_payment_refund'] is False
     assert all(x==0 for x in r178['qualification_totals'].values())
     assert r178['actual_purchase_or_sms_test_performed'] is False
+
+    # R179: SMS Portal OpenAI-US one-time OTP is not a Plus wholesaler or successful phone verification.
+    assert by_id['gpt-source-followup-r179-20261114']['url'].endswith('supplier-followup-20261114-r7.html')
+    assert by_id['gpt-source-followup-r179-20261114-evidence']['url'].endswith('supplier-followup-20261114-r7-evidence.json')
+    r179=json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r7-evidence.json').read_bytes())
+    sms179=r179['new_independent_sms_provider']
+    assert r179['round']==179 and r179['site_version']=='1.9.187'
+    assert sms179['retail_display_price_usd_per_one_otp']==0.33
+    assert sms179['actual_all_in_payment_cost_usd'] is None
+    assert sms179['automatic_no_sms_refund_to']=='nonwithdrawable_platform_wallet_balance'
+    assert sms179['terms_balance_redeemable_for_cash'] is False
+    assert sms179['openai_month_rental_30_day_price_usd'] is None
+    assert sms179['real_first_api_key_success'] is False
+    assert all(x==0 for x in r179['qualification_totals'].values())
+    assert r179['historical_prices_refreshed'] is False and r179['actual_purchase_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
