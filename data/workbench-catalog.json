@@ -4324,6 +4324,28 @@
       "summary": "4条实际读取原始URL，准确价格单位/条款旧更新日，出票主体、支付费、正式授权及测试缺口null或false；旧报价未刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r181-20261114",
+      "title": "GPT源头第181轮 · yxab原号Plus同SKU库存标签变化",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r9.html",
+      "updatedAt": "2026-11-14",
+      "summary": "G62975691同一Plus准确SKU 11月11日商称有货、11月14日商品页/目录均暂时缺货，¥128.80/月零售挂牌未变；真实库存、有效中国VAT、批发授权与履约未核，合格源0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r181-20261114-evidence",
+      "title": "第181轮 · yxab同SKU库存变化、价签不变及手机号边界证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-14/supplier-followup-20261114-r9-evidence.json",
+      "updatedAt": "2026-11-14",
+      "summary": "2条2026-11-14直接读取商家原始URL，1条2026-11-11已归档同SKU状态及官方旧规则复核；价格128.80未刷新其他商家，费用/税票/授权null，实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

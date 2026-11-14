@@ -1,0 +1,133 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 181,
+  "site_version": "1.9.189",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "同一yxab.cn本人原号Plus准确SKU G62975691由2026-11-11网页标有货变为2026-11-14商品页及目录双重标暂时缺货；价格¥128.80/账号·月未变。状态只是卖家自有网页快照，不证明服务永久停用或实际无法通过其他方式交付。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "material_change": {
+    "merchant": "GPT代充平台 yxab.cn",
+    "exact_sku_id": "G62975691",
+    "exact_sku_description": "菲区 ChatGPT Plus 1个月·自己的号·卡密自助兑换",
+    "exact_sku_url": "https://yxab.cn/product/G62975691",
+    "catalog_url": "https://yxab.cn/products",
+    "prior_observed_on": "2026-11-11",
+    "prior_repo_evidence_path": "research/2026-11-11/supplier-followup-20261111-r8-evidence.json",
+    "prior_merchant_stock_label": "有货",
+    "prior_display_price_cny_per_account_month": 128.8,
+    "current_observed_on": "2026-11-14",
+    "current_merchant_stock_label": "暂时缺货",
+    "current_checkout_control_label": "暂时缺货",
+    "current_catalog_lists_all_five_subscription_skus_out_of_stock": true,
+    "current_display_price_cny_per_account_month": 128.8,
+    "same_sku_public_stock_label_transition_observed": true,
+    "price_change_observed": false,
+    "real_inventory_or_transaction_tested": false,
+    "actual_order_possible_at_observation_from_display": false,
+    "retailer_service_permanently_discontinued_verified": false,
+    "checkout_payment_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "real_all_in_plus_china_vat_cost_cny": null,
+    "validated_china_vat_invoice": false,
+    "china_vat_invoice_issuer_legal_name": null,
+    "operator_legal_name": null,
+    "payment_collector_legal_name": null,
+    "official_consumer_plus_resale_authorization_verified": false,
+    "published_one_unit_wholesale_cost_cny": null,
+    "agent_upfront_fee_cny": null,
+    "absence_of_upfront_fee_verified": false,
+    "seller_requires_free_chatgpt_account": true,
+    "existing_go_plus_pro_subscription_cannot_stack_claim": true,
+    "seller_provides_redeem_code_to_use_after_login_claim": true,
+    "site_session_or_token_delivery_scope_independently_verified": null,
+    "seller_calls_openai_billing_receipt_invoice": true,
+    "official_receipt_is_valid_china_vat_invoice": false,
+    "seller_30_day_subscription_drop_warranty_claim": true,
+    "seller_20_percent_deduction_only_after_openai_approved_refund_claim": true,
+    "seller_refund_policy_already_archived_on": "2026-11-11",
+    "real_renewal_fulfillment_or_refund_tested": false,
+    "eligible_upstream_under_user_criteria": false
+  },
+  "phone_verification": {
+    "official_reference": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "no_new_independent_phone_verification_sku": true,
+    "chatgpt_web_phone_generally_not_required": true,
+    "codex_desktop_may_request_phone": true,
+    "first_api_key_requires_phone": true,
+    "plus_order_guarantees_phone_binding_or_bypass": false,
+    "actual_sms_successes": 0,
+    "actual_cash_refund_tests": 0,
+    "seller_product_availability_does_not_prove_login_verification_compatibility": true
+  },
+  "sources": [
+    {
+      "url": "https://yxab.cn/product/G62975691",
+      "observed_on": "2026-11-14",
+      "read_status": "merchant_page_readable",
+      "source_type": "merchant_exact_sku_and_disabled_checkout",
+      "evidence_level": "seller_live_display_only_not_order",
+      "facts": "¥128.80/账号·月、SKU G62975691、暂时缺货，付款通道费和合计仍为占位符；30天售后及官方账单是商家声明。"
+    },
+    {
+      "url": "https://yxab.cn/products",
+      "observed_on": "2026-11-14",
+      "read_status": "merchant_page_readable",
+      "source_type": "merchant_catalog",
+      "evidence_level": "seller_live_display_not_purchase",
+      "facts": "五个商品均标暂时缺货；菲区Plus单月仍¥128.80/账号·月。"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/103f98ea85635750ac886b400858f67864758897/publications/research/2026-11-11/supplier-followup-20261111-r8-evidence.json",
+      "observed_on": "2026-11-11",
+      "read_status": "previous_archived_primary_observation_rechecked_on_2026-11-14",
+      "source_type": "prior_archived_merchant_observation",
+      "evidence_level": "historical seller label",
+      "facts": "2026-11-11同一个G62975691 SKU标有货、¥128.80/月；非旧G69666080，不能混用SKU库存。"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "read_status": "official_page_readable",
+      "source_type": "official_previous_rule_rechecked_not_new_policy",
+      "evidence_level": "platform_rule",
+      "facts": "普通ChatGPT通常无需验证、Codex桌面端可能需要、首次API key需要；不能将Plus订阅等同自动绑手机。"
+    }
+  ],
+  "old_distinct_sku_not_repriced": {
+    "sku": "G69666080",
+    "last_recorded_status": "HTTP_404",
+    "same_as_current_sku": false,
+    "current_service_shutdown_deduced_from_old_404": false
+  },
+  "other_suppliers_not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "historical_126_prices_modified": false,
+  "previous_180_reports_modified": false,
+  "actual_purchase_or_sms_test_performed": false,
+  "payment_attempted": false,
+  "merchant_contacted": false,
+  "account_secrets_submitted": false
+}

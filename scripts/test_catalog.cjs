@@ -1762,3 +1762,23 @@ assert.equal(r180.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r180.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r180.actual_purchase_or_sms_test_performed,false);
 assert.equal(r180.historical_prices_refreshed,false);
+
+// R181: same yxab SKU stock-label transition is a merchant display, not a paid order, VAT or upstream qualification.
+const r181entry=d.records.find(x=>x.id==='gpt-source-followup-r181-20261114');
+const r181dataEntry=d.records.find(x=>x.id==='gpt-source-followup-r181-20261114-evidence');
+assert(r181entry&&r181dataEntry&&r181entry.url.endsWith('supplier-followup-20261114-r9.html'));
+const r181=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r9-evidence.json'),'utf8'));
+assert.equal(r181.round,181);assert.equal(r181.site_version,'1.9.189');
+assert.equal(r181.material_change.exact_sku_id,'G62975691');
+assert.equal(r181.material_change.prior_merchant_stock_label,'有货');
+assert.equal(r181.material_change.current_merchant_stock_label,'暂时缺货');
+assert.equal(r181.material_change.current_display_price_cny_per_account_month,128.8);
+assert.equal(r181.material_change.price_change_observed,false);
+assert.equal(r181.material_change.checkout_payment_fee_cny,null);
+assert.equal(r181.material_change.real_all_in_plus_china_vat_cost_cny,null);
+assert.equal(r181.material_change.retailer_service_permanently_discontinued_verified,false);
+assert.equal(r181.material_change.eligible_upstream_under_user_criteria,false);
+assert.equal(r181.phone_verification.actual_sms_successes,0);
+assert.equal(r181.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r181.actual_purchase_or_sms_test_performed,false);
+assert.equal(r181.historical_126_prices_modified,false);
