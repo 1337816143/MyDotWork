@@ -1,0 +1,128 @@
+{
+  "schema": "mydotwork.gpt_supplier_delta.v1",
+  "round": 179,
+  "site_version": "1.9.187",
+  "date": "2026-11-14",
+  "observed_on": "2026-11-14",
+  "scope": "SMS Portal美国OpenAI单次OTP $0.33，Cryptomus预存与余额不可现金赎回；专用月租URL重定向未核价。未交易、未短信实测，既有Plus供应商报价不刷新。",
+  "criteria": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "months": 1,
+    "no_upfront_agent_fee": true,
+    "plus_all_required_fees_and_valid_china_vat_invoice_ceiling_cny": 170
+  },
+  "new_independent_sms_provider": {
+    "provider": "SMS Portal",
+    "site": "https://smsportal.io/",
+    "exact_sku": "OpenAI / United States / one-time SMS verification",
+    "retail_display_price_usd_per_one_otp": 0.33,
+    "display_price_unit": "USD per single SMS verification; not a monthly rental or ChatGPT Plus subscription",
+    "platform_claims_no_minimum_spend": true,
+    "platform_claims_no_subscription": true,
+    "payment_method_claimed": "Cryptocurrency prepaid wallet via Cryptomus",
+    "external_payment_gateway_minimum_topup_usd": null,
+    "network_fee_usd": null,
+    "currency_conversion_fee_cny": null,
+    "actual_all_in_payment_cost_usd": null,
+    "merchant_claims_non_voip_us_mobile_sim": true,
+    "physical_sim_and_carrier_independently_verified": false,
+    "openai_single_session_window_minutes": null,
+    "openai_number_reusable_later": null,
+    "automatic_no_sms_refund_to": "nonwithdrawable_platform_wallet_balance",
+    "terms_balance_redeemable_for_cash": false,
+    "merchant_claims_original_method_cash_refund": false,
+    "after_sms_received_but_openai_rejected_refund": null,
+    "real_chatgpt_web_login_success": false,
+    "real_codex_desktop_success": false,
+    "real_first_api_key_success": false,
+    "actual_sms_purchase_performed": false,
+    "openai_month_rental_url": "https://smsportal.io/rent-phone-number/chatgpt",
+    "openai_month_rental_url_result": "redirected to generic rental directory",
+    "openai_month_rental_30_day_price_usd": null,
+    "classification": "sms_retail_lead_not_verified_plus_upstream_or_verified_phone_solution"
+  },
+  "historical_context": [
+    {
+      "name": "NEXUSOTP",
+      "previous_observed_on": "2026-11-14",
+      "us_single_openai_otp_price_usd": 0.45,
+      "minimum_deposit_usd": 10,
+      "current_price_refreshed": false
+    },
+    {
+      "name": "Pay2GPT",
+      "previous_observed_on": "2026-11-14",
+      "us_number_21_day_price_usd": 4.99,
+      "different_sku_not_directly_comparable": true,
+      "current_price_refreshed": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://smsportal.io/pricing",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "evidence_type": "merchant_public_listing",
+      "detail": "OpenAI United States $0.33 per verification, no site-stated minimum spend"
+    },
+    {
+      "url": "https://smsportal.io/faq",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "evidence_type": "merchant_faq",
+      "detail": "Cryptomus crypto top up; no SMS returns site balance, no subscription; reuse only for unspecified supported services"
+    },
+    {
+      "url": "https://smsportal.io/terms",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "evidence_type": "merchant_terms",
+      "detail": "Prepaid balance not redeemable for cash; refund to balance if no message before expiry; number may be reissued"
+    },
+    {
+      "url": "https://smsportal.io/rent-phone-number/chatgpt",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "evidence_type": "redirect_not_sku",
+      "detail": "Redirected to /rent-phone-number; OpenAI-specific 30-day SKU and price not independently confirmed"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-14",
+      "page_published_on": null,
+      "direct_read": true,
+      "evidence_type": "official_openai_rule_not_vendor_test",
+      "detail": "ChatGPT generally needs no phone; Codex desktop may ask; first API Key needs verification; VoIP unsupported, use supported number under user control"
+    }
+  ],
+  "older_suppliers_not_repriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "previous_round": {
+    "round": 178,
+    "report": "research/2026-11-14/supplier-followup-20261114-r6.html",
+    "prior_prices_refreshed": false
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "actual_purchase_or_sms_test_performed": false,
+  "historical_prices_refreshed": false
+}
