@@ -1708,3 +1708,23 @@ assert.equal(r177.new_supplier_screens[1].user_original_account_supported,false)
 assert.equal(r177.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r177.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r177.historical_prices_refreshed,false);
+
+ // R178: current merchant explicitly excludes valid China VAT; bulk quote is 10+ only, SMS refund remains a claim.
+ const r178cat=d.records.find(x=>x.id==='gpt-source-followup-r178-20261114');
+ const r178data=d.records.find(x=>x.id==='gpt-source-followup-r178-20261114-evidence');
+ assert(r178cat&&r178data&&r178cat.url.endsWith('supplier-followup-20261114-r6.html'));
+ const r178=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-14/supplier-followup-20261114-r6-evidence.json'),'utf8'));
+ assert.equal(r178.round,178);assert.equal(r178.site_version,'1.9.186');
+ assert.equal(r178.plus_supplier.wholesale_min_quantity,10);
+ assert.equal(r178.plus_supplier.wholesale_price_usd_per_account,null);
+ assert.equal(r178.plus_supplier.consumer_china_vat_invoice_available,false);
+ assert.equal(r178.plus_supplier.enterprise_china_vat_invoice_available,false);
+ assert.equal(r178.plus_supplier.all_required_fees_and_china_vat_invoice_included_cost_cny,null);
+ assert.equal(r178.sms_service.display_price_usd_per_number,4.99);
+ assert.equal(r178.sms_service.retain_days,21);
+ assert.equal(r178.sms_service.merchant_claims_free_replacements_if_no_sms,2);
+ assert.equal(r178.sms_service.merchant_claims_original_payment_refund_when_all_replacement_numbers_no_sms,true);
+ assert.equal(r178.sms_service.independent_verified_original_payment_refund,false);
+ assert.equal(r178.qualification_totals.verified_plus_wholesale_upstreams,0);
+ assert.equal(r178.qualification_totals.verified_phone_sms_successes,0);
+ assert.equal(r178.actual_purchase_or_sms_test_performed,false);
