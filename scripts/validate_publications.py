@@ -2194,6 +2194,23 @@ def validate_publications():
     assert r188['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r188['actual_purchase_or_sms_test_performed'] is False
 
+    # R189: GetPlus USD checkout invoice option and China-mainland exclusion are seller claims, not a single-unit VAT wholesale receipt.
+    assert by_id['gpt-source-followup-r189-20261114']['url'].endswith('supplier-followup-20261114-r17.html')
+    assert by_id['gpt-source-followup-r189-20261114-evidence']['url'].endswith('supplier-followup-20261114-r17-evidence.json')
+    r189 = json.loads((ROOT/'dist/research/2026-11-14/supplier-followup-20261114-r17-evidence.json').read_bytes())
+    assert r189['round'] == 189 and r189['site_version'] == '1.9.197'
+    c189 = r189['candidate']
+    assert c189['displayed_base_usd_per_account_month'] == 22.14
+    assert c189['merchant_invoice_option_extra_usd'] == 2.10
+    assert c189['derived_usd_total_with_invoice_option'] == 24.24
+    assert c189['merchant_terms_excludes_actual_mainland_china_users'] is True
+    assert c189['enterprise_minimum_quantity_claim'] == 5
+    assert c189['invoice_valid_china_vat_verified'] is False
+    assert c189['complete_actual_china_vat_cny'] is None
+    assert c189['is_qualified_verified_wholesale_upstream'] is False
+    assert r189['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r189['actual_purchase_or_sms_test_performed'] is False
+
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
