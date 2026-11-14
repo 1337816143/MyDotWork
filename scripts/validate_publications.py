@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 421, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 423, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.194'
+    assert latest['version'] == '1.195'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r4.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r4-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r3.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r5.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r5-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r4.html'
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
@@ -2288,6 +2288,22 @@ def validate_publications():
     assert r194['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r194['qualification_totals']['verified_phone_sms_successes'] == 0
     assert r194['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
+
+    # R195: 10-piece pricing does not prove 1-unit wholesale; index != live stock.
+    assert by_id['gpt-source-followup-r195-20261115']['url'].endswith('supplier-followup-20261115-r5.html')
+    assert by_id['gpt-source-followup-r195-20261115-evidence']['url'].endswith('supplier-followup-20261115-r5-evidence.json')
+    r195=json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r5-evidence.json').read_bytes())
+    assert r195['round']==195 and r195['site_version']=='1.9.203'
+    w=r195['new_public_tier_candidate'];y=r195['yunshu_plus_0006']
+    assert w['retail_unit_price_cny']==108 and w['wholesale_tier_unit_price_cny']==107
+    assert w['wholesale_tier_min_quantity']==10 and w['wholesale_tier_eligible_single_unit'] is False
+    assert w['verified_single_unit_wholesale_price_cny'] is None and w['valid_china_vat_invoice_total_cny'] is None
+    assert y['direct_server_message']=='该商品暂未上架' and y['index_price_verified_current'] is False
+    assert y['current_live_plus_price_cny'] is None and y['publicly_listed_now'] is False
+    assert r195['separate_pro_sku']['terms_not_proof_for_plus_0006'] is True
+    assert r195['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert r195['qualification_totals']['verified_phone_sms_successes']==0
+    assert r195['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
