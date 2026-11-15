@@ -4808,6 +4808,28 @@
       "metadataApproved": true,
       "url": "../research/2026-11-15/supplier-followup-20261115-r12-evidence.json",
       "summary": "2026-11-15实读5条公开一方来源，API默认主机差异、采购接口停用、Apple与Session并存；经营出票和Plus价格未知、手机号实测0。"
+    },
+    {
+      "id": "gpt-source-followup-r203-20261115",
+      "title": "GPT源头第203轮 · Hype零售Plus费率、无票与Codex实卡售后",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r13.html",
+      "updatedAt": "2026-11-15",
+      "summary": "Hype自营Plus卡充限时¥107（支付宝预览¥113.42）、iOS ¥133与FAQ旧¥130不一致；商家明示不开发票，代理资格¥99，Codex美国实卡¥12可反复接码20–80天但仅首次绑定24小时有条件售后。无真批发或真实接码验证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r203-20261115-evidence",
+      "title": "第203轮 · Hype准确Plus渠道、发票排除、代理门槛及Codex短信结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r13-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "2026-11-15直接读取Hype六类自营页面及OpenAI官方规则；¥107/¥133、支付宝6%、无票、代理¥99/累计¥2000、SMS¥12及24h条件退款；全部真实验证0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

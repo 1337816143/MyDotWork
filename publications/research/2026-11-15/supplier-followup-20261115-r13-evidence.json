@@ -1,0 +1,180 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 203,
+  "site_version": "1.9.211",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r12.html",
+  "material_discovery": "New independently readable merchant Hype has a true current product and fee preview but FAQ invoice ban and paid agent qualification exclude it from valid-China-VAT, no-agent-fee one-unit wholesale. Its separate Codex SMS product has a tightly limited merchant warranty and is not ChatGPT-web or API verification evidence.",
+  "criteria": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_advance_agent_fee": true,
+    "all_payment_and_valid_china_vat_max_cny": 170
+  },
+  "seller": {
+    "name": "Hype",
+    "domain": "hypeai.cc",
+    "seller_type": "merchant_retail_and_paid_agent_qualification_not_verified_genuine_upstream",
+    "official_openai_authorization": "merchant_terms_explicitly_disclaims_official_authorized_reseller",
+    "actual_company_legal_name": null,
+    "actual_payee_legal_name": null,
+    "chinese_vat_invoice_issuer": null,
+    "valid_chinese_vat_invoice_offered_by_merchant": false,
+    "merchant_faq_claim": "本站不提供发票",
+    "valid_chinese_vat_invoice_issued_or_verified": false,
+    "wholesale_supplier_authorization_verified": false,
+    "real_transaction_or_fulfillment_tested": false
+  },
+  "plus": {
+    "sku_url": "https://hypeai.cc/p/catalog-51-2",
+    "duration_months": 1,
+    "account_origin": "existing_user_account",
+    "retail_card": {
+      "channel": "CDK_card_redemption",
+      "advertised_cny": 107,
+      "usual_crossed_out_cny": 116,
+      "merchant_advertised_promotion_expiry_beijing": "2026-11-17T06:39:00+08:00",
+      "merchant_limit_per_user_units": 1,
+      "eligible_only_unsubscribed": true,
+      "requires_email_password_login_method": true,
+      "can_renew_active_plus": false,
+      "alipay_fee_rate": 0.06,
+      "alipay_fee_cny": 6.42,
+      "alipay_unpaid_preview_total_cny": 113.42,
+      "real_paid_total_cny": null,
+      "valid_chinese_vat_fee_cny": null,
+      "all_required_fees_with_valid_chinese_vat_cny": null,
+      "usdt_external_onramp_and_network_fees_cny": null,
+      "merchant_refund_limits": "Card code over 7 days nonrefundable; failures may return card to use on another eligible account; banned accounts excluded from warranty",
+      "requires_prior_login_session_to_redeem": true
+    },
+    "ios": {
+      "channel": "merchant_claimed_iOS_recharge",
+      "advertised_current_product_and_price_sheet_cny": 133,
+      "faq_self_date": "2026-11-12",
+      "faq_conflicting_advertised_cny": 130,
+      "price_change_date_independently_verified": false,
+      "can_overwrite_current_subscription_merchant_claim": true,
+      "existing_subscription_time_carried_forward": false,
+      "alipay_fee_rate": 0.06,
+      "alipay_conditional_arithmetic_cny": 140.98,
+      "confirmed_product_option_checkout_preview_cny": null,
+      "actual_payment_cny": null,
+      "valid_chinese_vat_invoice_total_cny": null,
+      "guaranteed_for_all_accounts": false
+    },
+    "real_one_unit_wholesale_price_cny": null,
+    "complete_payment_and_valid_invoice_cny": null,
+    "qualified_as_upstream": false
+  },
+  "agent": {
+    "sku_url": "https://hypeai.cc/p/catalog-hype-agent-1",
+    "paid_agent_qualification_cny": 99,
+    "alipay_fee_rate": 0.06,
+    "alipay_unpaid_preview_total_cny": 104.94,
+    "merchant_claimed_free_qualification_after_valid_purchase_or_referral_sales_cny": 2000,
+    "prior_activity_required_for_free": true,
+    "no_advance_qualification_cost_for_new_unqualified_user": false,
+    "agent_qualified_plus_exact_single_unit_price_cny": null,
+    "real_agent_purchase_tested": false,
+    "merchant_claimed_commissions_can_only_be_spent_on_site_not_withdrawn": true
+  },
+  "independent_sms": {
+    "sku_url": "https://hypeai.cc/p/catalog-220-1",
+    "sku": "CodeX 实卡接码／美国实卡号码",
+    "advertised_cny_per_number": 12,
+    "alipay_fee_rate": 0.06,
+    "alipay_fee_cny": 0.72,
+    "alipay_unpaid_preview_total_cny": 12.72,
+    "number_claimed_repeated_sms_window_days_min": 20,
+    "number_claimed_repeated_sms_window_days_max": 80,
+    "warranty_first_successful_codex_binding_hours": 24,
+    "merchant_claimed_replacement_on_two_screenshots_max": 1,
+    "merchant_claimed_original_refund_if_replacement_still_fails": true,
+    "refund_only_under_condition_not_tested": true,
+    "warranty_after_first_successful_binding": false,
+    "claimed_chatgpt_web_supported": null,
+    "merchant_says_chatgpt_web_success_not_guaranteed": true,
+    "first_api_key_verification_compatibility": null,
+    "valid_phone_control_or_carrier_independently_verified": false,
+    "real_successful_sms_bindings": 0,
+    "real_refunds_tested": 0,
+    "session_token_required_by_sms_vendor": null
+  },
+  "former_priority_sellers_reviewed_for_new_material": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "old_prices_unchanged_or_not_refreshed": true,
+  "phone_scope": "Independent Codex number product not shown to solve ChatGPT web signup/login or API phone verification; an ordinary Plus purchase, Apple channel and Session do not automatically bind phone or waive login verification",
+  "sources": [
+    {
+      "url": "https://hypeai.cc/prices",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_current_price_and_stock_page",
+      "self_claimed_last_price_stock_change": "2026-11-15"
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-51-2",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_exact_plus_product_and_payment_preview",
+      "self_claimed_last_price_stock_change": null
+    },
+    {
+      "url": "https://hypeai.cc/faq",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_old_faq_page",
+      "self_claimed_page_updated": "2026-11-12"
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-hype-agent-1",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_agent_qualification_product_page",
+      "self_claimed_page_updated": null
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_exact_independent_codex_sms_product_and_payment_preview",
+      "self_claimed_page_updated": null
+    },
+    {
+      "url": "https://hypeai.cc/terms",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_terms_claimed_not_officially_authorized",
+      "self_claimed_page_updated": null
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "official_scope_context_no_payment_or_sms_test"
+    }
+  ],
+  "evidence_grades": {
+    "merchant_prices_and_unpaid_checkout_preview": "read_directly_from_merchant_pages_on_observation_date",
+    "retail_and_phone_warranties": "merchant_claim_not_real_test",
+    "faq_vs_current_product_price": "observed_text_conflict_not_verified_price_event",
+    "retail_vs_upstream": "analytical_classification_from_disclosed_invoice_and_agent_limitations",
+    "real_purchase_invoice_sms": "not_performed"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_price_rows_modified": false,
+  "prior_reports_modified": false,
+  "seller_contacted": false,
+  "payment_done": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
