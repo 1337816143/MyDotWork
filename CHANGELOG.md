@@ -1,3 +1,11 @@
+## 1.9.216 · 2026-11-15
+
+- 第208轮首次直读PAYPRM“各种商品的售后保障”一方原文：独立Codex短信验证仅以卡密和接码入口可用为交付依据；卡密无效、入口无法访问或内容不符可申请核验。未公开保证收到短信、OpenAI完成验证、未收到短信原路现金退款、号码期限或后续接码规则；全部未核项为null/未实测。其98%以上升级Plus/Pro后不再提示属商家用户反馈，非独立统计、官方免验证或短信实测成功；不改旧¥12历史条目的观察日期。
+- 首次直接归档瑶瑶AI自述经营主体为“瑶瑶ai训练师（个人品牌，不以公司名义对外）”，自述否认OpenAI官方隶属/授权；该自述不是工商登记、收款法人或开票法人核验，也不能据此判定无法合法开票。准确本人原号Plus单月零售商品¥129沿用旧价而非当天新调价；代充仍需既有ChatGPT登录信息。
+- 瑶瑶商家开票页声称支持开发票及对公转账，但票种和抬头须开票前沟通，未公布开票手续费、真实付款附加费、开票法人名称与税号、有效中国VAT票或单件真实批发价。实际含票全费、授权、履约均null/未证。运营自述页自标2026-11-04更新，发票页自标2026-10-29；本轮观察为2026-11-15，不虚构今日政策变更。
+- CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、ChongPay等优先候选无可晋级证据；零售不自动认定真批发。ChatGPT网页/Codex桌面/首次API Key SMS分开，Session与Apple不自动绑定手机号；已核无前置费原号一件一月含全部费用和有效中国VAT≤¥170真Plus批发0，付款0、验票0、实际SMS成功0。保留126条旧报价与前207轮报告原字节；本轮仅追加r208 HTML/JSON、SHA256白名单、工作台、总库入口、VERSION、release指针和回归断言；不付款、联系商家或提交凭据。
+- 2026-11-15本轮直接读取原URL：https://www.payprm.com/faq/after-sales/verification 、https://www.payprm.com/faq/account/codex-phone 、https://kw.yaoyao.chat/guide/yaoyao-kaopu.html 、https://kw.yaoyao.chat/guide/fapiao.html 、https://kw.yaoyao.chat/item/5 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.215 · 2026-11-15
 
 - 第207轮直接重读AI Access Hub准确Plus iOS渠道3月卡两种质保SKU：第105轮于2026-11-08保存两档各¥130/张，本轮商家原页均显示¥135/张，较前次观察+¥5，不推断确切调价日。页面同时标“库存爆棚”与“0库存、可预订”，不能按现货认定；卖家声称取消预订单可退站内余额、要求原支付退款可能扣10%，实际退款未经测试。

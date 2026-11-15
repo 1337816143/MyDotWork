@@ -2181,3 +2181,18 @@ assert.equal(r207.new_evidence.moreai.merchant_claimed_china_ordinary_vat_invoic
 assert.equal(r207.new_evidence.moreai.all_fees_valid_china_vat_cny,null);
 assert.equal(r207.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r207.payment_done,false);assert.equal(r207.credentials_submitted,false);
+
+
+// R208: a usable SMS access link is not a successful OpenAI phone verification; merchant invoice promise is not a checked Chinese VAT invoice.
+const cat208=d.records.find(x=>x.id==='gpt-source-followup-r208-20261115');
+const ev208=d.records.find(x=>x.id==='gpt-source-followup-r208-20261115-evidence');
+assert(cat208&&ev208&&cat208.url.endsWith('supplier-followup-20261115-r18.html'));
+const r208=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r18-evidence.json'),'utf8'));
+assert.equal(r208.round,208);assert.equal(r208.site_version,'1.9.216');
+assert.equal(r208.newly_read_evidence.payprm_independent_codex_phone_service.merchant_explicitly_guarantees_sms_receipt,false);
+assert.equal(r208.newly_read_evidence.payprm_independent_codex_phone_service.cash_refund_if_no_sms_arrives_verified,null);
+assert.equal(r208.newly_read_evidence.yaoyao_plus_operator_and_invoice.observed_one_account_one_month_retail_listing_cny,129);
+assert.equal(r208.newly_read_evidence.yaoyao_plus_operator_and_invoice.invoice_fee_cny,null);
+assert.equal(r208.newly_read_evidence.yaoyao_plus_operator_and_invoice.chinese_vat_invoice_verified,false);
+assert.equal(r208.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r208.purchase_made,false);assert.equal(r208.credentials_submitted,false);
