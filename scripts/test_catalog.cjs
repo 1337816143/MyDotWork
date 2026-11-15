@@ -2213,3 +2213,21 @@ assert.equal(r209.new_primary_source_evidence.aiplusgate_terms.previous_ios_goog
 assert.equal(r209.new_primary_source_evidence.aiplusgate_terms.all_required_fees_with_valid_china_vat_cny,null);
 assert.equal(r209.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r209.purchase_made,false);assert.equal(r209.credentials_submitted,false);assert.equal(r209.sms_test_done,false);
+
+// R210: promo date text conflict is evidence, not proved year-long extension or checkout price.
+const cat210=d.records.find(x=>x.id==='gpt-source-followup-r210-20261115');
+const ev210=d.records.find(x=>x.id==='gpt-source-followup-r210-20261115-evidence');
+assert(cat210&&ev210&&cat210.url.endsWith('supplier-followup-20261115-r20.html'));
+const r210=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r20-evidence.json'),'utf8'));
+assert.equal(r210.round,210);
+assert.equal(r210.site_version,'1.9.218');
+const claim210=r210.newly_read_primary_source_evidence.yinlujing_promotion_deadline_conflict;
+assert.equal(claim210.original_announcement_deadline_bj,'2026-11-11T23:59:00+08:00');
+assert.equal(claim210.current_announcement_deadline_bj,'2027-11-11T23:59:00+08:00');
+assert.equal(claim210.current_sku_promo_banner_year,null);
+assert.equal(claim210.actual_promo_deadline_verified,null);
+assert.equal(claim210.same_price_tiers_recorded_on_2026_11_12,true);
+assert.equal(claim210.agency_upfront_fee_cny,3000);
+assert.equal(claim210.all_required_fees_with_valid_china_vat_cny,null);
+assert.equal(r210.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r210.purchase_made,false);assert.equal(r210.sms_test_done,false);

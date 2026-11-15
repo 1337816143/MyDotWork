@@ -4962,6 +4962,28 @@
       "summary": "5个一方/官方原URL及自标日期，7天/14天为商家声明、无独立存储审计；ZPAY宣称不等于已核收款法人，费用null、真实订单/短信0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r210-20261115",
+      "title": "GPT源头第210轮 · 引路鲸双11活动截止期限冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r20.html",
+      "updatedAt": "2026-11-15",
+      "summary": "同一2026-10-23公告从第38轮留存的2026-11-11变为2027-11-11，而现商品页另称11月18日返场截止（无年份）；不能确认延期。旧月卡¥145/135非新价，¥3000代理前置费仍在，VAT及真正上游未验。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r210-20261115-evidence",
+      "title": "第210轮 · 同一商家公告前后日期矛盾与零实测JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r20-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "5条商家/官方新核读URL及第38轮冻结历史原始JSON，明示2026/2027与11月18日冲突、价格非新变动、全部含中国VAT费用null、SMS履约实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
