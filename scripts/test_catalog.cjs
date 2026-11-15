@@ -2264,3 +2264,16 @@ assert.equal(r212.new_primary_evidence.aibulk_gift_card_channel.official_gift_ca
 assert.equal(r212.new_primary_evidence.aibulk_gift_card_channel.current_seller_payable_unit_price_usdt,null);
 assert.equal(r212.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r212.actual_purchase_made,false);assert.equal(r212.sms_test_done,false);
+
+// R213: external reseller keys are not a verified upstream or verified phone service.
+const cat213=d.records.find(x=>x.id==='gpt-source-followup-r213-20261116');
+const ev213=d.records.find(x=>x.id==='gpt-source-followup-r213-20261116-evidence');
+assert(cat213&&ev213&&cat213.url.endsWith('supplier-followup-20261116-r03.html'));
+const r213=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r03-evidence.json'),'utf8'));
+assert.equal(r213.round,213);assert.equal(r213.site_version,'1.9.221');
+assert.equal(r213.newly_read_primary_source_evidence.hi_codex_retail_and_external_reseller_delivery.external_reseller_key_redemption_offered,true);
+assert.equal(r213.newly_read_primary_source_evidence.hi_codex_retail_and_external_reseller_delivery.plus_merchant_quoted_price_cny,null);
+assert.equal(r213.newly_read_primary_source_evidence.hi_codex_retail_and_external_reseller_delivery.key_external_sale_refunds_handled_by_original_seller,true);
+assert.equal(r213.newly_read_primary_source_evidence.hi_codex_privacy_scope.independently_audited_session_deletion,false);
+assert.equal(r213.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r213.actual_purchase_made,false);assert.equal(r213.sms_test_done,false);

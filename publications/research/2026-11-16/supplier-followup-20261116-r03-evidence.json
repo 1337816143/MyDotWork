@@ -1,0 +1,141 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 213,
+  "site_version": "1.9.221",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-16/supplier-followup-20261116-r02.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "newly_read_primary_source_evidence": {
+    "hi_codex_retail_and_external_reseller_delivery": {
+      "merchant": "Hi Codex",
+      "merchant_status": "independent_third_party_claim",
+      "official_openai_reseller_authorization_verified": null,
+      "plus_product": "ChatGPT Plus monthly subscription to pre-existing own account",
+      "plus_merchant_quoted_price_cny": null,
+      "merchant_price_page_status": "price_not_loaded_in_readable_page",
+      "confirmed_single_month_wholesale_unit_price_cny": null,
+      "single_month_account_free_required_for_auto_delivery": true,
+      "existing_active_plus_auto_extension_supported": false,
+      "existing_plus_to_pro_upgrade_requires_manual_quote": true,
+      "payment_methods_claimed": [
+        "Alipay",
+        "WeChat Pay"
+      ],
+      "payment_processing_fee_cny": null,
+      "must_submit_session_after_merchant_payment": true,
+      "session_submission_url": "https://hi-codex.com/delivery-guide/",
+      "external_reseller_key_redemption_offered": true,
+      "reseller_key_redemption_url": "https://hi-codex.com/redeem/",
+      "third_party_key_issuer_business_entity_verified": null,
+      "third_party_reseller_contract_or_openai_authorization_verified": null,
+      "external_key_redeemed_at_site_creates_single_order": true,
+      "key_external_sale_refunds_handled_by_original_seller": true,
+      "merchant_paid_order_refund_before_completion_claimed_original_channel": true,
+      "refund_after_subscription_completed_claimed_unavailable": true,
+      "payment_in_progress_refund_requires_fulfillment_reconciliation": true,
+      "external_key_refund_success_verified": false,
+      "actual_subscription_delivery_verified": false,
+      "valid_china_vat_invoice_price_cny": null,
+      "china_vat_invoice_issuer_verified": null,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "actual_payee_legal_entity_verified": null
+    },
+    "hi_codex_privacy_scope": {
+      "privacy_url": "https://hi-codex.com/privacy-and-security/",
+      "merchant_privacy_page_updated_on": "2026-11-03",
+      "login_session_collected_by_separate_recharge_system": true,
+      "merchant_claim_session_not_stored_in_official_order_db": true,
+      "merchant_claim_runtime_session_delete_after_completion_or_refund": true,
+      "precise_session_retention_duration_hours": null,
+      "independently_audited_session_deletion": false,
+      "merchant_discloses_order_refund_data_retention": true,
+      "includes_independent_phone_verification_product": false,
+      "verified_chatgpt_web_sms_success": null,
+      "verified_codex_desktop_sms_success": null,
+      "verified_first_api_key_sms_success": null,
+      "independent_phone_number_lifespan_days": null,
+      "sms_failure_refund_cash_cny": null
+    }
+  },
+  "source_provenance": [
+    {
+      "url": "https://hi-codex.com/subscribe/",
+      "kind": "merchant_plan_page",
+      "observed_on": "2026-11-16",
+      "displayed_price": "price not loaded",
+      "merchant_rule_date": null
+    },
+    {
+      "url": "https://hi-codex.com/delivery-guide/",
+      "kind": "merchant_fulfillment_guide",
+      "observed_on": "2026-11-16",
+      "merchant_rule_date": "2026-09-25"
+    },
+    {
+      "url": "https://hi-codex.com/service-and-refund/",
+      "kind": "merchant_refund_and_external_reseller_terms",
+      "observed_on": "2026-11-16",
+      "merchant_rule_date": "2026-10-02"
+    },
+    {
+      "url": "https://hi-codex.com/redeem/",
+      "kind": "merchant_key_redemption_ui",
+      "observed_on": "2026-11-16",
+      "merchant_rule_date": null
+    },
+    {
+      "url": "https://hi-codex.com/privacy-and-security/",
+      "kind": "merchant_privacy_and_session_scope",
+      "observed_on": "2026-11-16",
+      "merchant_rule_date": "2026-11-03"
+    },
+    {
+      "url": "https://hi-codex.com/about/",
+      "kind": "merchant_official_affiliation_disclaimer",
+      "observed_on": "2026-11-16",
+      "merchant_rule_date": null
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "kind": "openai_official_verification_scope",
+      "observed_on": "2026-11-16",
+      "merchant_rule_date": null
+    }
+  ],
+  "evidence_classification": {
+    "website_displayed": "Merchant pages and their dated self-descriptions were read",
+    "merchant_commitment": "Session process, refund and reseller-key terms are untested self-claims",
+    "inference": "External redemption supports a merchant-defined distribution channel, not proof of upstream pricing or OpenAI authorization",
+    "real_paid_fulfillment_or_sms_test": false
+  },
+  "priority_queue_without_qualifying_new_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_prices_unchanged": true,
+  "previous_212_reports_untouched": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

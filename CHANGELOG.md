@@ -1,3 +1,10 @@
+## 1.9.221 · 2026-11-16
+
+- 第213轮首次核读Hi Codex官方兑换页、9月25日交付、10月2日退款及11月3日隐私原文，区分本轮11月16日观察与旧条款标注日期。商家提供其他销售方所售固定套餐密钥兑换流程：站外密钥付款/发货/退款归原销售方，本站仅协助核对交付；是商家定义的分销履约关系，不是已核真实批发价、OpenAI正式供货授权或明确经营主体。
+- 商家普通Plus自动处理要求已有Free账号，不能当作在期Plus续费；先付款再提交Session。自称Session不进入“官网订单数据库”但传往独立充值系统，完成/取消/退款后按流程删除；准确暂存时长和真实删除审计未提供。本站付款订单未完成前可申请按原渠道退款、完成后不退；外部销售方订单则必须由原销售方退款，尚无实测。
+- Hi Codex准确Plus价格页本轮仅显示“价格暂未加载”，单件月价、支付附费、增值税票及票费、收款/出票法人、真正批发资格、正式授权与履约均null。未查到该商家独立接码SKU或手机期限。优先十家既有线索无新的合格证据，旧报价不刷新；符合原号一件一月无代理前置费、含有效中国VAT总价≤¥170的已核真正Plus批发0，真实采购/验票/SMS通过0。
+- 仅新增r213 HTML/JSON、精确SHA256白名单、工作台project-1目录、总库入口、VERSION、最新发布指针和对应回归断言。历史126条报价及前212轮原始报告原字节保留；无付款、商家联系、账号秘密提交或验证实测。直接读取原URL：https://hi-codex.com/subscribe/ 、https://hi-codex.com/delivery-guide/ 、https://hi-codex.com/service-and-refund/ 、https://hi-codex.com/redeem/ 、https://hi-codex.com/privacy-and-security/ 、https://hi-codex.com/about/ 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.220 · 2026-11-16
 
 - 第212轮新增AIBulk批发API 2026-11-15 v1.7.4文档核验：order/paymentIntent及充值有paymentReview与paymentReviewAfterDelivery，商称交付后合规审查也可能暂时撤销尚未兑换卡密和钱包余额；状态delivered不足独立保证仍可兑。余额付款订单商称不走这类审查。无实际资金冻结/订单实测，审查持续时间和现金退款不明。
