@@ -1,0 +1,158 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 207,
+  "site_version": "1.9.215",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r16.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "ai_access_hub": {
+      "sku": "Plus 官方直充／渠道3 iOS 质保开通卡密及质保全程卡密",
+      "original_url": "https://aiwholesale.top/item/51",
+      "previous_observed_on": "2026-11-08",
+      "previous_listing_cny_per_one_month_card": 130,
+      "current_observed_on": "2026-11-15",
+      "current_listing_cny_per_one_month_card": 135,
+      "observed_delta_cny": 5,
+      "exact_change_date": null,
+      "card_channel1_unchanged_display_cny": 119,
+      "same_page_claims_sold_out_and_preorder": true,
+      "same_page_inconsistent_stock_headline": "库存爆棚",
+      "preorder_cash_refund_seller_claimed_deduction_rate": 0.1,
+      "preorder_balance_refund_seller_claimed": true,
+      "actual_available_inventory_verified": false,
+      "previous_payment_fee_claim_not_refreshed": true,
+      "current_checkout_extra_payment_fee_cny": null,
+      "chinese_vat_invoice_surcharge_cny": null,
+      "all_required_fees_valid_china_vat_cny": null,
+      "operator_legal_entity": null,
+      "payee_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "real_single_unit_wholesale_cny": null,
+      "formal_authorization_verified": false,
+      "actual_purchase_or_delivery_verified": false
+    },
+    "zhang_hao_shang": {
+      "original_url": "https://zhanghaoshang.com/item/2",
+      "original_item_id": "2",
+      "first_party_direct_response": {
+        "code": 0,
+        "msg": "This product is not on sale yet"
+      },
+      "third_party_url": "https://pickaiplan.com/memberships/chatgpt_plus/",
+      "third_party_listed_cny_per_one_month": 114,
+      "third_party_claims_in_stock": true,
+      "third_party_quote_is_first_party_current_price": false,
+      "direct_item_verified_orderable": false,
+      "merchant_all_products_unavailable_proven": false,
+      "first_party_current_accurate_price_cny": null,
+      "checkout_fee_cny": null,
+      "valid_china_vat_all_in_cny": null,
+      "legal_operator": null,
+      "formal_resale_authorization_verified": false,
+      "actual_order_tested": false
+    },
+    "moreai": {
+      "first_party_url": "https://www.moreai.plus/",
+      "advertised_sku": "ChatGPT Plus iOS 独立账号一月",
+      "advertised_cny_per_one_month": 165,
+      "merchant_claimed_china_ordinary_vat_invoice_minimum_spend_cny": 200,
+      "one_single_month_listing_reaches_invoice_threshold": false,
+      "exact_checkout_url": "https://aifakavip.com/",
+      "checkout_catalog_dynamic_without_accurate_plus_sku": true,
+      "advertised_price_confirmed_in_checkout": false,
+      "actual_merchant_fee_cny": null,
+      "invoice_fee_cny": null,
+      "all_fees_valid_china_vat_cny": null,
+      "operator_legal_entity": null,
+      "payee_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "formal_resale_authorization_verified": false,
+      "one_unit_wholesale_cny": null,
+      "merchant_claimed_success_rate_percent": 99.9,
+      "claimed_success_independently_verified": false,
+      "merchant_claims_never_banned": true,
+      "ban_safety_independently_verified": false,
+      "merchant_linked_site_same_operator_proven": false
+    }
+  },
+  "verification_scope": {
+    "official_source": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_general_signup_not_normally_sms": true,
+    "codex_desktop_may_require_sms": true,
+    "first_api_key_requires_sms": true,
+    "apple_purchase_or_session_auto_binds_phone": false,
+    "real_chatgpt_web_successes": 0,
+    "real_codex_successes": 0,
+    "real_api_first_key_successes": 0,
+    "failed_sms_cash_refund_new_evidence": null
+  },
+  "sources": [
+    {
+      "url": "https://aiwholesale.top/item/51",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_exact_sku_and_stock_text",
+      "evidence_class": "merchant_page_not_paid_order"
+    },
+    {
+      "url": "https://zhanghaoshang.com/item/2",
+      "observed_on": "2026-11-15",
+      "kind": "first_party_json_item_not_on_sale"
+    },
+    {
+      "url": "https://zhanghaoshang.com/",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_catalog_home"
+    },
+    {
+      "url": "https://pickaiplan.com/memberships/chatgpt_plus/",
+      "observed_on": "2026-11-15",
+      "kind": "third_party_price_and_stock_index_not_first_party"
+    },
+    {
+      "url": "https://www.moreai.plus/",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_plus_price_and_invoice_threshold"
+    },
+    {
+      "url": "https://aifakavip.com/",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_linked_dynamic_checkout_catalog_no_plus_sku"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "openai_official_phone_scope"
+    }
+  ],
+  "priority_queue_still_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "real_sms_successes": 0
+  },
+  "previous_price_snapshots_modified": false,
+  "historical_reports_modified": false,
+  "payment_done": false,
+  "seller_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

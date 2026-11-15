@@ -2165,3 +2165,19 @@ assert.equal(r206.new_evidence.catfk.first_party_readable,false);
 assert.equal(r206.new_evidence.catfk.sku_quotes.length,3);
 assert.equal(r206.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r206.payment_done,false);assert.equal(r206.credentials_submitted,false);
+
+// R207: first-party SKU price and stock, third-party availability mismatch, and VAT minimum threshold.
+const cr207=d.records.find(x=>x.id==='gpt-source-followup-r207-20261115');
+const edr207=d.records.find(x=>x.id==='gpt-source-followup-r207-20261115-evidence');
+assert(cr207&&edr207&&cr207.url.endsWith('supplier-followup-20261115-r17.html'));
+const r207=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r17-evidence.json'),'utf8'));
+assert.equal(r207.round,207);assert.equal(r207.site_version,'1.9.215');
+assert.equal(r207.new_evidence.ai_access_hub.previous_listing_cny_per_one_month_card,130);
+assert.equal(r207.new_evidence.ai_access_hub.current_listing_cny_per_one_month_card,135);
+assert.equal(r207.new_evidence.ai_access_hub.actual_available_inventory_verified,false);
+assert.equal(r207.new_evidence.zhang_hao_shang.first_party_direct_response.msg,'This product is not on sale yet');
+assert.equal(r207.new_evidence.zhang_hao_shang.first_party_current_accurate_price_cny,null);
+assert.equal(r207.new_evidence.moreai.merchant_claimed_china_ordinary_vat_invoice_minimum_spend_cny,200);
+assert.equal(r207.new_evidence.moreai.all_fees_valid_china_vat_cny,null);
+assert.equal(r207.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r207.payment_done,false);assert.equal(r207.credentials_submitted,false);

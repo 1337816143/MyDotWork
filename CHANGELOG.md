@@ -1,3 +1,11 @@
+## 1.9.215 · 2026-11-15
+
+- 第207轮直接重读AI Access Hub准确Plus iOS渠道3月卡两种质保SKU：第105轮于2026-11-08保存两档各¥130/张，本轮商家原页均显示¥135/张，较前次观察+¥5，不推断确切调价日。页面同时标“库存爆棚”与“0库存、可预订”，不能按现货认定；卖家声称取消预订单可退站内余额、要求原支付退款可能扣10%，实际退款未经测试。
+- 复读Zhang Hao Shang商品2：第三方PickAIPlan本轮将菲区Plus月卡¥114标有货，而直接商家商品URL返回JSON code=0/msg="This product is not on sale yet"，不能认定第三方实时可下单，亦不能推断该商家所有商品停供；商家确切单件当前价和付款全费仍null。
+- 新核读MoreAI一方Plus一月¥165及消费满¥200才可申请增值税普通发票门槛；单件¥165不足该门槛。首页商品点击进入aifakavip.com动态目录，本轮未得可读准确Plus结算SKU，不能因跨站链接认定相同营业、收款或开票法人，也不能认定其99.9%成功率/绝不封号为实测。
+- 现有10家优先候选无可闭合的单件真批发/授权/出票/全部支付费用或验证码验证新事实；未知付款费、有效中国VAT、经营收款出票主体均保留null。ChatGPT网页、Codex桌面和首次API Key SMS范围独立核。符合本人原号一件单月免代理前置费、含有效中国增值税发票所有费用≤¥170的已核真正Plus批发上游仍0；实际购买、验票、短信成功均0。
+- 新增r207 HTML/JSON、精确SHA256发布白名单、目录、总库最新入口、VERSION、发布指针与回归检查；历史126条报价、第1–206轮报告均不改。没有付款、联系商家、提交Session/Token或短信测试。2026-11-15实际读URL：https://aiwholesale.top/item/51 、https://zhanghaoshang.com/item/2 、https://zhanghaoshang.com/ 、https://pickaiplan.com/memberships/chatgpt_plus/ 、https://www.moreai.plus/ 、https://aifakavip.com/ 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.214 · 2026-11-15
 
 - 第206轮首次直接记录ChongPay新版商品表“Plus（质保30天）”零售标¥139（商家自标价更新2026-11-09），只能到期办理；11月3日旧菲律宾与iOS Plus各¥150、介绍页月卡¥189不属于已核相同准确SKU，不将¥139伪称确认同SKU降价。wzyp第三方店铺WAF不可读，最终月数、支付手续费、出票与收款主体均null；商家仍声明非OpenAI官方代理。
