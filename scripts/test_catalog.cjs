@@ -2007,3 +2007,16 @@ assert.equal(r197.new_evidence.operator_site.independently_verified_business_reg
 assert.equal(r197.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r197.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r197.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);
+
+// R198: new first-party indexed brands do not imply actual wholesale or valid VAT invoice.
+const e198=d.records.find(x=>x.id==='gpt-source-followup-r198-20261115'),ed198=d.records.find(x=>x.id==='gpt-source-followup-r198-20261115-evidence');
+assert(e198&&ed198&&e198.url.endsWith('supplier-followup-20261115-r8.html'));
+const r198=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r8-evidence.json'),'utf8'));
+assert.equal(r198.round,198);assert.equal(r198.site_version,'1.9.206');
+assert.equal(r198.operator_group.count_brand_self_claims,5);
+assert.deepEqual(r198.indexed_retail_candidates.map(x=>x.indexed_price_cny_per_recharge),[149,148]);
+assert(r198.indexed_retail_candidates.every(x=>x.accurate_months===null&&x.price_live_verified===false&&x.valid_china_vat_invoice_total_cny===null));
+assert.equal(r198.contract_name_discrepancy.privacy_heading,'GETAIAI Privacy Policy');
+assert.equal(r198.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r198.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r198.paid_invoice_or_sms_test_done,false);

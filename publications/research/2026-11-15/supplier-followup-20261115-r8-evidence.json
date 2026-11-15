@@ -1,0 +1,182 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 198,
+  "site_version": "1.9.206",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r7.html",
+  "observation_method": "Search index of seller-owned sites, crawled ~1-2 months earlier; original site live GET failed (502) on 2026-11-15; indexed price NOT refreshed current seller quote",
+  "criteria": {
+    "original_account": true,
+    "one_unit_one_month": true,
+    "no_upfront_agency_fee": true,
+    "all_costs_including_valid_chinese_vat_invoice_limit_cny": 170
+  },
+  "operator_group": {
+    "merchant_self_claim": "ClyGen Inc",
+    "previous_self_claimed_brands": [
+      "HugPass",
+      "24Sub",
+      "ABCNUM"
+    ],
+    "two_new_self_claimed_brands": [
+      "MyAISub",
+      "GETAIAI"
+    ],
+    "count_brand_self_claims": 5,
+    "real_common_legal_operator_independently_verified": false,
+    "same_receiving_entity_verified": false,
+    "shared_supply_verified": false,
+    "formal_openai_resale_authorization_verified": false
+  },
+  "indexed_retail_candidates": [
+    {
+      "brand": "MyAISub",
+      "sku": "ChatGPT Plus Recharge",
+      "url": "https://myaisub.com/products/chatgpt",
+      "indexed_price_cny_per_recharge": 149,
+      "index_age": "last month",
+      "price_live_verified": false,
+      "accurate_months": null,
+      "wholesale_one_unit_cny": null,
+      "payment_extra_cny": null,
+      "valid_china_vat_invoice_total_cny": null,
+      "invoice_issuer": null,
+      "business_and_receiving_entity_verified": false,
+      "upfront_agent_fee_cny": null,
+      "no_agency_fee_verified": false,
+      "existing_plus_renewal_verified": false,
+      "real_delivery_verified": false
+    },
+    {
+      "brand": "GETAIAI",
+      "sku": "ChatGPT Plus 充值",
+      "url": "https://getaiai.com/products/chatgpt",
+      "indexed_price_cny_per_recharge": 148,
+      "index_age": "2 months ago",
+      "price_live_verified": false,
+      "accurate_months": null,
+      "wholesale_one_unit_cny": null,
+      "payment_extra_cny": null,
+      "valid_china_vat_invoice_total_cny": null,
+      "invoice_issuer": null,
+      "business_and_receiving_entity_verified": false,
+      "upfront_agent_fee_cny": null,
+      "no_agency_fee_verified": false,
+      "existing_plus_renewal_verified": false,
+      "real_delivery_verified": false
+    }
+  ],
+  "contract_name_discrepancy": {
+    "url_terms": "https://myaisub.com/terms",
+    "url_privacy": "https://myaisub.com/privacy",
+    "displayed_site": "MyAISub",
+    "terms_heading": "GETAIAI Terms of Service",
+    "privacy_heading": "GETAIAI Privacy Policy",
+    "merchant_policies_self_dated": "2026-08-06",
+    "policy_newly_updated_on_observation_date": false,
+    "identity_and_contract_party_independently_verified": false
+  },
+  "session_disclosure": {
+    "url": "https://myaisub.com/privacy",
+    "merchant_claims_full_session_parsed_and_sent_to_recharge_provider": true,
+    "merchant_claims_complete_session_not_stored_in_own_order_database": true,
+    "merchant_claim_may_share_minimum_necessary_with_vendor": true,
+    "independent_security_audit": false,
+    "already_logged_in_required": true,
+    "first_web_login_phone_verification_solved": false
+  },
+  "partner_terms": {
+    "url": "https://myaisub.com/partners",
+    "merchant_describes_apply_and_negotiation": true,
+    "verified_minimum_one_unit_wholesale_offer": false,
+    "verified_no_agent_entrance_fee": false,
+    "verified_vat_tax_invoice": false
+  },
+  "phone": {
+    "separate_verified_sms_sku_found": false,
+    "chatgpt_web_codex_first_api_key_not_interchangeable": true,
+    "number_duration": null,
+    "refundable_failed_sms_proven": false,
+    "real_sms_successes": 0
+  },
+  "rechecked": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://myaisub.com/",
+      "observed_index_on": "2026-11-15",
+      "finding": "Seller indexed merchant homepage: ClyGen claim and ¥149 Plus/recharge",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://myaisub.com/products/chatgpt",
+      "observed_index_on": "2026-11-15",
+      "finding": "Seller indexed Plus ¥149/recharge, not actual month or paid checkout",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://myaisub.com/terms",
+      "observed_index_on": "2026-11-15",
+      "finding": "Self-dated 2026-08-06 GETAIAI Terms heading under MyAISub URL",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://myaisub.com/privacy",
+      "observed_index_on": "2026-11-15",
+      "finding": "Self-dated 2026-08-06 GETAIAI Privacy; claim Session passed to fulfilment service",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://myaisub.com/partners",
+      "observed_index_on": "2026-11-15",
+      "finding": "Merchant describes application and negotiation, no public wholesale price",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://getaiai.com/products/chatgpt",
+      "observed_index_on": "2026-11-15",
+      "finding": "Seller indexed Plus ¥148/recharge; ClyGen claim",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://www.getaiai.com/",
+      "observed_index_on": "2026-11-15",
+      "finding": "Own-account seller site, ClyGen footer and Session after payment",
+      "evidence_class": "merchant_index_snapshot_not_live",
+      "source_origin_live_verified": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_index_on": "2026-11-15",
+      "finding": "Official SMS rules for distinct scopes",
+      "evidence_class": "official_rule_reference",
+      "source_origin_live_verified": null
+    }
+  ],
+  "historical_126_quote_baseline_modified": false,
+  "previous_reports_modified": false,
+  "paid_invoice_or_sms_test_done": false,
+  "contacted_seller_or_supplied_credentials": false
+}
