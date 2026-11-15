@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 437, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 439, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.202'
+    assert latest['version'] == '1.203'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r12.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r12-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r11.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r13.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r13-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r12.html'
 
     # R200: exact single-use SMS prices and merchant warnings are not phone validation tests.
     assert by_id['gpt-source-followup-r200-20261115']['url'].endswith('supplier-followup-20261115-r10.html')
@@ -2416,6 +2416,27 @@ def validate_publications():
     assert r202['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r202['qualification_totals']['real_phone_sms_successes'] == 0
     assert r202['payment_done'] is False and r202['credentials_submitted'] is False
+
+    # R203: no invoice and a paid agent qualification disqualify an attractive retail offer as a VAT-inclusive wholesale source.
+    assert by_id['gpt-source-followup-r203-20261115']['url'].endswith('supplier-followup-20261115-r13.html')
+    assert by_id['gpt-source-followup-r203-20261115-evidence']['url'].endswith('supplier-followup-20261115-r13-evidence.json')
+    r203 = json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r13-evidence.json').read_bytes())
+    assert r203['round'] == 203 and r203['site_version'] == '1.9.211'
+    assert r203['plus']['retail_card']['advertised_cny'] == 107
+    assert r203['plus']['retail_card']['alipay_unpaid_preview_total_cny'] == 113.42
+    assert r203['plus']['retail_card']['all_required_fees_with_valid_chinese_vat_cny'] is None
+    assert r203['plus']['ios']['advertised_current_product_and_price_sheet_cny'] == 133
+    assert r203['plus']['ios']['faq_conflicting_advertised_cny'] == 130
+    assert r203['seller']['valid_chinese_vat_invoice_offered_by_merchant'] is False
+    assert r203['agent']['paid_agent_qualification_cny'] == 99
+    assert r203['agent']['merchant_claimed_free_qualification_after_valid_purchase_or_referral_sales_cny'] == 2000
+    assert r203['independent_sms']['advertised_cny_per_number'] == 12
+    assert r203['independent_sms']['alipay_unpaid_preview_total_cny'] == 12.72
+    assert r203['independent_sms']['warranty_first_successful_codex_binding_hours'] == 24
+    assert r203['independent_sms']['number_claimed_repeated_sms_window_days_max'] == 80
+    assert r203['independent_sms']['real_successful_sms_bindings'] == 0
+    assert r203['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r203['payment_done'] is False and r203['credentials_submitted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
