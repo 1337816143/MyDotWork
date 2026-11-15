@@ -21,7 +21,7 @@ assert(C.filter(d.records,{sort:'latest'},d.tasks).slice(-sites.length).every(r=
 assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=>r.updatedAt===null));
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
-assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r169-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r174-20261114-evidence','gpt-source-followup-r176-20261114-evidence','gpt-source-followup-r177-20261114-evidence','gpt-source-followup-r181-20261114-evidence','gpt-source-followup-r185-20261114-evidence','gpt-source-followup-r193-20261115-evidence','gpt-source-followup-r194-20261115-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
+assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r169-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r174-20261114-evidence','gpt-source-followup-r176-20261114-evidence','gpt-source-followup-r177-20261114-evidence','gpt-source-followup-r181-20261114-evidence','gpt-source-followup-r185-20261114-evidence','gpt-source-followup-r193-20261115-evidence','gpt-source-followup-r194-20261115-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r207-20261115-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
 assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['business-validation-20261004','task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 const w32=d.records.find(r=>r.id==='gpt-source-followup-r32-20261104');
@@ -2165,3 +2165,19 @@ assert.equal(r206.new_evidence.catfk.first_party_readable,false);
 assert.equal(r206.new_evidence.catfk.sku_quotes.length,3);
 assert.equal(r206.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r206.payment_done,false);assert.equal(r206.credentials_submitted,false);
+
+// R207: first-party SKU price and stock, third-party availability mismatch, and VAT minimum threshold.
+const cr207=d.records.find(x=>x.id==='gpt-source-followup-r207-20261115');
+const edr207=d.records.find(x=>x.id==='gpt-source-followup-r207-20261115-evidence');
+assert(cr207&&edr207&&cr207.url.endsWith('supplier-followup-20261115-r17.html'));
+const r207=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r17-evidence.json'),'utf8'));
+assert.equal(r207.round,207);assert.equal(r207.site_version,'1.9.215');
+assert.equal(r207.new_evidence.ai_access_hub.previous_listing_cny_per_one_month_card,130);
+assert.equal(r207.new_evidence.ai_access_hub.current_listing_cny_per_one_month_card,135);
+assert.equal(r207.new_evidence.ai_access_hub.actual_available_inventory_verified,false);
+assert.equal(r207.new_evidence.zhang_hao_shang.first_party_direct_response.msg,'This product is not on sale yet');
+assert.equal(r207.new_evidence.zhang_hao_shang.first_party_current_accurate_price_cny,null);
+assert.equal(r207.new_evidence.moreai.merchant_claimed_china_ordinary_vat_invoice_minimum_spend_cny,200);
+assert.equal(r207.new_evidence.moreai.all_fees_valid_china_vat_cny,null);
+assert.equal(r207.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r207.payment_done,false);assert.equal(r207.credentials_submitted,false);

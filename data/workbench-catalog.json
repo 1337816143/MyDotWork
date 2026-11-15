@@ -4896,6 +4896,28 @@
       "summary": "10条原始URL和各自证据日；准确SKU、未付手续费、旧快照不刷新、wzyp及CatFK不可读、未知税票和批发价格null、实际短信0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r207-20261115",
+      "title": "GPT源头第207轮 · iOS旧SKU涨¥5、无货及开票门槛",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r17.html",
+      "updatedAt": "2026-11-15",
+      "summary": "AI Access Hub旧iOS SKU由11月8日¥130到本轮页面¥135，原页并列零库存/预订；ZH原商品返回not on sale但第三方标¥114有货；MoreAI ¥165单件低于¥200申请VAT门槛。没有合格已授权真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r207-20261115-evidence",
+      "title": "第207轮 · SKU价格/库存冲突与VAT最低消费原链JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r17-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "7条本轮读原URL；区分11月8日旧价、11月15日新观察、第三方伪现货、单件未达VAT门槛；费用null且无实付、授权或接码成功。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
