@@ -1,0 +1,158 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 211,
+  "site_version": "1.9.219",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r20.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "newly_read_primary_source_evidence": {
+    "gpt_bujizhan_plus": {
+      "shop_url": "https://gptbjz.com/shop",
+      "plans_url": "https://gptbjz.com/plans",
+      "sku": "Plus本人原号卡密",
+      "price_cny_per_card": 125,
+      "period_months_per_merchant": 1,
+      "online_payment_surcharge_rate": 0.03,
+      "conditional_before_invoice_sum_cny": 128.75,
+      "actual_checkout_total_cny": null,
+      "valid_china_vat_invoice_type": null,
+      "invoice_fee_cny": null,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "merchant_claims_electronic_invoice": true,
+      "actual_payee_legal_entity": null,
+      "invoice_issuer_legal_entity": null,
+      "registered_operator": null,
+      "one_unit_wholesale_price": null,
+      "formal_upstream_resale_authorization_verified": false,
+      "actual_fulfillment_tested": false
+    },
+    "gpt_bujizhan_session": {
+      "home_url": "https://gptbjz.com/",
+      "privacy_url": "https://gptbjz.com/privacy",
+      "linked_redemption_url": "https://geprosub.com/",
+      "marketing_copy": "Session不留存，提交后页面立即清空",
+      "on_order_copy": "会话内容提交后会从输入框清除，并按订单加密保存，用于订单处理、异常重试与售后",
+      "privacy_copy": "商称充值成功后销毁，异常暂存加密资料用于重试",
+      "actual_retention_days": null,
+      "storage_and_deletion_audited": false,
+      "breach_detected": false,
+      "linked_sites_same_legal_entity_verified": null
+    },
+    "gpt_bujizhan_sms": {
+      "shop_url": "https://gptbjz.com/shop",
+      "guide_url": "https://gptbjz.com/codex-sms-guide",
+      "guide_self_updated_on": "2026-09-21",
+      "shop_rule_self_version": "2026-08-30",
+      "sku": "Codex接码（自选地区）",
+      "cny_per_receive_entitlement": 8,
+      "online_payment_surcharge_rate": 0.03,
+      "conditional_before_other_fees_sum_cny": 8.24,
+      "actual_checkout_cny": null,
+      "chatgpt_authsession_required": false,
+      "sms_entitlement_validity_days": 30,
+      "phone_number_validity_days": null,
+      "phone_number_type_verified": null,
+      "max_number_attempts_per_task": 5,
+      "entitlement_consumed_when_sms_received": true,
+      "entitlement_consumed_only_when_codex_accepts_code": false,
+      "no_sms_received_entitlement_refund_claimed": true,
+      "automatic_original_payment_cash_refund_on_no_sms": false,
+      "cash_refund_subject_to_manual_review": true,
+      "actual_cash_refund_tested": false,
+      "chatgpt_web_supported_verified": null,
+      "codex_service_claimed": true,
+      "codex_sms_success_tested": false,
+      "first_openai_api_key_supported_verified": null,
+      "seller_claims_lubansms_line": true,
+      "upstream_authorized_supply_verified": null
+    },
+    "zeroxzheng_sms": {
+      "url": "https://0xzheng.com/item/2",
+      "linked_redemption": "https://gptduihuan.com/",
+      "sku": "Codex美国首次登录接码",
+      "merchant_claims_usa_real_sim": true,
+      "physical_number_verified": null,
+      "sms_received_consumes_entitlement": true,
+      "no_sms_no_entitlement_deduction_claim": true,
+      "codex_initial_login_only": true,
+      "refund_policy": "虚拟商品售出不退不换",
+      "cny_price_visible_in_examined_page": null,
+      "real_sms_success_verified": false,
+      "number_lifespan_days": null
+    }
+  },
+  "scope": {
+    "chatgpt_web_successes": 0,
+    "codex_successes": 0,
+    "first_api_key_successes": 0,
+    "apple_or_session_auto_binds_phone_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://gptbjz.com/",
+      "observed_on": "2026-11-16"
+    },
+    {
+      "url": "https://gptbjz.com/shop",
+      "observed_on": "2026-11-16",
+      "merchant_sms_rules_self_version": "2026-08-30"
+    },
+    {
+      "url": "https://gptbjz.com/plans",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-11-05"
+    },
+    {
+      "url": "https://gptbjz.com/privacy",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-11-05"
+    },
+    {
+      "url": "https://gptbjz.com/codex-sms-guide",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-09-21"
+    },
+    {
+      "url": "https://geprosub.com/",
+      "observed_on": "2026-11-16"
+    },
+    {
+      "url": "https://0xzheng.com/item/2",
+      "observed_on": "2026-11-16"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-16"
+    }
+  ],
+  "priority_queue_without_new_qualifying_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_sms_successes": 0
+  },
+  "historical_quotes_126_untouched": true,
+  "previous_210_reports_untouched": true,
+  "purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
