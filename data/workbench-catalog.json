@@ -4720,6 +4720,28 @@
       "summary": "原URL、索引旧日期和502源站失败、两Plus准确套餐月份/全费/开票未知；真批发与接码仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r199-20261115",
+      "title": "GPT源头第199轮 · AISub本人原号单月与Session隐私披露",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r9.html",
+      "updatedAt": "2026-11-15",
+      "summary": "首次直接读取AISub本人原号Plus一个月¥135，另三个月¥390不可充单月；潜在Session/Token操作截图及录屏商家披露，不证明批发授权、有效中国VAT或真实履约。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r199-20261115-evidence",
+      "title": "第199轮 · AISub准确SKU、会话数据、条款和发票缺口原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r9-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "6条AISub一方直接读取网页、商家条款自标2026-09-17；月季SKU、Session/Token与隐私留存、票费/支付费null、真上游0、真实验证0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
