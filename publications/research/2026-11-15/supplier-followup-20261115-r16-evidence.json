@@ -1,0 +1,228 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 206,
+  "site_version": "1.9.214",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r15.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_evidence": {
+    "chongpay": {
+      "sku": "Plus（质保30天）",
+      "advertised_cny_per_item": 139,
+      "advertised_price_observed_on": "2026-11-15",
+      "merchant_catalog_price_date": "2026-11-09",
+      "subscription_months_explicit_on_card": null,
+      "prior_observation_date": "2026-11-03",
+      "historical_other_skus": [
+        {
+          "name": "Plus菲律宾渠道",
+          "cny_per_item": 150
+        },
+        {
+          "name": "Plus iOS礼品卡",
+          "cny_per_item": 150
+        },
+        {
+          "name": "Plus介绍页未分渠道月卡",
+          "cny_per_month": 189
+        }
+      ],
+      "identical_sku_price_cut_verified": false,
+      "availability_seller_says_only_after_existing_subscription_ends": true,
+      "merchant_claimed_warranty_days": 30,
+      "checkout_url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "checkout_waf_blocked": true,
+      "accurate_external_checkout_sku": null,
+      "real_paid_cny": null,
+      "mandatory_payment_fee_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "valid_china_vat_invoice_all_in_cny": null,
+      "invoice_issuer": null,
+      "payee_legal_name": null,
+      "operator_legal_name": null,
+      "real_single_unit_wholesale_cny": null,
+      "authorization_verified": false,
+      "fulfilment_tested": false,
+      "independent_codex_sms": {
+        "sku": "Codex短信验证（25天）",
+        "advertised_cny_per_number": 20,
+        "merchant_claimed_number_duration_days": 25,
+        "already_archived_on": "2026-11-03",
+        "real_sms_successes": 0,
+        "chatgpt_web_verified": false,
+        "codex_desktop_verified": false,
+        "first_api_key_verified": false,
+        "failed_sms_cash_refund": null,
+        "number_type": null
+      }
+    },
+    "token5555": {
+      "merchant": "词元连接",
+      "sku": "Plus（官方20刀）",
+      "first_party_page": "https://token5555.com/",
+      "observed_on": "2026-11-15",
+      "checkout_single_item_subtotal_cny": 148,
+      "payment_surcharge_rate": 0.012,
+      "payment_surcharge_cny": 1.78,
+      "checkout_displayed_unpaid_total_cny": 149.78,
+      "subscription_months_explicit_on_checkout": null,
+      "real_paid_total_cny": null,
+      "invoice_type_verified": null,
+      "vat_invoice_surcharge_cny": null,
+      "valid_china_vat_invoice_all_in_cny": null,
+      "vat_issuer_legal_name": null,
+      "payee_legal_name": null,
+      "one_unit_wholesale_cny": null,
+      "upfront_agent_fee_cny": null,
+      "formal_resale_authorization_verified": false,
+      "own_account_redemption_tested": false,
+      "merchant_says_not_officially_authorized_by_openai": true,
+      "affiliate_commission_up_to_rate": 0.25,
+      "affiliate_is_not_wholesale": true,
+      "checkout_contact_phone_for_order_lookup_not_chatgpt_verification": true,
+      "refund_claim": "unstarted orders may request refund; processing is order-status-dependent",
+      "real_refund_tested": false
+    },
+    "catfk": {
+      "evidence_level": "independent_third_party_historical_snapshot_only",
+      "snapshot_url": "https://aigood.chat/price-radar/shops/8s9l5hxf",
+      "snapshot_as_of": "2026-11-11 15:51",
+      "observed_on": "2026-11-15",
+      "first_party_url": "https://catfk.com/shop/8S9L5HXF",
+      "first_party_readable": false,
+      "sku_quotes": [
+        {
+          "name": "Codex美区接码（成功率为商家自称）",
+          "cny_per_service": 2.97,
+          "number_duration_days": null
+        },
+        {
+          "name": "Codex英区30天",
+          "cny_per_service": 10,
+          "number_duration_days": 30
+        },
+        {
+          "name": "Codex美卡15–30天",
+          "cny_per_service": 6,
+          "number_duration_days_min": 15,
+          "number_duration_days_max": 30
+        }
+      ],
+      "refreshed_as_2026_11_15_seller_price": false,
+      "web_login_real_success": false,
+      "codex_real_success": false,
+      "first_api_real_success": false,
+      "refund_to_original_method_verified": false
+    }
+  },
+  "verification_scope": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_general_signup_not_normally_phone_required": true,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_phone_required": true,
+    "subscription_or_apple_or_session_guarantees_phone_binding": false,
+    "phone_order_contact_not_openai_binding": true
+  },
+  "sources": [
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "observed_on": "2026-11-15",
+      "merchant_self_price_date": "2026-11-09",
+      "kind": "merchant_catalog_plus_139_and_codex_20_25days"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-15",
+      "merchant_self_price_date": "2026-11-09",
+      "kind": "merchant_homepage"
+    },
+    {
+      "url": "https://chongpay.com/terms",
+      "observed_on": "2026-11-15",
+      "merchant_self_revision": "2026-11",
+      "kind": "merchant_terms_referral_and_warranty"
+    },
+    {
+      "url": "https://chongpay.com/help/create-invoice",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_receipts_help"
+    },
+    {
+      "url": "https://chongpay.com/help/china-vat-invoice",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_distinguishes_foreign_invoice_from_china_vat"
+    },
+    {
+      "url": "https://wzyp.cn/shop/FDDQ3HVD",
+      "observed_on": "2026-11-15",
+      "kind": "external_checkout_waf",
+      "readable": false
+    },
+    {
+      "url": "https://token5555.com/",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_html_embedded_unpaid_plus_checkout_price_surcharge"
+    },
+    {
+      "url": "https://aigood.chat/price-radar/shops/8s9l5hxf",
+      "observed_on": "2026-11-15",
+      "snapshot_as_of": "2026-11-11 15:51",
+      "kind": "third_party_stale_catfk_sms_snapshot"
+    },
+    {
+      "url": "https://catfk.com/shop/8S9L5HXF",
+      "observed_on": "2026-11-15",
+      "kind": "direct_merchant_page_unreadable",
+      "readable": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "openai_official_verification_scopes"
+    }
+  ],
+  "evidence_classes": {
+    "merchant_web_claims_not_real_world_fulfilment": true,
+    "third_party_snapshot_not_contemporaneous_price": true,
+    "identical_sku_price_change_unconfirmed": true,
+    "real_invoice_or_sms_tests": 0
+  },
+  "unverified_essentials": [
+    "Actual single-month original-account SKU for both candidates",
+    "legal operator / payee / China VAT issuer and genuine tax invoice",
+    "all mandatory checkout and invoice fees",
+    "genuine wholesale single-unit price and resale authorization",
+    "session prerequisites, original account renewal and warranty enforcement",
+    "Codex/ChatGPT Web/API phone success, number type and failed-code cash refund"
+  ],
+  "priority_queue_still_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "real_sms_successes": 0
+  },
+  "old_126_price_rows_modified": false,
+  "historic_reports_modified": false,
+  "payment_done": false,
+  "seller_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

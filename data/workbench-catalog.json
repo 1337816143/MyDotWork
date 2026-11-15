@@ -4874,6 +4874,28 @@
       "summary": "四条GoPlus一方页面与跨站下单链接；未知票据、税点、支付费用为null，实际Plus进价和短信均未验。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r206-20261115",
+      "title": "GPT源头第206轮 · ChongPay新挂牌与词元连接手续费",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r16.html",
+      "updatedAt": "2026-11-15",
+      "summary": "ChongPay现列Plus ¥139，不等于已证明旧¥150同SKU降价；Token5555单件Plus¥148+1.2%手续费¥1.78=未付¥149.78；真批发、VAT及实测仍缺。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r206-20261115-evidence",
+      "title": "第206轮 · ChongPay与Token5555报价、CatFK旧SMS快照结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r16-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "10条原始URL和各自证据日；准确SKU、未付手续费、旧快照不刷新、wzyp及CatFK不可读、未知税票和批发价格null、实际短信0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

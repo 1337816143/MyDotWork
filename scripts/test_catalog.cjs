@@ -2148,3 +2148,20 @@ assert.equal(r205.merchant.formal_resale_authorization_verified,false);
 assert.equal(r205.independent_phone.real_sms_successes,0);
 assert.equal(r205.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r205.payment_done,false);assert.equal(r205.credentials_submitted,false);
+
+// R206: a new merchant listing, unpaid payment preview or older third-party SMS snapshot is not verified VAT wholesale.
+const e206=d.records.find(x=>x.id==='gpt-source-followup-r206-20261115'),ed206=d.records.find(x=>x.id==='gpt-source-followup-r206-20261115-evidence');
+assert(e206&&ed206&&e206.url.endsWith('supplier-followup-20261115-r16.html'));
+const r206=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r16-evidence.json'),'utf8'));
+assert.equal(r206.round,206);assert.equal(r206.site_version,'1.9.214');
+assert.equal(r206.new_evidence.chongpay.advertised_cny_per_item,139);
+assert.equal(r206.new_evidence.chongpay.identical_sku_price_cut_verified,false);
+assert.equal(r206.new_evidence.chongpay.valid_china_vat_invoice_all_in_cny,null);
+assert.equal(r206.new_evidence.token5555.checkout_single_item_subtotal_cny,148);
+assert.equal(r206.new_evidence.token5555.payment_surcharge_cny,1.78);
+assert.equal(r206.new_evidence.token5555.checkout_displayed_unpaid_total_cny,149.78);
+assert.equal(r206.new_evidence.token5555.valid_china_vat_invoice_all_in_cny,null);
+assert.equal(r206.new_evidence.catfk.first_party_readable,false);
+assert.equal(r206.new_evidence.catfk.sku_quotes.length,3);
+assert.equal(r206.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r206.payment_done,false);assert.equal(r206.credentials_submitted,false);
