@@ -5050,6 +5050,28 @@
       "summary": "7条本轮直读原URL；9月25日/10月2日/11月3日商家旧条款日期与11月16日观察时间分开；外部密钥购销主体与批发价、票费、SMS全未知，零实购。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r214-20261116",
+      "title": "GPT源头第214轮 · 星桥订阅原号Plus开票费与语言版本矛盾",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r04.html",
+      "updatedAt": "2026-11-16",
+      "summary": "首次直读新零售候选本人原号Plus¥165/月；中文开票7%最低¥50，小计¥215，日文旧版最低¥40小计¥205，两版规则冲突，均超¥170；未验真实税票、单件批发、正式授权或付款。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r214-20261116-evidence",
+      "title": "第214轮 · 中日开票差额、Session前提与退款期限原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r04-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "5条本轮直接读取商家原始URL，逐页自标旧日期、¥165准确单位、两版票费、30天资料/退款时限；付款汇差、正式中国VAT、出票/收款主体及SMS实测null或未验。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

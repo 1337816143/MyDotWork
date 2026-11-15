@@ -131,14 +131,30 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 459, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 461, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.213'
+    assert latest['version'] == '1.214'
     assert latest['date'] == '2026-11-16'
-    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r03.html'
-    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r03-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r02.html'
+    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r04.html'
+    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r04-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r03.html'
+
+
+    # R214: a vendor's invoice quotation is not a verified tax invoice, wholesale right, or paid checkout.
+    assert by_id['gpt-source-followup-r214-20261116']['url'].endswith('supplier-followup-20261116-r04.html')
+    assert by_id['gpt-source-followup-r214-20261116-evidence']['url'].endswith('supplier-followup-20261116-r04-evidence.json')
+    r214 = json.loads((ROOT/'dist/research/2026-11-16/supplier-followup-20261116-r04-evidence.json').read_bytes())
+    assert r214['round'] == 214 and r214['site_version'] == '1.9.222'
+    xq = r214['new_primary_source_evidence']
+    assert xq['mainland_chinese_service']['base_quoted_price_cny_per_account_month'] == 165
+    assert xq['mainland_chinese_service']['merchant_claim_invoice_fee_minimum_cny_per_invoice'] == 50
+    assert xq['mainland_chinese_service']['base_plus_claimed_invoice_fee_arithmetic_cny'] == 215
+    assert xq['japanese_locale_older_page']['conditional_one_invoice_preview_cny'] == 205
+    assert xq['mainland_chinese_service']['all_required_fees_with_valid_china_vat_cny'] is None
+    assert xq['refund_and_risk']['real_cash_refund_verified'] is False
+    assert r214['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r214['actual_purchase_made'] and not r214['sms_test_done']
 
     # R213: third-party redemption keys and Session processing are not verified wholesale.
     assert by_id['gpt-source-followup-r213-20261116']['url'].endswith('supplier-followup-20261116-r03.html')

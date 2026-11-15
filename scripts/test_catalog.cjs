@@ -2277,3 +2277,16 @@ assert.equal(r213.newly_read_primary_source_evidence.hi_codex_retail_and_externa
 assert.equal(r213.newly_read_primary_source_evidence.hi_codex_privacy_scope.independently_audited_session_deletion,false);
 assert.equal(r213.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r213.actual_purchase_made,false);assert.equal(r213.sms_test_done,false);
+
+// R214: the newly observed invoice fee and stale Japanese fee are self-claims, not a valid Chinese VAT invoice.
+const cat214=d.records.find(x=>x.id==='gpt-source-followup-r214-20261116');
+const ev214=d.records.find(x=>x.id==='gpt-source-followup-r214-20261116-evidence');
+assert(cat214&&ev214&&cat214.url.endsWith('supplier-followup-20261116-r04.html'));
+const r214=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r04-evidence.json'),'utf8'));
+assert.equal(r214.round,214);assert.equal(r214.site_version,'1.9.222');
+assert.equal(r214.new_primary_source_evidence.mainland_chinese_service.base_plus_claimed_invoice_fee_arithmetic_cny,215);
+assert.equal(r214.new_primary_source_evidence.japanese_locale_older_page.conditional_one_invoice_preview_cny,205);
+assert.equal(r214.new_primary_source_evidence.mainland_chinese_service.all_required_fees_with_valid_china_vat_cny,null);
+assert.equal(r214.new_primary_source_evidence.refund_and_risk.real_cash_refund_verified,false);
+assert.equal(r214.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r214.actual_purchase_made,false);assert.equal(r214.sms_test_done,false);
