@@ -4984,6 +4984,28 @@
       "summary": "5条商家/官方新核读URL及第38轮冻结历史原始JSON，明示2026/2027与11月18日冲突、价格非新变动、全部含中国VAT费用null、SMS履约实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r211-20261116",
+      "title": "GPT源头第211轮 · 独立Codex短信与Session订单存储声明",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r01.html",
+      "updatedAt": "2026-11-16",
+      "summary": "GPT补给站本人原号Plus卡密¥125/张、线上支付商称+3%，独立Codex短信¥8/次；权益期限30天≠号码有效期，收到短信扣次，失败退站内权益不等于现金退。Session清空与订单加密存储并存。有效中国VAT和一手供货均未验证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r211-20261116-evidence",
+      "title": "第211轮 · Codex接码现金退款、Session保管及准确费用JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r01-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "8条首次读取的一方/官方URL，价格单位、规则自标旧日期和实际观察日分开；0xzheng仅Codex首次登录且声称售出不退；未核SMS真实性、税票、正式供货授权及主体均为null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

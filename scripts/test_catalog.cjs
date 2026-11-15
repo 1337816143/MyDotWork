@@ -2231,3 +2231,21 @@ assert.equal(claim210.agency_upfront_fee_cny,3000);
 assert.equal(claim210.all_required_fees_with_valid_china_vat_cny,null);
 assert.equal(r210.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r210.purchase_made,false);assert.equal(r210.sms_test_done,false);
+
+// R211: an SMS entitlement is not a durable phone number or a verified Codex success.
+const cat211=d.records.find(x=>x.id==='gpt-source-followup-r211-20261116');
+const ev211=d.records.find(x=>x.id==='gpt-source-followup-r211-20261116-evidence');
+assert(cat211&&ev211&&cat211.url.endsWith('supplier-followup-20261116-r01.html'));
+const r211=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r01-evidence.json'),'utf8'));
+assert.equal(r211.round,211);assert.equal(r211.site_version,'1.9.219');
+const g211=r211.newly_read_primary_source_evidence.gpt_bujizhan_plus,sms211=r211.newly_read_primary_source_evidence.gpt_bujizhan_sms;
+assert.equal(g211.price_cny_per_card,125);assert.equal(g211.online_payment_surcharge_rate,0.03);
+assert.equal(g211.all_required_fees_with_valid_china_vat_cny,null);
+assert.equal(r211.newly_read_primary_source_evidence.gpt_bujizhan_session.storage_and_deletion_audited,false);
+assert.equal(sms211.cny_per_receive_entitlement,8);assert.equal(sms211.sms_entitlement_validity_days,30);
+assert.equal(sms211.phone_number_validity_days,null);
+assert.equal(sms211.automatic_original_payment_cash_refund_on_no_sms,false);
+assert.equal(sms211.codex_sms_success_tested,false);
+assert.equal(r211.newly_read_primary_source_evidence.zeroxzheng_sms.cny_price_visible_in_examined_page,null);
+assert.equal(r211.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r211.purchase_made,false);assert.equal(r211.sms_test_done,false);
