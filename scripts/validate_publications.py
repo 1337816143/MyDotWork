@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 429, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 431, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.198'
+    assert latest['version'] == '1.199'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r8.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r8-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r7.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r9.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r9-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r8.html'
 
     # R197: corroborating seller websites do not independently verify operator, VAT, supplier or paid success.
     assert by_id['gpt-source-followup-r197-20261115']['url'].endswith('supplier-followup-20261115-r7.html')
@@ -169,6 +169,22 @@ def validate_publications():
     assert r198['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r198['qualification_totals']['verified_phone_sms_successes'] == 0
     assert r198['paid_invoice_or_sms_test_done'] is False
+
+    # R199: new first-party retail seller is not verified all-in VAT or genuine wholesale.
+    assert by_id['gpt-source-followup-r199-20261115']['url'].endswith('supplier-followup-20261115-r9.html')
+    assert by_id['gpt-source-followup-r199-20261115-evidence']['url'].endswith('supplier-followup-20261115-r9-evidence.json')
+    r199 = json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r9-evidence.json').read_bytes())
+    assert r199['round'] == 199 and r199['site_version'] == '1.9.207'
+    assert r199['new_retail_candidate']['advertised_price_cny_per_account_month'] == 135
+    assert r199['new_retail_candidate']['actual_paid_with_valid_chinese_vat_total_cny'] is None
+    assert r199['new_retail_candidate']['wholesale_one_unit_price_cny'] is None
+    assert r199['separate_nonqualifying_product']['advertised_price_cny_per_three_month_package'] == 390
+    assert r199['separate_nonqualifying_product']['not_one_unit_one_month'] is True
+    assert r199['seller_privacy']['seller_claims_may_store_task_output_screenshot_screen_recording'] is True
+    assert r199['seller_privacy']['actual_breach_evidence'] is False
+    assert r199['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r199['phone']['real_sms_successes'] == 0
+    assert r199['payment_done'] is False and r199['credentials_submitted'] is False
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
