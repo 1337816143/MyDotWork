@@ -2114,3 +2114,20 @@ assert.equal(r203.independent_sms.number_claimed_repeated_sms_window_days_max,80
 assert.equal(r203.independent_sms.real_successful_sms_bindings,0);
 assert.equal(r203.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r203.payment_done,false);assert.equal(r203.credentials_submitted,false);
+
+// R204: retail arithmetic below the ceiling is not proof of all-fee VAT purchase or real wholesale authorization.
+const e204=d.records.find(x=>x.id==='gpt-source-followup-r204-20261115'),ed204=d.records.find(x=>x.id==='gpt-source-followup-r204-20261115-evidence');
+assert(e204&&ed204&&e204.url.endsWith('supplier-followup-20261115-r14.html'));
+const r204=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r14-evidence.json'),'utf8'));
+assert.equal(r204.round,204);assert.equal(r204.site_version,'1.9.212');
+assert.equal(r204.plus.merchant_listed_cny_per_account_month,158);
+assert.equal(r204.plus.merchant_claimed_ordinary_vat_surcharge_rate,0.06);
+assert.equal(r204.plus.merchant_listing_plus_vat_arithmetic_cny,167.48);
+assert.equal(r204.plus.all_required_fees_with_valid_chinese_vat_cny,null);
+assert.equal(r204.plus.min_retail_quantity_independently_verified,null);
+assert.equal(r204.plus.real_one_unit_wholesale_price_cny,null);
+assert.equal(r204.seller.wholesale_resale_authorization_verified,false);
+assert.equal(r204.credentials_and_delivery.actual_sessionless_checkout_and_delivery_tested,false);
+assert.equal(r204.independent_phone.real_sms_successes,0);
+assert.equal(r204.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r204.payment_done,false);assert.equal(r204.credentials_submitted,false);

@@ -4830,6 +4830,28 @@
       "summary": "2026-11-15直接读取Hype六类自营页面及OpenAI官方规则；¥107/¥133、支付宝6%、无票、代理¥99/累计¥2000、SMS¥12及24h条件退款；全部真实验证0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r204-20261115",
+      "title": "GPT源头第204轮 · MuyuGPT含票算术与免Session声明核对",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r14.html",
+      "updatedAt": "2026-11-15",
+      "summary": "首次直接读MuyuGPT本人原号Plus月付¥158、商称普票加6%；¥167.48仅条件算术，实际含票全费、出票法人、单件批发和授权未验。商称不索要Session不等于真实免凭据履约。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r204-20261115-evidence",
+      "title": "第204轮 · MuyuGPT单月Plus SKU、6%普票与授权缺口证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r14-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "一方4页直接读取及定价页未渲染表格；¥158+6%=¥167.48为算术非实付，支付费用null、真实VAT票和供货授权未验，SMS成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
