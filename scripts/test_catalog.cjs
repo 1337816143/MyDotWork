@@ -2076,3 +2076,20 @@ assert.equal(r201.upstream.plus_wholesale_one_unit_price_cny,null);
 assert.equal(r201.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r201.qualification_totals.real_phone_sms_successes,0);
 assert.equal(r201.payment_done,false);assert.equal(r201.seller_contacted,false);
+
+// R202: a third-party recharge implementation and iOS CDK session prerequisites do not prove a supply or SMS success.
+const e202=d.records.find(x=>x.id==='gpt-source-followup-r202-20261115'),ed202=d.records.find(x=>x.id==='gpt-source-followup-r202-20261115-evidence');
+assert(e202&&ed202&&e202.url.endsWith('supplier-followup-20261115-r12.html'));
+const r202=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r12-evidence.json'),'utf8'));
+assert.equal(r202.round,202);assert.equal(r202.site_version,'1.9.210');
+assert.equal(r202.technical_candidate.qualified_as_upstream,false);
+assert.equal(r202.technical_candidate.exact_public_plus_single_month_product_sku,null);
+assert.equal(r202.technical_candidate.real_one_unit_wholesale_plus_price_cny,null);
+assert.equal(r202.technical_candidate.all_required_fees_with_valid_chinese_vat_cny,null);
+assert.equal(r202.technical_candidate.two_hosts_same_actual_service_verified,false);
+assert.equal(r202.technical_candidate.purchase_endpoints_operational_live_tested,false);
+assert.equal(r202.new_delivery_interface_observations.length,2);
+assert(r202.new_delivery_interface_observations.every(x=>x.prior_login_required===true&&x.actual_fulfillment_verified===false));
+assert.equal(r202.independent_phone.real_sms_successes,0);
+assert.equal(r202.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r202.payment_done,false);assert.equal(r202.credentials_submitted,false);

@@ -4786,6 +4786,28 @@
       "summary": "商家2026-11-14更新的开票页与11月15日读取：Plus ¥160/账号月、普票附加¥0仅自述、零售专票税额null、20x五件起不可混同Plus；真实发票验真和采购0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r202-20261115",
+      "title": "GPT源头第202轮 · 第三方代充API技术链与iOS卡密Session前提",
+      "type": "report",
+      "task": "project-1",
+      "updatedAt": "2026-11-15",
+      "access": "public",
+      "metadataApproved": true,
+      "url": "../research/2026-11-15/supplier-followup-20261115-r12.html",
+      "summary": "KC开源后台可转第三方API，文档购买端点停用且两示例主机不同；两卡密界面继续要求已登录Session。非核实Plus批发源，真实含票成本null。"
+    },
+    {
+      "id": "gpt-source-followup-r202-20261115-evidence",
+      "title": "第202轮 · KC供货链API差异、Apple卡密和Session条件证据",
+      "type": "dataset",
+      "task": "project-1",
+      "updatedAt": "2026-11-15",
+      "access": "public",
+      "metadataApproved": true,
+      "url": "../research/2026-11-15/supplier-followup-20261115-r12-evidence.json",
+      "summary": "2026-11-15实读5条公开一方来源，API默认主机差异、采购接口停用、Apple与Session并存；经营出票和Plus价格未知、手机号实测0。"
     }
   ],
   "websites": [
