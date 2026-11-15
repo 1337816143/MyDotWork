@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 439, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 441, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.203'
+    assert latest['version'] == '1.204'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r13.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r13-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r12.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r14.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r14-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r13.html'
 
     # R200: exact single-use SMS prices and merchant warnings are not phone validation tests.
     assert by_id['gpt-source-followup-r200-20261115']['url'].endswith('supplier-followup-20261115-r10.html')
@@ -2437,6 +2437,24 @@ def validate_publications():
     assert r203['independent_sms']['real_successful_sms_bindings'] == 0
     assert r203['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r203['payment_done'] is False and r203['credentials_submitted'] is False
+
+    # R204: direct retail merchant facts and arithmetic never replace verified VAT invoice or source authorization.
+    assert by_id['gpt-source-followup-r204-20261115']['url'].endswith('supplier-followup-20261115-r14.html')
+    assert by_id['gpt-source-followup-r204-20261115-evidence']['url'].endswith('supplier-followup-20261115-r14-evidence.json')
+    r204 = json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r14-evidence.json').read_bytes())
+    assert r204['round'] == 204 and r204['site_version'] == '1.9.212'
+    assert r204['plus']['merchant_listed_cny_per_account_month'] == 158
+    assert r204['plus']['merchant_claimed_ordinary_vat_surcharge_rate'] == 0.06
+    assert r204['plus']['merchant_listing_plus_vat_arithmetic_cny'] == 167.48
+    assert r204['plus']['all_required_fees_with_valid_chinese_vat_cny'] is None
+    assert r204['plus']['payment_processing_fee_cny'] is None
+    assert r204['plus']['real_one_unit_wholesale_price_cny'] is None
+    assert r204['seller']['valid_vat_invoice_independently_verified'] is False
+    assert r204['seller']['wholesale_resale_authorization_verified'] is False
+    assert r204['credentials_and_delivery']['actual_sessionless_checkout_and_delivery_tested'] is False
+    assert r204['independent_phone']['real_sms_successes'] == 0
+    assert r204['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r204['payment_done'] is False and r204['credentials_submitted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
