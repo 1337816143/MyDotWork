@@ -1,3 +1,11 @@
+## 1.9.206 · 2026-11-15
+
+- 第198轮首次核读MyAISub与GETAIAI自营网页的搜索索引快照；双方网站分别自称ClyGen Inc运营。历史HugPass、24Sub、ABCNUM之外增两自称品牌，合计五品牌自述关系，不证明共同工商、收款、出票法人、供货或授权。
+- MyAISub Plus旧索引¥149／次充值（约上月抓取），GETAIAI Plus旧索引¥148／次充值（约两月前抓取）；源站实时打开502。不能认定11月15日现价、准确单月、真实订单、批发价或含中国增值税发票的总价；支付费、票费、出票主体和单件免代理资格全部null。
+- MyAISub域名服务条款与隐私页自标2026-08-06，标题却是“GETAIAI Terms / Privacy Policy”，记录历史合同品牌名错配；不推断实际法人同一。政策自称完整Session传给充值服务商、己方订单库不存完整Session，为未经独立审计的商家声明，不能把该声明和ABCNUM不同处理条款混用。
+- CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay及手机号验证未确认改变采购结论的新证据。满足本人原号一件一月免前置费、全部必要费用+有效中国VAT≤¥170真正批发仍0，真付款/验票/SMS成功0；不联系商家或提供凭据。新增r198 HTML/JSON、发布哈希白名单、工作台、总库、VERSION、CHANGELOG与测试，旧126报价及前197轮按原字节保留。
+- 2026-11-15索引读取来源（非当天动态网页确认）：https://myaisub.com/ 、https://myaisub.com/products/chatgpt 、https://myaisub.com/terms 、https://myaisub.com/privacy 、https://myaisub.com/partners 、https://getaiai.com/products/chatgpt 、https://www.getaiai.com/ 。
+
 ## 1.9.205 · 2026-11-15
 
 - 第197轮新增可核一方证据：ClyGen Inc公司自述页列美国WY/Sheridan地址；ABCNUM隐私政策自称ClyGen Inc运营，和HugPass、24Sub归入同一“自称主体”3品牌组，不独立验证工商、收款、有效中国VAT出票或真正共用货源。旧政策自标2026-09-26，本轮首归档非当天新政策。

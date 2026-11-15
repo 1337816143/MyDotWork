@@ -4698,6 +4698,28 @@
       "summary": "8个实际核读来源：旧隐私条款自标日期、Plus¥170与Go¥78区分、下游凭据风险、未知费用null与0实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r198-20261115",
+      "title": "GPT源头第198轮 · ClyGen两新索引品牌与合同错配",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r8.html",
+      "updatedAt": "2026-11-15",
+      "summary": "MyAISub、GETAIAI自称ClyGen，MyAISub条款却写GETAIAI；索引旧Plus¥149/¥148每次，不是当前单月或含票价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r198-20261115-evidence",
+      "title": "第198轮 · 自述主体及旧索引价、Session与税票缺口",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r8-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "原URL、索引旧日期和502源站失败、两Plus准确套餐月份/全费/开票未知；真批发与接码仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
