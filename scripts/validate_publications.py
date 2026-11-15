@@ -131,14 +131,30 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 451, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 453, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.209'
+    assert latest['version'] == '1.210'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r19.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r19-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r18.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r20.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r20-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r19.html'
+
+    # R210: conflicting deadline strings do not prove actual extension or a valid invoice.
+    assert by_id['gpt-source-followup-r210-20261115']['url'].endswith('supplier-followup-20261115-r20.html')
+    assert by_id['gpt-source-followup-r210-20261115-evidence']['url'].endswith('supplier-followup-20261115-r20-evidence.json')
+    r210 = json.loads((ROOT / 'dist/research/2026-11-15/supplier-followup-20261115-r20-evidence.json').read_bytes())
+    assert r210['round'] == 210 and r210['site_version'] == '1.9.218'
+    deadline = r210['newly_read_primary_source_evidence']['yinlujing_promotion_deadline_conflict']
+    assert deadline['original_announcement_deadline_bj'] == '2026-11-11T23:59:00+08:00'
+    assert deadline['current_announcement_deadline_bj'] == '2027-11-11T23:59:00+08:00'
+    assert deadline['current_sku_promo_banner_year'] is None
+    assert deadline['actual_promo_deadline_verified'] is None
+    assert deadline['all_required_fees_with_valid_china_vat_cny'] is None
+    assert deadline['agency_upfront_fee_cny'] == 3000
+    assert not deadline['current_round_price_change_verified']
+    assert r210['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r210['purchase_made'] and not r210['credentials_submitted'] and not r210['sms_test_done']
 
     # R209: read first-party privacy rules but never conflate merchant disclosure with audited data deletion, VAT or SMS success.
     assert by_id['gpt-source-followup-r209-20261115']['url'].endswith('supplier-followup-20261115-r19.html')
