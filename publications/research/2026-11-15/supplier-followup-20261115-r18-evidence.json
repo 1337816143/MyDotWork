@@ -1,0 +1,150 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 208,
+  "site_version": "1.9.216",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r17.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "newly_read_evidence": {
+    "payprm_independent_codex_phone_service": {
+      "original_warranty_url": "https://www.payprm.com/faq/after-sales/verification",
+      "observed_on": "2026-11-15",
+      "exact_service": "Codex 短信验证卡密及接码入口（独立于Plus订阅及Codex额度充值）",
+      "document_last_modified_date": null,
+      "merchant_declared_delivery_acceptance": "卡密有效且接码入口可正常使用",
+      "merchant_declared_grounds_for_review": [
+        "卡密无效",
+        "入口不可访问",
+        "内容不符"
+      ],
+      "merchant_explicitly_guarantees_sms_receipt": false,
+      "merchant_explicitly_guarantees_openai_verification_success": false,
+      "actual_codex_verification_successes": 0,
+      "number_country": null,
+      "number_lifetime_minutes": null,
+      "repeat_sms_term": null,
+      "new_price_verified_this_round_cny": null,
+      "cash_refund_if_no_sms_arrives_verified": null,
+      "payment_fee_cny": null,
+      "merchant_instructions_are_not_real_verified_success": true,
+      "scope_chatgpt_web_verified": null,
+      "scope_first_api_key_verified": null,
+      "related_account_faq_url": "https://www.payprm.com/faq/account/codex-phone",
+      "faq_seller_reported_no_prompt_after_plus_pro_percent_over": 98,
+      "reported_success_independently_audited": false,
+      "first_party_claim_not_openai_official": true
+    },
+    "yaoyao_plus_operator_and_invoice": {
+      "product_url": "https://kw.yaoyao.chat/item/5",
+      "own_account_one_month_retail_sku": "ChatGPT Plus 代充 1个月，一账号一张卡密",
+      "observed_one_account_one_month_retail_listing_cny": 129,
+      "existing_offer_price_not_new": true,
+      "operator_statement_url": "https://kw.yaoyao.chat/guide/yaoyao-kaopu.html",
+      "operator_statement_page_updated_on": "2026-11-04",
+      "merchant_public_description": "瑶瑶ai训练师（个人品牌，不以公司名义对外）",
+      "actual_registered_operator_legal_name_verified": null,
+      "actual_payee_legal_name_verified": null,
+      "official_openai_authorized_reseller": false,
+      "invoice_statement_url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "invoice_statement_page_updated_on": "2026-10-29",
+      "merchant_claims_invoice_possible": true,
+      "invoice_type_guaranteed_in_public_policy": false,
+      "merchant_terms": "票种与抬头须在开票前确认；申请需提供订单号和抬头并通过企业微信处理",
+      "chinese_vat_invoice_verified": false,
+      "actual_invoice_issuer_legal_name": null,
+      "invoice_fee_cny": null,
+      "payment_fee_cny": null,
+      "full_verified_cny_for_one_month_including_valid_china_vat": null,
+      "one_unit_wholesale_price_cny": null,
+      "wholesale_minimum_quantity": null,
+      "formal_resale_or_upstream_authorization_verified": false,
+      "merchant_claims_success_count_independently_audited": false,
+      "login_material_required_on_redemption": true,
+      "sms_verification_unlocked_by_purchase_proven": false,
+      "real_order_delivery_invoice_tested": false
+    }
+  },
+  "verification_scope": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "generic_chatgpt_signup_phone_normally_not_required": true,
+    "codex_desktop_may_require_phone": true,
+    "initial_api_key_phone_required": true,
+    "apple_iap_or_session_auto_binds_verified_phone": false,
+    "real_chatgpt_web_sms_successes": 0,
+    "real_codex_sms_successes": 0,
+    "real_initial_api_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.payprm.com/faq/after-sales/verification",
+      "observed_on": "2026-11-15",
+      "kind": "first_party_warranty_policy",
+      "evidence_class": "merchant_policy_not_real_test",
+      "page_modified_on": null
+    },
+    {
+      "url": "https://www.payprm.com/faq/account/codex-phone",
+      "observed_on": "2026-11-15",
+      "kind": "first_party_codex_verification_faq",
+      "evidence_class": "merchant_feedback_not_statistics",
+      "page_modified_on": null
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/yaoyao-kaopu.html",
+      "observed_on": "2026-11-15",
+      "kind": "first_party_public_operator_self_description",
+      "evidence_class": "seller_self_report_no_registration_verification",
+      "page_modified_on": "2026-11-04"
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-15",
+      "kind": "first_party_invoice_process",
+      "evidence_class": "merchant_claim_not_validated_invoice",
+      "page_modified_on": "2026-10-29"
+    },
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-15",
+      "kind": "first_party_exact_plus_retail_sku",
+      "evidence_class": "page_listing_not_paid_order",
+      "page_modified_on": null
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "platform_official_phone_scope"
+    }
+  ],
+  "priority_queue_still_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "real_sms_successes": 0
+  },
+  "price_snapshots_untouched": true,
+  "existing_historical_reports_untouched": true,
+  "purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false,
+  "no_confirmed_change_to_old_price_or_policy_effective_date": true
+}
