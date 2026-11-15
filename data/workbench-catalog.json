@@ -4940,6 +4940,28 @@
       "summary": "6条一方/官方原URL；页面自标日期与本轮观察分离，PAYPRM失败收码退款条件未知、瑶瑶开票费与登记主体null，合格真批发0、付款验票接码实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r209-20261115",
+      "title": "GPT源头第209轮 · AIPlusGate Session保存链、官方授权与续费资格",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r19.html",
+      "updatedAt": "2026-11-15",
+      "summary": "首次直读11月13日隐私说明：完整Session加密订单库、第三方传递与异常私聊附件、未完成7天清理计划及14天备份；服务条款明确未获Apple/OpenAI授权。历史¥145/158/168非新价，真实VAT/批发仍未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r209-20261115-evidence",
+      "title": "第209轮 · Session接收/清理及授权边界的原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r19-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "5个一方/官方原URL及自标日期，7天/14天为商家声明、无独立存储审计；ZPAY宣称不等于已核收款法人，费用null、真实订单/短信0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
