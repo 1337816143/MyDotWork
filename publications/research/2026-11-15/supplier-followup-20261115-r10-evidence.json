@@ -1,0 +1,173 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 200,
+  "site_version": "1.9.208",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r9.html",
+  "criteria": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_advance_agent_fee": true,
+    "all_payment_and_valid_china_vat_max_cny": 170
+  },
+  "material_discovery": "Newly read merchant-primary Codex SMS SKU warns low current success; alternative separate SKU and noncash failed-SMS refund limitations; no proven date when warning began.",
+  "sms_provider": "贝果科技 Bigolab",
+  "seller_entity_claim": {
+    "name": "益阳市赫山区必高科技有限公司",
+    "self_declared_on_product_page": true,
+    "independently_registered_checked": false,
+    "actual_payee_verified": false,
+    "valid_chinese_vat_invoice_issuer_verified": false,
+    "valid_chinese_vat_invoice_verified": false
+  },
+  "distinct_services": [
+    {
+      "id": "bigolab-us-physical-codex-10",
+      "url": "https://bigolab.com/zh-hk/products/10",
+      "sku": "Codex验证码-美区实体手机卡-单次接码",
+      "service_scope_claim": "Codex phone verification only, single SMS",
+      "seller_advertised_price_cny_per_one_sms": 15,
+      "previous_crossed_out_price_cny": 30,
+      "currency": "CNY",
+      "units": "one_sms_one_use",
+      "seller_own_current_low_success_warning": true,
+      "warning_observed_on": "2026-11-15",
+      "warning_first_effective_date": null,
+      "seller_suggests_jiema_thailand": true,
+      "success_rate_percentage_verified": null,
+      "number_long_term_owned": false,
+      "second_code_supported": false,
+      "seller_tax_invoice_additional_rate_claim": 0.06,
+      "invoice_known_components_sum_cny": 15.9,
+      "invoice_verified": false,
+      "invoice_and_payment_all_in_actual_cny": null,
+      "refund_terms": "Timeout leads to marked-refund status and customer service; cannot infer original-payment refund.",
+      "cash_refund_verified": false,
+      "real_codex_verification_success_verified": false
+    },
+    {
+      "id": "bigolab-random-region-codex-28",
+      "url": "https://bigolab.com/zh-hk/products/28",
+      "sku": "Codex短信接码 | 随机地区（成功率高，未接码成功系统自动退款）",
+      "service_scope_claim": "Codex one-time SMS; random region not a Thailand guarantee",
+      "seller_advertised_price_cny_per_one_sms": 8,
+      "previous_crossed_out_price_cny": 10,
+      "currency": "CNY",
+      "units": "one_sms_one_use",
+      "seller_high_success_marketing_claim": true,
+      "independent_success_data": false,
+      "country_specific_selected": null,
+      "guaranteed_thailand_country": false,
+      "number_long_term_owned": false,
+      "second_code_supported": false,
+      "seller_tax_invoice_additional_rate_claim": 0.06,
+      "invoice_known_components_sum_cny": 8.48,
+      "invoice_verified": false,
+      "invoice_and_payment_all_in_actual_cny": null,
+      "real_codex_verification_success_verified": false,
+      "refund_original_cash_verified": false
+    },
+    {
+      "id": "bigolab-openai-generic-jiema",
+      "url": "https://bigolab.com/jiema",
+      "sku": "OpenAI (ChatGPT) country-selectable temporary SMS service",
+      "service_scope_claim": "Generic OpenAI (ChatGPT); not proven identical to Codex product or first API key verification",
+      "starting_price_cny_per_single_sms": 6,
+      "price_by_country_and_service_dynamic": true,
+      "displayed_price_updated_every_minutes": 10,
+      "selected_country": null,
+      "selected_country_total_price_cny": null,
+      "number_validity_minutes": 20,
+      "may_change_or_cancel_after_minutes": 2,
+      "max_free_number_swaps_before_any_sms": 10,
+      "country_and_carrier_type_both_guaranteed": false,
+      "cannot_select_real_vs_voip": true,
+      "no_sms_refund_destination": "nonwithdrawable website balance, including QR payment portion",
+      "original_payment_refund_on_no_sms": false,
+      "received_but_rejected_refund_guaranteed": false,
+      "auto_invoice_available": false,
+      "manual_invoice_contact_only_merchant_claim": true,
+      "exact_invoice_fee_cny": null,
+      "exact_payment_fee_cny": null,
+      "actual_total_cny": null,
+      "real_openai_sms_test": false
+    }
+  ],
+  "getgpt_pro_phone_followup": {
+    "url": "https://getgpt.pro/blog/codex-phone-verification",
+    "merchant_blog_published_on": "2026-09-09",
+    "merchant_blog_self_updated_on": "2026-11-15",
+    "seller_own_uncontrolled_feedback_over_95_percent_claim": true,
+    "independent_sample_size": null,
+    "controlled_success_rate": null,
+    "official_openai_verification_policy": false,
+    "existing_10_cny_per_codex_sms_condition": "only for seller subscription customers; already archived as consultation at round 44; noncustomers higher unknown",
+    "real_sms_test": false,
+    "automatic_phone_binding_claim_verified": false
+  },
+  "official_openai_boundary": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_new_account_phone_generally_required": false,
+    "codex_desktop_can_require_phone": true,
+    "first_api_key_phone_required": true,
+    "voip_accepted": false,
+    "apple_or_session_automatically_binds_phone": false,
+    "sms_successes": 0
+  },
+  "existing_priority_recheck": {
+    "catfk": "No changed invoice/wholesale qualification evidenced; unreadable precise pages not repriced",
+    "xiaojiu": "No material changes evidenced",
+    "morimm": "No new reliably readable exact-price material",
+    "yinlujing": "Historical ¥3000 up-front agency entry charge remains disqualifying; no material qualification change",
+    "chatshare": "No change verified",
+    "getvip": "No independent verified real SMS evidence",
+    "wind89": "Old Plus and VAT component data not repriced without fresh checkout",
+    "getgpt_pro": "Updated seller guidance not verified SMS success",
+    "payprm": "No new VAT/wholesale closure",
+    "chongpay": "No new VAT/wholesale closure"
+  },
+  "sources": [
+    {
+      "url": "https://bigolab.com/zh-hk/products/10",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_product_read",
+      "finding": "¥15/one Codex US physical-card SMS; page warns current low success; seller suggests separate Thailand search; 6% claimed invoice extra; unknown success statistics and refund cash"
+    },
+    {
+      "url": "https://bigolab.com/zh-hk/products/28",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_product_read",
+      "finding": "¥8/one randomly located Codex SMS; seller claims higher success without audited rate; claimed 6% invoice extra; no re-use"
+    },
+    {
+      "url": "https://bigolab.com/jiema",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_service_read",
+      "finding": "Generic OpenAI one-time SMS from ¥6, 20-minute number, 2-minute switch, max 10 changes; zero-SMS refund only nonwithdrawable merchant balance; dynamically by country"
+    },
+    {
+      "url": "https://getgpt.pro/blog/codex-phone-verification",
+      "observed_on": "2026-11-15",
+      "merchant_self_updated_on": "2026-11-15",
+      "kind": "merchant_direct_guide_read",
+      "finding": "Self-claimed over 95% anecdotal post-upgrade bypass, expressly not rigorous statistics or OpenAI promise; previously known conditional ¥10 Codex SMS consulting"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "official_phone_scope",
+      "finding": "ChatGPT web normally no phone, Codex app may require, first API key needs; separate services cannot be assumed interchangeable"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "real_phone_sms_successes": 0
+  },
+  "old_126_price_baseline_modified": false,
+  "prior_reports_modified": false,
+  "seller_contacted": false,
+  "payment_done": false,
+  "credentials_submitted": false
+}

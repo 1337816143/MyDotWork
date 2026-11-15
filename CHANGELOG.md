@@ -1,3 +1,11 @@
+## 1.9.208 · 2026-11-15
+
+- 第200轮首次直接读取Bigolab贝果科技两项独立Codex单次SMS和/jiema通用OpenAI接码：准确/zh-hk/products/10美区实体卡¥15/条且商品标题及正文主动提示「当前成功率低」，建议另到/jiema选择泰国；何时变为低成功率、成功率数值均未知，未作实际SMS测试。/zh-hk/products/28随机地区Codex¥8/条，卖家称成功率高却无独立统计，不等于泰国固定号码；两款页面自称中国增值税开票另加6%，¥15.90和¥8.48仅条件算术，全额结算、开票主体/税号及真实发票均null。
+- Bigolab /jiema OpenAI（ChatGPT）独立SKU仅显示最低¥6/条、每10分钟更新，准确国家及运价未选，不能混用¥8/¥15 Codex标价；短期号码20分钟，2分钟后可换号、收码前最多10次；不能保证号码为实体/非VoIP，ChatGPT网页、Codex、首次API Key实际通过均未验。/jiema明确未收到短信时，连扫码支付资金也只退不可提现、不原路退的站内余额（仅可继续接码）；/products/10、28的超时处理写为退款待客服，不能跨SKU推断原路现金退。
+- GETGPT Pro自营博客2026-11-15自标更新，称超过95%接触用户升级Plus/Pro后不再触发Codex手机号验证，正文承认非严格统计/官方承诺，无样本量和独立实测，不认定免验证、自动手机号绑定或服务有效。其¥10/次接码仅为本店订阅用户条件咨询，第44轮已经归档，非本轮新可成交SKU。
+- 已核有效中国VAT、经营/收款/出票主体、真正上游授权、单件Plus含全部费≤¥170闭环仍无新增。合格Plus批发0、真实购买0、验票0、SMS通过0；既有优先商家无有效晋级，失败访问不刷新旧价格。本轮新增SMS服务风险HTML/JSON、精确SHA256发布白名单、工作台project-1目录、总库最新入口、VERSION及断言。历史126条报价与前199轮原始报告原字节不改；不付款、联系商家或提供凭据。
+- 本轮一方URL（观察2026-11-15）：https://bigolab.com/zh-hk/products/10 、https://bigolab.com/zh-hk/products/28 、https://bigolab.com/jiema 、https://getgpt.pro/blog/codex-phone-verification 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.207 · 2026-11-15
 
 - 第199轮首次直接实读AISub（www.aisub.cn）独立零售商品本人原号ChatGPT Plus准确SKU /plans/plus，价格¥135/账号·1个月，限已能登录的Free、已到期个人账号或商称符合条件的Go；已在期Plus能否续费未证。独立/plans/plus_3m标¥390／3个月，首月卡密兑换、次两月商称人工维护，不能将¥130/月摊销价冒充单件单月采购价。支付后先发卡密、不代表真实开通。
