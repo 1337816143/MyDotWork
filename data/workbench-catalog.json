@@ -4676,6 +4676,28 @@
       "summary": "9条当日实读原始URL；商家声明非验真身份或实际交易，未知费率null，Codex积分不是短信服务。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r197-20261115",
+      "title": "GPT源头第197轮 · ABCNUM关联ClyGen及Session转交条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r7.html",
+      "updatedAt": "2026-11-15",
+      "summary": "新增ABCNUM自称同ClyGen经营主体，Plus ¥170/月零售；充值Session可能留存并转交下游；有效中国VAT、身份及批发进价未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r197-20261115-evidence",
+      "title": "第197轮 · ClyGen三品牌、ABCNUM价格及隐私原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r7-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "8个实际核读来源：旧隐私条款自标日期、Plus¥170与Go¥78区分、下游凭据风险、未知费用null与0实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -1992,3 +1992,18 @@ assert.equal(group196.api.bulk_purchase_quote_documented,false);
 assert.equal(r196.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r196.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r196.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);
+
+// R197: independent corporate verification and VAT must not be inferred from same-name brand privacy policies.
+const e197=d.records.find(x=>x.id==='gpt-source-followup-r197-20261115'),ed197=d.records.find(x=>x.id==='gpt-source-followup-r197-20261115-evidence');
+assert(e197&&ed197&&e197.url.endsWith('supplier-followup-20261115-r7.html'));
+const r197=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r7-evidence.json'),'utf8'));
+assert.equal(r197.round,197); assert.equal(r197.site_version,'1.9.205');
+assert.equal(r197.new_evidence.operator_group.brands_self_claimed_same_operator_count,3);
+assert.equal(r197.new_evidence.abcnum_plus.price_cny_per_account_month,170);
+assert.equal(r197.new_evidence.abcnum_plus.all_in_with_valid_china_vat_invoice_cny,null);
+assert.equal(r197.new_evidence.session_handling.merchant_claim_required_credentials_may_be_shared_with_actual_fulfiller,true);
+assert.equal(r197.new_evidence.session_handling.query_exception_applies_to_recharge_orders,false);
+assert.equal(r197.new_evidence.operator_site.independently_verified_business_registration,false);
+assert.equal(r197.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r197.qualification_totals.verified_phone_sms_successes,0);
+assert.equal(r197.actual_purchase_or_contact_or_credentials_or_sms_test_performed,false);
