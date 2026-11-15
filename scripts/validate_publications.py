@@ -131,14 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 449, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 451, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.208'
+    assert latest['version'] == '1.209'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r18.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r18-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r17.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r19.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r19-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r18.html'
+
+    # R209: read first-party privacy rules but never conflate merchant disclosure with audited data deletion, VAT or SMS success.
+    assert by_id['gpt-source-followup-r209-20261115']['url'].endswith('supplier-followup-20261115-r19.html')
+    assert by_id['gpt-source-followup-r209-20261115-evidence']['url'].endswith('supplier-followup-20261115-r19-evidence.json')
+    r209 = json.loads((ROOT / 'dist/research/2026-11-15/supplier-followup-20261115-r19-evidence.json').read_bytes())
+    assert r209['round'] == 209 and r209['site_version'] == '1.9.217'
+    privacy = r209['new_primary_source_evidence']['aiplusgate_privacy']
+    assert privacy['merchant_says_full_session_json_received'] and privacy['merchant_says_local_backup_retention_days'] == 14
+    assert privacy['merchant_says_exception_handling_may_send_restricted_session_attachment_to_owner_private_chat']
+    assert privacy['third_party_independent_retention_and_deletion_verified'] is None
+    assert r209['new_primary_source_evidence']['aiplusgate_terms']['merchant_explicitly_disclaims_authorization_from'] == ['Apple', 'OpenAI', 'Anthropic']
+    assert r209['new_primary_source_evidence']['aiplusgate_terms']['all_required_fees_with_valid_china_vat_cny'] is None
+    assert r209['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r209['purchase_made'] and not r209['credentials_submitted'] and not r209['sms_test_done']
 
     # R200: exact single-use SMS prices and merchant warnings are not phone validation tests.
     assert by_id['gpt-source-followup-r200-20261115']['url'].endswith('supplier-followup-20261115-r10.html')
