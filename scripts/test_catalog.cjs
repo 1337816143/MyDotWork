@@ -2093,3 +2093,24 @@ assert(r202.new_delivery_interface_observations.every(x=>x.prior_login_required=
 assert.equal(r202.independent_phone.real_sms_successes,0);
 assert.equal(r202.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r202.payment_done,false);assert.equal(r202.credentials_submitted,false);
+
+// R203: a current retail Plus+Alipay preview cannot pass a required China VAT invoice or no-agent-fee wholesale test.
+const e203=d.records.find(x=>x.id==='gpt-source-followup-r203-20261115'),ed203=d.records.find(x=>x.id==='gpt-source-followup-r203-20261115-evidence');
+assert(e203&&ed203&&e203.url.endsWith('supplier-followup-20261115-r13.html'));
+const r203=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r13-evidence.json'),'utf8'));
+assert.equal(r203.round,203);assert.equal(r203.site_version,'1.9.211');
+assert.equal(r203.plus.retail_card.advertised_cny,107);
+assert.equal(r203.plus.retail_card.alipay_unpaid_preview_total_cny,113.42);
+assert.equal(r203.plus.retail_card.all_required_fees_with_valid_chinese_vat_cny,null);
+assert.equal(r203.plus.ios.advertised_current_product_and_price_sheet_cny,133);
+assert.equal(r203.plus.ios.faq_conflicting_advertised_cny,130);
+assert.equal(r203.seller.valid_chinese_vat_invoice_offered_by_merchant,false);
+assert.equal(r203.agent.paid_agent_qualification_cny,99);
+assert.equal(r203.agent.merchant_claimed_free_qualification_after_valid_purchase_or_referral_sales_cny,2000);
+assert.equal(r203.independent_sms.advertised_cny_per_number,12);
+assert.equal(r203.independent_sms.alipay_unpaid_preview_total_cny,12.72);
+assert.equal(r203.independent_sms.warranty_first_successful_codex_binding_hours,24);
+assert.equal(r203.independent_sms.number_claimed_repeated_sms_window_days_max,80);
+assert.equal(r203.independent_sms.real_successful_sms_bindings,0);
+assert.equal(r203.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r203.payment_done,false);assert.equal(r203.credentials_submitted,false);
