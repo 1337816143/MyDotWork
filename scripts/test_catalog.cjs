@@ -2131,3 +2131,20 @@ assert.equal(r204.credentials_and_delivery.actual_sessionless_checkout_and_deliv
 assert.equal(r204.independent_phone.real_sms_successes,0);
 assert.equal(r204.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r204.payment_done,false);assert.equal(r204.credentials_submitted,false);
+
+// R205: a reseller's outbound checkout link and advertisement starting price do not establish an all-in China VAT wholesale price.
+const e205=d.records.find(x=>x.id==='gpt-source-followup-r205-20261115'),ed205=d.records.find(x=>x.id==='gpt-source-followup-r205-20261115-evidence');
+assert(e205&&ed205&&e205.url.endsWith('supplier-followup-20261115-r15.html'));
+const r205=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r15-evidence.json'),'utf8'));
+assert.equal(r205.round,205);assert.equal(r205.site_version,'1.9.213');
+assert.equal(r205.plus.advertised_starting_cny_per_month,165);
+assert.equal(r205.plus.min_conditional_advertising_arithmetic_cny,168.30);
+assert.equal(r205.plus.max_conditional_advertising_arithmetic_cny,173.25);
+assert.equal(r205.plus.verified_valid_china_vat_all_in_cny,null);
+assert.equal(r205.cross_domain.plus_self_service_order_link,'https://qfcc99.com/shop/panghu');
+assert.equal(r205.cross_domain.common_operator_verified,false);
+assert.equal(r205.plus.single_unit_monthly_checkout_sku_verified,false);
+assert.equal(r205.merchant.formal_resale_authorization_verified,false);
+assert.equal(r205.independent_phone.real_sms_successes,0);
+assert.equal(r205.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r205.payment_done,false);assert.equal(r205.credentials_submitted,false);

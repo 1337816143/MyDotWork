@@ -4852,6 +4852,28 @@
       "summary": "一方4页直接读取及定价页未渲染表格；¥158+6%=¥167.48为算术非实付，支付费用null、真实VAT票和供货授权未验，SMS成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r205-20261115",
+      "title": "GPT源头第205轮 · GoPlus跨站订单路径与电子发票费率",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r15.html",
+      "updatedAt": "2026-11-15",
+      "summary": "GoPlus Plus宣传¥165起，电子发票商称另加2%–5%；条件算术¥168.30–173.25。Plus下单导向qfcc99，不证明一手上游；VAT、付款与主体未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r205-20261115-evidence",
+      "title": "第205轮 · GoPlus费率、qfcc99导流及未实测边界结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r15-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "四条GoPlus一方页面与跨站下单链接；未知票据、税点、支付费用为null，实际Plus进价和短信均未验。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

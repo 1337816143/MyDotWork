@@ -1,3 +1,11 @@
+## 1.9.213 · 2026-11-15
+
+- 第205轮首次直接核读GoPlus自营商品及FAQ：Plus零售宣传“¥165起”，套餐页面为月付参照但下游单件SKU及真实付款未核；商称电子发票另加2%–5%。以起价条件算术¥168.30–¥173.25，3%为¥169.95、4%为¥171.60；实际税率、开票法人及税号、有效中国增值税发票、支付附加费用与结算总额仍null，不能把最低条件算术当成已核含票价。
+- Plus自助下单链接实际导向 https://qfcc99.com/shop/panghu ，另Grok入口链接 https://okai66.com/grok 。只证明跨站订单导流，不证明经营/收款法人同一、真实共用货源或一手转售授权；qfcc99目标未得可读Plus准确SKU，旧价不刷新。GoPlus仍是零售导流候选而非真批发源。
+- GoPlus商称ChatGPT充值要求已登录Session但无需密码，在期Plus再充值覆盖不累积，失败非用户原因全退、成功后不退；没有Session提交、真实兑付或退款测试，独立手机号验证SKU/号码期限/失败原路退均无新证据；Apple/Session不能自动解除ChatGPT网页版、Codex或首次API Key验证。
+- 既有十家优先线索无新增合格批发证据；已核符合本人原号单件单月免代理前置费、全费含有效中国VAT≤¥170真正Plus批发上游0、真实付款0、验票0、SMS成功0。只新增第205轮HTML/JSON、SHA-256发布白名单、工作台目录、总库入口、VERSION/CHANGELOG、release指针和回归断言，保留126条历史报价及前204轮报告原内容。
+- 2026-11-15实际读取：https://www.goplus.pro/ 、https://www.goplus.pro/chatgpt-plus-recharge 、https://www.goplus.pro/plans 、https://www.goplus.pro/faq ，实际跟随 https://qfcc99.com/shop/panghu 与 https://okai66.com/grok ；验证依据 https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.212 · 2026-11-15
 
 - 第204轮首次直接读取MuyuGPT本人原号Plus月付¥158／账号月，商家称支持中国增值税电子普通发票加6%：按公开分项仅可算出¥9.48票费及¥167.48条件合计，支付通道附加费、真实含票最终应付、有效中国VAT票、真实收款/出票主体与税号均null／未验；未把它写成可采购的¥167.48真全费。

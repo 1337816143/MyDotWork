@@ -2456,6 +2456,23 @@ def validate_publications():
     assert r204['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r204['payment_done'] is False and r204['credentials_submitted'] is False
 
+    # R205: cross-domain customer checkout link is not wholesale authorization, and electronic invoice is not verified VAT.
+    assert by_id['gpt-source-followup-r205-20261115']['url'].endswith('supplier-followup-20261115-r15.html')
+    assert by_id['gpt-source-followup-r205-20261115-evidence']['url'].endswith('supplier-followup-20261115-r15-evidence.json')
+    r205 = json.loads((ROOT/'dist/research/2026-11-15/supplier-followup-20261115-r15-evidence.json').read_bytes())
+    assert r205['round'] == 205 and r205['site_version'] == '1.9.213'
+    assert r205['plus']['advertised_starting_cny_per_month'] == 165
+    assert r205['plus']['min_conditional_advertising_arithmetic_cny'] == 168.30
+    assert r205['plus']['max_conditional_advertising_arithmetic_cny'] == 173.25
+    assert r205['plus']['verified_valid_china_vat_all_in_cny'] is None
+    assert r205['cross_domain']['plus_self_service_order_link'] == 'https://qfcc99.com/shop/panghu'
+    assert r205['cross_domain']['common_operator_verified'] is False
+    assert r205['plus']['single_unit_monthly_checkout_sku_verified'] is False
+    assert r205['merchant']['formal_resale_authorization_verified'] is False
+    assert r205['independent_phone']['real_sms_successes'] == 0
+    assert r205['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r205['payment_done'] is False and r205['credentials_submitted'] is False
+
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
