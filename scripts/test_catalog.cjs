@@ -2020,3 +2020,21 @@ assert.equal(r198.contract_name_discrepancy.privacy_heading,'GETAIAI Privacy Pol
 assert.equal(r198.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r198.qualification_totals.verified_phone_sms_successes,0);
 assert.equal(r198.paid_invoice_or_sms_test_done,false);
+
+
+// R199: merchant retail price is not a paid VAT-inclusive wholesale quote; three-month SKU stays separate.
+const e199=d.records.find(x=>x.id==='gpt-source-followup-r199-20261115'),ed199=d.records.find(x=>x.id==='gpt-source-followup-r199-20261115-evidence');
+assert(e199&&ed199&&e199.url.endsWith('supplier-followup-20261115-r9.html'));
+const r199=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r9-evidence.json'),'utf8'));
+assert.equal(r199.round,199);assert.equal(r199.site_version,'1.9.207');
+assert.equal(r199.new_retail_candidate.advertised_price_cny_per_account_month,135);
+assert.equal(r199.new_retail_candidate.actual_paid_with_valid_chinese_vat_total_cny,null);
+assert.equal(r199.new_retail_candidate.wholesale_one_unit_price_cny,null);
+assert.equal(r199.new_retail_candidate.valid_chinese_vat_invoice_available_verified,false);
+assert.equal(r199.separate_nonqualifying_product.advertised_price_cny_per_three_month_package,390);
+assert.equal(r199.separate_nonqualifying_product.not_one_unit_one_month,true);
+assert.equal(r199.seller_privacy.seller_claims_may_store_task_output_screenshot_screen_recording,true);
+assert.equal(r199.seller_privacy.actual_breach_evidence,false);
+assert.equal(r199.phone.real_sms_successes,0);
+assert.equal(r199.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r199.payment_done,false);assert.equal(r199.credentials_submitted,false);
