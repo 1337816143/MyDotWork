@@ -1,0 +1,151 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 209,
+  "site_version": "1.9.217",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r18.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_primary_source_evidence": {
+    "aiplusgate_privacy": {
+      "url": "https://aiplusgate.com/privacy/",
+      "merchant_page_last_updated_on": "2026-11-13",
+      "observed_on": "2026-11-15",
+      "evidence_class": "merchant_first_party_public_policy_not_technical_audit",
+      "service": "Plus Apple-channel-assisted recharge to existing ChatGPT account (one account, one month); independent from card-code self-redemption",
+      "merchant_says_full_session_json_received": true,
+      "merchant_says_aes_256_gcm_encrypted_order_database_storage": true,
+      "merchant_says_decrypted_for_processing": true,
+      "merchant_says_transmitted_to_third_party_fulfillment_or_check_services": true,
+      "merchant_says_exception_handling_may_send_restricted_session_attachment_to_owner_private_chat": true,
+      "merchant_says_automatic_cleanup_on_completed_closed_or_refunded_order": true,
+      "merchant_says_incomplete_order_cleanup_after_last_submission_days": 7,
+      "merchant_says_local_backup_retention_days": 14,
+      "merchant_guarantees_simultaneous_deletion_of_backups_chat_attachments_and_third_party_copies": false,
+      "third_party_independent_retention_and_deletion_verified": null,
+      "real_session_storage_or_deletion_audited": false,
+      "payment_processor_as_declared": "ZPAY for Alipay",
+      "actual_payee_legal_entity_verified": null,
+      "operator_legal_entity_verified": null,
+      "actual_invoice_issuer_legal_entity_verified": null,
+      "security_incident_or_leak_verified": false
+    },
+    "aiplusgate_terms": {
+      "url": "https://aiplusgate.com/terms/",
+      "merchant_policy_effective_on": "2026-10-27",
+      "merchant_page_last_updated_on": "2026-11-14",
+      "observed_on": "2026-11-15",
+      "evidence_class": "merchant_first_party_policy_not_fulfillment_test",
+      "merchant_explicitly_disclaims_authorization_from": [
+        "Apple",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "apple_channel_does_not_equal_official_reseller_authorization": true,
+      "plus_card_redeem_requires_no_active_subscription": true,
+      "previous_ios_google_play_subscription_expired_wait_hours": 72,
+      "plus_apple_channel_can_overlay_active_subscription": true,
+      "old_subscription_remaining_days_carried_over": false,
+      "merchant_claims_card_redemption_failure_can_add_cny_to_switch_to_apple_channel": 13,
+      "merchant_claims_card_unused_full_refund": true,
+      "merchant_claims_apple_recharge_final_failure_original_alipay_refund": true,
+      "merchant_claims_drop_subscription_within_days_warranty": 30,
+      "merchant_excludes_from_warranty": [
+        "account_ban",
+        "proxy_relay_reverse_engineering_uses",
+        "prior_untrusted_discount_card"
+      ],
+      "plus_card_receives_chinese_vat_invoice_according_to_merchant": false,
+      "plus_apple_channel_invoice_variant_selected_before_payment": true,
+      "ordinary_order_later_add_invoice_variant_allowed": false,
+      "official_resale_authorization_independently_verified": false,
+      "formal_upstream_sourcing_and_reseller_rights_verified": false,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "one_unit_true_wholesale_price_cny": null,
+      "actual_paid_order_and_valid_vat_invoice_tested": false
+    }
+  },
+  "older_offer_context_not_new_price_observation": {
+    "homepage_url": "https://aiplusgate.com/",
+    "homepage_self_marked_price_checked_on": "2026-10-30",
+    "observed_on": "2026-11-15",
+    "plus_card_cny_per_own_account_month_older_listing": 145,
+    "plus_apple_channel_cny_per_own_account_month_older_listing": 158,
+    "plus_apple_channel_invoiced_variant_cny_per_own_account_month_older_merchant_claim": 168,
+    "current_payment_fee_cny": null,
+    "invoice_actual_valid_china_vat_verified": false,
+    "merchant_invoice_issuer_verified": null,
+    "did_not_infer_price_changed_on_observation_date": true,
+    "old_pricing_path_redirected_to_homepage_url": "https://aiplusgate.com/pricing/",
+    "old_index_quoted_165_175_is_not_live_page_verified": true
+  },
+  "verification_scope": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "generic_chatgpt_registration_normally_does_not_require_sms": true,
+    "codex_desktop_may_require_sms": true,
+    "first_api_key_requires_sms": true,
+    "apple_channel_or_session_automatically_binds_phone_proven": false,
+    "independent_service_sms_success_chatgpt_web": 0,
+    "independent_service_sms_success_codex": 0,
+    "independent_service_sms_success_initial_api": 0
+  },
+  "priority_queue_no_new_qualifying_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "sources": [
+    {
+      "url": "https://aiplusgate.com/privacy/",
+      "observed_on": "2026-11-15",
+      "page_last_updated_on": "2026-11-13",
+      "source_type": "merchant_privacy_policy"
+    },
+    {
+      "url": "https://aiplusgate.com/terms/",
+      "observed_on": "2026-11-15",
+      "page_last_updated_on": "2026-11-14",
+      "source_type": "merchant_service_terms"
+    },
+    {
+      "url": "https://aiplusgate.com/",
+      "observed_on": "2026-11-15",
+      "page_self_marked_price_date": "2026-10-30",
+      "source_type": "merchant_homepage_old_price_context"
+    },
+    {
+      "url": "https://aiplusgate.com/guides/how-to-choose-recharge-site/",
+      "observed_on": "2026-11-15",
+      "page_last_updated_on": "2026-11-14",
+      "source_type": "merchant_own_comparison_policy"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "source_type": "openai_official_phone_verification_scope"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "real_sms_successes": 0
+  },
+  "old_prices_and_historical_reports_untouched": true,
+  "purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

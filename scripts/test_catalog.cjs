@@ -2196,3 +2196,20 @@ assert.equal(r208.newly_read_evidence.yaoyao_plus_operator_and_invoice.invoice_f
 assert.equal(r208.newly_read_evidence.yaoyao_plus_operator_and_invoice.chinese_vat_invoice_verified,false);
 assert.equal(r208.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r208.purchase_made,false);assert.equal(r208.credentials_submitted,false);
+
+// R209: merchant-declared Session encryption is not deletion verification, a security audit or supply authorization.
+const cat209=d.records.find(x=>x.id==='gpt-source-followup-r209-20261115');
+const ev209=d.records.find(x=>x.id==='gpt-source-followup-r209-20261115-evidence');
+assert(cat209&&ev209&&cat209.url.endsWith('supplier-followup-20261115-r19.html'));
+const r209=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r19-evidence.json'),'utf8'));
+assert.equal(r209.round,209);assert.equal(r209.site_version,'1.9.217');
+assert.equal(r209.new_primary_source_evidence.aiplusgate_privacy.merchant_says_full_session_json_received,true);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_privacy.merchant_says_exception_handling_may_send_restricted_session_attachment_to_owner_private_chat,true);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_privacy.merchant_says_incomplete_order_cleanup_after_last_submission_days,7);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_privacy.merchant_says_local_backup_retention_days,14);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_privacy.third_party_independent_retention_and_deletion_verified,null);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_terms.merchant_explicitly_disclaims_authorization_from.includes('OpenAI'),true);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_terms.previous_ios_google_play_subscription_expired_wait_hours,72);
+assert.equal(r209.new_primary_source_evidence.aiplusgate_terms.all_required_fees_with_valid_china_vat_cny,null);
+assert.equal(r209.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r209.purchase_made,false);assert.equal(r209.credentials_submitted,false);assert.equal(r209.sms_test_done,false);
