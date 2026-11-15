@@ -5028,6 +5028,28 @@
       "summary": "4条已读一方及OpenAI官方原URL；11月14/15日商称版本日与本轮观察日分离，发票、授权、成交价、短信验证均null或未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r213-20261116",
+      "title": "GPT源头第213轮 · Hi Codex密钥分销、退款责任与Session处理",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r03.html",
+      "updatedAt": "2026-11-16",
+      "summary": "首次直读Hi Codex外部销售方充值密钥与分层退款责任：站外销售方退货自己负责；Free账号前提、先付款后提交Session；网站报价未加载，价格及有效VAT保持null。未核一手供货授权。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r213-20261116-evidence",
+      "title": "第213轮 · 外部分销密钥、退款边界和Session生命周期证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r03-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "7条本轮直读原URL；9月25日/10月2日/11月3日商家旧条款日期与11月16日观察时间分开；外部密钥购销主体与批发价、票费、SMS全未知，零实购。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
