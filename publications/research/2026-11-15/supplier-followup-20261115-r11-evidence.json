@@ -1,0 +1,132 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 201,
+  "site_version": "1.9.209",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r10.html",
+  "criteria": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_advance_agent_fee": true,
+    "all_payment_and_valid_china_vat_max_cny": 170
+  },
+  "material_discovery": "Merchant PayForGPT enterprise policy self-marked updated 2026-11-14: 1–4 retail orders may request ordinary Chinese VAT invoice without additional fee and same-day issuance; seller claim not a verified VAT invoice, all-in price or legitimate Plus wholesale.",
+  "plus_sku": {
+    "seller": "PayForGPT",
+    "url": "https://payforgpt.com/product/7",
+    "product_id": 7,
+    "exact_name": "ChatGPT Plus 月卡｜国内支付宝充值",
+    "delivery": "third_party_original_account",
+    "currency": "CNY",
+    "months": 1,
+    "advertised_retail_cny_per_account_month": 160,
+    "min_retail_qty": 1,
+    "max_retail_qty": 20,
+    "claimed_ordinary_vat_additional_cny": 0,
+    "actual_all_fees_with_valid_china_vat_cny": null,
+    "payment_surcharge_cny": null,
+    "invoice_issuer": null,
+    "collection_entity": null,
+    "customer_must_login_chatgpt_first": true,
+    "merchant_claims_password_not_required": true,
+    "session_token_per_order_requirement": null,
+    "methods": [
+      "Alipay via z-pay",
+      "manual bank transfer"
+    ],
+    "in_force_renewal_claim": "Existing active plans may be overwritten not stacked; Philippine-region active subscription excluded",
+    "paid_or_delivered_verified": false
+  },
+  "invoice_policy": {
+    "url": "https://payforgpt.com/qiye-caigou",
+    "merchant_self_marked_updated_on": "2026-11-14",
+    "previous_archived_page_self_marked_on": "2026-11-06",
+    "actual_effective_change_date_verified": null,
+    "merchant_claims_1_to_4_retail_order_ordinary_vat_invoice": true,
+    "merchant_claims_ordinary_vat_extra_cny": 0,
+    "merchant_claims_same_day_invoice": true,
+    "retail_special_vat_additional_rate": null,
+    "merchant_claims_special_vat_has_extra_fee": true,
+    "merchant_claims_domestic_limited_company_can_sign_and_collect": true,
+    "registered_legal_entity_name": null,
+    "actual_payee_name": null,
+    "invoice_issuer_registered_name": null,
+    "tax_id": null,
+    "issued_valid_chinese_vat_invoice_tested": false,
+    "merchant_claims_post_refund_red_letter_invoice": true
+  },
+  "other_not_plus_offer": {
+    "sku": "ChatGPT 20x",
+    "url": "https://payforgpt.com/qiye-caigou",
+    "minimum_qty": 5,
+    "advertised_cny_per_unit": 1520,
+    "merchant_claims_includes_special_vat_six_percent": true,
+    "not_plus": true,
+    "not_one_unit": true
+  },
+  "upstream": {
+    "plus_wholesale_one_unit_price_cny": null,
+    "plus_bulk_price_requires_negotiation": true,
+    "agent_fee_absence_verified": false,
+    "formal_supply_authorization_verified": false,
+    "real_fulfillment_verified": false,
+    "verified_plus_upstreams": 0
+  },
+  "phone": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_codex_initial_api_key_distinct": true,
+    "plus_auto_bind_mobile_verified": false,
+    "session_first_login_precondition": true,
+    "independent_number_validity_minutes": null,
+    "failure_refund_original_payment": null,
+    "real_sms_successes": 0
+  },
+  "priority_recheck": {
+    "CatFK": "no new qualifying evidence",
+    "Xiaojiu": "no new qualifying evidence",
+    "Morimm": "no new readable exact qualification",
+    "Yinlujing": "prior RMB3000 upfront agency fee remains",
+    "ChatShare": "shared seat does not qualify",
+    "GetVIP": "no new SMS test",
+    "wind89": "old price and invoice component incomplete",
+    "GETGPT_Pro": "no new verified SMS success",
+    "PAYPRM": "invoice and upstream still unknown",
+    "ChongPay": "PDF commercial invoice not Chinese VAT verification"
+  },
+  "sources": [
+    {
+      "url": "https://payforgpt.com/qiye-caigou",
+      "observed_on": "2026-11-15",
+      "merchant_self_marked_on": "2026-11-14",
+      "kind": "merchant_direct_policy"
+    },
+    {
+      "url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_exact_sku"
+    },
+    {
+      "url": "https://payforgpt.com/how-to/chatgpt-invoice-channel-comparison",
+      "observed_on": "2026-11-15",
+      "merchant_self_checked_on": "2026-11-14",
+      "kind": "merchant_self_comparison_not_independent_competitor_proof"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "official_scope"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_price_rows_modified": false,
+  "prior_reports_modified": false,
+  "seller_contacted": false,
+  "payment_done": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
