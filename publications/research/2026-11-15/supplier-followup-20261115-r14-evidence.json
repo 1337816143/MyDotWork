@@ -1,0 +1,157 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 204,
+  "site_version": "1.9.212",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r13.html",
+  "material_discovery": "First directly read MuyuGPT own-account Plus monthly retail listing and self-declared 6% Chinese ordinary VAT surcharge; CNY158+6%=CNY167.48 conditional arithmetic before unknown payment fees. Seller explicitly disclaims OpenAI authorization and claims to ask for no Session Token; no verified supplier, invoices, final paid quote or redemption.",
+  "criteria": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_advance_agent_fee": true,
+    "all_payment_and_valid_china_vat_max_cny": 170
+  },
+  "seller": {
+    "name": "MuyuGPT",
+    "domain": "muyugpt.com",
+    "merchant_type": "retail_subscription_assistance_and_claimed_bulk_discount_not_verified_wholesale",
+    "operating_legal_entity": null,
+    "receiving_legal_entity": null,
+    "chinese_vat_invoice_issuer": null,
+    "invoice_taxpayer_id": null,
+    "valid_vat_invoice_independently_verified": false,
+    "official_openai_authorization": "self_disclaims_affiliation_authorization_or_cooperation",
+    "wholesale_resale_authorization_verified": false,
+    "real_fulfillment_tested": false
+  },
+  "plus": {
+    "sku_url": "https://muyugpt.com/chatgpt",
+    "sku": "ChatGPT Plus 月付（本人原号）",
+    "account": "customer_existing_account",
+    "duration_months": 1,
+    "min_retail_quantity_independently_verified": null,
+    "merchant_listed_cny_per_account_month": 158,
+    "merchant_claims_ordinary_vat_invoice_available": true,
+    "merchant_claimed_ordinary_vat_surcharge_rate": 0.06,
+    "merchant_claimed_ordinary_vat_surcharge_arithmetic_cny": 9.48,
+    "merchant_listing_plus_vat_arithmetic_cny": 167.48,
+    "merchant_checkout_issued_vat_invoice_tested": false,
+    "real_paid_total_cny": null,
+    "payment_processing_fee_cny": null,
+    "invoice_surcharge_real_checkout_cny": null,
+    "all_required_fees_with_valid_chinese_vat_cny": null,
+    "retail_single_month_within_cny170_all_in_verified": false,
+    "merchant_claims_alipay_and_wechat": true,
+    "checkout_preview_verified": false,
+    "real_supplier_cost_cny": null,
+    "real_one_unit_wholesale_price_cny": null,
+    "minimum_wholesale_quantity": null,
+    "mandatory_agent_qualification_fee_cny": null,
+    "minimum_prepaid_agent_fee_zero_verified": false,
+    "existing_active_plus_renewal_supported": null,
+    "sms_verification_auto_bind_supported": false,
+    "qualified_as_genuine_upstream": false
+  },
+  "credentials_and_delivery": {
+    "merchant_claims_no_password_required": true,
+    "merchant_claims_no_session_token_requested": true,
+    "merchant_claims_no_sms_code_requested": true,
+    "actual_sessionless_checkout_and_delivery_tested": false,
+    "site_describes_card_code_or_account_delivery": true,
+    "real_card_code_issued_tested": false,
+    "delivery_process_consistency_verified": false
+  },
+  "merchant_refund_policy": {
+    "failed_topup_full_refund_claimed": true,
+    "failed_after_manual_check_original_payment_refund_claimed": true,
+    "successful_topup_platform_policy_or_user_violation_refund_claimed": false,
+    "real_refund_tested": false,
+    "real_30_day_continuity_tested": false
+  },
+  "other_sku_not_mixed": {
+    "chatgpt_plus_yearly_cny": 1788,
+    "chatgpt_plus_yearly_duration_months": 12,
+    "codex_api_credit_rate_cny_per_usd": 8.4,
+    "codex_api_minimum_usd": 20,
+    "api_credit_not_same_as_plus": true
+  },
+  "independent_phone": {
+    "merchant_independent_phone_sms_service_sku": null,
+    "chatgpt_web_login_supported": null,
+    "codex_desktop_supported": null,
+    "first_api_key_supported": null,
+    "phone_number_duration_days": null,
+    "failed_sms_refund": null,
+    "real_sms_successes": 0,
+    "note": "Merchant not requesting verification code is not evidence an OpenAI phone challenge has been solved; Plus/Apple/Session cannot be equated with a phone binding."
+  },
+  "former_priority_sellers_no_new_qualification": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "observation_notes": [
+    "Own pages read on 2026-11-15; absence of merchant page self-update dates is not a change date.",
+    "No payment, invoice or official authorization tested; CNY167.48 is strictly listed price plus seller-stated 6% and excludes any undisclosed charges.",
+    "OpenAI's actual account entitlement, SMS challenge behavior and merchant fulfillment not tested.",
+    "CNY158 is a listed retail price, not a verified wholesale supplier cost."
+  ],
+  "sources": [
+    {
+      "url": "https://muyugpt.com/",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_homepage_price_and_ordinary_invoice_surcharge",
+      "self_claimed_update_date": null
+    },
+    {
+      "url": "https://muyugpt.com/chatgpt",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_own_account_plus_month_sku_and_refund",
+      "self_claimed_update_date": null
+    },
+    {
+      "url": "https://muyugpt.com/what-is-muyugpt",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_disclaimer_and_claimed_no_session_credentials",
+      "self_claimed_update_date": null
+    },
+    {
+      "url": "https://muyugpt.com/legal",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_direct_legal_and_original_refund_policy",
+      "self_claimed_update_date": null
+    },
+    {
+      "url": "https://muyugpt.com/pricing",
+      "observed_on": "2026-11-15",
+      "kind": "merchant_pricing_page_did_not_render_individual_rows",
+      "self_claimed_update_date": null
+    }
+  ],
+  "evidence_grades": {
+    "monthly_plus_and_invoice_surcharge": "merchant_site_firsthand_read_not_actual_checkout",
+    "subtotal_167_48": "arithmetic_of_merchant_claims_not_paid_or_valid_invoice_verified",
+    "wholesale_and_authorization": "not_verified_seller_explicitly_disclaims_official_authorization",
+    "credentials": "merchant_description_only_no_sessionless_purchase_test",
+    "real_purchase_invoice_sms": "not_performed"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_price_rows_modified": false,
+  "prior_reports_modified": false,
+  "seller_contacted": false,
+  "payment_done": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
