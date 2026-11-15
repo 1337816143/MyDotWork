@@ -131,14 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 457, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 459, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.212'
+    assert latest['version'] == '1.213'
     assert latest['date'] == '2026-11-16'
-    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r02.html'
-    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r02-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r01.html'
+    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r03.html'
+    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r03-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r02.html'
+
+    # R213: third-party redemption keys and Session processing are not verified wholesale.
+    assert by_id['gpt-source-followup-r213-20261116']['url'].endswith('supplier-followup-20261116-r03.html')
+    assert by_id['gpt-source-followup-r213-20261116-evidence']['url'].endswith('supplier-followup-20261116-r03-evidence.json')
+    r213 = json.loads((ROOT/'dist/research/2026-11-16/supplier-followup-20261116-r03-evidence.json').read_bytes())
+    assert r213['round'] == 213 and r213['site_version'] == '1.9.221'
+    s213 = r213['newly_read_primary_source_evidence']['hi_codex_retail_and_external_reseller_delivery']
+    assert s213['external_reseller_key_redemption_offered'] is True
+    assert s213['key_external_sale_refunds_handled_by_original_seller'] is True
+    assert s213['plus_merchant_quoted_price_cny'] is None
+    assert s213['all_required_fees_with_valid_china_vat_cny'] is None
+    assert r213['newly_read_primary_source_evidence']['hi_codex_privacy_scope']['independently_audited_session_deletion'] is False
+    assert r213['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r213['actual_purchase_made'] and not r213['sms_test_done']
 
     # R212: vendor API changes are not real paid or SMS tests.
     assert by_id['gpt-source-followup-r212-20261116']['url'].endswith('supplier-followup-20261116-r02.html')
