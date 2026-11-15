@@ -4742,6 +4742,28 @@
       "summary": "6条AISub一方直接读取网页、商家条款自标2026-09-17；月季SKU、Session/Token与隐私留存、票费/支付费null、真上游0、真实验证0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r200-20261115",
+      "title": "GPT源头第200轮 · Codex接码低成功率警示与余额退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r10.html",
+      "updatedAt": "2026-11-15",
+      "summary": "贝果科技美区Codex单次¥15现标当前成功率低；随机地区¥8及通用OpenAI ¥6起并非同SKU；无短信/jiema仅退不可提现余额，未验证真实通过；批发Plus合格0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r200-20261115-evidence",
+      "title": "第200轮 · 接码准确SKU、退款性质及官方验证范围证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r10-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "一方直接可读URL、Codex单次¥15/¥8与通用OpenAI ¥6起、号码20分钟、6%商称票费、站内余额退款和GETGPT自报95%风险；真成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -131,14 +131,30 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 431, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 433, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.199'
+    assert latest['version'] == '1.200'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r9.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r9-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r8.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r9.html'
+
+    # R200: exact single-use SMS prices and merchant warnings are not phone validation tests.
+    assert by_id['gpt-source-followup-r200-20261115']['url'].endswith('supplier-followup-20261115-r10.html')
+    r200 = json.loads((ROOT / 'dist/research/2026-11-15/supplier-followup-20261115-r10-evidence.json').read_bytes())
+    assert r200['round'] == 200 and r200['site_version'] == '1.9.208'
+    assert r200['distinct_services'][0]['seller_advertised_price_cny_per_one_sms'] == 15
+    assert r200['distinct_services'][0]['seller_own_current_low_success_warning'] is True
+    assert r200['distinct_services'][0]['warning_first_effective_date'] is None
+    assert r200['distinct_services'][1]['seller_advertised_price_cny_per_one_sms'] == 8
+    assert r200['distinct_services'][1]['guaranteed_thailand_country'] is False
+    assert r200['distinct_services'][2]['starting_price_cny_per_single_sms'] == 6
+    assert r200['distinct_services'][2]['original_payment_refund_on_no_sms'] is False
+    assert r200['distinct_services'][2]['actual_total_cny'] is None
+    assert r200['getgpt_pro_phone_followup']['controlled_success_rate'] is None
+    assert r200['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r200['qualification_totals']['real_phone_sms_successes'] == 0
 
     # R197: corroborating seller websites do not independently verify operator, VAT, supplier or paid success.
     assert by_id['gpt-source-followup-r197-20261115']['url'].endswith('supplier-followup-20261115-r7.html')

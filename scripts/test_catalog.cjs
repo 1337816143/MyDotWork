@@ -2038,3 +2038,24 @@ assert.equal(r199.seller_privacy.actual_breach_evidence,false);
 assert.equal(r199.phone.real_sms_successes,0);
 assert.equal(r199.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r199.payment_done,false);assert.equal(r199.credentials_submitted,false);
+
+// R200: merchant low-success warning, noncash SMS refund and separate SKU pricing are claims, not real tests.
+const e200=d.records.find(x=>x.id==='gpt-source-followup-r200-20261115'),ed200=d.records.find(x=>x.id==='gpt-source-followup-r200-20261115-evidence');
+assert(e200&&ed200&&e200.url.endsWith('supplier-followup-20261115-r10.html'));
+const r200=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r10-evidence.json'),'utf8'));
+assert.equal(r200.round,200);assert.equal(r200.site_version,'1.9.208');
+assert.deepEqual(r200.distinct_services.map(x=>[x.id,x.seller_advertised_price_cny_per_one_sms??x.starting_price_cny_per_single_sms]),[['bigolab-us-physical-codex-10',15],['bigolab-random-region-codex-28',8],['bigolab-openai-generic-jiema',6]]);
+assert.equal(r200.distinct_services[0].seller_own_current_low_success_warning,true);
+assert.equal(r200.distinct_services[0].warning_first_effective_date,null);
+assert.equal(r200.distinct_services[1].guaranteed_thailand_country,false);
+assert.equal(r200.distinct_services[2].original_payment_refund_on_no_sms,false);
+assert.equal(r200.distinct_services[2].number_validity_minutes,20);
+assert.equal(r200.distinct_services[2].actual_total_cny,null);
+assert.equal(r200.distinct_services[0].invoice_and_payment_all_in_actual_cny,null);
+assert.equal(r200.distinct_services[1].invoice_and_payment_all_in_actual_cny,null);
+assert.equal(r200.distinct_services[2].no_sms_refund_destination,'nonwithdrawable website balance, including QR payment portion');
+assert.equal(r200.getgpt_pro_phone_followup.seller_own_uncontrolled_feedback_over_95_percent_claim,true);
+assert.equal(r200.getgpt_pro_phone_followup.independent_sample_size,null);
+assert.equal(r200.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r200.qualification_totals.real_phone_sms_successes,0);
+assert.equal(r200.payment_done,false);assert.equal(r200.seller_contacted,false);
