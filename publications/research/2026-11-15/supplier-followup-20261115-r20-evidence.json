@@ -1,0 +1,123 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 210,
+  "site_version": "1.9.218",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r19.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "newly_read_primary_source_evidence": {
+    "yinlujing_promotion_deadline_conflict": {
+      "merchant": "引路鲸（ChatGPT直充站）",
+      "announcement_url": "https://chatgqt.plus/announcement",
+      "exact_sku_url": "https://chatgqt.plus/products/chatgpt-plus",
+      "agency_url": "https://chatgqt.plus/cooperation",
+      "faq_url": "https://chatgqt.plus/faq",
+      "announcement_posted_on_merchant_page": "2026-10-23",
+      "original_observation_on": "2026-11-04",
+      "original_observation_file": "publications/research/2026-11-04/supplier-followup-20261104-r24-evidence.json",
+      "original_announcement_deadline_bj": "2026-11-11T23:59:00+08:00",
+      "current_observation_on": "2026-11-15",
+      "current_announcement_deadline_bj": "2027-11-11T23:59:00+08:00",
+      "same_announcement_url_in_old_and_new_observations": true,
+      "current_sku_return_promo_banner": "双11返场截止 11月18日 23:59",
+      "current_sku_promo_banner_year": null,
+      "contradictory_deadline_text": true,
+      "actual_promo_deadline_verified": null,
+      "date_text_changed_at_verified": null,
+      "monthly_plus_with_30day_warranty_cny": 145,
+      "monthly_plus_with_warranty_conditional_floor_cny": 130,
+      "monthly_plus_no_warranty_cny": 135,
+      "monthly_plus_no_warranty_conditional_floor_cny": 120,
+      "same_price_tiers_recorded_on_2026_11_12": true,
+      "current_round_price_change_verified": false,
+      "conditional_floor_universal_checkout_price": false,
+      "coupon_and_first_order_task_stack": false,
+      "agency_upfront_fee_cny": 3000,
+      "agency_fee_separate_from_goods_payment": true,
+      "free_affiliate_equals_wholesale": false,
+      "single_month_true_wholesale_price_cny": null,
+      "payment_processing_fee_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "merchant_legal_entity_verified": null,
+      "actual_payee_entity_verified": null,
+      "invoice_issuer_verified": null,
+      "formal_resale_authorization_verified": false,
+      "real_purchase_or_delivery_verified": false,
+      "qualified_true_wholesale": false
+    }
+  },
+  "verification_scope": {
+    "openai_phone_verification_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_sms_successes": 0,
+    "codex_desktop_sms_successes": 0,
+    "first_api_key_sms_successes": 0,
+    "apple_payment_or_session_auto_phone_binding_proven": false,
+    "verified_number_type": null,
+    "number_validity_days": null,
+    "sms_failure_refund_verified": null
+  },
+  "priority_queue_without_new_qualifying_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "sources": [
+    {
+      "url": "https://chatgqt.plus/announcement",
+      "observed_on": "2026-11-15",
+      "page_displays_post_date": "2026-10-23",
+      "source_type": "first_party_promotion_announcement"
+    },
+    {
+      "url": "https://chatgqt.plus/products/chatgpt-plus",
+      "observed_on": "2026-11-15",
+      "source_type": "first_party_exact_sku_promo_banner"
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-15",
+      "source_type": "first_party_agent_terms"
+    },
+    {
+      "url": "https://chatgqt.plus/faq",
+      "observed_on": "2026-11-15",
+      "source_type": "first_party_invoice_and_session_terms"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "source_type": "official_phone_verification_scope"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/59f8bdd97e584588a5506d91e0526f84b04fdd06/publications/research/2026-11-04/supplier-followup-20261104-r24-evidence.json",
+      "observed_on": "2026-11-04",
+      "source_type": "immutable_prior_report_comparison"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "real_sms_successes": 0
+  },
+  "old_observation_untouched": true,
+  "previous_reports_and_126_old_quotes_untouched": true,
+  "purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
