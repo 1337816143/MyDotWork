@@ -4918,6 +4918,28 @@
       "summary": "7条本轮读原URL；区分11月8日旧价、11月15日新观察、第三方伪现货、单件未达VAT门槛；费用null且无实付、授权或接码成功。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r208-20261115",
+      "title": "GPT源头第208轮 · PAYPRM接码售后及瑶瑶经营/发票主体",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r18.html",
+      "updatedAt": "2026-11-15",
+      "summary": "首次直读PAYPRM Codex SMS仅担保卡密与入口可用，不承诺真实收码或现金退；瑶瑶自称个人品牌、开票票种待确认，发票费用与法律主体仍null；¥129零售价非一手批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r208-20261115-evidence",
+      "title": "第208轮 · SMS交付边界与开票法人待核证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r18-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "6条一方/官方原URL；页面自标日期与本轮观察分离，PAYPRM失败收码退款条件未知、瑶瑶开票费与登记主体null，合格真批发0、付款验票接码实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
