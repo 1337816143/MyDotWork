@@ -4764,6 +4764,28 @@
       "summary": "一方直接可读URL、Codex单次¥15/¥8与通用OpenAI ¥6起、号码20分钟、6%商称票费、站内余额退款和GETGPT自报95%风险；真成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r201-20261115",
+      "title": "GPT源头第201轮 · PayForGPT普票免加费自述与收款出票主体缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r11.html",
+      "updatedAt": "2026-11-15",
+      "summary": "本人原号Plus SKU7标价¥160/月、商称单件普票按原价开且当天出票；实际票据、主体、全费与单件批发未验，合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r201-20261115-evidence",
+      "title": "第201轮 · 本人Plus SKU、普票免加税自述和批发条件结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-15/supplier-followup-20261115-r11-evidence.json",
+      "updatedAt": "2026-11-15",
+      "summary": "商家2026-11-14更新的开票页与11月15日读取：Plus ¥160/账号月、普票附加¥0仅自述、零售专票税额null、20x五件起不可混同Plus；真实发票验真和采购0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
