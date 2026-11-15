@@ -1,3 +1,12 @@
+## 1.9.209 · 2026-11-15
+
+- 第201轮新核PayForGPT企业采购页自标2026-11-14更新、2026-11-15一方直接读取；较第158轮读到的企业页自标2026-11-06旧规则，新增商家明确承诺：1–4件零售也可开中国增值税普通发票，普票不另加税、普/专票当天开具；零售专票另收税点但比例和金额均null。具体规则实际生效日期未知，未把新网页日期当成当天调价或已出票。
+- 准确商品 https://payforgpt.com/product/7 为本人原号Plus单月SKU7，挂牌¥160/账号月、可零售1–20件；网页普票增费¥0仅为卖家承诺，不是核实全部含VAT成交¥160。第三方z-pay支付宝或人工转账、需先成功登录ChatGPT、旧订阅覆盖不叠加和菲律宾区在期除外均为商称；实际支付费、出票/经营/收款/签约法人名称和税号、有效中国VAT真实发票及真实全额成本继续null，真实履约未测试。
+- 同页独立20x SKU自报5件起¥1520/件、包含6%专票，不适用于Plus，也不等于单件拿货价。Plus/5x所谓批发需沟通才能报价，不能据此认定已核单件批发；商家称可由国内有限公司签收付款并提供营业执照、采购合同等，但具体真实法人和供货授权未公开独立验证。
+- 手机验证仍按ChatGPT网页登录、Codex桌面、首次API密钥分开，普通Plus/Apple/Session不能保证自动绑定手机号或首次登录免验证；未获得PayForGPT独立号码期限、失败现金原路退款、真实短信通过的新证据。其他CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay没资格晋级；他店自编横评不替代对手一方验证，旧价不刷新。
+- 单件单月本人原号、无代理前置费、全部必要费用及有效中国VAT≤¥170的真正Plus已核上游0，付款0、验票0、真实短信验证0。本轮只新增HTML/JSON、精确SHA256白名单、工作台目录、总库新入口、VERSION、CHANGELOG、release最新指针和回归断言；历史126条报价及前200轮原始记录保留。没有联系商家、付款或交账号秘密。
+- 原始URL本轮观察2026-11-15：https://payforgpt.com/qiye-caigou 、https://payforgpt.com/product/7 、https://payforgpt.com/how-to/chatgpt-invoice-channel-comparison 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.208 · 2026-11-15
 
 - 第200轮首次直接读取Bigolab贝果科技两项独立Codex单次SMS和/jiema通用OpenAI接码：准确/zh-hk/products/10美区实体卡¥15/条且商品标题及正文主动提示「当前成功率低」，建议另到/jiema选择泰国；何时变为低成功率、成功率数值均未知，未作实际SMS测试。/zh-hk/products/28随机地区Codex¥8/条，卖家称成功率高却无独立统计，不等于泰国固定号码；两款页面自称中国增值税开票另加6%，¥15.90和¥8.48仅条件算术，全额结算、开票主体/税号及真实发票均null。
