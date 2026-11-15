@@ -131,14 +131,29 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 425, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 427, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.196'
+    assert latest['version'] == '1.197'
     assert latest['date'] == '2026-11-15'
-    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r6.html'
-    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r6-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r5.html'
+    assert latest['path'] == 'research/2026-11-15/supplier-followup-20261115-r7.html'
+    assert latest['dataPath'] == 'research/2026-11-15/supplier-followup-20261115-r7-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r6.html'
+
+    # R197: corroborating seller websites do not independently verify operator, VAT, supplier or paid success.
+    assert by_id['gpt-source-followup-r197-20261115']['url'].endswith('supplier-followup-20261115-r7.html')
+    assert by_id['gpt-source-followup-r197-20261115-evidence']['url'].endswith('supplier-followup-20261115-r7-evidence.json')
+    r197 = json.loads((ROOT / 'dist/research/2026-11-15/supplier-followup-20261115-r7-evidence.json').read_bytes())
+    assert r197['round'] == 197 and r197['site_version'] == '1.9.205'
+    assert r197['new_evidence']['operator_group']['brands_self_claimed_same_operator_count'] == 3
+    assert r197['new_evidence']['operator_site']['independently_verified_business_registration'] is False
+    assert r197['new_evidence']['abcnum_plus']['price_cny_per_account_month'] == 170
+    assert r197['new_evidence']['abcnum_plus']['all_in_with_valid_china_vat_invoice_cny'] is None
+    assert r197['new_evidence']['session_handling']['merchant_claim_required_credentials_may_be_shared_with_actual_fulfiller'] is True
+    assert r197['new_evidence']['session_handling']['query_exception_applies_to_recharge_orders'] is False
+    assert r197['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r197['qualification_totals']['verified_phone_sms_successes'] == 0
+    assert r197['actual_purchase_or_contact_or_credentials_or_sms_test_performed'] is False
 
     # R187: CatFK separate seller and exact SMS SKU limits; index price and unpaid preview are not real checkout.
     assert by_id['gpt-source-followup-r187-20261114']['url'].endswith('supplier-followup-20261114-r15.html')
