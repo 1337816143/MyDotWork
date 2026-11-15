@@ -2059,3 +2059,20 @@ assert.equal(r200.getgpt_pro_phone_followup.independent_sample_size,null);
 assert.equal(r200.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r200.qualification_totals.real_phone_sms_successes,0);
 assert.equal(r200.payment_done,false);assert.equal(r200.seller_contacted,false);
+
+// R201: merchant advertised zero ordinary VAT surcharge is not proof of real tax invoice or true upstream.
+const e201=d.records.find(x=>x.id==='gpt-source-followup-r201-20261115'),ed201=d.records.find(x=>x.id==='gpt-source-followup-r201-20261115-evidence');
+assert(e201&&ed201&&e201.url.endsWith('supplier-followup-20261115-r11.html'));
+const r201=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-15/supplier-followup-20261115-r11-evidence.json'),'utf8'));
+assert.equal(r201.round,201);assert.equal(r201.site_version,'1.9.209');
+assert.equal(r201.plus_sku.advertised_retail_cny_per_account_month,160);
+assert.equal(r201.plus_sku.claimed_ordinary_vat_additional_cny,0);
+assert.equal(r201.plus_sku.actual_all_fees_with_valid_china_vat_cny,null);
+assert.equal(r201.invoice_policy.retail_special_vat_additional_rate,null);
+assert.equal(r201.invoice_policy.issued_valid_chinese_vat_invoice_tested,false);
+assert.equal(r201.other_not_plus_offer.minimum_qty,5);
+assert.equal(r201.other_not_plus_offer.not_plus,true);
+assert.equal(r201.upstream.plus_wholesale_one_unit_price_cny,null);
+assert.equal(r201.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r201.qualification_totals.real_phone_sms_successes,0);
+assert.equal(r201.payment_done,false);assert.equal(r201.seller_contacted,false);
