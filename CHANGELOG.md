@@ -1,3 +1,10 @@
+## 1.9.207 · 2026-11-15
+
+- 第199轮首次直接实读AISub（www.aisub.cn）独立零售商品本人原号ChatGPT Plus准确SKU /plans/plus，价格¥135/账号·1个月，限已能登录的Free、已到期个人账号或商称符合条件的Go；已在期Plus能否续费未证。独立/plans/plus_3m标¥390／3个月，首月卡密兑换、次两月商称人工维护，不能将¥130/月摊销价冒充单件单月采购价。支付后先发卡密、不代表真实开通。
+- 商家条款及隐私政策均自标2026-09-17，非11月15日条款变更。条款自认与OpenAI无官方代理合作，兑换可能要求敏感Session/AccessToken，卡密展示、复制或使用后一般不支持无理由退款，账号限制或凭据过期不属商家交付错误。隐私政策自称处理Session/AccessToken及日志，可能保存任务输出、必要截图或录屏，未具体披露Session删除天数；技术服务商分享为政策声明而非已发生的外传或安全泄露实测。30天掉订退款仅为营销承诺。
+- 新候选仍为零售而非真批发：经营/收款/出票法人、有效中国增值税发票及票费、支付附费、单件免代理前置费、正式供货授权、单件批发价和实际履约全部没有完整证据，未知费用null。引路鲸已有¥3000进货代理前置费未变；CatFK、Morimm内容不可读不刷新旧价；GETGPT Pro、ChongPay、PAYPRM、ChatShare没有可认定的实质变化。独立手机号接码服务与ChatGPT网页、Codex桌面及首次API Key验证仍未获得真实新证明。符合原号单件单月免前置费含有效中国VAT与完整支付≤¥170真正批发上游0，付款/验票/SMS成功0，未联系商家或提交凭据。
+- 新增r199 HTML/JSON、SHA-256白名单、工作台project-1、总库最新入口、VERSION及回归断言，旧126报价与前198轮报告原字节保持。本轮一方原始URL（观察2026-11-15）：https://www.aisub.cn/ 、https://www.aisub.cn/plans/plus 、https://www.aisub.cn/plans/plus_3m 、https://www.aisub.cn/help 、https://www.aisub.cn/terms 、https://www.aisub.cn/privacy 、https://chatgqt.plus/cooperation 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.206 · 2026-11-15
 
 - 第198轮首次核读MyAISub与GETAIAI自营网页的搜索索引快照；双方网站分别自称ClyGen Inc运营。历史HugPass、24Sub、ABCNUM之外增两自称品牌，合计五品牌自述关系，不证明共同工商、收款、出票法人、供货或授权。
