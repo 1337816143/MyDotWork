@@ -1,3 +1,11 @@
+## 1.9.205 · 2026-11-15
+
+- 第197轮新增可核一方证据：ClyGen Inc公司自述页列美国WY/Sheridan地址；ABCNUM隐私政策自称ClyGen Inc运营，和HugPass、24Sub归入同一“自称主体”3品牌组，不独立验证工商、收款、有效中国VAT出票或真正共用货源。旧政策自标2026-09-26，本轮首归档非当天新政策。
+- ABCNUM准确Plus本人账号一月挂牌¥170（默认Go选项¥78不能套用）；收银台支付附费和有效中国VAT票费null、未真实付款或验票、无单件批发价。后续直开偶发502，不以失败访问刷新价或声称现货。
+- ABCNUM政策明确声称充值订单的Session/Token可能加密留存并提供给实际履约供货商；独立查询工具Token不入库不适用于充值。此为商家自行披露，不是数据泄露实测或已验证的真实下游，不得因存在三网站及API认定一手供货。
+- 既有CatFK/小久/Morimm/引路鲸/ChatShare/GetVIP/wind89/GETGPT Pro/PAYPRM/ChongPay无新闭环；普通充值、Apple及Session不自动解手机号验证。已核本人原号一件一月免前置费、含全部必要付款及有效中国VAT≤¥170真正批发上游仍0，实购/验票/验证码成功0。新增HTML/JSON、哈希白名单、工作台、总库、版本、CHANGELOG、断言，历史126报价及前196轮原字节不改；未付款、联系或交凭据。
+- 本轮来源观察2026-11-15：https://www.clygen.com/ 、https://abcnum.com/privacy 、https://abcnum.com/terms 、https://abcnum.com/subscribe/chatgpt 、https://abcnum.com/subscribe 、https://hugpass.com/products/chatgpt 、https://24sub.com/products/chatgpt 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.204 · 2026-11-15
 
 - 第196轮首次直接核读HugPass与24Sub两套品牌：本人原号Plus均挂牌¥155/账号·月，Codex 250 credits另为¥82/次和¥85/次，不是手机号验证服务；不是实付价。

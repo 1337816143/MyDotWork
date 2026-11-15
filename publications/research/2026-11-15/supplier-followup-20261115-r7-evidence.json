@@ -1,0 +1,173 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 197,
+  "site_version": "1.9.205",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r6.html",
+  "criteria": {
+    "own_original_account": true,
+    "single_unit_one_month": true,
+    "no_upfront_agent_fee": true,
+    "all_required_payment_and_valid_china_vat_invoice_max_cny": 170
+  },
+  "new_evidence": {
+    "operator_site": {
+      "url": "https://www.clygen.com/",
+      "operator_self_claim": "ClyGen Inc",
+      "declared_us_state": "Wyoming",
+      "declared_address": "30 N Gould St Ste R, Sheridan, WY 82801, United States",
+      "declared_email": "hi@clygen.com",
+      "independently_verified_business_registration": false,
+      "actual_receiving_entity": null,
+      "invoice_issuer": null,
+      "invoice_tax_id": null,
+      "formal_openai_authorization_verified": false
+    },
+    "operator_group": {
+      "existing_brands": [
+        "HugPass",
+        "24Sub"
+      ],
+      "newly_correlated_brand": "ABCNUM",
+      "declared_common_operator": "ClyGen Inc",
+      "brands_self_claimed_same_operator_count": 3,
+      "independently_verified_common_owner": false,
+      "real_shared_upstream_verified": false
+    },
+    "abcnum_plus": {
+      "url": "https://abcnum.com/subscribe/chatgpt",
+      "sku": "ChatGPT Plus, 1 month, standard activation",
+      "price_type": "seller_listed_not_paid",
+      "price_cny_per_account_month": 170,
+      "other_go_default_price_cny_per_account_month": 78,
+      "other_go_price_is_not_plus": true,
+      "observed_on": "2026-11-15",
+      "later_repeat_open_502": true,
+      "payment_extra_fee_cny": null,
+      "invoice_extra_fee_cny": null,
+      "all_in_with_valid_china_vat_invoice_cny": null,
+      "valid_china_vat_invoice_verified": false,
+      "paid_checkout_verified": false,
+      "one_unit_wholesale_cost_cny": null,
+      "agency_upfront_fee_cny": null,
+      "no_upfront_agent_fee_verified": false,
+      "existing_plus_renewal_verified": false,
+      "real_fulfillment_verified": false,
+      "qualifies_as_verified_upstream": false
+    },
+    "abcnum_terms": {
+      "url": "https://abcnum.com/terms",
+      "self_stated_policy_date": "2026-09-26",
+      "seller_says_extra_checkout_fees_possible": true,
+      "actual_fees": null,
+      "verified_cash_refund": false
+    },
+    "session_handling": {
+      "url": "https://abcnum.com/privacy",
+      "self_stated_policy_date": "2026-09-26",
+      "merchant_claim_order_credentials_may_be_saved": true,
+      "merchant_claim_saved_sensitive_credentials_encrypted": true,
+      "merchant_claim_required_credentials_may_be_shared_with_actual_fulfiller": true,
+      "downstream_supplier_identity": null,
+      "credential_deletion_deadline": null,
+      "claim_independent_token_query_not_written_to_database": true,
+      "query_exception_applies_to_recharge_orders": false,
+      "verified_data_leak_or_account_compromise": false,
+      "needs_prior_successful_login_for_session": true
+    }
+  },
+  "phone": {
+    "independent_sms_sku_directly_read_for_abcnum": false,
+    "chatgpt_web_codex_first_api_key_successes": 0,
+    "apple_or_session_auto_binds_phone": false,
+    "duration": null,
+    "failed_sms_refund_verified": false
+  },
+  "rechecks": {
+    "names": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "no_material_change_confirmed": true,
+    "failed_access_does_not_refresh_old_quotes": true
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_phone_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.clygen.com/",
+      "observed_on": "2026-11-15",
+      "kind": "corporate website",
+      "finding": "Self-declared ClyGen Inc WY USA and Sheridan address",
+      "evidence_class": "self_claim_not_independent_registry"
+    },
+    {
+      "url": "https://abcnum.com/privacy",
+      "observed_on": "2026-11-15",
+      "source_policy_date": "2026-09-26",
+      "kind": "merchant privacy",
+      "finding": "ClyGen Inc operator claim; sensitive recharge session may be retained encrypted and supplied to executing vendor, unlike standalone token lookup",
+      "evidence_class": "merchant_self_report"
+    },
+    {
+      "url": "https://abcnum.com/terms",
+      "observed_on": "2026-11-15",
+      "source_policy_date": "2026-09-26",
+      "kind": "merchant terms",
+      "finding": "extra checkout fees and conditional refunds",
+      "evidence_class": "merchant_self_report",
+      "later_repeat_fetch_failed": true
+    },
+    {
+      "url": "https://abcnum.com/subscribe/chatgpt",
+      "observed_on": "2026-11-15",
+      "kind": "merchant product",
+      "finding": "Plus 1 month ¥170 seller listing distinct from default Go ¥78; not paid",
+      "evidence_class": "merchant_display_not_paid",
+      "later_repeat_fetch_failed": true
+    },
+    {
+      "url": "https://abcnum.com/subscribe",
+      "observed_on": "2026-11-15",
+      "kind": "merchant catalog",
+      "finding": "ChatGPT and Claude subscription category; no SMS product observed",
+      "evidence_class": "limited_catalog_scope"
+    },
+    {
+      "url": "https://hugpass.com/products/chatgpt",
+      "observed_on": "2026-11-15",
+      "kind": "historical comparison",
+      "finding": "HugPass Plus ¥155 already r196, not a new quote",
+      "evidence_class": "merchant_self_report"
+    },
+    {
+      "url": "https://24sub.com/products/chatgpt",
+      "observed_on": "2026-11-15",
+      "kind": "historical comparison",
+      "finding": "24Sub Plus ¥155 already r196, not a new quote",
+      "evidence_class": "merchant_self_report"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "official rules",
+      "finding": "Distinct ChatGPT web/Codex desktop/first API key phone requirements",
+      "evidence_class": "official_policy"
+    }
+  ],
+  "historical_126_quotes_modified": false,
+  "older_report_files_modified": false,
+  "actual_purchase_or_contact_or_credentials_or_sms_test_performed": false
+}
