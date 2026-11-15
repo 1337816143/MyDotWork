@@ -1,0 +1,194 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 199,
+  "site_version": "1.9.207",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r8.html",
+  "criteria": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_advance_agent_fee": true,
+    "all_payment_and_valid_china_vat_max_cny": 170
+  },
+  "new_retail_candidate": {
+    "brand": "AISub",
+    "merchant_site": "https://www.aisub.cn/",
+    "accurate_url": "https://www.aisub.cn/plans/plus",
+    "sku": "ChatGPT Plus",
+    "currency": "CNY",
+    "advertised_price_cny_per_account_month": 135,
+    "months": 1,
+    "quantity": 1,
+    "price_observed_on": "2026-11-15",
+    "seller_page_self_updated_on": null,
+    "applicable_account": "Own logged-in Free or expired account; eligible Go condition self-claimed",
+    "active_plus_renewal_verified": false,
+    "delivery": "Merchant says card code issued after payment; activation separately required",
+    "session_or_access_token_may_be_required": true,
+    "first_login_required": true,
+    "wholesale_one_unit_price_cny": null,
+    "agency_upfront_fee_cny": null,
+    "zero_agency_upfront_verified": false,
+    "payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "exchange_fee_cny": null,
+    "valid_chinese_vat_invoice_available_verified": false,
+    "valid_chinese_vat_invoice_issuer": null,
+    "actual_paid_with_valid_chinese_vat_total_cny": null,
+    "business_legal_entity_verified": false,
+    "receiving_entity_verified": false,
+    "formal_openai_resale_authorization_verified": false,
+    "real_fulfilment_verified": false
+  },
+  "separate_nonqualifying_product": {
+    "url": "https://www.aisub.cn/plans/plus_3m",
+    "sku": "ChatGPT Plus 3-month",
+    "currency": "CNY",
+    "advertised_price_cny_per_three_month_package": 390,
+    "months": 3,
+    "first_month_card_code_then_two_manual_renewals_merchant_claim": true,
+    "not_one_unit_one_month": true,
+    "real_renewal_verified": false
+  },
+  "seller_terms": {
+    "url": "https://www.aisub.cn/terms",
+    "merchant_policy_self_dated": "2026-09-17",
+    "self_declares_no_official_openai_partnership": true,
+    "may_require_session_access_token": true,
+    "disclosed_card_code_shown_or_used_usually_no_no_reason_refund": true,
+    "seller_error_reissue_or_refund_subject_to_merchant_review": true,
+    "account_restrictions_or_expired_credentials_not_seller_delivery_error": true,
+    "marketing_claim_30day_drop_refund_not_tested": true,
+    "cash_refund_test_count": 0
+  },
+  "seller_privacy": {
+    "url": "https://www.aisub.cn/privacy",
+    "merchant_policy_self_dated": "2026-09-17",
+    "seller_claims_process_session_access_token": true,
+    "seller_claims_may_store_task_output_screenshot_screen_recording": true,
+    "fixed_token_retention_days": null,
+    "seller_claims_business_need_based_retention": true,
+    "potential_technical_processor_sharing_claim": true,
+    "actual_screenshot_or_downstream_sharing_tested": false,
+    "independent_security_audit": false,
+    "actual_breach_evidence": false
+  },
+  "rechecked_existing": [
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "status": "live_read",
+      "observed_on": "2026-11-15",
+      "known_agency_upfront_cny": 3000,
+      "price_change_verified": false
+    },
+    {
+      "url": "https://catfk.com/item/yfy1iv",
+      "status": "no_readable_content",
+      "observed_on": "2026-11-15",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://morimm.com/",
+      "status": "no_readable_content",
+      "observed_on": "2026-11-15",
+      "price_refreshed": false
+    },
+    {
+      "url": "https://getgpt.pro/faq",
+      "status": "live_read_no_material_change",
+      "observed_on": "2026-11-15"
+    },
+    {
+      "url": "https://chongpay.com/plans?category=gpt",
+      "status": "live_read_no_material_change",
+      "observed_on": "2026-11-15"
+    },
+    {
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "status": "live_read_no_material_change",
+      "observed_on": "2026-11-15"
+    },
+    {
+      "url": "https://chatshare.tv/plans",
+      "status": "live_read_no_material_change",
+      "observed_on": "2026-11-15"
+    }
+  ],
+  "phone": {
+    "official_source": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "scopes": [
+      "ChatGPT web",
+      "Codex desktop",
+      "first API key"
+    ],
+    "aisub_separate_sms_sku_verified": false,
+    "number_validity_days": null,
+    "failed_sms_refund_verified": false,
+    "session_required_before_login_verification_implies_no_first_login_solution": true,
+    "plus_or_apple_subscription_automatically_binds_phone": false,
+    "real_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.aisub.cn/plans/plus",
+      "observed_on": "2026-11-15",
+      "kind": "seller_product_direct_read",
+      "finding": "¥135 per own-account one month, Free/expired/eligible Go, card-code issued before actual activation"
+    },
+    {
+      "url": "https://www.aisub.cn/plans/plus_3m",
+      "observed_on": "2026-11-15",
+      "kind": "seller_product_direct_read",
+      "finding": "¥390 per three months, two claimed human-maintained renewals, excluded"
+    },
+    {
+      "url": "https://www.aisub.cn/",
+      "observed_on": "2026-11-15",
+      "kind": "seller_home_direct_read",
+      "finding": "own-account and 30-day warranty advertising only"
+    },
+    {
+      "url": "https://www.aisub.cn/help",
+      "observed_on": "2026-11-15",
+      "kind": "seller_help_direct_read",
+      "finding": "Alipay, card-code, redemption, not tested"
+    },
+    {
+      "url": "https://www.aisub.cn/terms",
+      "observed_on": "2026-11-15",
+      "self_dated": "2026-09-17",
+      "kind": "seller_terms_direct_read",
+      "finding": "requires potentially sensitive Session/AccessToken, no OpenAI affiliate, refund limits"
+    },
+    {
+      "url": "https://www.aisub.cn/privacy",
+      "observed_on": "2026-11-15",
+      "self_dated": "2026-09-17",
+      "kind": "seller_policy_direct_read",
+      "finding": "possible task screenshots/recordings and logs, no specific token purge time verified"
+    },
+    {
+      "url": "https://chatgqt.plus/cooperation",
+      "observed_on": "2026-11-15",
+      "kind": "existing_merchant_recheck",
+      "finding": "preexisting ¥3000 agency qualification fee, not new"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "official_scope_reference",
+      "finding": "distinct phone scopes, not success test"
+    }
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_price_baseline_modified": false,
+  "previous_reports_modified": false,
+  "seller_contacted": false,
+  "payment_done": false,
+  "credentials_submitted": false
+}
