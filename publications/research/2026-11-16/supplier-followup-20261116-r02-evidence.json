@@ -1,0 +1,145 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 212,
+  "site_version": "1.9.220",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-16/supplier-followup-20261116-r01.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_primary_evidence": {
+    "aibulk_contract_1_7_4": {
+      "api_reference_url": "https://aibulk.uk/developers/api",
+      "machine_readable_contract_url": "https://aibulk.uk/api/openapi.json",
+      "merchant_version_date_utc": "2026-11-15",
+      "observed_api_version": "1.7.4",
+      "new_fields": [
+        "paymentReview",
+        "paymentReviewAfterDelivery"
+      ],
+      "payment_review_values": [
+        "checking",
+        "review",
+        "frozen",
+        "returned",
+        null
+      ],
+      "payment_intent_or_topup_review_possible": true,
+      "balance_paid_orders_review_status_claimed_null": true,
+      "post_delivery_review_may_void_unredeemed_codes": true,
+      "post_delivery_review_may_revoke_wallet_credit": true,
+      "status_delivered_alone_proves_codes_current_validity": false,
+      "review_duration_guaranteed_minutes": null,
+      "actual_payment_review_incident_verified": false,
+      "real_paid_order_cny": null,
+      "valid_china_vat_invoice_all_in_cny": null
+    },
+    "aibulk_contract_1_7_3": {
+      "api_reference_url": "https://aibulk.uk/developers/api",
+      "merchant_version_date_utc": "2026-11-14",
+      "version": "1.7.3",
+      "new_fields": [
+        "actionRequired",
+        "actionUrl"
+      ],
+      "new_webhook": "redemption.action_required",
+      "possible_actions": [
+        "update_session",
+        "complete_challenge"
+      ],
+      "challenge_time_window_minutes_approximate_merchant_claim": 5,
+      "requires_customer_preexisting_login_for_session_refresh": true,
+      "redeem_submitted_equals_subscription_fulfilled": false,
+      "verified_real_fulfillment": false,
+      "chatgpt_web_phone_verification_solved": null,
+      "codex_phone_verification_solved": null,
+      "first_api_key_phone_verification_solved": null,
+      "sms_failure_cash_refund_cny": null,
+      "phone_number_lifespan_days": null
+    },
+    "aibulk_gift_card_channel": {
+      "api_reference_url": "https://aibulk.uk/developers/api",
+      "merchant_version_date_utc": "2026-11-14",
+      "version": "1.7.2",
+      "product_group_id": "chatgpt-gift-card",
+      "merchant_face_currency": "USD",
+      "merchant_claimed_region": "GLOBAL",
+      "merchant_face_values_usd": [
+        15,
+        20,
+        25,
+        50,
+        100
+      ],
+      "merchant_claimed_redeem_url": "https://chatgpt.com/redeem",
+      "merchant_claimed_delivery_type": "direct_code",
+      "current_seller_payable_unit_price_usdt": null,
+      "actual_china_vat_invoice_fee_cny": null,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "official_policy_url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "official_requires_us_location_and_usd_billed_us_account": true,
+      "official_gift_card_auto_starts_plus": false,
+      "official_usable_for_chatgpt_web_subscriptions": true,
+      "official_usable_for_apple_or_google_in_app_subscription": false,
+      "official_wallet_balance_withdrawable": false,
+      "merchant_authorized_openai_card_reseller_verified": null,
+      "card_validity_or_redemption_tested": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://aibulk.uk/developers/api",
+      "observed_on": "2026-11-16",
+      "kind": "merchant_api_docs",
+      "vendor_changelog_dates": [
+        "2026-11-15",
+        "2026-11-14"
+      ]
+    },
+    {
+      "url": "https://aibulk.uk/api/openapi.json",
+      "observed_on": "2026-11-16",
+      "kind": "merchant_machine_contract",
+      "contract_version": "1.7.4"
+    },
+    {
+      "url": "https://aibulk.uk/api/llms.txt",
+      "observed_on": "2026-11-16",
+      "kind": "merchant_agent_guide",
+      "note": "该页当前自标旧版本1.7.0，以已核openapi.json的1.7.4为准"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards",
+      "observed_on": "2026-11-16",
+      "kind": "official_eligibility"
+    }
+  ],
+  "priority_queue_without_new_qualifying_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "historical_126_prices_unchanged": true,
+  "prior_211_reports_untouched": true,
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

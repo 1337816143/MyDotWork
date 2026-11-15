@@ -1,3 +1,11 @@
+## 1.9.220 · 2026-11-16
+
+- 第212轮新增AIBulk批发API 2026-11-15 v1.7.4文档核验：order/paymentIntent及充值有paymentReview与paymentReviewAfterDelivery，商称交付后合规审查也可能暂时撤销尚未兑换卡密和钱包余额；状态delivered不足独立保证仍可兑。余额付款订单商称不走这类审查。无实际资金冻结/订单实测，审查持续时间和现金退款不明。
+- 同商家2026-11-14 v1.7.3新增actionRequired/actionUrl和redemption.action_required事件，代表履约中可要求客户更新ChatGPT Session或约5分钟内通过支付安全挑战；不能写成已解除网页登录、Codex或首次API Key手机号验证。
+- AIBulk v1.7.2宣传chatgpt-gift-card美元面额$15/$20/$25/$50/$100且region=GLOBAL；OpenAI官方首次核读指明礼品卡只在美国适用、需在美国及美国美元结算ChatGPT账号，兑换只充值ChatGPT网页钱包、不自动购买Plus、不能用于Apple/Google内购且不能取现。卖家能否合法分销、当前可成交USDT卡价及真实兑换未核；不混同单件Plus月卡进货价。
+- MaplePass旧批发API参考价、CatFK/小久/Morimm/引路鲸/ChatShare/GetVIP/wind89/GETGPT Pro/PAYPRM/ChongPay没有确认的相同SKU实价或授权新变化，历史价格不刷新。符合一件单月本人原号、无代理前置费、含全部付款和有效中国VAT≤¥170的已核Plus真正批发上游仍0，真实付款、有效税票、短信成功均0。
+- 新增r212 HTML/JSON、精确SHA-256发布白名单、project-1工作台、总库最新入口、VERSION、CHANGELOG、release指针与回归边界，历史126条报价和前211轮材料保留。2026-11-16实际读取原URL：https://aibulk.uk/developers/api 、https://aibulk.uk/api/openapi.json 、https://aibulk.uk/api/llms.txt 、https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards 。未付款、联系商家、提交账号凭据或实测SMS。
+
 ## 1.9.219 · 2026-11-16
 
 - 第211轮首次直读GPT补给站商家公开资料：Plus本人原号卡密¥125/张、1个月，在线微信/支付宝手续费3%，¥128.75仅是分项条件算术，不是实付含有效中国VAT总价。商称可开电子票，但票种、票费、出票及实际收款法人、真正单件批发价、正式授权及履约均null/未核。
