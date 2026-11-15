@@ -1,0 +1,172 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 202,
+  "site_version": "1.9.210",
+  "observed_on": "2026-11-15",
+  "previous_report": "research/2026-11-15/supplier-followup-20261115-r11.html",
+  "criteria": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_advance_agent_fee": true,
+    "all_payment_and_valid_china_vat_max_cny": 170
+  },
+  "material_discovery": "First-hand public source-code documentation exposes a third-party recharge handoff: KC-CatK/KC-PAY-GPT README routes to a configurable supplier API rather than establishing itself as that supplier; its interface doc lists disabled credit/subscription purchase endpoints and a distinct sample host. Two independently readable CDK interfaces establish that iOS-labeled and ordinary delivery may also require prior ChatGPT Session.",
+  "category": "technical_merchant_infrastructure_and_credential_prerequisites_not_proven_upstream",
+  "technical_candidate": {
+    "name": "KC-CatK/KC-PAY-GPT",
+    "repository": "https://github.com/KC-CatK/KC-PAY-GPT",
+    "readme_url": "https://github.com/KC-CatK/KC-PAY-GPT/blob/main/README.md",
+    "api_doc_url": "https://github.com/KC-CatK/KC-PAY-GPT/blob/main/%E5%AF%B9%E6%8E%A5api.md",
+    "api_doc_self_version_date": "2026-08-16",
+    "readme_third_party_api_default_host": "https://kc.vpss.eu.cc/",
+    "api_documentation_example_base_url": "https://gogpt.id88.icu/api/v1",
+    "two_hosts_same_actual_service_verified": false,
+    "architecture": "A user supplies CDK plus existing logged-in ChatGPT Session; local card/Stripe automation or configured third-party recharge API may fulfill, with provider plan/balance/order polling.",
+    "api_merchant_claimed_endpoints": [
+      "GET /plans",
+      "GET /balance",
+      "POST /pay/inspect",
+      "POST /pay"
+    ],
+    "supplier_api_key_required": true,
+    "prelogin_session_json_required": true,
+    "initial_web_phone_verification_waived_verified": false,
+    "purchase_api_doc_marked_disabled": [
+      "POST /plans/credit/{plan_id}/purchase",
+      "subscription purchase endpoint"
+    ],
+    "purchase_endpoints_operational_live_tested": false,
+    "static_example_order_ok_is_actual_success": false,
+    "exact_public_plus_single_month_product_sku": null,
+    "advertised_retail_plus_one_account_month_cny": null,
+    "real_one_unit_wholesale_plus_price_cny": null,
+    "minimum_purchase_units": null,
+    "advance_agent_fee_cny": null,
+    "payment_surcharge_cny": null,
+    "valid_chinese_vat_invoice_fee_cny": null,
+    "all_required_fees_with_valid_chinese_vat_cny": null,
+    "operating_entity_legal_name": null,
+    "actual_payee": null,
+    "invoice_issuer_legal_name": null,
+    "resale_supply_authorization_verified": false,
+    "real_plus_fulfillment_verified": false,
+    "qualified_as_upstream": false
+  },
+  "new_delivery_interface_observations": [
+    {
+      "name": "OpenGPTPlus iOS CDK interface",
+      "url": "https://amu.plus/",
+      "platform_claim": "Apple iOS",
+      "published_sku_tiers": [
+        "Plus one month",
+        "Plus one year",
+        "Pro 5x",
+        "Pro 20x",
+        "Pro 50x"
+      ],
+      "prior_login_required": true,
+      "session_json_input_displayed": true,
+      "merchant_claims_local_session_parsing_only": true,
+      "session_transmission_independently_verified": false,
+      "one_month_plus_card_public_price_cny": null,
+      "invoice_issuer": null,
+      "official_apple_supplier_authorization_verified": false,
+      "independent_phone_verification": false,
+      "actual_fulfillment_verified": false
+    },
+    {
+      "name": "TurkeyGPT CDK plus session interface",
+      "url": "https://turkeygpt.github.cn.com/",
+      "platform_claim": null,
+      "public_api_paths": [
+        "POST /api/open/card-query",
+        "POST /api/open/redeem"
+      ],
+      "prior_login_required": true,
+      "session_json_input_displayed": true,
+      "one_month_plus_card_public_price_cny": null,
+      "invoice_issuer": null,
+      "wholesale_price_cny": null,
+      "independent_phone_verification": false,
+      "actual_fulfillment_verified": false
+    }
+  ],
+  "failed_live_access": [
+    {
+      "url": "https://kc.vpss.eu.cc/",
+      "reason": "No readable live application response through available public HTTP readers; not a shutdown determination"
+    },
+    {
+      "url": "https://gogpt.id88.icu/api/v1/plans",
+      "reason": "No verified live plan response without API credentials; not a price or operational status conclusion"
+    }
+  ],
+  "existing_priority_sellers_rechecked": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "new_qualified_existing_sellers": 0,
+  "independent_phone": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_codex_desktop_first_api_key_distinct": true,
+    "session_api_is_not_sms_service": true,
+    "number_validity_minutes": null,
+    "refund_to_original_payment": null,
+    "real_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://github.com/KC-CatK/KC-PAY-GPT/blob/main/README.md",
+      "observed_on": "2026-11-15",
+      "kind": "author_published_repository_readme",
+      "author_self_date": null
+    },
+    {
+      "url": "https://github.com/KC-CatK/KC-PAY-GPT/blob/main/%E5%AF%B9%E6%8E%A5api.md",
+      "observed_on": "2026-11-15",
+      "kind": "author_published_api_documentation",
+      "author_self_date": "2026-08-16"
+    },
+    {
+      "url": "https://amu.plus/",
+      "observed_on": "2026-11-15",
+      "kind": "own_site_live_html_not_checkout"
+    },
+    {
+      "url": "https://turkeygpt.github.cn.com/",
+      "observed_on": "2026-11-15",
+      "kind": "own_site_live_html_not_checkout"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-15",
+      "kind": "official_product_scope"
+    }
+  ],
+  "evidence_grades": {
+    "merchant_documentation": "directly_read_not_independent_audit",
+    "delivery_pages": "directly_read_claims_not_payment",
+    "technical_inference": "third_party_recharge_handoff_possible",
+    "real_order_invoice_and_sms_tests": "none"
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "real_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_price_rows_modified": false,
+  "prior_reports_modified": false,
+  "seller_contacted": false,
+  "payment_done": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
