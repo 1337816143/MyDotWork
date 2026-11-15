@@ -131,14 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 455, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 457, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.211'
+    assert latest['version'] == '1.212'
     assert latest['date'] == '2026-11-16'
-    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r01.html'
-    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r01-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-15/supplier-followup-20261115-r20.html'
+    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r02.html'
+    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r02-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r01.html'
+
+    # R212: vendor API changes are not real paid or SMS tests.
+    assert by_id['gpt-source-followup-r212-20261116']['url'].endswith('supplier-followup-20261116-r02.html')
+    assert by_id['gpt-source-followup-r212-20261116-evidence']['url'].endswith('supplier-followup-20261116-r02-evidence.json')
+    r212 = json.loads((ROOT/'dist/research/2026-11-16/supplier-followup-20261116-r02-evidence.json').read_bytes())
+    assert r212['round'] == 212 and r212['site_version'] == '1.9.220'
+    assert r212['new_primary_evidence']['aibulk_contract_1_7_4']['post_delivery_review_may_void_unredeemed_codes'] is True
+    assert r212['new_primary_evidence']['aibulk_contract_1_7_4']['valid_china_vat_invoice_all_in_cny'] is None
+    assert r212['new_primary_evidence']['aibulk_contract_1_7_3']['challenge_time_window_minutes_approximate_merchant_claim'] == 5
+    assert r212['new_primary_evidence']['aibulk_gift_card_channel']['merchant_claimed_region'] == 'GLOBAL'
+    assert r212['new_primary_evidence']['aibulk_gift_card_channel']['official_gift_card_auto_starts_plus'] is False
+    assert r212['new_primary_evidence']['aibulk_gift_card_channel']['current_seller_payable_unit_price_usdt'] is None
+    assert r212['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r212['actual_purchase_made'] and not r212['sms_test_done']
 
     # R211: the SMS entitlement is not a durable phone number or a validated cash refund.
     assert by_id['gpt-source-followup-r211-20261116']['url'].endswith('supplier-followup-20261116-r01.html')

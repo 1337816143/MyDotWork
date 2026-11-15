@@ -2249,3 +2249,18 @@ assert.equal(sms211.codex_sms_success_tested,false);
 assert.equal(r211.newly_read_primary_source_evidence.zeroxzheng_sms.cny_price_visible_in_examined_page,null);
 assert.equal(r211.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r211.purchase_made,false);assert.equal(r211.sms_test_done,false);
+
+// R212: documented post-delivery risk and US card policy are not verified invoice or SMS outcomes.
+const cat212=d.records.find(x=>x.id==='gpt-source-followup-r212-20261116');
+const ev212=d.records.find(x=>x.id==='gpt-source-followup-r212-20261116-evidence');
+assert(cat212&&ev212&&cat212.url.endsWith('supplier-followup-20261116-r02.html'));
+const r212=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r02-evidence.json'),'utf8'));
+assert.equal(r212.round,212);assert.equal(r212.site_version,'1.9.220');
+assert.equal(r212.new_primary_evidence.aibulk_contract_1_7_4.post_delivery_review_may_void_unredeemed_codes,true);
+assert.equal(r212.new_primary_evidence.aibulk_contract_1_7_4.valid_china_vat_invoice_all_in_cny,null);
+assert.equal(r212.new_primary_evidence.aibulk_contract_1_7_3.challenge_time_window_minutes_approximate_merchant_claim,5);
+assert.equal(r212.new_primary_evidence.aibulk_gift_card_channel.merchant_claimed_region,'GLOBAL');
+assert.equal(r212.new_primary_evidence.aibulk_gift_card_channel.official_gift_card_auto_starts_plus,false);
+assert.equal(r212.new_primary_evidence.aibulk_gift_card_channel.current_seller_payable_unit_price_usdt,null);
+assert.equal(r212.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r212.actual_purchase_made,false);assert.equal(r212.sms_test_done,false);

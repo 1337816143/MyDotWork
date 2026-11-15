@@ -5006,6 +5006,28 @@
       "summary": "8条首次读取的一方/官方URL，价格单位、规则自标旧日期和实际观察日分开；0xzheng仅Codex首次登录且声称售出不退；未核SMS真实性、税票、正式供货授权及主体均为null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r212-20261116",
+      "title": "GPT源头第212轮 · AIBulk付款审查、Session挑战与礼品卡范围",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r02.html",
+      "updatedAt": "2026-11-16",
+      "summary": "AIBulk 1.7.4交付后审查可令未兑卡密作废，1.7.3要求更新Session或安全核验；美元礼品卡标GLOBAL但OpenAI仅美国适用。未核Plus批发或税票。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r212-20261116-evidence",
+      "title": "第212轮 · 付款审核、礼品卡US限制与未知出票JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r02-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "4条已读一方及OpenAI官方原URL；11月14/15日商称版本日与本轮观察日分离，发票、授权、成交价、短信验证均null或未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
