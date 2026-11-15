@@ -1,3 +1,11 @@
+## 1.9.214 · 2026-11-15
+
+- 第206轮首次直接记录ChongPay新版商品表“Plus（质保30天）”零售标¥139（商家自标价更新2026-11-09），只能到期办理；11月3日旧菲律宾与iOS Plus各¥150、介绍页月卡¥189不属于已核相同准确SKU，不将¥139伪称确认同SKU降价。wzyp第三方店铺WAF不可读，最终月数、支付手续费、出票与收款主体均null；商家仍声明非OpenAI官方代理。
+- 词元连接token5555.com可读未付单件“Plus（官方20刀）”商品¥148.00+第三方支付手续费1.2% ¥1.78=页面预览¥149.78。开票类型、有效中国增值税发票、附加票费、原号真实兑换、月数与正式批发资格均未核；站点推广分佣最高25%不等于拿到一手批发价。
+- CatFK店铺原页不可读，AIGOOD价格雷达自标2026-11-11旧快照列独立Codex短信¥2.97/次、英区30天¥10、美卡15–30天¥6，严格标第三方旧数据，不刷新本轮CatFK售价或假称SMS成功。ChongPay ¥20/25天号码为11月3日已归档旧项，不计新增。Session/Apple/订单联系手机号均不等于自动解除ChatGPT网页、Codex桌面或首次API Key验证。
+- 无实购、商家联系、敏感凭据提交、有效中国VAT票或SMS成功；收款、出票、授权和一件月付全费缺口仍在。符合本人原号、一件一月、免前置费、全部付款及有效中国VAT≤¥170的已核真正Plus批发源仍0。新增日期r206 HTML/JSON、SHA256白名单、目录、总库入口、VERSION、CHANGELOG、build.py发布指针与回归测试，历史126报价及前205轮原文件保持。
+- 2026-11-15直接读原URL：https://chongpay.com/plans?category=gpt 、https://chongpay.com/ 、https://chongpay.com/terms 、https://chongpay.com/help/china-vat-invoice 、https://chongpay.com/help/create-invoice 、https://token5555.com/ 、https://aigood.chat/price-radar/shops/8s9l5hxf 、https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 。
+
 ## 1.9.213 · 2026-11-15
 
 - 第205轮首次直接核读GoPlus自营商品及FAQ：Plus零售宣传“¥165起”，套餐页面为月付参照但下游单件SKU及真实付款未核；商称电子发票另加2%–5%。以起价条件算术¥168.30–¥173.25，3%为¥169.95、4%为¥171.60；实际税率、开票法人及税号、有效中国增值税发票、支付附加费用与结算总额仍null，不能把最低条件算术当成已核含票价。
