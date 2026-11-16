@@ -5072,6 +5072,28 @@
       "summary": "5条本轮直接读取商家原始URL，逐页自标旧日期、¥165准确单位、两版票费、30天资料/退款时限；付款汇差、正式中国VAT、出票/收款主体及SMS实测null或未验。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r215-20261116",
+      "title": "GPT源头第215轮 · LubanSMS聚合API、月租产品与验证码后台保存",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r05.html",
+      "updatedAt": "2026-11-16",
+      "summary": "第211轮已记LubanSMS线路商称，本轮首次直读上游API的provider/cost字段、独立月租续租及关号退账户规则，补齐SMS号码/验证码加密存管理员后台的旧条款；真实OpenAI号、短信成功、进价和授权仍未知。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r215-20261116-evidence",
+      "title": "第215轮 · 接码聚合商API、号码月租与验证码存储原始证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r05-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "6条2026-11-16实际读取原URL，商家旧条款/2019隐私日期分离；API价格为无币种示例非现价，真实Codex provider与SMS有效性、收费和退款为null或未测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

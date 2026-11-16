@@ -2290,3 +2290,19 @@ assert.equal(r214.new_primary_source_evidence.mainland_chinese_service.all_requi
 assert.equal(r214.new_primary_source_evidence.refund_and_risk.real_cash_refund_verified,false);
 assert.equal(r214.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r214.actual_purchase_made,false);assert.equal(r214.sms_test_done,false);
+
+// R215: documented aggregator capability does not imply real Codex routing or a retail price.
+const cat215=d.records.find(x=>x.id==='gpt-source-followup-r215-20261116');
+const ev215=d.records.find(x=>x.id==='gpt-source-followup-r215-20261116-evidence');
+assert(cat215&&ev215&&cat215.url.endsWith('supplier-followup-20261116-r05.html'));
+const r215=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r05-evidence.json'),'utf8'));
+assert.equal(r215.round,215);assert.equal(r215.site_version,'1.9.223');
+assert.equal(r215.new_primary_source_evidence.merchant_supplier_claim_already_archived_in_round,211);
+assert.equal(r215.new_primary_source_evidence.upstream_service_api.service_list_exposes_service_id_provider_cost_fields,true);
+assert.equal(r215.new_primary_source_evidence.upstream_service_api.actual_codex_upstream_cost,null);
+assert.equal(r215.new_primary_source_evidence.separate_upstream_monthly_number_product.api_example_not_live_quote,true);
+assert.equal(r215.new_primary_source_evidence.separate_upstream_monthly_number_product.api_example_price_currency,null);
+assert.equal(r215.new_primary_source_evidence.merchant_rule_exact.admin_storage_actual_retention_days,null);
+assert.equal(r215.new_primary_source_evidence.upstream_privacy_policy.server_log_not_same_as_sms_code_retention,true);
+assert.equal(r215.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r215.actual_purchase_made,false);assert.equal(r215.credentials_submitted,false);assert.equal(r215.sms_test_done,false);

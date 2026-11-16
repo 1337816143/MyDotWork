@@ -454,6 +454,8 @@ PUBLICATIONS = (
     ('research/2026-11-16/supplier-followup-20261116-r03-evidence.json', 'f6753e0e6b54ead822778fe4dae8d03cd6a3276dd45d1bac16c7451c8a1245d3'),
     ('research/2026-11-16/supplier-followup-20261116-r04.html', '36239f7b7a5f9ea1ab412f67c45baea4f7e6bbcf61b7440b75fae5ced7fe195a'),
     ('research/2026-11-16/supplier-followup-20261116-r04-evidence.json', '34d26e2abaca2dc7fc818f713d5783bb5245275a2a37344e67b9b23fdff78eb9'),
+    ('research/2026-11-16/supplier-followup-20261116-r05.html', '8c869aca2780c0da252f3b4ccb13e11da11ed813680734f5f1658de0f318946d'),
+    ('research/2026-11-16/supplier-followup-20261116-r05-evidence.json', '211e1e8b1d6592cafcb4d80187a51e8b134c3001bff86aa7048248cba13152b4'),
 )
 PUBLICATION_ARTIFACTS = [name for name, _ in PUBLICATIONS]
 
