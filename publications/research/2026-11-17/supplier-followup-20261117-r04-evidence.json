@@ -1,0 +1,185 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 222,
+  "site_version": "1.9.230",
+  "observed_on": "2026-11-17",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r03.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "material_findings": {
+    "maplepass": {
+      "candidate_kind": "reseller_api_claim_with_primary_spec_not_verified_true_upstream",
+      "seller": "MaplePass",
+      "zero_reseller_deposit_claimed": true,
+      "sign_in_and_application_required": true,
+      "reseller_website_or_telegram_bot_required_claim": true,
+      "wholesale_price_visible_only_after_approval": true,
+      "prepaid_usdt_wallet_required": true,
+      "min_order_quantity_api_example": 1,
+      "standard_order_max_quantity": 100,
+      "retail_plus_skus": [
+        {
+          "sku": "gptplus_google",
+          "currency": "USDT",
+          "price_per_one_month_unit": 15.8,
+          "channel": "Google Play promotional",
+          "no_session_claim": true,
+          "ongoing_warranty_claim": false,
+          "drop_probability_seller_claim": 0.03
+        },
+        {
+          "sku": "gptplus",
+          "currency": "USDT",
+          "price_per_one_month_unit": 16.5,
+          "channel": "CDK / separate redemption",
+          "warranty_days_seller_claim": 30,
+          "redeem_url": "https://maple11.app"
+        },
+        {
+          "sku": "gptplus_ios",
+          "currency": "USDT",
+          "price_per_one_month_unit": 19.5,
+          "channel": "Apple iOS",
+          "can_override_current_plus_seller_claim": true
+        }
+      ],
+      "openapi_schema_example_gptplus_google_price_usdt": 15.5,
+      "openapi_info_description_plus_price_usdt": 16.2,
+      "actual_approved_one_unit_wholesale_price_usdt": null,
+      "all_china_vat_inclusive_cny": null,
+      "payment_fee_cny": null,
+      "fx_fee_cny": null,
+      "network_fee_cny": null,
+      "china_vat_invoice_fee_cny": null,
+      "store_page_google_claim_no_session": true,
+      "generic_redeem_endpoint_requires_accountSession": true,
+      "all_skus_session_free_guaranteed": false,
+      "source_terms_not_official_brand_partner": true,
+      "verified_openai_resale_authorization": false,
+      "verified_legal_entity": false,
+      "actual_payment_recipient_entity": null,
+      "verified_china_vat_invoice_issuer": null,
+      "valid_china_vat_invoice_verified": false,
+      "new_third_party_seller_listings_closed": true,
+      "wholesale_api_application_visible": true,
+      "live_wholesale_api_order_success_tested": false,
+      "refund_policy_seller_case_review": true,
+      "cash_original_refund_guaranteed": false,
+      "actual_purchase_verified": false
+    },
+    "phone_scope": {
+      "chatgpt_web_phone_generally_required": false,
+      "codex_desktop_phone_may_be_required": true,
+      "first_api_key_phone_required": true,
+      "auto_binding_or_bypass_from_apple_or_session_guaranteed": false,
+      "new_successful_sms_tests": 0
+    }
+  },
+  "sources": [
+    {
+      "url": "https://maple1189ai.com/api-cooperation",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary",
+      "facts": "Zero deposit; applicant store/bot; approved tier and USDT wallet"
+    },
+    {
+      "url": "https://maple1189ai.com/api/openapi.json",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_openapi",
+      "facts": "15.50 USDT schema example and 16.20 USDT prose, min one order, generic redeem accountSession"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus_google",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary",
+      "facts": "15.80 USDT Google promo and no ongoing warranty claim"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary",
+      "facts": "16.50 USDT CDK and claimed 30D warranty"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus_ios",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary",
+      "facts": "19.50 USDT iOS seller override claim"
+    },
+    {
+      "url": "https://maple1189ai.com/terms",
+      "observed_on": "2026-11-17",
+      "page_self_date": "2026-09-03",
+      "access": "direct_read_primary_terms",
+      "facts": "not official agent, operator/jurisdiction unresolved"
+    },
+    {
+      "url": "https://maple1189ai.com/seller-policy",
+      "observed_on": "2026-11-17",
+      "page_self_date": "2026-09-03",
+      "access": "direct_read_primary_terms",
+      "facts": "seller listing closed, reseller API not expressly closed"
+    },
+    {
+      "url": "https://maple1189ai.com/refund-policy",
+      "observed_on": "2026-11-17",
+      "page_self_date": "2026-09-03",
+      "access": "direct_read_primary_terms",
+      "facts": "review and approve/replace/refund/reject; crypto network fee may matter"
+    },
+    {
+      "url": "https://maple1189ai.com/api/store/catalog",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "read_attempt_failed",
+      "facts": null
+    },
+    {
+      "url": "https://maple1189ai.com/api/v1/wholesale/products",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "read_attempt_failed",
+      "facts": null
+    }
+  ],
+  "evidence_levels": {
+    "observed": "original merchant product, API specification and policies",
+    "merchant_claim": "prices, warranty, 3% drop, 2 minute approval and no-deposit",
+    "inference": "API potential reseller but no proof of authorized actual upstream",
+    "actual_orders_or_invoices_or_sms_tests": 0
+  },
+  "priority_candidates_rechecked_without_qualification": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historic_126_offers_unchanged": true,
+  "previous_221_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
