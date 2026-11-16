@@ -1,0 +1,161 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 221,
+  "site_version": "1.9.229",
+  "observed_on": "2026-11-17",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r02.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "material_findings": {
+    "getgpt_codex_phone": {
+      "seller": "GETGPT Pro",
+      "qualification_clarification": "not_exclusive_to_store_subscribers",
+      "older_summary": "Prior archive treated CNY 10 per attempt as store-subscriber-only; primary FAQ and Nov 15 article explicitly state non-store subscribers may request service at a higher undisclosed price.",
+      "store_subscriber_claimed_cny_per_one_sms_attempt": 10,
+      "non_store_subscriber_claimed_price_higher_than_cny": 10,
+      "non_store_actual_cny_per_one_sms_attempt": null,
+      "payment_fee_cny": null,
+      "number_duration": null,
+      "repeat_sms_possible": null,
+      "failed_sms_cash_original_refund": null,
+      "chatgpt_web_success": null,
+      "codex_desktop_success": null,
+      "first_api_key_success": null,
+      "claimed_95_percent_plus_upgrade_avoids_codex_sms": "seller_feedback_not_statistical_or_official",
+      "real_sample_size": null,
+      "may_ask_service_by_support": true,
+      "actual_order_verified": false,
+      "merchant_mentions_hero_sms_as_similar_service": true,
+      "hero_sms_actual_reseller_or_supplier_link_verified": false
+    },
+    "hero_sms_independent_service": {
+      "service": "HeroSMS",
+      "public_service_listing": "OpenAI/ChatGPT SMS verification",
+      "service_sku_exact_country_and_price_usd": null,
+      "minimum_deposit_usd": null,
+      "temporary_number_lifetime": "seller describes temporary use from 20 minutes; exact purchased OpenAI SKU lifetime unconfirmed",
+      "long_term_same_number_control_verified": false,
+      "claimed_20min_no_sms_return": "site_balance_credit_after_activation_cancel",
+      "no_sms_original_payment_cash_refund_automatic": false,
+      "refund_policy_claim_submission_limit_days": 7,
+      "refund_policy_general_cash_minimum_usd": 10,
+      "refund_policy_general_cash_fee_rate": 0.05,
+      "refund_policy_possible_KYC": true,
+      "refund_policy_legal_entity_seller_claim": "Danver LLC",
+      "refund_policy_claimed_EIN": "41-4260924",
+      "legal_entity_independently_verified": false,
+      "physical_mobile_openai_accepted_number_verified": false,
+      "actual_platform_sms_accepted": false,
+      "operator_same_as_GETGPT_verified": false
+    },
+    "official_scope": {
+      "chatgpt_web_phone_generally_required": false,
+      "codex_desktop_phone_may_be_required": true,
+      "first_api_key_phone_required": true,
+      "voip_numbers_supported": false,
+      "sms_or_supported_whatsapp_only": true,
+      "seller_claim_phone_required_for_all_chatgpt_registration_conflicts_with_official": true,
+      "apple_subscription_or_session_auto_phone_binding_guaranteed": false
+    },
+    "wholesale_plus": {
+      "verified_one_unit_wholesale_upstreams": 0,
+      "accurate_single_month_plus_current_price_cny": null,
+      "all_required_china_vat_inclusive_cny": null,
+      "legitimate_openai_resale_authorization_verified": false,
+      "valid_china_vat_invoice_verified": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://getgpt.pro/faq",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_seller",
+      "facts": "own-site membership 10 CNY per SMS; non-store members priced higher; seller says 95% nonrigorous"
+    },
+    {
+      "url": "https://getgpt.pro/blog/codex-phone-verification",
+      "observed_on": "2026-11-17",
+      "page_self_date": "2026-11-15",
+      "access": "direct_read_primary_seller",
+      "facts": "non-store customers can contact support at higher undisclosed price; similar to HeroSMS; temporary SMS does not ensure later re-verification; claimed 95% not statistical"
+    },
+    {
+      "url": "https://hero-sms.com/",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_supplier",
+      "facts": "OpenAI service listed; temporary number from 20 min and prepaid account; no Codex success measured"
+    },
+    {
+      "url": "https://hero-sms.com/service/chatgpt",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_supplier",
+      "facts": "marketing claims no-SMS 20 min return to balance; ChatGPT registration phone mandatory claim conflicts OpenAI help"
+    },
+    {
+      "url": "https://hero-sms.com/loyalty-program",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_supplier",
+      "facts": "bulk discounts tied to top-ups and activation thresholds, not Plus supplier status"
+    },
+    {
+      "url": "https://cdn.hero-sms.com/assets/pdf/refund_policy_en.pdf",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_seller_pdf_and_page_1_screenshot",
+      "facts": "7-day complaint deadline; cash refund requests 5% fee and 10 USD minimum; possibly KYC; self-claimed Danver LLC EIN"
+    },
+    {
+      "url": "https://cdn.hero-sms.com/assets/pdf/return_policy_en.pdf",
+      "observed_on": "2026-11-17",
+      "page_self_date": null,
+      "access": "direct_read_primary_seller_pdf_and_page_1_screenshot",
+      "facts": "no SMS after cancellation automatic balance return; no refunds after successful activation"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-17",
+      "page_self_date": "relative_page_updated_label_not_converted_to_calendar_date",
+      "access": "direct_read_official",
+      "facts": "ChatGPT general signup usually no phone; Codex desktop may ask; first API key required; VoIP unsupported"
+    }
+  ],
+  "evidence_levels": {
+    "merchant_claims": "GETGPT pricing and self-reported success, HeroSMS service/refund terms and EIN only seller claims",
+    "directly_observed": "primary merchant pages, two one-page refund PDFs and OpenAI official help",
+    "inference": "HeroSMS may be a type of service used by GETGPT; specific backend supplier unverified",
+    "actual_purchase_or_accepted_sms_or_refund_tests": 0
+  },
+  "priority_candidates_rechecked_without_new_qualifying_plus_upstream": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historic_126_offers_unchanged": true,
+  "previous_220_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

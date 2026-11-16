@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 473, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 475, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.220'
+    assert latest['version'] == '1.221'
     assert latest['date'] == '2026-11-17'
-    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r02.html'
-    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r02-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r01.html'
+    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r03.html'
+    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r03-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r02.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2688,6 +2688,23 @@ def validate_publications():
     assert h219['supplier_qualification']['valid_china_vat_invoice_verified'] is False
     assert r219['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r219['actual_purchase_made'] is False and r219['sms_test_done'] is False
+
+    # R221: non-store member SMS pricing is unknown; HeroSMS store credit is not verified cash refund.
+    assert by_id['gpt-source-followup-r221-20261117']['url'].endswith('supplier-followup-20261117-r03.html')
+    assert by_id['gpt-source-followup-r221-20261117-evidence']['url'].endswith('supplier-followup-20261117-r03-evidence.json')
+    r221 = json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r03-evidence.json').read_bytes())
+    assert r221['round'] == 221 and r221['site_version'] == '1.9.229'
+    sms221 = r221['material_findings']['getgpt_codex_phone']
+    assert sms221['store_subscriber_claimed_cny_per_one_sms_attempt'] == 10
+    assert sms221['non_store_actual_cny_per_one_sms_attempt'] is None
+    assert sms221['hero_sms_actual_reseller_or_supplier_link_verified'] is False
+    hero221 = r221['material_findings']['hero_sms_independent_service']
+    assert hero221['refund_policy_general_cash_minimum_usd'] == 10
+    assert hero221['refund_policy_general_cash_fee_rate'] == 0.05
+    assert hero221['no_sms_original_payment_cash_refund_automatic'] is False
+    assert r221['material_findings']['official_scope']['voip_numbers_supported'] is False
+    assert r221['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r221['actual_purchase_made'] is False and r221['sms_test_done'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
