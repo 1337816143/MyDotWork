@@ -5204,6 +5204,28 @@
       "summary": "商家自称主体与第三方目录同名BRN对照、另一网站只获索引摘要、政府资源索引可读但CSV公司行未读；收款出票/全费/授权为null，真实采购和SMS测试0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r221-20261117",
+      "title": "GPT源头第221轮 · GETGPT接码外部会员收费范围与HeroSMS现金退款限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r03.html",
+      "updatedAt": "2026-11-17",
+      "summary": "一方纠偏：GETGPT本站升级用户接码¥10/次，其他会员商称可咨询但价更高（实际单价null）；HeroSMS首次核读原始退款PDF：7日申诉及一般现金退款≥USD10、费5%，与未收码退站内余额不同。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r221-20261117-evidence",
+      "title": "第221轮 · GETGPT两类客户接码条件、HeroSMS原始退款PDF与官方手机号规则JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r03-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "8条实际读取原始URL（含两份一页PDF）；非本店接码报价与全部测试null，20分钟退余额不是原路现金，OpenAI不支持VoIP。未核真Plus批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -2393,3 +2393,20 @@ assert.equal(g220.merchant_link_status.all_required_fees_china_vat_inclusive_cny
 assert.equal(g220.archived_plus_reference.same_sku_new_2026_11_17_quote_verified,null);
 assert.equal(r220.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r220.actual_purchase_made,false);assert.equal(r220.sms_test_done,false);
+
+// r221: seller's on-site SMS price is NOT its off-site price; cash refund policy differs from wallet credit.
+const cat221=d.records.find(x=>x.id==='gpt-source-followup-r221-20261117');
+const ev221=d.records.find(x=>x.id==='gpt-source-followup-r221-20261117-evidence');
+assert(cat221&&ev221&&cat221.url.endsWith('supplier-followup-20261117-r03.html'));
+const r221=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r03-evidence.json'),'utf8'));
+assert.equal(r221.round,221);assert.equal(r221.site_version,'1.9.229');
+assert.equal(r221.material_findings.getgpt_codex_phone.store_subscriber_claimed_cny_per_one_sms_attempt,10);
+assert.equal(r221.material_findings.getgpt_codex_phone.non_store_actual_cny_per_one_sms_attempt,null);
+assert.equal(r221.material_findings.getgpt_codex_phone.hero_sms_actual_reseller_or_supplier_link_verified,false);
+assert.equal(r221.material_findings.hero_sms_independent_service.refund_policy_general_cash_minimum_usd,10);
+assert.equal(r221.material_findings.hero_sms_independent_service.refund_policy_general_cash_fee_rate,0.05);
+assert.equal(r221.material_findings.hero_sms_independent_service.no_sms_original_payment_cash_refund_automatic,false);
+assert.equal(r221.material_findings.hero_sms_independent_service.actual_platform_sms_accepted,false);
+assert.equal(r221.material_findings.official_scope.voip_numbers_supported,false);
+assert.equal(r221.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r221.actual_purchase_made,false);assert.equal(r221.sms_test_done,false);
