@@ -1,0 +1,126 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 223,
+  "site_version": "1.9.231",
+  "observed_on": "2026-11-17",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r04.html",
+  "nature": "source_history_erratum_not_new_seller_or_transaction",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "material_correction": {
+    "affected_round": 222,
+    "previous_first_read_claim_incorrect": true,
+    "first_documented_round": 53,
+    "first_documented_observation_date": "2026-11-05",
+    "first_archive": "research/2026-11-05/supplier-followup-20261105-r15-evidence.json",
+    "prior_recheck_round": 119,
+    "prior_recheck_observation_date": "2026-11-10",
+    "prior_recheck_archive": "research/2026-11-10/supplier-followup-20261110-r6-evidence.json",
+    "already_documented_google_reference_usdt_per_piece": 15.5,
+    "already_documented_standard_gptplus_reference_usdt_per_piece_at_r53": 15.8,
+    "already_documented_standard_gptplus_reference_usdt_per_piece_at_r119": 16.2,
+    "merchant_guide_current_google_reference_usdt_per_piece": 15.5,
+    "merchant_guide_current_standard_reference_usdt_per_piece": 16.2,
+    "merchant_reference_is_only_openapi_example": false,
+    "merchant_reference_is_authenticated_price": false,
+    "reference_price_change_effective_date_verified": null,
+    "merchant_is_new": false,
+    "newly_authenticated_price_cny": null,
+    "prior_reports_preserved": true
+  },
+  "current_merchant_checks": {
+    "retail_google_usdt_per_month_piece": 15.8,
+    "retail_gptplus_usdt_per_month_piece": 16.5,
+    "retail_ios_usdt_per_month_piece": 19.5,
+    "authenticated_wholesale_price_usdt": null,
+    "payment_fee_cny": null,
+    "fx_fee_cny": null,
+    "crypto_network_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "all_in_valid_china_vat_cny": null,
+    "legal_operating_entity": null,
+    "payment_recipient_legal_entity": null,
+    "invoice_issuer_legal_entity": null,
+    "formal_openai_resale_authorization_verified": false,
+    "actual_purchase_verified": false
+  },
+  "independent_phone_scope": {
+    "chatgpt_web_phone_generally_required": false,
+    "codex_desktop_phone_may_be_required": true,
+    "first_api_key_phone_required": true,
+    "apple_or_session_auto_binds_phone": false,
+    "actual_sms_successes": 0,
+    "number_control_days": null,
+    "failed_sms_original_payment_refund_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-05/supplier-followup-20261105-r15-evidence.json",
+      "observed_on": "2026-11-05",
+      "reviewed_on": "2026-11-17",
+      "type": "archived_original_observation",
+      "facts": "r53 MaplePass first observation, API, reference 15.50/15.80 USDT"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-10/supplier-followup-20261110-r6-evidence.json",
+      "observed_on": "2026-11-10",
+      "reviewed_on": "2026-11-17",
+      "type": "archived_original_observation",
+      "facts": "r119 merchant not new; gptplus reference 16.20, Google 15.50"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-17/supplier-followup-20261117-r04-evidence.json",
+      "observed_on": "2026-11-17",
+      "reviewed_on": "2026-11-17",
+      "type": "archived_report_being_corrected",
+      "facts": "r222 retains zero verified wholesale and purchase; original source claim inaccurate"
+    },
+    {
+      "url": "https://maple1189ai.com/guide/faka-api-integration",
+      "observed_on": "2026-11-17",
+      "type": "direct_read_primary",
+      "facts": "current plugin guide table explicitly labels 15.50 Google and 16.20 standard Plus as wholesale reference floor"
+    },
+    {
+      "url": "https://maple1189ai.com/api-cooperation",
+      "observed_on": "2026-11-17",
+      "type": "direct_read_primary",
+      "facts": "private approved wholesale quote only after login and review, prepaid USDT wallet"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus_google",
+      "observed_on": "2026-11-17",
+      "type": "direct_read_primary",
+      "facts": "retail 15.80 USDT, not actual wholesale paid"
+    }
+  ],
+  "priority_candidates_not_advanced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "old_126_quotes_unchanged": true,
+  "old_report_files_unchanged": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

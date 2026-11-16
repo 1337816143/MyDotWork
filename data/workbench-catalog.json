@@ -5234,7 +5234,7 @@
       "task": "project-1",
       "url": "../research/2026-11-17/supplier-followup-20261117-r04.html",
       "updatedAt": "2026-11-17",
-      "summary": "首次核读MaplePass批发API：零押金但需审核及USDT预付，15.50U仅文档示例；三种零售SKU为15.80/16.50/19.50U，真批发价、授权与有效中国VAT仍null。",
+      "summary": "复核MaplePass批发API（首次归档第53轮，详见第223轮纠错）：零押金但需审核及USDT预付，15.50U仅文档示例；三种零售SKU为15.80/16.50/19.50U，真批发价、授权与有效中国VAT仍null。",
       "access": "public",
       "metadataApproved": true
     },
@@ -5246,6 +5246,28 @@
       "url": "../research/2026-11-17/supplier-followup-20261117-r04-evidence.json",
       "updatedAt": "2026-11-17",
       "summary": "8个实际读取一方原始URL、2个API访问失败；无实际获批批发价、经营收款出票主体和有效VAT，独立履约及短信实测0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r223-20261117",
+      "title": "GPT源头第223轮 · MaplePass第53/119轮历史溯源纠错",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r05.html",
+      "updatedAt": "2026-11-17",
+      "summary": "第222轮错误称首次：该API第53轮已归档，第119轮曾核参考价；15.50/16.20U是商家批发参考底价非实际获批进价。有效中国VAT全费与授权仍未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r223-20261117-evidence",
+      "title": "第223轮 · MaplePass历史首见及参考价类别更正证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r05-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "对照2026-11-05第53轮和11-10第119轮原证据，纠正首见时间和批发参考价证据等级；未知税费为null，真实交易及SMS成功0。",
       "access": "public",
       "metadataApproved": true
     }
