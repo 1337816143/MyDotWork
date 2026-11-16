@@ -1,0 +1,163 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 215,
+  "site_version": "1.9.223",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-16/supplier-followup-20261116-r04.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_primary_source_evidence": {
+    "retail_sms_operator": "GPT补给站",
+    "merchant_supplier_claim_already_archived_in_round": 211,
+    "merchant_sms_rules_self_version": "2026-08-30",
+    "merchant_rule_exact": {
+      "seller_says_lubansms_recommended_admin_enabled_codex_lines_only": true,
+      "encrypted_admin_storage_includes": [
+        "phone_number",
+        "sms_verification_code",
+        "upstream_processing_log"
+      ],
+      "admin_storage_actual_retention_days": null,
+      "independent_encryption_and_deletion_audit": false,
+      "real_service_routing_verified": false,
+      "retail_price_cny_per_one_received_sms_entitlement_historical": 8,
+      "retail_entitlement_validity_days_historical": 30,
+      "retail_phone_number_lifetime_days": null,
+      "no_sms_merchant_claim_return_entitlement": true,
+      "automatic_original_cash_refund": false
+    },
+    "newly_examined_upstream": "Luban Sms",
+    "upstream_self_identification": "Third-party SMS-number aggregator/API; not verified underlying SIM carrier or direct OpenAI authorized vendor",
+    "upstream_service_api": {
+      "service_list_exposes_service_id_provider_cost_fields": true,
+      "provider_values_in_documentation_examples_only": true,
+      "service_listing_actual_codex_query_performed": false,
+      "actual_codex_service_id": null,
+      "actual_codex_upstream_cost": null,
+      "actual_codex_upstream_currency": null,
+      "actual_codex_number_type_verified": null,
+      "actual_codex_succeeded": false,
+      "service_request_and_sms_poll_api_documented": true,
+      "sms_history_example_includes_phone_and_sms_code": true,
+      "actual_sms_retention_days": null,
+      "upstream_supplier_contract_or_real_reseller_order_verified": false
+    },
+    "separate_upstream_monthly_number_product": {
+      "exists_in_api_docs": true,
+      "not_same_sku_as_retail_one_time_codex": true,
+      "months_unit": true,
+      "renew_before_keep_at_documented": true,
+      "merchant_claim_no_sms_first_20_minutes_cancel_to_platform_account": true,
+      "cash_refund_verified": false,
+      "api_example_price_value": 5,
+      "api_example_price_currency": null,
+      "api_example_not_live_quote": true,
+      "actual_current_openai_number_monthly_price": null,
+      "actual_number_monthly_inventory_verified": null,
+      "openai_verification_accepted": null
+    },
+    "upstream_privacy_policy": {
+      "policy_page_self_date": "2019-12-13",
+      "server_log_retention_months_claimed": 6,
+      "server_log_not_same_as_sms_code_retention": true,
+      "personally_identifying_data_protection_claim_independently_verified": false
+    },
+    "operational_safety": {
+      "sms_api_documentation_uses_querystring_apikey": true,
+      "real_deployed_auth_logs_or_apikey_leak_tested": false,
+      "number_and_sms_visible_to_admin_by_vendor_claim": true
+    },
+    "vendor_claimed_card_merchant_coverage_countries": 221,
+    "vendor_claim_is_not_independent_count_verified": true
+  },
+  "boundaries": {
+    "upstream_aggregation_confirmed_from_documentation": true,
+    "physical_seller_relationship_only_merchant_claim": true,
+    "carrier_layer_identity_verified": false,
+    "openai_official_reseller_authorization_verified": false,
+    "chatgpt_web_sms_success": null,
+    "codex_desktop_sms_success": null,
+    "first_api_key_sms_success": null,
+    "number_validity_or_later_sms_for_codex": null,
+    "automatic_phone_binding_after_plus_purchase": false
+  },
+  "existing_plus_buyer_no_new_price_or_invoice": {
+    "merchant": "GPT补给站",
+    "previous_plus_card_cny_per_card": 125,
+    "quote_not_refreshed_from_this_evidence": true,
+    "valid_china_vat_invoice_all_required_fees_cny": null,
+    "verified_wholesale_supply": false,
+    "formal_supply_authorization": null
+  },
+  "sources": [
+    {
+      "url": "https://gptbjz.com/shop",
+      "observed_on": "2026-11-16",
+      "page_rule_self_version": "2026-08-30",
+      "kind": "merchant_old_codex_route_and_encrypted_sms_admin_storage_text"
+    },
+    {
+      "url": "https://lubansms.com/receiveSms",
+      "observed_on": "2026-11-16",
+      "kind": "upstream_self_claims_multi_provider_aggregation"
+    },
+    {
+      "url": "https://lubansms.com/api_docs/",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "upstream_api_schema_and_monthly_rental_documentation_not_live_prices"
+    },
+    {
+      "url": "https://lubansms.com/about",
+      "observed_on": "2026-11-16",
+      "kind": "upstream_service_description"
+    },
+    {
+      "url": "https://lubansms.com/Policy",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2019-12-13",
+      "kind": "upstream_2019_privacy_terms_log_retention"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-16",
+      "kind": "official_code_acceptance_and_supported_numbers"
+    }
+  ],
+  "evidence_classification": {
+    "website_displayed": "Seller old 2026-08-30 rule and upstream 2019 privacy/API public documentation actually read 2026-11-16",
+    "merchant_assertion": "LubanSMS upstream use, encrypted backend records, line eligibility and refunds are vendor declarations, not measured operations",
+    "documented_capability": "Luban API defines provider and cost fields plus a distinct monthly rental/renewal SKU; all numeric API responses are examples",
+    "inference": "Possible seller to aggregator to additional provider chain, underlying actual Codex line cannot be identified without approved account-specific evidence",
+    "real_payment_sms_or_invoice_verification": false
+  },
+  "existing_priority_queue_without_qualifying_new_plus_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historical_126_prices_unchanged": true,
+  "previous_214_reports_untouched": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPT源头第215轮 · LubanSMS接码聚合上游、号码保留与隐私边界</title><style>body{font:16px/1.75 system-ui,"Microsoft YaHei",sans-serif;max-width:980px;margin:24px auto;padding:18px;color:#24374c;background:#f3f6fa}section{background:#fff;border:1px solid #d9e3ec;border-radius:12px;margin:16px 0;padding:21px}a{color:#145d9e;overflow-wrap:anywhere}code{background:#edf2f7;padding:2px 4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #dce5ef;padding:9px;text-align:left}th{background:#eaf2fa}</style></head><body>
+<h1>GPT源头调研第215轮 · 2026-11-16</h1>
+<p>本轮有实质性<strong>接码上游结构与个人验证码保存边界</strong>补证，<strong>不是新的Plus采购价或今天出台的新政策</strong>。第211轮曾记录GPT补给站商称使用LubanSMS线路；本轮首次直接核读Luban自身的完整公开API、聚合能力及隐私规则，再对照零售商2026-08-30版本的旧接码协议。两方网页与真实交付仍须分开。</p>
+<section><h2>一、零售商到上游聚合商，而非已证实的实卡源头</h2>
+<p><a href="https://gptbjz.com/shop">GPT补给站接码规则</a>写只使用LubanSMS推荐且管理员启用的Codex线路（该商称先前已收录在第211轮，并非本轮发现的供应商变更）。<a href="https://lubansms.com/receiveSms">LubanSMS自有接码入口</a>称对接卡商，覆盖221个国家/地区；这是商家自述，未验证其覆盖量与实际连接。</p>
+<p>首次读到的<a href="https://lubansms.com/api_docs/">LubanSMS公开API文档</a>显示服务列表提供<code>service_id</code>、<code>provider</code>与<code>cost</code>字段，短信记录示例保留电话号码、验证码、上游字段。由此<strong>可以确认Luban公开提供多供货方聚合能力</strong>；只能提出“GPT补给站 → LubanSMS（商称）→ 未核的具体号码供应商”作为待验链路，不能声称有真实采购记录、Luban就是卡商或证明某条Codex号使用哪个provider。API示例成本无可核Codex实际SKU与币种，保留<code>null</code>。</p>
+</section>
+<section><h2>二、一次Codex短信与月租号码明确是不同产品</h2>
+<table><thead><tr><th>产品/机制</th><th>已知证据</th><th>不可推定</th></tr></thead><tbody>
+<tr><td>GPT补给站Codex单次接码</td><td>历史零售挂牌¥8/次、权益购后30天内可发起，单任务最多尝试5号码；收到验证码即扣次，未收到退权益而不自动退现金</td><td>30天不等于号码控制30天；不能证明短信被OpenAI接受</td></tr>
+<tr><td>LubanSMS普通验证码API</td><td><a href="https://lubansms.com/api_docs/">官方文档</a>定义申请号码、查询短信、释放号码、尝试重新激活等接口</td><td>真实Codex service_id、今日上游费用、卡类型、复用权均未核</td></tr>
+<tr><td>LubanSMS独立月租号码API</td><td>文档另列按月租用及到期前续租；商称租用后20分钟内未收到短信可关闭，金额退到账户；文档演示<code>price: 5.00</code>但未明确币种且仅为示例</td><td>不能把示例5.00当现价、当¥5/US$5或当GPT补给站号码期限；也不能把退站内余额当原路现金</td></tr>
+</tbody></table></section>
+<section><h2>三、验证码及后台存储的新增明确风险</h2>
+<p>GPT补给站<a href="https://gptbjz.com/shop">同一2026-08-30旧版本</a>明确称手机号、验证码和上游处理记录将加密保存在管理员后台供售后和争议处理。此前第211轮只集中记录Session存储矛盾，本轮补齐<strong>SMS数据也由运营后台保留</strong>这一事实；但加密算法、可访问人员、号码与短信删除期限、实际履行未获独立审计，均不可自行填值。</p>
+<p><a href="https://lubansms.com/Policy">Luban 2019-12-13自标隐私政策</a>声称服务器日志保存6个月；这是“服务器日志”期限，<strong>不能直接当作验证码或手机号本身的存储期限</strong>。公开API文档展示可检索历史短信记录；未取得具体Codex号真实短信、副本删除记录及两个平台间独立数据处理约定。</p></section>
+<section><h2>四、采购筛选与平台验证保持原结论</h2><p><a href="https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like">OpenAI规则</a>区分ChatGPT网页常规使用、Codex桌面可能验证、首次API Key需要验证，并排除VoIP与Google Voice等号码。Luban官网含“虚拟号码”的营销文字，不等于对应具体号码必然VoIP；不能声称全部可用或全部不可用。三场景均没有实测。</p>
+<p>本轮没有确认任何新的准确Plus同SKU价格、单件正规批发授权、真实付款与收款主体、中国有效增值税发票或开票手续费。符合本人原号、单件单月、无需代理费、所有必须费用及有效中国VAT合计≤¥170的<strong>已核真正Plus批发上游仍0家</strong>。真实订单、验票、短信成功都是0；未付款、商家联系或提供Session/Token/验证码。</p></section>
+<section><h2>本轮实际读取的原始证据</h2>
+<p>2026-11-16直接读取：<a href="https://gptbjz.com/shop">零售商自标2026-08-30旧接码规则</a>、<a href="https://lubansms.com/receiveSms">Luban接码服务</a>、<a href="https://lubansms.com/api_docs/">Luban API（产品、第三方provider、历史记录、月租退款）</a>、<a href="https://lubansms.com/about">Luban关于页</a>、<a href="https://lubansms.com/Policy">Luban自标2019-12-13隐私说明</a>、<a href="https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like">OpenAI官方验证规则</a>。页面历史自标日期与本轮观察日期分列；API示例不当现场报价。</p>
+<p><a href="supplier-followup-20261116-r05-evidence.json">第215轮结构化证据</a> · <a href="supplier-followup-20261116-r04.html">第214轮</a> · <a href="https://1337816143.github.io/MyDotWork/">总库</a></p></section>
+<p><a href="../../dashboard/index.html">返回工作台</a></p></body></html>
