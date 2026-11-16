@@ -2306,3 +2306,19 @@ assert.equal(r215.new_primary_source_evidence.merchant_rule_exact.admin_storage_
 assert.equal(r215.new_primary_source_evidence.upstream_privacy_policy.server_log_not_same_as_sms_code_retention,true);
 assert.equal(r215.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r215.actual_purchase_made,false);assert.equal(r215.credentials_submitted,false);assert.equal(r215.sms_test_done,false);
+
+// R216: Apple/iOS subscription routing and Session handling coexist in the merchant claim;
+// advertised invoice option is not a verified Chinese VAT invoice or a wholesale price.
+const cat216=d.records.find(x=>x.id==='gpt-source-followup-r216-20261116');
+const ev216=d.records.find(x=>x.id==='gpt-source-followup-r216-20261116-evidence');
+assert(cat216&&ev216&&cat216.url.endsWith('supplier-followup-20261116-r06.html'));
+const r216=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r06-evidence.json'),'utf8'));
+assert.equal(r216.round,216);assert.equal(r216.site_version,'1.9.224');
+assert.equal(r216.new_retail_candidate.individual_month_listed_cny,158);
+assert.equal(r216.new_retail_candidate.merchant_invoice_option_month_listed_cny,168);
+assert.equal(r216.new_retail_candidate.actual_all_required_fees_with_verified_chinese_vat_cny,null);
+assert.equal(r216.new_retail_candidate.ios_and_session_delivery_merchant_claim_coexist,true);
+assert.equal(r216.new_retail_candidate.formal_openai_resale_authorization_verified,false);
+assert.equal(r216.new_retail_candidate.real_successful_delivery_or_cash_refund_tested,false);
+assert.equal(r216.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r216.actual_purchase_made,false);assert.equal(r216.sms_test_done,false);
