@@ -21,7 +21,7 @@ assert(C.filter(d.records,{sort:'latest'},d.tasks).slice(-sites.length).every(r=
 assert(C.filter(d.records,{sort:'oldest'},d.tasks).slice(-sites.length).every(r=>r.updatedAt===null));
 assert.equal(C.filter([{...reports[0],metadataApproved:false}],{},d.tasks).length,0);
 assert.equal(C.filter([{...reports[0],access:'private'}],{},d.tasks).length,0);
-assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r169-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r174-20261114-evidence','gpt-source-followup-r176-20261114-evidence','gpt-source-followup-r177-20261114-evidence','gpt-source-followup-r181-20261114-evidence','gpt-source-followup-r185-20261114-evidence','gpt-source-followup-r193-20261115-evidence','gpt-source-followup-r194-20261115-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r207-20261115-evidence','gpt-source-followup-r210-20261115-evidence','gpt-source-followup-r211-20261116-evidence','gpt-source-followup-r212-20261116-evidence','gpt-source-followup-r216-20261116-evidence','gpt-source-followup-r218-20261116-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
+assert.deepEqual(C.filter(d.records,{q:'上游 JSON',type:'dataset'},d.tasks).map(r=>r.id).sort(),['gpt-source-followup-r11-evidence-20261103','gpt-source-followup-r12-evidence-20261103','gpt-source-followup-r140-20261111-evidence','gpt-source-followup-r159-20261112-evidence','gpt-source-followup-r162-20261113-evidence','gpt-source-followup-r164-20261113-evidence','gpt-source-followup-r165-20261113-evidence','gpt-source-followup-r168-20261113-evidence','gpt-source-followup-r169-20261113-evidence','gpt-source-followup-r17-20261104-evidence','gpt-source-followup-r174-20261114-evidence','gpt-source-followup-r176-20261114-evidence','gpt-source-followup-r177-20261114-evidence','gpt-source-followup-r181-20261114-evidence','gpt-source-followup-r185-20261114-evidence','gpt-source-followup-r193-20261115-evidence','gpt-source-followup-r194-20261115-evidence','gpt-source-followup-r2-evidence-20261103','gpt-source-followup-r20-20261104-evidence','gpt-source-followup-r207-20261115-evidence','gpt-source-followup-r210-20261115-evidence','gpt-source-followup-r211-20261116-evidence','gpt-source-followup-r212-20261116-evidence','gpt-source-followup-r216-20261116-evidence','gpt-source-followup-r218-20261116-evidence','gpt-source-followup-r219-20261117-evidence','gpt-source-followup-r28-20261104-evidence','gpt-source-followup-r29-20261104-evidence','gpt-source-followup-r3-evidence-20261103','gpt-source-followup-r32-20261104-evidence','gpt-source-followup-r37-20261104-evidence','gpt-source-followup-r6-evidence-20261103','gpt-source-followup-r69-20261106-evidence','gpt-source-followup-r7-evidence-20261103','gpt-source-followup-r76-20261106-evidence','gpt-source-followup-r78-20261107-evidence','gpt-source-followup-r81-20261107-evidence','gpt-source-followup-r82-20261107-evidence','round1-data','round2-data','upstream-round3-7-data'],'Search uses approved project titles with AND terms');
 assert.deepEqual(C.filter(d.records,{task:'project-17',type:'report'},d.tasks).map(r=>r.id),['business-validation-20261004','task35-evidence-gates-20261003','side-income-report'],'Side-income report has its own project, not the agricultural project');
 assert.equal(C.stamp(null),null);assert.equal(C.stamp('unknown'),null);
 const w32=d.records.find(r=>r.id==='gpt-source-followup-r32-20261104');
@@ -2353,3 +2353,25 @@ assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.dire
 assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.current_store_listing_cny,null);
 assert.equal(r218.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r218.actual_purchase_made,false);assert.equal(r218.sms_test_done,false);
+
+
+// r219: verify fee delta of exact Hype card SKU versus separate 6% categories; no proven payable VAT or checkout.
+const cat219=d.records.find(x=>x.id==='gpt-source-followup-r219-20261117');
+const ev219=d.records.find(x=>x.id==='gpt-source-followup-r219-20261117-evidence');
+assert(cat219&&ev219&&cat219.url.endsWith('supplier-followup-20261117-r01.html'));
+const r219=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r01-evidence.json'),'utf8'));
+assert.equal(r219.round,219);assert.equal(r219.site_version,'1.9.227');
+const h219=r219.material_findings;
+assert.equal(h219.plus_card.observed_2026_11_15_alipay_rate,0.06);
+assert.equal(h219.plus_card.observed_2026_11_17_alipay_rate,0.068);
+assert.equal(h219.plus_card.observed_2026_11_15_unpaid_preview_cny,113.42);
+assert.equal(h219.plus_card.observed_2026_11_17_unpaid_preview_cny,114.28);
+assert.equal(h219.plus_card.actual_successful_checkout_cny,null);
+assert.equal(h219.plus_ios.price_table_advertised_cny_per_account_month,133);
+assert.equal(h219.plus_ios.product_sku_selector_advertised_cny_per_account_month,135);
+assert.equal(h219.plus_ios.actual_selected_ios_checkout_total_cny,null);
+assert.equal(h219.payment_fee_scope.separate_codex_sms_sku_fee,0.06);
+assert.equal(h219.payment_fee_scope.globally_uniform_fee_assumed,false);
+assert.equal(h219.supplier_qualification.valid_china_vat_invoice_verified,false);
+assert.equal(r219.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r219.actual_purchase_made,false);assert.equal(r219.sms_test_done,false);

@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 469, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 471, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.218'
-    assert latest['date'] == '2026-11-16'
-    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r08.html'
-    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r08-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r07.html'
+    assert latest['version'] == '1.219'
+    assert latest['date'] == '2026-11-17'
+    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r01.html'
+    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r01-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r08.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2654,6 +2654,25 @@ def validate_publications():
     assert routes['directory_only_plus_reference']['all_required_fees_with_valid_china_vat_cny'] is None
     assert r218['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r218['actual_purchase_made'] is False and r218['sms_test_done'] is False
+
+
+    # R219: same SKU seller fee delta and cross-page iOS price mismatch are not real paid checkout.
+    assert by_id['gpt-source-followup-r219-20261117']['url'].endswith('supplier-followup-20261117-r01.html')
+    assert by_id['gpt-source-followup-r219-20261117-evidence']['url'].endswith('supplier-followup-20261117-r01-evidence.json')
+    r219=json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r01-evidence.json').read_bytes())
+    assert r219['round'] == 219 and r219['site_version'] == '1.9.227'
+    h219=r219['material_findings']
+    assert h219['plus_card']['observed_2026_11_15_alipay_rate'] == 0.06
+    assert h219['plus_card']['observed_2026_11_17_alipay_rate'] == 0.068
+    assert h219['plus_card']['observed_2026_11_17_unpaid_preview_cny'] == 114.28
+    assert h219['plus_card']['actual_successful_checkout_cny'] is None
+    assert h219['plus_ios']['price_table_advertised_cny_per_account_month'] == 133
+    assert h219['plus_ios']['product_sku_selector_advertised_cny_per_account_month'] == 135
+    assert h219['plus_ios']['actual_selected_ios_checkout_total_cny'] is None
+    assert h219['payment_fee_scope']['globally_uniform_fee_assumed'] is False
+    assert h219['supplier_qualification']['valid_china_vat_invoice_verified'] is False
+    assert r219['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r219['actual_purchase_made'] is False and r219['sms_test_done'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
