@@ -1,0 +1,138 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 216,
+  "site_version": "1.9.224",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-16/supplier-followup-20261116-r05.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_retail_candidate": {
+    "merchant": "MixLivo",
+    "classification": "third_party_one_unit_retail_not_verified_wholesale",
+    "official_openai_authorized_reseller_merchant_denies": true,
+    "accurate_sku": "ChatGPT Plus 原账号充值，1个月，支付宝付款，付款后私密订单页提交Session，商称iOS/Apple渠道",
+    "individual_month_listed_cny": 158,
+    "merchant_invoice_option_month_listed_cny": 168,
+    "merchant_invoice_option_extra_cny": 10,
+    "checkout_help_labels_invoice_surcharge": "＋6%（商家下单帮助页面展示）",
+    "six_percent_of_base_arithmetic_cny": 9.48,
+    "exact_payment_form_final_total_cny": null,
+    "actual_payment_processing_fee_cny": null,
+    "actual_all_required_fees_with_verified_chinese_vat_cny": null,
+    "invoice_type_merchant_unspecified": true,
+    "independently_verified_valid_chinese_vat_invoice": false,
+    "actual_invoice_issuer_legal_entity": null,
+    "actual_payment_recipient_legal_entity": null,
+    "business_registration_or_tax_number_verified": null,
+    "merchant_claimed_invoice_requires_prepurchase_selection": true,
+    "merchant_claimed_no_postpurchase_invoice_upgrade": true,
+    "merchant_claimed_invoice_info_after_purchase_through_support": true,
+    "merchant_claimed_invoice_issuance_days": null,
+    "actual_single_unit_wholesale_purchase_price_cny": null,
+    "confirmed_no_agent_upfront_fee_from_single_unit_public_checkout": null,
+    "formal_openai_resale_authorization_verified": false,
+    "confirmed_free_account_requirement": null,
+    "existing_active_plus_can_stack_or_renew": false,
+    "actual_renewal_in_existing_active_plus_tested": false,
+    "ios_and_session_delivery_merchant_claim_coexist": true,
+    "actual_ios_subscription_transaction_tested": false,
+    "merchant_declares_session_passes_to_upstream": true,
+    "merchant_declares_local_encrypted_session_stored_then_deleted_after_delivery_or_refund": true,
+    "real_session_deletion_audit": false,
+    "merchant_claimed_failure_full_refund": true,
+    "merchant_claimed_30day_prorated_alipay_original_route_refund": true,
+    "merchant_claimed_refund_proration_formula": "order_amount/30 * remaining_days",
+    "merchant_claimed_exclusions": [
+      "account_ban",
+      "proxy/reverse_proxy/abnormal_usage",
+      "prior_account_subscribed_using_unverified_low_price_card"
+    ],
+    "real_successful_delivery_or_cash_refund_tested": false,
+    "independent_sms_service_offered_in_reviewed_pages": false,
+    "chatgpt_web_phone_success": null,
+    "codex_phone_success": null,
+    "first_api_key_phone_success": null,
+    "phone_number_validity_days": null,
+    "failed_sms_original_payment_refund": null
+  },
+  "evidence_classification": {
+    "website_displayed": "2026-11-16直接读取首页、Plus未付款商品页面及商家指南；标¥158/月、商家指南称开票选项¥168；商品帮助仅写＋6%，未见已成交收银金额",
+    "merchant_claim": "iOS/Apple渠道可与Session订单交付并存，付款后上游处理Session，完成删除、30天按剩余天数原路退支付宝；均是商家条款非实测",
+    "inference": "商称开票选项不等于有效中国增值税发票，¥168不等于经证实全费用；未见法人及票种，不是可晋级的合法单件批发源头",
+    "actual_purchases_or_sms_or_invoices_verified": 0
+  },
+  "sources": [
+    {
+      "url": "https://mixlivo.com/",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "merchant_home_original_account_plus_cny_158"
+    },
+    {
+      "url": "https://mixlivo.com/recharge/p158",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "merchant_plus_sku_one_month_and_invoice_plus_six_percent_help",
+      "unpaid_js_checkout_unavailable": true
+    },
+    {
+      "url": "https://mixlivo.com/guides/chatgpt-plus-fapiao",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-11-15",
+      "kind": "merchant_invoice_cny_168_and_unverified_tax_type_issuer"
+    },
+    {
+      "url": "https://mixlivo.com/guides/chatgpt-plus-recharge",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-11-01",
+      "kind": "merchant_checkout_and_session_workflow"
+    },
+    {
+      "url": "https://mixlivo.com/terms",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-11-04",
+      "kind": "merchant_ios_session_coexist_refund_and_invoice_selection"
+    },
+    {
+      "url": "https://mixlivo.com/privacy",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-07-24",
+      "kind": "merchant_session_forward_to_upstream_and_deletion_self_claim"
+    },
+    {
+      "url": "https://mixlivo.com/about",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-11-04",
+      "kind": "merchant_not_openai_authorized_renewal_limit_and_owner_unknown"
+    }
+  ],
+  "priority_candidates_rechecked_without_proven_new_qualifying_source": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "historical_126_prices_unchanged": true,
+  "previous_215_reports_untouched": true,
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
