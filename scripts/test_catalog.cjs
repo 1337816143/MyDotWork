@@ -2338,3 +2338,18 @@ assert.equal(r217.independent_sms.body_claim_cny_per_successful_sms,5);
 assert.equal(r217.independent_sms.codex_desktop_sms_success,null);
 assert.equal(r217.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r217.actual_purchase_made,false);assert.equal(r217.sms_test_done,false);
+
+// r218: directory links, not verified legal operator or current seller checkout prices.
+const cat218=d.records.find(x=>x.id==='gpt-source-followup-r218-20261116');
+const ev218=d.records.find(x=>x.id==='gpt-source-followup-r218-20261116-evidence');
+assert(cat218&&ev218&&cat218.url.endsWith('supplier-followup-20261116-r08.html'));
+const r218=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r08-evidence.json'),'utf8'));
+assert.equal(r218.round,218);assert.equal(r218.site_version,'1.9.226');
+assert.equal(r218.new_primary_source_evidence.three_store_routes.length,3);
+assert.equal(r218.new_primary_source_evidence.three_store_routes[0].platform_domain,'catfk.com');
+assert.equal(r218.new_primary_source_evidence.shared_legal_operator_verified,null);
+assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.listed_price_cny,132.9);
+assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.directory_price_check_date,'2026-11-09');
+assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.current_store_listing_cny,null);
+assert.equal(r218.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r218.actual_purchase_made,false);assert.equal(r218.sms_test_done,false);
