@@ -1,0 +1,193 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 218,
+  "site_version": "1.9.226",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-16/supplier-followup-20261116-r07.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_primary_source_evidence": {
+    "site_name": "AI会员充值站",
+    "site_url": "https://ai-huiyuan.vercel.app/",
+    "source_role": "first_party_directory_for_its_links_only_not_transaction_seller",
+    "directory_claims_no_openai_authorization": true,
+    "directory_claims_not_the_payee_or_contract_seller": true,
+    "three_store_routes": [
+      {
+        "directory_label": "云猫主店",
+        "url": "https://catfk.com/shop/IW58ZQO9",
+        "platform_domain": "catfk.com",
+        "directory_claimed_payment_methods": [
+          "支付宝"
+        ],
+        "directory_claimed_product_count": 45,
+        "merchant_store_listing_body_readable_this_run": false
+      },
+      {
+        "directory_label": "链动分店",
+        "url": "https://wzyp.cn/shop/XIK4BB7S",
+        "platform_domain": "wzyp.cn",
+        "directory_claimed_payment_methods": [
+          "微信支付",
+          "支付宝"
+        ],
+        "directory_claimed_product_count": 35,
+        "merchant_store_listing_body_readable_this_run": false
+      },
+      {
+        "directory_label": "16688分店",
+        "url": "https://www.16688.com.cn/shop/S385728",
+        "platform_domain": "16688.com.cn",
+        "directory_claimed_payment_methods": null,
+        "directory_claimed_product_count": 21,
+        "merchant_store_listing_body_readable_this_run": false
+      }
+    ],
+    "directory_uses_same_group_wording": true,
+    "shared_legal_operator_verified": null,
+    "real_receiving_entities_verified": null,
+    "invoice_issuers_and_tax_ids_verified": null,
+    "formal_openai_resale_authorization_verified": false,
+    "genuine_upstream_wholesale_arrangement_verified": false,
+    "directory_only_plus_reference": {
+      "listed_price_cny": 132.9,
+      "unit": "CNY / one 30-day own-account Plus CDK; directory reference only, not seller checkout",
+      "directory_price_check_date": "2026-11-09",
+      "this_run_observation_date": "2026-11-16",
+      "current_store_listing_cny": null,
+      "actual_checkout_total_cny": null,
+      "all_required_fees_with_valid_china_vat_cny": null,
+      "session_required_according_to_directory": true,
+      "account_must_have_no_current_subscription_according_to_directory": true,
+      "account_cannot_have_used_zero_dollar_promotion_according_to_directory": true,
+      "account_not_in_team_according_to_directory": true,
+      "merchant_claims_30day_subscription_warranty": true,
+      "directory_claims_no_refund_after_successful_activation": true,
+      "existing_paid_plus_renewal_demonstrated": false,
+      "real_delivery_tested": false
+    },
+    "codex_250_separate_sku": {
+      "directory_claims_16688_seller_reference_cny": 88.9,
+      "directory_claims_catfk_seller_reference_cny": 95,
+      "unit": "CNY / one Codex 250 claimed credit CDK",
+      "product_is_not_api_credit_according_to_directory": true,
+      "actual_checkout_total_cny": null,
+      "actual_credit_crediting_tested": false
+    },
+    "refund_and_payment_role": {
+      "directory_claims_virtual_goods_usually_nonrefundable_after_delivery": true,
+      "directory_claims_storefront_controls_returns": true,
+      "independent_cash_refund_tested": false,
+      "claimed_payment_methods_independently_verified": false,
+      "actual_checkout_payment_fee_cny": null,
+      "issuer_entity": null
+    },
+    "not_a_phone_sms_verification_product": true,
+    "phone_coverage_not_demonstrated": [
+      "ChatGPT网页",
+      "Codex桌面",
+      "首次API Key"
+    ],
+    "real_phone_sms_success": 0
+  },
+  "sources": [
+    {
+      "url": "https://ai-huiyuan.vercel.app/about/",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": "2026-11-09",
+      "kind": "导购三店自述与交易主体界限",
+      "readable": true
+    },
+    {
+      "url": "https://ai-huiyuan.vercel.app/xuzhi/",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": "2026-11-09",
+      "kind": "导购退款/收款/卡密/风险声明",
+      "readable": true
+    },
+    {
+      "url": "https://ai-huiyuan.vercel.app/chatgpt/",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": "2026-11-09",
+      "kind": "ChatGPT Plus 30天参考报价/账户门槛/Session/Codex SKU",
+      "readable": true
+    },
+    {
+      "url": "https://ai-huiyuan.vercel.app/",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": "2026-11-09",
+      "kind": "导购主站与支付渠道",
+      "readable": true
+    },
+    {
+      "url": "https://ai-huiyuan.vercel.app/terms/",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": "2026-11-09",
+      "kind": "第三方交易责任声明",
+      "readable": true
+    },
+    {
+      "url": "https://ai-huiyuan.vercel.app/privacy/",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": "2026-11-09",
+      "kind": "静态导购不直接收款或采集支付资料的自述",
+      "readable": true
+    },
+    {
+      "url": "https://catfk.com/shop/IW58ZQO9",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": null,
+      "kind": "云猫主店，未取得可读商品页",
+      "readable": false
+    },
+    {
+      "url": "https://wzyp.cn/shop/XIK4BB7S",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": null,
+      "kind": "链动分店，返回WAF挑战页",
+      "readable": false
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S385728",
+      "observed_on": "2026-11-16",
+      "page_self_price_check_on": null,
+      "kind": "16688分店，未取得可读商品页",
+      "readable": false
+    }
+  ],
+  "evidence_levels": {
+    "website_displayed": "导购站有三家外部店铺完整地址、参照价格、SKU、退款和账号条件；三商店商品详情正文未取得",
+    "merchant_claim": "三店同属导购，付款方式、商品数量、Plus¥132.9/30天、自助Session卡密、30天质保与退款条件都未独立成交验证",
+    "research_inference": "共同导购不证明三店同一法律主体或真正批发供货资格；参考价不等于当日商家价",
+    "actual_paid_invoice_or_sms_tests": 0
+  },
+  "priority_candidates_rechecked_without_qualifying_advance": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "original_126_offers_untouched": true,
+  "previous_217_reports_untouched": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
