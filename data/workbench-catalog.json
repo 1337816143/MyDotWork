@@ -5094,6 +5094,28 @@
       "summary": "6条2026-11-16实际读取原URL，商家旧条款/2019隐私日期分离；API价格为无币种示例非现价，真实Codex provider与SMS有效性、收费和退款为null或未测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r216-20261116",
+      "title": "GPT源头第216轮 · MixLivo原号Plus开票版¥168的票据和授权缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r06.html",
+      "updatedAt": "2026-11-16",
+      "summary": "首次直读新零售候选：本人原号Plus¥158/月、开票版商称¥168/月，商品帮助称+6%；明确iOS渠道与Session交付并存。中国有效VAT票种、出票/收款法人、真实结算、合法批发和退款实测均未核，不能晋级。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r216-20261116-evidence",
+      "title": "第216轮 · MixLivo准确SKU、iOS/Session、票据差额和隐私售后JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r06-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "7条2026-11-16直接可读原始URL，页面自标旧日期另存；¥158/¥168挂牌、+6%提示及收银台全费null，苹果渠道、上游Session流转和30天退款仅为商称，实购验票SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
