@@ -5182,6 +5182,28 @@
       "summary": "当日直读商家6个原始页、OpenAI官方1页并复用11月15日不可变旧证据；区分卡充6.8%与代理/SMS 6%、iOS报价冲突，真实付款、有效中国增值税发票及短信成功均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r220-20261117",
+      "title": "GPT源头第220轮 · GETGPT Pro香港经营主体登记编号线索",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r02.html",
+      "updatedAt": "2026-11-17",
+      "summary": "商家称NEXCLOUD TECHNOLOGY LIMITED运营；首次直读独立企业目录同名公司香港商登号码80542846、成立于2026-06-03。未经政府逐项查询、收款出票关联或批发授权验证，不能认定合格上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r220-20261117-evidence",
+      "title": "第220轮 · GETGPT公司名号与登记核查局限证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r02-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "商家自称主体与第三方目录同名BRN对照、另一网站只获索引摘要、政府资源索引可读但CSV公司行未读；收款出票/全费/授权为null，真实采购和SMS测试0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

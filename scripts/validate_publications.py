@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 471, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 473, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.219'
+    assert latest['version'] == '1.220'
     assert latest['date'] == '2026-11-17'
-    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r01.html'
-    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r01-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r08.html'
+    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r02.html'
+    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r02-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r01.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2655,6 +2655,21 @@ def validate_publications():
     assert r218['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r218['actual_purchase_made'] is False and r218['sms_test_done'] is False
 
+
+    # R220: a third-party Hong Kong company-number listing is not official registry proof or a verified merchant payee.
+    assert by_id['gpt-source-followup-r220-20261117']['url'].endswith('supplier-followup-20261117-r02.html')
+    assert by_id['gpt-source-followup-r220-20261117-evidence']['url'].endswith('supplier-followup-20261117-r02-evidence.json')
+    r220 = json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r02-evidence.json').read_bytes())
+    assert r220['round'] == 220 and r220['site_version'] == '1.9.228'
+    ident = r220['material_findings']
+    assert ident['independent_company_directory']['listed_business_registration_no'] == '80542846'
+    assert ident['independent_company_directory']['listed_incorporation_date'] == '2026-06-03'
+    assert ident['government_source']['official_e_services_record_directly_verified'] is False
+    assert ident['merchant_link_status']['actual_payment_receiving_legal_entity'] is None
+    assert ident['merchant_link_status']['all_required_fees_china_vat_inclusive_cny'] is None
+    assert ident['archived_plus_reference']['same_sku_new_2026_11_17_quote_verified'] is None
+    assert r220['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r220['actual_purchase_made'] is False and r220['sms_test_done'] is False
 
     # R219: same SKU seller fee delta and cross-page iOS price mismatch are not real paid checkout.
     assert by_id['gpt-source-followup-r219-20261117']['url'].endswith('supplier-followup-20261117-r01.html')
