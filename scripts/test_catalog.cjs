@@ -2322,3 +2322,19 @@ assert.equal(r216.new_retail_candidate.formal_openai_resale_authorization_verifi
 assert.equal(r216.new_retail_candidate.real_successful_delivery_or_cash_refund_tested,false);
 assert.equal(r216.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r216.actual_purchase_made,false);assert.equal(r216.sms_test_done,false);
+
+// r217: verify distinct agent/referral programs and conflicting SMS SKU prices.
+const cat217=d.records.find(x=>x.id==='gpt-source-followup-r217-20261116');
+const ev217=d.records.find(x=>x.id==='gpt-source-followup-r217-20261116-evidence');
+assert(cat217&&ev217&&cat217.url.endsWith('supplier-followup-20261116-r07.html'));
+const r217=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-16/supplier-followup-20261116-r07-evidence.json'),'utf8'));
+assert.equal(r217.round,217);assert.equal(r217.site_version,'1.9.225');
+assert.equal(r217.new_candidate.claimed_plus_1_cny,115);
+assert.equal(r217.new_candidate.another_upstream_intro_one_time_fee_cny,1888);
+assert.equal(r217.new_candidate.actual_wholesale_purchase_price_cny,null);
+assert.equal(r217.separate_paid_tiers.partner_fee_cny,88);
+assert.equal(r217.independent_sms.shop_display_cny_per_single_order,27.99);
+assert.equal(r217.independent_sms.body_claim_cny_per_successful_sms,5);
+assert.equal(r217.independent_sms.codex_desktop_sms_success,null);
+assert.equal(r217.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r217.actual_purchase_made,false);assert.equal(r217.sms_test_done,false);
