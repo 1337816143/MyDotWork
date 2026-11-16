@@ -5138,6 +5138,28 @@
       "summary": "11条直接实读原始URL，商称免费代理与付费资格不混同；准确SKU、短信价差¥27.99/¥5、Session前提、付款及有效中国VAT费用null，真实购买、验票与短信测试0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r218-20261116",
+      "title": "GPT源头第218轮 · CatFK三平台店铺分流与付款售后责任",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r08.html",
+      "updatedAt": "2026-11-16",
+      "summary": "首次直读AI会员充值站自述三店分别指向CatFK、wzyp、16688；导购不收款/不决定退款，三店法律主体及批发授权未核。Plus¥132.9仅11月9日导购参考价，三店商品页未能读取；有效VAT与手机号实测缺口不变。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r218-20261116-evidence",
+      "title": "第218轮 · 三店收银/售后角色、价签旧日期与未实测JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r08-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "9个原始URL访问结果，含6个导购可读页面、3个店铺未获可读商品正文；区分导购自述、商家真实结算、手机号验证。付款/票据/批发实际验证仍null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
