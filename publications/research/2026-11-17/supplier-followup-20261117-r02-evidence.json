@@ -1,0 +1,143 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 220,
+  "site_version": "1.9.228",
+  "observed_on": "2026-11-17",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r01.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "material_findings": {
+    "candidate": "GETGPT Pro",
+    "finding_type": "new_independent_third_party_company_number_lead_not_operator_or_payee_verification",
+    "merchant_terms": {
+      "url": "https://getgpt.pro/terms",
+      "actually_read_on": "2026-11-17",
+      "page_self_last_updated": "2026-06-02",
+      "claimed_operator": "NEXCLOUD TECHNOLOGY LIMITED",
+      "claimed_registered_address": "Flat A133, Room 01, 15/F, Block A, Wah Sang Industrial Building, 14-18 Wong Chuk Yeung Street, Fo Tan, Hong Kong",
+      "non_official_openai_affiliation_declared": true,
+      "independently_verified_as_actual_service_operator": false
+    },
+    "independent_company_directory": {
+      "url": "https://test.tempb.com/companies/nexcloud-technology-limited/",
+      "actually_read_on": "2026-11-17",
+      "record_self_updated_on": "2026-07-20",
+      "listing_company_name": "Nexcloud Technology Limited",
+      "listed_business_registration_no": "80542846",
+      "listed_incorporation_date": "2026-06-03",
+      "listed_entity_type": "private company limited by shares",
+      "listing_active_status_is_historical_not_live_official_verification": true
+    },
+    "second_company_index": {
+      "url": "https://hkregister.com/company/80542846-nexcloud-technology-limited",
+      "indexed_search_observed_on": "2026-11-17",
+      "direct_page_fetch_succeeded": false,
+      "search_excerpt_matches_name_bnr_and_merchant_address": true,
+      "search_excerpt_record_updated_on": "2026-09-28",
+      "is_independent_government_primary": false
+    },
+    "government_source": {
+      "url": "https://data.gov.hk/sc-data/dataset/hk-cr-crdata-list-newly-registered-companies-2526/resource/273eba8b-0eb5-4d79-9fcd-1d46b570244d",
+      "actually_read_index_on": "2026-11-17",
+      "week_covered": "2026-06-01 to 2026-06-07",
+      "company_name_directly_located_in_official_dataset": false,
+      "official_e_services_record_directly_verified": false,
+      "official_lookup_guidance": "https://www.cr.gov.hk/en/services/obtain-company-info.htm"
+    },
+    "merchant_link_status": {
+      "merchant_name_matches_directory_company_name": true,
+      "company_address_independently_verified_in_direct_directory": false,
+      "merchant_claim_of_operator_independently_proven": false,
+      "actual_payment_receiving_legal_entity": null,
+      "invoice_issuing_legal_entity": null,
+      "china_valid_vat_invoice_available_verified": false,
+      "openai_official_resale_authorization_verified": false,
+      "genuine_single_unit_wholesale_price_cny": null,
+      "agent_upfront_fee_cny": null,
+      "all_required_fees_china_vat_inclusive_cny": null
+    },
+    "archived_plus_reference": {
+      "earlier_advertised_original_account_plus_cny_per_month": 179,
+      "original_archived_source_date": "2026-11-11",
+      "same_sku_new_2026_11_17_quote_verified": null,
+      "new_price_change_claimed": false,
+      "archived_reference_exceeds_ceiling_even_before_invoice": true
+    },
+    "chronology_note": "Seller terms self-label 2026-06-02; third-party directory lists company incorporation 2026-06-03. Difference alone is not proof of misrepresentation."
+  },
+  "sources": [
+    {
+      "url": "https://getgpt.pro/terms",
+      "observed_on": "2026-11-17",
+      "result": "readable_primary_merchant_terms",
+      "document_self_date": "2026-06-02"
+    },
+    {
+      "url": "https://test.tempb.com/companies/nexcloud-technology-limited/",
+      "observed_on": "2026-11-17",
+      "result": "readable_third_party_directory",
+      "document_self_date": "2026-07-20"
+    },
+    {
+      "url": "https://hkregister.com/company/80542846-nexcloud-technology-limited",
+      "observed_on": "2026-11-17",
+      "result": "search_excerpt_only_direct_fetch_disabled",
+      "document_self_date": "2026-09-28"
+    },
+    {
+      "url": "https://data.gov.hk/sc-data/dataset/hk-cr-crdata-list-newly-registered-companies-2526/resource/273eba8b-0eb5-4d79-9fcd-1d46b570244d",
+      "observed_on": "2026-11-17",
+      "result": "official_weekly_dataset_index_read_but_company_csv_record_not_read",
+      "document_self_date": null
+    },
+    {
+      "url": "https://www.cr.gov.hk/en/services/obtain-company-info.htm",
+      "observed_on": "2026-11-17",
+      "result": "official_company_search_method_read",
+      "document_self_date": null
+    }
+  ],
+  "evidence_levels": {
+    "directly_read": "GETGPT Pro merchant contract naming the operator; independent third-party tempb directory listing same company name, BRN and incorporation date; government weekly dataset index (not individual company row)",
+    "search_excerpt_only": "hkregister listing gives matching address and BRN, direct fetch disabled",
+    "seller_claim": "GETGPT Pro operator identity, business scope and non-official OpenAI relation",
+    "inference": "Potential HK registration lookup lead but actual operating/receiving/issuing entity not independently linked",
+    "real_purchase_tax_invoice_sku_or_sms_tests": 0
+  },
+  "priority_candidates_rechecked_without_new_verified_qualification": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "phone_scope": {
+    "chatgpt_web_success": null,
+    "codex_desktop_success": null,
+    "first_api_key_success": null,
+    "apple_or_session_guaranteed_auto_phone_binding": false,
+    "failed_code_cash_refund_verified": null
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "historic_126_offers_unchanged": true,
+  "previous_219_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
