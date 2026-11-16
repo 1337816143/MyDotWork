@@ -131,15 +131,31 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 461, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 463, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.214'
+    assert latest['version'] == '1.215'
     assert latest['date'] == '2026-11-16'
-    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r04.html'
-    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r04-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r03.html'
+    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r05.html'
+    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r05-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r04.html'
 
+
+    # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
+    assert by_id['gpt-source-followup-r215-20261116']['url'].endswith('supplier-followup-20261116-r05.html')
+    assert by_id['gpt-source-followup-r215-20261116-evidence']['url'].endswith('supplier-followup-20261116-r05-evidence.json')
+    r215 = json.loads((ROOT/'dist/research/2026-11-16/supplier-followup-20261116-r05-evidence.json').read_bytes())
+    assert r215['round'] == 215 and r215['site_version'] == '1.9.223'
+    ev215 = r215['new_primary_source_evidence']
+    assert ev215['merchant_supplier_claim_already_archived_in_round'] == 211
+    assert ev215['upstream_service_api']['service_list_exposes_service_id_provider_cost_fields'] is True
+    assert ev215['upstream_service_api']['actual_codex_upstream_cost'] is None
+    assert ev215['separate_upstream_monthly_number_product']['api_example_not_live_quote'] is True
+    assert ev215['separate_upstream_monthly_number_product']['api_example_price_currency'] is None
+    assert ev215['merchant_rule_exact']['admin_storage_actual_retention_days'] is None
+    assert ev215['upstream_privacy_policy']['server_log_not_same_as_sms_code_retention'] is True
+    assert r215['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r215['actual_purchase_made'] and not r215['sms_test_done']
 
     # R214: a vendor's invoice quotation is not a verified tax invoice, wholesale right, or paid checkout.
     assert by_id['gpt-source-followup-r214-20261116']['url'].endswith('supplier-followup-20261116-r04.html')
