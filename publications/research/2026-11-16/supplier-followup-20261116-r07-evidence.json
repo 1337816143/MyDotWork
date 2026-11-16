@@ -1,0 +1,206 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 217,
+  "site_version": "1.9.225",
+  "observed_on": "2026-11-16",
+  "previous_report": "research/2026-11-16/supplier-followup-20261116-r06.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "new_candidate": {
+    "name": "布肝 BUGAN.CN",
+    "source": "https://www.bugan.cn/products/upstream-channel-introduction",
+    "type": "merchant_declared_agent_and_referral",
+    "classification": "not_verified_genuine_upstream",
+    "merchant_claims_free_agent_route": true,
+    "free_agent_route_requires_register_then_contact_for_manual_role_binding": true,
+    "real_free_agent_access_verified": false,
+    "claimed_plus_1_cny": 115,
+    "plus_1_period_accurate_sku_verified": null,
+    "claimed_pro_5x_cny": 650,
+    "claimed_pro_20x_renewal_cny": 1050,
+    "another_upstream_intro_one_time_fee_cny": 1888,
+    "upstream_intro_includes_purchase_balance": false,
+    "claimed_upstream_raw_product1_cny": 107.97,
+    "claimed_upstream_raw_product2_cny": 625.32,
+    "claimed_upstream_raw_product3_renewal_cny": 961.26,
+    "product1_maps_to_original_account_plus_30days_verified": null,
+    "actual_wholesale_purchase_price_cny": null,
+    "real_payment_fee_cny": null,
+    "real_invoice_fee_cny": null,
+    "valid_china_vat_total_cny": null,
+    "invoice_type": null,
+    "invoice_issuer_legal_entity": null,
+    "payment_recipient_legal_entity": null,
+    "verified_supplier_legal_entity": null,
+    "formal_resale_authorization_verified": false,
+    "real_delivery_tested": false
+  },
+  "separate_paid_tiers": {
+    "source": "https://www.bugan.cn/products/bugan-partner-qualification",
+    "default_shop_price_cny": 100,
+    "partner_fee_cny": 88,
+    "agent_fee_cny": 188,
+    "upgrade_fee_cny": 100,
+    "core_turnover_threshold_cny": 10000,
+    "merchant_claims_nonrefundable_after_activated": true,
+    "distinct_from_fee_free_route": true,
+    "qualified_under_no_upfront_fee": false
+  },
+  "separate_retail_prices": [
+    {
+      "shop": "布肝直营",
+      "source": "https://www.bugan.cn/products/gpt-codex-plus",
+      "sku": "GPT Plus 30天 原账号 卡密",
+      "cny_per_card": 138,
+      "unit": "CNY / one 30-day card",
+      "real_checkout_total_cny": null,
+      "valid_china_vat_invoice_verified": false
+    },
+    {
+      "shop": "Ai极速补给站",
+      "source": "https://shop.get-codex.cc/products/gpt-codex-plus",
+      "sku": "GPT Plus 30天 原账号 卡密",
+      "cny_per_card": 125,
+      "unit": "CNY / one 30-day card",
+      "real_checkout_total_cny": null,
+      "valid_china_vat_invoice_verified": false
+    }
+  ],
+  "redemption": {
+    "url": "https://gpt.bugan.cn/",
+    "linked_from_both_storefronts": true,
+    "verified_same_legal_entity": false,
+    "merchant_ui_requires_full_chatgpt_session_json": true,
+    "session_submitted": false,
+    "session_retention_days": null,
+    "card_fulfilled_not_equal_subscription_activated": true,
+    "merchant_ui_says_active_same_or_higher_plan_cannot_redeem": true,
+    "actual_subscription_tested": false,
+    "merchant_session_forward_to_upstream_verified": null
+  },
+  "independent_sms": {
+    "shop_sku_url": "https://shop.get-codex.cc/products/uk-lebara-sms",
+    "guide_url": "https://www.bugan.cn/blog/uk-lebara-sms-guide",
+    "sku": "英国Lebara实体SIM +44 临时号码单次人工代收短信",
+    "shop_display_cny_per_single_order": 27.99,
+    "body_claim_cny_per_successful_sms": 5,
+    "old_guide_claim_cny_prepaid_per_sms": 5,
+    "same_sku_price_conflict": true,
+    "actual_checkout_total_cny": null,
+    "real_sms_payment_cny": null,
+    "merchant_declares_physical_sim": true,
+    "telecom_sim_independently_verified": false,
+    "number_validity_days": null,
+    "number_retention_or_repeated_sms_guarantee": false,
+    "merchant_promises_refund_after_no_sms_and_service_verification": true,
+    "actual_cash_refund_tested": false,
+    "failed_sms_original_payment_refund": null,
+    "chatgpt_web_sms_success": null,
+    "codex_desktop_sms_success": null,
+    "first_api_key_sms_success": null,
+    "real_sms_tests": 0
+  },
+  "evidence_levels": {
+    "website_displayed": "上游渠道商品公开两种模式，付费会员资格，零售Plus ¥125/¥138，SMS页面顶部¥27.99与正文¥5，兑换要求Session",
+    "merchant_claim": "注册后人工免费绑定代理/¥115 Plus 1、成本¥107.97、实体SIM、失败短信可申请退款",
+    "inference": "共用卡密兑换端不证明企业法律主体同一，也不是已确认批发上游或正式转售授权",
+    "actual_paid_invoice_or_sms_tests": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.bugan.cn/products/upstream-channel-introduction",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "两种代理/渠道路线"
+    },
+    {
+      "url": "https://www.bugan.cn/products/bugan-partner-qualification",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "需付款的伙伴/代理资格"
+    },
+    {
+      "url": "https://www.bugan.cn/categories/partner-cooperation",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "合作产品目录"
+    },
+    {
+      "url": "https://www.bugan.cn/products/gpt-codex-plus",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "布肝原号Plus 30天零售¥138"
+    },
+    {
+      "url": "https://shop.get-codex.cc/products/gpt-codex-plus",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "Ai极速Plus 30天零售¥125"
+    },
+    {
+      "url": "https://gpt.bugan.cn/",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "兑换页面要求Session和活动套餐限制"
+    },
+    {
+      "url": "https://www.bugan.cn/",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "布肝商店商品列表"
+    },
+    {
+      "url": "https://shop.get-codex.cc/products/uk-lebara-sms",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "Lebara单次代收¥27.99/¥5价差"
+    },
+    {
+      "url": "https://www.bugan.cn/blog/uk-lebara-sms-guide",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": "2026-09-12",
+      "kind": "商家旧短信指南¥5/次"
+    },
+    {
+      "url": "https://www.bugan.cn/terms",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "简短条款未披露出票主体"
+    },
+    {
+      "url": "https://shop.get-codex.cc/privacy",
+      "observed_on": "2026-11-16",
+      "page_self_updated_on": null,
+      "kind": "简短隐私页未披露Session存储"
+    }
+  ],
+  "priority_candidates_rechecked_without_qualifying_advance": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "original_126_offers_untouched": true,
+  "previous_216_reports_untouched": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
