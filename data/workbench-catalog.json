@@ -5160,6 +5160,28 @@
       "summary": "9个原始URL访问结果，含6个导购可读页面、3个店铺未获可读商品正文；区分导购自述、商家真实结算、手机号验证。付款/票据/批发实际验证仍null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r219-20261117",
+      "title": "GPT源头第219轮 · Hype Plus支付宝费率变化与iOS报价冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r01.html",
+      "updatedAt": "2026-11-17",
+      "summary": "同SKU本人原号Plus卡充支付宝费率预览从6%/¥113.42变为6.8%/¥114.28；iOS本轮价格表¥133与商品规格¥135冲突。Hype不提供有效中国VAT票，代理有¥99前置费；非已核真正批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r219-20261117-evidence",
+      "title": "第219轮 · Hype同SKU支付宝附费旧新证据与iOS双价签JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r01-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "当日直读商家6个原始页、OpenAI官方1页并复用11月15日不可变旧证据；区分卡充6.8%与代理/SMS 6%、iOS报价冲突，真实付款、有效中国增值税发票及短信成功均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
