@@ -5226,6 +5226,28 @@
       "summary": "8条实际读取原始URL（含两份一页PDF）；非本店接码报价与全部测试null，20分钟退余额不是原路现金，OpenAI不支持VoIP。未核真Plus批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r222-20261117",
+      "title": "GPT源头第222轮 · MaplePass批发API与发票授权核查",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r04.html",
+      "updatedAt": "2026-11-17",
+      "summary": "首次核读MaplePass批发API：零押金但需审核及USDT预付，15.50U仅文档示例；三种零售SKU为15.80/16.50/19.50U，真批发价、授权与有效中国VAT仍null。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r222-20261117-evidence",
+      "title": "第222轮 · MaplePass单件API示例、付款与上游资格缺口证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r04-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "8个实际读取一方原始URL、2个API访问失败；无实际获批批发价、经营收款出票主体和有效VAT，独立履约及短信实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
