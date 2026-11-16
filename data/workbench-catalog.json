@@ -5116,6 +5116,28 @@
       "summary": "7条2026-11-16直接可读原始URL，页面自标旧日期另存；¥158/¥168挂牌、+6%提示及收银台全费null，苹果渠道、上游Session流转和30天退款仅为商称，实购验票SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r217-20261116",
+      "title": "GPT源头第217轮 · 布肝免代理费报价与¥1888上游介绍及接码价差",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r07.html",
+      "updatedAt": "2026-11-16",
+      "summary": "首次直读商称免代理费人工绑定Plus 1 ¥115、¥1888付费上游介绍及独立¥88/188会员；两店零售Plus ¥125/¥138共用Session兑付站；英国Lebara单次短信¥27.99/¥5价签冲突。合法真批发VAT全费仍未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r217-20261116-evidence",
+      "title": "第217轮 · 供货层级、原号兑付与实体手机号验证证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-16/supplier-followup-20261116-r07-evidence.json",
+      "updatedAt": "2026-11-16",
+      "summary": "11条直接实读原始URL，商称免费代理与付费资格不混同；准确SKU、短信价差¥27.99/¥5、Session前提、付款及有效中国VAT费用null，真实购买、验票与短信测试0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

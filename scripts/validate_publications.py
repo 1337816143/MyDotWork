@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 465, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 467, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.216'
+    assert latest['version'] == '1.217'
     assert latest['date'] == '2026-11-16'
-    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r06.html'
-    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r06-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r05.html'
+    assert latest['path'] == 'research/2026-11-16/supplier-followup-20261116-r07.html'
+    assert latest['dataPath'] == 'research/2026-11-16/supplier-followup-20261116-r07-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-16/supplier-followup-20261116-r06.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2623,6 +2623,20 @@ def validate_publications():
     assert r216['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert r216['actual_purchase_made'] is False and r216['credentials_submitted'] is False
     assert r216['sms_test_done'] is False
+
+    # R217: claimed no-fee supplier path is not the same as paid tiers or an invoiced wholesale deal.
+    assert by_id['gpt-source-followup-r217-20261116']['url'].endswith('supplier-followup-20261116-r07.html')
+    assert by_id['gpt-source-followup-r217-20261116-evidence']['url'].endswith('supplier-followup-20261116-r07-evidence.json')
+    r217 = json.loads((ROOT / 'dist/research/2026-11-16/supplier-followup-20261116-r07-evidence.json').read_bytes())
+    assert r217['round'] == 217 and r217['site_version'] == '1.9.225'
+    assert r217['new_candidate']['claimed_plus_1_cny'] == 115
+    assert r217['new_candidate']['another_upstream_intro_one_time_fee_cny'] == 1888
+    assert r217['new_candidate']['actual_wholesale_purchase_price_cny'] is None
+    assert r217['independent_sms']['shop_display_cny_per_single_order'] == 27.99
+    assert r217['independent_sms']['body_claim_cny_per_successful_sms'] == 5
+    assert r217['independent_sms']['codex_desktop_sms_success'] is None
+    assert r217['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert r217['actual_purchase_made'] is False and r217['sms_test_done'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
