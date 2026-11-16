@@ -2353,3 +2353,25 @@ assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.dire
 assert.equal(r218.new_primary_source_evidence.directory_only_plus_reference.current_store_listing_cny,null);
 assert.equal(r218.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r218.actual_purchase_made,false);assert.equal(r218.sms_test_done,false);
+
+
+// r219: verify fee delta of exact Hype card SKU versus separate 6% categories; no proven payable VAT or checkout.
+const cat219=d.records.find(x=>x.id==='gpt-source-followup-r219-20261117');
+const ev219=d.records.find(x=>x.id==='gpt-source-followup-r219-20261117-evidence');
+assert(cat219&&ev219&&cat219.url.endsWith('supplier-followup-20261117-r01.html'));
+const r219=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r01-evidence.json'),'utf8'));
+assert.equal(r219.round,219);assert.equal(r219.site_version,'1.9.227');
+const h219=r219.material_findings;
+assert.equal(h219.plus_card.observed_2026_11_15_alipay_rate,0.06);
+assert.equal(h219.plus_card.observed_2026_11_17_alipay_rate,0.068);
+assert.equal(h219.plus_card.observed_2026_11_15_unpaid_preview_cny,113.42);
+assert.equal(h219.plus_card.observed_2026_11_17_unpaid_preview_cny,114.28);
+assert.equal(h219.plus_card.actual_successful_checkout_cny,null);
+assert.equal(h219.plus_ios.price_table_advertised_cny_per_account_month,133);
+assert.equal(h219.plus_ios.product_sku_selector_advertised_cny_per_account_month,135);
+assert.equal(h219.plus_ios.actual_selected_ios_checkout_total_cny,null);
+assert.equal(h219.payment_fee_scope.separate_codex_sms_sku_fee,0.06);
+assert.equal(h219.payment_fee_scope.globally_uniform_fee_assumed,false);
+assert.equal(h219.supplier_qualification.valid_china_vat_invoice_verified,false);
+assert.equal(r219.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r219.actual_purchase_made,false);assert.equal(r219.sms_test_done,false);
