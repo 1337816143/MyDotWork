@@ -2423,3 +2423,18 @@ assert.equal(r221.material_findings.hero_sms_independent_service.actual_platform
 assert.equal(r221.material_findings.official_scope.voip_numbers_supported,false);
 assert.equal(r221.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r221.actual_purchase_made,false);assert.equal(r221.sms_test_done,false);
+
+// R223: correct historical first discovery and reference-price classification.
+const cat223=d.records.find(x=>x.id==='gpt-source-followup-r223-20261117');
+const data223=d.records.find(x=>x.id==='gpt-source-followup-r223-20261117-evidence');
+assert(cat223&&data223&&cat223.url.endsWith('supplier-followup-20261117-r05.html'));
+const r223=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r05-evidence.json'),'utf8'));
+assert.equal(r223.round,223);assert.equal(r223.site_version,'1.9.231');
+assert.equal(r223.material_correction.first_documented_round,53);
+assert.equal(r223.material_correction.prior_recheck_round,119);
+assert.equal(r223.material_correction.already_documented_google_reference_usdt_per_piece,15.5);
+assert.equal(r223.material_correction.already_documented_standard_gptplus_reference_usdt_per_piece_at_r119,16.2);
+assert.equal(r223.material_correction.newly_authenticated_price_cny,null);
+assert.equal(r223.material_correction.merchant_reference_is_authenticated_price,false);
+assert.equal(r223.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r223.actual_purchase_made,false);assert.equal(r223.sms_test_done,false);

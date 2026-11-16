@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 477, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 479, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.222'
+    assert latest['version'] == '1.223'
     assert latest['date'] == '2026-11-17'
-    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r04.html'
-    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r04-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r03.html'
+    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r05.html'
+    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r05-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r04.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2720,6 +2720,24 @@ def validate_publications():
     assert r222['qualification_totals']['verified_plus_wholesale_upstreams']==0
     assert r222['actual_purchase_made'] is False and r222['sms_test_done'] is False
 
+    # R223: restore MaplePass discovery provenance without altering historic source files.
+    assert by_id['gpt-source-followup-r223-20261117']['url'].endswith('supplier-followup-20261117-r05.html')
+    assert by_id['gpt-source-followup-r223-20261117-evidence']['url'].endswith('supplier-followup-20261117-r05-evidence.json')
+    r223=json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r05-evidence.json').read_bytes())
+    r53=json.loads((ROOT/'dist/research/2026-11-05/supplier-followup-20261105-r15-evidence.json').read_bytes())
+    r119=json.loads((ROOT/'dist/research/2026-11-10/supplier-followup-20261110-r6-evidence.json').read_bytes())
+    correction=r223['material_correction']
+    assert r223['round']==223 and r223['site_version']=='1.9.231'
+    assert r53['round']==53 and r53['new_wholesale_interface_lead']['merchant']=='MaplePass'
+    assert r119['round']==119 and r119['history']['previous_round_first_merchant_observation']==53
+    assert correction['first_documented_round']==53 and correction['prior_recheck_round']==119
+    assert correction['already_documented_google_reference_usdt_per_piece']==15.5
+    assert correction['already_documented_standard_gptplus_reference_usdt_per_piece_at_r53']==15.8
+    assert correction['already_documented_standard_gptplus_reference_usdt_per_piece_at_r119']==16.2
+    assert correction['newly_authenticated_price_cny'] is None
+    assert r223['current_merchant_checks']['all_in_valid_china_vat_cny'] is None
+    assert r223['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert not r223['actual_purchase_made'] and not r223['sms_test_done']
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
