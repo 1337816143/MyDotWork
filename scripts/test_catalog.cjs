@@ -2375,3 +2375,21 @@ assert.equal(h219.payment_fee_scope.globally_uniform_fee_assumed,false);
 assert.equal(h219.supplier_qualification.valid_china_vat_invoice_verified,false);
 assert.equal(r219.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r219.actual_purchase_made,false);assert.equal(r219.sms_test_done,false);
+
+// r220: third-party registration number is an independent lookup lead, NOT official business or actual payee/invoice verification.
+const cat220=d.records.find(x=>x.id==='gpt-source-followup-r220-20261117');
+const ev220=d.records.find(x=>x.id==='gpt-source-followup-r220-20261117-evidence');
+assert(cat220&&ev220&&cat220.url.endsWith('supplier-followup-20261117-r02.html'));
+const r220=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r02-evidence.json'),'utf8'));
+assert.equal(r220.round,220);assert.equal(r220.site_version,'1.9.228');
+const g220=r220.material_findings;
+assert.equal(g220.independent_company_directory.listed_business_registration_no,'80542846');
+assert.equal(g220.independent_company_directory.listed_incorporation_date,'2026-06-03');
+assert.equal(g220.merchant_link_status.merchant_claim_of_operator_independently_proven,false);
+assert.equal(g220.government_source.company_name_directly_located_in_official_dataset,false);
+assert.equal(g220.second_company_index.direct_page_fetch_succeeded,false);
+assert.equal(g220.merchant_link_status.actual_payment_receiving_legal_entity,null);
+assert.equal(g220.merchant_link_status.all_required_fees_china_vat_inclusive_cny,null);
+assert.equal(g220.archived_plus_reference.same_sku_new_2026_11_17_quote_verified,null);
+assert.equal(r220.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r220.actual_purchase_made,false);assert.equal(r220.sms_test_done,false);
