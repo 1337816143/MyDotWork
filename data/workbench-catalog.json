@@ -5270,6 +5270,28 @@
       "summary": "对照2026-11-05第53轮和11-10第119轮原证据，纠正首见时间和批发参考价证据等级；未知税费为null，真实交易及SMS成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r224-20261117",
+      "title": "GPT源头第224轮 · MaplePass Google渠道同SKU掉订与售后口径冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r06.html",
+      "updatedAt": "2026-11-17",
+      "summary": "同一Google Plus SKU 15.80 USDT未变；历史商称约3%掉订且无保，当前商称约5%、5日内换补及后续按日退。仅商家宣传口径差异，生效日和实际退款未核；批发授权、全费与中国VAT缺口仍在。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r224-20261117-evidence",
+      "title": "第224轮 · Google同SKU旧新原始URL、商称风险与质保声明证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r06-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "对照11月10/17日不可变旧证据和当日直接读取的商品页、退款条款及批发指南；明确3%/5%都是商家自报、没有实测退款，未知费用null、有效中国VAT合格批发仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
