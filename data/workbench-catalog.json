@@ -5402,6 +5402,28 @@
       "summary": "2026-11-17 23:31原站有货¥126/份、14:31旧归档不可买，同SKU价格未变；下单链接重定向不可读合作店，费用与法人未知null，实际购买、税票和短信成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r230-20261118",
+      "title": "GPT源头第230轮 · 瑶瑶Plus增值税普通发票及申请流程新口径",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r01.html",
+      "updatedAt": "2026-11-18",
+      "summary": "同一瑶瑶开票原页11月16日更新，首次明确商家承诺增值税普票、在线表单及3工作日；旧索引10%票费口径与新版未明示费不闭合，真出票/含票全费/批发仍未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r230-20261118-evidence",
+      "title": "第230轮 · 瑶瑶增值税普票流程、旧搜索索引及全费未知JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r01-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "2026-11-15直接旧存档与11月18日同URL新版对照；129元/账号月只是零售，票费null，真实出票与转售授权0，独立手机验证未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
