@@ -2738,6 +2738,23 @@ def validate_publications():
     assert r223['current_merchant_checks']['all_in_valid_china_vat_cny'] is None
     assert r223['qualification_totals']['verified_plus_wholesale_upstreams']==0
     assert not r223['actual_purchase_made'] and not r223['sms_test_done']
+    # R224: preserve older no-warranty and 3% seller claim against current warranty and 5% page, without promising real refunds.
+    assert by_id['gpt-source-followup-r224-20261117']['url'].endswith('supplier-followup-20261117-r06.html')
+    assert by_id['gpt-source-followup-r224-20261117-evidence']['url'].endswith('supplier-followup-20261117-r06-evidence.json')
+    r224=json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r06-evidence.json').read_bytes())
+    same=r224['material_observation']
+    assert r224['round']==224 and r224['site_version']=='1.9.232'
+    assert same['sku']=='gptplus_google' and same['comparison_same_exact_sku'] is True
+    assert same['older_evidence']['merchant_claim_subscription_drop_risk_percent']==3
+    assert same['new_current_product_page']['merchant_claim_subscription_drop_risk_percent_approx']==5
+    assert same['older_evidence']['merchant_claim_ongoing_warranty'] is False
+    assert same['new_current_product_page']['merchant_claim_warranty'] is True
+    assert same['new_current_product_page']['retail_usdt_per_item_month']==15.8
+    assert same['actual_policy_effective_date_verified'] is None
+    assert same['actual_replace_or_refund_tested'] is False
+    assert r224['buyer_missing_evidence']['all_fee_valid_china_vat_total_cny'] is None
+    assert r224['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert r224['actual_purchase_made'] is False and r224['sms_test_done'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
