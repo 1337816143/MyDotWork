@@ -5292,6 +5292,28 @@
       "summary": "对照11月10/17日不可变旧证据和当日直接读取的商品页、退款条款及批发指南；明确3%/5%都是商家自报、没有实测退款，未知费用null、有效中国VAT合格批发仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r225-20261117",
+      "title": "GPT源头第225轮 · AICZ合作分站零售与独立Codex接码",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r07.html",
+      "updatedAt": "2026-11-17",
+      "summary": "新读AICZ菲律宾本人原号Plus¥130.80/月、Google渠道¥126/件、Codex单次短信¥3.60；后两项下单转合作分站，条款称供应商收款履约且渠道资料另有服务费。无有效中国VAT全费、真实批发授权或接码实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r225-20261117-evidence",
+      "title": "第225轮 · AICZ两种Plus准确SKU、合作分站付款和SMS接码证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r07-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "本轮读取7个商家与1个官方原始页面、2个合作店访问失败；区分自标当日价、合作方收款、¥3.60单次接码及单独收费渠道服务，所有真实付款/出票/授权/验证缺口为null或false。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
