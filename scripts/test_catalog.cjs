@@ -2532,3 +2532,20 @@ assert.equal(r228.non_change_first_party_checks.morimm_codex_sms.seller_price_cn
 assert.equal(r228.unresolved_procurement.all_required_fees_and_invoice_included_total_cny,null);
 assert.equal(r228.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r228.actual_purchase_made,false);assert.equal(r228.sms_test_done,false);
+
+// R229: one exact Google SKU now shows seller purchase availability, not paid proof.
+const cat229=d.records.find(x=>x.id==='gpt-source-followup-r229-20261117');
+const data229=d.records.find(x=>x.id==='gpt-source-followup-r229-20261117-evidence');
+assert(cat229&&data229&&cat229.url.endsWith('supplier-followup-20261117-r11.html'));
+const r229=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r11-evidence.json'),'utf8'));
+assert.equal(r229.round,229);assert.equal(r229.site_version,'1.9.237');
+assert.equal(r229.material_observation.archive_previous.stock_label,'暂不可购买');
+assert.equal(r229.material_observation.current_observation.stock_label,'有货 · 自动发卡');
+assert.equal(r229.material_observation.current_observation.price_cny_per_one_card,126);
+assert.equal(r229.material_observation.current_observation.purchase_button_present,true);
+assert.equal(r229.material_observation.price_change_cny,0);
+assert.equal(r229.material_observation.actual_paid_checkout_total_cny,null);
+assert.equal(r229.payment_party_evidence_gap.actual_payment_receiving_legal_entity,null);
+assert.equal(r229.unresolved_procurement.all_mandatory_payment_and_vat_included_total_cny,null);
+assert.equal(r229.qualifying_total.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r229.actual_purchase_made,false);assert.equal(r229.sms_test_done,false);
