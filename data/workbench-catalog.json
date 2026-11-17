@@ -5424,6 +5424,28 @@
       "summary": "2026-11-15直接旧存档与11月18日同URL新版对照；129元/账号月只是零售，票费null，真实出票与转售授权0，独立手机验证未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r231-20261118",
+      "title": "GPT源头第231轮 · Hype Plus同SKU挂牌上涨与支付附费更新",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r02.html",
+      "updatedAt": "2026-11-18",
+      "summary": "Hype原号Plus卡充¥107→¥117，支付宝未付款预览¥114.28→¥124.96；Codex SMS和代理资格支付宝费率6%→6.8%。无有效中国VAT票、代理有前置费，不是已核真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r231-20261118-evidence",
+      "title": "第231轮 · Hype原号Plus价签与独立接码/代理手续费证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r02-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "2026-11-17不可变r219与11月18日商家原站同SKU快照对照；未付价与真实成交区别、号码24h质保、票据与授权未知null，真批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

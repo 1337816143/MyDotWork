@@ -2564,3 +2564,21 @@ assert.equal(r230.material_observation.actual_invoice_issuing_legal_entity,null)
 assert.equal(r230.material_observation.seller_display_price_cny_per_one_account_one_month,129);
 assert.equal(r230.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r230.actual_purchase_made,false);assert.equal(r230.sms_test_done,false);
+
+// R231: independent merchant price and fee scopes, no new qualified legal wholesale or SMS success.
+const c231=d.records.find(x=>x.id==='gpt-source-followup-r231-20261118');
+const e231=d.records.find(x=>x.id==='gpt-source-followup-r231-20261118-evidence');
+assert(c231&&e231&&c231.url.endsWith('supplier-followup-20261118-r02.html'));
+const r231=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-18/supplier-followup-20261118-r02-evidence.json'),'utf8'));
+assert.equal(r231.round,231);assert.equal(r231.site_version,'1.9.239');
+assert.equal(r231.material_observation.plus_card.previous_base_cny_per_account_month,107);
+assert.equal(r231.material_observation.plus_card.current_base_cny_per_account_month,117);
+assert.equal(r231.material_observation.plus_card.previous_unpaid_preview_cny,114.28);
+assert.equal(r231.material_observation.plus_card.current_unpaid_preview_cny,124.96);
+assert.equal(r231.material_observation.plus_card.valid_chinese_vat_invoice_included_total_cny,null);
+assert.equal(r231.material_observation.plus_ios.current_price_table_cny_per_account_month,135);
+assert.equal(r231.material_observation.codex_sms.current_2026_11_18_alipay_rate,0.068);
+assert.equal(r231.material_observation.codex_sms.sms_success_tested,false);
+assert.equal(r231.material_observation.agent.current_unpaid_preview_cny,105.74);
+assert.equal(r231.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r231.actual_purchase_made,false);assert.equal(r231.sms_test_done,false);
