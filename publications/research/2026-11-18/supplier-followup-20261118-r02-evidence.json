@@ -1,0 +1,261 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 231,
+  "site_version": "1.9.239",
+  "observed_on": "2026-11-18",
+  "previous_report": "research/2026-11-18/supplier-followup-20261118-r01.html",
+  "criteria": {
+    "original_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "all_mandatory_payment_and_valid_china_vat_max_cny": 170
+  },
+  "material_observation": {
+    "merchant": "Hype",
+    "source_class": "first_party_seller_web_claim_and_unpaid_preview_not_paid_checkout",
+    "plus_card": {
+      "exact_sku": "本人原号 GPT Plus 卡充 全程质保 1账号·1个月",
+      "url": "https://hypeai.cc/p/catalog-51-2",
+      "previous_round": 219,
+      "previous_observed_on": "2026-11-17",
+      "previous_base_cny_per_account_month": 107,
+      "previous_alipay_fee_rate": 0.068,
+      "previous_unpaid_preview_cny": 114.28,
+      "current_observed_on": "2026-11-18",
+      "current_base_cny_per_account_month": 117,
+      "current_alipay_fee_rate": 0.068,
+      "current_fee_component_cny": 7.96,
+      "current_unpaid_preview_cny": 124.96,
+      "base_difference_cny": 10,
+      "preview_difference_cny": 10.68,
+      "requires_free_or_no_current_subscription_and_email_login": true,
+      "cannot_cover_active_subscription_seller_claim": true,
+      "merchant_price_table_self_updated_on": "2026-11-18",
+      "merchant_stock_label": "有货",
+      "actual_price_change_effective_at": null,
+      "paid_checkout_verified": false,
+      "valid_chinese_vat_invoice_included_total_cny": null
+    },
+    "plus_ios": {
+      "sku": "本人原号 GPT Plus iOS 充值·1账号·1个月",
+      "url": "https://hypeai.cc/p/catalog-51-2",
+      "previous_price_table_cny_per_account_month": 133,
+      "previous_sku_selector_cny_per_account_month": 135,
+      "current_price_table_cny_per_account_month": 135,
+      "current_sku_selector_cny_per_account_month": 135,
+      "observed_table_difference_cny": 2,
+      "old_page_inconsistency_currently_resolved": true,
+      "seller_claim_active_subscription_covered": true,
+      "old_days_carried_over": false,
+      "actual_selected_ios_paid_total_cny": null
+    },
+    "codex_sms": {
+      "sku": "CodeX 实卡接码 美国号码·1份",
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "base_cny_per_phone": 12,
+      "previous_2026_11_17_alipay_rate": 0.06,
+      "previous_unpaid_preview_cny": 12.72,
+      "current_2026_11_18_alipay_rate": 0.068,
+      "current_unpaid_preview_cny": 12.82,
+      "observed_preview_difference_cny": 0.1,
+      "seller_claim_reusable_phone_days_min": 20,
+      "seller_claim_reusable_phone_days_max": 80,
+      "warranty_only_first_account_within_hours": 24,
+      "seller_claim_two_screenshots_one_replacement_then_conditional_original_payment_refund": true,
+      "chatgpt_web_guaranteed": false,
+      "first_api_key_support_verified": false,
+      "number_type_and_long_term_control_verified": false,
+      "sms_success_tested": false,
+      "refund_actually_tested": false
+    },
+    "agent": {
+      "url": "https://hypeai.cc/p/catalog-hype-agent-1",
+      "single_agent_entry_fee_cny": 99,
+      "previous_alipay_rate": 0.06,
+      "previous_unpaid_preview_cny": 104.94,
+      "current_alipay_rate": 0.068,
+      "current_unpaid_preview_cny": 105.74,
+      "observed_preview_difference_cny": 0.8,
+      "qualifies_as_no_upfront_fee": false,
+      "actual_one_unit_wholesale_cost_cny": null
+    }
+  },
+  "seller_legal_terms": {
+    "faq_url": "https://hypeai.cc/faq",
+    "faq_self_updated_on": "2026-11-17",
+    "terms_url": "https://hypeai.cc/terms",
+    "merchant_says_no_invoices": true,
+    "merchant_disclaims_official_openai_authorization": true,
+    "receipt_legal_entity": null,
+    "invoice_issuing_legal_entity": null,
+    "genuine_authorized_resale_proof": false,
+    "valid_china_vat_invoice_verified": false,
+    "mandatory_all_in_cost_cny": null
+  },
+  "sms_scope": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "general_chatgpt_phone_not_required": true,
+    "codex_desktop_may_require": true,
+    "first_api_key_requires_phone": true,
+    "apple_inapp_and_session_may_coexist": true,
+    "automatic_bind_phone_or_verification_from_plus_payment": false,
+    "verified_chatgpt_web_successes": 0,
+    "verified_codex_successes": 0,
+    "verified_first_api_key_successes": 0,
+    "failed_sms_cash_refund_verified": false
+  },
+  "unmaterial_checks": {
+    "aicz_google": {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "price_cny_per_card": 126,
+      "merchant_says_available": true
+    },
+    "yinlujing": {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "entry_fee_cny": 3000
+    },
+    "payprm": {
+      "url": "https://www.payprm.com/shop",
+      "seller_plus_from_cny_per_month": 155
+    },
+    "getgpt": {
+      "url": "https://getgpt.io/price",
+      "seller_plus_cny_per_month": 179
+    },
+    "chongpay": {
+      "url": "https://chongpay.com/",
+      "seller_prior_plus_cny_per_item": 139,
+      "new_evidence_of_legal_checkout": false
+    },
+    "chatshare": {
+      "url": "https://chatshare.tv/",
+      "shared_five_users_cny_per_user_30days": 38,
+      "not_original_account": true
+    },
+    "morimm": {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "readable": false,
+      "prior_price_cny_per_ios_plus_month": 125,
+      "refreshed_old_price": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://hypeai.cc/p/catalog-51-2",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "first_party_exact_sku_unpaid_price_preview"
+    },
+    {
+      "url": "https://hypeai.cc/prices",
+      "observed_on": "2026-11-18",
+      "seller_self_updated_on": "2026-11-18",
+      "readable": true,
+      "classification": "seller_price_and_inventory_table"
+    },
+    {
+      "url": "https://hypeai.cc/faq",
+      "observed_on": "2026-11-18",
+      "seller_self_updated_on": "2026-11-17",
+      "readable": true,
+      "classification": "first_party_faq_payment_and_no_invoice"
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "separate_codex_sms_sku"
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-hype-agent-1",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "separate_paid_agent_sku"
+    },
+    {
+      "url": "https://hypeai.cc/terms",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "seller_non_official_authorization"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/92f6c56b2083e9b0bb5091015af5f8a288b48a59/publications/research/2026-11-17/supplier-followup-20261117-r01-evidence.json",
+      "observed_on": "2026-11-17",
+      "readable": true,
+      "classification": "immutable_previous_direct_r219_archive"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "no_material_change"
+    },
+    {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "no_material_change"
+    },
+    {
+      "url": "https://www.payprm.com/shop",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "no_material_change"
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "no_material_change"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "no_material_change"
+    },
+    {
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "shared_seat_only"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-18",
+      "readable": false,
+      "classification": "access_failed_do_not_refresh_old_quote"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "classification": "official_sms_scope"
+    }
+  ],
+  "priority_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_chinese_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_126_offers_preserved": true,
+  "historical_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
