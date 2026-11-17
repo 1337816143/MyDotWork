@@ -2494,3 +2494,22 @@ assert.equal(r226.payment_authorization_gaps.actual_gpay_google_sku_purchase_tot
 assert.equal(r226.payment_authorization_gaps.valid_china_vat_invoice_verified,false);
 assert.equal(r226.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r226.actual_purchase_made,false);assert.equal(r226.sms_test_done,false);
+
+ // R227: first independent primary government registry cross-check for GetVIP self-claimed Spanish legal name, not merchant identity/invoice/wholesale proof.
+const cat227=d.records.find(x=>x.id==='gpt-source-followup-r227-20261117');
+const data227=d.records.find(x=>x.id==='gpt-source-followup-r227-20261117-evidence');
+assert(cat227&&data227&&cat227.url.endsWith('supplier-followup-20261117-r09.html'));
+const r227=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r09-evidence.json'),'utf8'));
+assert.equal(r227.round,227);assert.equal(r227.site_version,'1.9.235');
+assert.equal(r227.finding.independent_government_record.entry,'429248');
+assert.equal(r227.finding.independent_government_record.published_on,'2026-09-24');
+assert.equal(r227.finding.independent_company_directory.cif,'B93979136');
+assert.equal(r227.finding.reconciliation.road_type_exact_match,false);
+assert.equal(r227.finding.reconciliation.merchant_website_legal_entity_link_independently_verified,false);
+assert.equal(r227.unresolved_procurement.actual_payment_collecting_legal_entity,null);
+assert.equal(r227.unresolved_procurement.actual_invoice_issuer,null);
+assert.equal(r227.unresolved_procurement.invoice_fee_cny,null);
+assert.equal(r227.unresolved_procurement.valid_chinese_vat_invoice_verified,false);
+assert.equal(r227.current_sku_context.actual_checkout_total_cny,null);
+assert.equal(r227.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r227.actual_purchase_made,false);assert.equal(r227.sms_test_done,false);

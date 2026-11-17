@@ -1,0 +1,179 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 227,
+  "site_version": "1.9.235",
+  "observed_on": "2026-11-17",
+  "nature": "new_official_spanish_commercial_registry_evidence_cross_checked_against_getvip_prior_self_claim_without_proving_merchant_payment_or_invoice_identity",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r08.html",
+  "finding": {
+    "merchant": "GetVIP",
+    "merchant_url": "https://getvip.pro/about",
+    "previous_repo_status": "prior r33/r34 merchant self-claimed KAELIS TECHNOLOGIES S.L. in Spain; no independent Spanish official registry proof archived",
+    "merchant_self_identification": {
+      "legal_name_claim": "KAELIS TECHNOLOGIES, S.L.",
+      "address_claim": "Calle Rafael Alberti, 23, PBJ, Puerta 0002, 46530 Puçol, Valencia, España",
+      "classification": "seller_claim"
+    },
+    "independent_government_record": {
+      "source": "Agencia Estatal Boletín Oficial del Estado, BORME",
+      "original_url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-185-46",
+      "document_id": "BORME-A-2026-185-46",
+      "bulletin_number": 185,
+      "published_on": "2026-09-24",
+      "entry": "429248",
+      "legal_name": "KAELIS TECHNOLOGIES SOCIEDAD LIMITADA",
+      "commencement_date": "2026-09-01",
+      "registry_entry_date": "2026-09-17",
+      "record_ref": "S 8, H V 237771, I/A 1",
+      "registered_address": "PLAZA RAFAEL ALBERTI 23 Esc.B BAJA 2 (PUZOL)",
+      "capital_eur": 3000,
+      "classification": "primary_official_registration"
+    },
+    "independent_company_directory": {
+      "source": "Axesor",
+      "original_url": "https://www.axesor.es/Informes-Empresas/11604396/KAELIS_TECHNOLOGIES_SOCIEDAD_LIMITADA.html",
+      "cif": "B93979136",
+      "incorporated_on": "2026-09-01",
+      "registered_address": "PLAZA RAFAEL ALBERTI 23 ESC.B BAJA 2 46530 PUÇOL VALENCIA",
+      "classification": "third_party_directory_not_official_tax_certificate"
+    },
+    "reconciliation": {
+      "company_name_matches": true,
+      "city_and_road_name_number_correspond": true,
+      "road_type_exact_match": false,
+      "merchant_uses": "Calle Rafael Alberti",
+      "registry_uses": "Plaza Rafael Alberti",
+      "unit_notation_exact_match": false,
+      "merchant_website_legal_entity_link_independently_verified": false,
+      "company_current_good_standing_verified": false,
+      "merchant_ownership_of_domain_verified": false,
+      "interpretation": "same-name same-city and Rafael Alberti no.23 registration supports existence of identified Spanish company; street-type and unit wording differences plus no contract, domain proof or receipt prevent equating it to payment/invoice seller"
+    },
+    "registration_change_this_round": false,
+    "discovery_this_round": true,
+    "confirmed_wholesale_upstream": false
+  },
+  "current_sku_context": {
+    "seller_product_url": "https://getvip.pro/product/chatgpt",
+    "exact_sku": "ChatGPT Plus, manual top-up, own account, one month",
+    "public_price_cny_per_month": 118,
+    "public_price_is_actual_paid_total": false,
+    "stripe_fee_rate_seller_claim": 0.06,
+    "conditional_online_payment_subtotal_cny_excluding_invoice_fee": 125.08,
+    "wechat_transfer_fee_rate_seller_claim": 0,
+    "requires_existing_login_and_full_session": true,
+    "in_force_plus_subscription_must_expire_first_seller_claim": true,
+    "invoice_possible_seller_claim": true,
+    "invoice_tax_rate_cny": null,
+    "actual_checkout_total_cny": null,
+    "seller_claimed_subscription_support_days": 30,
+    "real_delivery_verified": false,
+    "real_refund_verified": false,
+    "price_changed_on_evidence": false
+  },
+  "unresolved_procurement": {
+    "actual_payment_collecting_legal_entity": null,
+    "website_controller_and_registered_company_link_proven": false,
+    "actual_invoice_issuer": null,
+    "valid_chinese_vat_invoice_verified": false,
+    "invoice_fee_cny": null,
+    "payment_processing_fee_actual_cny": null,
+    "all_fees_included_total_cny": null,
+    "approved_one_unit_wholesale_price_cny": null,
+    "approved_no_upfront_agent_fee": null,
+    "formal_resale_authorization_verified": false,
+    "contracted_supply_chain_verified": false,
+    "real_one_unit_subscription_success_verified": false
+  },
+  "phone_scope": {
+    "chatgpt_web_login_sms_success_verified": false,
+    "codex_desktop_sms_success_verified": false,
+    "initial_api_key_sms_success_verified": false,
+    "durable_number_term_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "apple_purchase_or_session_topup_guarantees_phone_binding": false
+  },
+  "other_priority_vendors_reviewed_without_new_material_evidence": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "AICZ",
+    "MaplePass"
+  ],
+  "same_day_non_change_check": {
+    "vendor": "AICZ",
+    "sku": "Google channel ChatGPT Plus key",
+    "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+    "public_price_cny_per_item": 126,
+    "merchant_stock_label": "暂不可购买",
+    "price_label_observed": "2026-11-17 19:31 Beijing",
+    "status_changed_vs_r226": false,
+    "merchant_price_changed_vs_r226": false,
+    "actual_checkout_total_cny": null
+  },
+  "sources": [
+    {
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-185-46",
+      "observed_on": "2026-11-17",
+      "page_published_on": "2026-09-24",
+      "classification": "direct_read_official_government_register",
+      "finding": "entry 429248 records KAELIS TECHNOLOGIES SL, start Sep1, registered Sep17, Plaza Rafael Alberti 23 in Puzol"
+    },
+    {
+      "url": "https://getvip.pro/about",
+      "observed_on": "2026-11-17",
+      "page_self_updated_on": "2026-10",
+      "classification": "direct_read_seller_own_claim",
+      "finding": "footer claims same company name but Calle Rafael Alberti 23 and city"
+    },
+    {
+      "url": "https://www.axesor.es/Informes-Empresas/11604396/KAELIS_TECHNOLOGIES_SOCIEDAD_LIMITADA.html",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_independent_third_party_company_directory",
+      "finding": "CIF B93979136 and company founding Sep1, Plaza Rafael Alberti 23; CIF not itself confirmed in official BORME text"
+    },
+    {
+      "url": "https://getvip.pro/product/chatgpt",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_existing_seller_exact_sku",
+      "finding": "Plus 118 yuan/month linked product, full Session prerequisite, subscriber expiry, invoice extra tax points unknown"
+    },
+    {
+      "url": "https://getvip.pro/terms",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_seller_terms",
+      "finding": "tax amount consult support; third-party non-authorized, no independently verified payment/invoice issuer"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_existing_merchant_sku_no_change",
+      "finding": "Google Plus 126 yuan/item still unavailable; 19:31 is seller self-update label, not evidence of new state change"
+    }
+  ],
+  "evidence_classes": {
+    "primary_official": "Spanish BORME historical company registration independently retrieved",
+    "merchant_claim": "GetVIP self-reports trading company, offers Plus and invoice on inquiry",
+    "independent_third_party": "Axesor CIF; not official VAT or website ownership",
+    "inference": "company exists, domain-to-company operation and seller legal responsibility remain unproved",
+    "actual_orders_invoices_sms_tests": 0
+  },
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "old_126_quotes_unchanged": true,
+  "old_reports_original_bytes_unchanged": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
