@@ -2770,6 +2770,22 @@ def validate_publications():
     assert r225['buyer_missing_evidence']['all_required_fees_invoice_included_cny'] is None
     assert r225['qualification_totals']['verified_plus_wholesale_upstreams']==0
     assert r225['actual_purchase_made'] is False and r225['sms_test_done'] is False
+    # R226: AICZ Google Plus same-SKU merchant label changed to temporarily unavailable, not proven permanent outage.
+    assert by_id['gpt-source-followup-r226-20261117']['url'].endswith('supplier-followup-20261117-r08.html')
+    assert by_id['gpt-source-followup-r226-20261117-evidence']['url'].endswith('supplier-followup-20261117-r08-evidence.json')
+    r226=json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r08-evidence.json').read_bytes())
+    assert r226['round']==226 and r226['site_version']=='1.9.234'
+    state=r226['material_observation']
+    assert state['comparison_same_exact_sku'] is True and state['price_changed'] is False
+    assert state['older_repo_evidence']['merchant_stock_label']=='有货 · 自动发卡'
+    assert state['directly_read_now']['merchant_stock_label']=='暂不可购买'
+    assert state['directly_read_now']['price_cny_per_item']==126
+    assert state['confirmed_permanent_discontinuation'] is False and state['real_order_placed'] is False
+    assert r226['other_sku_separate_checks'][0]['price_cny_per_item_month']==130.8
+    assert r226['other_sku_separate_checks'][1]['price_cny_per_single_sms']==3.6
+    assert r226['payment_authorization_gaps']['actual_gpay_google_sku_purchase_total_cny'] is None
+    assert r226['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert r226['actual_purchase_made'] is False and r226['sms_test_done'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

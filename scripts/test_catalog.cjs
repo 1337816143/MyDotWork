@@ -2476,3 +2476,21 @@ assert.equal(r225.buyer_missing_evidence.all_required_fees_invoice_included_cny,
 assert.equal(r225.buyer_missing_evidence.valid_china_vat_invoice_verified,false);
 assert.equal(r225.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r225.actual_purchase_made,false);assert.equal(r225.sms_test_done,false);
+
+ // R226: merchant Google SKU is shown temporarily unavailable; separate PH Plus and Codex SMS remain seller-listed.
+const cat226=d.records.find(x=>x.id==='gpt-source-followup-r226-20261117');
+const data226=d.records.find(x=>x.id==='gpt-source-followup-r226-20261117-evidence');
+assert(cat226&&data226&&cat226.url.endsWith('supplier-followup-20261117-r08.html'));
+const r226=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r08-evidence.json'),'utf8'));
+assert.equal(r226.round,226);assert.equal(r226.site_version,'1.9.234');
+assert.equal(r226.material_observation.older_repo_evidence.merchant_stock_label,'有货 · 自动发卡');
+assert.equal(r226.material_observation.directly_read_now.merchant_stock_label,'暂不可购买');
+assert.equal(r226.material_observation.price_changed,false);
+assert.equal(r226.material_observation.directly_read_now.price_cny_per_item,126);
+assert.equal(r226.material_observation.confirmed_permanent_discontinuation,false);
+assert.equal(r226.other_sku_separate_checks[0].price_cny_per_item_month,130.8);
+assert.equal(r226.other_sku_separate_checks[1].price_cny_per_single_sms,3.6);
+assert.equal(r226.payment_authorization_gaps.actual_gpay_google_sku_purchase_total_cny,null);
+assert.equal(r226.payment_authorization_gaps.valid_china_vat_invoice_verified,false);
+assert.equal(r226.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r226.actual_purchase_made,false);assert.equal(r226.sms_test_done,false);
