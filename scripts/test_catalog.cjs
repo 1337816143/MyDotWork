@@ -2455,3 +2455,24 @@ assert.equal(r224.material_observation.actual_policy_effective_date_verified,nul
 assert.equal(r224.buyer_missing_evidence.all_fee_valid_china_vat_total_cny,null);
 assert.equal(r224.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r224.actual_purchase_made,false);assert.equal(r224.sms_test_done,false);
+
+// R225: new AICZ catalog is a reseller/referral channel, NOT a vetted wholesale source or a verified phone test.
+const cat225=d.records.find(x=>x.id==='gpt-source-followup-r225-20261117');
+const data225=d.records.find(x=>x.id==='gpt-source-followup-r225-20261117-evidence');
+assert(cat225&&data225&&cat225.url.endsWith('supplier-followup-20261117-r07.html'));
+const r225=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r07-evidence.json'),'utf8'));
+assert.equal(r225.round,225);assert.equal(r225.site_version,'1.9.233');
+assert.equal(r225.sku_observations[0].price_cny_per_item_month,130.8);
+assert.equal(r225.sku_observations[0].actual_checkout_total_cny,null);
+assert.equal(r225.sku_observations[1].price_cny_per_item_month,126);
+assert.equal(r225.sku_observations[1].redirect_destination_directly_readable,false);
+assert.equal(r225.sku_observations[2].price_cny_per_one_seller_claimed_activation,3.6);
+assert.equal(r225.sku_observations[2].actual_sms_success_verified,false);
+assert.equal(r225.merchant_terms.cooperative_subsites_supply_and_collect_payment_seller_claim,true);
+assert.equal(r225.merchant_terms.merchant_channel_information_service_fee_required,true);
+assert.equal(r225.merchant_terms.channel_information_service_fee_amount_cny,null);
+assert.equal(r225.merchant_terms.upstream_agent_fee_amount_cny,null);
+assert.equal(r225.buyer_missing_evidence.all_required_fees_invoice_included_cny,null);
+assert.equal(r225.buyer_missing_evidence.valid_china_vat_invoice_verified,false);
+assert.equal(r225.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r225.actual_purchase_made,false);assert.equal(r225.sms_test_done,false);
