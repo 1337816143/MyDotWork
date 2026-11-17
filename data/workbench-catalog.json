@@ -5380,6 +5380,28 @@
       "summary": "同一原始商品URL两组历史观察日和当前价单位对照；旧Codex ¥4/次及菲区¥114均属复读；会员费/票费/含票全费/授权未知null，实购验票SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r229-20261117",
+      "title": "GPT源头第229轮 · AICZ Google Plus恢复商家购买状态与收款主体缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r11.html",
+      "updatedAt": "2026-11-17",
+      "summary": "AICZ同一Google Plus ¥126/份由第226轮不可买恢复商家有货及购买按钮；跳转合作店结算不可读，商家收银文案与既有合作方付款条款未闭合，真正批发及税票仍0家。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r229-20261117-evidence",
+      "title": "第229轮 · AICZ同SKU购买入口状态及支付/票据缺口证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r11-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "2026-11-17 23:31原站有货¥126/份、14:31旧归档不可买，同SKU价格未变；下单链接重定向不可读合作店，费用与法人未知null，实际购买、税票和短信成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

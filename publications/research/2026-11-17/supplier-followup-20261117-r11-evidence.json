@@ -1,0 +1,228 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 229,
+  "site_version": "1.9.237",
+  "observed_on": "2026-11-17",
+  "nature": "same_exact_AICZ_Google_Plus_seller_listing_returns_to_in_stock_not_confirmed_checkout_or_true_wholesale",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r10.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_upfront_dealer_fee": true,
+    "mandatory_payment_and_valid_china_vat_all_in_ceiling_cny": 170
+  },
+  "material_observation": {
+    "merchant": "AICZ",
+    "exact_sku": "ChatGPT-Plus官方充值-自助卡密充值-谷歌渠道",
+    "original_url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+    "archive_previous": {
+      "round": 226,
+      "observed_on": "2026-11-17",
+      "merchant_page_updated_at": "2026-11-17 14:31 Beijing",
+      "stock_label": "暂不可购买",
+      "purchase_button_present": false,
+      "price_cny_per_one_card": 126,
+      "original_archive": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-17/supplier-followup-20261117-r08-evidence.json"
+    },
+    "current_observation": {
+      "observed_on": "2026-11-17",
+      "merchant_page_updated_at": "2026-11-17 23:31 Beijing",
+      "also_observed_at_seller_page_updated_at": "2026-11-17 22:31 Beijing",
+      "stock_label": "有货 · 自动发卡",
+      "purchase_button_present": true,
+      "purchase_button_label": "立即购买",
+      "price_cny_per_one_card": 126,
+      "quantity": 1,
+      "currency": "CNY",
+      "seller_purchase_url": "https://aicz.vip/buy/36",
+      "seller_claim_payment_copy": "在 AICZ 收银台完成付款",
+      "seller_claim_currently_available": true
+    },
+    "price_change_cny": 0,
+    "merchant_displayed_availability_change": true,
+    "actual_effective_change_time_verified": null,
+    "actual_stock_verified": false,
+    "merchant_purchase_link_redirect_target": "https://shop.aicz.vip/products/ChatGPT-Plus-Google",
+    "redirected_checkout_page_readable": false,
+    "actual_paid_checkout_total_cny": null,
+    "actual_order_placed": false,
+    "actual_fulfillment_or_plus_redemption_tested": false,
+    "seller_product_page_subscription_period_months_independently_confirmed": null,
+    "confirmed_permanent_supply_recovery": false
+  },
+  "payment_party_evidence_gap": {
+    "new_product_page_merchant_claim": "在 AICZ 收银台完成付款",
+    "product_page_url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+    "preexisting_terms_page_url": "https://aicz.vip/terms",
+    "preexisting_terms_page_self_updated_on": "2026-11-02",
+    "preexisting_terms_claim": "For new products, cooperating subsite suppliers collect payments, manage orders and fulfill products; paid channel information and potential agency charges may be additional.",
+    "contradiction_or_scope_gap": "AICZ cashier copy vs partner-supplier payment language; redirected partner checkout unreadable",
+    "actual_payment_receiving_legal_entity": null,
+    "actual_invoice_issuing_legal_entity": null,
+    "actual_contractual_merchant_of_record_verified": false,
+    "invoice_or_settlement_transaction_tested": false
+  },
+  "other_skus_not_new": {
+    "aicz_ph_plus": {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "seller_price_cny_per_one_month_card": 130.8,
+      "stock_label": "有货 · 自动发卡",
+      "verified_checkout": false
+    },
+    "aicz_codex_sms": {
+      "url": "https://aicz.vip/codex",
+      "seller_price_cny_per_one_sms": 3.6,
+      "number_hold_days": null,
+      "actual_codex_success": false,
+      "failed_original_cash_refund_verified": false
+    },
+    "chongpay": {
+      "url": "https://chongpay.com/",
+      "seller_plus_cny_per_item": 139,
+      "china_vat_all_in_cny": null
+    },
+    "payprm": {
+      "url": "https://www.payprm.com/shop",
+      "seller_plus_cny_per_month": 155,
+      "china_vat_all_in_cny": null
+    },
+    "chatshare": {
+      "url": "https://chatshare.tv/",
+      "classification": "shared_seat_not_own_original_account",
+      "eligible": false
+    },
+    "getgpt_pro": {
+      "url": "https://getgpt.io/price",
+      "seller_listed_plus_cny_per_month": 179,
+      "above_ceiling": true
+    }
+  },
+  "access_failures_without_status_refresh": [
+    {
+      "url": "https://shop.aicz.vip/products/ChatGPT-Plus-Google",
+      "reason": "redirect target did not provide readable checkout body"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "reason": "no independently readable current SKU page"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "reason": "no independently readable current SKU page"
+    }
+  ],
+  "unresolved_procurement": {
+    "genuine_one_unit_wholesale_price_cny": null,
+    "wholesale_without_agent_entry_fee_verified": false,
+    "actual_checkout_payment_fee_cny": null,
+    "actual_china_vat_invoice_fee_cny": null,
+    "all_mandatory_payment_and_vat_included_total_cny": null,
+    "valid_china_vat_invoice_verified": false,
+    "real_payment_receiving_legal_entity": null,
+    "real_invoice_issuing_legal_entity": null,
+    "actual_formal_resale_authorization_verified": false,
+    "successful_paid_purchase_verified": false,
+    "actual_renewal_or_refund_verified": false
+  },
+  "independent_phone_scope": {
+    "chatgpt_web_login_sms_success_tested": false,
+    "codex_desktop_sms_success_tested": false,
+    "first_api_key_sms_success_tested": false,
+    "number_control_days": null,
+    "durable_sim_ownership_verified": false,
+    "failed_sms_original_cash_refund_verified": false,
+    "apple_in_app_purchase_auto_binds_phone_guaranteed": false,
+    "session_or_token_topup_auto_binds_phone_guaranteed": false,
+    "some_seller_routes_require_existing_session_or_token": true
+  },
+  "sources": [
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-17",
+      "page_self_updated_at": "2026-11-17 23:31 Beijing",
+      "source_class": "first_party_current_seller_label_and_copy",
+      "note": "CNY126/item, 有货·自动发卡, 立即购买, AICZ cashier copy"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-17",
+      "page_self_updated_at": "2026-11-17 22:31 Beijing",
+      "source_class": "first_party_earlier_same_run_seller_label",
+      "note": "same CNY126 and merchant in-stock label; no observed sale time"
+    },
+    {
+      "url": "https://aicz.vip/buy/36",
+      "observed_on": "2026-11-17",
+      "source_class": "seller_public_buy_redirect_attempt",
+      "note": "redirected to partner checkout unreadable; not a purchase attempt or outage proof"
+    },
+    {
+      "url": "https://shop.aicz.vip/products/ChatGPT-Plus-Google",
+      "observed_on": "2026-11-17",
+      "source_class": "access_failed_partner_checkout",
+      "note": "actual payment and tax/legal entity not established"
+    },
+    {
+      "url": "https://aicz.vip/terms",
+      "observed_on": "2026-11-17",
+      "page_self_updated_at": "2026-11-02",
+      "source_class": "preexisting_seller_terms_not_new_policy",
+      "note": "partner supplier responsible payment and fulfillment; channel and agent fees potentially separate"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-17",
+      "source_class": "separate_merchant_sku_nonchange",
+      "note": "Philippines Plus CNY130.8/card/month seller-listed"
+    },
+    {
+      "url": "https://aicz.vip/codex",
+      "observed_on": "2026-11-17",
+      "source_class": "separate_one_time_phone_service",
+      "note": "Codex one-time SMS CNY3.6, success and durable possession unknown"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-17",
+      "source_class": "first_party_existing_retail",
+      "note": "Plus CNY139/item seller label"
+    },
+    {
+      "url": "https://www.payprm.com/shop",
+      "observed_on": "2026-11-17",
+      "source_class": "first_party_existing_retail",
+      "note": "Plus CNY155/month seller label"
+    },
+    {
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-17",
+      "source_class": "first_party_shared_seat_not_qualifying",
+      "note": "shared ChatGPT seats not original-account Plus"
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-17",
+      "source_class": "public_search_index_not_checkout",
+      "note": "Plus CNY179/month prior merchant promotion"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-17/supplier-followup-20261117-r08-evidence.json",
+      "observed_on": "2026-11-17",
+      "source_class": "already_archived_prior_direct_sku_snapshot",
+      "note": "r226 temporarily unavailable, CNY126 per Google-channel item"
+    }
+  ],
+  "qualifying_total": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "preserve_historical_126_quote_table": true,
+  "preserve_old_reports_byte_for_byte": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
