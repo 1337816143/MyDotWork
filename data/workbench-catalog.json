@@ -5314,6 +5314,28 @@
       "summary": "本轮读取7个商家与1个官方原始页面、2个合作店访问失败；区分自标当日价、合作方收款、¥3.60单次接码及单独收费渠道服务，所有真实付款/出票/授权/验证缺口为null或false。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r226-20261117",
+      "title": "GPT源头第226轮 · AICZ Google渠道Plus暂不可购买",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r08.html",
+      "updatedAt": "2026-11-17",
+      "summary": "同一AICZ Google Plus ¥126/件，从第225轮“有货”变为本轮页面“暂不可购买”，商家自标更新时间14:31；菲律宾Plus和Codex单次接码仍分别显示有货。只是店铺展示状态变化，非真实交易失败、永久停售或合格批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r226-20261117-evidence",
+      "title": "第226轮 · AICZ Google SKU可购买状态前后证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r08-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "同SKU先前存档与本轮14:31商品状态对照；保留¥126报价原单位，实际变更时间与收银结算、VAT票据、授权及SMS成功仍null或未验，其他SKU独立记录。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
