@@ -2549,3 +2549,18 @@ assert.equal(r229.payment_party_evidence_gap.actual_payment_receiving_legal_enti
 assert.equal(r229.unresolved_procurement.all_mandatory_payment_and_vat_included_total_cny,null);
 assert.equal(r229.qualifying_total.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r229.actual_purchase_made,false);assert.equal(r229.sms_test_done,false);
+
+// R230: merchant invoice-process statement is not a verified VAT invoice, no new true wholesale.
+const c230=d.records.find(x=>x.id==='gpt-source-followup-r230-20261118');
+const e230=d.records.find(x=>x.id==='gpt-source-followup-r230-20261118-evidence');
+assert(c230&&e230&&c230.url.endsWith('supplier-followup-20261118-r01.html'));
+const r230=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-18/supplier-followup-20261118-r01-evidence.json'),'utf8'));
+assert.equal(r230.round,230);assert.equal(r230.site_version,'1.9.238');
+assert.equal(r230.material_observation.current_invoice_page.seller_explicit_invoice_type,'增值税普通发票');
+assert.equal(r230.material_observation.current_invoice_page.seller_quoted_time_limit_business_days,3);
+assert.equal(r230.material_observation.current_invoice_page.reported_invoice_fee_cny,null);
+assert.equal(r230.material_observation.old_search_index_discrepancy.not_proof_current_fee_percent,true);
+assert.equal(r230.material_observation.actual_invoice_issuing_legal_entity,null);
+assert.equal(r230.material_observation.seller_display_price_cny_per_one_account_one_month,129);
+assert.equal(r230.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r230.actual_purchase_made,false);assert.equal(r230.sms_test_done,false);

@@ -1,0 +1,267 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 230,
+  "site_version": "1.9.238",
+  "observed_on": "2026-11-18",
+  "nature": "previously_known_retail_seller_new_first_party_vat_invoice_type_self_service_application_and_processing_promise_not_verified_invoice_or_zero_surcharge",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r11.html",
+  "criteria": {
+    "own_original_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_upfront_agent_fee": true,
+    "plus_all_mandatory_payment_and_valid_china_vat_invoice_cny_ceiling": 170
+  },
+  "material_observation": {
+    "merchant": "瑶瑶ai训练师 (yaoyao)",
+    "exact_sku": "ChatGPT Plus 代充 1个月（原账号，一账号一张卡密；商品页1个月规格）",
+    "product_url": "https://kw.yaoyao.chat/item/5",
+    "seller_display_price_cny_per_one_account_one_month": 129,
+    "previous_direct_archive": {
+      "round": 208,
+      "observed_on": "2026-11-15",
+      "seller_page_self_updated_on": "2026-10-29",
+      "first_party_invoice_claim": true,
+      "publicly_precommitted_invoice_type": false,
+      "invoice_apply_route": "先联系企业微信确认票种与抬头",
+      "invoice_fee_cny": null,
+      "archived_evidence_url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-15/supplier-followup-20261115-r18-evidence.json"
+    },
+    "current_invoice_page": {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-18",
+      "merchant_page_self_updated_on": "2026-11-16",
+      "seller_explicit_invoice_type": "增值税普通发票",
+      "seller_explicit_no_special_vat_invoice": true,
+      "seller_invoice_form_visible_on_first_party_page": true,
+      "form_fields": [
+        "订单号",
+        "抬头类型(公司/个人)",
+        "抬头",
+        "税号",
+        "收票邮箱",
+        "备注"
+      ],
+      "seller_quoted_time_limit_business_days": 3,
+      "can_apply_after_purchase_seller_claim": true,
+      "seller_claims_company_bank_transfer": true,
+      "seller_claims_bulk_discount_at_quantity_at_least": 10,
+      "reported_invoice_fee_cny": null,
+      "free_vat_invoice_guaranteed": false,
+      "actual_issued_invoice_verified": false
+    },
+    "old_search_index_discrepancy": {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "older_search_cache_self_updated_on": "2026-10-20",
+      "older_search_index_claim_surcharge_percent": 10,
+      "source_class": "historical_search_engine_cache_of_same_first_party_url_not_live_checkout",
+      "not_proof_current_fee_percent": true,
+      "old_policy_effective_dates_verified": false
+    },
+    "difference_vs_previous_direct_archived_read": "old direct archived seller had invoice type requiring confirmation; new direct first-party page promises VAT ordinary and visible post-order online form with three business-day service target",
+    "actual_invoice_policy_effective_change_date_verified": null,
+    "seller_current_invoice_page_does_not_explicitly_list_fee": true,
+    "valid_chinese_vat_invoice_document_or_official_invoice_issuer_verified": false,
+    "actual_invoice_issuing_legal_entity": null,
+    "actual_order_settlement_receiving_legal_entity": null,
+    "seller_prior_personal_brand_statement_is_not_legal_entity_registration": true,
+    "new_wholesale_or_authorization_proof": false,
+    "actual_checkout_total_including_payment_and_valid_vat_cny": null,
+    "historical_retail_price_changed_this_round": false,
+    "merchant_reported_fulfillment_not_independently_audited": true
+  },
+  "first_party_nonmaterial_checks": {
+    "aicz_google": {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "seller_price_cny_per_card": 126,
+      "seller_label": "有货 · 自动发卡",
+      "seller_self_price_time_beijing": "2026-11-18 02:01",
+      "is_new_price_or_stock_change": false
+    },
+    "payprm": {
+      "url": "https://www.payprm.com/shop",
+      "seller_plus_from_cny_per_month": 155,
+      "invoice_fee_cny": null
+    },
+    "getgpt": {
+      "url": "https://getgpt.io/price",
+      "seller_plus_cny_per_month": 179,
+      "above_ceiling_before_fee": true
+    },
+    "chatshare": {
+      "url": "https://chatshare.tv/",
+      "five_user_shared_seat_cny_per_30_days": 38,
+      "not_own_original_account": true
+    },
+    "chongpay": {
+      "url": "https://chongpay.com/",
+      "plus_listed_cny_per_one_item": 139,
+      "valid_china_vat_invoice_verified": false
+    },
+    "yinlujing": {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "agent_entry_fee_cny": 3000,
+      "does_not_meet_no_agent_entry_fee": true
+    },
+    "proplus_cv": {
+      "url": "https://proplus.cv/enterprise/",
+      "seller_claims_ordinary_vat_invoice": true,
+      "plus_retail_cny_per_month": 178,
+      "above_ceiling_before_fees": true,
+      "real_invoice_verified": false,
+      "not_claimed_new_upstream": true
+    }
+  },
+  "unavailable_first_party_skus": [
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "reason": "no readable page content during this round; do not refresh earlier CNY125 listing"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S580515",
+      "reason": "direct vendor source unreadable; aggregator is not seller checkout"
+    }
+  ],
+  "sms_and_verification": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "normal_chatgpt_signup_phone_generally_not_required": true,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_phone_required": true,
+    "one_time_codex_sms_product_separate_from_plus": true,
+    "apple_or_session_auto_bind_phone_guaranteed": false,
+    "independent_sms_web_successes": 0,
+    "independent_sms_codex_successes": 0,
+    "independent_sms_api_first_key_successes": 0,
+    "number_control_days": null,
+    "failed_sms_original_money_refund_proven": false
+  },
+  "unresolved_procurement": {
+    "one_unit_real_wholesale_cost_cny": null,
+    "entry_fee_free_true_wholesale_verified": false,
+    "actual_payment_surcharge_cny": null,
+    "invoice_surcharge_cny": null,
+    "all_in_cny_including_valid_china_vat": null,
+    "invoice_issuer_legal_entity": null,
+    "verified_official_resale_permission": false,
+    "actual_one_unit_paid_purchase": false,
+    "successful_renewal_or_refund_tested": false
+  },
+  "sources": [
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-18",
+      "merchant_self_updated_on": "2026-11-16",
+      "classification": "direct_first_party_invoice_claim_not_verified_tax_document",
+      "readable": true,
+      "observation": "promises ordinary Chinese VAT invoice, online request form, 3 business days; fee absent from current text"
+    },
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-18",
+      "classification": "direct_first_party_retail_sku",
+      "readable": true,
+      "observation": "Plus own-account 1-month choice CNY129, requires redemption login material"
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html",
+      "observed_on": "2026-11-18",
+      "merchant_self_updated_on": "2026-11-04",
+      "classification": "prior_policy_first_party_recheck",
+      "readable": true,
+      "observation": "seller promises failed-code original-payment refund after order validation; not real test"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-15/supplier-followup-20261115-r18-evidence.json",
+      "observed_on": "2026-11-15",
+      "classification": "immutable_prior_direct_archive_for_comparison",
+      "readable": true,
+      "observation": "earlier merchant invoice type required contacting merchant; fee/issuer unknown"
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-18",
+      "classification": "search_engine_prior_cached_excerpt_not_current_merchant_policy",
+      "readable": true,
+      "observation": "older 2026-10-20 indexed text said 10% invoice surcharge; cannot assert this is current fee"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-18",
+      "merchant_self_updated_at": "2026-11-18 02:01 Beijing",
+      "classification": "direct_first_party_sku_nonchange",
+      "readable": true
+    },
+    {
+      "url": "https://www.payprm.com/shop",
+      "observed_on": "2026-11-18",
+      "classification": "direct_first_party_retail_no_change",
+      "readable": true
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-18",
+      "classification": "direct_first_party_retail_no_change",
+      "readable": true
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-18",
+      "classification": "direct_first_party_retail_no_change",
+      "readable": true
+    },
+    {
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-18",
+      "classification": "direct_first_party_shared_account_nonqualifying",
+      "readable": true
+    },
+    {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-18",
+      "classification": "direct_first_party_agent_fee_recheck",
+      "readable": true
+    },
+    {
+      "url": "https://proplus.cv/enterprise/",
+      "observed_on": "2026-11-18",
+      "classification": "additional_invoice_retail_but_above_price_ceiling",
+      "readable": true
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-18",
+      "classification": "platform_official_sms_scope",
+      "readable": true
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-18",
+      "classification": "access_failed_no_price_refresh",
+      "readable": false
+    }
+  ],
+  "priority_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_chinese_vat_invoices": 0,
+    "actual_phone_verification_successes": 0
+  },
+  "historical_126_quotes_preserved": true,
+  "historical_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

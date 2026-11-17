@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 491, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 493, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.229'
-    assert latest['date'] == '2026-11-17'
-    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r10.html'
+    assert latest['version'] == '1.230'
+    assert latest['date'] == '2026-11-18'
+    assert latest['path'] == 'research/2026-11-18/supplier-followup-20261118-r01.html'
+    assert latest['dataPath'] == 'research/2026-11-18/supplier-followup-20261118-r01-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r11.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2836,6 +2836,22 @@ def validate_publications():
     assert r229['unresolved_procurement']['all_mandatory_payment_and_vat_included_total_cny'] is None
     assert r229['qualifying_total']['verified_true_plus_wholesale_upstreams'] == 0
     assert r229['actual_purchase_made'] is False and r229['sms_test_done'] is False
+    # R230: a new seller invoice promise is not a paid/validated Chinese VAT invoice or wholesale authorization.
+    assert by_id['gpt-source-followup-r230-20261118']['url'].endswith('supplier-followup-20261118-r01.html')
+    assert by_id['gpt-source-followup-r230-20261118-evidence']['url'].endswith('supplier-followup-20261118-r01-evidence.json')
+    r230 = json.loads((ROOT/'dist/research/2026-11-18/supplier-followup-20261118-r01-evidence.json').read_bytes())
+    assert r230['round'] == 230 and r230['site_version'] == '1.9.238'
+    y = r230['material_observation']
+    assert y['seller_display_price_cny_per_one_account_one_month'] == 129
+    assert y['previous_direct_archive']['publicly_precommitted_invoice_type'] is False
+    assert y['current_invoice_page']['seller_explicit_invoice_type'] == '增值税普通发票'
+    assert y['current_invoice_page']['seller_invoice_form_visible_on_first_party_page'] is True
+    assert y['current_invoice_page']['seller_quoted_time_limit_business_days'] == 3
+    assert y['current_invoice_page']['reported_invoice_fee_cny'] is None
+    assert y['old_search_index_discrepancy']['not_proof_current_fee_percent'] is True
+    assert y['actual_invoice_issuing_legal_entity'] is None and y['actual_checkout_total_including_payment_and_valid_vat_cny'] is None
+    assert r230['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r230['actual_purchase_made'] is False and r230['sms_test_done'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
