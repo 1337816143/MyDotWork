@@ -2438,3 +2438,20 @@ assert.equal(r223.material_correction.newly_authenticated_price_cny,null);
 assert.equal(r223.material_correction.merchant_reference_is_authenticated_price,false);
 assert.equal(r223.qualification_totals.verified_plus_wholesale_upstreams,0);
 assert.equal(r223.actual_purchase_made,false);assert.equal(r223.sms_test_done,false);
+
+// R224: exact Google-channel SKU has conflicting seller warranty language across dates; not a verified real refund.
+const cat224=d.records.find(x=>x.id==='gpt-source-followup-r224-20261117');
+const data224=d.records.find(x=>x.id==='gpt-source-followup-r224-20261117-evidence');
+assert(cat224&&data224&&cat224.url.endsWith('supplier-followup-20261117-r06.html'));
+const r224=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-17/supplier-followup-20261117-r06-evidence.json'),'utf8'));
+assert.equal(r224.round,224);assert.equal(r224.site_version,'1.9.232');
+assert.equal(r224.material_observation.sku,'gptplus_google');
+assert.equal(r224.material_observation.older_evidence.merchant_claim_subscription_drop_risk_percent,3);
+assert.equal(r224.material_observation.new_current_product_page.merchant_claim_subscription_drop_risk_percent_approx,5);
+assert.equal(r224.material_observation.older_evidence.merchant_claim_ongoing_warranty,false);
+assert.equal(r224.material_observation.new_current_product_page.merchant_claim_warranty,true);
+assert.equal(r224.material_observation.new_current_product_page.retail_usdt_per_item_month,15.8);
+assert.equal(r224.material_observation.actual_policy_effective_date_verified,null);
+assert.equal(r224.buyer_missing_evidence.all_fee_valid_china_vat_total_cny,null);
+assert.equal(r224.qualification_totals.verified_plus_wholesale_upstreams,0);
+assert.equal(r224.actual_purchase_made,false);assert.equal(r224.sms_test_done,false);
