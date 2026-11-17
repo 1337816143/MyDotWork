@@ -1,0 +1,165 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 224,
+  "site_version": "1.9.232",
+  "observed_on": "2026-11-17",
+  "nature": "same_sku_seller_claimed_warranty_and_drop_risk_conflict_not_verified_real_change",
+  "previous_report": "research/2026-11-17/supplier-followup-20261117-r05.html",
+  "criteria": {
+    "own_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "plus_valid_china_vat_all_required_fee_ceiling_cny": 170
+  },
+  "material_observation": {
+    "seller": "MaplePass",
+    "sku": "gptplus_google",
+    "channel": "US Google Play promo CDK",
+    "comparison_same_exact_sku": true,
+    "older_evidence": {
+      "observed_on": "2026-11-10",
+      "archived_again_on": "2026-11-17",
+      "source_archive_119": "research/2026-11-10/supplier-followup-20261110-r6-evidence.json",
+      "source_archive_222": "research/2026-11-17/supplier-followup-20261117-r04-evidence.json",
+      "merchant_claim_subscription_drop_risk_percent": 3,
+      "merchant_claim_ongoing_warranty": false,
+      "retail_usdt_per_item_month": 15.8
+    },
+    "new_current_product_page": {
+      "observed_on": "2026-11-17",
+      "original_url": "https://maple1189ai.com/store/gptplus_google",
+      "merchant_claim_subscription_drop_risk_percent_approx": 5,
+      "merchant_claim_warranty": true,
+      "merchant_claim_replace_when_drop_within_days": 5,
+      "merchant_claim_later_refund": "daily_pro_rata",
+      "merchant_claim_auto_renewal_cancelled": true,
+      "merchant_claim_plus_overwrite_possible": true,
+      "merchant_claim_pro_overwrite_possible": false,
+      "retail_usdt_per_item_month": 15.8,
+      "retail_quantity_min": 1,
+      "merchant_receipt_verified": false
+    },
+    "estimated_risk_differ_percent_points": 2,
+    "merchant_copy_conflict_observed": true,
+    "actual_policy_effective_date_verified": null,
+    "actual_drop_frequency_statistically_verified": false,
+    "actual_replace_or_refund_tested": false,
+    "transaction_or_cash_refund_guaranteed": false,
+    "merchant_claims_not_openai_policy": true,
+    "same_sku_verified_price_change": false,
+    "seller_generic_refund_terms": {
+      "source_url": "https://maple1189ai.com/refund-policy",
+      "self_updated_on": "2026-09-03",
+      "merchant_may_replace_repair_partially_or_fully_refund_or_reject": true,
+      "crypto_network_and_price_fluctuation_may_affect_refund": true,
+      "original_payment_cash_refund_verified": false
+    }
+  },
+  "additional_current_reference_not_verified_wholesale": {
+    "guide_url": "https://maple1189ai.com/guide/faka-api-integration",
+    "observed_on": "2026-11-17",
+    "gptplus_google_reference_usdt_per_item": 15.5,
+    "gptplus_standard_reference_usdt_per_item": 16.2,
+    "gptplus_ios_reference_usdt_per_item": 18.7,
+    "guide_says_30d_warranty_generic": true,
+    "authenticated_price_for_any_sku_usdt": null,
+    "effective_price_change_date": null,
+    "reference_not_paid_price": true
+  },
+  "buyer_missing_evidence": {
+    "minimum_purchase_no_upfront_fee_real_approval_verified": false,
+    "single_unit_actual_wholesale_order_verified": false,
+    "wholesale_payment_fee_cny": null,
+    "fx_fee_cny": null,
+    "crypto_network_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "all_fee_valid_china_vat_total_cny": null,
+    "operating_legal_entity": null,
+    "actual_payment_receiving_legal_entity": null,
+    "china_vat_invoice_issuer": null,
+    "verified_formal_openai_resale_authorization": false,
+    "actual_refund_verified": false
+  },
+  "phone_service_scope": {
+    "chatgpt_web_phone_generally_required": false,
+    "codex_desktop_phone_may_be_required": true,
+    "first_api_key_phone_required": true,
+    "apple_or_session_auto_binds_phone": false,
+    "independent_phone_sku_verified_current_price": null,
+    "number_retention_days": null,
+    "successful_sms_test_count": 0,
+    "failed_sms_original_cash_refund_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-10/supplier-followup-20261110-r6-evidence.json",
+      "original_observed_on": "2026-11-10",
+      "reviewed_on": "2026-11-17",
+      "classification": "immutable_prior_archive",
+      "finding": "same google SKU sold at 15.80 USDT with claimed 3 percent drop risk and no ongoing warranty"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-17/supplier-followup-20261117-r04-evidence.json",
+      "original_observed_on": "2026-11-17",
+      "reviewed_on": "2026-11-17",
+      "classification": "immutable_prior_archive",
+      "finding": "same exact SKU archived 3 percent risk and no warranty"
+    },
+    {
+      "url": "https://maple1189ai.com/store/gptplus_google",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_seller_product_claim",
+      "finding": "same SKU 15.80 USDT and now ~5 percent claimed drop risk; seller promises 5-day replacement or later pro-rata refund"
+    },
+    {
+      "url": "https://maple1189ai.com/guide/faka-api-integration",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_seller_reference_guide",
+      "finding": "15.50/16.20/18.70 USDT merchant wholesale reference floors for distinct SKUs, not approved prices; generic warranty language"
+    },
+    {
+      "url": "https://maple1189ai.com/refund-policy",
+      "observed_on": "2026-11-17",
+      "page_self_updated_on": "2026-09-03",
+      "classification": "direct_read_seller_refund_terms",
+      "finding": "case-by-case replace or full/partial refund or denial; crypto fees may affect amount"
+    },
+    {
+      "url": "https://maple1189ai.com/api-cooperation",
+      "observed_on": "2026-11-17",
+      "classification": "direct_read_seller_business_terms",
+      "finding": "authenticated wholesale price not publicly accessible; application, approved pricing, prepaid USDT wallet"
+    }
+  ],
+  "evidence_levels": {
+    "directly_observed": "seller pages currently display these claims, and exact prior GitHub source archives are readable",
+    "merchant_assertion": "percentage drop risk, replacement and refund commitments, wholesaling reference floors",
+    "inference": "different time observations may reflect seller copy/policy change; effect date, validity, real warranty scope not verified",
+    "real_paid_purchases_invoices_replacements_refunds_or_sms_tests": 0
+  },
+  "priority_candidates_without_new_qualification": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "verified_china_vat_invoices": 0,
+    "real_phone_sms_successes": 0
+  },
+  "old_126_quotes_unchanged": true,
+  "old_reports_original_bytes_unchanged": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
