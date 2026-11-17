@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 487, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 489, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.227'
+    assert latest['version'] == '1.228'
     assert latest['date'] == '2026-11-17'
-    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r09.html'
-    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r09-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r08.html'
+    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r10.html'
+    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r10-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r09.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2801,6 +2801,26 @@ def validate_publications():
     assert r227['unresolved_procurement']['all_fees_included_total_cny'] is None
     assert r227['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
     assert not r227['actual_purchase_made'] and not r227['sms_test_done']
+    # R228: no general-availability discount: two distinct Morimm SKUs and historical observed public labels only.
+    assert by_id['gpt-source-followup-r228-20261117']['url'].endswith('supplier-followup-20261117-r10.html')
+    assert by_id['gpt-source-followup-r228-20261117-evidence']['url'].endswith('supplier-followup-20261117-r10-evidence.json')
+    r228=json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r10-evidence.json').read_bytes())
+    assert r228['round']==228 and r228['site_version']=='1.9.236'
+    ios, half = r228['material_observations']
+    assert ios['archived_same_sku']['archived_round']==46 and ios['archived_same_sku']['display_price_cny_per_one_month_card']==129
+    assert ios['current_same_sku']['display_price_cny_per_one_month_card']==125 and ios['observed_public_price_difference_cny']==-4
+    assert ios['actual_price_change_effective_date_verified'] is None
+    assert ios['actual_paid_price_change_verified'] is False
+    assert half['archived_same_sku']['archived_round']==11 and half['archived_same_sku']['display_price_cny_per_eligible_order']==65
+    assert half['current_same_sku']['display_price_cny_per_eligible_order']==62 and half['observed_public_price_difference_cny']==-3
+    assert half['requires_preexisting_official_half_price_qualification'] is True
+    assert half['applies_to_arbitrary_own_account'] is False
+    assert half['period_months_verified_in_current_page_body'] is None
+    assert r228['non_change_first_party_checks']['morimm_codex_sms']['seller_price_cny_per_one_cdk']==4
+    assert r228['non_change_first_party_checks']['morimm_ph_plus']['seller_price_cny_per_card']==114
+    assert r228['unresolved_procurement']['all_required_fees_and_invoice_included_total_cny'] is None
+    assert r228['qualification_totals']['verified_plus_wholesale_upstreams']==0
+    assert r228['actual_purchase_made'] is False and r228['sms_test_done'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

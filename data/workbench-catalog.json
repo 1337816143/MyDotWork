@@ -5358,6 +5358,28 @@
       "summary": "2026-09-24历史官方公告11月17日新核，细分登记存在、网站主体未证、地址表述差异及所有未知金额null；合格真批发仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r228-20261117",
+      "title": "GPT源头第228轮 · Morimm iOS Plus同SKU ¥129→¥125与限半价资格¥65→¥62",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r10.html",
+      "updatedAt": "2026-11-17",
+      "summary": "商家原始SKU直读显示iOS一月挂牌¥125，较11月5日¥129快照低¥4；半价资格商品¥62较11月3日¥65低¥3，会员/已享优惠资格及税票、批发授权缺口不变。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r228-20261117-evidence",
+      "title": "第228轮 · Morimm准确SKU挂牌变动与独立手机号场景边界上游 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r10-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "同一原始商品URL两组历史观察日和当前价单位对照；旧Codex ¥4/次及菲区¥114均属复读；会员费/票费/含票全费/授权未知null，实购验票SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
