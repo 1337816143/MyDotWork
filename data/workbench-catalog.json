@@ -5336,6 +5336,28 @@
       "summary": "同SKU先前存档与本轮14:31商品状态对照；保留¥126报价原单位，实际变更时间与收银结算、VAT票据、授权及SMS成功仍null或未验，其他SKU独立记录。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r227-20261117",
+      "title": "GPT源头第227轮 · GetVIP西班牙官方公司登记及经营主体证据边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r09.html",
+      "updatedAt": "2026-11-17",
+      "summary": "新增西班牙政府BORME第429248项证明同名公司存在，Axesor列CIF B93979136；GetVIP网页地址Calle与官方Plaza不完全一致，网站归属、收款出票中国VAT和真实批发权仍未验证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r227-20261117-evidence",
+      "title": "第227轮 · GetVIP BORME官方登记、第三方CIF及网站自称主体交叉证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-17/supplier-followup-20261117-r09-evidence.json",
+      "updatedAt": "2026-11-17",
+      "summary": "2026-09-24历史官方公告11月17日新核，细分登记存在、网站主体未证、地址表述差异及所有未知金额null；合格真批发仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

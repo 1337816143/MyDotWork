@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 485, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 487, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.226'
+    assert latest['version'] == '1.227'
     assert latest['date'] == '2026-11-17'
-    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r08.html'
-    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r08-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r07.html'
+    assert latest['path'] == 'research/2026-11-17/supplier-followup-20261117-r09.html'
+    assert latest['dataPath'] == 'research/2026-11-17/supplier-followup-20261117-r09-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-17/supplier-followup-20261117-r08.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2786,6 +2786,21 @@ def validate_publications():
     assert r226['payment_authorization_gaps']['actual_gpay_google_sku_purchase_total_cny'] is None
     assert r226['qualification_totals']['verified_plus_wholesale_upstreams']==0
     assert r226['actual_purchase_made'] is False and r226['sms_test_done'] is False
+    # R227: Official Spanish register independently confirms existence of claimed company name, but not merchant domain ownership, invoice entity or actual wholesale.
+    assert by_id['gpt-source-followup-r227-20261117']['url'].endswith('supplier-followup-20261117-r09.html')
+    assert by_id['gpt-source-followup-r227-20261117-evidence']['url'].endswith('supplier-followup-20261117-r09-evidence.json')
+    r227 = json.loads((ROOT/'dist/research/2026-11-17/supplier-followup-20261117-r09-evidence.json').read_bytes())
+    assert r227['round'] == 227 and r227['site_version'] == '1.9.235'
+    reg = r227['finding']['independent_government_record']
+    assert reg['entry'] == '429248' and reg['published_on'] == '2026-09-24'
+    assert r227['finding']['independent_company_directory']['cif'] == 'B93979136'
+    assert r227['finding']['reconciliation']['road_type_exact_match'] is False
+    assert r227['finding']['reconciliation']['merchant_website_legal_entity_link_independently_verified'] is False
+    assert r227['unresolved_procurement']['actual_payment_collecting_legal_entity'] is None
+    assert r227['unresolved_procurement']['actual_invoice_issuer'] is None
+    assert r227['unresolved_procurement']['all_fees_included_total_cny'] is None
+    assert r227['qualification_totals']['verified_plus_wholesale_upstreams'] == 0
+    assert not r227['actual_purchase_made'] and not r227['sms_test_done']
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
