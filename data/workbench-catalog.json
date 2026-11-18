@@ -5600,6 +5600,28 @@
       "summary": "逐项核对一方合作流程、非OpenAI官方授权声明、SKU/价格、卖家¥119纯演示数字及全部批发/开票费用未知；无购买、验票和SMS测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r239-20261119",
+      "title": "GPT源头第239轮 · AiChanl邀请制批发渠道与Plus月卡",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r02.html",
+      "updatedAt": "2026-11-19",
+      "summary": "首次核读AiChanl专门渠道批发模式，Plus月卡与年卡分列、渠道价和起订量审批后可见、卡密/直充/代订阅及发卡网对接仅为卖家声明；单件价、无前置费、支付/出票主体及授权仍null，达标真批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r239-20261119-evidence",
+      "title": "第239轮 · AiChanl渠道申请与月卡条款核证 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r02-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "一方批发目录、邀请制、独角数卡/异次元对接、合同售后和非官方授权声明原始URL；全部单件含票费用null，未实购、验票及接码。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
