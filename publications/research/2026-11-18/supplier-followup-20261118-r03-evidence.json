@@ -1,0 +1,125 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 232,
+  "site_version": "1.9.240",
+  "observed_on": "2026-11-18",
+  "previous_report": "research/2026-11-18/supplier-followup-20261118-r02.html",
+  "criteria": {
+    "original_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "all_mandatory_payment_and_valid_china_vat_max_cny": 170
+  },
+  "material_observation": {
+    "merchant": "Hype",
+    "source_class": "direct_first_party_seller_web_stock_label_not_real_inventory_test",
+    "exact_sku": "CodeX 实卡接码·美国实卡号码·1份",
+    "sku_url": "https://hypeai.cc/p/catalog-220-1",
+    "current_seller_stock_label": "已售罄",
+    "purchase_button_label": "已售罄",
+    "price_table_stock_label": "已售罄",
+    "current_seller_display_price_cny_per_phone": 12,
+    "seller_alipay_rate": 0.068,
+    "previous_round": 231,
+    "previous_round_observed_on": "2026-11-18",
+    "previous_round_display_price_cny_per_phone": 12,
+    "previous_round_unpaid_preview_cny_per_phone": 12.82,
+    "previous_round_recorded_same_sku_stock_label": null,
+    "actual_stock_change_effective_at": null,
+    "current_while_sold_out_unpaid_checkout_total_cny": null,
+    "real_stock_verified": false,
+    "real_transaction_tested": false,
+    "permanent_discontinuation_verified": false
+  },
+  "seller_sms_claims": {
+    "scenario": "Codex desktop number check",
+    "chatgpt_web_guaranteed": false,
+    "initial_api_key_tested": false,
+    "seller_claim_us_physical_sim": true,
+    "number_reuse_min_days": 20,
+    "number_reuse_max_days": 80,
+    "first_codex_account_warranty_hours": 24,
+    "first_binding_failure_requires_two_screenshots": true,
+    "one_replacement_then_conditional_original_payment_refund": true,
+    "actual_long_term_number_control_verified": false,
+    "actual_sms_success_verified": false,
+    "actual_cash_refund_verified": false,
+    "faq_seller_updated_on": "2026-11-17",
+    "seller_quoted_restock_date": null
+  },
+  "unrelated_plus_sku": {
+    "merchant": "Hype",
+    "original_account_one_month_cny": 117,
+    "seller_stock_label": "有货",
+    "source_url": "https://hypeai.cc/prices",
+    "seller_faq_says_no_vat_invoice": true,
+    "mandatory_plus_all_fees_and_valid_china_vat_total_cny": null,
+    "real_wholesale_authorization_verified": false
+  },
+  "phone_scope": {
+    "chatgpt_web_verified": false,
+    "codex_verified": false,
+    "first_api_key_verified": false,
+    "apple_or_session_automatically_binds_phone": false
+  },
+  "sources": [
+    {
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "kind": "observed_first_party_exact_sku_and_disabled_stock_button"
+    },
+    {
+      "url": "https://hypeai.cc/prices",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "seller_self_updated_date": "2026-11-18",
+      "kind": "observed_first_party_price_stock_table"
+    },
+    {
+      "url": "https://hypeai.cc/faq",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "seller_self_updated_date": "2026-11-17",
+      "kind": "seller_claim_restock_timing_and_no_invoice"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "seller_self_price_updated_at": "2026-11-18 10:01 Asia/Shanghai",
+      "kind": "other_seller_unchanged_plus_126_cny_not_verified_wholesale"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/59b30d95a57da3cb9e663c0c5b3e435a49d4a65f/publications/research/2026-11-18/supplier-followup-20261118-r02-evidence.json",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "kind": "immutable_prev_round_same_sms_sku_without_stock_field"
+    }
+  ],
+  "priority_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_chinese_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_126_offers_preserved": true,
+  "historical_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
