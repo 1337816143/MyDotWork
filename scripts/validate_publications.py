@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 501, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 503, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.234'
+    assert latest['version'] == '1.235'
     assert latest['date'] == '2026-11-18'
-    assert latest['path'] == 'research/2026-11-18/supplier-followup-20261118-r05.html'
-    assert latest['dataPath'] == 'research/2026-11-18/supplier-followup-20261118-r05-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-18/supplier-followup-20261118-r04.html'
+    assert latest['path'] == 'research/2026-11-18/supplier-followup-20261118-r06.html'
+    assert latest['dataPath'] == 'research/2026-11-18/supplier-followup-20261118-r06-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-18/supplier-followup-20261118-r05.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.

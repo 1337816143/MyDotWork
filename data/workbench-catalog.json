@@ -5512,6 +5512,28 @@
       "summary": "2026-11-18首读新SKU及免提交订单确认弹窗、退款20%扣费商称；VAT票额外费用与法人null，真批发、付费、验票、短信实测仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r235-20261118",
+      "title": "GPT源头第235轮 · AICZ Google及菲律宾Plus当前暂不可购",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r06.html",
+      "updatedAt": "2026-11-18",
+      "summary": "直接对照AICZ两款原号Plus准确SKU：Google ¥126/件及菲律宾¥130.80/件·月从既往有货标签变为2026-11-18 17:31卖家展示暂不可购买；价格不变，不代表永久停供或真实成交。真含中国VAT批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r235-20261118-evidence",
+      "title": "第235轮 · AICZ两款Plus SKU库存展示状态与旧档案对照JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r06-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "记录AICZ谷歌卡密及菲律宾月卡两个不同SKU，旧有货/新暂不可购买的卖家标签、原始URL和自标时间；收款出票授权与支付全费null，实购/验票/SMS仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
