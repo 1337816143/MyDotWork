@@ -2582,3 +2582,18 @@ assert.equal(r231.material_observation.codex_sms.sms_success_tested,false);
 assert.equal(r231.material_observation.agent.current_unpaid_preview_cny,105.74);
 assert.equal(r231.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r231.actual_purchase_made,false);assert.equal(r231.sms_test_done,false);
+
+// R232: same SKU sold-out label, unknown previous stock, no inferred paid transaction.
+const c232=d.records.find(x=>x.id==='gpt-source-followup-r232-20261118');
+const e232=d.records.find(x=>x.id==='gpt-source-followup-r232-20261118-evidence');
+assert(c232&&e232&&c232.url.endsWith('supplier-followup-20261118-r03.html'));
+const r232=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-18/supplier-followup-20261118-r03-evidence.json'),'utf8'));
+assert.equal(r232.round,232);assert.equal(r232.site_version,'1.9.240');
+assert.equal(r232.material_observation.current_seller_stock_label,'已售罄');
+assert.equal(r232.material_observation.purchase_button_label,'已售罄');
+assert.equal(r232.material_observation.previous_round_recorded_same_sku_stock_label,null);
+assert.equal(r232.material_observation.current_while_sold_out_unpaid_checkout_total_cny,null);
+assert.equal(r232.material_observation.current_seller_display_price_cny_per_phone,12);
+assert.equal(r232.seller_sms_claims.actual_sms_success_verified,false);
+assert.equal(r232.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r232.actual_purchase_made,false);assert.equal(r232.sms_test_done,false);
