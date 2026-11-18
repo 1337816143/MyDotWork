@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 509, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 511, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.238'
+    assert latest['version'] == '1.239'
     assert latest['date'] == '2026-11-19'
-    assert latest['path'] == 'research/2026-11-19/supplier-followup-20261119.html'
-    assert latest['dataPath'] == 'research/2026-11-19/supplier-followup-20261119-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-18/supplier-followup-20261118-r08.html'
+    assert latest['path'] == 'research/2026-11-19/supplier-followup-20261119-r02.html'
+    assert latest['dataPath'] == 'research/2026-11-19/supplier-followup-20261119-r02-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-19/supplier-followup-20261119.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2960,6 +2960,21 @@ def validate_publications():
     assert r238['procurement_unknowns']['all_in_cny'] is None
     assert r238['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r238['actual_purchase_made'] is False and r238['sms_test_done'] is False
+    # R239: invitation-only B2B seller claims and hidden prices are not proof of one-unit VAT-inclusive wholesale.
+    assert by_id['gpt-source-followup-r239-20261119']['url'].endswith('supplier-followup-20261119-r02.html')
+    assert by_id['gpt-source-followup-r239-20261119-evidence']['url'].endswith('supplier-followup-20261119-r02-evidence.json')
+    r239 = json.loads((ROOT/'dist/research/2026-11-19/supplier-followup-20261119-r02-evidence.json').read_bytes())
+    assert r239['round'] == 239 and r239['site_version'] == '1.9.247'
+    c239 = r239['discovery']['newly_catalogued_public_first_party_candidate']
+    assert c239['accurate_public_plus_sku_name'] == 'ChatGPT Plus · 月卡'
+    assert c239['merchant_indicates_price_visible_only_after_account_approval'] is True
+    assert c239['approved_wholesale_price_cny_per_one_unit_one_month'] is None
+    assert c239['no_agent_upfront_fee_verified'] is None
+    assert c239['can_buy_exactly_one_unit_verified'] is None
+    assert c239['merchant_explicitly_says_no_affiliation_or_authorization_from_named_ai_brands'] is True
+    assert r239['procurement_unknowns']['all_required_costs_plus_chinese_vat_cny'] is None
+    assert r239['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r239['actual_purchase_made'] is False and r239['sms_test_done'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 

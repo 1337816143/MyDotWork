@@ -2694,3 +2694,19 @@ assert.equal(r238.discovery.distinct_retail_skus[2].requires_account_page_code_o
 assert.equal(r238.procurement_unknowns.all_in_cny,null);
 assert.equal(r238.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r238.actual_purchase_made,false);assert.equal(r238.sms_test_done,false);
+
+// R239: invitation-only claimed B2B wholesale is a lead, not an authenticated one-unit invoice-complete source.
+const c239=d.records.find(x=>x.id==='gpt-source-followup-r239-20261119');
+const e239=d.records.find(x=>x.id==='gpt-source-followup-r239-20261119-evidence');
+assert(c239&&e239&&c239.url.endsWith('supplier-followup-20261119-r02.html'));
+const r239=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r02-evidence.json'),'utf8'));
+assert.equal(r239.round,239);assert.equal(r239.site_version,'1.9.247');
+const b239=r239.discovery.newly_catalogued_public_first_party_candidate;
+assert.equal(b239.accurate_public_plus_sku_name,'ChatGPT Plus · 月卡');
+assert.equal(b239.merchant_indicates_price_visible_only_after_account_approval,true);
+assert.equal(b239.approved_wholesale_price_cny_per_one_unit_one_month,null);
+assert.equal(b239.no_agent_upfront_fee_verified,null);
+assert.equal(b239.actual_refund_to_original_payment_method_verified,null);
+assert.equal(r239.procurement_unknowns.all_required_costs_plus_chinese_vat_cny,null);
+assert.equal(r239.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r239.actual_purchase_made,false);assert.equal(r239.sms_test_done,false);

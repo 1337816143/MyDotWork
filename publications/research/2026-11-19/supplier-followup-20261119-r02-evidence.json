@@ -1,0 +1,225 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 239,
+  "site_version": "1.9.247",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-19/supplier-followup-20261119.html",
+  "discovery": {
+    "source": "targeted_public_web_search_followed_by_direct_first_party_page_reads",
+    "newly_catalogued_public_first_party_candidate": {
+      "merchant": "AiChanl",
+      "site_url": "https://aichanl.com/",
+      "merchant_type": "self_described_channel_wholesale_aggregator_not_verified_first_tier_upstream",
+      "actual_corporate_legal_entity_verified": null,
+      "actual_payment_receiver_legal_entity": null,
+      "valid_china_vat_invoice_issuer": null,
+      "merchant_explicitly_says_no_affiliation_or_authorization_from_named_ai_brands": true,
+      "strictly_b2b_no_public_retail_cart_claim": true,
+      "channel_account_invitation_required": true,
+      "need_to_state_business_brand_and_expected_volume": true,
+      "storefront_catalog_self_updated_on": "2026-09-21",
+      "seller_self_describes_six_brands_sixteen_plans": true,
+      "merchant_indicates_price_visible_only_after_account_approval": true,
+      "accurate_public_plus_sku_name": "ChatGPT Plus · 月卡",
+      "public_plus_month_variant_exists": true,
+      "precise_merchant_internal_sku_id": null,
+      "correct_period_unit": "one_month",
+      "seller_marked_plan_listed": "在售",
+      "public_one_plus_month_purchase_price_cny": null,
+      "approved_wholesale_price_cny_per_one_unit_one_month": null,
+      "expected_minimum_order_quantity": null,
+      "can_buy_exactly_one_unit_verified": null,
+      "no_agent_upfront_fee_verified": null,
+      "wholesale_tier_conditions_or_prices_verified": null,
+      "supports_any_customer_existing_free_account_verified": null,
+      "supports_in_term_renewal_verified": null,
+      "permits_formal_resale_of_plus_access_from_upstream_verified": null,
+      "delivery_modes_seller_claims": [
+        "one_time_redeem_card",
+        "direct_recharge_to_customer_supplied_account",
+        "merchant_assisted_subscription"
+      ],
+      "claimed_white_label_redeem_support": true,
+      "claimed_integrations": [
+        "独角数卡",
+        "异次元发卡"
+      ],
+      "actual_api_or_integration_tested": false,
+      "merchant_terms_disallow_reselling_customer_accounts": true,
+      "seller_claim_price_locked_at_order": true,
+      "seller_claim_failure_no_duplicate_charge": true,
+      "actual_refund_to_original_payment_method_verified": null,
+      "exact_warranty_days_publicly_disclosed": null,
+      "exact_warranty_and_delivery_terms_depend_on_private_channel_contract": true,
+      "real_fulfillment_tested": false
+    },
+    "significance": "new public wholesale-specific first-party invitation-only channel and independently listed ChatGPT Plus monthly plan, but no proven wholesale quote, one-item eligibility, approved source, no upfront fee, VAT invoice issuer or real fulfillment; does not count toward qualified upstreams"
+  },
+  "procurement_unknowns": {
+    "accurate_one_unit_plus_price_cny": null,
+    "min_order_quantity": null,
+    "agent_entry_fee_cny": null,
+    "payment_surcharge_cny": null,
+    "exchange_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "valid_china_vat_invoice_issuer": null,
+    "payee_legal_entity": null,
+    "merchant_legal_entity": null,
+    "authorized_resale_documents": null,
+    "all_required_costs_plus_chinese_vat_cny": null
+  },
+  "followup_checks": {
+    "separate_phone_verification_services_not_included_in_plus": true,
+    "chatgpt_web_sms_success_tested": false,
+    "codex_desktop_sms_success_tested": false,
+    "first_api_key_sms_success_tested": false,
+    "phone_number_retention_days_verified": null,
+    "failed_sms_cash_refund_tested": false,
+    "ordinary_plus_auto_binds_phone": false,
+    "apple_payment_and_session_delivery_can_coexist": true,
+    "aicz_check": {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "seller_listed_cny_per_one_philippines_plus_month": 129.6,
+      "stock_label": "有货 · 自动发卡",
+      "seller_page_self_updated_at": "2026-11-19 06:01 Beijing",
+      "changed_vs_r238": false
+    },
+    "payprm_check": {
+      "url": "https://www.payprm.com/",
+      "invoice_marketing_still_lacks_confirmed_cny_fee_and_issuer": true,
+      "changed_vs_archive": false
+    }
+  },
+  "attempted_unreadable_pages": [
+    {
+      "merchant": "CatFK Antipro",
+      "url": "https://catfk.com/shop/Antipro",
+      "status": "not_readable_on_this_fetch",
+      "refresh_historical_price": false
+    },
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "status": "not_readable_on_this_fetch",
+      "refresh_historical_price": false
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "status": "not_readable_on_this_fetch",
+      "refresh_historical_price": false
+    },
+    {
+      "merchant": "GetVIP",
+      "url": "https://www.getvip.site/",
+      "status": "not_readable_on_this_fetch",
+      "refresh_historical_price": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://aichanl.com/",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_marketing_catalog",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://aichanl.com/aisku/gpt",
+      "observed_on": "2026-11-19",
+      "type": "first_party_plus_monthly_product_category",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://aichanl.com/terms",
+      "observed_on": "2026-11-19",
+      "type": "first_party_general_terms",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://aichanl.com/help",
+      "observed_on": "2026-11-19",
+      "type": "first_party_delivery_warranty_refund_terms",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://aichanl.com/link",
+      "observed_on": "2026-11-19",
+      "type": "first_party_integration_claims",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-19",
+      "type": "existing_seller_fresh_nonchange",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://www.payprm.com/",
+      "observed_on": "2026-11-19",
+      "type": "existing_seller_invoice_marketing_nonchange",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-19",
+      "type": "first_party_platform_official_phone_scope",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://catfk.com/shop/Antipro",
+      "observed_on": "2026-11-19",
+      "type": "failed_fetch_no_price_refresh",
+      "readable": false,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-19",
+      "type": "failed_fetch_no_price_refresh",
+      "readable": false,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-19",
+      "type": "failed_fetch_no_price_refresh",
+      "readable": false,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://www.getvip.site/",
+      "observed_on": "2026-11-19",
+      "type": "failed_fetch_no_price_refresh",
+      "readable": false,
+      "not_a_paid_test": true
+    }
+  ],
+  "criteria": {
+    "original_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "max_all_mandatory_payment_and_valid_china_vat_cny": 170
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "actual_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "merchant_contacted": false,
+  "agent_application_submitted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false,
+  "sms_test_done": false,
+  "historical_126_price_offers_preserved": true,
+  "historical_reports_preserved": true
+}
