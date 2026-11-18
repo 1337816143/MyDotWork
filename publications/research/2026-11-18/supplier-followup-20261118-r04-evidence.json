@@ -1,0 +1,147 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 233,
+  "site_version": "1.9.241",
+  "observed_on": "2026-11-18",
+  "previous_report": "research/2026-11-18/supplier-followup-20261118-r03.html",
+  "criteria": {
+    "original_account": true,
+    "single_unit": true,
+    "single_month": true,
+    "no_agent_upfront_fee": true,
+    "all_mandatory_payment_and_valid_china_vat_max_cny": 170
+  },
+  "material_observation": {
+    "merchant": "GETGPT Pro",
+    "kind": "new_primary_government_registration_document_confirming_prior_third_party_directory_name_and_BRN_not_merchant_ownership",
+    "government_source": "Hong Kong Companies Registry; List of Newly Incorporated / Registered / Re-domiciled Companies and Companies which have changed Names; REF RNC063",
+    "government_report_published_on": "2026-06-08",
+    "government_period_from": "2026-06-01",
+    "government_period_to": "2026-06-07",
+    "government_pdf_original_url": "https://www.cr.gov.hk/docs/wrpt/wk_new&changednamecoys_20260601.pdf",
+    "government_pdf_page_printed": 502,
+    "government_pdf_page_zero_based": 501,
+    "government_record_sequence": 4014,
+    "government_company_current_name": "Nexcloud Technology Limited",
+    "government_business_registration_number": "80542846",
+    "government_incorporation_date": "2026-06-03",
+    "prior_merchant_company_name_already_recorded_round": 220,
+    "prior_third_party_directory_BRN_already_recorded_round": 220,
+    "merchant_claim_operating_company": "NEXCLOUD TECHNOLOGY LIMITED",
+    "merchant_claim_address": "Flat A133, Room 01, 15/F, Block A, Wah Sang Industrial Building, 14-18 Wong Chuk Yeung Street, Fo Tan, Hong Kong",
+    "merchant_terms_claim_last_updated_on": "2026-06-02",
+    "merchant_terms_claim_effective_on": "2026-06-02",
+    "merchant_terms_date_precedes_government_incorporation_date_by_days": 1,
+    "terms_actual_publication_or_effective_date_independently_verified": false,
+    "government_record_establishes_company_existence_at_incorporation": true,
+    "government_record_establishes_current_good_standing": false,
+    "government_record_proves_domain_or_seller_ownership": false,
+    "government_record_proves_receiving_entity_or_VAT_issuer": false,
+    "government_record_proves_genuine_resale_authorization": false,
+    "merchant_plus_exact_sku": "ChatGPT Plus 充值 / 原账号 / 1个月",
+    "merchant_plus_display_price_cny_per_account_month": 179,
+    "merchant_plus_display_price_above_ceiling_before_fees": true,
+    "wholesale_unit_price_cny": null,
+    "payment_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "mandatory_all_in_plus_cost_cny": null,
+    "invoice_issuing_company_verified": false,
+    "authorized_resale_verified": false,
+    "actual_payment_or_delivery_tested": false
+  },
+  "seller_statements": {
+    "terms_says_independent_non_official_third_party": true,
+    "faq_says_individual_purchase_has_no_invoice": true,
+    "business_invoice_needs_inquiry": true,
+    "actual_issuer_or_receipt_verified": false,
+    "session_may_be_required_for_delivery": true,
+    "ordinary_subscription_does_not_auto_bind_phone": true
+  },
+  "phone_scope": {
+    "chatgpt_web_successes_verified": 0,
+    "codex_desktop_successes_verified": 0,
+    "first_api_key_successes_verified": 0,
+    "long_term_number_control_verified": false,
+    "failed_sms_original_payment_cash_refund_verified": false,
+    "apple_payment_and_session_delivery_may_coexist": true
+  },
+  "sources": [
+    {
+      "url": "https://www.cr.gov.hk/docs/wrpt/wk_new&changednamecoys_20260601.pdf",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "origin": "hong_kong_government_companies_registry_primary_pdf",
+      "published_on": "2026-06-08",
+      "pdf_page_printed": 502,
+      "row": 4014,
+      "brn": "80542846"
+    },
+    {
+      "url": "https://www.cr.gov.hk/en/publication/fact-stat/statistics/registered-companies.htm",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "origin": "government_weekly_company_publication_directory"
+    },
+    {
+      "url": "https://getgpt.io/terms",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "origin": "seller_claim_about_operator_address_terms_2026_06_02"
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "origin": "seller_price_and_original_account_plus_Session"
+    },
+    {
+      "url": "https://getgpt.io/faq",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "origin": "seller_invoice_and_session_claims"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/0103bdf89e8cbd261185eaaab60e614e14aa28f1/CHANGELOG.md",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "origin": "immutable_internal_prior_r220_third_party_register_mention_not_primary_official_evidence"
+    }
+  ],
+  "priority_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "other_corroboration_without_material_change": [
+    {
+      "merchant": "Hype",
+      "plus_cny_per_account_month": 117,
+      "codex_sms_cny_per_phone": 12,
+      "codex_sms_seller_stock_label": "已售罄",
+      "meaning": "existing_round_232_not_new"
+    },
+    {
+      "merchant": "AICZ",
+      "google_plus_cny_per_card": 126,
+      "meaning": "existing_round_229_not_new"
+    }
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_chinese_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_126_offers_preserved": true,
+  "historical_reports_preserved": true,
+  "actual_purchase_made": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
