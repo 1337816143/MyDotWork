@@ -2615,3 +2615,18 @@ assert.equal(r233.material_observation.government_record_proves_domain_or_seller
 assert.equal(r233.material_observation.mandatory_all_in_plus_cost_cny,null);
 assert.equal(r233.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r233.actual_purchase_made,false);assert.equal(r233.sms_test_done,false);
+
+// R234: one-item CatFK Antipro preview must not be mistaken for VAT-inclusive paid wholesale.
+const c234=d.records.find(x=>x.id==='gpt-source-followup-r234-20261118');
+const ev234=d.records.find(x=>x.id==='gpt-source-followup-r234-20261118-evidence');
+assert(c234&&ev234&&c234.url.endsWith('supplier-followup-20261118-r05.html'));
+const r234=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-18/supplier-followup-20261118-r05-evidence.json'),'utf8'));
+assert.equal(r234.round,234);assert.equal(r234.site_version,'1.9.242');
+assert.equal(r234.material_observation.price_cny_per_one_account_one_month,118);
+assert.equal(r234.material_observation.unpaid_checkout_surcharge_cny,3.3);
+assert.equal(r234.material_observation.unpaid_checkout_preview_cny,121.3);
+assert.equal(r234.material_observation.previously_archived_separate_product.is_distinct_sku,true);
+assert.equal(r234.material_observation.china_vat_eligible_for_this_one_unit_under_public_terms,false);
+assert.equal(r234.material_observation.actual_all_in_with_valid_china_vat_cny,null);
+assert.equal(r234.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r234.actual_purchase_made,false);assert.equal(r234.real_order_submitted,false);assert.equal(r234.sms_test_done,false);
