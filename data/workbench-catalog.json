@@ -5446,6 +5446,28 @@
       "summary": "2026-11-17不可变r219与11月18日商家原站同SKU快照对照；未付价与真实成交区别、号码24h质保、票据与授权未知null，真批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r232-20261118",
+      "title": "GPT源头第232轮 · Hype独立Codex接码SKU展示已售罄",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r03.html",
+      "updatedAt": "2026-11-18",
+      "summary": "Hype美国实卡Codex接码¥12/号码在商家商品页、规格及价表均展示已售罄；第231轮未记录旧库存，不能认定刚刚下架或永久停供。Plus独立SKU¥117仍商标有货，真含票批发未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r232-20261118-evidence",
+      "title": "第232轮 · Hype Codex接码售罄标签与售后期限证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r03-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "11月18日直读准确SKU ¥12/号码、页面与价表售罄；旧库存null，新可成交费用null；商称20–80天及24小时首号条件质保，实际SMS或退款未测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
