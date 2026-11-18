@@ -2660,3 +2660,20 @@ assert.equal(r236.separate_sku_nonchange.seller_stock_label,'暂不可购买');
 assert.equal(r236.procurement_evidence_gaps.all_mandatory_payment_and_valid_china_vat_total_cny,null);
 assert.equal(r236.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r236.actual_purchase_made,false);assert.equal(r236.sms_test_done,false);
+
+// R237: direct first-party same-SKU lower listed price, separate Google/direct-link SKUs; still no proof of paid VAT-inclusive wholesale.
+const c237=d.records.find(x=>x.id==='gpt-source-followup-r237-20261118');
+const e237=d.records.find(x=>x.id==='gpt-source-followup-r237-20261118-evidence');
+assert(c237&&e237&&c237.url.endsWith('supplier-followup-20261118-r08.html'));
+const r237=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-18/supplier-followup-20261118-r08-evidence.json'),'utf8'));
+assert.equal(r237.round,237);assert.equal(r237.site_version,'1.9.245');
+assert.equal(r237.material_observation.previous_archived.price_cny_per_card_month,130.8);
+assert.equal(r237.material_observation.fresh.price_cny_per_card_month,129.6);
+assert.equal(r237.material_observation.seller_display_price_difference_cny,-1.2);
+assert.equal(r237.material_observation.fresh.seller_stock_label,'有货 · 自动发卡');
+assert.equal(r237.material_observation.actual_paid_checkout_total_cny,null);
+assert.equal(r237.separate_skus[0].seller_stock_label,'暂不可购买');
+assert.equal(r237.separate_skus[1].first_listed_date_verified,null);
+assert.equal(r237.unknowns.all_mandatory_payment_and_valid_china_vat_total_cny,null);
+assert.equal(r237.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r237.actual_purchase_made,false);assert.equal(r237.sms_test_done,false);
