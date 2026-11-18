@@ -5556,6 +5556,28 @@
       "summary": "原始商家URL、17:31→19:31页面展示状态及准确SKU与价；支付手续费、合法中国VAT和批发资格null；短信/付款/验票仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r237-20261118",
+      "title": "GPT源头第237轮 · AICZ菲律宾Plus同SKU挂牌¥130.80降至¥129.60",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r08.html",
+      "updatedAt": "2026-11-18",
+      "summary": "23:31卖家页面显示菲区Plus同SKU挂牌较19:31存档少¥1.20；仍有货，Google不同SKU¥126不可购；结算含票全费、正式批发与授权未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r237-20261118-evidence",
+      "title": "第237轮 · AICZ菲律宾Plus新旧价签及独立链接SKU证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r08-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "原始卖家SKU链接、观察时间与页面自标时间、¥-1.20挂牌差、Google及独立自助链接SKU、支付与开票null；实购与短信0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
