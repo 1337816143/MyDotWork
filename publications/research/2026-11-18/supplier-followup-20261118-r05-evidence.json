@@ -1,0 +1,168 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 234,
+  "site_version": "1.9.242",
+  "observed_on": "2026-11-18",
+  "previous_report": "research/2026-11-18/supplier-followup-20261118-r04.html",
+  "criteria": {
+    "own_original_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "max_cny_including_all_payment_and_valid_china_vat": 170
+  },
+  "material_observation": {
+    "merchant": "CatFK / 云猫寄售上的 Antipro 独立卖家",
+    "shop_url": "https://catfk.com/shop/Antipro",
+    "exact_sku": "[无限制]GPT PLUS官方卡充 [质保订阅][有条件的质保封号]",
+    "sku_permalink": null,
+    "sku_locator": "Antipro shop first Plus listing; purchase confirmation shown in same-page modal",
+    "same_sku_price_change_verified": false,
+    "first_direct_observation_this_research_round": true,
+    "price_cny_per_one_account_one_month": 118,
+    "struck_through_reference_price_cny": 147,
+    "prior_real_price_verified": false,
+    "seller_stock_label": "库存一般",
+    "minimum_quantity": 1,
+    "payment_methods": [
+      "支付宝",
+      "微信"
+    ],
+    "unpaid_checkout_surcharge_cny": 3.3,
+    "unpaid_checkout_preview_cny": 121.3,
+    "unpaid_preview_not_real_paid_total": true,
+    "merchant_claim_fee_waiver_by_contact": true,
+    "merchant_contacted_to_confirm_fee_waiver": false,
+    "merchant_claim_philippine_bankcard_direct_topup": true,
+    "merchant_claim_apple_or_google_channel": false,
+    "requires_account_subscription_expired_before_redeeming": true,
+    "in_term_renewal_supported": false,
+    "merchant_claim_card_code_no_expiry": true,
+    "first_login_required": true,
+    "exact_session_or_token_fields": null,
+    "merchant_claim_china_vat_general_invoice_only_item_over_cny": 500,
+    "china_vat_eligible_for_this_one_unit_under_public_terms": false,
+    "china_vat_invoice_fee_cny": null,
+    "invoice_issuing_legal_entity": null,
+    "receipt_recipient_legal_entity": null,
+    "one_unit_wholesale_price_cny": null,
+    "formal_resale_authorization_verified": false,
+    "actual_all_in_with_valid_china_vat_cny": null,
+    "actual_purchase_verified": false,
+    "previously_archived_separate_product": {
+      "round": 190,
+      "observed_on": "2026-11-14",
+      "url": "https://catfk.com/item/yfy1iv",
+      "sku": "【正规秒充】GPT Plus 官方充值（无须账号为Free状态）（充值是覆盖而非累计时间）",
+      "price_cny": 148,
+      "in_term_subscription_coverage_claim": true,
+      "is_distinct_sku": true
+    }
+  },
+  "seller_refund_policy_claims": {
+    "if_official_issues_refund_seller_deducts_percent": 20,
+    "if_official_refuses_refund_seller_promises_no_refund": true,
+    "actual_refund_tested": false,
+    "refund_or_delivery_independently_verified": false
+  },
+  "phone_scope": {
+    "same_shop_codex_uk_30d_cny": 10,
+    "same_shop_codex_us_short_cny": 1.8,
+    "same_shop_codex_long_random_15_to_30d_cny": 3.5,
+    "already_archived_round": 190,
+    "chatgpt_web_sms_tested_successes": 0,
+    "codex_sms_tested_successes": 0,
+    "first_api_key_sms_tested_successes": 0,
+    "independent_long_term_number_ownership_tested": false,
+    "failed_sms_original_payment_refund_tested": false,
+    "apple_or_session_autobinds_phone": false
+  },
+  "nonmaterial_checks": [
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "iOS_plus_cny_per_account_month": 125,
+      "seller_stock_label": "Low stock",
+      "new_price_change": false
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "plus_cny_per_account_month": 139.99,
+      "seller_invoice_extra_cny": 10,
+      "new_price_change": false
+    },
+    {
+      "merchant": "APIHub (16688)",
+      "url": "https://www.16688.com.cn/shop/S580515",
+      "plus_channel2_cny_per_unit": 108.99,
+      "unpaid_preview_cny": 112.04,
+      "seller_invoice_fee_claim_cny": 50,
+      "shop_enterprise_invoicing_separate_quote": true,
+      "new_price_change": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://catfk.com/shop/Antipro",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "type": "live first-party shop plus non-submitting checkout preview"
+    },
+    {
+      "url": "https://catfk.com/item/yfy1iv",
+      "observed_on": "2026-11-14",
+      "readable_in_this_round": false,
+      "type": "prior research r190 comparator, not fresh price"
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "type": "first-party unchanged"
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "type": "first-party unchanged"
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "type": "first-party unchanged"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S580515",
+      "observed_on": "2026-11-18",
+      "readable": true,
+      "type": "first-party unchanged"
+    }
+  ],
+  "priority_unverified": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "paid_orders": 0,
+    "valid_china_vat_invoices_tested": 0,
+    "sms_test_successes": 0
+  },
+  "historical_126_price_offers_preserved": true,
+  "historical_reports_preserved": true,
+  "merchant_contacted": false,
+  "real_order_submitted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}
