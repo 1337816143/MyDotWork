@@ -5468,6 +5468,28 @@
       "summary": "11月18日直读准确SKU ¥12/号码、页面与价表售罄；旧库存null，新可成交费用null；商称20–80天及24小时首号条件质保，实际SMS或退款未测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r233-20261118",
+      "title": "GPT源头第233轮 · GETGPT Pro所称香港主体的政府原始登记证据",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r04.html",
+      "updatedAt": "2026-11-18",
+      "summary": "首次直接核读香港公司注册处PDF第502页：Nexcloud Technology Limited，BRN 80542846，2026-06-03成立。此前仅第三方目录证据；网站经营归属、票据与授权仍未核，Plus¥179已超预算。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r233-20261118-evidence",
+      "title": "第233轮 · 香港公司注册处第4014项与商家主体声明证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r04-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "2026-11-18实读政府原始周刊；区分6月成立/刊发与本轮观察、网站自称运营主体及6月2日条款日期差异；收款、出票、授权、真实批发费为null/未证，真含票批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
