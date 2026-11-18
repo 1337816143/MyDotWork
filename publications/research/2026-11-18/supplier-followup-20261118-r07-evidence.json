@@ -1,0 +1,231 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 236,
+  "site_version": "1.9.244",
+  "observed_on": "2026-11-18",
+  "observed_at_local": "2026-11-18 19:32 Asia/Shanghai",
+  "previous_report": "research/2026-11-18/supplier-followup-20261118-r06.html",
+  "criteria": {
+    "original_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "max_cny_all_mandatory_payment_and_valid_china_vat": 170
+  },
+  "material_observation": {
+    "merchant": "AICZ",
+    "exact_sku": "ChatGPT Plus 月卡 · 菲律宾区",
+    "original_url": "https://aicz.vip/product/chatgpt-plus",
+    "sku_category": "one-month self-redeem card for buyer original account",
+    "unit": "CNY per seller-listed Philippine-channel Plus card, one month",
+    "seller_price_cny_per_one_month_card": 130.8,
+    "older_archived": {
+      "round": 235,
+      "observed_at_local": "2026-11-18 17:31 Asia/Shanghai",
+      "seller_page_self_updated_at": "2026-11-18 17:31 Beijing",
+      "seller_stock_label": "暂不可购买",
+      "purchase_button_present": false,
+      "immutable_previous_report": "https://github.com/1337816143/MyDotWork/blob/9c091aab2b0aa33f3b75118bc6202119c39d4c9a/publications/research/2026-11-18/supplier-followup-20261118-r06-evidence.json"
+    },
+    "fresh": {
+      "observed_at_local": "2026-11-18 19:32 Asia/Shanghai",
+      "seller_page_self_updated_at": "2026-11-18 19:31 Beijing",
+      "seller_stock_label": "有货 · 自动发卡",
+      "purchase_button_present": true,
+      "purchase_button_label": "立即购买 →",
+      "seller_copy": "1 个月 · 在线支付 · 自动发卡; 自助卡密充值"
+    },
+    "seller_display_price_change_cny": 0,
+    "seller_displayed_availability_changed": true,
+    "actual_stock_change_effective_at": null,
+    "checkout_opened": false,
+    "actual_paid_checkout_total_cny": null,
+    "all_required_payment_and_valid_chinese_vat_total_cny": null,
+    "permanent_restoration_of_stock_verified": false,
+    "actual_card_fulfillment_verified": false
+  },
+  "separate_sku_nonchange": {
+    "merchant": "AICZ",
+    "exact_sku": "ChatGPT-Plus官方充值-自助卡密充值-谷歌渠道",
+    "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+    "seller_price_cny_per_one_card": 126,
+    "observed_at_local": "2026-11-18 19:32 Asia/Shanghai",
+    "seller_page_self_updated_at": "2026-11-18 19:31 Beijing",
+    "seller_stock_label": "暂不可购买",
+    "purchase_button_present": false,
+    "original_account_seller_claim_can_cover_active_plus": true,
+    "not_same_sku_as_philippine": true
+  },
+  "other_checks": [
+    {
+      "merchant": "Hype",
+      "url": "https://hypeai.cc/prices",
+      "seller_claim_original_account_plus_card_price_cny_per_account_month": 117,
+      "seller_stock_label": "有货",
+      "payment_channel_surcharge_rate_alipay": 0.068,
+      "all_in_with_valid_china_vat": null,
+      "changed": false
+    },
+    {
+      "merchant": "Hype",
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "sku": "Codex US real SIM single phone",
+      "price_cny_per_number": 12,
+      "seller_stock_label": "已售罄",
+      "seller_claim_number_duration_days_min": 20,
+      "seller_claim_number_duration_days_max": 80,
+      "seller_claim_24h_first_binding_refund_after_one_replacement": true,
+      "verified_sms_success": false,
+      "changed": false
+    },
+    {
+      "merchant": "引路鲸",
+      "url": "https://www.chatgqt.plus/cooperation",
+      "agent_upfront_cny": 3000,
+      "not_no_upfront": true,
+      "changed": false
+    },
+    {
+      "merchant": "GETGPT Pro",
+      "url": "https://getgpt.io/price",
+      "original_account_plus_cny_per_month": 179,
+      "over_170_cutoff_before_fees": true,
+      "changed": false
+    },
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/",
+      "original_account_plus_seller_listing_cny_per_account_month": 139,
+      "independent_codex_25d_sms_cny_per_number": 20,
+      "actual_china_vat_invoice_verified": false,
+      "changed": false
+    }
+  ],
+  "unreadable_exact_pages": [
+    {
+      "merchant": "CatFK",
+      "url": "https://catfk.com/shop/Antipro",
+      "readable": false
+    },
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "readable": false
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "readable": false
+    },
+    {
+      "merchant": "ChatShare",
+      "url": "https://chatshare.biz/",
+      "readable": false
+    },
+    {
+      "merchant": "GetVIP",
+      "url": "https://www.getvip.site/",
+      "readable": false
+    }
+  ],
+  "unverified_others_retain_historical_terms": [
+    "小久",
+    "GetVIP",
+    "wind89",
+    "PAYPRM",
+    "CatFK",
+    "Morimm",
+    "ChatShare"
+  ],
+  "unreadable_not_evidence_of_discontinuation": true,
+  "unreadable_does_not_refresh_old_price": true,
+  "procurement_evidence_gaps": {
+    "actual_payment_receiving_legal_entity": null,
+    "actual_valid_china_vat_invoice_issuing_legal_entity": null,
+    "vat_invoice_fee_cny": null,
+    "payment_surcharge_cny": null,
+    "formal_resale_authorization_verified": false,
+    "actual_one_unit_wholesale_price_cny": null,
+    "all_mandatory_payment_and_valid_china_vat_total_cny": null
+  },
+  "phone_verification": {
+    "independent_codex_sms_not_equivalent_to_chatgpt_web_or_first_api_key": true,
+    "apple_in_app_and_session_delivery_may_coexist": true,
+    "ordinary_plus_subscription_automatically_binds_phone": false,
+    "chatgpt_web_sms_success_tested": false,
+    "codex_desktop_sms_success_tested": false,
+    "first_api_key_sms_success_tested": false,
+    "long_term_number_control_verified": false,
+    "failed_sms_cash_refund_verified": false
+  },
+  "source_type_separation": "Seller website observations, not paid orders, invoices, upstream proof, or SMS real tests",
+  "sources": [
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-18",
+      "observed_at": "19:32 Asia/Shanghai",
+      "page_self_updated_at": "2026-11-18 19:31 Beijing",
+      "type": "first_party_seller_product_page",
+      "readable": true,
+      "finding": "Philippine Plus CNY130.8 seller shows in-stock and Buy entry, compared with archived 17:31 unavailable label"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-18",
+      "observed_at": "19:32 Asia/Shanghai",
+      "page_self_updated_at": "2026-11-18 19:31 Beijing",
+      "type": "first_party_seller_product_page",
+      "readable": true,
+      "finding": "Google Plus CNY126 still marked temporarily unavailable"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/9c091aab2b0aa33f3b75118bc6202119c39d4c9a/publications/research/2026-11-18/supplier-followup-20261118-r06-evidence.json",
+      "observed_on": "2026-11-18",
+      "type": "immutable_prior_repo_record",
+      "readable": true
+    },
+    {
+      "url": "https://hypeai.cc/prices",
+      "observed_on": "2026-11-18",
+      "type": "first_party_seller_price_table",
+      "readable": true
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "observed_on": "2026-11-18",
+      "type": "first_party_seller_sms_product",
+      "readable": true
+    },
+    {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-18",
+      "type": "first_party_seller_agent_terms",
+      "readable": true
+    },
+    {
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-18",
+      "type": "first_party_seller_pricing",
+      "readable": true
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-18",
+      "type": "first_party_seller_landing",
+      "readable": true
+    }
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_126_price_offers_preserved": true,
+  "historical_reports_preserved": true,
+  "merchant_contacted": false,
+  "actual_purchase_made": false,
+  "real_order_submitted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false
+}

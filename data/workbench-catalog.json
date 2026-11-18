@@ -5534,6 +5534,28 @@
       "summary": "记录AICZ谷歌卡密及菲律宾月卡两个不同SKU，旧有货/新暂不可购买的卖家标签、原始URL和自标时间；收款出票授权与支付全费null，实购/验票/SMS仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r236-20261118",
+      "title": "GPT源头第236轮 · AICZ菲律宾Plus卖家展示重新可购",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r07.html",
+      "updatedAt": "2026-11-18",
+      "summary": "2026-11-18 19:32直接读同一菲律宾原号Plus月卡：¥130.80未变，17:31暂不可购买变为有货自动发卡且立即购买入口出现；Google ¥126仍不可购，均非付款或真批发证明。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r236-20261118-evidence",
+      "title": "第236轮 · AICZ菲律宾Plus恢复可购标签与Google SKU对照证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r07-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "原始商家URL、17:31→19:31页面展示状态及准确SKU与价；支付手续费、合法中国VAT和批发资格null；短信/付款/验票仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -2644,3 +2644,19 @@ for(const sku of r235.material_observations){assert.equal(sku.prior_archived.sel
 assert.equal(r235.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r235.merchant_terms.actual_all_mandatory_fees_including_valid_china_vat_cny,null);
 assert.equal(r235.actual_purchase_made,false);assert.equal(r235.real_order_submitted,false);assert.equal(r235.sms_test_done,false);
+
+// R236: AICZ Philippine Plus seller-listed return to availability; Google SKU still unavailable.
+const c236=d.records.find(x=>x.id==='gpt-source-followup-r236-20261118');
+const e236=d.records.find(x=>x.id==='gpt-source-followup-r236-20261118-evidence');
+assert(c236&&e236&&c236.url.endsWith('supplier-followup-20261118-r07.html'));
+const r236=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-18/supplier-followup-20261118-r07-evidence.json'),'utf8'));
+assert.equal(r236.round,236);assert.equal(r236.site_version,'1.9.244');
+assert.equal(r236.material_observation.older_archived.seller_stock_label,'暂不可购买');
+assert.equal(r236.material_observation.fresh.seller_stock_label,'有货 · 自动发卡');
+assert.equal(r236.material_observation.fresh.purchase_button_present,true);
+assert.equal(r236.material_observation.seller_price_cny_per_one_month_card,130.8);
+assert.equal(r236.material_observation.actual_paid_checkout_total_cny,null);
+assert.equal(r236.separate_sku_nonchange.seller_stock_label,'暂不可购买');
+assert.equal(r236.procurement_evidence_gaps.all_mandatory_payment_and_valid_china_vat_total_cny,null);
+assert.equal(r236.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r236.actual_purchase_made,false);assert.equal(r236.sms_test_done,false);
