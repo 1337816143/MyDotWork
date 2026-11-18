@@ -5490,6 +5490,28 @@
       "summary": "2026-11-18实读政府原始周刊；区分6月成立/刊发与本轮观察、网站自称运营主体及6月2日条款日期差异；收款、出票、授权、真实批发费为null/未证，真含票批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r234-20261118",
+      "title": "GPT源头第234轮 · CatFK Antipro另一原号Plus SKU及支付预览",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r05.html",
+      "updatedAt": "2026-11-18",
+      "summary": "首次核查同店另一独立SKU ¥118/账号·月，未付款一件手续费¥3.30/预览¥121.30，必须等待订阅到期后充值；单件¥118不在卖家公开>¥500普票开票范围内，不能与已记¥148在期覆盖SKU混同。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r234-20261118-evidence",
+      "title": "第234轮 · CatFK Antipro ¥118 Plus SKU与单件¥3.30手续费、出票门槛证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-18/supplier-followup-20261118-r05-evidence.json",
+      "updatedAt": "2026-11-18",
+      "summary": "2026-11-18首读新SKU及免提交订单确认弹窗、退款20%扣费商称；VAT票额外费用与法人null，真批发、付费、验票、短信实测仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
