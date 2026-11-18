@@ -5578,6 +5578,28 @@
       "summary": "原始卖家SKU链接、观察时间与页面自标时间、¥-1.20挂牌差、Google及独立自助链接SKU、支付与开票null；实购与短信0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r238-20261119",
+      "title": "GPT源头第238轮 · 小黑丸代理申请与三个不同Plus SKU",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119.html",
+      "updatedAt": "2026-11-19",
+      "summary": "首次读取小黑丸一方代理申请，支持批量卡密或API但须审核；菲区卡密¥168、人工SKU¥158、独立人工配置¥159均为零售价；真实单件批发、代理费、支付及中国VAT仍null，合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r238-20261119-evidence",
+      "title": "第238轮 · 小黑丸代理申请条件及三种Plus SKU证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "逐项核对一方合作流程、非OpenAI官方授权声明、SKU/价格、卖家¥119纯演示数字及全部批发/开票费用未知；无购买、验票和SMS测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

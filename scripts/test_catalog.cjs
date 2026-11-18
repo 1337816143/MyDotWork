@@ -2677,3 +2677,20 @@ assert.equal(r237.separate_skus[1].first_listed_date_verified,null);
 assert.equal(r237.unknowns.all_mandatory_payment_and_valid_china_vat_total_cny,null);
 assert.equal(r237.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r237.actual_purchase_made,false);assert.equal(r237.sms_test_done,false);
+
+
+// R238: new first-party reseller application is a lead, not approved one-unit wholesale or a paid VAT-inclusive purchase.
+const c238=d.records.find(x=>x.id==='gpt-source-followup-r238-20261119');
+const e238=d.records.find(x=>x.id==='gpt-source-followup-r238-20261119-evidence');
+assert(c238&&e238&&c238.url.endsWith('supplier-followup-20261119.html'));
+const r238=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-evidence.json'),'utf8'));
+assert.equal(r238.round,238);assert.equal(r238.site_version,'1.9.246');
+assert.equal(r238.discovery.new_first_party_reseller_program.true_approved_wholesale_price_cny_per_one_plus_month,null);
+assert.equal(r238.discovery.new_first_party_reseller_program.confirmed_agent_no_upfront_fee,null);
+assert.equal(r238.discovery.new_first_party_reseller_program.seller_example_only_not_actual_price.example_only,true);
+assert.deepEqual(r238.discovery.distinct_retail_skus.map(x=>x.id),['XHW-GPTPLUS-PH-CARD-1M','GPTPLUS-MANUAL-1M','MANUAL-REGION-PLUS-CONFIGURATOR']);
+assert.equal(r238.discovery.distinct_retail_skus[0].display_price_cny_per_one_free_existing_account_one_month,168);
+assert.equal(r238.discovery.distinct_retail_skus[2].requires_account_page_code_or_token,true);
+assert.equal(r238.procurement_unknowns.all_in_cny,null);
+assert.equal(r238.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r238.actual_purchase_made,false);assert.equal(r238.sms_test_done,false);

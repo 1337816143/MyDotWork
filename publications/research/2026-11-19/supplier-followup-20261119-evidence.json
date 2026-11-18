@@ -1,0 +1,291 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 238,
+  "site_version": "1.9.246",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-18/supplier-followup-20261118-r08.html",
+  "discovery": {
+    "source": "targeted_public_web_search_followed_by_first_party_live_scrapes",
+    "first_party_observation_date": "2026-11-19",
+    "new_first_party_reseller_program": {
+      "merchant": "小黑丸 XiaoHeiWan",
+      "url": "https://upgrade.xiaoheiwan.com/agent-center",
+      "seller_type": "third_party_reseller_program_candidate_not_verified_first_tier_upstream",
+      "claimed_reseller_workflow": "agent buys merchant redemption cards then resells to customer; merchant provides cards, performs recharge fulfillment, handles platform-side aftersales",
+      "claimed_modes": [
+        "bulk_card_purchase",
+        "API_fulfillment_after_approval"
+      ],
+      "requires_application_and_channel_review": true,
+      "confirmed_single_piece_wholesale_eligibility": null,
+      "confirmed_agent_no_upfront_fee": null,
+      "true_approved_wholesale_price_cny_per_one_plus_month": null,
+      "actual_wholesale_min_order_quantity": null,
+      "actual_bulk_discount_tiers": null,
+      "seller_example_only_not_actual_price": {
+        "hypothetical_end_customer_paid_cny": 149,
+        "hypothetical_agent_cost_cny": 119,
+        "hypothetical_collection_fee_cny": 1,
+        "hypothetical_warranty_reserve_cny": 3,
+        "example_only": true
+      },
+      "merchant_explicitly_denies_openai_official_authorization": true,
+      "merchant_card_is_official_openai_gift_card": false,
+      "true_merchant_business_legal_entity": null,
+      "true_payment_receiving_legal_entity": null,
+      "valid_china_vat_issuing_entity": null,
+      "actual_invoice_fee_cny": null,
+      "actual_payment_surcharge_cny": null,
+      "formal_resale_authorization_from_upstream_verified": false,
+      "no_application_submitted": true,
+      "no_vendor_contact": true
+    },
+    "distinct_retail_skus": [
+      {
+        "merchant": "小黑丸",
+        "url": "https://upgrade.xiaoheiwan.com/product/b5fdffb6-00b4-4612-88a9-03abe382da03",
+        "id": "XHW-GPTPLUS-PH-CARD-1M",
+        "title": "【菲区】ChatGPT Plus 一个月会员自助充值激活码",
+        "display_price_cny_per_one_free_existing_account_one_month": 168,
+        "stock_page_label": "库存 5",
+        "seller_auto_delivery_claim": true,
+        "requires_account_free": true,
+        "seller_says_renewal_may_be_reserved_at_1_to_2_days_remaining": true,
+        "seller_says_active_plus_can_be_extended_without_break_verified": null,
+        "contains_independent_codex_sms": false,
+        "actual_paid_checkout_total_cny": null,
+        "payment_surcharge_cny": null,
+        "valid_china_vat_fee_cny": null,
+        "wholesale_approved_unit_price_cny": null,
+        "merchant_warranty_claim": "drop-of-subscription compensated by unused days; account ban and risk excluded",
+        "actual_fulfillment_tested": false
+      },
+      {
+        "merchant": "小黑丸",
+        "url": "https://upgrade.xiaoheiwan.com/product/f64222d3-fdc6-4db0-b38d-c0eb0d4e7750",
+        "id": "GPTPLUS-MANUAL-1M",
+        "title": "手工代订阅 ChatGPT Plus 一月会员｜客服协助开通",
+        "display_price_cny_per_one_month": 158,
+        "seller_manual_service": true,
+        "seller_agent_contact_required_after_purchase": true,
+        "account_must_be_normally_usable": true,
+        "actual_paid_checkout_total_cny": null,
+        "payment_surcharge_cny": null,
+        "valid_china_vat_fee_cny": null,
+        "wholesale_approved_unit_price_cny": null,
+        "merchant_warranty_claim": "pro-rata subscription falloff compensation, ban or account risk excluded, vendor-caused inability to start can seek refund",
+        "actual_fulfillment_tested": false
+      },
+      {
+        "merchant": "小黑丸",
+        "url": "https://upgrade.xiaoheiwan.com/gpt-recharge/subscription-service",
+        "id": "MANUAL-REGION-PLUS-CONFIGURATOR",
+        "title": "Plus人工订阅自助选择地区",
+        "display_price_cny_per_one_plus_month": 159,
+        "seller_manual_service": true,
+        "requires_account_page_code_or_token": true,
+        "do_not_conflate_with_manual_retail_158": true,
+        "actual_paid_checkout_total_cny": null,
+        "valid_china_vat_fee_cny": null,
+        "wholesale_approved_unit_price_cny": null
+      }
+    ],
+    "material_significance": "new first-party explicit reseller model and 3 distinctly mapped retail Plus fulfillment variants, but no authenticated single-unit wholesale, no verified zero-front-fee agent eligibility and no valid all-fee China VAT invoice"
+  },
+  "extra_first_party_checks": [
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "seller_listed_cny_per_one_month_card": 129.6,
+      "stock_label": "有货 · 自动发卡",
+      "seller_page_self_updated_at": "2026-11-19 06:01 Beijing",
+      "changed_vs_r237": false
+    },
+    {
+      "merchant": "CatFK Antipro",
+      "url": "https://catfk.com/shop/Antipro",
+      "seller_listed_free_account_plus_cny": 118,
+      "invoice_only_above_cny": 500,
+      "invoice_fee_extra": true,
+      "changed_vs_archive": false
+    },
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "seller_listed_ios_plus_cny_per_one_month": 125,
+      "stock": "Low stock",
+      "changed_vs_archive": false
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "seller_listed_plus_cny_per_unit": 139.99,
+      "seller_claim_invoice_add_cny": 10,
+      "seller_requires_login_for_invoice": true,
+      "changed_vs_archive": false
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://www.payprm.com/",
+      "seller_promotes_enterprise_invoicing_without_exact_legal_entity_or_price": true,
+      "changed_vs_archive": false
+    }
+  ],
+  "failed_or_unverified_sources": [
+    {
+      "merchant": "GetVIP",
+      "url": "https://www.getvip.site/",
+      "status": "DNS resolution failed on attempted live fetch",
+      "does_not_prove_closure": true
+    }
+  ],
+  "phone_verification": {
+    "separate_services_from_plus": true,
+    "ordinary_plus_auto_binds_phone": false,
+    "chatgpt_web_sms_success_tested": false,
+    "codex_desktop_sms_success_tested": false,
+    "first_api_key_sms_success_tested": false,
+    "long_term_phone_control_tested": false,
+    "failed_receipt_cash_refund_tested": false,
+    "apple_billing_and_session_delivery_can_coexist": true
+  },
+  "procurement_unknowns": {
+    "one_unit_wholesale_available": null,
+    "agent_upfront_fee_cny": null,
+    "actual_wholesale_cny_per_month": null,
+    "payment_surcharge_cny": null,
+    "exchange_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "valid_china_vat_issuer": null,
+    "payee_legal_entity": null,
+    "formal_openai_or_supplier_resale_authorization": null,
+    "all_in_cny": null
+  },
+  "criteria": {
+    "original_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "max_all_mandatory_payment_and_valid_china_vat_cny": 170
+  },
+  "sources": [
+    {
+      "url": "https://upgrade.xiaoheiwan.com/agent-center",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/product/b5fdffb6-00b4-4612-88a9-03abe382da03",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/product/f64222d3-fdc6-4db0-b38d-c0eb0d4e7750",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/gpt-recharge/subscription-service",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/gpt-recharge/safety",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/about",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/guide",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://upgrade.xiaoheiwan.com/gpt-recharge",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "not_a_paid_test": true
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "changed": false
+    },
+    {
+      "url": "https://catfk.com/shop/Antipro",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "changed": false
+    },
+    {
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "changed": false
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "changed": false
+    },
+    {
+      "url": "https://www.payprm.com/",
+      "observed_on": "2026-11-19",
+      "type": "first_party_seller_page",
+      "readable": true,
+      "changed": false
+    },
+    {
+      "url": "https://www.getvip.site/",
+      "observed_on": "2026-11-19",
+      "type": "failed_live_access",
+      "readable": false,
+      "reason": "DNS"
+    }
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_paid_orders": 0,
+    "real_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "merchant_contacted": false,
+  "actual_purchase_made": false,
+  "real_order_submitted": false,
+  "credentials_submitted": false,
+  "sms_test_done": false,
+  "historical_126_price_offers_preserved": true,
+  "historical_reports_preserved": true
+}
