@@ -1,0 +1,224 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 241,
+  "site_version": "1.9.249",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-19/supplier-followup-20261119-r03.html",
+  "material_observations": [
+    {
+      "merchant": "ChatShare",
+      "url": "https://chatshare.tv/",
+      "sku_family": "shared seat; NOT subscription on user's own OpenAI account",
+      "observation_date": "2026-11-19",
+      "currency": "CNY",
+      "same_sku_comparisons": [
+        {
+          "sku": "Plus 5-person shared seat",
+          "quantity": "one shared seat",
+          "duration": "30 days",
+          "cached_earlier_indexed_price_cny": 31,
+          "current_first_party_price_cny": 38,
+          "display_delta_cny": 7,
+          "exact_prior_capture_date": null,
+          "current_source_live_page": true
+        },
+        {
+          "sku": "Plus 3-person shared seat",
+          "quantity": "one shared seat",
+          "duration": "30 days",
+          "cached_earlier_indexed_price_cny": 59,
+          "current_first_party_price_cny": 68,
+          "display_delta_cny": 9,
+          "exact_prior_capture_date": null,
+          "current_source_live_page": true
+        }
+      ],
+      "earlier_index_result_approx_age": "search result displayed crawled 6 days ago; precise capture/effective change date unknown",
+      "earlier_source_type": "separately returned search-index cached version of same merchant URL, reviewed this run; lower-confidence historic comparator",
+      "current_source_type": "direct read of merchant main page during this run",
+      "first_party_seller_says_work_codex_api_not_included": true,
+      "actual_price_effective_date_verified": null,
+      "price_is_not_own_account_wholesale": true,
+      "merchant_pricing_not_paid_checkout": true,
+      "actual_paid_receipt": false,
+      "valid_china_vat_invoice_issuer": null
+    },
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "sku": "ChatGPT-Plus官方充值-自助卡密充值-谷歌渠道",
+      "unit": "one code/item, precise complete 1-month entitlement not independently verified",
+      "price_cny_per_item": 126,
+      "merchant_page_sequence": [
+        {
+          "reference": "round 240 immutable evidence",
+          "merchant_self_marked_price_time": "2026-11-19 08:31 Asia/Shanghai",
+          "merchant_stock_label": "暂不可购买",
+          "observed_on": "2026-11-19"
+        },
+        {
+          "reference": "first direct page read this run",
+          "merchant_self_marked_price_time": "2026-11-19 10:31 Asia/Shanghai",
+          "merchant_stock_label": "有货 · 自动发卡",
+          "purchase_button_label": "立即购买",
+          "observed_on": "2026-11-19"
+        },
+        {
+          "reference": "second direct page read this run",
+          "merchant_self_marked_price_time": "2026-11-19 12:01 Asia/Shanghai",
+          "merchant_stock_label": "暂不可购买",
+          "purchase_button_label": null,
+          "observed_on": "2026-11-19"
+        }
+      ],
+      "same_sku_listed_price_unchanged": true,
+      "at_last_direct_read_available": false,
+      "real_checkout_readable": false,
+      "checkout_destination": "https://shop.aicz.vip/products/ChatGPT-Plus-Google",
+      "checkout_fetch_error": "redirect inaccessible via web tool",
+      "stock_state_is_merchant_display_not_paid_inventory": true,
+      "actual_transition_effective_times_verified": null,
+      "seller_claims_existing_go_or_plus_can_redeem": true,
+      "actual_renewal_success_verified": false,
+      "merchant_claims_remaining_days_refund_after_sub_loss": true,
+      "actual_refund_verified": false,
+      "actual_payment_total_cny": null,
+      "valid_china_vat_invoice_total_cny": null
+    },
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "sku": "ChatGPT Plus 月卡 · 菲律宾区",
+      "unit": "one item / one month",
+      "price_cny_per_item": 129.6,
+      "merchant_stock_label": "有货 · 自动发卡",
+      "merchant_self_marked_price_time": "2026-11-19 11:01 Asia/Shanghai",
+      "same_sku_material_change": false,
+      "actual_payment_total_cny": null,
+      "valid_china_vat_invoice_total_cny": null
+    }
+  ],
+  "procurement": {
+    "own_existing_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "all_required_costs_and_valid_chinese_vat_total_cny_at_most": 170,
+    "verified_real_wholesale_single_unit_cost_cny": null,
+    "payment_surcharge_cny": null,
+    "invoice_fee_cny": null,
+    "actual_merchant_entity": null,
+    "actual_payee_entity": null,
+    "actual_china_vat_issuer": null,
+    "resale_authorization_verified": false,
+    "wholesale_approval_verified": false,
+    "real_paid_invoice_verified": false
+  },
+  "phone_verification": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "separate_scopes": [
+      "ordinary ChatGPT account/use",
+      "Codex desktop app prompt",
+      "first API-key creation"
+    ],
+    "apple_and_session_may_coexist": true,
+    "subscription_does_not_automatically_bind_phone_or_remove_web_verification": true,
+    "independent_number_duration_verified_days": null,
+    "failed_code_cash_refund_verified": false,
+    "real_sms_success_count": 0
+  },
+  "ancillary_rechecks": [
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-19",
+      "sku": "Plus (quality assurance 30 days)",
+      "advertised_price_cny": 139,
+      "material_change": false,
+      "first_party_statement": true
+    },
+    {
+      "merchant": "GETGPT Pro",
+      "url": "https://getgpt.io/price",
+      "observed_on": "2026-11-19",
+      "sku": "ChatGPT Plus monthly",
+      "advertised_price_cny": 179,
+      "material_change": false,
+      "first_party_statement": true
+    },
+    {
+      "merchant": "AiChanl",
+      "url": "https://aichanl.com/aisku/gpt",
+      "observed_on": "2026-11-19",
+      "sku": "Plus monthly wholesale",
+      "wholesale_price_cny": null,
+      "requires_channel_account": true,
+      "material_change": false
+    },
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "GetVIP",
+      "url": "https://getvip.ai/",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-19",
+      "class": "direct_first_party_current_listing",
+      "caveat": "older comparison is search cache of same original URL, exact price effective date unknown"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-19",
+      "class": "two_direct_fetches_showing_different_seller_labels",
+      "caveat": "not verified real stock"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-19",
+      "class": "direct_first_party_no_price_change"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-19",
+      "class": "official_platform_help"
+    }
+  ],
+  "quality_note": "This report documents seller display snapshots and a lower-confidence historical search index comparator; no verified effective price-change timestamp, actual payment, VAT invoice, transfer authorization, order fulfilment, or mobile SMS result.",
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "actual_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_preserved": true,
+  "historical_126_offers_preserved": true,
+  "merchant_contacted": false,
+  "agent_application_submitted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false
+}
