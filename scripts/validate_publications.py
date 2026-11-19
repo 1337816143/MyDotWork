@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 527, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 529, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.247'
+    assert latest['version'] == '1.248'
     assert latest['date'] == '2026-11-20'
-    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120.html'
-    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-19/supplier-followup-20261119-r09.html'
+    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r02.html'
+    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r02-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3041,3 +3041,18 @@ def validate_publications():
 
 
 if __name__ == '__main__': validate_publications()
+
+    # R248: newly observed seller Pro SKU and overlapping-subscription warning are not paid transactions or verified official tier.
+    r248 = json.loads((ROOT/'dist/research/2026-11-20/supplier-followup-20261120-r02-evidence.json').read_bytes())
+    assert r248['round'] == 248 and r248['site_version'] == '1.9.256'
+    assert by_id['gpt-source-followup-r248-20261120']['url'].endswith('supplier-followup-20261120-r02.html')
+    assert by_id['gpt-source-followup-r248-20261120-evidence']['url'].endswith('supplier-followup-20261120-r02-evidence.json')
+    assert r248['material_observations'][0]['listed_retail_price_cny_per_account_month'] == 688
+    assert r248['material_observations'][0]['pro_100_200_500_official_tier_mapping_verified'] is False
+    assert r248['material_observations'][0]['real_paid_checkout_total_cny'] is None
+    assert r248['material_observations'][1]['in_term_plus_renewal_verified'] is False
+    assert r248['material_observations'][2]['shared_plus_sku_still_present'] is True
+    assert r248['procurement']['verified_plus_all_in_total_cny'] is None
+    assert r248['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r248['phone_verification']['actual_sms_successes'] == 0
+    assert r248['actual_purchase_made'] is False
