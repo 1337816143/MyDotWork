@@ -5798,6 +5798,28 @@
       "summary": "保留一方来源、观察日、真实¥138零售SKU与¥0.01未登录占位价的区别；人工Codex协助仅商称，票费/全费/持号/接码退款null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r248-20261120",
+      "title": "GPT源头第248轮 · 智云站PRO月付挂牌与在期覆盖提示",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r02.html",
+      "updatedAt": "2026-11-20",
+      "summary": "首次直接核读智云站PRO¥688/账号·月与在期改订覆盖剩余时长的页面警告；并非官方档位、含票全费、已购履约或Plus批发资格。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r248-20261120-evidence",
+      "title": "第248轮 · PRO商品与在期升级风险证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r02-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "商家原页、2026-11-20观察日、PRO¥688和官方档位不等效、在期覆盖提示、旧共享SKU仍在；票费/真实付款/授权均null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
