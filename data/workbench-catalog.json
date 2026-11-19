@@ -5776,6 +5776,28 @@
       "summary": "3条商家原始URL、2026-11-19实际阅读、代理/零售准确单月单位及¥29.99前置费；API余额门槛与费用/有效中国增值税/履约均为null或未测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r247-20261120",
+      "title": "GPT源头第247轮 · 智云快充站原号Plus与Codex手机号协助文案",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120.html",
+      "updatedAt": "2026-11-20",
+      "summary": "新增直接读取智云快充站本人原号Plus¥138/月与Codex客服免费协助绑号声明；Session必需、有效中国增值税票/收款主体/短信成功及批发授权未证，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r247-20261120-evidence",
+      "title": "第247轮 · Plus价签、Codex验证声明与完整缺口 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "保留一方来源、观察日、真实¥138零售SKU与¥0.01未登录占位价的区别；人工Codex协助仅商称，票费/全费/持号/接码退款null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
