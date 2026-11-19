@@ -1,0 +1,154 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 240,
+  "site_version": "1.9.248",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-19/supplier-followup-20261119-r02.html",
+  "material_observation": {
+    "merchant": "AICZ",
+    "original_url": "https://aicz.vip/terms",
+    "observed_on": "2026-11-19",
+    "terms_page_self_updated_on": "2026-11-18",
+    "historical_archive_round": 225,
+    "historical_archived_observed_on": "2026-11-17",
+    "historical_terms_self_updated_on": "2026-11-02",
+    "historical_source": "research/2026-11-17/supplier-followup-20261117-r07-evidence.json",
+    "earlier_first_party_terms_already_claimed_paid_channel_information_service": true,
+    "earlier_first_party_terms_already_claimed_separate_upstream_agent_fees": true,
+    "present_first_party_terms_seller_claims_one_agent_channel_tier": true,
+    "present_first_party_terms_seller_claims_new_second_level_subsite_sales_no_longer_open": true,
+    "present_first_party_terms_seller_claims_spend_based_agent_upgrade_no_longer_open": true,
+    "present_first_party_terms_seller_claims_existing_commissions_withdrawals_still_reviewable": true,
+    "existing_paid_agent_qualification_seller_claims_retained_without_repurchase": true,
+    "present_first_party_terms_seller_claims_partner_subsite_seller_handles_payment_and_fulfillment": true,
+    "channel_information_service_fee_cny": null,
+    "upstream_platform_agent_fee_cny": null,
+    "upstream_plus_wholesale_single_month_price_cny": null,
+    "payment_surcharge_cny": null,
+    "exchange_fee_cny": null,
+    "valid_china_vat_invoice_fee_cny": null,
+    "actual_merchant_legal_entity": null,
+    "actual_payee_legal_entity": null,
+    "valid_china_vat_invoice_issuer": null,
+    "actual_one_unit_no_upfront_fee_access_verified": null,
+    "authorized_resale_contract_verified": null,
+    "merchant_statement_not_proven_implementation_or_contract": true,
+    "exact_policy_effective_date_verified": null,
+    "interpretation": "Observed first-party agent-entry language changed from historical first-party terms: new subsite and consumption upgrade paths now explicitly closed. This is not a proven change date, live wholesale quote, fulfilled order, or company authorization."
+  },
+  "attempted_obsolete_route": {
+    "source_url": "https://aicz.vip/partner?level=1",
+    "observed_on": "2026-11-19",
+    "direct_fetch_status": "HTTP 410 Gone",
+    "route_current_sales_available_verified": false,
+    "old_search_indexed_multi_tier_wholesale_prices_not_refreshed": true,
+    "access_failure_proves_permanent_service_shutdown": false,
+    "other_purchase_routes_may_still_exist": true
+  },
+  "same_sku_rechecks": [
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "sku": "ChatGPT Plus 月卡 · 菲律宾区",
+      "quantity": 1,
+      "period": "one_month",
+      "merchant_listed_price_cny": 129.6,
+      "merchant_stock_label": "有货 · 自动发卡",
+      "merchant_self_price_update": "2026-11-19 08:31 Asia/Shanghai",
+      "changed_vs_r239": false,
+      "paid_total_cny": null,
+      "valid_chinese_vat_invoice_total_cny": null,
+      "paid_order_tested": false
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "sku": "ChatGPT-Plus官方充值-自助卡密充值-谷歌渠道",
+      "quantity": 1,
+      "full_one_month_claim_independently_verified": null,
+      "merchant_listed_price_cny": 126,
+      "merchant_stock_label": "暂不可购买",
+      "merchant_self_price_update": "2026-11-19 08:31 Asia/Shanghai",
+      "changed_vs_r239": false,
+      "paid_total_cny": null,
+      "valid_chinese_vat_invoice_total_cny": null,
+      "paid_order_tested": false
+    }
+  ],
+  "procurement_criteria": {
+    "own_existing_account": true,
+    "one_unit": true,
+    "one_month": true,
+    "no_agent_upfront_fee": true,
+    "all_required_payment_and_valid_china_vat_fee_cny_limit": 170
+  },
+  "phone_verification": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_and_codex_desktop_and_first_api_key_are_separate_scenarios": true,
+    "seller_subscription_does_not_automatically_bind_or_clear_web_phone_requirement": true,
+    "apple_in_app_and_session_delivery_can_coexist": true,
+    "independent_sms_sku_this_round_tested": false,
+    "verified_long_term_number_possession_days": null,
+    "verified_failed_sms_original_payment_cash_refund": false,
+    "real_verified_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://aicz.vip/terms",
+      "observed_on": "2026-11-19",
+      "seller_self_updated_on": "2026-11-18",
+      "type": "direct_first_party_current_terms_read",
+      "readable": true,
+      "evidence_class": "seller_terms_not_paid_test"
+    },
+    {
+      "url": "https://aicz.vip/partner?level=1",
+      "observed_on": "2026-11-19",
+      "type": "direct_route_fetch_HTTP_410_no_price_refresh",
+      "readable": false,
+      "evidence_class": "route_access_failure_only"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-19",
+      "seller_self_updated_at": "2026-11-19 08:31 Asia/Shanghai",
+      "type": "direct_first_party_same_sku_price_nonchange",
+      "readable": true,
+      "evidence_class": "seller_listing"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-19",
+      "seller_self_updated_at": "2026-11-19 08:31 Asia/Shanghai",
+      "type": "direct_first_party_distinct_google_sku_nonchange",
+      "readable": true,
+      "evidence_class": "seller_listing"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-19",
+      "type": "official_platform_scope",
+      "readable": true,
+      "evidence_class": "platform_documentation"
+    },
+    {
+      "url": "https://aichanl.com/aisku/gpt",
+      "observed_on": "2026-11-19",
+      "type": "existing_wholesale_candidate_comparison",
+      "readable": true,
+      "evidence_class": "previously_catalogued_nonchange"
+    }
+  ],
+  "source_classification": "Current merchant web terms and listings only; interpretation is limited inference. No actual checkout, agency qualification, invoice, authorization, redemption, phone binding, or paid SMS test.",
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "actual_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_price_records_not_refreshed": true,
+  "historical_126_offers_preserved": true,
+  "historical_reports_preserved": true,
+  "merchant_contacted": false,
+  "agent_application_submitted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false
+}
