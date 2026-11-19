@@ -1,0 +1,253 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 243,
+  "site_version": "1.9.251",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-19/supplier-followup-20261119-r05.html",
+  "material_observations": [
+    {
+      "merchant": "嗨付卡台 GPT协议充值（cdk.hifupay.com）",
+      "source_type": "indexed_full_text_of_first_party_api_document",
+      "original_document_url": "https://cdk.hifupay.com/api-docs.html",
+      "actually_read_on": "2026-11-19",
+      "acquisition_method": "Independent Exa page extraction returned source-labeled full technical text; direct live origin access via web fetch returned HTTP 502",
+      "prior_observation": "2026-11-04 original API page yielded HTTP 502 in historical source review",
+      "seller_document_publish_date": null,
+      "seller_document_version": null,
+      "live_origin_http_status": "HTTP 502 Bad Gateway",
+      "first_party_full_text_obtained_from_secondary_index": true,
+      "direct_live_origin_content_verified": false,
+      "live_api_reachability_verified": false,
+      "current_service_availability_verified": false,
+      "advertised_business_mode": "Protocol-based subscription charge using the user's own OpenAI session and an eligible payment card, NOT prepaid Plus card-code wholesale",
+      "api_start_endpoint": "POST /api/start",
+      "api_task_status_endpoint": "GET /api/status/:taskId",
+      "api_requires_hifupay_api_key": true,
+      "api_mandatory_chatgpt_session_token": true,
+      "api_token_documented_forms": [
+        "complete ChatGPT Session JSON",
+        "accessToken"
+      ],
+      "api_mandatory_payment_instrument": true,
+      "supported_payment_instrument_forms": [
+        "hfpCardId",
+        "card details plus expiration and CVC"
+      ],
+      "plus_plan_code": "plus",
+      "plus_default_billing_region": "PH",
+      "plus_default_currency": "PHP",
+      "seller_document_states_active_subscription_can_fail": true,
+      "seller_document_active_subscription_error": "该账号已有订阅",
+      "existing_active_plus_renewal_verified": false,
+      "sessionless_first_login_supported_by_this_api": false,
+      "sms_verification_service_documented_in_this_api": false,
+      "automated_phone_binding_documented": false,
+      "seller_example_task_completion_not_an_actual_test": true,
+      "actual_approved_one_unit_monthly_plus_wholesale_price_cny": null,
+      "exact_one_unit_subscription_total_cny": null,
+      "card_issuance_fee_cny": null,
+      "topup_fee_cny": null,
+      "card_transaction_fee_cny": null,
+      "payment_fx_and_network_fees_cny": null,
+      "valid_china_vat_invoice_fee_cny": null,
+      "approved_no_agent_entry_fee": null,
+      "payee_legal_entity": null,
+      "chinese_vat_invoice_issuer": null,
+      "openai_resale_authorization_verified": false,
+      "real_api_credential_obtained": false,
+      "real_token_submitted": false,
+      "real_payment_card_submitted": false,
+      "real_api_call_performed": false,
+      "real_subscription_fulfilled": false,
+      "real_refund_tested": false,
+      "wholesale_qualified": false,
+      "caution": "The indexed document is vendor-authored, potentially stale, and not evidence the live API now works. Token/card prerequisites create sensitive credential exposure; do not submit credentials."
+    }
+  ],
+  "ancillary_rechecks": [
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "read_on": "2026-11-19",
+      "merchant_page_self_marked_price_updated": "2026-11-19 13:31 Asia/Shanghai",
+      "sku": "ChatGPT Plus月卡 · 菲律宾区",
+      "price_cny_per_one_month": 129.6,
+      "merchant_stock_label": "有货 · 自动发卡",
+      "material_price_change": false,
+      "invoice_and_payment_total_cny": null,
+      "source_type": "live_read_first_party"
+    },
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "read_on": "2026-11-19",
+      "merchant_page_self_marked_price_updated": "2026-11-19 13:31 Asia/Shanghai",
+      "sku": "ChatGPT Plus谷歌渠道充值卡密",
+      "price_cny_per_unit": 126,
+      "merchant_stock_label": "暂不可购买",
+      "material_price_change": false,
+      "source_type": "live_read_first_party"
+    },
+    {
+      "merchant": "小久卡网",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "read_on": "2026-11-19",
+      "sku": "菲律宾区Plus卡密，本人原号且无有效订阅",
+      "historical_retail_price_cny_per_code": 110,
+      "material_price_change": false,
+      "retail_is_wholesale": false,
+      "source_type": "live_read_first_party"
+    },
+    {
+      "merchant": "ChatShare",
+      "url": "https://chatshare.tv/",
+      "read_on": "2026-11-19",
+      "sku": "Plus五人共享/三人共享 · 每人30天",
+      "prices_cny_per_seat_30days": [
+        38,
+        68
+      ],
+      "is_own_plus_subscription": false,
+      "material_price_change": false,
+      "source_type": "live_read_first_party"
+    },
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/",
+      "read_on": "2026-11-19",
+      "sku": "本人原号Plus · 需到期后办理",
+      "price_cny_per_month": 139,
+      "material_price_change": false,
+      "source_type": "live_read_first_party"
+    },
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "read_on": "2026-11-19",
+      "source_type": "third_party_index_text_not_live_origin",
+      "historical_ios_plus_retail_price_cny": 125,
+      "old_price_not_refreshed": true,
+      "material_price_change_verified": false
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "read_on": "2026-11-19",
+      "source_type": "third_party_index_text_not_live_origin",
+      "historical_plus_price_cny": 139.99,
+      "old_price_not_refreshed": true,
+      "material_price_change_verified": false
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://payprm.com/",
+      "read_on": "2026-11-19",
+      "source_type": "third_party_index_text_not_live_origin",
+      "numerical_new_price_verified": false
+    },
+    {
+      "merchant": "CatFK",
+      "url": "https://catfk.com/shop/Antipro",
+      "read_on": "2026-11-19",
+      "source_type": "live_url_attempt",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "GetVIP",
+      "url": "https://www.getvip.site/",
+      "read_on": "2026-11-19",
+      "source_type": "live_url_attempt",
+      "readable": false,
+      "old_price_not_refreshed": true
+    }
+  ],
+  "procurement": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "duration_months": 1,
+    "no_agent_upfront_fee": true,
+    "all_required_payment_fees_and_china_vat_included_limit_cny": 170,
+    "actual_single_unit_wholesale_price_cny": null,
+    "payment_surcharge_cny": null,
+    "card_and_fx_costs_cny": null,
+    "invoice_fee_cny": null,
+    "verified_all_in_total_cny": null,
+    "actual_payee_company": null,
+    "actual_china_vat_invoice_issuer": null,
+    "formal_openai_resale_authorization_verified": false,
+    "active_renewal_fulfillment_verified": false
+  },
+  "phone_verification": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "separate_scopes": [
+      "ordinary ChatGPT web/account use",
+      "Codex desktop verification when prompted",
+      "first platform API key"
+    ],
+    "independent_sms_service_new_real_test": false,
+    "first_time_session_precondition_for_hifupay_api": true,
+    "apple_in_app_payment_and_session_delivery_may_coexist": true,
+    "subscription_automatically_binds_phone": false,
+    "independent_number_duration_days_verified": null,
+    "failed_sms_cash_refund_verified": false,
+    "actual_sms_successes": 0
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "actual_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "sources": [
+    {
+      "url": "https://cdk.hifupay.com/api-docs.html",
+      "observed_on": "2026-11-19",
+      "read_mechanism": "indexed original-page text via Exa; live direct origin HTTP 502",
+      "evidence_class": "newly_read_vendor_api_document_not_live_transaction"
+    },
+    {
+      "url": "https://haifupay.top/",
+      "observed_on": "2026-11-19",
+      "evidence_class": "historical_virtual_card_rate_recheck_separate_domain_not_proven_combined_checkout"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-19",
+      "seller_self_marked": "2026-11-19 13:31 Asia/Shanghai",
+      "evidence_class": "first_party_unchanged_retail"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-19",
+      "seller_self_marked": "2026-11-19 13:31 Asia/Shanghai",
+      "evidence_class": "first_party_unchanged_price_and_unavailable_label"
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-19",
+      "evidence_class": "first_party_unchanged_retail"
+    },
+    {
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-19",
+      "evidence_class": "first_party_unchanged_shared_seat"
+    },
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-19",
+      "evidence_class": "first_party_unchanged_retail"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-19",
+      "evidence_class": "official_phone_verification_scope_no_new_policy"
+    }
+  ],
+  "historical_reports_preserved": true,
+  "historical_126_offers_preserved": true,
+  "merchant_contacted": false,
+  "agent_application_submitted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false
+}
