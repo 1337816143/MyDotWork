@@ -5754,6 +5754,28 @@
       "summary": "11月19日实际读取的商家FAQ、网页更新日期、旧索引差异、有效中国VAT和SMS失败退款未知null；价格不刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r246-20261119",
+      "title": "GPT源头第246轮 · 苏哲AI独立API下单与钱包预存证据",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r09.html",
+      "updatedAt": "2026-11-19",
+      "summary": "新增读取苏哲AI一方独立API下单Key和余额扣款声明，区别于旧版CDK激活API；¥29.99代理前置费仍不合格，真实下单/税票/授权未核、合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r246-20261119-evidence",
+      "title": "第246轮 · 独立下单API与充值钱包结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r09-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "3条商家原始URL、2026-11-19实际阅读、代理/零售准确单月单位及¥29.99前置费；API余额门槛与费用/有效中国增值税/履约均为null或未测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

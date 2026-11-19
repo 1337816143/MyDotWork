@@ -2802,3 +2802,18 @@ assert.equal(r245.procurement.verified_all_in_total_cny,null);
 assert.equal(r245.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r245.phone_verification.actual_sms_successes,0);
 assert.equal(r245.actual_purchase_made,false);
+
+// R246: independent ordering API is a vendor claim; old gptapi only activates prepaid CDKs.
+const c246=d.records.find(x=>x.id==='gpt-source-followup-r246-20261119'),e246=d.records.find(x=>x.id==='gpt-source-followup-r246-20261119-evidence');
+assert(c246&&e246&&c246.url.endsWith('supplier-followup-20261119-r09.html'));
+const r246=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r09-evidence.json'),'utf8'));
+assert.equal(r246.round,246);assert.equal(r246.site_version,'1.9.254');
+assert.equal(r246.material_observations[0].vendor_explicitly_distinguishes_activation_api_and_ordering_api,true);
+assert.equal(r246.material_observations[0].publicly_verified_order_endpoint_url,null);
+assert.equal(r246.material_observations[1].activation_api_itself_is_not_purchase_api,true);
+assert.equal(r246.material_observations[2].required_agent_entry_fee_cny,29.99);
+assert.equal(r246.material_observations[2].valid_china_vat_invoice_fee_cny,null);
+assert.equal(r246.procurement.verified_all_in_total_cny,null);
+assert.equal(r246.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r246.phone_verification.actual_sms_successes,0);
+assert.equal(r246.actual_purchase_made,false);
