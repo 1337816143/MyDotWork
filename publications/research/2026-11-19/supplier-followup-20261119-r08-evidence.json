@@ -1,0 +1,133 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 245,
+  "site_version": "1.9.253",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-19/supplier-followup-20261119-r07.html",
+  "material_observations": [
+    {
+      "merchant": "GETGPT Pro",
+      "original_url": "https://www.getgpt.io/faq/refund",
+      "read_on": "2026-11-19",
+      "read_method": "independent_full_text_fetch",
+      "seller_page_self_marked_update": "2026-11-19",
+      "actual_rule_effective_date": null,
+      "classification": "vendor claim, not real payment/refund test",
+      "first_activation_recommended_within_hours": 24,
+      "vendor_first_use_invalid_card_refund_or_replacement": true,
+      "vendor_midterm_drop_refund_remaining_days_if_no_recovery": true,
+      "vendor_excludes_phone_and_identity_verification_failure_from_recharge_warranty": true,
+      "vendor_excludes_account_ban_and_large_scale_platform_incidents": true,
+      "actual_refund_tested": false,
+      "independent_codex_sms_failure_cash_refund": null,
+      "current_exact_plus_sku_retail_cny": null,
+      "current_retail_price_refreshed": false,
+      "one_unit_monthly_wholesale_cny": null,
+      "payment_fee_cny": null,
+      "chinese_vat_invoice_fee_cny": null
+    },
+    {
+      "merchant": "GETGPT Pro",
+      "original_url": "https://www.getgpt.io/faq/recharge-safety",
+      "read_on": "2026-11-19",
+      "read_method": "independent_full_text_fetch",
+      "seller_page_self_marked_update": "2026-11-19",
+      "actual_rule_effective_date": null,
+      "classification": "vendor claim, not login or phone experiment",
+      "some_orders_require_session": true,
+      "session_is_password_level_credential": true,
+      "vendor_says_subscription_does_not_remove_phone_or_captcha": true,
+      "automatic_phone_binding_unproven": true,
+      "actual_sms_tested": false
+    },
+    {
+      "merchant": "GetVIP",
+      "original_url": "https://getvip.pro/guides/after-sales",
+      "read_on": "2026-11-19",
+      "read_method": "independent_full_text_fetch",
+      "seller_page_self_marked_update": "2026-11-12",
+      "earlier_search_index_page_self_marked_update": "2026-10-29",
+      "earlier_index_exact_capture_date": null,
+      "older_page_wording": "unfulfilled orders may request full refund on original order",
+      "current_page_wording": "unfulfilled orders may request refund from support subject to refund policy",
+      "rule_effective_date": null,
+      "interpretation": "public editorial difference, not independently verified policy change or refusal",
+      "claim_chatgpt_warranty_days": 30,
+      "claim_account_ban_excluded": true,
+      "claim_codex_sms_only_agreed_window_and_single_verification": true,
+      "cash_refund_after_failed_codex_sms_verified": false,
+      "actual_refund_tested": false,
+      "current_retail_price_refreshed": false,
+      "one_unit_monthly_wholesale_cny": null,
+      "chinese_vat_invoice_fee_cny": null
+    }
+  ],
+  "context_sources": [
+    {
+      "original_url": "https://getvip.pro/refund",
+      "read_on": "2026-11-19",
+      "source_type": "vendor_refund_policy"
+    },
+    {
+      "original_url": "https://aicz.vip/product/chatgpt-plus",
+      "read_on": "2026-11-19",
+      "seller_page_self_marked_update": "2026-11-19 16:31 Asia/Shanghai",
+      "unchanged_historical_exact_retail_cny_per_month": 129.6,
+      "price_refreshed": false
+    },
+    {
+      "original_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "read_on": "2026-11-19",
+      "source_type": "OpenAI official",
+      "scope": "ChatGPT general web / Codex desktop / first API key must be separated"
+    }
+  ],
+  "no_usable_current_sku_text": [
+    "CatFK Antipro",
+    "Morimm iOS Plus",
+    "wind89 original Plus product"
+  ],
+  "unchanged_or_not_promoted": [
+    "小久 single-unit retail is not wholesale",
+    "引路鲸 agent upfront fee disqualifies",
+    "ChatShare shared seats not own-account Plus",
+    "ChongPay Plus and Codex SMS separate",
+    "PAYPRM tax-exclusive retail rule already archived",
+    "AiChanl invite-only actual bulk rate not public"
+  ],
+  "procurement": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "duration_months": 1,
+    "no_agent_upfront_fee_required": true,
+    "max_all_fees_and_valid_chinese_vat_cny": 170,
+    "approved_single_unit_wholesale_cny": null,
+    "mandatory_payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "verified_all_in_total_cny": null,
+    "valid_chinese_vat_invoice_issuer": null,
+    "verified_resale_authorization": false,
+    "verified_active_subscription_renewal": false
+  },
+  "phone_verification": {
+    "web_codex_api_contexts_separate": true,
+    "apple_and_session_may_coexist": true,
+    "ordinary_recharge_not_auto_phone_binding": true,
+    "number_type": null,
+    "exclusive_control_days": null,
+    "actual_sms_successes": 0,
+    "failed_sms_refund_to_original_payment_verified": false
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "actual_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_preserved": true,
+  "historical_126_offers_preserved": true,
+  "merchant_contacted": false,
+  "agent_application_submitted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false
+}

@@ -5732,6 +5732,28 @@
       "summary": "一方税票FAQ及退款、更正、Session与短信指导原URL，观察日明确，税点/费用/合法出票主体未知null，SMS成功实测0，历史价不刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r245-20261119",
+      "title": "GPT源头第245轮 · GETGPT Pro与GetVIP手机号验证/退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r08.html",
+      "updatedAt": "2026-11-19",
+      "summary": "GETGPT Pro明确充值售后排除手机号验证失败，GetVIP未交付退款网页措辞变为符合退款政策时申请；二者非真实现金退款实测，批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r245-20261119-evidence",
+      "title": "第245轮 · 售后及验证范围证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r08-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "11月19日实际读取的商家FAQ、网页更新日期、旧索引差异、有效中国VAT和SMS失败退款未知null；价格不刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
