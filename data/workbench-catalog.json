@@ -5710,6 +5710,28 @@
       "summary": "记录原URL、索引全文读取/实时502的差异、强制Session与付款卡、在期订阅错误示例、准确SKU/费用null、OpenAI短信验证分项及零实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r244-20261119",
+      "title": "GPT源头第244轮 · PAYPRM商品标价未含税及税务发票另付费",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r07.html",
+      "updatedAt": "2026-11-19",
+      "summary": "首次直接核读PAYPRM一方开票规定：商品展示价不含税，发票按实际开票额与税点另付，税费和出票主体null；历史Plus零售¥155不等于有效中国VAT含票全价，合格批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r244-20261119-evidence",
+      "title": "第244轮 · PAYPRM开票费与Codex验证分项证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r07-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "一方税票FAQ及退款、更正、Session与短信指导原URL，观察日明确，税点/费用/合法出票主体未知null，SMS成功实测0，历史价不刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
