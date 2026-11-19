@@ -2832,3 +2832,19 @@ assert.equal(r247.procurement.verified_all_in_total_cny,null);
 assert.equal(r247.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r247.phone_verification.actual_sms_successes,0);
 assert.equal(r247.actual_purchase_made,false);
+
+// R248: merchant-labelled Pro listing is neither a confirmed official tier nor paid receipt; Plus sourcing remains unverified.
+const c248=d.records.find(x=>x.id==='gpt-source-followup-r248-20261120'),e248=d.records.find(x=>x.id==='gpt-source-followup-r248-20261120-evidence');
+assert(c248&&e248&&c248.url.endsWith('supplier-followup-20261120-r02.html'));
+const r248=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r02-evidence.json'),'utf8'));
+assert.equal(r248.round,248);assert.equal(r248.site_version,'1.9.256');
+assert.equal(r248.material_observations[0].listed_retail_price_cny_per_account_month,688);
+assert.equal(r248.material_observations[0].pro_100_200_500_official_tier_mapping_verified,false);
+assert.equal(r248.material_observations[0].real_paid_checkout_total_cny,null);
+assert.equal(r248.material_observations[1].in_term_plus_renewal_verified,false);
+assert.equal(r248.material_observations[2].shared_plus_sku_still_present,true);
+assert.equal(r248.unchanged_observations[0].plus_price_change_from_round247,false);
+assert.equal(r248.procurement.verified_plus_all_in_total_cny,null);
+assert.equal(r248.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r248.phone_verification.actual_sms_successes,0);
+assert.equal(r248.actual_purchase_made,false);
