@@ -5644,6 +5644,28 @@
       "summary": "2026-11-19直读自标11月18日新版条款、对照第225轮旧条款，旧代理路径HTTP410；SKU价格未变，所有批发准入、有效中国VAT出票主体及支付总价未知，付款/验票/SMS实测均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r241-20261119",
+      "title": "GPT源头第241轮 · ChatShare共享价签与AICZ谷歌Plus临时可售标签",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r04.html",
+      "updatedAt": "2026-11-19",
+      "summary": "ChatShare Plus五人共享¥38/30天、三人¥68/30天，与较早同URL搜索缓存¥31/¥59对照（旧采集日不精确）；非原号。AICZ谷歌Plus¥126网页从暂不可购→有货→暂不可购，非真实库存/成交；达标真批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r241-20261119-evidence",
+      "title": "第241轮 · 共享价签与谷歌卡密可售标签观察证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r04-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "一方现价、较旧搜索缓存限制、AICZ同SKU三次商家自标页状态及源URL、有效中国VAT/批发全费null、付款/收票/SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
