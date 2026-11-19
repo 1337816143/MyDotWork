@@ -2817,3 +2817,18 @@ assert.equal(r246.procurement.verified_all_in_total_cny,null);
 assert.equal(r246.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r246.phone_verification.actual_sms_successes,0);
 assert.equal(r246.actual_purchase_made,false);
+
+// R247: newly observed merchant offer is retail, not verified wholesale or phone success.
+const c247=d.records.find(x=>x.id==='gpt-source-followup-r247-20261120'),e247=d.records.find(x=>x.id==='gpt-source-followup-r247-20261120-evidence');
+assert(c247&&e247&&c247.url.endsWith('supplier-followup-20261120.html'));
+const r247=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-evidence.json'),'utf8'));
+assert.equal(r247.round,247);assert.equal(r247.site_version,'1.9.255');
+assert.equal(r247.discovery[0].listed_retail_price_cny_per_account_month,138);
+assert.equal(r247.discovery[0].checkout_total_verified,false);
+assert.equal(r247.discovery[0].phone_vendor_claims_free_assistance,true);
+assert.equal(r247.discovery[0].verification_success_tested,false);
+assert.equal(r247.discovery[0].valid_chinese_vat_invoice_issuer,null);
+assert.equal(r247.procurement.verified_all_in_total_cny,null);
+assert.equal(r247.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r247.phone_verification.actual_sms_successes,0);
+assert.equal(r247.actual_purchase_made,false);
