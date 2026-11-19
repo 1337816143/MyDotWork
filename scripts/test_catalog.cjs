@@ -2695,6 +2695,22 @@ assert.equal(r238.procurement_unknowns.all_in_cny,null);
 assert.equal(r238.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r238.actual_purchase_made,false);assert.equal(r238.sms_test_done,false);
 
+// R241: current shared seats are NOT own-account Plus; merchant stock labels are observations, not paid orders.
+const c241=d.records.find(x=>x.id==='gpt-source-followup-r241-20261119');
+const e241=d.records.find(x=>x.id==='gpt-source-followup-r241-20261119-evidence');
+assert(c241&&e241&&c241.url.endsWith('supplier-followup-20261119-r04.html'));
+const r241=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r04-evidence.json'),'utf8'));
+assert.equal(r241.round,241);assert.equal(r241.site_version,'1.9.249');
+assert.equal(r241.material_observations[0].same_sku_comparisons[0].current_first_party_price_cny,38);
+assert.equal(r241.material_observations[0].same_sku_comparisons[1].current_first_party_price_cny,68);
+assert.equal(r241.material_observations[0].price_is_not_own_account_wholesale,true);
+assert.equal(r241.material_observations[1].merchant_page_sequence[1].merchant_stock_label,'有货 · 自动发卡');
+assert.equal(r241.material_observations[1].merchant_page_sequence[2].merchant_stock_label,'暂不可购买');
+assert.equal(r241.material_observations[1].actual_payment_total_cny,null);
+assert.equal(r241.procurement.valid_china_vat_invoice_fee_cny??r241.procurement.invoice_fee_cny,null);
+assert.equal(r241.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r241.actual_purchase_made,false);
+
 // R240: new agent route and cumulative upgrade claims are seller terms, not a verified wholesale privilege.
 const c240=d.records.find(x=>x.id==='gpt-source-followup-r240-20261119');
 const e240=d.records.find(x=>x.id==='gpt-source-followup-r240-20261119-evidence');
