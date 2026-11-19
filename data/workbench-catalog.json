@@ -5666,6 +5666,28 @@
       "summary": "一方现价、较旧搜索缓存限制、AICZ同SKU三次商家自标页状态及源URL、有效中国VAT/批发全费null、付款/收票/SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r242-20261119",
+      "title": "GPT源头第242轮 · 小久批量规则与余额发码API边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r05.html",
+      "updatedAt": "2026-11-19",
+      "summary": "新核小久11月18日公开指南：单份零售起购≠批发资格、无自动阶梯价；审核制钱包HMAC发码API技术可读（文档旧版10/14），真实批发价/支付/合法中国VAT/授权仍null，合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r242-20261119-evidence",
+      "title": "第242轮小久批量采购与发码API · 结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r05-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "原始官网URL、观察日期、商家文章11/18发布日期、API v2.1旧文档10/14自标更新时间，零售¥110非批发，未知钱包充值费用与中国VAT为null，实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

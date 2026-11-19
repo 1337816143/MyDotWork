@@ -2711,6 +2711,24 @@ assert.equal(r241.procurement.valid_china_vat_invoice_fee_cny??r241.procurement.
 assert.equal(r241.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r241.actual_purchase_made,false);
 
+// R242: retailer's newly-read API documentation is not an approved one-unit wholesale price or VAT invoice.
+const c242=d.records.find(x=>x.id==='gpt-source-followup-r242-20261119');
+const e242=d.records.find(x=>x.id==='gpt-source-followup-r242-20261119-evidence');
+assert(c242&&e242&&c242.url.endsWith('supplier-followup-20261119-r05.html'));
+const r242=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r05-evidence.json'),'utf8'));
+assert.equal(r242.round,242);assert.equal(r242.site_version,'1.9.250');
+assert.equal(r242.material_observations[0].public_minimum_online_order_units,1);
+assert.equal(r242.material_observations[0].public_minimum_is_wholesale_threshold,false);
+assert.equal(r242.material_observations[0].automatic_bulk_price_tiers_on_seller_page,false);
+assert.equal(r242.material_observations[0].verified_plus_wholesale_unit_price_cny,null);
+assert.equal(r242.material_observations[0].api_requires_approved_client,true);
+assert.equal(r242.material_observations[0].docs_wholesale_price_example_is_hypothetical,true);
+assert.equal(r242.material_observations[0].actual_api_call_tested,false);
+assert.equal(r242.procurement.payment_surcharge_cny,null);
+assert.equal(r242.procurement.invoice_fee_cny,null);
+assert.equal(r242.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r242.actual_purchase_made,false);
+
 // R240: new agent route and cumulative upgrade claims are seller terms, not a verified wholesale privilege.
 const c240=d.records.find(x=>x.id==='gpt-source-followup-r240-20261119');
 const e240=d.records.find(x=>x.id==='gpt-source-followup-r240-20261119-evidence');
