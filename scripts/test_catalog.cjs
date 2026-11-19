@@ -2757,3 +2757,18 @@ assert.equal(b239.actual_refund_to_original_payment_method_verified,null);
 assert.equal(r239.procurement_unknowns.all_required_costs_plus_chinese_vat_cny,null);
 assert.equal(r239.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r239.actual_purchase_made,false);assert.equal(r239.sms_test_done,false);
+
+
+// R243: an indexed seller API spec is neither a live checkout nor a credential-free wholesale supplier.
+const c243=d.records.find(x=>x.id==='gpt-source-followup-r243-20261119');
+const e243=d.records.find(x=>x.id==='gpt-source-followup-r243-20261119-evidence');
+assert(c243&&e243&&c243.url.endsWith('supplier-followup-20261119-r06.html'));
+const r243=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r06-evidence.json'),'utf8'));
+assert.equal(r243.round,243);assert.equal(r243.site_version,'1.9.251');
+assert.equal(r243.material_observations[0].api_mandatory_chatgpt_session_token,true);
+assert.equal(r243.material_observations[0].api_mandatory_payment_instrument,true);
+assert.equal(r243.material_observations[0].direct_live_origin_content_verified,false);
+assert.equal(r243.material_observations[0].actual_approved_one_unit_monthly_plus_wholesale_price_cny,null);
+assert.equal(r243.procurement.verified_all_in_total_cny,null);
+assert.equal(r243.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r243.actual_purchase_made,false);

@@ -5688,6 +5688,28 @@
       "summary": "原始官网URL、观察日期、商家文章11/18发布日期、API v2.1旧文档10/14自标更新时间，零售¥110非批发，未知钱包充值费用与中国VAT为null，实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r243-20261119",
+      "title": "GPT源头第243轮 · 嗨付卡台协议充值Session与支付卡前提",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r06.html",
+      "updatedAt": "2026-11-19",
+      "summary": "新读取曾502的商家API技术说明索引全文：协议充值必须提供ChatGPT Session及付款卡，Plus默认菲区；原站仍502不可认定在线履约，不是卡密一手批发或手机号自动绑定；单件含票全费null、合格上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r243-20261119-evidence",
+      "title": "第243轮 · 嗨付协议API凭据与可用性边界结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r06-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "记录原URL、索引全文读取/实时502的差异、强制Session与付款卡、在期订阅错误示例、准确SKU/费用null、OpenAI短信验证分项及零实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
