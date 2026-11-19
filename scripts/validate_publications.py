@@ -3037,11 +3037,6 @@ def validate_publications():
     assert r247['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r247['phone_verification']['actual_sms_successes'] == 0
     assert r247['actual_purchase_made'] is False
-    print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
-
-
-if __name__ == '__main__': validate_publications()
-
     # R248: newly observed seller Pro SKU and overlapping-subscription warning are not paid transactions or verified official tier.
     r248 = json.loads((ROOT/'dist/research/2026-11-20/supplier-followup-20261120-r02-evidence.json').read_bytes())
     assert r248['round'] == 248 and r248['site_version'] == '1.9.256'
@@ -3056,3 +3051,8 @@ if __name__ == '__main__': validate_publications()
     assert r248['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r248['phone_verification']['actual_sms_successes'] == 0
     assert r248['actual_purchase_made'] is False
+
+    print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
+
+
+if __name__ == '__main__': validate_publications()
