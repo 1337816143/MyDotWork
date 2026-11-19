@@ -2695,6 +2695,19 @@ assert.equal(r238.procurement_unknowns.all_in_cny,null);
 assert.equal(r238.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r238.actual_purchase_made,false);assert.equal(r238.sms_test_done,false);
 
+// R240: new agent route and cumulative upgrade claims are seller terms, not a verified wholesale privilege.
+const c240=d.records.find(x=>x.id==='gpt-source-followup-r240-20261119');
+const e240=d.records.find(x=>x.id==='gpt-source-followup-r240-20261119-evidence');
+assert(c240&&e240&&c240.url.endsWith('supplier-followup-20261119-r03.html'));
+const r240=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r03-evidence.json'),'utf8'));
+assert.equal(r240.round,240);assert.equal(r240.site_version,'1.9.248');
+assert.equal(r240.material_observation.present_first_party_terms_seller_claims_one_agent_channel_tier,true);
+assert.equal(r240.material_observation.present_first_party_terms_seller_claims_new_second_level_subsite_sales_no_longer_open,true);
+assert.equal(r240.material_observation.upstream_plus_wholesale_single_month_price_cny,null);
+assert.equal(r240.material_observation.valid_china_vat_invoice_issuer,null);
+assert.equal(r240.attempted_obsolete_route.direct_fetch_status,'HTTP 410 Gone');
+assert.equal(r240.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+
 // R239: invitation-only claimed B2B wholesale is a lead, not an authenticated one-unit invoice-complete source.
 const c239=d.records.find(x=>x.id==='gpt-source-followup-r239-20261119');
 const e239=d.records.find(x=>x.id==='gpt-source-followup-r239-20261119-evidence');
