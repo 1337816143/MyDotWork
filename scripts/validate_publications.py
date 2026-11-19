@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 523, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 525, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.245'
+    assert latest['version'] == '1.246'
     assert latest['date'] == '2026-11-19'
-    assert latest['path'] == 'research/2026-11-19/supplier-followup-20261119-r08.html'
-    assert latest['dataPath'] == 'research/2026-11-19/supplier-followup-20261119-r08-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-19/supplier-followup-20261119-r07.html'
+    assert latest['path'] == 'research/2026-11-19/supplier-followup-20261119-r09.html'
+    assert latest['dataPath'] == 'research/2026-11-19/supplier-followup-20261119-r09-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-19/supplier-followup-20261119-r08.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3012,6 +3012,17 @@ def validate_publications():
     assert r240['qualification_totals']['actual_valid_china_vat_invoices'] == 0
     assert r240['qualification_totals']['actual_sms_successes'] == 0
     assert r240['actual_purchase_made'] is False and r240['merchant_contacted'] is False
+    # R246: an ordering API claim, not tested fulfillment or a verified wholesale seller.
+    r246 = json.loads((ROOT/'dist/research/2026-11-19/supplier-followup-20261119-r09-evidence.json').read_bytes())
+    assert by_id['gpt-source-followup-r246-20261119']['url'].endswith('supplier-followup-20261119-r09.html')
+    assert by_id['gpt-source-followup-r246-20261119-evidence']['url'].endswith('supplier-followup-20261119-r09-evidence.json')
+    assert r246['round'] == 246 and r246['site_version'] == '1.9.254'
+    assert r246['material_observations'][0]['vendor_explicitly_distinguishes_activation_api_and_ordering_api'] is True
+    assert r246['material_observations'][0]['publicly_verified_order_endpoint_url'] is None
+    assert r246['material_observations'][1]['activation_api_itself_is_not_purchase_api'] is True
+    assert r246['material_observations'][2]['required_agent_entry_fee_cny'] == 29.99
+    assert r246['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r246['actual_purchase_made'] is False
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
 
