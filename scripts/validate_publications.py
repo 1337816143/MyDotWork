@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 513, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 515, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.240'
+    assert latest['version'] == '1.241'
     assert latest['date'] == '2026-11-19'
-    assert latest['path'] == 'research/2026-11-19/supplier-followup-20261119-r03.html'
-    assert latest['dataPath'] == 'research/2026-11-19/supplier-followup-20261119-r03-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-19/supplier-followup-20261119-r02.html'
+    assert latest['path'] == 'research/2026-11-19/supplier-followup-20261119-r04.html'
+    assert latest['dataPath'] == 'research/2026-11-19/supplier-followup-20261119-r04-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-19/supplier-followup-20261119-r03.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -2975,6 +2975,22 @@ def validate_publications():
     assert r239['procurement_unknowns']['all_required_costs_plus_chinese_vat_cny'] is None
     assert r239['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r239['actual_purchase_made'] is False and r239['sms_test_done'] is False
+    # R241: an indexed old sticker price is not a paid price; shared seats are distinct from own-account Plus.
+    assert by_id['gpt-source-followup-r241-20261119']['url'].endswith('supplier-followup-20261119-r04.html')
+    assert by_id['gpt-source-followup-r241-20261119-evidence']['url'].endswith('supplier-followup-20261119-r04-evidence.json')
+    r241 = json.loads((ROOT/'dist/research/2026-11-19/supplier-followup-20261119-r04-evidence.json').read_bytes())
+    assert r241['round'] == 241 and r241['site_version'] == '1.9.249'
+    shared = r241['material_observations'][0]
+    assert shared['same_sku_comparisons'][0]['current_first_party_price_cny'] == 38
+    assert shared['same_sku_comparisons'][1]['current_first_party_price_cny'] == 68
+    assert shared['price_is_not_own_account_wholesale'] is True
+    google = r241['material_observations'][1]
+    assert google['merchant_page_sequence'][1]['merchant_stock_label'] == '有货 · 自动发卡'
+    assert google['merchant_page_sequence'][2]['merchant_stock_label'] == '暂不可购买'
+    assert google['actual_payment_total_cny'] is None
+    assert r241['procurement']['invoice_fee_cny'] is None
+    assert r241['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r241['actual_purchase_made'] is False and r241['credentials_submitted'] is False
     # R240: first-party AICZ contract entry change does not establish wholesale pricing, invoices or operating shutdown.
     assert by_id['gpt-source-followup-r240-20261119']['url'].endswith('supplier-followup-20261119-r03.html')
     assert by_id['gpt-source-followup-r240-20261119-evidence']['url'].endswith('supplier-followup-20261119-r03-evidence.json')
