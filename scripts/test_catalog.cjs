@@ -2848,3 +2848,19 @@ assert.equal(r248.procurement.verified_plus_all_in_total_cny,null);
 assert.equal(r248.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r248.phone_verification.actual_sms_successes,0);
 assert.equal(r248.actual_purchase_made,false);
+
+// R249: vendor-specific in-term Pro upgrade credit is not a Plus wholesale offer, phone verification or paid success.
+const c249=d.records.find(x=>x.id==='gpt-source-followup-r249-20261120'),e249=d.records.find(x=>x.id==='gpt-source-followup-r249-20261120-evidence');
+assert(c249&&e249&&c249.url.endsWith('supplier-followup-20261120-r03.html'));
+const r249=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r03-evidence.json'),'utf8'));
+assert.equal(r249.round,249);assert.equal(r249.site_version,'1.9.257');
+assert.equal(r249.material_observations[0].min_subscription_remaining_hours,72);
+assert.equal(r249.material_observations[0].max_credit_days,28);
+assert.equal(r249.material_observations[0].live_upgrade_checkout_total_cny,null);
+assert.equal(r249.material_observations[1].vendor_explicitly_states_no_invoice,true);
+assert.equal(r249.material_observations[1].purchase_phone_verification_refers_to_merchant_order_eligibility_not_openai_phone_binding,true);
+assert.equal(r249.material_observations[2].listed_retail_cny_per_account_month,179);
+assert.equal(r249.procurement.verified_plus_all_in_total_cny,null);
+assert.equal(r249.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r249.phone_verification.actual_sms_successes,0);
+assert.equal(r249.actual_purchase_made,false);
