@@ -5842,6 +5842,28 @@
       "summary": "GETGPT Pro商家一方来源、规则观察日、72小时资格、28日折抵上限、¥5取整、升级不提供发票；最终差价/官方权益及付费履约未核null，真正Plus批发0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r250-20261120",
+      "title": "GPT源头第250轮 · Tangguo不同开票SKU及接码退款边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r04.html",
+      "updatedAt": "2026-11-20",
+      "summary": "首次核清个人Plus卡¥128/iOS¥158不支持开票、企业可申请电子票的Plus PH¥179/iOS¥189是不同SKU；接码失败仅商称退站内余额非原路现金，已核真批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r250-20261120-evidence",
+      "title": "第250轮 · Tangguo零售/企业开票/短信退款精确URL与缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r04-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "5个2026-11-20实际直读商家原URL；¥128/¥158非含票单件成本，企业¥179/¥189；SMS仅站内余额退款声明，OpenAI号码精价/持号与验票/履约均null或未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
