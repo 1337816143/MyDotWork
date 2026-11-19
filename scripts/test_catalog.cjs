@@ -2788,3 +2788,17 @@ assert.equal(r244.procurement.verified_all_in_total_cny,null);
 assert.equal(r244.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r244.phone_verification.actual_sms_successes,0);
 assert.equal(r244.actual_purchase_made,false);
+
+// R245: vendor recharge warranty exclusion is not a verified SMS or one-unit wholesale promise.
+const c245=d.records.find(x=>x.id==='gpt-source-followup-r245-20261119'),e245=d.records.find(x=>x.id==='gpt-source-followup-r245-20261119-evidence');
+assert(c245&&e245&&c245.url.endsWith('supplier-followup-20261119-r08.html'));
+const r245=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r08-evidence.json'),'utf8'));
+assert.equal(r245.round,245);assert.equal(r245.site_version,'1.9.253');
+assert.equal(r245.material_observations[0].vendor_excludes_phone_and_identity_verification_failure_from_recharge_warranty,true);
+assert.equal(r245.material_observations[0].independent_codex_sms_failure_cash_refund,null);
+assert.equal(r245.material_observations[1].session_is_password_level_credential,true);
+assert.equal(r245.material_observations[2].rule_effective_date,null);
+assert.equal(r245.procurement.verified_all_in_total_cny,null);
+assert.equal(r245.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r245.phone_verification.actual_sms_successes,0);
+assert.equal(r245.actual_purchase_made,false);
