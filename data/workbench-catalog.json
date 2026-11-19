@@ -5820,6 +5820,28 @@
       "summary": "商家原页、2026-11-20观察日、PRO¥688和官方档位不等效、在期覆盖提示、旧共享SKU仍在；票费/真实付款/授权均null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r249-20261120",
+      "title": "GPT源头第249轮 · GETGPT Pro在期升级折抵与不开票条款",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r03.html",
+      "updatedAt": "2026-11-20",
+      "summary": "新核GETGPT Pro本站Plus／5x近30日订单可附条件补差价升级20x，至少剩余72小时、最多抵28天且该升级服务明确不开票；需订单手机号与完整Session，非OpenAI绑号或Plus真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r249-20261120-evidence",
+      "title": "第249轮 · 在期升级资格、折抵、不开票与验证边界JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r03-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "GETGPT Pro商家一方来源、规则观察日、72小时资格、28日折抵上限、¥5取整、升级不提供发票；最终差价/官方权益及付费履约未核null，真正Plus批发0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
