@@ -5622,6 +5622,28 @@
       "summary": "一方批发目录、邀请制、独角数卡/异次元对接、合同售后和非官方授权声明原始URL；全部单件含票费用null，未实购、验票及接码。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r240-20261119",
+      "title": "GPT源头第240轮 · AICZ渠道资格收紧与旧代理路径失效",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r03.html",
+      "updatedAt": "2026-11-19",
+      "summary": "新读AICZ商家自标11月18日服务条款：仅一个渠道代理档位、不再开放新二级分站和消费升级；旧/partner路径本轮410，仅证明该路径不可读。菲区Plus ¥129.60仍有货而Google ¥126不可购；真实单件批发、含中国VAT全费和主体授权仍null，合格0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r240-20261119-evidence",
+      "title": "第240轮 · AICZ渠道条款与旧代理入口对照证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-19/supplier-followup-20261119-r03-evidence.json",
+      "updatedAt": "2026-11-19",
+      "summary": "2026-11-19直读自标11月18日新版条款、对照第225轮旧条款，旧代理路径HTTP410；SKU价格未变，所有批发准入、有效中国VAT出票主体及支付总价未知，付款/验票/SMS实测均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
