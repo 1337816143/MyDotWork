@@ -2772,3 +2772,19 @@ assert.equal(r243.material_observations[0].actual_approved_one_unit_monthly_plus
 assert.equal(r243.procurement.verified_all_in_total_cny,null);
 assert.equal(r243.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r243.actual_purchase_made,false);
+
+
+// R244: seller's tax-exclusive listed price cannot be mistaken for validated VAT-inclusive wholesale.
+const c244=d.records.find(x=>x.id==='gpt-source-followup-r244-20261119');
+const e244=d.records.find(x=>x.id==='gpt-source-followup-r244-20261119-evidence');
+assert(c244&&e244&&c244.url.endsWith('supplier-followup-20261119-r07.html'));
+const r244=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-19/supplier-followup-20261119-r07-evidence.json'),'utf8'));
+assert.equal(r244.round,244);
+assert.equal(r244.site_version,'1.9.252');
+assert.equal(r244.material_observations[0].vendor_says_displayed_prices_exclude_tax,true);
+assert.equal(r244.material_observations[0].invoice_fee_cny,null);
+assert.equal(r244.material_observations[0].verified_all_in_cost_cny,null);
+assert.equal(r244.procurement.verified_all_in_total_cny,null);
+assert.equal(r244.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r244.phone_verification.actual_sms_successes,0);
+assert.equal(r244.actual_purchase_made,false);
