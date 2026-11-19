@@ -1,0 +1,207 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 242,
+  "site_version": "1.9.250",
+  "observed_on": "2026-11-19",
+  "previous_report": "research/2026-11-19/supplier-followup-20261119-r04.html",
+  "material_observations": [
+    {
+      "merchant": "小久卡网（98-xj.com）",
+      "source_type": "first_party_seller_announcement_and_api_documentation",
+      "new_primary_page_url": "https://98-xj.com/blog/chatgpt-plus-pro-bulk-purchase-guide",
+      "seller_article_published_on": "2026-11-18",
+      "actually_read_on": "2026-11-19",
+      "finding": "首次在本轮核对商家公开批量采购说明，区分单份零售起购与逐单批量报价，并通过一方技术文档核对审核制API余额发码流程；并非证明API或批发业务刚上线",
+      "announced_product_families": [
+        "ChatGPT Plus CDK",
+        "ChatGPT Pro 100 CDK",
+        "ChatGPT Pro 500 CDK"
+      ],
+      "public_minimum_online_order_units": 1,
+      "public_minimum_is_wholesale_threshold": false,
+      "fixed_bulk_minimum_on_seller_page": false,
+      "automatic_bulk_price_tiers_on_seller_page": false,
+      "bulk_quote": "依产品、数量和交付逐单询价；不锁价或库存",
+      "actual_approved_bulk_quote_cny": null,
+      "distributor_agent_entry_fee_cny": null,
+      "agent_fee_waiver_verified": false,
+      "bulk_resale_agreement_verified": false,
+      "official_openai_resale_authorization_verified": false,
+      "seller_is_official_openai_store": false,
+      "api_docs_url": "https://98-xj.com/docs/cardnet-upstream-api-v2.zh-CN.md",
+      "api_docs_version": "v2.1",
+      "api_docs_self_marked_updated_on": "2026-10-14",
+      "api_docs_actually_read_on": "2026-11-19",
+      "api_requires_approved_client": true,
+      "api_requires_key_and_secret": true,
+      "api_only_server_side": true,
+      "api_signature": "HMAC-SHA256 v2 with timestamp and unique nonce",
+      "api_payment_mode": "prepaid CNY wallet balance",
+      "api_product_list_path": "GET /api/v1/upstream/products",
+      "api_product_detail_path": "GET /api/v1/upstream/products/:id",
+      "api_order_path": "POST /api/v1/upstream/orders",
+      "api_fulfillment_path": "GET /api/v1/upstream/orders/:id",
+      "order_creation_returns_code_immediately": false,
+      "callback_supported": false,
+      "order_idempotency_basis": "same API credential + downstream_order_no; same SKU and quantity",
+      "max_quantity_per_api_request": 100,
+      "max_quantity_is_wholesale_minimum": false,
+      "docs_wholesale_price_example_is_hypothetical": true,
+      "verified_plus_wholesale_unit_price_cny": null,
+      "actual_api_credentials_obtained": false,
+      "actual_api_call_tested": false,
+      "actual_order_delivered": false,
+      "seller_invoice_statement": "符合条件的银行卡付订单可能取得交易凭证或收据，但不等于税务发票",
+      "actual_payee_company": null,
+      "actual_invoice_issuer_china_vat": null,
+      "actual_valid_china_vat_invoice_verified": false,
+      "payment_surcharge_cny": null,
+      "invoice_fee_cny": null,
+      "verified_paid_all_in_unit_cost_cny": null,
+      "wholesale_qualified": false
+    }
+  ],
+  "existing_price_recheck": [
+    {
+      "merchant": "小久卡网",
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-19",
+      "sku": "ChatGPT Plus 菲律宾区本人账号卡密（账号无任何订阅）",
+      "displayed_retail_price_cny_per_code": 110,
+      "displayed_stock": "现货 · 自动发货",
+      "currency": "CNY",
+      "quantity": 1,
+      "merchant_claim_quality_warranty_days": 30,
+      "merchant_claim_cash_refund_verified": false,
+      "active_subscription_renewal_eligible": false,
+      "previous_historical_retail_price_cny": 110,
+      "price_material_change": false,
+      "merchant_site_receipt_not_vat_invoice": true,
+      "actual_paid_total_cny": null,
+      "actual_vat_invoice_cny": null
+    }
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "actual_valid_china_vat_invoices": 0,
+    "actual_sms_successes": 0
+  },
+  "procurement": {
+    "own_existing_account": true,
+    "quantity": 1,
+    "duration_months": 1,
+    "no_agent_upfront_fee": true,
+    "all_required_payment_fees_and_china_vat_included_limit_cny": 170,
+    "exact_wholesale_sku_and_approved_price_cny": null,
+    "minimum_wholesale_order_cny": null,
+    "prepaid_wallet_minimum_cny": null,
+    "payment_surcharge_cny": null,
+    "invoice_fee_cny": null,
+    "valid_invoice_issuer": null,
+    "payee_legal_entity": null,
+    "formal_supply_authorization_verified": false,
+    "actual_renewal_success_verified": false
+  },
+  "phone_verification": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "separate_scopes": [
+      "ordinary ChatGPT web/account use",
+      "Codex desktop prompt",
+      "first platform API key"
+    ],
+    "subscription_or_apple_does_not_automatically_bind_phone": true,
+    "session_or_token_does_not_guarantee_verification_bypass": true,
+    "independent_number_duration_days_verified": null,
+    "failed_code_cash_refund_verified": false,
+    "real_sms_success_count": 0
+  },
+  "ancillary_rechecks": [
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus",
+      "observed_on": "2026-11-19",
+      "historical_retail_price_cny": 129.6,
+      "material_change": false
+    },
+    {
+      "merchant": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "observed_on": "2026-11-19",
+      "historical_retail_price_cny": 126,
+      "material_change": false
+    },
+    {
+      "merchant": "ChatShare",
+      "url": "https://chatshare.tv/",
+      "observed_on": "2026-11-19",
+      "shared_seat_not_own_plus": true,
+      "material_change": false
+    },
+    {
+      "merchant": "CatFK",
+      "url": "https://catfk.com/shop/Antipro",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "Morimm",
+      "url": "https://morimm.com/products/gptplus-ios",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "wind89",
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "GetVIP",
+      "url": "https://www.getvip.site/",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    },
+    {
+      "merchant": "PAYPRM",
+      "url": "https://payprm.com/",
+      "observed_on": "2026-11-19",
+      "readable": false,
+      "old_price_not_refreshed": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://98-xj.com/blog/chatgpt-plus-pro-bulk-purchase-guide",
+      "observed_on": "2026-11-19",
+      "seller_published_on": "2026-11-18",
+      "evidence_class": "newly_read_first_party_public_bulk_guidance"
+    },
+    {
+      "url": "https://98-xj.com/docs/cardnet-upstream-api-v2.zh-CN.md",
+      "observed_on": "2026-11-19",
+      "seller_self_marked_update": "2026-10-14",
+      "evidence_class": "newly_read_first_party_technical_spec_not_live_api_test"
+    },
+    {
+      "url": "https://98-xj.com/products/gpt%20plus",
+      "observed_on": "2026-11-19",
+      "evidence_class": "direct_merchant_retail_listing_no_price_change"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-19",
+      "evidence_class": "official_platform_help"
+    }
+  ],
+  "historical_reports_preserved": true,
+  "historical_126_offers_preserved": true,
+  "agent_application_submitted": false,
+  "merchant_contacted": false,
+  "actual_purchase_made": false,
+  "credentials_submitted": false
+}
