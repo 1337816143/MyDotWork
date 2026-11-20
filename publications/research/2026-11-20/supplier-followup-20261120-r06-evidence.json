@@ -1,0 +1,124 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 252,
+  "site_version": "1.9.260",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r05.html",
+  "new_evidence": "First-party seller disclosed a claimed China VAT invoice issuer and tax identifier; older r201 had null. Not independently verified.",
+  "material_observations": [
+    {
+      "seller": "PayForGPT",
+      "url": "https://payforgpt.com/invoices",
+      "observed_on": "2026-11-20",
+      "method": "live_direct_render_http_200",
+      "invoice_issuer_name_vendor_claim": "花衍科技（广州）有限公司",
+      "invoice_taxpayer_id_vendor_claim": "91440104MAEP1N3U8F",
+      "prior_r201_invoice_issuer_name": null,
+      "prior_r201_taxpayer_id": null,
+      "code_18_character_checksum_valid": true,
+      "code_checksum_confirms_real_registration": false,
+      "official_chinese_company_registry_verified": false,
+      "real_chinese_vat_invoice_verified": false,
+      "sample_invoice_marked_nonformal": true,
+      "sample_invoice_amount_cny": 1560,
+      "sample_invoice_is_plus_price": false,
+      "merchant_claims_ordinary_vat_fee_additional_cny": 0,
+      "actual_ordinary_vat_fee_cny": null,
+      "merchant_claims_same_day_electronic_invoice": true,
+      "merchant_claims_refunded_invoice_needs_red_letter_adjustment": true,
+      "claimed_rule_real_effective_date": null,
+      "actual_payment_collection_entity": null,
+      "real_issuer_and_collector_match_verified": false
+    },
+    {
+      "seller": "PayForGPT",
+      "url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-20",
+      "exact_sku": "ChatGPT Plus 月卡｜国内支付宝充值",
+      "own_account": true,
+      "retail_cny_per_account_month": 160,
+      "unpaid_form_cny": 160,
+      "minimum_qty": 1,
+      "maximum_qty": 20,
+      "merchant_claims_alipay_zpay_or_manual_transfer": true,
+      "merchant_claims_wechat_checkout_supported": false,
+      "merchant_claims_existing_subscription_overwrites_not_stacks": true,
+      "merchant_excludes_active_philippine_plan": true,
+      "actual_paid_total_cny": null,
+      "verified_payment_surcharge_cny": null,
+      "verified_valid_china_vat_invoice_cny": null,
+      "verified_wholesale_unit_cost_cny": null,
+      "formal_supply_authorization_verified": false,
+      "fulfilled_order_tested": false,
+      "real_refund_tested": false
+    },
+    {
+      "seller": "PayForGPT",
+      "url": "https://payforgpt.com/qiye-caigou",
+      "observed_on": "2026-11-20",
+      "page_self_marked_update_on": "2026-11-15",
+      "ordinary_invoice_1_to_4_retail_claim_already_archived": true,
+      "plus_wholesale_single_unit_price_cny": null,
+      "non_plus_twenty_x_minimum_units": 5,
+      "non_plus_twenty_x_merchant_price_cny_per_unit": 1520,
+      "valid_special_vat_invoice_verified": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://payforgpt.com/invoices",
+      "read_on": "2026-11-20",
+      "classification": "first_party_vendor_invoice_statement_not_issued_invoice"
+    },
+    {
+      "url": "https://payforgpt.com/product/7",
+      "read_on": "2026-11-20",
+      "classification": "first_party_sku_and_unpaid_preview"
+    },
+    {
+      "url": "https://payforgpt.com/qiye-caigou",
+      "read_on": "2026-11-20",
+      "classification": "first_party_enterprise_terms"
+    }
+  ],
+  "priority_rechecked": {
+    "CatFK": "inaccessible home; no price refresh",
+    "Xiaojiu": "old Plus¥110 retail",
+    "Morimm": "old iOS Plus¥125 retail",
+    "Yinlujing": "old agency fee¥3000 excludes",
+    "ChatShare": "old five shared¥38 and three shared¥68 per 30days, not own account",
+    "GetVIP": "no new qualifying source",
+    "wind89": "FAQ empty, no price refresh",
+    "GETGPT_Pro": "old Pro20x renewal¥1569, no invoice",
+    "PAYPRM": "VAT surcharge unknown",
+    "ChongPay": "old Plus¥139 and 25-day Codex SMS¥20"
+  },
+  "procurement": {
+    "criteria": "own account, one unit one month, no upfront agency fee, all needed payment and valid China VAT <= CNY 170",
+    "retail_observed_cny": 160,
+    "verified_all_fees_with_valid_china_vat_cny": null,
+    "verified_real_wholesale_cost_cny": null,
+    "legal_issuer_verified": null,
+    "real_collecting_company_verified": null,
+    "official_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "web_chatgpt_codex_desktop_first_api_key_different": true,
+    "apple_session_or_recharge_does_not_automatically_bind_phone": true,
+    "actual_sms_successes": 0,
+    "verified_number_holding_period_days": null,
+    "verified_failed_sms_original_payment_refund": false
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "actual_valid_chinese_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "merchant_contacted": false,
+  "application_submitted": false,
+  "payment_done": false,
+  "credentials_submitted": false,
+  "old_251_reports_unchanged": true,
+  "historical_126_price_rows_unchanged": true
+}
