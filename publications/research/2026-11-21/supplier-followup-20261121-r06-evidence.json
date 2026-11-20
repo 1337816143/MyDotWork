@@ -1,0 +1,169 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 265,
+  "site_version": "1.9.273",
+  "observed_on": "2026-11-21",
+  "previous_report": "research/2026-11-21/supplier-followup-20261121-r05.html",
+  "change_class": "first_read_of_two_original_account_retail_and_vat_invoice_merchant_claims",
+  "confirmed_today_reprice": false,
+  "merchant_observations": [
+    {
+      "merchant": "PayForGPT",
+      "source_url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-21",
+      "sku": "product/7 · ChatGPT Plus 月卡｜国内支付宝充值",
+      "unit": "CNY per original account per 1 month",
+      "merchant_list_price_cny": 160,
+      "one_unit_supported": true,
+      "merchant_claims_no_password": true,
+      "merchant_claims_after_payment_human_wechat_fulfillment": true,
+      "merchant_claims_active_subscription_cover_without_stacking": true,
+      "merchant_says_philippines_region_not_supported_for_cover": true,
+      "independently_verified_final_payment_cny": null,
+      "additional_payment_fee_cny": null,
+      "actual_fulfillment_verified": false,
+      "verified_true_wholesale_price_cny": null,
+      "formal_resale_authorization_verified": false
+    },
+    {
+      "merchant": "瑶瑶ai训练师",
+      "source_url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-21",
+      "sku": "item/5 · ChatGPT Plus 1个月",
+      "unit": "CNY per original account per 1 month",
+      "merchant_list_price_cny": 129,
+      "one_unit_supported": true,
+      "merchant_claims_auto_card_delivery": true,
+      "merchant_says_login_state_information_needed_for_redemption": true,
+      "merchant_claims_no_password": true,
+      "merchant_claims_failure_original_payment_refund_within_hours": 24,
+      "independently_verified_final_payment_cny": null,
+      "additional_payment_fee_cny": null,
+      "actual_fulfillment_verified": false,
+      "verified_true_wholesale_price_cny": null,
+      "formal_resale_authorization_verified": false
+    }
+  ],
+  "tax_and_wholesale": [
+    {
+      "merchant": "PayForGPT",
+      "source_url": "https://payforgpt.com/invoices",
+      "observed_on": "2026-11-21",
+      "merchant_claims_china_digital_vat_ordinary_invoice": true,
+      "merchant_claims_invoice_extra_cny_for_1_to_4_units": 0,
+      "merchant_claimed_issuer": "花衍科技（广州）有限公司",
+      "merchant_claimed_unified_social_credit_code": "91440104MAEP1N3U8F",
+      "shown_invoice_is_sample_only": true,
+      "company_registry_independently_verified": false,
+      "actual_invoice_verified": false,
+      "actual_payment_receiver_legal_entity": null,
+      "bulk_source_url": "https://payforgpt.com/how-to/company-bank-transfer-invoice",
+      "bulk_pro20x_minimum_units": 5,
+      "bulk_pro20x_cny_per_unit_with_seller_claimed_special_vat": 1520,
+      "plus_single_unit_wholesale_price_cny": null
+    },
+    {
+      "merchant": "瑶瑶ai训练师",
+      "source_url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-21",
+      "seller_page_self_updated_on": "2026-11-16",
+      "merchant_claims_china_vat_ordinary_invoice": true,
+      "merchant_claims_issue_within_business_days": 3,
+      "merchant_invoice_extra_cny": null,
+      "verified_invoice_issuer_legal_entity": null,
+      "actual_invoice_verified": false,
+      "bulk_source_url": "https://kw.yaoyao.chat/guide/chatgpt-qiye-piliang.html",
+      "bulk_discount_minimum_units": 10,
+      "bulk_quoted_cny_per_unit": null,
+      "merchant_self_description_source": "https://kw.yaoyao.chat/guide/yaoyao-kaopu.html",
+      "seller_terms_source": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html"
+    }
+  ],
+  "phone_verification": {
+    "chatgpt_web": "separate_account_specific_check",
+    "codex_desktop": "may_request_separate_phone_verification_even_on_plus",
+    "first_api_key": "official_first_api_key_check_separate",
+    "auto_phone_binding_by_recharge_proven": false,
+    "third_party_phone_number_control_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "real_sms_successes": 0
+  },
+  "qualification": {
+    "required_original_account": true,
+    "one_unit_one_month": true,
+    "agency_fee_upfront_not_allowed": true,
+    "all_including_valid_china_vat_limit_cny": 170,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_all_in_cny": null,
+    "payment_fee_cny": null,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "formal_supply_authorizations_verified": 0
+  },
+  "caveats": {
+    "merchant_claims_not_actual_tests": true,
+    "no_current_price_change_confirmed": true,
+    "retail_price_does_not_prove_wholesale": true,
+    "sample_invoice_not_actual_valid_invoice": true,
+    "unknown_invoice_fee_stays_null": true,
+    "subscription_does_not_automatically_bind_phone": true,
+    "session_or_token_requires_prior_login": true,
+    "history_preserved_rounds": 264,
+    "original_historical_price_rows_preserved": 126
+  },
+  "real_payment_done": false,
+  "real_invoice_verified": false,
+  "real_sms_done": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sources": [
+    {
+      "url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://payforgpt.com/invoices",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://payforgpt.com/how-to/company-bank-transfer-invoice",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://kw.yaoyao.chat/item/5",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/chatgpt-qiye-piliang.html",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/yaoyao-kaopu.html",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    },
+    {
+      "url": "https://kw.yaoyao.chat/guide/shouhou-zhibao.html",
+      "observed_on": "2026-11-21",
+      "source_type": "merchant_first_party",
+      "claims_not_verified_by_purchase": true
+    }
+  ]
+}

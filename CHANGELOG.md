@@ -1,3 +1,9 @@
+## 1.9.273 · 2026-11-21
+
+- 第265轮首次直接读取PayForGPT原商品 https://payforgpt.com/product/7 ：ChatGPT Plus SKU product/7 本人原号1个月¥160/件，卖家称已有订阅可覆盖但不叠加、菲区例外、付款后微信人工协助且不索取账号密码。其开票原页 https://payforgpt.com/invoices 自称1–4件开中国数电增值税普票0加点，并列“花衍科技（广州）有限公司”、统一社会信用代码91440104MAEP1N3U8F；展示明确是样票，不是税务查验的真票。支付附费、收款法人、独立工商核验、正式供货授权及真实履约未证；https://payforgpt.com/how-to/company-bank-transfer-invoice 的20x五件起¥1520/件含专票是另一SKU，不当作Plus单件批发。
+- 同轮首次直接读取瑶瑶 https://kw.yaoyao.chat/item/5 本人原号Plus一月¥129/件，商称自助卡密，先网页登录并粘贴带登录态的信息；开票页 https://kw.yaoyao.chat/guide/fapiao.html 自标2026-11-16更新、声称中国增值税普票3工作日内出，但开票加费、出票法人/税号、实票均未知，保持null。https://kw.yaoyao.chat/guide/chatgpt-qiye-piliang.html 仅有10件起可询折扣而无单件批发价，商家售后现金退款声明未实际实测；其说明自认不是OpenAI官方或授权代理。
+- 两者均为新零售/开票线索，不是新确认批发上游、实付含税价或调价。既有CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay旧报价不刷新。本人原号单件单月、无前置代理费、所有必付费用与有效中国VAT合计≤¥170的已核真Plus批发仍0家；真实采购、验票、SMS成功各0。网页/Codex/首次API Key验证分别适用，购买Plus不会自动绑定手机号，Session登录前提不能解决首次网页登录验证。仅追加报告/JSON、白名单、目录、总库入口、VERSION、构建指针与测试，历史前264轮及126条原始报价原字节保留。未付款、联系商家或提交凭据。
+
 ## 1.9.272 · 2026-11-21
 
 - 第264轮首次直接归档 OpenAI开发者社区 https://community.openai.com/t/again-codex-client-auth-forces-whatsapp-code-to-a-dead-number-but-chatgpt-codex-web-log-in-fine/1383951 ：官方支持在2026-06-19披露针对Codex旧号验证循环的个案缓解措施；用户2026-07-20自述新设备登录恢复但旧号码尚在，不能当官方永久修复或普遍成功率。2026-10-04官方支持明确已付ChatGPT Plus仍可能在Codex登录时独立要求手机验证，付费不自动豁免；这均是历史发言本轮首次归档，非2026-11-21政策变更。
