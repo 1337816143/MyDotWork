@@ -1,0 +1,118 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 263,
+  "site_version": "1.9.271",
+  "observed_on": "2026-11-21",
+  "previous_report": "research/2026-11-21/supplier-followup-20261121-r03.html",
+  "merchant": "APIHub / 16688",
+  "first_party_observations": [
+    {
+      "sku": "G49307465",
+      "source_url": "https://www.16688.com.cn/goods/G49307465",
+      "months": 1,
+      "one_card_cny": 105.87,
+      "stock": "sold_out",
+      "merchant_claim_invoice_extra_cny": 35,
+      "public_components_sum_excluding_payment_fee_cny": 140.87,
+      "requires_preexisting_chatgpt_web_login_and_token": true
+    },
+    {
+      "sku": "G34816878",
+      "source_url": "https://www.16688.com.cn/goods/G34816878",
+      "months": 1,
+      "one_card_cny": 108.99,
+      "price_already_archived_round": 161,
+      "merchant_claim_invoice_extra_cny": 50,
+      "public_components_sum_excluding_payment_fee_cny": 158.99
+    },
+    {
+      "sku": "G49852965",
+      "source_url": "https://www.16688.com.cn/goods/G49852965",
+      "months": 1,
+      "one_card_cny": 123,
+      "ios_seller_claim_covers_active_plan_but_resets_month": true,
+      "merchant_claim_invoice_extra_cny": null
+    }
+  ],
+  "merchant_shop": {
+    "source_url": "https://www.16688.com.cn/shop/APIHUB",
+    "wholesale_label_not_independent_authorization": true,
+    "api_resale_claim": true,
+    "true_one_unit_wholesale_cny": null,
+    "shop_says_platform_orders_not_invoiced": true,
+    "shop_says_enterprise_china_vat_separate_quote": true,
+    "conflicts_with_two_product_invoice_addon_claims": true,
+    "legal_operator": null,
+    "legal_payee": null,
+    "legal_china_vat_issuer": null,
+    "valid_china_vat_invoice_verified": false,
+    "formal_resale_authorization": null,
+    "payment_fee_cny": null,
+    "actual_all_in_cny": null
+  },
+  "codex_sms": {
+    "source_url": "https://www.16688.com.cn/goods/G33329430",
+    "historical_one_time_price_cny": 6,
+    "price_archived_round": 161,
+    "merchant_claim_failed_use_can_replace_number": true,
+    "real_cash_refund_verified": false,
+    "number_control_days": null,
+    "chatgpt_web_supported_verified": false,
+    "api_first_key_supported_verified": false,
+    "real_sms_success": false
+  },
+  "refund_claims": {
+    "drops_30_days_repaired_or_refunded_prorated": true,
+    "official_refund_transfer_deduction_pct": 20,
+    "real_refund_tested": false
+  },
+  "qualification": {
+    "own_existing_account": true,
+    "one_unit_one_month": true,
+    "no_agency_upfront_required": true,
+    "limit_all_payments_plus_valid_china_vat_cny": 170,
+    "verified_true_wholesale_upstreams": 0,
+    "real_plus_purchases": 0,
+    "verified_valid_china_vat_invoices": 0,
+    "real_sms_successes": 0
+  },
+  "caveats": {
+    "merchant_claims_not_merchant_fulfillment_proof": true,
+    "same_sku_current_repricing_proven": false,
+    "apple_and_session_may_coexist": true,
+    "normal_recharge_not_auto_bind_phone": true,
+    "web_codex_api_scopes_separate": true,
+    "history_reports_untouched": 262,
+    "history_quotes_untouched": 126
+  },
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/shop/APIHUB",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_first_party_readable"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G49307465",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_first_party_readable"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G34816878",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_first_party_readable"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G49852965",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_first_party_readable"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G33329430",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_first_party_readable"
+    }
+  ],
+  "payment_done": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false
+}
