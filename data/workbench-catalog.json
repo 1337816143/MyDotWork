@@ -5886,6 +5886,28 @@
       "summary": "GETGPT Pro实时一方规则HTTP 200及¥1569/单月、30天窗口、同档原到期衔接、无发票与Session前提；实际支付/授权/有效中国VAT/验证码均null或未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r252-20261120",
+      "title": "GPT源头第252轮 · PayForGPT商家披露国内出票主体与税号",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r06.html",
+      "updatedAt": "2026-11-20",
+      "summary": "新一方证据公开花衍科技（广州）有限公司及税号，但独立工商、真票验真及授权仍缺；Plus¥160为零售。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r252-20261120-evidence",
+      "title": "第252轮 · 票据主体自述与真实验证缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r06-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "数电票非正式样例、Plus单月¥160未付款价、商称普票附费0；实付成本和正规批发为null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
