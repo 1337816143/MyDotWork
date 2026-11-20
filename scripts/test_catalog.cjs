@@ -2910,4 +2910,4 @@ assert.equal(r252.material_observations[1].retail_cny_per_account_month,160);
 assert.equal(r252.material_observations[1].actual_paid_total_cny,null);
 assert.equal(r252.procurement.verified_all_fees_with_valid_china_vat_cny,null);
 assert.equal(r252.qualification_totals.verified_true_plus_wholesale_upstreams,0);
-assert.equal(r252.actual_purchase_made,false);
+assert.equal(r252.payment_done,false);
