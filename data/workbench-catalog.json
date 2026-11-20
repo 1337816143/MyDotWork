@@ -6150,6 +6150,28 @@
       "summary": "准确SKU G49307465/G34816878/G49852965、开票差异和库存状态；支付费和收款出票法人null，Codex接码另列，实付验票SMS为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r264-20261121",
+      "title": "GPT源头第264轮 · Codex旧号码验证循环及Plus付费不豁免",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r05.html",
+      "updatedAt": "2026-11-21",
+      "summary": "官方支持历史个案披露Codex旧号验证循环可被逐案缓解，Plus付费不自动免验证；小久确认Team须退出。无合格真批发或SMS实测新增。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r264-20261121-evidence",
+      "title": "第264轮 · Codex验证适用与账号资格证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r05-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "官方支持论坛与帮助页不同证据级别；卖家旧指南观察日期、账号资格和独立SMS边界，未知税票与附费null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

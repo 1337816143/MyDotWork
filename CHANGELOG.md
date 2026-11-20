@@ -1,3 +1,10 @@
+## 1.9.272 · 2026-11-21
+
+- 第264轮首次直接归档 OpenAI开发者社区 https://community.openai.com/t/again-codex-client-auth-forces-whatsapp-code-to-a-dead-number-but-chatgpt-codex-web-log-in-fine/1383951 ：官方支持在2026-06-19披露针对Codex旧号验证循环的个案缓解措施；用户2026-07-20自述新设备登录恢复但旧号码尚在，不能当官方永久修复或普遍成功率。2026-10-04官方支持明确已付ChatGPT Plus仍可能在Codex登录时独立要求手机验证，付费不自动豁免；这均是历史发言本轮首次归档，非2026-11-21政策变更。
+- 同步直核 https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like ：网页ChatGPT通常不强制手机、Codex桌面可能要求、首次API Key强制且后续Key不用重复首次步骤；VoIP/Google Voice不支持，不能将个案缓解外推网页或API，也不能推定一次性接码可解绑旧号码。未进行SMS、支持工单或任何账号登录测试。
+- 小久2026-11-12原站指南 https://98-xj.com/blog/chatgpt-plus-unsupported-region-guide 另明示Plus兑换须无有效订阅，已有Team账号需先退出，移动端订阅到期商称需再等2–3日；这仅是商家规则声明。https://98-xj.com/blog/xiaojiu-order-cdk-receipt-guide 区分付款、发码、兑换与真正生效，收据不等于中国VAT税票。Plus¥110仅旧日期历史值、不刷新；小久批量API及阶梯价格第242轮已归档，本轮不重复认新证据。
+- CatFK、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay无新增可核含票批发闭环。原号单件单月、免代理前置费、所有费用与有效中国VAT≤¥170的已核真Plus上游仍0家，付款、税票验真、SMS实测成功各0，未知费用null。仅新增报告HTML/JSON、发布SHA256白名单、目录、总库入口、VERSION、最新指针和断言；前263轮历史与126条原始报价原字节保留。无联系、付款、代理申请或账号凭据提交。
+
 ## 1.9.271 · 2026-11-21
 
 - 第263轮直接补档已知APIHub（16688）另外两款原号Plus商品：SKU G49307465官网代付Plus一月¥105.87/件、商称中国电子票附加¥35但该SKU已售罄；SKU G49852965美区iOS原号Plus月卡¥123，商称可覆盖现有订阅却重新计月不叠加旧剩余天数。历史渠道二SKU G34816878 Plus¥108.99/月（第161轮已读）商称电子票+¥50，本轮复读不刷新原观察、不视为当天调价。不同SKU¥140.87与¥158.99仅为标价和其自己卖家票费相加，支付费未知、无已核中国有效VAT票据。
