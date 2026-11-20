@@ -6106,6 +6106,28 @@
       "summary": "四条准确Pro商品原URL、价签单位及仅智利SKU月数明确；真实费用、批发授权、税票主体及接码实测全缺。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r262-20261121",
+      "title": "GPT源头第262轮 · wind89现行Pro准确SKU与独立接码二手线索",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r03.html",
+      "updatedAt": "2026-11-21",
+      "summary": "一方准确SKU29为Pro10x ¥1349.99/月、SKU30为Pro25x ¥3749.99/月，已有Plus不直接升级；花生AI Codex约20天¥5.50仅第三方监测、卖家验证码拦截。真实批发和税票闭环仍为0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r262-20261121-evidence",
+      "title": "第262轮 · wind89 SKU及接码原链结构化数据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r03-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "卖家SKU27–30现行价签/资格；手机号仅比价监测与卖家验证码阻断分级，所有未知费用为null、SMS/发票未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
