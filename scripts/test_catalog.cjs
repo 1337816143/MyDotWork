@@ -2879,3 +2879,20 @@ assert.equal(r250.material_observations[4].original_cash_route_refund_guaranteed
 assert.equal(r250.material_observations[4].openai_selected_number_price_cny,null);
 assert.equal(r250.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r250.actual_purchase_made,false);
+
+// R251: 20x same-tier renewal preserves unused term only by vendor claim; no invoice and not Plus wholesale.
+const c251=d.records.find(x=>x.id==='gpt-source-followup-r251-20261120'),e251=d.records.find(x=>x.id==='gpt-source-followup-r251-20261120-evidence');
+assert(c251&&e251&&c251.url.endsWith('supplier-followup-20261120-r05.html'));
+const r251=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r05-evidence.json'),'utf8'));
+assert.equal(r251.round,251);assert.equal(r251.site_version,'1.9.259');
+assert.equal(r251.material_observations[0].seller_labeled_price_cny_per_one_billing_month,1569);
+assert.equal(r251.material_observations[0].earliest_order_window_days_before_expiry_vendor_claim,30);
+assert.equal(r251.material_observations[0].active_subscription_unused_days_preserved_vendor_claim,true);
+assert.equal(r251.material_observations[0].merchant_explicitly_excludes_invoices_for_this_sku,true);
+assert.equal(r251.material_observations[0].actual_payable_checkout_total_cny,null);
+assert.equal(r251.material_observations[0].actual_purchase_tested,false);
+assert.equal(r251.procurement.observed_sku_is_plus,false);
+assert.equal(r251.procurement.verified_plus_all_in_total_cny,null);
+assert.equal(r251.phone_verification.actual_sms_successes,0);
+assert.equal(r251.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r251.actual_purchase_made,false);
