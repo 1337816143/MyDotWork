@@ -5930,6 +5930,28 @@
       "summary": "商家两次独立渲染取得准确Pro500¥3889与Pro200¥1569，表单无票、Session必需；原号Plus仍¥179，真实交易/票据/短信/批发授权未证。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r254-20261120",
+      "title": "GPT源头第254轮 · Codex接码¥8及退款适用边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r08.html",
+      "updatedAt": "2026-11-20",
+      "summary": "独立Codex美国接码CDK ¥8/份，仅限首次登录且原则不退款；有价签无短信、含票批发及原路现金退款实测。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r254-20261120-evidence",
+      "title": "第254轮 · Codex号码价格、单品限制与未实测证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r08-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "准确¥8/份商品、¥118独立Plus、AICZ库存标签及Hype售罄一方原URL；未知附费/号码期限和成功结果均null。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
