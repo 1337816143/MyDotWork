@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 559, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 561, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.263'
+    assert latest['version'] == '1.264'
     assert latest['date'] == '2026-11-21'
-    assert latest['path'] == 'research/2026-11-21/supplier-followup-20261121-r04.html'
-    assert latest['dataPath'] == 'research/2026-11-21/supplier-followup-20261121-r04-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-21/supplier-followup-20261121-r03.html'
+    assert latest['path'] == 'research/2026-11-21/supplier-followup-20261121-r05.html'
+    assert latest['dataPath'] == 'research/2026-11-21/supplier-followup-20261121-r05-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-21/supplier-followup-20261121-r04.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3265,6 +3265,22 @@ def validate_publications():
     assert r263['qualification']['verified_true_wholesale_upstreams'] == 0
     assert r263['qualification']['real_sms_successes'] == 0
     assert not r263['payment_done'] and not r263['credentials_submitted']
+
+    # R264: official support case evidence is historical; account mitigation isn't a phone bypass service.
+    r264 = json.loads((ROOT/'dist/research/2026-11-21/supplier-followup-20261121-r05-evidence.json').read_bytes())
+    assert by_id['gpt-source-followup-r264-20261121']['url'].endswith('supplier-followup-20261121-r05.html')
+    assert by_id['gpt-source-followup-r264-20261121-evidence']['url'].endswith('supplier-followup-20261121-r05-evidence.json')
+    assert r264['round'] == 264 and r264['site_version'] == '1.9.272'
+    assert r264['same_day_policy_change_proven'] is False
+    assert r264['new_first_party_evidence'][0]['paid_plus_does_not_remove_codex_phone_verification'] is True
+    assert r264['new_first_party_evidence'][0]['mitigation_guaranteed_for_other_accounts'] is False
+    assert r264['new_first_party_evidence'][1]['first_api_key_requires_phone'] is True
+    assert r264['merchant_eligibility_recheck'][0]['seller_says_leave_team_before_redeem'] is True
+    assert r264['merchant_eligibility_recheck'][0]['price_refreshed_this_run'] is False
+    assert r264['procurement']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r264['procurement']['actual_all_in_cny'] is None
+    assert r264['phone_scenarios']['actual_sms_successes'] == 0
+    assert r264['real_payment_done'] is False and r264['merchant_contacted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

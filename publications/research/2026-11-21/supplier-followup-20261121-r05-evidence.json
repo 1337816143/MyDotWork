@@ -1,0 +1,126 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 264,
+  "site_version": "1.9.272",
+  "observed_on": "2026-11-21",
+  "previous_report": "research/2026-11-21/supplier-followup-20261121-r04.html",
+  "change_class": "first_direct_archive_of_historical_support_thread_and_merchant_eligibility_detail",
+  "same_day_policy_change_proven": false,
+  "new_first_party_evidence": [
+    {
+      "source_url": "https://community.openai.com/t/again-codex-client-auth-forces-whatsapp-code-to-a-dead-number-but-chatgpt-codex-web-log-in-fine/1383951",
+      "source_class": "openai_support_public_forum_and_user_reports",
+      "observed_on": "2026-11-21",
+      "original_post_dates": [
+        "2026-06-19",
+        "2026-07-20",
+        "2026-10-04"
+      ],
+      "official_support_posted_account_specific_codex_phone_loop_mitigation": true,
+      "paid_plus_does_not_remove_codex_phone_verification": true,
+      "public_user_reported_recovery": true,
+      "user_report_is_not_independent_retest": true,
+      "mitigation_guaranteed_for_other_accounts": false,
+      "permanent_number_replacement_proven": false,
+      "applies_to_chatgpt_web": false,
+      "applies_to_first_api_key": false
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "source_class": "openai_official_help_page",
+      "observed_on": "2026-11-21",
+      "ordinary_chatgpt_phone_normally_not_required": true,
+      "codex_desktop_may_require_phone": true,
+      "first_api_key_requires_phone": true,
+      "subsequent_api_keys_exempt_from_initial_step": true,
+      "sms_or_allowed_country_whatsapp": true,
+      "voip_and_google_voice_unsupported": true,
+      "exact_policy_effective_date": null
+    }
+  ],
+  "merchant_eligibility_recheck": [
+    {
+      "source_url": "https://98-xj.com/blog/chatgpt-plus-unsupported-region-guide",
+      "source_class": "merchant_first_party_public_guidance",
+      "seller_publication_date": "2026-11-12",
+      "observed_on": "2026-11-21",
+      "requires_free_account_with_no_active_subscription": true,
+      "seller_says_leave_team_before_redeem": true,
+      "seller_claims_wait_2_to_3_days_after_mobile_subscription_expires": true,
+      "merchant_says_phone_verification_separate": true,
+      "historical_plus_price_cny_per_month": 110,
+      "historical_price_observed_on": "2026-11-12",
+      "price_refreshed_this_run": false
+    },
+    {
+      "source_url": "https://98-xj.com/blog/xiaojiu-order-cdk-receipt-guide",
+      "source_class": "merchant_first_party_public_guidance",
+      "seller_publication_date": "2026-11-11",
+      "seller_guide_updated_on": "2026-11-12",
+      "observed_on": "2026-11-21",
+      "paid_issued_redeemed_activated_distinct": true,
+      "receipt_is_not_china_vat_invoice": true,
+      "real_fulfillment_tested": false
+    }
+  ],
+  "phone_scenarios": {
+    "chatgpt_web": "normally_no_phone_required_but_account_specific_check_possible",
+    "codex_desktop": "may_request_phone_even_on_plus",
+    "first_api_key": "phone_required_by_current_help",
+    "old_number_loop": "official_support_individual_case_mitigation_observed_not_guaranteed",
+    "third_party_sms_auto_unbind_proven": false,
+    "phone_control_duration_days": null,
+    "failed_sms_original_payment_refund_verified": false,
+    "actual_sms_successes": 0
+  },
+  "procurement": {
+    "own_original_account": true,
+    "one_unit_one_month": true,
+    "agency_upfront_fee_cny": null,
+    "limit_all_payments_plus_valid_china_vat_cny": 170,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_plus_purchases": 0,
+    "actual_all_in_cny": null,
+    "payment_extra_cny": null,
+    "valid_china_vat_invoice_extra_cny": null,
+    "valid_china_vat_issuer": null,
+    "valid_china_vat_invoices_verified": 0,
+    "formal_resale_authorization_verified": false
+  },
+  "caveats": {
+    "older_statements_archived_on_new_observation_not_new_effective_rules": true,
+    "seller_claims_not_official_openai_policies": true,
+    "apple_and_session_may_coexist": true,
+    "recharge_not_automatic_phone_binding": true,
+    "no_old_prices_refreshed": true,
+    "old_reports_unchanged": 263,
+    "historical_price_rows_unchanged": 126
+  },
+  "real_payment_done": false,
+  "real_sms_done": false,
+  "real_invoice_verified": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "sources": [
+    {
+      "url": "https://community.openai.com/t/again-codex-client-auth-forces-whatsapp-code-to-a-dead-number-but-chatgpt-codex-web-log-in-fine/1383951",
+      "observed_on": "2026-11-21",
+      "source_class": "openai_support_forum"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-21",
+      "source_class": "openai_help"
+    },
+    {
+      "url": "https://98-xj.com/blog/chatgpt-plus-unsupported-region-guide",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_article"
+    },
+    {
+      "url": "https://98-xj.com/blog/xiaojiu-order-cdk-receipt-guide",
+      "observed_on": "2026-11-21",
+      "source_class": "merchant_article"
+    }
+  ]
+}
