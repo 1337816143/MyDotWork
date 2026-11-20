@@ -5864,6 +5864,28 @@
       "summary": "5个2026-11-20实际直读商家原URL；¥128/¥158非含票单件成本，企业¥179/¥189；SMS仅站内余额退款声明，OpenAI号码精价/持号与验票/履约均null或未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r251-20261120",
+      "title": "GPT源头第251轮 · GETGPT Pro存量20x提前续费与不开票边界",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r05.html",
+      "updatedAt": "2026-11-20",
+      "summary": "首次直读GETGPT Pro已有效20x同档¥1569/账单月续费，卖家称到期前30天可安排并保留原剩余时长；该续费SKU明确不开票，Session必需且交付未实测、Plus真正批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r251-20261120-evidence",
+      "title": "第251轮 · Pro 20x续费资格、时间处理与无票限制 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r05-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "GETGPT Pro实时一方规则HTTP 200及¥1569/单月、30天窗口、同档原到期衔接、无发票与Session前提；实际支付/授权/有效中国VAT/验证码均null或未实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
