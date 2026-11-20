@@ -2997,3 +2997,17 @@ assert.equal(r258.observations[1].actual_payee_legal_entity_verified,null);
 assert.equal(r258.observations[1].seller_distinguishes_pdf_invoice_from_china_vat,true);
 assert.equal(r258.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r258.phone_verification.actual_sms_successes,0);
+
+// R259 first-read ChongPay card labels are seller retail observations only.
+const c259=d.records.find(x=>x.id==='gpt-source-followup-r259-20261120'),e259=d.records.find(x=>x.id==='gpt-source-followup-r259-20261120-evidence');
+assert(c259&&e259&&c259.url.endsWith('supplier-followup-20261120-r13.html'));
+const r259=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r13-evidence.json'),'utf8'));
+assert.equal(r259.round,259);assert.equal(r259.site_version,'1.9.267');
+assert.deepEqual(r259.observations[0].sku.map(x=>x.listed_cny_per_card),[729,1188,3299]);
+assert.deepEqual(r259.observations[0].sku.map(x=>x.supplier_multiplier_label),['5×','10×','25×']);
+assert.equal(r259.observations[0].verified_same_sku_repricing_today,false);
+assert.equal(r259.observations[0].sku[0].checkout_total_cny,null);
+assert.equal(r259.observations[1].valid_china_vat_issuer,null);
+assert.equal(r259.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r259.phone_verification.actual_sms_successes,0);
+assert.equal(r259.payment_done,false);

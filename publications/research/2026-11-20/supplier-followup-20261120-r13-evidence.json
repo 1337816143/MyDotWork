@@ -1,0 +1,127 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 259,
+  "site_version": "1.9.267",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r12.html",
+  "finding": "Three newly archived ChongPay Pro card retail labels and seller-specific scheme notation, without proof of same-day price change or official entitlements.",
+  "observations": [
+    {
+      "source_url": "https://chongpay.com/",
+      "source_type": "seller_direct_public_product_catalog",
+      "observed_on": "2026-11-20",
+      "seller_self_price_update_date": "2026-11-20",
+      "verified_same_sku_repricing_today": false,
+      "price_unit": "CNY per listed card, not verified all-in subscription billing month",
+      "sku": [
+        {
+          "sku_name": "Pro100 卡充",
+          "currency": "CNY",
+          "listed_cny_per_card": 729,
+          "supplier_multiplier_label": "5×",
+          "warranty_days_seller_claim": 30,
+          "actual_subscription_months": null,
+          "checkout_total_cny": null,
+          "payment_fee_cny": null,
+          "valid_china_vat_invoice_fee_cny": null,
+          "official_openai_entitlement_tested": false,
+          "paid_delivery_verified": false
+        },
+        {
+          "sku_name": "Pro 200 卡充",
+          "currency": "CNY",
+          "listed_cny_per_card": 1188,
+          "supplier_multiplier_label": "10×",
+          "warranty_days_seller_claim": 30,
+          "actual_subscription_months": null,
+          "checkout_total_cny": null,
+          "payment_fee_cny": null,
+          "valid_china_vat_invoice_fee_cny": null,
+          "official_openai_entitlement_tested": false,
+          "paid_delivery_verified": false
+        },
+        {
+          "sku_name": "Pro 500 卡充",
+          "currency": "CNY",
+          "listed_cny_per_card": 3299,
+          "supplier_multiplier_label": "25×",
+          "warranty_days_seller_claim": 30,
+          "actual_subscription_months": null,
+          "checkout_total_cny": null,
+          "payment_fee_cny": null,
+          "valid_china_vat_invoice_fee_cny": null,
+          "official_openai_entitlement_tested": false,
+          "paid_delivery_verified": false
+        }
+      ],
+      "seller_explicitly_disclaims_multiplier_as_official_pro_entitlement": true,
+      "checkout_destination_host": "wzyp.cn",
+      "checkout_current_payment_and_sku_verification": null
+    },
+    {
+      "source_url": "https://chongpay.com/help",
+      "source_type": "seller_direct_help_center",
+      "observed_on": "2026-11-20",
+      "pdf_invoice_not_chinese_vat": true,
+      "actual_payee_legal_entity": null,
+      "valid_china_vat_issuer": null,
+      "cash_refund_tested": false
+    }
+  ],
+  "plus_procurement": {
+    "original_account_required": true,
+    "quantity": 1,
+    "months": 1,
+    "agency_upfront_fee_allowed": false,
+    "max_all_in_cny_including_valid_china_vat": 170,
+    "old_chongpay_plus_retail_139_not_refreshed": true,
+    "actual_wholesale_cost_cny": null,
+    "payment_extra_cny": null,
+    "vat_invoice_extra_cny": null,
+    "verified_all_in_cny": null,
+    "formal_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "chatgpt_web_codex_initial_api_key_separately_scoped": true,
+    "apple_session_ordinary_recharge_auto_binds_phone": false,
+    "number_control_days": null,
+    "failed_sms_cash_refund_tested": false,
+    "actual_sms_successes": 0
+  },
+  "priority_vendors_unrepriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay Plus"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_untouched": 258,
+  "historical_original_quotes_untouched": 126,
+  "payment_done": false,
+  "merchant_contacted": false,
+  "agency_application_submitted": false,
+  "credentials_submitted": false,
+  "sources": [
+    {
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-20",
+      "kind": "merchant_own_site"
+    },
+    {
+      "url": "https://chongpay.com/help",
+      "observed_on": "2026-11-20",
+      "kind": "merchant_help"
+    }
+  ]
+}

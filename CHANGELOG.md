@@ -1,3 +1,9 @@
+## 1.9.267 · 2026-11-20
+
+- 第259轮首次归档直接读取的ChongPay一方 https://chongpay.com/ 三款Pro卡充：Pro100 ¥729/件（5×）、Pro200 ¥1188/件（10×）、Pro500 ¥3299/件（25×），均为卖家质保30天标签。卖家明确这些倍数为供应商方案标识，不代表官方Pro真实权益/用量；网页自标2026-11-20价格更新但未验证该日发生同SKU调价、准确订阅月份或实付交付。
+- 商家 https://chongpay.com/help 将购买/付款/退款转向wzyp.cn，普通PDF Invoice不等同有效中国增值税发票。真实支付附费、税票税费、出票/收款法人、正式供货授权、质保及退款均null或未测；Plus¥139仅引用旧零售价不刷新。其他CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM无新可证上游进价。
+- 原号单件单月、零代理前置费、全部必需付款及有效中国VAT≤¥170已核真正Plus批发仍0，真实付款/税票验真/短信成功均0，独立Web/Codex/API首Key验证分开，普通代充、Apple及Session不自动绑号。仅追加r259 HTML/JSON、精确SHA256白名单、目录、总库最新入口、VERSION、构建指针与回归；前258轮报告及126条原始报价未变。未联系、付款、代理申请或交凭据。
+
 ## 1.9.266 · 2026-11-20
 
 - 第258轮首次直接归档OpenAI官方 https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation ：同一手机号用于首次生成API Key的账号短信验证总计最多3次；网页仅相对标记“上月更新”，不据此定11月20日生效或外推Codex桌面与ChatGPT网页场景。账号删除后号码移除不证明3次验证配额重置，零实际SMS成功。

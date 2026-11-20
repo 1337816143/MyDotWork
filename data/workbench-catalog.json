@@ -6040,6 +6040,28 @@
       "summary": "官方限制与商家自述不同证据等级；准确SKU结算、支付及税票费用null、无交易/税票/SMS通过实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r259-20261120",
+      "title": "GPT源头第259轮 · ChongPay Pro100/200/500挂牌与倍数",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r13.html",
+      "updatedAt": "2026-11-20",
+      "summary": "卖家直接展示Pro100¥729、Pro200¥1188、Pro500¥3299/件及5×/10×/25×供应商标记，不证明实际官方权益、批发或当日调价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r259-20261120-evidence",
+      "title": "第259轮 · ChongPay Pro零售SKU、真实全费及授权缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r13-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "准确商品、商家标签与观察日期分离；wzyp结算、支付费、有效VAT、授权null，实付/税票/SMS成功0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
