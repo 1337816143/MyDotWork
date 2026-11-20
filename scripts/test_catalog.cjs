@@ -2911,3 +2911,19 @@ assert.equal(r252.material_observations[1].actual_paid_total_cny,null);
 assert.equal(r252.procurement.verified_all_fees_with_valid_china_vat_cny,null);
 assert.equal(r252.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r252.payment_done,false);
+
+// R253: new subscription Pro500 listing and explicit non-invoice terms are distinct from 20x renewal.
+const c253=d.records.find(x=>x.id==='gpt-source-followup-r253-20261120'),e253=d.records.find(x=>x.id==='gpt-source-followup-r253-20261120-evidence');
+assert(c253&&e253&&c253.url.endsWith('supplier-followup-20261120-r07.html'));
+const r253=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r07-evidence.json'),'utf8'));
+assert.equal(r253.round,253);assert.equal(r253.site_version,'1.9.261');
+assert.equal(r253.observations[0].vendor_displayed_price_cny,3889);
+assert.equal(r253.observations[0].invoice_excluded_in_order_consent_vendor_claim,true);
+assert.equal(r253.observations[0].checkout_paid_cny,null);
+assert.equal(r253.observations[1].vendor_displayed_price_cny,1569);
+assert.equal(r253.observations[2].order_window_days_before_expiration,30);
+assert.equal(r253.observations[3].vendor_displayed_price_cny,179);
+assert.equal(r253.procurement.complete_verified_plus_all_in_price_cny,null);
+assert.equal(r253.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r253.phone_verification.sms_success_test_count,0);
+assert.equal(r253.payment_done,false);

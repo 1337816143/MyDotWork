@@ -5908,6 +5908,28 @@
       "summary": "数电票非正式样例、Plus单月¥160未付款价、商称普票附费0；实付成本和正规批发为null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r253-20261120",
+      "title": "GPT源头第253轮 · GETGPT Pro新订阅Pro500及不开票限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r07.html",
+      "updatedAt": "2026-11-20",
+      "summary": "首次直接核读新订阅Pro500（50x）¥3889/月及该表单明确不开票，Pro200 ¥1569为旧价；需完整Session，非已核Plus批发和官方会员实测，合格Plus上游0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r253-20261120-evidence",
+      "title": "第253轮 · 新订阅Pro500价签和无票规则证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r07-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "商家两次独立渲染取得准确Pro500¥3889与Pro200¥1569，表单无票、Session必需；原号Plus仍¥179，真实交易/票据/短信/批发授权未证。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -134,11 +134,11 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 537, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.252'
+    assert latest['version'] == '1.253'
     assert latest['date'] == '2026-11-20'
-    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r06.html'
-    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r06-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120-r05.html'
+    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r07.html'
+    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r07-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120-r06.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3101,6 +3101,22 @@ def validate_publications():
     assert r252['procurement']['verified_all_fees_with_valid_china_vat_cny'] is None
     assert r252['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r252['phone_verification']['actual_sms_successes'] == 0
+
+    # R253: seller Pro new-subscription no-invoice conditions are not Plus wholesale.
+    r253 = json.loads((ROOT/'dist/research/2026-11-20/supplier-followup-20261120-r07-evidence.json').read_bytes())
+    assert by_id['gpt-source-followup-r253-20261120']['url'].endswith('supplier-followup-20261120-r07.html')
+    assert by_id['gpt-source-followup-r253-20261120-evidence']['url'].endswith('supplier-followup-20261120-r07-evidence.json')
+    assert r253['round'] == 253 and r253['site_version'] == '1.9.261'
+    assert r253['observations'][0]['vendor_displayed_price_cny'] == 3889
+    assert r253['observations'][0]['invoice_excluded_in_order_consent_vendor_claim'] is True
+    assert r253['observations'][0]['checkout_paid_cny'] is None
+    assert r253['observations'][1]['vendor_displayed_price_cny'] == 1569
+    assert r253['observations'][2]['order_window_days_before_expiration'] == 30
+    assert r253['observations'][3]['vendor_displayed_price_cny'] == 179
+    assert r253['procurement']['complete_verified_plus_all_in_price_cny'] is None
+    assert r253['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r253['phone_verification']['sms_success_test_count'] == 0
+    assert r253['payment_done'] is False and r253['credentials_submitted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

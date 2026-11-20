@@ -1,0 +1,148 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 253,
+  "site_version": "1.9.261",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r06.html",
+  "new_evidence": "First direct first-party observation of GETGPT Pro separate new-subscription purchase-form Pro500 50x CNY3889 per account billing month and its explicit no-invoice restriction, not previously archived as this SKU. Pro200 20x CNY1569 price previously archived; do not infer new price or new service launch.",
+  "observations": [
+    {
+      "seller": "GETGPT Pro",
+      "url": "https://getgpt.pro/purchase-gptpro?tier=gptpro",
+      "read_on": "2026-11-20",
+      "method": "independent_live_JS_rendered_read_x2_HTTP_200",
+      "exact_sku": "new subscription Pro 500 (50x)",
+      "unit": "CNY/own_account/billing_month",
+      "vendor_displayed_price_cny": 3889,
+      "vendor_crossed_out_price_cny": 3999,
+      "marketing_codex_multiplier_relative_plus": 50,
+      "requires_full_logged_in_chatgpt_session_or_token": true,
+      "invoice_excluded_in_order_consent_vendor_claim": true,
+      "checkout_paid_cny": null,
+      "payment_addon_cny": null,
+      "china_vat_invoice_verified": false,
+      "real_official_pro500_account_entitlement_verified": false,
+      "wholesale_unit_cost_cny": null,
+      "authorized_reseller_verified": false,
+      "collector_legal_entity_verified": false,
+      "fulfillment_tested": false,
+      "rule_effective_date": null
+    },
+    {
+      "seller": "GETGPT Pro",
+      "url": "https://getgpt.pro/purchase-gptpro?tier=gptpro",
+      "read_on": "2026-11-20",
+      "method": "independent_live_JS_rendered_read_x2_HTTP_200",
+      "exact_sku": "new subscription Pro 200 (20x)",
+      "unit": "CNY/own_account/billing_month",
+      "vendor_displayed_price_cny": 1569,
+      "vendor_crossed_out_price_cny": 1649,
+      "price_value_previously_archived": true,
+      "requires_full_session_or_token": true,
+      "invoice_excluded_in_order_consent_vendor_claim": true,
+      "different_from_old_20x_renewal": true,
+      "checkout_paid_cny": null,
+      "real_official_entitlement_verified": false
+    },
+    {
+      "seller": "GETGPT Pro",
+      "url": "https://getgpt.pro/gpt20-renew",
+      "read_on": "2026-11-20",
+      "method": "independent_live_JS_rendered_read_x2_HTTP_200",
+      "exact_sku": "existing active Pro 20x renewal",
+      "vendor_displayed_price_cny_per_billing_month": 1569,
+      "order_window_days_before_expiration": 30,
+      "invoice_excluded_vendor_claim": true,
+      "archived_r251_conditions_unchanged": true,
+      "cached_index_25days_or_closed_ordering_unconfirmed": true
+    },
+    {
+      "seller": "GETGPT Pro",
+      "url": "https://getgpt.pro/purchase",
+      "read_on": "2026-11-20",
+      "method": "live_rendered_HTTP_200",
+      "exact_sku": "own account Plus new subscription",
+      "unit": "CNY/own_account/month",
+      "vendor_displayed_price_cny": 179,
+      "old_price_unchanged": true,
+      "order_contact_phone_not_openai_binding": true,
+      "actual_payment_total_cny": null,
+      "invoice_verified": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://getgpt.pro/purchase-gptpro?tier=gptpro",
+      "observed_on": "2026-11-20",
+      "type": "merchant_product_form_dynamically_rendered"
+    },
+    {
+      "url": "https://getgpt.pro/gptpro",
+      "observed_on": "2026-11-20",
+      "type": "merchant_pro_new_vs_existing_renewal"
+    },
+    {
+      "url": "https://getgpt.pro/price",
+      "observed_on": "2026-11-20",
+      "type": "merchant_price_catalog"
+    },
+    {
+      "url": "https://getgpt.pro/gpt20-renew",
+      "observed_on": "2026-11-20",
+      "type": "merchant_existing_renewal"
+    },
+    {
+      "url": "https://getgpt.pro/purchase",
+      "observed_on": "2026-11-20",
+      "type": "merchant_plus_price"
+    },
+    {
+      "url": "https://getgpt.pro/blog/codex-phone-verification",
+      "observed_on": "2026-11-20",
+      "page_self_marked_as_of": "2026-11-15",
+      "type": "merchant_sms_marketing_not_verified"
+    }
+  ],
+  "previous_candidates_no_confirmed_new_plus_wholesale": [
+    "CatFK unavailable exact SKU",
+    "小久 previous CNY110 retail not confirmed wholesale",
+    "Morimm previous CNY125 iOS retail",
+    "引路鲸 previous CNY3000 upfront agency",
+    "ChatShare shared accounts not own",
+    "GetVIP VAT fees/authority unknown",
+    "wind89 previous CNY139.99+seller-claimed invoice CNY10 but extra fees unknown",
+    "PAYPRM VAT tax extra",
+    "ChongPay previous Plus CNY139 and Codex SMS CNY20/25days"
+  ],
+  "procurement": {
+    "criteria": "Plus own account; one unit one month; zero upfront agency fee; all necessary payment and valid China VAT <= CNY170",
+    "new_pro_SKUs_are_not_plus_wholesale": true,
+    "plus_vendor_retail_cny": 179,
+    "complete_verified_plus_all_in_price_cny": null,
+    "authorized_wholesale_unit_cost_cny": null,
+    "legal_vat_issuer_verified": null,
+    "real_payment_collector_verified": null,
+    "formal_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "web_codex_desktop_initial_api_key_distinct": true,
+    "seller_one_time_sms_cny_for_paid_getgpt_customers": 10,
+    "verified_number_holding_period_days": null,
+    "verified_failure_original_payment_refund": false,
+    "sms_success_test_count": 0,
+    "session_token_is_sensitive_login_credential": true,
+    "apple_or_regular_recharge_auto_binds_phone": false
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "old_252_reports_unchanged": true,
+  "old_126_price_rows_unchanged": true,
+  "merchant_contacted": false,
+  "application_submitted": false,
+  "payment_done": false,
+  "credentials_submitted": false
+}
