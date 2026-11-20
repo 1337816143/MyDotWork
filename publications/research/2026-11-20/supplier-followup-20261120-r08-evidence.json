@@ -1,0 +1,150 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 254,
+  "site_version": "1.9.262",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r07.html",
+  "observation_note": "New first-party reading of 0xzheng Codex first-login US SIM SMS CDK CNY8 retail item; R211 earlier documented item/2 but price was unknown. Not proven new price change.",
+  "observations": [
+    {
+      "seller": "0xzheng",
+      "url": "https://0xzheng.com/item/2",
+      "homepage_url": "https://0xzheng.com/",
+      "read_on": "2026-11-20",
+      "exact_sku": "Codex 接码 美国实卡 CDK; Codex first-login SMS only",
+      "merchant_price_cny_per_cdk_item": 8,
+      "price_type": "vendor retail display, not paid checkout",
+      "merchant_claim_real_us_sim": true,
+      "merchant_claim_stock": "充足/库存爆棚",
+      "merchant_claim_sms_received_deducts_use": true,
+      "merchant_claim_change_number_on_failure": true,
+      "chatgpt_account_registration_supported": false,
+      "chatgpt_web_login_supported": false,
+      "first_api_key_supported": null,
+      "merchant_no_refund_after_sale_except_invalid_cdk": true,
+      "failed_sms_original_payment_refund_guaranteed": false,
+      "successful_sms_uses_per_cdk": null,
+      "payment_addon_cny": null,
+      "checkout_total_cny": null,
+      "number_holding_days": null,
+      "merchant_real_sim_claim_independently_verified": false,
+      "real_sms_succeeded": false,
+      "actual_refund_tested": false,
+      "rule_effective_date": null,
+      "prior_round211_price_cny": null
+    },
+    {
+      "seller": "0xzheng",
+      "url": "https://0xzheng.com/item/1",
+      "read_on": "2026-11-20",
+      "exact_sku": "own-account Philippines Plus CDK",
+      "vendor_homepage_retail_price_cny_per_cdk": 118,
+      "merchant_claim_redeem_session_or_token": true,
+      "actual_paid_total_cny": null,
+      "vat_invoice_verified": false,
+      "wholesale_authorization_verified": false
+    },
+    {
+      "seller": "AICZ",
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "read_on": "2026-11-20",
+      "exact_sku": "Google channel Plus CDK",
+      "price_cny_per_unit": 126,
+      "latest_merchant_self_label": "2026-11-20 14:31",
+      "latest_visible_status": "暂不可购买",
+      "earlier_same_day_available_label": true,
+      "stock_status_historically_volatile": true,
+      "price_change_confirmed": false,
+      "checkout_verified": false
+    },
+    {
+      "seller": "Hype",
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "read_on": "2026-11-20",
+      "exact_sku": "Codex US SIM",
+      "retail_price_cny_per_number": 12,
+      "seller_stock_status": "已售罄",
+      "same_condition_previously_archived": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://0xzheng.com/",
+      "read_on": "2026-11-20",
+      "source_type": "seller_first_party"
+    },
+    {
+      "url": "https://0xzheng.com/item/2",
+      "read_on": "2026-11-20",
+      "source_type": "seller_first_party"
+    },
+    {
+      "url": "https://0xzheng.com/help/codex-sms",
+      "read_on": "2026-11-20",
+      "source_type": "seller_first_party"
+    },
+    {
+      "url": "https://0xzheng.com/item/1",
+      "read_on": "2026-11-20",
+      "source_type": "seller_first_party"
+    },
+    {
+      "url": "https://aicz.vip/product/chatgpt-plus-google-52-63",
+      "read_on": "2026-11-20",
+      "source_type": "seller_first_party"
+    },
+    {
+      "url": "https://hypeai.cc/p/catalog-220-1",
+      "read_on": "2026-11-20",
+      "source_type": "seller_first_party"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "read_on": "2026-11-20",
+      "source_type": "official_help"
+    }
+  ],
+  "priority_queue_without_confirmed_wholesale_change": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "procurement": {
+    "target": "own account Plus; 1 unit/1 month; no agency entrance fee; all payments and valid China VAT invoice <= CNY170",
+    "new_sms_sku_is_not_plus_wholesale": true,
+    "plus_118_sku_retail_not_wholesale": true,
+    "verified_plus_all_in_cny": null,
+    "wholesale_unit_price_cny": null,
+    "valid_chinese_vat_invoice_issuer": null,
+    "real_legal_payment_collector": null,
+    "payment_and_invoice_fee_cny": null,
+    "formal_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "chatgpt_web_codex_app_first_api_key_distinct": true,
+    "session_token_is_password_level_credential": true,
+    "regular_recharge_or_apple_not_auto_phone_binding": true,
+    "verified_number_holding_days": null,
+    "verified_original_cash_refund": false,
+    "actual_sms_successes": 0
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_chinese_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "historic_253_reports_preserved": true,
+  "historic_126_quotes_preserved": true,
+  "payment_done": false,
+  "credentials_submitted": false,
+  "application_submitted": false,
+  "merchant_contacted": false
+}

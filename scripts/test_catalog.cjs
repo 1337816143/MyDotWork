@@ -2927,3 +2927,18 @@ assert.equal(r253.procurement.complete_verified_plus_all_in_price_cny,null);
 assert.equal(r253.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r253.phone_verification.sms_success_test_count,0);
 assert.equal(r253.payment_done,false);
+
+// R254: accurately priced vendor Codex SMS package is not a verified refund, Plus wholesale or SMS success.
+const c254=d.records.find(x=>x.id==='gpt-source-followup-r254-20261120'),e254=d.records.find(x=>x.id==='gpt-source-followup-r254-20261120-evidence');
+assert(c254&&e254&&c254.url.endsWith('supplier-followup-20261120-r08.html'));
+const r254=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r08-evidence.json'),'utf8'));
+assert.equal(r254.round,254);assert.equal(r254.site_version,'1.9.262');
+assert.equal(r254.observations[0].merchant_price_cny_per_cdk_item,8);
+assert.equal(r254.observations[0].checkout_total_cny,null);
+assert.equal(r254.observations[0].number_holding_days,null);
+assert.equal(r254.observations[0].merchant_no_refund_after_sale_except_invalid_cdk,true);
+assert.equal(r254.observations[1].vendor_homepage_retail_price_cny_per_cdk,118);
+assert.equal(r254.procurement.verified_plus_all_in_cny,null);
+assert.equal(r254.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r254.phone_verification.actual_sms_successes,0);
+assert.equal(r254.payment_done,false);
