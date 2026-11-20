@@ -5974,6 +5974,28 @@
       "summary": "Plus¥160旧价、Pro100/200新补档价独立，Pro500报价null；Plus兑换维护属于旧状态，真实发票、支付和SMS实测均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r256-20261120",
+      "title": "GPT源头第256轮 · GETGPT Pro到账与售后条款补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r10.html",
+      "updatedAt": "2026-11-20",
+      "summary": "首次核读商家自标11月19日更新FAQ：已发卡不等于会员到账、不承诺固定到账分钟；24小时首次激活要求和退款排除范围属于商称，非政策生效日或实测。Plus¥179旧价，真批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r256-20261120-evidence",
+      "title": "第256轮 · 商家履约状态及售后边界JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r10-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "两条11月19日商家更新FAQ及Plus营销页原URL，24h激活/退款条件与2分钟宣传区分；真实结算、有效税票、SMS成功与实际退款均无。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

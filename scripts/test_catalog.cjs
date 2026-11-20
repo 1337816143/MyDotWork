@@ -2956,3 +2956,19 @@ assert.equal(r255.plus_procurement.verified_all_in_cny,null);
 assert.equal(r255.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r255.phone_verification.actual_sms_successes,0);
 assert.equal(r255.payment_done,false);
+
+ // R256: first-party Nov 19 merchant FAQ refines delivery/refund expectations, not a confirmed price change or tested transaction.
+ const c256=d.records.find(x=>x.id==='gpt-source-followup-r256-20261120'),e256=d.records.find(x=>x.id==='gpt-source-followup-r256-20261120-evidence');
+ assert(c256&&e256&&c256.url.endsWith('supplier-followup-20261120-r10.html'));
+ const r256=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r10-evidence.json'),'utf8'));
+ assert.equal(r256.round,256);assert.equal(r256.site_version,'1.9.264');
+ assert.equal(r256.observations[0].merchant_disclaims_fixed_delivery_minutes,true);
+ assert.equal(r256.observations[0].actual_delivery_minutes_verified,null);
+ assert.equal(r256.observations[1].merchant_says_first_code_activation_or_validation_within_hours,24);
+ assert.equal(r256.observations[1].actual_cash_route_refund_verified,false);
+ assert.equal(r256.observations[2].seller_landing_list_cny_per_account_month,179);
+ assert.equal(r256.observations[2].price_change_verified,false);
+ assert.equal(r256.plus_procurement.verified_all_in_cny,null);
+ assert.equal(r256.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+ assert.equal(r256.phone_verification.actual_sms_successes,0);
+ assert.equal(r256.payment_done,false);
