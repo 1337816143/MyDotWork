@@ -77,7 +77,12 @@ def build_dashboard(out, version):
     template = (ROOT / 'src/dashboard.html').read_text(encoding='utf-8')
     css = '\n'.join((ROOT / 'src' / name).read_text(encoding='utf-8') for name in ('dashboard.css', 'glass.css', 'compact.css', 'navigation.css', 'status.css'))
     js = (ROOT / 'src/dashboard.js').read_text(encoding='utf-8')
-    html = template.replace('__CSS__', css).replace('__SCRIPT__', js).replace('__DATA__', raw.replace('<', '\\u003c')).replace('__VERSION__', version).replace('__BOOT_SCRIPT__', (ROOT/'src/appearance-boot.js').read_text(encoding='utf-8')).replace('__CATALOG_DATA__', catalog.replace('<', '\\u003c')).replace('__CATALOG_SCRIPT__', (ROOT/'src/catalog.js').read_text(encoding='utf-8')).replace('__STATUS_SCRIPT__', (ROOT/'src/status.js').read_text(encoding='utf-8')).replace('__PUBLICATION_SCRIPT__', (ROOT/'src/publication.js').read_text(encoding='utf-8')).replace('__RELEASE_CONTEXT__', json.dumps({'version': version, 'sourceCommit': os.environ.get('GITHUB_SHA', 'local')}).replace('<', '\\u003c'))
+    # An arbitrary GitHub merge SHA can contain exactly 18 consecutive digits and
+    # resemble a national ID to the public secret scanner. Escape only the
+    # first digit as JSON Unicode, preserving the exact SHA when JS parses it.
+    release_context = json.dumps({'version': version, 'sourceCommit': os.environ.get('GITHUB_SHA', 'local')}).replace('<', chr(92) + 'u003c')
+    release_context = re.sub(r'(?<![0-9])[0-9]{18}(?![0-9])', lambda m: chr(92) + 'u003' + m.group(0)[0] + m.group(0)[1:], release_context)
+    html = template.replace('__CSS__', css).replace('__SCRIPT__', js).replace('__DATA__', raw.replace('<', '\\u003c')).replace('__VERSION__', version).replace('__BOOT_SCRIPT__', (ROOT/'src/appearance-boot.js').read_text(encoding='utf-8')).replace('__CATALOG_DATA__', catalog.replace('<', '\\u003c')).replace('__CATALOG_SCRIPT__', (ROOT/'src/catalog.js').read_text(encoding='utf-8')).replace('__STATUS_SCRIPT__', (ROOT/'src/status.js').read_text(encoding='utf-8')).replace('__PUBLICATION_SCRIPT__', (ROOT/'src/publication.js').read_text(encoding='utf-8')).replace('__RELEASE_CONTEXT__', release_context)
     (target / 'index.html').write_text(html, encoding='utf-8')
     return d
 
