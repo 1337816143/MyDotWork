@@ -6172,6 +6172,28 @@
       "summary": "官方支持论坛与帮助页不同证据级别；卖家旧指南观察日期、账号资格和独立SMS边界，未知税票与附费null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r265-20261121",
+      "title": "GPT源头第265轮 · 两家原号Plus的开票主体与零售条件",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r06.html",
+      "updatedAt": "2026-11-21",
+      "summary": "PayForGPT本人原号Plus ¥160并自称花衍科技开中国增值税数电普票0加点；瑶瑶Plus ¥129称可开普票但费用和出票主体未明。都仅是零售候选、非已核真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r265-20261121-evidence",
+      "title": "第265轮 · PayForGPT与瑶瑶SKU、开票和真实批发缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r06-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "保留准确SKU、币种、票据主体商家声明、未知费null、非实测及SMS独立适用边界；严格合格真正Plus批发0家。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
