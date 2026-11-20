@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 557, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 559, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.262'
+    assert latest['version'] == '1.263'
     assert latest['date'] == '2026-11-21'
-    assert latest['path'] == 'research/2026-11-21/supplier-followup-20261121-r03.html'
-    assert latest['dataPath'] == 'research/2026-11-21/supplier-followup-20261121-r03-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-21/supplier-followup-20261121-r02.html'
+    assert latest['path'] == 'research/2026-11-21/supplier-followup-20261121-r04.html'
+    assert latest['dataPath'] == 'research/2026-11-21/supplier-followup-20261121-r04-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-21/supplier-followup-20261121-r03.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3250,6 +3250,21 @@ def validate_publications():
     assert r262['plus_criteria']['verified_true_wholesale_upstreams'] == 0
     assert r262['plus_criteria']['actual_sms_successes'] == 0
     assert not r262['payment_done'] and not r262['credentials_submitted']
+
+    # R263: exact seller SKUs and disputed invoice wording, not actual payment or verified VAT.
+    r263 = json.loads((ROOT/'dist/research/2026-11-21/supplier-followup-20261121-r04-evidence.json').read_bytes())
+    assert by_id['gpt-source-followup-r263-20261121']['url'].endswith('supplier-followup-20261121-r04.html')
+    assert by_id['gpt-source-followup-r263-20261121-evidence']['url'].endswith('supplier-followup-20261121-r04-evidence.json')
+    assert r263['round'] == 263 and r263['site_version'] == '1.9.271'
+    assert [x['sku'] for x in r263['first_party_observations']] == ['G49307465','G34816878','G49852965']
+    assert [x['one_card_cny'] for x in r263['first_party_observations']] == [105.87,108.99,123]
+    assert [x['merchant_claim_invoice_extra_cny'] for x in r263['first_party_observations']] == [35,50,None]
+    assert r263['first_party_observations'][0]['stock'] == 'sold_out'
+    assert r263['merchant_shop']['conflicts_with_two_product_invoice_addon_claims'] is True
+    assert r263['merchant_shop']['payment_fee_cny'] is None
+    assert r263['qualification']['verified_true_wholesale_upstreams'] == 0
+    assert r263['qualification']['real_sms_successes'] == 0
+    assert not r263['payment_done'] and not r263['credentials_submitted']
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
