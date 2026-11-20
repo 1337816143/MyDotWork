@@ -2985,3 +2985,15 @@ assert.equal(r257.plus_procurement.verified_all_in_cny,null);
 assert.equal(r257.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r257.phone_verification.actual_sms_successes,0);
 assert.equal(r257.payment_done,false);
+
+// R258: official API phone cap is not an SMS success or an invoiced wholesale claim.
+const c258=d.records.find(x=>x.id==='gpt-source-followup-r258-20261120'),e258=d.records.find(x=>x.id==='gpt-source-followup-r258-20261120-evidence');
+assert(c258&&e258&&c258.url.endsWith('supplier-followup-20261120-r12.html'));
+const r258=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r12-evidence.json'),'utf8'));
+assert.equal(r258.round,258);assert.equal(r258.site_version,'1.9.266');
+assert.equal(r258.observations[0].same_phone_total_verifications_max,3);
+assert.equal(r258.observations[0].same_cap_applies_to_codex_verified,null);
+assert.equal(r258.observations[1].actual_payee_legal_entity_verified,null);
+assert.equal(r258.observations[1].seller_distinguishes_pdf_invoice_from_china_vat,true);
+assert.equal(r258.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r258.phone_verification.actual_sms_successes,0);

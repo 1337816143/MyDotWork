@@ -1,0 +1,107 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 258,
+  "site_version": "1.9.266",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r11.html",
+  "finding": "Official OpenAI API first-key SMS verification same-phone three-use cap; seller ChongPay discloses separate purchasing-store payment, refund and invoice boundaries. These are first-read older/undated rules, not a November 20 repricing or actual transaction.",
+  "observations": [
+    {
+      "subject": "Official OpenAI initial API key phone verification",
+      "source_url": "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+      "source_type": "official_help_center",
+      "observed_on": "2026-11-20",
+      "source_exact_policy_effective_date": null,
+      "source_self_updated_label": "last month (relative, not effective date)",
+      "verified_scope": "Phone verification required on first API key generation for separate OpenAI accounts",
+      "same_phone_total_verifications_max": 3,
+      "account_count_example": 3,
+      "official_says_no_exceptions_to_cap": true,
+      "deleted_consumer_account_associated_phone_removal_days": 30,
+      "quota_resets_after_deletion_verified": null,
+      "same_cap_applies_to_codex_verified": null,
+      "same_cap_applies_to_chatgpt_web_verified": null,
+      "actual_sms_successes": 0
+    },
+    {
+      "subject": "ChongPay brand-site versus checkout-store and invoices",
+      "source_url": "https://chongpay.com/help",
+      "source_type": "seller_self_published_help_center",
+      "observed_on": "2026-11-20",
+      "policy_effective_date": null,
+      "marketing_help_site_separate_from_checkout": true,
+      "actual_order_checkout_and_support_target": "https://wzyp.cn",
+      "seller_distinguishes_pdf_invoice_from_china_vat": true,
+      "vat_invoice_issuer_verified": null,
+      "actual_payee_legal_entity_verified": null,
+      "merchant_directs_refund_amount_and_route_checks_to_store": true,
+      "cash_refund_tested": false,
+      "checkout_total_cny": null,
+      "listed_plus_price_newly_verified_cny": null,
+      "price_change_verified": false,
+      "proven_bulk_authorization": false
+    }
+  ],
+  "prior_offer_reference": {
+    "seller": "ChongPay",
+    "old_archived_plus_retail_cny_per_account_month": 139,
+    "old_round": 206,
+    "old_price_not_refreshed": true
+  },
+  "plus_procurement": {
+    "required_account": "existing original account",
+    "quantity": 1,
+    "duration_months": 1,
+    "agency_upfront_fee_allowed": false,
+    "max_all_in_cny_including_valid_chinese_vat": 170,
+    "verified_unit_wholesale_cny": null,
+    "verified_all_in_cny": null,
+    "payment_extra_cny": null,
+    "invoice_extra_cny": null,
+    "verified_formal_resale_authorization": false
+  },
+  "phone_verification": {
+    "first_api_key_scope_separate_from_chatgpt_web_and_codex": true,
+    "first_api_key_same_phone_limit": 3,
+    "apple_or_session_delivery_auto_binds_phone": false,
+    "number_control_duration_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "actual_sms_successes": 0
+  },
+  "priority_vendors_unrepriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_untouched": 257,
+  "historical_original_quotes_untouched": 126,
+  "payment_done": false,
+  "merchant_contacted": false,
+  "agency_application_submitted": false,
+  "credentials_submitted": false,
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation",
+      "read_on": "2026-11-20",
+      "kind": "official_first_party"
+    },
+    {
+      "url": "https://chongpay.com/help",
+      "read_on": "2026-11-20",
+      "kind": "merchant_first_party_claim"
+    }
+  ]
+}

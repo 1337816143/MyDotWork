@@ -134,11 +134,11 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 547, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.257'
+    assert latest['version'] == '1.258'
     assert latest['date'] == '2026-11-20'
-    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r11.html'
-    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r11-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120-r10.html'
+    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r12.html'
+    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r12-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120-r11.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3179,6 +3179,20 @@ def validate_publications():
     assert r257['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r257['phone_verification']['actual_sms_successes'] == 0
     assert r257['payment_done'] is False and r257['credentials_submitted'] is False
+
+    # R258: first-API-key phone cap is distinct from Codex/web SMS and seller invoicing claims.
+    r258 = json.loads((ROOT/'dist/research/2026-11-20/supplier-followup-20261120-r12-evidence.json').read_bytes())
+    assert by_id['gpt-source-followup-r258-20261120']['url'].endswith('supplier-followup-20261120-r12.html')
+    assert by_id['gpt-source-followup-r258-20261120-evidence']['url'].endswith('supplier-followup-20261120-r12-evidence.json')
+    assert r258['round'] == 258 and r258['site_version'] == '1.9.266'
+    assert r258['observations'][0]['same_phone_total_verifications_max'] == 3
+    assert r258['observations'][0]['same_cap_applies_to_codex_verified'] is None
+    assert r258['observations'][1]['seller_distinguishes_pdf_invoice_from_china_vat'] is True
+    assert r258['observations'][1]['actual_payee_legal_entity_verified'] is None
+    assert r258['plus_procurement']['verified_all_in_cny'] is None
+    assert r258['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r258['phone_verification']['actual_sms_successes'] == 0
+    assert r258['payment_done'] is False and r258['credentials_submitted'] is False
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 
