@@ -6120,7 +6120,7 @@
     },
     {
       "id": "gpt-source-followup-r262-20261121-evidence",
-      "title": "第262轮 · wind89 SKU及接码原链结构化数据",
+      "title": "第262轮 · wind89 SKU、接码原链与上游缺口 JSON",
       "type": "dataset",
       "task": "project-1",
       "url": "../research/2026-11-21/supplier-followup-20261121-r03-evidence.json",
