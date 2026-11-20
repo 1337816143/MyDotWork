@@ -6018,6 +6018,28 @@
       "summary": "OpenAI原始URL、10月29日公布日与11月20日观察日、旧商家SKU和未知费用null、零交易/税票/SMS测试。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r258-20261120",
+      "title": "GPT源头第258轮 · 官方首次API Key同号3次与ChongPay开票责任",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r12.html",
+      "updatedAt": "2026-11-20",
+      "summary": "官方首次API Key验证码同手机号最多3次、不可外推Codex/网页；ChongPay展示站和wzyp店铺订单责任区分，Plus旧价不刷新，真正已核批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r258-20261120-evidence",
+      "title": "第258轮 · API手机号次数与ChongPay订单/发票责任证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r12-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "官方限制与商家自述不同证据等级；准确SKU结算、支付及税票费用null、无交易/税票/SMS通过实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -1,3 +1,10 @@
+## 1.9.266 · 2026-11-20
+
+- 第258轮首次直接归档OpenAI官方 https://help.openai.com/en/articles/8983031-how-many-times-can-i-use-the-same-phone-number-to-complete-the-phone-verification-associated-with-an-openai-accounts-first-api-key-generation ：同一手机号用于首次生成API Key的账号短信验证总计最多3次；网页仅相对标记“上月更新”，不据此定11月20日生效或外推Codex桌面与ChatGPT网页场景。账号删除后号码移除不证明3次验证配额重置，零实际SMS成功。
+- 首次直接归档ChongPay一方 https://chongpay.com/help ：品牌站仅产品与帮助，实际下单、支付、退款与票据应由其所链wzyp.cn订单店核；卖家明确PDF Invoice不等同中国增值税票、退款金额及路径需按订单确认。真实收款/合法出票法人、付款附费、有效VAT、正式授权、退款履约仍null或未证。这是补档原页面声明，非今天的改价/改规；ChongPay原号Plus历史零售¥139不刷新。
+- 十家既有重点候选未得真正单件批发、零代理前置、全部付款和有效中国VAT≤¥170的闭环新证据；已核真正Plus批发0家，实际付款/有效税票验真/SMS成功各0。手机号用途分开，普通充值、Apple或Session交付不等于自动绑号。
+- 只追加r258 HTML/JSON、SHA256精确发布白名单、project-1目录、总库最新入口、VERSION、发布指针及断言；前257轮历史及126条旧报价不改。无商家联系、申请代理、付款、凭据提交。
+
 ## 1.9.265 · 2026-11-20
 
 - 第257轮首次将OpenAI一方2026-10-29正式公告 https://help.openai.com/en/articles/6825453-chatgpt-release-notes 与当前分档FAQ https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers 对照归档：Pro100和Pro500包含的Work/Codex用量各为本次调整前2倍；Pro200取消9月29日邮件所预告降额，旧低额度人群翻倍至旧高额度，旧高额度人群保持原额度。官方更改日期为2026-10-29、项目实际阅读2026-11-20；不写成当日政策生效或商家调价。Plus用量未改；Pro100/500 Chat中每周GPT-6 Pro消息上限与Work/Codex调整分别计算，Pro200低消息上限对齐。绝对Work/Codex额度为null，没有用户账单实测。
