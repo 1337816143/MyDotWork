@@ -3011,3 +3011,17 @@ assert.equal(r259.observations[1].valid_china_vat_issuer,null);
 assert.equal(r259.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r259.phone_verification.actual_sms_successes,0);
 assert.equal(r259.payment_done,false);
+
+// R260: first-read Pro monthly labels and Pro invoice terms are seller claims, not qualifying wholesale.
+const c260=d.records.find(x=>x.id==='gpt-source-followup-r260-20261121'),e260=d.records.find(x=>x.id==='gpt-source-followup-r260-20261121-evidence');
+assert(c260&&e260&&c260.url.endsWith('supplier-followup-20261121.html'));
+const r260=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-21/supplier-followup-20261121-evidence.json'),'utf8'));
+assert.equal(r260.round,260);assert.equal(r260.site_version,'1.9.268');
+assert.deepEqual(r260.observations[0].sku.map(x=>x.listed_cny_per_account_month),[710,1230,3380]);
+assert.equal(r260.observations[0].same_sku_repricing_verified,false);
+assert.equal(r260.observations[1].seller_claim_pro_invoice_extra_cny,50);
+assert.equal(r260.observations[1].invoice_issuer_legal_entity,null);
+assert.equal(r260.plus_procurement.verified_all_in_cny,null);
+assert.equal(r260.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r260.phone_verification.actual_sms_successes,0);
+assert.equal(r260.payment_done,false);

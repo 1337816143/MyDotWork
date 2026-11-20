@@ -6062,6 +6062,28 @@
       "summary": "准确商品、商家标签与观察日期分离；wzyp结算、支付费、有效VAT、授权null，实付/税票/SMS成功0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r260-20261121",
+      "title": "GPT源头第260轮 · UpPlusPro Pro月价及电子普票限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121.html",
+      "updatedAt": "2026-11-21",
+      "summary": "一方页面首次补档Pro100¥710、Pro200¥1230、Pro500¥3380/月；商称Pro电子普票+¥50，真实出票、全费和供货授权未核，真Plus批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r260-20261121-evidence",
+      "title": "第260轮 · UpPlusPro Pro SKU／开票及Session缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "准确Pro三档人民币月价、票费商称与5工作日出票条件；所有支付附费和真实有效税票均null／未证、无交易和SMS验证实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
