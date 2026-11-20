@@ -5952,6 +5952,28 @@
       "summary": "准确¥8/份商品、¥118独立Plus、AICZ库存标签及Hype售罄一方原URL；未知附费/号码期限和成功结果均null。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r255-20261120",
+      "title": "GPT源头第255轮 · ChatShare.info Pro100／200月价补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r09.html",
+      "updatedAt": "2026-11-20",
+      "summary": "一方10月29日公告补档Pro100 ¥800/月、Pro200 ¥1400/月、Pro500需询价；非今日调价或已核Plus批发，出票主体与履约未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r255-20261120-evidence",
+      "title": "第255轮 · ChatShare.info独立Pro价签、发票与维护边界",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r09-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "Plus¥160旧价、Pro100/200新补档价独立，Pro500报价null；Plus兑换维护属于旧状态，真实发票、支付和SMS实测均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -2942,3 +2942,17 @@ assert.equal(r254.procurement.verified_plus_all_in_cny,null);
 assert.equal(r254.qualification_totals.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r254.phone_verification.actual_sms_successes,0);
 assert.equal(r254.payment_done,false);
+
+// R255: first-party Pro prices are not eligible Plus wholesale or tested checkout.
+const c255=d.records.find(x=>x.id==='gpt-source-followup-r255-20261120'),e255=d.records.find(x=>x.id==='gpt-source-followup-r255-20261120-evidence');
+assert(c255&&e255&&c255.url.endsWith('supplier-followup-20261120-r09.html'));
+const r255=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r09-evidence.json'),'utf8'));
+assert.equal(r255.round,255);assert.equal(r255.site_version,'1.9.263');
+assert.equal(r255.observations[0].seller_listed_cny_per_account_month,800);
+assert.equal(r255.observations[1].seller_listed_cny_per_account_month,1400);
+assert.equal(r255.observations[2].seller_listed_cny_per_account_month,null);
+assert.equal(r255.observations[3].already_archived,true);
+assert.equal(r255.plus_procurement.verified_all_in_cny,null);
+assert.equal(r255.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r255.phone_verification.actual_sms_successes,0);
+assert.equal(r255.payment_done,false);

@@ -1,0 +1,140 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 255,
+  "site_version": "1.9.263",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r08.html",
+  "finding": "Newly archived first-party Pro tier prices dated 2026-10-29. No evidence prices changed on observation date 2026-11-20, no proven wholesale.",
+  "observations": [
+    {
+      "vendor": "ChatShare.info",
+      "source_url": "https://chatshare.info/info/20261029-pro-plans-and-models.html",
+      "observed_on": "2026-11-20",
+      "seller_article_date": "2026-10-29",
+      "source_type": "merchant_first_party",
+      "paid_checkout_cny": null,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "valid_china_vat_verified": false,
+      "official_subscription_delivered_verified": false,
+      "formal_resale_authorization_verified": false,
+      "exact_sku": "ChatGPT Pro100 top-up",
+      "seller_listed_cny_per_account_month": 800,
+      "seller_claim_official_usd_tier": 100
+    },
+    {
+      "vendor": "ChatShare.info",
+      "source_url": "https://chatshare.info/info/20261029-pro-plans-and-models.html",
+      "observed_on": "2026-11-20",
+      "seller_article_date": "2026-10-29",
+      "source_type": "merchant_first_party",
+      "paid_checkout_cny": null,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "valid_china_vat_verified": false,
+      "official_subscription_delivered_verified": false,
+      "formal_resale_authorization_verified": false,
+      "exact_sku": "ChatGPT Pro200 top-up",
+      "seller_listed_cny_per_account_month": 1400,
+      "seller_claim_official_usd_tier": 200
+    },
+    {
+      "vendor": "ChatShare.info",
+      "source_url": "https://chatshare.info/info/20261029-pro-plans-and-models.html",
+      "observed_on": "2026-11-20",
+      "seller_article_date": "2026-10-29",
+      "source_type": "merchant_first_party",
+      "paid_checkout_cny": null,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "valid_china_vat_verified": false,
+      "official_subscription_delivered_verified": false,
+      "formal_resale_authorization_verified": false,
+      "exact_sku": "ChatGPT Pro500 top-up",
+      "seller_listed_cny_per_account_month": null,
+      "seller_claim_official_usd_tier": 500,
+      "quote_requires_contact": true
+    },
+    {
+      "vendor": "ChatShare.info",
+      "source_url": "https://chatshare.info/",
+      "observed_on": "2026-11-20",
+      "exact_sku": "own-account Plus top-up, Free account",
+      "seller_listed_cny_per_account_month": 160,
+      "already_archived": true,
+      "price_change_verified": false,
+      "general_invoice_supported_seller_claim": true,
+      "verified_china_vat_issuer": null,
+      "real_payment_recipient": null,
+      "invoice_extra_cny": null,
+      "actual_paid_checkout_cny": null,
+      "wholesale_authorization_verified": false
+    },
+    {
+      "vendor": "ChatShare.info-linked Plus activation",
+      "source_url": "https://gptchongzhi.com/",
+      "observed_on": "2026-11-20",
+      "service": "Plus activation (not Pro price checkout)",
+      "seller_page_currently_says_automated_system_under_maintenance": true,
+      "same_status_already_archived_in_round": 35,
+      "new_shutdown_verified": false,
+      "plus_flow_requires_full_session_json": true,
+      "pro_session_requirement_verified": null,
+      "actual_fulfillment_tested": false
+    }
+  ],
+  "cross_domain": {
+    "chatshare_info_and_tv_same_legal_entity_verified": false,
+    "chatshare_tv_shared_seat_is_not_own_account": true,
+    "merchant_invoice_promise_not_actual_verified_vat": true,
+    "merchant_official_channel_claim_not_resale_authorization": true
+  },
+  "sources": [
+    {
+      "url": "https://chatshare.info/info/20261029-pro-plans-and-models.html",
+      "read_on": "2026-11-20",
+      "seller_article_date": "2026-10-29",
+      "kind": "seller_first_party"
+    },
+    {
+      "url": "https://chatshare.info/",
+      "read_on": "2026-11-20",
+      "kind": "seller_first_party"
+    },
+    {
+      "url": "https://gptchongzhi.com/",
+      "read_on": "2026-11-20",
+      "kind": "seller_linked_service"
+    }
+  ],
+  "plus_procurement": {
+    "requirements": "one unit, one month, own original Plus account, no agent upfront fee, all payments plus valid China VAT <= CNY170",
+    "verified_all_in_cny": null,
+    "verified_wholesale_plus_unit_price_cny": null,
+    "vat_issuer": null,
+    "actual_payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "formal_resale_authorization_verified": false,
+    "pro_skus_are_not_qualifying_plus_wholesale": true
+  },
+  "phone_verification": {
+    "chatgpt_web_codex_first_api_key_separate": true,
+    "session_is_sensitive_login_credential": true,
+    "ordinary_subscription_does_not_auto_bind_phone": true,
+    "verified_number_holding_days": null,
+    "failed_sms_original_cash_refund_verified": false,
+    "actual_sms_successes": 0
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_untouched": 254,
+  "historical_original_quotes_untouched": 126,
+  "payment_done": false,
+  "merchant_contacted": false,
+  "agency_application_submitted": false,
+  "credentials_submitted": false
+}
