@@ -6128,6 +6128,28 @@
       "summary": "卖家SKU27–30现行价签/资格；手机号仅比价监测与卖家验证码阻断分级，所有未知费用为null、SMS/发票未实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r263-20261121",
+      "title": "GPT源头第263轮 · APIHub另一Plus SKU与开票冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r04.html",
+      "updatedAt": "2026-11-21",
+      "summary": "APIHub原站Plus另一SKU ¥105.87但已售罄、商称开票+¥35；渠道二¥108.99商称+¥50，店铺公告又称平台不开发票，未证合规含票真正上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r263-20261121-evidence",
+      "title": "第263轮 · APIHub上游批发与开票缺口证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r04-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "准确SKU G49307465/G34816878/G49852965、开票差异和库存状态；支付费和收款出票法人null，Codex接码另列，实付验票SMS为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
