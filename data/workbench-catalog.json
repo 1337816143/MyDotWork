@@ -6084,6 +6084,28 @@
       "summary": "准确Pro三档人民币月价、票费商称与5工作日出票条件；所有支付附费和真实有效税票均null／未证、无交易和SMS验证实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r261-20261121",
+      "title": "GPT源头第261轮 · 小久Pro四款卡密价签",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r02.html",
+      "updatedAt": "2026-11-21",
+      "summary": "小久原站新补档菲区Pro100¥650、智利Pro100¥630（明确1个月）、菲区Pro200¥1020和Pro500¥3050/件；仅零售牌价，未证批发与有效中国VAT。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r261-20261121-evidence",
+      "title": "第261轮 · 小久Pro原号卡密及税票边界JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r02-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "四条准确Pro商品原URL、价签单位及仅智利SKU月数明确；真实费用、批发授权、税票主体及接码实测全缺。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
