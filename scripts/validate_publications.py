@@ -134,11 +134,11 @@ def validate_publications():
     assert catalog['counts'] == {'artifacts': 547, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.256'
+    assert latest['version'] == '1.257'
     assert latest['date'] == '2026-11-20'
-    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r10.html'
-    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r10-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120-r09.html'
+    assert latest['path'] == 'research/2026-11-20/supplier-followup-20261120-r11.html'
+    assert latest['dataPath'] == 'research/2026-11-20/supplier-followup-20261120-r11-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-20/supplier-followup-20261120-r10.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
