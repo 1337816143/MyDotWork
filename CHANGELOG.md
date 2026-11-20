@@ -1,3 +1,10 @@
+## 1.9.265 · 2026-11-20
+
+- 第257轮首次将OpenAI一方2026-10-29正式公告 https://help.openai.com/en/articles/6825453-chatgpt-release-notes 与当前分档FAQ https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers 对照归档：Pro100和Pro500包含的Work/Codex用量各为本次调整前2倍；Pro200取消9月29日邮件所预告降额，旧低额度人群翻倍至旧高额度，旧高额度人群保持原额度。官方更改日期为2026-10-29、项目实际阅读2026-11-20；不写成当日政策生效或商家调价。Plus用量未改；Pro100/500 Chat中每周GPT-6 Pro消息上限与Work/Codex调整分别计算，Pro200低消息上限对齐。绝对Work/Codex额度为null，没有用户账单实测。
+- 官方FAQ现列Pro100 US$100/账号·月、Pro200 US$200/账号·月、Pro500 US$500/账号·月，及Pro500独享Ultrafast、Fast按2.5×/Ultrafast按8×的套餐内使用量折算、Ultrafast使用额外Credits按6×折算。美元价及Pro200开放新订已在第142轮归档，均非本轮首次发现或价格变化；商家“20x/50x”不能自动等同官方套餐档位、真实Work/Codex配额或任务成功数。
+- GETGPT Pro Pro200 ¥1569和Pro500 ¥3889、ChatShare.info Pro100 ¥800和Pro200 ¥1400仅引用第253/255轮旧商家SKU，无本轮新价签及真实结算，未刷新历史价格。十家既有候选并无新的批发单件价格、有效中国VAT出票/收款主体、正式授权、采购履约或短信成功证据。本人原号Plus单件单月、无代理前置、全部必需费用含有效中国VAT≤¥170的已核真正批发仍0家，真实Plus支付/验票/SMS成功各0，未知费用null。手机号验证网页/Codex/API首Key单独核，不把Apple或Session或普通Plus写成自动绑号。
+- 仅追加r257 HTML/JSON和两个新精确SHA256白名单条目，并更新工作台目录、总库入口、VERSION、构建指针及回归断言；前256轮报告与126条原始报价按原字节保留。未付款、联系商家、申请代理、提交登录凭据或外发消息。
+
 ## 1.9.264 · 2026-11-20
 
 - 第256轮首次直接归档GETGPT Pro两篇页面自标2026-11-19更新的一方FAQ：https://www.getgpt.io/faq/recharge-time 明确将已付款、已发卡、系统处理中、已完成分开，并表示发卡后需用户已登录ChatGPT取完整Session提交激活；商家称不保证固定到账分钟数，与同店 https://www.getgpt.io/chatgpt-plus “2分钟自动到账”营销语存在履约预期差异。不是确证11月19日政策新生效或真实订单延迟。

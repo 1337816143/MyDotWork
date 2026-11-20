@@ -1,0 +1,165 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 257,
+  "site_version": "1.9.265",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r10.html",
+  "finding": "First project-specific archival comparison of OpenAI's dated 2026-10-29 Pro Work/Codex allowance update and current Pro tier FAQ. An older official policy first read in this round, not a November 20 price change, seller transaction, or new wholesale source.",
+  "observations": [
+    {
+      "subject": "OpenAI official Pro Work and Codex allowances",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_type": "official_release_notes",
+      "observed_on": "2026-11-20",
+      "official_announcement_on": "2026-10-29",
+      "plan": "Pro 100",
+      "previous_allowance_multiple": 1,
+      "current_allowance_relative_to_previous": 2,
+      "absolute_work_codex_allowance": null,
+      "chat_weekly_message_limit_increased": false,
+      "plus_entitlement_changed": false
+    },
+    {
+      "subject": "OpenAI official Pro Work and Codex allowances",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_type": "official_release_notes",
+      "observed_on": "2026-11-20",
+      "official_announcement_on": "2026-10-29",
+      "plan": "Pro 500",
+      "previous_allowance_multiple": 1,
+      "current_allowance_relative_to_previous": 2,
+      "absolute_work_codex_allowance": null,
+      "chat_weekly_message_limit_increased": false,
+      "plus_entitlement_changed": false
+    },
+    {
+      "subject": "OpenAI official Pro Work and Codex allowances",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_type": "official_release_notes",
+      "observed_on": "2026-11-20",
+      "official_announcement_on": "2026-10-29",
+      "plan": "Pro 200",
+      "planned_2026_09_29_reduction_cancelled": true,
+      "earlier_high_allowance_retained": true,
+      "earlier_low_allowance_doubled_to_high": true,
+      "new_plan_absolute_allowance": null,
+      "observed_member_account_usage": null
+    },
+    {
+      "subject": "OpenAI official Pro plan details",
+      "source_url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "source_type": "official_help_page",
+      "observed_on": "2026-11-20",
+      "page_self_label_updated": "4 days ago at observation; not an effective date",
+      "official_price_usd_per_account_month": {
+        "Pro100": 100,
+        "Pro200": 200,
+        "Pro500": 500
+      },
+      "prices_already_recorded_in_round": 142,
+      "pro200_new_subscriptions_available_already_recorded_in_round": 142,
+      "pro500_only_ultrafast": true,
+      "ultrafast_allowance_spend_multiplier_vs_standard": 8,
+      "ultrafast_purchased_credit_spend_multiplier_vs_standard": 6,
+      "fast_allowance_spend_multiplier_vs_standard": 2.5,
+      "plus_usage_change": false,
+      "change_applies_to": "ChatGPT Work and Codex allowances, not universal ChatGPT Chat or API credits"
+    }
+  ],
+  "historical_vendor_sku_comparison": [
+    {
+      "seller": "GETGPT Pro",
+      "sku": "seller-defined Pro 200 (20x) new subscription",
+      "previously_archived_seller_price_cny_per_account_month": 1569,
+      "original_archival_round": 253,
+      "current_paid_price_or_account_entitlement_verified": null,
+      "seller_multiplier_correspondence_with_official_allowance_verified": false
+    },
+    {
+      "seller": "GETGPT Pro",
+      "sku": "seller-defined Pro 500 (50x) new subscription",
+      "previously_archived_seller_price_cny_per_account_month": 3889,
+      "original_archival_round": 253,
+      "current_paid_price_or_account_entitlement_verified": null,
+      "seller_multiplier_correspondence_with_official_allowance_verified": false
+    },
+    {
+      "seller": "ChatShare.info",
+      "sku": "seller-labeled Pro 100",
+      "previously_archived_seller_price_cny_per_account_month": 800,
+      "original_archival_round": 255,
+      "current_paid_price_or_account_entitlement_verified": null,
+      "seller_multiplier_correspondence_with_official_allowance_verified": false
+    },
+    {
+      "seller": "ChatShare.info",
+      "sku": "seller-labeled Pro 200",
+      "previously_archived_seller_price_cny_per_account_month": 1400,
+      "original_archival_round": 255,
+      "current_paid_price_or_account_entitlement_verified": null,
+      "seller_multiplier_correspondence_with_official_allowance_verified": false
+    }
+  ],
+  "source_comparison": {
+    "official_release_dated_2026_10_29_not_a_new_2026_11_20_policy": true,
+    "official_dollar_prices_not_new_in_this_project": true,
+    "retail_vendor_multiplier_not_an_official_usage_guarantee": true,
+    "absolute_work_codex_allowance_not_published_in_read_sources": true,
+    "individual_user_entitlement_or_vendor_delivery_not_tested": true,
+    "plus_procurement_and_phone_verification_criteria_unchanged": true
+  },
+  "plus_procurement": {
+    "requirements": "Own original account, one Plus unit one month, no agent upfront fee, all necessary payment/invoice costs including valid China VAT <= CNY 170",
+    "verified_true_wholesale_unit_cost_cny": null,
+    "verified_all_in_cny": null,
+    "payment_extra_cny": null,
+    "invoice_extra_cny": null,
+    "actual_issuer_and_recipient_match_verified": false,
+    "formal_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "chatgpt_web_codex_first_api_key_separate": true,
+    "session_is_sensitive_login_credential": true,
+    "ordinary_subscription_does_not_auto_bind_phone": true,
+    "verified_number_holding_days": null,
+    "failed_sms_original_cash_refund_verified": false,
+    "actual_sms_successes": 0
+  },
+  "priority_vendors_unrepriced": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_untouched": 256,
+  "historical_original_quotes_untouched": 126,
+  "payment_done": false,
+  "merchant_contacted": false,
+  "agency_application_submitted": false,
+  "credentials_submitted": false,
+  "sources": [
+    {
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "read_on": "2026-11-20",
+      "published_policy_date": "2026-10-29",
+      "kind": "official_release_notes"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "read_on": "2026-11-20",
+      "kind": "official_help_center_current_tiers"
+    }
+  ]
+}
