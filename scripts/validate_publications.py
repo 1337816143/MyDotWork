@@ -3194,11 +3194,6 @@ def validate_publications():
     assert r258['phone_verification']['actual_sms_successes'] == 0
     assert r258['payment_done'] is False and r258['credentials_submitted'] is False
 
-    print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
-
-
-if __name__ == '__main__': validate_publications()
-
     # R259: three listed seller Pro card prices are not official entitlements or completed orders.
     r259 = json.loads((ROOT/'dist/research/2026-11-20/supplier-followup-20261120-r13-evidence.json').read_bytes())
     assert by_id['gpt-source-followup-r259-20261120']['url'].endswith('supplier-followup-20261120-r13.html')
@@ -3213,3 +3208,8 @@ if __name__ == '__main__': validate_publications()
     assert r259['qualification_totals']['verified_true_plus_wholesale_upstreams'] == 0
     assert r259['phone_verification']['actual_sms_successes'] == 0
     assert r259['payment_done'] is False and r259['credentials_submitted'] is False
+
+    print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
+
+
+if __name__ == '__main__': validate_publications()
