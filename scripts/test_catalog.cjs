@@ -2972,3 +2972,16 @@ assert.equal(r255.payment_done,false);
  assert.equal(r256.qualification_totals.verified_true_plus_wholesale_upstreams,0);
  assert.equal(r256.phone_verification.actual_sms_successes,0);
  assert.equal(r256.payment_done,false);
+
+// R257: Pro allowance policy announcement date differs from present research date; seller SKU unverified.
+const c257=d.records.find(x=>x.id==='gpt-source-followup-r257-20261120'),e257=d.records.find(x=>x.id==='gpt-source-followup-r257-20261120-evidence');
+assert(c257&&e257&&c257.url.endsWith('supplier-followup-20261120-r11.html'));
+const r257=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-20/supplier-followup-20261120-r11-evidence.json'),'utf8'));
+assert.equal(r257.round,257);assert.equal(r257.site_version,'1.9.265');
+assert.equal(r257.observations[0].official_announcement_on,'2026-10-29');
+assert.equal(r257.observations[2].earlier_low_allowance_doubled_to_high,true);
+assert.equal(r257.observations[3].pro500_only_ultrafast,true);
+assert.equal(r257.plus_procurement.verified_all_in_cny,null);
+assert.equal(r257.qualification_totals.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r257.phone_verification.actual_sms_successes,0);
+assert.equal(r257.payment_done,false);

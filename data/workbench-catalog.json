@@ -5996,6 +5996,28 @@
       "summary": "两条11月19日商家更新FAQ及Plus营销页原URL，24h激活/退款条件与2分钟宣传区分；真实结算、有效税票、SMS成功与实际退款均无。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r257-20261120",
+      "title": "GPT源头第257轮 · 官方Pro Work/Codex额度调整与第三方SKU核证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r11.html",
+      "updatedAt": "2026-11-20",
+      "summary": "新核读OpenAI 10月29日官方Pro100/500 Work和Codex额度翻倍、Pro200低额度对齐；与第三方商称20x/50x不得混同，真Plus批发0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r257-20261120-evidence",
+      "title": "Pro分档官方政策与第三方SKU比对 · 第257轮证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-20/supplier-followup-20261120-r11-evidence.json",
+      "updatedAt": "2026-11-20",
+      "summary": "OpenAI原始URL、10月29日公布日与11月20日观察日、旧商家SKU和未知费用null、零交易/税票/SMS测试。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
