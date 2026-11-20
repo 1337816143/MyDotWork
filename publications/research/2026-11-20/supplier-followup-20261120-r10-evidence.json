@@ -1,0 +1,115 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 256,
+  "site_version": "1.9.264",
+  "observed_on": "2026-11-20",
+  "previous_report": "research/2026-11-20/supplier-followup-20261120-r09.html",
+  "finding": "First direct archive of GETGPT Pro two first-party FAQ pages self-labeled updated 2026-11-19. Seller's detailed FAQ disclaims any fixed delivery minute count; self-activation after code issuance and 24-hour first activation advisory narrow simplified instant-delivery/refund landing claims. Evidence of published merchant wording, not proven policy change on 2026-11-19 or actual fulfillment.",
+  "observations": [
+    {
+      "vendor": "GETGPT Pro",
+      "source_url": "https://www.getgpt.io/faq/recharge-time",
+      "observed_on": "2026-11-20",
+      "seller_page_updated_on": "2026-11-19",
+      "source_type": "merchant_first_party_faq",
+      "sku_scope": "self-account ChatGPT subscription orders using code issuance/self-activation or system processing",
+      "merchant_says_paid_not_equivalent_to_delivered": true,
+      "merchant_says_code_issued_not_activation_started": true,
+      "merchant_requires_full_logged_in_session_for_self_activation": true,
+      "merchant_disclaims_fixed_delivery_minutes": true,
+      "guaranteed_delivery_minutes": null,
+      "actual_delivery_minutes_verified": null,
+      "actual_member_entitlement_verified": false
+    },
+    {
+      "vendor": "GETGPT Pro",
+      "source_url": "https://www.getgpt.io/faq/refund",
+      "observed_on": "2026-11-20",
+      "seller_page_updated_on": "2026-11-19",
+      "source_type": "merchant_first_party_faq",
+      "sku_scope": "code or self-account recharge governed by SKU and conditions",
+      "merchant_says_first_code_activation_or_validation_within_hours": 24,
+      "merchant_says_delay_may_affect_after_sales": true,
+      "merchant_says_invalid_unused_code_can_refund_or_replace_after_review": true,
+      "merchant_says_virtual_delivered_goods_no_unconditional_return": true,
+      "merchant_says_phone_or_identity_verification_failure_excluded_from_after_sales": true,
+      "first_activation_requirement_actual_effective_date": null,
+      "actual_cash_route_refund_verified": false,
+      "actual_refund_completed": false
+    },
+    {
+      "vendor": "GETGPT Pro",
+      "source_url": "https://www.getgpt.io/chatgpt-plus",
+      "observed_on": "2026-11-20",
+      "source_type": "merchant_first_party_landing",
+      "sku": "own-account ChatGPT Plus one month",
+      "seller_landing_list_cny_per_account_month": 179,
+      "seller_landing_two_minutes_arrival_marketing": true,
+      "seller_landing_marketing_is_a_guaranteed_sla": false,
+      "price_change_verified": false,
+      "already_archived_price": true,
+      "actual_paid_checkout_cny": null,
+      "payment_extra_cny": null,
+      "invoice_extra_cny": null,
+      "verified_valid_china_vat_invoice": false,
+      "formal_resale_authorization_verified": false
+    }
+  ],
+  "source_comparison": {
+    "same_merchant_pages_reconciled": true,
+    "landing_claim_is_promotional_not_fixed_sla": true,
+    "seller_faq_is_self_report_not_success_test": true,
+    "seller_article_updated_date_is_not_proven_effective_date": true,
+    "refund_faq_does_not_override_individual_order_terms": true
+  },
+  "plus_procurement": {
+    "requirements": "own original Plus account, one unit one month, no upfront agent charge, all required payments plus valid China VAT <= CNY170",
+    "seller_own_account_plus_retail_cny_per_month": 179,
+    "verified_all_in_cny": null,
+    "payment_extra_cny": null,
+    "invoice_extra_cny": null,
+    "legal_invoice_issuer": null,
+    "real_payment_recipient": null,
+    "wholesale_unit_cost_cny": null,
+    "formal_resale_authorization_verified": false
+  },
+  "phone_verification": {
+    "chatgpt_web_codex_first_api_key_separate": true,
+    "session_is_sensitive_login_credential": true,
+    "ordinary_subscription_does_not_auto_bind_phone": true,
+    "verified_number_holding_days": null,
+    "failed_sms_original_cash_refund_verified": false,
+    "actual_sms_successes": 0
+  },
+  "qualification_totals": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "actual_sms_successes": 0
+  },
+  "historical_reports_untouched": 255,
+  "historical_original_quotes_untouched": 126,
+  "payment_done": false,
+  "merchant_contacted": false,
+  "agency_application_submitted": false,
+  "credentials_submitted": false,
+  "sources": [
+    {
+      "url": "https://www.getgpt.io/faq/recharge-time",
+      "read_on": "2026-11-20",
+      "seller_page_updated_on": "2026-11-19",
+      "kind": "seller_first_party"
+    },
+    {
+      "url": "https://www.getgpt.io/faq/refund",
+      "read_on": "2026-11-20",
+      "seller_page_updated_on": "2026-11-19",
+      "kind": "seller_first_party"
+    },
+    {
+      "url": "https://www.getgpt.io/chatgpt-plus",
+      "read_on": "2026-11-20",
+      "kind": "seller_first_party_landing"
+    }
+  ]
+}
