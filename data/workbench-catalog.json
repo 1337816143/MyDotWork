@@ -6238,6 +6238,28 @@
       "summary": "2026-11-12与11月21两次同页直接观察、商家首页/商品页及代理+6%票费条款；金额仅分项算术，支付附费及出票主体null，无付款或验证码实测。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r268-20261121",
+      "title": "GPT源头第268轮 · cdkstore批量价及VAT/转售冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r09.html",
+      "updatedAt": "2026-11-21",
+      "summary": "新读cdkstore一方2026-11-20快照：Plus同SKU 5/20/200件¥90/¥83/¥71，与11月6日无批量折扣/独立订单旧指南冲突；不出VAT票、禁转售，不是合格单件真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r268-20261121-evidence",
+      "title": "第268轮 · cdkstore准确数量阶梯与条款冲突JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r09-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "5条商家原始URL与观察日期，单件和多件同SKU报价分别保存；陈述与旧企业购买指南矛盾，未知费null，实购、授权、VAT、SMS为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
