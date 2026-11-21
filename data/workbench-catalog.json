@@ -6260,6 +6260,28 @@
       "summary": "5条商家原始URL与观察日期，单件和多件同SKU报价分别保存；陈述与旧企业购买指南矛盾，未知费null，实购、授权、VAT、SMS为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r269-20261122",
+      "title": "GPT源头第269轮 · CatFK独立店原号Plus费用与续订限制",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122.html",
+      "updatedAt": "2026-11-22",
+      "summary": "一方直接核到AI资源直供站准确SKU xq97ll 原号Plus¥138、未支付预览费¥2.48及合计¥140.48；须等当前Plus到期、无中国有效VAT或正式转售授权证据，不是已核真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r269-20261122-evidence",
+      "title": "第269轮 · CatFK准确SKU与Codex SMS预览费结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-evidence.json",
+      "updatedAt": "2026-11-22",
+      "summary": "原商家SKU及未下单费、SMS ¥2+¥0.04预览、退款及号码持有/中国VAT/授权缺口；未知费用null、付款及真实短信成功均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -3112,3 +3112,19 @@ assert.equal(r268.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r268.qualification.real_sms_successes,0);
 assert.equal(r268.actual_paid_order,false);
 assert.equal(r268.credentials_submitted,false);
+
+// R269: independently identified first-party CatFK stall, exact SKU pre-submit fee, and no VAT/wholesale leap.
+const r269record=d.records.find(x=>x.id==='gpt-source-followup-r269-20261122');
+const r269e=d.records.find(x=>x.id==='gpt-source-followup-r269-20261122-evidence');
+assert(r269record&&r269e&&r269record.url.endsWith('supplier-followup-20261122.html'));
+const r269=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-22/supplier-followup-20261122-evidence.json'),'utf8'));
+assert.equal(r269.round,269);assert.equal(r269.site_version,'1.9.277');
+assert.equal(r269.plus_sku.display_price_cny_per_account_month,138);
+assert.equal(r269.plus_sku.payment_preview_fee_cny,2.48);
+assert.equal(r269.plus_sku.payment_preview_total_cny,140.48);
+assert.equal(r269.plus_sku.all_required_payment_and_valid_china_vat_invoice_cny,null);
+assert.equal(r269.plus_sku.session_or_token_required_on_product_page,null);
+assert.equal(r269.independent_sms.payment_preview_total_cny,2.04);
+assert.equal(r269.independent_sms.failed_receive_cash_refund_verified,false);
+assert.equal(r269.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r269.qualification.actual_sms_successes,0);

@@ -1,0 +1,139 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 269,
+  "site_version": "1.9.277",
+  "observed_on": "2026-11-22",
+  "date_policy": "Asia/Shanghai observation date; third-party browser environment displayed 2026-11-21; no evidence of actual merchant policy-effective date",
+  "previous_report": "research/2026-11-21/supplier-followup-20261121-r09.html",
+  "discovery": "New directly rendered CatFK first-party independent merchant AI资源直供站 exact Plus SKU, pre-submit fee preview, eligibility/refund boundaries and Codex SMS single-use storefront; distinct from other CatFK merchant stalls",
+  "merchant": {
+    "platform": "CatFK / 云猫寄售",
+    "store_name": "AI资源直供站",
+    "store_url": "https://catfk.com/shop/17ai8",
+    "seller_identity_or_china_invoice_issuer_verified": false,
+    "platform_verified_badge_not_supplier_authorization": true,
+    "not_equivalent_to_existing_catfk_merchants": [
+      "Antipro",
+      "AI猫站长",
+      "AIDP"
+    ]
+  },
+  "plus_sku": {
+    "exact_url": "https://catfk.com/item/xq97ll",
+    "exact_title": "[正规] GPT PLUS官方充值 [质保订阅]",
+    "fulfillment": "seller-described Philippines bank-card one-month Plus card redemption on buyer's existing ChatGPT account",
+    "display_price_cny_per_account_month": 138,
+    "minimum_quantity": 1,
+    "payment_preview_fee_cny": 2.48,
+    "payment_preview_total_cny": 140.48,
+    "preview_methods": [
+      "Alipay",
+      "WeChat"
+    ],
+    "payment_completion_verified": false,
+    "all_required_payment_and_valid_china_vat_invoice_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "valid_china_vat_invoice_eligible": null,
+    "valid_china_vat_invoice_verified": false,
+    "legal_payee": null,
+    "legal_invoice_issuer": null,
+    "verified_supplier_purchase_price_cny": null,
+    "official_openai_resale_authorization_verified": false,
+    "merchant_claims_official_channel": true,
+    "prior_current_plus_requires_expiry_seller_claim": true,
+    "recharge_voucher_never_expires_seller_claim": true,
+    "existing_pro_plus_voucher_compatible": null,
+    "merchant_claim_no_0_yuan_irregular_payment_accounts": true,
+    "session_or_token_required_on_product_page": null,
+    "session_or_token_requirement_note": "Product page did not specify a required Session/Token; redeem-site login requirements not independently audited, absence of mention is not proof of no credential sharing",
+    "seller_recharge_url": "https://cdk.maap1e.com/",
+    "recharge_site_legal_operator_verified": false,
+    "operation_hours_seller_claim": "11:00-22:00 local time (merchant statement, no verified timezone)",
+    "queue_estimate_hours_seller_claim": "2-3",
+    "invoice_note": "Merchant mentions downloadable ChatGPT platform bill; this does not prove a valid PRC VAT invoice",
+    "refund_note": "Account bans and user mistakes excluded; subscription drop refund depends on user first obtaining an OpenAI refund and seller's pro-rata policy; no real cash refund tested",
+    "paid_or_redeemed_test_count": 0
+  },
+  "independent_sms": {
+    "seller_shop_url": "https://catfk.com/shop/17ai8",
+    "exact_sku_detail_url": null,
+    "sku_name": "接码 SMS | Codex接码 (随机地区) 单次接码",
+    "listed_unit_price_cny_per_one_time": 2,
+    "payment_preview_fee_cny": 0.04,
+    "payment_preview_total_cny": 2.04,
+    "preview_paid": false,
+    "seller_claim_codex_only": true,
+    "seller_claim_secondary_verification_supported": false,
+    "seller_claim_switch_number_when_no_code": true,
+    "seller_claim_no_after_sales": true,
+    "number_hold_minutes": null,
+    "number_hold_days": null,
+    "chatgpt_web_login_works": null,
+    "first_api_key_sms_works": null,
+    "sim_provisioned_or_owned_verified": false,
+    "sms_success_count": 0,
+    "failed_receive_cash_refund_verified": false,
+    "related_20day_advertised_sku_title": "codex20天长效接码(不怕二验)只能单绑",
+    "related_20day_display_cny_per_unit": 5,
+    "related_20day_hold_tested": false
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/shop/17ai8",
+      "observed_on": "2026-11-22",
+      "kind": "merchant_original_storefront",
+      "read_status": "readable_live_browser",
+      "notes": "Independent CatFK AI资源直供站: two Plus ¥138 SKUs, finished accounts different SKU, SMS single use/20-day titles; no seller legal entity or VAT proof"
+    },
+    {
+      "url": "https://catfk.com/item/xq97ll",
+      "observed_on": "2026-11-22",
+      "kind": "merchant_original_precise_plus_sku_and_payment_preview",
+      "read_status": "readable_live_browser",
+      "notes": "Own-account Plus month ¥138, pre-submit Alipay/WeChat fee ¥2.48 and total ¥140.48; no payment, invoice, authorization or delivery tests"
+    },
+    {
+      "url": "https://cdk.maap1e.com/",
+      "observed_on": "2026-11-22",
+      "kind": "recharge_destination_link_mentioned_by_seller",
+      "read_status": "link_observed_on_merchant_page_not_independently_audited",
+      "notes": "Redemption-site operator and any login / credential prerequisites unknown"
+    }
+  ],
+  "prior_still_valid": {
+    "morimm_ios_exact_sku": "https://morimm.com/products/gptplus-ios",
+    "morimm_ios_display_cny": 125,
+    "morimm_ios_readable_rechecked_on": "2026-11-22",
+    "morimm_ios_prior_round": 228,
+    "morimm_ios_price_not_new": true,
+    "other_priority_vendors_not_repriced": [
+      "小久",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ]
+  },
+  "qualification": {
+    "buyer_own_account": true,
+    "buyer_one_unit_one_month": true,
+    "agent_fee_upfront_proven_required": false,
+    "verified_all_fees_and_china_vat_under_170": false,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_plus_order_count": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_formal_resale_authorizations": 0,
+    "actual_sms_successes": 0
+  },
+  "uncertainties": [
+    "Merchant listing/precheckout preview is not a paid transaction",
+    "Official/billed claims are seller marketing not OpenAI authorization",
+    "Platform seller badge not legal subject validation",
+    "An OpenAI bill is not the valid Chinese VAT invoice required by the screen",
+    "Independent SMS and existing GPT renewal are not automatic phone binding",
+    "Other CatFK vendors must not be merged as the same upstream"
+  ]
+}
