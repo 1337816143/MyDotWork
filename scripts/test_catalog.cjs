@@ -3081,3 +3081,18 @@ assert.equal(r266.new_vendor_added,false);assert.equal(r266.new_primary_price_ch
 assert.equal(r266.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r266.qualification.actual_total_cny,null);assert.equal(r266.sms.actual_sms_successes,0);
 assert.equal(r266.no_payment,true);assert.equal(r266.no_merchant_contact,true);
+
+// R267: same exact merchant original-account Plus selector display differs across dated snapshots, not verified actual repricing/checkout.
+const r267cat=d.records.find(x=>x.id==='gpt-source-followup-r267-20261121'),r267ev=d.records.find(x=>x.id==='gpt-source-followup-r267-20261121-evidence');
+assert(r267cat&&r267ev&&r267cat.url.endsWith('supplier-followup-20261121-r08.html'));
+const r267=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-21/supplier-followup-20261121-r08-evidence.json'),'utf8'));
+assert.equal(r267.round,267);assert.equal(r267.site_version,'1.9.275');
+assert.deepEqual([r267.material_observation.previously_directly_read.with_30_day_warranty_cny,r267.material_observation.previously_directly_read.without_warranty_cny],[145,135]);
+assert.deepEqual([r267.material_observation.directly_read_this_round.with_30_day_warranty_cny,r267.material_observation.directly_read_this_round.without_warranty_cny],[155,145]);
+assert.equal(r267.material_observation.effective_date_of_price_change_confirmed,null);
+assert.equal(r267.invoice_and_resale.actual_all_required_fees_including_valid_china_vat_cny,null);
+assert.equal(r267.invoice_and_resale.seller_agent_entry_fee_cny,3000);
+assert.equal(r267.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r267.phone_verification.actual_sms_successes,0);
+assert.equal(r267.actual_purchase_done,false);
+

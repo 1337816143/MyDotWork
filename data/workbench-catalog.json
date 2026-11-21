@@ -6216,6 +6216,28 @@
       "summary": "四项原始商家URL与r80、r192、r230、r252既存证据交叉定位；历史r265不覆写，真实批发、实购、VAT和SMS证据仍为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r267-20261121",
+      "title": "GPT源头第267轮 · 引路鲸同SKU原号Plus公开报价差额",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r08.html",
+      "updatedAt": "2026-11-21",
+      "summary": "同一LIST-000001原号Plus一月第151轮一方报价有保¥145/无保¥135，本轮直读¥155/¥145，差额各+¥10；不是已验成交或生效调价日期，含票、授权及3000元代理费缺口仍在。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r267-20261121-evidence",
+      "title": "第267轮 · 引路鲸准确SKU历史快照对照与税票证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r08-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "2026-11-12与11月21两次同页直接观察、商家首页/商品页及代理+6%票费条款；金额仅分项算术，支付附费及出票主体null，无付款或验证码实测。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

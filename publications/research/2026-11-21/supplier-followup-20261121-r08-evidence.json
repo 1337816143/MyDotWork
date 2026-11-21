@@ -1,0 +1,169 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 267,
+  "site_version": "1.9.275",
+  "observed_on": "2026-11-21",
+  "nature": "same_exact_first_party_original_account_plus_month_sku_display_difference_between_dated_archive_and_current_checkout_not_paid_contract_repricing",
+  "previous_report": "research/2026-11-21/supplier-followup-20261121-r07.html",
+  "material_observation": {
+    "merchant": "引路鲸／ChatGPT直充站",
+    "exact_product_selector_url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+    "original_sku_id": "LIST-000001",
+    "unit": "CNY per one own existing account per one month",
+    "quantity": 1,
+    "period_months": 1,
+    "previously_directly_read": {
+      "archive_round": 151,
+      "observed_on": "2026-11-12",
+      "archive_path": "research/2026-11-12/supplier-followup-20261112-r4-evidence.json",
+      "with_30_day_warranty_cny": 145,
+      "without_warranty_cny": 135
+    },
+    "directly_read_this_round": {
+      "observed_on": "2026-11-21",
+      "with_30_day_warranty_cny": 155,
+      "without_warranty_cny": 145,
+      "observed_checkout_selected_warranty_cny": 155,
+      "merchant_displayed_subtotal_cny": 155,
+      "merchant_displayed_unselected_no_warranty_cny": 145,
+      "order_created": false,
+      "payment_step_reached": false,
+      "payment_made": false
+    },
+    "public_snapshots_differ_by_cny": {
+      "with_warranty": 10,
+      "without_warranty": 10
+    },
+    "first_party_product_landing_page_url": "https://chatgpt360.pro/products/chatgpt-plus",
+    "first_party_homepage_url": "https://chatgpt360.pro/",
+    "current_seller_landing_prices_match_checkout": true,
+    "merchant_advertised_promotional_end_label": "11月18日 23:59",
+    "promotion_year_or_current_validity_verified": null,
+    "effective_date_of_price_change_confirmed": null,
+    "actual_cash_paid_total_cny": null,
+    "merchant_contract_repricing_date_confirmed": false,
+    "conditional_coupon_discount_only_not_universal": "优惠后低至¥140有质保／¥130无质保，需优惠券或新人任务资格",
+    "merchant_claim_30_day_subscription_loss_warranty": true,
+    "merchant_claim_refund_service_deduction_percent": 20,
+    "actual_refund_verified": false
+  },
+  "invoice_and_resale": {
+    "checkout_invoice_extra_percentage_claim": 6,
+    "illustrative_with_warranty_plus_6pct_cny": 164.3,
+    "illustrative_without_warranty_plus_6pct_cny": 153.7,
+    "illustrative_components_not_actual_paid_or_valid_china_vat": true,
+    "actual_payment_surcharge_cny": null,
+    "actual_china_vat_invoice_extra_cny": null,
+    "valid_chinese_vat_invoice_verified": false,
+    "invoice_issuing_legal_entity": null,
+    "payment_receiving_legal_entity": null,
+    "actual_all_required_fees_including_valid_china_vat_cny": null,
+    "seller_agent_entry_fee_cny": 3000,
+    "agent_fee_preexisting_known_from_round": 33,
+    "zero_upfront_agent_fee_for_true_wholesale_verified": false,
+    "formal_resale_authorization_verified": false,
+    "independent_one_unit_wholesale_price_cny": null,
+    "merchant_claim_30min_expedite_optional_extra_cny": 30,
+    "optional_expedite_not_mandatory": true,
+    "buyer_account_credentials_or_login_session_submitted": false
+  },
+  "primary_sources": [
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-21",
+      "kind": "merchant_first_party_live_order_form_display",
+      "status": "readable_primary",
+      "evidence": "with warranty 155/month; no warranty 145/month; merchant says +6% invoice; unsubmitted order shows 155 subtotal; not actual charged"
+    },
+    {
+      "url": "https://chatgpt360.pro/products/chatgpt-plus",
+      "observed_on": "2026-11-21",
+      "kind": "merchant_first_party_product_listing",
+      "status": "readable_primary",
+      "evidence": "with warranty 155/month; no warranty 145/month; account own, one month; annual and finished-account variants excluded"
+    },
+    {
+      "url": "https://chatgpt360.pro/",
+      "observed_on": "2026-11-21",
+      "kind": "merchant_first_party_homepage",
+      "status": "readable_primary",
+      "evidence": "same 155/145 public display; stale 11/18 promo ending banner not evidence of discount eligibility"
+    },
+    {
+      "url": "https://chatgpt360.pro/cooperation",
+      "observed_on": "2026-11-21",
+      "kind": "merchant_first_party_reseller_terms_recheck",
+      "status": "readable_primary",
+      "evidence": "merchant states upfront agent joining fee 3000 CNY in addition to merchandise balance; long known condition"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/74081f7ce448c7140431f3a12abc12de28837884/publications/research/2026-11-12/supplier-followup-20261112-r4-evidence.json",
+      "observed_on": "2026-11-12",
+      "kind": "archived_direct_first_party_page_snapshot",
+      "status": "archived_original_read",
+      "evidence": "identical selector URL and SKU LIST-000001 warranted 145/unwarranted 135"
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/74081f7ce448c7140431f3a12abc12de28837884/publications/research/2026-11-04/supplier-followup-20261104-r19-evidence.json",
+      "observed_on": "2026-11-04",
+      "kind": "prior_historical_agent_fee_source",
+      "status": "archived_prior",
+      "evidence": "3000 CNY fee already archived, not current new reseller change"
+    }
+  ],
+  "other_vendor_rechecks_without_verified_new_terms": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "APIHub",
+    "PayForGPT",
+    "瑶瑶AI"
+  ],
+  "failed_access_and_limitations": [
+    {
+      "merchant": "Morimm",
+      "kind": "original_exact_product_detail",
+      "status": "unreadable_or_unavailable_to_this_research_read",
+      "historic_prices_refreshed": false,
+      "third_party_index_prices_accepted_as_current_seller_price": false
+    },
+    {
+      "merchant": "wind89",
+      "kind": "original_sku",
+      "status": "failed_to_obtain_readable_new_terms",
+      "historic_prices_refreshed": false
+    }
+  ],
+  "qualification": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_reseller_entry_fee_required": true,
+    "all_mandatory_payment_and_valid_chinese_vat_invoice_ceiling_cny": 170,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "verified_actual_all_in_cny": null,
+    "actual_paid_orders": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "formal_resale_authorizations_verified": 0
+  },
+  "phone_verification": {
+    "web_chatgpt_codex_desktop_first_api_key_separately_assessed": true,
+    "paid_subscription_automatically_binds_phone": false,
+    "apple_iap_or_session_method_guarantees_sms_release": false,
+    "session_or_token_requires_existing_login": true,
+    "actual_sms_successes": 0,
+    "number_control_duration_days": null,
+    "failed_sms_cash_refund_verified": false
+  },
+  "actual_purchase_done": false,
+  "actual_invoice_checked": false,
+  "real_sms_test_done": false,
+  "merchant_contacted": false,
+  "credentials_submitted": false,
+  "historical_reports_and_original_126_quotation_rows_preserved": true
+}
