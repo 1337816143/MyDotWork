@@ -3095,4 +3095,20 @@ assert.equal(r267.invoice_and_resale.seller_agent_entry_fee_cny,3000);
 assert.equal(r267.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r267.phone_verification.actual_sms_successes,0);
 assert.equal(r267.actual_purchase_done,false);
-
+// R268: seller bulk units cannot be mistaken for one-piece genuine VAT-invoiced wholesale.
+const c268=d.records.find(x=>x.id==='gpt-source-followup-r268-20261121');
+const e268=d.records.find(x=>x.id==='gpt-source-followup-r268-20261121-evidence');
+assert(c268&&e268&&c268.url.endsWith('supplier-followup-20261121-r09.html'));
+const r268=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-21/supplier-followup-20261121-r09-evidence.json'),'utf8'));
+assert.equal(r268.round,268);
+assert.equal(r268.site_version,'1.9.276');
+assert.deepEqual(r268.listed_unit_prices.map(x=>x.same_sku_min_order_qty),[1,5,20,200]);
+assert.deepEqual(r268.listed_unit_prices.map(x=>x.cny_per_account_month),[95,90,83,71]);
+assert.equal(r268.contradicts_older_first_party_guidance.actual_change_date_verified,null);
+assert.equal(r268.independently_verified_genuine_one_unit_wholesale_price_cny,null);
+assert.equal(r268.all_required_payment_and_valid_chinese_vat_invoice_cny,null);
+assert.equal(r268.buyer_resale_prohibited,true);
+assert.equal(r268.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r268.qualification.real_sms_successes,0);
+assert.equal(r268.actual_paid_order,false);
+assert.equal(r268.credentials_submitted,false);
