@@ -6194,6 +6194,28 @@
       "summary": "保留准确SKU、币种、票据主体商家声明、未知费null、非实测及SMS独立适用边界；严格合格真正Plus批发0家。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r266-20261121",
+      "title": "GPT源头第266轮 · 两家商家首次归档历史勘误",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r07.html",
+      "updatedAt": "2026-11-21",
+      "summary": "纠正r265将PayForGPT及瑶瑶称首次直读：PayForGPT原号Plus及出票主体已见r252，瑶瑶SKU已见r80、开票新版r230。无新调价或已核批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r266-20261121-evidence",
+      "title": "第266轮 · 已有SKU和税票声明首次归档日期更正证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-21/supplier-followup-20261121-r07-evidence.json",
+      "updatedAt": "2026-11-21",
+      "summary": "四项原始商家URL与r80、r192、r230、r252既存证据交叉定位；历史r265不覆写，真实批发、实购、VAT和SMS证据仍为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

@@ -1,0 +1,96 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 266,
+  "site_version": "1.9.274",
+  "observed_on": "2026-11-21",
+  "type": "historical_source_provenance_correction",
+  "corrected_report": "research/2026-11-21/supplier-followup-20261121-r06.html",
+  "corrected_evidence": "research/2026-11-21/supplier-followup-20261121-r06-evidence.json",
+  "inaccurate_attribution_in_r265": "r265 described PayForGPT and 瑶瑶 as first-read/new original-account retail and VAT merchant candidates",
+  "corrected_status": "r265 re-observed already archived merchants and SKU/invoice terms; it is not their first appearance",
+  "prior_direct_evidence": [
+    {
+      "key": "payforgpt_product",
+      "seller": "PayForGPT",
+      "url": "https://payforgpt.com/product/7",
+      "first_round": 252,
+      "first_observed_on": "2026-11-20",
+      "archived_path": "research/2026-11-20/supplier-followup-20261120-r06-evidence.json",
+      "previously_observed_retail_cny": 160,
+      "unit": "CNY per own account per month",
+      "basis": "merchant original SKU, unpaid quote"
+    },
+    {
+      "key": "payforgpt_invoice",
+      "seller": "PayForGPT",
+      "url": "https://payforgpt.com/invoices",
+      "first_round": 252,
+      "first_observed_on": "2026-11-20",
+      "archived_path": "research/2026-11-20/supplier-followup-20261120-r06-evidence.json",
+      "previously_observed_invoice_issuer_claim": "花衍科技（广州）有限公司",
+      "previously_observed_taxpayer_id_claim": "91440104MAEP1N3U8F",
+      "seller_invoice_extra_claim_cny": 0,
+      "actual_verified_invoice": false
+    },
+    {
+      "key": "yaoyao_product",
+      "seller": "瑶瑶ai训练师",
+      "url": "https://kw.yaoyao.chat/item/5",
+      "first_round": 80,
+      "first_observed_on": "2026-11-07",
+      "archived_path": "research/2026-11-07/supplier-followup-20261107-r4-evidence.json",
+      "previously_observed_retail_cny": 129,
+      "unit": "CNY per own account per month",
+      "requires_prior_login": true
+    },
+    {
+      "key": "yaoyao_invoice_latest_claim",
+      "seller": "瑶瑶ai训练师",
+      "url": "https://kw.yaoyao.chat/guide/fapiao.html",
+      "first_round_for_current_seller_claim": 230,
+      "first_observed_on": "2026-11-18",
+      "archived_path": "research/2026-11-18/supplier-followup-20261118-r01-evidence.json",
+      "page_self_updated_on": "2026-11-16",
+      "seller_claim_vat_ordinary": true,
+      "seller_claim_3_business_days": true,
+      "actual_invoice_fee_cny": null,
+      "invoice_issuer_verified": false
+    }
+  ],
+  "prior_erratum": {
+    "round": 192,
+    "observed_on": "2026-11-15",
+    "archived_path": "research/2026-11-15/supplier-followup-20261115-r2-evidence.json",
+    "already_corrected_yaoyao_r191_first_read_misattribution": true
+  },
+  "r265_original_bytes_preserved": true,
+  "old_reports_and_126_quote_rows_preserved": true,
+  "new_vendor_added": false,
+  "new_primary_price_change_confirmed": false,
+  "new_authorized_true_wholesale_proven": false,
+  "caveat": "r265 did directly reread seller pages on Nov 21 and has an extra business-page URL; only its FIRST DISCOVERY framing is corrected. No old observation date is overwritten. No customer checkout has been tested.",
+  "qualification": {
+    "own_account": true,
+    "one_unit_one_month": true,
+    "no_upfront_agent_fee": true,
+    "ceiling_including_valid_chinese_vat_cny": 170,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_total_cny": null,
+    "payment_fee_cny": null,
+    "invoice_fee_cny": null,
+    "verified_chinese_vat_invoices": 0,
+    "real_purchases": 0,
+    "formal_resale_authorizations": 0
+  },
+  "sms": {
+    "web_codex_first_api_key_independent": true,
+    "auto_binding_from_recharge_not_proven": true,
+    "session_requires_existing_login": true,
+    "actual_sms_successes": 0,
+    "number_control_days": null,
+    "failed_sms_cash_refund_verified": false
+  },
+  "no_payment": true,
+  "no_merchant_contact": true,
+  "no_credentials_submitted": true
+}

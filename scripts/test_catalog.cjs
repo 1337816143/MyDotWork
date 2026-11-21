@@ -3068,3 +3068,16 @@ assert.equal(r265data.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r265data.qualification.actual_all_in_cny,null);
 assert.equal(r265data.phone_verification.real_sms_successes,0);
 assert.equal(r265data.real_payment_done,false);
+
+// R266: Provenance correction checks both previously archived vendors and the actual first-round dates.
+const r266cat=d.records.find(x=>x.id==='gpt-source-followup-r266-20261121');
+const r266dataset=d.records.find(x=>x.id==='gpt-source-followup-r266-20261121-evidence');
+assert(r266cat&&r266dataset&&r266cat.url.endsWith('supplier-followup-20261121-r07.html'));
+const r266=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-21/supplier-followup-20261121-r07-evidence.json'),'utf8'));
+assert.equal(r266.round,266);assert.equal(r266.site_version,'1.9.274');
+assert.deepEqual(r266.prior_direct_evidence.map(x=>x.first_round||x.first_round_for_current_seller_claim),[252,252,80,230]);
+assert.equal(r266.prior_erratum.round,192);
+assert.equal(r266.new_vendor_added,false);assert.equal(r266.new_primary_price_change_confirmed,false);
+assert.equal(r266.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r266.qualification.actual_total_cny,null);assert.equal(r266.sms.actual_sms_successes,0);
+assert.equal(r266.no_payment,true);assert.equal(r266.no_merchant_contact,true);
