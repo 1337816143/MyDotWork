@@ -6282,6 +6282,28 @@
       "summary": "原商家SKU及未下单费、SMS ¥2+¥0.04预览、退款及号码持有/中国VAT/授权缺口；未知费用null、付款及真实短信成功均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r270-20261122",
+      "title": "GPT源头第270轮 · CatFK skuld原号Plus支付费与开票主体缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r02.html",
+      "updatedAt": "2026-11-22",
+      "summary": "一方原站核准确SKU qtghxy Plus一月¥120，未付预览手续费¥2.16、总¥122.16；商称开票另加6点且自述个人零星经营，主体/有效票据/真批发未证。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r270-20261122-evidence",
+      "title": "第270轮 · skuld原号Plus、跨站Cookie线索与开票费用JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r02-evidence.json",
+      "updatedAt": "2026-11-22",
+      "summary": "精确SKU、¥120+¥2.16未支付预览、6%发票宣传、经营自述；16688另一SKU不混同，最终VAT总费null，真实授权/付款/SMS成功为0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

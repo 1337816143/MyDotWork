@@ -3128,3 +3128,21 @@ assert.equal(r269.independent_sms.payment_preview_total_cny,2.04);
 assert.equal(r269.independent_sms.failed_receive_cash_refund_verified,false);
 assert.equal(r269.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r269.qualification.actual_sms_successes,0);
+
+// R270: exact CatFK SKU, invoice fee caveat and distinct alternate-shop Session policy.
+const r270record=d.records.find(x=>x.id==='gpt-source-followup-r270-20261122');
+const r270e=d.records.find(x=>x.id==='gpt-source-followup-r270-20261122-evidence');
+assert(r270record&&r270e&&r270record.url.endsWith('supplier-followup-20261122-r02.html'));
+const r270=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-22/supplier-followup-20261122-r02-evidence.json'),'utf8'));
+assert.equal(r270.round,270);assert.equal(r270.site_version,'1.9.278');
+assert.equal(r270.plus_sku.listed_cny_per_one_account_month,120);
+assert.equal(r270.plus_sku.unpaid_preview_fee_cny,2.16);
+assert.equal(r270.plus_sku.unpaid_preview_total_cny,122.16);
+assert.equal(r270.plus_sku.seller_china_invoice_extra_percent_claim,6);
+assert.equal(r270.plus_sku.valid_china_vat_total_cost_cny,null);
+assert.equal(r270.plus_sku.session_cookie_token_required_for_this_exact_sku,null);
+assert.equal(r270.alternate_shop.session_cookie_requested_on_that_other_sku,true);
+assert.equal(r270.merchant.china_vat_issuer_verified,null);
+assert.equal(r270.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r270.qualification.actual_plus_purchases,0);
+assert.equal(r270.phone_verification.real_sms_successes,0);
