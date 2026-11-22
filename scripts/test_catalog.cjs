@@ -3162,3 +3162,22 @@ assert.equal(r271.sms_reference_products[0].original_read_status,'waf_blocked');
 assert.equal(r271.sms_reference_products[1].openai_policy_change_verified,false);
 assert.equal(r271.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r271.qualification.actual_sms_successes,0);
+
+// R272: two distinct first-party one-month Plus SKUs, only one with unpaid fee.
+const r272rec=d.records.find(x=>x.id==='gpt-source-followup-r272-20261122');
+const r272ev=d.records.find(x=>x.id==='gpt-source-followup-r272-20261122-evidence');
+assert(r272rec&&r272ev&&r272rec.url.endsWith('supplier-followup-20261122-r04.html'));
+const r272=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-22/supplier-followup-20261122-r04-evidence.json'),'utf8'));
+assert.equal(r272.round,272);assert.equal(r272.site_version,'1.9.280');
+assert.equal(r272.merchant.store_id,'S747438');
+assert.deepEqual(r272.plus_skus.map(x=>x.sku),['G55968486','G39144461']);
+assert.deepEqual(r272.plus_skus.map(x=>x.listed_price_cny_per_one_account_month),[112.06,112.06]);
+assert.equal(r272.plus_skus[0].unpaid_checkout_fee_cny,3.1377);
+assert.equal(r272.plus_skus[0].unpaid_checkout_total_screen_cny,115.20);
+assert.equal(r272.plus_skus[1].unpaid_checkout_fee_cny,null);
+assert.equal(r272.plus_skus[0].all_required_payment_plus_valid_china_vat_cny,null);
+assert.equal(r272.merchant.seller_says_china_vat_invoice_separate_quote,true);
+assert.equal(r272.merchant.one_piece_genuine_wholesale_price_cny,null);
+assert.equal(r272.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r272.qualification.real_valid_china_vat_invoice_verifications,0);
+assert.equal(r272.qualification.real_sms_successes,0);
