@@ -3201,3 +3201,21 @@ assert.equal(r273.new_independent_phone_verification.auto_mode_may_request_email
 assert.equal(r273.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r273.qualification.actual_plus_purchases,0);
 assert.equal(r273.qualification.real_sms_successes,0);
+
+// Round 274: original product SKU and itemised invoice surcharge must not become verified paid VAT cost.
+const r274rec=d.records.find(x=>x.id==='gpt-source-followup-r274-20261122');
+const r274ev=d.records.find(x=>x.id==='gpt-source-followup-r274-20261122-evidence');
+assert(r274rec&&r274ev&&r274rec.url.endsWith('supplier-followup-20261122-r06.html'));
+const r274=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-22/supplier-followup-20261122-r06-evidence.json'),'utf8'));
+assert.equal(r274.round,274);assert.equal(r274.site_version,'1.9.282');
+assert.equal(r274.new_retail_candidate.exact_sku,'G25645664');
+assert.equal(r274.new_retail_candidate.first_party_visible_price_cny,122);
+assert.equal(r274.new_retail_candidate.processing_fee_cny,null);
+assert.equal(r274.new_retail_candidate.merchant_claim_invoice_surcharge_cny,50);
+assert.equal(r274.new_retail_candidate.arithmetic_price_plus_merchant_claim_invoice_surcharge_cny,172);
+assert.equal(r274.new_retail_candidate.actual_full_payment_including_verified_china_vat_cny,null);
+assert.equal(r274.new_retail_candidate.session_or_token_requirement_verified_for_this_sku,null);
+assert.equal(r274.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r274.qualification.actual_plus_purchases,0);
+assert.equal(r274.qualification.verified_china_vat_invoices,0);
+assert.equal(r274.qualification.real_sms_successes,0);

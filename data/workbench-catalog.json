@@ -6370,6 +6370,28 @@
       "summary": "8条原始网页观察、准确价格单位/链接SKU及未知项null；未支付、未验票、未验证成功，历史报价不刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r274-20261122",
+      "title": "GPT源头第274轮 · 数卡星球原号Plus含票超线与售后条款",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r06.html",
+      "updatedAt": "2026-11-22",
+      "summary": "首次实时直读16688 SKU G25645664原号Plus单月¥122、商称国内电子发票另收¥50，两分项¥172已超¥170；最终支付费、合法VAT与正式批发授权仍未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r274-20261122-evidence",
+      "title": "第274轮 · 数卡星球原站SKU、发票费用与退款缺口 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r06-evidence.json",
+      "updatedAt": "2026-11-22",
+      "summary": "原站可见¥122及未付款合计¥122、+¥50商称发票费、30天售后与官方退款20%扣费；真正含VAT成交总额null、实际实测均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
