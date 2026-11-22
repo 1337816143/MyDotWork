@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPT源头第275轮：zhanghao66同SKU价签与预订库存变化</title><style>body{max-width:1000px;margin:auto;padding:24px;font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;color:#233549}table{width:100%;border-collapse:collapse}td,th{border:1px solid #c8d3df;padding:9px;text-align:left;vertical-align:top}a{overflow-wrap:anywhere}section{margin:24px 0}small{color:#586779}</style></head><body>
+<small>观察日期：2026-11-23（Asia/Shanghai） · 版本 v1.9.283 · 对照2026-11-06历史同一SKU；不同日期价签差额不等于今日调价</small>
+<h1>第275轮：zhanghao66 原号 Plus 同SKU挂牌差额、0库存与预订退款风险</h1>
+<p><a href="../../dashboard/index.html">研究工作台</a> · <a href="supplier-followup-20261123-evidence.json">本轮结构化证据 JSON</a> · <a href="../2026-11-22/supplier-followup-20261122-r06.html">第274轮报告原文</a></p>
+<section><h2>同一准确商品的不同日期公开价签</h2>
+<p>再次直接读取 <a href="https://zhanghao66.com/item/51">zhanghao66 原商品 item/51</a>，其标题为“GPT PLUS 官方直充 月卡 质保30天订阅”，声称充买家的本人原账号，一件约一月，而非成品号。对照 <a href="../2026-11-06/supplier-followup-20261106-r19-evidence.json">2026-11-06第74轮原始JSON</a> 保存的同一商品地址，新旧一方展示不同：</p>
+<table><thead><tr><th>相同商品的渠道</th><th>2026-11-06 原始已归档标价</th><th>2026-11-23 原页显示</th><th>两个观察值的差额</th></tr></thead><tbody>
+<tr><td>渠道1（卖家称菲律宾银行卡），普通单件一月</td><td>¥110</td><td><b>¥111</b></td><td>+¥1</td></tr>
+<tr><td>渠道3（卖家称 iOS），普通单件一月</td><td>¥120</td><td><b>¥128</b></td><td>+¥8</td></tr>
+<tr><td>渠道1 AI合伙人会员价</td><td>¥107</td><td>¥107.50</td><td>+¥0.50</td></tr>
+<tr><td>渠道1 AI代理会员价</td><td>¥108</td><td>¥108</td><td>未变</td></tr>
+<tr><td>渠道3 本轮会员价（AI合伙人／AI代理）</td><td>旧轮无可比同价签</td><td>¥123／¥124</td><td>不计算差额</td></tr>
+</tbody></table>
+<p>两档“仅保开通”与“质保全程”在同渠道页面当前标相同挂牌价。以上仅是两个<strong>观察日期的网页价签差异</strong>；卖家未提供准确调价生效日。无下单或完成支付，也未核验支付方式、附加手续费或合法中国增值税发票，不能将挂牌价视作已付款全费。较低会员标价须特定身份，非无需资格的真实单件批发进价。</p></section>
+<section><h2>库存0、预约费与履约条件</h2>
+<p>同一商品页当前明确显示“0库存”“预订购买”，同时保留“自动发货”“库存爆棚”的通用标签；以<strong>本 SKU 明示的0库存及预约说明</strong>记录，而不是认定当下有现货、已经停业或实物仓储已独立核实。卖家称未发货预约单可取消，退至<strong>站内余额</strong>不扣费，退回原支付方式则扣<strong>10%</strong>。站内余额返还不等于现金原路退款；这只是卖家条款，未完成真实测试。</p>
+<p>网站继续宣传 <strong>¥99 代理入驻资格</strong>（链接另站），并明确宣称暂不支持中国大陆地区用户。即使站内会员价低，也不能据此认定其满足“无代理前置费、单件、合法票据、正式转售授权”的真正上游条件，更不能将其推荐为当前可立即履约的合格渠道。</p></section>
+<section><h2>原号续充、安全与售后限制</h2>
+<p>卖家称渠道1对在期订阅有限制，之前iOS／Google订阅需到期并等待；渠道3可以覆盖部分已有订阅但<strong>旧剩余天数清零</strong>。两渠道均要求买家先成功登录ChatGPT，再从网页提取授权信息交给卡密激活站；此准确SKU最终索要的Session／Token载荷仍为<strong>null</strong>。不能凭“iOS渠道”推定无Session，也不能拿普通充值当网页首次验证、Codex桌面手机号或首次API Key验证的解决方案。</p>
+<p>售后文字称“仅保开通”不赔后续掉订，“质保全程”才按30天内掉订条件售后；账户封禁不保。卖家称部分情况下官方退款只转给客户80%，卡密提交到核销站即使失败也按使用处理，未使用卡密退款、预订单原路退款分别有10%扣费条件。这些均属于<span>未实测的商家规则</span>，不证明到账、持续持号或现金退款成功。</p></section>
+<section><h2>与其他优先候选及手机号验证的边界</h2>
+<p>本轮再次读取小久原站目录（本人Plus ¥110）、引路鲸当前有质保 SKU（¥155/月）、PayForGPT 商品7（¥160/月）、12GPT Plus（¥135/月），均沿用各自旧观察与缺口，不作为新发现或刷新既有历史价。wind89、GETGPT部分动态页未取得完整当次商品正文，不推定停供或价格变化。CatFK、Morimm、ChatShare、GetVIP、PAYPRM、ChongPay未形成新的全费含真实VAT发票、经营/收款/出票三主体、无前置真实批发及合法正式转售授权闭环。</p>
+<p>独立手机号服务继续按ChatGPT网页、Codex桌面和首次API Key分场景记录。没有新的真实短信成功、可持续持号期限、二次收码或失败原路现金退款证据。Apple内购可与Session交付并存，不等于自动绑定手机号。</p></section>
+<section><h2>严格结论</h2>
+<p><strong>符合本人原号、单件单月、无需代理前置费、全部必要付款与有效中国增值税票合计≤¥170的已核真正Plus批发上游仍为0家。</strong>本轮新证据只是既有非合格候选的价签差额及0库存/预约退款说明；实际采购、税票查验、正式转售授权与真实短信成功均为0。所有未知支付及票据费用仍为null；此前274轮及126条历史报价保持原始字节。本轮未付款、联系商家、申请代理或提交账号凭据。</p></section></body></html>
