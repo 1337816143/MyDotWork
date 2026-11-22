@@ -131,14 +131,14 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 571, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 573, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.269'
+    assert latest['version'] == '1.270'
     assert latest['date'] == '2026-11-22'
-    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122.html'
-    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-21/supplier-followup-20261121-r09.html'
+    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r02.html'
+    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r02-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122.html'
 
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
@@ -3349,6 +3349,22 @@ def validate_publications():
     assert r269['independent_sms']['sms_success_count'] == 0
     assert r269['qualification']['verified_true_plus_wholesale_upstreams'] == 0
     assert r269['qualification']['actual_paid_plus_order_count'] == 0
+
+    # R270: newly readable CatFK seller is a retail lead, not VAT-verified wholesale.
+    r270 = json.loads((ROOT/'dist/research/2026-11-22/supplier-followup-20261122-r02-evidence.json').read_bytes())
+    assert by_id['gpt-source-followup-r270-20261122']['url'].endswith('supplier-followup-20261122-r02.html')
+    assert by_id['gpt-source-followup-r270-20261122-evidence']['url'].endswith('supplier-followup-20261122-r02-evidence.json')
+    assert r270['round'] == 270 and r270['site_version'] == '1.9.278'
+    assert r270['plus_sku']['listed_cny_per_one_account_month'] == 120
+    assert r270['plus_sku']['unpaid_preview_fee_cny'] == 2.16
+    assert r270['plus_sku']['unpaid_preview_total_cny'] == 122.16
+    assert r270['plus_sku']['valid_china_vat_total_cost_cny'] is None
+    assert r270['plus_sku']['session_cookie_token_required_for_this_exact_sku'] is None
+    assert r270['alternate_shop']['session_cookie_requested_on_that_other_sku'] is True
+    assert r270['merchant']['china_vat_issuer_verified'] is None
+    assert r270['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r270['qualification']['actual_plus_purchases'] == 0
+    assert r270['phone_verification']['real_sms_successes'] == 0
 
     print('PASS: approved exact public artifacts, preserved historical evidence, two pinned archives, return/download links and evidence boundaries')
 

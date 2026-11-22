@@ -1,0 +1,106 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 270,
+  "site_version": "1.9.278",
+  "observed_on": "2026-11-22",
+  "date_policy": "Asia/Shanghai direct read 2026-11-22; effective dates of any merchant price or policy changes unproven",
+  "previous_report": "research/2026-11-22/supplier-followup-20261122.html",
+  "merchant": {
+    "platform": "CatFK 云猫寄售",
+    "name": "skuld",
+    "shop": "https://catfk.com/shop/skuld",
+    "seller_small_trader_self_declaration": "个人从事零星小额交易活动，依法不需要办理市场主体登记",
+    "legal_payee_verified": null,
+    "china_vat_issuer_verified": null,
+    "official_openai_supply_authorization_verified": false,
+    "other_catfk_stalls_not_same_merchant": [
+      "AI资源直供站",
+      "AIDP",
+      "Antipro",
+      "AI猫站长"
+    ]
+  },
+  "plus_sku": {
+    "exact_url": "https://catfk.com/item/qtghxy",
+    "title": "【官方充值】Codex GPT Plus [菲区] CDK 质保订阅30天",
+    "actual_product_type": "own existing ChatGPT account Plus one month, not independent Codex SMS",
+    "listed_cny_per_one_account_month": 120,
+    "min_quantity": 1,
+    "store_stock_claim": "库存充足",
+    "unpaid_preview_fee_cny": 2.16,
+    "unpaid_preview_total_cny": 122.16,
+    "paid_or_delivered": false,
+    "seller_china_invoice_extra_percent_claim": 6,
+    "arithmetic_six_percent_of_listing_cny": 7.2,
+    "valid_china_vat_invoice_fee_verified_cny": null,
+    "valid_china_vat_total_cost_cny": null,
+    "legal_invoice_issuer": null,
+    "verified_real_wholesale_unit_price_cny": null,
+    "valid_invoice_verified": false,
+    "seller_claim_auto_card_delivery": true,
+    "seller_claim_requires_current_subscription_expired": true,
+    "seller_claim_requires_autorenew_off": true,
+    "seller_claim_disallows_team_business_and_abnormal_0yuan_history": true,
+    "seller_claim_warranty_days": 30,
+    "seller_refund_excludes_bans_account_conflicts_and_no_reason_returns": true,
+    "seller_requires_chatgpt_login_then_unspecified_redemption_info": true,
+    "session_cookie_token_required_for_this_exact_sku": null,
+    "official_invoice_receipt_not_prc_vat": true
+  },
+  "alternate_shop": {
+    "url": "https://www.16688.com.cn/shop/skuld",
+    "different_plus_sku": true,
+    "listed_cny": 119,
+    "unpaid_preview_total_cny": 122.33,
+    "session_cookie_requested_on_that_other_sku": true,
+    "redemption_url": "https://982xj.xyz/",
+    "same_legal_operator_or_supply_chain_verified": false,
+    "notes": "Related redemption URL appears in Xiaojiu material. Do not infer supplier relationship, resale authorization or identical requirements for CatFK qtghxy."
+  },
+  "phone_verification": {
+    "openai_help_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "web_codex_desktop_first_api_key_distinct": true,
+    "purchase_apple_or_session_auto_binds_number": false,
+    "real_sms_successes": 0,
+    "number_hold_days": null,
+    "failed_sms_cash_refund_verified": false
+  },
+  "sources": [
+    {
+      "url": "https://catfk.com/item/qtghxy",
+      "observed_on": "2026-11-22",
+      "read_status": "first_party_direct_rendered",
+      "notes": "Plus one-month price ¥120, unpaid fee ¥2.16, preview ¥122.16, claimed +6 points VAT and account/refund restrictions"
+    },
+    {
+      "url": "https://catfk.com/shop/skuld",
+      "observed_on": "2026-11-22",
+      "read_status": "first_party_direct_rendered",
+      "notes": "Same seller/store, ¥120 in stock, publicly self-described personal trader not necessarily registered; invoice +6 points claim"
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/skuld",
+      "observed_on": "2026-11-22",
+      "read_status": "first_party_linked_store",
+      "notes": "Different Plus SKU ¥119, preview ¥122.33, Session/Cookie instructed and 982xj.xyz redemption; distinct product"
+    },
+    {
+      "url": "https://catfk.com/item/xq97ll",
+      "observed_on": "2026-11-22",
+      "read_status": "first_party_recheck_no_new_change",
+      "notes": "Different seller, prior r269 ¥138 plus ¥2.48 fee unchanged"
+    }
+  ],
+  "qualification": {
+    "own_account_one_month_one_piece": true,
+    "no_upfront_agent_fee_proven_required": true,
+    "all_valid_china_vat_inclusive_fees_under_170_verified": false,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "actual_china_vat_invoices_verified": 0,
+    "formal_openai_resale_authorizations_verified": 0,
+    "actual_sms_successes": 0,
+    "no_payment_contact_or_credentials": true,
+    "old_269_reports_and_126_legacy_quotes_untouched": true
+  }
+}
