@@ -1,0 +1,147 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 271,
+  "site_version": "1.9.279",
+  "observed_on": "2026-11-22",
+  "observation_timezone": "Asia/Shanghai",
+  "previous_report": "research/2026-11-22/supplier-followup-20261122-r02.html",
+  "new_merchant": {
+    "name": "知云小卖部",
+    "url": "https://go.hopeai.cc/",
+    "source_status": "first_party_direct_read",
+    "seller_announcement_invoice_payee_mismatch": true,
+    "seller_announcement_text": "开票与收款人不一致，介意勿拍。要一致联系客服",
+    "seller_announcement_no_return_after_purchase": true,
+    "discounts_are_tiers_on_cumulative_spend": [
+      {
+        "spend_cny": 1000,
+        "multiplier": 0.98
+      },
+      {
+        "spend_cny": 5000,
+        "multiplier": 0.95
+      },
+      {
+        "spend_cny": 10000,
+        "multiplier": 0.9
+      },
+      {
+        "spend_cny": 50000,
+        "multiplier": 0.88
+      }
+    ],
+    "single_month_own_account_plus_exact_sku": null,
+    "exact_one_piece_price_cny": null,
+    "upfront_reseller_fee_cny": null,
+    "payment_extra_cny": null,
+    "chinese_vat_invoice_extra_cny": null,
+    "verified_chinese_vat_invoice_total_cny": null,
+    "legal_payment_issuer_verified": null,
+    "legal_invoice_issuer_verified": null,
+    "true_wholesale_unit_price_cny": null,
+    "formal_resale_authorization_verified": false,
+    "actual_fulfillment_verified": false,
+    "search_excerpt_only": "Dynamic public search listing suggested a Plus no-warranty CDK ¥148 and another invoice-claimed Plus ¥158, also Codex first verification ¥28. Not an independently checked exact SKU or completed checkout; not promoted to verified offer."
+  },
+  "sms_reference_products": [
+    {
+      "seller": "👑XAI店铺",
+      "sku": "677r02",
+      "aggregator_url": "https://vs.yiketools.com/goods/12911453/677r02",
+      "original_shop_url": "https://wzyp.cn/item/677r02",
+      "original_read_status": "waf_blocked",
+      "reference_price_cny": 0.53,
+      "price_unit": "one short-use Codex SMS CDK (third-party snapshot)",
+      "aggregator_updated_local": "2026-11-22 11:40",
+      "seller_claim_long_lived_wholesale_from_cny": 1,
+      "real_wholesale_price_cny": null,
+      "number_hold_days_verified": null,
+      "chatgpt_web_supported_verified": false,
+      "first_api_key_supported_verified": false,
+      "real_sms_success_verified": false,
+      "cash_refund_verified": false,
+      "valid_payment_total_cny": null,
+      "seller_claim_phone_invalid_new_risk_date": "11月18日",
+      "openai_policy_change_verified": false
+    },
+    {
+      "seller": "人工智能小铺",
+      "sku": "jfwlu5",
+      "aggregator_url": "https://vs.yiketools.com/goods/21851/jfwlu5",
+      "original_shop_url": "https://wzyp.cn/item/jfwlu5",
+      "original_read_status": "waf_blocked",
+      "reference_price_cny": 5.44,
+      "price_unit": "one claimed 20–30-day US +1 phone number (third-party snapshot)",
+      "aggregator_updated_local": "2026-11-22 11:42",
+      "seller_claim_duration_days": [
+        20,
+        30
+      ],
+      "number_hold_days_verified": null,
+      "seller_claim_max_bindings": 3,
+      "seller_claim_guaranteed_bindings": 1,
+      "seller_claim_failure_screenshot_required": true,
+      "cash_refund_verified": false,
+      "valid_payment_total_cny": null,
+      "chatgpt_web_supported_verified": false,
+      "first_api_key_supported_verified": false,
+      "real_sms_success_verified": false,
+      "seller_claim_phone_invalid_new_risk_date": "11月18日",
+      "openai_policy_change_verified": false
+    }
+  ],
+  "phone_verification_official": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_general_phone_not_required": true,
+    "codex_chatgpt_desktop_may_ask": true,
+    "initial_api_key_requires_phone": true,
+    "voip_unsupported": true,
+    "unverified_merchant_11_18_warning_is_not_new_openai_policy": true,
+    "apple_session_subscription_does_not_auto_bind_phone": true
+  },
+  "sources": [
+    {
+      "url": "https://go.hopeai.cc/",
+      "observed_on": "2026-11-22",
+      "status": "first_party_read",
+      "notes": "seller invoice payee mismatch, no returns, cumulative discounts"
+    },
+    {
+      "url": "https://vs.yiketools.com/goods/12911453/677r02",
+      "observed_on": "2026-11-22",
+      "status": "third_party_read",
+      "notes": "¥0.53/short Codex binding reference; 11/18 seller warning"
+    },
+    {
+      "url": "https://vs.yiketools.com/goods/21851/jfwlu5",
+      "observed_on": "2026-11-22",
+      "status": "third_party_read",
+      "notes": "¥5.44/20–30 days number claim and merchant refund limits"
+    },
+    {
+      "url": "https://wzyp.cn/item/677r02",
+      "observed_on": "2026-11-22",
+      "status": "waf_blocked_no_original_product"
+    },
+    {
+      "url": "https://wzyp.cn/item/jfwlu5",
+      "observed_on": "2026-11-22",
+      "status": "waf_blocked_no_original_product"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-22",
+      "status": "official_read"
+    }
+  ],
+  "qualification": {
+    "historic_supplier_prices_not_refreshed": true,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "actual_chinese_vat_invoice_verified": 0,
+    "formal_resale_authorizations_verified": 0,
+    "actual_sms_successes": 0,
+    "history_unchanged": true,
+    "no_payment_contact_credentials": true
+  }
+}

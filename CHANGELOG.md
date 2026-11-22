@@ -1,3 +1,10 @@
+## 1.9.279 · 2026-11-22
+
+- 第271轮新读一方原站 https://go.hopeai.cc/ 自述“开票与收款人不一致，介意勿拍。要一致联系客服”，并称虚拟品下单不退。累计消费¥1000/5000/10000/50000对应98/95/90/88折，非已核单件真正批发价；准确月付Plus SKU、法定收付及出票主体、税票种类、必需支付/开票费和授权均null或未验。首页搜索片段的¥148/¥158 Plus卡密、¥28 Codex首验不构成准确原SKU当次付款价。
+- 三方索引 https://vs.yiketools.com/goods/12911453/677r02 2026-11-22 11:40参考¥0.53/次Codex CDK、https://vs.yiketools.com/goods/21851/jfwlu5 11:42参考¥5.44/商称20–30天手机号，两商品非Plus订阅；源店 https://wzyp.cn/item/677r02 和 https://wzyp.cn/item/jfwlu5 均WAF遮挡，三方价不更新为原店当前结算。二者出现类似“11月18日新风控、号码无效”卖家文案，不是独立多项验证或OpenAI官方规则变化。
+- OpenAI官方 https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like 仍分别区分ChatGPT一般注册、Codex桌面可触发、首次API Key必需手机号；VoIP等不支持。无法证明短信成功/持号期限/失败原路现金退款，Plus普通充值或Apple/Session交付不是自动绑号。
+- CatFK、小久、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay既有价格观察日未刷新。本人原号单件单月、无前置代理费、全部支付及有效中国VAT≤¥170的已核真正Plus批发仍0，实购/验票/授权/SMS成功均0；仅新增r271 HTML/JSON、白名单SHA256、project-1、总库、VERSION、指针及断言，前270轮和126条旧报价原字节保留，不付款、联系商家或提交凭据。
+
 ## 1.9.278 · 2026-11-22
 
 - 第270轮首次原站直读 CatFK 独立卖家 skuld 原号Plus准确SKU https://catfk.com/item/qtghxy：一件一月标价¥120、未填写信息/未提交订单的支付预览手续费¥2.16、显示总额¥122.16；商品名含Codex但属ChatGPT Plus订阅，不是独立Codex短信服务。

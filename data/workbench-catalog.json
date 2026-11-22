@@ -6304,6 +6304,28 @@
       "summary": "精确SKU、¥120+¥2.16未支付预览、6%发票宣传、经营自述；16688另一SKU不混同，最终VAT总费null，真实授权/付款/SMS成功为0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r271-20261122",
+      "title": "GPT源头第271轮 · 票款主体冲突和Codex接码风险提醒",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r03.html",
+      "updatedAt": "2026-11-22",
+      "summary": "新候选知云小卖部一方承认开票与收款人不一致，累计消费折扣非批发；接码两SKU三方参考¥0.53/次与¥5.44/宣称20–30天，卖家11月18日号码无效提醒不等于OpenAI官方新规。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r271-20261122-evidence",
+      "title": "第271轮 · 新商家开票风险、手机号验证索引与失败边界JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r03-evidence.json",
+      "updatedAt": "2026-11-22",
+      "summary": "一方公告、两条三方准确SKU、两原商家WAF失败与官方验证范围；未知费用null、严格已核Plus批发0、验票与短信实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
