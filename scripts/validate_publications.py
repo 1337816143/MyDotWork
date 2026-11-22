@@ -131,15 +131,30 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 577, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 579, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.272'
+    assert latest['version'] == '1.273'
     assert latest['date'] == '2026-11-22'
-    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r04.html'
-    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r04-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r03.html'
+    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r05.html'
+    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r05-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r04.html'
 
+
+    # R273: new merchant own-account retail claims and separate manual vs optional automated SMS.
+    assert by_id['gpt-source-followup-r273-20261122']['url'].endswith('supplier-followup-20261122-r05.html')
+    assert by_id['gpt-source-followup-r273-20261122-evidence']['url'].endswith('supplier-followup-20261122-r05-evidence.json')
+    r273 = json.loads((ROOT / 'dist/research/2026-11-22/supplier-followup-20261122-r05-evidence.json').read_bytes())
+    assert r273['round'] == 273 and r273['site_version'] == '1.9.281'
+    assert r273['new_retail_candidate']['listed_price_cny_per_account_month'] == 135
+    assert r273['new_retail_candidate']['total_required_payment_with_valid_china_vat_cny'] is None
+    assert r273['new_retail_candidate']['session_json_required_at_redemption'] is True
+    assert r273['new_retail_candidate']['shared_domain_proves_same_real_upstream'] is False
+    assert r273['new_independent_phone_verification']['merchant_advertised_price_cny_per_one_credit'] == 0.75
+    assert r273['new_independent_phone_verification']['linked_sku'] == 'G67624440'
+    assert r273['new_independent_phone_verification']['manual_vip_region_success_debit_credits'] == 2
+    assert r273['new_independent_phone_verification']['auto_mode_may_request_email_optional_password_2fa_and_mail_code'] is True
+    assert r273['qualification']['verified_true_plus_wholesale_upstreams'] == 0
 
     # R272: separate original Plus SKUs and paid-invoice/wholesale proof from unpaid preview.
     assert by_id['gpt-source-followup-r272-20261122']['url'].endswith('supplier-followup-20261122-r04.html')
