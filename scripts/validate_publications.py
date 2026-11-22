@@ -131,15 +131,35 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 581, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 583, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.274'
-    assert latest['date'] == '2026-11-22'
-    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r06.html'
-    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r06-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r05.html'
+    assert latest['version'] == '1.275'
+    assert latest['date'] == '2026-11-23'
+    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123.html'
+    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r06.html'
 
+
+    # R275: old-vs-new same SKU snapshots, zero-stock and refund statements are not actual inventory or checkout.
+    assert by_id['gpt-source-followup-r275-20261123']['url'].endswith('supplier-followup-20261123.html')
+    assert by_id['gpt-source-followup-r275-20261123-evidence']['url'].endswith('supplier-followup-20261123-evidence.json')
+    r275 = json.loads((ROOT / 'dist/research/2026-11-23/supplier-followup-20261123-evidence.json').read_bytes())
+    assert r275['round'] == 275 and r275['site_version'] == '1.9.283'
+    assert r275['historical_source']['observed_on'] == '2026-11-06'
+    assert r275['current_original_product']['observed_on'] == '2026-11-23'
+    assert r275['historical_source']['ordinary_channel1_cny_per_account_month'] == 110
+    assert r275['historical_source']['ordinary_channel3_ios_cny_per_account_month'] == 120
+    assert r275['current_original_product']['ordinary_channel1_cny_per_account_month'] == 111
+    assert r275['current_original_product']['ordinary_channel3_ios_cny_per_account_month'] == 128
+    assert r275['current_original_product']['listed_stock_quantity'] == 0
+    assert r275['current_original_product']['merchant_page_preorder_only'] is True
+    assert r275['current_original_product']['seller_claims_preorder_cancel_to_original_payment_has_percent_fee'] == 10
+    assert r275['current_original_product']['seller_disclaims_mainland_china_customers'] is True
+    assert r275['current_original_product']['full_actual_cost_with_verified_china_vat_invoice_cny'] is None
+    assert r275['public_snapshot_difference']['merchant_price_change_effective_date'] is None
+    assert r275['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r275['qualification']['real_sms_successes'] == 0
 
     # R274: advertised invoice surcharge already exceeds budget, but valid VAT cost remains unknown.
     assert by_id['gpt-source-followup-r274-20261122']['url'].endswith('supplier-followup-20261122-r06.html')

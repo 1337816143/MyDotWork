@@ -1,0 +1,167 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 275,
+  "site_version": "1.9.283",
+  "observed_on": "2026-11-23",
+  "observation_timezone": "Asia/Shanghai",
+  "previous_report": "research/2026-11-22/supplier-followup-20261122-r06.html",
+  "change_kind": "first_party_same_sku_public_price_snapshot_difference_and_displayed_zero_stock",
+  "historical_source": {
+    "url": "research/2026-11-06/supplier-followup-20261106-r19-evidence.json",
+    "original_product_url": "https://zhanghao66.com/item/51",
+    "observed_on": "2026-11-06",
+    "round": 74,
+    "ordinary_channel1_cny_per_account_month": 110,
+    "ordinary_channel3_ios_cny_per_account_month": 120,
+    "member_ai_agent_channel1_cny": 108,
+    "member_ai_partner_channel1_cny": 107,
+    "availability_read": "preorder displayed together with automatic delivery and stock-abundant marketing; actual ready-to-ship stock not verified"
+  },
+  "current_original_product": {
+    "merchant_display_name": "全网最低批发ai账号店铺（zhanghao66）",
+    "url": "https://zhanghao66.com/item/51",
+    "sku": "item/51",
+    "offer": "ChatGPT Plus for buyer's own existing account, 1 card / approximately 1 month",
+    "observed_on": "2026-11-23",
+    "currency": "CNY",
+    "quantity": 1,
+    "duration_months": 1,
+    "ordinary_channel1_cny_per_account_month": 111,
+    "ordinary_channel3_ios_cny_per_account_month": 128,
+    "warranty_options_for_each_channel": [
+      "only_activation_warranty",
+      "claimed_subscription_warranty_30_days"
+    ],
+    "member_ai_partner_channel1_cny": 107.5,
+    "member_ai_agent_channel1_cny": 108,
+    "member_ai_partner_channel3_ios_cny": 123,
+    "member_ai_agent_channel3_ios_cny": 124,
+    "listed_stock_quantity": 0,
+    "merchant_page_preorder_only": true,
+    "actual_delivery_capability_verified": false,
+    "displayed_auto_delivery_banner_conflicts_with_zero_stock": true,
+    "merchant_promoted_agent_entry_fee_cny": 99,
+    "seller_disclaims_mainland_china_customers": true,
+    "seller_claims_preorder_cancel_to_store_balance_no_fee": true,
+    "seller_claims_preorder_cancel_to_original_payment_has_percent_fee": 10,
+    "seller_claims_card_used_after_first_redemption_attempt_no_refund": true,
+    "seller_claims_if_official_refund_then_channel1_customer_receives_percent": 80,
+    "seller_claims_channel3_banned_account_refund": false,
+    "seller_claims_channel1_free_or_expired_subscription_required": true,
+    "seller_claims_channel3_can_replace_active_subscription_but_forfeits_remaining_days": true,
+    "seller_requires_prior_chatgpt_web_login_and_authorization_info": true,
+    "exact_session_token_payload": null,
+    "payment_processing_fee_cny": null,
+    "china_vat_invoice_fee_cny": null,
+    "valid_china_vat_invoice_verified": false,
+    "seller_legal_entity": null,
+    "legal_payment_recipient": null,
+    "legal_invoice_issuer": null,
+    "real_single_unit_wholesale_cost_cny": null,
+    "full_actual_cost_with_verified_china_vat_invoice_cny": null,
+    "formal_resale_authorization_verified": false,
+    "actual_purchase_or_payment": false,
+    "actual_sms_success": false,
+    "qualifies_for_required_mainland_no_upfront_invoice_included_wholesale": false
+  },
+  "public_snapshot_difference": {
+    "ordinary_channel1_cny": 1,
+    "ordinary_channel3_ios_cny": 8,
+    "ai_partner_channel1_cny": 0.5,
+    "ai_agent_channel1_cny": 0,
+    "old_and_new_are_different_observation_dates": true,
+    "merchant_price_change_effective_date": null,
+    "merchant_stock_change_effective_date": null,
+    "evidence_does_not_establish_real_paid_price_or_operating_warehouse_stock": true
+  },
+  "source_observations": [
+    {
+      "url": "https://zhanghao66.com/item/51",
+      "observed_on": "2026-11-23",
+      "kind": "first_party_current_product_page",
+      "observation": "Ordinary channel1 CNY111 and channel3 iOS CNY128 per own-account Plus one-month SKU, two warranty labels at same price. Old 2026-11-06 direct archive CNY110 and CNY120, respectively; dates differ, actual change date unknown."
+    },
+    {
+      "url": "https://zhanghao66.com/item/51",
+      "observed_on": "2026-11-23",
+      "kind": "first_party_stock_terms",
+      "observation": "Product says zero units in stock and preorder only, despite generic auto-shipping/stock-abundant banner. Cancellation to store balance without fee, original-payment refund incurs merchant-claimed 10% deduction; no preorder or refund tested."
+    },
+    {
+      "url": "https://zhanghao66.com/item/51",
+      "observed_on": "2026-11-23",
+      "kind": "seller_claim_and_member_prices",
+      "observation": "AI partner channel1 CNY107.50, AI agent channel1 CNY108, channel3 CNY123/124; membership entry advertised CNY99 and Mainland China users disallowed. Member list is not verified single-unit wholesale checkout or formal authorization."
+    },
+    {
+      "url": "https://zhanghao66.com/item/51",
+      "observed_on": "2026-11-23",
+      "kind": "seller_redemption_and_aftersales",
+      "observation": "Channel1 PH card route requires eligible account and may need prior iOS/Google subscription to expire; channel3 iOS allegedly replaces active subscription without preserving time; must first log in to ChatGPT and send authorization info to redemption site. Merchant terms restrict refunds; actual Session/Token content unverified."
+    },
+    {
+      "url": "research/2026-11-06/supplier-followup-20261106-r19-evidence.json",
+      "observed_on": "2026-11-06",
+      "kind": "previously_archived_observation_not_refreshed",
+      "observation": "Historical r74 first-party same item/51 prices and eligibility are retained with original observation date."
+    }
+  ],
+  "existing_sources_rechecked_no_material_change": [
+    {
+      "url": "https://98-xj.com/",
+      "observed_on": "2026-11-23",
+      "kind": "previously_archived_unchanged",
+      "observation": "小久目录本人Plus仍标CNY110 one unit; historical price observation not refreshed."
+    },
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-23",
+      "kind": "previously_archived_unchanged",
+      "observation": "引路鲸有质保Plus仍显示CNY155 per month; no new verified invoice/wholesale evidence."
+    },
+    {
+      "url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-23",
+      "kind": "previously_archived_unchanged",
+      "observation": "PayForGPT Plus SKU7 still CNY160; seller VAT claims already archived; no verified tax invoice or wholesale authorization."
+    },
+    {
+      "url": "https://12gpt.com/",
+      "observed_on": "2026-11-23",
+      "kind": "previously_archived_unchanged",
+      "observation": "12GPT Plus CNY135 one month; Session and phone verification risks previously archived."
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-23",
+      "kind": "failed_to_read_current_body",
+      "observation": "No readable current SKU details; historical price remains dated to prior observation."
+    },
+    {
+      "url": "https://getgpt.pro/purchase-gptpro?tier=gptpro",
+      "observed_on": "2026-11-23",
+      "kind": "js_only_no_readable_sku",
+      "observation": "Loading shell only, current SKU prices not reverified."
+    }
+  ],
+  "independent_phone_verification": {
+    "new_verified_provider_or_applicable_official_change": false,
+    "chatgpt_web_sms_successes": 0,
+    "codex_desktop_sms_successes": 0,
+    "first_api_key_sms_successes": 0,
+    "phone_hold_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "ordinary_plus_or_apple_or_session_auto_binds_phone_proven": false
+  },
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "formal_resale_authorizations_verified": 0,
+    "real_sms_successes": 0,
+    "payments_made": false,
+    "merchants_contacted": false,
+    "credentials_submitted": false,
+    "prior_274_reports_and_126_historical_quote_rows_unchanged": true
+  }
+}

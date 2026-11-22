@@ -6392,6 +6392,28 @@
       "summary": "原站可见¥122及未付款合计¥122、+¥50商称发票费、30天售后与官方退款20%扣费；真正含VAT成交总额null、实际实测均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r275-20261123",
+      "title": "GPT源头第275轮 · zhanghao66同SKU价签差额与0库存预订售后",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123.html",
+      "updatedAt": "2026-11-23",
+      "summary": "已有卖家item/51同款原号Plus渠道1旧¥110→本轮¥111、渠道3 iOS旧¥120→¥128；现显示0库存、预约退原支付方式商称扣10%，大陆不支持且代理宣传前置¥99；非新合格真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r275-20261123-evidence",
+      "title": "第275轮 · 同SKU价格与库存差额、退款边界、上游缺口 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-evidence.json",
+      "updatedAt": "2026-11-23",
+      "summary": "直读zhanghao66 item/51报价与0库存，区分2026-11-06旧观察；不把店铺余额退回当现金退款，价签不是已付中国VAT总额，真批发上游0、付款与SMS实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
