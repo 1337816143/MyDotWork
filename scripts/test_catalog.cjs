@@ -3181,3 +3181,23 @@ assert.equal(r272.merchant.one_piece_genuine_wholesale_price_cny,null);
 assert.equal(r272.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r272.qualification.real_valid_china_vat_invoice_verifications,0);
 assert.equal(r272.qualification.real_sms_successes,0);
+
+// R273: new retail seller disclosure, standalone SMS credit and manual-vs-automation separation.
+const r273rec=d.records.find(x=>x.id==='gpt-source-followup-r273-20261122');
+const r273ev=d.records.find(x=>x.id==='gpt-source-followup-r273-20261122-evidence');
+assert(r273rec&&r273ev&&r273rec.url.endsWith('supplier-followup-20261122-r05.html'));
+const r273=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-22/supplier-followup-20261122-r05-evidence.json'),'utf8'));
+assert.equal(r273.round,273);assert.equal(r273.site_version,'1.9.281');
+assert.equal(r273.new_retail_candidate.listed_price_cny_per_account_month,135);
+assert.equal(r273.new_retail_candidate.exact_plus_payment_sku,null);
+assert.equal(r273.new_retail_candidate.total_required_payment_with_valid_china_vat_cny,null);
+assert.equal(r273.new_retail_candidate.session_json_required_at_redemption,true);
+assert.equal(r273.new_retail_candidate.shared_domain_proves_same_real_upstream,false);
+assert.equal(r273.new_independent_phone_verification.merchant_advertised_price_cny_per_one_credit,0.75);
+assert.equal(r273.new_independent_phone_verification.linked_sku,'G67624440');
+assert.equal(r273.new_independent_phone_verification.linked_original_product_page_readable,false);
+assert.equal(r273.new_independent_phone_verification.manual_vip_region_success_debit_credits,2);
+assert.equal(r273.new_independent_phone_verification.auto_mode_may_request_email_optional_password_2fa_and_mail_code,true);
+assert.equal(r273.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r273.qualification.actual_plus_purchases,0);
+assert.equal(r273.qualification.real_sms_successes,0);

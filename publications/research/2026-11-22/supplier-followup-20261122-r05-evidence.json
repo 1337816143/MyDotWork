@@ -1,0 +1,156 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 273,
+  "site_version": "1.9.281",
+  "observed_on": "2026-11-22",
+  "observation_timezone": "Asia/Shanghai",
+  "previous_report": "research/2026-11-22/supplier-followup-20261122-r04.html",
+  "new_retail_candidate": {
+    "name": "12GPT代充",
+    "homepage": "https://12gpt.com/",
+    "first_party_read": true,
+    "plan": "ChatGPT Plus",
+    "account_claim": "own existing ChatGPT account",
+    "listed_price_cny_per_account_month": 135,
+    "unit": "CNY/account/month",
+    "exact_plus_payment_sku": null,
+    "one_unit_month_offered": true,
+    "payment_processor_fee_cny": null,
+    "final_paid_total_cny": null,
+    "merchant_claims_invoice_available": true,
+    "china_vat_invoice_type": null,
+    "china_vat_invoice_extra_cny": null,
+    "legal_payment_entity": null,
+    "legal_china_vat_issuer": null,
+    "total_required_payment_with_valid_china_vat_cny": null,
+    "genuine_single_unit_wholesale_price_cny": null,
+    "upfront_agent_fee_cny": null,
+    "formal_openai_resale_authorization_verified": false,
+    "merchant_disclaims_official_openai_agency": true,
+    "existing_active_subscription_renewal_verified": false,
+    "redemption_url": "https://982xj.xyz/",
+    "session_json_required_at_redemption": true,
+    "shared_redeem_domain_mentioned_in_prior_reports": true,
+    "shared_domain_proves_same_real_upstream": false,
+    "merchant_policy_refund_case_by_case": true,
+    "merchant_refund_policy_effective_date": "2026-10-08",
+    "cash_refund_verified": false,
+    "real_fulfillment_verified": false
+  },
+  "new_independent_phone_verification": {
+    "landing_url": "https://12gpt.com/chatgpt-sms",
+    "merchant_advertised_price_cny_per_one_credit": 0.75,
+    "unit": "CNY/one SMS receipt credit",
+    "merchant_page_says_price_checked": "2026-11-18",
+    "linked_sku": "G67624440",
+    "linked_sku_url": "https://www.16688.com.cn/goods/G67624440",
+    "linked_original_product_page_readable": false,
+    "original_product_checkout_price_cny": null,
+    "original_payment_fee_cny": null,
+    "actual_total_paid_cny": null,
+    "redemption_site": "https://yimeng1.ccwu.cc/",
+    "manual_sms_session_required": false,
+    "manual_normal_region_success_debit_credits": 1,
+    "manual_vip_region_success_debit_credits": 2,
+    "manual_failure_returns_frozen_site_credits_claim": true,
+    "failed_sms_original_cash_refund_verified": false,
+    "number_hold_duration_days": null,
+    "subsequent_same_number_sms_verified": false,
+    "web_login_success_verified": false,
+    "codex_desktop_success_verified": false,
+    "first_api_key_success_verified": false,
+    "automated_binding_is_separate_optional_mode": true,
+    "auto_mode_may_request_email_optional_password_2fa_and_mail_code": true,
+    "auto_mode_real_phone_binding_success_verified": false,
+    "plus_payment_does_not_automatically_bind_phone": true,
+    "real_sms_successes": 0
+  },
+  "official_phone_rules": {
+    "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "general_chatgpt_phone_not_generally_required": true,
+    "codex_desktop_phone_may_be_required": true,
+    "first_api_key_phone_required": true,
+    "voip_unsupported": true,
+    "verified_new_rule_change": false
+  },
+  "no_new_verified_change_candidates": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "AI源头小铺"
+  ],
+  "sources": [
+    {
+      "url": "https://12gpt.com/",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_first_party",
+      "page_self_date": null,
+      "observation": "Plus CNY 135/account-month, own account, merchant says invoice"
+    },
+    {
+      "url": "https://12gpt.com/tutorials/subscription-guide/",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_first_party_terms",
+      "page_self_date": "2026-11-11",
+      "observation": "982xj.xyz redemption requires full Session JSON; may have payment surcharge"
+    },
+    {
+      "url": "https://12gpt.com/terms-of-service",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_first_party_terms",
+      "page_self_date": "2026-10-08",
+      "observation": "Not OpenAI agent; final prices and processing depend on confirmed order"
+    },
+    {
+      "url": "https://12gpt.com/refund-policy",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_first_party_terms",
+      "page_self_date": "2026-10-08",
+      "observation": "Manual review, potential original-channel refund; no fixed amount or time"
+    },
+    {
+      "url": "https://12gpt.com/chatgpt-sms",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_first_party_listing",
+      "page_self_date": "2026-11-18 price/rules check",
+      "observation": "0.75 CNY per credit; leads to 16688 G67624440"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G67624440",
+      "observed_on": "2026-11-22",
+      "source_kind": "unreadable_linked_original_sku",
+      "page_self_date": null,
+      "observation": "Page content empty: cannot verify checkout price or extra fee"
+    },
+    {
+      "url": "https://yimeng1.ccwu.cc/",
+      "observed_on": "2026-11-22",
+      "source_kind": "service_first_party_terms",
+      "page_self_date": null,
+      "observation": "Manual vs automated binding distinct; successful SMS 1/2 credit, failed release returns frozen site credits; auto requests credentials"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-22",
+      "source_kind": "official_unchanged",
+      "page_self_date": null,
+      "observation": "ChatGPT general vs Codex desktop vs first API key; VoIP unsupported"
+    }
+  ],
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_formal_resale_authorizations": 0,
+    "real_sms_successes": 0,
+    "contacted_or_paid_or_shared_credentials": false,
+    "previous_272_reports_and_126_original_quotes_untouched": true
+  }
+}
