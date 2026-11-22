@@ -131,15 +131,34 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 579, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 581, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.273'
+    assert latest['version'] == '1.274'
     assert latest['date'] == '2026-11-22'
-    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r05.html'
-    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r05-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r04.html'
+    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r06.html'
+    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r06-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r05.html'
 
+
+    # R274: advertised invoice surcharge already exceeds budget, but valid VAT cost remains unknown.
+    assert by_id['gpt-source-followup-r274-20261122']['url'].endswith('supplier-followup-20261122-r06.html')
+    assert by_id['gpt-source-followup-r274-20261122-evidence']['url'].endswith('supplier-followup-20261122-r06-evidence.json')
+    r274 = json.loads((ROOT / 'dist/research/2026-11-22/supplier-followup-20261122-r06-evidence.json').read_bytes())
+    assert r274['round'] == 274 and r274['site_version'] == '1.9.282'
+    candidate = r274['new_retail_candidate']
+    assert candidate['exact_sku'] == 'G25645664'
+    assert candidate['first_party_visible_price_cny'] == 122
+    assert candidate['first_party_unpaid_preorder_display_total_cny'] == 122
+    assert candidate['processing_fee_cny'] is None
+    assert candidate['merchant_claim_invoice_surcharge_cny'] == 50
+    assert candidate['arithmetic_price_plus_merchant_claim_invoice_surcharge_cny'] == 172
+    assert candidate['actual_full_payment_including_verified_china_vat_cny'] is None
+    assert candidate['session_or_token_requirement_verified_for_this_sku'] is None
+    assert r274['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r274['qualification']['actual_plus_purchases'] == 0
+    assert r274['qualification']['verified_china_vat_invoices'] == 0
+    assert r274['qualification']['real_sms_successes'] == 0
 
     # R273: new merchant own-account retail claims and separate manual vs optional automated SMS.
     assert by_id['gpt-source-followup-r273-20261122']['url'].endswith('supplier-followup-20261122-r05.html')

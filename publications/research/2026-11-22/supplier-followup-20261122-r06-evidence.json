@@ -1,0 +1,131 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 274,
+  "site_version": "1.9.282",
+  "observed_on": "2026-11-22",
+  "observation_timezone": "Asia/Shanghai",
+  "previous_report": "research/2026-11-22/supplier-followup-20261122-r05.html",
+  "new_retail_candidate": {
+    "merchant_display_name": "数卡星球",
+    "merchant_shop_url": "https://www.16688.com.cn/shop/S833876",
+    "original_product_url": "https://www.16688.com.cn/goods/G25645664",
+    "platform": "16688",
+    "exact_sku": "G25645664",
+    "plan": "ChatGPT Plus",
+    "claimed_account_type": "buyer's existing ChatGPT account",
+    "quantity": 1,
+    "duration_months": 1,
+    "currency": "CNY",
+    "first_party_visible_price_cny": 122,
+    "first_party_unpaid_preorder_display_total_cny": 122,
+    "payment_method_chosen_and_order_submitted": false,
+    "processing_fee_cny": null,
+    "other_payment_fees_cny": null,
+    "merchant_claim_domestic_e_invoice_available": true,
+    "merchant_claim_invoice_surcharge_cny": 50,
+    "arithmetic_price_plus_merchant_claim_invoice_surcharge_cny": 172,
+    "arithmetic_exceeds_170_cny_limit": true,
+    "verified_valid_china_vat_invoice": false,
+    "verified_china_vat_invoice_type": null,
+    "verified_china_vat_invoice_amount_cny": null,
+    "legally_registered_seller_entity": null,
+    "legal_payment_recipient": null,
+    "legal_china_vat_invoice_issuer": null,
+    "actual_full_payment_including_verified_china_vat_cny": null,
+    "real_single_unit_wholesale_cost_cny": null,
+    "zero_upfront_agency_fee_verified": null,
+    "official_resale_authorization_verified": false,
+    "merchant_claim_free_account_only": true,
+    "in_term_plus_renewal_or_stacking_supported": false,
+    "merchant_claim_prior_ios_google_subscription_must_fully_expire": true,
+    "merchant_claim_card_redemption_domain": "https://apihub-ai.com/",
+    "session_or_token_requirement_verified_for_this_sku": null,
+    "same_redemption_domain_proves_same_wholesale_upstream": false,
+    "merchant_claim_30_day_subscription_loss_warranty": true,
+    "merchant_claim_prorated_refund_for_subscription_loss": true,
+    "merchant_claim_official_refund_20_percent_reduction": true,
+    "merchant_claim_account_ban_excluded_from_warranty": true,
+    "actual_delivery_success": false,
+    "actual_refund_test_success": false,
+    "qualification": "excluded_from_cny170_limit_on_disclosed_cny122_plus_cny50_components; not verified wholesale or authorized"
+  },
+  "source_observations": [
+    {
+      "url": "https://www.16688.com.cn/goods/G25645664",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_original_live_browser_price_display",
+      "observation": "Seller SKU G25645664 product price CNY122 and unsubmitted UI total CNY122. No separately labeled processing fee visible; no chosen payment method, order, or payment. Payment fee null, not 0."
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G25645664",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_original_product_terms_live_read",
+      "observation": "Seller states one month existing-account Plus, free-only, no stacking/active member renewal; card code goes to apihub-ai.com, 30-day subscription-loss aftersales; China e-invoice incurs extra CNY50 payable after order, OpenAI receipt is separate; original refund 20% withheld."
+    },
+    {
+      "url": "https://www.16688.com.cn/shop/S833876",
+      "observed_on": "2026-11-22",
+      "source_kind": "merchant_shop_locator",
+      "observation": "Original product names seller 数卡星球 and links shop; location label 中国甘肃 is not legal payment or invoicing identity."
+    },
+    {
+      "url": "https://aipricedb.com/prices/chatgpt-plus/recharge",
+      "observed_on": "2026-11-22",
+      "source_kind": "third_party_discovery_index_not_original_price",
+      "observation": "Index led to G25645664; price was separately checked via original live product UI, index does not establish order success or upstream status."
+    },
+    {
+      "url": "https://wind89.com/plans/chatgpt-plus?sku=27",
+      "observed_on": "2026-11-22",
+      "source_kind": "previously_archived_price_recheck_not_new",
+      "observation": "Original Plus SKU27 still displays CNY139.99 with CNY10 invoice checkbox; do not refresh old quote date."
+    },
+    {
+      "url": "https://wind89.com/guide/invoice",
+      "observed_on": "2026-11-22",
+      "source_kind": "previously_archived_seller_terms_recheck",
+      "observation": "Seller says electronic ordinary invoice only for logged-in members, Plus CNY10 surcharge; legal issuer, validated China VAT and real total unverified."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-22",
+      "source_kind": "official_rules_no_verified_new_change",
+      "observation": "Normal ChatGPT registration vs Codex desktop possible SMS vs first API Key phone verification distinguished; neither Plus purchase nor Apple nor Session guarantees automatic phone binding."
+    }
+  ],
+  "checked_existing_candidates_no_credible_material_change": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay",
+    "12GPT",
+    "苏哲AI",
+    "AIPlusGate"
+  ],
+  "independent_phone_verification": {
+    "new_verified_phone_service_or_rule_change": false,
+    "web_login_successes": 0,
+    "codex_desktop_successes": 0,
+    "first_api_key_successes": 0,
+    "phone_hold_days": null,
+    "failed_sms_cash_refund_verified": false,
+    "ordinary_plus_auto_phone_binding_proven": false
+  },
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "verified_china_vat_invoices": 0,
+    "verified_formal_resale_authorizations": 0,
+    "real_sms_successes": 0,
+    "contacted_sellers": false,
+    "submitted_credentials": false,
+    "payments_made": false,
+    "previous_273_reports_and_126_original_quotes_untouched": true
+  }
+}
