@@ -6326,6 +6326,28 @@
       "summary": "一方公告、两条三方准确SKU、两原商家WAF失败与官方验证范围；未知费用null、严格已核Plus批发0、验票与短信实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r272-20261122",
+      "title": "GPT源头第272轮 · 16688准确原号Plus SKU手续费与国内开票另报价",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r04.html",
+      "updatedAt": "2026-11-22",
+      "summary": "AI源头小铺G55968486原号Plus¥112.06/月、未付手续费¥3.1377、显示¥115.20；另一SKU同价但手续费未知，批发及国内增值税开票另报价，不能视为已核上游。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r272-20261122-evidence",
+      "title": "第272轮 · 新商家SKU、支付费与VAT/批发资格缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-22/supplier-followup-20261122-r04-evidence.json",
+      "updatedAt": "2026-11-22",
+      "summary": "两款独立原号Plus SKU；明确首款¥3.1377未付手续费，另一款未填付款页费null，企业国内开票和批发需另报，实购/验票/授权/SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

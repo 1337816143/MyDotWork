@@ -1,0 +1,164 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 272,
+  "site_version": "1.9.280",
+  "observed_on": "2026-11-22",
+  "observation_timezone": "Asia/Shanghai",
+  "previous_report": "research/2026-11-22/supplier-followup-20261122-r03.html",
+  "merchant": {
+    "name": "AI源头小铺",
+    "platform": "16688",
+    "store_id": "S747438",
+    "source_url": "https://www.16688.com.cn/shop/S747438",
+    "directly_read": true,
+    "platform_displays_region": "中国广西",
+    "platform_displays_55_buyers": true,
+    "seller_claims_served_over_10000": true,
+    "seller_claims_wholesale_source": true,
+    "seller_claims_shop_product_reseller_integration": true,
+    "seller_says_reseller_code": "AI211",
+    "seller_says_bulk_price_separate_quote_based_on_initial_qty_and_daily_volume": true,
+    "seller_says_china_vat_invoice_separate_quote": true,
+    "seller_says_payment_channel_fee_extra": true,
+    "one_piece_genuine_wholesale_price_cny": null,
+    "min_wholesale_quantity": null,
+    "upfront_agent_fee_cny": null,
+    "legal_payment_entity_verified": null,
+    "legal_china_vat_issuer_verified": null,
+    "china_vat_invoice_extra_cny": null,
+    "valid_china_vat_invoice_verified": false,
+    "formal_supply_authorization_verified": false,
+    "actual_fulfillment_verified": false,
+    "platform_icp_is_not_seller_invoice_entity": true
+  },
+  "plus_skus": [
+    {
+      "sku": "G55968486",
+      "first_party_url": "https://www.16688.com.cn/goods/G55968486",
+      "plan": "ChatGPT Plus",
+      "account": "own existing account, Free only",
+      "period": "one month",
+      "region_claim": "Philippines",
+      "currency": "CNY",
+      "listed_price_cny_per_one_account_month": 112.06,
+      "minimum_quantity": 1,
+      "unpaid_checkout_fee_cny": 3.1377,
+      "unpaid_checkout_total_screen_cny": 115.2,
+      "arithmetic_unrounded_cny": 115.1977,
+      "preview_not_submitted": true,
+      "invoice_receipt_from_openai_is_not_china_vat": true,
+      "china_vat_invoice_extra_cny": null,
+      "all_required_payment_plus_valid_china_vat_cny": null,
+      "seller_claims_card_pay_and_automatic_card_delivery": true,
+      "seller_claims_30_days_subscription_warranty": true,
+      "seller_excludes_account_ban": true,
+      "seller_claims_over_10000_orders_and_success_rate_99_percent_unverified": true,
+      "session_token_requirement": null,
+      "actual_paid_and_fulfilled": false
+    },
+    {
+      "sku": "G39144461",
+      "first_party_url": "https://www.16688.com.cn/goods/G39144461",
+      "plan": "ChatGPT Plus",
+      "account": "own existing account, Free only",
+      "period": "one month",
+      "region_claim": "Philippines",
+      "currency": "CNY",
+      "listed_price_cny_per_one_account_month": 112.06,
+      "minimum_quantity": 1,
+      "unpaid_checkout_fee_cny": null,
+      "unpaid_checkout_total_screen_cny": null,
+      "checkout_ui_showed_unpopulated_zero_not_actual_free_checkout": true,
+      "china_vat_invoice_extra_cny": null,
+      "all_required_payment_plus_valid_china_vat_cny": null,
+      "seller_claims_30_days_subscription_warranty": true,
+      "session_token_requirement": null,
+      "actual_paid_and_fulfilled": false
+    }
+  ],
+  "terms": {
+    "active_go_plus_pro_not_allowed": true,
+    "abnormal_zero_price_subscription_not_allowed": true,
+    "early_renewal_success_verified": false,
+    "cash_refund_on_failure_verified": false,
+    "wholesale_requires_other_quote": true,
+    "china_vat_invoice_requires_other_quote": true
+  },
+  "phone_verification": {
+    "official_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "general_chatgpt_no_phone_requirement": true,
+    "codex_desktop_may_require": true,
+    "first_api_key_requires": true,
+    "voip_unsupported": true,
+    "plus_apple_session_does_not_automatically_bind_phone": true,
+    "number_hold_period_verified_days": null,
+    "real_sms_successes": 0,
+    "cash_refund_verified": false
+  },
+  "rechecks": [
+    {
+      "url": "https://catfk.com/item/qtghxy",
+      "date": "2026-11-22",
+      "result": "old ¥120 plus ¥2.16 unpaid fee, ¥122.16 unpaid preview, no new change; historic observation unchanged"
+    },
+    {
+      "url": "https://morimm.com/",
+      "date": "2026-11-22",
+      "result": "old Philippines Plus ¥114, iOS Plus ¥125, standalone Codex one-use SMS ¥4, no new change; historic observation unchanged"
+    }
+  ],
+  "legacy_candidates_no_new_verified_change": [
+    "小久",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "sources": [
+    {
+      "url": "https://www.16688.com.cn/shop/S747438",
+      "date": "2026-11-22",
+      "kind": "first_party_direct",
+      "observations": "independently quoted wholesale and domestic invoice; site counters and claims"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G55968486",
+      "date": "2026-11-22",
+      "kind": "first_party_direct",
+      "observations": "exact SKU, 112.06 CNY per month; unsubmitted fee 3.1377 and shown total 115.20"
+    },
+    {
+      "url": "https://www.16688.com.cn/goods/G39144461",
+      "date": "2026-11-22",
+      "kind": "first_party_direct",
+      "observations": "different SKU 112.06 per month; checkout fee unknown because unpopulated display"
+    },
+    {
+      "url": "https://catfk.com/item/qtghxy",
+      "date": "2026-11-22",
+      "kind": "first_party_recheck_unchanged"
+    },
+    {
+      "url": "https://morimm.com/",
+      "date": "2026-11-22",
+      "kind": "first_party_recheck_unchanged"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "date": "2026-11-22",
+      "kind": "official_verification_unchanged"
+    }
+  ],
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_plus_orders": 0,
+    "real_valid_china_vat_invoice_verifications": 0,
+    "formal_resale_authorizations_verified": 0,
+    "real_sms_successes": 0,
+    "previous_271_reports_and_126_original_quotes_unchanged": true,
+    "contacted_sellers_or_paid_or_shared_credentials": false
+  }
+}

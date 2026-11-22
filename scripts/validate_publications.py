@@ -131,15 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 575, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 577, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.271'
+    assert latest['version'] == '1.272'
     assert latest['date'] == '2026-11-22'
-    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r03.html'
-    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r03-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r02.html'
+    assert latest['path'] == 'research/2026-11-22/supplier-followup-20261122-r04.html'
+    assert latest['dataPath'] == 'research/2026-11-22/supplier-followup-20261122-r04-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r03.html'
 
+
+    # R272: separate original Plus SKUs and paid-invoice/wholesale proof from unpaid preview.
+    assert by_id['gpt-source-followup-r272-20261122']['url'].endswith('supplier-followup-20261122-r04.html')
+    assert by_id['gpt-source-followup-r272-20261122-evidence']['url'].endswith('supplier-followup-20261122-r04-evidence.json')
+    r272 = json.loads((ROOT / 'dist/research/2026-11-22/supplier-followup-20261122-r04-evidence.json').read_bytes())
+    assert r272['round'] == 272 and r272['site_version'] == '1.9.280'
+    assert r272['merchant']['store_id'] == 'S747438'
+    assert [x['sku'] for x in r272['plus_skus']] == ['G55968486', 'G39144461']
+    assert r272['plus_skus'][0]['unpaid_checkout_fee_cny'] == 3.1377
+    assert r272['plus_skus'][1]['unpaid_checkout_fee_cny'] is None
+    assert r272['merchant']['china_vat_invoice_extra_cny'] is None
+    assert r272['merchant']['one_piece_genuine_wholesale_price_cny'] is None
+    assert r272['qualification']['verified_true_plus_wholesale_upstreams'] == 0
 
     # R215: an aggregator API is not a verified Codex carrier, price or actual phone success.
     assert by_id['gpt-source-followup-r215-20261116']['url'].endswith('supplier-followup-20261116-r05.html')
