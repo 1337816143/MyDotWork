@@ -131,15 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 587, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 589, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.277'
+    assert latest['version'] == '1.278'
     assert latest['date'] == '2026-11-23'
-    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r03.html'
-    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r03-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r02.html'
+    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r04.html'
+    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r04-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r03.html'
 
+
+    # R278: historical source chronology takes precedence over r277 seller-first claim.
+    assert by_id['gpt-source-followup-r278-20261123']['url'].endswith('supplier-followup-20261123-r04.html')
+    assert by_id['gpt-source-followup-r278-20261123-evidence']['url'].endswith('supplier-followup-20261123-r04-evidence.json')
+    r278 = json.loads((ROOT / 'dist/research/2026-11-23/supplier-followup-20261123-r04-evidence.json').read_bytes())
+    assert r278['round'] == 278 and r278['site_version'] == '1.9.286'
+    assert r278['correction']['correct_merchant_first_archived_round'] == 104
+    assert r278['correction']['prior_separate_api_ordering_disclosure_round'] == 246
+    assert r278['correction']['no_old_files_overwritten'] is True
+    assert r278['correction']['no_new_merchant_or_sku_price_refresh'] is True
+    assert r278['historically_archived_sku']['all_required_fees_with_verified_china_VAT_cny'] is None
+    assert r278['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r278['phone_scope']['real_SMS_successes'] == 0
 
     # R277: nonzero reseller entry fee, absent VAT issuer and no real fulfillment.
     assert by_id['gpt-source-followup-r277-20261123']['url'].endswith('supplier-followup-20261123-r03.html')
