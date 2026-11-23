@@ -1,0 +1,182 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 279,
+  "site_version": "1.9.287",
+  "observed_on": "2026-11-23",
+  "observation_timezone": "Asia/Shanghai",
+  "change_kind": "bounded_OpenAI_Support_Codex_phone_invalid_number_error_response",
+  "previous_report": "research/2026-11-23/supplier-followup-20261123-r04.html",
+  "finding": {
+    "symptom": "The phone number you entered is invalid. Please check and try again.",
+    "reports_posted_on": "2026-11-18",
+    "support_reply_on": "2026-11-19",
+    "source_url": "https://community.openai.com/t/phone-number-verification-not-working-no-matter-what-number-i-use/1417689",
+    "source_type": "OpenAI Developer Community reply by OpenAI_Support",
+    "observed_on": "2026-11-23",
+    "verbatim_support_reply": "Hey everyone, we’ve made a change that should help with this verification error. Please sign out of Codex, sign back in with the same account, and try again using the same phone number. Let us know if it still fails.",
+    "recommended_scope": "For that exact error and a supported number controlled by the user, retry the same number after sign-out/sign-in before buying a third-party SMS service.",
+    "effective_date_of_change_verified": null,
+    "account_scope_verified": null,
+    "system_wide_fix_proven": false,
+    "success_after_retry_tested": false,
+    "auto_phone_binding_from_Plus_or_Apple_proven": false
+  },
+  "different_error": {
+    "report_date": "2026-11-20",
+    "original_url": "https://community.openai.com/t/codex-desktop-blocked-by-phone-number-already-in-use-since-sept-25-multiple-support-cases-closed-unresolved/1418687",
+    "error": "Phone number already in use. Please use a different phone number.",
+    "classification": "single user account report",
+    "support_fix_applicable_proven": false,
+    "actual_account_tested": false
+  },
+  "sources": [
+    {
+      "url": "https://community.openai.com/t/phone-number-verification-not-working-no-matter-what-number-i-use/1417689",
+      "posted_on": "2026-11-18",
+      "support_reply_on": "2026-11-19",
+      "observed_on": "2026-11-23",
+      "classification": "first_party_OpenAI_Community_official_support_account_reply",
+      "detail": "User reports Codex invalid phone input. OpenAI_Support says change should help and requests sign out of Codex, sign back in to same account, retry same number; no follow-up successful test available."
+    },
+    {
+      "url": "https://community.openai.com/t/codex-desktop-blocked-by-phone-number-already-in-use-since-sept-25-multiple-support-cases-closed-unresolved/1418687",
+      "posted_on": "2026-11-20",
+      "observed_on": "2026-11-23",
+      "classification": "single_user_report_not_verified_system_wide",
+      "detail": "Different 'Phone number already in use' error reportedly persisted on Windows Codex desktop and VS Code extension while web works; not proven fixed by first response."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-23",
+      "classification": "OpenAI_official_help_existing_policy",
+      "detail": "Ordinary ChatGPT phone generally not required; Codex desktop may ask; first API key requires it; VoIP cannot be used. No new policy effective date inferred."
+    }
+  ],
+  "merchant_rechecks": [
+    {
+      "name": "小久",
+      "url": "https://98-xj.com/",
+      "observed_on": "2026-11-23",
+      "finding": "Plus ¥110/份 as historically filed, no new true wholesale or VAT",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "CatFK skuld",
+      "url": "https://catfk.com/item/qtghxy",
+      "observed_on": "2026-11-23",
+      "finding": "No readable page; historical quote not refreshed",
+      "status": "unreadable",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "引路鲸",
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-23",
+      "finding": "Exact Plus guaranteed SKU still ¥155/月, conditional promotion not a new final paid price",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "ChatShare",
+      "url": "https://chatshare.info/",
+      "observed_on": "2026-11-23",
+      "finding": "Plus ¥160/月 repeated, claimed invoices not verified",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "PAYPRM",
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "observed_on": "2026-11-23",
+      "finding": "Plus ¥155/月 displayed, VAT/authority unavailable",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "GETGPT Pro",
+      "url": "https://getgpt.pro/purchase",
+      "observed_on": "2026-11-23",
+      "finding": "Plus ¥179/月; claimed 98% avoiding Codex verification not independently proven",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "wind89",
+      "url": "https://wind89.com/guide/faq",
+      "observed_on": "2026-11-23",
+      "finding": "Plus ¥139.99/月 repeated; VAT/wholesale not verified",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "ChongPay",
+      "url": "https://chongpay.com/",
+      "observed_on": "2026-11-23",
+      "finding": "Plus ¥139/月 and separate Codex 25-day SMS ¥20 displayed; neither verified as SMS success",
+      "status": "no_change",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "Morimm",
+      "url": null,
+      "observed_on": "2026-11-23",
+      "finding": "No new readable exact SKU checkout",
+      "status": "not_observed",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    },
+    {
+      "name": "GetVIP",
+      "url": null,
+      "observed_on": "2026-11-23",
+      "finding": "No new accurate original payment and SMS conditions established",
+      "status": "not_observed",
+      "actual_payment_fee_cny": null,
+      "verified_valid_China_VAT_fee_cny": null,
+      "merchant_quote_observation_date_refreshed": false
+    }
+  ],
+  "verification_boundaries": {
+    "chatgpt_web_tested": false,
+    "codex_desktop_tested": false,
+    "first_API_key_tested": false,
+    "number_control_duration_days": null,
+    "failed_SMS_original_payment_refund_tested": false,
+    "real_SMS_successes": 0,
+    "apple_and_session_can_coexist": true,
+    "ordinary_subscription_auto_phone_binding_proven": false
+  },
+  "qualification": {
+    "original_account_one_unit_one_month": true,
+    "no_agent_entry_fee_required": true,
+    "total_including_all_fees_and_valid_China_VAT_limit_cny": 170,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "real_purchases": 0,
+    "verified_China_VAT_invoices": 0,
+    "verified_formal_resale_authorizations": 0,
+    "real_SMS_successes": 0,
+    "unknown_payment_fee_cny": null,
+    "unknown_valid_China_VAT_fee_cny": null
+  },
+  "no_contact_no_payment_no_credentials": true,
+  "history_126_offers_preserved": true,
+  "old_price_dates_not_refreshed": true
+}
