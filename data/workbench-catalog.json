@@ -6502,6 +6502,28 @@
       "summary": "直接访问的官方社区支持回复及不同用户案例、原始日期、SKU复核和0实测边界；旧价、开票和授权未核不刷新。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r280-20261123",
+      "title": "GPT源头第280轮 · 引路鲸同SKU公开价签复读与同日提取差异",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r06.html",
+      "updatedAt": "2026-11-23",
+      "summary": "准确原号Plus月付SKU LIST-000001较11月21日有质保¥155→本轮未付款预览¥150，无质保对应规格¥145→¥140；同日商品页曾读到¥155，缓存提取冲突保留，非已验正式调价。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r280-20261123-evidence",
+      "title": "第280轮 · 同SKU价签、未付预览、票费与批发门槛结构化证据 JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r06-evidence.json",
+      "updatedAt": "2026-11-23",
+      "summary": "保留2026-11-21与11月23不同日期源头页面观察及同日不一致抽取，¥150+商称6%=¥159仅算术；全费/出票/授权null，无实际成交或短信通过。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

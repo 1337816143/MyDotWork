@@ -131,15 +131,28 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 591, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 593, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.279'
+    assert latest['version'] == '1.280'
     assert latest['date'] == '2026-11-23'
-    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r05.html'
-    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r05-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r04.html'
+    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r06.html'
+    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r06-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r05.html'
 
+
+    # R280: observed same-SKU page price difference, not a paid wholesale invoice.
+    assert by_id['gpt-source-followup-r280-20261123']['url'].endswith('supplier-followup-20261123-r06.html')
+    assert by_id['gpt-source-followup-r280-20261123-evidence']['url'].endswith('supplier-followup-20261123-r06-evidence.json')
+    r280 = json.loads((ROOT / 'dist/research/2026-11-23/supplier-followup-20261123-r06-evidence.json').read_bytes())
+    assert r280['round'] == 280 and r280['site_version'] == '1.9.288'
+    assert r280['exact_sku_price_snapshot']['historical_archived_read']['with_30_day_warranty_cny'] == 155
+    assert r280['exact_sku_price_snapshot']['this_round_direct_read']['selected_exact_sku_order_preview_subtotal_cny'] == 150
+    assert r280['exact_sku_price_snapshot']['merchant_price_change_effective_date'] is None
+    assert r280['invoice_and_wholesale']['actual_all_mandatory_payment_and_valid_china_vat_cny'] is None
+    assert r280['invoice_and_wholesale']['merchant_public_reseller_entry_fee_cny'] == 3000
+    assert r280['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r280['qualification']['real_sms_successes'] == 0
 
     # R279: official support statement is bounded; no real SMS tests.
     assert by_id['gpt-source-followup-r279-20261123']['url'].endswith('supplier-followup-20261123-r05.html')
