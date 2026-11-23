@@ -6436,6 +6436,28 @@
       "summary": "按SKU区分Codex单次和20–30、25–30天商称服务，准确链接及网页更新时间分别保存；支付手续费及有效号码期null，真批发与真实SMS成功仍0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r277-20261123",
+      "title": "GPT源头第277轮 · 苏哲AI代理前置费和Session API",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r03.html",
+      "updatedAt": "2026-11-23",
+      "summary": "新一方Plus CDK零售¥119/月、代理¥115/月但必须付¥29.99入场费；实际VAT全费、合法授权、真实履约未核，不合格。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r277-20261123-evidence",
+      "title": "第277轮 · Plus CDK价签、代理费、Token和开票缺口JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r03-evidence.json",
+      "updatedAt": "2026-11-23",
+      "summary": "准确标价/单位、来源与自标日期、前置代理¥29.99和结算/出票null，API和手机验证边界、实测0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

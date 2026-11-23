@@ -1,0 +1,120 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 277,
+  "site_version": "1.9.285",
+  "observed_on": "2026-11-23",
+  "observation_timezone": "Asia/Shanghai",
+  "change_kind": "new_merchant_reseller_terms_not_qualified_upstream",
+  "previous_report": "research/2026-11-23/supplier-followup-20261123-r02.html",
+  "sources": [
+    {
+      "url": "https://suzhe.ai/gpt",
+      "observed_on": "2026-11-23",
+      "seller_page_price_updated_on": "2026-11-22",
+      "evidence_kind": "seller_first_party_public_price_and_activation",
+      "finding": "Plus CDK 1 month retail CNY119, agent CNY115, one time agent entry CNY29.99; required ChatGPT Session for activation. Page self-update date does not prove when price changed."
+    },
+    {
+      "url": "https://suzhe.ai/agent",
+      "observed_on": "2026-11-23",
+      "evidence_kind": "seller_first_party_agent_terms",
+      "finding": "Agent entry fee CNY29.99; website agents claimed exempt from processing fee; dedicated activation API and separately funded API order wallet."
+    },
+    {
+      "url": "https://suzhe.ai/gptapi",
+      "observed_on": "2026-11-23",
+      "evidence_kind": "merchant_API_docs",
+      "finding": "Plus activation card code PLS- prefix, session_data includes accessToken; API is seller's, not OpenAI first API key; non-idempotent submissions and duplicate topups risk consuming key."
+    },
+    {
+      "url": "https://suzhe.ai/store",
+      "observed_on": "2026-11-23",
+      "evidence_kind": "seller_store",
+      "finding": "Merchant advertises official channel but expressly denies affiliation with OpenAI. Site 2FA code tool is TOTP, not SMS phone."
+    },
+    {
+      "url": "https://suzhe.ai/about",
+      "observed_on": "2026-11-23",
+      "evidence_kind": "seller_business_introduction",
+      "finding": "No verified legal VAT invoice issuer, payment entity or formal OpenAI resale authorization obtained."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-23",
+      "evidence_kind": "OpenAI_official_phone_scope",
+      "finding": "General ChatGPT account, potential Codex desktop and first API key verification distinguished."
+    }
+  ],
+  "candidate": {
+    "merchant": "苏哲AI",
+    "product_name": "ChatGPT Plus CDK 1 month own account",
+    "exact_checkout_sku_id": null,
+    "period_months": 1,
+    "quantity": 1,
+    "currency": "CNY",
+    "retail_display_price_cny": 119,
+    "agent_display_price_cny": 115,
+    "required_agent_upfront_fee_cny": 29.99,
+    "merchant_claim_agent_processing_fee_waived": true,
+    "public_first_agent_unit_component_sum_cny": 144.99,
+    "agent_saving_per_unit_vs_retail_cny": 4,
+    "arithmetic_break_even_units_before_unknowns": 8,
+    "retail_processing_fee_cny": null,
+    "real_agent_checkout_fee_cny": null,
+    "invoice_surcharge_cny": null,
+    "all_in_cost_including_valid_china_VAT_cny": null,
+    "legal_operator": null,
+    "payment_recipient": null,
+    "china_VAT_invoice_issuer": null,
+    "formal_OpenAI_resale_authorization_verified": false,
+    "merchant_disclaims_OpenAI_affiliation": true,
+    "required_target_account_status": "Free/no active subscription; expired membership may activate again, canceled but not expired cannot",
+    "seller_claim_auto_CDK_delivery": true,
+    "seller_claim_warranty_months": 1,
+    "seller_claim_prorated_remaining_days_refund": true,
+    "seller_excludes_account_bans": true,
+    "real_refund_to_original_payment_verified": false,
+    "real_purchase_verified": false,
+    "valid_china_VAT_invoice_verified": false,
+    "real_fulfilment_verified": false,
+    "no_upfront_agent_fee_requirement_satisfied": false
+  },
+  "delivery_and_verification": {
+    "session_json_required": true,
+    "session_includes_accessToken": true,
+    "merchant_activation_API_not_OpenAI_API": true,
+    "merchant_order_API_wallet_requires_separate_balance_claim": true,
+    "non_idempotent_activation_merchant_docs": true,
+    "ordinary_purchase_automatically_binds_phone_proven": false,
+    "apple_and_session_can_coexist": true,
+    "merchant_TOTP_tool_is_not_phone_SMS": true,
+    "ChatGPT_web_sms_success_verified": false,
+    "Codex_desktop_sms_success_verified": false,
+    "first_API_key_phone_verification_success_verified": false,
+    "number_control_duration_days": null,
+    "failed_sms_refund_to_original_payment_verified": false
+  },
+  "existing_priority_merchants_checked_without_new_Sku_price_refresh": [
+    "CatFK",
+    "小久",
+    "Morimm",
+    "引路鲸",
+    "ChatShare",
+    "GetVIP",
+    "wind89",
+    "GETGPT Pro",
+    "PAYPRM",
+    "ChongPay"
+  ],
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_VAT_invoices_verified": 0,
+    "formal_resale_authorizations_verified": 0,
+    "real_sms_successes": 0,
+    "merchants_contacted": false,
+    "payments_made": false,
+    "credentials_submitted": false,
+    "history_reports_and_126_offers_unchanged": true
+  }
+}

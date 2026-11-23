@@ -3236,3 +3236,18 @@ assert.equal(r275.current_original_product.full_actual_cost_with_verified_china_
 assert.equal(r275.public_snapshot_difference.merchant_price_change_effective_date,null);
 assert.equal(r275.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r275.qualification.real_sms_successes,0);
+
+// Round 277: public agent entry fee violates the no-upfront hard constraint.
+const r277rec=d.records.find(x=>x.id==='gpt-source-followup-r277-20261123');
+const r277ev=d.records.find(x=>x.id==='gpt-source-followup-r277-20261123-evidence');
+assert(r277rec&&r277ev&&r277rec.url.endsWith('supplier-followup-20261123-r03.html'));
+const r277=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-23/supplier-followup-20261123-r03-evidence.json'),'utf8'));
+assert.equal(r277.round,277);
+assert.equal(r277.site_version,'1.9.285');
+assert.equal(r277.candidate.retail_display_price_cny,119);
+assert.equal(r277.candidate.agent_display_price_cny,115);
+assert.equal(r277.candidate.required_agent_upfront_fee_cny,29.99);
+assert.equal(r277.candidate.all_in_cost_including_valid_china_VAT_cny,null);
+assert.equal(r277.candidate.no_upfront_agent_fee_requirement_satisfied,false);
+assert.equal(r277.delivery_and_verification.merchant_TOTP_tool_is_not_phone_SMS,true);
+assert.equal(r277.qualification.verified_true_plus_wholesale_upstreams,0);
