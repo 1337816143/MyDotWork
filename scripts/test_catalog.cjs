@@ -3253,3 +3253,21 @@ assert.equal(r277.delivery_and_verification.merchant_TOTP_tool_is_not_phone_SMS,
 assert.equal(r277.activation_domain_crosscheck.direct_page_chatgpt_plus_maintenance_notice,true);
 assert.equal(r277.activation_domain_crosscheck.exact_Seller_API_endpoint_status_confirmed,null);
 assert.equal(r277.qualification.verified_true_plus_wholesale_upstreams,0);
+
+// R278: correct r277 merchant-first-archive overclaim without rewriting historical reports.
+const rec278=d.records.find(x=>x.id==='gpt-source-followup-r278-20261123');
+const ev278=d.records.find(x=>x.id==='gpt-source-followup-r278-20261123-evidence');
+assert(rec278&&ev278&&rec278.url.endsWith('supplier-followup-20261123-r04.html'));
+const r278=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-23/supplier-followup-20261123-r04-evidence.json'),'utf8'));
+assert.equal(r278.round,278);assert.equal(r278.site_version,'1.9.286');
+assert.equal(r278.correction.correct_merchant_first_archived_round,104);
+assert.equal(r278.correction.correct_merchant_first_archived_date,'2026-11-08');
+assert.equal(r278.correction.prior_separate_api_ordering_disclosure_round,246);
+assert.equal(r278.correction.no_old_files_overwritten,true);
+assert.equal(r278.correction.no_new_merchant_or_sku_price_refresh,true);
+assert.equal(r278.historically_archived_sku.historical_retail_price_cny,119);
+assert.equal(r278.historically_archived_sku.historical_agent_price_cny,115);
+assert.equal(r278.historically_archived_sku.historical_required_agent_entry_cny,29.99);
+assert.equal(r278.historically_archived_sku.all_required_fees_with_verified_china_VAT_cny,null);
+assert.equal(r278.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r278.phone_scope.real_SMS_successes,0);

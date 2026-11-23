@@ -1,0 +1,103 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 278,
+  "site_version": "1.9.286",
+  "observed_on": "2026-11-23",
+  "observation_timezone": "Asia/Shanghai",
+  "change_kind": "correction_merchant_first_archived_provenance",
+  "previous_report": "research/2026-11-23/supplier-followup-20261123-r03.html",
+  "correction": {
+    "merchant": "苏哲AI",
+    "incorrect_r277_claim": "第277轮首次归档/首次读取新一方商家及Plus零售/代理/前置费",
+    "correct_merchant_first_archived_round": 104,
+    "correct_merchant_first_archived_date": "2026-11-08",
+    "correct_original_report": "research/2026-11-08/supplier-followup-20261108-r16.html",
+    "correct_original_evidence": "research/2026-11-08/supplier-followup-20261108-r16-evidence.json",
+    "prior_separate_api_ordering_disclosure_round": 246,
+    "prior_separate_api_ordering_disclosure_date": "2026-11-19",
+    "prior_api_ordering_evidence": "research/2026-11-19/supplier-followup-20261119-r09-evidence.json",
+    "r277_valid_incremental_observation": "External activation landing page at academicgate.org visibly displayed ChatGPT Plus maintenance notice, subject to its original observation-day and interface limitations",
+    "no_old_files_overwritten": true,
+    "no_new_merchant_or_sku_price_refresh": true
+  },
+  "historically_archived_sku": {
+    "name": "ChatGPT Plus CDK one original Free account, one month",
+    "historical_retail_price_cny": 119,
+    "historical_agent_price_cny": 115,
+    "historical_required_agent_entry_cny": 29.99,
+    "first_observed_on": "2026-11-08",
+    "r277_seller_page_self_declared_update_on": "2026-11-22",
+    "last_price_change_effective_date_verified": null,
+    "real_checkout_price_verified": null,
+    "real_payment_fee_cny": null,
+    "valid_china_VAT_invoice_fee_cny": null,
+    "all_required_fees_with_verified_china_VAT_cny": null,
+    "issuer_legal_entity": null,
+    "payment_recipient": null,
+    "formal_resale_authorization_verified": false,
+    "no_upfront_agent_fee_criteria_met": false,
+    "actual_delivery_verified": false
+  },
+  "evidence_sources": [
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-08/supplier-followup-20261108-r16-evidence.json",
+      "observed_on": "2026-11-23",
+      "source_observed_on": "2026-11-08",
+      "classification": "archived_first_party_observation_read_from_existing_repository",
+      "finding": "Historical round 104 explicitly recorded seller, CNY119 retail, CNY115 agent, CNY29.99 required entry, session and SMS service."
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-19/supplier-followup-20261119-r09-evidence.json",
+      "observed_on": "2026-11-23",
+      "source_observed_on": "2026-11-19",
+      "classification": "archived_merchant_API_observation_read_from_repository",
+      "finding": "Round 246 already differentiated independent ordering API/wallet from existing activation API; historical seller prices were repeated."
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-23/supplier-followup-20261123-r03.html",
+      "observed_on": "2026-11-23",
+      "source_observed_on": "2026-11-23",
+      "classification": "existing_report_with_provenance_error_retained",
+      "finding": "Round 277 labels merchant and prices as first read/first archive; source chronology correction necessary."
+    },
+    {
+      "url": "https://suzhe.ai/gpt",
+      "observed_on": "2026-11-23",
+      "classification": "merchant_public_listing_rechecked_no_verified_price_change",
+      "finding": "Current seller display of retail/agent pricing does not establish first seller discovery or price change date."
+    },
+    {
+      "url": "https://suzhe.ai/agent",
+      "observed_on": "2026-11-23",
+      "classification": "merchant_public_agent_conditions_rechecked_no_verified_change",
+      "finding": "Upfront entry fee remains not qualified under no-agent-entry constraint."
+    },
+    {
+      "url": "https://academicgate.org/",
+      "observed_on": "2026-11-23",
+      "classification": "first_party_activation_domain_public_status_rechecked",
+      "finding": "Current ChatGPT Plus maintenance notice corroborates prior r277 limited landing-page availability observation; not proof that all APIs, paid CDKs or future orders fail."
+    }
+  ],
+  "phone_scope": {
+    "chatgpt_web_tested": false,
+    "codex_desktop_tested": false,
+    "first_API_key_tested": false,
+    "real_SMS_successes": 0,
+    "number_control_days": null,
+    "failed_SMS_cash_refund_verified": false,
+    "merchant_SMS_service_already_archived_round": 104,
+    "session_json_with_access_token_required": true,
+    "apple_subscription_and_session_can_coexist": true,
+    "ordinary_plus_auto_phone_binding_proven": false
+  },
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_VAT_invoices_verified": 0,
+    "formal_resale_authorizations_verified": 0,
+    "real_sms_successes": 0
+  },
+  "no_contact_no_payment_no_credentials": true,
+  "history_126_offers_preserved": true
+}
