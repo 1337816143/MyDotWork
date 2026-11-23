@@ -43,6 +43,12 @@
       "observed_on": "2026-11-23",
       "evidence_kind": "OpenAI_official_phone_scope",
       "finding": "General ChatGPT account, potential Codex desktop and first API key verification distinguished."
+    },
+    {
+      "url": "https://academicgate.org/",
+      "observed_on": "2026-11-23",
+      "evidence_kind": "merchant_API_documented_external_activation_domain_status",
+      "finding": "Merchant's API docs declare https://www.academicgate.org base URL. Direct first-party landing currently displays ChatGPT Plus activation '维护中/激活服务暂时不可用'; real duration and affected API routes not known. Not proof domain is independent wholesale entity, and no activation tested."
     }
   ],
   "candidate": {
@@ -116,5 +122,18 @@
     "payments_made": false,
     "credentials_submitted": false,
     "history_reports_and_126_offers_unchanged": true
+  },
+  "activation_domain_crosscheck": {
+    "merchant_API_docs_base_url": "https://www.academicgate.org",
+    "direct_page_url": "https://academicgate.org/",
+    "observed_on": "2026-11-23",
+    "direct_page_chatgpt_plus_maintenance_notice": true,
+    "notice_text": "维护中 激活服务暂时不可用，请稍后再试，卡密不会失效。",
+    "page_maintenance_end_time": null,
+    "exact_Seller_API_endpoint_status_confirmed": null,
+    "affects_all_paid_skus_confirmed": null,
+    "real_paid_CDK_activated_during_maintenance": false,
+    "separate_legal_upstream_entity_proven": false,
+    "public_cdk_activation_currently_confirmed_available": false
   }
 }

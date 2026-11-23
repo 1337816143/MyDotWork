@@ -3250,4 +3250,6 @@ assert.equal(r277.candidate.required_agent_upfront_fee_cny,29.99);
 assert.equal(r277.candidate.all_in_cost_including_valid_china_VAT_cny,null);
 assert.equal(r277.candidate.no_upfront_agent_fee_requirement_satisfied,false);
 assert.equal(r277.delivery_and_verification.merchant_TOTP_tool_is_not_phone_SMS,true);
+assert.equal(r277.activation_domain_crosscheck.direct_page_chatgpt_plus_maintenance_notice,true);
+assert.equal(r277.activation_domain_crosscheck.exact_Seller_API_endpoint_status_confirmed,null);
 assert.equal(r277.qualification.verified_true_plus_wholesale_upstreams,0);
