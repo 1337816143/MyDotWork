@@ -131,15 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 583, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 585, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.275'
+    assert latest['version'] == '1.276'
     assert latest['date'] == '2026-11-23'
-    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123.html'
-    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-22/supplier-followup-20261122-r06.html'
+    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r02.html'
+    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r02-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123.html'
 
+
+    # R276: first-party seller catalog is not paid checkout or SMS success; preserve old rounds.
+    assert by_id['gpt-source-followup-r276-20261123']['url'].endswith('supplier-followup-20261123-r02.html')
+    assert by_id['gpt-source-followup-r276-20261123-evidence']['url'].endswith('supplier-followup-20261123-r02-evidence.json')
+    r276 = json.loads((ROOT / 'dist/research/2026-11-23/supplier-followup-20261123-r02-evidence.json').read_bytes())
+    assert r276['round'] == 276 and r276['site_version'] == '1.9.284'
+    sku = {s['exact_sku']: s for s in r276['newly_observed_independent_phone_verification']}
+    assert {k: v['category_listed_price_cny_per_service'] for k,v in sku.items()} == {'G22675274':3.88, 'G36307480':12.8, 'G80736997':14.5}
+    assert all(s['payment_processing_fee_cny'] is None and s['actual_checkout_total_cny'] is None and not s['actual_payment'] and not s['codex_sms_received_verified'] for s in sku.values())
+    assert r276['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r276['qualification']['real_sms_successes'] == 0
 
     # R275: old-vs-new same SKU snapshots, zero-stock and refund statements are not actual inventory or checkout.
     assert by_id['gpt-source-followup-r275-20261123']['url'].endswith('supplier-followup-20261123.html')
