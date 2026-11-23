@@ -3271,3 +3271,16 @@ assert.equal(r278.historically_archived_sku.historical_required_agent_entry_cny,
 assert.equal(r278.historically_archived_sku.all_required_fees_with_verified_china_VAT_cny,null);
 assert.equal(r278.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r278.phone_scope.real_SMS_successes,0);
+
+
+// R279: community support remedy is not a verified general fix.
+const rec279=d.records.find(x=>x.id==='gpt-source-followup-r279-20261123');
+const ev279=d.records.find(x=>x.id==='gpt-source-followup-r279-20261123-evidence');
+assert(rec279&&ev279&&rec279.url.endsWith('supplier-followup-20261123-r05.html'));
+const r279=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-23/supplier-followup-20261123-r05-evidence.json'),'utf8'));
+assert.equal(r279.round,279);assert.equal(r279.site_version,'1.9.287');
+assert.equal(r279.finding.support_reply_on,'2026-11-19');
+assert.equal(r279.finding.system_wide_fix_proven,false);
+assert.equal(r279.different_error.support_fix_applicable_proven,false);
+assert.equal(r279.qualification.verified_true_plus_wholesale_upstreams,0);
+assert.equal(r279.verification_boundaries.real_SMS_successes,0);

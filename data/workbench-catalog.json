@@ -6480,6 +6480,28 @@
       "summary": "保留历史原文件，明确第104轮首次卖家SKU、第246轮API钱包、第277轮网站维护观察的不同时间与性质；不刷新旧价、费用null、真实交易/SMS均0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r279-20261123",
+      "title": "GPT源头第279轮 · Codex手机号无效提示支持回复",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r05.html",
+      "updatedAt": "2026-11-23",
+      "summary": "OpenAI_Support于11月19日回应Codex invalid手机号错误，建议同一账号重登后同号再试；区分11月20日另一已占用错误用户报告；不是保证免短信，合格真正批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r279-20261123-evidence",
+      "title": "第279轮 · 手机验证支持回复与边界原始证据JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r05-evidence.json",
+      "updatedAt": "2026-11-23",
+      "summary": "直接访问的官方社区支持回复及不同用户案例、原始日期、SKU复核和0实测边界；旧价、开票和授权未核不刷新。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [

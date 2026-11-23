@@ -1,3 +1,10 @@
+## 1.9.287 · 2026-11-23
+
+- 第279轮首次直接归档OpenAI开发者社区 <https://community.openai.com/t/phone-number-verification-not-working-no-matter-what-number-i-use/1417689>：11月18日多人报Codex输入真实手机号提示“number you entered is invalid”；11月19日17:07 OpenAI_Support称已调整并建议退出Codex、使用同一账号重新登录后再次输入同一个号码。该声明仅属特定错误的支持操作指导，并非实测成功、普遍免验证或恢复保证；变更生效日、真实影响范围未知。
+- 11月20日 <https://community.openai.com/t/codex-desktop-blocked-by-phone-number-already-in-use-since-sept-25-multiple-support-cases-closed-unresolved/1418687> 另一用户报告“Phone number already in use”仍影响Windows Codex及VS Code扩展，网页版正常；这是独立单人报告，不属于上条相同错误，不能称上条支持措施已修复它。<https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like> 现有OpenAI官方帮助仍分别区分普通ChatGPT网页、Codex桌面与首次API Key；Plus充值、Apple、Session都不等于自动绑号。
+- 既有小久、CatFK、Morimm、引路鲸、ChatShare、GetVIP、wind89、GETGPT Pro、PAYPRM、ChongPay未见可更新原SKU报价、真实批发授权、合法收款出票主体或有效中国增值税票据的新证据；动态页不可读不推断停供，旧价观察日不变。严格原号一件单月、免代理前置费、全部支付及有效中国VAT≤¥170的已核Plus真正批发0；实购/税票验真/正式授权/真实短信成功均0，未知费用null。
+- 仅追加r279 HTML/JSON、精确SHA256白名单、project-1目录、总库入口、VERSION、CHANGELOG、最新发布指针与回归断言；前278轮和126条历史原始报价不动。未付款、联系商家或提交账号秘密。
+
 ## 1.9.286 · 2026-11-23
 
 - 第278轮来源归属勘误：第277轮错误称苏哲AI为“首次归档/首次读取的新商家”；本轮直接读取仓库第104轮（2026-11-08）原始JSON，证实本人原号Plus CDK零售¥119/份、代理¥115/份与¥29.99资格前置费、完整Session/API和独立SMS-条款均已历史归档。第246轮（2026-11-19）已有独立API下单余额/钱包商称披露。故r277价格及代理条件仅为复读，不是新卖家、新SKU或实质调价，严格保留三轮原始文件。

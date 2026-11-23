@@ -131,15 +131,27 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 589, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 591, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.278'
+    assert latest['version'] == '1.279'
     assert latest['date'] == '2026-11-23'
-    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r04.html'
-    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r04-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r03.html'
+    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r05.html'
+    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r05-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r04.html'
 
+
+    # R279: official support statement is bounded; no real SMS tests.
+    assert by_id['gpt-source-followup-r279-20261123']['url'].endswith('supplier-followup-20261123-r05.html')
+    assert by_id['gpt-source-followup-r279-20261123-evidence']['url'].endswith('supplier-followup-20261123-r05-evidence.json')
+    r279 = json.loads((ROOT / 'dist/research/2026-11-23/supplier-followup-20261123-r05-evidence.json').read_bytes())
+    assert r279['round'] == 279 and r279['site_version'] == '1.9.287'
+    assert r279['finding']['support_reply_on'] == '2026-11-19'
+    assert r279['finding']['system_wide_fix_proven'] is False
+    assert r279['different_error']['support_fix_applicable_proven'] is False
+    assert r279['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r279['qualification']['unknown_payment_fee_cny'] is None
+    assert r279['verification_boundaries']['real_SMS_successes'] == 0
 
     # R278: historical source chronology takes precedence over r277 seller-first claim.
     assert by_id['gpt-source-followup-r278-20261123']['url'].endswith('supplier-followup-20261123-r04.html')
