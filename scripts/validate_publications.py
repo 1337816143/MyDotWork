@@ -131,15 +131,29 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 585, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 587, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.276'
+    assert latest['version'] == '1.277'
     assert latest['date'] == '2026-11-23'
-    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r02.html'
-    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r02-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123.html'
+    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r03.html'
+    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r03-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r02.html'
 
+
+    # R277: nonzero reseller entry fee, absent VAT issuer and no real fulfillment.
+    assert by_id['gpt-source-followup-r277-20261123']['url'].endswith('supplier-followup-20261123-r03.html')
+    assert by_id['gpt-source-followup-r277-20261123-evidence']['url'].endswith('supplier-followup-20261123-r03-evidence.json')
+    r277 = json.loads((ROOT / 'dist/research/2026-11-23/supplier-followup-20261123-r03-evidence.json').read_bytes())
+    assert r277['round'] == 277 and r277['site_version'] == '1.9.285'
+    assert r277['candidate']['retail_display_price_cny'] == 119
+    assert r277['candidate']['agent_display_price_cny'] == 115
+    assert r277['candidate']['required_agent_upfront_fee_cny'] == 29.99
+    assert r277['candidate']['no_upfront_agent_fee_requirement_satisfied'] is False
+    assert r277['candidate']['all_in_cost_including_valid_china_VAT_cny'] is None
+    assert r277['delivery_and_verification']['merchant_TOTP_tool_is_not_phone_SMS'] is True
+    assert r277['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert r277['qualification']['real_sms_successes'] == 0
 
     # R276: first-party seller catalog is not paid checkout or SMS success; preserve old rounds.
     assert by_id['gpt-source-followup-r276-20261123']['url'].endswith('supplier-followup-20261123-r02.html')
