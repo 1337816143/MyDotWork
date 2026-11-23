@@ -1,0 +1,197 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 280,
+  "site_version": "1.9.288",
+  "observed_on": "2026-11-23",
+  "observation_timezone": "Asia/Shanghai",
+  "nature": "same_exact_one_account_one_month_seller_order_display_decrease_between_dated_public_page_reads_with_same_day_page_extraction_variation_not_paid_price_change_confirmation",
+  "previous_report": "research/2026-11-23/supplier-followup-20261123-r05.html",
+  "exact_sku_price_snapshot": {
+    "merchant": "引路鲸／ChatGPT直充站",
+    "sku": "LIST-000001",
+    "account_scope": "own_existing_account",
+    "quantity": 1,
+    "period_months": 1,
+    "currency": "CNY",
+    "direct_order_url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+    "historical_archived_read": {
+      "round": 267,
+      "observed_on": "2026-11-21",
+      "source_report": "research/2026-11-21/supplier-followup-20261121-r08-evidence.json",
+      "with_30_day_warranty_cny": 155,
+      "without_warranty_cny": 145,
+      "order_preview_subtotal_cny": 155
+    },
+    "this_round_direct_read": {
+      "observed_on": "2026-11-23",
+      "with_30_day_warranty_cny": 150,
+      "without_warranty_cny": 140,
+      "selected_exact_sku_order_preview_subtotal_cny": 150,
+      "quantity": 1,
+      "order_created": false,
+      "payment_step_reached": false,
+      "payment_made": false
+    },
+    "observed_public_display_differences_cny": {
+      "with_warranty": -5,
+      "without_warranty": -5
+    },
+    "original_product_page_url": "https://www.chatgqt.plus/products/chatgpt-plus",
+    "original_homepage_url": "https://chatgqt.plus/",
+    "same_day_snapshot_conflict": "First direct retrieval of product listing returned warranted 155/month, later retrieval of same product listing returned 150/month. Exact selected SKU order preview and homepage returned 150; extraction times/CDN variants cannot establish merchant effective repricing date.",
+    "same_day_product_listing_first_read_with_warranty_cny": 155,
+    "same_day_product_listing_later_read_with_warranty_cny": 150,
+    "merchant_price_change_effective_date": null,
+    "real_paid_price_verified": false,
+    "order_completed": false,
+    "stock_and_live_checkout_confirmed": false,
+    "conditional_coupon_minimum_price_cny": 135,
+    "conditional_coupon_actual_eligibility_confirmed": false
+  },
+  "invoice_and_wholesale": {
+    "merchant_advertised_china_normal_vat_invoice_extra_percent": 6,
+    "illustration_150_plus_merchant_claim_6pct_cny": 159,
+    "illustration_is_not_verified_legal_chinese_vat_or_final_paid_total": true,
+    "required_payment_channel_fee_cny": null,
+    "required_actual_invoice_fee_cny": null,
+    "legal_invoice_issuer": null,
+    "payment_receiving_legal_entity": null,
+    "registered_operator_legal_entity": null,
+    "actual_all_mandatory_payment_and_valid_china_vat_cny": null,
+    "merchant_public_reseller_entry_fee_cny": 3000,
+    "agent_joining_fee_must_be_paid_before_access": true,
+    "merchant_agent_entry_fee_earlier_archived": true,
+    "independent_one_unit_wholesale_price_cny": null,
+    "no_entry_fee_true_wholesale_confirmed": false,
+    "formal_resale_authorization_verified": false,
+    "merchant_advertised_warranty_30_days": true,
+    "merchant_advertised_loss_of_subscription_refund_service_deduction_percent": 20,
+    "cash_refund_tested": false
+  },
+  "observed_sources": [
+    {
+      "url": "https://www.chatgqt.plus/buy?sku=LIST-000001",
+      "observed_on": "2026-11-23",
+      "source_type": "merchant_exact_unsubmitted_order_form",
+      "observed": "Selected SKU one original-account month warranted Plus; order subtotal and payable preview 150 CNY; VAT checkbox +6%, optional speed +30; no order submitted."
+    },
+    {
+      "url": "https://www.chatgqt.plus/products/chatgpt-plus",
+      "observed_on": "2026-11-23",
+      "source_type": "merchant_product_landing_multiple_extracts",
+      "observed": "First retrieved warranted price 155, later retrieved 150; current later unwarranted price 140. Extraction conflict preserved; do not claim verified effective date."
+    },
+    {
+      "url": "https://chatgqt.plus/",
+      "observed_on": "2026-11-23",
+      "source_type": "merchant_homepage",
+      "observed": "Current display warranted 150/unwarranted 140; conditional coupons may lower prices but require eligibility."
+    },
+    {
+      "url": "https://www.chatgqt.plus/cooperation",
+      "observed_on": "2026-11-23",
+      "source_type": "merchant_reseller_policy_repeat",
+      "observed": "Reseller joining fee 3000 CNY separate from top-up balance; not a no-fee wholesale route."
+    },
+    {
+      "url": "https://github.com/1337816143/MyDotWork/blob/main/publications/research/2026-11-21/supplier-followup-20261121-r08-evidence.json",
+      "observed_on": "2026-11-21",
+      "source_type": "archived_previous_first_party_read",
+      "observed": "Exact same SKU archived price warranted 155/unwarranted 145; do not change this historical observation."
+    }
+  ],
+  "unchanged_and_failed_rechecks": [
+    {
+      "name": "小久",
+      "url": "https://98-xj.com/",
+      "status": "previously_archived_display_unchanged",
+      "observed_on": "2026-11-23",
+      "display_cny_per_month": 110,
+      "actual_all_fees_and_valid_china_vat_cny": null
+    },
+    {
+      "name": "ChatShare",
+      "url": "https://chatshare.info/",
+      "status": "previously_archived_display_unchanged",
+      "observed_on": "2026-11-23",
+      "display_cny_per_month": 160,
+      "actual_all_fees_and_valid_china_vat_cny": null
+    },
+    {
+      "name": "PAYPRM",
+      "url": "https://www.payprm.com/shop/chatgpt-plus",
+      "status": "previously_archived_display_unchanged",
+      "observed_on": "2026-11-23",
+      "display_cny_per_month": 155,
+      "actual_all_fees_and_valid_china_vat_cny": null
+    },
+    {
+      "name": "ChongPay",
+      "url": "https://chongpay.com/",
+      "status": "no_new_subscription_or_sms_success_evidence",
+      "observed_on": "2026-11-23",
+      "actual_all_fees_and_valid_china_vat_cny": null
+    },
+    {
+      "name": "GETGPT Pro",
+      "url": "https://getgpt.pro/purchase",
+      "status": "dynamic_product_price_unreadable",
+      "observed_on": "2026-11-23",
+      "historic_price_date_refreshed": false
+    },
+    {
+      "name": "Morimm",
+      "url": "https://morimm.com/products/gptplus",
+      "status": "unavailable_to_web_reader",
+      "observed_on": "2026-11-23",
+      "historic_price_date_refreshed": false
+    },
+    {
+      "name": "CatFK",
+      "url": "https://catfk.com/item/qtghxy",
+      "status": "zero_readable_lines",
+      "observed_on": "2026-11-23",
+      "historic_price_date_refreshed": false
+    },
+    {
+      "name": "wind89",
+      "url": "https://wind89.com/guide/faq",
+      "status": "zero_readable_lines",
+      "observed_on": "2026-11-23",
+      "historic_price_date_refreshed": false
+    },
+    {
+      "name": "GetVIP",
+      "url": null,
+      "status": "no_verifiable_new_checkout_or_sms_scope",
+      "observed_on": "2026-11-23",
+      "historic_price_date_refreshed": false
+    }
+  ],
+  "phone_verification": {
+    "official_reference_url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+    "chatgpt_web_phone_generally_not_required": true,
+    "codex_desktop_may_require_phone": true,
+    "first_api_key_phone_required": true,
+    "session_or_token_requires_prior_chatgpt_login": true,
+    "apple_iap_and_session_delivery_can_coexist": true,
+    "normal_recharge_auto_phone_binding_proven": false,
+    "verified_phone_validity_days": null,
+    "successful_real_sms_verifications": 0,
+    "failed_receive_original_payment_cash_refunds_tested": 0
+  },
+  "qualification": {
+    "own_account_one_unit_one_month_required": true,
+    "no_agent_upfront_required": true,
+    "all_required_payment_and_valid_china_vat_ceiling_cny": 170,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "valid_chinese_vat_invoice_verified_count": 0,
+    "formal_resale_authorizations_verified_count": 0,
+    "real_sms_successes": 0,
+    "unknown_required_fees_cny": null
+  },
+  "no_contacts_payments_orders_credentials": true,
+  "history_126_offers_preserved": true,
+  "historical_price_observation_dates_unchanged": true
+}
