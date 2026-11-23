@@ -1,0 +1,190 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 276,
+  "site_version": "1.9.284",
+  "observed_on": "2026-11-23",
+  "observation_timezone": "Asia/Shanghai",
+  "previous_report": "research/2026-11-23/supplier-followup-20261123.html",
+  "change_kind": "new_first_party_catalog_independent_codex_sms_sku_leads_not_paid_checkout",
+  "source_method": "First party seller category with each external checkout SKU linked; later attempt to read seller category or exact 16688 checkout body did not yield readable product details; the original listing is a merchant claim, not verified transaction.",
+  "newly_observed_independent_phone_verification": [
+    {
+      "merchant": "哈基米AI站",
+      "merchant_category_url": "https://gptvip66.shop/category/verification-services/",
+      "exact_sku": "G22675274",
+      "first_party_catalog_product_url": "https://gptvip66.shop/product/G22675274/",
+      "external_checkout_url": "https://www.16688.com.cn/goods/G22675274?shop_no=S357551",
+      "observed_on": "2026-11-23",
+      "currency": "CNY",
+      "quantity": 1,
+      "category_listed_price_cny_per_service": 3.88,
+      "service_type": "independent_codex_login_sms_not_chatgpt_plus",
+      "merchant_claim_duration": "short_term_one_code",
+      "merchant_claim_details": "Seller category advertises Codex short term; redemption after first verification allegedly usable 1 day. No independent service-window measurement.",
+      "individual_product_body_accessible": false,
+      "checkout_body_accessible": false,
+      "payment_processing_fee_cny": null,
+      "actual_checkout_total_cny": null,
+      "actual_payment": false,
+      "web_chatgpt_compatibility_verified": false,
+      "first_api_key_compatibility_verified": false,
+      "codex_sms_received_verified": false,
+      "account_verification_success_verified": false,
+      "number_type_independently_verified": false,
+      "number_continuous_control_days_verified": null,
+      "failed_sms_cash_original_payment_refund_verified": false,
+      "failed_sms_cash_refund_terms": null
+    },
+    {
+      "merchant": "哈基米AI站",
+      "merchant_category_url": "https://gptvip66.shop/category/verification-services/",
+      "exact_sku": "G36307480",
+      "first_party_catalog_product_url": "https://gptvip66.shop/product/G36307480/",
+      "external_checkout_url": "https://www.16688.com.cn/goods/G36307480?shop_no=S357551",
+      "observed_on": "2026-11-23",
+      "currency": "CNY",
+      "quantity": 1,
+      "category_listed_price_cny_per_service": 12.8,
+      "service_type": "independent_codex_login_sms_not_chatgpt_plus",
+      "merchant_claim_duration": "claimed_20_to_30_days",
+      "merchant_claim_details": "Seller claims US physical SIM, repeat codes within 20–30 days; physical SIM, exclusivity and real expiration unverified.",
+      "individual_product_body_accessible": false,
+      "checkout_body_accessible": false,
+      "payment_processing_fee_cny": null,
+      "actual_checkout_total_cny": null,
+      "actual_payment": false,
+      "web_chatgpt_compatibility_verified": false,
+      "first_api_key_compatibility_verified": false,
+      "codex_sms_received_verified": false,
+      "account_verification_success_verified": false,
+      "number_type_independently_verified": false,
+      "number_continuous_control_days_verified": null,
+      "failed_sms_cash_original_payment_refund_verified": false,
+      "failed_sms_cash_refund_terms": null
+    },
+    {
+      "merchant": "哈基米AI站",
+      "merchant_category_url": "https://gptvip66.shop/category/verification-services/",
+      "exact_sku": "G80736997",
+      "first_party_catalog_product_url": "https://gptvip66.shop/product/G80736997/",
+      "external_checkout_url": "https://www.16688.com.cn/goods/G80736997?shop_no=S357551",
+      "observed_on": "2026-11-23",
+      "currency": "CNY",
+      "quantity": 1,
+      "category_listed_price_cny_per_service": 14.5,
+      "service_type": "independent_codex_login_sms_not_chatgpt_plus",
+      "merchant_claim_duration": "claimed_25_to_30_days",
+      "merchant_claim_details": "Seller claims US AT&T physical SIM, possible repeat codes for 25–30 days; seller states received-SMS orders are not refundable.",
+      "individual_product_body_accessible": false,
+      "checkout_body_accessible": false,
+      "payment_processing_fee_cny": null,
+      "actual_checkout_total_cny": null,
+      "actual_payment": false,
+      "web_chatgpt_compatibility_verified": false,
+      "first_api_key_compatibility_verified": false,
+      "codex_sms_received_verified": false,
+      "account_verification_success_verified": false,
+      "number_type_independently_verified": false,
+      "number_continuous_control_days_verified": null,
+      "failed_sms_cash_original_payment_refund_verified": false,
+      "failed_sms_cash_refund_terms": null,
+      "merchant_claim_no_refund_after_sms_received": true
+    }
+  ],
+  "primary_source_observations": [
+    {
+      "url": "https://gptvip66.shop/category/verification-services/",
+      "observed_on": "2026-11-23",
+      "kind": "first_party_seller_category_price_and_sku_links",
+      "note": "First party category originally displayed three exact distinct Codex SKU price labels; subsequent re-open returned no readable body, not service outage or new price."
+    },
+    {
+      "url": "https://gptvip66.shop/tutorial/codex/",
+      "observed_on": "2026-11-23",
+      "seller_page_updated_on": "2026-10-31",
+      "kind": "first_party_scope_and_validity_tutorial",
+      "note": "Short vs 20–30/25–30 day options are different products. SMS service excludes paid ChatGPT/Codex software license/API. Validity is not permanent ownership."
+    },
+    {
+      "url": "https://gptvip66.shop/tutorial/after-sales/",
+      "observed_on": "2026-11-23",
+      "seller_page_updated_on": "2026-10-30",
+      "kind": "first_party_aftersales",
+      "note": "Seller says after-sales judged per exact order and received code may count as used; no blanket originally paid cash-refund promise or verified case."
+    },
+    {
+      "url": "https://gptvip66.shop/blog/codex-phone-verification/",
+      "observed_on": "2026-11-23",
+      "seller_page_updated_on": "2026-10-24",
+      "kind": "seller_service_claim_not_matching_exact_sku",
+      "note": "Separate blog claims Plus users can get manual SMS for CNY10/time and Pro users free; also asserts >98% avoiding verification after subscription, explicitly not rigorous statistics. This is not automatic SKU checkout or proven policy."
+    },
+    {
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observed_on": "2026-11-23",
+      "kind": "official_verification_scope",
+      "note": "General ChatGPT webpage, Codex Desktop and first API key verification are distinct. No OpenAI official approval of these sellers."
+    }
+  ],
+  "checkout_access_limits": [
+    "https://www.16688.com.cn/goods/G22675274?shop_no=S357551",
+    "https://www.16688.com.cn/goods/G36307480?shop_no=S357551",
+    "https://www.16688.com.cn/goods/G80736997?shop_no=S357551"
+  ],
+  "comparisons_to_previously_archived_not_repriced": [
+    {
+      "merchant": "ChongPay",
+      "url": "https://chongpay.com/plans?category=gpt",
+      "historical_codex_25_days_cny": 20,
+      "actual_checkout_reverified": false
+    },
+    {
+      "merchant": "ProdClub",
+      "historical_us_long_term_sms_cny": 35,
+      "actual_checkout_reverified": false
+    }
+  ],
+  "seller_business_and_supply_chain": {
+    "verified_wholesale_source": false,
+    "legal_business_entity": null,
+    "legal_payment_recipient": null,
+    "china_vat_invoice_issuer": null,
+    "verified_china_vat_invoice": false,
+    "invoice_fee_cny": null,
+    "formal_resale_authorization": false,
+    "single_unit_wholesale_cost_cny": null,
+    "all_in_vat_plus_supplier_cost_cny": null
+  },
+  "priority_seller_checks": {
+    "no_substantive_verified_change": [
+      "CatFK",
+      "小久",
+      "Morimm",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "wind89",
+      "GETGPT Pro",
+      "PAYPRM",
+      "ChongPay"
+    ],
+    "unreadable_dynamic_product_bodies": [
+      "CatFK",
+      "Morimm",
+      "wind89",
+      "PAYPRM"
+    ],
+    "historical_offers_not_refreshed": true
+  },
+  "qualification": {
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_plus_purchases": 0,
+    "valid_china_vat_invoices_verified": 0,
+    "formal_resale_authorizations_verified": 0,
+    "real_sms_successes": 0,
+    "merchants_contacted": false,
+    "payments_made": false,
+    "credentials_submitted": false,
+    "prior_275_reports_and_126_historical_prices_unchanged": true
+  }
+}

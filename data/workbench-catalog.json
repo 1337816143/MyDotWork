@@ -6414,6 +6414,28 @@
       "summary": "直读zhanghao66 item/51报价与0库存，区分2026-11-06旧观察；不把店铺余额退回当现金退款，价签不是已付中国VAT总额，真批发上游0、付款与SMS实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r276-20261123",
+      "title": "GPT源头第276轮 · 哈基米三个Codex短信SKU及退款缺口",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r02.html",
+      "updatedAt": "2026-11-23",
+      "summary": "新一方目录三条准确Codex接码SKU ¥3.88短效、¥12.80商称20–30天、¥14.50商称25–30天；无16688可读实付、短信通过、真实SIM或失败现金退款证据，非Plus真批发。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r276-20261123-evidence",
+      "title": "第276轮 · 独立手机号SKU、号码期限与售后缺口结构化证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r02-evidence.json",
+      "updatedAt": "2026-11-23",
+      "summary": "按SKU区分Codex单次和20–30、25–30天商称服务，准确链接及网页更新时间分别保存；支付手续费及有效号码期null，真批发与真实SMS成功仍0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
