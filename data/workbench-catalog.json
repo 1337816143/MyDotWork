@@ -6458,6 +6458,28 @@
       "summary": "准确标价/单位、来源与自标日期、前置代理¥29.99和结算/出票null，API和手机验证边界、实测0。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r278-20261123",
+      "title": "GPT源头第278轮 · 苏哲AI第104轮首次来源勘误",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r04.html",
+      "updatedAt": "2026-11-23",
+      "summary": "纠正第277轮误称苏哲AI为新卖家：同一¥119零售、¥115代理、¥29.99前置费已在11月8日第104轮归档；第246轮已记录独立API下单声明，第277轮新项限于激活中心维护状态。合格真批发仍0。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r278-20261123-evidence",
+      "title": "第278轮 · 第104/246/277轮来源日期核对与勘误JSON",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-23/supplier-followup-20261123-r04-evidence.json",
+      "updatedAt": "2026-11-23",
+      "summary": "保留历史原文件，明确第104轮首次卖家SKU、第246轮API钱包、第277轮网站维护观察的不同时间与性质；不刷新旧价、费用null、真实交易/SMS均0。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
