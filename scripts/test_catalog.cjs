@@ -3302,3 +3302,8 @@ assert.equal(r280.invoice_and_wholesale.actual_all_mandatory_payment_and_valid_c
 assert.equal(r280.invoice_and_wholesale.merchant_public_reseller_entry_fee_cny,3000);
 assert.equal(r280.qualification.verified_true_plus_wholesale_upstreams,0);
 assert.equal(r280.qualification.real_sms_successes,0);
+
+const rec281=d.records.find(x=>x.id==='gpt-source-followup-r281-20261124'),ev281=d.records.find(x=>x.id==='gpt-source-followup-r281-20261124-evidence');
+assert(rec281&&ev281);
+const r281=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-24/supplier-followup-20261124-evidence.json'),'utf8'));
+assert.equal(r281.round,281);assert.equal(r281.plus.warranted_unpaid_preview,149);assert.equal(r281.sms.current_retain_days,null);assert.equal(r281.sms.current_default_checkout_total_display,5.45);assert.equal(r281.qualification.real_sms_successes,0);

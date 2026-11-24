@@ -131,16 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 593, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 595, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.280'
-    assert latest['date'] == '2026-11-23'
-    assert latest['path'] == 'research/2026-11-23/supplier-followup-20261123-r06.html'
-    assert latest['dataPath'] == 'research/2026-11-23/supplier-followup-20261123-r06-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r05.html'
+    assert latest['version'] == '1.281'
+    assert latest['date'] == '2026-11-24'
+    assert latest['path'] == 'research/2026-11-24/supplier-followup-20261124.html'
+    assert latest['dataPath'] == 'research/2026-11-24/supplier-followup-20261124-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-23/supplier-followup-20261123-r06.html'
 
 
+    # R281: observed public display and service disclosure only.
+    assert by_id['gpt-source-followup-r281-20261124']['url'] == '../research/2026-11-24/supplier-followup-20261124.html'
+    assert by_id['gpt-source-followup-r281-20261124-evidence']['url'] == '../research/2026-11-24/supplier-followup-20261124-evidence.json'
+    r281 = json.loads((ROOT / 'dist/research/2026-11-24/supplier-followup-20261124-evidence.json').read_bytes())
+    assert r281['round'] == 281 and r281['site_version'] == '1.9.289'
+    assert r281['plus']['warranted_unpaid_preview'] == 149
+    assert r281['plus']['actual_all_mandatory_payment_and_valid_china_vat_cny'] is None
+    assert r281['sms']['current_retain_days'] is None
+    assert r281['sms']['current_default_checkout_total_display'] == 5.45
+    assert r281['qualification']['verified_true_plus_wholesale_upstreams'] == 0
     # R280: observed same-SKU page price difference, not a paid wholesale invoice.
     assert by_id['gpt-source-followup-r280-20261123']['url'].endswith('supplier-followup-20261123-r06.html')
     assert by_id['gpt-source-followup-r280-20261123-evidence']['url'].endswith('supplier-followup-20261123-r06-evidence.json')
