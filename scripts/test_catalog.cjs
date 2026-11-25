@@ -3307,3 +3307,9 @@ const rec281=d.records.find(x=>x.id==='gpt-source-followup-r281-20261124'),ev281
 assert(rec281&&ev281);
 const r281=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-24/supplier-followup-20261124-evidence.json'),'utf8'));
 assert.equal(r281.round,281);assert.equal(r281.plus.warranted_unpaid_preview,149);assert.equal(r281.sms.current_retain_days,null);assert.equal(r281.sms.current_default_checkout_total_display,5.45);assert.equal(r281.qualification.real_sms_successes,0);
+
+// R285: observed invoicing schedule and pre-purchase vs fulfillment credential scope.
+const r285rec=d.records.find(x=>x.id==='gpt-source-followup-r285-20261126'),r285ev=d.records.find(x=>x.id==='gpt-source-followup-r285-20261126-evidence');
+assert(r285rec&&r285ev);
+const r285=JSON.parse(fs.readFileSync(path.join(root,'dist/research/2026-11-26/supplier-followup-20261126-evidence.json'),'utf8'));
+assert.equal(r285.round,285);assert.equal(r285.invoice_delta.current_invoice_issue_schedule_claim,'每周二固定出票');assert.equal(r285.invoice_delta.actual_all_mandatory_payment_and_valid_china_vat_cny,null);assert.equal(r285.payforgpt_clarification.current_enterprise_contract_template_requires_temporary_session_claim,true);assert.equal(r285.payforgpt_clarification.no_session_enterprise_delivery_verified,false);assert.equal(r285.qualification.verified_true_plus_wholesale_upstreams,0);

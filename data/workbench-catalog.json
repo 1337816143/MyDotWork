@@ -6612,6 +6612,28 @@
       "summary": "保留旧价格日期、商家合同及票款声明，真实全费和批发资格仍未知。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r285-20261126",
+      "title": "GPT源头第285轮 · 硅基面包出票安排及PayForGPT凭据范围",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-26/supplier-followup-20261126.html",
+      "updatedAt": "2026-11-26",
+      "summary": "固定周二出票、合开及跨域订单资格；企业开通仍商称需要临时Session，实际含票及授权未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r285-20261126-evidence",
+      "title": "第285轮 · 出票安排及凭据证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-26/supplier-followup-20261126-evidence.json",
+      "updatedAt": "2026-11-26",
+      "summary": "对照第45、30及284轮，票费不变、实际全费与主体仍未知；保留原始历史。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
