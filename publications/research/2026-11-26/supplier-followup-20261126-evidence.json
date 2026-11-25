@@ -1,0 +1,145 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 285,
+  "site_version": "1.9.293",
+  "observed_on": "2026-11-26",
+  "previous_report": "research/2026-11-25/supplier-followup-20261125-r03.html",
+  "historical_evidence": [
+    "research/2026-11-05/supplier-followup-20261105-r7-evidence.json",
+    "research/2026-11-04/supplier-followup-20261104-r16-evidence.json",
+    "research/2026-11-25/supplier-followup-20261125-r03-evidence.json"
+  ],
+  "invoice_delta": {
+    "merchant": "硅基面包",
+    "sku": "GPT PLUS · 一账号一月",
+    "prior_round": 45,
+    "prior_observed_on": "2026-11-05",
+    "prior_price_cny": 139,
+    "price_cny_per_account_month": 139,
+    "price_observation_dates_refreshed": false,
+    "prior_invoice_processing_business_days_claim": "1–3",
+    "prior_one_order_one_invoice_claim": true,
+    "current_invoice_issue_schedule_claim": "每周二固定出票",
+    "current_multiple_orders_one_invoice_claim": true,
+    "current_other_domain_orders_eligible_claim": "gptdcvip.com",
+    "current_invoice_fee_percent_claim": 3,
+    "invoice_request_window_days_claim": 30,
+    "illustrative_components_total_cny": 143.17,
+    "actual_payment_fee_cny": null,
+    "actual_invoice_fee_cny": null,
+    "actual_all_mandatory_payment_and_valid_china_vat_cny": null,
+    "actual_invoice_issuer": null,
+    "actual_payment_recipient": null,
+    "common_legal_operator_verified": false,
+    "formal_resale_authorization_verified": false,
+    "one_unit_wholesale_price_cny": null,
+    "agent_entry_fee_cny": null,
+    "actual_invoice_verified": false,
+    "actual_delivery_verified": false,
+    "policy_effective_date": null
+  },
+  "payforgpt_clarification": {
+    "sku": "product/7",
+    "prior_price_cny_per_account_month": 160,
+    "price_observation_dates_refreshed": false,
+    "prior_round_30_session_may_be_required_claim": true,
+    "current_product_explicit_temporary_session_required_claim": true,
+    "current_enterprise_contract_template_requires_temporary_session_claim": true,
+    "current_pre_purchase_self_check_no_session_claim": true,
+    "actual_session_requirement": null,
+    "no_session_enterprise_delivery_verified": false,
+    "actual_paid_total_cny": null,
+    "formal_resale_authorization_verified": false,
+    "notes": "当前合同指南第5项和免密交付段均要求临时Session；免Session仅为购前工具，不能解释为免凭据交付。实际历史变更生效日未知。"
+  },
+  "sources": [
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://www.gjmb.cn/invoice",
+      "observation": "每周二出票，多单可合开，每笔订单仅申请一次；本域与gptdcvip.com已支付、交付且未退款订单可在30天内申请；数电普票手续费3%。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://www.gjmb.cn/pricing",
+      "observation": "Plus 139元/月，历史价不刷新。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://www.gjmb.cn/about",
+      "page_self_updated_on": "2026-10-15",
+      "observation": "商家声明与OpenAI无授权、隶属或合作关系；兑换需Session。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://www.gjmb.cn/purchase",
+      "observation": "企业配置可选择企业抬头普票，准确批发价未公开。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://gptdcvip.com/",
+      "observation": "同价139元/月，不据此判断经营主体。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "access_limitation",
+      "url": "https://gptdcvip.com/invoice",
+      "observation": "未取得正文，不证明停供。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://payforgpt.com/product/7",
+      "observation": "原号Plus单月160元，开通明确要求临时Session。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "merchant_claim_not_transaction",
+      "url": "https://payforgpt.com/ai-subscriptions/chatgpt-procurement-contract-template-settlement-certificate-guide",
+      "page_self_updated_on": "2026-11-21",
+      "observation": "合同验收和免密交付需临时Session；免Session仅购前自检工具。"
+    },
+    {
+      "observed_on": "2026-11-26",
+      "evidence_type": "official_help",
+      "url": "https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like",
+      "observation": "网页一般不需验证，Codex桌面可能需要，首次API Key需要；使用本人控制的受支持移动号码。"
+    }
+  ],
+  "rechecks": {
+    "unchanged": [
+      "小久",
+      "引路鲸",
+      "ChatShare",
+      "GetVIP",
+      "PAYPRM",
+      "ChongPay",
+      "Pay2GPT"
+    ],
+    "unreadable": [
+      "CatFK",
+      "Morimm",
+      "wind89",
+      "GETGPT Pro"
+    ],
+    "chatshare_self_service_maintenance": true,
+    "academicgate_chatgpt_maintenance": true,
+    "official_phone_verification_core_change": false,
+    "historical_price_dates_refreshed": false
+  },
+  "qualification": {
+    "ceiling_cny": 170,
+    "no_agent_upfront_required": true,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "valid_china_vat_invoice_verified_count": 0,
+    "formal_resale_authorizations_verified_count": 0,
+    "real_sms_successes": 0
+  },
+  "history_preserved": true,
+  "no_payment_contact_order_or_credentials": true
+}
