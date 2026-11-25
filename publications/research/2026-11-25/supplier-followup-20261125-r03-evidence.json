@@ -1,0 +1,119 @@
+{
+  "schema": "mydotwork.gpt-source-delta.v1",
+  "round": 284,
+  "site_version": "1.9.292",
+  "observed_on": "2026-11-25",
+  "previous_report": "research/2026-11-25/supplier-followup-20261125-r02.html",
+  "historical_evidence": [
+    "research/2026-11-20/supplier-followup-20261120-r06-evidence.json",
+    "research/2026-11-21/supplier-followup-20261121-r06-evidence.json",
+    "research/2026-11-21/supplier-followup-20261121-r07-evidence.json"
+  ],
+  "payforgpt": {
+    "sku": "product/7",
+    "quantity": 1,
+    "months": 1,
+    "own_account": true,
+    "prior_price_observed_on": "2026-11-20",
+    "retail_list_price_cny": 160,
+    "price_observation_dates_refreshed": false,
+    "prior_issuer_vendor_claim": "花衍科技（广州）有限公司",
+    "prior_issuer_credit_code": "91440104MAEP1N3U8F",
+    "prior_actual_payment_recipient": null,
+    "new_contracting_payment_collection_and_invoice_issuer_same_entity_vendor_claim": "花衍科技（广州）有限公司",
+    "new_claim_page_self_updated_on": "2026-11-21",
+    "merchant_claimed_ordinary_invoice_fee_cny_for_1_to_4_units": 0,
+    "merchant_claimed_all_in_with_ordinary_invoice_cny": 160,
+    "merchant_claims_no_invoice_service_fee_and_post_order_invoice": true,
+    "merchant_claims_contract_or_settlement_certificate_same_day": true,
+    "merchant_claims_company_registration_copy_and_bank_account_confirmation_available": true,
+    "third_party_directory_matches_company_name_and_credit_code": true,
+    "third_party_directory_reported_founded_on": "2025-06-18",
+    "third_party_directory_reported_registered_capital_cny": 100000,
+    "third_party_directory_data_origin_independently_verified": false,
+    "official_company_registry_verified": false,
+    "actual_operator": null,
+    "actual_payment_recipient": null,
+    "actual_invoice_issuer": null,
+    "actual_payment_fee_cny": null,
+    "actual_invoice_fee_cny": null,
+    "actual_all_mandatory_payment_and_valid_china_vat_cny": null,
+    "one_unit_wholesale_price_cny": null,
+    "agent_entry_fee_cny": null,
+    "formal_resale_authorization_verified": false,
+    "actual_delivery_verified": false,
+    "actual_invoice_verified": false,
+    "actual_contract_verified": false,
+    "actual_bank_account_confirmation_verified": false,
+    "actual_session_requirement": null,
+    "real_change_effective_date": null
+  },
+  "sources": [
+    {
+      "url": "https://payforgpt.com/ai-subscriptions/chatgpt-procurement-contract-template-settlement-certificate-guide",
+      "observed_on": "2026-11-25",
+      "page_self_updated_on": "2026-11-21",
+      "evidence_type": "merchant_claim_and_template_not_signed_contract",
+      "observation": "页面称签约、收款、开票为同一花衍科技（广州）有限公司，1–4席可生成结算证明草稿并称可盖章；还称可提供执照副本及对公收款账户确认件。未实际取得文件或流水。"
+    },
+    {
+      "url": "https://payforgpt.com/ai-subscriptions/chatgpt-invoice-tax-point-zero-markup-comparison",
+      "observed_on": "2026-11-25",
+      "page_self_updated_on": "2026-11-21",
+      "evidence_type": "merchant_claim_not_transaction",
+      "observation": "以Plus单月160元举例，商称1–4席普票无额外税点或开票服务费、可事后申请，付款与发票金额一致；1–4席专票另议。实际全费未知。"
+    },
+    {
+      "url": "https://m.yupao.com/qiye/s-ewql641rvlz6.html",
+      "observed_on": "2026-11-25",
+      "page_self_updated_on": null,
+      "evidence_type": "third_party_recruiting_directory_not_official_registry",
+      "observation": "企业信息栏目显示公司名称和统一社会信用代码与商家披露一致；列成立2025-06-18、注册资本10万元。数据来源未独立确认；不是国家企业信用公示记录、实际收款或真票证明。"
+    },
+    {
+      "url": "https://payforgpt.com/product/7",
+      "observed_on": "2026-11-25",
+      "evidence_type": "merchant_product_not_transaction",
+      "observation": "原号Plus一月160元；支付宝或人工转账，付款可能跳转z-pay。价格与历史一致，不刷新历史观察日；未下单。"
+    },
+    {
+      "url": "https://payforgpt.com/invoices",
+      "observed_on": "2026-11-25",
+      "evidence_type": "merchant_invoice_statement_and_nonformal_sample",
+      "observation": "商称1–4席原价普票、同一出票主体，样票明确非正式发票；旧证据一致。"
+    }
+  ],
+  "recheck_summary": {
+    "unchanged": [
+      "引路鲸",
+      "小久",
+      "ChatShare",
+      "PAYPRM",
+      "ChongPay",
+      "GetVIP",
+      "Pay2GPT",
+      "GPT-DUO"
+    ],
+    "unreadable": [
+      "CatFK",
+      "Morimm",
+      "wind89",
+      "GETGPT Pro"
+    ],
+    "historical_price_dates_refreshed": false,
+    "chatshare_self_service_maintenance": true,
+    "academicgate_chatgpt_maintenance": true,
+    "official_phone_verification_core_change": false
+  },
+  "qualification": {
+    "ceiling_cny": 170,
+    "no_agent_upfront_required": true,
+    "verified_true_plus_wholesale_upstreams": 0,
+    "actual_paid_orders": 0,
+    "valid_china_vat_invoice_verified_count": 0,
+    "formal_resale_authorizations_verified_count": 0,
+    "real_sms_successes": 0
+  },
+  "history_preserved": true,
+  "no_payment_contact_order_or_credentials": true
+}

@@ -6590,6 +6590,28 @@
       "summary": "第88轮历史对照、不同缓存日期的一方页面及单件含票缺口。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r284-20261125",
+      "title": "GPT源头第284轮 · PayForGPT签约收款出票主体补证",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-25/supplier-followup-20261125-r03.html",
+      "updatedAt": "2026-11-25",
+      "summary": "商称签约、收款、出票同一主体；第三方企业目录匹配但官方登记及真实税票未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r284-20261125-evidence",
+      "title": "第284轮 · 主体声明及第三方目录证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-25/supplier-followup-20261125-r03-evidence.json",
+      "updatedAt": "2026-11-25",
+      "summary": "保留旧价格日期、商家合同及票款声明，真实全费和批发资格仍未知。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
