@@ -131,17 +131,26 @@ def validate_publications():
     assert by_id['side-income-sample-v01']['url'] == '../research/ai-side-income/sample-v0.1.zip'
     assert by_id['side-income-sample-v02-candidate']['task'] == 'project-17'
     assert by_id['side-income-sample-v02-candidate']['url'] == '../research/ai-side-income/sample-v0.2-candidate.zip'
-    assert catalog['counts'] == {'artifacts': 599, 'websites': 6, 'tasks': 18}
+    assert catalog['counts'] == {'artifacts': 601, 'websites': 6, 'tasks': 18}
     manifest = json.loads((ROOT / 'dist/release-manifest.json').read_bytes())
     latest = manifest['latestResearchSupplement']
-    assert latest['version'] == '1.283'
+    assert latest['version'] == '1.284'
     assert latest['date'] == '2026-11-25'
-    assert latest['path'] == 'research/2026-11-25/supplier-followup-20261125-r02.html'
-    assert latest['dataPath'] == 'research/2026-11-25/supplier-followup-20261125-r02-evidence.json'
-    assert latest['previousPath'] == 'research/2026-11-25/supplier-followup-20261125.html'
-    assert by_id['gpt-source-followup-r283-20261125']['url'] == '../' + latest['path']
-    assert by_id['gpt-source-followup-r283-20261125-evidence']['url'] == '../' + latest['dataPath']
-    r283 = json.loads((ROOT / 'dist' / latest['dataPath']).read_bytes())
+    assert latest['path'] == 'research/2026-11-25/supplier-followup-20261125-r03.html'
+    assert latest['dataPath'] == 'research/2026-11-25/supplier-followup-20261125-r03-evidence.json'
+    assert latest['previousPath'] == 'research/2026-11-25/supplier-followup-20261125-r02.html'
+    assert by_id['gpt-source-followup-r284-20261125']['url'] == '../' + latest['path']
+    assert by_id['gpt-source-followup-r284-20261125-evidence']['url'] == '../' + latest['dataPath']
+    r284 = json.loads((ROOT / 'dist' / latest['dataPath']).read_bytes())
+    assert r284['round'] == 284 and r284['site_version'] == '1.9.292'
+    assert r284['payforgpt']['third_party_directory_matches_company_name_and_credit_code'] is True
+    assert r284['payforgpt']['official_company_registry_verified'] is False
+    assert r284['payforgpt']['actual_payment_recipient'] is None
+    assert r284['payforgpt']['actual_all_mandatory_payment_and_valid_china_vat_cny'] is None
+    assert r284['qualification']['verified_true_plus_wholesale_upstreams'] == 0
+    assert by_id['gpt-source-followup-r283-20261125']['url'] == '../research/2026-11-25/supplier-followup-20261125-r02.html'
+    assert by_id['gpt-source-followup-r283-20261125-evidence']['url'] == '../research/2026-11-25/supplier-followup-20261125-r02-evidence.json'
+    r283 = json.loads((ROOT / 'dist/research/2026-11-25/supplier-followup-20261125-r02-evidence.json').read_bytes())
     assert r283['round'] == 283 and r283['site_version'] == '1.9.291'
     assert r283['gpt_duo']['ios_session_required'] is None
     assert r283['gpt_duo']['actual_delivery_verified'] is False
