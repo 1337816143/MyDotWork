@@ -6568,6 +6568,28 @@
       "summary": "第81轮历史对照及四条本轮直接读取商家网页；含票全费、授权及履约仍未知。",
       "access": "public",
       "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r283-20261125",
+      "title": "GPT源头第283轮 · GPT-DUO iOS交付口径冲突",
+      "type": "report",
+      "task": "project-1",
+      "url": "../research/2026-11-25/supplier-followup-20261125-r02.html",
+      "updatedAt": "2026-11-25",
+      "summary": "同一148元iOS月卡商品称人工充值不发卡，教程仍称卡密Session兑换；真实交付未核。",
+      "access": "public",
+      "metadataApproved": true
+    },
+    {
+      "id": "gpt-source-followup-r283-20261125-evidence",
+      "title": "第283轮 · GPT-DUO交付口径证据",
+      "type": "dataset",
+      "task": "project-1",
+      "url": "../research/2026-11-25/supplier-followup-20261125-r02-evidence.json",
+      "updatedAt": "2026-11-25",
+      "summary": "第88轮历史对照、不同缓存日期的一方页面及单件含票缺口。",
+      "access": "public",
+      "metadataApproved": true
     }
   ],
   "websites": [
